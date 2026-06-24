@@ -1,0 +1,2718 @@
+===> Searching for: MCP
+===> Found: MCP:ver<0.33.6>:auth<zef:wkusnierczyk>:api<1> [via Zef::Repository::Ecosystems<fez>]
+[MCP] Command: curl --silent -L -o /blin/data/zef-data/tmp/1782280359.376072.4406.176308173219/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz https://360.zef.pm/M/CP/MCP/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz
+===> Fetching [OK]: MCP:ver<0.33.6>:auth<zef:wkusnierczyk>:api<1> to /blin/data/zef-data/tmp/1782280359.376072.4406.176308173219/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz
+[MCP] Command: tar -t -f ./bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz
+[MCP] Command: tar -xvf ./bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz -C ../bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz
+===> Extraction [OK]: MCP to /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz
+===> Testing: MCP:ver<0.33.6>:auth<zef:wkusnierczyk>:api<1>
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/01-types.rakutest
+[MCP] # Subtest: Implementation
+[MCP]     ok 1 - name is correct
+[MCP]     ok 2 - version is correct
+[MCP]     ok 3 - Hash has name
+[MCP]     ok 4 - Hash has version
+[MCP]     1..4
+[MCP] ok 1 - Implementation
+[MCP] # Subtest: TextContent
+[MCP]     ok 1 - text is correct
+[MCP]     ok 2 - type is text
+[MCP]     ok 3 - Hash has type
+[MCP]     ok 4 - Hash has text
+[MCP]     1..4
+[MCP] ok 2 - TextContent
+[MCP] # Subtest: ImageContent
+[MCP]     ok 1 - data is correct
+[MCP]     ok 2 - mimeType is correct
+[MCP]     ok 3 - type is image
+[MCP]     1..3
+[MCP] ok 3 - ImageContent
+[MCP] # Subtest: Tool
+[MCP]     ok 1 - name is correct
+[MCP]     ok 2 - description is correct
+[MCP]     ok 3 - Hash has name
+[MCP]     ok 4 - Hash has description
+[MCP]     1..4
+[MCP] ok 4 - Tool
+[MCP] # Subtest: Tool outputSchema
+[MCP]     ok 1 - outputSchema is defined
+[MCP]     ok 2 - outputSchema type correct
+[MCP]     ok 3 - Hash has outputSchema
+[MCP]     ok 4 - Hash outputSchema type
+[MCP]     ok 5 - from-hash restores outputSchema
+[MCP]     ok 6 - from-hash preserves schema detail
+[MCP]     ok 7 - no outputSchema when not set
+[MCP]     ok 8 - from-hash without outputSchema
+[MCP]     1..8
+[MCP] ok 5 - Tool outputSchema
+[MCP] # Subtest: CallToolResult structuredContent
+[MCP]     ok 1 - structuredContent defined
+[MCP]     ok 2 - structuredContent value
+[MCP]     ok 3 - Hash has structuredContent
+[MCP]     ok 4 - Hash structuredContent value
+[MCP]     ok 5 - Hash also has content
+[MCP]     ok 6 - no structuredContent when not set
+[MCP]     ok 7 - Hash has no structuredContent
+[MCP]     1..7
+[MCP] ok 6 - CallToolResult structuredContent
+[MCP] # Subtest: ToolAnnotations
+[MCP]     ok 1 - title is correct
+[MCP]     ok 2 - readOnlyHint is correct
+[MCP]     ok 3 - destructiveHint is correct
+[MCP]     1..3
+[MCP] ok 7 - ToolAnnotations
+[MCP] # Subtest: CallToolResult
+[MCP]     ok 1 - has one content item
+[MCP]     ok 2 - isError is false
+[MCP]     1..2
+[MCP] ok 8 - CallToolResult
+[MCP] # Subtest: Resource
+[MCP]     ok 1 - uri is correct
+[MCP]     ok 2 - name is correct
+[MCP]     ok 3 - mimeType is correct
+[MCP]     1..3
+[MCP] ok 9 - Resource
+[MCP] # Subtest: ResourceContents
+[MCP]     ok 1 - uri is correct
+[MCP]     ok 2 - text is correct
+[MCP]     1..2
+[MCP] ok 10 - ResourceContents
+[MCP] # Subtest: PromptArgument
+[MCP]     ok 1 - name is correct
+[MCP]     ok 2 - required is correct
+[MCP]     1..2
+[MCP] ok 11 - PromptArgument
+[MCP] # Subtest: Prompt
+[MCP]     ok 1 - name is correct
+[MCP]     ok 2 - has one argument
+[MCP]     1..2
+[MCP] ok 12 - Prompt
+[MCP] # Subtest: PromptMessage
+[MCP]     ok 1 - role is correct
+[MCP]     ok 2 - content is TextContent
+[MCP]     1..2
+[MCP] ok 13 - PromptMessage
+[MCP] # Subtest: ServerCapabilities
+[MCP]     ok 1 - tools defined
+[MCP]     ok 2 - resources defined
+[MCP]     ok 3 - tools.listChanged is true
+[MCP]     1..3
+[MCP] ok 14 - ServerCapabilities
+[MCP] # Subtest: ClientCapabilities
+[MCP]     ok 1 - roots defined
+[MCP]     ok 2 - sampling defined
+[MCP]     1..2
+[MCP] ok 15 - ClientCapabilities
+[MCP] # Subtest: Progress
+[MCP]     ok 1 - token is correct
+[MCP]     ok 2 - progress is correct
+[MCP]     ok 3 - total is correct
+[MCP]     1..3
+[MCP] ok 16 - Progress
+[MCP] # Subtest: LogLevel
+[MCP]     ok 1 - Debug value
+[MCP]     ok 2 - Info value
+[MCP]     ok 3 - Warning value
+[MCP]     ok 4 - Error value
+[MCP]     ok 5 - parse debug
+[MCP]     ok 6 - parse warning
+[MCP]     ok 7 - parse emergency
+[MCP]     ok 8 - parse invalid level dies
+[MCP]     ok 9 - Warning >= Debug
+[MCP]     ok 10 - Warning >= Warning
+[MCP]     ok 11 - Debug < Warning
+[MCP]     ok 12 - Emergency >= Emergency
+[MCP]     ok 13 - Alert < Emergency
+[MCP]     1..13
+[MCP] ok 17 - LogLevel
+[MCP] # Subtest: LogEntry
+[MCP]     ok 1 - level is correct
+[MCP]     ok 2 - logger is correct
+[MCP]     ok 3 - data is correct
+[MCP]     1..3
+[MCP] ok 18 - LogEntry
+[MCP] # Subtest: Protocol Constants
+[MCP]     ok 1 - LATEST_PROTOCOL_VERSION defined
+[MCP]     ok 2 - SUPPORTED_PROTOCOL_VERSIONS has items
+[MCP]     ok 3 - Latest version is in supported list
+[MCP]     1..3
+[MCP] ok 19 - Protocol Constants
+[MCP] # Subtest: Annotations
+[MCP]     ok 1 - has two audience items
+[MCP]     ok 2 - priority is correct
+[MCP]     1..2
+[MCP] ok 20 - Annotations
+[MCP] # Subtest: Tool with Annotations
+[MCP]     ok 1 - has annotations
+[MCP]     ok 2 - annotation title correct
+[MCP]     1..2
+[MCP] ok 21 - Tool with Annotations
+[MCP] # Subtest: Hash serialization
+[MCP]     ok 1 - name survives round-trip
+[MCP]     ok 2 - description survives round-trip
+[MCP]     ok 3 - inputSchema survives round-trip
+[MCP]     1..3
+[MCP] ok 22 - Hash serialization
+[MCP] # Subtest: Empty capabilities
+[MCP]     ok 1 - empty capabilities has no keys
+[MCP]     1..1
+[MCP] ok 23 - Empty capabilities
+[MCP] # Subtest: Content role
+[MCP]     ok 1 - TextContent does Content role
+[MCP]     ok 2 - ImageContent does Content role
+[MCP]     1..2
+[MCP] ok 24 - Content role
+[MCP] # Subtest: ResourceContents with blob
+[MCP]     ok 1 - blob is defined
+[MCP]     ok 2 - blob has correct size
+[MCP]     1..2
+[MCP] ok 25 - ResourceContents with blob
+[MCP] # Subtest: Root
+[MCP]     ok 1 - uri is correct
+[MCP]     ok 2 - name is correct
+[MCP]     ok 3 - Hash has uri
+[MCP]     ok 4 - Hash has name
+[MCP]     ok 5 - Hash has uri without name
+[MCP]     ok 6 - Hash has no name when not provided
+[MCP]     ok 7 - from-hash restores uri
+[MCP]     ok 8 - from-hash restores name
+[MCP]     1..8
+[MCP] ok 26 - Root
+[MCP] # Subtest: CompletionsCapability
+[MCP]     ok 1 - empty hash
+[MCP]     1..1
+[MCP] ok 27 - CompletionsCapability
+[MCP] # Subtest: CompletionResult
+[MCP]     ok 1 - has 3 values
+[MCP]     ok 2 - total is 10
+[MCP]     ok 3 - hasMore is true
+[MCP]     ok 4 - Hash has values
+[MCP]     ok 5 - Hash has total
+[MCP]     ok 6 - Hash hasMore
+[MCP]     ok 7 - from-hash restores values
+[MCP]     ok 8 - from-hash restores total
+[MCP]     ok 9 - no total when not set
+[MCP]     ok 10 - no hasMore when not set
+[MCP]     1..10
+[MCP] ok 28 - CompletionResult
+[MCP] # Subtest: ElicitationAction
+[MCP]     ok 1 - accept value
+[MCP]     ok 2 - decline value
+[MCP]     ok 3 - cancel value
+[MCP]     1..3
+[MCP] ok 29 - ElicitationAction
+[MCP] # Subtest: ElicitationCapability
+[MCP]     ok 1 - default supports form
+[MCP]     ok 2 - default does not support url
+[MCP]     ok 3 - default Hash has form
+[MCP]     ok 4 - default Hash has no url
+[MCP]     ok 5 - both supports form
+[MCP]     ok 6 - both supports url
+[MCP]     ok 7 - both Hash has form
+[MCP]     ok 8 - both Hash has url
+[MCP]     ok 9 - empty hash defaults to form
+[MCP]     ok 10 - empty hash has no url
+[MCP]     ok 11 - from-hash with url
+[MCP]     1..11
+[MCP] ok 30 - ElicitationCapability
+[MCP] # Subtest: ElicitationResponse
+[MCP]     ok 1 - accept action
+[MCP]     ok 2 - accept has content
+[MCP]     ok 3 - Hash has action
+[MCP]     ok 4 - Hash has content
+[MCP]     ok 5 - decline action
+[MCP]     ok 6 - decline Hash
+[MCP]     ok 7 - decline has no content
+[MCP]     ok 8 - cancel action
+[MCP]     ok 9 - from-hash restores accept
+[MCP]     ok 10 - from-hash restores content
+[MCP]     1..10
+[MCP] ok 31 - ElicitationResponse
+[MCP] # Subtest: ImageContent Hash
+[MCP]     ok 1 - type is image
+[MCP]     ok 2 - data preserved
+[MCP]     ok 3 - mimeType preserved
+[MCP]     ok 4 - no annotations when not set
+[MCP]     ok 5 - annotations included
+[MCP]     ok 6 - annotation priority
+[MCP]     1..6
+[MCP] ok 32 - ImageContent Hash
+[MCP] # Subtest: AudioContent Hash
+[MCP]     ok 1 - type is audio
+[MCP]     ok 2 - data preserved
+[MCP]     ok 3 - mimeType preserved
+[MCP]     ok 4 - annotations included
+[MCP]     1..4
+[MCP] ok 33 - AudioContent Hash
+[MCP] # Subtest: EmbeddedResource Hash
+[MCP]     ok 1 - type is resource
+[MCP]     ok 2 - resource uri
+[MCP]     ok 3 - no annotations
+[MCP]     ok 4 - annotations included
+[MCP]     1..4
+[MCP] ok 34 - EmbeddedResource Hash
+[MCP] # Subtest: ResourceLink Hash
+[MCP]     ok 1 - type
+[MCP]     ok 2 - name
+[MCP]     ok 3 - uri
+[MCP]     ok 4 - title
+[MCP]     ok 5 - description
+[MCP]     ok 6 - mimeType
+[MCP]     ok 7 - size
+[MCP]     ok 8 - no title
+[MCP]     ok 9 - no size
+[MCP]     1..9
+[MCP] ok 35 - ResourceLink Hash
+[MCP] # Subtest: ToolUseContent Hash
+[MCP]     ok 1 - type
+[MCP]     ok 2 - id
+[MCP]     ok 3 - name
+[MCP]     ok 4 - input
+[MCP]     1..4
+[MCP] ok 36 - ToolUseContent Hash
+[MCP] # Subtest: ToolResultContent Hash
+[MCP]     ok 1 - type
+[MCP]     ok 2 - toolUseId
+[MCP]     ok 3 - isError
+[MCP]     ok 4 - structuredContent
+[MCP]     ok 5 - meta
+[MCP]     ok 6 - content serialized
+[MCP]     1..6
+[MCP] ok 37 - ToolResultContent Hash
+[MCP] # Subtest: ModelHint Hash
+[MCP]     ok 1 - name in Hash
+[MCP]     1..1
+[MCP] ok 38 - ModelHint Hash
+[MCP] # Subtest: ModelPreferences Hash
+[MCP]     ok 1 - hint name
+[MCP]     ok 2 - costPriority
+[MCP]     ok 3 - speedPriority
+[MCP]     ok 4 - intelligencePriority
+[MCP]     ok 5 - no hints
+[MCP]     ok 6 - no costPriority
+[MCP]     1..6
+[MCP] ok 39 - ModelPreferences Hash
+[MCP] # Subtest: ToolChoice Hash
+[MCP]     ok 1 - mode
+[MCP]     ok 2 - name
+[MCP]     ok 3 - auto mode
+[MCP]     ok 4 - no name for auto
+[MCP]     1..4
+[MCP] ok 40 - ToolChoice Hash
+[MCP] # Subtest: ServerCapabilities from-hash
+[MCP]     ok 1 - experimental in Hash
+[MCP]     ok 2 - tasks in Hash
+[MCP]     ok 3 - from-hash restores tools
+[MCP]     ok 4 - from-hash restores tasks
+[MCP]     1..4
+[MCP] ok 41 - ServerCapabilities from-hash
+[MCP] # Subtest: IconDefinition
+[MCP]     ok 1 - src correct
+[MCP]     ok 2 - mimeType correct
+[MCP]     ok 3 - sizes count
+[MCP]     ok 4 - Hash src
+[MCP]     ok 5 - Hash mimeType
+[MCP]     ok 6 - Hash sizes
+[MCP]     ok 7 - from-hash src
+[MCP]     ok 8 - from-hash mimeType
+[MCP]     ok 9 - from-hash sizes
+[MCP]     ok 10 - minimal src
+[MCP]     ok 11 - no mimeType when not set
+[MCP]     ok 12 - no sizes when empty
+[MCP]     1..12
+[MCP] ok 42 - IconDefinition
+[MCP] # Subtest: Tool with icons and title
+[MCP]     ok 1 - title correct
+[MCP]     ok 2 - icons count
+[MCP]     ok 3 - Hash title
+[MCP]     ok 4 - Hash icon src
+[MCP]     ok 5 - from-hash title
+[MCP]     ok 6 - from-hash icons
+[MCP]     ok 7 - from-hash icon src
+[MCP]     ok 8 - no title when not set
+[MCP]     ok 9 - no icons when empty
+[MCP]     1..9
+[MCP] ok 43 - Tool with icons and title
+[MCP] # Subtest: Resource and Prompt with icons and title
+[MCP]     ok 1 - resource title
+[MCP]     ok 2 - resource Hash title
+[MCP]     ok 3 - resource Hash icon
+[MCP]     ok 4 - resource from-hash title
+[MCP]     ok 5 - resource from-hash icon
+[MCP]     ok 6 - prompt title
+[MCP]     ok 7 - prompt Hash title
+[MCP]     ok 8 - prompt from-hash title
+[MCP]     1..8
+[MCP] ok 44 - Resource and Prompt with icons and title
+[MCP] # Subtest: Implementation with icons and title
+[MCP]     ok 1 - title correct
+[MCP]     ok 2 - icon src
+[MCP]     ok 3 - Hash title
+[MCP]     ok 4 - Hash icon
+[MCP]     ok 5 - from-hash title
+[MCP]     ok 6 - from-hash icon
+[MCP]     ok 7 - no title
+[MCP]     ok 8 - no icons
+[MCP]     1..8
+[MCP] ok 45 - Implementation with icons and title
+[MCP] # Subtest: ResourceTemplate type round-trip
+[MCP]     ok 1 - uriTemplate in Hash
+[MCP]     ok 2 - title in Hash
+[MCP]     ok 3 - from-hash uriTemplate
+[MCP]     ok 4 - from-hash title
+[MCP]     1..4
+[MCP] ok 46 - ResourceTemplate type round-trip
+[MCP] # Subtest: SamplingMessage and CreateMessageResult round-trip
+[MCP]     ok 1 - role in Hash
+[MCP]     ok 2 - content in Hash
+[MCP]     ok 3 - result role
+[MCP]     ok 4 - result model
+[MCP]     ok 5 - result stopReason
+[MCP]     1..5
+[MCP] ok 47 - SamplingMessage and CreateMessageResult round-trip
+[MCP] # Subtest: IconDefinition round-trip extended
+[MCP]     ok 1 - from-hash src
+[MCP]     1..1
+[MCP] ok 48 - IconDefinition round-trip extended
+[MCP] # Subtest: Implementation with title and icons extended
+[MCP]     ok 1 - title in Hash
+[MCP]     ok 2 - icons in Hash
+[MCP]     ok 3 - from-hash title
+[MCP]     1..3
+[MCP] ok 49 - Implementation with title and icons extended
+[MCP] # Subtest: Content type Hash methods extended
+[MCP]     ok 1 - embedded resource type
+[MCP]     ok 2 - embedded resource text
+[MCP]     ok 3 - isError in Hash
+[MCP]     ok 4 - structuredContent in Hash
+[MCP]     ok 5 - meta in Hash
+[MCP]     1..5
+[MCP] ok 50 - Content type Hash methods extended
+[MCP] # Subtest: Prompt from-hash with arguments and icons
+[MCP]     ok 1 - name from-hash
+[MCP]     ok 2 - title from-hash
+[MCP]     ok 3 - icons from-hash
+[MCP]     ok 4 - arguments from-hash
+[MCP]     ok 5 - argument name
+[MCP]     1..5
+[MCP] ok 51 - Prompt from-hash with arguments and icons
+[MCP] # Subtest: Resource from-hash with all fields
+[MCP]     ok 1 - title from-hash
+[MCP]     ok 2 - mimeType from-hash
+[MCP]     ok 3 - icons from-hash
+[MCP]     1..3
+[MCP] ok 52 - Resource from-hash with all fields
+[MCP] # Subtest: Tool from-hash with all fields
+[MCP]     ok 1 - title from-hash
+[MCP]     ok 2 - outputSchema from-hash
+[MCP]     ok 3 - annotations from-hash
+[MCP]     ok 4 - execution from-hash
+[MCP]     ok 5 - icons from-hash
+[MCP]     1..5
+[MCP] ok 53 - Tool from-hash with all fields
+[MCP] # Subtest: ServerCapabilities from-hash full
+[MCP]     ok 1 - prompts listChanged
+[MCP]     ok 2 - resources subscribe
+[MCP]     ok 3 - tools listChanged
+[MCP]     ok 4 - experimental
+[MCP]     ok 5 - tasks capability
+[MCP]     ok 6 - prompts in Hash
+[MCP]     ok 7 - tasks in Hash
+[MCP]     1..7
+[MCP] ok 54 - ServerCapabilities from-hash full
+[MCP] # Subtest: Extension round-trip
+[MCP]     ok 1 - name in Hash
+[MCP]     ok 2 - version in Hash
+[MCP]     ok 3 - from-hash name
+[MCP]     ok 4 - from-hash settings
+[MCP]     1..4
+[MCP] ok 55 - Extension round-trip
+[MCP] # Subtest: Root from-hash extended
+[MCP]     ok 1 - uri
+[MCP]     ok 2 - name
+[MCP]     ok 3 - name in Hash
+[MCP]     1..3
+[MCP] ok 56 - Root from-hash extended
+[MCP] # Subtest: Progress Hash extended
+[MCP]     ok 1 - token in Hash
+[MCP]     ok 2 - total in Hash
+[MCP]     ok 3 - message in Hash
+[MCP]     1..3
+[MCP] ok 57 - Progress Hash extended
+[MCP] # Subtest: LogEntry Hash extended
+[MCP]     ok 1 - level in Hash
+[MCP]     ok 2 - logger in Hash
+[MCP]     ok 3 - data in Hash
+[MCP]     1..3
+[MCP] ok 58 - LogEntry Hash extended
+[MCP] # Subtest: log-level-at-or-above and parse-log-level extended
+[MCP]     ok 1 - error >= warning
+[MCP]     ok 2 - warning >= warning
+[MCP]     ok 3 - debug < warning
+[MCP]     ok 4 - parse info
+[MCP]     ok 5 - parse emergency
+[MCP]     ok 6 - parse unknown level dies
+[MCP]     1..6
+[MCP] ok 59 - log-level-at-or-above and parse-log-level extended
+[MCP] # Subtest: CreateMessageResult Hash extended
+[MCP]     ok 1 - model in Hash
+[MCP]     ok 2 - stopReason in Hash
+[MCP]     ok 3 - meta in Hash
+[MCP]     1..3
+[MCP] ok 60 - CreateMessageResult Hash extended
+[MCP] # Subtest: CreateTaskResult Hash extended
+[MCP]     ok 1 - task in Hash
+[MCP]     1..1
+[MCP] ok 61 - CreateTaskResult Hash extended
+[MCP] # Subtest: Task with all optional fields
+[MCP]     ok 1 - statusMessage
+[MCP]     ok 2 - createdAt
+[MCP]     ok 3 - lastUpdatedAt
+[MCP]     ok 4 - pollInterval
+[MCP]     ok 5 - from-hash statusMessage
+[MCP]     ok 6 - from-hash pollInterval
+[MCP]     1..6
+[MCP] ok 62 - Task with all optional fields
+[MCP] # Subtest: TextContent from-hash
+[MCP]     ok 1 - text from plain hash
+[MCP]     ok 2 - text with annotations
+[MCP]     ok 3 - annotations present
+[MCP]     1..3
+[MCP] ok 63 - TextContent from-hash
+[MCP] # Subtest: Content types with annotations
+[MCP]     ok 1 - image annotations in Hash
+[MCP]     ok 2 - audio annotations audience
+[MCP]     ok 3 - embedded resource annotations
+[MCP]     ok 4 - resource link annotations
+[MCP]     1..4
+[MCP] ok 64 - Content types with annotations
+[MCP] # Subtest: PromptMessage Hash with Positional content
+[MCP]     ok 1 - positional content in Hash
+[MCP]     1..1
+[MCP] ok 65 - PromptMessage Hash with Positional content
+[MCP] # Subtest: SamplingMessage Hash with Positional content
+[MCP]     ok 1 - sampling message content in Hash
+[MCP]     1..1
+[MCP] ok 66 - SamplingMessage Hash with Positional content
+[MCP] # Subtest: CreateMessageResult Hash with Positional content
+[MCP]     ok 1 - result positional content
+[MCP]     1..1
+[MCP] ok 67 - CreateMessageResult Hash with Positional content
+[MCP] # Subtest: LoggingCapability Hash
+[MCP]     ok 1 - logging capability returns Hash
+[MCP]     1..1
+[MCP] ok 68 - LoggingCapability Hash
+[MCP] # Subtest: PromptsCapability Hash
+[MCP]     ok 1 - prompts listChanged in Hash
+[MCP]     1..1
+[MCP] ok 69 - PromptsCapability Hash
+[MCP] # Subtest: ResourcesCapability Hash
+[MCP]     ok 1 - subscribe in Hash
+[MCP]     ok 2 - listChanged in Hash
+[MCP]     1..2
+[MCP] ok 70 - ResourcesCapability Hash
+[MCP] # Subtest: ToolsCapability Hash
+[MCP]     ok 1 - tools listChanged in Hash
+[MCP]     1..1
+[MCP] ok 71 - ToolsCapability Hash
+[MCP] # Subtest: RootsCapability Hash
+[MCP]     ok 1 - roots listChanged in Hash
+[MCP]     1..1
+[MCP] ok 72 - RootsCapability Hash
+[MCP] # Subtest: SamplingCapability Hash
+[MCP]     ok 1 - tools in Hash
+[MCP]     ok 2 - context in Hash
+[MCP]     1..2
+[MCP] ok 73 - SamplingCapability Hash
+[MCP] # Subtest: ServerCapabilities Hash with filled sub-capabilities
+[MCP]     ok 1 - logging in Hash
+[MCP]     ok 2 - prompts in Hash
+[MCP]     ok 3 - resources in Hash
+[MCP]     ok 4 - tools in Hash
+[MCP]     ok 5 - completions in Hash
+[MCP]     ok 6 - experimental in Hash
+[MCP]     ok 7 - tasks in Hash
+[MCP]     1..7
+[MCP] ok 74 - ServerCapabilities Hash with filled sub-capabilities
+[MCP] # Subtest: ResourceTemplate Hash with all fields
+[MCP]     ok 1 - title in Hash
+[MCP]     ok 2 - annotations in Hash
+[MCP]     ok 3 - icons in Hash
+[MCP]     1..3
+[MCP] ok 75 - ResourceTemplate Hash with all fields
+[MCP] # Subtest: Resource Hash with annotations extended
+[MCP]     ok 1 - annotations in Hash
+[MCP]     ok 2 - icons in Hash
+[MCP]     1..2
+[MCP] ok 76 - Resource Hash with annotations extended
+[MCP] # Subtest: CallToolResult Hash with structuredContent extended
+[MCP]     ok 1 - structuredContent in Hash
+[MCP]     1..1
+[MCP] ok 77 - CallToolResult Hash with structuredContent extended
+[MCP] # Subtest: Content type() methods
+[MCP]     ok 1 - TextContent.type
+[MCP]     ok 2 - ImageContent.type
+[MCP]     ok 3 - AudioContent.type
+[MCP]     ok 4 - EmbeddedResource.type
+[MCP]     ok 5 - ResourceLink.type
+[MCP]     ok 6 - ToolUseContent.type
+[MCP]     ok 7 - ToolResultContent.type
+[MCP]     1..7
+[MCP] ok 78 - Content type() methods
+[MCP] # Subtest: ToolAnnotations openWorldHint
+[MCP]     ok 1 - openWorldHint
+[MCP]     1..1
+[MCP] ok 79 - ToolAnnotations openWorldHint
+[MCP] # Subtest: PromptArgument required
+[MCP]     ok 1 - required field
+[MCP]     ok 2 - description
+[MCP]     1..2
+[MCP] ok 80 - PromptArgument required
+[MCP] # Subtest: TaskExecution enum coverage
+[MCP]     ok 1 - TaskExecution forbidden
+[MCP]     ok 2 - TaskExecution optional
+[MCP]     ok 3 - TaskExecution required
+[MCP]     ok 4 - TaskExecution default
+[MCP]     1..4
+[MCP] ok 81 - TaskExecution enum coverage
+[MCP] # Subtest: Task from-hash all statuses
+[MCP]     ok 1 - Task status working
+[MCP]     ok 2 - Task status input_required
+[MCP]     ok 3 - Task status completed
+[MCP]     ok 4 - Task status failed
+[MCP]     ok 5 - Task status cancelled
+[MCP]     ok 6 - Task default status
+[MCP]     1..6
+[MCP] ok 82 - Task from-hash all statuses
+[MCP] # Subtest: Tool with execution and all fields
+[MCP]     ok 1 - execution in Hash
+[MCP]     ok 2 - outputSchema in Hash
+[MCP]     ok 3 - icons in Hash
+[MCP]     ok 4 - from-hash execution
+[MCP]     1..4
+[MCP] ok 83 - Tool with execution and all fields
+[MCP] # Subtest: ModelHint and ModelPreferences extended
+[MCP]     ok 1 - ModelHint name
+[MCP]     ok 2 - intelligencePriority
+[MCP]     ok 3 - hints
+[MCP]     1..3
+[MCP] ok 84 - ModelHint and ModelPreferences extended
+[MCP] # Subtest: CompletionResult with hasMore extended
+[MCP]     ok 1 - hasMore in Hash
+[MCP]     ok 2 - total
+[MCP]     ok 3 - from-hash hasMore
+[MCP]     1..3
+[MCP] ok 85 - CompletionResult with hasMore extended
+[MCP] # Subtest: ResourceLink with size
+[MCP]     ok 1 - size in Hash
+[MCP]     1..1
+[MCP] ok 86 - ResourceLink with size
+[MCP] # Subtest: ClientCapabilities Hash extended
+[MCP]     ok 1 - roots in Hash
+[MCP]     ok 2 - sampling tools in Hash
+[MCP]     ok 3 - elicitation form in Hash
+[MCP]     ok 4 - experimental in Hash
+[MCP]     ok 5 - tasks in Hash
+[MCP]     1..5
+[MCP] ok 87 - ClientCapabilities Hash extended
+[MCP] # Subtest: ElicitationResponse from-hash variants
+[MCP]     ok 1 - from-hash decline
+[MCP]     ok 2 - from-hash default cancel
+[MCP]     1..2
+[MCP] ok 88 - ElicitationResponse from-hash variants
+[MCP] # Subtest: ElicitationCapability from-hash extended
+[MCP]     ok 1 - supports-form
+[MCP]     ok 2 - supports-url
+[MCP]     ok 3 - empty hash defaults to form
+[MCP]     ok 4 - empty hash no url
+[MCP]     1..4
+[MCP] ok 89 - ElicitationCapability from-hash extended
+[MCP] 1..89
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/02-jsonrpc.rakutest
+[MCP] # Subtest: Error codes
+[MCP]     ok 1 - ParseError code
+[MCP]     ok 2 - InvalidRequest code
+[MCP]     ok 3 - MethodNotFound code
+[MCP]     ok 4 - InvalidParams code
+[MCP]     ok 5 - InternalError code
+[MCP]     ok 6 - URLElicitationRequired code
+[MCP]     1..6
+[MCP] ok 1 - Error codes
+[MCP] # Subtest: Error class
+[MCP]     ok 1 - code is correct
+[MCP]     ok 2 - message is correct
+[MCP]     ok 3 - Hash has code
+[MCP]     ok 4 - Hash has message
+[MCP]     1..4
+[MCP] ok 2 - Error class
+[MCP] # Subtest: Error.from-code
+[MCP]     ok 1 - code is correct
+[MCP]     ok 2 - default message is correct
+[MCP]     ok 3 - custom message works
+[MCP]     1..3
+[MCP] ok 3 - Error.from-code
+[MCP] # Subtest: Request
+[MCP]     ok 1 - jsonrpc is 2.0
+[MCP]     ok 2 - id is correct
+[MCP]     ok 3 - method is correct
+[MCP]     ok 4 - params are correct
+[MCP]     ok 5 - Hash has jsonrpc
+[MCP]     ok 6 - Hash has id
+[MCP]     ok 7 - Hash has method
+[MCP]     1..7
+[MCP] ok 4 - Request
+[MCP] # Subtest: Request with string ID
+[MCP]     ok 1 - string id works
+[MCP]     ok 2 - Hash has string id
+[MCP]     1..2
+[MCP] ok 5 - Request with string ID
+[MCP] # Subtest: Response success
+[MCP]     ok 1 - id is correct
+[MCP]     ok 2 - result is correct
+[MCP]     ok 3 - no error
+[MCP]     ok 4 - Hash has jsonrpc
+[MCP]     ok 5 - Hash has result
+[MCP]     ok 6 - Hash has no error
+[MCP]     1..6
+[MCP] ok 6 - Response success
+[MCP] # Subtest: Response error
+[MCP]     ok 1 - id is correct
+[MCP]     ok 2 - no result
+[MCP]     ok 3 - has error
+[MCP]     ok 4 - error code is correct
+[MCP]     ok 5 - Hash has error
+[MCP]     ok 6 - Hash has no result
+[MCP]     1..6
+[MCP] ok 7 - Response error
+[MCP] # Subtest: Notification
+[MCP]     ok 1 - jsonrpc is 2.0
+[MCP]     ok 2 - method is correct
+[MCP]     ok 3 - params are correct
+[MCP]     ok 4 - Hash has no id
+[MCP]     ok 5 - Hash has method
+[MCP]     1..5
+[MCP] ok 8 - Notification
+[MCP] # Subtest: parse-message Request
+[MCP]     ok 1 - parsed as Request
+[MCP]     ok 2 - id is correct
+[MCP]     ok 3 - method is correct
+[MCP]     1..3
+[MCP] ok 9 - parse-message Request
+[MCP] # Subtest: parse-message Response
+[MCP]     ok 1 - parsed as Response
+[MCP]     ok 2 - id is correct
+[MCP]     ok 3 - result is correct
+[MCP]     1..3
+[MCP] ok 10 - parse-message Response
+[MCP] # Subtest: parse-message Notification
+[MCP]     ok 1 - parsed as Notification
+[MCP]     ok 2 - method is correct
+[MCP]     1..2
+[MCP] ok 11 - parse-message Notification
+[MCP] # Subtest: to-json method
+[MCP]     ok 1 - JSON has jsonrpc
+[MCP]     ok 2 - JSON has method
+[MCP]     ok 3 - round-trip preserves id
+[MCP]     1..3
+[MCP] ok 12 - to-json method
+[MCP] # Subtest: IdGenerator
+[MCP]     ok 1 - first id is 1
+[MCP]     ok 2 - second id is 2
+[MCP]     ok 3 - third id is 3
+[MCP]     ok 4 - ids are sequential
+[MCP]     1..4
+[MCP] ok 13 - IdGenerator
+[MCP] # Subtest: X::JSONRPC exception
+[MCP]     ok 1 - is an Exception
+[MCP]     ok 2 - message is formatted
+[MCP]     ok 3 - error is accessible
+[MCP]     1..3
+[MCP] ok 14 - X::JSONRPC exception
+[MCP] # Subtest: JSONRPC Error Hash with and without data
+[MCP]     ok 1 - code in Hash
+[MCP]     ok 2 - data in Hash
+[MCP]     ok 3 - no data when not set
+[MCP]     1..3
+[MCP] ok 15 - JSONRPC Error Hash with and without data
+[MCP] # Subtest: JSONRPC parse-message all types
+[MCP]     ok 1 - parsed as Request
+[MCP]     ok 2 - method correct
+[MCP]     ok 3 - parsed as Notification
+[MCP]     ok 4 - notification params
+[MCP]     ok 5 - parsed as Response
+[MCP]     ok 6 - result present
+[MCP]     ok 7 - error response parsed
+[MCP]     ok 8 - error field present
+[MCP]     ok 9 - error code
+[MCP]     ok 10 - invalid version dies
+[MCP]     ok 11 - invalid structure dies
+[MCP]     1..11
+[MCP] ok 16 - JSONRPC parse-message all types
+[MCP] # Subtest: JSONRPC Error.from-code all codes
+[MCP]     ok 1 - code ParseError value correct
+[MCP]     ok 2 - code ParseError has default message
+[MCP]     ok 3 - code InvalidRequest value correct
+[MCP]     ok 4 - code InvalidRequest has default message
+[MCP]     ok 5 - code MethodNotFound value correct
+[MCP]     ok 6 - code MethodNotFound has default message
+[MCP]     ok 7 - code InvalidParams value correct
+[MCP]     ok 8 - code InvalidParams has default message
+[MCP]     ok 9 - code InternalError value correct
+[MCP]     ok 10 - code InternalError has default message
+[MCP]     ok 11 - code URLElicitationRequired value correct
+[MCP]     ok 12 - code URLElicitationRequired has default message
+[MCP]     ok 13 - custom message override
+[MCP]     ok 14 - data passed through
+[MCP]     1..14
+[MCP] ok 17 - JSONRPC Error.from-code all codes
+[MCP] # Subtest: JSONRPC Message serialization extended
+[MCP]     ok 1 - request serializes to JSON
+[MCP]     ok 2 - notification Hash method
+[MCP]     ok 3 - notification Hash params
+[MCP]     ok 4 - success response Hash
+[MCP]     ok 5 - no error in success response Hash
+[MCP]     ok 6 - error in error response Hash
+[MCP]     ok 7 - no result in error response Hash
+[MCP]     1..7
+[MCP] ok 18 - JSONRPC Message serialization extended
+[MCP] 1..18
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/03-builders.rakutest
+[MCP] # Subtest: Tool builder and normalization
+[MCP]     ok 1 - tool name set
+[MCP]     ok 2 - tool description set
+[MCP]     ok 3 - string param schema
+[MCP]     ok 4 - array param schema
+[MCP]     ok 5 - required includes a
+[MCP]     ok 6 - required includes e
+[MCP]     ok 7 - to-tool preserves name
+[MCP]     ok 8 - annotations set
+[MCP]     ok 9 - readOnly annotation set
+[MCP]     ok 10 - idempotent annotation set
+[MCP]     ok 11 - destructiveHint naming works
+[MCP]     ok 12 - readOnlyHint naming works
+[MCP]     ok 13 - call returns CallToolResult
+[MCP]     ok 14 - string normalized to TextContent
+[MCP]     ok 15 - accepts CallToolResult directly
+[MCP]     ok 16 - TextContent normalized
+[MCP]     ok 17 - positional normalized to array
+[MCP]     ok 18 - fallback uses Str
+[MCP]     ok 19 - tool requires name
+[MCP]     ok 20 - tool requires handler
+[MCP]     ok 21 - outputSchema set on RegisteredTool
+[MCP]     ok 22 - outputSchema has type
+[MCP]     ok 23 - outputSchema on Tool definition
+[MCP]     ok 24 - outputSchema property type
+[MCP]     ok 25 - outputSchema in Hash
+[MCP]     ok 26 - structuredContent set
+[MCP]     ok 27 - structuredContent has temperature
+[MCP]     ok 28 - structuredContent has conditions
+[MCP]     ok 29 - content fallback also present
+[MCP]     ok 30 - no structuredContent without outputSchema
+[MCP]     1..30
+[MCP] ok 1 - Tool builder and normalization
+[MCP] # Subtest: Resource builder and normalization
+[MCP]     ok 1 - resource uri
+[MCP]     ok 2 - resource name
+[MCP]     ok 3 - resource annotations set
+[MCP]     ok 4 - resource audience set
+[MCP]     ok 5 - resource priority set
+[MCP]     ok 6 - annotations in resource Hash
+[MCP]     ok 7 - priority in serialized Hash
+[MCP]     ok 8 - string normalized to ResourceContents
+[MCP]     ok 9 - blob normalized
+[MCP]     ok 10 - positional preserved
+[MCP]     ok 11 - file-resource guesses mime type
+[MCP]     ok 12 - file-resource sets uri
+[MCP]     ok 13 - from-file guesses mime for .html
+[MCP]     ok 14 - from-file guesses mime for .css
+[MCP]     ok 15 - from-file guesses mime for .js
+[MCP]     ok 16 - from-file guesses mime for .json
+[MCP]     ok 17 - from-file guesses mime for .xml
+[MCP]     ok 18 - from-file guesses mime for .png
+[MCP]     ok 19 - from-file guesses mime for .jpg
+[MCP]     ok 20 - from-file guesses mime for .jpeg
+[MCP]     ok 21 - from-file guesses mime for .gif
+[MCP]     ok 22 - from-file guesses mime for .svg
+[MCP]     ok 23 - from-file guesses mime for .pdf
+[MCP]     ok 24 - from-file guesses mime for .md
+[MCP]     ok 25 - unknown ext -> octet-stream
+[MCP]     ok 26 - from-file uri override
+[MCP]     ok 27 - from-file name override
+[MCP]     ok 28 - from-file mime still guessed
+[MCP]     ok 29 - fallback normalizes to Str
+[MCP]     ok 30 - ResourceContents preserved
+[MCP]     ok 31 - resource requires uri
+[MCP]     ok 32 - resource requires name
+[MCP]     ok 33 - resource requires reader
+[MCP]     1..33
+[MCP] ok 2 - Resource builder and normalization
+[MCP] # Subtest: Prompt builder and normalization
+[MCP]     ok 1 - prompt name
+[MCP]     ok 2 - prompt arguments
+[MCP]     ok 3 - string normalized to PromptMessage
+[MCP]     ok 4 - PromptMessage preserved
+[MCP]     ok 5 - user-message role
+[MCP]     ok 6 - assistant-message role
+[MCP]     ok 7 - required-argument name
+[MCP]     ok 8 - required-argument is required
+[MCP]     ok 9 - required-argument description
+[MCP]     ok 10 - array of PromptMessage first
+[MCP]     ok 11 - array of PromptMessage second
+[MCP]     ok 12 - non-string fallback
+[MCP]     ok 13 - prompt requires name
+[MCP]     ok 14 - prompt requires generator
+[MCP]     1..14
+[MCP] ok 3 - Prompt builder and normalization
+[MCP] # Subtest: Builder title and icon methods
+[MCP]     ok 1 - tool title set
+[MCP]     ok 2 - tool has 2 icons
+[MCP]     ok 3 - tool icon src
+[MCP]     ok 4 - tool icon mimeType
+[MCP]     ok 5 - tool second icon
+[MCP]     ok 6 - tool Hash title
+[MCP]     ok 7 - tool Hash icons
+[MCP]     ok 8 - resource title set
+[MCP]     ok 9 - resource has 1 icon
+[MCP]     ok 10 - resource template title set
+[MCP]     ok 11 - resource template has 1 icon
+[MCP]     ok 12 - prompt title set
+[MCP]     ok 13 - prompt has 1 icon
+[MCP]     ok 14 - prompt icon mimeType
+[MCP]     1..14
+[MCP] ok 4 - Builder title and icon methods
+[MCP] # Subtest: Tool name validation
+[MCP]     ok 1 - valid: my-tool
+[MCP]     ok 2 - valid: tool_1
+[MCP]     ok 3 - valid: single char
+[MCP]     ok 4 - valid: 64 chars
+[MCP]     ok 5 - invalid: empty string
+[MCP]     ok 6 - invalid: 65 chars
+[MCP]     ok 7 - invalid: space
+[MCP]     ok 8 - invalid: exclamation
+[MCP]     ok 9 - invalid: dot
+[MCP]     1..9
+[MCP] ok 5 - Tool name validation
+[MCP] # Subtest: Handler dispatch fallback signatures
+[MCP]     ok 1 - no-args handler works
+[MCP]     ok 2 - Hash positional handler works
+[MCP]     ok 3 - :params named handler works
+[MCP]     1..3
+[MCP] ok 6 - Handler dispatch fallback signatures
+[MCP] # Subtest: Prompt generator dispatch fallback
+[MCP]     ok 1 - no-args generator
+[MCP]     ok 2 - Hash positional generator
+[MCP]     1..2
+[MCP] ok 7 - Prompt generator dispatch fallback
+[MCP] # Subtest: RegisteredTool call with various return types
+[MCP]     ok 1 - Content return type
+[MCP]     ok 2 - Array return type
+[MCP]     ok 3 - structuredContent set for Hash+outputSchema
+[MCP]     ok 4 - no structuredContent without outputSchema
+[MCP]     ok 5 - non-string coerced to text
+[MCP]     1..5
+[MCP] ok 8 - RegisteredTool call with various return types
+[MCP] # Subtest: RegisteredResource read with various return types
+[MCP]     ok 1 - Blob default mimeType
+[MCP]     ok 2 - Positional return
+[MCP]     ok 3 - non-string coerced
+[MCP]     1..3
+[MCP] ok 9 - RegisteredResource read with various return types
+[MCP] # Subtest: RegisteredTool call returning CallToolResult
+[MCP]     ok 1 - CallToolResult passthrough
+[MCP]     ok 2 - isError preserved
+[MCP]     1..2
+[MCP] ok 10 - RegisteredTool call returning CallToolResult
+[MCP] # Subtest: RegisteredPrompt get with Str return
+[MCP]     ok 1 - default role is user
+[MCP]     ok 2 - string coerced to message
+[MCP]     1..2
+[MCP] ok 11 - RegisteredPrompt get with Str return
+[MCP] # Subtest: RegisteredPrompt get with non-string return
+[MCP]     ok 1 - non-string coerced
+[MCP]     1..1
+[MCP] ok 12 - RegisteredPrompt get with non-string return
+[MCP] # Subtest: ToolBuilder schema and output-schema
+[MCP]     ok 1 - schema sets inputSchema
+[MCP]     ok 2 - output-schema set
+[MCP]     1..2
+[MCP] ok 13 - ToolBuilder schema and output-schema
+[MCP] # Subtest: ResourceBuilder build validation
+[MCP]     ok 1 - build without URI dies
+[MCP]     ok 2 - build without name dies
+[MCP]     ok 3 - build without reader dies
+[MCP]     1..3
+[MCP] ok 14 - ResourceBuilder build validation
+[MCP] # Subtest: PromptBuilder build validation
+[MCP]     ok 1 - build without name dies
+[MCP]     ok 2 - build without generator dies
+[MCP]     1..2
+[MCP] ok 15 - PromptBuilder build validation
+[MCP] # Subtest: ResourceTemplateBuilder build validation
+[MCP]     ok 1 - build without uri-template dies
+[MCP]     ok 2 - build without name dies
+[MCP]     ok 3 - build without reader dies
+[MCP]     1..3
+[MCP] ok 16 - ResourceTemplateBuilder build validation
+[MCP] # Subtest: file-resource helper
+[MCP]     ok 1 - name from file
+[MCP]     ok 2 - file URI
+[MCP]     ok 3 - reads file content
+[MCP]     ok 4 - custom uri
+[MCP]     ok 5 - custom name
+[MCP]     1..5
+[MCP] ok 17 - file-resource helper
+[MCP] # Subtest: ResourceBuilder from-file mime types
+[MCP]     ok 1 - txt has mimeType
+[MCP]     ok 2 - html has mimeType
+[MCP]     ok 3 - css has mimeType
+[MCP]     ok 4 - js has mimeType
+[MCP]     ok 5 - json has mimeType
+[MCP]     ok 6 - xml has mimeType
+[MCP]     ok 7 - png has mimeType
+[MCP]     ok 8 - jpg has mimeType
+[MCP]     ok 9 - gif has mimeType
+[MCP]     ok 10 - svg has mimeType
+[MCP]     ok 11 - pdf has mimeType
+[MCP]     ok 12 - md has mimeType
+[MCP]     ok 13 - unknown has mimeType
+[MCP]     1..13
+[MCP] ok 18 - ResourceBuilder from-file mime types
+[MCP] # Subtest: ToolBuilder all param types extended
+[MCP]     ok 1 - string param
+[MCP]     ok 2 - number param
+[MCP]     ok 3 - integer param
+[MCP]     ok 4 - boolean param
+[MCP]     ok 5 - array param
+[MCP]     ok 6 - array items
+[MCP]     ok 7 - all required
+[MCP]     1..7
+[MCP] ok 19 - ToolBuilder all param types extended
+[MCP] # Subtest: ToolBuilder annotations all fields
+[MCP]     ok 1 - title on tool
+[MCP]     ok 2 - icon on tool
+[MCP]     ok 3 - readOnlyHint
+[MCP]     ok 4 - destructiveHint
+[MCP]     ok 5 - idempotentHint
+[MCP]     ok 6 - openWorldHint
+[MCP]     1..6
+[MCP] ok 20 - ToolBuilder annotations all fields
+[MCP] # Subtest: ResourceBuilder all fields
+[MCP]     ok 1 - title
+[MCP]     ok 2 - icon
+[MCP]     ok 3 - mimeType
+[MCP]     ok 4 - annotations
+[MCP]     ok 5 - read returns text
+[MCP]     1..5
+[MCP] ok 21 - ResourceBuilder all fields
+[MCP] # Subtest: PromptBuilder all fields
+[MCP]     ok 1 - title
+[MCP]     ok 2 - icon
+[MCP]     ok 3 - two arguments
+[MCP]     ok 4 - first arg required
+[MCP]     ok 5 - second arg optional
+[MCP]     1..5
+[MCP] ok 22 - PromptBuilder all fields
+[MCP] # Subtest: ResourceTemplateBuilder all fields
+[MCP]     ok 1 - title
+[MCP]     ok 2 - icon
+[MCP]     1..2
+[MCP] ok 23 - ResourceTemplateBuilder all fields
+[MCP] # Subtest: RegisteredResource read with ResourceContents return
+[MCP]     ok 1 - ResourceContents passthrough
+[MCP]     1..1
+[MCP] ok 24 - RegisteredResource read with ResourceContents return
+[MCP] 1..24
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/04-transport.rakutest
+[MCP] # Subtest: StdioTransport parse/send/close
+[MCP]     ok 1 - parsed request
+[MCP]     ok 2 - method parsed
+[MCP]     ok 3 - no remaining buffer
+[MCP]     ok 4 - output includes content length
+[MCP]     ok 5 - output includes result
+[MCP]     ok 6 - not connected before start
+[MCP]     ok 7 - connected after start
+[MCP]     ok 8 - not connected after close
+[MCP]     1..8
+[MCP] ok 1 - StdioTransport parse/send/close
+[MCP] # Subtest: StdioTransport ignores invalid JSON
+[MCP]     ok 1 - invalid JSON not emitted
+[MCP]     ok 2 - rest returned
+[MCP]     1..2
+[MCP] ok 2 - StdioTransport ignores invalid JSON
+[MCP] # Subtest: Transport error types
+[MCP]     ok 1 - base transport message
+[MCP]     ok 2 - connection error prefix
+[MCP]     ok 3 - send error prefix
+[MCP]     ok 4 - cause property set
+[MCP]     ok 5 - Connection is-a Transport error
+[MCP]     ok 6 - Send is-a Transport error
+[MCP]     ok 7 - Connection is-a Exception
+[MCP]     1..7
+[MCP] ok 3 - Transport error types
+[MCP] # Subtest: StreamableHTTP Stream emit and replay
+[MCP]     ok 1 - priming event ID has stream prefix
+[MCP]     ok 2 - priming event has data line
+[MCP]     ok 3 - message event ID has stream prefix
+[MCP]     ok 4 - message has data lines
+[MCP]     ok 5 - message contains JSON payload
+[MCP]     ok 6 - message contains event ID
+[MCP]     ok 7 - history truncation did not error
+[MCP]     1..7
+[MCP] ok 4 - StreamableHTTP Stream emit and replay
+[MCP] # Subtest: StreamableHTTP Stream replay
+[MCP]     ok 1 - replay emitted events after given seq
+[MCP]     1..1
+[MCP] ok 5 - StreamableHTTP Stream replay
+[MCP] # Subtest: StreamableHTTP exception classes
+[MCP]     ok 1 - base message
+[MCP]     ok 2 - Protocol prefix
+[MCP]     ok 3 - HTTP prefix
+[MCP]     1..3
+[MCP] ok 6 - StreamableHTTP exception classes
+[MCP] 1..6
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/05-server.rakutest
+[MCP] # Subtest: Server dispatch and handlers
+[MCP]     ok 1 - initialize returns protocol
+[MCP]     ok 2 - initialize includes instructions
+[MCP]     ok 3 - ping response empty
+[MCP]     ok 4 - tools/list includes tool
+[MCP]     ok 5 - tools/call returns content
+[MCP]     ok 6 - tools/call requires name
+[MCP]     ok 7 - tools/call unknown tool
+[MCP]     ok 8 - resources/list includes resource
+[MCP]     ok 9 - resources/read returns content
+[MCP]     ok 10 - resources/read requires uri
+[MCP]     ok 11 - prompts/list includes prompt
+[MCP]     ok 12 - prompts/get returns message
+[MCP]     ok 13 - prompts/get requires name
+[MCP]     ok 14 - prompts/get unknown prompt
+[MCP]     ok 15 - unknown method raises error
+[MCP]     ok 16 - server request resolves
+[MCP]     ok 17 - notifications sent
+[MCP]     1..17
+[MCP] ok 1 - Server dispatch and handlers
+[MCP] # Subtest: Pagination support
+[MCP]     ok 1 - first page has 2 items
+[MCP]     ok 2 - first page has nextCursor
+[MCP]     ok 3 - second page has 2 items
+[MCP]     ok 4 - second page has nextCursor
+[MCP]     ok 5 - pages have different items
+[MCP]     ok 6 - last page has 1 item
+[MCP]     ok 7 - last page has no nextCursor
+[MCP]     ok 8 - invalid cursor raises error
+[MCP]     ok 9 - malformed cursor raises error
+[MCP]     ok 10 - empty list has 0 items
+[MCP]     ok 11 - empty list has no nextCursor
+[MCP]     ok 12 - resources first page has 2 items
+[MCP]     ok 13 - resources first page has nextCursor
+[MCP]     ok 14 - prompts first page has 2 items
+[MCP]     ok 15 - prompts first page has nextCursor
+[MCP]     1..15
+[MCP] ok 2 - Pagination support
+[MCP] # Subtest: Cancellation support
+[MCP]     ok 1 - is-cancelled returns False for unknown request
+[MCP]     ok 2 - notifications/cancelled is handled without error
+[MCP]     ok 3 - cancel-request sends notification
+[MCP]     ok 4 - notification method is correct
+[MCP]     ok 5 - notification has correct requestId
+[MCP]     ok 6 - notification has correct reason
+[MCP]     ok 7 - cancel-request without reason sends notification
+[MCP]     ok 8 - notification has no reason when not provided
+[MCP]     ok 9 - in-flight request is tracked
+[MCP]     ok 10 - is-cancelled returns True after cancellation
+[MCP]     ok 11 - cancelled request does not send response
+[MCP]     1..11
+[MCP] ok 3 - Cancellation support
+[MCP] # Subtest: Protocol version handling
+[MCP]     ok 1 - latest protocol version is 2025-11-25
+[MCP]     ok 2 - SUPPORTED contains 2025-11-25
+[MCP]     ok 3 - SUPPORTED contains 2025-03-26
+[MCP]     ok 4 - SUPPORTED contains 2024-11-05
+[MCP]     ok 5 - server echoes latest version for 2025-11-25 client
+[MCP]     ok 6 - server negotiates to client version 2025-03-26
+[MCP]     ok 7 - server includes capabilities for older client
+[MCP]     ok 8 - server negotiates to client version 2024-11-05
+[MCP]     ok 9 - server includes serverInfo for older client
+[MCP]     ok 10 - serverInfo has correct name
+[MCP]     ok 11 - server falls back to latest version for unsupported client version
+[MCP]     ok 12 - server includes capabilities for unsupported client
+[MCP]     1..12
+[MCP] ok 4 - Protocol version handling
+[MCP] # Subtest: Annotations in list responses
+[MCP]     ok 1 - tool annotations in list response
+[MCP]     ok 2 - tool title annotation
+[MCP]     ok 3 - tool destructiveHint annotation
+[MCP]     ok 4 - tool readOnlyHint annotation
+[MCP]     ok 5 - resource annotations in list response
+[MCP]     ok 6 - resource priority annotation
+[MCP]     ok 7 - resource audience annotation
+[MCP]     1..7
+[MCP] ok 5 - Annotations in list responses
+[MCP] # Subtest: Resource subscriptions
+[MCP]     ok 1 - capabilities include subscribe
+[MCP]     ok 2 - subscribe returns empty response
+[MCP]     ok 3 - resource is marked as subscribed
+[MCP]     ok 4 - other resource is not subscribed
+[MCP]     ok 5 - subscribe requires uri parameter
+[MCP]     ok 6 - subscribe to unknown resource fails
+[MCP]     ok 7 - notify-resource-updated sends notification
+[MCP]     ok 8 - notification method is correct
+[MCP]     ok 9 - notification has correct uri
+[MCP]     ok 10 - no notification for unsubscribed resource
+[MCP]     ok 11 - unsubscribe returns empty response
+[MCP]     ok 12 - resource is no longer subscribed
+[MCP]     ok 13 - no notification after unsubscribe
+[MCP]     ok 14 - unsubscribe requires uri parameter
+[MCP]     ok 15 - unsubscribe from unknown resource succeeds
+[MCP]     ok 16 - notify-resources-list-changed sends notification
+[MCP]     ok 17 - list changed notification method is correct
+[MCP]     ok 18 - first resource still subscribed
+[MCP]     ok 19 - second resource now subscribed
+[MCP]     ok 20 - both subscribed resources get notifications
+[MCP]     ok 21 - subscribing twice succeeds (idempotent)
+[MCP]     ok 22 - still subscribed after double subscribe
+[MCP]     ok 23 - is-subscribed returns false for unknown URI
+[MCP]     ok 24 - notify-resource-updated for unknown URI does not throw
+[MCP]     ok 25 - no notification sent for unknown URI
+[MCP]     1..25
+[MCP] ok 6 - Resource subscriptions
+[MCP] # Subtest: Prompt list changed notification
+[MCP]     ok 1 - notify-prompts-list-changed sends notification
+[MCP]     ok 2 - prompt list changed notification method is correct
+[MCP]     1..2
+[MCP] ok 7 - Prompt list changed notification
+[MCP] # Subtest: Server list-roots
+[MCP]     ok 1 - list-roots sends request
+[MCP]     ok 2 - request method is roots/list
+[MCP]     ok 3 - list-roots returns 2 roots
+[MCP]     ok 4 - first item is Root
+[MCP]     ok 5 - first root uri correct
+[MCP]     ok 6 - first root name correct
+[MCP]     ok 7 - second item is Root
+[MCP]     ok 8 - second root uri correct
+[MCP]     ok 9 - empty roots returns empty array
+[MCP]     1..9
+[MCP] ok 8 - Server list-roots
+[MCP] # Subtest: Server elicitation
+[MCP]     ok 1 - elicit sends request
+[MCP]     ok 2 - request method is elicitation/create
+[MCP]     ok 3 - mode is form
+[MCP]     ok 4 - message is correct
+[MCP]     ok 5 - requestedSchema exists
+[MCP]     ok 6 - response is ElicitationResponse
+[MCP]     ok 7 - action is accept
+[MCP]     ok 8 - content has name
+[MCP]     ok 9 - elicit-url sends request
+[MCP]     ok 10 - mode is url
+[MCP]     ok 11 - url is correct
+[MCP]     ok 12 - elicitationId is correct
+[MCP]     ok 13 - URL elicit returns accept
+[MCP]     ok 14 - notification sent
+[MCP]     ok 15 - notification method
+[MCP]     ok 16 - notification has elicitationId
+[MCP]     1..16
+[MCP] ok 9 - Server elicitation
+[MCP] # Subtest: Tool output schemas
+[MCP]     ok 1 - tools/list includes outputSchema
+[MCP]     ok 2 - outputSchema type in listing
+[MCP]     ok 3 - no outputSchema for tool without it
+[MCP]     ok 4 - tools/call has structuredContent
+[MCP]     ok 5 - structuredContent temperature
+[MCP]     ok 6 - structuredContent conditions
+[MCP]     ok 7 - content fallback present
+[MCP]     ok 8 - no structuredContent without outputSchema
+[MCP]     1..8
+[MCP] ok 10 - Tool output schemas
+[MCP] # Subtest: Completion support
+[MCP]     ok 1 - got response
+[MCP]     ok 2 - response is Response
+[MCP]     ok 3 - has completion
+[MCP]     ok 4 - filtered to matching values
+[MCP]     ok 5 - resource completion works
+[MCP]     ok 6 - unregistered completer returns empty
+[MCP]     ok 7 - invalid ref type returns error
+[MCP]     ok 8 - capabilities include completions
+[MCP]     1..8
+[MCP] ok 11 - Completion support
+[MCP] # Subtest: Logging level setting and filtering
+[MCP]     ok 1 - default level emits all log messages
+[MCP]     ok 2 - logging/setLevel returns empty result
+[MCP]     ok 3 - messages below Warning are suppressed
+[MCP]     ok 4 - first emitted is warning
+[MCP]     ok 5 - second emitted is error
+[MCP]     ok 6 - only Emergency emitted at Emergency level
+[MCP]     ok 7 - all messages emitted after resetting to Debug
+[MCP]     ok 8 - invalid log level raises error
+[MCP]     1..8
+[MCP] ok 12 - Logging level setting and filtering
+[MCP] # Subtest: Progress token from _meta
+[MCP]     ok 1 - one progress notification sent
+[MCP]     ok 2 - uses token from _meta
+[MCP]     ok 3 - progress value correct
+[MCP]     ok 4 - total value correct
+[MCP]     ok 5 - message correct
+[MCP]     ok 6 - no progress notification when no _meta token
+[MCP]     ok 7 - explicit token progress sent
+[MCP]     ok 8 - explicit token used over _meta
+[MCP]     1..8
+[MCP] ok 13 - Progress token from _meta
+[MCP] # Subtest: Server create-message
+[MCP]     ok 1 - create-message sends request
+[MCP]     ok 2 - method is sampling/createMessage
+[MCP]     ok 3 - maxTokens passed
+[MCP]     ok 4 - systemPrompt passed
+[MCP]     ok 5 - modelPreferences passed
+[MCP]     ok 6 - messages passed
+[MCP]     ok 7 - returns CreateMessageResult
+[MCP]     ok 8 - role correct
+[MCP]     ok 9 - model correct
+[MCP]     1..9
+[MCP] ok 14 - Server create-message
+[MCP] # Subtest: Server create-message with tools and toolChoice
+[MCP]     ok 1 - tools passed
+[MCP]     ok 2 - tool name serialized
+[MCP]     ok 3 - toolChoice serialized
+[MCP]     ok 4 - create-message with tools completes
+[MCP]     1..4
+[MCP] ok 15 - Server create-message with tools and toolChoice
+[MCP] # Subtest: Logging with logger field
+[MCP]     ok 1 - log notification sent
+[MCP]     ok 2 - level correct
+[MCP]     ok 3 - data correct
+[MCP]     ok 4 - logger field present
+[MCP]     ok 5 - no logger when not provided
+[MCP]     1..5
+[MCP] ok 16 - Logging with logger field
+[MCP] # Subtest: logging/setLevel missing level param
+[MCP]     ok 1 - missing level returns error
+[MCP]     ok 2 - InvalidParams error
+[MCP]     1..2
+[MCP] ok 17 - logging/setLevel missing level param
+[MCP] # Subtest: Server tool handler exception types
+[MCP]     ok 1 - MCP error propagated
+[MCP]     ok 2 - InvalidParams code preserved
+[MCP]     ok 3 - custom message preserved
+[MCP]     1..3
+[MCP] ok 18 - Server tool handler exception types
+[MCP] # Subtest: Server is-cancelled and cancel-request edge cases
+[MCP]     ok 1 - is-cancelled returns False for nonexistent ID
+[MCP]     ok 2 - cancel-request sends notification even for unknown ID
+[MCP]     1..2
+[MCP] ok 19 - Server is-cancelled and cancel-request edge cases
+[MCP] # Subtest: Server resources/read unknown resource
+[MCP]     ok 1 - unknown resource returns error
+[MCP]     ok 2 - error message mentions unknown
+[MCP]     1..2
+[MCP] ok 20 - Server resources/read unknown resource
+[MCP] # Subtest: Server handles error response from client
+[MCP]     ok 1 - error response breaks promise
+[MCP]     1..1
+[MCP] ok 21 - Server handles error response from client
+[MCP] 1..21
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/06-client.rakutest
+[MCP] # Subtest: Client connect and requests
+[MCP]     ok 1 - initialize request sent
+[MCP]     ok 2 - server capabilities set
+[MCP]     ok 3 - server instructions set
+[MCP]     ok 4 - notifications supply available
+[MCP]     ok 5 - list-tools returns Tool
+[MCP]     ok 6 - list-tools has no nextCursor when not paginated
+[MCP]     ok 7 - list-tools parses outputSchema
+[MCP]     ok 8 - outputSchema type preserved
+[MCP]     ok 9 - call-tool parses content
+[MCP]     ok 10 - call-tool parses structuredContent
+[MCP]     ok 11 - structuredContent temperature
+[MCP]     ok 12 - content fallback also present
+[MCP]     ok 13 - no structuredContent when absent
+[MCP]     ok 14 - list-resources returns Resource
+[MCP]     ok 15 - list-resources has no nextCursor when not paginated
+[MCP]     ok 16 - read-resource returns contents
+[MCP]     ok 17 - list-prompts returns Prompt
+[MCP]     ok 18 - list-prompts has no nextCursor when not paginated
+[MCP]     ok 19 - get-prompt parses messages
+[MCP]     ok 20 - ping resolves true
+[MCP]     ok 21 - error response rejects promise
+[MCP]     ok 22 - notifications emit
+[MCP]     ok 23 - client responds to server request
+[MCP]     1..23
+[MCP] ok 1 - Client connect and requests
+[MCP] # Subtest: Client pagination support
+[MCP]     ok 1 - list-tools returns Tool
+[MCP]     ok 2 - list-tools includes nextCursor
+[MCP]     ok 3 - list-tools sends cursor parameter
+[MCP]     ok 4 - list-tools with cursor returns next page
+[MCP]     ok 5 - last page has no nextCursor
+[MCP]     ok 6 - list-resources sends cursor parameter
+[MCP]     ok 7 - list-resources includes nextCursor
+[MCP]     ok 8 - list-prompts sends cursor parameter
+[MCP]     ok 9 - list-prompts includes nextCursor
+[MCP]     1..9
+[MCP] ok 2 - Client pagination support
+[MCP] # Subtest: Client cancellation support
+[MCP]     ok 1 - cancel-request sends notification
+[MCP]     ok 2 - notification method is correct
+[MCP]     ok 3 - notification has correct requestId
+[MCP]     ok 4 - notification has correct reason
+[MCP]     ok 5 - cancelled request breaks promise
+[MCP]     ok 6 - cancellation notification was sent
+[MCP]     ok 7 - notifications/cancelled was sent
+[MCP]     1..7
+[MCP] ok 3 - Client cancellation support
+[MCP] # Subtest: Client resource subscription support
+[MCP]     ok 1 - subscribe-resource sends correct method
+[MCP]     ok 2 - subscribe-resource sends correct uri
+[MCP]     ok 3 - subscribe-resource completes successfully
+[MCP]     ok 4 - unsubscribe-resource sends correct method
+[MCP]     ok 5 - unsubscribe-resource sends correct uri
+[MCP]     ok 6 - unsubscribe-resource completes successfully
+[MCP]     ok 7 - resource update notification received
+[MCP]     ok 8 - resources list changed notification received
+[MCP]     1..8
+[MCP] ok 4 - Client resource subscription support
+[MCP] # Subtest: Client roots support
+[MCP]     ok 1 - roots capability advertised
+[MCP]     ok 2 - roots listChanged is true
+[MCP]     ok 3 - get-roots returns 2 roots
+[MCP]     ok 4 - first root uri correct
+[MCP]     ok 5 - first root name correct
+[MCP]     ok 6 - second root uri correct
+[MCP]     ok 7 - client responded to roots/list
+[MCP]     ok 8 - response has correct id
+[MCP]     ok 9 - response has roots
+[MCP]     ok 10 - response has 2 roots
+[MCP]     ok 11 - first root in response
+[MCP]     ok 12 - set-roots sends notification
+[MCP]     ok 13 - notification method correct
+[MCP]     ok 14 - roots updated to 1
+[MCP]     ok 15 - new root uri correct
+[MCP]     ok 16 - no roots capability without roots
+[MCP]     1..16
+[MCP] ok 5 - Client roots support
+[MCP] # Subtest: Client elicitation support
+[MCP]     ok 1 - elicitation capability advertised
+[MCP]     ok 2 - form mode advertised
+[MCP]     ok 3 - elicitation handler was called
+[MCP]     ok 4 - handler received message
+[MCP]     ok 5 - handler received mode
+[MCP]     ok 6 - response sent
+[MCP]     ok 7 - response has correct id
+[MCP]     ok 8 - response action is accept
+[MCP]     ok 9 - response has content
+[MCP]     ok 10 - no elicitation without handler
+[MCP]     ok 11 - error response sent
+[MCP]     ok 12 - response has error
+[MCP]     ok 13 - error is MethodNotFound
+[MCP]     1..13
+[MCP] ok 6 - Client elicitation support
+[MCP] # Subtest: Completion support
+[MCP]     ok 1 - result is CompletionResult
+[MCP]     ok 2 - has 2 values
+[MCP]     ok 3 - first value correct
+[MCP]     ok 4 - resource completion has values
+[MCP]     ok 5 - has total
+[MCP]     ok 6 - hasMore is true
+[MCP]     ok 7 - sent 2 completion requests
+[MCP]     ok 8 - first request is prompt ref
+[MCP]     ok 9 - second request is resource ref
+[MCP]     1..9
+[MCP] ok 7 - Completion support
+[MCP] # Subtest: Client set-log-level
+[MCP]     ok 1 - set-log-level returns result
+[MCP]     ok 2 - logging/setLevel request sent
+[MCP]     ok 3 - level parameter is correct
+[MCP]     1..3
+[MCP] ok 8 - Client set-log-level
+[MCP] # Subtest: Client progress supply
+[MCP]     ok 1 - received one progress notification
+[MCP]     ok 2 - is a Progress object
+[MCP]     ok 3 - token correct
+[MCP]     ok 4 - progress value correct
+[MCP]     ok 5 - total correct
+[MCP]     ok 6 - message correct
+[MCP]     ok 7 - non-progress notification not in progress supply
+[MCP]     1..7
+[MCP] ok 9 - Client progress supply
+[MCP] # Subtest: Client parses all content types
+[MCP]     ok 1 - 7 content items parsed
+[MCP]     ok 2 - text parsed
+[MCP]     ok 3 - image parsed
+[MCP]     ok 4 - audio parsed
+[MCP]     ok 5 - embedded resource parsed
+[MCP]     ok 6 - resource link parsed
+[MCP]     ok 7 - tool_use parsed
+[MCP]     ok 8 - tool_result parsed
+[MCP]     1..8
+[MCP] ok 10 - Client parses all content types
+[MCP] # Subtest: Client elicitation handler exception
+[MCP]     ok 1 - response sent
+[MCP]     ok 2 - error response for failed handler
+[MCP]     ok 3 - InternalError code
+[MCP]     1..3
+[MCP] ok 11 - Client elicitation handler exception
+[MCP] # Subtest: Client rejects unknown server request
+[MCP]     ok 1 - response sent
+[MCP]     ok 2 - error for unknown method
+[MCP]     ok 3 - MethodNotFound
+[MCP]     1..3
+[MCP] ok 12 - Client rejects unknown server request
+[MCP] # Subtest: Client sampling handler exception
+[MCP]     ok 1 - response sent
+[MCP]     ok 2 - error response for crashed handler
+[MCP]     ok 3 - InternalError code
+[MCP]     1..3
+[MCP] ok 13 - Client sampling handler exception
+[MCP] # Subtest: Client extensions in initialization
+[MCP]     ok 1 - extension without / dies
+[MCP]     ok 2 - extension in init capabilities
+[MCP]     ok 3 - server-instructions accessor
+[MCP]     ok 4 - supports-extension
+[MCP]     ok 5 - does not support unknown extension
+[MCP]     1..5
+[MCP] ok 14 - Client extensions in initialization
+[MCP] # Subtest: Client get-task-result
+[MCP]     ok 1 - tasks/result method
+[MCP]     ok 2 - result has content
+[MCP]     1..2
+[MCP] ok 15 - Client get-task-result
+[MCP] # Subtest: Client complete-resource
+[MCP]     ok 1 - completion/complete method
+[MCP]     ok 2 - ref type is resource
+[MCP]     ok 3 - completion values
+[MCP]     1..3
+[MCP] ok 16 - Client complete-resource
+[MCP] # Subtest: Client close
+[MCP]     ok 1 - client close completes
+[MCP]     1..1
+[MCP] ok 17 - Client close
+[MCP] # Subtest: Client request error response via make-client
+[MCP]     ok 1 - error response breaks promise
+[MCP]     1..1
+[MCP] ok 18 - Client request error response via make-client
+[MCP] # Subtest: Client list-tools with cursor and nextCursor
+[MCP]     ok 1 - cursor passed
+[MCP]     ok 2 - nextCursor returned
+[MCP]     1..2
+[MCP] ok 19 - Client list-tools with cursor and nextCursor
+[MCP] # Subtest: Client list-tasks with nextCursor
+[MCP]     ok 1 - nextCursor returned
+[MCP]     1..1
+[MCP] ok 20 - Client list-tasks with nextCursor
+[MCP] # Subtest: Client sampling handler success with result coercion
+[MCP]     ok 1 - sampling response sent
+[MCP]     ok 2 - result present (not error)
+[MCP]     1..2
+[MCP] ok 21 - Client sampling handler success with result coercion
+[MCP] # Subtest: Client task methods
+[MCP]     ok 1 - default ttl
+[MCP]     ok 2 - task created
+[MCP]     ok 3 - task completed
+[MCP]     ok 4 - task cancelled
+[MCP]     ok 5 - list-tasks returns tasks
+[MCP]     1..5
+[MCP] ok 22 - Client task methods
+[MCP] # Subtest: X::MCP::Client error classes
+[MCP]     ok 1 - Client::Error message
+[MCP]     ok 2 - Timeout message contains method
+[MCP]     1..2
+[MCP] ok 23 - X::MCP::Client error classes
+[MCP] # Subtest: Client get-prompt via make-client
+[MCP]     ok 1 - description
+[MCP]     ok 2 - message role
+[MCP]     1..2
+[MCP] ok 24 - Client get-prompt via make-client
+[MCP] # Subtest: Client complete-prompt via make-client
+[MCP]     ok 1 - correct method
+[MCP]     ok 2 - completion values
+[MCP]     1..2
+[MCP] ok 25 - Client complete-prompt via make-client
+[MCP] # Subtest: Client subscribe/unsubscribe resource via make-client
+[MCP]     ok 1 - subscribe method
+[MCP]     ok 2 - unsubscribe method
+[MCP]     ok 3 - subscribe/unsubscribe complete
+[MCP]     1..3
+[MCP] ok 26 - Client subscribe/unsubscribe resource via make-client
+[MCP] # Subtest: Client notifications supply via make-client
+[MCP]     ok 1 - notification forwarded to supply
+[MCP]     ok 2 - correct notification method
+[MCP]     1..2
+[MCP] ok 27 - Client notifications supply via make-client
+[MCP] # Subtest: Client elicitation with handler returning accept
+[MCP]     ok 1 - elicitation in init capabilities
+[MCP]     ok 2 - elicitation response sent
+[MCP]     ok 3 - accept action in response
+[MCP]     1..3
+[MCP] ok 28 - Client elicitation with handler returning accept
+[MCP] # Subtest: Client roots handling via make-client
+[MCP]     ok 1 - roots in init capabilities
+[MCP]     ok 2 - get-roots returns roots
+[MCP]     ok 3 - roots list changed notification sent
+[MCP]     1..3
+[MCP] ok 29 - Client roots handling via make-client
+[MCP] 1..29
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/07-mcp.rakutest
+[MCP] # Subtest: MCP exports
+[MCP]     ok 1 - protocol version exported
+[MCP]     ok 2 - Implementation export
+[MCP]     ok 3 - TextContent export
+[MCP]     ok 4 - Tool export
+[MCP]     ok 5 - Server export
+[MCP]     ok 6 - Client export
+[MCP]     ok 7 - tool builder available
+[MCP]     ok 8 - resource builder available
+[MCP]     ok 9 - prompt builder available
+[MCP]     ok 10 - file-resource exported
+[MCP]     ok 11 - ImageContent export
+[MCP]     ok 12 - AudioContent export
+[MCP]     ok 13 - ResourceLink export
+[MCP]     ok 14 - ToolUseContent export
+[MCP]     ok 15 - ToolResultContent export
+[MCP]     ok 16 - ModelHint export
+[MCP]     ok 17 - ModelPreferences export
+[MCP]     ok 18 - ToolChoice export
+[MCP]     ok 19 - CreateMessageResult export
+[MCP]     ok 20 - Task export
+[MCP]     ok 21 - CreateTaskResult export
+[MCP]     ok 22 - StdioTransport export
+[MCP]     ok 23 - resource-template builder available
+[MCP]     ok 24 - Extension export
+[MCP]     ok 25 - ResourceTemplate export
+[MCP]     ok 26 - TaskStatus enum export
+[MCP]     ok 27 - Debug log level exported
+[MCP]     ok 28 - Info log level exported
+[MCP]     ok 29 - Warning log level exported
+[MCP]     ok 30 - Error log level exported
+[MCP]     ok 31 - Transport role export
+[MCP]     ok 32 - StreamableHTTPClientTransport export
+[MCP]     ok 33 - StreamableHTTPServerTransport export
+[MCP]     1..33
+[MCP] ok 1 - MCP exports
+[MCP] 1..1
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/08-sampling.rakutest
+[MCP] # Subtest: Sampling handler returns result
+[MCP]     ok 1 - response emitted
+[MCP]     ok 2 - no error
+[MCP]     ok 3 - model returned
+[MCP]     ok 4 - role returned
+[MCP]     ok 5 - content type
+[MCP]     1..5
+[MCP] ok 1 - Sampling handler returns result
+[MCP] # Subtest: Sampling rejects tools when capability missing
+[MCP]     ok 1 - response emitted
+[MCP]     # sampling error (tool result): -32602 Client does not support sampling tools
+[MCP]     ok 2 - error returned
+[MCP]     ok 3 - invalid params
+[MCP]     1..3
+[MCP] ok 2 - Sampling rejects tools when capability missing
+[MCP] # Subtest: Sampling enforces tool result placement
+[MCP]     ok 1 - response emitted
+[MCP]     ok 2 - error returned
+[MCP]     ok 3 - invalid params
+[MCP]     1..3
+[MCP] ok 3 - Sampling enforces tool result placement
+[MCP] # Subtest: Sampling with tools passes tools to handler
+[MCP]     ok 1 - no error with tools
+[MCP]     ok 2 - handler received tools
+[MCP]     ok 3 - tool name passed through
+[MCP]     ok 4 - stopReason preserved
+[MCP]     1..4
+[MCP] ok 4 - Sampling with tools passes tools to handler
+[MCP] # Subtest: Sampling validates tool definitions
+[MCP]     ok 1 - error for missing inputSchema
+[MCP]     ok 2 - invalid params code
+[MCP]     ok 3 - error for missing name
+[MCP]     1..3
+[MCP] ok 5 - Sampling validates tool definitions
+[MCP] # Subtest: Sampling rejects includeContext without capability
+[MCP]     ok 1 - error when includeContext without capability
+[MCP]     ok 2 - invalid params
+[MCP]     1..2
+[MCP] ok 6 - Sampling rejects includeContext without capability
+[MCP] # Subtest: Sampling accepts includeContext with capability
+[MCP]     ok 1 - no error with includeContext capability
+[MCP]     ok 2 - includeContext passed to handler
+[MCP]     1..2
+[MCP] ok 7 - Sampling accepts includeContext with capability
+[MCP] # Subtest: SamplingCapability Hash includes context
+[MCP]     ok 1 - tools in Hash
+[MCP]     ok 2 - context in Hash
+[MCP]     ok 3 - no tools when not set
+[MCP]     ok 4 - no context when not set
+[MCP]     1..4
+[MCP] ok 8 - SamplingCapability Hash includes context
+[MCP] 1..8
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/09-http-transport.rakutest
+[MCP] # Subtest: Server: POST initialize returns response and session id
+[MCP]     ok 1 - incoming request parsed
+[MCP]     ok 2 - response status
+[MCP]     ok 3 - session id header set
+[MCP]     ok 4 - protocol version in response
+[MCP]     1..4
+[MCP] ok 1 - Server: POST initialize returns response and session id
+[MCP] # Subtest: Server: POST notification returns 202 Accepted
+[MCP]     ok 1 - notification received
+[MCP]     ok 2 - notification returns 202 Accepted
+[MCP]     1..2
+[MCP] ok 2 - Server: POST notification returns 202 Accepted
+[MCP] # Subtest: Server: Invalid protocol version returns 400
+[MCP]     ok 1 - invalid protocol version returns 400
+[MCP]     1..1
+[MCP] ok 3 - Server: Invalid protocol version returns 400
+[MCP] # Subtest: Server: DELETE session termination
+[MCP]     ok 1 - got session id
+[MCP]     ok 2 - DELETE returns 204 No Content
+[MCP]     1..2
+[MCP] ok 4 - Server: DELETE session termination
+[MCP] # Subtest: Client: sends POST and receives response
+[MCP]     ok 1 - client received response
+[MCP]     ok 2 - response is correct type
+[MCP]     ok 3 - response has matching id
+[MCP]     ok 4 - response has protocol version
+[MCP]     1..4
+[MCP] ok 5 - Client: sends POST and receives response
+[MCP] # Subtest: Client: terminate-session sends DELETE
+[MCP]     ok 1 - terminate-session returned success
+[MCP]     1..1
+[MCP] ok 6 - Client: terminate-session sends DELETE
+[MCP] # Subtest: Client: is-connected reflects state
+[MCP]     ok 1 - not connected before start
+[MCP]     ok 2 - connected after start
+[MCP]     ok 3 - not connected after close
+[MCP]     1..3
+[MCP] ok 7 - Client: is-connected reflects state
+[MCP] # Subtest: Server: Origin validation
+[MCP]     ok 1 - valid origin passes
+[MCP]     ok 2 - invalid origin returns 403
+[MCP]     1..2
+[MCP] ok 8 - Server: Origin validation
+[MCP] # Subtest: Server: Origin present but no allowed list → 403
+[MCP]     ok 1 - origin present but no allowed list returns 403
+[MCP]     1..1
+[MCP] ok 9 - Server: Origin present but no allowed list → 403
+[MCP] # Subtest: Server: Session validation
+[MCP]     ok 1 - init succeeds without session
+[MCP]     ok 2 - got session id
+[MCP]     ok 3 - missing session header returns 400
+[MCP]     ok 4 - wrong session id returns 404
+[MCP]     ok 5 - correct session id passes
+[MCP]     1..5
+[MCP] ok 10 - Server: Session validation
+[MCP] # Subtest: Server: Invalid Content-Type on POST → 415
+[MCP]     ok 1 - invalid content-type returns 415
+[MCP]     1..1
+[MCP] ok 11 - Server: Invalid Content-Type on POST → 415
+[MCP] # Subtest: Server: Invalid JSON-RPC message on POST → 400
+[MCP] Use of uninitialized value %h{'jsonrpc'} of type Any in string context.
+[MCP] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[MCP]   in sub parse-message at /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/JSONRPC.rakumod (MCP::JSONRPC) line 228
+[MCP]     ok 1 - invalid JSON-RPC message returns 400
+[MCP]     1..1
+[MCP] ok 12 - Server: Invalid JSON-RPC message on POST → 400
+[MCP] # Subtest: Server: GET SSE endpoint returns event stream
+[MCP]     ok 1 - GET SSE returns 200
+[MCP]     ok 2 - Content-Type is text/event-stream
+[MCP]     1..2
+[MCP] ok 13 - Server: GET SSE endpoint returns event stream
+[MCP] # Subtest: Server: GET without text/event-stream Accept → 406
+[MCP]     ok 1 - GET without SSE accept returns 406
+[MCP]     1..1
+[MCP] ok 14 - Server: GET without text/event-stream Accept → 406
+[MCP] # Subtest: Server: DELETE with allow-session-delete=False → 405
+[MCP]     ok 1 - DELETE with allow-session-delete=False returns 405
+[MCP]     1..1
+[MCP] ok 15 - Server: DELETE with allow-session-delete=False → 405
+[MCP] # Subtest: Server: emit-to-stream dispatches to open stream
+[MCP]     ok 1 - SSE stream opened
+[MCP] SupplyFallback body serializer can only handle Supply that emits Blobs
+[MCP]   in block  at /blin/installed/Cro::HTTP_0.8.13/sources/0BFE7385903995F761BA88AC36A2A657F1478976 (Cro::HTTP::BodySerializers) line 62
+[MCP]   in method emit-message at /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/Transport/StreamableHTTP.rakumod (MCP::Transport::StreamableHTTP) line 99
+[MCP]   in method emit-to-stream at /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/Transport/StreamableHTTP.rakumod (MCP::Transport::StreamableHTTP) line 450
+[MCP]   in block  at /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/Transport/StreamableHTTP.rakumod (MCP::Transport::StreamableHTTP) line 173
+[MCP]   in block  at /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/Transport/StreamableHTTP.rakumod (MCP::Transport::StreamableHTTP) line 168
+[MCP]     ok 2 - send non-response message does not throw
+[MCP]     1..2
+[MCP] ok 16 - Server: emit-to-stream dispatches to open stream
+[MCP] # Subtest: Server: OAuth integration - missing token → 401
+[MCP]     ok 1 - missing token returns 401
+[MCP]     ok 2 - WWW-Authenticate header present
+[MCP]     1..2
+[MCP] ok 17 - Server: OAuth integration - missing token → 401
+[MCP] # Subtest: Client: terminate-session without session
+[MCP] MoarVM panic: Did not find expected unwind target frame.
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/10-oauth.rakutest
+[MCP] # Subtest: PKCE
+[MCP]     1..4
+[MCP]     ok 1 - verifier is 64 characters
+[MCP]     ok 2 - verifier uses valid characters
+[MCP]     ok 3 - challenge is non-empty
+[MCP]     ok 4 - challenge is base64url (no +, =, /)
+[MCP] ok 1 - PKCE
+[MCP] # Subtest: ProtectedResourceMetadata
+[MCP]     1..4
+[MCP]     ok 1 - resource set
+[MCP]     ok 2 - Hash roundtrip resource
+[MCP]     ok 3 - Hash roundtrip auth servers
+[MCP]     ok 4 - from-hash roundtrip
+[MCP] ok 2 - ProtectedResourceMetadata
+[MCP] # Subtest: AuthServerMetadata
+[MCP]     1..4
+[MCP]     ok 1 - issuer set
+[MCP]     ok 2 - Hash roundtrip token endpoint
+[MCP]     ok 3 - from-hash roundtrip issuer
+[MCP]     ok 4 - from-hash roundtrip token endpoint
+[MCP] ok 3 - AuthServerMetadata
+[MCP] # Subtest: TokenResponse
+[MCP]     1..4
+[MCP]     ok 1 - access token set
+[MCP]     ok 2 - fresh token is not expired
+[MCP]     ok 3 - old token is expired
+[MCP]     ok 4 - from-hash roundtrip
+[MCP] ok 4 - TokenResponse
+[MCP] # Subtest: OAuthServerHandler
+[MCP]     1..5
+[MCP]     ok 1 - resource-metadata returns correct resource
+[MCP]     ok 2 - resource-metadata has auth servers
+[MCP]     ok 3 - valid token passes validation
+[MCP]     ok 4 - invalid token throws
+[MCP]     ok 5 - www-authenticate starts with Bearer
+[MCP] ok 5 - OAuthServerHandler
+[MCP] # Subtest: OAuthServerHandler www-authenticate-scope-header
+[MCP]     1..3
+[MCP]     ok 1 - scope header starts with Bearer
+[MCP]     ok 2 - scope header has error
+[MCP]     ok 3 - scope header has scopes
+[MCP] ok 6 - OAuthServerHandler www-authenticate-scope-header
+[MCP] # Subtest: OAuthServerHandler Forbidden with scopes
+[MCP]     1..2
+[MCP]     ok 1 - Forbidden exception thrown
+[MCP]     ok 2 - Forbidden message
+[MCP] ok 7 - OAuthServerHandler Forbidden with scopes
+[MCP] # Subtest: OAuthClientHandler authorization-url
+[MCP]     1..3
+[MCP]     ok 1 - URL contains code_challenge
+[MCP]     ok 2 - URL contains client_id
+[MCP]     ok 3 - URL contains resource
+[MCP] ok 8 - OAuthClientHandler authorization-url
+[MCP] # Subtest: Transport backwards compatibility
+[MCP]     1..1
+[MCP]     ok 1 - oauth-handler is optional (not defined by default)
+[MCP] ok 9 - Transport backwards compatibility
+[MCP] # Subtest: ClientRegistration types
+[MCP]     1..6
+[MCP]     ok 1 - Hash redirect_uris
+[MCP]     ok 2 - Hash client_name
+[MCP]     ok 3 - Hash auth method
+[MCP]     ok 4 - from-hash client-id
+[MCP]     ok 5 - from-hash client-secret
+[MCP]     ok 6 - from-hash scope
+[MCP] ok 10 - ClientRegistration types
+[MCP] # Subtest: AuthServerMetadata registration endpoint
+[MCP]     1..3
+[MCP]     ok 1 - registration endpoint set
+[MCP]     ok 2 - Hash roundtrip
+[MCP]     ok 3 - from-hash roundtrip
+[MCP] ok 11 - AuthServerMetadata registration endpoint
+[MCP] # Subtest: OAuthM2MClient construction
+[MCP]     1..4
+[MCP]     ok 1 - resource-url set
+[MCP]     ok 2 - client-id set
+[MCP]     ok 3 - client-secret set
+[MCP]     ok 4 - no token initially
+[MCP] ok 12 - OAuthM2MClient construction
+[MCP] # Subtest: OAuthM2MClient get-token with pre-set token
+[MCP]     1..2
+[MCP]     ok 1 - get-token returns cached token
+[MCP]     ok 2 - authorization-header formats correctly
+[MCP] ok 13 - OAuthM2MClient get-token with pre-set token
+[MCP] # Subtest: TokenExchangeResponse
+[MCP]     1..4
+[MCP]     ok 1 - issued-token-type
+[MCP]     ok 2 - access-token (ID-JAG)
+[MCP]     ok 3 - token-type is N_A
+[MCP]     ok 4 - expires-in
+[MCP] ok 14 - TokenExchangeResponse
+[MCP] # Subtest: X::MCP::OAuth::TokenExchange
+[MCP]     1..2
+[MCP]     ok 1 - message contains error
+[MCP]     ok 2 - message contains description
+[MCP] ok 15 - X::MCP::OAuth::TokenExchange
+[MCP] # Subtest: OAuthEnterpriseClient construction and token caching
+[MCP]     1..5
+[MCP]     ok 1 - resource-url set
+[MCP]     ok 2 - idp-token-endpoint set
+[MCP]     ok 3 - default subject-token-type
+[MCP]     ok 4 - no token initially
+[MCP]     ok 5 - get-token returns cached token
+[MCP] ok 16 - OAuthEnterpriseClient construction and token caching
+[MCP] # Subtest: OAuth exception messages
+[MCP]     ok 1 - Unauthorized message
+[MCP]     ok 2 - Forbidden scopes
+[MCP]     ok 3 - Discovery message
+[MCP]     ok 4 - Registration message
+[MCP]     ok 5 - TokenExchange message
+[MCP]     1..5
+[MCP] ok 17 - OAuth exception messages
+[MCP] # Subtest: TokenResponse is-expired extended
+[MCP]     ok 1 - not expired
+[MCP]     ok 2 - expired
+[MCP]     ok 3 - no expires-in = not expired
+[MCP]     1..3
+[MCP] ok 18 - TokenResponse is-expired extended
+[MCP] # Subtest: OAuthClientHandler get-token with cached valid token
+[MCP]     ok 1 - get-token returns cached token
+[MCP]     ok 2 - authorization-header correct
+[MCP]     1..2
+[MCP] ok 19 - OAuthClientHandler get-token with cached valid token
+[MCP] # Subtest: OAuthClientHandler handle-unauthorized resets state
+[MCP]     ok 1 - pkce-verifier reset after handle-unauthorized
+[MCP]     1..1
+[MCP] ok 20 - OAuthClientHandler handle-unauthorized resets state
+[MCP] # Subtest: OAuthM2MClient error paths
+[MCP]     ok 1 - request-token without discover dies
+[MCP]     1..1
+[MCP] ok 21 - OAuthM2MClient error paths
+[MCP] # Subtest: OAuthEnterpriseClient error paths
+[MCP]     ok 1 - exchange-token without subject dies
+[MCP]     ok 2 - request-token without id-jag dies
+[MCP]     ok 3 - exchange-token without metadata dies
+[MCP]     1..3
+[MCP] ok 22 - OAuthEnterpriseClient error paths
+[MCP] # Subtest: OAuthEnterpriseClient authorization-header with cached token
+[MCP]     ok 1 - enterprise authorization-header
+[MCP]     1..1
+[MCP] ok 23 - OAuthEnterpriseClient authorization-header with cached token
+[MCP] # Subtest: ClientRegistrationRequest Hash extended
+[MCP]     ok 1 - redirect_uris
+[MCP]     ok 2 - software_version
+[MCP]     1..2
+[MCP] ok 24 - ClientRegistrationRequest Hash extended
+[MCP] # Subtest: ClientRegistrationResponse Hash extended
+[MCP]     ok 1 - client_id
+[MCP]     ok 2 - client_secret
+[MCP]     ok 3 - scope
+[MCP]     1..3
+[MCP] ok 25 - ClientRegistrationResponse Hash extended
+[MCP] # Subtest: AuthServerMetadata with all fields Hash
+[MCP]     ok 1 - code challenge methods
+[MCP]     ok 2 - scopes supported
+[MCP]     1..2
+[MCP] ok 26 - AuthServerMetadata with all fields Hash
+[MCP] # Subtest: ProtectedResourceMetadata with scopes extended
+[MCP]     ok 1 - scopes_supported
+[MCP]     1..1
+[MCP] ok 27 - ProtectedResourceMetadata with scopes extended
+[MCP] # Subtest: OAuthClientHandler refresh without token dies
+[MCP]     ok 1 - refresh without token dies
+[MCP]     1..1
+[MCP] ok 28 - OAuthClientHandler refresh without token dies
+[MCP] # Subtest: OAuthClientHandler register without discover dies
+[MCP]     ok 1 - register without discover dies
+[MCP]     1..1
+[MCP] ok 29 - OAuthClientHandler register without discover dies
+[MCP] # Subtest: OAuthClientHandler register without registration-endpoint dies
+[MCP]     ok 1 - register without registration endpoint dies
+[MCP]     1..1
+[MCP] ok 30 - OAuthClientHandler register without registration-endpoint dies
+[MCP] # Subtest: TokenExchangeResponse from-hash extended
+[MCP]     ok 1 - access-token
+[MCP]     ok 2 - scope
+[MCP]     ok 3 - expires-in
+[MCP]     1..3
+[MCP] ok 31 - TokenExchangeResponse from-hash extended
+[MCP] # Subtest: PKCE SHA256 correctness
+[MCP]     ok 1 - generate-challenge is deterministic
+[MCP]     ok 2 - challenge-method returns S256
+[MCP]     ok 3 - challenge of empty string is non-empty
+[MCP]     ok 4 - challenge is base64url encoded
+[MCP]     ok 5 - matches RFC 7636 Appendix B known vector
+[MCP]     1..5
+[MCP] ok 32 - PKCE SHA256 correctness
+[MCP] # Subtest: OAuthClientHandler flows via mock server
+[MCP]     # Subtest: discover sets metadata
+[MCP]         ok 1 - resource-metadata set
+[MCP]         ok 2 - resource matches
+[MCP]         ok 3 - auth-metadata set
+[MCP]         ok 4 - issuer matches
+[MCP]         ok 5 - token endpoint set
+[MCP]         1..5
+[MCP]     ok 1 - discover sets metadata
+[MCP]     # Subtest: exchange-code returns token and clears pkce-verifier
+[MCP]         ok 1 - got access token
+[MCP]         ok 2 - got refresh token
+[MCP]         ok 3 - pkce-verifier cleared
+[MCP]         1..3
+[MCP]     ok 2 - exchange-code returns token and clears pkce-verifier
+[MCP]     # Subtest: refresh returns new token
+[MCP]         ok 1 - refreshed access token
+[MCP]         1..1
+[MCP]     ok 3 - refresh returns new token
+[MCP]     # Subtest: register sets client-id and client-secret
+[MCP]         ok 1 - client-id updated from registration
+[MCP]         ok 2 - client-secret set from registration
+[MCP]         1..2
+[MCP]     ok 4 - register sets client-id and client-secret
+[MCP]     # Subtest: authorization-url includes scope param
+[MCP]         ok 1 - URL contains scope param
+[MCP]         1..1
+[MCP]     ok 5 - authorization-url includes scope param
+[MCP]     # Subtest: get-token refreshes expired token
+[MCP]         ok 1 - get-token triggered refresh
+[MCP]         1..1
+[MCP]     ok 6 - get-token refreshes expired token
+[MCP]     # Subtest: authenticate full flow
+[MCP]         ok 1 - authenticate completed
+[MCP]         ok 2 - token set after authenticate
+[MCP]         ok 3 - got expected token
+[MCP]         1..3
+[MCP]     ok 7 - authenticate full flow
+[MCP]     1..7
+[MCP] ok 33 - OAuthClientHandler flows via mock server
+[MCP] # Subtest: OAuthM2MClient flows via mock server
+[MCP]     # Subtest: request-token with client_credentials
+[MCP]         ok 1 - got m2m token
+[MCP]         1..1
+[MCP]     ok 1 - request-token with client_credentials
+[MCP]     # Subtest: authenticate discovers and requests token
+[MCP]         ok 1 - authenticate completed
+[MCP]         ok 2 - token set after authenticate
+[MCP]         1..2
+[MCP]     ok 2 - authenticate discovers and requests token
+[MCP]     # Subtest: get-token re-requests when expired
+[MCP]         ok 1 - get-token re-requested after expiry
+[MCP]         1..1
+[MCP]     ok 3 - get-token re-requests when expired
+[MCP]     1..3
+[MCP] ok 34 - OAuthM2MClient flows via mock server
+[MCP] # Subtest: OAuthEnterpriseClient flows via mock server
+[MCP]     # Subtest: exchange-token returns TokenExchangeResponse
+[MCP]         ok 1 - got ID-JAG token
+[MCP]         ok 2 - correct issued-token-type
+[MCP]         1..2
+[MCP]     ok 1 - exchange-token returns TokenExchangeResponse
+[MCP]     # Subtest: exchange-token error throws X::MCP::OAuth::TokenExchange
+[MCP]         ok 1 - error contains invalid_grant
+[MCP]         1..1
+[MCP]     ok 2 - exchange-token error throws X::MCP::OAuth::TokenExchange
+[MCP]     # Subtest: request-token with jwt-bearer grant
+[MCP]         ok 1 - got enterprise access token
+[MCP]         1..1
+[MCP]     ok 3 - request-token with jwt-bearer grant
+[MCP]     # Subtest: authenticate full enterprise flow
+[MCP]         ok 1 - authenticate completed
+[MCP]         ok 2 - token set after full flow
+[MCP]         1..2
+[MCP]     ok 4 - authenticate full enterprise flow
+[MCP]     # Subtest: get-token re-authenticates when expired
+[MCP]         ok 1 - get-token re-authenticated
+[MCP]         1..1
+[MCP]     ok 5 - get-token re-authenticates when expired
+[MCP]     1..5
+[MCP] ok 35 - OAuthEnterpriseClient flows via mock server
+[MCP] # Subtest: OAuthServerHandler edge cases
+[MCP]     # Subtest: missing Authorization header
+[MCP]         ok 1 - Unauthorized for missing header
+[MCP]         1..1
+[MCP]     ok 1 - missing Authorization header
+[MCP]     # Subtest: malformed Authorization header
+[MCP]         ok 1 - Unauthorized for non-Bearer
+[MCP]         1..1
+[MCP]     ok 2 - malformed Authorization header
+[MCP]     # Subtest: invalid token with custom message
+[MCP]         ok 1 - custom message passed through
+[MCP]         1..1
+[MCP]     ok 3 - invalid token with custom message
+[MCP]     1..3
+[MCP] ok 36 - OAuthServerHandler edge cases
+[MCP] # Subtest: Type edge cases
+[MCP]     # Subtest: ProtectedResourceMetadata minimal
+[MCP]         ok 1 - resource set
+[MCP]         ok 2 - no auth servers key when empty
+[MCP]         ok 3 - no scopes key when empty
+[MCP]         ok 4 - from-hash with minimal fields
+[MCP]         1..4
+[MCP]     ok 1 - ProtectedResourceMetadata minimal
+[MCP]     # Subtest: AuthServerMetadata issuer only
+[MCP]         ok 1 - issuer in Hash
+[MCP]         ok 2 - no auth endpoint when not set
+[MCP]         ok 3 - no token endpoint when not set
+[MCP]         ok 4 - from-hash with issuer only
+[MCP]         1..4
+[MCP]     ok 2 - AuthServerMetadata issuer only
+[MCP]     # Subtest: TokenResponse minimal from-hash
+[MCP]         ok 1 - access-token set
+[MCP]         ok 2 - default token-type
+[MCP]         ok 3 - no expires-in means not expired
+[MCP]         1..3
+[MCP]     ok 3 - TokenResponse minimal from-hash
+[MCP]     # Subtest: ClientRegistrationRequest all optional fields
+[MCP]         ok 1 - client_uri
+[MCP]         ok 2 - logo_uri
+[MCP]         ok 3 - contacts
+[MCP]         ok 4 - tos_uri
+[MCP]         ok 5 - policy_uri
+[MCP]         ok 6 - software_id
+[MCP]         1..6
+[MCP]     ok 4 - ClientRegistrationRequest all optional fields
+[MCP]     # Subtest: ClientRegistrationResponse minimal
+[MCP]         ok 1 - client-id set
+[MCP]         ok 2 - no client-secret
+[MCP]         1..2
+[MCP]     ok 5 - ClientRegistrationResponse minimal
+[MCP]     # Subtest: Registration error without description
+[MCP]         ok 1 - no colon when no description
+[MCP]         ok 2 - default message used
+[MCP]         1..2
+[MCP]     ok 6 - Registration error without description
+[MCP]     # Subtest: TokenExchange error without description
+[MCP]         ok 1 - no colon when no description
+[MCP]         ok 2 - default message used
+[MCP]         1..2
+[MCP]     ok 7 - TokenExchange error without description
+[MCP]     1..7
+[MCP] ok 37 - Type edge cases
+[MCP] 1..37
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/11-tasks.rakutest
+[MCP] # Subtest: Task types
+[MCP]     ok 1 - TaskWorking value
+[MCP]     ok 2 - TaskCompleted value
+[MCP]     ok 3 - TaskFailed value
+[MCP]     ok 4 - TaskCancelled value
+[MCP]     ok 5 - TaskInputRequired value
+[MCP]     ok 6 - Task taskId
+[MCP]     ok 7 - Task status
+[MCP]     ok 8 - working is not terminal
+[MCP]     ok 9 - Hash taskId
+[MCP]     ok 10 - Hash status string
+[MCP]     ok 11 - Hash ttl
+[MCP]     ok 12 - from-hash taskId
+[MCP]     ok 13 - from-hash status
+[MCP]     ok 14 - completed is terminal
+[MCP]     ok 15 - failed is terminal
+[MCP]     ok 16 - cancelled is terminal
+[MCP]     ok 17 - input_required is not terminal
+[MCP]     1..17
+[MCP] ok 1 - Task types
+[MCP] # Subtest: CreateTaskResult
+[MCP]     ok 1 - CreateTaskResult Hash has task
+[MCP]     ok 2 - Nested task data
+[MCP]     1..2
+[MCP] ok 2 - CreateTaskResult
+[MCP] # Subtest: TaskExecution
+[MCP]     ok 1 - TaskExecution Hash
+[MCP]     ok 2 - TaskExecution from-hash
+[MCP]     1..2
+[MCP] ok 3 - TaskExecution
+[MCP] # Subtest: Tool with execution
+[MCP]     ok 1 - Tool Hash includes execution
+[MCP]     ok 2 - Tool from-hash restores execution
+[MCP]     ok 3 - Tool from-hash execution value
+[MCP]     1..3
+[MCP] ok 4 - Tool with execution
+[MCP] # Subtest: Task creation via tools/call with task hint
+[MCP]     ok 1 - Response has task field
+[MCP]     ok 2 - Task starts as working
+[MCP]     ok 3 - Task ID has prefix
+[MCP]     ok 4 - Task has ttl
+[MCP]     1..4
+[MCP] ok 5 - Task creation via tools/call with task hint
+[MCP] # Subtest: tasks/get returns task status
+[MCP]     ok 1 - tasks/get returns taskId
+[MCP]     ok 2 - Correct task ID
+[MCP]     ok 3 - Status is working or completed
+[MCP]     1..3
+[MCP] ok 6 - tasks/get returns task status
+[MCP] # Subtest: tasks/result blocks until completion
+[MCP]     ok 1 - Task completed after result fetch
+[MCP]     ok 2 - Result contains result data
+[MCP]     ok 3 - Correct tool result
+[MCP]     1..3
+[MCP] ok 7 - tasks/result blocks until completion
+[MCP] # Subtest: tasks/cancel cancels a working task
+[MCP]     ok 1 - Task cancelled
+[MCP]     ok 2 - Status notification sent on cancel
+[MCP]     1..2
+[MCP] ok 8 - tasks/cancel cancels a working task
+[MCP] # Subtest: tasks/list lists tasks
+[MCP]     ok 1 - tasks/list returns tasks
+[MCP]     ok 2 - Two tasks listed
+[MCP]     1..2
+[MCP] ok 9 - tasks/list lists tasks
+[MCP] # Subtest: Task status notification on completion
+[MCP]     ok 1 - Status notification emitted on completion
+[MCP]     ok 2 - Notification has correct taskId
+[MCP]     ok 3 - Notification shows completed
+[MCP]     1..3
+[MCP] ok 10 - Task status notification on completion
+[MCP] # Subtest: Task capabilities in server
+[MCP]     ok 1 - Server capabilities include tasks
+[MCP]     ok 2 - tasks.list capability
+[MCP]     ok 3 - tasks.cancel capability
+[MCP]     ok 4 - tasks.requests.tools.call capability
+[MCP]     1..4
+[MCP] ok 11 - Task capabilities in server
+[MCP] # Subtest: Tool builder task-support
+[MCP]     ok 1 - Tool has execution
+[MCP]     ok 2 - taskSupport is required
+[MCP]     ok 3 - Hash includes execution
+[MCP]     1..3
+[MCP] ok 12 - Tool builder task-support
+[MCP] # Subtest: tasks/get unknown task errors
+[MCP]     ok 1 - Unknown task raises error
+[MCP]     1..1
+[MCP] ok 13 - tasks/get unknown task errors
+[MCP] # Subtest: ServerCapabilities tasks roundtrip
+[MCP]     ok 1 - Hash includes tasks
+[MCP]     ok 2 - from-hash restores tasks
+[MCP]     ok 3 - tasks.list restored
+[MCP]     1..3
+[MCP] ok 14 - ServerCapabilities tasks roundtrip
+[MCP] # Subtest: Server tasks/list via dispatch
+[MCP]     ok 1 - task created
+[MCP]     ok 2 - task has ID
+[MCP]     ok 3 - tasks/list returns at least 1 task
+[MCP]     ok 4 - created task in list
+[MCP]     1..4
+[MCP] ok 15 - Server tasks/list via dispatch
+[MCP] 1..15
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/12-extensions.rakutest
+[MCP] 1..11
+[MCP] # Subtest: Extension type construct and roundtrip
+[MCP]     1..5
+[MCP]     ok 1 - name
+[MCP]     ok 2 - version
+[MCP]     ok 3 - settings
+[MCP]     ok 4 - roundtrip name
+[MCP]     ok 5 - roundtrip settings
+[MCP] ok 1 - Extension type construct and roundtrip
+[MCP] # Subtest: ServerCapabilities experimental Hash serialization
+[MCP]     1..3
+[MCP]     ok 1 - experimental present in Hash
+[MCP]     ok 2 - extension data preserved
+[MCP]     ok 3 - roundtrip from-hash
+[MCP] ok 2 - ServerCapabilities experimental Hash serialization
+[MCP] # Subtest: Server register-extension in capabilities
+[MCP]     1..2
+[MCP]     ok 1 - experimental is set
+[MCP]     ok 2 - extension in capabilities
+[MCP] ok 3 - Server register-extension in capabilities
+[MCP] # Subtest: Server extension method dispatch
+[MCP]     1..1
+[MCP]     ok 1 - extension method handler called
+[MCP] ok 4 - Server extension method dispatch
+[MCP] # Subtest: Server extension notification dispatch
+[MCP]     1..1
+[MCP]     ok 1 - extension notification handler called
+[MCP] ok 5 - Server extension notification dispatch
+[MCP] # Subtest: Server unregister-extension
+[MCP]     1..2
+[MCP]     ok 1 - registered
+[MCP]     ok 2 - unregistered
+[MCP] ok 6 - Server unregister-extension
+[MCP] # Subtest: Client register-extension in init capabilities
+[MCP]     1..1
+[MCP]     ok 1 - client extension registered without error
+[MCP] ok 7 - Client register-extension in init capabilities
+[MCP] # Subtest: Client server-extensions parses experimental
+[MCP]     1..2
+[MCP]     ok 1 - no server extensions before connect
+[MCP]     ok 2 - supports-extension returns False
+[MCP] ok 8 - Client server-extensions parses experimental
+[MCP] # Subtest: Extension name must contain /
+[MCP]     1..2
+[MCP]     ok 1 - server rejects name without /
+[MCP]     ok 2 - client rejects name without /
+[MCP] ok 9 - Extension name must contain /
+[MCP] # Subtest: Server negotiated-extensions after initialize
+[MCP]     1..3
+[MCP]     ok 1 - shared extension is negotiated
+[MCP]     ok 2 - client-only extension not negotiated
+[MCP]     ok 3 - server-only extension not negotiated
+[MCP] ok 10 - Server negotiated-extensions after initialize
+[MCP] # Subtest: Client negotiated-extensions
+[MCP]     1..2
+[MCP]     ok 1 - no negotiated extensions before connect
+[MCP]     ok 2 - not negotiated without server
+[MCP] ok 11 - Client negotiated-extensions
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/13-resource-templates.rakutest
+[MCP] # Subtest: ResourceTemplate type — construct, Hash roundtrip, from-hash
+[MCP]     ok 1 - uriTemplate
+[MCP]     ok 2 - name
+[MCP]     ok 3 - description
+[MCP]     ok 4 - Hash uriTemplate
+[MCP]     ok 5 - Hash name
+[MCP]     ok 6 - Hash has description
+[MCP]     ok 7 - from-hash roundtrip uriTemplate
+[MCP]     ok 8 - from-hash roundtrip name
+[MCP]     ok 9 - from-hash roundtrip description
+[MCP]     1..9
+[MCP] ok 1 - ResourceTemplate type — construct, Hash roundtrip, from-hash
+[MCP] # Subtest: ResourceTemplateBuilder — fluent build
+[MCP]     ok 1 - built name
+[MCP]     ok 2 - built uri-template
+[MCP]     ok 3 - to-resource-template uriTemplate
+[MCP]     ok 4 - missing uri-template dies
+[MCP]     ok 5 - missing name dies
+[MCP]     ok 6 - missing reader dies
+[MCP]     1..6
+[MCP] ok 2 - ResourceTemplateBuilder — fluent build
+[MCP] # Subtest: Server add-resource-template — lists via resources/templates/list
+[MCP]     ok 1 - one template listed
+[MCP]     ok 2 - template uriTemplate
+[MCP]     ok 3 - template name
+[MCP]     1..3
+[MCP] ok 3 - Server add-resource-template — lists via resources/templates/list
+[MCP] # Subtest: Server template read — extracts variables, calls reader
+[MCP]     ok 1 - one content returned
+[MCP]     ok 2 - variables extracted correctly
+[MCP]     ok 3 - resolved URI used
+[MCP]     ok 4 - non-matching URI throws
+[MCP]     1..4
+[MCP] ok 4 - Server template read — extracts variables, calls reader
+[MCP] # Subtest: Server remove-resource-template
+[MCP]     ok 1 - template present
+[MCP]     ok 2 - template removed
+[MCP]     1..2
+[MCP] ok 5 - Server remove-resource-template
+[MCP] # Subtest: Client list-resource-templates
+[MCP]     ok 1 - request sent
+[MCP]     ok 2 - correct method
+[MCP]     ok 3 - got one template
+[MCP]     ok 4 - parsed template
+[MCP]     1..4
+[MCP] ok 6 - Client list-resource-templates
+[MCP] # Subtest: Pagination of templates list
+[MCP]     ok 1 - first page has 2
+[MCP]     ok 2 - has next cursor
+[MCP]     ok 3 - second page has 2
+[MCP]     ok 4 - has next cursor
+[MCP]     ok 5 - last page has 1
+[MCP]     ok 6 - no next cursor
+[MCP]     1..6
+[MCP] ok 7 - Pagination of templates list
+[MCP] # Subtest: Resource template URI matching edge cases
+[MCP]     ok 1 - multi-variable match
+[MCP]     ok 2 - first variable extracted
+[MCP]     ok 3 - second variable extracted
+[MCP]     ok 4 - different host does not match
+[MCP]     ok 5 - incomplete URI no match
+[MCP]     ok 6 - template reader receives params
+[MCP]     1..6
+[MCP] ok 8 - Resource template URI matching edge cases
+[MCP] # Subtest: RegisteredResourceTemplate read with Blob
+[MCP]     ok 1 - Blob mimeType
+[MCP]     1..1
+[MCP] ok 9 - RegisteredResourceTemplate read with Blob
+[MCP] # Subtest: RegisteredResourceTemplate read with default type
+[MCP]     ok 1 - default coerced to text
+[MCP]     1..1
+[MCP] ok 10 - RegisteredResourceTemplate read with default type
+[MCP] # Subtest: RegisteredResourceTemplate read with ResourceContents
+[MCP]     ok 1 - ResourceContents passthrough
+[MCP]     1..1
+[MCP] ok 11 - RegisteredResourceTemplate read with ResourceContents
+[MCP] # Subtest: RegisteredResourceTemplate read with Positional
+[MCP]     ok 1 - Positional passthrough
+[MCP]     1..1
+[MCP] ok 12 - RegisteredResourceTemplate read with Positional
+[MCP] 1..12
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/14-sse-transport.rakutest
+[MCP] # Subtest: Server sends endpoint event on SSE connection
+[MCP]     ok 1 - SSE endpoint returns 200
+[MCP]     ok 2 - Content-Type is text/event-stream
+[MCP]     ok 3 - received endpoint event
+[MCP]     ok 4 - event type is endpoint
+[MCP]     ok 5 - endpoint contains POST URL
+[MCP]     1..5
+[MCP] ok 1 - Server sends endpoint event on SSE connection
+[MCP] # Subtest: Client POST to message endpoint, server receives message
+[MCP]     ok 1 - server received notification
+[MCP]     ok 2 - notification returns 202
+[MCP]     1..2
+[MCP] ok 2 - Client POST to message endpoint, server receives message
+[MCP] # Subtest: Server sends message events to client via SSE
+[MCP]     ok 1 - request POST returns 202
+[MCP]     ok 2 - received message event via SSE
+[MCP]     ok 3 - event type is message
+[MCP]     ok 4 - contains JSON-RPC data
+[MCP]     1..4
+[MCP] ok 3 - Server sends message events to client via SSE
+[MCP] # Subtest: Request/response flow via SSE client transport
+[MCP]     ok 1 - client connected and received endpoint
+[MCP]     ok 2 - client received response via SSE
+[MCP]     ok 3 - response is correct type
+[MCP]     ok 4 - response has matching id
+[MCP]     1..4
+[MCP] ok 4 - Request/response flow via SSE client transport
+[MCP] # Subtest: Server close behavior
+[MCP]     ok 1 - not connected after close
+[MCP]     1..1
+[MCP] ok 5 - Server close behavior
+[MCP] # Subtest: Origin validation
+[MCP]     ok 1 - disallowed origin returns 403
+[MCP]     ok 2 - allowed origin accepted on SSE
+[MCP]     1..2
+[MCP] ok 6 - Origin validation
+[MCP] 1..6
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/15-expanded-coverage.rakutest
+[MCP] # Subtest: Multiple progress notifications in one handler
+[MCP]     ok 1 - four progress notifications sent
+[MCP]     ok 2 - first progress message
+[MCP]     ok 3 - last progress message
+[MCP]     ok 4 - final progress value
+[MCP]     ok 5 - all use same token
+[MCP]     1..5
+[MCP] ok 1 - Multiple progress notifications in one handler
+[MCP] # Subtest: Progress without total or message
+[MCP]     ok 1 - one progress notification sent
+[MCP]     ok 2 - progress value
+[MCP]     ok 3 - no total in notification
+[MCP]     ok 4 - no message in notification
+[MCP]     1..4
+[MCP] ok 2 - Progress without total or message
+[MCP] # Subtest: Client progress supply multiple events
+[MCP]     ok 1 - received three progress events
+[MCP]     ok 2 - first token
+[MCP]     ok 3 - third token
+[MCP]     ok 4 - second progress value
+[MCP]     1..4
+[MCP] ok 3 - Client progress supply multiple events
+[MCP] # Subtest: parse-message malformed JSON
+[MCP]     ok 1 - invalid JSON dies
+[MCP] Use of uninitialized value %h{'jsonrpc'} of type Any in string context.
+[MCP] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[MCP]   in sub parse-message at /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/JSONRPC.rakumod (MCP::JSONRPC) line 228
+[MCP]     ok 2 - missing jsonrpc field dies
+[MCP]     ok 3 - wrong jsonrpc version dies
+[MCP]     1..3
+[MCP] ok 4 - parse-message malformed JSON
+[MCP] # Subtest: parse-message edge cases
+[MCP]     ok 1 - request without params parses
+[MCP]     ok 2 - method correct
+[MCP]     ok 3 - error response parses
+[MCP]     ok 4 - has error
+[MCP]     ok 5 - error code correct
+[MCP]     ok 6 - notification without params
+[MCP]     1..6
+[MCP] ok 5 - parse-message edge cases
+[MCP] # Subtest: StdioTransport incomplete message
+[MCP]     ok 1 - incomplete body returns Nil
+[MCP]     ok 2 - missing Content-Length returns Nil
+[MCP]     ok 3 - no separator returns Nil
+[MCP]     1..3
+[MCP] ok 6 - StdioTransport incomplete message
+[MCP] # Subtest: Handler exception becomes InternalError
+[MCP]     ok 1 - response sent for failing handler
+[MCP]     ok 2 - response has error
+[MCP]     ok 3 - error code is InternalError
+[MCP]     ok 4 - error message is sanitized
+[MCP]     1..4
+[MCP] ok 7 - Handler exception becomes InternalError
+[MCP] # Subtest: Error.from-code with data field
+[MCP]     ok 1 - code correct
+[MCP]     ok 2 - message correct
+[MCP]     ok 3 - data field present
+[MCP]     ok 4 - data in Hash
+[MCP]     1..4
+[MCP] ok 8 - Error.from-code with data field
+[MCP] # Subtest: Unknown method error via handle-message
+[MCP]     ok 1 - response sent
+[MCP]     ok 2 - response has error
+[MCP]     ok 3 - error is MethodNotFound
+[MCP]     1..3
+[MCP] ok 9 - Unknown method error via handle-message
+[MCP] # Subtest: Missing required params errors
+[MCP]     ok 1 - resources/read without uri is error
+[MCP]     ok 2 - InvalidParams for missing uri
+[MCP]     ok 3 - prompts/get without name is error
+[MCP]     ok 4 - tools/call without name is error
+[MCP]     ok 5 - InvalidParams for missing tool name
+[MCP]     1..5
+[MCP] ok 10 - Missing required params errors
+[MCP] # Subtest: IdGenerator thread safety
+[MCP]     ok 1 - all 100 concurrent IDs are unique
+[MCP]     ok 2 - IDs cover 1..100
+[MCP]     1..2
+[MCP] ok 11 - IdGenerator thread safety
+[MCP] # Subtest: Concurrent tool calls
+[MCP]     ok 1 - all 10 concurrent results returned
+[MCP]     ok 2 - result 0 correct
+[MCP]     ok 3 - result 1 correct
+[MCP]     ok 4 - result 2 correct
+[MCP]     ok 5 - result 3 correct
+[MCP]     ok 6 - result 4 correct
+[MCP]     ok 7 - result 5 correct
+[MCP]     ok 8 - result 6 correct
+[MCP]     ok 9 - result 7 correct
+[MCP]     ok 10 - result 8 correct
+[MCP]     ok 11 - result 9 correct
+[MCP]     1..11
+[MCP] ok 12 - Concurrent tool calls
+[MCP] # Subtest: Concurrent resource reads
+[MCP]     ok 1 - all 5 concurrent reads returned
+[MCP]     ok 2 - resource 1 content correct
+[MCP]     ok 3 - resource 2 content correct
+[MCP]     ok 4 - resource 3 content correct
+[MCP]     ok 5 - resource 4 content correct
+[MCP]     ok 6 - resource 5 content correct
+[MCP]     1..6
+[MCP] ok 13 - Concurrent resource reads
+[MCP] # Subtest: Sequential handle-message dispatches
+[MCP]     ok 1 - all 5 responses sent via handle-message
+[MCP]     ok 2 - no errors in responses
+[MCP]     ok 3 - all response IDs match
+[MCP]     1..3
+[MCP] ok 14 - Sequential handle-message dispatches
+[MCP] 1..14
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/16-fuzz-jsonrpc.rakutest
+[MCP] 1..8
+[MCP] # Subtest: Invalid JSON survives without crash
+[MCP]     1..17
+[MCP]     ok 1 - Invalid JSON survives without crash [0]
+[MCP]     ok 2 - Invalid JSON survives without crash [1]
+[MCP]     ok 3 - Invalid JSON survives without crash [2]
+[MCP]     ok 4 - Invalid JSON survives without crash [3]
+[MCP]     ok 5 - Invalid JSON survives without crash [4]
+[MCP]     ok 6 - Invalid JSON survives without crash [5]
+[MCP]     ok 7 - Invalid JSON survives without crash [6]
+[MCP]     ok 8 - Invalid JSON survives without crash [7]
+[MCP]     ok 9 - Invalid JSON survives without crash [8]
+[MCP]     ok 10 - Invalid JSON survives without crash [9]
+[MCP]     ok 11 - Invalid JSON survives without crash [10]
+[MCP]     ok 12 - Invalid JSON survives without crash [11]
+[MCP]     ok 13 - Invalid JSON survives without crash [12]
+[MCP]     ok 14 - Invalid JSON survives without crash [13]
+[MCP]     ok 15 - Invalid JSON survives without crash [14]
+[MCP]     ok 16 - Invalid JSON survives without crash [15]
+[MCP]     ok 17 - Invalid JSON survives without crash [16]
+[MCP] ok 1 - Invalid JSON survives without crash
+[MCP] # Subtest: Missing jsonrpc field
+[MCP]     1..7
+[MCP] Use of uninitialized value %h{'jsonrpc'} of type Any in string context.
+[MCP] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[MCP]   in sub parse-message at /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/JSONRPC.rakumod (MCP::JSONRPC) line 228
+[MCP]     ok 1 - Missing jsonrpc field [0]
+[MCP] Use of uninitialized value %h{'jsonrpc'} of type Any in string context.
+[MCP] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[MCP]   in sub parse-message at /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/JSONRPC.rakumod (MCP::JSONRPC) line 228
+[MCP]     ok 2 - Missing jsonrpc field [1]
+[MCP] Use of uninitialized value %h{'jsonrpc'} of type Any in string context.
+[MCP] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[MCP]   in sub parse-message at /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/JSONRPC.rakumod (MCP::JSONRPC) line 228
+[MCP]     ok 3 - Missing jsonrpc field [2]
+[MCP] Use of uninitialized value %h{'jsonrpc'} of type Any in string context.
+[MCP] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[MCP]   in sub parse-message at /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/JSONRPC.rakumod (MCP::JSONRPC) line 228
+[MCP]     ok 4 - Missing jsonrpc field [3]
+[MCP] Use of uninitialized value %h{'jsonrpc'} of type Any in string context.
+[MCP] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[MCP]   in sub parse-message at /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/JSONRPC.rakumod (MCP::JSONRPC) line 228
+[MCP]     ok 5 - Missing jsonrpc field [4]
+[MCP] Use of uninitialized value %h{'jsonrpc'} of type Any in string context.
+[MCP] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[MCP]   in sub parse-message at /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/JSONRPC.rakumod (MCP::JSONRPC) line 228
+[MCP] Use of uninitialized value %h{'jsonrpc'} of type Any in string context.
+[MCP] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[MCP]     ok 6 - Missing jsonrpc field [5]
+[MCP]   in sub parse-message at /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/JSONRPC.rakumod (MCP::JSONRPC) line 228
+[MCP]     ok 7 - Missing jsonrpc field [6]
+[MCP] ok 2 - Missing jsonrpc field
+[MCP] # Subtest: Wrong jsonrpc version
+[MCP]     1..8
+[MCP]     ok 1 - Wrong jsonrpc version [0]
+[MCP]     ok 2 - Wrong jsonrpc version [1]
+[MCP]     ok 3 - Wrong jsonrpc version [2]
+[MCP] Use of uninitialized value %h of type Any in string context.
+[MCP] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[MCP]   in sub parse-message at /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/JSONRPC.rakumod (MCP::JSONRPC) line 228
+[MCP]     ok 4 - Wrong jsonrpc version [3]
+[MCP]     ok 5 - Wrong jsonrpc version [4]
+[MCP]     ok 6 - Wrong jsonrpc version [5]
+[MCP]     ok 7 - Wrong jsonrpc version [6]
+[MCP]     ok 8 - Wrong jsonrpc version [7]
+[MCP] ok 3 - Wrong jsonrpc version
+[MCP] # Subtest: Ambiguous message structure
+[MCP]     1..6
+[MCP]     ok 1 - Ambiguous message structure [0]
+[MCP]     ok 2 - Ambiguous message structure [1]
+[MCP]     ok 3 - Ambiguous message structure [2]
+[MCP]     ok 4 - Ambiguous message structure [3]
+[MCP]     ok 5 - Ambiguous message structure [4]
+[MCP]     ok 6 - Ambiguous message structure [5]
+[MCP] ok 4 - Ambiguous message structure
+[MCP] # Subtest: Type confusion on fields
+[MCP]     1..11
+[MCP]     ok 1 - Type confusion on fields [0]
+[MCP]     ok 2 - Type confusion on fields [1]
+[MCP]     ok 3 - Type confusion on fields [2]
+[MCP]     ok 4 - Type confusion on fields [3]
+[MCP]     ok 5 - Type confusion on fields [4]
+[MCP]     ok 6 - Type confusion on fields [5]
+[MCP]     ok 7 - Type confusion on fields [6]
+[MCP]     ok 8 - Type confusion on fields [7]
+[MCP]     ok 9 - Type confusion on fields [8]
+[MCP]     ok 10 - Type confusion on fields [9]
+[MCP]     ok 11 - Type confusion on fields [10]
+[MCP] ok 5 - Type confusion on fields
+[MCP] # Subtest: Adversarial field values
+[MCP]     1..10
+[MCP]     ok 1 - Adversarial field values [0]
+[MCP]     ok 2 - Adversarial field values [1]
+[MCP]     ok 3 - Adversarial field values [2]
+[MCP]     ok 4 - Adversarial field values [3]
+[MCP]     ok 5 - Adversarial field values [4]
+[MCP]     ok 6 - Adversarial field values [5]
+[MCP]     ok 7 - Adversarial field values [6]
+[MCP]     ok 8 - Adversarial field values [7]
+[MCP]     ok 9 - Adversarial field values [8]
+[MCP]     ok 10 - Adversarial field values [9]
+[MCP] ok 6 - Adversarial field values
+[MCP] # Subtest: Randomized payloads
+[MCP]     1..100
+[MCP]     ok 1 - random payload [0]
+[MCP]     ok 2 - random payload [1]
+[MCP]     ok 3 - random payload [2]
+[MCP]     ok 4 - random payload [3]
+[MCP]     ok 5 - random payload [4]
+[MCP]     ok 6 - random payload [5]
+[MCP]     ok 7 - random payload [6]
+[MCP]     ok 8 - random payload [7]
+[MCP]     ok 9 - random payload [8]
+[MCP]     ok 10 - random payload [9]
+[MCP]     ok 11 - random payload [10]
+[MCP]     ok 12 - random payload [11]
+[MCP]     ok 13 - random payload [12]
+[MCP]     ok 14 - random payload [13]
+[MCP]     ok 15 - random payload [14]
+[MCP]     ok 16 - random payload [15]
+[MCP]     ok 17 - random payload [16]
+[MCP]     ok 18 - random payload [17]
+[MCP]     ok 19 - random payload [18]
+[MCP]     ok 20 - random payload [19]
+[MCP]     ok 21 - random payload [20]
+[MCP]     ok 22 - random payload [21]
+[MCP]     ok 23 - random payload [22]
+[MCP]     ok 24 - random payload [23]
+[MCP]     ok 25 - random payload [24]
+[MCP]     ok 26 - random payload [25]
+[MCP]     ok 27 - random payload [26]
+[MCP]     ok 28 - random payload [27]
+[MCP]     ok 29 - random payload [28]
+[MCP]     ok 30 - random payload [29]
+[MCP]     ok 31 - random payload [30]
+[MCP]     ok 32 - random payload [31]
+[MCP]     ok 33 - random payload [32]
+[MCP]     ok 34 - random payload [33]
+[MCP]     ok 35 - random payload [34]
+[MCP]     ok 36 - random payload [35]
+[MCP]     ok 37 - random payload [36]
+[MCP]     ok 38 - random payload [37]
+[MCP]     ok 39 - random payload [38]
+[MCP]     ok 40 - random payload [39]
+[MCP]     ok 41 - random payload [40]
+[MCP]     ok 42 - random payload [41]
+[MCP]     ok 43 - random payload [42]
+[MCP]     ok 44 - random payload [43]
+[MCP]     ok 45 - random payload [44]
+[MCP]     ok 46 - random payload [45]
+[MCP]     ok 47 - random payload [46]
+[MCP]     ok 48 - random payload [47]
+[MCP]     ok 49 - random payload [48]
+[MCP]     ok 50 - random payload [49]
+[MCP]     ok 51 - random payload [50]
+[MCP]     ok 52 - random payload [51]
+[MCP]     ok 53 - random payload [52]
+[MCP]     ok 54 - random payload [53]
+[MCP]     ok 55 - random payload [54]
+[MCP]     ok 56 - random payload [55]
+[MCP]     ok 57 - random payload [56]
+[MCP]     ok 58 - random payload [57]
+[MCP]     ok 59 - random payload [58]
+[MCP]     ok 60 - random payload [59]
+[MCP]     ok 61 - random payload [60]
+[MCP]     ok 62 - random payload [61]
+[MCP]     ok 63 - random payload [62]
+[MCP]     ok 64 - random payload [63]
+[MCP]     ok 65 - random payload [64]
+[MCP]     ok 66 - random payload [65]
+[MCP]     ok 67 - random payload [66]
+[MCP]     ok 68 - random payload [67]
+[MCP]     ok 69 - random payload [68]
+[MCP]     ok 70 - random payload [69]
+[MCP]     ok 71 - random payload [70]
+[MCP]     ok 72 - random payload [71]
+[MCP]     ok 73 - random payload [72]
+[MCP]     ok 74 - random payload [73]
+[MCP]     ok 75 - random payload [74]
+[MCP]     ok 76 - random payload [75]
+[MCP]     ok 77 - random payload [76]
+[MCP]     ok 78 - random payload [77]
+[MCP]     ok 79 - random payload [78]
+[MCP]     ok 80 - random payload [79]
+[MCP]     ok 81 - random payload [80]
+[MCP]     ok 82 - random payload [81]
+[MCP]     ok 83 - random payload [82]
+[MCP]     ok 84 - random payload [83]
+[MCP]     ok 85 - random payload [84]
+[MCP]     ok 86 - random payload [85]
+[MCP]     ok 87 - random payload [86]
+[MCP]     ok 88 - random payload [87]
+[MCP]     ok 89 - random payload [88]
+[MCP]     ok 90 - random payload [89]
+[MCP]     ok 91 - random payload [90]
+[MCP]     ok 92 - random payload [91]
+[MCP]     ok 93 - random payload [92]
+[MCP]     ok 94 - random payload [93]
+[MCP]     ok 95 - random payload [94]
+[MCP]     ok 96 - random payload [95]
+[MCP]     ok 97 - random payload [96]
+[MCP]     ok 98 - random payload [97]
+[MCP]     ok 99 - random payload [98]
+[MCP]     ok 100 - random payload [99]
+[MCP] ok 7 - Randomized payloads
+[MCP] # Subtest: Valid messages parse correctly after fuzz barrage
+[MCP]     1..4
+[MCP]     ok 1 - Request parses
+[MCP]     ok 2 - Notification parses
+[MCP]     ok 3 - Response with result parses
+[MCP]     ok 4 - Response with error parses
+[MCP] ok 8 - Valid messages parse correctly after fuzz barrage
+[MCP] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/17-integration-stdio.rakutest
+[MCP] 1..7
+[MCP] # Subtest: Initialize handshake
+[MCP]     1..3
+[MCP]     ok 1 - got initialize result
+[MCP]     ok 2 - server name matches
+[MCP]     ok 3 - tools capability present
+[MCP] ok 1 - Initialize handshake
+[MCP] # Subtest: List tools
+[MCP]     1..2
+[MCP]     ok 1 - at least 1 tool (got 1)
+[MCP]     ok 2 - add tool listed
+[MCP] ok 2 - List tools
+[MCP] # Subtest: Call tool (add 7 + 3)
+[MCP]     1..2
+[MCP]     ok 1 - got call result
+[MCP]     ok 2 - result contains 10 (got: Result: 10)
+[MCP] ok 3 - Call tool (add 7 + 3)
+[MCP] # Subtest: List resources
+[MCP]     1..2
+[MCP]     ok 1 - at least 1 resource (got 1)
+[MCP]     ok 2 - hello resource listed
+[MCP] ok 4 - List resources
+[MCP] # Subtest: Read resource
+[MCP]     1..2
+[MCP]     ok 1 - got resource contents
+[MCP]     ok 2 - content contains Hello (got: Hello from integration test!)
+[MCP] ok 5 - Read resource
+[MCP] # Subtest: Get prompt
+[MCP]     1..2
+[MCP]     ok 1 - got prompt messages
+[MCP]     ok 2 - prompt mentions World
+[MCP] ok 6 - Get prompt
+[MCP] # Subtest: Ping
+[MCP]     1..1
+[MCP]     ok 1 - ping returned a result
+[MCP] ok 7 - Ping
+===> Testing [FAIL]: MCP:ver<0.33.6>:auth<zef:wkusnierczyk>:api<1>
+[MCP] Failed to get passing tests, but continuing with --force-test
+===> Installing: MCP:ver<0.33.6>:auth<zef:wkusnierczyk>:api<1>
+===> Install [OK] for MCP:ver<0.33.6>:auth<zef:wkusnierczyk>:api<1>

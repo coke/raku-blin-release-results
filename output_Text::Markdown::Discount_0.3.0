@@ -1,0 +1,78 @@
+===> Searching for: Text::Markdown::Discount
+===> Found: Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels> [via Zef::Repository::Ecosystems<rea>]
+[Text::Markdown::Discount] Command: curl --silent -L -o /blin/data/zef-data/tmp/1782257930.117591.615.0063947201955/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/T/Text%3A%3AMarkdown%3A%3ADiscount/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz
+===> Fetching [OK]: Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels> to /blin/data/zef-data/tmp/1782257930.117591.615.0063947201955/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz
+[Text::Markdown::Discount] Command: tar -t -f ./Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz
+[Text::Markdown::Discount] Command: tar -xvf ./Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz -C ../Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz
+===> Extraction [OK]: Text::Markdown::Discount to /blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz
+===> Testing: Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels>
+[Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/01_lib.t
+[Text::Markdown::Discount] # markdown_version: NativeCall::Types::Pointer[int8]<2720466811872>
+[Text::Markdown::Discount] ok 1 - libmarkdown is installed
+[Text::Markdown::Discount] 1..1
+[Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/02_make-flags.t
+[Text::Markdown::Discount] ok 1 - no flags
+[Text::Markdown::Discount] ok 2 - single positive flag is set
+[Text::Markdown::Discount] ok 3 - single negated positive flag is unset
+[Text::Markdown::Discount] ok 4 - single negative flag is unset
+[Text::Markdown::Discount] ok 5 - single negated negative flag is set
+[Text::Markdown::Discount] ok 6 - single negative flag with no is set
+[Text::Markdown::Discount] ok 7 - single negated negative flag with no is unset
+[Text::Markdown::Discount] ok 8 - multiple non-zero flags get ORed together
+[Text::Markdown::Discount] ok 9 - case and actual value of flags does not matter
+[Text::Markdown::Discount] # Subtest: single nonexistent flag dies
+[Text::Markdown::Discount]     1..2
+[Text::Markdown::Discount]     ok 1 - code dies
+[Text::Markdown::Discount]     ok 2 - right exception type (Text::Markdown::Discount::X::Text::Markdown::Discount::Flag)
+[Text::Markdown::Discount] ok 10 - single nonexistent flag dies
+[Text::Markdown::Discount] # Subtest: nonexistent flag amongst real flag dies
+[Text::Markdown::Discount]     1..2
+[Text::Markdown::Discount]     ok 1 - code dies
+[Text::Markdown::Discount]     ok 2 - right exception type (Text::Markdown::Discount::X::Text::Markdown::Discount::Flag)
+[Text::Markdown::Discount] ok 11 - nonexistent flag amongst real flag dies
+[Text::Markdown::Discount] 1..11
+[Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/03_interna.t
+[Text::Markdown::Discount] ok 1 - string gets parsed
+[Text::Markdown::Discount] ok 2 - ...conversion to string works
+[Text::Markdown::Discount] ok 3 - ...writing to file works
+[Text::Markdown::Discount] ok 4 - file gets parsed
+[Text::Markdown::Discount] ok 5 - ...conversion to string works
+[Text::Markdown::Discount] ok 6 - ...writing to file works
+[Text::Markdown::Discount] ok 7 - from string with flags ()
+[Text::Markdown::Discount] ok 8 - from file with flags ()
+[Text::Markdown::Discount] ok 9 - from string with flags (nolinks)
+[Text::Markdown::Discount] ok 10 - from file with flags (nolinks)
+[Text::Markdown::Discount] ok 11 - from string with flags (nohtml)
+[Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/04_markdown.t
+[Text::Markdown::Discount] ok 1 - string to string
+[Text::Markdown::Discount] ok 2 - file to string
+[Text::Markdown::Discount] ok 3 - string to file
+[Text::Markdown::Discount] ok 4 - file to file
+[Text::Markdown::Discount] ok 5 - HTML conversion ()
+[Text::Markdown::Discount] ok 6 - HTML conversion (nolinks)
+[Text::Markdown::Discount] ok 7 - HTML conversion (nohtml)
+[Text::Markdown::Discount] ok 8 - HTML conversion (nolinks nohtml)
+[Text::Markdown::Discount] 1..8
+[Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/05_dump.t
+[Text::Markdown::Discount] ok 1 - LINKS IMAGE
+[Text::Markdown::Discount] ok 2 - !LINKS IMAGE
+[Text::Markdown::Discount] ok 3 - LINKS !IMAGE
+[Text::Markdown::Discount] ok 4 - !LINKS !IMAGE
+[Text::Markdown::Discount] 1..4
+[Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/06_headers.t
+[Text::Markdown::Discount] ok 1 - 
+[Text::Markdown::Discount] ok 2 - 
+[Text::Markdown::Discount] ok 3 - 
+[Text::Markdown::Discount] ok 4 - 
+[Text::Markdown::Discount] ok 5 - 
+[Text::Markdown::Discount] ok 6 - 
+[Text::Markdown::Discount] ok 7 - 
+[Text::Markdown::Discount] ok 8 - 
+[Text::Markdown::Discount] 1..8
+[Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/c9d0f81cca1b8f66feef7ff3cca376593aa6b073/bin/perl6 -I /blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/07_meta.t
+[Text::Markdown::Discount] 1..1
+[Text::Markdown::Discount] ok 1 - # SKIP Skipping author test
+===> Testing [FAIL]: Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels>
+[Text::Markdown::Discount] Failed to get passing tests, but continuing with --force-test
+===> Installing: Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels>
+===> Install [OK] for Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels>
