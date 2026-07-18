@@ -1,0 +1,85 @@
+===> Searching for: L10N::ZH
+===> Found: L10N::ZH:ver<0.0.3>:auth<zef:l10n> [via Zef::Repository::Ecosystems<fez>]
+[L10N::ZH] Command: curl --silent -L -o /blin/data/zef-data/tmp/1784320815.59131.910.7677949141613/241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz https://360.zef.pm/L/10/L10N_ZH/241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz
+===> Fetching [OK]: L10N::ZH:ver<0.0.3>:auth<zef:l10n> to /blin/data/zef-data/tmp/1784320815.59131.910.7677949141613/241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz
+[L10N::ZH] Command: tar -t -f ./241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz
+[L10N::ZH] Command: tar -xvf ./241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz -C ../241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz
+===> Extraction [OK]: L10N::ZH to /blin/data/zef-data/tmp/241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz
+===> Testing: L10N::ZH:ver<0.0.3>:auth<zef:l10n>
+[L10N::ZH] Command: /tmp/whateverable/rakudo-moar/8b21bfd10500c2f53419de91288ea8617e072d60/bin/perl6 -I /blin/data/zef-data/tmp/241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz/L10N-ZH-0.0.3 t/01-basic.rakutest
+[L10N::ZH] ok 1 - 中文本地化测试开始
+[L10N::ZH] 1..1
+[L10N::ZH] Command: /tmp/whateverable/rakudo-moar/8b21bfd10500c2f53419de91288ea8617e072d60/bin/perl6 -I /blin/data/zef-data/tmp/241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz/L10N-ZH-0.0.3 t/10-block.rakutest
+[L10N::ZH] ok 1 - 如果
+[L10N::ZH] ok 2 - 如果-否则
+[L10N::ZH] ok 3 - 如果不
+[L10N::ZH] ok 4 - 若定义且真
+[L10N::ZH] ok 5 - 若未定义或假
+[L10N::ZH] ok 6 - 或用
+[L10N::ZH] ===SORRY!=== Error while compiling /blin/data/zef-data/tmp/241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz/L10N-ZH-0.0.3/EVAL_12
+[L10N::ZH] Unexpected block in infix position (missing statement control word before the expression? Or did you forget a semi-colon?)
+[L10N::ZH] at /blin/data/zef-data/tmp/241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz/L10N-ZH-0.0.3/EVAL_12:2
+[L10N::ZH] ------> 局部 $result = do 若定义且真 $value<HERE> {
+[L10N::ZH] Command: /tmp/whateverable/rakudo-moar/8b21bfd10500c2f53419de91288ea8617e072d60/bin/perl6 -I /blin/data/zef-data/tmp/241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz/L10N-ZH-0.0.3 t/11-use-import.rakutest
+[L10N::ZH] ok 1 - 使用
+[L10N::ZH] ok 2 - 导入
+[L10N::ZH] 1..2
+[L10N::ZH] Command: /tmp/whateverable/rakudo-moar/8b21bfd10500c2f53419de91288ea8617e072d60/bin/perl6 -I /blin/data/zef-data/tmp/241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz/L10N-ZH-0.0.3 t/12-scope.rakutest
+[L10N::ZH] ok 1 - 局部
+[L10N::ZH] ok 2 - 公开
+[L10N::ZH] ok 3 - 持续量
+[L10N::ZH] 1..3
+[L10N::ZH] Command: /tmp/whateverable/rakudo-moar/8b21bfd10500c2f53419de91288ea8617e072d60/bin/perl6 -I /blin/data/zef-data/tmp/241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz/L10N-ZH-0.0.3 t/13-package.rakutest
+[L10N::ZH] ok 1 - 类
+[L10N::ZH] ok 2 - 模块
+[L10N::ZH] ok 3 - 包
+[L10N::ZH] ok 4 - 能力
+[L10N::ZH] ok 5 - 语法
+[L10N::ZH] 1..5
+[L10N::ZH] Command: /tmp/whateverable/rakudo-moar/8b21bfd10500c2f53419de91288ea8617e072d60/bin/perl6 -I /blin/data/zef-data/tmp/241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz/L10N-ZH-0.0.3 t/14-routine.rakutest
+[L10N::ZH] ok 1 - 过程
+[L10N::ZH] ok 2 - 方法
+[L10N::ZH] ok 3 - 非继承方法
+[L10N::ZH] ok 4 - 正则
+[L10N::ZH] ok 5 - 符号
+[L10N::ZH] ok 6 - 规则
+[L10N::ZH] 1..6
+[L10N::ZH] Command: /tmp/whateverable/rakudo-moar/8b21bfd10500c2f53419de91288ea8617e072d60/bin/perl6 -I /blin/data/zef-data/tmp/241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz/L10N-ZH-0.0.3 t/15-modifier.rakutest
+[L10N::ZH] ok 1 - 对每个
+[L10N::ZH] ok 2 - 针对
+[L10N::ZH] ok 3 - 如果
+[L10N::ZH] ok 4 - 如果不
+[L10N::ZH] ok 5 - 直到
+[L10N::ZH] ok 6 - 若是
+[L10N::ZH] ok 7 - 有条件循环
+[L10N::ZH] ok 8 - 若后者定义且真
+[L10N::ZH] ok 9 - 若后者未定义或假
+[L10N::ZH] 1..9
+[L10N::ZH] Command: /tmp/whateverable/rakudo-moar/8b21bfd10500c2f53419de91288ea8617e072d60/bin/perl6 -I /blin/data/zef-data/tmp/241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz/L10N-ZH-0.0.3 t/16-enum-subset.rakutest
+[L10N::ZH] ok 1 - 真
+[L10N::ZH] ok 2 - 假
+[L10N::ZH] ok 3 - 选项集
+[L10N::ZH] ok 4 - 子集
+[L10N::ZH] 1..4
+[L10N::ZH] Command: /tmp/whateverable/rakudo-moar/8b21bfd10500c2f53419de91288ea8617e072d60/bin/perl6 -I /blin/data/zef-data/tmp/241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz/L10N-ZH-0.0.3 t/17-control-flow.rakutest
+[L10N::ZH] ok 1 - 终止循环
+[L10N::ZH] ok 2 - 下一轮循环
+[L10N::ZH] ok 3 - 重新此轮循环
+[L10N::ZH] ok 4 - 返回
+[L10N::ZH] ok 5 - 试试
+[L10N::ZH] ok 6 - 捕获错误
+[L10N::ZH] 1..6
+[L10N::ZH] Command: /tmp/whateverable/rakudo-moar/8b21bfd10500c2f53419de91288ea8617e072d60/bin/perl6 -I /blin/data/zef-data/tmp/241bb932b28aa9e7503e0892023f1d87f0b24f07.tar.gz/L10N-ZH-0.0.3 t/19-logic.rakutest
+[L10N::ZH] ok 1 - 所有
+[L10N::ZH] ok 2 - 任一
+[L10N::ZH] ok 3 - 是否定义
+[L10N::ZH] ok 4 - 是否定义 Nil
+[L10N::ZH] ok 5 - 等待
+[L10N::ZH] 1..5
+===> Testing [FAIL]: L10N::ZH:ver<0.0.3>:auth<zef:l10n>
+[L10N::ZH] Failed to get passing tests, but continuing with --force-test
+===> Installing: L10N::ZH:ver<0.0.3>:auth<zef:l10n>
+===> Install [OK] for L10N::ZH:ver<0.0.3>:auth<zef:l10n>
+
+1 bin/ script [taoyuan] installed to:
+/blin/installed/L10N::ZH_0.0.3/bin
