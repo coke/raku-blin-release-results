@@ -1,0 +1,53 @@
+===> Searching for: Concurrent::Stack
+===> Found: Concurrent::Stack:ver<1.3>:auth<zef:raku-community-modules> [via Zef::Repository::Ecosystems<fez>]
+[Concurrent::Stack] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1786106380.959899.8094.389421731454/3f104691ea959bbdf7e49e351e6042589e47b44f.tar.gz https://360.zef.pm/C/ON/CONCURRENT_STACK/3f104691ea959bbdf7e49e351e6042589e47b44f.tar.gz
+===> Fetching [OK]: Concurrent::Stack:ver<1.3>:auth<zef:raku-community-modules> to /home/coke/sandbox/blin/data/zef-data/tmp/1786106380.959899.8094.389421731454/3f104691ea959bbdf7e49e351e6042589e47b44f.tar.gz
+[Concurrent::Stack] Command: tar -t -f ./3f104691ea959bbdf7e49e351e6042589e47b44f.tar.gz
+[Concurrent::Stack] Command: tar -xvf ./3f104691ea959bbdf7e49e351e6042589e47b44f.tar.gz -C ../3f104691ea959bbdf7e49e351e6042589e47b44f.tar.gz
+===> Extraction [OK]: Concurrent::Stack to /home/coke/sandbox/blin/data/zef-data/tmp/3f104691ea959bbdf7e49e351e6042589e47b44f.tar.gz
+===> Testing: Concurrent::Stack:ver<1.3>:auth<zef:raku-community-modules>
+[Concurrent::Stack] Command: /tmp/whateverable/rakudo-moar/e2fda5d9d2606e251f43f049bd8822537d003a82/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/3f104691ea959bbdf7e49e351e6042589e47b44f.tar.gz/Concurrent-Stack-1.3 t/basic.rakutest
+[Concurrent::Stack] ok 1 - No elements at the start
+[Concurrent::Stack] ok 2 - Empty stack is falsey
+[Concurrent::Stack] ok 3 - Empty stack snapshots to empty Seq
+[Concurrent::Stack] ok 4 - Empty stack snapshots to empty list
+[Concurrent::Stack] ok 5 - Can push a value
+[Concurrent::Stack] ok 6 - 1 element after pushing
+[Concurrent::Stack] ok 7 - Stack with a value is truthy
+[Concurrent::Stack] ok 8 - Can peek when 1 value
+[Concurrent::Stack] ok 9 - Still 1 element after peeking
+[Concurrent::Stack] ok 10 - Correct Seq with one element on stack
+[Concurrent::Stack] ok 11 - Correct list with one element on stack
+[Concurrent::Stack] ok 12 - Can pop when 1 value
+[Concurrent::Stack] ok 13 - No elements after popping the only value
+[Concurrent::Stack] ok 14 - Now-empty stack is falsey
+[Concurrent::Stack] ok 15 - Now-empty stack snapshots to empty Seq
+[Concurrent::Stack] ok 16 - Now-empty stack snapshots to empty list
+[Concurrent::Stack] ok 17 - Trying to peek an empty stack fails
+[Concurrent::Stack] ok 18 - Correct exception type
+[Concurrent::Stack] ok 19 - Correct operation type in exception
+[Concurrent::Stack] ok 20 - Trying to pop an empty stack fails
+[Concurrent::Stack] ok 21 - Correct exception type
+[Concurrent::Stack] ok 22 - Correct operation type in exception
+[Concurrent::Stack] ok 23 - Elements if 6 after 6 push operations
+[Concurrent::Stack] ok 24 - Peeking gives stack top
+[Concurrent::Stack] ok 25 - Peeking again still gives stack top
+[Concurrent::Stack] ok 26 - Popping gives expected value
+[Concurrent::Stack] ok 27 - Popping again gives expected value
+[Concurrent::Stack] ok 28 - Elements is 4 after 6 pushes and 2 pops
+[Concurrent::Stack] ok 29 - Correct Seq after these operations
+[Concurrent::Stack] ok 30 - Correct list after these operations
+[Concurrent::Stack] 1..30
+[Concurrent::Stack] Command: /tmp/whateverable/rakudo-moar/e2fda5d9d2606e251f43f049bd8822537d003a82/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/3f104691ea959bbdf7e49e351e6042589e47b44f.tar.gz/Concurrent-Stack-1.3 t/stress.rakutest
+[Concurrent::Stack] No exception handler located for catch
+[Concurrent::Stack]    at SETTING::src/core.c/Exception.rakumod:65  (/tmp/whateverable/rakudo-moar/e2fda5d9d2606e251f43f049bd8822537d003a82/share/perl6/runtime/CORE.c.setting.moarvm:throw)
+[Concurrent::Stack]  from SETTING::src/core.c/Failure.rakumod:65  (/tmp/whateverable/rakudo-moar/e2fda5d9d2606e251f43f049bd8822537d003a82/share/perl6/runtime/CORE.c.setting.moarvm:throw)
+[Concurrent::Stack]  from SETTING::src/core.c/Failure.rakumod:95  (/tmp/whateverable/rakudo-moar/e2fda5d9d2606e251f43f049bd8822537d003a82/share/perl6/runtime/CORE.c.setting.moarvm:Int)
+[Concurrent::Stack]  from SETTING::src/core.c/atomicops.rakumod:154  (/tmp/whateverable/rakudo-moar/e2fda5d9d2606e251f43f049bd8822537d003a82/share/perl6/runtime/CORE.c.setting.moarvm:infix:<⚛+=>)
+[Concurrent::Stack]  from t/stress.rakutest:15  (<ephemeral file>:)
+[Concurrent::Stack]  from t/stress.rakutest:14  (<ephemeral file>:)
+[Concurrent::Stack]  from SETTING::src/core.c/Thread.rakumod:72  (/tmp/whateverable/rakudo-moar/e2fda5d9d2606e251f43f049bd8822537d003a82/share/perl6/runtime/CORE.c.setting.moarvm:THREAD-ENTRY)
+===> Testing [FAIL]: Concurrent::Stack:ver<1.3>:auth<zef:raku-community-modules>
+[Concurrent::Stack] Failed to get passing tests, but continuing with --force-test
+===> Installing: Concurrent::Stack:ver<1.3>:auth<zef:raku-community-modules>
+===> Install [OK] for Concurrent::Stack:ver<1.3>:auth<zef:raku-community-modules>

@@ -19,7 +19,7 @@ ASCII::To::Uni – OK
 ASN::BER – OK
 ASN::Grammar – OK
 ASN::META – AlwaysFail
-ASTQuery – OK
+ASTQuery – AlwaysFail
 AVL-Tree – OK
 AWS::Pricing – OK
 AWS::SNS::Notification – AlwaysFail
@@ -40,7 +40,7 @@ Acme::Gistribution – AlwaysFail
 Acme::Insult::Lala – OK
 Acme::Mangle – AlwaysFail
 Acme::Meow – OK
-Acme::Overreact – OK
+Acme::Overreact – AlwaysFail
 Acme::OwO – OK
 Acme::Polyglot::Levenshtein::Damerau – OK
 Acme::Rautavistic::Sort – OK
@@ -57,10 +57,13 @@ Actor – OK
 Adventure::Engine – AlwaysFail
 Adverb::Eject – OK
 Air – AlwaysFail
+Air-Plugin-RakuDoc – OK
 Air::Examples – OK
 Air::Play – OK
 Air::Plugin::Asciinema – AlwaysFail
+Air::Plugin::Donate – OK
 Air::Plugin::Hilite – OK
+Air::Plugin::MailForm – AlwaysFail
 Air::Plugin::Rakudoc – AlwaysFail
 Air::Plugin::Wordcloud – AlwaysFail
 Algorithm::AhoCorasick – OK
@@ -142,11 +145,11 @@ App::Perl6LangServer – MissingDependency
 App::Platform – AlwaysFail
 App::Pray – OK
 App::Prove6 – OK
-App::RaCoCo – Fail, Bisected: d8609a46fb9a5685ada2a9e74e1d308ec55095d0
+App::RaCoCo – AlwaysFail
 App::Racoco::Report::ReporterCoveralls – AlwaysFail
 App::Rak – OK
 App::Rak::Complete – OK
-App::Rak::Markdown – AlwaysFail
+App::Rak::Markdown – OK
 App::Raku::Log – OK
 App::RakuCron – AlwaysFail
 App::Rakuman – OK
@@ -224,7 +227,7 @@ Audio::PortMIDI – OK
 Audio::Silan – OK
 Audio::Sndfile – OK
 Audio::TagLib – OK
-Audio::Taglib::Simple – OK
+Audio::Taglib::Simple – AlwaysFail
 Auth::PAM::Simple – AlwaysFail
 Auth::SAML2 – AlwaysFail
 Auth::SASL – AlwaysFail
@@ -234,6 +237,7 @@ Automata::Cellular – OK
 Avolution::Emoji – OK
 Avro – OK
 BDD::Behave – ZefFailure
+BDD::Behave::Playwright – AlwaysFail
 BSON – OK
 BSON::Simple – OK
 BTree – OK
@@ -266,6 +270,7 @@ Bitcoin::RPC::Client – OK
 Bits – OK
 Blin – OK
 BlkMeV – OK
+Blogin – OK
 Brazilian::FederalDocuments – OK
 BreakDancer – AlwaysFail
 Browser::Open – OK
@@ -316,7 +321,7 @@ Cache::Async – AlwaysFail
 Cache::Dir – OK
 Cache::LRU – OK
 Cache::Memcached – AlwaysFail
-Cairo – OK
+Cairo – AlwaysFail
 Calculator – OK
 Calendar – OK
 CamelPub – OK
@@ -548,6 +553,7 @@ Data::Tree – OK
 Data::TypeSystem – OK
 Data::UkraineWar::MoD – AlwaysFail
 DataStar – OK
+Datastar::SDK – OK
 Date::Calendar::Armenian – AlwaysFail
 Date::Calendar::Bahai – AlwaysFail
 Date::Calendar::CopticEthiopic – OK
@@ -633,7 +639,7 @@ Doc::TypeGraph – AlwaysFail
 Docker::API – AlwaysFail
 Docker::File – OK
 Documentable – AlwaysFail
-Doublephone – AlwaysFail
+Doublephone – OK
 Draku – OK
 Draw2D::Furniture – AlwaysFail
 Druid – AlwaysFail
@@ -659,7 +665,8 @@ Electron – AlwaysFail
 Elucid8::Build – AlwaysFail
 Elucid8::Run-locally – OK
 Email::Address – AlwaysFail
-Email::MIME – OK
+Email::MIME – AlwaysFail
+Email::MessageID – OK
 Email::Notmuch – OK
 Email::SendGrid – OK
 Email::Simple – OK
@@ -688,7 +695,7 @@ FFmpegProgressBar – AlwaysFail
 FHIR – AlwaysFail
 FINALIZER – OK
 FStrings – OK
-Facter – Unknown
+Facter – AlwaysFail
 Failable – AlwaysFail
 FanFou – AlwaysFail
 Farabi6 – AlwaysFail
@@ -698,7 +705,7 @@ FastCGI::NativeCall::Async – OK
 FastCGI::NativeCall::PSGI – OK
 Fasta – OK
 FatRatStr – OK
-Fcntl – OK
+Fcntl – AlwaysFail
 FeiShuBot – AlwaysFail
 File-Path-Copy – OK
 File-TreeBuilder – AlwaysFail
@@ -724,7 +731,7 @@ File::Tudo – OK
 File::Utils – OK
 File::Which – OK
 File::XML::DMARC::Google – OK
-File::Zip – AlwaysFail
+File::Zip – OK
 File::file – OK
 FileSystem::Capacity – OK
 FileSystem::Helpers – OK
@@ -812,6 +819,7 @@ Geo::IP2Location::Lite – OK
 Geo::Location – OK
 Geo::Polyline – OK
 Geo::Region – OK
+Geo::Valhalla – AlwaysFail
 Geo::WellKnownBinary – OK
 Geo::WellKnownText – AlwaysFail
 GeoIP2 – OK
@@ -832,19 +840,19 @@ Git::File::History – AlwaysFail
 Git::Files – OK
 Git::Log – OK
 Git::PurePerl – AlwaysFail
-Git::Simple – OK
+Git::Simple – AlwaysFail
 Git::Wrapper – OK
 GitHub::Actions – AlwaysFail
 Github::PublicKeys – OK
 Glob::Grammar – OK
 GlotIO – AlwaysFail
 Gnome::Cairo – AlwaysFail
-Gnome::GObject – AlwaysFail
+Gnome::GObject – OK
 Gnome::Gdk3 – AlwaysFail
 Gnome::Gdk4 – AlwaysFail
-Gnome::GdkPixbuf – AlwaysFail
-Gnome::Gio – AlwaysFail
-Gnome::Glib – AlwaysFail
+Gnome::GdkPixbuf – OK
+Gnome::Gio – OK
+Gnome::Glib – OK
 Gnome::Graphene – AlwaysFail
 Gnome::Gsk4 – AlwaysFail
 Gnome::Gtk3 – AlwaysFail
@@ -921,7 +929,7 @@ HTTP::Router::Blind – OK
 HTTP::Server – AlwaysFail
 HTTP::Server::Async – InstallableButUntested
 HTTP::Server::Async::Plugins::Router::Simple – OK
-HTTP::Server::Logger – AlwaysFail
+HTTP::Server::Logger – OK
 HTTP::Server::Middleware::JSON – OK
 HTTP::Server::Ogre – OK
 HTTP::Server::Router – AlwaysFail
@@ -931,7 +939,7 @@ HTTP::Server::Tiny – OK
 HTTP::Signature – AlwaysFail
 HTTP::Status – OK
 HTTP::Supply – AlwaysFail
-HTTP::Tiny – OK
+HTTP::Tiny – AlwaysFail
 HTTP::Tinyish – OK
 HTTP::UserAgent – AlwaysFail
 HTTP::UserAgent::Strict – AlwaysFail
@@ -987,7 +995,7 @@ IO::Capture::Simple – OK
 IO::CatHandle::AutoLines – OK
 IO::Dir – AlwaysFail
 IO::Glob – AlwaysFail
-IO::Handle::Rollover – OK
+IO::Handle::Rollover – AlwaysFail
 IO::Maildir – OK
 IO::MiddleMan – OK
 IO::Notification::Recursive – OK
@@ -1033,6 +1041,7 @@ Identity::Utils – OK
 Iec104Parser – OK
 Igo – AlwaysFail
 Ikoko – AlwaysFail
+Image::Draft::Review – OK
 Image::Libexif – OK
 Image::Markup::Utilities – OK
 Image::PNG::Inflated – OK
@@ -1094,18 +1103,20 @@ JSON::Marshal – OK
 JSON::Mask – OK
 JSON::Name – OK
 JSON::OptIn – OK
-JSON::Path – AlwaysFail
+JSON::Path – OK
 JSON::Pointer – OK
 JSON::Pretty – OK
 JSON::Pretty::Sorted – AlwaysFail
 JSON::RPC – OK
+JSON::RepositoryEvent – OK
 JSON::Schema – OK
 JSON::Stream – AlwaysFail
 JSON::Tiny – OK
 JSON::Unmarshal – OK
 JSON::WebToken – AlwaysFail
+JSON::Webhook – OK
 JSON::simd – OK
-JSONHound – AlwaysFail
+JSONHound – OK
 JSONL – OK
 Japanese – OK
 Java::Generate – OK
@@ -1124,6 +1135,7 @@ Kind – OK
 Kind::Subset::Parametric – AlwaysFail
 Kivuli – AlwaysFail
 Korean – OK
+Kubernetes – OK
 L10N – OK
 L10N::AF – OK
 L10N::CY – OK
@@ -1138,7 +1150,7 @@ L10N::JA – OK
 L10N::NL – OK
 L10N::PT – OK
 L10N::TLH – OK
-L10N::ZH – OK
+L10N::ZH – AlwaysFail
 LCS::All – OK
 LCS::BV – OK
 LEB128 – OK
@@ -1150,7 +1162,7 @@ LLM::Classifiers::Emotions – OK
 LLM::Containerization – CyclicDependency
 LLM::DWIM – OK
 LLM::Data::ContentTag – OK
-LLM::Data::Inference – OK
+LLM::Data::Inference – AlwaysFail
 LLM::Data::Pipeline – OK
 LLM::Functions – OK
 LLM::Graph – AlwaysFail
@@ -1179,7 +1191,7 @@ LibUUID – AlwaysFail
 LibXML – OK
 LibXML::Class – AlwaysFail
 LibXML::Writer – OK
-LibXSLT – OK
+LibXSLT – AlwaysFail
 LibYAML – AlwaysFail
 LibZip – OK
 Libarchive – AlwaysFail
@@ -1252,8 +1264,8 @@ Log::ZMQ – AlwaysFail
 LogP6 – OK
 LogP6-Writer-Journald – OK
 LogP6::Writer::StackDriver – OK
-Logger – OK
-Logger – OK
+Logger – AlwaysFail
+Logger – AlwaysFail
 Logger::ZMQ – AlwaysFail
 Logic::Ternary – OK
 Lumberjack – OK
@@ -1262,7 +1274,7 @@ Lumberjack::Config::JSON – AlwaysFail
 Lumberjack::Dispatcher::EventSource – AlwaysFail
 Lumberjack::Dispatcher::Syslog – OK
 Lumberjack::Message::JSON – AlwaysFail
-MCP – Fail, Bisected: c9d0f81cca1b8f66feef7ff3cca376593aa6b073
+MCP – OK
 META6 – AlwaysFail
 META6::Query – OK
 META6::To::Man – MissingDependency
@@ -1291,11 +1303,13 @@ MUGS::Games – AlwaysFail
 MUGS::UI::CLI – AlwaysFail
 MUGS::UI::TUI – AlwaysFail
 MUGS::UI::WebSimple – AlwaysFail
+MVC::Keayl – OK
+MVC::Keayl::Admin – AlwaysFail
 Mac::Applications::List – AlwaysFail
 Mac::Battery::Alerter – AlwaysFail
 MacOS::NativeLib – OK
 Magento – OK
-MagickWand – OK
+MagickWand – AlwaysFail
 Manifest::StopWar – OK
 Manifesto – OK
 Map::Agnostic – OK
@@ -1306,7 +1320,7 @@ Map::Match – OK
 Map::Ordered – OK
 Markdown::Grammar – OK
 Markit – OK
-Markup::Calendar – AlwaysFail
+Markup::Calendar – OK
 Marpa – OK
 Marrow – AlwaysFail
 Masquerade – AlwaysFail
@@ -1444,9 +1458,9 @@ NativeHelpers::Blob – OK
 NativeHelpers::CBuffer – OK
 NativeHelpers::Callback – AlwaysFail
 NativeHelpers::iovec – OK
-Needle::Compile – Fail, Bisected: 66b4e5351208d014a992a0f456f52feca3d9cb58
+Needle::Compile – OK
 Net::AMQP – OK
-Net::BGP – OK
+Net::BGP – Fail, Bisected: 8eee823949430a99ce4e2fc8fd2ff8165ac31131
 Net::Curl – AlwaysFail
 Net::DNS – AlwaysFail
 Net::Ethereum – AlwaysFail
@@ -1487,6 +1501,7 @@ Net::netent – AlwaysFail
 Net::protoent – AlwaysFail
 Net::servent – AlwaysFail
 Netstring – OK
+Node::Ethereum::KZG – AlwaysFail
 Node::Ethereum::Keccak256::Native – OK
 Node::Ethereum::KeyStore::V3 – AlwaysFail
 Node::Ethereum::RLP – OK
@@ -1494,6 +1509,7 @@ Noise::Simplex – OK
 Noise::Simplex::Native – OK
 Notcurses::Native – OK
 Notify – OK
+NotoFonts-OT – AlwaysFail
 Num::HexFloat – OK
 Number::Bytes::Human – OK
 Number::Denominate – OK
@@ -1510,6 +1526,7 @@ OO::Monitors – OK
 OO::Plugin – AlwaysFail
 OO::Schema – AlwaysFail
 ORM::ActiveRecord – AlwaysFail
+ORM::Factory – AlwaysFail
 Object::Container – OK
 Object::Delayed – AlwaysFail
 Object::Permission – OK
@@ -1522,9 +1539,9 @@ OneSeq – OK
 OpenAPI::Model – OK
 OpenAPI::Schema::Validate – OK
 OpenCV – AlwaysFail
-OpenMPT::Bindings – AlwaysFail
+OpenMPT::Bindings – OK
 OpenRouter::API – OK
-OpenSSL – AlwaysFail
+OpenSSL – OK
 Operator-grandpa – OK
 Operator::DynvarOr – AlwaysFail
 Operator::Listcat – OK
@@ -1592,8 +1609,8 @@ PDF::Class – OK
 PDF::Combiner – OK
 PDF::Content – OK
 PDF::Document – OK
-PDF::Extract – AlwaysFail
-PDF::Font::Loader – AlwaysFail
+PDF::Extract – OK
+PDF::Font::Loader – OK
 PDF::Font::Loader::CSS – OK
 PDF::Font::Loader::HarfBuzz – OK
 PDF::Grammar – OK
@@ -1604,7 +1621,7 @@ PDF::Lite – OK
 PDF::NameTags – AlwaysFail
 PDF::Native – OK
 PDF::Tags – OK
-PDF::Tags::Reader – AlwaysFail
+PDF::Tags::Reader – OK
 PDF::To::Cairo – OK
 PDF::Writer – OK
 PKCS5 – AlwaysFail
@@ -1654,13 +1671,14 @@ PerlMongers::Hannover – OK
 PerlStore – OK
 Pg::Notify – AlwaysFail
 Phaser::ATEXIT – AlwaysFail
-Pheix – MissingDependency
+Pheix – AlwaysFail
 Physics::Constants – OK
 Physics::Error – OK
 Physics::Measure – OK
 Physics::Navigation – AlwaysFail
 Physics::Unit – OK
 Physics::Vector – AlwaysFail
+Pinterest::URL::Normalizer – OK
 Pleroma – AlwaysFail
 Plosurin – AlwaysFail
 Pluggable – OK
@@ -1672,7 +1690,7 @@ Pod::Literate – OK
 Pod::Load – AlwaysFail
 Pod::Parser – OK
 Pod::Perl5 – OK
-Pod::PerlTricks – Flapper
+Pod::PerlTricks – OK
 Pod::Render – OK
 Pod::Strip – AlwaysFail
 Pod::Tangle – OK
@@ -1745,6 +1763,13 @@ QM – AlwaysFail
 Qt::QtWidgets – AlwaysFail
 QueryOS – OK
 Questhub – OK
+Qwiratry – AlwaysFail
+Qwiratry--Location--HTTP – AlwaysFail
+Qwiratry::Format::JSON – AlwaysFail
+Qwiratry::Format::XML – AlwaysFail
+Qwiratry::Format::YAML – AlwaysFail
+Qwiratry::Location::HTTP – AlwaysFail
+Qwiratry::Test – AlwaysFail
 RDF::Turtle – OK
 REPL – OK
 RKDS – OK
@@ -1754,7 +1779,7 @@ RPi::ButtonWatcher – OK
 RPi::Device::DHT11 – AlwaysFail
 RPi::Device::DS18B20 – OK
 RPi::Device::PiFace – OK
-RPi::Device::PiGlow – AlwaysFail
+RPi::Device::PiGlow – OK
 RPi::Device::SMBus – OK
 RPi::Device::ST7036 – OK
 RPi::GpioDirect – AlwaysFail
@@ -1775,7 +1800,7 @@ RakuDoc::Load – OK
 RakuDoc::Test::Files – OK
 RakuRename – OK
 Rakuast::RakuDoc::Render – AlwaysFail
-Rakudo – AlwaysFail
+Rakudo – OK
 Rakudo::CORE::META – OK
 Rakudo::Cache – OK
 Rakudo::Options – OK
@@ -1810,6 +1835,7 @@ RegexUtils – OK
 Reminders – AlwaysFail
 Repl::Tools – OK
 Repository::Precomp::Cleanup – OK
+RepositoryEvent – OK
 Resend – OK
 Resource::Wrangler – OK
 Result – OK
@@ -1855,7 +1881,7 @@ Scientist – OK
 Script::Hash – AlwaysFail
 Search::Dict – OK
 SelectiveImporting – OK
-Selenium::WebDriver – OK
+Selenium::WebDriver – AlwaysFail
 Selkie – OK
 Selkie::UI – OK
 Semantic::Versioning – OK
@@ -1873,7 +1899,7 @@ Set::Equality – OK
 Shareable – OK
 Shell::Capture – AlwaysFail
 Shell::Command – OK
-Shell::DSL – OK
+Shell::DSL – AlwaysFail
 Shell::Piping – AlwaysFail
 Shelve6 – AlwaysFail
 Shodan – OK
@@ -1959,7 +1985,7 @@ Statistics::Distributions – OK
 Statistics::LinearRegression – OK
 Statistics::OutlierIdentifiers – OK
 Stats – OK
-Stomp – ZefFailure
+Stomp – OK
 Storable::Lite – OK
 Stream::Buffered – OK
 StrictClass – OK
@@ -1992,11 +2018,12 @@ Sway::Config – AlwaysFail
 Sway::PreviewKeys – AlwaysFail
 Swedish::TextDates_sv – OK
 Symbol – OK
+Syndicate – OK
 Syndication – OK
 Syntax::Highlighters – OK
 Sys::Chown – OK
 Sys::Domainname – OK
-Sys::HostAddr – AlwaysFail
+Sys::HostAddr – OK
 Sys::Hostname – OK
 Sys::IP – OK
 Sys::Lastlog – OK
@@ -2019,8 +2046,8 @@ TOML – OK
 TOML::Thumb – OK
 TOP – OK
 TXN – ZefFailure
-TXN::Parser – ZefFailure
-TXN::Remarshal – ZefFailure
+TXN::Parser – AlwaysFail
+TXN::Remarshal – AlwaysFail
 TagLibC – OK
 Task::Galaxy – MissingDependency
 Task::Popular – OK
@@ -2050,6 +2077,7 @@ Term::Size – OK
 Term::TablePrint – OK
 Term::termios – OK
 Termbox – AlwaysFail
+Termbox2 – AlwaysFail
 Terminal-API – AlwaysFail
 Terminal-MakeRaw – AlwaysFail
 Terminal-Widgets-Plugins-Anolis – OK
@@ -2076,7 +2104,7 @@ Terminal::WCWidth – OK
 Terminal::Widgets – OK
 Terminal::Width – AlwaysFail
 Test::Assertion – OK
-Test::Async – Flapper
+Test::Async – OK
 Test::Base – AlwaysFail
 Test::Builder – OK
 Test::Class – OK
@@ -2143,7 +2171,7 @@ Text::Levenshtein – OK
 Text::Levenshtein::Damerau – OK
 Text::Lorem – OK
 Text::Markdown – OK
-Text::Markdown::Discount – Fail, Bisected: e88c5f6e4ea6013f1994754bb576c60bc2847679
+Text::Markdown::Discount – Fail, Bisected: 60357e53b2a5dc1a32afaf5689da96a7bd19aeab 96c7630c322fee7de2a769a53fd78575289b7ee5
 Text::Markov – OK
 Text::MathematicalCase – OK
 Text::MiscUtils – OK
@@ -2276,6 +2304,7 @@ Version::RubyGems – OK
 Version::Semantic – OK
 Version::Semver – OK
 Version::Semverish – OK
+Video::Prompt::Brief – OK
 Vikna – AlwaysFail
 Vips::Native – OK
 Vroom::Reveal – AlwaysFail
@@ -2296,10 +2325,13 @@ WWW::MermaidInk – OK
 WWW::MistralAI – OK
 WWW::Ollama – OK
 WWW::OpenAI – OK
+WWW::OpenRouter – OK
 WWW::P6lert – AlwaysFail
 WWW::PaLM – OK
+WWW::Playwright – AlwaysFail
 WWW::SilverGoldBull – OK
 WWW::WolframAlpha – OK
+WWW::XAI – OK
 WWW::YouTube – OK
 WWW::vlc::Remote – OK
 WaitGroup – OK
