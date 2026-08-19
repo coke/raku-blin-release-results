@@ -105,7 +105,7 @@ Amazon::DynamoDB – OK
 Anolis – OK
 Apache::LogFormat – OK
 App::APOTD – OK
-App::AizuOnlineJudge – Unknown
+App::AizuOnlineJudge – OK
 App::Ariza – AlwaysFail
 App::Assixt – AlwaysFail
 App::Backup – AlwaysFail
@@ -178,7 +178,7 @@ App::pixel-pick – AlwaysFail
 App::pixel::pick – AlwaysFail
 App::pixelpick – AlwaysFail
 App::redpanda – OK
-App::samaki – Unknown
+App::samaki – AlwaysFail
 App::snippet – AlwaysFail
 App::termie – OK
 App::tmeta – OK
@@ -300,7 +300,7 @@ CLI::Wordpress::Migrator – OK
 CPAN::Uploader::Tiny – OK
 CRDT – OK
 CRoaring – OK
-CSS – Unknown
+CSS – AlwaysFail
 CSS::Font::Resources – OK
 CSS::Grammar – OK
 CSS::Minifier – OK
@@ -440,7 +440,7 @@ Cro::HTTP::BodySerializerJSONClass – AlwaysFail
 Cro::HTTP::RouterUtils – AlwaysFail
 Cro::HTTP::Session::MySQL – AlwaysFail
 Cro::HTTP::Session::Pg – AlwaysFail
-Cro::HTTP::Session::Red – Unknown
+Cro::HTTP::Session::Red – AlwaysFail
 Cro::HTTP::Session::Redis – AlwaysFail
 Cro::HTTP::Session::SQLite – OK
 Cro::HTTP::Test – OK
@@ -754,7 +754,7 @@ Font::FreeType – OK
 Font::QueryInfo – AlwaysFail
 FontConfig – OK
 FontConverter – AlwaysFail
-FontFactory::Type1 – Unknown
+FontFactory::Type1 – OK
 Foo – OK
 Foo:: Foo – UnhandledException
 Foo::
@@ -901,7 +901,7 @@ Gumbo – AlwaysFail
 Gzz::Prompt – OK
 Gzz::Text::Utils – AlwaysFail
 HTML::Canvas – AlwaysFail
-HTML::Canvas::To::PDF – Unknown
+HTML::Canvas::To::PDF – AlwaysFail
 HTML::Component – OK
 HTML::Entity – AlwaysFail
 HTML::Entity::Fast – OK
@@ -1090,7 +1090,7 @@ IntlPromptYesNo – OK
 IoC – OK
 Iter::Able – AlwaysFail
 JS::Minify – OK
-JSON-CSV – Unknown
+JSON-CSV – OK
 JSON-Simd – OK
 JSON5::Tiny – AlwaysFail
 JSON::Class – AlwaysFail
@@ -1113,7 +1113,7 @@ JSON::Pretty::Sorted – AlwaysFail
 JSON::RPC – OK
 JSON::RepositoryEvent – OK
 JSON::Schema – OK
-JSON::Stream – Unknown
+JSON::Stream – ZefFailure
 JSON::Tiny – OK
 JSON::Unmarshal – OK
 JSON::WebToken – AlwaysFail
@@ -1304,14 +1304,14 @@ MPD – OK
 MPD::Client – AlwaysFail
 MQ::Posix – OK
 MQTT::Client – OK
-MUGS – Unknown
-MUGS::Core – Unknown
-MUGS::Games – Unknown
-MUGS::UI::CLI – Unknown
-MUGS::UI::TUI – Unknown
-MUGS::UI::WebSimple – Unknown
-MVC::Keayl – Unknown
-MVC::Keayl::Admin – Unknown
+MUGS – AlwaysFail
+MUGS::Core – AlwaysFail
+MUGS::Games – AlwaysFail
+MUGS::UI::CLI – AlwaysFail
+MUGS::UI::TUI – AlwaysFail
+MUGS::UI::WebSimple – AlwaysFail
+MVC::Keayl – OK
+MVC::Keayl::Admin – AlwaysFail
 Mac::Applications::List – AlwaysFail
 Mac::Battery::Alerter – AlwaysFail
 MacOS::AudioDevices – AlwaysFail
@@ -1427,7 +1427,7 @@ Metropolis – OK
 Mi6::Helper – AlwaysFail
 Migration::RTtoGithub – OK
 MinG – OK
-Mint – Unknown
+Mint – AlwaysFail
 Mmap::Native – AlwaysFail
 MoarVM::Bytecode – OK
 MoarVM::Profile – AlwaysFail
@@ -1469,7 +1469,7 @@ NativeHelpers::Callback – AlwaysFail
 NativeHelpers::iovec – OK
 Needle::Compile – OK
 Net::AMQP – OK
-Net::BGP – Unknown
+Net::BGP – Fail, Bisected: 9cf4f2d2412f6d0b8ba6864d26fb6b1f791fb05e
 Net::Curl – AlwaysFail
 Net::DNS – AlwaysFail
 Net::Ethereum – AlwaysFail
@@ -1518,7 +1518,7 @@ Noise::Simplex – OK
 Noise::Simplex::Native – OK
 Notcurses::Native – AlwaysFail
 Notify – OK
-NotoFonts-OT – Unknown
+NotoFonts-OT – OK
 Num::HexFloat – OK
 Number::Bytes::Human – OK
 Number::Denominate – OK
@@ -1534,8 +1534,8 @@ OO::Actors – OK
 OO::Monitors – OK
 OO::Plugin – AlwaysFail
 OO::Schema – AlwaysFail
-ORM::ActiveRecord – Unknown
-ORM::Factory – Unknown
+ORM::ActiveRecord – AlwaysFail
+ORM::Factory – AlwaysFail
 Object::Container – OK
 Object::Delayed – AlwaysFail
 Object::Permission – OK
@@ -1617,7 +1617,7 @@ PDF::API6 – OK
 PDF::Class – OK
 PDF::Combiner – OK
 PDF::Content – OK
-PDF::Document – Unknown
+PDF::Document – OK
 PDF::Extract – OK
 PDF::Font::Loader – OK
 PDF::Font::Loader::CSS – OK
@@ -1627,11 +1627,11 @@ PDF::ISO_32000 – OK
 PDF::ISO_32000_2 – OK
 PDF::Labelmaker – OK
 PDF::Lite – OK
-PDF::NameTags – Unknown
+PDF::NameTags – AlwaysFail
 PDF::Native – OK
-PDF::Tags – Unknown
-PDF::Tags::Reader – Unknown
-PDF::To::Cairo – Unknown
+PDF::Tags – OK
+PDF::Tags::Reader – OK
+PDF::To::Cairo – OK
 PDF::Writer – OK
 PKCS5 – OK
 PKafka – OK
@@ -1671,7 +1671,7 @@ Perl6-Math-Quaternion – AlwaysFail
 Perl6::Documentable – AlwaysFail
 Perl6::Ecosystem – AlwaysFail
 Perl6::Literate – AlwaysFail
-Perl6::Maven – Unknown
+Perl6::Maven – AlwaysFail
 Perl6::Parser – AlwaysFail
 Perl6::Tidy – AlwaysFail
 Perl6::Tracer – MissingDependency
@@ -1835,8 +1835,8 @@ Readline – OK
 Reaper::Control – OK
 Recipe::Parser – OK
 Red – AlwaysFail
-RedFactory – Unknown
-RedX::HashedPassword – Unknown
+RedFactory – AlwaysFail
+RedX::HashedPassword – AlwaysFail
 Redis – OK
 Redis::Async – OK
 Regex::FuzzyToken – OK
@@ -1943,11 +1943,11 @@ Sort-Fast – AlwaysFail
 Sort::Naturally – OK
 Soundn::Tina – OK
 Spanish – AlwaysFail
-Sparky – Unknown
+Sparky – OK
 Sparky-Job-Api – OK
-Sparky::Plugin::Hello – Unknown
-Sparky::Plugin::Notify::Email – Unknown
-Sparky::Plugin::Notify::Telegram – Unknown
+Sparky::Plugin::Hello – OK
+Sparky::Plugin::Notify::Email – OK
+Sparky::Plugin::Notify::Telegram – OK
 Sparrow6 – OK
 Sparrow6::Rakudo::Install – OK
 SparrowCI – OK
@@ -2436,7 +2436,7 @@ caelum – OK
 cmark::Simple – AlwaysFail
 colomon::App::TagTools – OK
 content-storage-cli – OK
-cro – Unknown
+cro – ZefFailure
 delete-old-until-size – OK
 deredere – OK
 dosh – AlwaysFail
