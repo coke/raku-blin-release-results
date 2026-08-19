@@ -1,0 +1,9 @@
+Running as unit: run-p3359694-i3416202.service; invocation ID: 74e0e1348564494d9778733b26619f6d
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: AI::NLP
+No candidates found matching identity: AI::NLP
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=255/EXCEPTION
+               Service runtime: 1min 26.700s
+             CPU time consumed: 1min 21.674s
+                   Memory peak: 864.6M (swap: 114.1M)
