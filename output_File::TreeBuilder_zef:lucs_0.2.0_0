@@ -1,0 +1,28 @@
+Running as unit: run-p3753126-i3801566.service; invocation ID: 356d7d59d8464d3487194125f90434e8
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: File::TreeBuilder
+===> Found: File::TreeBuilder:ver<0.2.0>:auth<zef:lucs> [via Zef::Repository::Ecosystems<fez>]
+[File::TreeBuilder] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1787162543.3753129.13.12011407766267/29dc69fda1a8a9bdb41aa2be428f22387b221cbe.tar.gz https://360.zef.pm/F/IL/FILE_TREEBUILDER/29dc69fda1a8a9bdb41aa2be428f22387b221cbe.tar.gz
+===> Fetching [OK]: File::TreeBuilder:ver<0.2.0>:auth<zef:lucs> to /home/coke/sandbox/blin/data/zef-data/tmp/1787162543.3753129.13.12011407766267/29dc69fda1a8a9bdb41aa2be428f22387b221cbe.tar.gz
+[File::TreeBuilder] Command: tar -t -f ./29dc69fda1a8a9bdb41aa2be428f22387b221cbe.tar.gz
+[File::TreeBuilder] Command: tar -xvf ./29dc69fda1a8a9bdb41aa2be428f22387b221cbe.tar.gz -C ../29dc69fda1a8a9bdb41aa2be428f22387b221cbe.tar.gz
+===> Extraction [OK]: File::TreeBuilder to /home/coke/sandbox/blin/data/zef-data/tmp/29dc69fda1a8a9bdb41aa2be428f22387b221cbe.tar.gz
+===> Testing: File::TreeBuilder:ver<0.2.0>:auth<zef:lucs>
+[File::TreeBuilder] Command: /tmp/whateverable/rakudo-moar/0930c6faccb75cafcc61cfede63063d4c4e18cc2/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/29dc69fda1a8a9bdb41aa2be428f22387b221cbe.tar.gz t/main.rakutest
+[File::TreeBuilder] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/29dc69fda1a8a9bdb41aa2be428f22387b221cbe.tar.gz/t/main.rakutest
+[File::TreeBuilder] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Test::Selector_zef:lucs_0.4.1_0/sources/24399444270EBDCCD786B361A1F0AEB4FE3383FD (Test::Selector)
+[File::TreeBuilder] No unspace allowed in regex; if you meant to match the literal
+[File::TreeBuilder] character, please enclose in single quotes (' ') or use a backslashed
+[File::TreeBuilder] form like \x20.
+[File::TreeBuilder] at /home/coke/sandbox/blin/installed/Test::Selector_zef:lucs_0.4.1_0/sources/24399444270EBDCCD786B361A1F0AEB4FE3383FD (Test::Selector):614
+[File::TreeBuilder] ------>                     / ^ \s* ok \ <HERE>/ ||
+[File::TreeBuilder] at /home/coke/sandbox/blin/data/zef-data/tmp/29dc69fda1a8a9bdb41aa2be428f22387b221cbe.tar.gz/t/main.rakutest:2
+===> Testing [FAIL]: File::TreeBuilder:ver<0.2.0>:auth<zef:lucs>
+[File::TreeBuilder] Failed to get passing tests, but continuing with --force-test
+===> Installing: File::TreeBuilder:ver<0.2.0>:auth<zef:lucs>
+===> Install [OK] for File::TreeBuilder:ver<0.2.0>:auth<zef:lucs>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 2min 1.675s
+             CPU time consumed: 2min 2.471s
+                   Memory peak: 1.3G (swap: 117M)

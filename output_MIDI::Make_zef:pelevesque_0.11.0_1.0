@@ -1,0 +1,28 @@
+Running as unit: run-p3753393-i3801576.service; invocation ID: e0b0fce6fa6d4c13addc2ee439c8db33
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: MIDI::Make
+===> Found: MIDI::Make:ver<0.11.0>:auth<zef:pelevesque>:api<1.0> [via Zef::Repository::Ecosystems<fez>]
+[MIDI::Make] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1787162545.3753396.5430.68188473931/b3ef75d1f30caf73071db445133800001bfcbd60.tar.gz https://360.zef.pm/M/ID/MIDI_MAKE/b3ef75d1f30caf73071db445133800001bfcbd60.tar.gz
+===> Fetching [OK]: MIDI::Make:ver<0.11.0>:auth<zef:pelevesque>:api<1.0> to /home/coke/sandbox/blin/data/zef-data/tmp/1787162545.3753396.5430.68188473931/b3ef75d1f30caf73071db445133800001bfcbd60.tar.gz
+[MIDI::Make] Command: tar -t -f ./b3ef75d1f30caf73071db445133800001bfcbd60.tar.gz
+[MIDI::Make] Command: tar -xvf ./b3ef75d1f30caf73071db445133800001bfcbd60.tar.gz -C ../b3ef75d1f30caf73071db445133800001bfcbd60.tar.gz
+===> Extraction [OK]: MIDI::Make to /home/coke/sandbox/blin/data/zef-data/tmp/b3ef75d1f30caf73071db445133800001bfcbd60.tar.gz
+===> Testing: MIDI::Make:ver<0.11.0>:auth<zef:pelevesque>:api<1.0>
+[MIDI::Make] Command: /tmp/whateverable/rakudo-moar/0930c6faccb75cafcc61cfede63063d4c4e18cc2/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/b3ef75d1f30caf73071db445133800001bfcbd60.tar.gz t/all.rakutest
+[MIDI::Make] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/b3ef75d1f30caf73071db445133800001bfcbd60.tar.gz/t/all.rakutest
+[MIDI::Make] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Test::Selector_zef:lucs_0.4.1_0/sources/24399444270EBDCCD786B361A1F0AEB4FE3383FD (Test::Selector)
+[MIDI::Make] No unspace allowed in regex; if you meant to match the literal
+[MIDI::Make] character, please enclose in single quotes (' ') or use a backslashed
+[MIDI::Make] form like \x20.
+[MIDI::Make] at /home/coke/sandbox/blin/installed/Test::Selector_zef:lucs_0.4.1_0/sources/24399444270EBDCCD786B361A1F0AEB4FE3383FD (Test::Selector):614
+[MIDI::Make] ------>                     / ^ \s* ok \ <HERE>/ ||
+[MIDI::Make] at /home/coke/sandbox/blin/data/zef-data/tmp/b3ef75d1f30caf73071db445133800001bfcbd60.tar.gz/t/all.rakutest:2
+===> Testing [FAIL]: MIDI::Make:ver<0.11.0>:auth<zef:pelevesque>:api<1.0>
+[MIDI::Make] Failed to get passing tests, but continuing with --force-test
+===> Installing: MIDI::Make:ver<0.11.0>:auth<zef:pelevesque>:api<1.0>
+===> Install [OK] for MIDI::Make:ver<0.11.0>:auth<zef:pelevesque>:api<1.0>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 1min 56.437s
+             CPU time consumed: 1min 58.546s
+                   Memory peak: 1.3G (swap: 143M)
