@@ -1,0 +1,16 @@
+Running as unit: run-p651340-i624365.service; invocation ID: 6fba4176e5984a8ab74c69c7c9ee24ff
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Slangify::Tutorial
+===> Found: Slangify::Tutorial:ver<0.0.1>:auth<zef:librasteve> [via Zef::Repository::Ecosystems<fez>]
+[Slangify::Tutorial] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1787611146.651345.9082.1469861275/b5e7f20a7b0819d2ceca5d19a1f9e8a68cf25f1a.tar.gz https://360.zef.pm/S/LA/SLANGIFY_TUTORIAL/b5e7f20a7b0819d2ceca5d19a1f9e8a68cf25f1a.tar.gz
+===> Fetching [OK]: Slangify::Tutorial:ver<0.0.1>:auth<zef:librasteve> to /home/coke/sandbox/blin/data/zef-data/tmp/1787611146.651345.9082.1469861275/b5e7f20a7b0819d2ceca5d19a1f9e8a68cf25f1a.tar.gz
+[Slangify::Tutorial] Command: tar -t -f ./b5e7f20a7b0819d2ceca5d19a1f9e8a68cf25f1a.tar.gz
+[Slangify::Tutorial] Command: tar -xvf ./b5e7f20a7b0819d2ceca5d19a1f9e8a68cf25f1a.tar.gz -C ../b5e7f20a7b0819d2ceca5d19a1f9e8a68cf25f1a.tar.gz
+===> Extraction [OK]: Slangify::Tutorial to /home/coke/sandbox/blin/data/zef-data/tmp/b5e7f20a7b0819d2ceca5d19a1f9e8a68cf25f1a.tar.gz
+===> Testing: Slangify::Tutorial:ver<0.0.1>:auth<zef:librasteve>
+[Slangify::Tutorial] Command: /tmp/whateverable/rakudo-moar/561c5121dbf8d84c5ed815e7e57831707e58d713/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/b5e7f20a7b0819d2ceca5d19a1f9e8a68cf25f1a.tar.gz/Slangify-Tutorial-0.0.1 t/01-basic.rakutest
+          Finished with result: oom-kill
+Main processes terminated with: code=killed, status=9/KILL
+               Service runtime: 4min 49.303s
+             CPU time consumed: 3min 15.479s
+                   Memory peak: 2G (swap: 807.1M)

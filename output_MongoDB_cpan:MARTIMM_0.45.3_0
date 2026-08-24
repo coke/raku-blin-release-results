@@ -1,0 +1,16 @@
+Running as unit: run-p569226-i560034.service; invocation ID: 25b6e47a6fc24cfa8465879489c52be9
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: MongoDB
+===> Found: MongoDB:ver<0.45.3>:auth<cpan:MARTIMM> [via Zef::Repository::Ecosystems<rea>]
+[MongoDB] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1787608780.569229.985.2996026580585/MongoDB%3Aver%3C0.45.3%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/M/MongoDB/MongoDB%3Aver%3C0.45.3%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz
+===> Fetching [OK]: MongoDB:ver<0.45.3>:auth<cpan:MARTIMM> to /home/coke/sandbox/blin/data/zef-data/tmp/1787608780.569229.985.2996026580585/MongoDB%3Aver%3C0.45.3%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz
+[MongoDB] Command: tar -t -f ./MongoDB%3Aver%3C0.45.3%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz
+[MongoDB] Command: tar -xvf ./MongoDB%3Aver%3C0.45.3%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz -C ../MongoDB%3Aver%3C0.45.3%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz
+===> Extraction [OK]: MongoDB to /home/coke/sandbox/blin/data/zef-data/tmp/MongoDB%3Aver%3C0.45.3%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz
+===> Testing: MongoDB:ver<0.45.3>:auth<cpan:MARTIMM>
+[MongoDB] Command: /tmp/whateverable/rakudo-moar/561c5121dbf8d84c5ed815e7e57831707e58d713/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/MongoDB%3Aver%3C0.45.3%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz/raku-mongodb-driver-0.45.3 t/MongoDB-Load-Test.rakutest
+          Finished with result: oom-kill
+Main processes terminated with: code=killed, status=9/KILL
+               Service runtime: 4min 43.997s
+             CPU time consumed: 3min 14.400s
+                   Memory peak: 2.4G (swap: 1.1G)

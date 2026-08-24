@@ -1,0 +1,16 @@
+Running as unit: run-p689024-i605238.service; invocation ID: 5b0b9877930441c9af6275bbc4fc23c0
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: PDF::Font::Loader::CSS
+===> Found: PDF::Font::Loader::CSS:ver<0.0.1>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
+[PDF::Font::Loader::CSS] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1787612307.689036.4321.307628283928/cac2fa07550d5e0360360821bfc2b4b685bc5ead.tar.gz https://360.zef.pm/P/DF/PDF_FONT_LOADER_CSS/cac2fa07550d5e0360360821bfc2b4b685bc5ead.tar.gz
+===> Fetching [OK]: PDF::Font::Loader::CSS:ver<0.0.1>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1787612307.689036.4321.307628283928/cac2fa07550d5e0360360821bfc2b4b685bc5ead.tar.gz
+[PDF::Font::Loader::CSS] Command: tar -t -f ./cac2fa07550d5e0360360821bfc2b4b685bc5ead.tar.gz
+[PDF::Font::Loader::CSS] Command: tar -xvf ./cac2fa07550d5e0360360821bfc2b4b685bc5ead.tar.gz -C ../cac2fa07550d5e0360360821bfc2b4b685bc5ead.tar.gz
+===> Extraction [OK]: PDF::Font::Loader::CSS to /home/coke/sandbox/blin/data/zef-data/tmp/cac2fa07550d5e0360360821bfc2b4b685bc5ead.tar.gz
+===> Testing: PDF::Font::Loader::CSS:ver<0.0.1>:auth<zef:dwarring>
+[PDF::Font::Loader::CSS] Command: /tmp/whateverable/rakudo-moar/561c5121dbf8d84c5ed815e7e57831707e58d713/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cac2fa07550d5e0360360821bfc2b4b685bc5ead.tar.gz/dist t/01basic.t
+          Finished with result: oom-kill
+Main processes terminated with: code=killed, status=9/KILL
+               Service runtime: 4min 7.804s
+             CPU time consumed: 2min 58.830s
+                   Memory peak: 2.4G (swap: 1.1G)

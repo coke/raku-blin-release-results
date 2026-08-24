@@ -1,0 +1,16 @@
+Running as unit: run-p475334-i512216.service; invocation ID: 657de9afac7d41579e52cce3a7a5859a
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Cro::HTTP::Test
+===> Found: Cro::HTTP::Test:ver<0.8.1>:auth<cpan:JNTHN> [via Zef::Repository::Ecosystems<rea>]
+[Cro::HTTP::Test] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1787606273.475347.5302.354247433723/Cro%3A%3AHTTP%3A%3ATest%3Aver%3C0.8.1%3E%3Aauth%3Ccpan%3AJNTHN%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/C/Cro%3A%3AHTTP%3A%3ATest/Cro%3A%3AHTTP%3A%3ATest%3Aver%3C0.8.1%3E%3Aauth%3Ccpan%3AJNTHN%3E.tar.gz
+===> Fetching [OK]: Cro::HTTP::Test:ver<0.8.1>:auth<cpan:JNTHN> to /home/coke/sandbox/blin/data/zef-data/tmp/1787606273.475347.5302.354247433723/Cro%3A%3AHTTP%3A%3ATest%3Aver%3C0.8.1%3E%3Aauth%3Ccpan%3AJNTHN%3E.tar.gz
+[Cro::HTTP::Test] Command: tar -t -f ./Cro%3A%3AHTTP%3A%3ATest%3Aver%3C0.8.1%3E%3Aauth%3Ccpan%3AJNTHN%3E.tar.gz
+[Cro::HTTP::Test] Command: tar -xvf ./Cro%3A%3AHTTP%3A%3ATest%3Aver%3C0.8.1%3E%3Aauth%3Ccpan%3AJNTHN%3E.tar.gz -C ../Cro%3A%3AHTTP%3A%3ATest%3Aver%3C0.8.1%3E%3Aauth%3Ccpan%3AJNTHN%3E.tar.gz
+===> Extraction [OK]: Cro::HTTP::Test to /home/coke/sandbox/blin/data/zef-data/tmp/Cro%3A%3AHTTP%3A%3ATest%3Aver%3C0.8.1%3E%3Aauth%3Ccpan%3AJNTHN%3E.tar.gz
+===> Testing: Cro::HTTP::Test:ver<0.8.1>
+[Cro::HTTP::Test] Command: /tmp/whateverable/rakudo-moar/561c5121dbf8d84c5ed815e7e57831707e58d713/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Cro%3A%3AHTTP%3A%3ATest%3Aver%3C0.8.1%3E%3Aauth%3Ccpan%3AJNTHN%3E.tar.gz/Cro-HTTP-Test t/checks.t
+          Finished with result: oom-kill
+Main processes terminated with: code=killed, status=9/KILL
+               Service runtime: 3min 23.147s
+             CPU time consumed: 2min 38.950s
+                   Memory peak: 2.1G (swap: 877.6M)
