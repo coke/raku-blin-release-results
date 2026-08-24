@@ -1,0 +1,9 @@
+Running as unit: run-p148596-i129071.service; invocation ID: d32e2a4b6a384e828be4d2a33c1e729f
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: ADT
+No candidates found matching identity: ADT
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=255/EXCEPTION
+               Service runtime: 1min 23.551s
+             CPU time consumed: 1min 17.733s
+                   Memory peak: 892.7M (swap: 92.7M)

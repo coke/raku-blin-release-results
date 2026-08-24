@@ -1,0 +1,16 @@
+Running as unit: run-p472484-i411942.service
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: API::USNavalObservatory
+===> Found: API::USNavalObservatory:ver<1.1.0> [via Zef::Repository::Ecosystems<rea>]
+[API::USNavalObservatory] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1787606177.472488.1777.2850302271427/API%3A%3AUSNavalObservatory%3Aver%3C1.1.0%3E%3Aauth%3Cgithub%3Acbk%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/A/API%3A%3AUSNavalObservatory/API%3A%3AUSNavalObservatory%3Aver%3C1.1.0%3E%3Aauth%3Cgithub%3Acbk%3E.tar.gz
+===> Fetching [OK]: API::USNavalObservatory:ver<1.1.0> to /home/coke/sandbox/blin/data/zef-data/tmp/1787606177.472488.1777.2850302271427/API%3A%3AUSNavalObservatory%3Aver%3C1.1.0%3E%3Aauth%3Cgithub%3Acbk%3E.tar.gz
+[API::USNavalObservatory] Command: tar -t -f ./API%3A%3AUSNavalObservatory%3Aver%3C1.1.0%3E%3Aauth%3Cgithub%3Acbk%3E.tar.gz
+[API::USNavalObservatory] Command: tar -xvf ./API%3A%3AUSNavalObservatory%3Aver%3C1.1.0%3E%3Aauth%3Cgithub%3Acbk%3E.tar.gz -C ../API%3A%3AUSNavalObservatory%3Aver%3C1.1.0%3E%3Aauth%3Cgithub%3Acbk%3E.tar.gz
+===> Extraction [OK]: API::USNavalObservatory to /home/coke/sandbox/blin/data/zef-data/tmp/API%3A%3AUSNavalObservatory%3Aver%3C1.1.0%3E%3Aauth%3Cgithub%3Acbk%3E.tar.gz
+===> Testing: API::USNavalObservatory:ver<1.1.0>
+[API::USNavalObservatory] Command: /tmp/whateverable/rakudo-moar/561c5121dbf8d84c5ed815e7e57831707e58d713/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/API%3A%3AUSNavalObservatory%3Aver%3C1.1.0%3E%3Aauth%3Cgithub%3Acbk%3E.tar.gz/API-USNavalObservatory-master t/10-travis.t
+          Finished with result: oom-kill
+Main processes terminated with: code=killed, status=9/KILL
+               Service runtime: 4min 27.918s
+             CPU time consumed: 3min 51.978s
+                   Memory peak: 2.7G (swap: 1.2G)
