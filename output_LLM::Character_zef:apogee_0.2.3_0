@@ -1,0 +1,495 @@
+Running as unit: run-p357308-i358613.service; invocation ID: 669f6bc9f8434ecdb93c88f7af1b9160
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: LLM::Character
+===> Found: LLM::Character:ver<0.2.3>:auth<zef:apogee> [via Zef::Repository::Ecosystems<fez>]
+[LLM::Character] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788474530.357313.1782.3010945348783/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz https://360.zef.pm/L/LM/LLM_CHARACTER/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz
+===> Fetching [OK]: LLM::Character:ver<0.2.3>:auth<zef:apogee> to /home/coke/sandbox/blin/data/zef-data/tmp/1788474530.357313.1782.3010945348783/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz
+[LLM::Character] Command: tar -t -f ./f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz
+[LLM::Character] Command: tar -xvf ./f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz -C ../f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz
+===> Extraction [OK]: LLM::Character to /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz
+===> Testing: LLM::Character:ver<0.2.3>:auth<zef:apogee>
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/01-basic.rakutest
+[LLM::Character] ok 1 - replace me
+[LLM::Character] 1..1
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/02-minimal_lorebook.rakutest
+[LLM::Character] 1..29
+[LLM::Character] ok 1 - lorebook_minimal.json: lorebook is defined
+[LLM::Character] ok 2 - lorebook_minimal.json: is Lorebook
+[LLM::Character] ok 3 - lorebook_minimal.json: has entries
+[LLM::Character] ok 4 - lorebook_minimal.json: extensions defined
+[LLM::Character] ok 5 - lorebook_minimal.json: name is str or undefined
+[LLM::Character] ok 6 - lorebook_minimal.json: description is str or undefined
+[LLM::Character] ok 7 - lorebook_minimal.json: scan_depth is int or undefined
+[LLM::Character] ok 8 - lorebook_minimal.json: token_budget is int or undefined
+[LLM::Character] ok 9 - lorebook_minimal.json: recursive_scanning is bool or undefined
+[LLM::Character] ok 10 - lorebook_minimal.json: entry 0 is Entry
+[LLM::Character] ok 11 - lorebook_minimal.json: entry 0 has keys
+[LLM::Character] ok 12 - lorebook_minimal.json: entry 0 has content
+[LLM::Character] ok 13 - lorebook_minimal.json: entry 0 enabled is Bool
+[LLM::Character] ok 14 - lorebook_minimal.json: entry 0 insertion_order is Int
+[LLM::Character] ok 15 - lorebook_minimal.json: entry 0 use_regex is defined
+[LLM::Character] ok 16 - lorebook_minimal.json: entry 0 case_sensitive sane
+[LLM::Character] ok 17 - lorebook_minimal.json: entry 0 constant sane
+[LLM::Character] ok 18 - lorebook_minimal.json: entry 0 selective sane
+[LLM::Character] ok 19 - lorebook_minimal.json: entry 0 secondary_keys sane
+[LLM::Character] ok 20 - lorebook_minimal.json: entry 0 priority sane
+[LLM::Character] ok 21 - lorebook_minimal.json: entry 0 comment sane
+[LLM::Character] ok 22 - lorebook_minimal.json: entry 0 position sane
+[LLM::Character] ok 23 - lorebook_minimal.json: entry 0 extensions sane
+[LLM::Character] ok 24 - lorebook_minimal.json: correct first key
+[LLM::Character] ok 25 - lorebook_minimal.json: correct second key
+[LLM::Character] ok 26 - lorebook_minimal.json: correct content
+[LLM::Character] ok 27 - lorebook_minimal.json: correctly enabled
+[LLM::Character] ok 28 - lorebook_minimal.json: correct insertion order
+[LLM::Character] ok 29 - lorebook_minimal.json: regex disabled correctly
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/03-all_fields_lorebook.rakutest
+[LLM::Character] 1..49
+[LLM::Character] ok 1 - lorebook_valid.json: lorebook is defined
+[LLM::Character] ok 2 - lorebook_valid.json: is Lorebook
+[LLM::Character] ok 3 - lorebook_valid.json: has entries
+[LLM::Character] ok 4 - lorebook_valid.json: extensions defined
+[LLM::Character] ok 5 - lorebook_valid.json: name is str or undefined
+[LLM::Character] ok 6 - lorebook_valid.json: description is str or undefined
+[LLM::Character] ok 7 - lorebook_valid.json: scan_depth is int or undefined
+[LLM::Character] ok 8 - lorebook_valid.json: token_budget is int or undefined
+[LLM::Character] ok 9 - lorebook_valid.json: recursive_scanning is bool or undefined
+[LLM::Character] ok 10 - lorebook_valid.json: entry 0 is Entry
+[LLM::Character] ok 11 - lorebook_valid.json: entry 0 has keys
+[LLM::Character] ok 12 - lorebook_valid.json: entry 0 has content
+[LLM::Character] ok 13 - lorebook_valid.json: entry 0 enabled is Bool
+[LLM::Character] ok 14 - lorebook_valid.json: entry 0 insertion_order is Int
+[LLM::Character] ok 15 - lorebook_valid.json: entry 0 use_regex is defined
+[LLM::Character] ok 16 - lorebook_valid.json: entry 0 case_sensitive sane
+[LLM::Character] ok 17 - lorebook_valid.json: entry 0 constant sane
+[LLM::Character] ok 18 - lorebook_valid.json: entry 0 selective sane
+[LLM::Character] ok 19 - lorebook_valid.json: entry 0 secondary_keys sane
+[LLM::Character] ok 20 - lorebook_valid.json: entry 0 priority sane
+[LLM::Character] ok 21 - lorebook_valid.json: entry 0 comment sane
+[LLM::Character] ok 22 - lorebook_valid.json: entry 0 position sane
+[LLM::Character] ok 23 - lorebook_valid.json: entry 0 extensions sane
+[LLM::Character] ok 24 - lorebook_valid.json: correct lorebook name
+[LLM::Character] ok 25 - lorebook_valid.json: correct lorebook description
+[LLM::Character] ok 26 - lorebook_valid.json: correct scan depth
+[LLM::Character] ok 27 - lorebook_valid.json: correct token budget
+[LLM::Character] ok 28 - lorebook_valid.json: correct recursive scanning
+[LLM::Character] ok 29 - lorebook_valid.json: correct extension 'testString'
+[LLM::Character] ok 30 - lorebook_valid.json: correct extension 'testBool'
+[LLM::Character] ok 31 - lorebook_valid.json: correct extension 'testInt'
+[LLM::Character] ok 32 - lorebook_valid.json: correct first key
+[LLM::Character] ok 33 - lorebook_valid.json: correct second key
+[LLM::Character] ok 34 - lorebook_valid.json: correct content
+[LLM::Character] ok 35 - lorebook_valid.json: correct entry extension 'testString'
+[LLM::Character] ok 36 - lorebook_valid.json: correct entry extension 'testBool'
+[LLM::Character] ok 37 - lorebook_valid.json: correct entry extension 'testInt'
+[LLM::Character] ok 38 - lorebook_valid.json: correctly enabled
+[LLM::Character] ok 39 - lorebook_valid.json: correct insertion order
+[LLM::Character] ok 40 - lorebook_valid.json: correct case sensitive
+[LLM::Character] ok 41 - lorebook_valid.json: regex disabled correctly
+[LLM::Character] ok 42 - lorebook_valid.json: constant correctly false
+[LLM::Character] ok 43 - lorebook_valid.json: name correctly baz
+[LLM::Character] ok 44 - lorebook_valid.json: correct entry priority
+[LLM::Character] ok 45 - lorebook_valid.json: correct entry id
+[LLM::Character] ok 46 - lorebook.json: correct entry comment
+[LLM::Character] ok 47 - lorebook_valid.json: entry correctly set to selective
+[LLM::Character] ok 48 - lorebook_valid.json: correct entry secondary key
+[LLM::Character] ok 49 - lorebook_valid.json: correct entry position
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/04-enclosed_minimal_lorebook.rakutest
+[LLM::Character] 1..29
+[LLM::Character] ok 1 - lorebook_enclosed_minimal.json: lorebook is defined
+[LLM::Character] ok 2 - lorebook_enclosed_minimal.json: is Lorebook
+[LLM::Character] ok 3 - lorebook_enclosed_minimal.json: has entries
+[LLM::Character] ok 4 - lorebook_enclosed_minimal.json: extensions defined
+[LLM::Character] ok 5 - lorebook_enclosed_minimal.json: name is str or undefined
+[LLM::Character] ok 6 - lorebook_enclosed_minimal.json: description is str or undefined
+[LLM::Character] ok 7 - lorebook_enclosed_minimal.json: scan_depth is int or undefined
+[LLM::Character] ok 8 - lorebook_enclosed_minimal.json: token_budget is int or undefined
+[LLM::Character] ok 9 - lorebook_enclosed_minimal.json: recursive_scanning is bool or undefined
+[LLM::Character] ok 10 - lorebook_enclosed_minimal.json: entry 0 is Entry
+[LLM::Character] ok 11 - lorebook_enclosed_minimal.json: entry 0 has keys
+[LLM::Character] ok 12 - lorebook_enclosed_minimal.json: entry 0 has content
+[LLM::Character] ok 13 - lorebook_enclosed_minimal.json: entry 0 enabled is Bool
+[LLM::Character] ok 14 - lorebook_enclosed_minimal.json: entry 0 insertion_order is Int
+[LLM::Character] ok 15 - lorebook_enclosed_minimal.json: entry 0 use_regex is defined
+[LLM::Character] ok 16 - lorebook_enclosed_minimal.json: entry 0 case_sensitive sane
+[LLM::Character] ok 17 - lorebook_enclosed_minimal.json: entry 0 constant sane
+[LLM::Character] ok 18 - lorebook_enclosed_minimal.json: entry 0 selective sane
+[LLM::Character] ok 19 - lorebook_enclosed_minimal.json: entry 0 secondary_keys sane
+[LLM::Character] ok 20 - lorebook_enclosed_minimal.json: entry 0 priority sane
+[LLM::Character] ok 21 - lorebook_enclosed_minimal.json: entry 0 comment sane
+[LLM::Character] ok 22 - lorebook_enclosed_minimal.json: entry 0 position sane
+[LLM::Character] ok 23 - lorebook_enclosed_minimal.json: entry 0 extensions sane
+[LLM::Character] ok 24 - lorebook_enclosed_minimal.json: correct first key
+[LLM::Character] ok 25 - lorebook_enclosed_minimal.json: correct second key
+[LLM::Character] ok 26 - lorebook_enclosed_minimal.json: correct content
+[LLM::Character] ok 27 - lorebook_enclosed_minimal.json: correctly enabled
+[LLM::Character] ok 28 - lorebook_enclosed_minimal.json: correct insertion order
+[LLM::Character] ok 29 - lorebook_enclosed_minimal.json: regex disabled correctly
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/05-enclosed_all_fields_lorebook.rakutest
+[LLM::Character] 1..49
+[LLM::Character] ok 1 - lorebook_enclosed_valid.json: lorebook is defined
+[LLM::Character] ok 2 - lorebook_enclosed_valid.json: is Lorebook
+[LLM::Character] ok 3 - lorebook_enclosed_valid.json: has entries
+[LLM::Character] ok 4 - lorebook_enclosed_valid.json: extensions defined
+[LLM::Character] ok 5 - lorebook_enclosed_valid.json: name is str or undefined
+[LLM::Character] ok 6 - lorebook_enclosed_valid.json: description is str or undefined
+[LLM::Character] ok 7 - lorebook_enclosed_valid.json: scan_depth is int or undefined
+[LLM::Character] ok 8 - lorebook_enclosed_valid.json: token_budget is int or undefined
+[LLM::Character] ok 9 - lorebook_enclosed_valid.json: recursive_scanning is bool or undefined
+[LLM::Character] ok 10 - lorebook_enclosed_valid.json: entry 0 is Entry
+[LLM::Character] ok 11 - lorebook_enclosed_valid.json: entry 0 has keys
+[LLM::Character] ok 12 - lorebook_enclosed_valid.json: entry 0 has content
+[LLM::Character] ok 13 - lorebook_enclosed_valid.json: entry 0 enabled is Bool
+[LLM::Character] ok 14 - lorebook_enclosed_valid.json: entry 0 insertion_order is Int
+[LLM::Character] ok 15 - lorebook_enclosed_valid.json: entry 0 use_regex is defined
+[LLM::Character] ok 16 - lorebook_enclosed_valid.json: entry 0 case_sensitive sane
+[LLM::Character] ok 17 - lorebook_enclosed_valid.json: entry 0 constant sane
+[LLM::Character] ok 18 - lorebook_enclosed_valid.json: entry 0 selective sane
+[LLM::Character] ok 19 - lorebook_enclosed_valid.json: entry 0 secondary_keys sane
+[LLM::Character] ok 20 - lorebook_enclosed_valid.json: entry 0 priority sane
+[LLM::Character] ok 21 - lorebook_enclosed_valid.json: entry 0 comment sane
+[LLM::Character] ok 22 - lorebook_enclosed_valid.json: entry 0 position sane
+[LLM::Character] ok 23 - lorebook_enclosed_valid.json: entry 0 extensions sane
+[LLM::Character] ok 24 - lorebook_enclosed_valid.json: correct lorebook name
+[LLM::Character] ok 25 - lorebook_enclosed_valid.json: correct lorebook description
+[LLM::Character] ok 26 - lorebook_enclosed_valid.json: correct scan depth
+[LLM::Character] ok 27 - lorebook_enclosed_valid.json: correct token budget
+[LLM::Character] ok 28 - lorebook_enclosed_valid.json: correct recursive scanning
+[LLM::Character] ok 29 - lorebook_enclosed_valid.json: correct extension 'testString'
+[LLM::Character] ok 30 - lorebook_enclosed_valid.json: correct extension 'testBool'
+[LLM::Character] ok 31 - lorebook_enclosed_valid.json: correct extension 'testInt'
+[LLM::Character] ok 32 - lorebook_enclosed_valid.json: correct first key
+[LLM::Character] ok 33 - lorebook_enclosed_valid.json: correct second key
+[LLM::Character] ok 34 - lorebook_enclosed_valid.json: correct content
+[LLM::Character] ok 35 - lorebook_enclosed_valid.json: correct entry extension 'testString'
+[LLM::Character] ok 36 - lorebook_enclosed_valid.json: correct entry extension 'testBool'
+[LLM::Character] ok 37 - lorebook_enclosed_valid.json: correct entry extension 'testInt'
+[LLM::Character] ok 38 - lorebook_enclosed_valid.json: correctly enabled
+[LLM::Character] ok 39 - lorebook_enclosed_valid.json: correct insertion order
+[LLM::Character] ok 40 - lorebook_enclosed_valid.json: correct case sensitive
+[LLM::Character] ok 41 - lorebook_enclosed_valid.json: regex disabled correctly
+[LLM::Character] ok 42 - lorebook_enclosed_valid.json: constant correctly false
+[LLM::Character] ok 43 - lorebook_enclosed_valid.json: name correctly baz
+[LLM::Character] ok 44 - lorebook_enclosed_valid.json: correct entry priority
+[LLM::Character] ok 45 - lorebook_enclosed_valid.json: correct entry id
+[LLM::Character] ok 46 - lorebook.json: correct entry comment
+[LLM::Character] ok 47 - lorebook_enclosed_valid.json: entry correctly set to selective
+[LLM::Character] ok 48 - lorebook_enclosed_valid.json: correct entry secondary key
+[LLM::Character] ok 49 - lorebook_enclosed_valid.json: correct entry position
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/06-st_lorebook.rakutest
+[LLM::Character] 1..79
+[LLM::Character] ok 1 - st_lorebook.json: lorebook is defined
+[LLM::Character] ok 2 - st_lorebook.json: is Lorebook
+[LLM::Character] ok 3 - st_lorebook.json: has entries
+[LLM::Character] ok 4 - st_lorebook.json: extensions defined
+[LLM::Character] ok 5 - st_lorebook.json: name is str or undefined
+[LLM::Character] ok 6 - st_lorebook.json: description is str or undefined
+[LLM::Character] ok 7 - st_lorebook.json: scan_depth is int or undefined
+[LLM::Character] ok 8 - st_lorebook.json: token_budget is int or undefined
+[LLM::Character] ok 9 - st_lorebook.json: recursive_scanning is bool or undefined
+[LLM::Character] ok 10 - st_lorebook.json: entry 0 is Entry
+[LLM::Character] ok 11 - st_lorebook.json: entry 0 has keys or is constant
+[LLM::Character] ok 12 - st_lorebook.json: entry 0 has content
+[LLM::Character] ok 13 - st_lorebook.json: entry 0 enabled is Bool
+[LLM::Character] ok 14 - st_lorebook.json: entry 0 insertion_order is Int
+[LLM::Character] ok 15 - st_lorebook.json: entry 0 use_regex is defined
+[LLM::Character] ok 16 - st_lorebook.json: entry 0 case_sensitive sane
+[LLM::Character] ok 17 - st_lorebook.json: entry 0 constant sane
+[LLM::Character] ok 18 - st_lorebook.json: entry 0 selective sane
+[LLM::Character] ok 19 - st_lorebook.json: entry 0 secondary_keys sane
+[LLM::Character] ok 20 - st_lorebook.json: entry 0 priority sane
+[LLM::Character] ok 21 - st_lorebook.json: entry 0 comment sane
+[LLM::Character] ok 22 - st_lorebook.json: entry 0 position sane
+[LLM::Character] ok 23 - st_lorebook.json: entry 0 extensions sane
+[LLM::Character] ok 24 - st_lorebook.json: entry 1 is Entry
+[LLM::Character] ok 25 - st_lorebook.json: entry 1 has keys or is constant
+[LLM::Character] ok 26 - st_lorebook.json: entry 1 has content
+[LLM::Character] ok 27 - st_lorebook.json: entry 1 enabled is Bool
+[LLM::Character] ok 28 - st_lorebook.json: entry 1 insertion_order is Int
+[LLM::Character] ok 29 - st_lorebook.json: entry 1 use_regex is defined
+[LLM::Character] ok 30 - st_lorebook.json: entry 1 case_sensitive sane
+[LLM::Character] ok 31 - st_lorebook.json: entry 1 constant sane
+[LLM::Character] ok 32 - st_lorebook.json: entry 1 selective sane
+[LLM::Character] ok 33 - st_lorebook.json: entry 1 secondary_keys sane
+[LLM::Character] ok 34 - st_lorebook.json: entry 1 priority sane
+[LLM::Character] ok 35 - st_lorebook.json: entry 1 comment sane
+[LLM::Character] ok 36 - st_lorebook.json: entry 1 position sane
+[LLM::Character] ok 37 - st_lorebook.json: entry 1 extensions sane
+[LLM::Character] ok 38 - st_lorebook.json: entry 2 is Entry
+[LLM::Character] ok 39 - st_lorebook.json: entry 2 has keys or is constant
+[LLM::Character] ok 40 - st_lorebook.json: entry 2 has content
+[LLM::Character] ok 41 - st_lorebook.json: entry 2 enabled is Bool
+[LLM::Character] ok 42 - st_lorebook.json: entry 2 insertion_order is Int
+[LLM::Character] ok 43 - st_lorebook.json: entry 2 use_regex is defined
+[LLM::Character] ok 44 - st_lorebook.json: entry 2 case_sensitive sane
+[LLM::Character] ok 45 - st_lorebook.json: entry 2 constant sane
+[LLM::Character] ok 46 - st_lorebook.json: entry 2 selective sane
+[LLM::Character] ok 47 - st_lorebook.json: entry 2 secondary_keys sane
+[LLM::Character] ok 48 - st_lorebook.json: entry 2 priority sane
+[LLM::Character] ok 49 - st_lorebook.json: entry 2 comment sane
+[LLM::Character] ok 50 - st_lorebook.json: entry 2 position sane
+[LLM::Character] ok 51 - st_lorebook.json: entry 2 extensions sane
+[LLM::Character] ok 52 - st_lorebook.json: entry 3 is Entry
+[LLM::Character] ok 53 - st_lorebook.json: entry 3 has keys or is constant
+[LLM::Character] ok 54 - st_lorebook.json: entry 3 has content
+[LLM::Character] ok 55 - st_lorebook.json: entry 3 enabled is Bool
+[LLM::Character] ok 56 - st_lorebook.json: entry 3 insertion_order is Int
+[LLM::Character] ok 57 - st_lorebook.json: entry 3 use_regex is defined
+[LLM::Character] ok 58 - st_lorebook.json: entry 3 case_sensitive sane
+[LLM::Character] ok 59 - st_lorebook.json: entry 3 constant sane
+[LLM::Character] ok 60 - st_lorebook.json: entry 3 selective sane
+[LLM::Character] ok 61 - st_lorebook.json: entry 3 secondary_keys sane
+[LLM::Character] ok 62 - st_lorebook.json: entry 3 priority sane
+[LLM::Character] ok 63 - st_lorebook.json: entry 3 comment sane
+[LLM::Character] ok 64 - st_lorebook.json: entry 3 position sane
+[LLM::Character] ok 65 - st_lorebook.json: entry 3 extensions sane
+[LLM::Character] ok 66 - st_lorebook.json: entry 4 is Entry
+[LLM::Character] ok 67 - st_lorebook.json: entry 4 has keys or is constant
+[LLM::Character] ok 68 - st_lorebook.json: entry 4 has content
+[LLM::Character] ok 69 - st_lorebook.json: entry 4 enabled is Bool
+[LLM::Character] ok 70 - st_lorebook.json: entry 4 insertion_order is Int
+[LLM::Character] ok 71 - st_lorebook.json: entry 4 use_regex is defined
+[LLM::Character] ok 72 - st_lorebook.json: entry 4 case_sensitive sane
+[LLM::Character] ok 73 - st_lorebook.json: entry 4 constant sane
+[LLM::Character] ok 74 - st_lorebook.json: entry 4 selective sane
+[LLM::Character] ok 75 - st_lorebook.json: entry 4 secondary_keys sane
+[LLM::Character] ok 76 - st_lorebook.json: entry 4 priority sane
+[LLM::Character] ok 77 - st_lorebook.json: entry 4 comment sane
+[LLM::Character] ok 78 - st_lorebook.json: entry 4 position sane
+[LLM::Character] ok 79 - st_lorebook.json: entry 4 extensions sane
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/07-character_enclosed.rakutest
+[LLM::Character] 1..5
+[LLM::Character] ok 1 - Got a character card
+[LLM::Character] ok 2 - Correct name
+[LLM::Character] ok 3 - Correct description
+[LLM::Character] ok 4 - Extension talkativeness present
+[LLM::Character] ok 5 - Extension fav present
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/08-character_flat.rakutest
+[LLM::Character] 1..3
+[LLM::Character] ok 1 - Got a character card
+[LLM::Character] ok 2 - Correct name
+[LLM::Character] ok 3 - Correct description
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/09-character_with_book.rakutest
+[LLM::Character] 1..5
+[LLM::Character] ok 1 - Got a character card
+[LLM::Character] ok 2 - Correct name
+[LLM::Character] ok 3 - Lorebook is present
+[LLM::Character] ok 4 - One lorebook entry
+[LLM::Character] ok 5 - One asset present
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/10-main.rakutest
+[LLM::Character] 1..10
+[LLM::Character] ok 1 - correctly imports a lorebook
+[LLM::Character] ok 2 - correctly populates lorebook name
+[LLM::Character] ok 3 - correctly populates lorebook entry
+[LLM::Character] ok 4 - correctly imports a character
+[LLM::Character] ok 5 - correctly populates character name
+[LLM::Character] ok 6 - correctly populates character lorebook
+[LLM::Character] ok 7 - correctly populates lorebook keys
+[LLM::Character] ok 8 - correctly imports character from PNG
+[LLM::Character] ok 9 - correctly populates character name from PNG
+[LLM::Character] ok 10 - correctly populates first message from PNG
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/11-matcher-construction.rakutest
+[LLM::Character] 1..2
+[LLM::Character] # Subtest: Basic trie building
+[LLM::Character]     ok 1 - Root has 'f' child
+[LLM::Character]     ok 2 - 'f' node has 'o' child
+[LLM::Character]     ok 3 - 'f'→'o' has 'o' child
+[LLM::Character]     ok 4 - 'f'→'o' has 'a' child
+[LLM::Character]     ok 5 - 'foo' terminal node has one output
+[LLM::Character]     ok 6 - 'foo' entry output is correct
+[LLM::Character]     ok 7 - 'foal' entry output is correct
+[LLM::Character]     1..7
+[LLM::Character] ok 1 - Basic trie building
+[LLM::Character] # Subtest: Regex and constant handling
+[LLM::Character]     ok 1 - Constant entries list has 1
+[LLM::Character]     ok 2 - Constant entry uuid matches
+[LLM::Character]     ok 3 - Regex entries list has 2
+[LLM::Character]     ok 4 - Regex entry uuid matches
+[LLM::Character]     ok 5 - Regex was compiled
+[LLM::Character]     ok 6 - Regex matches
+[LLM::Character]     ok 7 - Regex with flags entry uuid matches
+[LLM::Character]     ok 8 - Regex with flags was compiled
+[LLM::Character]     ok 9 - Regex with flags is case-insensitive
+[LLM::Character]     1..9
+[LLM::Character] ok 2 - Regex and constant handling
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/12-matching.rakutest
+[LLM::Character] 1..12
+[LLM::Character] # Subtest: Single keyword match
+[LLM::Character]     ok 1 - Single match
+[LLM::Character]     ok 2 - UUID correct
+[LLM::Character]     1..2
+[LLM::Character] ok 1 - Single keyword match
+[LLM::Character] # Subtest: Multiple keywords, one pass
+[LLM::Character]     ok 1 - Both matches found
+[LLM::Character]     1..1
+[LLM::Character] ok 2 - Multiple keywords, one pass
+[LLM::Character] # Subtest: Case-insensitive key matches any case
+[LLM::Character]     ok 1 - Insensitive match (all upper)
+[LLM::Character]     ok 2 - Insensitive match (mixed)
+[LLM::Character]     ok 3 - No match on unrelated word
+[LLM::Character]     1..3
+[LLM::Character] ok 3 - Case-insensitive key matches any case
+[LLM::Character] # Subtest: Regex entry matches and respects flags
+[LLM::Character]     ok 1 - Regex matches start of line
+[LLM::Character]     ok 2 - Regex with /i matches
+[LLM::Character]     ok 3 - No regex match on non-bar/baz
+[LLM::Character]     1..3
+[LLM::Character] ok 4 - Regex entry matches and respects flags
+[LLM::Character] # Subtest: Constant entries always included
+[LLM::Character]     ok 1 - Only constant present when no match
+[LLM::Character]     ok 2 - Constant plus normal match
+[LLM::Character]     1..2
+[LLM::Character] ok 5 - Constant entries always included
+[LLM::Character] # Subtest: Selective entry: needs primary & secondary
+[LLM::Character]     ok 1 - Both keys present (fires)
+[LLM::Character]     ok 2 - Only primary, not selective
+[LLM::Character]     ok 3 - Only selective, not primary
+[LLM::Character]     1..3
+[LLM::Character] ok 6 - Selective entry: needs primary & secondary
+[LLM::Character] # Subtest: exclude_recursion: only pass 0
+[LLM::Character]     ok 1 - Matches on pass 0
+[LLM::Character]     ok 2 - Correct entry
+[LLM::Character]     1..2
+[LLM::Character] ok 7 - exclude_recursion: only pass 0
+[LLM::Character] # Subtest: delay_until_recursion: only pass > 0
+[LLM::Character]     ok 1 - delay_until_recursion only fires after pass 0
+[LLM::Character]     1..1
+[LLM::Character] ok 8 - delay_until_recursion: only pass > 0
+[LLM::Character] # Subtest: prevent_recursion: no content added for recursion
+[LLM::Character]     ok 1 - Second entry not matched due to prevent_recursion
+[LLM::Character]     1..1
+[LLM::Character] ok 9 - prevent_recursion: no content added for recursion
+[LLM::Character] # Subtest: Recursive matching up to scan_depth
+[LLM::Character]     ok 1 - All found through recursive scan
+[LLM::Character]     1..1
+[LLM::Character] ok 10 - Recursive matching up to scan_depth
+[LLM::Character] # Subtest: No duplicate matches
+[LLM::Character]     ok 1 - Entry matched only once
+[LLM::Character]     1..1
+[LLM::Character] ok 11 - No duplicate matches
+[LLM::Character] # Subtest: Edge cases
+[LLM::Character]     ok 1 - No match on empty haystack
+[LLM::Character]     ok 2 - No match on empty keys
+[LLM::Character]     ok 3 - No match if not enabled
+[LLM::Character]     ok 4 - Both 'foo' and 'food' matched
+[LLM::Character]     1..4
+[LLM::Character] ok 12 - Edge cases
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/13-export_character_json.rakutest
+[LLM::Character] 1..25
+[LLM::Character] ok 1 - Export produces output
+[LLM::Character] ok 2 - Correct spec
+[LLM::Character] ok 3 - Correct spec_version
+[LLM::Character] ok 4 - Has data key
+[LLM::Character] ok 5 - Correct name
+[LLM::Character] ok 6 - Correct description
+[LLM::Character] ok 7 - Correct first_mes
+[LLM::Character] ok 8 - Correct personality
+[LLM::Character] ok 9 - Correct scenario
+[LLM::Character] ok 10 - Correct mes_example
+[LLM::Character] ok 11 - Correct creator_notes
+[LLM::Character] ok 12 - Correct system_prompt
+[LLM::Character] ok 13 - Correct post_history_instructions
+[LLM::Character] ok 14 - Tags is empty array
+[LLM::Character] ok 15 - Alternate greetings is empty array
+[LLM::Character] ok 16 - Group only greetings is empty array
+[LLM::Character] ok 17 - character_book present
+[LLM::Character] ok 18 - One entry in character_book
+[LLM::Character] ok 19 - Entry keys correct
+[LLM::Character] ok 20 - Entry content correct
+[LLM::Character] ok 21 - One asset
+[LLM::Character] ok 22 - Asset type correct
+[LLM::Character] ok 23 - Asset uri correct
+[LLM::Character] ok 24 - Extension preserved
+[LLM::Character] ok 25 - Round-trip preserves name
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/14-export_lorebook_json.rakutest
+[LLM::Character] 1..27
+[LLM::Character] ok 1 - Export produces output
+[LLM::Character] ok 2 - Correct name
+[LLM::Character] ok 3 - Correct description
+[LLM::Character] ok 4 - Correct scan_depth
+[LLM::Character] ok 5 - Correct token_budget
+[LLM::Character] ok 6 - Correct recursive_scanning
+[LLM::Character] ok 7 - Extension testString preserved
+[LLM::Character] ok 8 - Extension testBool preserved
+[LLM::Character] ok 9 - Extension testInt preserved
+[LLM::Character] ok 10 - One entry
+[LLM::Character] ok 11 - Entry keys correct
+[LLM::Character] ok 12 - Entry content correct
+[LLM::Character] ok 13 - Entry enabled
+[LLM::Character] ok 14 - Entry insertion_order correct
+[LLM::Character] ok 15 - Entry case_sensitive correct
+[LLM::Character] ok 16 - Entry use_regex correct
+[LLM::Character] ok 17 - Entry constant correct
+[LLM::Character] ok 18 - Entry name correct
+[LLM::Character] ok 19 - Entry priority correct
+[LLM::Character] ok 20 - Entry id correct
+[LLM::Character] ok 21 - Entry comment correct
+[LLM::Character] ok 22 - Entry selective correct
+[LLM::Character] ok 23 - Entry secondary_keys correct
+[LLM::Character] ok 24 - Entry position correct
+[LLM::Character] ok 25 - Decorators prepended to content
+[LLM::Character] ok 26 - Round-trip preserves name
+[LLM::Character] ok 27 - Round-trip preserves entry content
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/15-export_lorebook_st.rakutest
+[LLM::Character] 1..22
+[LLM::Character] ok 1 - Export produces output
+[LLM::Character] ok 2 - Entries is a Hash
+[LLM::Character] ok 3 - All entry keys are strings
+[LLM::Character] ok 4 - Five entries
+[LLM::Character] ok 5 - Entry 0 exists
+[LLM::Character] ok 6 - uid field (renamed from id)
+[LLM::Character] ok 7 - key field is array (renamed from keys)
+[LLM::Character] ok 8 - keysecondary field is array (renamed from secondary_keys)
+[LLM::Character] ok 9 - order field (renamed from insertion_order)
+[LLM::Character] ok 10 - disable field (negated from enabled)
+[LLM::Character] ok 11 - position is int (before_char = 0)
+[LLM::Character] ok 12 - constant preserved
+[LLM::Character] ok 13 - comment preserved
+[LLM::Character] ok 14 - content preserved
+[LLM::Character] ok 15 - preventRecursion field present
+[LLM::Character] ok 16 - preventRecursion is true for entry 0
+[LLM::Character] ok 17 - preventRecursion is false for entry 3
+[LLM::Character] ok 18 - Entry 4 key array correct
+[LLM::Character] ok 19 - Entry 4 not constant
+[LLM::Character] ok 20 - Entry 4 content correct
+[LLM::Character] ok 21 - No keys field (should be key)
+[LLM::Character] ok 22 - No insertion_order field (should be order)
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/16-export_character_png.rakutest
+[LLM::Character] 1..9
+[LLM::Character] ok 1 - PNG export succeeds
+[LLM::Character] ok 2 - Output PNG file exists
+[LLM::Character] ok 3 - Output PNG file is not empty
+[LLM::Character] ok 4 - ccv3 tEXt chunk present
+[LLM::Character] not ok 5 - chara tEXt chunk present
+[LLM::Character] # Failed test 'chara tEXt chunk present'
+[LLM::Character] # at t/16-export_character_png.rakutest line 34
+[LLM::Character] ok 6 - Re-imported is a Card
+[LLM::Character] ok 7 - Round-trip preserves name
+[LLM::Character] ok 8 - Round-trip preserves description
+[LLM::Character] ok 9 - Round-trip preserves first_mes
+[LLM::Character] # You failed 1 test of 9
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/fdc7d635717d90c06826668936cd708d30fd19c4/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/17-export_main.rakutest
+[LLM::Character] 1..15
+[LLM::Character] ok 1 - export-character to JSON succeeds
+[LLM::Character] ok 2 - JSON file exists
+[LLM::Character] ok 3 - Exported JSON has CCv3 spec
+[LLM::Character] ok 4 - Exported JSON has correct name
+[LLM::Character] ok 5 - Round-trip JSON character name matches
+[LLM::Character] ok 6 - export-character-to-png succeeds
+[LLM::Character] ok 7 - PNG file exists
+[LLM::Character] ok 8 - Round-trip PNG character name matches
+[LLM::Character] ok 9 - export-lorebook ccv3 succeeds
+[LLM::Character] ok 10 - CCv3 lorebook file exists
+[LLM::Character] ok 11 - CCv3 lorebook name correct
+[LLM::Character] ok 12 - export-lorebook st succeeds
+[LLM::Character] ok 13 - ST lorebook file exists
+[LLM::Character] ok 14 - ST lorebook has Hash entries
+[LLM::Character] ok 15 - ST lorebook entry content correct
+===> Testing [FAIL]: LLM::Character:ver<0.2.3>:auth<zef:apogee>
+[LLM::Character] Failed to get passing tests, but continuing with --force-test
+===> Installing: LLM::Character:ver<0.2.3>:auth<zef:apogee>
+===> Install [OK] for LLM::Character:ver<0.2.3>:auth<zef:apogee>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 2min 41.089s
+             CPU time consumed: 2min 43.949s
+                   Memory peak: 1.8G (swap: 140.6M)
