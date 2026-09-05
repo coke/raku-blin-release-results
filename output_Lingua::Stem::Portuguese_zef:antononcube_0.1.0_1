@@ -1,0 +1,30 @@
+Running as unit: run-p1188095-i1173162.service; invocation ID: a6fead7d062447b3b3d6f4e6d1f0f2d2
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Lingua::Stem::Portuguese
+===> Found: Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1> [via Zef::Repository::Ecosystems<fez>]
+[Lingua::Stem::Portuguese] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788572767.1188097.4743.219220401207/d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz https://360.zef.pm/L/IN/LINGUA_STEM_PORTUGUESE/d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz
+===> Fetching [OK]: Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1788572767.1188097.4743.219220401207/d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz
+[Lingua::Stem::Portuguese] Command: tar -t -f ./d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz
+[Lingua::Stem::Portuguese] Command: tar -xvf ./d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz -C ../d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz
+===> Extraction [OK]: Lingua::Stem::Portuguese to /home/coke/sandbox/blin/data/zef-data/tmp/d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz
+===> Testing: Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1>
+[Lingua::Stem::Portuguese] Command: /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz/dist t/01-stem-word.rakutest
+[Lingua::Stem::Portuguese] 1..1
+[Lingua::Stem::Portuguese] not ok 1 - correct stems 1
+[Lingua::Stem::Portuguese] # Failed test 'correct stems 1'
+[Lingua::Stem::Portuguese] # at t/01-stem-word.rakutest line 36
+[Lingua::Stem::Portuguese] # expected: 'True'
+[Lingua::Stem::Portuguese] #      got: 'False'
+[Lingua::Stem::Portuguese] # You failed 1 test of 1
+===> Testing [FAIL]: Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1>
+[Lingua::Stem::Portuguese] Failed to get passing tests, but continuing with --force-test
+===> Installing: Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1>
+===> Install [OK] for Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1>
+
+1 bin/ script [PortugueseStem] installed to:
+/home/coke/sandbox/blin/installed/Lingua::Stem::Portuguese_zef:antononcube_0.1.0_1/bin
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 20.444s
+             CPU time consumed: 5.535s
+                   Memory peak: 764M (swap: 0B)
