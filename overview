@@ -1,38 +1,5 @@
-App::Prove6 – OK
-Base64::Native – OK
-CSS::Grammar – OK
-CSS::Module – OK
-CSS::Module::CSS3::Selectors – OK
-CSS::Properties – OK
-CSS::Specification – OK
-CSS::Writer – OK
-Color – OK
-Color::Names – OK
-Compress::Zlib – OK
-Compress::Zlib::Raw – OK
-Env – OK
-File::Directory::Tree – OK
-File::Find – OK
-File::Temp – OK
-File::Which – Fail, Bisected: b61226d8bc93d4c030870b48d18af2adfd3a0f6f
-Font::AFM – OK
-Getopt::Long – Fail, Bisected: b61226d8bc93d4c030870b48d18af2adfd3a0f6f
-Hash::int – OK
-JSON::Fast – OK
-LibraryMake – OK
-Method::Also – OK
-Native::Packing – OK
+File::Which – OK
+Getopt::Long – OK
 Needle::Compile – Fail, Bisected: 6ec31943a47d15e58ada4e93e50eee43f91bb172
-Net::Osc – OK
-Numeric::Pack – OK
-OpenSSL – OK
-PDF – OK
-PDF::Content – OK
-PDF::Grammar – OK
-Path::Finder – OK
-Pod::Usage – OK
-Shell::Command – OK
 String::Utils – OK
-TAP – OK
 has-word – OK
-sigpipe – OK

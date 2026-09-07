@@ -4,12 +4,12 @@
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p2396698-i2395874.service; invocation ID: 26f27d505fd84a3ba061e3792a19624b
+  Running as unit: run-p2406100-i2431092.service; invocation ID: 09888ccc9e4a45cfac8fe24cf138645d
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Needle::Compile
   ===> Found: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> [via Zef::Repository::Ecosystems<fez>]
-  [Needle::Compile] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788816899.2396699.560.2071100376704/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz https://360.zef.pm/N/EE/NEEDLE_COMPILE/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
-  ===> Fetching [OK]: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1788816899.2396699.560.2071100376704/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+  [Needle::Compile] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788819030.2406101.9724.196377209017/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz https://360.zef.pm/N/EE/NEEDLE_COMPILE/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+  ===> Fetching [OK]: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1788819030.2406101.9724.196377209017/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   [Needle::Compile] Command: tar -t -f ./66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   [Needle::Compile] Command: tar -xvf ./66794ae2eb541201a403c08d48e27de668b32db7.tar.gz -C ../66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   ===> Extraction [OK]: Needle::Compile to /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
@@ -4772,8 +4772,8 @@
   ===> Install [OK] for Needle::Compile:ver<0.0.12>:auth<zef:lizmat>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 35.208s
-               CPU time consumed: 52.148s
+                 Service runtime: 25.694s
+               CPU time consumed: 37.760s
                      Memory peak: 1.1G (swap: 0B)
 
   ```
@@ -4782,12 +4782,97 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p2395408-i2413694.service; invocation ID: a2929a7a9e4c40d29459e45e473689f3
+  Running as unit: run-p2406033-i2431086.service; invocation ID: dacc840935f6421f9d4f94bf8abbc364
   Press ^] three times within 1s to disconnect TTY.
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_0:1
+      ------> [32mity>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_1:1
+      ------> [32mZef>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_2:1
+      ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_3:1
+      ------> [32mery>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_4:1
+      ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_5:1
+      ------> [32mcal>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_6:1
+      ------> [32mory>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_7:1
+      ------> [32mtem>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_8:1
+      ------> [32mtch>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_9:1
+      ------> [32mact>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_10:1
+      ------> [32mild>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_11:1
+      ------> [32mest>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_12:1
+      ------> [32mall>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_13:1
+      ------> [32mort>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_14:1
+      ------> [32ment>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_15:1
+      ------> [32mfig>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_16:1
+      ------> [32mURI>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
   ===> Searching for: Needle::Compile
   ===> Found: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> [via Zef::Repository::Ecosystems<fez>]
-  [Needle::Compile] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788816865.2395409.1535.9262231877146/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz https://360.zef.pm/N/EE/NEEDLE_COMPILE/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
-  ===> Fetching [OK]: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1788816865.2395409.1535.9262231877146/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+  [Needle::Compile] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788819008.2406034.4781.675970406341/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz https://360.zef.pm/N/EE/NEEDLE_COMPILE/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+  ===> Fetching [OK]: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1788819008.2406034.4781.675970406341/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   [Needle::Compile] Command: tar -t -f ./66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   [Needle::Compile] Command: tar -xvf ./66794ae2eb541201a403c08d48e27de668b32db7.tar.gz -C ../66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   ===> Extraction [OK]: Needle::Compile to /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
@@ -5420,8 +5505,8 @@
   [Needle::Compile]         # at t/02-single.rakutest line 14
   [Needle::Compile]         # expected: $(slip("foo",))
   [Needle::Compile]         #      got: $(slip("",))
-  [Needle::Compile]         ok 184 - miss 'bar'
   [Needle::Compile]         # You failed 12 tests of 184
+  [Needle::Compile]         ok 184 - miss 'bar'
   [Needle::Compile]     not ok 2 - contains: find simple 'foo', :ignorecase, :ignorecase
   [Needle::Compile]     # Failed test 'contains: find simple 'foo', :ignorecase, :ignorecase'
   [Needle::Compile]     # at t/02-single.rakutest line 14
@@ -5695,8 +5780,8 @@
   [Needle::Compile]         # expected: $(slip("foo",))
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile]         ok 184 - miss 'bar'
-  [Needle::Compile]         # You failed 12 tests of 184
   [Needle::Compile]     not ok 3 - contains: find simple 'foo', :ignoremark, :ignoremark
+  [Needle::Compile]         # You failed 12 tests of 184
   [Needle::Compile]     # Failed test 'contains: find simple 'foo', :ignoremark, :ignoremark'
   [Needle::Compile]     # at t/02-single.rakutest line 14
   [Needle::Compile]     # Subtest: contains: find simple 'foo', :smartcase, :smartcase
@@ -6243,8 +6328,8 @@
   [Needle::Compile]         # expected: $(slip("foo",))
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile]         ok 184 - miss 'bar'
-  [Needle::Compile]         # You failed 12 tests of 184
   [Needle::Compile]     not ok 5 - contains: find simple 'foo', :smartmark, :smartmark
+  [Needle::Compile]         # You failed 12 tests of 184
   [Needle::Compile]     # Failed test 'contains: find simple 'foo', :smartmark, :smartmark'
   [Needle::Compile]     # at t/02-single.rakutest line 14
   [Needle::Compile]     # You failed 5 tests of 5
@@ -6473,190 +6558,9 @@
   ===> Install [OK] for Needle::Compile:ver<0.0.12>:auth<zef:lizmat>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 39.091s
-               CPU time consumed: 59.257s
-                     Memory peak: 1.1G (swap: 0B)
-
-  ```
-  </details>
-* [ ] [File::Which](https://raku.land//File::Which) – Fail, Bisected: [b61226d](https://github.com/rakudo/rakudo/commit/b61226d8bc93d4c030870b48d18af2adfd3a0f6f)
-  <details><Summary>Old Output</summary>
-
-  ```
-  Running as unit: run-p2395465-i2449751.service; invocation ID: be6ff228095c4625a14abd2985e0a086
-  Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: File::Which
-  ===> Found: File::Which:ver<1.0.4> [via Zef::Repository::Ecosystems<rea>]
-  [File::Which] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788816873.2395466.1894.152888773839/File%3A%3AWhich%3Aver%3C1.0.4%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/F/File%3A%3AWhich/File%3A%3AWhich%3Aver%3C1.0.4%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz
-  ===> Fetching [OK]: File::Which:ver<1.0.4> to /home/coke/sandbox/blin/data/zef-data/tmp/1788816873.2395466.1894.152888773839/File%3A%3AWhich%3Aver%3C1.0.4%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz
-  [File::Which] Command: tar -t -f ./File%3A%3AWhich%3Aver%3C1.0.4%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz
-  [File::Which] Command: tar -xvf ./File%3A%3AWhich%3Aver%3C1.0.4%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz -C ../File%3A%3AWhich%3Aver%3C1.0.4%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz
-  ===> Extraction [OK]: File::Which to /home/coke/sandbox/blin/data/zef-data/tmp/File%3A%3AWhich%3Aver%3C1.0.4%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz
-  ===> Testing: File::Which:ver<1.0.4>
-  [File::Which] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/File%3A%3AWhich%3Aver%3C1.0.4%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz/raku-file-which-master t/00-load.rakutest
-  [File::Which] 1..4
-  [File::Which] ok 1 - File::Which::MacOSX module can be use-d ok
-  [File::Which] ok 2 - File::Which::Unix module can be use-d ok
-  [File::Which] ok 3 - File::Which::Win32 module can be use-d ok
-  [File::Which] ok 4 - File::Which module can be use-d ok
-  [File::Which] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/File%3A%3AWhich%3Aver%3C1.0.4%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz/raku-file-which-master t/01-which.rakutest
-  [File::Which] 1..4
-  [File::Which] ok 1 - 'use File::Which' worked!
-  [File::Which] # Found raku at '/tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/raku'
-  [File::Which] ok 2 - raku is found
-  [File::Which] ok 3 - raku file exists
-  [File::Which] ok 4 - raku and is an executable
-  [File::Which] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/File%3A%3AWhich%3Aver%3C1.0.4%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz/raku-file-which-master t/02-win32.rakutest
-  [File::Which] 1..10
-  [File::Which] ok 1 - # SKIP Windows-only tests
-  [File::Which] ok 2 - # SKIP Windows-only tests
-  [File::Which] ok 3 - # SKIP Windows-only tests
-  [File::Which] ok 4 - # SKIP Windows-only tests
-  [File::Which] ok 5 - # SKIP Windows-only tests
-  [File::Which] ok 6 - # SKIP Windows-only tests
-  [File::Which] ok 7 - # SKIP Windows-only tests
-  [File::Which] ok 8 - # SKIP Windows-only tests
-  [File::Which] ok 9 - # SKIP Windows-only tests
-  [File::Which] ok 10 - # SKIP Windows-only tests
-  [File::Which] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/File%3A%3AWhich%3Aver%3C1.0.4%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz/raku-file-which-master t/03-export.rakutest
-  [File::Which] 1..4
-  [File::Which] ok 1 - 'use File::Which :whence' worked!
-  [File::Which] # Found raku at '/tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/raku' using whence
-  [File::Which] ok 2 - raku is found
-  [File::Which] ok 3 - raku file exists
-  [File::Which] ok 4 - raku and is an executable
-  [File::Which] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/File%3A%3AWhich%3Aver%3C1.0.4%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz/raku-file-which-master t/04-simple.rakutest
-  [File::Which] ok 1 - Null-length false result
-  [File::Which] ok 2 - Positive length false result
-  [File::Which] ok 3 - Found test-bin
-  [File::Which] ok 4 - Check test3 for Unix
-  [File::Which] 1..4
-  [File::Which] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/File%3A%3AWhich%3Aver%3C1.0.4%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz/raku-file-which-master t/05-all.rakutest
-  [File::Which] ok 1 - Found test-bin
-  [File::Which] ok 2 - Found all
-  [File::Which] ok 3 - Found at least one result
-  [File::Which] ok 4 - Zero is defined
-  [File::Which] ok 5 - Empty string
-  [File::Which] 1..5
-  [File::Which] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/File%3A%3AWhich%3Aver%3C1.0.4%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz/raku-file-which-master t/99-author-meta.rakutest
-  [File::Which] 1..1
-  [File::Which] ok 1 - # SKIP Skipping author test
-  ===> Testing [OK] for File::Which:ver<1.0.4>
-  ===> Installing: File::Which:ver<1.0.4>
-  ===> Install [OK] for File::Which:ver<1.0.4>
-            Finished with result: success
-  Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 42.181s
-               CPU time consumed: 59.598s
-                     Memory peak: 1.4G (swap: 0B)
-
-  ```
-  </details>
-  <details>
-  <summary>New Output</summary>
-
-  ```
-  Running as unit: run-p2393497-i2434460.service
-  Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: File::Which
-  No candidates found matching identity: File::Which
-            Finished with result: exit-code
-  Main processes terminated with: code=exited, status=255/EXCEPTION
-                 Service runtime: 46.679s
-               CPU time consumed: 1min 2.399s
-                     Memory peak: 1G (swap: 0B)
-
-  ```
-  </details>
-* [ ] [Getopt::Long](https://raku.land/cpan:LEONT/Getopt::Long) – Fail, Bisected: [b61226d](https://github.com/rakudo/rakudo/commit/b61226d8bc93d4c030870b48d18af2adfd3a0f6f)
-  <details><Summary>Old Output</summary>
-
-  ```
-  Running as unit: run-p2395345-i2461722.service; invocation ID: 0382c770d7254a98be58b78614a86e43
-  Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: Getopt::Long
-  ===> Found: Getopt::Long:ver<0.4.2>:auth<cpan:LEONT> [via Zef::Repository::Ecosystems<rea>]
-  [Getopt::Long] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788816873.2395346.9000.049688294412/Getopt%3A%3ALong%3Aver%3C0.4.2%3E%3Aauth%3Ccpan%3ALEONT%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/Getopt%3A%3ALong/Getopt%3A%3ALong%3Aver%3C0.4.2%3E%3Aauth%3Ccpan%3ALEONT%3E.tar.gz
-  ===> Fetching [OK]: Getopt::Long:ver<0.4.2>:auth<cpan:LEONT> to /home/coke/sandbox/blin/data/zef-data/tmp/1788816873.2395346.9000.049688294412/Getopt%3A%3ALong%3Aver%3C0.4.2%3E%3Aauth%3Ccpan%3ALEONT%3E.tar.gz
-  [Getopt::Long] Command: tar -t -f ./Getopt%3A%3ALong%3Aver%3C0.4.2%3E%3Aauth%3Ccpan%3ALEONT%3E.tar.gz
-  [Getopt::Long] Command: tar -xvf ./Getopt%3A%3ALong%3Aver%3C0.4.2%3E%3Aauth%3Ccpan%3ALEONT%3E.tar.gz -C ../Getopt%3A%3ALong%3Aver%3C0.4.2%3E%3Aauth%3Ccpan%3ALEONT%3E.tar.gz
-  ===> Extraction [OK]: Getopt::Long to /home/coke/sandbox/blin/data/zef-data/tmp/Getopt%3A%3ALong%3Aver%3C0.4.2%3E%3Aauth%3Ccpan%3ALEONT%3E.tar.gz
-  ===> Testing: Getopt::Long:ver<0.4.2>
-  [Getopt::Long] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Getopt%3A%3ALong%3Aver%3C0.4.2%3E%3Aauth%3Ccpan%3ALEONT%3E.tar.gz/Getopt-Long-0.4.2 t/basic.rakutest
-  [Getopt::Long] ok 1 - Common argument mix works
-  [Getopt::Long] ok 2 - Common argument mix works (2)
-  [Getopt::Long] ok 3 - Calling main (1) works
-  [Getopt::Long] ok 4 - Short options work
-  [Getopt::Long] ok 5 - Calling main (1) works
-  [Getopt::Long] ok 6 - "--" terminates argument handling
-  [Getopt::Long] ok 7 - Floating point arguments work
-  [Getopt::Long] ok 8 - :i without argument works
-  [Getopt::Long] ok 9 - :i with argument works
-  [Getopt::Long] ok 10 - :1 without argument works
-  [Getopt::Long] ok 11 - :1 with argument works
-  [Getopt::Long] ok 12 - Counter adds up
-  [Getopt::Long] ok 13 - Colon singles fine
-  [Getopt::Long] ok 14 - Colon counter adds up
-  [Getopt::Long] ok 15 - Parsing octal argument with "i"
-  [Getopt::Long] ok 16 - Parsing negative octal argument with "i"
-  [Getopt::Long] ok 17 - Parsing decimal argument with "i"
-  [Getopt::Long] ok 18 - Negated arguments produce False
-  [Getopt::Long] ok 19 - Bundling can be disabled
-  [Getopt::Long] ok 20 - Repeat specifier works
-  [Getopt::Long] ok 21 - Repeat specifier works with range
-  [Getopt::Long] ok 22 - sub main1 is not quite a Sub
-  [Getopt::Long] ok 23 - sub main1 is parsed
-  [Getopt::Long] ok 24 - getopt trait works
-  [Getopt::Long] ok 25 - negative argument detected
-  [Getopt::Long] ok 26 - Pair arguments
-  [Getopt::Long] ok 27 - Pair arguments
-  [Getopt::Long] ok 28 - Repeat specifier works
-  [Getopt::Long] ok 29 - :compat-singles appears to work
-  [Getopt::Long] ok 30 - :compat-negation works
-  [Getopt::Long] ok 31 - compat negation delivers a false value
-  [Getopt::Long] ok 32 - compat negation delivers the correct string
-  [Getopt::Long] ok 33 - Correctly parsed enum
-  [Getopt::Long] ok 34 - Correctly parsed enum
-  [Getopt::Long] ok 35 - Typed positionals work
-  [Getopt::Long] ok 36 - Typed positionals work on multis as well
-  [Getopt::Long] ok 37 - Can parse DateTime
-  [Getopt::Long] ok 38 - Can parse Date
-  [Getopt::Long] ok 39 - Can auto-abbreviate
-  [Getopt::Long] ok 40 - Parse a custom parseable type
-  [Getopt::Long] # Subtest: No conversion known for type Signature
-  [Getopt::Long]     1..2
-  [Getopt::Long]     ok 1 - code dies
-  [Getopt::Long]     ok 2 - right exception type (Getopt::Long::Exception)
-  [Getopt::Long] ok 41 - No conversion known for type Signature
-  [Getopt::Long] ok 42 - Bundled options with arguments work
-  [Getopt::Long] ok 43 - :!permute works
-  [Getopt::Long] ok 44 - Custom converter works
-  [Getopt::Long] ok 45 - 
-  [Getopt::Long] 1..45
-  ===> Testing [OK] for Getopt::Long:ver<0.4.2>
-  ===> Installing: Getopt::Long:ver<0.4.2>
-  ===> Install [OK] for Getopt::Long:ver<0.4.2>
-            Finished with result: success
-  Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 41.570s
-               CPU time consumed: 57.899s
-                     Memory peak: 1.2G (swap: 0B)
-
-  ```
-  </details>
-  <details>
-  <summary>New Output</summary>
-
-  ```
-  Running as unit: run-p2393504-i2430259.service
-  Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: Getopt::Long
-  No candidates found matching identity: Getopt::Long
-            Finished with result: exit-code
-  Main processes terminated with: code=exited, status=255/EXCEPTION
-                 Service runtime: 44.320s
-               CPU time consumed: 1min 2.280s
-                     Memory peak: 1G (swap: 0B)
+                 Service runtime: 5.944s
+               CPU time consumed: 7.792s
+                     Memory peak: 876.9M (swap: 0B)
 
   ```
   </details>
@@ -6665,12 +6569,12 @@
 
 | Status                    | Count |          Modules          |
 | :------------------------ | :---: | :------------------------ |
-| Fail                      |     3 | [File::Which](https://raku.land//File::Which) [Getopt::Long](https://raku.land/cpan:LEONT/Getopt::Long) [Needle::Compile](https://raku.land/zef:lizmat/Needle::Compile) |
-| OK                        |    35 | ⋯                         |
+| Fail                      |     1 | [Needle::Compile](https://raku.land/zef:lizmat/Needle::Compile) |
+| OK                        |     4 | [File::Which](https://raku.land//File::Which) [Getopt::Long](https://raku.land/cpan:LEONT/Getopt::Long) [String::Utils](https://raku.land/zef:lizmat/String::Utils) [has-word](https://raku.land/zef:lizmat/has-word) |
 
 
 
-This run started on 2026-09-07T21:44:51Z and finished in 13 minutes.
+This run started on 2026-09-07T22:15:18Z and finished in 6 minutes.
 
 <!--
 Graph of bisected modules and their dependencies:

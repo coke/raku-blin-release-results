@@ -1,9 +1,94 @@
-Running as unit: run-p2395408-i2413694.service; invocation ID: a2929a7a9e4c40d29459e45e473689f3
+Running as unit: run-p2406033-i2431086.service; invocation ID: dacc840935f6421f9d4f94bf8abbc364
 Press ^] three times within 1s to disconnect TTY.
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_0:1
+    ------> [32mity>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_1:1
+    ------> [32mZef>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_2:1
+    ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_3:1
+    ------> [32mery>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_4:1
+    ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_5:1
+    ------> [32mcal>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_6:1
+    ------> [32mory>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_7:1
+    ------> [32mtem>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_8:1
+    ------> [32mtch>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_9:1
+    ------> [32mact>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_10:1
+    ------> [32mild>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_11:1
+    ------> [32mest>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_12:1
+    ------> [32mall>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_13:1
+    ------> [32mort>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_14:1
+    ------> [32ment>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_15:1
+    ------> [32mfig>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_16:1
+    ------> [32mURI>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
 ===> Searching for: Needle::Compile
 ===> Found: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> [via Zef::Repository::Ecosystems<fez>]
-[Needle::Compile] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788816865.2395409.1535.9262231877146/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz https://360.zef.pm/N/EE/NEEDLE_COMPILE/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
-===> Fetching [OK]: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1788816865.2395409.1535.9262231877146/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+[Needle::Compile] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788819008.2406034.4781.675970406341/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz https://360.zef.pm/N/EE/NEEDLE_COMPILE/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+===> Fetching [OK]: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1788819008.2406034.4781.675970406341/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
 [Needle::Compile] Command: tar -t -f ./66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
 [Needle::Compile] Command: tar -xvf ./66794ae2eb541201a403c08d48e27de668b32db7.tar.gz -C ../66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
 ===> Extraction [OK]: Needle::Compile to /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
@@ -636,8 +721,8 @@ Press ^] three times within 1s to disconnect TTY.
 [Needle::Compile]         # at t/02-single.rakutest line 14
 [Needle::Compile]         # expected: $(slip("foo",))
 [Needle::Compile]         #      got: $(slip("",))
-[Needle::Compile]         ok 184 - miss 'bar'
 [Needle::Compile]         # You failed 12 tests of 184
+[Needle::Compile]         ok 184 - miss 'bar'
 [Needle::Compile]     not ok 2 - contains: find simple 'foo', :ignorecase, :ignorecase
 [Needle::Compile]     # Failed test 'contains: find simple 'foo', :ignorecase, :ignorecase'
 [Needle::Compile]     # at t/02-single.rakutest line 14
@@ -911,8 +996,8 @@ Press ^] three times within 1s to disconnect TTY.
 [Needle::Compile]         # expected: $(slip("foo",))
 [Needle::Compile]         #      got: $(slip("",))
 [Needle::Compile]         ok 184 - miss 'bar'
-[Needle::Compile]         # You failed 12 tests of 184
 [Needle::Compile]     not ok 3 - contains: find simple 'foo', :ignoremark, :ignoremark
+[Needle::Compile]         # You failed 12 tests of 184
 [Needle::Compile]     # Failed test 'contains: find simple 'foo', :ignoremark, :ignoremark'
 [Needle::Compile]     # at t/02-single.rakutest line 14
 [Needle::Compile]     # Subtest: contains: find simple 'foo', :smartcase, :smartcase
@@ -1459,8 +1544,8 @@ Press ^] three times within 1s to disconnect TTY.
 [Needle::Compile]         # expected: $(slip("foo",))
 [Needle::Compile]         #      got: $(slip("",))
 [Needle::Compile]         ok 184 - miss 'bar'
-[Needle::Compile]         # You failed 12 tests of 184
 [Needle::Compile]     not ok 5 - contains: find simple 'foo', :smartmark, :smartmark
+[Needle::Compile]         # You failed 12 tests of 184
 [Needle::Compile]     # Failed test 'contains: find simple 'foo', :smartmark, :smartmark'
 [Needle::Compile]     # at t/02-single.rakutest line 14
 [Needle::Compile]     # You failed 5 tests of 5
@@ -1689,6 +1774,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for Needle::Compile:ver<0.0.12>:auth<zef:lizmat>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 39.091s
-             CPU time consumed: 59.257s
-                   Memory peak: 1.1G (swap: 0B)
+               Service runtime: 5.944s
+             CPU time consumed: 7.792s
+                   Memory peak: 876.9M (swap: 0B)
