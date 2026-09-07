@@ -1,0 +1,1694 @@
+Running as unit: run-p1809294-i1804109.service; invocation ID: e3aef58caec043c292cc6cfd94a14c73
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Needle::Compile
+===> Found: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> [via Zef::Repository::Ecosystems<fez>]
+[Needle::Compile] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788790693.1809295.5851.396656229247/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz https://360.zef.pm/N/EE/NEEDLE_COMPILE/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+===> Fetching [OK]: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1788790693.1809295.5851.396656229247/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+[Needle::Compile] Command: tar -t -f ./66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+[Needle::Compile] Command: tar -xvf ./66794ae2eb541201a403c08d48e27de668b32db7.tar.gz -C ../66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+===> Extraction [OK]: Needle::Compile to /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+===> Testing: Needle::Compile:ver<0.0.12>:auth<zef:lizmat>
+[Needle::Compile] Command: /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/01-basic.rakutest
+[Needle::Compile] 1..36
+[Needle::Compile] ok 1 - did compile-needle get exported
+[Needle::Compile] ok 2 - did implicit2explicit get exported
+[Needle::Compile] ok 3 - did Type get exported
+[Needle::Compile] ok 4 - did StrType get exported
+[Needle::Compile] ok 5 - it's a string
+[Needle::Compile] ok 6 - it's a butted string
+[Needle::Compile] ok 7 - not a butted string
+[Needle::Compile] ok 8 - is 'foo' *NOT* acceptable
+[Needle::Compile] ok 9 - is 'and' acceptable
+[Needle::Compile] ok 10 - is 'auto' acceptable
+[Needle::Compile] ok 11 - is 'code' acceptable
+[Needle::Compile] ok 12 - is 'contains' acceptable
+[Needle::Compile] ok 13 - is 'ends-with' acceptable
+[Needle::Compile] ok 14 - is 'equal' acceptable
+[Needle::Compile] ok 15 - is 'file' acceptable
+[Needle::Compile] ok 16 - is 'json-path' acceptable
+[Needle::Compile] ok 17 - is 'not' acceptable
+[Needle::Compile] ok 18 - is 'regex' acceptable
+[Needle::Compile] ok 19 - is 'split' acceptable
+[Needle::Compile] ok 20 - is 'starts-with' acceptable
+[Needle::Compile] ok 21 - is 'words' acceptable
+[Needle::Compile] ok 22 - did 'foo' produce the correct explicit?
+[Needle::Compile] ok 23 - did '§foo' produce the correct explicit?
+[Needle::Compile] ok 24 - did '^foo' produce the correct explicit?
+[Needle::Compile] ok 25 - did 'foo$' produce the correct explicit?
+[Needle::Compile] ok 26 - did '^foo$' produce the correct explicit?
+[Needle::Compile] ok 27 - did 'url:foo' produce the correct explicit?
+[Needle::Compile] ok 28 - did 'file:foo' produce the correct explicit?
+[Needle::Compile] ok 29 - did 's:foo' produce the correct explicit?
+[Needle::Compile] ok 30 - did 'jp:foo' produce the correct explicit?
+[Needle::Compile] ok 31 - did '*.foo' produce the correct explicit?
+[Needle::Compile] ok 32 - did '{.foo}' produce the correct explicit?
+[Needle::Compile] ok 33 - did '/foo/' produce the correct explicit?
+[Needle::Compile] ok 34 - did '!foo' produce the correct explicit?
+[Needle::Compile] ok 35 - did '&foo' produce the correct explicit?
+[Needle::Compile] ok 36 - did we get an AST
+[Needle::Compile] Command: /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/02-single.rakutest
+[Needle::Compile] 1..10
+[Needle::Compile] # Subtest: code: simple .subst
+[Needle::Compile]     1..8
+[Needle::Compile]     ok 1 - Testing ".subst(\"foo\", \"bar\")" but Type('code')
+[Needle::Compile]     ok 2 - 'foo' transformed ok
+[Needle::Compile]     ok 3 - Testing "\{.subst(\"foo\", \"bar\")}"
+[Needle::Compile]     ok 4 - 'foo' transformed ok
+[Needle::Compile]     ok 5 - Testing :code(".subst(\"foo\", \"bar\")")
+[Needle::Compile]     ok 6 - 'foo' transformed ok
+[Needle::Compile]     ok 7 - Testing "*.subst(\"foo\", \"bar\")"
+[Needle::Compile]     ok 8 - 'foo' transformed ok
+[Needle::Compile] ok 1 - code: simple .subst
+[Needle::Compile] # Subtest: code: simple .uc
+[Needle::Compile]     1..8
+[Needle::Compile]     ok 1 - Testing ".uc" but Type('code')
+[Needle::Compile]     ok 2 - 'foo' transformed ok
+[Needle::Compile]     ok 3 - Testing "\{.uc}"
+[Needle::Compile]     ok 4 - 'foo' transformed ok
+[Needle::Compile]     ok 5 - Testing :code(".uc")
+[Needle::Compile]     ok 6 - 'foo' transformed ok
+[Needle::Compile]     ok 7 - Testing "*.uc"
+[Needle::Compile]     ok 8 - 'foo' transformed ok
+[Needle::Compile] ok 2 - code: simple .uc
+[Needle::Compile] # Subtest: code: check availability of $*_
+[Needle::Compile]     1..6
+[Needle::Compile]     ok 1 - Testing "\$*_ eq \$_" but Type('code')
+[Needle::Compile]     ok 2 - 'foo' transformed ok
+[Needle::Compile]     ok 3 - Testing "\{\$*_ eq \$_}"
+[Needle::Compile]     ok 4 - 'foo' transformed ok
+[Needle::Compile]     ok 5 - Testing :code("\$*_ eq \$_")
+[Needle::Compile]     ok 6 - 'foo' transformed ok
+[Needle::Compile] ok 3 - code: check availability of $*_
+[Needle::Compile] # Subtest: code: check loading of Test module
+[Needle::Compile]     1..9
+[Needle::Compile]     ok 1 - Testing "is \$_, 42" but Type('code')
+[Needle::Compile]     ok 2 - 
+[Needle::Compile]     ok 3 - '42' transformed ok
+[Needle::Compile]     ok 4 - Testing "\{is \$_, 42}"
+[Needle::Compile]     ok 5 - 
+[Needle::Compile]     ok 6 - '42' transformed ok
+[Needle::Compile]     ok 7 - Testing :code("is \$_, 42")
+[Needle::Compile]     ok 8 - 
+[Needle::Compile]     ok 9 - '42' transformed ok
+[Needle::Compile] ok 4 - code: check loading of Test module
+[Needle::Compile] # Subtest: all named arguments for contains
+[Needle::Compile]     1..5
+[Needle::Compile]     # Subtest: contains: find simple 'foo'
+[Needle::Compile]         1..184
+[Needle::Compile]         ok 1 - Testing "foo"
+[Needle::Compile]         ok 2 - hit 'foo'
+[Needle::Compile]         ok 3 - hit 'infooout'
+[Needle::Compile]         ok 4 - miss 'bar'
+[Needle::Compile]         ok 5 - Testing :not("foo")
+[Needle::Compile]         ok 6 - not hit 'foo'
+[Needle::Compile]         ok 7 - not hit 'infooout'
+[Needle::Compile]         ok 8 - not miss 'bar'
+[Needle::Compile]         ok 9 - Testing :and("foo")
+[Needle::Compile]         ok 10 - and hit 'foo'
+[Needle::Compile]         ok 11 - and hit 'infooout'
+[Needle::Compile]         ok 12 - and miss 'bar'
+[Needle::Compile]         ok 13 - Testing "foo" but Type('auto')
+[Needle::Compile]         ok 14 - hit 'foo'
+[Needle::Compile]         ok 15 - hit 'infooout'
+[Needle::Compile]         ok 16 - miss 'bar'
+[Needle::Compile]         ok 17 - Testing :not("foo" but Type('auto'))
+[Needle::Compile]         ok 18 - not hit 'foo'
+[Needle::Compile]         ok 19 - not hit 'infooout'
+[Needle::Compile]         ok 20 - not miss 'bar'
+[Needle::Compile]         ok 21 - Testing :and("foo" but Type('auto'))
+[Needle::Compile]         ok 22 - and hit 'foo'
+[Needle::Compile]         ok 23 - and hit 'infooout'
+[Needle::Compile]         ok 24 - and miss 'bar'
+[Needle::Compile]         ok 25 - Testing "foo" but Type('contains')
+[Needle::Compile]         ok 26 - hit 'foo'
+[Needle::Compile]         ok 27 - hit 'infooout'
+[Needle::Compile]         ok 28 - miss 'bar'
+[Needle::Compile]         ok 29 - Testing :not("foo" but Type('contains'))
+[Needle::Compile]         ok 30 - not hit 'foo'
+[Needle::Compile]         ok 31 - not hit 'infooout'
+[Needle::Compile]         ok 32 - not miss 'bar'
+[Needle::Compile]         ok 33 - Testing :and("foo" but Type('contains'))
+[Needle::Compile]         ok 34 - and hit 'foo'
+[Needle::Compile]         ok 35 - and hit 'infooout'
+[Needle::Compile]         ok 36 - and miss 'bar'
+[Needle::Compile]         ok 37 - Testing "foo" but Type('regex')
+[Needle::Compile]         ok 38 - hit 'foo'
+[Needle::Compile]         ok 39 - hit 'infooout'
+[Needle::Compile]         ok 40 - miss 'bar'
+[Needle::Compile]         ok 41 - Testing :not("foo" but Type('regex'))
+[Needle::Compile]         ok 42 - not hit 'foo'
+[Needle::Compile]         ok 43 - not hit 'infooout'
+[Needle::Compile]         ok 44 - not miss 'bar'
+[Needle::Compile]         ok 45 - Testing :and("foo" but Type('regex'))
+[Needle::Compile]         ok 46 - and hit 'foo'
+[Needle::Compile]         ok 47 - and hit 'infooout'
+[Needle::Compile]         ok 48 - and miss 'bar'
+[Needle::Compile]         ok 49 - Testing ".contains('foo')" but Type('code')
+[Needle::Compile]         ok 50 - hit 'foo'
+[Needle::Compile]         ok 51 - hit 'infooout'
+[Needle::Compile]         ok 52 - miss 'bar'
+[Needle::Compile]         ok 53 - Testing :not(".contains('foo')" but Type('code'))
+[Needle::Compile]         ok 54 - not hit 'foo'
+[Needle::Compile]         ok 55 - not hit 'infooout'
+[Needle::Compile]         ok 56 - not miss 'bar'
+[Needle::Compile]         ok 57 - Testing :and(".contains('foo')" but Type('code'))
+[Needle::Compile]         ok 58 - and hit 'foo'
+[Needle::Compile]         ok 59 - and hit 'infooout'
+[Needle::Compile]         ok 60 - and miss 'bar'
+[Needle::Compile]         ok 61 - Testing "/foo/"
+[Needle::Compile]         ok 62 - hit 'foo'
+[Needle::Compile]         ok 63 - hit 'infooout'
+[Needle::Compile]         ok 64 - miss 'bar'
+[Needle::Compile]         ok 65 - Testing :not("/foo/")
+[Needle::Compile]         ok 66 - not hit 'foo'
+[Needle::Compile]         ok 67 - not hit 'infooout'
+[Needle::Compile]         ok 68 - not miss 'bar'
+[Needle::Compile]         ok 69 - Testing :and("/foo/")
+[Needle::Compile]         ok 70 - and hit 'foo'
+[Needle::Compile]         ok 71 - and hit 'infooout'
+[Needle::Compile]         ok 72 - and miss 'bar'
+[Needle::Compile]         ok 73 - Testing "\{.contains('foo')}"
+[Needle::Compile]         ok 74 - hit 'foo'
+[Needle::Compile]         ok 75 - hit 'infooout'
+[Needle::Compile]         ok 76 - miss 'bar'
+[Needle::Compile]         ok 77 - Testing :not("\{.contains('foo')}")
+[Needle::Compile]         ok 78 - not hit 'foo'
+[Needle::Compile]         ok 79 - not hit 'infooout'
+[Needle::Compile]         ok 80 - not miss 'bar'
+[Needle::Compile]         ok 81 - Testing :and("\{.contains('foo')}")
+[Needle::Compile]         ok 82 - and hit 'foo'
+[Needle::Compile]         ok 83 - and hit 'infooout'
+[Needle::Compile]         ok 84 - and miss 'bar'
+[Needle::Compile]         ok 85 - Testing "*.contains('foo')"
+[Needle::Compile]         ok 86 - hit 'foo'
+[Needle::Compile]         ok 87 - hit 'infooout'
+[Needle::Compile]         ok 88 - miss 'bar'
+[Needle::Compile]         ok 89 - Testing :not("*.contains('foo')")
+[Needle::Compile]         ok 90 - not hit 'foo'
+[Needle::Compile]         ok 91 - not hit 'infooout'
+[Needle::Compile]         ok 92 - not miss 'bar'
+[Needle::Compile]         ok 93 - Testing :and("*.contains('foo')")
+[Needle::Compile]         ok 94 - and hit 'foo'
+[Needle::Compile]         ok 95 - and hit 'infooout'
+[Needle::Compile]         ok 96 - and miss 'bar'
+[Needle::Compile]         ok 97 - Testing :auto("foo")
+[Needle::Compile]         ok 98 - hit 'foo'
+[Needle::Compile]         ok 99 - hit 'infooout'
+[Needle::Compile]         ok 100 - miss 'bar'
+[Needle::Compile]         ok 101 - Testing :not(:auto("foo"))
+[Needle::Compile]         ok 102 - not hit 'foo'
+[Needle::Compile]         ok 103 - not hit 'infooout'
+[Needle::Compile]         ok 104 - not miss 'bar'
+[Needle::Compile]         ok 105 - Testing :and(:auto("foo"))
+[Needle::Compile]         ok 106 - and hit 'foo'
+[Needle::Compile]         ok 107 - and hit 'infooout'
+[Needle::Compile]         ok 108 - and miss 'bar'
+[Needle::Compile]         ok 109 - Testing :contains("foo")
+[Needle::Compile]         ok 110 - hit 'foo'
+[Needle::Compile]         ok 111 - hit 'infooout'
+[Needle::Compile]         ok 112 - miss 'bar'
+[Needle::Compile]         ok 113 - Testing :not(:contains("foo"))
+[Needle::Compile]         ok 114 - not hit 'foo'
+[Needle::Compile]         ok 115 - not hit 'infooout'
+[Needle::Compile]         ok 116 - not miss 'bar'
+[Needle::Compile]         ok 117 - Testing :and(:contains("foo"))
+[Needle::Compile]         ok 118 - and hit 'foo'
+[Needle::Compile]         ok 119 - and hit 'infooout'
+[Needle::Compile]         ok 120 - and miss 'bar'
+[Needle::Compile]         ok 121 - Testing :regex("foo")
+[Needle::Compile]         ok 122 - hit 'foo'
+[Needle::Compile]         ok 123 - hit 'infooout'
+[Needle::Compile]         ok 124 - miss 'bar'
+[Needle::Compile]         ok 125 - Testing :not(:regex("foo"))
+[Needle::Compile]         ok 126 - not hit 'foo'
+[Needle::Compile]         ok 127 - not hit 'infooout'
+[Needle::Compile]         ok 128 - not miss 'bar'
+[Needle::Compile]         ok 129 - Testing :and(:regex("foo"))
+[Needle::Compile]         ok 130 - and hit 'foo'
+[Needle::Compile]         ok 131 - and hit 'infooout'
+[Needle::Compile]         ok 132 - and miss 'bar'
+[Needle::Compile]         ok 133 - Testing :code(".contains('foo')")
+[Needle::Compile]         ok 134 - hit 'foo'
+[Needle::Compile]         ok 135 - hit 'infooout'
+[Needle::Compile]         ok 136 - miss 'bar'
+[Needle::Compile]         ok 137 - Testing :not(:code(".contains('foo')"))
+[Needle::Compile]         ok 138 - not hit 'foo'
+[Needle::Compile]         ok 139 - not hit 'infooout'
+[Needle::Compile]         ok 140 - not miss 'bar'
+[Needle::Compile]         ok 141 - Testing :and(:code(".contains('foo')"))
+[Needle::Compile]         ok 142 - and hit 'foo'
+[Needle::Compile]         ok 143 - and hit 'infooout'
+[Needle::Compile]         ok 144 - and miss 'bar'
+[Needle::Compile]         ok 145 - Testing "!foo"
+[Needle::Compile]         ok 146 - ! hit 'foo'
+[Needle::Compile]         ok 147 - ! hit 'infooout'
+[Needle::Compile]         ok 148 - ! miss 'bar'
+[Needle::Compile]         ok 149 - Testing "!/foo/"
+[Needle::Compile]         ok 150 - ! hit 'foo'
+[Needle::Compile]         ok 151 - ! hit 'infooout'
+[Needle::Compile]         ok 152 - ! miss 'bar'
+[Needle::Compile]         ok 153 - Testing "!\{.contains('foo')}"
+[Needle::Compile]         ok 154 - ! hit 'foo'
+[Needle::Compile]         ok 155 - ! hit 'infooout'
+[Needle::Compile]         ok 156 - ! miss 'bar'
+[Needle::Compile]         ok 157 - Testing "!*.contains('foo')"
+[Needle::Compile]         ok 158 - ! hit 'foo'
+[Needle::Compile]         ok 159 - ! hit 'infooout'
+[Needle::Compile]         ok 160 - ! miss 'bar'
+[Needle::Compile]         ok 161 - Testing "foo"
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 162 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 163 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 164 - miss 'bar'
+[Needle::Compile]         ok 165 - Testing "foo" but Type('contains')
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 166 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 167 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 168 - miss 'bar'
+[Needle::Compile]         ok 169 - Testing "foo" but Type('regex')
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 170 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 171 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 172 - miss 'bar'
+[Needle::Compile]         ok 173 - Testing "/foo/"
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 174 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 175 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 176 - miss 'bar'
+[Needle::Compile]         ok 177 - Testing :contains("foo")
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 178 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 179 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 180 - miss 'bar'
+[Needle::Compile]         ok 181 - Testing :regex("foo")
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 182 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 183 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 184 - miss 'bar'
+[Needle::Compile]         # You failed 12 tests of 184
+[Needle::Compile]     not ok 1 - contains: find simple 'foo'
+[Needle::Compile]     # Failed test 'contains: find simple 'foo''
+[Needle::Compile]     # at t/02-single.rakutest line 14
+[Needle::Compile]     # Subtest: contains: find simple 'foo', :ignorecase, :ignorecase
+[Needle::Compile]         1..184
+[Needle::Compile]         ok 1 - Testing "foo"
+[Needle::Compile]         ok 2 - hit 'foo'
+[Needle::Compile]         ok 3 - hit 'infooout'
+[Needle::Compile]         ok 4 - miss 'bar'
+[Needle::Compile]         ok 5 - Testing :not("foo")
+[Needle::Compile]         ok 6 - not hit 'foo'
+[Needle::Compile]         ok 7 - not hit 'infooout'
+[Needle::Compile]         ok 8 - not miss 'bar'
+[Needle::Compile]         ok 9 - Testing :and("foo")
+[Needle::Compile]         ok 10 - and hit 'foo'
+[Needle::Compile]         ok 11 - and hit 'infooout'
+[Needle::Compile]         ok 12 - and miss 'bar'
+[Needle::Compile]         ok 13 - Testing "foo" but Type('auto')
+[Needle::Compile]         ok 14 - hit 'foo'
+[Needle::Compile]         ok 15 - hit 'infooout'
+[Needle::Compile]         ok 16 - miss 'bar'
+[Needle::Compile]         ok 17 - Testing :not("foo" but Type('auto'))
+[Needle::Compile]         ok 18 - not hit 'foo'
+[Needle::Compile]         ok 19 - not hit 'infooout'
+[Needle::Compile]         ok 20 - not miss 'bar'
+[Needle::Compile]         ok 21 - Testing :and("foo" but Type('auto'))
+[Needle::Compile]         ok 22 - and hit 'foo'
+[Needle::Compile]         ok 23 - and hit 'infooout'
+[Needle::Compile]         ok 24 - and miss 'bar'
+[Needle::Compile]         ok 25 - Testing "foo" but Type('contains')
+[Needle::Compile]         ok 26 - hit 'foo'
+[Needle::Compile]         ok 27 - hit 'infooout'
+[Needle::Compile]         ok 28 - miss 'bar'
+[Needle::Compile]         ok 29 - Testing :not("foo" but Type('contains'))
+[Needle::Compile]         ok 30 - not hit 'foo'
+[Needle::Compile]         ok 31 - not hit 'infooout'
+[Needle::Compile]         ok 32 - not miss 'bar'
+[Needle::Compile]         ok 33 - Testing :and("foo" but Type('contains'))
+[Needle::Compile]         ok 34 - and hit 'foo'
+[Needle::Compile]         ok 35 - and hit 'infooout'
+[Needle::Compile]         ok 36 - and miss 'bar'
+[Needle::Compile]         ok 37 - Testing "foo" but Type('regex')
+[Needle::Compile]         ok 38 - hit 'foo'
+[Needle::Compile]         ok 39 - hit 'infooout'
+[Needle::Compile]         ok 40 - miss 'bar'
+[Needle::Compile]         ok 41 - Testing :not("foo" but Type('regex'))
+[Needle::Compile]         ok 42 - not hit 'foo'
+[Needle::Compile]         ok 43 - not hit 'infooout'
+[Needle::Compile]         ok 44 - not miss 'bar'
+[Needle::Compile]         ok 45 - Testing :and("foo" but Type('regex'))
+[Needle::Compile]         ok 46 - and hit 'foo'
+[Needle::Compile]         ok 47 - and hit 'infooout'
+[Needle::Compile]         ok 48 - and miss 'bar'
+[Needle::Compile]         ok 49 - Testing ".contains('foo')" but Type('code')
+[Needle::Compile]         ok 50 - hit 'foo'
+[Needle::Compile]         ok 51 - hit 'infooout'
+[Needle::Compile]         ok 52 - miss 'bar'
+[Needle::Compile]         ok 53 - Testing :not(".contains('foo')" but Type('code'))
+[Needle::Compile]         ok 54 - not hit 'foo'
+[Needle::Compile]         ok 55 - not hit 'infooout'
+[Needle::Compile]         ok 56 - not miss 'bar'
+[Needle::Compile]         ok 57 - Testing :and(".contains('foo')" but Type('code'))
+[Needle::Compile]         ok 58 - and hit 'foo'
+[Needle::Compile]         ok 59 - and hit 'infooout'
+[Needle::Compile]         ok 60 - and miss 'bar'
+[Needle::Compile]         ok 61 - Testing "/foo/"
+[Needle::Compile]         ok 62 - hit 'foo'
+[Needle::Compile]         ok 63 - hit 'infooout'
+[Needle::Compile]         ok 64 - miss 'bar'
+[Needle::Compile]         ok 65 - Testing :not("/foo/")
+[Needle::Compile]         ok 66 - not hit 'foo'
+[Needle::Compile]         ok 67 - not hit 'infooout'
+[Needle::Compile]         ok 68 - not miss 'bar'
+[Needle::Compile]         ok 69 - Testing :and("/foo/")
+[Needle::Compile]         ok 70 - and hit 'foo'
+[Needle::Compile]         ok 71 - and hit 'infooout'
+[Needle::Compile]         ok 72 - and miss 'bar'
+[Needle::Compile]         ok 73 - Testing "\{.contains('foo')}"
+[Needle::Compile]         ok 74 - hit 'foo'
+[Needle::Compile]         ok 75 - hit 'infooout'
+[Needle::Compile]         ok 76 - miss 'bar'
+[Needle::Compile]         ok 77 - Testing :not("\{.contains('foo')}")
+[Needle::Compile]         ok 78 - not hit 'foo'
+[Needle::Compile]         ok 79 - not hit 'infooout'
+[Needle::Compile]         ok 80 - not miss 'bar'
+[Needle::Compile]         ok 81 - Testing :and("\{.contains('foo')}")
+[Needle::Compile]         ok 82 - and hit 'foo'
+[Needle::Compile]         ok 83 - and hit 'infooout'
+[Needle::Compile]         ok 84 - and miss 'bar'
+[Needle::Compile]         ok 85 - Testing "*.contains('foo')"
+[Needle::Compile]         ok 86 - hit 'foo'
+[Needle::Compile]         ok 87 - hit 'infooout'
+[Needle::Compile]         ok 88 - miss 'bar'
+[Needle::Compile]         ok 89 - Testing :not("*.contains('foo')")
+[Needle::Compile]         ok 90 - not hit 'foo'
+[Needle::Compile]         ok 91 - not hit 'infooout'
+[Needle::Compile]         ok 92 - not miss 'bar'
+[Needle::Compile]         ok 93 - Testing :and("*.contains('foo')")
+[Needle::Compile]         ok 94 - and hit 'foo'
+[Needle::Compile]         ok 95 - and hit 'infooout'
+[Needle::Compile]         ok 96 - and miss 'bar'
+[Needle::Compile]         ok 97 - Testing :auto("foo")
+[Needle::Compile]         ok 98 - hit 'foo'
+[Needle::Compile]         ok 99 - hit 'infooout'
+[Needle::Compile]         ok 100 - miss 'bar'
+[Needle::Compile]         ok 101 - Testing :not(:auto("foo"))
+[Needle::Compile]         ok 102 - not hit 'foo'
+[Needle::Compile]         ok 103 - not hit 'infooout'
+[Needle::Compile]         ok 104 - not miss 'bar'
+[Needle::Compile]         ok 105 - Testing :and(:auto("foo"))
+[Needle::Compile]         ok 106 - and hit 'foo'
+[Needle::Compile]         ok 107 - and hit 'infooout'
+[Needle::Compile]         ok 108 - and miss 'bar'
+[Needle::Compile]         ok 109 - Testing :contains("foo")
+[Needle::Compile]         ok 110 - hit 'foo'
+[Needle::Compile]         ok 111 - hit 'infooout'
+[Needle::Compile]         ok 112 - miss 'bar'
+[Needle::Compile]         ok 113 - Testing :not(:contains("foo"))
+[Needle::Compile]         ok 114 - not hit 'foo'
+[Needle::Compile]         ok 115 - not hit 'infooout'
+[Needle::Compile]         ok 116 - not miss 'bar'
+[Needle::Compile]         ok 117 - Testing :and(:contains("foo"))
+[Needle::Compile]         ok 118 - and hit 'foo'
+[Needle::Compile]         ok 119 - and hit 'infooout'
+[Needle::Compile]         ok 120 - and miss 'bar'
+[Needle::Compile]         ok 121 - Testing :regex("foo")
+[Needle::Compile]         ok 122 - hit 'foo'
+[Needle::Compile]         ok 123 - hit 'infooout'
+[Needle::Compile]         ok 124 - miss 'bar'
+[Needle::Compile]         ok 125 - Testing :not(:regex("foo"))
+[Needle::Compile]         ok 126 - not hit 'foo'
+[Needle::Compile]         ok 127 - not hit 'infooout'
+[Needle::Compile]         ok 128 - not miss 'bar'
+[Needle::Compile]         ok 129 - Testing :and(:regex("foo"))
+[Needle::Compile]         ok 130 - and hit 'foo'
+[Needle::Compile]         ok 131 - and hit 'infooout'
+[Needle::Compile]         ok 132 - and miss 'bar'
+[Needle::Compile]         ok 133 - Testing :code(".contains('foo')")
+[Needle::Compile]         ok 134 - hit 'foo'
+[Needle::Compile]         ok 135 - hit 'infooout'
+[Needle::Compile]         ok 136 - miss 'bar'
+[Needle::Compile]         ok 137 - Testing :not(:code(".contains('foo')"))
+[Needle::Compile]         ok 138 - not hit 'foo'
+[Needle::Compile]         ok 139 - not hit 'infooout'
+[Needle::Compile]         ok 140 - not miss 'bar'
+[Needle::Compile]         ok 141 - Testing :and(:code(".contains('foo')"))
+[Needle::Compile]         ok 142 - and hit 'foo'
+[Needle::Compile]         ok 143 - and hit 'infooout'
+[Needle::Compile]         ok 144 - and miss 'bar'
+[Needle::Compile]         ok 145 - Testing "!foo"
+[Needle::Compile]         ok 146 - ! hit 'foo'
+[Needle::Compile]         ok 147 - ! hit 'infooout'
+[Needle::Compile]         ok 148 - ! miss 'bar'
+[Needle::Compile]         ok 149 - Testing "!/foo/"
+[Needle::Compile]         ok 150 - ! hit 'foo'
+[Needle::Compile]         ok 151 - ! hit 'infooout'
+[Needle::Compile]         ok 152 - ! miss 'bar'
+[Needle::Compile]         ok 153 - Testing "!\{.contains('foo')}"
+[Needle::Compile]         ok 154 - ! hit 'foo'
+[Needle::Compile]         ok 155 - ! hit 'infooout'
+[Needle::Compile]         ok 156 - ! miss 'bar'
+[Needle::Compile]         ok 157 - Testing "!*.contains('foo')"
+[Needle::Compile]         ok 158 - ! hit 'foo'
+[Needle::Compile]         ok 159 - ! hit 'infooout'
+[Needle::Compile]         ok 160 - ! miss 'bar'
+[Needle::Compile]         ok 161 - Testing "foo"
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 162 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 163 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 164 - miss 'bar'
+[Needle::Compile]         ok 165 - Testing "foo" but Type('contains')
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 166 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 167 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 168 - miss 'bar'
+[Needle::Compile]         ok 169 - Testing "foo" but Type('regex')
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 170 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 171 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 172 - miss 'bar'
+[Needle::Compile]         ok 173 - Testing "/foo/"
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 174 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 175 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 176 - miss 'bar'
+[Needle::Compile]         ok 177 - Testing :contains("foo")
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 178 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 179 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 180 - miss 'bar'
+[Needle::Compile]         ok 181 - Testing :regex("foo")
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 182 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 183 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         # You failed 12 tests of 184
+[Needle::Compile]         ok 184 - miss 'bar'
+[Needle::Compile]     not ok 2 - contains: find simple 'foo', :ignorecase, :ignorecase
+[Needle::Compile]     # Failed test 'contains: find simple 'foo', :ignorecase, :ignorecase'
+[Needle::Compile]     # at t/02-single.rakutest line 14
+[Needle::Compile]     # Subtest: contains: find simple 'foo', :ignoremark, :ignoremark
+[Needle::Compile]         1..184
+[Needle::Compile]         ok 1 - Testing "foo"
+[Needle::Compile]         ok 2 - hit 'foo'
+[Needle::Compile]         ok 3 - hit 'infooout'
+[Needle::Compile]         ok 4 - miss 'bar'
+[Needle::Compile]         ok 5 - Testing :not("foo")
+[Needle::Compile]         ok 6 - not hit 'foo'
+[Needle::Compile]         ok 7 - not hit 'infooout'
+[Needle::Compile]         ok 8 - not miss 'bar'
+[Needle::Compile]         ok 9 - Testing :and("foo")
+[Needle::Compile]         ok 10 - and hit 'foo'
+[Needle::Compile]         ok 11 - and hit 'infooout'
+[Needle::Compile]         ok 12 - and miss 'bar'
+[Needle::Compile]         ok 13 - Testing "foo" but Type('auto')
+[Needle::Compile]         ok 14 - hit 'foo'
+[Needle::Compile]         ok 15 - hit 'infooout'
+[Needle::Compile]         ok 16 - miss 'bar'
+[Needle::Compile]         ok 17 - Testing :not("foo" but Type('auto'))
+[Needle::Compile]         ok 18 - not hit 'foo'
+[Needle::Compile]         ok 19 - not hit 'infooout'
+[Needle::Compile]         ok 20 - not miss 'bar'
+[Needle::Compile]         ok 21 - Testing :and("foo" but Type('auto'))
+[Needle::Compile]         ok 22 - and hit 'foo'
+[Needle::Compile]         ok 23 - and hit 'infooout'
+[Needle::Compile]         ok 24 - and miss 'bar'
+[Needle::Compile]         ok 25 - Testing "foo" but Type('contains')
+[Needle::Compile]         ok 26 - hit 'foo'
+[Needle::Compile]         ok 27 - hit 'infooout'
+[Needle::Compile]         ok 28 - miss 'bar'
+[Needle::Compile]         ok 29 - Testing :not("foo" but Type('contains'))
+[Needle::Compile]         ok 30 - not hit 'foo'
+[Needle::Compile]         ok 31 - not hit 'infooout'
+[Needle::Compile]         ok 32 - not miss 'bar'
+[Needle::Compile]         ok 33 - Testing :and("foo" but Type('contains'))
+[Needle::Compile]         ok 34 - and hit 'foo'
+[Needle::Compile]         ok 35 - and hit 'infooout'
+[Needle::Compile]         ok 36 - and miss 'bar'
+[Needle::Compile]         ok 37 - Testing "foo" but Type('regex')
+[Needle::Compile]         ok 38 - hit 'foo'
+[Needle::Compile]         ok 39 - hit 'infooout'
+[Needle::Compile]         ok 40 - miss 'bar'
+[Needle::Compile]         ok 41 - Testing :not("foo" but Type('regex'))
+[Needle::Compile]         ok 42 - not hit 'foo'
+[Needle::Compile]         ok 43 - not hit 'infooout'
+[Needle::Compile]         ok 44 - not miss 'bar'
+[Needle::Compile]         ok 45 - Testing :and("foo" but Type('regex'))
+[Needle::Compile]         ok 46 - and hit 'foo'
+[Needle::Compile]         ok 47 - and hit 'infooout'
+[Needle::Compile]         ok 48 - and miss 'bar'
+[Needle::Compile]         ok 49 - Testing ".contains('foo')" but Type('code')
+[Needle::Compile]         ok 50 - hit 'foo'
+[Needle::Compile]         ok 51 - hit 'infooout'
+[Needle::Compile]         ok 52 - miss 'bar'
+[Needle::Compile]         ok 53 - Testing :not(".contains('foo')" but Type('code'))
+[Needle::Compile]         ok 54 - not hit 'foo'
+[Needle::Compile]         ok 55 - not hit 'infooout'
+[Needle::Compile]         ok 56 - not miss 'bar'
+[Needle::Compile]         ok 57 - Testing :and(".contains('foo')" but Type('code'))
+[Needle::Compile]         ok 58 - and hit 'foo'
+[Needle::Compile]         ok 59 - and hit 'infooout'
+[Needle::Compile]         ok 60 - and miss 'bar'
+[Needle::Compile]         ok 61 - Testing "/foo/"
+[Needle::Compile]         ok 62 - hit 'foo'
+[Needle::Compile]         ok 63 - hit 'infooout'
+[Needle::Compile]         ok 64 - miss 'bar'
+[Needle::Compile]         ok 65 - Testing :not("/foo/")
+[Needle::Compile]         ok 66 - not hit 'foo'
+[Needle::Compile]         ok 67 - not hit 'infooout'
+[Needle::Compile]         ok 68 - not miss 'bar'
+[Needle::Compile]         ok 69 - Testing :and("/foo/")
+[Needle::Compile]         ok 70 - and hit 'foo'
+[Needle::Compile]         ok 71 - and hit 'infooout'
+[Needle::Compile]         ok 72 - and miss 'bar'
+[Needle::Compile]         ok 73 - Testing "\{.contains('foo')}"
+[Needle::Compile]         ok 74 - hit 'foo'
+[Needle::Compile]         ok 75 - hit 'infooout'
+[Needle::Compile]         ok 76 - miss 'bar'
+[Needle::Compile]         ok 77 - Testing :not("\{.contains('foo')}")
+[Needle::Compile]         ok 78 - not hit 'foo'
+[Needle::Compile]         ok 79 - not hit 'infooout'
+[Needle::Compile]         ok 80 - not miss 'bar'
+[Needle::Compile]         ok 81 - Testing :and("\{.contains('foo')}")
+[Needle::Compile]         ok 82 - and hit 'foo'
+[Needle::Compile]         ok 83 - and hit 'infooout'
+[Needle::Compile]         ok 84 - and miss 'bar'
+[Needle::Compile]         ok 85 - Testing "*.contains('foo')"
+[Needle::Compile]         ok 86 - hit 'foo'
+[Needle::Compile]         ok 87 - hit 'infooout'
+[Needle::Compile]         ok 88 - miss 'bar'
+[Needle::Compile]         ok 89 - Testing :not("*.contains('foo')")
+[Needle::Compile]         ok 90 - not hit 'foo'
+[Needle::Compile]         ok 91 - not hit 'infooout'
+[Needle::Compile]         ok 92 - not miss 'bar'
+[Needle::Compile]         ok 93 - Testing :and("*.contains('foo')")
+[Needle::Compile]         ok 94 - and hit 'foo'
+[Needle::Compile]         ok 95 - and hit 'infooout'
+[Needle::Compile]         ok 96 - and miss 'bar'
+[Needle::Compile]         ok 97 - Testing :auto("foo")
+[Needle::Compile]         ok 98 - hit 'foo'
+[Needle::Compile]         ok 99 - hit 'infooout'
+[Needle::Compile]         ok 100 - miss 'bar'
+[Needle::Compile]         ok 101 - Testing :not(:auto("foo"))
+[Needle::Compile]         ok 102 - not hit 'foo'
+[Needle::Compile]         ok 103 - not hit 'infooout'
+[Needle::Compile]         ok 104 - not miss 'bar'
+[Needle::Compile]         ok 105 - Testing :and(:auto("foo"))
+[Needle::Compile]         ok 106 - and hit 'foo'
+[Needle::Compile]         ok 107 - and hit 'infooout'
+[Needle::Compile]         ok 108 - and miss 'bar'
+[Needle::Compile]         ok 109 - Testing :contains("foo")
+[Needle::Compile]         ok 110 - hit 'foo'
+[Needle::Compile]         ok 111 - hit 'infooout'
+[Needle::Compile]         ok 112 - miss 'bar'
+[Needle::Compile]         ok 113 - Testing :not(:contains("foo"))
+[Needle::Compile]         ok 114 - not hit 'foo'
+[Needle::Compile]         ok 115 - not hit 'infooout'
+[Needle::Compile]         ok 116 - not miss 'bar'
+[Needle::Compile]         ok 117 - Testing :and(:contains("foo"))
+[Needle::Compile]         ok 118 - and hit 'foo'
+[Needle::Compile]         ok 119 - and hit 'infooout'
+[Needle::Compile]         ok 120 - and miss 'bar'
+[Needle::Compile]         ok 121 - Testing :regex("foo")
+[Needle::Compile]         ok 122 - hit 'foo'
+[Needle::Compile]         ok 123 - hit 'infooout'
+[Needle::Compile]         ok 124 - miss 'bar'
+[Needle::Compile]         ok 125 - Testing :not(:regex("foo"))
+[Needle::Compile]         ok 126 - not hit 'foo'
+[Needle::Compile]         ok 127 - not hit 'infooout'
+[Needle::Compile]         ok 128 - not miss 'bar'
+[Needle::Compile]         ok 129 - Testing :and(:regex("foo"))
+[Needle::Compile]         ok 130 - and hit 'foo'
+[Needle::Compile]         ok 131 - and hit 'infooout'
+[Needle::Compile]         ok 132 - and miss 'bar'
+[Needle::Compile]         ok 133 - Testing :code(".contains('foo')")
+[Needle::Compile]         ok 134 - hit 'foo'
+[Needle::Compile]         ok 135 - hit 'infooout'
+[Needle::Compile]         ok 136 - miss 'bar'
+[Needle::Compile]         ok 137 - Testing :not(:code(".contains('foo')"))
+[Needle::Compile]         ok 138 - not hit 'foo'
+[Needle::Compile]         ok 139 - not hit 'infooout'
+[Needle::Compile]         ok 140 - not miss 'bar'
+[Needle::Compile]         ok 141 - Testing :and(:code(".contains('foo')"))
+[Needle::Compile]         ok 142 - and hit 'foo'
+[Needle::Compile]         ok 143 - and hit 'infooout'
+[Needle::Compile]         ok 144 - and miss 'bar'
+[Needle::Compile]         ok 145 - Testing "!foo"
+[Needle::Compile]         ok 146 - ! hit 'foo'
+[Needle::Compile]         ok 147 - ! hit 'infooout'
+[Needle::Compile]         ok 148 - ! miss 'bar'
+[Needle::Compile]         ok 149 - Testing "!/foo/"
+[Needle::Compile]         ok 150 - ! hit 'foo'
+[Needle::Compile]         ok 151 - ! hit 'infooout'
+[Needle::Compile]         ok 152 - ! miss 'bar'
+[Needle::Compile]         ok 153 - Testing "!\{.contains('foo')}"
+[Needle::Compile]         ok 154 - ! hit 'foo'
+[Needle::Compile]         ok 155 - ! hit 'infooout'
+[Needle::Compile]         ok 156 - ! miss 'bar'
+[Needle::Compile]         ok 157 - Testing "!*.contains('foo')"
+[Needle::Compile]         ok 158 - ! hit 'foo'
+[Needle::Compile]         ok 159 - ! hit 'infooout'
+[Needle::Compile]         ok 160 - ! miss 'bar'
+[Needle::Compile]         ok 161 - Testing "foo"
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 162 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 163 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 164 - miss 'bar'
+[Needle::Compile]         ok 165 - Testing "foo" but Type('contains')
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 166 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 167 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 168 - miss 'bar'
+[Needle::Compile]         ok 169 - Testing "foo" but Type('regex')
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 170 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 171 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 172 - miss 'bar'
+[Needle::Compile]         ok 173 - Testing "/foo/"
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 174 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 175 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 176 - miss 'bar'
+[Needle::Compile]         ok 177 - Testing :contains("foo")
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 178 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 179 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 180 - miss 'bar'
+[Needle::Compile]         ok 181 - Testing :regex("foo")
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 182 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 183 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 184 - miss 'bar'
+[Needle::Compile]         # You failed 12 tests of 184
+[Needle::Compile]     not ok 3 - contains: find simple 'foo', :ignoremark, :ignoremark
+[Needle::Compile]     # Failed test 'contains: find simple 'foo', :ignoremark, :ignoremark'
+[Needle::Compile]     # at t/02-single.rakutest line 14
+[Needle::Compile]     # Subtest: contains: find simple 'foo', :smartcase, :smartcase
+[Needle::Compile]         1..184
+[Needle::Compile]         ok 1 - Testing "foo"
+[Needle::Compile]         ok 2 - hit 'foo'
+[Needle::Compile]         ok 3 - hit 'infooout'
+[Needle::Compile]         ok 4 - miss 'bar'
+[Needle::Compile]         ok 5 - Testing :not("foo")
+[Needle::Compile]         ok 6 - not hit 'foo'
+[Needle::Compile]         ok 7 - not hit 'infooout'
+[Needle::Compile]         ok 8 - not miss 'bar'
+[Needle::Compile]         ok 9 - Testing :and("foo")
+[Needle::Compile]         ok 10 - and hit 'foo'
+[Needle::Compile]         ok 11 - and hit 'infooout'
+[Needle::Compile]         ok 12 - and miss 'bar'
+[Needle::Compile]         ok 13 - Testing "foo" but Type('auto')
+[Needle::Compile]         ok 14 - hit 'foo'
+[Needle::Compile]         ok 15 - hit 'infooout'
+[Needle::Compile]         ok 16 - miss 'bar'
+[Needle::Compile]         ok 17 - Testing :not("foo" but Type('auto'))
+[Needle::Compile]         ok 18 - not hit 'foo'
+[Needle::Compile]         ok 19 - not hit 'infooout'
+[Needle::Compile]         ok 20 - not miss 'bar'
+[Needle::Compile]         ok 21 - Testing :and("foo" but Type('auto'))
+[Needle::Compile]         ok 22 - and hit 'foo'
+[Needle::Compile]         ok 23 - and hit 'infooout'
+[Needle::Compile]         ok 24 - and miss 'bar'
+[Needle::Compile]         ok 25 - Testing "foo" but Type('contains')
+[Needle::Compile]         ok 26 - hit 'foo'
+[Needle::Compile]         ok 27 - hit 'infooout'
+[Needle::Compile]         ok 28 - miss 'bar'
+[Needle::Compile]         ok 29 - Testing :not("foo" but Type('contains'))
+[Needle::Compile]         ok 30 - not hit 'foo'
+[Needle::Compile]         ok 31 - not hit 'infooout'
+[Needle::Compile]         ok 32 - not miss 'bar'
+[Needle::Compile]         ok 33 - Testing :and("foo" but Type('contains'))
+[Needle::Compile]         ok 34 - and hit 'foo'
+[Needle::Compile]         ok 35 - and hit 'infooout'
+[Needle::Compile]         ok 36 - and miss 'bar'
+[Needle::Compile]         ok 37 - Testing "foo" but Type('regex')
+[Needle::Compile]         ok 38 - hit 'foo'
+[Needle::Compile]         ok 39 - hit 'infooout'
+[Needle::Compile]         ok 40 - miss 'bar'
+[Needle::Compile]         ok 41 - Testing :not("foo" but Type('regex'))
+[Needle::Compile]         ok 42 - not hit 'foo'
+[Needle::Compile]         ok 43 - not hit 'infooout'
+[Needle::Compile]         ok 44 - not miss 'bar'
+[Needle::Compile]         ok 45 - Testing :and("foo" but Type('regex'))
+[Needle::Compile]         ok 46 - and hit 'foo'
+[Needle::Compile]         ok 47 - and hit 'infooout'
+[Needle::Compile]         ok 48 - and miss 'bar'
+[Needle::Compile]         ok 49 - Testing ".contains('foo')" but Type('code')
+[Needle::Compile]         ok 50 - hit 'foo'
+[Needle::Compile]         ok 51 - hit 'infooout'
+[Needle::Compile]         ok 52 - miss 'bar'
+[Needle::Compile]         ok 53 - Testing :not(".contains('foo')" but Type('code'))
+[Needle::Compile]         ok 54 - not hit 'foo'
+[Needle::Compile]         ok 55 - not hit 'infooout'
+[Needle::Compile]         ok 56 - not miss 'bar'
+[Needle::Compile]         ok 57 - Testing :and(".contains('foo')" but Type('code'))
+[Needle::Compile]         ok 58 - and hit 'foo'
+[Needle::Compile]         ok 59 - and hit 'infooout'
+[Needle::Compile]         ok 60 - and miss 'bar'
+[Needle::Compile]         ok 61 - Testing "/foo/"
+[Needle::Compile]         ok 62 - hit 'foo'
+[Needle::Compile]         ok 63 - hit 'infooout'
+[Needle::Compile]         ok 64 - miss 'bar'
+[Needle::Compile]         ok 65 - Testing :not("/foo/")
+[Needle::Compile]         ok 66 - not hit 'foo'
+[Needle::Compile]         ok 67 - not hit 'infooout'
+[Needle::Compile]         ok 68 - not miss 'bar'
+[Needle::Compile]         ok 69 - Testing :and("/foo/")
+[Needle::Compile]         ok 70 - and hit 'foo'
+[Needle::Compile]         ok 71 - and hit 'infooout'
+[Needle::Compile]         ok 72 - and miss 'bar'
+[Needle::Compile]         ok 73 - Testing "\{.contains('foo')}"
+[Needle::Compile]         ok 74 - hit 'foo'
+[Needle::Compile]         ok 75 - hit 'infooout'
+[Needle::Compile]         ok 76 - miss 'bar'
+[Needle::Compile]         ok 77 - Testing :not("\{.contains('foo')}")
+[Needle::Compile]         ok 78 - not hit 'foo'
+[Needle::Compile]         ok 79 - not hit 'infooout'
+[Needle::Compile]         ok 80 - not miss 'bar'
+[Needle::Compile]         ok 81 - Testing :and("\{.contains('foo')}")
+[Needle::Compile]         ok 82 - and hit 'foo'
+[Needle::Compile]         ok 83 - and hit 'infooout'
+[Needle::Compile]         ok 84 - and miss 'bar'
+[Needle::Compile]         ok 85 - Testing "*.contains('foo')"
+[Needle::Compile]         ok 86 - hit 'foo'
+[Needle::Compile]         ok 87 - hit 'infooout'
+[Needle::Compile]         ok 88 - miss 'bar'
+[Needle::Compile]         ok 89 - Testing :not("*.contains('foo')")
+[Needle::Compile]         ok 90 - not hit 'foo'
+[Needle::Compile]         ok 91 - not hit 'infooout'
+[Needle::Compile]         ok 92 - not miss 'bar'
+[Needle::Compile]         ok 93 - Testing :and("*.contains('foo')")
+[Needle::Compile]         ok 94 - and hit 'foo'
+[Needle::Compile]         ok 95 - and hit 'infooout'
+[Needle::Compile]         ok 96 - and miss 'bar'
+[Needle::Compile]         ok 97 - Testing :auto("foo")
+[Needle::Compile]         ok 98 - hit 'foo'
+[Needle::Compile]         ok 99 - hit 'infooout'
+[Needle::Compile]         ok 100 - miss 'bar'
+[Needle::Compile]         ok 101 - Testing :not(:auto("foo"))
+[Needle::Compile]         ok 102 - not hit 'foo'
+[Needle::Compile]         ok 103 - not hit 'infooout'
+[Needle::Compile]         ok 104 - not miss 'bar'
+[Needle::Compile]         ok 105 - Testing :and(:auto("foo"))
+[Needle::Compile]         ok 106 - and hit 'foo'
+[Needle::Compile]         ok 107 - and hit 'infooout'
+[Needle::Compile]         ok 108 - and miss 'bar'
+[Needle::Compile]         ok 109 - Testing :contains("foo")
+[Needle::Compile]         ok 110 - hit 'foo'
+[Needle::Compile]         ok 111 - hit 'infooout'
+[Needle::Compile]         ok 112 - miss 'bar'
+[Needle::Compile]         ok 113 - Testing :not(:contains("foo"))
+[Needle::Compile]         ok 114 - not hit 'foo'
+[Needle::Compile]         ok 115 - not hit 'infooout'
+[Needle::Compile]         ok 116 - not miss 'bar'
+[Needle::Compile]         ok 117 - Testing :and(:contains("foo"))
+[Needle::Compile]         ok 118 - and hit 'foo'
+[Needle::Compile]         ok 119 - and hit 'infooout'
+[Needle::Compile]         ok 120 - and miss 'bar'
+[Needle::Compile]         ok 121 - Testing :regex("foo")
+[Needle::Compile]         ok 122 - hit 'foo'
+[Needle::Compile]         ok 123 - hit 'infooout'
+[Needle::Compile]         ok 124 - miss 'bar'
+[Needle::Compile]         ok 125 - Testing :not(:regex("foo"))
+[Needle::Compile]         ok 126 - not hit 'foo'
+[Needle::Compile]         ok 127 - not hit 'infooout'
+[Needle::Compile]         ok 128 - not miss 'bar'
+[Needle::Compile]         ok 129 - Testing :and(:regex("foo"))
+[Needle::Compile]         ok 130 - and hit 'foo'
+[Needle::Compile]         ok 131 - and hit 'infooout'
+[Needle::Compile]         ok 132 - and miss 'bar'
+[Needle::Compile]         ok 133 - Testing :code(".contains('foo')")
+[Needle::Compile]         ok 134 - hit 'foo'
+[Needle::Compile]         ok 135 - hit 'infooout'
+[Needle::Compile]         ok 136 - miss 'bar'
+[Needle::Compile]         ok 137 - Testing :not(:code(".contains('foo')"))
+[Needle::Compile]         ok 138 - not hit 'foo'
+[Needle::Compile]         ok 139 - not hit 'infooout'
+[Needle::Compile]         ok 140 - not miss 'bar'
+[Needle::Compile]         ok 141 - Testing :and(:code(".contains('foo')"))
+[Needle::Compile]         ok 142 - and hit 'foo'
+[Needle::Compile]         ok 143 - and hit 'infooout'
+[Needle::Compile]         ok 144 - and miss 'bar'
+[Needle::Compile]         ok 145 - Testing "!foo"
+[Needle::Compile]         ok 146 - ! hit 'foo'
+[Needle::Compile]         ok 147 - ! hit 'infooout'
+[Needle::Compile]         ok 148 - ! miss 'bar'
+[Needle::Compile]         ok 149 - Testing "!/foo/"
+[Needle::Compile]         ok 150 - ! hit 'foo'
+[Needle::Compile]         ok 151 - ! hit 'infooout'
+[Needle::Compile]         ok 152 - ! miss 'bar'
+[Needle::Compile]         ok 153 - Testing "!\{.contains('foo')}"
+[Needle::Compile]         ok 154 - ! hit 'foo'
+[Needle::Compile]         ok 155 - ! hit 'infooout'
+[Needle::Compile]         ok 156 - ! miss 'bar'
+[Needle::Compile]         ok 157 - Testing "!*.contains('foo')"
+[Needle::Compile]         ok 158 - ! hit 'foo'
+[Needle::Compile]         ok 159 - ! hit 'infooout'
+[Needle::Compile]         ok 160 - ! miss 'bar'
+[Needle::Compile]         ok 161 - Testing "foo"
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 162 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 163 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 164 - miss 'bar'
+[Needle::Compile]         ok 165 - Testing "foo" but Type('contains')
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 166 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 167 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 168 - miss 'bar'
+[Needle::Compile]         ok 169 - Testing "foo" but Type('regex')
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 170 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 171 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 172 - miss 'bar'
+[Needle::Compile]         ok 173 - Testing "/foo/"
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 174 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 175 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 176 - miss 'bar'
+[Needle::Compile]         ok 177 - Testing :contains("foo")
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 178 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 179 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 180 - miss 'bar'
+[Needle::Compile]         ok 181 - Testing :regex("foo")
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 182 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 183 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 184 - miss 'bar'
+[Needle::Compile]         # You failed 12 tests of 184
+[Needle::Compile]     not ok 4 - contains: find simple 'foo', :smartcase, :smartcase
+[Needle::Compile]     # Failed test 'contains: find simple 'foo', :smartcase, :smartcase'
+[Needle::Compile]     # at t/02-single.rakutest line 14
+[Needle::Compile]     # Subtest: contains: find simple 'foo', :smartmark, :smartmark
+[Needle::Compile]         1..184
+[Needle::Compile]         ok 1 - Testing "foo"
+[Needle::Compile]         ok 2 - hit 'foo'
+[Needle::Compile]         ok 3 - hit 'infooout'
+[Needle::Compile]         ok 4 - miss 'bar'
+[Needle::Compile]         ok 5 - Testing :not("foo")
+[Needle::Compile]         ok 6 - not hit 'foo'
+[Needle::Compile]         ok 7 - not hit 'infooout'
+[Needle::Compile]         ok 8 - not miss 'bar'
+[Needle::Compile]         ok 9 - Testing :and("foo")
+[Needle::Compile]         ok 10 - and hit 'foo'
+[Needle::Compile]         ok 11 - and hit 'infooout'
+[Needle::Compile]         ok 12 - and miss 'bar'
+[Needle::Compile]         ok 13 - Testing "foo" but Type('auto')
+[Needle::Compile]         ok 14 - hit 'foo'
+[Needle::Compile]         ok 15 - hit 'infooout'
+[Needle::Compile]         ok 16 - miss 'bar'
+[Needle::Compile]         ok 17 - Testing :not("foo" but Type('auto'))
+[Needle::Compile]         ok 18 - not hit 'foo'
+[Needle::Compile]         ok 19 - not hit 'infooout'
+[Needle::Compile]         ok 20 - not miss 'bar'
+[Needle::Compile]         ok 21 - Testing :and("foo" but Type('auto'))
+[Needle::Compile]         ok 22 - and hit 'foo'
+[Needle::Compile]         ok 23 - and hit 'infooout'
+[Needle::Compile]         ok 24 - and miss 'bar'
+[Needle::Compile]         ok 25 - Testing "foo" but Type('contains')
+[Needle::Compile]         ok 26 - hit 'foo'
+[Needle::Compile]         ok 27 - hit 'infooout'
+[Needle::Compile]         ok 28 - miss 'bar'
+[Needle::Compile]         ok 29 - Testing :not("foo" but Type('contains'))
+[Needle::Compile]         ok 30 - not hit 'foo'
+[Needle::Compile]         ok 31 - not hit 'infooout'
+[Needle::Compile]         ok 32 - not miss 'bar'
+[Needle::Compile]         ok 33 - Testing :and("foo" but Type('contains'))
+[Needle::Compile]         ok 34 - and hit 'foo'
+[Needle::Compile]         ok 35 - and hit 'infooout'
+[Needle::Compile]         ok 36 - and miss 'bar'
+[Needle::Compile]         ok 37 - Testing "foo" but Type('regex')
+[Needle::Compile]         ok 38 - hit 'foo'
+[Needle::Compile]         ok 39 - hit 'infooout'
+[Needle::Compile]         ok 40 - miss 'bar'
+[Needle::Compile]         ok 41 - Testing :not("foo" but Type('regex'))
+[Needle::Compile]         ok 42 - not hit 'foo'
+[Needle::Compile]         ok 43 - not hit 'infooout'
+[Needle::Compile]         ok 44 - not miss 'bar'
+[Needle::Compile]         ok 45 - Testing :and("foo" but Type('regex'))
+[Needle::Compile]         ok 46 - and hit 'foo'
+[Needle::Compile]         ok 47 - and hit 'infooout'
+[Needle::Compile]         ok 48 - and miss 'bar'
+[Needle::Compile]         ok 49 - Testing ".contains('foo')" but Type('code')
+[Needle::Compile]         ok 50 - hit 'foo'
+[Needle::Compile]         ok 51 - hit 'infooout'
+[Needle::Compile]         ok 52 - miss 'bar'
+[Needle::Compile]         ok 53 - Testing :not(".contains('foo')" but Type('code'))
+[Needle::Compile]         ok 54 - not hit 'foo'
+[Needle::Compile]         ok 55 - not hit 'infooout'
+[Needle::Compile]         ok 56 - not miss 'bar'
+[Needle::Compile]         ok 57 - Testing :and(".contains('foo')" but Type('code'))
+[Needle::Compile]         ok 58 - and hit 'foo'
+[Needle::Compile]         ok 59 - and hit 'infooout'
+[Needle::Compile]         ok 60 - and miss 'bar'
+[Needle::Compile]         ok 61 - Testing "/foo/"
+[Needle::Compile]         ok 62 - hit 'foo'
+[Needle::Compile]         ok 63 - hit 'infooout'
+[Needle::Compile]         ok 64 - miss 'bar'
+[Needle::Compile]         ok 65 - Testing :not("/foo/")
+[Needle::Compile]         ok 66 - not hit 'foo'
+[Needle::Compile]         ok 67 - not hit 'infooout'
+[Needle::Compile]         ok 68 - not miss 'bar'
+[Needle::Compile]         ok 69 - Testing :and("/foo/")
+[Needle::Compile]         ok 70 - and hit 'foo'
+[Needle::Compile]         ok 71 - and hit 'infooout'
+[Needle::Compile]         ok 72 - and miss 'bar'
+[Needle::Compile]         ok 73 - Testing "\{.contains('foo')}"
+[Needle::Compile]         ok 74 - hit 'foo'
+[Needle::Compile]         ok 75 - hit 'infooout'
+[Needle::Compile]         ok 76 - miss 'bar'
+[Needle::Compile]         ok 77 - Testing :not("\{.contains('foo')}")
+[Needle::Compile]         ok 78 - not hit 'foo'
+[Needle::Compile]         ok 79 - not hit 'infooout'
+[Needle::Compile]         ok 80 - not miss 'bar'
+[Needle::Compile]         ok 81 - Testing :and("\{.contains('foo')}")
+[Needle::Compile]         ok 82 - and hit 'foo'
+[Needle::Compile]         ok 83 - and hit 'infooout'
+[Needle::Compile]         ok 84 - and miss 'bar'
+[Needle::Compile]         ok 85 - Testing "*.contains('foo')"
+[Needle::Compile]         ok 86 - hit 'foo'
+[Needle::Compile]         ok 87 - hit 'infooout'
+[Needle::Compile]         ok 88 - miss 'bar'
+[Needle::Compile]         ok 89 - Testing :not("*.contains('foo')")
+[Needle::Compile]         ok 90 - not hit 'foo'
+[Needle::Compile]         ok 91 - not hit 'infooout'
+[Needle::Compile]         ok 92 - not miss 'bar'
+[Needle::Compile]         ok 93 - Testing :and("*.contains('foo')")
+[Needle::Compile]         ok 94 - and hit 'foo'
+[Needle::Compile]         ok 95 - and hit 'infooout'
+[Needle::Compile]         ok 96 - and miss 'bar'
+[Needle::Compile]         ok 97 - Testing :auto("foo")
+[Needle::Compile]         ok 98 - hit 'foo'
+[Needle::Compile]         ok 99 - hit 'infooout'
+[Needle::Compile]         ok 100 - miss 'bar'
+[Needle::Compile]         ok 101 - Testing :not(:auto("foo"))
+[Needle::Compile]         ok 102 - not hit 'foo'
+[Needle::Compile]         ok 103 - not hit 'infooout'
+[Needle::Compile]         ok 104 - not miss 'bar'
+[Needle::Compile]         ok 105 - Testing :and(:auto("foo"))
+[Needle::Compile]         ok 106 - and hit 'foo'
+[Needle::Compile]         ok 107 - and hit 'infooout'
+[Needle::Compile]         ok 108 - and miss 'bar'
+[Needle::Compile]         ok 109 - Testing :contains("foo")
+[Needle::Compile]         ok 110 - hit 'foo'
+[Needle::Compile]         ok 111 - hit 'infooout'
+[Needle::Compile]         ok 112 - miss 'bar'
+[Needle::Compile]         ok 113 - Testing :not(:contains("foo"))
+[Needle::Compile]         ok 114 - not hit 'foo'
+[Needle::Compile]         ok 115 - not hit 'infooout'
+[Needle::Compile]         ok 116 - not miss 'bar'
+[Needle::Compile]         ok 117 - Testing :and(:contains("foo"))
+[Needle::Compile]         ok 118 - and hit 'foo'
+[Needle::Compile]         ok 119 - and hit 'infooout'
+[Needle::Compile]         ok 120 - and miss 'bar'
+[Needle::Compile]         ok 121 - Testing :regex("foo")
+[Needle::Compile]         ok 122 - hit 'foo'
+[Needle::Compile]         ok 123 - hit 'infooout'
+[Needle::Compile]         ok 124 - miss 'bar'
+[Needle::Compile]         ok 125 - Testing :not(:regex("foo"))
+[Needle::Compile]         ok 126 - not hit 'foo'
+[Needle::Compile]         ok 127 - not hit 'infooout'
+[Needle::Compile]         ok 128 - not miss 'bar'
+[Needle::Compile]         ok 129 - Testing :and(:regex("foo"))
+[Needle::Compile]         ok 130 - and hit 'foo'
+[Needle::Compile]         ok 131 - and hit 'infooout'
+[Needle::Compile]         ok 132 - and miss 'bar'
+[Needle::Compile]         ok 133 - Testing :code(".contains('foo')")
+[Needle::Compile]         ok 134 - hit 'foo'
+[Needle::Compile]         ok 135 - hit 'infooout'
+[Needle::Compile]         ok 136 - miss 'bar'
+[Needle::Compile]         ok 137 - Testing :not(:code(".contains('foo')"))
+[Needle::Compile]         ok 138 - not hit 'foo'
+[Needle::Compile]         ok 139 - not hit 'infooout'
+[Needle::Compile]         ok 140 - not miss 'bar'
+[Needle::Compile]         ok 141 - Testing :and(:code(".contains('foo')"))
+[Needle::Compile]         ok 142 - and hit 'foo'
+[Needle::Compile]         ok 143 - and hit 'infooout'
+[Needle::Compile]         ok 144 - and miss 'bar'
+[Needle::Compile]         ok 145 - Testing "!foo"
+[Needle::Compile]         ok 146 - ! hit 'foo'
+[Needle::Compile]         ok 147 - ! hit 'infooout'
+[Needle::Compile]         ok 148 - ! miss 'bar'
+[Needle::Compile]         ok 149 - Testing "!/foo/"
+[Needle::Compile]         ok 150 - ! hit 'foo'
+[Needle::Compile]         ok 151 - ! hit 'infooout'
+[Needle::Compile]         ok 152 - ! miss 'bar'
+[Needle::Compile]         ok 153 - Testing "!\{.contains('foo')}"
+[Needle::Compile]         ok 154 - ! hit 'foo'
+[Needle::Compile]         ok 155 - ! hit 'infooout'
+[Needle::Compile]         ok 156 - ! miss 'bar'
+[Needle::Compile]         ok 157 - Testing "!*.contains('foo')"
+[Needle::Compile]         ok 158 - ! hit 'foo'
+[Needle::Compile]         ok 159 - ! hit 'infooout'
+[Needle::Compile]         ok 160 - ! miss 'bar'
+[Needle::Compile]         ok 161 - Testing "foo"
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 162 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 163 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 164 - miss 'bar'
+[Needle::Compile]         ok 165 - Testing "foo" but Type('contains')
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 166 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 167 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 168 - miss 'bar'
+[Needle::Compile]         ok 169 - Testing "foo" but Type('regex')
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 170 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 171 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 172 - miss 'bar'
+[Needle::Compile]         ok 173 - Testing "/foo/"
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 174 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 175 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 176 - miss 'bar'
+[Needle::Compile]         ok 177 - Testing :contains("foo")
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 178 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 179 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 180 - miss 'bar'
+[Needle::Compile]         ok 181 - Testing :regex("foo")
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 182 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile] Use of uninitialized value of type Any in string context.
+[Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
+[Needle::Compile]         not ok 183 - returned 'foo'
+[Needle::Compile]         # Failed test 'returned 'foo''
+[Needle::Compile]         # at t/02-single.rakutest line 14
+[Needle::Compile]         # expected: $(slip("foo",))
+[Needle::Compile]         #      got: $(slip("",))
+[Needle::Compile]         ok 184 - miss 'bar'
+[Needle::Compile]         # You failed 12 tests of 184
+[Needle::Compile]     not ok 5 - contains: find simple 'foo', :smartmark, :smartmark
+[Needle::Compile]     # Failed test 'contains: find simple 'foo', :smartmark, :smartmark'
+[Needle::Compile]     # at t/02-single.rakutest line 14
+[Needle::Compile]     # You failed 5 tests of 5
+[Needle::Compile] not ok 5 - all named arguments for contains
+[Needle::Compile] # Failed test 'all named arguments for contains'
+[Needle::Compile] # at t/02-single.rakutest line 14
+[Needle::Compile] # Test failed. Stopping test suite, because the RAKU_TEST_DIE_ON_FAIL
+[Needle::Compile] # environmental variable is set to a true value.
+[Needle::Compile] # You planned 10 tests, but ran 5
+[Needle::Compile] # You failed 1 test of 5
+[Needle::Compile] Command: /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/03-file.rakutest
+[Needle::Compile] 1..9
+[Needle::Compile] ok 1 - is it a Callable
+[Needle::Compile] ok 2 - matched "foo"
+[Needle::Compile] ok 3 - did not match "bar"
+[Needle::Compile] # Subtest: file: "file:t/always"
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched "foo"
+[Needle::Compile]     ok 3 - did not match "bar"
+[Needle::Compile]     1..3
+[Needle::Compile] ok 4 - file: "file:t/always"
+[Needle::Compile] # Subtest: file: "t/always" but Type('file')
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched "foo"
+[Needle::Compile]     ok 3 - did not match "bar"
+[Needle::Compile]     1..3
+[Needle::Compile] ok 5 - file: "t/always" but Type('file')
+[Needle::Compile] # Subtest: file: :file("t/always")
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched "foo"
+[Needle::Compile]     ok 3 - did not match "bar"
+[Needle::Compile]     1..3
+[Needle::Compile] ok 6 - file: :file("t/always")
+[Needle::Compile] # Subtest: not file: "!file:t/always"
+[Needle::Compile]     1..3
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - did not match "foo"
+[Needle::Compile]     ok 3 - matched "bar"
+[Needle::Compile] ok 7 - not file: "!file:t/always"
+[Needle::Compile] # Subtest: not file: :not("file:t/always")
+[Needle::Compile]     1..3
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - did not match "foo"
+[Needle::Compile]     ok 3 - matched "bar"
+[Needle::Compile] ok 8 - not file: :not("file:t/always")
+[Needle::Compile] # Subtest: not file: :not(:file("t/always"))
+[Needle::Compile]     1..3
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - did not match "foo"
+[Needle::Compile]     ok 3 - matched "bar"
+[Needle::Compile] ok 9 - not file: :not(:file("t/always"))
+[Needle::Compile] Command: /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/04-multiple.rakutest
+[Needle::Compile] 1..16
+[Needle::Compile] # Subtest: or: $("foo", "§bar")
+[Needle::Compile]     1..7
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched 'foo'
+[Needle::Compile]     ok 3 - matched 'bar'
+[Needle::Compile]     ok 4 - matched 'foo bar'
+[Needle::Compile]     ok 5 - matched 'ofoos'
+[Needle::Compile]     ok 6 - did not match 'baz'
+[Needle::Compile]     ok 7 - did not match 'barra'
+[Needle::Compile] ok 1 - or: $("foo", "§bar")
+[Needle::Compile] # Subtest: or: $("\&foo", "§bar")
+[Needle::Compile]     1..7
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched 'foo'
+[Needle::Compile]     ok 3 - matched 'bar'
+[Needle::Compile]     ok 4 - matched 'foo bar'
+[Needle::Compile]     ok 5 - matched 'ofoos'
+[Needle::Compile]     ok 6 - did not match 'baz'
+[Needle::Compile]     ok 7 - did not match 'barra'
+[Needle::Compile] ok 2 - or: $("\&foo", "§bar")
+[Needle::Compile] # Subtest: or: $("foo" but Type('contains'), "bar" but Type('words'))
+[Needle::Compile]     1..7
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched 'foo'
+[Needle::Compile]     ok 3 - matched 'bar'
+[Needle::Compile]     ok 4 - matched 'foo bar'
+[Needle::Compile]     ok 5 - matched 'ofoos'
+[Needle::Compile]     ok 6 - did not match 'baz'
+[Needle::Compile]     ok 7 - did not match 'barra'
+[Needle::Compile] ok 3 - or: $("foo" but Type('contains'), "bar" but Type('words'))
+[Needle::Compile] # Subtest: or: $(:contains("foo"), :words("bar"))
+[Needle::Compile]     1..7
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched 'foo'
+[Needle::Compile]     ok 3 - matched 'bar'
+[Needle::Compile]     ok 4 - matched 'foo bar'
+[Needle::Compile]     ok 5 - matched 'ofoos'
+[Needle::Compile]     ok 6 - did not match 'baz'
+[Needle::Compile]     ok 7 - did not match 'barra'
+[Needle::Compile] ok 4 - or: $(:contains("foo"), :words("bar"))
+[Needle::Compile] # Subtest: or: "s:foo §bar"
+[Needle::Compile]     1..7
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched 'foo'
+[Needle::Compile]     ok 3 - matched 'bar'
+[Needle::Compile]     ok 4 - matched 'foo bar'
+[Needle::Compile]     ok 5 - matched 'ofoos'
+[Needle::Compile]     ok 6 - did not match 'baz'
+[Needle::Compile]     ok 7 - did not match 'barra'
+[Needle::Compile] ok 5 - or: "s:foo §bar"
+[Needle::Compile] # Subtest: or: :split("foo §bar")
+[Needle::Compile]     1..7
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched 'foo'
+[Needle::Compile]     ok 3 - matched 'bar'
+[Needle::Compile]     ok 4 - matched 'foo bar'
+[Needle::Compile]     ok 5 - matched 'ofoos'
+[Needle::Compile]     ok 6 - did not match 'baz'
+[Needle::Compile]     ok 7 - did not match 'barra'
+[Needle::Compile] ok 6 - or: :split("foo §bar")
+[Needle::Compile] # Subtest: or: "foo    §bar" but Type('split')
+[Needle::Compile]     1..7
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched 'foo'
+[Needle::Compile]     ok 3 - matched 'bar'
+[Needle::Compile]     ok 4 - matched 'foo bar'
+[Needle::Compile]     ok 5 - matched 'ofoos'
+[Needle::Compile]     ok 6 - did not match 'baz'
+[Needle::Compile]     ok 7 - did not match 'barra'
+[Needle::Compile] ok 7 - or: "foo    §bar" but Type('split')
+[Needle::Compile] # Subtest: and: $("foo", "\&§bar")
+[Needle::Compile]     1..8
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched 'foo bar'
+[Needle::Compile]     ok 3 - matched 'foozo bar'
+[Needle::Compile]     ok 4 - matched 'foo bar'
+[Needle::Compile]     ok 5 - did not match 'foo'
+[Needle::Compile]     ok 6 - did not match 'baz'
+[Needle::Compile]     ok 7 - did not match 'barra'
+[Needle::Compile]     ok 8 - did not match 'foo barra'
+[Needle::Compile] ok 8 - and: $("foo", "\&§bar")
+[Needle::Compile] # Subtest: and: $("foo" but Type('contains'), :and("bar" but Type('words')))
+[Needle::Compile]     1..8
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched 'foo bar'
+[Needle::Compile]     ok 3 - matched 'foozo bar'
+[Needle::Compile]     ok 4 - matched 'foo bar'
+[Needle::Compile]     ok 5 - did not match 'foo'
+[Needle::Compile]     ok 6 - did not match 'baz'
+[Needle::Compile]     ok 7 - did not match 'barra'
+[Needle::Compile]     ok 8 - did not match 'foo barra'
+[Needle::Compile] ok 9 - and: $("foo" but Type('contains'), :and("bar" but Type('words')))
+[Needle::Compile] # Subtest: and: $(:contains("foo"), :and(:words("bar")))
+[Needle::Compile]     1..8
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched 'foo bar'
+[Needle::Compile]     ok 3 - matched 'foozo bar'
+[Needle::Compile]     ok 4 - matched 'foo bar'
+[Needle::Compile]     ok 5 - did not match 'foo'
+[Needle::Compile]     ok 6 - did not match 'baz'
+[Needle::Compile]     ok 7 - did not match 'barra'
+[Needle::Compile]     ok 8 - did not match 'foo barra'
+[Needle::Compile] ok 10 - and: $(:contains("foo"), :and(:words("bar")))
+[Needle::Compile] # Subtest: and: $("foo" but Type('contains'), "\&§bar")
+[Needle::Compile]     1..8
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched 'foo bar'
+[Needle::Compile]     ok 3 - matched 'foozo bar'
+[Needle::Compile]     ok 4 - matched 'foo bar'
+[Needle::Compile]     ok 5 - did not match 'foo'
+[Needle::Compile]     ok 6 - did not match 'baz'
+[Needle::Compile]     ok 7 - did not match 'barra'
+[Needle::Compile]     ok 8 - did not match 'foo barra'
+[Needle::Compile] ok 11 - and: $("foo" but Type('contains'), "\&§bar")
+[Needle::Compile] # Subtest: and: $("foo", "§bar" but Type('and'))
+[Needle::Compile]     1..8
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched 'foo bar'
+[Needle::Compile]     ok 3 - matched 'foozo bar'
+[Needle::Compile]     ok 4 - matched 'foo bar'
+[Needle::Compile]     ok 5 - did not match 'foo'
+[Needle::Compile]     ok 6 - did not match 'baz'
+[Needle::Compile]     ok 7 - did not match 'barra'
+[Needle::Compile]     ok 8 - did not match 'foo barra'
+[Needle::Compile] ok 12 - and: $("foo", "§bar" but Type('and'))
+[Needle::Compile] # Subtest: and: $("\&foo", "§bar" but Type('and'))
+[Needle::Compile]     1..8
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched 'foo bar'
+[Needle::Compile]     ok 3 - matched 'foozo bar'
+[Needle::Compile]     ok 4 - matched 'foo bar'
+[Needle::Compile]     ok 5 - did not match 'foo'
+[Needle::Compile]     ok 6 - did not match 'baz'
+[Needle::Compile]     ok 7 - did not match 'barra'
+[Needle::Compile]     ok 8 - did not match 'foo barra'
+[Needle::Compile] ok 13 - and: $("\&foo", "§bar" but Type('and'))
+[Needle::Compile] # Subtest: and: "s:foo \&§bar"
+[Needle::Compile]     1..8
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched 'foo bar'
+[Needle::Compile]     ok 3 - matched 'foozo bar'
+[Needle::Compile]     ok 4 - matched 'foo bar'
+[Needle::Compile]     ok 5 - did not match 'foo'
+[Needle::Compile]     ok 6 - did not match 'baz'
+[Needle::Compile]     ok 7 - did not match 'barra'
+[Needle::Compile]     ok 8 - did not match 'foo barra'
+[Needle::Compile] ok 14 - and: "s:foo \&§bar"
+[Needle::Compile] # Subtest: and: :split("foo \&§bar")
+[Needle::Compile]     1..8
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched 'foo bar'
+[Needle::Compile]     ok 3 - matched 'foozo bar'
+[Needle::Compile]     ok 4 - matched 'foo bar'
+[Needle::Compile]     ok 5 - did not match 'foo'
+[Needle::Compile]     ok 6 - did not match 'baz'
+[Needle::Compile]     ok 7 - did not match 'barra'
+[Needle::Compile]     ok 8 - did not match 'foo barra'
+[Needle::Compile] ok 15 - and: :split("foo \&§bar")
+[Needle::Compile] # Subtest: and: "foo    \&§bar" but Type('split')
+[Needle::Compile]     1..8
+[Needle::Compile]     ok 1 - is it a Callable
+[Needle::Compile]     ok 2 - matched 'foo bar'
+[Needle::Compile]     ok 3 - matched 'foozo bar'
+[Needle::Compile]     ok 4 - matched 'foo bar'
+[Needle::Compile]     ok 5 - did not match 'foo'
+[Needle::Compile]     ok 6 - did not match 'baz'
+[Needle::Compile]     ok 7 - did not match 'barra'
+[Needle::Compile]     ok 8 - did not match 'foo barra'
+[Needle::Compile] ok 16 - and: "foo    \&§bar" but Type('split')
+===> Testing [FAIL]: Needle::Compile:ver<0.0.12>:auth<zef:lizmat>
+[Needle::Compile] Failed to get passing tests, but continuing with --force-test
+===> Installing: Needle::Compile:ver<0.0.12>:auth<zef:lizmat>
+===> Install [OK] for Needle::Compile:ver<0.0.12>:auth<zef:lizmat>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 39.486s
+             CPU time consumed: 58.271s
+                   Memory peak: 1.1G (swap: 0B)
