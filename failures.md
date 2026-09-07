@@ -1,15 +1,15 @@
-[Blin](https://github.com/Raku/Blin) results between 2026.08 ([24e6e53](https://github.com/rakudo/rakudo/commit/24e6e5312f2868680413b0597aef8772f6b5bcea)) and HEAD ([12b5be6](https://github.com/rakudo/rakudo/commit/12b5be61727f6916c4908f2f3067ffaad494432e)):
+[Blin](https://github.com/Raku/Blin) results between 2026.08 ([24e6e53](https://github.com/rakudo/rakudo/commit/24e6e5312f2868680413b0597aef8772f6b5bcea)) and HEAD ([d6ada9b](https://github.com/rakudo/rakudo/commit/d6ada9bd14fbd0785d89826cf0797793c56b1ebe)):
 
 * [ ] [Needle::Compile](https://raku.land/zef:lizmat/Needle::Compile) – Fail, Bisected: [6ec3194](https://github.com/rakudo/rakudo/commit/6ec31943a47d15e58ada4e93e50eee43f91bb172)
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p1190106-i1233737.service; invocation ID: e9048479a16e46949c005eef10650800
+  Running as unit: run-p1810789-i1856043.service; invocation ID: 6e8078ca15644121b8a950f38b7cd237
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Needle::Compile
   ===> Found: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> [via Zef::Repository::Ecosystems<fez>]
-  [Needle::Compile] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788572818.1190109.6507.224636577128/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz https://360.zef.pm/N/EE/NEEDLE_COMPILE/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
-  ===> Fetching [OK]: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1788572818.1190109.6507.224636577128/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+  [Needle::Compile] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788790728.1810790.237.19145576211466/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz https://360.zef.pm/N/EE/NEEDLE_COMPILE/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+  ===> Fetching [OK]: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1788790728.1810790.237.19145576211466/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   [Needle::Compile] Command: tar -t -f ./66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   [Needle::Compile] Command: tar -xvf ./66794ae2eb541201a403c08d48e27de668b32db7.tar.gz -C ../66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   ===> Extraction [OK]: Needle::Compile to /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
@@ -4772,9 +4772,9 @@
   ===> Install [OK] for Needle::Compile:ver<0.0.12>:auth<zef:lizmat>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 28.555s
-               CPU time consumed: 42.150s
-                     Memory peak: 1G (swap: 0B)
+                 Service runtime: 38.956s
+               CPU time consumed: 56.782s
+                     Memory peak: 1.1G (swap: 0B)
 
   ```
   </details>
@@ -4782,102 +4782,17 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p1189530-i1257618.service; invocation ID: da60dded06b843f48fd6f98da99ad5fb
+  Running as unit: run-p1809294-i1804109.service; invocation ID: e3aef58caec043c292cc6cfd94a14c73
   Press ^] three times within 1s to disconnect TTY.
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_0:1
-      ------> [32mity>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_1:1
-      ------> [32mZef>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_2:1
-      ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_3:1
-      ------> [32mery>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_4:1
-      ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_5:1
-      ------> [32mcal>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_6:1
-      ------> [32mory>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_7:1
-      ------> [32mtem>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_8:1
-      ------> [32mtch>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_9:1
-      ------> [32mact>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_10:1
-      ------> [32mild>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_11:1
-      ------> [32mest>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_12:1
-      ------> [32mall>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_13:1
-      ------> [32mort>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_14:1
-      ------> [32ment>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_15:1
-      ------> [32mfig>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_16:1
-      ------> [32mURI>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
   ===> Searching for: Needle::Compile
   ===> Found: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> [via Zef::Repository::Ecosystems<fez>]
-  [Needle::Compile] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788572790.1189533.7556.951999612871/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz https://360.zef.pm/N/EE/NEEDLE_COMPILE/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
-  ===> Fetching [OK]: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1788572790.1189533.7556.951999612871/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+  [Needle::Compile] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788790693.1809295.5851.396656229247/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz https://360.zef.pm/N/EE/NEEDLE_COMPILE/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+  ===> Fetching [OK]: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1788790693.1809295.5851.396656229247/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   [Needle::Compile] Command: tar -t -f ./66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   [Needle::Compile] Command: tar -xvf ./66794ae2eb541201a403c08d48e27de668b32db7.tar.gz -C ../66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   ===> Extraction [OK]: Needle::Compile to /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   ===> Testing: Needle::Compile:ver<0.0.12>:auth<zef:lizmat>
-  [Needle::Compile] Command: /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/01-basic.rakutest
+  [Needle::Compile] Command: /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/01-basic.rakutest
   [Needle::Compile] 1..36
   [Needle::Compile] ok 1 - did compile-needle get exported
   [Needle::Compile] ok 2 - did implicit2explicit get exported
@@ -4915,7 +4830,7 @@
   [Needle::Compile] ok 34 - did '!foo' produce the correct explicit?
   [Needle::Compile] ok 35 - did '&foo' produce the correct explicit?
   [Needle::Compile] ok 36 - did we get an AST
-  [Needle::Compile] Command: /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/02-single.rakutest
+  [Needle::Compile] Command: /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/02-single.rakutest
   [Needle::Compile] 1..10
   [Needle::Compile] # Subtest: code: simple .subst
   [Needle::Compile]     1..8
@@ -5127,7 +5042,7 @@
   [Needle::Compile]         ok 161 - Testing "foo"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 162 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5135,7 +5050,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 163 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5145,7 +5060,7 @@
   [Needle::Compile]         ok 165 - Testing "foo" but Type('contains')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 166 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5153,7 +5068,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 167 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5163,7 +5078,7 @@
   [Needle::Compile]         ok 169 - Testing "foo" but Type('regex')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 170 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5171,7 +5086,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 171 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5181,7 +5096,7 @@
   [Needle::Compile]         ok 173 - Testing "/foo/"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 174 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5189,7 +5104,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 175 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5199,7 +5114,7 @@
   [Needle::Compile]         ok 177 - Testing :contains("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 178 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5207,7 +5122,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 179 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5217,7 +5132,7 @@
   [Needle::Compile]         ok 181 - Testing :regex("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 182 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5225,7 +5140,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 183 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5401,7 +5316,7 @@
   [Needle::Compile]         ok 161 - Testing "foo"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 162 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5409,7 +5324,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 163 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5419,7 +5334,7 @@
   [Needle::Compile]         ok 165 - Testing "foo" but Type('contains')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 166 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5427,7 +5342,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 167 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5437,7 +5352,7 @@
   [Needle::Compile]         ok 169 - Testing "foo" but Type('regex')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 170 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5445,7 +5360,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 171 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5455,7 +5370,7 @@
   [Needle::Compile]         ok 173 - Testing "/foo/"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 174 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5463,7 +5378,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 175 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5473,7 +5388,7 @@
   [Needle::Compile]         ok 177 - Testing :contains("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 178 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5481,7 +5396,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 179 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5491,7 +5406,7 @@
   [Needle::Compile]         ok 181 - Testing :regex("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 182 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5499,14 +5414,14 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 183 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
   [Needle::Compile]         # expected: $(slip("foo",))
   [Needle::Compile]         #      got: $(slip("",))
-  [Needle::Compile]         ok 184 - miss 'bar'
   [Needle::Compile]         # You failed 12 tests of 184
+  [Needle::Compile]         ok 184 - miss 'bar'
   [Needle::Compile]     not ok 2 - contains: find simple 'foo', :ignorecase, :ignorecase
   [Needle::Compile]     # Failed test 'contains: find simple 'foo', :ignorecase, :ignorecase'
   [Needle::Compile]     # at t/02-single.rakutest line 14
@@ -5675,7 +5590,7 @@
   [Needle::Compile]         ok 161 - Testing "foo"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 162 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5683,7 +5598,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 163 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5693,7 +5608,7 @@
   [Needle::Compile]         ok 165 - Testing "foo" but Type('contains')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 166 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5701,7 +5616,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 167 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5711,7 +5626,7 @@
   [Needle::Compile]         ok 169 - Testing "foo" but Type('regex')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 170 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5719,7 +5634,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 171 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5729,7 +5644,7 @@
   [Needle::Compile]         ok 173 - Testing "/foo/"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 174 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5737,7 +5652,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 175 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5747,7 +5662,7 @@
   [Needle::Compile]         ok 177 - Testing :contains("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 178 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5755,7 +5670,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 179 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5765,7 +5680,7 @@
   [Needle::Compile]         ok 181 - Testing :regex("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 182 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5773,7 +5688,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 183 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5949,7 +5864,7 @@
   [Needle::Compile]         ok 161 - Testing "foo"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 162 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5957,7 +5872,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 163 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5967,7 +5882,7 @@
   [Needle::Compile]         ok 165 - Testing "foo" but Type('contains')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 166 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5975,7 +5890,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 167 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5985,7 +5900,7 @@
   [Needle::Compile]         ok 169 - Testing "foo" but Type('regex')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 170 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5993,7 +5908,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 171 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6003,7 +5918,7 @@
   [Needle::Compile]         ok 173 - Testing "/foo/"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 174 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6011,7 +5926,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 175 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6021,7 +5936,7 @@
   [Needle::Compile]         ok 177 - Testing :contains("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 178 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6029,7 +5944,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 179 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6039,7 +5954,7 @@
   [Needle::Compile]         ok 181 - Testing :regex("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 182 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6047,7 +5962,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 183 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6223,7 +6138,7 @@
   [Needle::Compile]         ok 161 - Testing "foo"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 162 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6231,7 +6146,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 163 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6241,7 +6156,7 @@
   [Needle::Compile]         ok 165 - Testing "foo" but Type('contains')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 166 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6249,7 +6164,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 167 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6259,7 +6174,7 @@
   [Needle::Compile]         ok 169 - Testing "foo" but Type('regex')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 170 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6267,7 +6182,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 171 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6277,7 +6192,7 @@
   [Needle::Compile]         ok 173 - Testing "/foo/"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 174 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6285,7 +6200,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 175 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6295,7 +6210,7 @@
   [Needle::Compile]         ok 177 - Testing :contains("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 178 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6303,7 +6218,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 179 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6313,7 +6228,7 @@
   [Needle::Compile]         ok 181 - Testing :regex("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 182 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6321,7 +6236,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/share/perl6/core/sources/195BBEE4679511561FAF9959EF818400DF0223D3 (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/share/perl6/core/sources/BC70CB25B2F8C84AAFA3A2289F71F86E61C91BF1 (Test) line 714
   [Needle::Compile]         not ok 183 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6340,7 +6255,7 @@
   [Needle::Compile] # environmental variable is set to a true value.
   [Needle::Compile] # You planned 10 tests, but ran 5
   [Needle::Compile] # You failed 1 test of 5
-  [Needle::Compile] Command: /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/03-file.rakutest
+  [Needle::Compile] Command: /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/03-file.rakutest
   [Needle::Compile] 1..9
   [Needle::Compile] ok 1 - is it a Callable
   [Needle::Compile] ok 2 - matched "foo"
@@ -6381,7 +6296,7 @@
   [Needle::Compile]     ok 2 - did not match "foo"
   [Needle::Compile]     ok 3 - matched "bar"
   [Needle::Compile] ok 9 - not file: :not(:file("t/always"))
-  [Needle::Compile] Command: /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/04-multiple.rakutest
+  [Needle::Compile] Command: /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/04-multiple.rakutest
   [Needle::Compile] 1..16
   [Needle::Compile] # Subtest: or: $("foo", "§bar")
   [Needle::Compile]     1..7
@@ -6558,40 +6473,109 @@
   ===> Install [OK] for Needle::Compile:ver<0.0.12>:auth<zef:lizmat>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 14.295s
-               CPU time consumed: 18.248s
-                     Memory peak: 891.3M (swap: 0B)
+                 Service runtime: 39.486s
+               CPU time consumed: 58.271s
+                     Memory peak: 1.1G (swap: 0B)
 
   ```
   </details>
-* [ ] [Lingua::Stem::Portuguese](https://raku.land/zef:antononcube/Lingua::Stem::Portuguese) – Fail, Bisected: [dafc6dd](https://github.com/rakudo/rakudo/commit/dafc6ddae90ed1d5b85f86bfff5ed23dc2dcda5b)
+* [ ] [Text::Markdown::Discount](https://raku.land/github:hartenfels/Text::Markdown::Discount) – Fail, Bisected: [754d3dc](https://github.com/rakudo/rakudo/commit/754d3dcf09c14d840fc4e1058abac90024ede1e8)
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p1188843-i1173181.service; invocation ID: 37267704fe8242bf88ed8e5f6df40041
+  Running as unit: run-p1810530-i1799687.service; invocation ID: f99f48ed87d645d4b803acae6e747257
   Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: Lingua::Stem::Portuguese
-  ===> Found: Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1> [via Zef::Repository::Ecosystems<fez>]
-  [Lingua::Stem::Portuguese] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788572799.1188849.637.9107045154275/d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz https://360.zef.pm/L/IN/LINGUA_STEM_PORTUGUESE/d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz
-  ===> Fetching [OK]: Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1788572799.1188849.637.9107045154275/d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz
-  [Lingua::Stem::Portuguese] Command: tar -t -f ./d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz
-  [Lingua::Stem::Portuguese] Command: tar -xvf ./d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz -C ../d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz
-  ===> Extraction [OK]: Lingua::Stem::Portuguese to /home/coke/sandbox/blin/data/zef-data/tmp/d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz
-  ===> Testing: Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1>
-  [Lingua::Stem::Portuguese] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz/dist t/01-stem-word.rakutest
-  [Lingua::Stem::Portuguese] 1..1
-  [Lingua::Stem::Portuguese] ok 1 - correct stems 1
-  ===> Testing [OK] for Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1>
-  ===> Installing: Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1>
-  ===> Install [OK] for Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1>
-
-  1 bin/ script [PortugueseStem] installed to:
-  /tmp/BoEVBISV9w/bin
+  ===> Searching for: Text::Markdown::Discount
+  ===> Found: Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels> [via Zef::Repository::Ecosystems<rea>]
+  [Text::Markdown::Discount] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788790725.1810531.9270.872411881375/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/T/Text%3A%3AMarkdown%3A%3ADiscount/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz
+  ===> Fetching [OK]: Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels> to /home/coke/sandbox/blin/data/zef-data/tmp/1788790725.1810531.9270.872411881375/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz
+  [Text::Markdown::Discount] Command: tar -t -f ./Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz
+  [Text::Markdown::Discount] Command: tar -xvf ./Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz -C ../Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz
+  ===> Extraction [OK]: Text::Markdown::Discount to /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz
+  ===> Testing: Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels>
+  [Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/01_lib.t
+  [Text::Markdown::Discount] # markdown_version: NativeCall::Types::Pointer[int8]<5469323373120>
+  [Text::Markdown::Discount] ok 1 - libmarkdown is installed
+  [Text::Markdown::Discount] 1..1
+  [Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/02_make-flags.t
+  [Text::Markdown::Discount] ok 1 - no flags
+  [Text::Markdown::Discount] ok 2 - single positive flag is set
+  [Text::Markdown::Discount] ok 3 - single negated positive flag is unset
+  [Text::Markdown::Discount] ok 4 - single negative flag is unset
+  [Text::Markdown::Discount] ok 5 - single negated negative flag is set
+  [Text::Markdown::Discount] ok 6 - single negative flag with no is set
+  [Text::Markdown::Discount] ok 7 - single negated negative flag with no is unset
+  [Text::Markdown::Discount] ok 8 - multiple non-zero flags get ORed together
+  [Text::Markdown::Discount] ok 9 - case and actual value of flags does not matter
+  [Text::Markdown::Discount] # Subtest: single nonexistent flag dies
+  [Text::Markdown::Discount]     1..2
+  [Text::Markdown::Discount]     ok 1 - code dies
+  [Text::Markdown::Discount]     ok 2 - right exception type (Text::Markdown::Discount::X::Text::Markdown::Discount::Flag)
+  [Text::Markdown::Discount] ok 10 - single nonexistent flag dies
+  [Text::Markdown::Discount] # Subtest: nonexistent flag amongst real flag dies
+  [Text::Markdown::Discount]     1..2
+  [Text::Markdown::Discount]     ok 1 - code dies
+  [Text::Markdown::Discount]     ok 2 - right exception type (Text::Markdown::Discount::X::Text::Markdown::Discount::Flag)
+  [Text::Markdown::Discount] ok 11 - nonexistent flag amongst real flag dies
+  [Text::Markdown::Discount] 1..11
+  [Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/03_interna.t
+  [Text::Markdown::Discount] ok 1 - string gets parsed
+  [Text::Markdown::Discount] ok 2 - ...conversion to string works
+  [Text::Markdown::Discount] ok 3 - ...writing to file works
+  [Text::Markdown::Discount] ok 4 - file gets parsed
+  [Text::Markdown::Discount] ok 5 - ...conversion to string works
+  [Text::Markdown::Discount] ok 6 - ...writing to file works
+  [Text::Markdown::Discount] ok 7 - from string with flags ()
+  [Text::Markdown::Discount] ok 8 - from file with flags ()
+  [Text::Markdown::Discount] ok 9 - from string with flags (nolinks)
+  [Text::Markdown::Discount] ok 10 - from file with flags (nolinks)
+  [Text::Markdown::Discount] ok 11 - from string with flags (nohtml)
+  [Text::Markdown::Discount] ok 12 - from file with flags (nohtml)
+  [Text::Markdown::Discount] ok 13 - from string with flags (nolinks nohtml)
+  [Text::Markdown::Discount] ok 14 - from file with flags (nolinks nohtml)
+  [Text::Markdown::Discount] # Subtest: sourcing from nonexistent file fails
+  [Text::Markdown::Discount]     1..2
+  [Text::Markdown::Discount]     ok 1 - code dies
+  [Text::Markdown::Discount]     ok 2 - right exception type (Text::Markdown::Discount::X::Text::Markdown::Discount::File)
+  [Text::Markdown::Discount] ok 15 - sourcing from nonexistent file fails
+  [Text::Markdown::Discount] 1..15
+  [Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/04_markdown.t
+  [Text::Markdown::Discount] ok 1 - string to string
+  [Text::Markdown::Discount] ok 2 - file to string
+  [Text::Markdown::Discount] ok 3 - string to file
+  [Text::Markdown::Discount] ok 4 - file to file
+  [Text::Markdown::Discount] ok 5 - HTML conversion ()
+  [Text::Markdown::Discount] ok 6 - HTML conversion (nolinks)
+  [Text::Markdown::Discount] ok 7 - HTML conversion (nohtml)
+  [Text::Markdown::Discount] ok 8 - HTML conversion (nohtml nolinks)
+  [Text::Markdown::Discount] 1..8
+  [Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/05_dump.t
+  [Text::Markdown::Discount] ok 1 - LINKS IMAGE
+  [Text::Markdown::Discount] ok 2 - !LINKS IMAGE
+  [Text::Markdown::Discount] ok 3 - LINKS !IMAGE
+  [Text::Markdown::Discount] ok 4 - !LINKS !IMAGE
+  [Text::Markdown::Discount] 1..4
+  [Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/06_headers.t
+  [Text::Markdown::Discount] ok 1 - 
+  [Text::Markdown::Discount] ok 2 - 
+  [Text::Markdown::Discount] ok 3 - 
+  [Text::Markdown::Discount] ok 4 - 
+  [Text::Markdown::Discount] ok 5 - 
+  [Text::Markdown::Discount] ok 6 - 
+  [Text::Markdown::Discount] ok 7 - 
+  [Text::Markdown::Discount] ok 8 - 
+  [Text::Markdown::Discount] 1..8
+  [Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/07_meta.t
+  [Text::Markdown::Discount] 1..1
+  [Text::Markdown::Discount] ok 1 - # SKIP Skipping author test
+  ===> Testing [OK] for Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels>
+  ===> Installing: Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels>
+  ===> Install [OK] for Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 31.959s
-               CPU time consumed: 48.148s
-                     Memory peak: 1G (swap: 0B)
+                 Service runtime: 35.139s
+               CPU time consumed: 49.550s
+                     Memory peak: 1.2G (swap: 0B)
 
   ```
   </details>
@@ -6599,36 +6583,100 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p1188095-i1173162.service; invocation ID: a6fead7d062447b3b3d6f4e6d1f0f2d2
+  Running as unit: run-p1806724-i1863817.service; invocation ID: d2a8eb44ce1d47bcbccadef314e60d7e
   Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: Lingua::Stem::Portuguese
-  ===> Found: Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1> [via Zef::Repository::Ecosystems<fez>]
-  [Lingua::Stem::Portuguese] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788572767.1188097.4743.219220401207/d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz https://360.zef.pm/L/IN/LINGUA_STEM_PORTUGUESE/d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz
-  ===> Fetching [OK]: Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1788572767.1188097.4743.219220401207/d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz
-  [Lingua::Stem::Portuguese] Command: tar -t -f ./d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz
-  [Lingua::Stem::Portuguese] Command: tar -xvf ./d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz -C ../d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz
-  ===> Extraction [OK]: Lingua::Stem::Portuguese to /home/coke/sandbox/blin/data/zef-data/tmp/d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz
-  ===> Testing: Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1>
-  [Lingua::Stem::Portuguese] Command: /tmp/whateverable/rakudo-moar/12b5be61727f6916c4908f2f3067ffaad494432e/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d781acd42262cea953b3a0d8b8a72e9349336923.tar.gz/dist t/01-stem-word.rakutest
-  [Lingua::Stem::Portuguese] 1..1
-  [Lingua::Stem::Portuguese] not ok 1 - correct stems 1
-  [Lingua::Stem::Portuguese] # Failed test 'correct stems 1'
-  [Lingua::Stem::Portuguese] # at t/01-stem-word.rakutest line 36
-  [Lingua::Stem::Portuguese] # expected: 'True'
-  [Lingua::Stem::Portuguese] #      got: 'False'
-  [Lingua::Stem::Portuguese] # You failed 1 test of 1
-  ===> Testing [FAIL]: Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1>
-  [Lingua::Stem::Portuguese] Failed to get passing tests, but continuing with --force-test
-  ===> Installing: Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1>
-  ===> Install [OK] for Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1>
-
-  1 bin/ script [PortugueseStem] installed to:
-  /home/coke/sandbox/blin/installed/Lingua::Stem::Portuguese_zef:antononcube_0.1.0_1/bin
+  ===> Searching for: Text::Markdown::Discount
+  ===> Found: Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels> [via Zef::Repository::Ecosystems<rea>]
+  [Text::Markdown::Discount] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788790686.1806725.5577.658986285577/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/T/Text%3A%3AMarkdown%3A%3ADiscount/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz
+  ===> Fetching [OK]: Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels> to /home/coke/sandbox/blin/data/zef-data/tmp/1788790686.1806725.5577.658986285577/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz
+  [Text::Markdown::Discount] Command: tar -t -f ./Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz
+  [Text::Markdown::Discount] Command: tar -xvf ./Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz -C ../Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz
+  ===> Extraction [OK]: Text::Markdown::Discount to /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz
+  ===> Testing: Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels>
+  [Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/01_lib.t
+  [Text::Markdown::Discount] # markdown_version: NativeCall::Types::Pointer[int8]<4103000856288>
+  [Text::Markdown::Discount] ok 1 - libmarkdown is installed
+  [Text::Markdown::Discount] 1..1
+  [Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/02_make-flags.t
+  [Text::Markdown::Discount] ok 1 - no flags
+  [Text::Markdown::Discount] ok 2 - single positive flag is set
+  [Text::Markdown::Discount] ok 3 - single negated positive flag is unset
+  [Text::Markdown::Discount] ok 4 - single negative flag is unset
+  [Text::Markdown::Discount] ok 5 - single negated negative flag is set
+  [Text::Markdown::Discount] ok 6 - single negative flag with no is set
+  [Text::Markdown::Discount] ok 7 - single negated negative flag with no is unset
+  [Text::Markdown::Discount] ok 8 - multiple non-zero flags get ORed together
+  [Text::Markdown::Discount] ok 9 - case and actual value of flags does not matter
+  [Text::Markdown::Discount] # Subtest: single nonexistent flag dies
+  [Text::Markdown::Discount]     1..2
+  [Text::Markdown::Discount]     ok 1 - code dies
+  [Text::Markdown::Discount]     ok 2 - right exception type (Text::Markdown::Discount::X::Text::Markdown::Discount::Flag)
+  [Text::Markdown::Discount] ok 10 - single nonexistent flag dies
+  [Text::Markdown::Discount] # Subtest: nonexistent flag amongst real flag dies
+  [Text::Markdown::Discount]     1..2
+  [Text::Markdown::Discount]     ok 1 - code dies
+  [Text::Markdown::Discount]     ok 2 - right exception type (Text::Markdown::Discount::X::Text::Markdown::Discount::Flag)
+  [Text::Markdown::Discount] ok 11 - nonexistent flag amongst real flag dies
+  [Text::Markdown::Discount] 1..11
+  [Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/03_interna.t
+  [Text::Markdown::Discount] ok 1 - string gets parsed
+  [Text::Markdown::Discount] ok 2 - ...conversion to string works
+  [Text::Markdown::Discount] ok 3 - ...writing to file works
+  [Text::Markdown::Discount] ok 4 - file gets parsed
+  [Text::Markdown::Discount] ok 5 - ...conversion to string works
+  [Text::Markdown::Discount] ok 6 - ...writing to file works
+  [Text::Markdown::Discount] ok 7 - from string with flags ()
+  [Text::Markdown::Discount] ok 8 - from file with flags ()
+  [Text::Markdown::Discount] ok 9 - from string with flags (nolinks)
+  [Text::Markdown::Discount] ok 10 - from file with flags (nolinks)
+  [Text::Markdown::Discount] ok 11 - from string with flags (nohtml)
+  [Text::Markdown::Discount] ok 12 - from file with flags (nohtml)
+  [Text::Markdown::Discount] ok 13 - from string with flags (nolinks nohtml)
+  [Text::Markdown::Discount] ok 14 - from file with flags (nolinks nohtml)
+  [Text::Markdown::Discount] # Subtest: sourcing from nonexistent file fails
+  [Text::Markdown::Discount]     1..2
+  [Text::Markdown::Discount]     ok 1 - code dies
+  [Text::Markdown::Discount]     ok 2 - right exception type (Text::Markdown::Discount::X::Text::Markdown::Discount::File)
+  [Text::Markdown::Discount] ok 15 - sourcing from nonexistent file fails
+  [Text::Markdown::Discount] 1..15
+  [Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/04_markdown.t
+  [Text::Markdown::Discount] ok 1 - string to string
+  [Text::Markdown::Discount] ok 2 - file to string
+  [Text::Markdown::Discount] ok 3 - string to file
+  [Text::Markdown::Discount] ok 4 - file to file
+  [Text::Markdown::Discount] ok 5 - HTML conversion ()
+  [Text::Markdown::Discount] ok 6 - HTML conversion (nolinks)
+  [Text::Markdown::Discount] ok 7 - HTML conversion (nohtml)
+  [Text::Markdown::Discount] ok 8 - HTML conversion (nolinks nohtml)
+  [Text::Markdown::Discount] 1..8
+  [Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/05_dump.t
+  [Text::Markdown::Discount] ok 1 - LINKS IMAGE
+  [Text::Markdown::Discount] ok 2 - !LINKS IMAGE
+  [Text::Markdown::Discount] ok 3 - LINKS !IMAGE
+  [Text::Markdown::Discount] ok 4 - !LINKS !IMAGE
+  [Text::Markdown::Discount] 1..4
+  [Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/06_headers.t
+  [Text::Markdown::Discount] ok 1 - 
+  [Text::Markdown::Discount] ok 2 - 
+  [Text::Markdown::Discount] ok 3 - 
+  [Text::Markdown::Discount] ok 4 - 
+  [Text::Markdown::Discount] ok 5 - 
+  [Text::Markdown::Discount] ok 6 - 
+  [Text::Markdown::Discount] ok 7 - 
+  [Text::Markdown::Discount] ok 8 - 
+  [Text::Markdown::Discount] 1..8
+  [Text::Markdown::Discount] Command: /tmp/whateverable/rakudo-moar/d6ada9bd14fbd0785d89826cf0797793c56b1ebe/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AMarkdown%3A%3ADiscount%3Aver%3C0.3.0%3E%3Aauth%3Cgithub%3Ahartenfels%3E.tar.gz/Text-Markdown-Discount-master t/07_meta.t
+  [Text::Markdown::Discount] 1..1
+  [Text::Markdown::Discount] ok 1 - # SKIP Skipping author test
+  ===> Testing [FAIL]: Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels>
+  [Text::Markdown::Discount] Failed to get passing tests, but continuing with --force-test
+  ===> Installing: Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels>
+  ===> Install [OK] for Text::Markdown::Discount:ver<0.3.0>:auth<github:hartenfels>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 20.444s
-               CPU time consumed: 5.535s
-                     Memory peak: 764M (swap: 0B)
+                 Service runtime: 1min 31.011s
+               CPU time consumed: 1min 22.647s
+                     Memory peak: 1.1G (swap: 0B)
 
   ```
   </details>
@@ -6638,13 +6686,13 @@
 | Status                    | Count |          Modules          |
 | :------------------------ | :---: | :------------------------ |
 | InstallableButUntested    |     1 | [IO::Socket::Async::SSL](https://raku.land/zef:raku-community-modules/IO::Socket::Async::SSL) |
-| Fail                      |     2 | [Lingua::Stem::Portuguese](https://raku.land/zef:antononcube/Lingua::Stem::Portuguese) [Needle::Compile](https://raku.land/zef:lizmat/Needle::Compile) |
-| AlwaysFail                |     6 | [Email::MIME](https://raku.land/zef:rbt/Email::MIME) [JSON::Class](https://raku.land/zef:jonathanstowe/JSON::Class) [LLM::Chat](https://raku.land/zef:apogee/LLM::Chat) [License::SPDX](https://raku.land/zef:jonathanstowe/License::SPDX) [META6](https://raku.land/zef:jonathanstowe/META6) [Test::META](https://raku.land/zef:jonathanstowe/Test::META) |
-| OK                        |    62 | ⋯                         |
+| Fail                      |     2 | [Needle::Compile](https://raku.land/zef:lizmat/Needle::Compile) [Text::Markdown::Discount](https://raku.land/github:hartenfels/Text::Markdown::Discount) |
+| AlwaysFail                |     5 | [Cro::HTTP::RouterUtils](https://raku.land/zef:FCO/Cro::HTTP::RouterUtils) [JSON::Class](https://raku.land/zef:jonathanstowe/JSON::Class) [License::SPDX](https://raku.land/zef:jonathanstowe/License::SPDX) [META6](https://raku.land/zef:jonathanstowe/META6) [Test::META](https://raku.land/zef:jonathanstowe/Test::META) |
+| OK                        |    53 | ⋯                         |
 
 
 
-This run started on 2026-09-05T01:51:46Z and finished in 7 minutes.
+This run started on 2026-09-07T14:25:24Z and finished in 10 minutes.
 
 <!--
 Graph of bisected modules and their dependencies:
