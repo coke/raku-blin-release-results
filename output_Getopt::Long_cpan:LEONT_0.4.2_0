@@ -1,9 +1,0 @@
-Running as unit: run-p2393504-i2430259.service
-Press ^] three times within 1s to disconnect TTY.
-===> Searching for: Getopt::Long
-No candidates found matching identity: Getopt::Long
-          Finished with result: exit-code
-Main processes terminated with: code=exited, status=255/EXCEPTION
-               Service runtime: 44.320s
-             CPU time consumed: 1min 2.280s
-                   Memory peak: 1G (swap: 0B)
