@@ -1,460 +1,2258 @@
 digraph {
     rankdir = BT;
-    "App::Rak_zef:lizmat_0.3.18_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.18_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "CSS::Properties_zef:dwarring_0.10.2_0.10" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.2_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.10.2_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.2_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.10.2_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
 
-    "App::Rak_zef:lizmat_0.3.19_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.19_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "LWP::Simple_zef:dwarring_0.109_0" [color=gray];
+    "LWP::Simple_zef:dwarring_0.109_0" -> "JSON::Tiny_cpan:MORITZ_1.0_0";
+    "LWP::Simple_zef:dwarring_0.109_0" -> "MIME::Base64_zef:raku-community-modules_1.2.5_0";
+    "LWP::Simple_zef:dwarring_0.109_0" -> "URI_zef:raku-community-modules_0.3.8_0";
 
-    "path-utils_zef:lizmat_0.0.25_0" [color=gray];
+    "ASN::Grammar_zef:Altai-man_0.3.5_0" [color=red];
 
-    "JSON::Fast::Hyper_zef:lizmat_0.0.11_0" [color=gray];
-    "JSON::Fast::Hyper_zef:lizmat_0.0.11_0" -> "hyperize_zef:lizmat_0.0.4_0";
-    "JSON::Fast::Hyper_zef:lizmat_0.0.11_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CompUnit::Util_zef:lizmat_0.7.0_0" [color=gray];
 
-    "App::Rak_zef:lizmat_0.3.12_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.12_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "CSS::Properties_zef:dwarring_0.10.7_0.10" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.7_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.7_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.7_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.10.7_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
 
-    "App::Rak_zef:lizmat_0.3.12_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.12_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.12_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "Color_zef:raku-community-modules_1.004001_0" [color=green];
 
-    "App::Rak_zef:lizmat_0.3.4_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.4_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.4_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.4_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.4_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.4_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.4_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.4_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.4_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.4_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.4_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "CSS::Specification_zef:dwarring_0.5.2_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.5.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Specification_zef:dwarring_0.5.2_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Specification_zef:dwarring_0.5.2_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
 
-    "has-word_zef:lizmat_0.0.7_0" [color=green];
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
 
-    "App::Rak_zef:lizmat_0.3.3_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.3_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "has-word_zef:lizmat_0.0.7_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "CSS::Module_zef:dwarring_0.6.2_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.2_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.6.2_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.2_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.6.2_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.6.2_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
 
-    "App::Rak_zef:lizmat_0.3.19_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.19_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.19_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "Data::Dump_zef:tony-o_0.0.18_0" [color=gray];
 
-    "App::Rak_zef:lizmat_0.3.14_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.14_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "JSON::RPC_zef:bbkr_1.0.6_0" [color=gray];
+    "JSON::RPC_zef:bbkr_1.0.6_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "JSON::RPC_zef:bbkr_1.0.6_0" -> "HTTP::UserAgent_zef:raku-community-modules_1.2.0_0";
+    "JSON::RPC_zef:bbkr_1.0.6_0" -> "JSON::Tiny_cpan:MORITZ_1.0_0";
+    "JSON::RPC_zef:bbkr_1.0.6_0" -> "HTTP::Easy_zef:raku-community-modules_1.3_0";
 
-    "App::Rak_zef:lizmat_0.3.9_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.9_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "CSS::Module_zef:dwarring_0.6.1_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.1_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.6.1_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.6.1_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.1_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.6.1_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
 
-    "App::Rak_zef:lizmat_0.3.10_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.10_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
 
-    "App::Rak_zef:lizmat_0.3.16_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.16_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.16_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.16_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.16_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.16_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.16_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.16_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.16_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.16_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.16_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "CSS::Properties_zef:dwarring_0.9.5_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.9.5_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.9.5_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.9.5_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.9.5_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
 
-    "rak_zef:lizmat_0.0.67_0" [color=gray];
-    "rak_zef:lizmat_0.0.67_0" -> "hyperize_zef:lizmat_0.0.4_0";
-    "rak_zef:lizmat_0.0.67_0" -> "Trap_zef:lizmat_0.0.5_0";
-    "rak_zef:lizmat_0.0.67_0" -> "paths_zef:lizmat_10.2_0";
-    "rak_zef:lizmat_0.0.67_0" -> "Git::Files_zef:lizmat_0.0.9_0";
-    "rak_zef:lizmat_0.0.67_0" -> "path-utils_zef:lizmat_0.0.25_0";
+    "CSS::Writer_zef:dwarring_0.2.10_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.2.10_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Writer_zef:dwarring_0.2.10_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.2.10_0" -> "JSON::Fast_zef:timo_0.20.1_0";
 
-    "App::Rak_zef:lizmat_0.3.14_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.14_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.14_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.13_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.13_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
 
-    "App::Rak_zef:lizmat_0.3.20_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.20_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.20_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.20_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.20_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.20_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.20_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.20_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.20_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.20_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.20_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "P6TCI_github:ugexe_0.0.5_0" [color=gray];
 
-    "App::Rak_zef:lizmat_0.3.10_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.10_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.10_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "CSS_zef:dwarring_0.1.1_0" [color=gray];
+    "CSS_zef:dwarring_0.1.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_zef:dwarring_0.1.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_zef:dwarring_0.1.1_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_zef:dwarring_0.1.1_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_zef:dwarring_0.1.1_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_zef:dwarring_0.1.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_zef:dwarring_0.1.1_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
 
-    "Backtrace::Files_zef:lizmat_0.0.4_0" [color=gray];
+    "Color::Names_zef:thundergnat_2.0.0_2" [color=green];
 
-    "App::Rak_zef:lizmat_0.3.9_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.9_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.9_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "Type::EnumHOW_cpan:KAIEPI_0.0.2_0" [color=gray];
 
-    "App::Rak_zef:lizmat_0.3.8_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.8_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "paths_zef:lizmat_10.2_0" [color=gray];
 
-    "App::Rak_zef:lizmat_0.3.7_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.7_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "Debugger::UI::CommandLine__*_0" [color=gray];
+    "Debugger::UI::CommandLine__*_0" -> "Terminal::ANSIColor_zef:raku-community-modules_0.14_0";
+
+    "SVG__1.0_0" [color=gray];
+    "SVG__1.0_0" -> "XML::Writer__*_0";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "CSS::TagSet_zef:dwarring_0.1.0_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "LibCurl_github:CurtTilmes_1.5_1" [color=gray];
+    "LibCurl_github:CurtTilmes_1.5_1" -> "Test::When_zef:raku-community-modules_2.1_0";
+    "LibCurl_github:CurtTilmes_1.5_1" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "LibCurl_github:CurtTilmes_1.5_1" -> "DBIish_github:raku-community-modules_0.6.1_0";
+
+    "CSS::Module_zef:dwarring_0.6.6_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.6_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.6.6_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.6.6_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.6_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.6.6_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+
+    "zef_zef:ugexe_1.1.3_0" [color=gray];
+
+    "CSS::Properties_zef:dwarring_0.9.7_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.9.7_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.9.7_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.9.7_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.9.7_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Specification_zef:dwarring_0.4.13_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.4.13_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Specification_zef:dwarring_0.4.13_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "CSS::Properties_cpan:WARRINGD_0.7.7_0" [color=gray];
+    "CSS::Properties_cpan:WARRINGD_0.7.7_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.7_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.7_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.7_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Properties_zef:dwarring_0.10.6_0.10" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.6_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.6_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.6_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.10.6_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "DateTime::Parse_github:sergot_0.9.3_0" [color=green];
+
+    "CSS_cpan:WARRINGD_0.0.21_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.21_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.21_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_cpan:WARRINGD_0.0.21_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.21_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.21_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_cpan:WARRINGD_0.0.21_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+
+    "Stats_github:MattOates_0.0.6_0" [color=gray];
+
+    "App::Rak_zef:lizmat_0.3.13_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.13_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.13_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+
+    "DBIish_github:raku-community-modules_0.6.1_0" [color=gray];
+    "DBIish_github:raku-community-modules_0.6.1_0" -> "NativeHelpers::Blob_zef:raku-community-modules_0.1.13_0";
 
     "Needle::Compile_zef:lizmat_0.0.12_0" [color=red];
     "Needle::Compile_zef:lizmat_0.0.12_0" -> "String::Utils_zef:lizmat_0.0.40_0";
     "Needle::Compile_zef:lizmat_0.0.12_0" -> "has-word_zef:lizmat_0.0.7_0";
 
-    "App::Rak_zef:lizmat_0.3.18_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.18_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.18_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "Digest::HMAC_zef:jjmerelo_1.0.7_0" [color=green];
+    "Digest::HMAC_zef:jjmerelo_1.0.7_0" -> "Digest_zef:grondilu_1.1.0_0";
+
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.29_0" [color=gray];
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.29_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.29_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.29_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.29_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.29_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.29_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.29_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+
+    "CSS::Properties_zef:dwarring_0.9.3_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.9.3_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.9.3_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.9.3_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.9.3_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "App::Rak_zef:lizmat_0.3.16_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.16_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.16_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.16_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.16_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.16_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.16_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.16_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.16_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.16_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.16_0" -> "rak_zef:lizmat_0.0.67_0";
+
+    "Temp::Path__1.001008_0" [color=gray];
+    "Temp::Path__1.001008_0" -> "Digest_zef:grondilu_1.1.0_0";
+    "Temp::Path__1.001008_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+    "Temp::Path__1.001008_0" -> "File::Directory::Tree_zef:raku-community-modules_0.2_0";
+    "Temp::Path__1.001008_0" -> "Testo_zef:raku-community-modules_1.003009_0";
+
+    "Terminal::ANSIColor_zef:raku-community-modules_0.14_0" [color=green];
+
+    "Test::META_zef:jonathanstowe_0.0.20_1.0" [color=violet];
+    "Test::META_zef:jonathanstowe_0.0.20_1.0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "Test::META_zef:jonathanstowe_0.0.20_1.0" -> "META6_zef:jonathanstowe_0.0.31_1.0";
+    "Test::META_zef:jonathanstowe_0.0.20_1.0" -> "License::SPDX_zef:jonathanstowe_3.28.0_1.0";
+
+    "JSON::Unmarshal_zef:raku-community-modules_0.18_0" [color=green];
+    "JSON::Unmarshal_zef:raku-community-modules_0.18_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "JSON::Unmarshal_zef:raku-community-modules_0.18_0" -> "JSON::OptIn_zef:jonathanstowe_0.0.2_0";
+    "JSON::Unmarshal_zef:raku-community-modules_0.18_0" -> "JSON::Name_zef:jonathanstowe_0.0.7_1.0";
+
+    "Grammar::BNF_zef:raku-community-modules_1.2_0" [color=gray];
 
     "App::Rak_zef:lizmat_0.3.5_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.5_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.5_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.5_0" -> "META::constants_zef:lizmat_0.0.6_0";
     "App::Rak_zef:lizmat_0.3.5_0" -> "String::Utils_zef:lizmat_0.0.40_0";
     "App::Rak_zef:lizmat_0.3.5_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.5_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.5_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.5_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.5_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.5_0" -> "META::constants_zef:lizmat_0.0.6_0";
     "App::Rak_zef:lizmat_0.3.5_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.5_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.5_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.5_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.5_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.5_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.5_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
 
-    "Git::Files_zef:lizmat_0.0.9_0" [color=gray];
-    "Git::Files_zef:lizmat_0.0.9_0" -> "path-utils_zef:lizmat_0.0.25_0";
+    "App::Rak_zef:lizmat_0.3.6_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.6_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
 
-    "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.8_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.8_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
 
-    "CLI::Version_zef:lizmat_0.0.10_0" [color=gray];
+    "Log::Any__0.9.5_0" [color=gray];
+    "Log::Any__0.9.5_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
 
-    "Trap_zef:lizmat_0.0.5_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.4.12_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.4.12_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Specification_zef:dwarring_0.4.12_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
 
-    "App::Rak_zef:lizmat_0.3.17_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.17_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "CSS::Module_zef:dwarring_0.6.1_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.1_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.6.1_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.6.1_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.6.1_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.1_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
 
-    "App::Rak_zef:lizmat_0.3.13_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.13_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "CSS::Module_zef:dwarring_0.5.11_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.5.11_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.5.11_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.5.11_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.5.11_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.5.11_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
 
-    "hyperize_zef:lizmat_0.0.4_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.2.15_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.2.15_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Writer_zef:dwarring_0.2.15_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Writer_zef:dwarring_0.2.15_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
 
-    "JSON::Fast_zef:timo_0.20.1_0" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.8_0.10" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.8_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.10.8_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.8_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.10.8_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
 
     "App::Rak_zef:lizmat_0.3.4_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.4_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.4_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
     "App::Rak_zef:lizmat_0.3.4_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
     "App::Rak_zef:lizmat_0.3.4_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.4_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.4_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.4_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.4_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.4_0" -> "highlighter_zef:lizmat_0.0.23_0";
     "App::Rak_zef:lizmat_0.3.4_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+
+    "CSS::Module_zef:dwarring_0.6.8_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.8_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.6.8_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.6.8_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.8_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.6.8_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+
+    "CSS::Writer_cpan:WARRINGD_0.2.8_0" [color=gray];
+    "CSS::Writer_cpan:WARRINGD_0.2.8_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Writer_cpan:WARRINGD_0.2.8_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Writer_cpan:WARRINGD_0.2.8_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+
+    "YAMLish_zef:leont_0.1.3_0" [color=green];
+    "YAMLish_zef:leont_0.1.3_0" -> "MIME::Base64_zef:raku-community-modules_1.2.5_0";
+
+    "CSS::Module_zef:dwarring_0.7.0_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.7.0_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.7.0_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.0_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.7.0_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.7.0_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+
+    "ASN::BER_zef:Altai-man_0.7.3_0" [color=gray];
+
+    "License::SPDX_zef:jonathanstowe_3.28.0_1.0" [color=violet];
+    "License::SPDX_zef:jonathanstowe_3.28.0_1.0" -> "JSON::Class_zef:jonathanstowe_0.0.21_1.0";
+
+    "IO::Capture::Simple_github:JJ_0.0.1_0" [color=gray];
+
+    "Pod::Usage_zef:leont_0.0.1_0" [color=green];
+
+    "ASN::META_zef:Altai-man_0.5.2_0" [color=gray];
+    "ASN::META_zef:Altai-man_0.5.2_0" -> "ASN::Grammar_zef:Altai-man_0.3.5_0";
+    "ASN::META_zef:Altai-man_0.5.2_0" -> "Type::EnumHOW_cpan:KAIEPI_0.0.2_0";
+    "ASN::META_zef:Altai-man_0.5.2_0" -> "ASN::BER_zef:Altai-man_0.7.3_0";
+
+    "CSS::Properties_zef:dwarring_0.8.1_0" [color=gray];
+    "CSS::Properties_zef:dwarring_0.8.1_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.8.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.8.1_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.8.1_0" -> "Color_zef:raku-community-modules_1.004001_0";
+
+    "App::Rak_zef:lizmat_0.3.4_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.4_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.4_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.4_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.4_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.4_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.4_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.4_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.4_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
     "App::Rak_zef:lizmat_0.3.4_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
     "App::Rak_zef:lizmat_0.3.4_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.4_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.4_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.4_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.4_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.4_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
 
-    "App::Rak_zef:lizmat_0.3.6_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.6_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "CSS::Specification_zef:dwarring_0.4.15_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.4.15_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Specification_zef:dwarring_0.4.15_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
 
-    "App::Rak_zef:lizmat_0.3.6_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.6_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.6_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
 
-    "App::Rak_zef:lizmat_0.3.11_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.11_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "CSS::Writer_zef:dwarring_0.2.10_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.2.10_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.2.10_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Writer_zef:dwarring_0.2.10_0" -> "JSON::Fast_zef:timo_0.20.1_0";
 
-    "App::Rak_zef:lizmat_0.3.13_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.13_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.13_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "JSON::Name_zef:jonathanstowe_0.0.7_1.0" [color=green];
+    "JSON::Name_zef:jonathanstowe_0.0.7_1.0" -> "JSON::OptIn_zef:jonathanstowe_0.0.2_0";
 
-    "App::Rak_zef:lizmat_0.3.3_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.3_0" -> "has-word_zef:lizmat_0.0.7_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.3_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.25_0" [color=gray];
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.25_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.25_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.25_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.25_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.25_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.25_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
 
-    "App::Rak_zef:lizmat_0.3.11_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.11_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.11_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
 
-    "META::constants_zef:lizmat_0.0.6_0" [color=gray];
+    "CSS::Module_cpan:WARRINGD_0.5.9_0" [color=gray];
+    "CSS::Module_cpan:WARRINGD_0.5.9_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_cpan:WARRINGD_0.5.9_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_cpan:WARRINGD_0.5.9_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_cpan:WARRINGD_0.5.9_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_cpan:WARRINGD_0.5.9_0" -> "JSON::Fast_zef:timo_0.20.1_0";
 
-    "App::Rak_zef:lizmat_0.3.5_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.5_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.5_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.5_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.5_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.5_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.5_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.5_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.5_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.5_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.5_0" -> "highlighter_zef:lizmat_0.0.23_0";
-
-    "App::Rak_zef:lizmat_0.3.17_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.17_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.17_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.8_0" [color=gray];
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.8_0" -> "XML_zef:raku-community-modules_0.3.6_0";
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.8_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.8_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
 
     "String::Utils_zef:lizmat_0.0.40_0" [color=green];
 
-    "App::Rak_zef:lizmat_0.3.7_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.7_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "META::constants_zef:lizmat_0.0.6_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.7_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "path-utils_zef:lizmat_0.0.25_0" [color=gray];
 
-    "paths_zef:lizmat_10.2_0" [color=gray];
+    "Pod::Load_zef:jjmerelo_0.7.2_0" [color=gray];
+    "Pod::Load_zef:jjmerelo_0.7.2_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+    "Pod::Load_zef:jjmerelo_0.7.2_0" -> "File::Temp_zef:raku-community-modules_0.0.12_0";
+
+    "CSS::Specification_zef:dwarring_0.5.0_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.5.0_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Specification_zef:dwarring_0.5.0_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Specification_zef:dwarring_0.5.0_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "Compress::Zlib::Raw__1.0.1_0" [color=green];
+
+    "CSS::Module_zef:dwarring_0.7.3_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.7.3_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.7.3_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.7.3_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.3_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.7.3_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Module_zef:dwarring_0.7.3_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+
+    "META6_zef:jonathanstowe_0.0.31_1.0" [color=violet];
+    "META6_zef:jonathanstowe_0.0.31_1.0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "META6_zef:jonathanstowe_0.0.31_1.0" -> "JSON::Class_zef:jonathanstowe_0.0.21_1.0";
+    "META6_zef:jonathanstowe_0.0.31_1.0" -> "JSON::Name_zef:jonathanstowe_0.0.7_1.0";
+
+    "Bailador_github:Bailador_0.0.19_0" [color=gray];
+    "Bailador_github:Bailador_0.0.19_0" -> "YAMLish_zef:leont_0.1.3_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "File::Find_zef:raku-community-modules_0.2.5_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "Path::Finder_zef:leont_0.4.7_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "Digest::HMAC_zef:jjmerelo_1.0.7_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "Terminal::ANSIColor_zef:raku-community-modules_0.14_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "Template::Mustache_zef:raku-community-modules_1.2.6_1.2.0";
+    "Bailador_github:Bailador_0.0.19_0" -> "Digest_zef:grondilu_1.1.0_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "URI::Encode_zef:raku-community-modules_1.0_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "HTTP::Easy_zef:raku-community-modules_1.3_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "HTTP::Status_zef:lizmat_0.0.5_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "HTTP::MultiPartParser__*_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "HTTP::Server::Ogre__0.0.4_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "File::Temp_zef:raku-community-modules_0.0.12_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "Template::Mojo_zef:raku-community-modules_0.2.2_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "File::Directory::Tree_zef:raku-community-modules_0.2_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "Log::Any__0.9.5_0";
+    "Bailador_github:Bailador_0.0.19_0" -> "TAP__0.1.0_0";
+
+    "CSS::Properties_zef:dwarring_0.9.3_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.9.3_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.9.3_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.9.3_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.9.3_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Writer_zef:dwarring_0.2.11_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.2.11_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Writer_zef:dwarring_0.2.11_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.2.11_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "Test::Deeply::Relaxed_github:ppentchev_0.1.3_0" [color=gray];
+    "Test::Deeply::Relaxed_github:ppentchev_0.1.3_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+
+    "CSS::Module_cpan:WARRINGD_0.5.8_0" [color=gray];
+    "CSS::Module_cpan:WARRINGD_0.5.8_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_cpan:WARRINGD_0.5.8_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_cpan:WARRINGD_0.5.8_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_cpan:WARRINGD_0.5.8_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_cpan:WARRINGD_0.5.8_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+
+    "CSS::Module_zef:dwarring_0.6.7_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.7_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.6.7_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.7_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.6.7_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.6.7_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+
+    "CSS::Properties_zef:dwarring_0.10.7_0.10" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.7_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.7_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.7_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.10.7_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0" [color=gray];
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0" -> "XML_zef:raku-community-modules_0.3.6_0";
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "HTTP::MultiPartParser__*_0" [color=gray];
+    "HTTP::MultiPartParser__*_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "Encode__0.0.4_0" [color=gray];
+
+    "CSS::Module_zef:dwarring_0.6.6_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.6_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.6.6_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.6.6_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.6.6_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.6_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+
+    "CSS::Writer_zef:dwarring_0.3.0_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.3.0_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.3.0_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Writer_zef:dwarring_0.3.0_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "NativeHelpers::Blob_zef:raku-community-modules_0.1.13_0" [color=gray];
+
+    "Getopt::Long_cpan:LEONT_0.4.2_0" [color=green];
+
+    "App::Rak_zef:lizmat_0.3.9_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.9_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "rak_zef:lizmat_0.0.67_0";
+
+    "CSS::Properties_zef:dwarring_0.10.3_0.10" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.3_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.3_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.3_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.10.3_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "GTK::Simple_zef:finanalyst_0.3.0_0" [color=gray];
+
+    "CSS::TagSet_zef:dwarring_0.1.1_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::TagSet_cpan:WARRINGD_0.0.20_0" [color=gray];
+    "CSS::TagSet_cpan:WARRINGD_0.0.20_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.20_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.20_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_cpan:WARRINGD_0.0.20_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Properties_zef:dwarring_0.10.4_0.10" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.4_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.10.4_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.4_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.4_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "ASN::META_zef:Altai-man_0.5.2_0" [color=gray];
+    "ASN::META_zef:Altai-man_0.5.2_0" -> "ASN::BER_zef:Altai-man_0.7.3_0";
+    "ASN::META_zef:Altai-man_0.5.2_0" -> "ASN::Grammar_zef:Altai-man_0.3.5_0";
+    "ASN::META_zef:Altai-man_0.5.2_0" -> "Type::EnumHOW_cpan:KAIEPI_0.0.2_0";
+
+    "CSS::Module_zef:dwarring_0.7.7_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "CSS::TagSet_cpan:WARRINGD_0.0.22_0" [color=gray];
+    "CSS::TagSet_cpan:WARRINGD_0.0.22_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.22_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.22_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.22_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "CSS::Writer_zef:dwarring_0.2.9_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.2.9_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Writer_zef:dwarring_0.2.9_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Writer_zef:dwarring_0.2.9_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+
+    "CSS::Properties_zef:dwarring_0.9.1_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.9.1_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.9.1_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.9.1_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.9.1_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Properties_zef:dwarring_0.8.3_0" [color=gray];
+    "CSS::Properties_zef:dwarring_0.8.3_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.8.3_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.8.3_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.8.3_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "CSS::Writer_zef:dwarring_0.2.13_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.2.13_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Writer_zef:dwarring_0.2.13_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.2.13_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "CSS::Properties_zef:dwarring_0.9.4_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.9.4_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.9.4_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.9.4_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.9.4_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Properties_zef:dwarring_0.8.5_0" [color=gray];
+    "CSS::Properties_zef:dwarring_0.8.5_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.8.5_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.8.5_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.8.5_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "Pod::To::Markdown_zef:raku-community-modules_0.2.2_0" [color=gray];
+    "Pod::To::Markdown_zef:raku-community-modules_0.2.2_0" -> "Raku::Pod::Render_github:finanalyst_3.5.2_0";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+
+    "Crust__0.0.1_0" [color=gray];
+    "Crust__0.0.1_0" -> "Hash::MultiValue_cpan:HANENKAMP_0.7_0";
+    "Crust__0.0.1_0" -> "HTTP::MultiPartParser__*_0";
+    "Crust__0.0.1_0" -> "Apache::LogFormat__*_0";
+    "Crust__0.0.1_0" -> "File::Temp_zef:raku-community-modules_0.0.12_0";
+    "Crust__0.0.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "Crust__0.0.1_0" -> "HTTP::Easy_zef:raku-community-modules_1.3_0";
+    "Crust__0.0.1_0" -> "HTTP::Server::Tiny__0.0.2_0";
+    "Crust__0.0.1_0" -> "HTTP::Tinyish_zef:skaji_0.4.1_0";
+    "Crust__0.0.1_0" -> "Backtrace::AsHTML__0.0.1_0";
+    "Crust__0.0.1_0" -> "HTTP::UserAgent_zef:raku-community-modules_1.2.0_0";
+    "Crust__0.0.1_0" -> "Getopt::Tiny__*_0";
+    "Crust__0.0.1_0" -> "Cookie::Baker__*_0";
+    "Crust__0.0.1_0" -> "Base64_github:ugexe_0.1.0_0";
+
+    "CSS::Specification_zef:dwarring_0.4.14_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.4.14_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Specification_zef:dwarring_0.4.14_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "CLI::Version_zef:lizmat_0.0.10_0" [color=gray];
+
+    "HTTP::Parser__0.0.2_0" [color=gray];
+
+    "Linenoise_zef:raku-community-modules_0.1.2_0" [color=gray];
+    "Linenoise_zef:raku-community-modules_0.1.2_0" -> "LibraryMake_zef:jjmerelo_1.0.5_0";
+
+    "SQL::Lexer_github:dmaestro_0.2.2_0" [color=red];
+
+    "CSS::TagSet_zef:dwarring_0.1.4_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS_zef:dwarring_0.1.1_0" [color=gray];
+    "CSS_zef:dwarring_0.1.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_zef:dwarring_0.1.1_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_zef:dwarring_0.1.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_zef:dwarring_0.1.1_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_zef:dwarring_0.1.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_zef:dwarring_0.1.1_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_zef:dwarring_0.1.1_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+
+    "Email::Simple_zef:raku-community-modules_2.1.4_0" [color=gray];
+
+    "CSS::Grammar_zef:dwarring_0.4.3_0" [color=red];
+    "CSS::Grammar_zef:dwarring_0.4.3_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "App::Rak_zef:lizmat_0.3.14_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.14_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "rak_zef:lizmat_0.0.67_0";
+
+    "CSS::Properties_cpan:WARRINGD_0.7.2_0" [color=gray];
+    "CSS::Properties_cpan:WARRINGD_0.7.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.2_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.2_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.2_0" -> "Color_zef:raku-community-modules_1.004001_0";
 
     "App::Rak_zef:lizmat_0.3.16_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.16_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
     "App::Rak_zef:lizmat_0.3.16_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
     "App::Rak_zef:lizmat_0.3.16_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.16_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.16_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.16_0" -> "highlighter_zef:lizmat_0.0.23_0";
     "App::Rak_zef:lizmat_0.3.16_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.16_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.16_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.16_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.16_0" -> "highlighter_zef:lizmat_0.0.23_0";
     "App::Rak_zef:lizmat_0.3.16_0" -> "META::constants_zef:lizmat_0.0.6_0";
     "App::Rak_zef:lizmat_0.3.16_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.16_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.16_0" -> "rak_zef:lizmat_0.0.67_0";
+
+    "CSS::TagSet_cpan:WARRINGD_0.0.21_0" [color=gray];
+    "CSS::TagSet_cpan:WARRINGD_0.0.21_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.21_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.21_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_cpan:WARRINGD_0.0.21_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "DBIish_zef:raku-community-modules_0.6.8_1" [color=gray];
+    "DBIish_zef:raku-community-modules_0.6.8_1" -> "DBIish_github:raku-community-modules_0.6.1_0";
+    "DBIish_zef:raku-community-modules_0.6.8_1" -> "NativeHelpers::Blob_zef:raku-community-modules_0.1.13_0";
+    "DBIish_zef:raku-community-modules_0.6.8_1" -> "NativeCall::TypeDiag__*_0";
+
+    "CSS::Specification_zef:dwarring_0.4.16_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.4.16_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Specification_zef:dwarring_0.4.16_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Specification_zef:dwarring_0.4.16_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "CSS::Module_zef:dwarring_0.6.3_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.3_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.6.3_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.6.3_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.3_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.6.3_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "App::Rak_zef:lizmat_0.3.12_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.12_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+
+    "JSON::Fast_zef:timo_0.20.1_0" [color=green];
+
+    "CSS::Writer_zef:dwarring_0.3.3_0" [color=green];
+    "CSS::Writer_zef:dwarring_0.3.3_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.3.3_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Writer_zef:dwarring_0.3.3_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "CSS::Properties_zef:dwarring_0.8.4_0" [color=gray];
+    "CSS::Properties_zef:dwarring_0.8.4_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.8.4_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.8.4_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.8.4_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "CSS_zef:dwarring_0.1.0_0" [color=gray];
+    "CSS_zef:dwarring_0.1.0_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_zef:dwarring_0.1.0_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_zef:dwarring_0.1.0_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "Testo_zef:raku-community-modules_1.003009_0" [color=gray];
+
+    "CSS::Specification_zef:dwarring_0.5.2_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.5.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Specification_zef:dwarring_0.5.2_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Specification_zef:dwarring_0.5.2_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+
+    "BioInfo__0.4.3_0" [color=gray];
+    "BioInfo__0.4.3_0" -> "Stats_github:MattOates_0.0.6_0";
+
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.24_0" [color=gray];
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.24_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.24_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.24_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.24_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.24_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.24_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "CSS::Specification_zef:dwarring_0.5.1_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.5.1_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Specification_zef:dwarring_0.5.1_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Specification_zef:dwarring_0.5.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "HTTP::Supply_github:zostay_0.5.0_0" [color=gray];
+    "HTTP::Supply_github:zostay_0.5.0_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+
+    "App::Prove6_zef:leont_0.0.18_0" [color=green];
+    "App::Prove6_zef:leont_0.0.18_0" -> "Path::Finder_zef:leont_0.4.7_0";
+    "App::Prove6_zef:leont_0.0.18_0" -> "TAP_zef:leont_0.3.15_0";
+    "App::Prove6_zef:leont_0.0.18_0" -> "Getopt::Long_cpan:LEONT_0.4.2_0";
+    "App::Prove6_zef:leont_0.0.18_0" -> "Pod::Usage_zef:leont_0.0.1_0";
+    "App::Prove6_zef:leont_0.0.18_0" -> "sigpipe_zef:leont_0.0.3_0";
+
+    "CSS::Module_zef:dwarring_0.7.1_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.7.1_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.7.1_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.7.1_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.7.1_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.7.1_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Specification_cpan:WARRINGD_0.4.11_0" [color=gray];
+    "CSS::Specification_cpan:WARRINGD_0.4.11_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Specification_cpan:WARRINGD_0.4.11_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+
+    "NativeCall::TypeDiag__*_0" [color=gray];
+    "NativeCall::TypeDiag__*_0" -> "File::Temp_zef:raku-community-modules_0.0.12_0";
+
+    "CSS::Module_zef:dwarring_0.7.7_0" [color=red];
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Module_zef:dwarring_0.6.0_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.0_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.6.0_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.0_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.6.0_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.6.0_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+
+    "CSS::Writer_zef:dwarring_0.2.9_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.2.9_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Writer_zef:dwarring_0.2.9_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Writer_zef:dwarring_0.2.9_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+
+    "Test::Mock_zef:raku-community-modules_1.8_0" [color=gray];
+    "Test::Mock_zef:raku-community-modules_1.8_0" -> "Method::Protected_zef:lizmat_0.0.4_0";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+
+    "CSS::Properties_cpan:WARRINGD_0.7.8_0" [color=gray];
+    "CSS::Properties_cpan:WARRINGD_0.7.8_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.8_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.8_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.8_0" -> "Color_zef:raku-community-modules_1.004001_0";
+
+    "XML::Writer__*_0" [color=gray];
+
+    "CSS::Properties_zef:dwarring_0.10.9_0.10" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.9_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.9_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.10.9_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.9_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "Cookie::Baker__*_0" [color=gray];
+    "Cookie::Baker__*_0" -> "URI::Encode_zef:raku-community-modules_1.0_0";
+
+    "UUID__1.0.0_0" [color=green];
+
+    "App::Rak_zef:lizmat_0.3.7_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.7_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "highlighter_zef:lizmat_0.0.23_0";
+
+    "CSS::Writer_zef:dwarring_0.2.11_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.2.11_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Writer_zef:dwarring_0.2.11_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Writer_zef:dwarring_0.2.11_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+
+    "CSS_cpan:WARRINGD_0.0.26_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.26_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.26_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_cpan:WARRINGD_0.0.26_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.26_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_cpan:WARRINGD_0.0.26_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_cpan:WARRINGD_0.0.26_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.26_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "CSS::Module_zef:dwarring_0.7.6_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.7.6_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.7.6_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.7.6_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Module_zef:dwarring_0.7.6_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.6_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.7.6_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+
+    "Method::Also_zef:lizmat_0.0.10_0" [color=green];
+
+    "hyperize_zef:lizmat_0.0.4_0" [color=gray];
+
+    "App::Rak_zef:lizmat_0.3.10_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.10_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "META::constants_zef:lizmat_0.0.6_0";
+
+    "CSS::Properties_zef:dwarring_0.9.1_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.9.1_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.9.1_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.9.1_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.9.1_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "W3C::DOM_zef:dwarring_0.0.3_0" [color=gray];
+
+    "CSS_cpan:WARRINGD_0.0.24_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.24_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.24_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_cpan:WARRINGD_0.0.24_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_cpan:WARRINGD_0.0.24_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.24_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_cpan:WARRINGD_0.0.24_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.24_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+
+    "CSS::Module_zef:dwarring_0.7.4_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.7.4_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.7.4_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.7.4_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.4_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Module_zef:dwarring_0.7.4_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.7.4_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "CSS::Properties_zef:dwarring_0.10.4_0.10" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.4_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.10.4_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.4_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.4_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Specification_zef:dwarring_0.4.12_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.4.12_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Specification_zef:dwarring_0.4.12_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+
+    "CSS::Module::CSS3::Selectors_cpan:WARRINGD_0.0.4_0" [color=gray];
+    "CSS::Module::CSS3::Selectors_cpan:WARRINGD_0.0.4_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module::CSS3::Selectors_cpan:WARRINGD_0.0.4_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "HTTP::Server::Tiny__0.0.2_0" [color=gray];
+    "HTTP::Server::Tiny__0.0.2_0" -> "HTTP::Parser__0.0.2_0";
+    "HTTP::Server::Tiny__0.0.2_0" -> "HTTP::Tinyish_zef:skaji_0.4.1_0";
+    "HTTP::Server::Tiny__0.0.2_0" -> "IO::Blob__0.0.1_0";
+    "HTTP::Server::Tiny__0.0.2_0" -> "HTTP::Status_zef:lizmat_0.0.5_0";
+    "HTTP::Server::Tiny__0.0.2_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "CSS::Module_zef:dwarring_0.6.3_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.3_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.6.3_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.6.3_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.3_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.6.3_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+
+    "Hash::Merge_cpan:TYIL_2.0.0_2" [color=gray];
+    "Hash::Merge_cpan:TYIL_2.0.0_2" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+
+    "Task::Galaxy__0.1_0" [color=gray];
+    "Task::Galaxy__0.1_0" -> "zef_zef:ugexe_1.1.3_0";
+    "Task::Galaxy__0.1_0" -> "Pod::To::Markdown_zef:raku-community-modules_0.2.2_0";
+    "Task::Galaxy__0.1_0" -> "Base64_github:ugexe_0.1.0_0";
+    "Task::Galaxy__0.1_0" -> "Template6_zef:davidromero55_0.16.0_0";
+    "Task::Galaxy__0.1_0" -> "Grammar::BNF_zef:raku-community-modules_1.2_0";
+    "Task::Galaxy__0.1_0" -> "MIME::Base64_zef:raku-community-modules_1.2.5_0";
+    "Task::Galaxy__0.1_0" -> "SVG::Plot__*_0";
+    "Task::Galaxy__0.1_0" -> "Grammar::Profiler::Simple_zef:raku-community-modules_0.05_0";
+    "Task::Galaxy__0.1_0" -> "HTTP::UserAgent_zef:raku-community-modules_1.2.0_0";
+    "Task::Galaxy__0.1_0" -> "panda__2016.02_0";
+    "Task::Galaxy__0.1_0" -> "Template::Mojo_zef:raku-community-modules_0.2.2_0";
+    "Task::Galaxy__0.1_0" -> "Linenoise_zef:raku-community-modules_0.1.2_0";
+    "Task::Galaxy__0.1_0" -> "HTTP::Status_zef:lizmat_0.0.5_0";
+    "Task::Galaxy__0.1_0" -> "SVG__1.0_0";
+    "Task::Galaxy__0.1_0" -> "Debugger::UI::CommandLine__*_0";
+    "Task::Galaxy__0.1_0" -> "Sparrowdo_zef:sp1983_0.1.55_0";
+    "Task::Galaxy__0.1_0" -> "DBIish_zef:raku-community-modules_0.6.8_1";
+    "Task::Galaxy__0.1_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+    "Task::Galaxy__0.1_0" -> "BioPerl6__0.0.1_0";
+    "Task::Galaxy__0.1_0" -> "JSON::RPC_zef:bbkr_1.0.6_0";
+    "Task::Galaxy__0.1_0" -> "BioInfo__0.4.3_0";
+    "Task::Galaxy__0.1_0" -> "P6TCI_github:ugexe_0.0.5_0";
+    "Task::Galaxy__0.1_0" -> "Email::Simple_zef:raku-community-modules_2.1.4_0";
+    "Task::Galaxy__0.1_0" -> "File::Find_zef:raku-community-modules_0.2.5_0";
+    "Task::Galaxy__0.1_0" -> "Test::Mock_zef:raku-community-modules_1.8_0";
+    "Task::Galaxy__0.1_0" -> "JSON::Tiny_cpan:MORITZ_1.0_0";
+    "Task::Galaxy__0.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "Task::Galaxy__0.1_0" -> "Digest::HMAC_zef:jjmerelo_1.0.7_0";
+    "Task::Galaxy__0.1_0" -> "Bailador_github:Bailador_0.0.19_0";
+    "Task::Galaxy__0.1_0" -> "Compress::Zlib__1.1.0_0";
+    "Task::Galaxy__0.1_0" -> "HTTP::Easy_zef:raku-community-modules_1.3_0";
+    "Task::Galaxy__0.1_0" -> "CompUnit::Util_zef:lizmat_0.7.0_0";
+    "Task::Galaxy__0.1_0" -> "Terminal::ANSIColor_zef:raku-community-modules_0.14_0";
+    "Task::Galaxy__0.1_0" -> "PSGI_zef:raku-community-modules_1.2.3_0";
+    "Task::Galaxy__0.1_0" -> "File::Temp_zef:raku-community-modules_0.0.12_0";
+    "Task::Galaxy__0.1_0" -> "Raku::Pod::Render_github:finanalyst_3.5.2_0";
+    "Task::Galaxy__0.1_0" -> "YAMLish_zef:leont_0.1.3_0";
+    "Task::Galaxy__0.1_0" -> "SCGI_zef:raku-community-modules_2.6_0";
+    "Task::Galaxy__0.1_0" -> "Crust__0.0.1_0";
+    "Task::Galaxy__0.1_0" -> "OpenSSL_zef:raku-community-modules_0.2.9_0";
+    "Task::Galaxy__0.1_0" -> "DateTime::Format_zef:raku-community-modules_0.1.5_1.0";
+    "Task::Galaxy__0.1_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "Task::Galaxy__0.1_0" -> "Grammar::Debugger_zef:raku-community-modules_1.0.3_0";
+    "Task::Galaxy__0.1_0" -> "File::Which__1.0.4_0";
+    "Task::Galaxy__0.1_0" -> "XML_zef:raku-community-modules_0.3.6_0";
+    "Task::Galaxy__0.1_0" -> "Shell::Command_zef:raku-community-modules_1.2_0";
+    "Task::Galaxy__0.1_0" -> "Digest_zef:grondilu_1.1.0_0";
+    "Task::Galaxy__0.1_0" -> "UUID__1.0.0_0";
+    "Task::Galaxy__0.1_0" -> "URI::Encode_zef:raku-community-modules_1.0_0";
+    "Task::Galaxy__0.1_0" -> "CSV::Parser_zef:tony-o_0.1.4_0";
+    "Task::Galaxy__0.1_0" -> "XML::Writer__*_0";
+    "Task::Galaxy__0.1_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+    "Task::Galaxy__0.1_0" -> "LibraryMake_zef:jjmerelo_1.0.5_0";
+
+    "HTTP::HPACK_zef:raku-community-modules_1.0.3_0" [color=green];
+
+    "CSS::Properties_zef:dwarring_0.8.2_0" [color=gray];
+    "CSS::Properties_zef:dwarring_0.8.2_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.8.2_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.8.2_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.8.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "Base64_github:ugexe_0.1.0_0" [color=green];
+    "Base64_github:ugexe_0.1.0_0" -> "Rakudo_Yet Another Society_2026.07_0";
+
+    "Grammar::Modelica_zef:raku-community-modules_0.1.3_0" [color=red];
+
+    "Test::When_zef:raku-community-modules_2.1_0" [color=green];
+
+    "rak_zef:lizmat_0.0.67_0" [color=gray];
+    "rak_zef:lizmat_0.0.67_0" -> "paths_zef:lizmat_10.2_0";
+    "rak_zef:lizmat_0.0.67_0" -> "Git::Files_zef:lizmat_0.0.9_0";
+    "rak_zef:lizmat_0.0.67_0" -> "path-utils_zef:lizmat_0.0.25_0";
+    "rak_zef:lizmat_0.0.67_0" -> "hyperize_zef:lizmat_0.0.4_0";
+    "rak_zef:lizmat_0.0.67_0" -> "Trap_zef:lizmat_0.0.5_0";
+
+    "Apache::LogFormat__*_0" [color=gray];
+    "Apache::LogFormat__*_0" -> "DateTime::Format_zef:raku-community-modules_0.1.5_1.0";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+
+    "File::Which__1.0.4_0" [color=green];
+
+    "CSS::Writer_zef:dwarring_0.2.14_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.2.14_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Writer_zef:dwarring_0.2.14_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Writer_zef:dwarring_0.2.14_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+
+    "MIME::Base64_zef:raku-community-modules_1.2.5_0" [color=green];
+
+    "Raku::Pod::Render_github:finanalyst_3.5.2_0" [color=gray];
+    "Raku::Pod::Render_github:finanalyst_3.5.2_0" -> "LibCurl_github:CurtTilmes_1.5_1";
+    "Raku::Pod::Render_github:finanalyst_3.5.2_0" -> "GTK::Simple_zef:finanalyst_0.3.0_0";
+    "Raku::Pod::Render_github:finanalyst_3.5.2_0" -> "File::Temp_zef:raku-community-modules_0.0.12_0";
+    "Raku::Pod::Render_github:finanalyst_3.5.2_0" -> "File::Directory::Tree_zef:raku-community-modules_0.2_0";
+    "Raku::Pod::Render_github:finanalyst_3.5.2_0" -> "Test::Output_zef:raku-community-modules_1.001006_0";
+    "Raku::Pod::Render_github:finanalyst_3.5.2_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+    "Raku::Pod::Render_github:finanalyst_3.5.2_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "Raku::Pod::Render_github:finanalyst_3.5.2_0" -> "Template::Mustache_zef:raku-community-modules_1.2.6_1.2.0";
+    "Raku::Pod::Render_github:finanalyst_3.5.2_0" -> "Pod::Load_zef:jjmerelo_0.7.2_0";
+    "Raku::Pod::Render_github:finanalyst_3.5.2_0" -> "Test::Deeply::Relaxed_github:ppentchev_0.1.3_0";
+
+    "CSS::Selector::To::XPath_cpan:WARRINGD_0.0.7_0" [color=gray];
+    "CSS::Selector::To::XPath_cpan:WARRINGD_0.0.7_0" -> "XML_zef:raku-community-modules_0.3.6_0";
+    "CSS::Selector::To::XPath_cpan:WARRINGD_0.0.7_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Selector::To::XPath_cpan:WARRINGD_0.0.7_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+
+    "CSS::Writer_zef:dwarring_0.3.0_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.3.0_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Writer_zef:dwarring_0.3.0_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.3.0_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "XML_zef:raku-community-modules_0.3.6_0" [color=gray];
+
+    "App::Rak_zef:lizmat_0.3.10_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.10_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.10_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+
+    "OpenSSL_zef:raku-community-modules_0.2.9_0" [color=green];
+    "OpenSSL_zef:raku-community-modules_0.2.9_0" -> "File::Directory::Tree_zef:raku-community-modules_0.2_0";
+    "OpenSSL_zef:raku-community-modules_0.2.9_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "JSON::Fast::Hyper_zef:lizmat_0.0.11_0" [color=gray];
+    "JSON::Fast::Hyper_zef:lizmat_0.0.11_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "JSON::Fast::Hyper_zef:lizmat_0.0.11_0" -> "hyperize_zef:lizmat_0.0.4_0";
+
+    "CSS::Module_zef:dwarring_0.6.7_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.7_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.7_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.6.7_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.6.7_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.6.7_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "ASN::META_zef:Altai-man_0.5.3_0" [color=gray];
+    "ASN::META_zef:Altai-man_0.5.3_0" -> "Type::EnumHOW_cpan:KAIEPI_0.0.2_0";
+    "ASN::META_zef:Altai-man_0.5.3_0" -> "ASN::BER_zef:Altai-man_0.7.3_0";
+    "ASN::META_zef:Altai-man_0.5.3_0" -> "ASN::Grammar_zef:Altai-man_0.3.5_0";
+
+    "CSS::Nested_zef:FCO_0.0.1_0" [color=gray];
+    "CSS::Nested_zef:FCO_0.0.1_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+
+    "CSS::Module_zef:dwarring_0.7.6_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.7.6_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.6_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.7.6_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.7.6_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Module_zef:dwarring_0.7.6_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.7.6_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "File::Temp_zef:raku-community-modules_0.0.12_0" [color=green];
+    "File::Temp_zef:raku-community-modules_0.0.12_0" -> "File::Directory::Tree_zef:raku-community-modules_0.2_0";
+
+    "LibraryMake_zef:jjmerelo_1.0.5_0" [color=green];
+    "LibraryMake_zef:jjmerelo_1.0.5_0" -> "Shell::Command_zef:raku-community-modules_1.2_0";
+    "LibraryMake_zef:jjmerelo_1.0.5_0" -> "File::Which__1.0.4_0";
+
+    "Backtrace::AsHTML__0.0.1_0" [color=gray];
+
+    "App::Rak_zef:lizmat_0.3.18_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.18_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+
+    "CSS::Properties_zef:dwarring_0.8.1_0" [color=gray];
+    "CSS::Properties_zef:dwarring_0.8.1_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.8.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.8.1_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.8.1_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "CSS::Properties_zef:dwarring_0.10.1_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.1_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.1_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.10.1_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.1_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "sigpipe_zef:leont_0.0.3_0" [color=green];
+
+    "App::Rak_zef:lizmat_0.3.8_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.8_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.8_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+
+    "App::Rak_zef:lizmat_0.3.7_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.7_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.7_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+
+    "META::constants_zef:lizmat_0.0.6_0" [color=gray];
+
+    "CSS::Module_zef:dwarring_0.6.5_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.5_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.6.5_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.6.5_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.5_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.6.5_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+
+    "CSS::Properties_zef:dwarring_0.8.3_0" [color=gray];
+    "CSS::Properties_zef:dwarring_0.8.3_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.8.3_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.8.3_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.8.3_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "Path::Finder_zef:leont_0.4.7_0" [color=green];
+    "Path::Finder_zef:leont_0.4.7_0" -> "File::Temp_zef:raku-community-modules_0.0.12_0";
+
+    "SVG::Plot__*_0" [color=gray];
+    "SVG::Plot__*_0" -> "SVG__1.0_0";
+
+    "CSS::Properties_zef:dwarring_0.9.7_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.9.7_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.9.7_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.9.7_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.9.7_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "CSS::Properties_zef:dwarring_0.8.2_0" [color=gray];
+    "CSS::Properties_zef:dwarring_0.8.2_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.8.2_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.8.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.8.2_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "CSS::Writer_zef:dwarring_0.2.14_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.2.14_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.2.14_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Writer_zef:dwarring_0.2.14_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "CSS::Properties_zef:dwarring_0.10.6_0.10" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.6_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.10.6_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.6_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.10.6_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
+
+    "CSS::Specification_zef:dwarring_0.4.13_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.4.13_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Specification_zef:dwarring_0.4.13_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+
+    "App::Rak_zef:lizmat_0.3.11_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.11_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+
+    "Template6_zef:davidromero55_0.16.0_0" [color=gray];
+
+    "Sparrowdo_zef:sp1983_0.1.55_0" [color=gray];
+    "Sparrowdo_zef:sp1983_0.1.55_0" -> "Sparrow6_zef:sp1983_0.0.93_0";
+
+    "CSS::Properties_zef:dwarring_0.10.5_0.10" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.5_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.10.5_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.5_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.10.5_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
+
+    "CSS::Module_zef:dwarring_0.6.0_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.0_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.6.0_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.0_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.6.0_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.6.0_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+
+    "CSS::Properties_zef:dwarring_0.10.0_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.0_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.10.0_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.0_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.0_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Properties_zef:dwarring_0.10.5_0.10" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.5_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.5_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.5_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.10.5_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "JSON::OptIn_zef:jonathanstowe_0.0.2_0" [color=green];
+
+    "JSON::Class_zef:jonathanstowe_0.0.21_1.0" [color=violet];
+    "JSON::Class_zef:jonathanstowe_0.0.21_1.0" -> "JSON::Marshal_zef:jonathanstowe_0.0.25_1.0";
+    "JSON::Class_zef:jonathanstowe_0.0.21_1.0" -> "JSON::Name_zef:jonathanstowe_0.0.7_1.0";
+    "JSON::Class_zef:jonathanstowe_0.0.21_1.0" -> "JSON::Unmarshal_zef:raku-community-modules_0.18_0";
+    "JSON::Class_zef:jonathanstowe_0.0.21_1.0" -> "JSON::OptIn_zef:jonathanstowe_0.0.2_0";
+    "JSON::Class_zef:jonathanstowe_0.0.21_1.0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+
+    "Method::Protected_zef:lizmat_0.0.4_0" [color=gray];
+
+    "URI::Encode_zef:raku-community-modules_1.0_0" [color=gray];
+
+    "SCGI_zef:raku-community-modules_2.6_0" [color=gray];
+    "SCGI_zef:raku-community-modules_2.6_0" -> "PSGI_zef:raku-community-modules_1.2.3_0";
+    "SCGI_zef:raku-community-modules_2.6_0" -> "Netstring_zef:raku-community-modules_0.0.4_0";
+    "SCGI_zef:raku-community-modules_2.6_0" -> "HTTP::Status_zef:lizmat_0.0.5_0";
+
+    "App::Rak_zef:lizmat_0.3.5_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.5_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.5_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.5_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.5_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.5_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.5_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.5_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.5_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.5_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.5_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+
+    "CSS::Writer_zef:dwarring_0.2.15_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.2.15_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Writer_zef:dwarring_0.2.15_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.2.15_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "App::Rak_zef:lizmat_0.3.9_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.9_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.9_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+
+    "as-cli-arguments_zef:lizmat_0.0.10_0" [color=gray];
+
+    "CSS_cpan:WARRINGD_0.0.22_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.22_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.22_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_cpan:WARRINGD_0.0.22_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.22_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.22_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_cpan:WARRINGD_0.0.22_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_cpan:WARRINGD_0.0.22_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "panda__2016.02_0" [color=gray];
+    "panda__2016.02_0" -> "File::Find_zef:raku-community-modules_0.2.5_0";
+    "panda__2016.02_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "panda__2016.02_0" -> "Shell::Command_zef:raku-community-modules_1.2_0";
+    "panda__2016.02_0" -> "File::Which__1.0.4_0";
+
+    "CSS::Specification_zef:dwarring_0.4.16_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.4.16_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Specification_zef:dwarring_0.4.16_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Specification_zef:dwarring_0.4.16_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "Compress::Zlib__1.1.0_0" [color=green];
+    "Compress::Zlib__1.1.0_0" -> "Compress::Zlib::Raw__1.0.1_0";
+
+    "CSS::Module_zef:dwarring_0.7.3_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.7.3_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.3_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.7.3_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.7.3_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.7.3_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.7.3_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "PSGI_zef:raku-community-modules_1.2.3_0" [color=gray];
+    "PSGI_zef:raku-community-modules_1.2.3_0" -> "HTTP::Status_zef:lizmat_0.0.5_0";
+
+    "Grammar::Profiler::Simple_zef:raku-community-modules_0.05_0" [color=gray];
+
+    "TAP__0.1.0_0" [color=gray];
+
+    "App::Rak_zef:lizmat_0.3.6_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.6_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.6_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+
+    "CSS::Properties_zef:dwarring_0.9.2_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.9.2_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.9.2_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.9.2_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.9.2_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+
+    "App::Rak_zef:lizmat_0.3.12_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.12_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.12_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+
+    "HTTP::Easy_zef:raku-community-modules_1.3_0" [color=gray];
+    "HTTP::Easy_zef:raku-community-modules_1.3_0" -> "HTTP::Status_zef:lizmat_0.0.5_0";
+    "HTTP::Easy_zef:raku-community-modules_1.3_0" -> "PSGI_zef:raku-community-modules_1.2.3_0";
+
+    "App::Rak_zef:lizmat_0.3.3_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.3_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "has-word_zef:lizmat_0.0.7_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "rak_zef:lizmat_0.0.67_0";
+
+    "App::Rak_zef:lizmat_0.3.17_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.17_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+
+    "CSS::Module_zef:dwarring_0.7.2_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.7.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Module_zef:dwarring_0.7.2_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.7.2_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.7.2_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.2_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.7.2_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+
+    "File::Directory::Tree_zef:raku-community-modules_0.2_0" [color=green];
+
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.27_0" [color=gray];
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.27_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.27_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.27_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.27_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.27_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.27_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.27_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" [color=gray];
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" -> "Temp::Path__1.001008_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "Test::Output_zef:raku-community-modules_1.001006_0" [color=gray];
+
+    "CSS::Writer_zef:dwarring_0.3.3_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.3.3_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.3.3_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Writer_zef:dwarring_0.3.3_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "CSS::Properties_zef:dwarring_0.9.6_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.9.6_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.9.6_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.9.6_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.9.6_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0" [color=gray];
+    "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "CSS::Module_zef:dwarring_0.6.4_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.4_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.6.4_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.4_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.6.4_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.6.4_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "CSV::Parser_zef:tony-o_0.1.4_0" [color=gray];
+
+    "Template::Mustache_zef:raku-community-modules_1.2.6_1.2.0" [color=gray];
+    "Template::Mustache_zef:raku-community-modules_1.2.6_1.2.0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "CSS::Properties_zef:dwarring_0.9.0_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.9.0_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.9.0_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.9.0_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.9.0_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "Hash::MultiValue_cpan:HANENKAMP_0.7_0" [color=gray];
+    "Hash::MultiValue_cpan:HANENKAMP_0.7_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+
+    "IO::Blob__0.0.1_0" [color=gray];
+
+    "Test::Util::ServerPort_zef:jonathanstowe_0.0.5_1.0" [color=gray];
+
+    "CSS::Specification_zef:dwarring_0.5.1_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.5.1_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Specification_zef:dwarring_0.5.1_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Specification_zef:dwarring_0.5.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS_cpan:WARRINGD_0.0.20_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.20_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.20_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.20_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_cpan:WARRINGD_0.0.20_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.20_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_cpan:WARRINGD_0.0.20_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "Task::Galaxy__0.1_0" [color=gray];
+    "Task::Galaxy__0.1_0" -> "JSON::Tiny_cpan:MORITZ_1.0_0";
+    "Task::Galaxy__0.1_0" -> "panda__2016.02_0";
+    "Task::Galaxy__0.1_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+    "Task::Galaxy__0.1_0" -> "BioInfo__0.4.3_0";
+    "Task::Galaxy__0.1_0" -> "zef_zef:ugexe_1.1.3_0";
+    "Task::Galaxy__0.1_0" -> "Terminal::ANSIColor_zef:raku-community-modules_0.14_0";
+    "Task::Galaxy__0.1_0" -> "URI::Encode_zef:raku-community-modules_1.0_0";
+    "Task::Galaxy__0.1_0" -> "SVG__1.0_0";
+    "Task::Galaxy__0.1_0" -> "OpenSSL_zef:raku-community-modules_0.2.9_0";
+    "Task::Galaxy__0.1_0" -> "DBIish_zef:raku-community-modules_0.6.8_1";
+    "Task::Galaxy__0.1_0" -> "Raku::Pod::Render_github:finanalyst_3.5.2_0";
+    "Task::Galaxy__0.1_0" -> "Sparrowdo_zef:sp1983_0.1.55_0";
+    "Task::Galaxy__0.1_0" -> "Test::Mock_zef:raku-community-modules_1.8_0";
+    "Task::Galaxy__0.1_0" -> "CompUnit::Util_zef:lizmat_0.7.0_0";
+    "Task::Galaxy__0.1_0" -> "BioPerl6__0.0.1_0";
+    "Task::Galaxy__0.1_0" -> "Template6_zef:davidromero55_0.16.0_0";
+    "Task::Galaxy__0.1_0" -> "MIME::Base64_zef:raku-community-modules_1.2.5_0";
+    "Task::Galaxy__0.1_0" -> "XML::Writer__*_0";
+    "Task::Galaxy__0.1_0" -> "LibraryMake_zef:jjmerelo_1.0.5_0";
+    "Task::Galaxy__0.1_0" -> "Compress::Zlib__1.1.0_0";
+    "Task::Galaxy__0.1_0" -> "CSV::Parser_zef:tony-o_0.1.4_0";
+    "Task::Galaxy__0.1_0" -> "Bailador_github:Bailador_0.0.19_0";
+    "Task::Galaxy__0.1_0" -> "Grammar::BNF_zef:raku-community-modules_1.2_0";
+    "Task::Galaxy__0.1_0" -> "Digest_zef:grondilu_1.1.0_0";
+    "Task::Galaxy__0.1_0" -> "File::Temp_zef:raku-community-modules_0.0.12_0";
+    "Task::Galaxy__0.1_0" -> "Email::Simple_zef:raku-community-modules_2.1.4_0";
+    "Task::Galaxy__0.1_0" -> "Linenoise_zef:raku-community-modules_0.1.2_0";
+    "Task::Galaxy__0.1_0" -> "UUID__1.0.0_0";
+    "Task::Galaxy__0.1_0" -> "HTTP::Status_zef:lizmat_0.0.5_0";
+    "Task::Galaxy__0.1_0" -> "PSGI_zef:raku-community-modules_1.2.3_0";
+    "Task::Galaxy__0.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "Task::Galaxy__0.1_0" -> "XML_zef:raku-community-modules_0.3.6_0";
+    "Task::Galaxy__0.1_0" -> "Pod::To::Markdown_zef:raku-community-modules_0.2.2_0";
+    "Task::Galaxy__0.1_0" -> "Crust__0.0.1_0";
+    "Task::Galaxy__0.1_0" -> "File::Which__1.0.4_0";
+    "Task::Galaxy__0.1_0" -> "Grammar::Debugger_zef:raku-community-modules_1.0.3_0";
+    "Task::Galaxy__0.1_0" -> "SVG::Plot__*_0";
+    "Task::Galaxy__0.1_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+    "Task::Galaxy__0.1_0" -> "SCGI_zef:raku-community-modules_2.6_0";
+    "Task::Galaxy__0.1_0" -> "Template::Mojo_zef:raku-community-modules_0.2.2_0";
+    "Task::Galaxy__0.1_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "Task::Galaxy__0.1_0" -> "Shell::Command_zef:raku-community-modules_1.2_0";
+    "Task::Galaxy__0.1_0" -> "P6TCI_github:ugexe_0.0.5_0";
+    "Task::Galaxy__0.1_0" -> "Grammar::Profiler::Simple_zef:raku-community-modules_0.05_0";
+    "Task::Galaxy__0.1_0" -> "Digest::HMAC_zef:jjmerelo_1.0.7_0";
+    "Task::Galaxy__0.1_0" -> "Base64_github:ugexe_0.1.0_0";
+    "Task::Galaxy__0.1_0" -> "Debugger::UI::CommandLine__*_0";
+    "Task::Galaxy__0.1_0" -> "HTTP::Easy_zef:raku-community-modules_1.3_0";
+    "Task::Galaxy__0.1_0" -> "JSON::RPC_zef:bbkr_1.0.6_0";
+    "Task::Galaxy__0.1_0" -> "YAMLish_zef:leont_0.1.3_0";
+    "Task::Galaxy__0.1_0" -> "File::Find_zef:raku-community-modules_0.2.5_0";
+    "Task::Galaxy__0.1_0" -> "HTTP::UserAgent_zef:raku-community-modules_1.2.0_0";
+    "Task::Galaxy__0.1_0" -> "DateTime::Format_zef:raku-community-modules_0.1.5_1.0";
+
+    "Getopt::Tiny__*_0" [color=gray];
+
+    "CSS::Properties_zef:dwarring_0.10.0_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.0_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.0_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.0_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.10.0_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Module_zef:dwarring_0.7.1_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.7.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Module_zef:dwarring_0.7.1_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.1_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.7.1_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.7.1_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.7.1_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+
+    "CSS::Properties_zef:dwarring_0.9.5_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.9.5_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.9.5_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.9.5_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.9.5_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "CSS_zef:dwarring_0.1.0_0" [color=gray];
+    "CSS_zef:dwarring_0.1.0_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_zef:dwarring_0.1.0_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_zef:dwarring_0.1.0_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+
+    "CSS::Writer_zef:dwarring_0.3.1_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.3.1_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.3.1_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Writer_zef:dwarring_0.3.1_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "HTTP::UserAgent_zef:raku-community-modules_1.2.0_0" [color=gray];
+    "HTTP::UserAgent_zef:raku-community-modules_1.2.0_0" -> "DateTime::Parse_github:sergot_0.9.3_0";
+    "HTTP::UserAgent_zef:raku-community-modules_1.2.0_0" -> "MIME::Base64_zef:raku-community-modules_1.2.5_0";
+    "HTTP::UserAgent_zef:raku-community-modules_1.2.0_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "HTTP::UserAgent_zef:raku-community-modules_1.2.0_0" -> "File::Temp_zef:raku-community-modules_0.0.12_0";
+    "HTTP::UserAgent_zef:raku-community-modules_1.2.0_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "HTTP::UserAgent_zef:raku-community-modules_1.2.0_0" -> "Encode__0.0.4_0";
+    "HTTP::UserAgent_zef:raku-community-modules_1.2.0_0" -> "HTTP::Status_zef:lizmat_0.0.5_0";
+    "HTTP::UserAgent_zef:raku-community-modules_1.2.0_0" -> "Test::Util::ServerPort_zef:jonathanstowe_0.0.5_1.0";
+    "HTTP::UserAgent_zef:raku-community-modules_1.2.0_0" -> "IO::Capture::Simple_github:JJ_0.0.1_0";
+
+    "App::Rak_zef:lizmat_0.3.18_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.18_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.18_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+
+    "CSS::Properties_zef:dwarring_0.9.2_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.9.2_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.9.2_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.9.2_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.9.2_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Specification_zef:dwarring_0.5.3_0" [color=green];
+    "CSS::Specification_zef:dwarring_0.5.3_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Specification_zef:dwarring_0.5.3_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Specification_zef:dwarring_0.5.3_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Properties_zef:dwarring_0.10.2_0.10" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.2_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.2_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.10.2_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.2_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "CSS::Writer_cpan:WARRINGD_0.2.6_0" [color=gray];
+    "CSS::Writer_cpan:WARRINGD_0.2.6_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_cpan:WARRINGD_0.2.6_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Writer_cpan:WARRINGD_0.2.6_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "CSS::Nested_zef:FCO_0.0.1_0" [color=gray];
+    "CSS::Nested_zef:FCO_0.0.1_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
 
     "App::Rak_zef:lizmat_0.3.20_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.20_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.20_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.20_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.20_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.20_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
     "App::Rak_zef:lizmat_0.3.20_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.20_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.20_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.20_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.20_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
     "App::Rak_zef:lizmat_0.3.20_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
     "App::Rak_zef:lizmat_0.3.20_0" -> "META::constants_zef:lizmat_0.0.6_0";
     "App::Rak_zef:lizmat_0.3.20_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.20_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.20_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+
+    "CSS::Properties_cpan:WARRINGD_0.7.4_0" [color=gray];
+    "CSS::Properties_cpan:WARRINGD_0.7.4_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.4_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.4_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.4_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "Sparrow6_zef:sp1983_0.0.93_0" [color=gray];
+    "Sparrow6_zef:sp1983_0.0.93_0" -> "Terminal::ANSIColor_zef:raku-community-modules_0.14_0";
+    "Sparrow6_zef:sp1983_0.0.93_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "Sparrow6_zef:sp1983_0.0.93_0" -> "YAMLish_zef:leont_0.1.3_0";
+    "Sparrow6_zef:sp1983_0.0.93_0" -> "Hash::Merge_cpan:TYIL_2.0.0_2";
+    "Sparrow6_zef:sp1983_0.0.93_0" -> "File::Directory::Tree_zef:raku-community-modules_0.2_0";
+    "Sparrow6_zef:sp1983_0.0.93_0" -> "Data::Dump_zef:tony-o_0.0.18_0";
+
+    "CSS::Writer_zef:dwarring_0.3.2_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.3.2_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.3.2_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Writer_zef:dwarring_0.3.2_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "CSS::Properties_zef:dwarring_0.9.4_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.9.4_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.9.4_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.9.4_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.9.4_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "URI_zef:raku-community-modules_0.3.8_0" [color=green];
+
+    "CSS::Writer_zef:dwarring_0.3.2_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.3.2_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Writer_zef:dwarring_0.3.2_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.3.2_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "Netstring_zef:raku-community-modules_0.0.4_0" [color=gray];
+
+    "CSS::Specification_zef:dwarring_0.4.14_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.4.14_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Specification_zef:dwarring_0.4.14_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "CSS::Module_zef:dwarring_0.7.2_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.7.2_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.7.2_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Module_zef:dwarring_0.7.2_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.7.2_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.7.2_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+
+    "CSS::Module_zef:dwarring_0.7.5_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.7.5_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.7.5_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Module_zef:dwarring_0.7.5_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.7.5_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.5_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.7.5_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "App::Rak_zef:lizmat_0.3.20_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.20_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.20_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
     "App::Rak_zef:lizmat_0.3.20_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.20_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.20_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.20_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.20_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.20_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.20_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.20_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+
+    "Math::Symbolic_zef:raku-community-modules_0.1_0" [color=red];
+
+    "HTTP::Status_zef:lizmat_0.0.5_0" [color=gray];
+
+    "CSS::Module_zef:dwarring_0.7.4_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.7.4_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.7.4_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Module_zef:dwarring_0.7.4_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.7.4_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.7.4_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.4_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "CSS::Module_zef:dwarring_0.6.4_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.4_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.6.4_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.6.4_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.6.4_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.6.4_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "CSS::Module_cpan:WARRINGD_0.5.10_0" [color=gray];
+    "CSS::Module_cpan:WARRINGD_0.5.10_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_cpan:WARRINGD_0.5.10_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_cpan:WARRINGD_0.5.10_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_cpan:WARRINGD_0.5.10_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_cpan:WARRINGD_0.5.10_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "HTTP::Server::Ogre__0.0.4_0" [color=gray];
+    "HTTP::Server::Ogre__0.0.4_0" -> "HTTP::Supply_github:zostay_0.5.0_0";
+    "HTTP::Server::Ogre__0.0.4_0" -> "HTTP::HPACK_zef:raku-community-modules_1.0.3_0";
+    "HTTP::Server::Ogre__0.0.4_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+    "HTTP::Server::Ogre__0.0.4_0" -> "Path::Finder_zef:leont_0.4.7_0";
+    "HTTP::Server::Ogre__0.0.4_0" -> "HTTP::Status_zef:lizmat_0.0.5_0";
+
+    "CSS::Writer_zef:dwarring_0.2.12_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.2.12_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Writer_zef:dwarring_0.2.12_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Writer_zef:dwarring_0.2.12_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+
+    "Grammar::Debugger_zef:raku-community-modules_1.0.3_0" [color=gray];
+    "Grammar::Debugger_zef:raku-community-modules_1.0.3_0" -> "Terminal::ANSIColor_zef:raku-community-modules_0.14_0";
+
+    "CSS_zef:dwarring_0.1.2_0" [color=gray];
+    "CSS_zef:dwarring_0.1.2_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_zef:dwarring_0.1.2_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.28_0" [color=gray];
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.28_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.28_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.28_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.28_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.28_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.28_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.28_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "Digest_zef:grondilu_1.1.0_0" [color=green];
+
+    "CSS::Writer_cpan:WARRINGD_0.2.7_0" [color=gray];
+    "CSS::Writer_cpan:WARRINGD_0.2.7_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_cpan:WARRINGD_0.2.7_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Writer_cpan:WARRINGD_0.2.7_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "File::Find_zef:raku-community-modules_0.2.5_0" [color=green];
+
+    "CSS::Module_zef:dwarring_0.7.5_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.7.5_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.7.5_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.7.5_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.5_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Module_zef:dwarring_0.7.5_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.7.5_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0" [color=gray];
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0" -> "XML_zef:raku-community-modules_0.3.6_0";
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+
+    "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0" [color=gray];
+
+    "CSS::TagSet_zef:dwarring_0.1.2_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "LibXML_zef:dwarring_0.11.3_0.11" [color=gray];
+    "LibXML_zef:dwarring_0.11.3_0.11" -> "App::Prove6_zef:leont_0.0.18_0";
+    "LibXML_zef:dwarring_0.11.3_0.11" -> "File::Temp_zef:raku-community-modules_0.0.12_0";
+    "LibXML_zef:dwarring_0.11.3_0.11" -> "LibraryMake_zef:jjmerelo_1.0.5_0";
+    "LibXML_zef:dwarring_0.11.3_0.11" -> "XML_zef:raku-community-modules_0.3.6_0";
+    "LibXML_zef:dwarring_0.11.3_0.11" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "LibXML_zef:dwarring_0.11.3_0.11" -> "W3C::DOM_zef:dwarring_0.0.3_0";
+    "LibXML_zef:dwarring_0.11.3_0.11" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Specification_zef:dwarring_0.5.0_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.5.0_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Specification_zef:dwarring_0.5.0_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Specification_zef:dwarring_0.5.0_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "CSS::Properties_zef:dwarring_0.9.6_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.9.6_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.9.6_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.9.6_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.9.6_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "App::Rak_zef:lizmat_0.3.17_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.17_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.17_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+
+    "CSS_cpan:WARRINGD_0.0.25_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.25_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_cpan:WARRINGD_0.0.25_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_cpan:WARRINGD_0.0.25_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_cpan:WARRINGD_0.0.25_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.25_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.25_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.25_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+
+    "Rakudo_Yet Another Society_2026.07_0" [color=green];
+
+    "DateTime::Format_zef:raku-community-modules_0.1.5_1.0" [color=gray];
+
+    "App::Rak_zef:lizmat_0.3.14_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.14_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.14_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
 
     "highlighter_zef:lizmat_0.0.23_0" [color=gray];
     "highlighter_zef:lizmat_0.0.23_0" -> "has-word_zef:lizmat_0.0.7_0";
     "highlighter_zef:lizmat_0.0.23_0" -> "String::Utils_zef:lizmat_0.0.40_0";
 
-    "as-cli-arguments_zef:lizmat_0.0.10_0" [color=gray];
+    "CSS::Properties_cpan:WARRINGD_0.8.0_0" [color=gray];
+    "CSS::Properties_cpan:WARRINGD_0.8.0_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_cpan:WARRINGD_0.8.0_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_cpan:WARRINGD_0.8.0_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_cpan:WARRINGD_0.8.0_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
 
-    "App::Rak_zef:lizmat_0.3.8_0" [color=gray];
-    "App::Rak_zef:lizmat_0.3.8_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "String::Utils_zef:lizmat_0.0.40_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "highlighter_zef:lizmat_0.0.23_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "rak_zef:lizmat_0.0.67_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
-    "App::Rak_zef:lizmat_0.3.8_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.23_0" [color=gray];
+    "CSS::TagSet_cpan:WARRINGD_0.0.23_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.23_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_cpan:WARRINGD_0.0.23_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.23_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.23_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "App::Rak_zef:lizmat_0.3.19_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.19_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+
+    "CSS::TagSet_zef:dwarring_0.1.2_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "CSS::Properties_zef:dwarring_0.10.1_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.1_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.1_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.10.1_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.1_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "Template::Mojo_zef:raku-community-modules_0.2.2_0" [color=gray];
+
+    "CSS::Specification_zef:dwarring_0.4.15_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.4.15_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Specification_zef:dwarring_0.4.15_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "CSS::TagSet_zef:dwarring_0.1.0_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+
+    "TAP_zef:leont_0.3.15_0" [color=green];
+
+    "CSS_cpan:WARRINGD_0.0.27_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.27_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_cpan:WARRINGD_0.0.27_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_cpan:WARRINGD_0.0.27_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_cpan:WARRINGD_0.0.27_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.27_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.27_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_cpan:WARRINGD_0.0.27_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+
+    "CSS::Module_zef:dwarring_0.6.5_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.5_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.6.5_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.6.5_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.6.5_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.5_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+
+    "Trap_zef:lizmat_0.0.5_0" [color=gray];
+
+    "ASN::META_zef:Altai-man_0.5.3_0" [color=gray];
+    "ASN::META_zef:Altai-man_0.5.3_0" -> "ASN::BER_zef:Altai-man_0.7.3_0";
+    "ASN::META_zef:Altai-man_0.5.3_0" -> "Type::EnumHOW_cpan:KAIEPI_0.0.2_0";
+    "ASN::META_zef:Altai-man_0.5.3_0" -> "ASN::Grammar_zef:Altai-man_0.3.5_0";
+
+    "CSS::Module_zef:dwarring_0.7.0_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.7.0_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.0_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.7.0_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.7.0_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.7.0_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.8_0" [color=gray];
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.8_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.8_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.8_0" -> "XML_zef:raku-community-modules_0.3.6_0";
+
+    "Backtrace::Files_zef:lizmat_0.0.4_0" [color=gray];
+
+    "App::Rak_zef:lizmat_0.3.19_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.19_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.19_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+
+    "CSS::Specification_zef:dwarring_0.5.3_0" [color=gray];
+    "CSS::Specification_zef:dwarring_0.5.3_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Specification_zef:dwarring_0.5.3_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Specification_zef:dwarring_0.5.3_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+
+    "CSS::Properties_zef:dwarring_0.10.3_0.10" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.3_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.3_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.10.3_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.10.3_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
+
+    "CSS::Properties_zef:dwarring_0.8.5_0" [color=gray];
+    "CSS::Properties_zef:dwarring_0.8.5_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.8.5_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.8.5_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.8.5_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "HTTP::Tinyish_zef:skaji_0.4.1_0" [color=gray];
+    "HTTP::Tinyish_zef:skaji_0.4.1_0" -> "File::Temp_zef:raku-community-modules_0.0.12_0";
+
+    "CSS::Writer_zef:dwarring_0.2.13_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.2.13_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Writer_zef:dwarring_0.2.13_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.2.13_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "JSON::Tiny_cpan:MORITZ_1.0_0" [color=gray];
+
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.23_0" [color=gray];
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.23_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.23_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.23_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.23_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.23_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.23_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Module_zef:dwarring_0.6.8_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.8_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.6.8_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.6.8_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.8_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.6.8_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "App::Rak_zef:lizmat_0.3.3_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.3_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "has-word_zef:lizmat_0.0.7_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.3_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+
+    "CSS::Writer_zef:dwarring_0.2.12_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.2.12_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.2.12_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Writer_zef:dwarring_0.2.12_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "CSS::Specification_cpan:WARRINGD_0.4.10_0" [color=gray];
+    "CSS::Specification_cpan:WARRINGD_0.4.10_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Specification_cpan:WARRINGD_0.4.10_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+
+    "CSS::Properties_zef:dwarring_0.9.0_0.9" [color=gray];
+    "CSS::Properties_zef:dwarring_0.9.0_0.9" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.9.0_0.9" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.9.0_0.9" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.9.0_0.9" -> "Color_zef:raku-community-modules_1.004001_0";
+
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.26_0" [color=gray];
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.26_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.26_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.26_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.26_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.26_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.26_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "CSS::Writer_zef:dwarring_0.3.1_0" [color=gray];
+    "CSS::Writer_zef:dwarring_0.3.1_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Writer_zef:dwarring_0.3.1_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.3.1_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "CSS::Module::CSS3::Selectors_cpan:WARRINGD_0.0.5_0" [color=gray];
+    "CSS::Module::CSS3::Selectors_cpan:WARRINGD_0.0.5_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module::CSS3::Selectors_cpan:WARRINGD_0.0.5_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "CSS::Module_zef:dwarring_0.6.2_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.6.2_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.6.2_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.6.2_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.6.2_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.6.2_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "has-word_zef:lizmat_0.0.7_0" [color=green];
+
+    "CSS_cpan:WARRINGD_0.0.23_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.23_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_cpan:WARRINGD_0.0.23_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_cpan:WARRINGD_0.0.23_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_cpan:WARRINGD_0.0.23_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.23_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.23_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.23_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "CSS::Properties_zef:dwarring_0.10.8_0.10" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.8_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.10.8_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.10.8_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.8_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "CSS::Specification_cpan:WARRINGD_0.4.9_0" [color=gray];
+    "CSS::Specification_cpan:WARRINGD_0.4.9_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Specification_cpan:WARRINGD_0.4.9_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "CSS::Properties_zef:dwarring_0.10.9_0.10" [color=gray];
+    "CSS::Properties_zef:dwarring_0.10.9_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.10.9_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.9_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.9_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Properties_cpan:WARRINGD_0.7.5_0" [color=gray];
+    "CSS::Properties_cpan:WARRINGD_0.7.5_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.5_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.5_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.5_0" -> "Color_zef:raku-community-modules_1.004001_0";
+
+    "CSS::Properties_zef:dwarring_0.8.4_0" [color=gray];
+    "CSS::Properties_zef:dwarring_0.8.4_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_zef:dwarring_0.8.4_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.8.4_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.8.4_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "CSS_zef:dwarring_0.1.2_0" [color=gray];
+    "CSS_zef:dwarring_0.1.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_zef:dwarring_0.1.2_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_zef:dwarring_0.1.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+
+    "CSS::Module_zef:dwarring_0.5.11_0" [color=gray];
+    "CSS::Module_zef:dwarring_0.5.11_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.5.11_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "CSS::Module_zef:dwarring_0.5.11_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.5.11_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+    "CSS::Module_zef:dwarring_0.5.11_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "CSS_cpan:WARRINGD_0.0.28_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.28_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_cpan:WARRINGD_0.0.28_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_cpan:WARRINGD_0.0.28_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_cpan:WARRINGD_0.0.28_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.28_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.28_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.28_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+
+    "JSON::Marshal_zef:jonathanstowe_0.0.25_1.0" [color=green];
+    "JSON::Marshal_zef:jonathanstowe_0.0.25_1.0" -> "JSON::OptIn_zef:jonathanstowe_0.0.2_0";
+    "JSON::Marshal_zef:jonathanstowe_0.0.25_1.0" -> "JSON::Fast_zef:timo_0.20.1_0";
+    "JSON::Marshal_zef:jonathanstowe_0.0.25_1.0" -> "JSON::Name_zef:jonathanstowe_0.0.7_1.0";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+
+    "BioPerl6__0.0.1_0" [color=gray];
+    "BioPerl6__0.0.1_0" -> "File::Temp_zef:raku-community-modules_0.0.12_0";
+
+    "App::Rak_zef:lizmat_0.3.11_0" [color=gray];
+    "App::Rak_zef:lizmat_0.3.11_0" -> "JSON::Fast::Hyper_zef:lizmat_0.0.11_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "String::Utils_zef:lizmat_0.0.40_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "Backtrace::Files_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "rak_zef:lizmat_0.0.67_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "Needle::Compile_zef:lizmat_0.0.12_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "as-cli-arguments_zef:lizmat_0.0.10_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "META::constants_zef:lizmat_0.0.6_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "IO::Path::AutoDecompress_zef:lizmat_0.0.4_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "highlighter_zef:lizmat_0.0.23_0";
+    "App::Rak_zef:lizmat_0.3.11_0" -> "CLI::Version_zef:lizmat_0.0.10_0";
+
+    "CSS::Properties_cpan:WARRINGD_0.7.6_0" [color=gray];
+    "CSS::Properties_cpan:WARRINGD_0.7.6_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.6_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.6_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Properties_cpan:WARRINGD_0.7.6_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0" [color=green];
+    "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0" -> "JSON::Fast_zef:timo_0.20.1_0";
+
+    "Shell::Command_zef:raku-community-modules_1.2_0" [color=green];
+    "Shell::Command_zef:raku-community-modules_1.2_0" -> "File::Find_zef:raku-community-modules_0.2.5_0";
+
+    "Git::Files_zef:lizmat_0.0.9_0" [color=gray];
+    "Git::Files_zef:lizmat_0.0.9_0" -> "path-utils_zef:lizmat_0.0.25_0";
 
 
 }

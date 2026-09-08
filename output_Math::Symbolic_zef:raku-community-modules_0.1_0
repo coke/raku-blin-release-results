@@ -1,0 +1,36 @@
+Running as unit: run-p3011898-i2989885.service; invocation ID: c6a5b14067ef4726b420cce0102d159d
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Math::Symbolic
+===> Found: Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules> [via Zef::Repository::Ecosystems<fez>]
+[Math::Symbolic] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870263.3011900.9511.266137612487/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz https://360.zef.pm/M/AT/MATH_SYMBOLIC/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz
+===> Fetching [OK]: Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870263.3011900.9511.266137612487/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz
+[Math::Symbolic] Command: tar -t -f ./d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz
+[Math::Symbolic] Command: tar -xvf ./d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz -C ../d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz
+===> Extraction [OK]: Math::Symbolic to /home/coke/sandbox/blin/data/zef-data/tmp/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz
+===> Testing: Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules>
+[Math::Symbolic] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz/Math-Symbolic-0.1 t/01-basics.rakutest
+[Math::Symbolic] 1..11
+[Math::Symbolic] ok 1 - .new() works
+[Math::Symbolic] ok 2 - .isolate() works
+[Math::Symbolic] ok 3 - .evaluate() works
+[Math::Symbolic] ok 4 - .expand() works
+[Math::Symbolic] ok 5 - .condense() works
+[Math::Symbolic] ok 6 - .expression() works
+[Math::Symbolic] ok 7 - README slope-intercept example works
+[Math::Symbolic] ok 8 - .simplify documentation is correct
+[Math::Symbolic] Parse failure: invalid expression
+[Math::Symbolic]   in method new at /home/coke/sandbox/blin/data/zef-data/tmp/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz/Math-Symbolic-0.1/lib/Math/Symbolic.rakumod (Math::Symbolic) line 16
+[Math::Symbolic]   in block <unit> at t/01-basics.rakutest line 25
+[Math::Symbolic] # You planned 11 tests, but ran 8
+===> Testing [FAIL]: Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules>
+[Math::Symbolic] Failed to get passing tests, but continuing with --force-test
+===> Installing: Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules>
+===> Install [OK] for Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules>
+
+1 bin/ script [symbolic] installed to:
+/home/coke/sandbox/blin/installed/Math::Symbolic_zef:raku-community-modules_0.1_0/bin
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 30.557s
+             CPU time consumed: 12.218s
+                   Memory peak: 801.7M (swap: 0B)

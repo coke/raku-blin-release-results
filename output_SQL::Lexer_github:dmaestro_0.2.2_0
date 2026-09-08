@@ -1,0 +1,125 @@
+Running as unit: run-p3011951-i2959975.service; invocation ID: 1d73f3c0913145aaa523455dddd7336b
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: SQL::Lexer
+===> Found: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro> [via Zef::Repository::Ecosystems<rea>]
+[SQL::Lexer] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870246.3011956.8762.550184798072/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/SQL%3A%3ALexer/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+===> Fetching [OK]: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870246.3011956.8762.550184798072/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+[SQL::Lexer] Command: tar -t -f ./SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+[SQL::Lexer] Command: tar -xvf ./SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz -C ../SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+===> Extraction [OK]: SQL::Lexer to /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+===> Testing: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>
+[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/comments.t
+[SQL::Lexer] ok 1 - Good comment
+[SQL::Lexer] # -- a standard single-line comment
+[SQL::Lexer] # 
+[SQL::Lexer] # ---
+[SQL::Lexer] ok 2 - Good comment
+[SQL::Lexer] # -- a comment with Unicode »ö«
+[SQL::Lexer] # 
+[SQL::Lexer] # ---
+[SQL::Lexer] ok 3 - Good comment
+[SQL::Lexer] #  \# an extended (unix-style) comment
+[SQL::Lexer] # 
+[SQL::Lexer] # ---
+[SQL::Lexer] ok 4 - Good comment
+[SQL::Lexer] # /* a multi-line
+[SQL::Lexer] #  * comment
+[SQL::Lexer] #  */
+[SQL::Lexer] # ---
+[SQL::Lexer] ok 5 - Good comment
+[SQL::Lexer] # /* an embedded comment */
+[SQL::Lexer] # ---
+[SQL::Lexer] ok 6 - Bad comment
+[SQL::Lexer] # -- single-line comment
+[SQL::Lexer] # over two lines
+[SQL::Lexer] # 
+[SQL::Lexer] # ---
+[SQL::Lexer] ok 7 - Bad comment
+[SQL::Lexer] # -- single-line comment followed by whitespace
+[SQL::Lexer] #   
+[SQL::Lexer] # ---
+[SQL::Lexer] 1..7
+[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/compound_statement.t
+[SQL::Lexer] ok 1 - Successful match returned
+[SQL::Lexer] not ok 2 - One compound statement matched
+[SQL::Lexer] # Failed test 'One compound statement matched'
+[SQL::Lexer] # at t/compound_statement.t line 38
+[SQL::Lexer] # expected: '1'
+[SQL::Lexer] #      got: '0'
+[SQL::Lexer] No such method 'value' for invocant of type 'Any'. Did you mean
+[SQL::Lexer] 'values'?
+[SQL::Lexer]   in block <unit> at t/compound_statement.t line 40
+[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/datetime.t
+[SQL::Lexer] ok 1 - Good datetime(date-string): '0000-00-00'
+[SQL::Lexer] ok 2 - Good datetime(date-string): "2017-12-25"
+[SQL::Lexer] ok 3 - Good datetime(date-string): '2017-12-00'
+[SQL::Lexer] ok 4 - Good datetime(time-string): '00:00:00'
+[SQL::Lexer] ok 5 - Good datetime(time-string): '23:59:59'
+[SQL::Lexer] ok 6 - Good datetime(time-string): '12:30:00-06:00'
+[SQL::Lexer] ok 7 - Good datetime(time-string): '6:30:00+04:00'
+[SQL::Lexer] ok 8 - Good datetime(timestamp-string): '1492-10-12 11:30:21'
+[SQL::Lexer] ok 9 - Good datetime(date-literal): DATE "2017-12-25"
+[SQL::Lexer] ok 10 - Good datetime(time-literal): TIME '12:30:00-06:00'
+[SQL::Lexer] ok 11 - Good datetime(timestamp-literal): TIMESTAMP '1492-10-12 11:30:21'
+[SQL::Lexer] ok 12 - Bad literal: |DATE "2017-12-25'|
+[SQL::Lexer] ok 13 - Bad literal: |DATE 2017-12-25|
+[SQL::Lexer] ok 14 - Bad literal: |TIME "2017-12-25"|
+[SQL::Lexer] 1..14
+[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/literals.t
+[SQL::Lexer] ok 1 - Good literal: |124|
+[SQL::Lexer] ok 2 - Correct type: unsigned-numeric-literal
+[SQL::Lexer] ok 3 - Good literal: |12.4|
+[SQL::Lexer] ok 4 - Correct type: unsigned-numeric-literal
+[SQL::Lexer] ok 5 - Good literal: |+12.4|
+[SQL::Lexer] ok 6 - Correct type: signed-numeric-literal
+[SQL::Lexer] ok 7 - Good literal: |-12.4|
+[SQL::Lexer] ok 8 - Correct type: signed-numeric-literal
+[SQL::Lexer] ok 9 - Good literal: |-0|
+[SQL::Lexer] ok 10 - Correct type: signed-numeric-literal
+[SQL::Lexer] ok 11 - Good literal: |+1|
+[SQL::Lexer] ok 12 - Correct type: signed-numeric-literal
+[SQL::Lexer] ok 13 - Good literal: |'abc'|
+[SQL::Lexer] ok 14 - Correct type: char-string-literal
+[SQL::Lexer] ok 15 - Good literal: |'ab cd '|
+[SQL::Lexer] ok 16 - Correct type: char-string-literal
+[SQL::Lexer] ok 17 - Good literal: |'ab"cd '|
+[SQL::Lexer] ok 18 - Correct type: char-string-literal
+[SQL::Lexer] ok 19 - Good literal: |'ab''c'|
+[SQL::Lexer] ok 20 - Correct type: char-string-literal
+[SQL::Lexer] ok 21 - Good literal: |"abc"|
+[SQL::Lexer] ok 22 - Correct type: char-string-literal
+[SQL::Lexer] ok 23 - Good literal: |"ab""c"|
+[SQL::Lexer] ok 24 - Correct type: char-string-literal
+[SQL::Lexer] ok 25 - Good literal: |"ab''c"|
+[SQL::Lexer] ok 26 - Correct type: char-string-literal
+[SQL::Lexer] ok 27 - Good literal: |""""|
+[SQL::Lexer] ok 28 - Correct type: char-string-literal
+[SQL::Lexer] ok 29 - Good literal: |''|
+[SQL::Lexer] ok 30 - Correct type: char-string-literal
+[SQL::Lexer] ok 31 - Good literal: |TRUE|
+[SQL::Lexer] ok 32 - Correct type: boolean-literal
+[SQL::Lexer] ok 33 - Good literal: |FALSE|
+[SQL::Lexer] ok 34 - Correct type: boolean-literal
+[SQL::Lexer] ok 35 - Bad literal: |12a4|
+[SQL::Lexer] ok 36 - Bad literal: |12.34.56|
+[SQL::Lexer] ok 37 - Bad literal: |e12|
+[SQL::Lexer] ok 38 - Bad literal: |-+0|
+[SQL::Lexer] ok 39 - Bad literal: |1,002|
+[SQL::Lexer] ok 40 - Bad literal: |'a'b'|
+[SQL::Lexer] ok 41 - Bad literal: |'abc"|
+[SQL::Lexer] ok 42 - Bad literal: |"def'|
+[SQL::Lexer] 1..42
+[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/load_both.t
+[SQL::Lexer] ok 1 - SQL::Lexer module can be use-d ok
+[SQL::Lexer] ok 2 - SQL::Basic module can be use-d ok
+[SQL::Lexer] ok 3 - Basic module can be loaded with SQL::Lexer
+[SQL::Lexer] 1..3
+===> Testing [FAIL]: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>
+[SQL::Lexer] Failed to get passing tests, but continuing with --force-test
+===> Installing: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>
+===> Install [OK] for SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 13.926s
+             CPU time consumed: 13.472s
+                   Memory peak: 1.2G (swap: 0B)

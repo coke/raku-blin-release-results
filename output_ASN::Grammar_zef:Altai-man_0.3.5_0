@@ -1,0 +1,28 @@
+Running as unit: run-p3011818-i2989877.service; invocation ID: b093bc2936e04d3eb7897d5b2f4fd617
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: ASN::Grammar
+===> Found: ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man> [via Zef::Repository::Ecosystems<fez>]
+[ASN::Grammar] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870238.3011820.9608.877463504532/b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz https://360.zef.pm/A/SN/ASN_GRAMMAR/b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz
+===> Fetching [OK]: ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870238.3011820.9608.877463504532/b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz
+[ASN::Grammar] Command: tar -t -f ./b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz
+[ASN::Grammar] Command: tar -xvf ./b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz -C ../b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz
+===> Extraction [OK]: ASN::Grammar to /home/coke/sandbox/blin/data/zef-data/tmp/b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz
+===> Testing: ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man>
+[ASN::Grammar] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz t/00-sanity.t
+[ASN::Grammar] (Any)
+[ASN::Grammar] not ok 1 - LDAP spec is parsed
+[ASN::Grammar] # Failed test 'LDAP spec is parsed'
+[ASN::Grammar] # at t/00-sanity.t line 370
+[ASN::Grammar] # Actual type: Any
+[ASN::Grammar] No such method 'name' for invocant of type 'Any'. Did you mean any of
+[ASN::Grammar] these: 'are', 'none', 'note', 'take'?
+[ASN::Grammar]   in block <unit> at t/00-sanity.t line 372
+===> Testing [FAIL]: ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man>
+[ASN::Grammar] Failed to get passing tests, but continuing with --force-test
+===> Installing: ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man>
+===> Install [OK] for ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 5.096s
+             CPU time consumed: 4.576s
+                   Memory peak: 776.4M (swap: 0B)

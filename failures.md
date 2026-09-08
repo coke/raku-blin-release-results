@@ -1,15 +1,15 @@
-[Blin](https://github.com/Raku/Blin) results between 2026.08 ([24e6e53](https://github.com/rakudo/rakudo/commit/24e6e5312f2868680413b0597aef8772f6b5bcea)) and HEAD ([b61226d](https://github.com/rakudo/rakudo/commit/b61226d8bc93d4c030870b48d18af2adfd3a0f6f)):
+[Blin](https://github.com/Raku/Blin) results between 2026.08 ([24e6e53](https://github.com/rakudo/rakudo/commit/24e6e5312f2868680413b0597aef8772f6b5bcea)) and b180d6078d ([b180d60](https://github.com/rakudo/rakudo/commit/b180d6078dd3f2359929e0315bc40c4b680f0a17)):
 
 * [ ] [Needle::Compile](https://raku.land/zef:lizmat/Needle::Compile) – Fail, Bisected: [6ec3194](https://github.com/rakudo/rakudo/commit/6ec31943a47d15e58ada4e93e50eee43f91bb172)
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p2406100-i2431092.service; invocation ID: 09888ccc9e4a45cfac8fe24cf138645d
+  Running as unit: run-p3014753-i3011393.service; invocation ID: 77b850cb996b499f8d8cfdc5c2900743
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Needle::Compile
   ===> Found: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> [via Zef::Repository::Ecosystems<fez>]
-  [Needle::Compile] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788819030.2406101.9724.196377209017/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz https://360.zef.pm/N/EE/NEEDLE_COMPILE/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
-  ===> Fetching [OK]: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1788819030.2406101.9724.196377209017/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+  [Needle::Compile] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870337.3014754.2832.4928053018925/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz https://360.zef.pm/N/EE/NEEDLE_COMPILE/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+  ===> Fetching [OK]: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870337.3014754.2832.4928053018925/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   [Needle::Compile] Command: tar -t -f ./66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   [Needle::Compile] Command: tar -xvf ./66794ae2eb541201a403c08d48e27de668b32db7.tar.gz -C ../66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   ===> Extraction [OK]: Needle::Compile to /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
@@ -4772,8 +4772,8 @@
   ===> Install [OK] for Needle::Compile:ver<0.0.12>:auth<zef:lizmat>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 25.694s
-               CPU time consumed: 37.760s
+                 Service runtime: 52.170s
+               CPU time consumed: 1min 16.923s
                      Memory peak: 1.1G (swap: 0B)
 
   ```
@@ -4782,102 +4782,17 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p2406033-i2431086.service; invocation ID: dacc840935f6421f9d4f94bf8abbc364
+  Running as unit: run-p3013801-i3076758.service; invocation ID: a26f92a26258465781d5a0157041b97c
   Press ^] three times within 1s to disconnect TTY.
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_0:1
-      ------> [32mity>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_1:1
-      ------> [32mZef>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_2:1
-      ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_3:1
-      ------> [32mery>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_4:1
-      ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_5:1
-      ------> [32mcal>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_6:1
-      ------> [32mory>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_7:1
-      ------> [32mtem>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_8:1
-      ------> [32mtch>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_9:1
-      ------> [32mact>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_10:1
-      ------> [32mild>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_11:1
-      ------> [32mest>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_12:1
-      ------> [32mall>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_13:1
-      ------> [32mort>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_14:1
-      ------> [32ment>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_15:1
-      ------> [32mfig>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_16:1
-      ------> [32mURI>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
   ===> Searching for: Needle::Compile
   ===> Found: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> [via Zef::Repository::Ecosystems<fez>]
-  [Needle::Compile] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788819008.2406034.4781.675970406341/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz https://360.zef.pm/N/EE/NEEDLE_COMPILE/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
-  ===> Fetching [OK]: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1788819008.2406034.4781.675970406341/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+  [Needle::Compile] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870283.3013803.3254.590690891612/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz https://360.zef.pm/N/EE/NEEDLE_COMPILE/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
+  ===> Fetching [OK]: Needle::Compile:ver<0.0.12>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870283.3013803.3254.590690891612/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   [Needle::Compile] Command: tar -t -f ./66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   [Needle::Compile] Command: tar -xvf ./66794ae2eb541201a403c08d48e27de668b32db7.tar.gz -C ../66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   ===> Extraction [OK]: Needle::Compile to /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz
   ===> Testing: Needle::Compile:ver<0.0.12>:auth<zef:lizmat>
-  [Needle::Compile] Command: /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/01-basic.rakutest
+  [Needle::Compile] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/01-basic.rakutest
   [Needle::Compile] 1..36
   [Needle::Compile] ok 1 - did compile-needle get exported
   [Needle::Compile] ok 2 - did implicit2explicit get exported
@@ -4915,7 +4830,7 @@
   [Needle::Compile] ok 34 - did '!foo' produce the correct explicit?
   [Needle::Compile] ok 35 - did '&foo' produce the correct explicit?
   [Needle::Compile] ok 36 - did we get an AST
-  [Needle::Compile] Command: /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/02-single.rakutest
+  [Needle::Compile] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/02-single.rakutest
   [Needle::Compile] 1..10
   [Needle::Compile] # Subtest: code: simple .subst
   [Needle::Compile]     1..8
@@ -5127,7 +5042,7 @@
   [Needle::Compile]         ok 161 - Testing "foo"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 162 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5135,7 +5050,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 163 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5145,7 +5060,7 @@
   [Needle::Compile]         ok 165 - Testing "foo" but Type('contains')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 166 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5153,7 +5068,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 167 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5163,7 +5078,7 @@
   [Needle::Compile]         ok 169 - Testing "foo" but Type('regex')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 170 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5171,7 +5086,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 171 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5181,7 +5096,7 @@
   [Needle::Compile]         ok 173 - Testing "/foo/"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 174 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5189,7 +5104,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 175 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5199,7 +5114,7 @@
   [Needle::Compile]         ok 177 - Testing :contains("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 178 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5207,7 +5122,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 179 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5217,7 +5132,7 @@
   [Needle::Compile]         ok 181 - Testing :regex("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 182 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5225,15 +5140,15 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 183 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
   [Needle::Compile]         # expected: $(slip("foo",))
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile]         ok 184 - miss 'bar'
-  [Needle::Compile]         # You failed 12 tests of 184
   [Needle::Compile]     not ok 1 - contains: find simple 'foo'
+  [Needle::Compile]         # You failed 12 tests of 184
   [Needle::Compile]     # Failed test 'contains: find simple 'foo''
   [Needle::Compile]     # at t/02-single.rakutest line 14
   [Needle::Compile]     # Subtest: contains: find simple 'foo', :ignorecase, :ignorecase
@@ -5401,7 +5316,7 @@
   [Needle::Compile]         ok 161 - Testing "foo"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 162 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5409,7 +5324,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 163 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5419,7 +5334,7 @@
   [Needle::Compile]         ok 165 - Testing "foo" but Type('contains')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 166 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5427,7 +5342,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 167 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5437,7 +5352,7 @@
   [Needle::Compile]         ok 169 - Testing "foo" but Type('regex')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 170 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5445,7 +5360,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 171 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5455,7 +5370,7 @@
   [Needle::Compile]         ok 173 - Testing "/foo/"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 174 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5463,7 +5378,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 175 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5473,7 +5388,7 @@
   [Needle::Compile]         ok 177 - Testing :contains("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 178 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5481,7 +5396,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 179 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5491,7 +5406,7 @@
   [Needle::Compile]         ok 181 - Testing :regex("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 182 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5499,14 +5414,14 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
-  [Needle::Compile]         not ok 183 - returned 'foo'
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
+  [Needle::Compile]         not ok 183 - returned 'foo'
   [Needle::Compile]         # expected: $(slip("foo",))
   [Needle::Compile]         #      got: $(slip("",))
-  [Needle::Compile]         # You failed 12 tests of 184
   [Needle::Compile]         ok 184 - miss 'bar'
+  [Needle::Compile]         # You failed 12 tests of 184
   [Needle::Compile]     not ok 2 - contains: find simple 'foo', :ignorecase, :ignorecase
   [Needle::Compile]     # Failed test 'contains: find simple 'foo', :ignorecase, :ignorecase'
   [Needle::Compile]     # at t/02-single.rakutest line 14
@@ -5675,7 +5590,7 @@
   [Needle::Compile]         ok 161 - Testing "foo"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 162 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5683,7 +5598,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 163 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5693,7 +5608,7 @@
   [Needle::Compile]         ok 165 - Testing "foo" but Type('contains')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 166 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5701,7 +5616,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 167 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5711,7 +5626,7 @@
   [Needle::Compile]         ok 169 - Testing "foo" but Type('regex')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 170 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5719,7 +5634,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 171 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5729,7 +5644,7 @@
   [Needle::Compile]         ok 173 - Testing "/foo/"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 174 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5737,7 +5652,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 175 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5747,7 +5662,7 @@
   [Needle::Compile]         ok 177 - Testing :contains("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 178 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5755,7 +5670,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 179 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5765,22 +5680,22 @@
   [Needle::Compile]         ok 181 - Testing :regex("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
-  [Needle::Compile]         not ok 182 - returned 'foo'
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
+  [Needle::Compile]         not ok 182 - returned 'foo'
   [Needle::Compile]         # expected: $(slip("foo",))
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 183 - returned 'foo'
+  [Needle::Compile]         ok 184 - miss 'bar'
+  [Needle::Compile]     not ok 3 - contains: find simple 'foo', :ignoremark, :ignoremark
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
   [Needle::Compile]         # expected: $(slip("foo",))
   [Needle::Compile]         #      got: $(slip("",))
-  [Needle::Compile]         ok 184 - miss 'bar'
-  [Needle::Compile]     not ok 3 - contains: find simple 'foo', :ignoremark, :ignoremark
   [Needle::Compile]         # You failed 12 tests of 184
   [Needle::Compile]     # Failed test 'contains: find simple 'foo', :ignoremark, :ignoremark'
   [Needle::Compile]     # at t/02-single.rakutest line 14
@@ -5949,7 +5864,7 @@
   [Needle::Compile]         ok 161 - Testing "foo"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 162 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5957,7 +5872,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 163 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5967,7 +5882,7 @@
   [Needle::Compile]         ok 165 - Testing "foo" but Type('contains')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 166 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5975,7 +5890,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 167 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5985,7 +5900,7 @@
   [Needle::Compile]         ok 169 - Testing "foo" but Type('regex')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 170 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -5993,7 +5908,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 171 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6003,15 +5918,15 @@
   [Needle::Compile]         ok 173 - Testing "/foo/"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
-  [Needle::Compile]         not ok 174 - returned 'foo'
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
   [Needle::Compile]         # expected: $(slip("foo",))
   [Needle::Compile]         #      got: $(slip("",))
+  [Needle::Compile]         not ok 174 - returned 'foo'
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 175 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6021,7 +5936,7 @@
   [Needle::Compile]         ok 177 - Testing :contains("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 178 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6029,7 +5944,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 179 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6039,7 +5954,7 @@
   [Needle::Compile]         ok 181 - Testing :regex("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 182 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6047,17 +5962,17 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 183 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
   [Needle::Compile]         # expected: $(slip("foo",))
   [Needle::Compile]         #      got: $(slip("",))
-  [Needle::Compile]         ok 184 - miss 'bar'
   [Needle::Compile]         # You failed 12 tests of 184
-  [Needle::Compile]     not ok 4 - contains: find simple 'foo', :smartcase, :smartcase
   [Needle::Compile]     # Failed test 'contains: find simple 'foo', :smartcase, :smartcase'
   [Needle::Compile]     # at t/02-single.rakutest line 14
+  [Needle::Compile]         ok 184 - miss 'bar'
+  [Needle::Compile]     not ok 4 - contains: find simple 'foo', :smartcase, :smartcase
   [Needle::Compile]     # Subtest: contains: find simple 'foo', :smartmark, :smartmark
   [Needle::Compile]         1..184
   [Needle::Compile]         ok 1 - Testing "foo"
@@ -6223,7 +6138,7 @@
   [Needle::Compile]         ok 161 - Testing "foo"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 162 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6231,7 +6146,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 163 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6241,7 +6156,7 @@
   [Needle::Compile]         ok 165 - Testing "foo" but Type('contains')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 166 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6249,7 +6164,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 167 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6259,7 +6174,7 @@
   [Needle::Compile]         ok 169 - Testing "foo" but Type('regex')
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 170 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6267,7 +6182,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 171 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6277,7 +6192,7 @@
   [Needle::Compile]         ok 173 - Testing "/foo/"
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 174 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6285,7 +6200,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 175 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6295,7 +6210,7 @@
   [Needle::Compile]         ok 177 - Testing :contains("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 178 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6303,7 +6218,7 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 179 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6313,7 +6228,7 @@
   [Needle::Compile]         ok 181 - Testing :regex("foo")
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 182 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
@@ -6321,26 +6236,26 @@
   [Needle::Compile]         #      got: $(slip("",))
   [Needle::Compile] Use of uninitialized value of type Any in string context.
   [Needle::Compile] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/share/perl6/core/sources/B7163A423E53679E5C263A8594641948ECB36A0A (Test) line 714
+  [Needle::Compile]   in sub _is_deeply at /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/share/perl6/core/sources/99184EDCEC1648DBD73CC0096C1FFF29240CFF5A (Test) line 714
   [Needle::Compile]         not ok 183 - returned 'foo'
   [Needle::Compile]         # Failed test 'returned 'foo''
   [Needle::Compile]         # at t/02-single.rakutest line 14
   [Needle::Compile]         # expected: $(slip("foo",))
   [Needle::Compile]         #      got: $(slip("",))
-  [Needle::Compile]         ok 184 - miss 'bar'
-  [Needle::Compile]     not ok 5 - contains: find simple 'foo', :smartmark, :smartmark
   [Needle::Compile]         # You failed 12 tests of 184
   [Needle::Compile]     # Failed test 'contains: find simple 'foo', :smartmark, :smartmark'
   [Needle::Compile]     # at t/02-single.rakutest line 14
   [Needle::Compile]     # You failed 5 tests of 5
-  [Needle::Compile] not ok 5 - all named arguments for contains
   [Needle::Compile] # Failed test 'all named arguments for contains'
   [Needle::Compile] # at t/02-single.rakutest line 14
   [Needle::Compile] # Test failed. Stopping test suite, because the RAKU_TEST_DIE_ON_FAIL
   [Needle::Compile] # environmental variable is set to a true value.
+  [Needle::Compile]         ok 184 - miss 'bar'
+  [Needle::Compile]     not ok 5 - contains: find simple 'foo', :smartmark, :smartmark
+  [Needle::Compile] not ok 5 - all named arguments for contains
   [Needle::Compile] # You planned 10 tests, but ran 5
   [Needle::Compile] # You failed 1 test of 5
-  [Needle::Compile] Command: /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/03-file.rakutest
+  [Needle::Compile] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/03-file.rakutest
   [Needle::Compile] 1..9
   [Needle::Compile] ok 1 - is it a Callable
   [Needle::Compile] ok 2 - matched "foo"
@@ -6381,7 +6296,7 @@
   [Needle::Compile]     ok 2 - did not match "foo"
   [Needle::Compile]     ok 3 - matched "bar"
   [Needle::Compile] ok 9 - not file: :not(:file("t/always"))
-  [Needle::Compile] Command: /tmp/whateverable/rakudo-moar/b61226d8bc93d4c030870b48d18af2adfd3a0f6f/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/04-multiple.rakutest
+  [Needle::Compile] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66794ae2eb541201a403c08d48e27de668b32db7.tar.gz/Needle-Compile-0.0.12 t/04-multiple.rakutest
   [Needle::Compile] 1..16
   [Needle::Compile] # Subtest: or: $("foo", "§bar")
   [Needle::Compile]     1..7
@@ -6558,9 +6473,15472 @@
   ===> Install [OK] for Needle::Compile:ver<0.0.12>:auth<zef:lizmat>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 5.944s
-               CPU time consumed: 7.792s
-                     Memory peak: 876.9M (swap: 0B)
+                 Service runtime: 22.019s
+               CPU time consumed: 25.223s
+                     Memory peak: 868.3M (swap: 0B)
+
+  ```
+  </details>
+* [ ] [ASN::Grammar](https://raku.land/zef:Altai-man/ASN::Grammar) – Fail, Bisected: [b180d60](https://github.com/rakudo/rakudo/commit/b180d6078dd3f2359929e0315bc40c4b680f0a17) [da2a525](https://github.com/rakudo/rakudo/commit/da2a52539d735095ec620b744e441037b046208d)
+  <details><Summary>Old Output</summary>
+
+  ```
+  Running as unit: run-p3012272-i2973602.service; invocation ID: e12efbd6427840a6b69228363a0da1dd
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: ASN::Grammar
+  ===> Found: ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man> [via Zef::Repository::Ecosystems<fez>]
+  [ASN::Grammar] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870288.3012273.4900.332830958965/b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz https://360.zef.pm/A/SN/ASN_GRAMMAR/b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz
+  ===> Fetching [OK]: ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870288.3012273.4900.332830958965/b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz
+  [ASN::Grammar] Command: tar -t -f ./b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz
+  [ASN::Grammar] Command: tar -xvf ./b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz -C ../b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz
+  ===> Extraction [OK]: ASN::Grammar to /home/coke/sandbox/blin/data/zef-data/tmp/b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz
+  ===> Testing: ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man>
+  [ASN::Grammar] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz t/00-sanity.t
+  [ASN::Grammar] ASN::Module.new(name => "Lightweight-Directory-Access-Protocol-V3", schema => "IMPLICIT", types => [ASN::ValueAssignment.new(name => "maxInt", type => "INTEGER", value => 2147483647), ASN::TypeAssignment.new(name => "LDAPMessage", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "messageID", type => ASN::RawType.new(name => "MessageID", type => "MessageID", params => {}), params => {}), ASN::RawType.new(name => "protocolOp", type => ASN::RawType.new(name => Any, type => "CHOICE", params => {:choices(${:abandonRequest(ASN::RawType.new(name => "AbandonRequest", type => "AbandonRequest", params => {})), :addRequest(ASN::RawType.new(name => "AddRequest", type => "AddRequest", params => {})), :addResponse(ASN::RawType.new(name => "AddResponse", type => "AddResponse", params => {})), :bindRequest(ASN::RawType.new(name => "BindRequest", type => "BindRequest", params => {})), :bindResponse(ASN::RawType.new(name => "BindResponse", type => "BindResponse", params => {})), :compareRequest(ASN::RawType.new(name => "CompareRequest", type => "CompareRequest", params => {})), :compareResponse(ASN::RawType.new(name => "CompareResponse", type => "CompareResponse", params => {})), :delRequest(ASN::RawType.new(name => "DelRequest", type => "DelRequest", params => {})), :delResponse(ASN::RawType.new(name => "DelResponse", type => "DelResponse", params => {})), :extendedReq(ASN::RawType.new(name => "ExtendedRequest", type => "ExtendedRequest", params => {})), :extendedResp(ASN::RawType.new(name => "ExtendedResponse", type => "ExtendedResponse", params => {})), :modDNRequest(ASN::RawType.new(name => "ModifyDNRequest", type => "ModifyDNRequest", params => {})), :modDNResponse(ASN::RawType.new(name => "ModifyDNResponse", type => "ModifyDNResponse", params => {})), :modifyRequest(ASN::RawType.new(name => "ModifyRequest", type => "ModifyRequest", params => {})), :modifyResponse(ASN::RawType.new(name => "ModifyResponse", type => "ModifyResponse", params => {})), :searchRequest(ASN::RawType.new(name => "SearchRequest", type => "SearchRequest", params => {})), :searchResDone(ASN::RawType.new(name => "SearchResultDone", type => "SearchResultDone", params => {})), :searchResEntry(ASN::RawType.new(name => "SearchResultEntry", type => "SearchResultEntry", params => {})), :searchResRef(ASN::RawType.new(name => "SearchResultReference", type => "SearchResultReference", params => {})), :unbindRequest(ASN::RawType.new(name => "UnbindRequest", type => "UnbindRequest", params => {}))})}), params => {:choices(${:abandonRequest(ASN::RawType.new(name => "AbandonRequest", type => "AbandonRequest", params => {})), :addRequest(ASN::RawType.new(name => "AddRequest", type => "AddRequest", params => {})), :addResponse(ASN::RawType.new(name => "AddResponse", type => "AddResponse", params => {})), :bindRequest(ASN::RawType.new(name => "BindRequest", type => "BindRequest", params => {})), :bindResponse(ASN::RawType.new(name => "BindResponse", type => "BindResponse", params => {})), :compareRequest(ASN::RawType.new(name => "CompareRequest", type => "CompareRequest", params => {})), :compareResponse(ASN::RawType.new(name => "CompareResponse", type => "CompareResponse", params => {})), :delRequest(ASN::RawType.new(name => "DelRequest", type => "DelRequest", params => {})), :delResponse(ASN::RawType.new(name => "DelResponse", type => "DelResponse", params => {})), :extendedReq(ASN::RawType.new(name => "ExtendedRequest", type => "ExtendedRequest", params => {})), :extendedResp(ASN::RawType.new(name => "ExtendedResponse", type => "ExtendedResponse", params => {})), :modDNRequest(ASN::RawType.new(name => "ModifyDNRequest", type => "ModifyDNRequest", params => {})), :modDNResponse(ASN::RawType.new(name => "ModifyDNResponse", type => "ModifyDNResponse", params => {})), :modifyRequest(ASN::RawType.new(name => "ModifyRequest", type => "ModifyRequest", params => {})), :modifyResponse(ASN::RawType.new(name => "ModifyResponse", type => "ModifyResponse", params => {})), :searchRequest(ASN::RawType.new(name => "SearchRequest", type => "SearchRequest", params => {})), :searchResDone(ASN::RawType.new(name => "SearchResultDone", type => "SearchResultDone", params => {})), :searchResEntry(ASN::RawType.new(name => "SearchResultEntry", type => "SearchResultEntry", params => {})), :searchResRef(ASN::RawType.new(name => "SearchResultReference", type => "SearchResultReference", params => {})), :unbindRequest(ASN::RawType.new(name => "UnbindRequest", type => "UnbindRequest", params => {}))})}), ASN::RawType.new(name => "controls", type => ASN::RawType.new(name => "Controls", type => "Controls", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 0))}), params => {:optional(Bool::True), :tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 0))})))})), ASN::TypeAssignment.new(name => "MessageID", type => ASN::RawType.new(name => Any, type => "INTEGER", params => {})), ASN::TypeAssignment.new(name => "LDAPString", type => ASN::RawType.new(name => Any, type => "OCTET STRING", params => {})), ASN::TypeAssignment.new(name => "LDAPOID", type => ASN::RawType.new(name => Any, type => "OCTET STRING", params => {})), ASN::TypeAssignment.new(name => "LDAPDN", type => ASN::RawType.new(name => "LDAPString", type => "LDAPString", params => {})), ASN::TypeAssignment.new(name => "RelativeLDAPDN", type => ASN::RawType.new(name => "LDAPString", type => "LDAPString", params => {})), ASN::TypeAssignment.new(name => "AttributeType", type => ASN::RawType.new(name => "LDAPString", type => "LDAPString", params => {})), ASN::TypeAssignment.new(name => "AttributeDescription", type => ASN::RawType.new(name => "LDAPString", type => "LDAPString", params => {})), ASN::TypeAssignment.new(name => "AttributeDescriptionList", type => ASN::RawType.new(name => Any, type => "SEQUENCE OF", params => {:of(ASN::RawType.new(name => "AttributeDescription", type => "AttributeDescription", params => {}))})), ASN::TypeAssignment.new(name => "AttributeValue", type => ASN::RawType.new(name => Any, type => "OCTET STRING", params => {})), ASN::TypeAssignment.new(name => "AttributeValueAssertion", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "attributeDesc", type => ASN::RawType.new(name => "AttributeDescription", type => "AttributeDescription", params => {}), params => {}), ASN::RawType.new(name => "assertionValue", type => ASN::RawType.new(name => "AssertionValue", type => "AssertionValue", params => {}), params => {})))})), ASN::TypeAssignment.new(name => "AssertionValue", type => ASN::RawType.new(name => Any, type => "OCTET STRING", params => {})), ASN::TypeAssignment.new(name => "Attribute", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "type", type => ASN::RawType.new(name => "AttributeDescription", type => "AttributeDescription", params => {}), params => {}), ASN::RawType.new(name => "vals", type => ASN::RawType.new(name => Any, type => "SET OF", params => {:of(ASN::RawType.new(name => "AttributeValue", type => "AttributeValue", params => {}))}), params => {:of(ASN::RawType.new(name => "AttributeValue", type => "AttributeValue", params => {}))})))})), ASN::TypeAssignment.new(name => "MatchingRuleId", type => ASN::RawType.new(name => "LDAPString", type => "LDAPString", params => {})), ASN::TypeAssignment.new(name => "LDAPResult", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "resultCode", type => ASN::RawType.new(name => Any, type => "ENUMERATED", params => {:defs(${:adminLimitExceeded(11), :affectsMultipleDSAs(71), :aliasDereferencingProblem(36), :aliasProblem(33), :attributeOrValueExists(20), :authMethodNotSupported(7), :busy(51), :compareFalse(5), :compareTrue(6), :confidentialityRequired(13), :constraintViolation(19), :entryAlreadyExists(68), :inappropriateAuthentication(48), :inappropriateMatching(18), :insufficientAccessRights(50), :invalidAttributeSyntax(21), :invalidCredentials(49), :invalidDNSyntax(34), :loopDetect(54), :namingViolation(64), :noSuchAttribute(16), :noSuchObject(32), :notAllowedOnNonLeaf(66), :notAllowedOnRDN(67), :objectClassModsProhibited(69), :objectClassViolation(65), :operationsError(1), :other(80), :protocolError(2), :referral(10), :saslBindInProgress(14), :sizeLimitExceeded(4), :strongAuthRequired(8), :success(0), :timeLimitExceeded(3), :unavailable(52), :unavailableCriticalExtension(12), :undefinedAttributeType(17), :unwillingToPerform(53)})}), params => {:defs(${:adminLimitExceeded(11), :affectsMultipleDSAs(71), :aliasDereferencingProblem(36), :aliasProblem(33), :attributeOrValueExists(20), :authMethodNotSupported(7), :busy(51), :compareFalse(5), :compareTrue(6), :confidentialityRequired(13), :constraintViolation(19), :entryAlreadyExists(68), :inappropriateAuthentication(48), :inappropriateMatching(18), :insufficientAccessRights(50), :invalidAttributeSyntax(21), :invalidCredentials(49), :invalidDNSyntax(34), :loopDetect(54), :namingViolation(64), :noSuchAttribute(16), :noSuchObject(32), :notAllowedOnNonLeaf(66), :notAllowedOnRDN(67), :objectClassModsProhibited(69), :objectClassViolation(65), :operationsError(1), :other(80), :protocolError(2), :referral(10), :saslBindInProgress(14), :sizeLimitExceeded(4), :strongAuthRequired(8), :success(0), :timeLimitExceeded(3), :unavailable(52), :unavailableCriticalExtension(12), :undefinedAttributeType(17), :unwillingToPerform(53)})}), ASN::RawType.new(name => "matchedDN", type => ASN::RawType.new(name => "LDAPDN", type => "LDAPDN", params => {}), params => {}), ASN::RawType.new(name => "errorMessage", type => ASN::RawType.new(name => "LDAPString", type => "LDAPString", params => {}), params => {}), ASN::RawType.new(name => "referral", type => ASN::RawType.new(name => "Referral", type => "Referral", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 3))}), params => {:optional(Bool::True), :tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 3))})))})), ASN::TypeAssignment.new(name => "Referral", type => ASN::RawType.new(name => Any, type => "SEQUENCE OF", params => {:of(ASN::RawType.new(name => "LDAPURL", type => "LDAPURL", params => {}))})), ASN::TypeAssignment.new(name => "LDAPURL", type => ASN::RawType.new(name => "LDAPString", type => "LDAPString", params => {})), ASN::TypeAssignment.new(name => "Controls", type => ASN::RawType.new(name => Any, type => "SEQUENCE OF", params => {:of(ASN::RawType.new(name => "Control", type => "Control", params => {}))})), ASN::TypeAssignment.new(name => "Control", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "controlType", type => ASN::RawType.new(name => "LDAPOID", type => "LDAPOID", params => {}), params => {}), ASN::RawType.new(name => "criticality", type => ASN::RawType.new(name => Any, type => "BOOLEAN", params => {}), params => {:default(Bool::False)}), ASN::RawType.new(name => "controlValue", type => ASN::RawType.new(name => Any, type => "OCTET STRING", params => {}), params => {:optional(Bool::True)})))})), ASN::TypeAssignment.new(name => "BindRequest", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "version", type => ASN::RawType.new(name => Any, type => "INTEGER", params => {}), params => {}), ASN::RawType.new(name => "name", type => ASN::RawType.new(name => "LDAPDN", type => "LDAPDN", params => {}), params => {}), ASN::RawType.new(name => "authentication", type => ASN::RawType.new(name => "AuthenticationChoice", type => "AuthenticationChoice", params => {}), params => {}))), :tag(ASN::Tag.new(class => "APPLICATION", value => 0))})), ASN::TypeAssignment.new(name => "AuthenticationChoice", type => ASN::RawType.new(name => Any, type => "CHOICE", params => {:choices(${:sasl(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 3) => ASN::RawType.new(name => "SaslCredentials", type => "SaslCredentials", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 3))})), :simple(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 0) => ASN::RawType.new(name => Any, type => "OCTET STRING", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 0))}))})})), ASN::TypeAssignment.new(name => "SaslCredentials", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "mechanism", type => ASN::RawType.new(name => "LDAPString", type => "LDAPString", params => {}), params => {}), ASN::RawType.new(name => "credentials", type => ASN::RawType.new(name => Any, type => "OCTET STRING", params => {}), params => {:optional(Bool::True)})))})), ASN::TypeAssignment.new(name => "BindResponse", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "resultCode", type => ASN::RawType.new(name => Any, type => "ENUMERATED", params => {:defs(${:adminLimitExceeded(11), :affectsMultipleDSAs(71), :aliasDereferencingProblem(36), :aliasProblem(33), :attributeOrValueExists(20), :authMethodNotSupported(7), :busy(51), :compareFalse(5), :compareTrue(6), :confidentialityRequired(13), :constraintViolation(19), :entryAlreadyExists(68), :inappropriateAuthentication(48), :inappropriateMatching(18), :insufficientAccessRights(50), :invalidAttributeSyntax(21), :invalidCredentials(49), :invalidDNSyntax(34), :loopDetect(54), :namingViolation(64), :noSuchAttribute(16), :noSuchObject(32), :notAllowedOnNonLeaf(66), :notAllowedOnRDN(67), :objectClassModsProhibited(69), :objectClassViolation(65), :operationsError(1), :other(80), :protocolError(2), :referral(10), :saslBindInProgress(14), :sizeLimitExceeded(4), :strongAuthRequired(8), :success(0), :timeLimitExceeded(3), :unavailable(52), :unavailableCriticalExtension(12), :undefinedAttributeType(17), :unwillingToPerform(53)})}), params => {:defs(${:adminLimitExceeded(11), :affectsMultipleDSAs(71), :aliasDereferencingProblem(36), :aliasProblem(33), :attributeOrValueExists(20), :authMethodNotSupported(7), :busy(51), :compareFalse(5), :compareTrue(6), :confidentialityRequired(13), :constraintViolation(19), :entryAlreadyExists(68), :inappropriateAuthentication(48), :inappropriateMatching(18), :insufficientAccessRights(50), :invalidAttributeSyntax(21), :invalidCredentials(49), :invalidDNSyntax(34), :loopDetect(54), :namingViolation(64), :noSuchAttribute(16), :noSuchObject(32), :notAllowedOnNonLeaf(66), :notAllowedOnRDN(67), :objectClassModsProhibited(69), :objectClassViolation(65), :operationsError(1), :other(80), :protocolError(2), :referral(10), :saslBindInProgress(14), :sizeLimitExceeded(4), :strongAuthRequired(8), :success(0), :timeLimitExceeded(3), :unavailable(52), :unavailableCriticalExtension(12), :undefinedAttributeType(17), :unwillingToPerform(53)})}), ASN::RawType.new(name => "matchedDN", type => ASN::RawType.new(name => "LDAPDN", type => "LDAPDN", params => {}), params => {}), ASN::RawType.new(name => "errorMessage", type => ASN::RawType.new(name => "LDAPString", type => "LDAPString", params => {}), params => {}), ASN::RawType.new(name => "referral", type => ASN::RawType.new(name => "Referral", type => "Referral", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 3))}), params => {:optional(Bool::True), :tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 3))}), ASN::RawType.new(name => "serverSaslCreds", type => ASN::RawType.new(name => Any, type => "OCTET STRING", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 7))}), params => {:optional(Bool::True), :tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 7))}))), :tag(ASN::Tag.new(class => "APPLICATION", value => 1))})), ASN::TypeAssignment.new(name => "UnbindRequest", type => ASN::RawType.new(name => Any, type => "NULL", params => {:tag(ASN::Tag.new(class => "APPLICATION", value => 2))})), ASN::TypeAssignment.new(name => "SearchRequest", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "baseObject", type => ASN::RawType.new(name => "LDAPDN", type => "LDAPDN", params => {}), params => {}), ASN::RawType.new(name => "scope", type => ASN::RawType.new(name => Any, type => "ENUMERATED", params => {:defs(${:baseObject(0), :singleLevel(1), :wholeSubtree(2)})}), params => {:defs(${:baseObject(0), :singleLevel(1), :wholeSubtree(2)})}), ASN::RawType.new(name => "derefAliases", type => ASN::RawType.new(name => Any, type => "ENUMERATED", params => {:defs(${:derefAlways(3), :derefFindingBaseObj(2), :derefInSearching(1), :neverDerefAliases(0)})}), params => {:defs(${:derefAlways(3), :derefFindingBaseObj(2), :derefInSearching(1), :neverDerefAliases(0)})}), ASN::RawType.new(name => "sizeLimit", type => ASN::RawType.new(name => Any, type => "INTEGER", params => {}), params => {}), ASN::RawType.new(name => "timeLimit", type => ASN::RawType.new(name => Any, type => "INTEGER", params => {}), params => {}), ASN::RawType.new(name => "typesOnly", type => ASN::RawType.new(name => Any, type => "BOOLEAN", params => {}), params => {}), ASN::RawType.new(name => "filter", type => ASN::RawType.new(name => "Filter", type => "Filter", params => {}), params => {}), ASN::RawType.new(name => "attributes", type => ASN::RawType.new(name => "AttributeDescriptionList", type => "AttributeDescriptionList", params => {}), params => {}))), :tag(ASN::Tag.new(class => "APPLICATION", value => 3))})), ASN::TypeAssignment.new(name => "Filter", type => ASN::RawType.new(name => Any, type => "CHOICE", params => {:choices(${:and(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 0) => ASN::RawType.new(name => Any, type => "SET OF", params => {:of(ASN::RawType.new(name => "Filter", type => "Filter", params => {})), :tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 0))})), :approxMatch(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 8) => ASN::RawType.new(name => "AttributeValueAssertion", type => "AttributeValueAssertion", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 8))})), :equalityMatch(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 3) => ASN::RawType.new(name => "AttributeValueAssertion", type => "AttributeValueAssertion", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 3))})), :extensibleMatch(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 9) => ASN::RawType.new(name => "MatchingRuleAssertion", type => "MatchingRuleAssertion", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 9))})), :greaterOrEqual(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 5) => ASN::RawType.new(name => "AttributeValueAssertion", type => "AttributeValueAssertion", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 5))})), :lessOrEqual(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 6) => ASN::RawType.new(name => "AttributeValueAssertion", type => "AttributeValueAssertion", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 6))})), :not(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 2) => ASN::RawType.new(name => "Filter", type => "Filter", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 2))})), :or(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 1) => ASN::RawType.new(name => Any, type => "SET OF", params => {:of(ASN::RawType.new(name => "Filter", type => "Filter", params => {})), :tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 1))})), :present(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 7) => ASN::RawType.new(name => "AttributeDescription", type => "AttributeDescription", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 7))})), :substrings(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 4) => ASN::RawType.new(name => "SubstringFilter", type => "SubstringFilter", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 4))}))})})), ASN::TypeAssignment.new(name => "SubstringFilter", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "type", type => ASN::RawType.new(name => "AttributeDescription", type => "AttributeDescription", params => {}), params => {}), ASN::RawType.new(name => "substrings", type => ASN::RawType.new(name => Any, type => "SEQUENCE OF", params => {:of(ASN::RawType.new(name => Any, type => "CHOICE", params => {:choices(${:any(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 1) => ASN::RawType.new(name => "LDAPString", type => "LDAPString", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 1))})), :final(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 2) => ASN::RawType.new(name => "LDAPString", type => "LDAPString", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 2))})), :initial(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 0) => ASN::RawType.new(name => "LDAPString", type => "LDAPString", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 0))}))})}))}), params => {:of(ASN::RawType.new(name => Any, type => "CHOICE", params => {:choices(${:any(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 1) => ASN::RawType.new(name => "LDAPString", type => "LDAPString", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 1))})), :final(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 2) => ASN::RawType.new(name => "LDAPString", type => "LDAPString", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 2))})), :initial(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 0) => ASN::RawType.new(name => "LDAPString", type => "LDAPString", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 0))}))})}))})))})), ASN::TypeAssignment.new(name => "MatchingRuleAssertion", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "matchingRule", type => ASN::RawType.new(name => "MatchingRuleId", type => "MatchingRuleId", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 1))}), params => {:optional(Bool::True), :tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 1))}), ASN::RawType.new(name => "type", type => ASN::RawType.new(name => "AttributeDescription", type => "AttributeDescription", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 2))}), params => {:optional(Bool::True), :tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 2))}), ASN::RawType.new(name => "matchValue", type => ASN::RawType.new(name => "AssertionValue", type => "AssertionValue", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 3))}), params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 3))}), ASN::RawType.new(name => "dnAttributes", type => ASN::RawType.new(name => Any, type => "BOOLEAN", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 4))}), params => {:default(Bool::False), :tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 4))})))})), ASN::TypeAssignment.new(name => "SearchResultEntry", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "objectName", type => ASN::RawType.new(name => "LDAPDN", type => "LDAPDN", params => {}), params => {}), ASN::RawType.new(name => "attributes", type => ASN::RawType.new(name => "PartialAttributeList", type => "PartialAttributeList", params => {}), params => {}))), :tag(ASN::Tag.new(class => "APPLICATION", value => 4))})), ASN::TypeAssignment.new(name => "PartialAttributeList", type => ASN::RawType.new(name => Any, type => "SEQUENCE OF", params => {:of(ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "type", type => ASN::RawType.new(name => "AttributeDescription", type => "AttributeDescription", params => {}), params => {}), ASN::RawType.new(name => "vals", type => ASN::RawType.new(name => Any, type => "SET OF", params => {:of(ASN::RawType.new(name => "AttributeValue", type => "AttributeValue", params => {}))}), params => {:of(ASN::RawType.new(name => "AttributeValue", type => "AttributeValue", params => {}))})))}))})), ASN::TypeAssignment.new(name => "SearchResultReference", type => ASN::RawType.new(name => Any, type => "SEQUENCE OF", params => {:of(ASN::RawType.new(name => "LDAPURL", type => "LDAPURL", params => {})), :tag(ASN::Tag.new(class => "APPLICATION", value => 19))})), ASN::TypeAssignment.new(name => "SearchResultDone", type => ASN::RawType.new(name => "LDAPResult", type => "LDAPResult", params => {:tag(ASN::Tag.new(class => "APPLICATION", value => 5))})), ASN::TypeAssignment.new(name => "ModifyRequest", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "object", type => ASN::RawType.new(name => "LDAPDN", type => "LDAPDN", params => {}), params => {}), ASN::RawType.new(name => "modification", type => ASN::RawType.new(name => Any, type => "SEQUENCE OF", params => {:of(ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "operation", type => ASN::RawType.new(name => Any, type => "ENUMERATED", params => {:defs(${:add(0), :delete(1), :replace(2)})}), params => {:defs(${:add(0), :delete(1), :replace(2)})}), ASN::RawType.new(name => "modification", type => ASN::RawType.new(name => "AttributeTypeAndValues", type => "AttributeTypeAndValues", params => {}), params => {})))}))}), params => {:of(ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "operation", type => ASN::RawType.new(name => Any, type => "ENUMERATED", params => {:defs(${:add(0), :delete(1), :replace(2)})}), params => {:defs(${:add(0), :delete(1), :replace(2)})}), ASN::RawType.new(name => "modification", type => ASN::RawType.new(name => "AttributeTypeAndValues", type => "AttributeTypeAndValues", params => {}), params => {})))}))}))), :tag(ASN::Tag.new(class => "APPLICATION", value => 6))})), ASN::TypeAssignment.new(name => "AttributeTypeAndValues", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "type", type => ASN::RawType.new(name => "AttributeDescription", type => "AttributeDescription", params => {}), params => {}), ASN::RawType.new(name => "vals", type => ASN::RawType.new(name => Any, type => "SET OF", params => {:of(ASN::RawType.new(name => "AttributeValue", type => "AttributeValue", params => {}))}), params => {:of(ASN::RawType.new(name => "AttributeValue", type => "AttributeValue", params => {}))})))})), ASN::TypeAssignment.new(name => "ModifyResponse", type => ASN::RawType.new(name => "LDAPResult", type => "LDAPResult", params => {:tag(ASN::Tag.new(class => "APPLICATION", value => 7))})), ASN::TypeAssignment.new(name => "AddRequest", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "entry", type => ASN::RawType.new(name => "LDAPDN", type => "LDAPDN", params => {}), params => {}), ASN::RawType.new(name => "attributes", type => ASN::RawType.new(name => "AttributeList", type => "AttributeList", params => {}), params => {}))), :tag(ASN::Tag.new(class => "APPLICATION", value => 8))})), ASN::TypeAssignment.new(name => "AttributeList", type => ASN::RawType.new(name => Any, type => "SEQUENCE OF", params => {:of(ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "type", type => ASN::RawType.new(name => "AttributeDescription", type => "AttributeDescription", params => {}), params => {}), ASN::RawType.new(name => "vals", type => ASN::RawType.new(name => Any, type => "SET OF", params => {:of(ASN::RawType.new(name => "AttributeValue", type => "AttributeValue", params => {}))}), params => {:of(ASN::RawType.new(name => "AttributeValue", type => "AttributeValue", params => {}))})))}))})), ASN::TypeAssignment.new(name => "AddResponse", type => ASN::RawType.new(name => "LDAPResult", type => "LDAPResult", params => {:tag(ASN::Tag.new(class => "APPLICATION", value => 9))})), ASN::TypeAssignment.new(name => "DelRequest", type => ASN::RawType.new(name => "LDAPDN", type => "LDAPDN", params => {:tag(ASN::Tag.new(class => "APPLICATION", value => 10))})), ASN::TypeAssignment.new(name => "DelResponse", type => ASN::RawType.new(name => "LDAPResult", type => "LDAPResult", params => {:tag(ASN::Tag.new(class => "APPLICATION", value => 11))})), ASN::TypeAssignment.new(name => "ModifyDNRequest", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "entry", type => ASN::RawType.new(name => "LDAPDN", type => "LDAPDN", params => {}), params => {}), ASN::RawType.new(name => "newrdn", type => ASN::RawType.new(name => "RelativeLDAPDN", type => "RelativeLDAPDN", params => {}), params => {}), ASN::RawType.new(name => "deleteoldrdn", type => ASN::RawType.new(name => Any, type => "BOOLEAN", params => {}), params => {}), ASN::RawType.new(name => "newSuperior", type => ASN::RawType.new(name => "LDAPDN", type => "LDAPDN", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 0))}), params => {:optional(Bool::True), :tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 0))}))), :tag(ASN::Tag.new(class => "APPLICATION", value => 12))})), ASN::TypeAssignment.new(name => "ModifyDNResponse", type => ASN::RawType.new(name => "LDAPResult", type => "LDAPResult", params => {:tag(ASN::Tag.new(class => "APPLICATION", value => 13))})), ASN::TypeAssignment.new(name => "CompareRequest", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "entry", type => ASN::RawType.new(name => "LDAPDN", type => "LDAPDN", params => {}), params => {}), ASN::RawType.new(name => "ava", type => ASN::RawType.new(name => "AttributeValueAssertion", type => "AttributeValueAssertion", params => {}), params => {}))), :tag(ASN::Tag.new(class => "APPLICATION", value => 14))})), ASN::TypeAssignment.new(name => "CompareResponse", type => ASN::RawType.new(name => "LDAPResult", type => "LDAPResult", params => {:tag(ASN::Tag.new(class => "APPLICATION", value => 15))})), ASN::TypeAssignment.new(name => "AbandonRequest", type => ASN::RawType.new(name => "MessageID", type => "MessageID", params => {:tag(ASN::Tag.new(class => "APPLICATION", value => 16))})), ASN::TypeAssignment.new(name => "ExtendedRequest", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "requestName", type => ASN::RawType.new(name => "LDAPOID", type => "LDAPOID", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 0))}), params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 0))}), ASN::RawType.new(name => "requestValue", type => ASN::RawType.new(name => Any, type => "OCTET STRING", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 1))}), params => {:optional(Bool::True), :tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 1))}))), :tag(ASN::Tag.new(class => "APPLICATION", value => 23))})), ASN::TypeAssignment.new(name => "ExtendedResponse", type => ASN::RawType.new(name => Any, type => "SEQUENCE", params => {:fields($(ASN::RawType.new(name => "resultCode", type => ASN::RawType.new(name => Any, type => "ENUMERATED", params => {:defs(${:adminLimitExceeded(11), :affectsMultipleDSAs(71), :aliasDereferencingProblem(36), :aliasProblem(33), :attributeOrValueExists(20), :authMethodNotSupported(7), :busy(51), :compareFalse(5), :compareTrue(6), :confidentialityRequired(13), :constraintViolation(19), :entryAlreadyExists(68), :inappropriateAuthentication(48), :inappropriateMatching(18), :insufficientAccessRights(50), :invalidAttributeSyntax(21), :invalidCredentials(49), :invalidDNSyntax(34), :loopDetect(54), :namingViolation(64), :noSuchAttribute(16), :noSuchObject(32), :notAllowedOnNonLeaf(66), :notAllowedOnRDN(67), :objectClassModsProhibited(69), :objectClassViolation(65), :operationsError(1), :other(80), :protocolError(2), :referral(10), :saslBindInProgress(14), :sizeLimitExceeded(4), :strongAuthRequired(8), :success(0), :timeLimitExceeded(3), :unavailable(52), :unavailableCriticalExtension(12), :undefinedAttributeType(17), :unwillingToPerform(53)})}), params => {:defs(${:adminLimitExceeded(11), :affectsMultipleDSAs(71), :aliasDereferencingProblem(36), :aliasProblem(33), :attributeOrValueExists(20), :authMethodNotSupported(7), :busy(51), :compareFalse(5), :compareTrue(6), :confidentialityRequired(13), :constraintViolation(19), :entryAlreadyExists(68), :inappropriateAuthentication(48), :inappropriateMatching(18), :insufficientAccessRights(50), :invalidAttributeSyntax(21), :invalidCredentials(49), :invalidDNSyntax(34), :loopDetect(54), :namingViolation(64), :noSuchAttribute(16), :noSuchObject(32), :notAllowedOnNonLeaf(66), :notAllowedOnRDN(67), :objectClassModsProhibited(69), :objectClassViolation(65), :operationsError(1), :other(80), :protocolError(2), :referral(10), :saslBindInProgress(14), :sizeLimitExceeded(4), :strongAuthRequired(8), :success(0), :timeLimitExceeded(3), :unavailable(52), :unavailableCriticalExtension(12), :undefinedAttributeType(17), :unwillingToPerform(53)})}), ASN::RawType.new(name => "matchedDN", type => ASN::RawType.new(name => "LDAPDN", type => "LDAPDN", params => {}), params => {}), ASN::RawType.new(name => "errorMessage", type => ASN::RawType.new(name => "LDAPString", type => "LDAPString", params => {}), params => {}), ASN::RawType.new(name => "referral", type => ASN::RawType.new(name => "Referral", type => "Referral", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 3))}), params => {:optional(Bool::True), :tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 3))}), ASN::RawType.new(name => "responseName", type => ASN::RawType.new(name => "LDAPOID", type => "LDAPOID", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 10))}), params => {:optional(Bool::True), :tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 10))}), ASN::RawType.new(name => "response", type => ASN::RawType.new(name => Any, type => "OCTET STRING", params => {:tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 11))}), params => {:optional(Bool::True), :tag(ASN::Tag.new(class => "CONTEXT-SPECIFIC", value => 11))}))), :tag(ASN::Tag.new(class => "APPLICATION", value => 24))}))])
+  [ASN::Grammar] ok 1 - LDAP spec is parsed
+  [ASN::Grammar] ok 2 - Name is parsed
+  [ASN::Grammar] ok 3 - Schema is parsed
+  [ASN::Grammar] ok 4 - All types are parsed
+  [ASN::Grammar] ok 5 - One value is parsed
+  [ASN::Grammar] ok 6 - Value type name is parsed
+  [ASN::Grammar] ok 7 - Value type type is parsed
+  [ASN::Grammar] ok 8 - Value type value is parsed
+  [ASN::Grammar] 1..8
+  ===> Testing [OK] for ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man>
+  ===> Installing: ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man>
+  ===> Install [OK] for ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man>
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 51.942s
+               CPU time consumed: 1min 10.241s
+                     Memory peak: 1.1G (swap: 0B)
+
+  ```
+  </details>
+  <details>
+  <summary>New Output</summary>
+
+  ```
+  Running as unit: run-p3011818-i2989877.service; invocation ID: b093bc2936e04d3eb7897d5b2f4fd617
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: ASN::Grammar
+  ===> Found: ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man> [via Zef::Repository::Ecosystems<fez>]
+  [ASN::Grammar] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870238.3011820.9608.877463504532/b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz https://360.zef.pm/A/SN/ASN_GRAMMAR/b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz
+  ===> Fetching [OK]: ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870238.3011820.9608.877463504532/b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz
+  [ASN::Grammar] Command: tar -t -f ./b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz
+  [ASN::Grammar] Command: tar -xvf ./b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz -C ../b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz
+  ===> Extraction [OK]: ASN::Grammar to /home/coke/sandbox/blin/data/zef-data/tmp/b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz
+  ===> Testing: ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man>
+  [ASN::Grammar] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/b559ae5c4aedddbad4b2e14d524c06011f558049.tar.gz t/00-sanity.t
+  [ASN::Grammar] (Any)
+  [ASN::Grammar] not ok 1 - LDAP spec is parsed
+  [ASN::Grammar] # Failed test 'LDAP spec is parsed'
+  [ASN::Grammar] # at t/00-sanity.t line 370
+  [ASN::Grammar] # Actual type: Any
+  [ASN::Grammar] No such method 'name' for invocant of type 'Any'. Did you mean any of
+  [ASN::Grammar] these: 'are', 'none', 'note', 'take'?
+  [ASN::Grammar]   in block <unit> at t/00-sanity.t line 372
+  ===> Testing [FAIL]: ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man>
+  [ASN::Grammar] Failed to get passing tests, but continuing with --force-test
+  ===> Installing: ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man>
+  ===> Install [OK] for ASN::Grammar:ver<0.3.5>:auth<zef:Altai-man>
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 5.096s
+               CPU time consumed: 4.576s
+                     Memory peak: 776.4M (swap: 0B)
+
+  ```
+  </details>
+* [ ] [CSS::Grammar](https://raku.land/zef:dwarring/CSS::Grammar) – Fail, Bisected: [b180d60](https://github.com/rakudo/rakudo/commit/b180d6078dd3f2359929e0315bc40c4b680f0a17) [da2a525](https://github.com/rakudo/rakudo/commit/da2a52539d735095ec620b744e441037b046208d)
+  <details><Summary>Old Output</summary>
+
+  ```
+  Running as unit: run-p3014739-i2992022.service; invocation ID: e451f8b533d0422ca85a201b4af5839f
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: CSS::Grammar
+  ===> Found: CSS::Grammar:ver<0.4.3>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
+  [CSS::Grammar] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870337.3014740.2659.6130983679354/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz https://360.zef.pm/C/SS/CSS_GRAMMAR/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz
+  ===> Fetching [OK]: CSS::Grammar:ver<0.4.3>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870337.3014740.2659.6130983679354/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz
+  [CSS::Grammar] Command: tar -t -f ./5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz
+  [CSS::Grammar] Command: tar -xvf ./5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz -C ../5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz
+  ===> Extraction [OK]: CSS::Grammar to /home/coke/sandbox/blin/data/zef-data/tmp/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz
+  ===> Testing: CSS::Grammar:ver<0.4.3>:auth<zef:dwarring>
+  [CSS::Grammar] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz/CSS-Grammar-0.4.3 t/compat.t
+  [CSS::Grammar] ok 1 - css1 ws parse:  
+  [CSS::Grammar] ok 2 - css1 ws no warnings
+  [CSS::Grammar] ok 3 - css21 ws parse:  
+  [CSS::Grammar] ok 4 - css21 ws no warnings
+  [CSS::Grammar] ok 5 - css3 ws parse:  
+  [CSS::Grammar] ok 6 - css3 ws no warnings
+  [CSS::Grammar] ok 7 - css1 ws parse: /* comments
+  [CSS::Grammar] # 1 */
+  [CSS::Grammar] ok 8 - css1 ws no warnings
+  [CSS::Grammar] ok 9 - css21 ws parse: /* comments
+  [CSS::Grammar] # 1 */
+  [CSS::Grammar] ok 10 - css21 ws no warnings
+  [CSS::Grammar] ok 11 - css3 ws parse: /* comments
+  [CSS::Grammar] # 1 */
+  [CSS::Grammar] ok 12 - css3 ws no warnings
+  [CSS::Grammar] ok 13 - css1 ws parse: <!-- comments
+  [CSS::Grammar] # 2 -->
+  [CSS::Grammar] ok 14 - css1 ws no warnings
+  [CSS::Grammar] ok 15 - css21 ws parse: <!-- comments
+  [CSS::Grammar] # 2 -->
+  [CSS::Grammar] ok 16 - css21 ws no warnings
+  [CSS::Grammar] ok 17 - css3 ws parse: <!-- comments
+  [CSS::Grammar] # 2 -->
+  [CSS::Grammar] ok 18 - css3 ws no warnings
+  [CSS::Grammar] ok 19 - css1 ws parse: <!-- unterminated comment
+  [CSS::Grammar] ok 20 - css1 ws warnings
+  [CSS::Grammar] ok 21 - css21 ws parse: <!-- unterminated comment
+  [CSS::Grammar] ok 22 - css21 ws warnings
+  [CSS::Grammar] ok 23 - css3 ws parse: <!-- unterminated comment
+  [CSS::Grammar] ok 24 - css3 ws warnings
+  [CSS::Grammar] ok 25 - css1 ws parse: /* unterminated... comment ... 
+  [CSS::Grammar] ok 26 - css1 ws warnings
+  [CSS::Grammar] ok 27 - css21 ws parse: /* unterminated... comment ... 
+  [CSS::Grammar] ok 28 - css21 ws warnings
+  [CSS::Grammar] ok 29 - css3 ws parse: /* unterminated... comment ... 
+  [CSS::Grammar] ok 30 - css3 ws warnings
+  [CSS::Grammar] ok 31 - css1 name parse: my-class
+  [CSS::Grammar] ok 32 - css1 name no warnings
+  [CSS::Grammar] ok 33 - css1 name ast
+  [CSS::Grammar] ok 34 - css21 name parse: my-class
+  [CSS::Grammar] ok 35 - css21 name no warnings
+  [CSS::Grammar] ok 36 - css21 name ast
+  [CSS::Grammar] ok 37 - css3 name parse: my-class
+  [CSS::Grammar] ok 38 - css3 name no warnings
+  [CSS::Grammar] ok 39 - css3 name ast
+  [CSS::Grammar] ok 40 - css1 name parse: \021
+  [CSS::Grammar] ok 41 - css1 name no warnings
+  [CSS::Grammar] ok 42 - css1 name ast
+  [CSS::Grammar] ok 43 - css21 name parse: \021
+  [CSS::Grammar] ok 44 - css21 name no warnings
+  [CSS::Grammar] ok 45 - css21 name ast
+  [CSS::Grammar] ok 46 - css3 name parse: \021
+  [CSS::Grammar] ok 47 - css3 name no warnings
+  [CSS::Grammar] ok 48 - css3 name ast
+  [CSS::Grammar] ok 49 - # SKIP name: unicode surrogates handling in rakudo
+  [CSS::Grammar] ok 50 - # SKIP name: unicode surrogates handling in rakudo
+  [CSS::Grammar] ok 51 - # SKIP name: unicode surrogates handling in rakudo
+  [CSS::Grammar] ok 52 - css1 num parse: 2.52
+  [CSS::Grammar] ok 53 - css1 num no warnings
+  [CSS::Grammar] ok 54 - css1 num ast
+  [CSS::Grammar] ok 55 - css21 num parse: 2.52
+  [CSS::Grammar] ok 56 - css21 num no warnings
+  [CSS::Grammar] ok 57 - css21 num ast
+  [CSS::Grammar] ok 58 - css3 num parse: 2.52
+  [CSS::Grammar] ok 59 - css3 num no warnings
+  [CSS::Grammar] ok 60 - css3 num ast
+  [CSS::Grammar] ok 61 - css1 num parse: 0
+  [CSS::Grammar] ok 62 - css1 num no warnings
+  [CSS::Grammar] ok 63 - css1 num ast
+  [CSS::Grammar] ok 64 - css21 num parse: 0
+  [CSS::Grammar] ok 65 - css21 num no warnings
+  [CSS::Grammar] ok 66 - css21 num ast
+  [CSS::Grammar] ok 67 - css3 num parse: 0
+  [CSS::Grammar] ok 68 - css3 num no warnings
+  [CSS::Grammar] ok 69 - css3 num ast
+  [CSS::Grammar] ok 70 - css1 num parse: 1
+  [CSS::Grammar] ok 71 - css1 num no warnings
+  [CSS::Grammar] ok 72 - css1 num ast
+  [CSS::Grammar] ok 73 - css21 num parse: 1
+  [CSS::Grammar] ok 74 - css21 num no warnings
+  [CSS::Grammar] ok 75 - css21 num ast
+  [CSS::Grammar] ok 76 - css3 num parse: 1
+  [CSS::Grammar] ok 77 - css3 num no warnings
+  [CSS::Grammar] ok 78 - css3 num ast
+  [CSS::Grammar] ok 79 - css1 num parse: .1
+  [CSS::Grammar] ok 80 - css1 num no warnings
+  [CSS::Grammar] ok 81 - css1 num ast
+  [CSS::Grammar] ok 82 - css21 num parse: .1
+  [CSS::Grammar] ok 83 - css21 num no warnings
+  [CSS::Grammar] ok 84 - css21 num ast
+  [CSS::Grammar] ok 85 - css3 num parse: .1
+  [CSS::Grammar] ok 86 - css3 num no warnings
+  [CSS::Grammar] ok 87 - css3 num ast
+  [CSS::Grammar] ok 88 - css1 num parse: +1.9
+  [CSS::Grammar] ok 89 - css1 num no warnings
+  [CSS::Grammar] ok 90 - css1 num ast
+  [CSS::Grammar] ok 91 - css21 num parse: +1.9
+  [CSS::Grammar] ok 92 - css21 num no warnings
+  [CSS::Grammar] ok 93 - css21 num ast
+  [CSS::Grammar] ok 94 - css3 num parse: +1.9
+  [CSS::Grammar] ok 95 - css3 num no warnings
+  [CSS::Grammar] ok 96 - css3 num ast
+  [CSS::Grammar] ok 97 - css1 num parse: -3.14
+  [CSS::Grammar] ok 98 - css1 num no warnings
+  [CSS::Grammar] ok 99 - css1 num ast
+  [CSS::Grammar] ok 100 - css21 num parse: -3.14
+  [CSS::Grammar] ok 101 - css21 num no warnings
+  [CSS::Grammar] ok 102 - css21 num ast
+  [CSS::Grammar] ok 103 - css3 num parse: -3.14
+  [CSS::Grammar] ok 104 - css3 num no warnings
+  [CSS::Grammar] ok 105 - css3 num ast
+  [CSS::Grammar] ok 106 - css1 id parse:  \#z0y\021
+  [CSS::Grammar] ok 107 - css1 id no warnings
+  [CSS::Grammar] ok 108 - css1 id ast
+  [CSS::Grammar] ok 109 - css21 id parse:  \#z0y\021
+  [CSS::Grammar] ok 110 - css21 id no warnings
+  [CSS::Grammar] ok 111 - css21 id ast
+  [CSS::Grammar] ok 112 - css3 id parse:  \#z0y\021
+  [CSS::Grammar] ok 113 - css3 id no warnings
+  [CSS::Grammar] ok 114 - css3 id ast
+  [CSS::Grammar] ok 115 - css1 id parse:  \#\
+  [CSS::Grammar] # z0y\021
+  [CSS::Grammar] ok 116 - css1 id no warnings
+  [CSS::Grammar] ok 117 - css1 id ast
+  [CSS::Grammar] ok 118 - css21 id parse:  \#\
+  [CSS::Grammar] # z0y\021
+  [CSS::Grammar] ok 119 - css21 id no warnings
+  [CSS::Grammar] ok 120 - css21 id ast
+  [CSS::Grammar] ok 121 - css3 id parse:  \#\
+  [CSS::Grammar] # z0y\021
+  [CSS::Grammar] ok 122 - css3 id no warnings
+  [CSS::Grammar] ok 123 - css3 id ast
+  [CSS::Grammar] ok 124 - css1 string parse: 'hi\021 there'
+  [CSS::Grammar] ok 125 - css1 string no warnings
+  [CSS::Grammar] ok 126 - css1 string ast
+  [CSS::Grammar] ok 127 - css21 string parse: 'hi\021 there'
+  [CSS::Grammar] ok 128 - css21 string no warnings
+  [CSS::Grammar] ok 129 - css21 string ast
+  [CSS::Grammar] ok 130 - css3 string parse: 'hi\021 there'
+  [CSS::Grammar] ok 131 - css3 string no warnings
+  [CSS::Grammar] ok 132 - css3 string ast
+  [CSS::Grammar] ok 133 - css1 class parse: .zippy
+  [CSS::Grammar] ok 134 - css1 class no warnings
+  [CSS::Grammar] ok 135 - css1 class ast
+  [CSS::Grammar] ok 136 - css21 class parse: .zippy
+  [CSS::Grammar] ok 137 - css21 class no warnings
+  [CSS::Grammar] ok 138 - css21 class ast
+  [CSS::Grammar] ok 139 - css3 class parse: .zippy
+  [CSS::Grammar] ok 140 - css3 class no warnings
+  [CSS::Grammar] ok 141 - css3 class ast
+  [CSS::Grammar] ok 142 - css1 class parse: .\55ft
+  [CSS::Grammar] ok 143 - css1 class no warnings
+  [CSS::Grammar] ok 144 - css1 class ast
+  [CSS::Grammar] ok 145 - css21 class parse: .\55ft
+  [CSS::Grammar] ok 146 - css21 class no warnings
+  [CSS::Grammar] ok 147 - css21 class ast
+  [CSS::Grammar] ok 148 - css3 class parse: .\55ft
+  [CSS::Grammar] ok 149 - css3 class no warnings
+  [CSS::Grammar] ok 150 - css3 class ast
+  [CSS::Grammar] ok 151 - css1 color parse: Rgb(10, 20, 30)
+  [CSS::Grammar] ok 152 - css1 color no warnings
+  [CSS::Grammar] ok 153 - css1 color ast
+  [CSS::Grammar] ok 154 - css21 color parse: Rgb(10, 20, 30)
+  [CSS::Grammar] ok 155 - css21 color no warnings
+  [CSS::Grammar] ok 156 - css21 color ast
+  [CSS::Grammar] ok 157 - css3 color parse: Rgb(10, 20, 30)
+  [CSS::Grammar] ok 158 - css3 color no warnings
+  [CSS::Grammar] ok 159 - css3 color ast
+  [CSS::Grammar] ok 160 - css1 term parse: foo(bar)
+  [CSS::Grammar] ok 161 - css1 term no warnings
+  [CSS::Grammar] ok 162 - css21 term parse: foo(bar)
+  [CSS::Grammar] ok 163 - css21 term no warnings
+  [CSS::Grammar] ok 164 - css21 term ast
+  [CSS::Grammar] ok 165 - css3 term parse: foo(bar)
+  [CSS::Grammar] ok 166 - css3 term no warnings
+  [CSS::Grammar] ok 167 - css3 term ast
+  [CSS::Grammar] ok 168 - css1 expr parse: fr-ca
+  [CSS::Grammar] ok 169 - css1 expr no warnings
+  [CSS::Grammar] ok 170 - css1 expr ast
+  [CSS::Grammar] ok 171 - css21 expr parse: fr-ca
+  [CSS::Grammar] ok 172 - css21 expr no warnings
+  [CSS::Grammar] ok 173 - css21 expr ast
+  [CSS::Grammar] ok 174 - css3 expr parse: fr-ca
+  [CSS::Grammar] ok 175 - css3 expr no warnings
+  [CSS::Grammar] ok 176 - css3 expr ast
+  [CSS::Grammar] ok 177 - css1 pseudo parse: :visited
+  [CSS::Grammar] ok 178 - css1 pseudo no warnings
+  [CSS::Grammar] ok 179 - css1 pseudo ast
+  [CSS::Grammar] ok 180 - css21 pseudo parse: :visited
+  [CSS::Grammar] ok 181 - css21 pseudo no warnings
+  [CSS::Grammar] ok 182 - css21 pseudo ast
+  [CSS::Grammar] ok 183 - css3 pseudo parse: :visited
+  [CSS::Grammar] ok 184 - css3 pseudo no warnings
+  [CSS::Grammar] ok 185 - css3 pseudo ast
+  [CSS::Grammar] ok 186 - css1 pseudo parse: :Lang(fr-ca)
+  [CSS::Grammar] ok 187 - css1 pseudo no warnings
+  [CSS::Grammar] ok 188 - css1 pseudo ast
+  [CSS::Grammar] ok 189 - css21 pseudo parse: :Lang(fr-ca)
+  [CSS::Grammar] ok 190 - css21 pseudo no warnings
+  [CSS::Grammar] ok 191 - css21 pseudo ast
+  [CSS::Grammar] ok 192 - css3 pseudo parse: :Lang(fr-ca)
+  [CSS::Grammar] ok 193 - css3 pseudo no warnings
+  [CSS::Grammar] ok 194 - css3 pseudo ast
+  [CSS::Grammar] ok 195 - css1 import parse: @import url('file:///etc/passwd');
+  [CSS::Grammar] ok 196 - css1 import no warnings
+  [CSS::Grammar] ok 197 - css1 import ast
+  [CSS::Grammar] ok 198 - css21 import parse: @import url('file:///etc/passwd');
+  [CSS::Grammar] ok 199 - css21 import no warnings
+  [CSS::Grammar] ok 200 - css21 import ast
+  [CSS::Grammar] ok 201 - css3 import parse: @import url('file:///etc/passwd');
+  [CSS::Grammar] ok 202 - css3 import no warnings
+  [CSS::Grammar] ok 203 - css3 import ast
+  [CSS::Grammar] ok 204 - css1 import parse: @IMPORT '/etc/group';
+  [CSS::Grammar] ok 205 - css1 import no warnings
+  [CSS::Grammar] ok 206 - css1 import ast
+  [CSS::Grammar] ok 207 - css21 import parse: @IMPORT '/etc/group';
+  [CSS::Grammar] ok 208 - css21 import no warnings
+  [CSS::Grammar] ok 209 - css21 import ast
+  [CSS::Grammar] ok 210 - css3 import parse: @IMPORT '/etc/group';
+  [CSS::Grammar] ok 211 - css3 import no warnings
+  [CSS::Grammar] ok 212 - css3 import ast
+  [CSS::Grammar] ok 213 - css1 import parse: @import url(bluish\.css) projection, tv;
+  [CSS::Grammar] ok 214 - css1 import no warnings
+  [CSS::Grammar] ok 215 - css21 import parse: @import url(bluish\.css) projection, tv;
+  [CSS::Grammar] ok 216 - css21 import no warnings
+  [CSS::Grammar] ok 217 - css21 import ast
+  [CSS::Grammar] ok 218 - css3 import parse: @import url(bluish\.css) projection, tv;
+  [CSS::Grammar] ok 219 - css3 import no warnings
+  [CSS::Grammar] ok 220 - css3 import ast
+  [CSS::Grammar] ok 221 - css1 class parse: .my-class
+  [CSS::Grammar] ok 222 - css1 class no warnings
+  [CSS::Grammar] ok 223 - css1 class ast
+  [CSS::Grammar] ok 224 - css21 class parse: .my-class
+  [CSS::Grammar] ok 225 - css21 class no warnings
+  [CSS::Grammar] ok 226 - css21 class ast
+  [CSS::Grammar] ok 227 - css3 class parse: .my-class
+  [CSS::Grammar] ok 228 - css3 class no warnings
+  [CSS::Grammar] ok 229 - css3 class ast
+  [CSS::Grammar] ok 230 - css1 simple-selector parse: BODY
+  [CSS::Grammar] ok 231 - css1 simple-selector no warnings
+  [CSS::Grammar] ok 232 - css1 simple-selector ast
+  [CSS::Grammar] ok 233 - css21 simple-selector parse: BODY
+  [CSS::Grammar] ok 234 - css21 simple-selector no warnings
+  [CSS::Grammar] ok 235 - css21 simple-selector ast
+  [CSS::Grammar] ok 236 - css3 simple-selector parse: BODY
+  [CSS::Grammar] ok 237 - css3 simple-selector no warnings
+  [CSS::Grammar] ok 238 - css3 simple-selector ast
+  [CSS::Grammar] ok 239 - css1 selector parse: A:Visited
+  [CSS::Grammar] ok 240 - css1 selector no warnings
+  [CSS::Grammar] ok 241 - css1 selector ast
+  [CSS::Grammar] ok 242 - css21 selector parse: A:Visited
+  [CSS::Grammar] ok 243 - css21 selector no warnings
+  [CSS::Grammar] ok 244 - css21 selector ast
+  [CSS::Grammar] ok 245 - css3 selector parse: A:Visited
+  [CSS::Grammar] ok 246 - css3 selector no warnings
+  [CSS::Grammar] ok 247 - css3 selector ast
+  [CSS::Grammar] ok 248 - css1 selector parse: :visited
+  [CSS::Grammar] ok 249 - css1 selector no warnings
+  [CSS::Grammar] ok 250 - css1 selector ast
+  [CSS::Grammar] ok 251 - css21 selector parse: :visited
+  [CSS::Grammar] ok 252 - css21 selector no warnings
+  [CSS::Grammar] ok 253 - css21 selector ast
+  [CSS::Grammar] ok 254 - css3 selector parse: :visited
+  [CSS::Grammar] ok 255 - css3 selector no warnings
+  [CSS::Grammar] ok 256 - css3 selector ast
+  [CSS::Grammar] ok 257 - css1 selector parse: .some_class
+  [CSS::Grammar] ok 258 - css1 selector no warnings
+  [CSS::Grammar] ok 259 - css1 selector ast
+  [CSS::Grammar] ok 260 - css21 selector parse: .some_class
+  [CSS::Grammar] ok 261 - css21 selector no warnings
+  [CSS::Grammar] ok 262 - css21 selector ast
+  [CSS::Grammar] ok 263 - css3 selector parse: .some_class
+  [CSS::Grammar] ok 264 - css3 selector no warnings
+  [CSS::Grammar] ok 265 - css3 selector ast
+  [CSS::Grammar] ok 266 - css1 selector parse: .some_class:link
+  [CSS::Grammar] ok 267 - css1 selector no warnings
+  [CSS::Grammar] ok 268 - css1 selector ast
+  [CSS::Grammar] ok 269 - css21 selector parse: .some_class:link
+  [CSS::Grammar] ok 270 - css21 selector no warnings
+  [CSS::Grammar] ok 271 - css21 selector ast
+  [CSS::Grammar] ok 272 - css3 selector parse: .some_class:link
+  [CSS::Grammar] ok 273 - css3 selector no warnings
+  [CSS::Grammar] ok 274 - css3 selector ast
+  [CSS::Grammar] ok 275 - css1 simple-selector parse: BODY.some_class
+  [CSS::Grammar] ok 276 - css1 simple-selector no warnings
+  [CSS::Grammar] ok 277 - css1 simple-selector ast
+  [CSS::Grammar] ok 278 - css21 simple-selector parse: BODY.some_class
+  [CSS::Grammar] ok 279 - css21 simple-selector no warnings
+  [CSS::Grammar] ok 280 - css21 simple-selector ast
+  [CSS::Grammar] ok 281 - css3 simple-selector parse: BODY.some_class
+  [CSS::Grammar] ok 282 - css3 simple-selector no warnings
+  [CSS::Grammar] ok 283 - css3 simple-selector ast
+  [CSS::Grammar] ok 284 - css1 pseudo parse: :first-line
+  [CSS::Grammar] ok 285 - css1 pseudo no warnings
+  [CSS::Grammar] ok 286 - css1 pseudo ast
+  [CSS::Grammar] ok 287 - css21 pseudo parse: :first-line
+  [CSS::Grammar] ok 288 - css21 pseudo no warnings
+  [CSS::Grammar] ok 289 - css21 pseudo ast
+  [CSS::Grammar] ok 290 - css3 pseudo parse: :first-line
+  [CSS::Grammar] ok 291 - css3 pseudo no warnings
+  [CSS::Grammar] ok 292 - css3 pseudo ast
+  [CSS::Grammar] ok 293 - css1 selector parse: BODY.some-class:active
+  [CSS::Grammar] ok 294 - css1 selector no warnings
+  [CSS::Grammar] ok 295 - css1 selector ast
+  [CSS::Grammar] ok 296 - css21 selector parse: BODY.some-class:active
+  [CSS::Grammar] ok 297 - css21 selector no warnings
+  [CSS::Grammar] ok 298 - css21 selector ast
+  [CSS::Grammar] ok 299 - css3 selector parse: BODY.some-class:active
+  [CSS::Grammar] ok 300 - css3 selector no warnings
+  [CSS::Grammar] ok 301 - css3 selector ast
+  [CSS::Grammar] ok 302 - css1 selector parse: .c1 \#ID.c2 .d1.d2
+  [CSS::Grammar] ok 303 - css1 selector no warnings
+  [CSS::Grammar] ok 304 - css1 selector ast
+  [CSS::Grammar] ok 305 - css21 selector parse: .c1 \#ID.c2 .d1.d2
+  [CSS::Grammar] ok 306 - css21 selector no warnings
+  [CSS::Grammar] ok 307 - css21 selector ast
+  [CSS::Grammar] ok 308 - css3 selector parse: .c1 \#ID.c2 .d1.d2
+  [CSS::Grammar] ok 309 - css3 selector no warnings
+  [CSS::Grammar] ok 310 - css3 selector ast
+  [CSS::Grammar] ok 311 - css1 selector parse:  \#my-id /* white-space */ :first-line
+  [CSS::Grammar] ok 312 - css1 selector no warnings
+  [CSS::Grammar] ok 313 - css1 selector ast
+  [CSS::Grammar] ok 314 - css21 selector parse:  \#my-id /* white-space */ :first-line
+  [CSS::Grammar] ok 315 - css21 selector no warnings
+  [CSS::Grammar] ok 316 - css21 selector ast
+  [CSS::Grammar] ok 317 - css3 selector parse:  \#my-id /* white-space */ :first-line
+  [CSS::Grammar] ok 318 - css3 selector no warnings
+  [CSS::Grammar] ok 319 - css3 selector ast
+  [CSS::Grammar] ok 320 - css1 selector parse:  \#my-id:first-line
+  [CSS::Grammar] ok 321 - css1 selector no warnings
+  [CSS::Grammar] ok 322 - css1 selector ast
+  [CSS::Grammar] ok 323 - css21 selector parse:  \#my-id:first-line
+  [CSS::Grammar] ok 324 - css21 selector no warnings
+  [CSS::Grammar] ok 325 - css21 selector ast
+  [CSS::Grammar] ok 326 - css3 selector parse:  \#my-id:first-line
+  [CSS::Grammar] ok 327 - css3 selector no warnings
+  [CSS::Grammar] ok 328 - css3 selector ast
+  [CSS::Grammar] ok 329 - css1 selector parse:  \#my-id+:first-line
+  [CSS::Grammar] ok 330 - css1 selector no warnings
+  [CSS::Grammar] ok 331 - css1 selector ast
+  [CSS::Grammar] ok 332 - css21 selector parse:  \#my-id+:first-line
+  [CSS::Grammar] ok 333 - css21 selector no warnings
+  [CSS::Grammar] ok 334 - css21 selector ast
+  [CSS::Grammar] ok 335 - css3 selector parse:  \#my-id+:first-line
+  [CSS::Grammar] ok 336 - css3 selector no warnings
+  [CSS::Grammar] ok 337 - css3 selector ast
+  [CSS::Grammar] ok 338 - css1 selector parse:  \#my-id + :first-line
+  [CSS::Grammar] ok 339 - css1 selector no warnings
+  [CSS::Grammar] ok 340 - css1 selector ast
+  [CSS::Grammar] ok 341 - css21 selector parse:  \#my-id + :first-line
+  [CSS::Grammar] ok 342 - css21 selector no warnings
+  [CSS::Grammar] ok 343 - css21 selector ast
+  [CSS::Grammar] ok 344 - css3 selector parse:  \#my-id + :first-line
+  [CSS::Grammar] ok 345 - css3 selector no warnings
+  [CSS::Grammar] ok 346 - css3 selector ast
+  [CSS::Grammar] ok 347 - css1 selector parse: ol > li:first-child + li +li+ li+li
+  [CSS::Grammar] ok 348 - css1 selector no warnings
+  [CSS::Grammar] ok 349 - css1 selector ast
+  [CSS::Grammar] ok 350 - css21 selector parse: ol > li:first-child + li +li+ li+li
+  [CSS::Grammar] ok 351 - css21 selector no warnings
+  [CSS::Grammar] ok 352 - css21 selector ast
+  [CSS::Grammar] ok 353 - css3 selector parse: ol > li:first-child + li +li+ li+li
+  [CSS::Grammar] ok 354 - css3 selector no warnings
+  [CSS::Grammar] ok 355 - css3 selector ast
+  [CSS::Grammar] ok 356 - css1 selector parse: A:first-letter
+  [CSS::Grammar] ok 357 - css1 selector no warnings
+  [CSS::Grammar] ok 358 - css1 selector ast
+  [CSS::Grammar] ok 359 - css21 selector parse: A:first-letter
+  [CSS::Grammar] ok 360 - css21 selector no warnings
+  [CSS::Grammar] ok 361 - css21 selector ast
+  [CSS::Grammar] ok 362 - css3 selector parse: A:first-letter
+  [CSS::Grammar] ok 363 - css3 selector no warnings
+  [CSS::Grammar] ok 364 - css3 selector ast
+  [CSS::Grammar] ok 365 - css1 selector parse: A:Link IMG
+  [CSS::Grammar] ok 366 - css1 selector no warnings
+  [CSS::Grammar] ok 367 - css1 selector ast
+  [CSS::Grammar] ok 368 - css21 selector parse: A:Link IMG
+  [CSS::Grammar] ok 369 - css21 selector no warnings
+  [CSS::Grammar] ok 370 - css21 selector ast
+  [CSS::Grammar] ok 371 - css3 selector parse: A:Link IMG
+  [CSS::Grammar] ok 372 - css3 selector no warnings
+  [CSS::Grammar] ok 373 - css3 selector ast
+  [CSS::Grammar] ok 374 - css1 selector parse: A:After IMG
+  [CSS::Grammar] ok 375 - css1 selector no warnings
+  [CSS::Grammar] ok 376 - css1 selector ast
+  [CSS::Grammar] ok 377 - css21 selector parse: A:After IMG
+  [CSS::Grammar] ok 378 - css21 selector no warnings
+  [CSS::Grammar] ok 379 - css21 selector ast
+  [CSS::Grammar] ok 380 - css3 selector parse: A:After IMG
+  [CSS::Grammar] ok 381 - css3 selector no warnings
+  [CSS::Grammar] ok 382 - css3 selector ast
+  [CSS::Grammar] ok 383 - css1 selector parse: H1[lang=fr]
+  [CSS::Grammar] ok 384 - css1 selector no warnings
+  [CSS::Grammar] ok 385 - css1 selector ast
+  [CSS::Grammar] ok 386 - css21 selector parse: H1[lang=fr]
+  [CSS::Grammar] ok 387 - css21 selector no warnings
+  [CSS::Grammar] ok 388 - css21 selector ast
+  [CSS::Grammar] ok 389 - css3 selector parse: H1[lang=fr]
+  [CSS::Grammar] ok 390 - css3 selector no warnings
+  [CSS::Grammar] ok 391 - css3 selector ast
+  [CSS::Grammar] ok 392 - css1 selector parse: *[lang=fr]
+  [CSS::Grammar] ok 393 - css1 selector no warnings
+  [CSS::Grammar] ok 394 - css21 selector parse: *[lang=fr]
+  [CSS::Grammar] ok 395 - css21 selector no warnings
+  [CSS::Grammar] ok 396 - css21 selector ast
+  [CSS::Grammar] ok 397 - css3 selector parse: *[lang=fr]
+  [CSS::Grammar] ok 398 - css3 selector no warnings
+  [CSS::Grammar] ok 399 - css3 selector ast
+  [CSS::Grammar] ok 400 - css1 expr parse: RGB(-10,133,257 ),  \#fa7
+  [CSS::Grammar] ok 401 - css1 expr no warnings
+  [CSS::Grammar] ok 402 - css1 expr ast
+  [CSS::Grammar] ok 403 - css21 expr parse: RGB(-10,133,257 ),  \#fa7
+  [CSS::Grammar] ok 404 - css21 expr no warnings
+  [CSS::Grammar] ok 405 - css21 expr ast
+  [CSS::Grammar] ok 406 - css3 expr parse: RGB(-10,133,257 ),  \#fa7
+  [CSS::Grammar] ok 407 - css3 expr no warnings
+  [CSS::Grammar] ok 408 - css3 expr ast
+  [CSS::Grammar] ok 409 - css1 expr parse: 'Helvetica Neue',helvetica-neue, helvetica
+  [CSS::Grammar] ok 410 - css1 expr no warnings
+  [CSS::Grammar] ok 411 - css1 expr ast
+  [CSS::Grammar] ok 412 - css21 expr parse: 'Helvetica Neue',helvetica-neue, helvetica
+  [CSS::Grammar] ok 413 - css21 expr no warnings
+  [CSS::Grammar] ok 414 - css21 expr ast
+  [CSS::Grammar] ok 415 - css3 expr parse: 'Helvetica Neue',helvetica-neue, helvetica
+  [CSS::Grammar] ok 416 - css3 expr no warnings
+  [CSS::Grammar] ok 417 - css3 expr ast
+  [CSS::Grammar] ok 418 - css1 expr parse: +13mm EM -ex em(42) em_ 14ch 15rem
+  [CSS::Grammar] ok 419 - css1 expr no warnings
+  [CSS::Grammar] ok 420 - css1 expr ast
+  [CSS::Grammar] ok 421 - css21 expr parse: +13mm EM -ex em(42) em_ 14ch 15rem
+  [CSS::Grammar] ok 422 - css21 expr no warnings
+  [CSS::Grammar] ok 423 - css21 expr ast
+  [CSS::Grammar] ok 424 - css3 expr parse: +13mm EM -ex em(42) em_ 14ch 15rem
+  [CSS::Grammar] ok 425 - css3 expr no warnings
+  [CSS::Grammar] ok 426 - css3 expr ast
+  [CSS::Grammar] ok 427 - css1 expr parse: -1CM
+  [CSS::Grammar] ok 428 - css1 expr no warnings
+  [CSS::Grammar] ok 429 - css1 expr ast
+  [CSS::Grammar] ok 430 - css21 expr parse: -1CM
+  [CSS::Grammar] ok 431 - css21 expr no warnings
+  [CSS::Grammar] ok 432 - css21 expr ast
+  [CSS::Grammar] ok 433 - css3 expr parse: -1CM
+  [CSS::Grammar] ok 434 - css3 expr no warnings
+  [CSS::Grammar] ok 435 - css3 expr ast
+  [CSS::Grammar] ok 436 - css1 expr parse: 2px solid blue
+  [CSS::Grammar] ok 437 - css1 expr no warnings
+  [CSS::Grammar] ok 438 - css1 expr ast
+  [CSS::Grammar] ok 439 - css21 expr parse: 2px solid blue
+  [CSS::Grammar] ok 440 - css21 expr no warnings
+  [CSS::Grammar] ok 441 - css21 expr ast
+  [CSS::Grammar] ok 442 - css3 expr parse: 2px solid blue
+  [CSS::Grammar] ok 443 - css3 expr no warnings
+  [CSS::Grammar] ok 444 - css3 expr ast
+  [CSS::Grammar] ok 445 - css1 expr parse: top,ccc/dddd
+  [CSS::Grammar] ok 446 - css1 expr no warnings
+  [CSS::Grammar] ok 447 - css1 expr ast
+  [CSS::Grammar] ok 448 - css21 expr parse: top,ccc/dddd
+  [CSS::Grammar] ok 449 - css21 expr no warnings
+  [CSS::Grammar] ok 450 - css21 expr ast
+  [CSS::Grammar] ok 451 - css3 expr parse: top,ccc/dddd
+  [CSS::Grammar] ok 452 - css3 expr no warnings
+  [CSS::Grammar] ok 453 - css3 expr ast
+  [CSS::Grammar] ok 454 - css1 expr parse: -moz-linear-gradient
+  [CSS::Grammar] ok 455 - css1 expr no warnings
+  [CSS::Grammar] ok 456 - css1 expr ast
+  [CSS::Grammar] ok 457 - css21 expr parse: -moz-linear-gradient
+  [CSS::Grammar] ok 458 - css21 expr no warnings
+  [CSS::Grammar] ok 459 - css21 expr ast
+  [CSS::Grammar] ok 460 - css3 expr parse: -moz-linear-gradient
+  [CSS::Grammar] ok 461 - css3 expr no warnings
+  [CSS::Grammar] ok 462 - css3 expr ast
+  [CSS::Grammar] ok 463 - css1 expr parse: -moz-linear-gradient(top, t2, t3)
+  [CSS::Grammar] ok 464 - css21 expr parse: -moz-linear-gradient(top, t2, t3)
+  [CSS::Grammar] ok 465 - css21 expr no warnings
+  [CSS::Grammar] ok 466 - css21 expr ast
+  [CSS::Grammar] ok 467 - css3 expr parse: -moz-linear-gradient(top, t2, t3)
+  [CSS::Grammar] ok 468 - css3 expr no warnings
+  [CSS::Grammar] ok 469 - css3 expr ast
+  [CSS::Grammar] ok 470 - css1 expr parse: Alpha(Opacity=70)
+  [CSS::Grammar] ok 471 - css21 expr parse: Alpha(Opacity=70)
+  [CSS::Grammar] ok 472 - css21 expr no warnings
+  [CSS::Grammar] ok 473 - css21 expr ast
+  [CSS::Grammar] ok 474 - css3 expr parse: Alpha(Opacity=70)
+  [CSS::Grammar] ok 475 - css3 expr no warnings
+  [CSS::Grammar] ok 476 - css3 expr ast
+  [CSS::Grammar] ok 477 - css1 expr parse: 12px/20px
+  [CSS::Grammar] ok 478 - css1 expr no warnings
+  [CSS::Grammar] ok 479 - css1 expr ast
+  [CSS::Grammar] ok 480 - css21 expr parse: 12px/20px
+  [CSS::Grammar] ok 481 - css21 expr no warnings
+  [CSS::Grammar] ok 482 - css21 expr ast
+  [CSS::Grammar] ok 483 - css3 expr parse: 12px/20px
+  [CSS::Grammar] ok 484 - css3 expr no warnings
+  [CSS::Grammar] ok 485 - css3 expr ast
+  [CSS::Grammar] ok 486 - css1 declarations parse: {terms: 42 7% 12.5cm -1em 2 ex 45deg 10s 50Hz 'ZZ' counter(a,b) counters(p,'s') attr(data-foo)}
+  [CSS::Grammar] ok 487 - css1 declarations warnings
+  [CSS::Grammar] ok 488 - css21 declarations parse: {terms: 42 7% 12.5cm -1em 2 ex 45deg 10s 50Hz 'ZZ' counter(a,b) counters(p,'s') attr(data-foo)}
+  [CSS::Grammar] ok 489 - css21 declarations no warnings
+  [CSS::Grammar] ok 490 - css21 declarations ast
+  [CSS::Grammar] ok 491 - css3 declarations parse: {terms: 42 7% 12.5cm -1em 2 ex 45deg 10s 50Hz 'ZZ' counter(a,b) counters(p,'s') attr(data-foo)}
+  [CSS::Grammar] ok 492 - css3 declarations no warnings
+  [CSS::Grammar] ok 493 - css3 declarations ast
+  [CSS::Grammar] ok 494 - core _declarations parse: {terms: 42 7% 12.5cm -1em 2 ex 45deg 10s 50Hz 'ZZ' counter(a,b) counters(p,'s') attr(data-foo)}
+  [CSS::Grammar] ok 495 - css1 declaration parse: line-height: 1.1px !important
+  [CSS::Grammar] ok 496 - css1 declaration no warnings
+  [CSS::Grammar] ok 497 - css1 declaration ast
+  [CSS::Grammar] ok 498 - css21 declaration parse: line-height: 1.1px !important
+  [CSS::Grammar] ok 499 - css21 declaration no warnings
+  [CSS::Grammar] ok 500 - css21 declaration ast
+  [CSS::Grammar] ok 501 - css3 declaration parse: line-height: 1.1px !important
+  [CSS::Grammar] ok 502 - css3 declaration no warnings
+  [CSS::Grammar] ok 503 - css3 declaration ast
+  [CSS::Grammar] ok 504 - core _declaration parse: line-height: 1.1px !important
+  [CSS::Grammar] ok 505 - css1 declaration parse: line-height: 1.5px !vital
+  [CSS::Grammar] ok 506 - css1 declaration warnings
+  [CSS::Grammar] ok 507 - css1 declaration ast
+  [CSS::Grammar] ok 508 - css21 declaration parse: line-height: 1.5px !vital
+  [CSS::Grammar] ok 509 - css21 declaration warnings
+  [CSS::Grammar] ok 510 - css21 declaration ast
+  [CSS::Grammar] ok 511 - css3 declaration parse: line-height: 1.5px !vital
+  [CSS::Grammar] ok 512 - css3 declaration warnings
+  [CSS::Grammar] ok 513 - css3 declaration ast
+  [CSS::Grammar] ok 514 - core _declaration parse: line-height: 1.5px !vital
+  [CSS::Grammar] ok 515 - css1 declaration parse:  /*ww*/ margin/*xx*/:/*yy*/1em/*zz*/
+  [CSS::Grammar] ok 516 - css1 declaration no warnings
+  [CSS::Grammar] ok 517 - css1 declaration ast
+  [CSS::Grammar] ok 518 - css21 declaration parse:  /*ww*/ margin/*xx*/:/*yy*/1em/*zz*/
+  [CSS::Grammar] ok 519 - css21 declaration no warnings
+  [CSS::Grammar] ok 520 - css21 declaration ast
+  [CSS::Grammar] ok 521 - css3 declaration parse:  /*ww*/ margin/*xx*/:/*yy*/1em/*zz*/
+  [CSS::Grammar] ok 522 - css3 declaration no warnings
+  [CSS::Grammar] ok 523 - css3 declaration ast
+  [CSS::Grammar] ok 524 - core _declaration parse:  /*ww*/ margin/*xx*/:/*yy*/1em/*zz*/
+  [CSS::Grammar] ok 525 - css1 declaration parse: border: 2px solid blue
+  [CSS::Grammar] ok 526 - css1 declaration no warnings
+  [CSS::Grammar] ok 527 - css1 declaration ast
+  [CSS::Grammar] ok 528 - css21 declaration parse: border: 2px solid blue
+  [CSS::Grammar] ok 529 - css21 declaration no warnings
+  [CSS::Grammar] ok 530 - css21 declaration ast
+  [CSS::Grammar] ok 531 - css3 declaration parse: border: 2px solid blue
+  [CSS::Grammar] ok 532 - css3 declaration no warnings
+  [CSS::Grammar] ok 533 - css3 declaration ast
+  [CSS::Grammar] ok 534 - core _declaration parse: border: 2px solid blue
+  [CSS::Grammar] ok 535 - css1 declarations parse: {font-size:10px;color:white;z-index:-9;position:absolute;left:-999px}
+  [CSS::Grammar] ok 536 - css1 declarations no warnings
+  [CSS::Grammar] ok 537 - css1 declarations ast
+  [CSS::Grammar] ok 538 - css21 declarations parse: {font-size:10px;color:white;z-index:-9;position:absolute;left:-999px}
+  [CSS::Grammar] ok 539 - css21 declarations no warnings
+  [CSS::Grammar] ok 540 - css21 declarations ast
+  [CSS::Grammar] ok 541 - css3 declarations parse: {font-size:10px;color:white;z-index:-9;position:absolute;left:-999px}
+  [CSS::Grammar] ok 542 - css3 declarations no warnings
+  [CSS::Grammar] ok 543 - css3 declarations ast
+  [CSS::Grammar] ok 544 - core _declarations parse: {font-size:10px;color:white;z-index:-9;position:absolute;left:-999px}
+  [CSS::Grammar] ok 545 - css1 ruleset parse: H1 { color: blue; }
+  [CSS::Grammar] ok 546 - css1 ruleset no warnings
+  [CSS::Grammar] ok 547 - css1 ruleset ast
+  [CSS::Grammar] ok 548 - css21 ruleset parse: H1 { color: blue; }
+  [CSS::Grammar] ok 549 - css21 ruleset no warnings
+  [CSS::Grammar] ok 550 - css21 ruleset ast
+  [CSS::Grammar] ok 551 - css3 ruleset parse: H1 { color: blue; }
+  [CSS::Grammar] ok 552 - css3 ruleset no warnings
+  [CSS::Grammar] ok 553 - css3 ruleset ast
+  [CSS::Grammar] ok 554 - core _ruleset parse: H1 { color: blue; }
+  [CSS::Grammar] ok 555 - css1 ruleset parse: A:link H1 { color: blue; }
+  [CSS::Grammar] ok 556 - css1 ruleset no warnings
+  [CSS::Grammar] ok 557 - css1 ruleset ast
+  [CSS::Grammar] ok 558 - css21 ruleset parse: A:link H1 { color: blue; }
+  [CSS::Grammar] ok 559 - css21 ruleset no warnings
+  [CSS::Grammar] ok 560 - css21 ruleset ast
+  [CSS::Grammar] ok 561 - css3 ruleset parse: A:link H1 { color: blue; }
+  [CSS::Grammar] ok 562 - css3 ruleset no warnings
+  [CSS::Grammar] ok 563 - css3 ruleset ast
+  [CSS::Grammar] ok 564 - core _ruleset parse: A:link H1 { color: blue; }
+  [CSS::Grammar] ok 565 - css1 ruleset parse: A:link,H1 { color: blue; }
+  [CSS::Grammar] ok 566 - css1 ruleset no warnings
+  [CSS::Grammar] ok 567 - css1 ruleset ast
+  [CSS::Grammar] ok 568 - css21 ruleset parse: A:link,H1 { color: blue; }
+  [CSS::Grammar] ok 569 - css21 ruleset no warnings
+  [CSS::Grammar] ok 570 - css21 ruleset ast
+  [CSS::Grammar] ok 571 - css3 ruleset parse: A:link,H1 { color: blue; }
+  [CSS::Grammar] ok 572 - css3 ruleset no warnings
+  [CSS::Grammar] ok 573 - css3 ruleset ast
+  [CSS::Grammar] ok 574 - core _ruleset parse: A:link,H1 { color: blue; }
+  [CSS::Grammar] ok 575 - css1 ruleset parse: H1 \#abc { color: blue; }
+  [CSS::Grammar] ok 576 - css1 ruleset no warnings
+  [CSS::Grammar] ok 577 - css1 ruleset ast
+  [CSS::Grammar] ok 578 - css21 ruleset parse: H1 \#abc { color: blue; }
+  [CSS::Grammar] ok 579 - css21 ruleset no warnings
+  [CSS::Grammar] ok 580 - css21 ruleset ast
+  [CSS::Grammar] ok 581 - css3 ruleset parse: H1 \#abc { color: blue; }
+  [CSS::Grammar] ok 582 - css3 ruleset no warnings
+  [CSS::Grammar] ok 583 - css3 ruleset ast
+  [CSS::Grammar] ok 584 - core _ruleset parse: H1 \#abc { color: blue; }
+  [CSS::Grammar] ok 585 - css1 ruleset parse: A.external:visited { color: blue; }
+  [CSS::Grammar] ok 586 - css1 ruleset no warnings
+  [CSS::Grammar] ok 587 - css1 ruleset ast
+  [CSS::Grammar] ok 588 - css21 ruleset parse: A.external:visited { color: blue; }
+  [CSS::Grammar] ok 589 - css21 ruleset no warnings
+  [CSS::Grammar] ok 590 - css21 ruleset ast
+  [CSS::Grammar] ok 591 - css3 ruleset parse: A.external:visited { color: blue; }
+  [CSS::Grammar] ok 592 - css3 ruleset no warnings
+  [CSS::Grammar] ok 593 - css3 ruleset ast
+  [CSS::Grammar] ok 594 - core _ruleset parse: A.external:visited { color: blue; }
+  [CSS::Grammar] ok 595 - css1 simple-selector parse: A[ href ]
+  [CSS::Grammar] ok 596 - css1 simple-selector no warnings
+  [CSS::Grammar] ok 597 - css1 simple-selector ast
+  [CSS::Grammar] ok 598 - css21 simple-selector parse: A[ href ]
+  [CSS::Grammar] ok 599 - css21 simple-selector no warnings
+  [CSS::Grammar] ok 600 - css21 simple-selector ast
+  [CSS::Grammar] ok 601 - css3 simple-selector parse: A[ href ]
+  [CSS::Grammar] ok 602 - css3 simple-selector no warnings
+  [CSS::Grammar] ok 603 - css3 simple-selector ast
+  [CSS::Grammar] ok 604 - css1 simple-selector parse: a[href~='foo']
+  [CSS::Grammar] ok 605 - css1 simple-selector no warnings
+  [CSS::Grammar] ok 606 - css1 simple-selector ast
+  [CSS::Grammar] ok 607 - css21 simple-selector parse: a[href~='foo']
+  [CSS::Grammar] ok 608 - css21 simple-selector no warnings
+  [CSS::Grammar] ok 609 - css21 simple-selector ast
+  [CSS::Grammar] ok 610 - css3 simple-selector parse: a[href~='foo']
+  [CSS::Grammar] ok 611 - css3 simple-selector no warnings
+  [CSS::Grammar] ok 612 - css3 simple-selector ast
+  [CSS::Grammar] ok 613 - css1 ruleset parse: .TB	{mso-special-format:nobullet;}
+  [CSS::Grammar] ok 614 - css1 ruleset warnings
+  [CSS::Grammar] ok 615 - css1 ruleset ast
+  [CSS::Grammar] ok 616 - css21 ruleset parse: .TB	{mso-special-format:nobullet;}
+  [CSS::Grammar] ok 617 - css21 ruleset warnings
+  [CSS::Grammar] ok 618 - css21 ruleset ast
+  [CSS::Grammar] ok 619 - css3 ruleset parse: .TB	{mso-special-format:nobullet;}
+  [CSS::Grammar] ok 620 - css3 ruleset ast
+  [CSS::Grammar] ok 621 - core _ruleset parse: .TB	{mso-special-format:nobullet;}
+  [CSS::Grammar] ok 622 - css1 ruleset parse: H2 { color: green; rotation: 70deg; }
+  [CSS::Grammar] ok 623 - css1 ruleset warnings
+  [CSS::Grammar] ok 624 - css1 ruleset ast
+  [CSS::Grammar] ok 625 - css21 ruleset parse: H2 { color: green; rotation: 70deg; }
+  [CSS::Grammar] ok 626 - css21 ruleset no warnings
+  [CSS::Grammar] ok 627 - css21 ruleset ast
+  [CSS::Grammar] ok 628 - css3 ruleset parse: H2 { color: green; rotation: 70deg; }
+  [CSS::Grammar] ok 629 - css3 ruleset no warnings
+  [CSS::Grammar] ok 630 - css3 ruleset ast
+  [CSS::Grammar] ok 631 - core _ruleset parse: H2 { color: green; rotation: 70deg; }
+  [CSS::Grammar] ok 632 - css1 ruleset parse: H1 { color }
+  [CSS::Grammar] ok 633 - css1 ruleset warnings
+  [CSS::Grammar] ok 634 - css21 ruleset parse: H1 { color }
+  [CSS::Grammar] ok 635 - css21 ruleset warnings
+  [CSS::Grammar] ok 636 - css3 ruleset parse: H1 { color }
+  [CSS::Grammar] ok 637 - css3 ruleset warnings
+  [CSS::Grammar] ok 638 - core _ruleset parse: H1 { color }
+  [CSS::Grammar] ok 639 - css1 ruleset parse: H1 { color; }
+  [CSS::Grammar] ok 640 - css1 ruleset warnings
+  [CSS::Grammar] ok 641 - css21 ruleset parse: H1 { color; }
+  [CSS::Grammar] ok 642 - css21 ruleset warnings
+  [CSS::Grammar] ok 643 - css3 ruleset parse: H1 { color; }
+  [CSS::Grammar] ok 644 - css3 ruleset warnings
+  [CSS::Grammar] ok 645 - core _ruleset parse: H1 { color; }
+  [CSS::Grammar] ok 646 - css1 ruleset parse: H1 { : blue }
+  [CSS::Grammar] ok 647 - css1 ruleset warnings
+  [CSS::Grammar] ok 648 - css21 ruleset parse: H1 { : blue }
+  [CSS::Grammar] ok 649 - css21 ruleset warnings
+  [CSS::Grammar] ok 650 - css3 ruleset parse: H1 { : blue }
+  [CSS::Grammar] ok 651 - css3 ruleset warnings
+  [CSS::Grammar] ok 652 - core _ruleset parse: H1 { : blue }
+  [CSS::Grammar] ok 653 - css1 ruleset parse: H1 { color blue }
+  [CSS::Grammar] ok 654 - css1 ruleset warnings
+  [CSS::Grammar] ok 655 - css21 ruleset parse: H1 { color blue }
+  [CSS::Grammar] ok 656 - css21 ruleset warnings
+  [CSS::Grammar] ok 657 - css3 ruleset parse: H1 { color blue }
+  [CSS::Grammar] ok 658 - css3 ruleset warnings
+  [CSS::Grammar] ok 659 - core _ruleset parse: H1 { color blue }
+  [CSS::Grammar] ok 660 - css1 ruleset parse: H1 { color: }
+  [CSS::Grammar] ok 661 - css1 ruleset warnings
+  [CSS::Grammar] ok 662 - css21 ruleset parse: H1 { color: }
+  [CSS::Grammar] ok 663 - css21 ruleset warnings
+  [CSS::Grammar] ok 664 - css3 ruleset parse: H1 { color: }
+  [CSS::Grammar] ok 665 - css3 ruleset warnings
+  [CSS::Grammar] ok 666 - core _ruleset parse: H1 { color: }
+  [CSS::Grammar] ok 667 - css1 ruleset parse: H2 { color: green; rotation: 70deg;
+  [CSS::Grammar] ok 668 - css1 ruleset warnings
+  [CSS::Grammar] ok 669 - css21 ruleset parse: H2 { color: green; rotation: 70deg;
+  [CSS::Grammar] ok 670 - css21 ruleset warnings
+  [CSS::Grammar] ok 671 - css3 ruleset parse: H2 { color: green; rotation: 70deg;
+  [CSS::Grammar] ok 672 - css3 ruleset warnings
+  [CSS::Grammar] ok 673 - core _ruleset parse: H2 { color: green; rotation: 70deg;
+  [CSS::Grammar] ok 674 - css1 ruleset parse: H2 { color: green; rotation: }
+  [CSS::Grammar] ok 675 - css1 ruleset warnings
+  [CSS::Grammar] ok 676 - css21 ruleset parse: H2 { color: green; rotation: }
+  [CSS::Grammar] ok 677 - css21 ruleset warnings
+  [CSS::Grammar] ok 678 - css3 ruleset parse: H2 { color: green; rotation: }
+  [CSS::Grammar] ok 679 - css3 ruleset warnings
+  [CSS::Grammar] ok 680 - core _ruleset parse: H2 { color: green; rotation: }
+  [CSS::Grammar] ok 681 - css1 ruleset parse: H2 { test: 'this is not closed
+  [CSS::Grammar] ok 682 - css1 ruleset warnings
+  [CSS::Grammar] ok 683 - css21 ruleset parse: H2 { test: 'this is not closed
+  [CSS::Grammar] ok 684 - css21 ruleset warnings
+  [CSS::Grammar] ok 685 - css3 ruleset parse: H2 { test: 'this is not closed
+  [CSS::Grammar] ok 686 - css3 ruleset warnings
+  [CSS::Grammar] ok 687 - core _ruleset parse: H2 { test: 'this is not closed
+  [CSS::Grammar] ok 688 - core _ruleset warnings
+  [CSS::Grammar] ok 689 - # SKIP at-rule: N/A to CSS1
+  [CSS::Grammar] ok 690 - css21 at-rule parse: @media print {body{margin: 1cm}}
+  [CSS::Grammar] ok 691 - css21 at-rule no warnings
+  [CSS::Grammar] ok 692 - css21 at-rule ast
+  [CSS::Grammar] ok 693 - css3 at-rule parse: @media print {body{margin: 1cm}}
+  [CSS::Grammar] ok 694 - css3 at-rule no warnings
+  [CSS::Grammar] ok 695 - css3 at-rule ast
+  [CSS::Grammar] ok 696 - core _at-rule parse: @media print {body{margin: 1cm}}
+  [CSS::Grammar] ok 697 - # SKIP at-rule: N/A to CSS1
+  [CSS::Grammar] ok 698 - css21 at-rule parse: @Page :first { margin-right: 2cm }
+  [CSS::Grammar] ok 699 - css21 at-rule no warnings
+  [CSS::Grammar] ok 700 - css21 at-rule ast
+  [CSS::Grammar] ok 701 - css3 at-rule parse: @Page :first { margin-right: 2cm }
+  [CSS::Grammar] ok 702 - css3 at-rule no warnings
+  [CSS::Grammar] ok 703 - css3 at-rule ast
+  [CSS::Grammar] ok 704 - core _at-rule parse: @Page :first { margin-right: 2cm }
+  [CSS::Grammar] ok 705 - css1 stylesheet parse: @charset 'bazinga';
+  [CSS::Grammar] ok 706 - css1 stylesheet warnings
+  [CSS::Grammar] ok 707 - css21 stylesheet parse: @charset 'bazinga';
+  [CSS::Grammar] ok 708 - css21 stylesheet no warnings
+  [CSS::Grammar] ok 709 - css21 stylesheet ast
+  [CSS::Grammar] ok 710 - css3 stylesheet parse: @charset 'bazinga';
+  [CSS::Grammar] ok 711 - css3 stylesheet no warnings
+  [CSS::Grammar] ok 712 - css3 stylesheet ast
+  [CSS::Grammar] ok 713 - core _stylesheet parse: @charset 'bazinga';
+  [CSS::Grammar] ok 714 - css1 stylesheet parse:  @Import 'foo'; H1 { color: blue; }; @charset 'bazinga'; @import 'too-late'; H2{color:green}
+  [CSS::Grammar] ok 715 - css1 stylesheet warnings
+  [CSS::Grammar] ok 716 - css1 stylesheet ast
+  [CSS::Grammar] ok 717 - css21 stylesheet parse:  @Import 'foo'; H1 { color: blue; }; @charset 'bazinga'; @import 'too-late'; H2{color:green}
+  [CSS::Grammar] ok 718 - css21 stylesheet warnings
+  [CSS::Grammar] ok 719 - css21 stylesheet ast
+  [CSS::Grammar] ok 720 - css3 stylesheet parse:  @Import 'foo'; H1 { color: blue; }; @charset 'bazinga'; @import 'too-late'; H2{color:green}
+  [CSS::Grammar] ok 721 - css3 stylesheet warnings
+  [CSS::Grammar] ok 722 - css3 stylesheet ast
+  [CSS::Grammar] ok 723 - core _stylesheet parse:  @Import 'foo'; H1 { color: blue; }; @charset 'bazinga'; @import 'too-late'; H2{color:green}
+  [CSS::Grammar] ok 724 - css1 stylesheet parse:  @charset "utf-8";@page { size: 8.5in 11in; margin: 10%; @top-left { content: "Hamlet"; } }
+  [CSS::Grammar] ok 725 - css1 stylesheet warnings
+  [CSS::Grammar] ok 726 - css1 stylesheet ast
+  [CSS::Grammar] ok 727 - css21 stylesheet parse:  @charset "utf-8";@page { size: 8.5in 11in; margin: 10%; @top-left { content: "Hamlet"; } }
+  [CSS::Grammar] ok 728 - css21 stylesheet no warnings
+  [CSS::Grammar] ok 729 - css21 stylesheet ast
+  [CSS::Grammar] ok 730 - css3 stylesheet parse:  @charset "utf-8";@page { size: 8.5in 11in; margin: 10%; @top-left { content: "Hamlet"; } }
+  [CSS::Grammar] ok 731 - css3 stylesheet no warnings
+  [CSS::Grammar] ok 732 - css3 stylesheet ast
+  [CSS::Grammar] ok 733 - core _stylesheet parse:  @charset "utf-8";@page { size: 8.5in 11in; margin: 10%; @top-left { content: "Hamlet"; } }
+  [CSS::Grammar] 1..733
+  [CSS::Grammar] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz/CSS-Grammar-0.4.3 t/css3-syntax.t
+  [CSS::Grammar] ok 1 - css3 simple-selector parse: span[hello='Cleveland'][goodbye='Columbus']
+  [CSS::Grammar] ok 2 - css3 simple-selector no warnings
+  [CSS::Grammar] ok 3 - css3 simple-selector ast
+  [CSS::Grammar] ok 4 - css3 simple-selector parse: object[type^='image/']
+  [CSS::Grammar] ok 5 - css3 simple-selector no warnings
+  [CSS::Grammar] ok 6 - css3 simple-selector ast
+  [CSS::Grammar] ok 7 - css3 simple-selector parse: object[a=b][c~=d][e|=f]
+  [CSS::Grammar] ok 8 - css3 simple-selector no warnings
+  [CSS::Grammar] ok 9 - css3 simple-selector ast
+  [CSS::Grammar] ok 10 - css3 simple-selector parse: Object[a^=b][c$=d][e*=f]
+  [CSS::Grammar] ok 11 - css3 simple-selector no warnings
+  [CSS::Grammar] ok 12 - css3 simple-selector ast
+  [CSS::Grammar] ok 13 - css3 AnB-expr parse: odd
+  [CSS::Grammar] ok 14 - css3 AnB-expr no warnings
+  [CSS::Grammar] ok 15 - css3 AnB-expr ast
+  [CSS::Grammar] ok 16 - css3 AnB-expr parse: even
+  [CSS::Grammar] ok 17 - css3 AnB-expr no warnings
+  [CSS::Grammar] ok 18 - css3 AnB-expr ast
+  [CSS::Grammar] ok 19 - css3 AnB-expr parse: 3n + 1
+  [CSS::Grammar] ok 20 - css3 AnB-expr no warnings
+  [CSS::Grammar] ok 21 - css3 AnB-expr ast
+  [CSS::Grammar] ok 22 - css3 AnB-expr parse: -2
+  [CSS::Grammar] ok 23 - css3 AnB-expr no warnings
+  [CSS::Grammar] ok 24 - css3 AnB-expr ast
+  [CSS::Grammar] ok 25 - css3 comment parse: /* anything but * followed by / */
+  [CSS::Grammar] ok 26 - css3 comment no warnings
+  [CSS::Grammar] ok 27 - css3 ws parse:  
+  [CSS::Grammar] ok 28 - css3 ws no warnings
+  [CSS::Grammar] ok 29 - css3 ws parse: 	
+  [CSS::Grammar] ok 30 - css3 ws no warnings
+  [CSS::Grammar] ok 31 - css3 ws parse: 
+  [CSS::Grammar] ok 32 - css3 ws no warnings
+  [CSS::Grammar] ok 33 - css3 ws parse: 
+  [CSS::Grammar] # 
+  [CSS::Grammar] ok 34 - css3 ws no warnings
+  [CSS::Grammar] ok 35 - css3 xdigit parse: 0
+  [CSS::Grammar] ok 36 - css3 xdigit no warnings
+  [CSS::Grammar] ok 37 - css3 xdigit parse: 9
+  [CSS::Grammar] ok 38 - css3 xdigit no warnings
+  [CSS::Grammar] ok 39 - css3 xdigit parse: a
+  [CSS::Grammar] ok 40 - css3 xdigit no warnings
+  [CSS::Grammar] ok 41 - css3 xdigit parse: f
+  [CSS::Grammar] ok 42 - css3 xdigit no warnings
+  [CSS::Grammar] ok 43 - css3 escape parse: \Z
+  [CSS::Grammar] ok 44 - css3 escape no warnings
+  [CSS::Grammar] ok 45 - css3 escape parse: \0
+  [CSS::Grammar] ok 46 - css3 escape no warnings
+  [CSS::Grammar] ok 47 - css3 escape parse: \12345
+  [CSS::Grammar] ok 48 - css3 escape no warnings
+  [CSS::Grammar] ok 49 - css3 escape parse: \0abc 
+  [CSS::Grammar] ok 50 - css3 escape no warnings
+  [CSS::Grammar] ok 51 - css3 ws parse:  /*foo*/ 
+  [CSS::Grammar] # 
+  [CSS::Grammar] ok 52 - css3 ws no warnings
+  [CSS::Grammar] ok 53 - css3 Ident parse: Hi
+  [CSS::Grammar] ok 54 - css3 Ident no warnings
+  [CSS::Grammar] ok 55 - css3 Ident parse: _hi
+  [CSS::Grammar] ok 56 - css3 Ident no warnings
+  [CSS::Grammar] ok 57 - css3 Ident parse: -_AaZz09\42ሴ
+  [CSS::Grammar] ok 58 - css3 Ident no warnings
+  [CSS::Grammar] ok 59 - css3 ws parse:  /*foo*/ 
+  [CSS::Grammar] # 
+  [CSS::Grammar] ok 60 - css3 ws no warnings
+  [CSS::Grammar] ok 61 - css3 at-keyw parse: @page
+  [CSS::Grammar] ok 62 - css3 at-keyw no warnings
+  [CSS::Grammar] ok 63 - css3 id parse:  \#id-12_3
+  [CSS::Grammar] ok 64 - css3 id no warnings
+  [CSS::Grammar] ok 65 - css3 id parse:  \#\0123 b
+  [CSS::Grammar] ok 66 - css3 id no warnings
+  [CSS::Grammar] ok 67 - css3 string parse: 'abc\abc \\nx"y'
+  [CSS::Grammar] ok 68 - css3 string no warnings
+  [CSS::Grammar] ok 69 - css3 string parse: "xx'yy\n\nz"
+  [CSS::Grammar] ok 70 - css3 string no warnings
+  [CSS::Grammar] ok 71 - css3 url parse: url( abc.png )
+  [CSS::Grammar] ok 72 - css3 url no warnings
+  [CSS::Grammar] ok 73 - css3 url parse: url( 'def.gif' )
+  [CSS::Grammar] ok 74 - css3 url no warnings
+  [CSS::Grammar] ok 75 - css3 num parse: 12.3
+  [CSS::Grammar] ok 76 - css3 num no warnings
+  [CSS::Grammar] ok 77 - css3 num ast
+  [CSS::Grammar] ok 78 - css3 num parse: 123e-1
+  [CSS::Grammar] ok 79 - css3 num no warnings
+  [CSS::Grammar] ok 80 - css3 num ast
+  [CSS::Grammar] ok 81 - css3 num parse: .123E2
+  [CSS::Grammar] ok 82 - css3 num no warnings
+  [CSS::Grammar] ok 83 - css3 num ast
+  [CSS::Grammar] ok 84 - css3 num parse: 12300E-3
+  [CSS::Grammar] ok 85 - css3 num no warnings
+  [CSS::Grammar] ok 86 - css3 num ast
+  [CSS::Grammar] ok 87 - css3 num parse: 1.23E+01
+  [CSS::Grammar] ok 88 - css3 num no warnings
+  [CSS::Grammar] ok 89 - css3 num ast
+  [CSS::Grammar] ok 90 - css3 dimension parse: 12mm
+  [CSS::Grammar] ok 91 - css3 dimension no warnings
+  [CSS::Grammar] ok 92 - css3 dimension ast
+  [CSS::Grammar] ok 93 - css3 any-dimension parse: 12Furlongs
+  [CSS::Grammar] ok 94 - css3 any-dimension no warnings
+  [CSS::Grammar] ok 95 - css3 any-dimension ast
+  [CSS::Grammar] ok 96 - css3 percentage parse: 90%
+  [CSS::Grammar] ok 97 - css3 percentage no warnings
+  [CSS::Grammar] ok 98 - css3 percentage ast
+  [CSS::Grammar] ok 99 - css3 percentage parse: 9e1%
+  [CSS::Grammar] ok 100 - css3 percentage no warnings
+  [CSS::Grammar] ok 101 - css3 percentage ast
+  [CSS::Grammar] ok 102 - css3 percentage parse: +090%
+  [CSS::Grammar] ok 103 - css3 percentage no warnings
+  [CSS::Grammar] ok 104 - css3 percentage ast
+  [CSS::Grammar] ok 105 - css3 unicode-range parse: U+200-2Ff
+  [CSS::Grammar] ok 106 - css3 unicode-range no warnings
+  [CSS::Grammar] ok 107 - css3 unicode-range ast
+  [CSS::Grammar] ok 108 - css3 unicode-range parse: U+2??
+  [CSS::Grammar] ok 109 - css3 unicode-range no warnings
+  [CSS::Grammar] ok 110 - css3 unicode-range ast
+  [CSS::Grammar] ok 111 - css3 term parse: U+2??a
+  [CSS::Grammar] ok 112 - css3 term no warnings
+  [CSS::Grammar] ok 113 - css3 term ast
+  [CSS::Grammar] ok 114 - css3 attribute-selector parse: ~=
+  [CSS::Grammar] ok 115 - css3 attribute-selector no warnings
+  [CSS::Grammar] ok 116 - css3 attribute-selector parse: |=
+  [CSS::Grammar] ok 117 - css3 attribute-selector no warnings
+  [CSS::Grammar] ok 118 - css3 attribute-selector parse: ^=
+  [CSS::Grammar] ok 119 - css3 attribute-selector no warnings
+  [CSS::Grammar] ok 120 - css3 attribute-selector parse: $=
+  [CSS::Grammar] ok 121 - css3 attribute-selector no warnings
+  [CSS::Grammar] ok 122 - css3 attribute-selector parse: *=
+  [CSS::Grammar] ok 123 - css3 attribute-selector no warnings
+  [CSS::Grammar] ok 124 - css3 attribute-selector parse: ||
+  [CSS::Grammar] ok 125 - css3 attribute-selector no warnings
+  [CSS::Grammar] 1..125
+  [CSS::Grammar] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz/CSS-Grammar-0.4.3 t/error-handling.t
+  [CSS::Grammar] ok 1 - css3 errors declaration-list parse: background:url('http://www.bg.com/pinkish.gif')
+  [CSS::Grammar] ok 2 - css3 errors declaration-list no warnings
+  [CSS::Grammar] ok 3 - css3 errors declaration-list ast
+  [CSS::Grammar] ok 4 - css3 errors declaration-list parse: background:URL(http://www.bg.com/pinkish.gif)
+  [CSS::Grammar] ok 5 - css3 errors declaration-list no warnings
+  [CSS::Grammar] ok 6 - css3 errors declaration-list ast
+  [CSS::Grammar] ok 7 - css3 errors declaration-list parse: background:URL(http://www.bg.com/pinkish.gif
+  [CSS::Grammar] ok 8 - css3 errors declaration-list warnings
+  [CSS::Grammar] ok 9 - css3 errors declaration-list parse: background:URL('http://www.bg.com/pinkish.gif
+  [CSS::Grammar] ok 10 - css3 errors declaration-list warnings
+  [CSS::Grammar] ok 11 - css3 errors ruleset parse: h1 { color: red; rotation: 70minutes }
+  [CSS::Grammar] ok 12 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 13 - css3 errors ruleset ast
+  [CSS::Grammar] ok 14 - css3 errors ruleset parse: h1 {kept1:1; color: dropped1 rgb(10,20,30 dropped2; kept2:2;}
+  [CSS::Grammar] ok 15 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 16 - css3 errors ruleset ast
+  [CSS::Grammar] ok 17 - css3 errors ruleset parse: h1 {content:'Section' counter(hdr-1); color:red}
+  [CSS::Grammar] ok 18 - css3 errors ruleset no warnings
+  [CSS::Grammar] ok 19 - css3 errors ruleset ast
+  [CSS::Grammar] ok 20 - css3 errors ruleset parse: h2 {bad: dropme 'http://unclosed-string.org; color:blue;
+  [CSS::Grammar] #  background-color: \#ccc;}
+  [CSS::Grammar] ok 21 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 22 - css3 errors ruleset ast
+  [CSS::Grammar] ok 23 - css3 errors ruleset parse: p { color:rgb(10,17); }
+  [CSS::Grammar] ok 24 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 25 - css3 errors ruleset parse: p:foo(42) { color:bar(); }
+  [CSS::Grammar] ok 26 - css3 errors ruleset no warnings
+  [CSS::Grammar] ok 27 - css3 errors ruleset ast
+  [CSS::Grammar] ok 28 - css3 errors ruleset parse: p { color:bar(@42); }
+  [CSS::Grammar] ok 29 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 30 - css3 errors ruleset parse: p { color }
+  [CSS::Grammar] ok 31 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 32 - css3 errors ruleset parse: p { term1:a; color; term2:b }
+  [CSS::Grammar] ok 33 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 34 - css3 errors ruleset parse: p {term1:a; color: }
+  [CSS::Grammar] ok 35 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 36 - css3 errors ruleset parse: p { term1:a; color:; term2:b }
+  [CSS::Grammar] ok 37 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 38 - css3 errors ruleset parse: p { term1:a; color{;color:maroon} }
+  [CSS::Grammar] ok 39 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 40 - css3 errors ruleset parse: p { term1:a; color{;color:maroon}; color:green }
+  [CSS::Grammar] ok 41 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 42 - css3 errors stylesheet parse: p @here {color: red}
+  [CSS::Grammar] ok 43 - css3 errors stylesheet warnings
+  [CSS::Grammar] ok 44 - css3 errors stylesheet parse: @foo @bar;
+  [CSS::Grammar] ok 45 - css3 errors stylesheet warnings
+  [CSS::Grammar] ok 46 - css3 errors stylesheet parse: }} {{ - }}
+  [CSS::Grammar] ok 47 - css3 errors stylesheet warnings
+  [CSS::Grammar] ok 48 - css3 errors stylesheet parse: h1, h2 {color: green }... h6 {color: black }
+  [CSS::Grammar] ok 49 - css3 errors stylesheet warnings
+  [CSS::Grammar] ok 50 - css3 errors stylesheet ast
+  [CSS::Grammar] ok 51 - css3 errors stylesheet parse: @three-dee { @background-lighting { azimuth: 30deg; elevation: 190deg; }  h1 { color: red } }  h1 { color: blue }
+  [CSS::Grammar] ok 52 - css3 errors stylesheet warnings
+  [CSS::Grammar] ok 53 - css3 errors stylesheet ast
+  [CSS::Grammar] ok 54 - css3 errors stylesheet parse: @media print and (width: 21cm)  { @page { margin: 3cm; @top-center { content: 'Page ' counter(page); }}}
+  [CSS::Grammar] ok 55 - css3 errors stylesheet warnings
+  [CSS::Grammar] ok 56 - css3 errors stylesheet ast
+  [CSS::Grammar] ok 57 - css3 errors stylesheet parse: * foo|* |h1 body:not(.home) h2 + p:first-letter tr:nth-last-child(-n+2) object[type^='image/'] {}
+  [CSS::Grammar] ok 58 - css3 errors stylesheet warnings
+  [CSS::Grammar] ok 59 - css3 errors stylesheet ast
+  [CSS::Grammar] 1..59
+  [CSS::Grammar] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz/CSS-Grammar-0.4.3 t/parse-stylesheets.t
+  [CSS::Grammar] ok 1 - css1 stylesheet parse: H1 { color: blue; }
+  [CSS::Grammar] ok 2 - css1 stylesheet no warnings
+  [CSS::Grammar] ok 3 - css21 stylesheet parse: H1 { color: blue; }
+  [CSS::Grammar] ok 4 - css21 stylesheet no warnings
+  [CSS::Grammar] ok 5 - css3 stylesheet parse: H1 { color: blue; }
+  [CSS::Grammar] ok 6 - css3 stylesheet no warnings
+  [CSS::Grammar] ok 7 - css1 stylesheet parse: A:link IMG { border: 2px solid blue !important}
+  [CSS::Grammar] ok 8 - css1 stylesheet no warnings
+  [CSS::Grammar] ok 9 - css21 stylesheet parse: A:link IMG { border: 2px solid blue !important}
+  [CSS::Grammar] ok 10 - css21 stylesheet no warnings
+  [CSS::Grammar] ok 11 - css3 stylesheet parse: A:link IMG { border: 2px solid blue !important}
+  [CSS::Grammar] ok 12 - css3 stylesheet no warnings
+  [CSS::Grammar] ok 13 - css1 stylesheet parse: BODY {... }
+  [CSS::Grammar] ok 14 - css1 stylesheet no warnings
+  [CSS::Grammar] ok 15 - css21 stylesheet parse: BODY {... }
+  [CSS::Grammar] ok 16 - css21 stylesheet no warnings
+  [CSS::Grammar] ok 17 - css3 stylesheet parse: BODY {... }
+  [CSS::Grammar] ok 18 - css3 stylesheet no warnings
+  [CSS::Grammar] ok 19 - css1 stylesheet parse: BODY {... A:active IMG { border: 2px solid lime }
+  [CSS::Grammar] ok 20 - css1 stylesheet no warnings
+  [CSS::Grammar] ok 21 - css21 stylesheet parse: BODY {... A:active IMG { border: 2px solid lime }
+  [CSS::Grammar] ok 22 - css21 stylesheet no warnings
+  [CSS::Grammar] ok 23 - css3 stylesheet parse: BODY {... A:active IMG { border: 2px solid lime }
+  [CSS::Grammar] ok 24 - css3 stylesheet no warnings
+  [CSS::Grammar] 1..24
+  [CSS::Grammar] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz/CSS-Grammar-0.4.3 t/parse-warnings.t
+  [CSS::Grammar] ok 1 - css1 parse
+  [CSS::Grammar] ok 2 - css1 warnings
+  [CSS::Grammar] ok 3 - css21 parse
+  [CSS::Grammar] ok 4 - css21 warnings
+  [CSS::Grammar] ok 5 - css3 parse
+  [CSS::Grammar] ok 6 - css3 warnings
+  [CSS::Grammar] 1..6
+  [CSS::Grammar] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz/CSS-Grammar-0.4.3 t/regex-tokens.t
+  [CSS::Grammar] ok 1 - ws:  
+  [CSS::Grammar] ok 2 - ws:   
+  [CSS::Grammar] ok 3 - ws: 	
+  [CSS::Grammar] ok 4 - ws: 
+  [CSS::Grammar] ok 5 - ws:  /* hi */ 
+  [CSS::Grammar] ok 6 - ws: /*there*/
+  [CSS::Grammar] ok 7 - ws: <!-- zzz -->
+  [CSS::Grammar] ok 8 - ws: r\n
+  [CSS::Grammar] ok 9 - comment: /**/
+  [CSS::Grammar] ok 10 - comment: /* hi */
+  [CSS::Grammar] ok 11 - comment: <!--X-->
+  [CSS::Grammar] ok 12 - comment: <!-- almost done -->
+  [CSS::Grammar] ok 13 - comment: <!-- Out of coffee
+  [CSS::Grammar] ok 14 - comment: /* is that the door?
+  [CSS::Grammar] ok 15 - unicode: f
+  [CSS::Grammar] ok 16 - unicode: 012f
+  [CSS::Grammar] ok 17 - unicode: 012A
+  [CSS::Grammar] ok 18 - not css1 unicode: 012AF
+  [CSS::Grammar] ok 19 - css21 unicode: 012AF
+  [CSS::Grammar] ok 20 - css3 unicode: 012AF
+  [CSS::Grammar] ok 21 - not css1 unicode: 012AFc
+  [CSS::Grammar] ok 22 - css21 unicode: 012AFc
+  [CSS::Grammar] ok 23 - css3 unicode: 012AFc
+  [CSS::Grammar] ok 24 - css1 num+ident: 70deg
+  [CSS::Grammar] ok 25 - css21 term: 70deg
+  [CSS::Grammar] ok 26 - css3 term: 70deg
+  [CSS::Grammar] ok 27 - css1 num+ident: 50Hz
+  [CSS::Grammar] ok 28 - css21 term: 50Hz
+  [CSS::Grammar] ok 29 - css3 term: 50Hz
+  [CSS::Grammar] ok 30 - non-ascii: ¡ (161)
+  [CSS::Grammar] ok 31 - non-ascii css1: ¡
+  [CSS::Grammar] ok 32 - non-ascii css21: ¡
+  [CSS::Grammar] ok 33 - non-ascii css3: ¡
+  [CSS::Grammar] ok 34 - non-ascii scan: ¡
+  [CSS::Grammar] ok 35 - non-ascii ident: ¡
+  [CSS::Grammar] ok 36 - non-ascii: ¨ (168)
+  [CSS::Grammar] ok 37 - non-ascii css1: ¨
+  [CSS::Grammar] ok 38 - non-ascii css21: ¨
+  [CSS::Grammar] ok 39 - non-ascii css3: ¨
+  [CSS::Grammar] ok 40 - non-ascii scan: ¨
+  [CSS::Grammar] ok 41 - non-ascii ident: ¨
+  [CSS::Grammar] ok 42 - non-ascii: ÿ (255)
+  [CSS::Grammar] ok 43 - non-ascii css1: ÿ
+  [CSS::Grammar] ok 44 - non-ascii css21: ÿ
+  [CSS::Grammar] ok 45 - non-ascii css3: ÿ
+  [CSS::Grammar] ok 46 - non-ascii scan: ÿ
+  [CSS::Grammar] ok 47 - non-ascii ident: ÿ
+  [CSS::Grammar] ok 48 - non-ascii: 
+  [CSS::Grammar]  (13)
+  [CSS::Grammar] ok 49 - non-ascii css1: 
+  [CSS::Grammar] ok 50 - non-ascii css21: 
+  [CSS::Grammar] ok 51 - non-ascii css3: 
+  [CSS::Grammar] ok 52 - non-ascii scan: 
+  [CSS::Grammar] ok 53 - non-ascii:  (149)
+  [CSS::Grammar] ok 54 - not non-ascii css1: 
+  [CSS::Grammar] ok 55 - not non-ascii css21: 
+  [CSS::Grammar] ok 56 - non-ascii css3: 
+  [CSS::Grammar] ok 57 - not non-ascii:  
+  [CSS::Grammar] ok 58 - not non-ascii css1:  
+  [CSS::Grammar] ok 59 - not non-ascii css21:  
+  [CSS::Grammar] ok 60 - not non-ascii css3:  
+  [CSS::Grammar] ok 61 - not non-ascii:  
+  [CSS::Grammar] ok 62 - not non-ascii css1:  
+  [CSS::Grammar] ok 63 - not non-ascii css21:  
+  [CSS::Grammar] ok 64 - not non-ascii css3:  
+  [CSS::Grammar] ok 65 - not non-ascii: ~
+  [CSS::Grammar] ok 66 - not non-ascii css1: ~
+  [CSS::Grammar] ok 67 - not non-ascii css21: ~
+  [CSS::Grammar] ok 68 - not non-ascii css3: ~
+  [CSS::Grammar] ok 69 - css1 url: url(http://www.bg.com/pinkish.gif)
+  [CSS::Grammar] ok 70 - css1 url: url("http://www.bg.com/pinkish.gif")
+  [CSS::Grammar] ok 71 - css1 url: url('http://www.bg.com/pinkish.gif')
+  [CSS::Grammar] ok 72 - css1 url: url("http://www.bg.com/pink(ish).gif")
+  [CSS::Grammar] ok 73 - css1 url: url('http://www.bg.com/pink(ish).gif')
+  [CSS::Grammar] ok 74 - css1 url: url(http://www.bg.com/pink%20ish.gif)
+  [CSS::Grammar] ok 75 - css1 url: url(http://www.bg.com/pink\(ish\).gif)
+  [CSS::Grammar] ok 76 - not css1 url: url(http://www.bg.com/pink(ish).gif)
+  [CSS::Grammar] ok 77 - ident: Appl8s
+  [CSS::Grammar] ok 78 - ident: oranges
+  [CSS::Grammar] ok 79 - ident: k1w1-fru1t
+  [CSS::Grammar] ok 80 - ident: -i
+  [CSS::Grammar] ok 81 - not ident: 8
+  [CSS::Grammar] ok 82 - string: "Hello"
+  [CSS::Grammar] ok 83 - string: 'world'
+  [CSS::Grammar] ok 84 - string: ''
+  [CSS::Grammar] ok 85 - string: ""
+  [CSS::Grammar] ok 86 - string: "'"
+  [CSS::Grammar] ok 87 - string: '"'
+  [CSS::Grammar] ok 88 - string: "grocer's"
+  [CSS::Grammar] ok 89 - string: "a /* non-comment */"
+  [CSS::Grammar] ok 90 - string: 'hello\
+  [CSS::Grammar] # world'
+  [CSS::Grammar] ok 91 - not string: "Unclosed
+  [CSS::Grammar] ok 92 - badstring: "Unclosed
+  [CSS::Grammar] ok 93 - not string: "
+  [CSS::Grammar] ok 94 - badstring: "
+  [CSS::Grammar] ok 95 - not string: world'
+  [CSS::Grammar] ok 96 - not string: '''
+  [CSS::Grammar] ok 97 - not string: 'grocer's'
+  [CSS::Grammar] ok 98 - not string: 'hello
+  [CSS::Grammar] # world'
+  [CSS::Grammar] ok 99 - scan op: *
+  [CSS::Grammar] ok 100 - scan op: +
+  [CSS::Grammar] ok 101 - scan op: >
+  [CSS::Grammar] ok 102 - scan op: |=
+  [CSS::Grammar] ok 103 - scan op: ~=
+  [CSS::Grammar] ok 104 - css21 rule-list: { }
+  [CSS::Grammar] ok 105 - css3 rule-list: { }
+  [CSS::Grammar] ok 106 - css21 rule-list: {
+  [CSS::Grammar] #    body { font-size: 10pt }
+  [CSS::Grammar] # }
+  [CSS::Grammar] ok 107 - css3 rule-list: {
+  [CSS::Grammar] #    body { font-size: 10pt }
+  [CSS::Grammar] # }
+  [CSS::Grammar] ok 108 - css21 at-rule: @page :left { margin: 3cm };
+  [CSS::Grammar] ok 109 - css21 at-rule: @media print {
+  [CSS::Grammar] #    body { font-size: 10pt }
+  [CSS::Grammar] # }
+  [CSS::Grammar] 1..109
+  ===> Testing [OK] for CSS::Grammar:ver<0.4.3>:auth<zef:dwarring>
+  ===> Installing: CSS::Grammar:ver<0.4.3>:auth<zef:dwarring>
+  ===> Install [OK] for CSS::Grammar:ver<0.4.3>:auth<zef:dwarring>
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 46.124s
+               CPU time consumed: 1min 7.440s
+                     Memory peak: 1.1G (swap: 0B)
+
+  ```
+  </details>
+  <details>
+  <summary>New Output</summary>
+
+  ```
+  Running as unit: run-p3013739-i2960062.service
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: CSS::Grammar
+  ===> Found: CSS::Grammar:ver<0.4.3>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
+  [CSS::Grammar] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870283.3013744.9458.04974175809/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz https://360.zef.pm/C/SS/CSS_GRAMMAR/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz
+  ===> Fetching [OK]: CSS::Grammar:ver<0.4.3>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870283.3013744.9458.04974175809/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz
+  [CSS::Grammar] Command: tar -t -f ./5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz
+  [CSS::Grammar] Command: tar -xvf ./5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz -C ../5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz
+  ===> Extraction [OK]: CSS::Grammar to /home/coke/sandbox/blin/data/zef-data/tmp/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz
+  ===> Testing: CSS::Grammar:ver<0.4.3>:auth<zef:dwarring>
+  [CSS::Grammar] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz/CSS-Grammar-0.4.3 t/compat.t
+  [CSS::Grammar] ok 1 - css1 ws parse:  
+  [CSS::Grammar] ok 2 - css1 ws no warnings
+  [CSS::Grammar] ok 3 - css21 ws parse:  
+  [CSS::Grammar] ok 4 - css21 ws no warnings
+  [CSS::Grammar] ok 5 - css3 ws parse:  
+  [CSS::Grammar] ok 6 - css3 ws no warnings
+  [CSS::Grammar] ok 7 - css1 ws parse: /* comments
+  [CSS::Grammar] # 1 */
+  [CSS::Grammar] ok 8 - css1 ws no warnings
+  [CSS::Grammar] ok 9 - css21 ws parse: /* comments
+  [CSS::Grammar] # 1 */
+  [CSS::Grammar] ok 10 - css21 ws no warnings
+  [CSS::Grammar] ok 11 - css3 ws parse: /* comments
+  [CSS::Grammar] # 1 */
+  [CSS::Grammar] ok 12 - css3 ws no warnings
+  [CSS::Grammar] ok 13 - css1 ws parse: <!-- comments
+  [CSS::Grammar] # 2 -->
+  [CSS::Grammar] ok 14 - css1 ws no warnings
+  [CSS::Grammar] ok 15 - css21 ws parse: <!-- comments
+  [CSS::Grammar] # 2 -->
+  [CSS::Grammar] ok 16 - css21 ws no warnings
+  [CSS::Grammar] ok 17 - css3 ws parse: <!-- comments
+  [CSS::Grammar] # 2 -->
+  [CSS::Grammar] ok 18 - css3 ws no warnings
+  [CSS::Grammar] ok 19 - css1 ws parse: <!-- unterminated comment
+  [CSS::Grammar] ok 20 - css1 ws warnings
+  [CSS::Grammar] ok 21 - css21 ws parse: <!-- unterminated comment
+  [CSS::Grammar] ok 22 - css21 ws warnings
+  [CSS::Grammar] ok 23 - css3 ws parse: <!-- unterminated comment
+  [CSS::Grammar] ok 24 - css3 ws warnings
+  [CSS::Grammar] ok 25 - css1 ws parse: /* unterminated... comment ... 
+  [CSS::Grammar] ok 26 - css1 ws warnings
+  [CSS::Grammar] ok 27 - css21 ws parse: /* unterminated... comment ... 
+  [CSS::Grammar] ok 28 - css21 ws warnings
+  [CSS::Grammar] ok 29 - css3 ws parse: /* unterminated... comment ... 
+  [CSS::Grammar] ok 30 - css3 ws warnings
+  [CSS::Grammar] ok 31 - css1 name parse: my-class
+  [CSS::Grammar] ok 32 - css1 name no warnings
+  [CSS::Grammar] ok 33 - css1 name ast
+  [CSS::Grammar] ok 34 - css21 name parse: my-class
+  [CSS::Grammar] ok 35 - css21 name no warnings
+  [CSS::Grammar] ok 36 - css21 name ast
+  [CSS::Grammar] ok 37 - css3 name parse: my-class
+  [CSS::Grammar] ok 38 - css3 name no warnings
+  [CSS::Grammar] ok 39 - css3 name ast
+  [CSS::Grammar] ok 40 - css1 name parse: \021
+  [CSS::Grammar] ok 41 - css1 name no warnings
+  [CSS::Grammar] ok 42 - css1 name ast
+  [CSS::Grammar] ok 43 - css21 name parse: \021
+  [CSS::Grammar] ok 44 - css21 name no warnings
+  [CSS::Grammar] ok 45 - css21 name ast
+  [CSS::Grammar] ok 46 - css3 name parse: \021
+  [CSS::Grammar] ok 47 - css3 name no warnings
+  [CSS::Grammar] ok 48 - css3 name ast
+  [CSS::Grammar] ok 49 - # SKIP name: unicode surrogates handling in rakudo
+  [CSS::Grammar] ok 50 - # SKIP name: unicode surrogates handling in rakudo
+  [CSS::Grammar] ok 51 - # SKIP name: unicode surrogates handling in rakudo
+  [CSS::Grammar] ok 52 - css1 num parse: 2.52
+  [CSS::Grammar] ok 53 - css1 num no warnings
+  [CSS::Grammar] ok 54 - css1 num ast
+  [CSS::Grammar] ok 55 - css21 num parse: 2.52
+  [CSS::Grammar] ok 56 - css21 num no warnings
+  [CSS::Grammar] ok 57 - css21 num ast
+  [CSS::Grammar] ok 58 - css3 num parse: 2.52
+  [CSS::Grammar] ok 59 - css3 num no warnings
+  [CSS::Grammar] ok 60 - css3 num ast
+  [CSS::Grammar] ok 61 - css1 num parse: 0
+  [CSS::Grammar] ok 62 - css1 num no warnings
+  [CSS::Grammar] ok 63 - css1 num ast
+  [CSS::Grammar] ok 64 - css21 num parse: 0
+  [CSS::Grammar] ok 65 - css21 num no warnings
+  [CSS::Grammar] ok 66 - css21 num ast
+  [CSS::Grammar] ok 67 - css3 num parse: 0
+  [CSS::Grammar] ok 68 - css3 num no warnings
+  [CSS::Grammar] ok 69 - css3 num ast
+  [CSS::Grammar] ok 70 - css1 num parse: 1
+  [CSS::Grammar] ok 71 - css1 num no warnings
+  [CSS::Grammar] ok 72 - css1 num ast
+  [CSS::Grammar] ok 73 - css21 num parse: 1
+  [CSS::Grammar] ok 74 - css21 num no warnings
+  [CSS::Grammar] ok 75 - css21 num ast
+  [CSS::Grammar] ok 76 - css3 num parse: 1
+  [CSS::Grammar] ok 77 - css3 num no warnings
+  [CSS::Grammar] ok 78 - css3 num ast
+  [CSS::Grammar] ok 79 - css1 num parse: .1
+  [CSS::Grammar] ok 80 - css1 num no warnings
+  [CSS::Grammar] ok 81 - css1 num ast
+  [CSS::Grammar] ok 82 - css21 num parse: .1
+  [CSS::Grammar] ok 83 - css21 num no warnings
+  [CSS::Grammar] ok 84 - css21 num ast
+  [CSS::Grammar] ok 85 - css3 num parse: .1
+  [CSS::Grammar] ok 86 - css3 num no warnings
+  [CSS::Grammar] ok 87 - css3 num ast
+  [CSS::Grammar] ok 88 - css1 num parse: +1.9
+  [CSS::Grammar] ok 89 - css1 num no warnings
+  [CSS::Grammar] ok 90 - css1 num ast
+  [CSS::Grammar] ok 91 - css21 num parse: +1.9
+  [CSS::Grammar] ok 92 - css21 num no warnings
+  [CSS::Grammar] ok 93 - css21 num ast
+  [CSS::Grammar] ok 94 - css3 num parse: +1.9
+  [CSS::Grammar] ok 95 - css3 num no warnings
+  [CSS::Grammar] ok 96 - css3 num ast
+  [CSS::Grammar] ok 97 - css1 num parse: -3.14
+  [CSS::Grammar] ok 98 - css1 num no warnings
+  [CSS::Grammar] ok 99 - css1 num ast
+  [CSS::Grammar] ok 100 - css21 num parse: -3.14
+  [CSS::Grammar] ok 101 - css21 num no warnings
+  [CSS::Grammar] ok 102 - css21 num ast
+  [CSS::Grammar] ok 103 - css3 num parse: -3.14
+  [CSS::Grammar] ok 104 - css3 num no warnings
+  [CSS::Grammar] ok 105 - css3 num ast
+  [CSS::Grammar] ok 106 - css1 id parse:  \#z0y\021
+  [CSS::Grammar] ok 107 - css1 id no warnings
+  [CSS::Grammar] ok 108 - css1 id ast
+  [CSS::Grammar] ok 109 - css21 id parse:  \#z0y\021
+  [CSS::Grammar] ok 110 - css21 id no warnings
+  [CSS::Grammar] ok 111 - css21 id ast
+  [CSS::Grammar] ok 112 - css3 id parse:  \#z0y\021
+  [CSS::Grammar] ok 113 - css3 id no warnings
+  [CSS::Grammar] ok 114 - css3 id ast
+  [CSS::Grammar] ok 115 - css1 id parse:  \#\
+  [CSS::Grammar] # z0y\021
+  [CSS::Grammar] ok 116 - css1 id no warnings
+  [CSS::Grammar] ok 117 - css1 id ast
+  [CSS::Grammar] ok 118 - css21 id parse:  \#\
+  [CSS::Grammar] # z0y\021
+  [CSS::Grammar] ok 119 - css21 id no warnings
+  [CSS::Grammar] ok 120 - css21 id ast
+  [CSS::Grammar] ok 121 - css3 id parse:  \#\
+  [CSS::Grammar] # z0y\021
+  [CSS::Grammar] ok 122 - css3 id no warnings
+  [CSS::Grammar] ok 123 - css3 id ast
+  [CSS::Grammar] ok 124 - css1 string parse: 'hi\021 there'
+  [CSS::Grammar] ok 125 - css1 string no warnings
+  [CSS::Grammar] ok 126 - css1 string ast
+  [CSS::Grammar] ok 127 - css21 string parse: 'hi\021 there'
+  [CSS::Grammar] ok 128 - css21 string no warnings
+  [CSS::Grammar] ok 129 - css21 string ast
+  [CSS::Grammar] ok 130 - css3 string parse: 'hi\021 there'
+  [CSS::Grammar] ok 131 - css3 string no warnings
+  [CSS::Grammar] ok 132 - css3 string ast
+  [CSS::Grammar] ok 133 - css1 class parse: .zippy
+  [CSS::Grammar] ok 134 - css1 class no warnings
+  [CSS::Grammar] ok 135 - css1 class ast
+  [CSS::Grammar] ok 136 - css21 class parse: .zippy
+  [CSS::Grammar] ok 137 - css21 class no warnings
+  [CSS::Grammar] ok 138 - css21 class ast
+  [CSS::Grammar] ok 139 - css3 class parse: .zippy
+  [CSS::Grammar] ok 140 - css3 class no warnings
+  [CSS::Grammar] ok 141 - css3 class ast
+  [CSS::Grammar] ok 142 - css1 class parse: .\55ft
+  [CSS::Grammar] ok 143 - css1 class no warnings
+  [CSS::Grammar] ok 144 - css1 class ast
+  [CSS::Grammar] ok 145 - css21 class parse: .\55ft
+  [CSS::Grammar] ok 146 - css21 class no warnings
+  [CSS::Grammar] ok 147 - css21 class ast
+  [CSS::Grammar] ok 148 - css3 class parse: .\55ft
+  [CSS::Grammar] ok 149 - css3 class no warnings
+  [CSS::Grammar] ok 150 - css3 class ast
+  [CSS::Grammar] ok 151 - css1 color parse: Rgb(10, 20, 30)
+  [CSS::Grammar] ok 152 - css1 color no warnings
+  [CSS::Grammar] ok 153 - css1 color ast
+  [CSS::Grammar] ok 154 - css21 color parse: Rgb(10, 20, 30)
+  [CSS::Grammar] ok 155 - css21 color no warnings
+  [CSS::Grammar] ok 156 - css21 color ast
+  [CSS::Grammar] ok 157 - css3 color parse: Rgb(10, 20, 30)
+  [CSS::Grammar] ok 158 - css3 color no warnings
+  [CSS::Grammar] ok 159 - css3 color ast
+  [CSS::Grammar] ok 160 - css1 term parse: foo(bar)
+  [CSS::Grammar] ok 161 - css1 term no warnings
+  [CSS::Grammar] ok 162 - css21 term parse: foo(bar)
+  [CSS::Grammar] ok 163 - css21 term no warnings
+  [CSS::Grammar] ok 164 - css21 term ast
+  [CSS::Grammar] ok 165 - css3 term parse: foo(bar)
+  [CSS::Grammar] ok 166 - css3 term no warnings
+  [CSS::Grammar] ok 167 - css3 term ast
+  [CSS::Grammar] ok 168 - css1 expr parse: fr-ca
+  [CSS::Grammar] ok 169 - css1 expr no warnings
+  [CSS::Grammar] ok 170 - css1 expr ast
+  [CSS::Grammar] ok 171 - css21 expr parse: fr-ca
+  [CSS::Grammar] ok 172 - css21 expr no warnings
+  [CSS::Grammar] ok 173 - css21 expr ast
+  [CSS::Grammar] ok 174 - css3 expr parse: fr-ca
+  [CSS::Grammar] ok 175 - css3 expr no warnings
+  [CSS::Grammar] ok 176 - css3 expr ast
+  [CSS::Grammar] ok 177 - css1 pseudo parse: :visited
+  [CSS::Grammar] ok 178 - css1 pseudo no warnings
+  [CSS::Grammar] ok 179 - css1 pseudo ast
+  [CSS::Grammar] ok 180 - css21 pseudo parse: :visited
+  [CSS::Grammar] ok 181 - css21 pseudo no warnings
+  [CSS::Grammar] ok 182 - css21 pseudo ast
+  [CSS::Grammar] ok 183 - css3 pseudo parse: :visited
+  [CSS::Grammar] ok 184 - css3 pseudo no warnings
+  [CSS::Grammar] ok 185 - css3 pseudo ast
+  [CSS::Grammar] ok 186 - css1 pseudo parse: :Lang(fr-ca)
+  [CSS::Grammar] ok 187 - css1 pseudo no warnings
+  [CSS::Grammar] ok 188 - css1 pseudo ast
+  [CSS::Grammar] ok 189 - css21 pseudo parse: :Lang(fr-ca)
+  [CSS::Grammar] ok 190 - css21 pseudo no warnings
+  [CSS::Grammar] ok 191 - css21 pseudo ast
+  [CSS::Grammar] ok 192 - css3 pseudo parse: :Lang(fr-ca)
+  [CSS::Grammar] ok 193 - css3 pseudo no warnings
+  [CSS::Grammar] ok 194 - css3 pseudo ast
+  [CSS::Grammar] ok 195 - css1 import parse: @import url('file:///etc/passwd');
+  [CSS::Grammar] ok 196 - css1 import no warnings
+  [CSS::Grammar] ok 197 - css1 import ast
+  [CSS::Grammar] ok 198 - css21 import parse: @import url('file:///etc/passwd');
+  [CSS::Grammar] ok 199 - css21 import no warnings
+  [CSS::Grammar] ok 200 - css21 import ast
+  [CSS::Grammar] ok 201 - css3 import parse: @import url('file:///etc/passwd');
+  [CSS::Grammar] ok 202 - css3 import no warnings
+  [CSS::Grammar] ok 203 - css3 import ast
+  [CSS::Grammar] ok 204 - css1 import parse: @IMPORT '/etc/group';
+  [CSS::Grammar] ok 205 - css1 import no warnings
+  [CSS::Grammar] ok 206 - css1 import ast
+  [CSS::Grammar] ok 207 - css21 import parse: @IMPORT '/etc/group';
+  [CSS::Grammar] ok 208 - css21 import no warnings
+  [CSS::Grammar] ok 209 - css21 import ast
+  [CSS::Grammar] ok 210 - css3 import parse: @IMPORT '/etc/group';
+  [CSS::Grammar] ok 211 - css3 import no warnings
+  [CSS::Grammar] ok 212 - css3 import ast
+  [CSS::Grammar] ok 213 - css1 import parse: @import url(bluish\.css) projection, tv;
+  [CSS::Grammar] ok 214 - css1 import no warnings
+  [CSS::Grammar] ok 215 - css21 import parse: @import url(bluish\.css) projection, tv;
+  [CSS::Grammar] ok 216 - css21 import no warnings
+  [CSS::Grammar] ok 217 - css21 import ast
+  [CSS::Grammar] ok 218 - css3 import parse: @import url(bluish\.css) projection, tv;
+  [CSS::Grammar] ok 219 - css3 import no warnings
+  [CSS::Grammar] ok 220 - css3 import ast
+  [CSS::Grammar] ok 221 - css1 class parse: .my-class
+  [CSS::Grammar] ok 222 - css1 class no warnings
+  [CSS::Grammar] ok 223 - css1 class ast
+  [CSS::Grammar] ok 224 - css21 class parse: .my-class
+  [CSS::Grammar] ok 225 - css21 class no warnings
+  [CSS::Grammar] ok 226 - css21 class ast
+  [CSS::Grammar] ok 227 - css3 class parse: .my-class
+  [CSS::Grammar] ok 228 - css3 class no warnings
+  [CSS::Grammar] ok 229 - css3 class ast
+  [CSS::Grammar] ok 230 - css1 simple-selector parse: BODY
+  [CSS::Grammar] ok 231 - css1 simple-selector no warnings
+  [CSS::Grammar] ok 232 - css1 simple-selector ast
+  [CSS::Grammar] ok 233 - css21 simple-selector parse: BODY
+  [CSS::Grammar] ok 234 - css21 simple-selector no warnings
+  [CSS::Grammar] ok 235 - css21 simple-selector ast
+  [CSS::Grammar] ok 236 - css3 simple-selector parse: BODY
+  [CSS::Grammar] ok 237 - css3 simple-selector no warnings
+  [CSS::Grammar] ok 238 - css3 simple-selector ast
+  [CSS::Grammar] ok 239 - css1 selector parse: A:Visited
+  [CSS::Grammar] ok 240 - css1 selector no warnings
+  [CSS::Grammar] ok 241 - css1 selector ast
+  [CSS::Grammar] ok 242 - css21 selector parse: A:Visited
+  [CSS::Grammar] ok 243 - css21 selector no warnings
+  [CSS::Grammar] ok 244 - css21 selector ast
+  [CSS::Grammar] ok 245 - css3 selector parse: A:Visited
+  [CSS::Grammar] ok 246 - css3 selector no warnings
+  [CSS::Grammar] ok 247 - css3 selector ast
+  [CSS::Grammar] ok 248 - css1 selector parse: :visited
+  [CSS::Grammar] ok 249 - css1 selector no warnings
+  [CSS::Grammar] ok 250 - css1 selector ast
+  [CSS::Grammar] ok 251 - css21 selector parse: :visited
+  [CSS::Grammar] ok 252 - css21 selector no warnings
+  [CSS::Grammar] ok 253 - css21 selector ast
+  [CSS::Grammar] ok 254 - css3 selector parse: :visited
+  [CSS::Grammar] ok 255 - css3 selector no warnings
+  [CSS::Grammar] ok 256 - css3 selector ast
+  [CSS::Grammar] ok 257 - css1 selector parse: .some_class
+  [CSS::Grammar] ok 258 - css1 selector no warnings
+  [CSS::Grammar] ok 259 - css1 selector ast
+  [CSS::Grammar] ok 260 - css21 selector parse: .some_class
+  [CSS::Grammar] ok 261 - css21 selector no warnings
+  [CSS::Grammar] ok 262 - css21 selector ast
+  [CSS::Grammar] ok 263 - css3 selector parse: .some_class
+  [CSS::Grammar] ok 264 - css3 selector no warnings
+  [CSS::Grammar] ok 265 - css3 selector ast
+  [CSS::Grammar] ok 266 - css1 selector parse: .some_class:link
+  [CSS::Grammar] ok 267 - css1 selector no warnings
+  [CSS::Grammar] ok 268 - css1 selector ast
+  [CSS::Grammar] ok 269 - css21 selector parse: .some_class:link
+  [CSS::Grammar] ok 270 - css21 selector no warnings
+  [CSS::Grammar] ok 271 - css21 selector ast
+  [CSS::Grammar] ok 272 - css3 selector parse: .some_class:link
+  [CSS::Grammar] ok 273 - css3 selector no warnings
+  [CSS::Grammar] ok 274 - css3 selector ast
+  [CSS::Grammar] ok 275 - css1 simple-selector parse: BODY.some_class
+  [CSS::Grammar] ok 276 - css1 simple-selector no warnings
+  [CSS::Grammar] ok 277 - css1 simple-selector ast
+  [CSS::Grammar] ok 278 - css21 simple-selector parse: BODY.some_class
+  [CSS::Grammar] ok 279 - css21 simple-selector no warnings
+  [CSS::Grammar] ok 280 - css21 simple-selector ast
+  [CSS::Grammar] ok 281 - css3 simple-selector parse: BODY.some_class
+  [CSS::Grammar] ok 282 - css3 simple-selector no warnings
+  [CSS::Grammar] ok 283 - css3 simple-selector ast
+  [CSS::Grammar] ok 284 - css1 pseudo parse: :first-line
+  [CSS::Grammar] ok 285 - css1 pseudo no warnings
+  [CSS::Grammar] ok 286 - css1 pseudo ast
+  [CSS::Grammar] ok 287 - css21 pseudo parse: :first-line
+  [CSS::Grammar] ok 288 - css21 pseudo no warnings
+  [CSS::Grammar] ok 289 - css21 pseudo ast
+  [CSS::Grammar] ok 290 - css3 pseudo parse: :first-line
+  [CSS::Grammar] ok 291 - css3 pseudo no warnings
+  [CSS::Grammar] ok 292 - css3 pseudo ast
+  [CSS::Grammar] ok 293 - css1 selector parse: BODY.some-class:active
+  [CSS::Grammar] ok 294 - css1 selector no warnings
+  [CSS::Grammar] ok 295 - css1 selector ast
+  [CSS::Grammar] ok 296 - css21 selector parse: BODY.some-class:active
+  [CSS::Grammar] ok 297 - css21 selector no warnings
+  [CSS::Grammar] ok 298 - css21 selector ast
+  [CSS::Grammar] ok 299 - css3 selector parse: BODY.some-class:active
+  [CSS::Grammar] ok 300 - css3 selector no warnings
+  [CSS::Grammar] ok 301 - css3 selector ast
+  [CSS::Grammar] ok 302 - css1 selector parse: .c1 \#ID.c2 .d1.d2
+  [CSS::Grammar] ok 303 - css1 selector no warnings
+  [CSS::Grammar] ok 304 - css1 selector ast
+  [CSS::Grammar] ok 305 - css21 selector parse: .c1 \#ID.c2 .d1.d2
+  [CSS::Grammar] ok 306 - css21 selector no warnings
+  [CSS::Grammar] ok 307 - css21 selector ast
+  [CSS::Grammar] ok 308 - css3 selector parse: .c1 \#ID.c2 .d1.d2
+  [CSS::Grammar] ok 309 - css3 selector no warnings
+  [CSS::Grammar] ok 310 - css3 selector ast
+  [CSS::Grammar] ok 311 - css1 selector parse:  \#my-id /* white-space */ :first-line
+  [CSS::Grammar] ok 312 - css1 selector no warnings
+  [CSS::Grammar] ok 313 - css1 selector ast
+  [CSS::Grammar] ok 314 - css21 selector parse:  \#my-id /* white-space */ :first-line
+  [CSS::Grammar] ok 315 - css21 selector no warnings
+  [CSS::Grammar] ok 316 - css21 selector ast
+  [CSS::Grammar] ok 317 - css3 selector parse:  \#my-id /* white-space */ :first-line
+  [CSS::Grammar] ok 318 - css3 selector no warnings
+  [CSS::Grammar] ok 319 - css3 selector ast
+  [CSS::Grammar] ok 320 - css1 selector parse:  \#my-id:first-line
+  [CSS::Grammar] ok 321 - css1 selector no warnings
+  [CSS::Grammar] ok 322 - css1 selector ast
+  [CSS::Grammar] ok 323 - css21 selector parse:  \#my-id:first-line
+  [CSS::Grammar] ok 324 - css21 selector no warnings
+  [CSS::Grammar] ok 325 - css21 selector ast
+  [CSS::Grammar] ok 326 - css3 selector parse:  \#my-id:first-line
+  [CSS::Grammar] ok 327 - css3 selector no warnings
+  [CSS::Grammar] ok 328 - css3 selector ast
+  [CSS::Grammar] ok 329 - css1 selector parse:  \#my-id+:first-line
+  [CSS::Grammar] ok 330 - css1 selector no warnings
+  [CSS::Grammar] ok 331 - css1 selector ast
+  [CSS::Grammar] ok 332 - css21 selector parse:  \#my-id+:first-line
+  [CSS::Grammar] ok 333 - css21 selector no warnings
+  [CSS::Grammar] ok 334 - css21 selector ast
+  [CSS::Grammar] ok 335 - css3 selector parse:  \#my-id+:first-line
+  [CSS::Grammar] ok 336 - css3 selector no warnings
+  [CSS::Grammar] ok 337 - css3 selector ast
+  [CSS::Grammar] ok 338 - css1 selector parse:  \#my-id + :first-line
+  [CSS::Grammar] ok 339 - css1 selector no warnings
+  [CSS::Grammar] ok 340 - css1 selector ast
+  [CSS::Grammar] ok 341 - css21 selector parse:  \#my-id + :first-line
+  [CSS::Grammar] ok 342 - css21 selector no warnings
+  [CSS::Grammar] ok 343 - css21 selector ast
+  [CSS::Grammar] ok 344 - css3 selector parse:  \#my-id + :first-line
+  [CSS::Grammar] ok 345 - css3 selector no warnings
+  [CSS::Grammar] ok 346 - css3 selector ast
+  [CSS::Grammar] ok 347 - css1 selector parse: ol > li:first-child + li +li+ li+li
+  [CSS::Grammar] ok 348 - css1 selector no warnings
+  [CSS::Grammar] ok 349 - css1 selector ast
+  [CSS::Grammar] ok 350 - css21 selector parse: ol > li:first-child + li +li+ li+li
+  [CSS::Grammar] ok 351 - css21 selector no warnings
+  [CSS::Grammar] ok 352 - css21 selector ast
+  [CSS::Grammar] ok 353 - css3 selector parse: ol > li:first-child + li +li+ li+li
+  [CSS::Grammar] ok 354 - css3 selector no warnings
+  [CSS::Grammar] ok 355 - css3 selector ast
+  [CSS::Grammar] ok 356 - css1 selector parse: A:first-letter
+  [CSS::Grammar] ok 357 - css1 selector no warnings
+  [CSS::Grammar] ok 358 - css1 selector ast
+  [CSS::Grammar] ok 359 - css21 selector parse: A:first-letter
+  [CSS::Grammar] ok 360 - css21 selector no warnings
+  [CSS::Grammar] ok 361 - css21 selector ast
+  [CSS::Grammar] ok 362 - css3 selector parse: A:first-letter
+  [CSS::Grammar] ok 363 - css3 selector no warnings
+  [CSS::Grammar] ok 364 - css3 selector ast
+  [CSS::Grammar] ok 365 - css1 selector parse: A:Link IMG
+  [CSS::Grammar] ok 366 - css1 selector no warnings
+  [CSS::Grammar] ok 367 - css1 selector ast
+  [CSS::Grammar] ok 368 - css21 selector parse: A:Link IMG
+  [CSS::Grammar] ok 369 - css21 selector no warnings
+  [CSS::Grammar] ok 370 - css21 selector ast
+  [CSS::Grammar] ok 371 - css3 selector parse: A:Link IMG
+  [CSS::Grammar] ok 372 - css3 selector no warnings
+  [CSS::Grammar] ok 373 - css3 selector ast
+  [CSS::Grammar] ok 374 - css1 selector parse: A:After IMG
+  [CSS::Grammar] ok 375 - css1 selector no warnings
+  [CSS::Grammar] ok 376 - css1 selector ast
+  [CSS::Grammar] ok 377 - css21 selector parse: A:After IMG
+  [CSS::Grammar] ok 378 - css21 selector no warnings
+  [CSS::Grammar] ok 379 - css21 selector ast
+  [CSS::Grammar] ok 380 - css3 selector parse: A:After IMG
+  [CSS::Grammar] ok 381 - css3 selector no warnings
+  [CSS::Grammar] ok 382 - css3 selector ast
+  [CSS::Grammar] ok 383 - css1 selector parse: H1[lang=fr]
+  [CSS::Grammar] ok 384 - css1 selector no warnings
+  [CSS::Grammar] ok 385 - css1 selector ast
+  [CSS::Grammar] ok 386 - css21 selector parse: H1[lang=fr]
+  [CSS::Grammar] ok 387 - css21 selector no warnings
+  [CSS::Grammar] ok 388 - css21 selector ast
+  [CSS::Grammar] ok 389 - css3 selector parse: H1[lang=fr]
+  [CSS::Grammar] ok 390 - css3 selector no warnings
+  [CSS::Grammar] ok 391 - css3 selector ast
+  [CSS::Grammar] ok 392 - css1 selector parse: *[lang=fr]
+  [CSS::Grammar] ok 393 - css1 selector no warnings
+  [CSS::Grammar] ok 394 - css21 selector parse: *[lang=fr]
+  [CSS::Grammar] ok 395 - css21 selector no warnings
+  [CSS::Grammar] ok 396 - css21 selector ast
+  [CSS::Grammar] ok 397 - css3 selector parse: *[lang=fr]
+  [CSS::Grammar] ok 398 - css3 selector no warnings
+  [CSS::Grammar] ok 399 - css3 selector ast
+  [CSS::Grammar] ok 400 - css1 expr parse: RGB(-10,133,257 ),  \#fa7
+  [CSS::Grammar] ok 401 - css1 expr no warnings
+  [CSS::Grammar] ok 402 - css1 expr ast
+  [CSS::Grammar] ok 403 - css21 expr parse: RGB(-10,133,257 ),  \#fa7
+  [CSS::Grammar] ok 404 - css21 expr no warnings
+  [CSS::Grammar] ok 405 - css21 expr ast
+  [CSS::Grammar] ok 406 - css3 expr parse: RGB(-10,133,257 ),  \#fa7
+  [CSS::Grammar] ok 407 - css3 expr no warnings
+  [CSS::Grammar] ok 408 - css3 expr ast
+  [CSS::Grammar] ok 409 - css1 expr parse: 'Helvetica Neue',helvetica-neue, helvetica
+  [CSS::Grammar] ok 410 - css1 expr no warnings
+  [CSS::Grammar] ok 411 - css1 expr ast
+  [CSS::Grammar] ok 412 - css21 expr parse: 'Helvetica Neue',helvetica-neue, helvetica
+  [CSS::Grammar] ok 413 - css21 expr no warnings
+  [CSS::Grammar] ok 414 - css21 expr ast
+  [CSS::Grammar] ok 415 - css3 expr parse: 'Helvetica Neue',helvetica-neue, helvetica
+  [CSS::Grammar] ok 416 - css3 expr no warnings
+  [CSS::Grammar] ok 417 - css3 expr ast
+  [CSS::Grammar] ok 418 - css1 expr parse: +13mm EM -ex em(42) em_ 14ch 15rem
+  [CSS::Grammar] ok 419 - css1 expr no warnings
+  [CSS::Grammar] ok 420 - css1 expr ast
+  [CSS::Grammar] ok 421 - css21 expr parse: +13mm EM -ex em(42) em_ 14ch 15rem
+  [CSS::Grammar] ok 422 - css21 expr no warnings
+  [CSS::Grammar] ok 423 - css21 expr ast
+  [CSS::Grammar] ok 424 - css3 expr parse: +13mm EM -ex em(42) em_ 14ch 15rem
+  [CSS::Grammar] ok 425 - css3 expr no warnings
+  [CSS::Grammar] ok 426 - css3 expr ast
+  [CSS::Grammar] ok 427 - css1 expr parse: -1CM
+  [CSS::Grammar] ok 428 - css1 expr no warnings
+  [CSS::Grammar] ok 429 - css1 expr ast
+  [CSS::Grammar] ok 430 - css21 expr parse: -1CM
+  [CSS::Grammar] ok 431 - css21 expr no warnings
+  [CSS::Grammar] ok 432 - css21 expr ast
+  [CSS::Grammar] ok 433 - css3 expr parse: -1CM
+  [CSS::Grammar] ok 434 - css3 expr no warnings
+  [CSS::Grammar] ok 435 - css3 expr ast
+  [CSS::Grammar] ok 436 - css1 expr parse: 2px solid blue
+  [CSS::Grammar] ok 437 - css1 expr no warnings
+  [CSS::Grammar] ok 438 - css1 expr ast
+  [CSS::Grammar] ok 439 - css21 expr parse: 2px solid blue
+  [CSS::Grammar] ok 440 - css21 expr no warnings
+  [CSS::Grammar] ok 441 - css21 expr ast
+  [CSS::Grammar] ok 442 - css3 expr parse: 2px solid blue
+  [CSS::Grammar] ok 443 - css3 expr no warnings
+  [CSS::Grammar] ok 444 - css3 expr ast
+  [CSS::Grammar] ok 445 - css1 expr parse: top,ccc/dddd
+  [CSS::Grammar] ok 446 - css1 expr no warnings
+  [CSS::Grammar] ok 447 - css1 expr ast
+  [CSS::Grammar] ok 448 - css21 expr parse: top,ccc/dddd
+  [CSS::Grammar] ok 449 - css21 expr no warnings
+  [CSS::Grammar] ok 450 - css21 expr ast
+  [CSS::Grammar] ok 451 - css3 expr parse: top,ccc/dddd
+  [CSS::Grammar] ok 452 - css3 expr no warnings
+  [CSS::Grammar] ok 453 - css3 expr ast
+  [CSS::Grammar] ok 454 - css1 expr parse: -moz-linear-gradient
+  [CSS::Grammar] ok 455 - css1 expr no warnings
+  [CSS::Grammar] ok 456 - css1 expr ast
+  [CSS::Grammar] ok 457 - css21 expr parse: -moz-linear-gradient
+  [CSS::Grammar] ok 458 - css21 expr no warnings
+  [CSS::Grammar] ok 459 - css21 expr ast
+  [CSS::Grammar] ok 460 - css3 expr parse: -moz-linear-gradient
+  [CSS::Grammar] ok 461 - css3 expr no warnings
+  [CSS::Grammar] ok 462 - css3 expr ast
+  [CSS::Grammar] ok 463 - css1 expr parse: -moz-linear-gradient(top, t2, t3)
+  [CSS::Grammar] ok 464 - css21 expr parse: -moz-linear-gradient(top, t2, t3)
+  [CSS::Grammar] ok 465 - css21 expr no warnings
+  [CSS::Grammar] ok 466 - css21 expr ast
+  [CSS::Grammar] ok 467 - css3 expr parse: -moz-linear-gradient(top, t2, t3)
+  [CSS::Grammar] ok 468 - css3 expr no warnings
+  [CSS::Grammar] ok 469 - css3 expr ast
+  [CSS::Grammar] ok 470 - css1 expr parse: Alpha(Opacity=70)
+  [CSS::Grammar] ok 471 - css21 expr parse: Alpha(Opacity=70)
+  [CSS::Grammar] ok 472 - css21 expr no warnings
+  [CSS::Grammar] ok 473 - css21 expr ast
+  [CSS::Grammar] ok 474 - css3 expr parse: Alpha(Opacity=70)
+  [CSS::Grammar] ok 475 - css3 expr no warnings
+  [CSS::Grammar] ok 476 - css3 expr ast
+  [CSS::Grammar] ok 477 - css1 expr parse: 12px/20px
+  [CSS::Grammar] ok 478 - css1 expr no warnings
+  [CSS::Grammar] ok 479 - css1 expr ast
+  [CSS::Grammar] ok 480 - css21 expr parse: 12px/20px
+  [CSS::Grammar] ok 481 - css21 expr no warnings
+  [CSS::Grammar] ok 482 - css21 expr ast
+  [CSS::Grammar] ok 483 - css3 expr parse: 12px/20px
+  [CSS::Grammar] ok 484 - css3 expr no warnings
+  [CSS::Grammar] ok 485 - css3 expr ast
+  [CSS::Grammar] ok 486 - css1 declarations parse: {terms: 42 7% 12.5cm -1em 2 ex 45deg 10s 50Hz 'ZZ' counter(a,b) counters(p,'s') attr(data-foo)}
+  [CSS::Grammar] ok 487 - css1 declarations warnings
+  [CSS::Grammar] ok 488 - css21 declarations parse: {terms: 42 7% 12.5cm -1em 2 ex 45deg 10s 50Hz 'ZZ' counter(a,b) counters(p,'s') attr(data-foo)}
+  [CSS::Grammar] ok 489 - css21 declarations no warnings
+  [CSS::Grammar] ok 490 - css21 declarations ast
+  [CSS::Grammar] ok 491 - css3 declarations parse: {terms: 42 7% 12.5cm -1em 2 ex 45deg 10s 50Hz 'ZZ' counter(a,b) counters(p,'s') attr(data-foo)}
+  [CSS::Grammar] ok 492 - css3 declarations no warnings
+  [CSS::Grammar] ok 493 - css3 declarations ast
+  [CSS::Grammar] ok 494 - core _declarations parse: {terms: 42 7% 12.5cm -1em 2 ex 45deg 10s 50Hz 'ZZ' counter(a,b) counters(p,'s') attr(data-foo)}
+  [CSS::Grammar] ok 495 - css1 declaration parse: line-height: 1.1px !important
+  [CSS::Grammar] ok 496 - css1 declaration no warnings
+  [CSS::Grammar] ok 497 - css1 declaration ast
+  [CSS::Grammar] ok 498 - css21 declaration parse: line-height: 1.1px !important
+  [CSS::Grammar] ok 499 - css21 declaration no warnings
+  [CSS::Grammar] ok 500 - css21 declaration ast
+  [CSS::Grammar] ok 501 - css3 declaration parse: line-height: 1.1px !important
+  [CSS::Grammar] ok 502 - css3 declaration no warnings
+  [CSS::Grammar] ok 503 - css3 declaration ast
+  [CSS::Grammar] ok 504 - core _declaration parse: line-height: 1.1px !important
+  [CSS::Grammar] ok 505 - css1 declaration parse: line-height: 1.5px !vital
+  [CSS::Grammar] ok 506 - css1 declaration warnings
+  [CSS::Grammar] ok 507 - css1 declaration ast
+  [CSS::Grammar] ok 508 - css21 declaration parse: line-height: 1.5px !vital
+  [CSS::Grammar] ok 509 - css21 declaration warnings
+  [CSS::Grammar] ok 510 - css21 declaration ast
+  [CSS::Grammar] ok 511 - css3 declaration parse: line-height: 1.5px !vital
+  [CSS::Grammar] ok 512 - css3 declaration warnings
+  [CSS::Grammar] ok 513 - css3 declaration ast
+  [CSS::Grammar] ok 514 - core _declaration parse: line-height: 1.5px !vital
+  [CSS::Grammar] ok 515 - css1 declaration parse:  /*ww*/ margin/*xx*/:/*yy*/1em/*zz*/
+  [CSS::Grammar] ok 516 - css1 declaration no warnings
+  [CSS::Grammar] ok 517 - css1 declaration ast
+  [CSS::Grammar] ok 518 - css21 declaration parse:  /*ww*/ margin/*xx*/:/*yy*/1em/*zz*/
+  [CSS::Grammar] ok 519 - css21 declaration no warnings
+  [CSS::Grammar] ok 520 - css21 declaration ast
+  [CSS::Grammar] ok 521 - css3 declaration parse:  /*ww*/ margin/*xx*/:/*yy*/1em/*zz*/
+  [CSS::Grammar] ok 522 - css3 declaration no warnings
+  [CSS::Grammar] ok 523 - css3 declaration ast
+  [CSS::Grammar] ok 524 - core _declaration parse:  /*ww*/ margin/*xx*/:/*yy*/1em/*zz*/
+  [CSS::Grammar] ok 525 - css1 declaration parse: border: 2px solid blue
+  [CSS::Grammar] ok 526 - css1 declaration no warnings
+  [CSS::Grammar] ok 527 - css1 declaration ast
+  [CSS::Grammar] ok 528 - css21 declaration parse: border: 2px solid blue
+  [CSS::Grammar] ok 529 - css21 declaration no warnings
+  [CSS::Grammar] ok 530 - css21 declaration ast
+  [CSS::Grammar] ok 531 - css3 declaration parse: border: 2px solid blue
+  [CSS::Grammar] ok 532 - css3 declaration no warnings
+  [CSS::Grammar] ok 533 - css3 declaration ast
+  [CSS::Grammar] ok 534 - core _declaration parse: border: 2px solid blue
+  [CSS::Grammar] ok 535 - css1 declarations parse: {font-size:10px;color:white;z-index:-9;position:absolute;left:-999px}
+  [CSS::Grammar] ok 536 - css1 declarations no warnings
+  [CSS::Grammar] ok 537 - css1 declarations ast
+  [CSS::Grammar] ok 538 - css21 declarations parse: {font-size:10px;color:white;z-index:-9;position:absolute;left:-999px}
+  [CSS::Grammar] ok 539 - css21 declarations no warnings
+  [CSS::Grammar] ok 540 - css21 declarations ast
+  [CSS::Grammar] ok 541 - css3 declarations parse: {font-size:10px;color:white;z-index:-9;position:absolute;left:-999px}
+  [CSS::Grammar] ok 542 - css3 declarations no warnings
+  [CSS::Grammar] ok 543 - css3 declarations ast
+  [CSS::Grammar] ok 544 - core _declarations parse: {font-size:10px;color:white;z-index:-9;position:absolute;left:-999px}
+  [CSS::Grammar] ok 545 - css1 ruleset parse: H1 { color: blue; }
+  [CSS::Grammar] ok 546 - css1 ruleset no warnings
+  [CSS::Grammar] ok 547 - css1 ruleset ast
+  [CSS::Grammar] ok 548 - css21 ruleset parse: H1 { color: blue; }
+  [CSS::Grammar] ok 549 - css21 ruleset no warnings
+  [CSS::Grammar] ok 550 - css21 ruleset ast
+  [CSS::Grammar] ok 551 - css3 ruleset parse: H1 { color: blue; }
+  [CSS::Grammar] ok 552 - css3 ruleset no warnings
+  [CSS::Grammar] ok 553 - css3 ruleset ast
+  [CSS::Grammar] ok 554 - core _ruleset parse: H1 { color: blue; }
+  [CSS::Grammar] ok 555 - css1 ruleset parse: A:link H1 { color: blue; }
+  [CSS::Grammar] ok 556 - css1 ruleset no warnings
+  [CSS::Grammar] ok 557 - css1 ruleset ast
+  [CSS::Grammar] ok 558 - css21 ruleset parse: A:link H1 { color: blue; }
+  [CSS::Grammar] ok 559 - css21 ruleset no warnings
+  [CSS::Grammar] ok 560 - css21 ruleset ast
+  [CSS::Grammar] ok 561 - css3 ruleset parse: A:link H1 { color: blue; }
+  [CSS::Grammar] ok 562 - css3 ruleset no warnings
+  [CSS::Grammar] ok 563 - css3 ruleset ast
+  [CSS::Grammar] ok 564 - core _ruleset parse: A:link H1 { color: blue; }
+  [CSS::Grammar] ok 565 - css1 ruleset parse: A:link,H1 { color: blue; }
+  [CSS::Grammar] ok 566 - css1 ruleset no warnings
+  [CSS::Grammar] ok 567 - css1 ruleset ast
+  [CSS::Grammar] ok 568 - css21 ruleset parse: A:link,H1 { color: blue; }
+  [CSS::Grammar] ok 569 - css21 ruleset no warnings
+  [CSS::Grammar] ok 570 - css21 ruleset ast
+  [CSS::Grammar] ok 571 - css3 ruleset parse: A:link,H1 { color: blue; }
+  [CSS::Grammar] ok 572 - css3 ruleset no warnings
+  [CSS::Grammar] ok 573 - css3 ruleset ast
+  [CSS::Grammar] ok 574 - core _ruleset parse: A:link,H1 { color: blue; }
+  [CSS::Grammar] ok 575 - css1 ruleset parse: H1 \#abc { color: blue; }
+  [CSS::Grammar] ok 576 - css1 ruleset no warnings
+  [CSS::Grammar] ok 577 - css1 ruleset ast
+  [CSS::Grammar] ok 578 - css21 ruleset parse: H1 \#abc { color: blue; }
+  [CSS::Grammar] ok 579 - css21 ruleset no warnings
+  [CSS::Grammar] ok 580 - css21 ruleset ast
+  [CSS::Grammar] ok 581 - css3 ruleset parse: H1 \#abc { color: blue; }
+  [CSS::Grammar] ok 582 - css3 ruleset no warnings
+  [CSS::Grammar] ok 583 - css3 ruleset ast
+  [CSS::Grammar] ok 584 - core _ruleset parse: H1 \#abc { color: blue; }
+  [CSS::Grammar] ok 585 - css1 ruleset parse: A.external:visited { color: blue; }
+  [CSS::Grammar] ok 586 - css1 ruleset no warnings
+  [CSS::Grammar] ok 587 - css1 ruleset ast
+  [CSS::Grammar] ok 588 - css21 ruleset parse: A.external:visited { color: blue; }
+  [CSS::Grammar] ok 589 - css21 ruleset no warnings
+  [CSS::Grammar] ok 590 - css21 ruleset ast
+  [CSS::Grammar] ok 591 - css3 ruleset parse: A.external:visited { color: blue; }
+  [CSS::Grammar] ok 592 - css3 ruleset no warnings
+  [CSS::Grammar] ok 593 - css3 ruleset ast
+  [CSS::Grammar] ok 594 - core _ruleset parse: A.external:visited { color: blue; }
+  [CSS::Grammar] ok 595 - css1 simple-selector parse: A[ href ]
+  [CSS::Grammar] ok 596 - css1 simple-selector no warnings
+  [CSS::Grammar] ok 597 - css1 simple-selector ast
+  [CSS::Grammar] ok 598 - css21 simple-selector parse: A[ href ]
+  [CSS::Grammar] ok 599 - css21 simple-selector no warnings
+  [CSS::Grammar] ok 600 - css21 simple-selector ast
+  [CSS::Grammar] ok 601 - css3 simple-selector parse: A[ href ]
+  [CSS::Grammar] ok 602 - css3 simple-selector no warnings
+  [CSS::Grammar] ok 603 - css3 simple-selector ast
+  [CSS::Grammar] ok 604 - css1 simple-selector parse: a[href~='foo']
+  [CSS::Grammar] ok 605 - css1 simple-selector no warnings
+  [CSS::Grammar] ok 606 - css1 simple-selector ast
+  [CSS::Grammar] ok 607 - css21 simple-selector parse: a[href~='foo']
+  [CSS::Grammar] ok 608 - css21 simple-selector no warnings
+  [CSS::Grammar] ok 609 - css21 simple-selector ast
+  [CSS::Grammar] ok 610 - css3 simple-selector parse: a[href~='foo']
+  [CSS::Grammar] ok 611 - css3 simple-selector no warnings
+  [CSS::Grammar] ok 612 - css3 simple-selector ast
+  [CSS::Grammar] ok 613 - css1 ruleset parse: .TB	{mso-special-format:nobullet;}
+  [CSS::Grammar] ok 614 - css1 ruleset warnings
+  [CSS::Grammar] ok 615 - css1 ruleset ast
+  [CSS::Grammar] ok 616 - css21 ruleset parse: .TB	{mso-special-format:nobullet;}
+  [CSS::Grammar] ok 617 - css21 ruleset warnings
+  [CSS::Grammar] ok 618 - css21 ruleset ast
+  [CSS::Grammar] ok 619 - css3 ruleset parse: .TB	{mso-special-format:nobullet;}
+  [CSS::Grammar] ok 620 - css3 ruleset ast
+  [CSS::Grammar] ok 621 - core _ruleset parse: .TB	{mso-special-format:nobullet;}
+  [CSS::Grammar] ok 622 - css1 ruleset parse: H2 { color: green; rotation: 70deg; }
+  [CSS::Grammar] ok 623 - css1 ruleset warnings
+  [CSS::Grammar] ok 624 - css1 ruleset ast
+  [CSS::Grammar] ok 625 - css21 ruleset parse: H2 { color: green; rotation: 70deg; }
+  [CSS::Grammar] ok 626 - css21 ruleset no warnings
+  [CSS::Grammar] ok 627 - css21 ruleset ast
+  [CSS::Grammar] ok 628 - css3 ruleset parse: H2 { color: green; rotation: 70deg; }
+  [CSS::Grammar] ok 629 - css3 ruleset no warnings
+  [CSS::Grammar] ok 630 - css3 ruleset ast
+  [CSS::Grammar] ok 631 - core _ruleset parse: H2 { color: green; rotation: 70deg; }
+  [CSS::Grammar] ok 632 - css1 ruleset parse: H1 { color }
+  [CSS::Grammar] ok 633 - css1 ruleset warnings
+  [CSS::Grammar] ok 634 - css21 ruleset parse: H1 { color }
+  [CSS::Grammar] ok 635 - css21 ruleset warnings
+  [CSS::Grammar] ok 636 - css3 ruleset parse: H1 { color }
+  [CSS::Grammar] ok 637 - css3 ruleset warnings
+  [CSS::Grammar] ok 638 - core _ruleset parse: H1 { color }
+  [CSS::Grammar] ok 639 - css1 ruleset parse: H1 { color; }
+  [CSS::Grammar] ok 640 - css1 ruleset warnings
+  [CSS::Grammar] ok 641 - css21 ruleset parse: H1 { color; }
+  [CSS::Grammar] ok 642 - css21 ruleset warnings
+  [CSS::Grammar] ok 643 - css3 ruleset parse: H1 { color; }
+  [CSS::Grammar] ok 644 - css3 ruleset warnings
+  [CSS::Grammar] ok 645 - core _ruleset parse: H1 { color; }
+  [CSS::Grammar] ok 646 - css1 ruleset parse: H1 { : blue }
+  [CSS::Grammar] ok 647 - css1 ruleset warnings
+  [CSS::Grammar] ok 648 - css21 ruleset parse: H1 { : blue }
+  [CSS::Grammar] ok 649 - css21 ruleset warnings
+  [CSS::Grammar] ok 650 - css3 ruleset parse: H1 { : blue }
+  [CSS::Grammar] ok 651 - css3 ruleset warnings
+  [CSS::Grammar] ok 652 - core _ruleset parse: H1 { : blue }
+  [CSS::Grammar] ok 653 - css1 ruleset parse: H1 { color blue }
+  [CSS::Grammar] ok 654 - css1 ruleset warnings
+  [CSS::Grammar] ok 655 - css21 ruleset parse: H1 { color blue }
+  [CSS::Grammar] ok 656 - css21 ruleset warnings
+  [CSS::Grammar] ok 657 - css3 ruleset parse: H1 { color blue }
+  [CSS::Grammar] ok 658 - css3 ruleset warnings
+  [CSS::Grammar] ok 659 - core _ruleset parse: H1 { color blue }
+  [CSS::Grammar] ok 660 - css1 ruleset parse: H1 { color: }
+  [CSS::Grammar] ok 661 - css1 ruleset warnings
+  [CSS::Grammar] ok 662 - css21 ruleset parse: H1 { color: }
+  [CSS::Grammar] ok 663 - css21 ruleset warnings
+  [CSS::Grammar] ok 664 - css3 ruleset parse: H1 { color: }
+  [CSS::Grammar] ok 665 - css3 ruleset warnings
+  [CSS::Grammar] ok 666 - core _ruleset parse: H1 { color: }
+  [CSS::Grammar] ok 667 - css1 ruleset parse: H2 { color: green; rotation: 70deg;
+  [CSS::Grammar] ok 668 - css1 ruleset warnings
+  [CSS::Grammar] ok 669 - css21 ruleset parse: H2 { color: green; rotation: 70deg;
+  [CSS::Grammar] ok 670 - css21 ruleset warnings
+  [CSS::Grammar] ok 671 - css3 ruleset parse: H2 { color: green; rotation: 70deg;
+  [CSS::Grammar] ok 672 - css3 ruleset warnings
+  [CSS::Grammar] ok 673 - core _ruleset parse: H2 { color: green; rotation: 70deg;
+  [CSS::Grammar] ok 674 - css1 ruleset parse: H2 { color: green; rotation: }
+  [CSS::Grammar] ok 675 - css1 ruleset warnings
+  [CSS::Grammar] ok 676 - css21 ruleset parse: H2 { color: green; rotation: }
+  [CSS::Grammar] ok 677 - css21 ruleset warnings
+  [CSS::Grammar] ok 678 - css3 ruleset parse: H2 { color: green; rotation: }
+  [CSS::Grammar] ok 679 - css3 ruleset warnings
+  [CSS::Grammar] ok 680 - core _ruleset parse: H2 { color: green; rotation: }
+  [CSS::Grammar] ok 681 - css1 ruleset parse: H2 { test: 'this is not closed
+  [CSS::Grammar] ok 682 - css1 ruleset warnings
+  [CSS::Grammar] ok 683 - css21 ruleset parse: H2 { test: 'this is not closed
+  [CSS::Grammar] ok 684 - css21 ruleset warnings
+  [CSS::Grammar] ok 685 - css3 ruleset parse: H2 { test: 'this is not closed
+  [CSS::Grammar] ok 686 - css3 ruleset warnings
+  [CSS::Grammar] ok 687 - core _ruleset parse: H2 { test: 'this is not closed
+  [CSS::Grammar] ok 688 - core _ruleset warnings
+  [CSS::Grammar] ok 689 - # SKIP at-rule: N/A to CSS1
+  [CSS::Grammar] ok 690 - css21 at-rule parse: @media print {body{margin: 1cm}}
+  [CSS::Grammar] ok 691 - css21 at-rule no warnings
+  [CSS::Grammar] ok 692 - css21 at-rule ast
+  [CSS::Grammar] ok 693 - css3 at-rule parse: @media print {body{margin: 1cm}}
+  [CSS::Grammar] ok 694 - css3 at-rule no warnings
+  [CSS::Grammar] ok 695 - css3 at-rule ast
+  [CSS::Grammar] ok 696 - core _at-rule parse: @media print {body{margin: 1cm}}
+  [CSS::Grammar] ok 697 - # SKIP at-rule: N/A to CSS1
+  [CSS::Grammar] ok 698 - css21 at-rule parse: @Page :first { margin-right: 2cm }
+  [CSS::Grammar] ok 699 - css21 at-rule no warnings
+  [CSS::Grammar] ok 700 - css21 at-rule ast
+  [CSS::Grammar] ok 701 - css3 at-rule parse: @Page :first { margin-right: 2cm }
+  [CSS::Grammar] ok 702 - css3 at-rule no warnings
+  [CSS::Grammar] ok 703 - css3 at-rule ast
+  [CSS::Grammar] ok 704 - core _at-rule parse: @Page :first { margin-right: 2cm }
+  [CSS::Grammar] ok 705 - css1 stylesheet parse: @charset 'bazinga';
+  [CSS::Grammar] ok 706 - css1 stylesheet warnings
+  [CSS::Grammar] ok 707 - css21 stylesheet parse: @charset 'bazinga';
+  [CSS::Grammar] ok 708 - css21 stylesheet no warnings
+  [CSS::Grammar] ok 709 - css21 stylesheet ast
+  [CSS::Grammar] ok 710 - css3 stylesheet parse: @charset 'bazinga';
+  [CSS::Grammar] ok 711 - css3 stylesheet no warnings
+  [CSS::Grammar] ok 712 - css3 stylesheet ast
+  [CSS::Grammar] ok 713 - core _stylesheet parse: @charset 'bazinga';
+  [CSS::Grammar] ok 714 - css1 stylesheet parse:  @Import 'foo'; H1 { color: blue; }; @charset 'bazinga'; @import 'too-late'; H2{color:green}
+  [CSS::Grammar] ok 715 - css1 stylesheet warnings
+  [CSS::Grammar] ok 716 - css1 stylesheet ast
+  [CSS::Grammar] ok 717 - css21 stylesheet parse:  @Import 'foo'; H1 { color: blue; }; @charset 'bazinga'; @import 'too-late'; H2{color:green}
+  [CSS::Grammar] ok 718 - css21 stylesheet warnings
+  [CSS::Grammar] ok 719 - css21 stylesheet ast
+  [CSS::Grammar] ok 720 - css3 stylesheet parse:  @Import 'foo'; H1 { color: blue; }; @charset 'bazinga'; @import 'too-late'; H2{color:green}
+  [CSS::Grammar] ok 721 - css3 stylesheet warnings
+  [CSS::Grammar] ok 722 - css3 stylesheet ast
+  [CSS::Grammar] ok 723 - core _stylesheet parse:  @Import 'foo'; H1 { color: blue; }; @charset 'bazinga'; @import 'too-late'; H2{color:green}
+  [CSS::Grammar] ok 724 - css1 stylesheet parse:  @charset "utf-8";@page { size: 8.5in 11in; margin: 10%; @top-left { content: "Hamlet"; } }
+  [CSS::Grammar] ok 725 - css1 stylesheet warnings
+  [CSS::Grammar] ok 726 - css1 stylesheet ast
+  [CSS::Grammar] ok 727 - css21 stylesheet parse:  @charset "utf-8";@page { size: 8.5in 11in; margin: 10%; @top-left { content: "Hamlet"; } }
+  [CSS::Grammar] ok 728 - css21 stylesheet no warnings
+  [CSS::Grammar] ok 729 - css21 stylesheet ast
+  [CSS::Grammar] ok 730 - css3 stylesheet parse:  @charset "utf-8";@page { size: 8.5in 11in; margin: 10%; @top-left { content: "Hamlet"; } }
+  [CSS::Grammar] ok 731 - css3 stylesheet no warnings
+  [CSS::Grammar] ok 732 - css3 stylesheet ast
+  [CSS::Grammar] ok 733 - core _stylesheet parse:  @charset "utf-8";@page { size: 8.5in 11in; margin: 10%; @top-left { content: "Hamlet"; } }
+  [CSS::Grammar] 1..733
+  [CSS::Grammar] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz/CSS-Grammar-0.4.3 t/css3-syntax.t
+  [CSS::Grammar] ok 1 - css3 simple-selector parse: span[hello='Cleveland'][goodbye='Columbus']
+  [CSS::Grammar] ok 2 - css3 simple-selector no warnings
+  [CSS::Grammar] ok 3 - css3 simple-selector ast
+  [CSS::Grammar] ok 4 - css3 simple-selector parse: object[type^='image/']
+  [CSS::Grammar] ok 5 - css3 simple-selector no warnings
+  [CSS::Grammar] ok 6 - css3 simple-selector ast
+  [CSS::Grammar] ok 7 - css3 simple-selector parse: object[a=b][c~=d][e|=f]
+  [CSS::Grammar] ok 8 - css3 simple-selector no warnings
+  [CSS::Grammar] ok 9 - css3 simple-selector ast
+  [CSS::Grammar] ok 10 - css3 simple-selector parse: Object[a^=b][c$=d][e*=f]
+  [CSS::Grammar] ok 11 - css3 simple-selector no warnings
+  [CSS::Grammar] ok 12 - css3 simple-selector ast
+  [CSS::Grammar] ok 13 - css3 AnB-expr parse: odd
+  [CSS::Grammar] ok 14 - css3 AnB-expr no warnings
+  [CSS::Grammar] ok 15 - css3 AnB-expr ast
+  [CSS::Grammar] ok 16 - css3 AnB-expr parse: even
+  [CSS::Grammar] ok 17 - css3 AnB-expr no warnings
+  [CSS::Grammar] ok 18 - css3 AnB-expr ast
+  [CSS::Grammar] ok 19 - css3 AnB-expr parse: 3n + 1
+  [CSS::Grammar] ok 20 - css3 AnB-expr no warnings
+  [CSS::Grammar] ok 21 - css3 AnB-expr ast
+  [CSS::Grammar] ok 22 - css3 AnB-expr parse: -2
+  [CSS::Grammar] ok 23 - css3 AnB-expr no warnings
+  [CSS::Grammar] ok 24 - css3 AnB-expr ast
+  [CSS::Grammar] ok 25 - css3 comment parse: /* anything but * followed by / */
+  [CSS::Grammar] ok 26 - css3 comment no warnings
+  [CSS::Grammar] ok 27 - css3 ws parse:  
+  [CSS::Grammar] ok 28 - css3 ws no warnings
+  [CSS::Grammar] ok 29 - css3 ws parse: 	
+  [CSS::Grammar] ok 30 - css3 ws no warnings
+  [CSS::Grammar] ok 31 - css3 ws parse: 
+  [CSS::Grammar] ok 32 - css3 ws no warnings
+  [CSS::Grammar] ok 33 - css3 ws parse: 
+  [CSS::Grammar] # 
+  [CSS::Grammar] ok 34 - css3 ws no warnings
+  [CSS::Grammar] ok 35 - css3 xdigit parse: 0
+  [CSS::Grammar] ok 36 - css3 xdigit no warnings
+  [CSS::Grammar] ok 37 - css3 xdigit parse: 9
+  [CSS::Grammar] ok 38 - css3 xdigit no warnings
+  [CSS::Grammar] ok 39 - css3 xdigit parse: a
+  [CSS::Grammar] ok 40 - css3 xdigit no warnings
+  [CSS::Grammar] ok 41 - css3 xdigit parse: f
+  [CSS::Grammar] ok 42 - css3 xdigit no warnings
+  [CSS::Grammar] ok 43 - css3 escape parse: \Z
+  [CSS::Grammar] ok 44 - css3 escape no warnings
+  [CSS::Grammar] ok 45 - css3 escape parse: \0
+  [CSS::Grammar] ok 46 - css3 escape no warnings
+  [CSS::Grammar] ok 47 - css3 escape parse: \12345
+  [CSS::Grammar] ok 48 - css3 escape no warnings
+  [CSS::Grammar] ok 49 - css3 escape parse: \0abc 
+  [CSS::Grammar] ok 50 - css3 escape no warnings
+  [CSS::Grammar] ok 51 - css3 ws parse:  /*foo*/ 
+  [CSS::Grammar] # 
+  [CSS::Grammar] ok 52 - css3 ws no warnings
+  [CSS::Grammar] ok 53 - css3 Ident parse: Hi
+  [CSS::Grammar] ok 54 - css3 Ident no warnings
+  [CSS::Grammar] ok 55 - css3 Ident parse: _hi
+  [CSS::Grammar] ok 56 - css3 Ident no warnings
+  [CSS::Grammar] ok 57 - css3 Ident parse: -_AaZz09\42ሴ
+  [CSS::Grammar] ok 58 - css3 Ident no warnings
+  [CSS::Grammar] ok 59 - css3 ws parse:  /*foo*/ 
+  [CSS::Grammar] # 
+  [CSS::Grammar] ok 60 - css3 ws no warnings
+  [CSS::Grammar] ok 61 - css3 at-keyw parse: @page
+  [CSS::Grammar] ok 62 - css3 at-keyw no warnings
+  [CSS::Grammar] ok 63 - css3 id parse:  \#id-12_3
+  [CSS::Grammar] ok 64 - css3 id no warnings
+  [CSS::Grammar] ok 65 - css3 id parse:  \#\0123 b
+  [CSS::Grammar] ok 66 - css3 id no warnings
+  [CSS::Grammar] ok 67 - css3 string parse: 'abc\abc \\nx"y'
+  [CSS::Grammar] ok 68 - css3 string no warnings
+  [CSS::Grammar] ok 69 - css3 string parse: "xx'yy\n\nz"
+  [CSS::Grammar] ok 70 - css3 string no warnings
+  [CSS::Grammar] ok 71 - css3 url parse: url( abc.png )
+  [CSS::Grammar] ok 72 - css3 url no warnings
+  [CSS::Grammar] ok 73 - css3 url parse: url( 'def.gif' )
+  [CSS::Grammar] ok 74 - css3 url no warnings
+  [CSS::Grammar] ok 75 - css3 num parse: 12.3
+  [CSS::Grammar] ok 76 - css3 num no warnings
+  [CSS::Grammar] ok 77 - css3 num ast
+  [CSS::Grammar] ok 78 - css3 num parse: 123e-1
+  [CSS::Grammar] ok 79 - css3 num no warnings
+  [CSS::Grammar] ok 80 - css3 num ast
+  [CSS::Grammar] ok 81 - css3 num parse: .123E2
+  [CSS::Grammar] ok 82 - css3 num no warnings
+  [CSS::Grammar] ok 83 - css3 num ast
+  [CSS::Grammar] ok 84 - css3 num parse: 12300E-3
+  [CSS::Grammar] ok 85 - css3 num no warnings
+  [CSS::Grammar] ok 86 - css3 num ast
+  [CSS::Grammar] ok 87 - css3 num parse: 1.23E+01
+  [CSS::Grammar] ok 88 - css3 num no warnings
+  [CSS::Grammar] ok 89 - css3 num ast
+  [CSS::Grammar] ok 90 - css3 dimension parse: 12mm
+  [CSS::Grammar] ok 91 - css3 dimension no warnings
+  [CSS::Grammar] ok 92 - css3 dimension ast
+  [CSS::Grammar] ok 93 - css3 any-dimension parse: 12Furlongs
+  [CSS::Grammar] ok 94 - css3 any-dimension no warnings
+  [CSS::Grammar] ok 95 - css3 any-dimension ast
+  [CSS::Grammar] ok 96 - css3 percentage parse: 90%
+  [CSS::Grammar] ok 97 - css3 percentage no warnings
+  [CSS::Grammar] ok 98 - css3 percentage ast
+  [CSS::Grammar] ok 99 - css3 percentage parse: 9e1%
+  [CSS::Grammar] ok 100 - css3 percentage no warnings
+  [CSS::Grammar] ok 101 - css3 percentage ast
+  [CSS::Grammar] ok 102 - css3 percentage parse: +090%
+  [CSS::Grammar] ok 103 - css3 percentage no warnings
+  [CSS::Grammar] ok 104 - css3 percentage ast
+  [CSS::Grammar] ok 105 - css3 unicode-range parse: U+200-2Ff
+  [CSS::Grammar] ok 106 - css3 unicode-range no warnings
+  [CSS::Grammar] ok 107 - css3 unicode-range ast
+  [CSS::Grammar] ok 108 - css3 unicode-range parse: U+2??
+  [CSS::Grammar] ok 109 - css3 unicode-range no warnings
+  [CSS::Grammar] ok 110 - css3 unicode-range ast
+  [CSS::Grammar] ok 111 - css3 term parse: U+2??a
+  [CSS::Grammar] ok 112 - css3 term no warnings
+  [CSS::Grammar] ok 113 - css3 term ast
+  [CSS::Grammar] ok 114 - css3 attribute-selector parse: ~=
+  [CSS::Grammar] ok 115 - css3 attribute-selector no warnings
+  [CSS::Grammar] ok 116 - css3 attribute-selector parse: |=
+  [CSS::Grammar] ok 117 - css3 attribute-selector no warnings
+  [CSS::Grammar] ok 118 - css3 attribute-selector parse: ^=
+  [CSS::Grammar] ok 119 - css3 attribute-selector no warnings
+  [CSS::Grammar] ok 120 - css3 attribute-selector parse: $=
+  [CSS::Grammar] ok 121 - css3 attribute-selector no warnings
+  [CSS::Grammar] ok 122 - css3 attribute-selector parse: *=
+  [CSS::Grammar] ok 123 - css3 attribute-selector no warnings
+  [CSS::Grammar] ok 124 - css3 attribute-selector parse: ||
+  [CSS::Grammar] ok 125 - css3 attribute-selector no warnings
+  [CSS::Grammar] 1..125
+  [CSS::Grammar] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz/CSS-Grammar-0.4.3 t/error-handling.t
+  [CSS::Grammar] ok 1 - css3 errors declaration-list parse: background:url('http://www.bg.com/pinkish.gif')
+  [CSS::Grammar] ok 2 - css3 errors declaration-list no warnings
+  [CSS::Grammar] ok 3 - css3 errors declaration-list ast
+  [CSS::Grammar] ok 4 - css3 errors declaration-list parse: background:URL(http://www.bg.com/pinkish.gif)
+  [CSS::Grammar] ok 5 - css3 errors declaration-list no warnings
+  [CSS::Grammar] ok 6 - css3 errors declaration-list ast
+  [CSS::Grammar] ok 7 - css3 errors declaration-list parse: background:URL(http://www.bg.com/pinkish.gif
+  [CSS::Grammar] ok 8 - css3 errors declaration-list warnings
+  [CSS::Grammar] ok 9 - css3 errors declaration-list parse: background:URL('http://www.bg.com/pinkish.gif
+  [CSS::Grammar] ok 10 - css3 errors declaration-list warnings
+  [CSS::Grammar] ok 11 - css3 errors ruleset parse: h1 { color: red; rotation: 70minutes }
+  [CSS::Grammar] ok 12 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 13 - css3 errors ruleset ast
+  [CSS::Grammar] ok 14 - css3 errors ruleset parse: h1 {kept1:1; color: dropped1 rgb(10,20,30 dropped2; kept2:2;}
+  [CSS::Grammar] ok 15 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 16 - css3 errors ruleset ast
+  [CSS::Grammar] ok 17 - css3 errors ruleset parse: h1 {content:'Section' counter(hdr-1); color:red}
+  [CSS::Grammar] ok 18 - css3 errors ruleset no warnings
+  [CSS::Grammar] ok 19 - css3 errors ruleset ast
+  [CSS::Grammar] ok 20 - css3 errors ruleset parse: h2 {bad: dropme 'http://unclosed-string.org; color:blue;
+  [CSS::Grammar] #  background-color: \#ccc;}
+  [CSS::Grammar] ok 21 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 22 - css3 errors ruleset ast
+  [CSS::Grammar] ok 23 - css3 errors ruleset parse: p { color:rgb(10,17); }
+  [CSS::Grammar] ok 24 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 25 - css3 errors ruleset parse: p:foo(42) { color:bar(); }
+  [CSS::Grammar] ok 26 - css3 errors ruleset no warnings
+  [CSS::Grammar] ok 27 - css3 errors ruleset ast
+  [CSS::Grammar] ok 28 - css3 errors ruleset parse: p { color:bar(@42); }
+  [CSS::Grammar] not ok 29 - css3 errors ruleset warnings
+  [CSS::Grammar] # Failed test 'css3 errors ruleset warnings'
+  [CSS::Grammar] # at /home/coke/sandbox/blin/data/zef-data/tmp/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz/CSS-Grammar-0.4.3/lib/CSS/Grammar/Test.rakumod (CSS::Grammar::Test) line 76
+  [CSS::Grammar] # expected: 'skipping function arguments: @42 dropping declaration: color'
+  [CSS::Grammar] #      got: 'dropping term: bar(@42) dropping declaration: color'
+  [CSS::Grammar] ok 30 - css3 errors ruleset parse: p { color }
+  [CSS::Grammar] ok 31 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 32 - css3 errors ruleset parse: p { term1:a; color; term2:b }
+  [CSS::Grammar] ok 33 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 34 - css3 errors ruleset parse: p {term1:a; color: }
+  [CSS::Grammar] ok 35 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 36 - css3 errors ruleset parse: p { term1:a; color:; term2:b }
+  [CSS::Grammar] ok 37 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 38 - css3 errors ruleset parse: p { term1:a; color{;color:maroon} }
+  [CSS::Grammar] ok 39 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 40 - css3 errors ruleset parse: p { term1:a; color{;color:maroon}; color:green }
+  [CSS::Grammar] ok 41 - css3 errors ruleset warnings
+  [CSS::Grammar] ok 42 - css3 errors stylesheet parse: p @here {color: red}
+  [CSS::Grammar] ok 43 - css3 errors stylesheet warnings
+  [CSS::Grammar] ok 44 - css3 errors stylesheet parse: @foo @bar;
+  [CSS::Grammar] ok 45 - css3 errors stylesheet warnings
+  [CSS::Grammar] ok 46 - css3 errors stylesheet parse: }} {{ - }}
+  [CSS::Grammar] ok 47 - css3 errors stylesheet warnings
+  [CSS::Grammar] ok 48 - css3 errors stylesheet parse: h1, h2 {color: green }... h6 {color: black }
+  [CSS::Grammar] ok 49 - css3 errors stylesheet warnings
+  [CSS::Grammar] ok 50 - css3 errors stylesheet ast
+  [CSS::Grammar] ok 51 - css3 errors stylesheet parse: @three-dee { @background-lighting { azimuth: 30deg; elevation: 190deg; }  h1 { color: red } }  h1 { color: blue }
+  [CSS::Grammar] ok 52 - css3 errors stylesheet warnings
+  [CSS::Grammar] ok 53 - css3 errors stylesheet ast
+  [CSS::Grammar] ok 54 - css3 errors stylesheet parse: @media print and (width: 21cm)  { @page { margin: 3cm; @top-center { content: 'Page ' counter(page); }}}
+  [CSS::Grammar] ok 55 - css3 errors stylesheet warnings
+  [CSS::Grammar] ok 56 - css3 errors stylesheet ast
+  [CSS::Grammar] ok 57 - css3 errors stylesheet parse: * foo|* |h1 body:not(.home) h2 + p:first-letter tr:nth-last-child(-n+2) object[type^='image/'] {}
+  [CSS::Grammar] ok 58 - css3 errors stylesheet warnings
+  [CSS::Grammar] ok 59 - css3 errors stylesheet ast
+  [CSS::Grammar] 1..59
+  [CSS::Grammar] # You failed 1 test of 59
+  [CSS::Grammar] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz/CSS-Grammar-0.4.3 t/parse-stylesheets.t
+  [CSS::Grammar] ok 1 - css1 stylesheet parse: H1 { color: blue; }
+  [CSS::Grammar] ok 2 - css1 stylesheet no warnings
+  [CSS::Grammar] ok 3 - css21 stylesheet parse: H1 { color: blue; }
+  [CSS::Grammar] ok 4 - css21 stylesheet no warnings
+  [CSS::Grammar] ok 5 - css3 stylesheet parse: H1 { color: blue; }
+  [CSS::Grammar] ok 6 - css3 stylesheet no warnings
+  [CSS::Grammar] ok 7 - css1 stylesheet parse: A:link IMG { border: 2px solid blue !important}
+  [CSS::Grammar] ok 8 - css1 stylesheet no warnings
+  [CSS::Grammar] ok 9 - css21 stylesheet parse: A:link IMG { border: 2px solid blue !important}
+  [CSS::Grammar] ok 10 - css21 stylesheet no warnings
+  [CSS::Grammar] ok 11 - css3 stylesheet parse: A:link IMG { border: 2px solid blue !important}
+  [CSS::Grammar] ok 12 - css3 stylesheet no warnings
+  [CSS::Grammar] ok 13 - css1 stylesheet parse: BODY {... }
+  [CSS::Grammar] ok 14 - css1 stylesheet no warnings
+  [CSS::Grammar] ok 15 - css21 stylesheet parse: BODY {... }
+  [CSS::Grammar] ok 16 - css21 stylesheet no warnings
+  [CSS::Grammar] ok 17 - css3 stylesheet parse: BODY {... }
+  [CSS::Grammar] ok 18 - css3 stylesheet no warnings
+  [CSS::Grammar] ok 19 - css1 stylesheet parse: BODY {... A:active IMG { border: 2px solid lime }
+  [CSS::Grammar] ok 20 - css1 stylesheet no warnings
+  [CSS::Grammar] ok 21 - css21 stylesheet parse: BODY {... A:active IMG { border: 2px solid lime }
+  [CSS::Grammar] ok 22 - css21 stylesheet no warnings
+  [CSS::Grammar] ok 23 - css3 stylesheet parse: BODY {... A:active IMG { border: 2px solid lime }
+  [CSS::Grammar] ok 24 - css3 stylesheet no warnings
+  [CSS::Grammar] 1..24
+  [CSS::Grammar] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz/CSS-Grammar-0.4.3 t/parse-warnings.t
+  [CSS::Grammar] ok 1 - css1 parse
+  [CSS::Grammar] ok 2 - css1 warnings
+  [CSS::Grammar] ok 3 - css21 parse
+  [CSS::Grammar] ok 4 - css21 warnings
+  [CSS::Grammar] ok 5 - css3 parse
+  [CSS::Grammar] ok 6 - css3 warnings
+  [CSS::Grammar] 1..6
+  [CSS::Grammar] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de0dc5873f5e1768dc427bf48cbeef8ce450f8a.tar.gz/CSS-Grammar-0.4.3 t/regex-tokens.t
+  [CSS::Grammar] ok 1 - ws:  
+  [CSS::Grammar] ok 2 - ws:   
+  [CSS::Grammar] ok 3 - ws: 	
+  [CSS::Grammar] ok 4 - ws: 
+  [CSS::Grammar] ok 5 - ws:  /* hi */ 
+  [CSS::Grammar] ok 6 - ws: /*there*/
+  [CSS::Grammar] ok 7 - ws: <!-- zzz -->
+  [CSS::Grammar] ok 8 - ws: r\n
+  [CSS::Grammar] ok 9 - comment: /**/
+  [CSS::Grammar] ok 10 - comment: /* hi */
+  [CSS::Grammar] ok 11 - comment: <!--X-->
+  [CSS::Grammar] ok 12 - comment: <!-- almost done -->
+  [CSS::Grammar] ok 13 - comment: <!-- Out of coffee
+  [CSS::Grammar] ok 14 - comment: /* is that the door?
+  [CSS::Grammar] ok 15 - unicode: f
+  [CSS::Grammar] ok 16 - unicode: 012f
+  [CSS::Grammar] ok 17 - unicode: 012A
+  [CSS::Grammar] ok 18 - not css1 unicode: 012AF
+  [CSS::Grammar] ok 19 - css21 unicode: 012AF
+  [CSS::Grammar] ok 20 - css3 unicode: 012AF
+  [CSS::Grammar] ok 21 - not css1 unicode: 012AFc
+  [CSS::Grammar] ok 22 - css21 unicode: 012AFc
+  [CSS::Grammar] ok 23 - css3 unicode: 012AFc
+  [CSS::Grammar] ok 24 - css1 num+ident: 70deg
+  [CSS::Grammar] ok 25 - css21 term: 70deg
+  [CSS::Grammar] ok 26 - css3 term: 70deg
+  [CSS::Grammar] ok 27 - css1 num+ident: 50Hz
+  [CSS::Grammar] ok 28 - css21 term: 50Hz
+  [CSS::Grammar] ok 29 - css3 term: 50Hz
+  [CSS::Grammar] ok 30 - non-ascii: ¡ (161)
+  [CSS::Grammar] ok 31 - non-ascii css1: ¡
+  [CSS::Grammar] ok 32 - non-ascii css21: ¡
+  [CSS::Grammar] ok 33 - non-ascii css3: ¡
+  [CSS::Grammar] ok 34 - non-ascii scan: ¡
+  [CSS::Grammar] ok 35 - non-ascii ident: ¡
+  [CSS::Grammar] ok 36 - non-ascii: ¨ (168)
+  [CSS::Grammar] ok 37 - non-ascii css1: ¨
+  [CSS::Grammar] ok 38 - non-ascii css21: ¨
+  [CSS::Grammar] ok 39 - non-ascii css3: ¨
+  [CSS::Grammar] ok 40 - non-ascii scan: ¨
+  [CSS::Grammar] ok 41 - non-ascii ident: ¨
+  [CSS::Grammar] ok 42 - non-ascii: ÿ (255)
+  [CSS::Grammar] ok 43 - non-ascii css1: ÿ
+  [CSS::Grammar] ok 44 - non-ascii css21: ÿ
+  [CSS::Grammar] ok 45 - non-ascii css3: ÿ
+  [CSS::Grammar] ok 46 - non-ascii scan: ÿ
+  [CSS::Grammar] ok 47 - non-ascii ident: ÿ
+  [CSS::Grammar] ok 48 - non-ascii: 
+  [CSS::Grammar]  (13)
+  [CSS::Grammar] ok 49 - non-ascii css1: 
+  [CSS::Grammar] ok 50 - non-ascii css21: 
+  [CSS::Grammar] ok 51 - non-ascii css3: 
+  [CSS::Grammar] ok 52 - non-ascii scan: 
+  [CSS::Grammar] ok 53 - non-ascii:  (149)
+  [CSS::Grammar] ok 54 - not non-ascii css1: 
+  [CSS::Grammar] ok 55 - not non-ascii css21: 
+  [CSS::Grammar] ok 56 - non-ascii css3: 
+  [CSS::Grammar] ok 57 - not non-ascii:  
+  [CSS::Grammar] ok 58 - not non-ascii css1:  
+  [CSS::Grammar] ok 59 - not non-ascii css21:  
+  [CSS::Grammar] ok 60 - not non-ascii css3:  
+  [CSS::Grammar] ok 61 - not non-ascii:  
+  [CSS::Grammar] ok 62 - not non-ascii css1:  
+  [CSS::Grammar] ok 63 - not non-ascii css21:  
+  [CSS::Grammar] ok 64 - not non-ascii css3:  
+  [CSS::Grammar] ok 65 - not non-ascii: ~
+  [CSS::Grammar] ok 66 - not non-ascii css1: ~
+  [CSS::Grammar] ok 67 - not non-ascii css21: ~
+  [CSS::Grammar] ok 68 - not non-ascii css3: ~
+  [CSS::Grammar] ok 69 - css1 url: url(http://www.bg.com/pinkish.gif)
+  [CSS::Grammar] ok 70 - css1 url: url("http://www.bg.com/pinkish.gif")
+  [CSS::Grammar] ok 71 - css1 url: url('http://www.bg.com/pinkish.gif')
+  [CSS::Grammar] ok 72 - css1 url: url("http://www.bg.com/pink(ish).gif")
+  [CSS::Grammar] ok 73 - css1 url: url('http://www.bg.com/pink(ish).gif')
+  [CSS::Grammar] ok 74 - css1 url: url(http://www.bg.com/pink%20ish.gif)
+  [CSS::Grammar] ok 75 - css1 url: url(http://www.bg.com/pink\(ish\).gif)
+  [CSS::Grammar] ok 76 - not css1 url: url(http://www.bg.com/pink(ish).gif)
+  [CSS::Grammar] ok 77 - ident: Appl8s
+  [CSS::Grammar] ok 78 - ident: oranges
+  [CSS::Grammar] ok 79 - ident: k1w1-fru1t
+  [CSS::Grammar] ok 80 - ident: -i
+  [CSS::Grammar] ok 81 - not ident: 8
+  [CSS::Grammar] ok 82 - string: "Hello"
+  [CSS::Grammar] ok 83 - string: 'world'
+  [CSS::Grammar] ok 84 - string: ''
+  [CSS::Grammar] ok 85 - string: ""
+  [CSS::Grammar] ok 86 - string: "'"
+  [CSS::Grammar] ok 87 - string: '"'
+  [CSS::Grammar] ok 88 - string: "grocer's"
+  [CSS::Grammar] ok 89 - string: "a /* non-comment */"
+  [CSS::Grammar] ok 90 - string: 'hello\
+  [CSS::Grammar] # world'
+  [CSS::Grammar] ok 91 - not string: "Unclosed
+  [CSS::Grammar] ok 92 - badstring: "Unclosed
+  [CSS::Grammar] ok 93 - not string: "
+  [CSS::Grammar] ok 94 - badstring: "
+  [CSS::Grammar] ok 95 - not string: world'
+  [CSS::Grammar] ok 96 - not string: '''
+  [CSS::Grammar] ok 97 - not string: 'grocer's'
+  [CSS::Grammar] ok 98 - not string: 'hello
+  [CSS::Grammar] # world'
+  [CSS::Grammar] ok 99 - scan op: *
+  [CSS::Grammar] ok 100 - scan op: +
+  [CSS::Grammar] ok 101 - scan op: >
+  [CSS::Grammar] ok 102 - scan op: |=
+  [CSS::Grammar] ok 103 - scan op: ~=
+  [CSS::Grammar] ok 104 - css21 rule-list: { }
+  [CSS::Grammar] ok 105 - css3 rule-list: { }
+  [CSS::Grammar] ok 106 - css21 rule-list: {
+  [CSS::Grammar] #    body { font-size: 10pt }
+  [CSS::Grammar] # }
+  [CSS::Grammar] ok 107 - css3 rule-list: {
+  [CSS::Grammar] #    body { font-size: 10pt }
+  [CSS::Grammar] # }
+  [CSS::Grammar] ok 108 - css21 at-rule: @page :left { margin: 3cm };
+  [CSS::Grammar] ok 109 - css21 at-rule: @media print {
+  [CSS::Grammar] #    body { font-size: 10pt }
+  [CSS::Grammar] # }
+  [CSS::Grammar] 1..109
+  ===> Testing [FAIL]: CSS::Grammar:ver<0.4.3>:auth<zef:dwarring>
+  [CSS::Grammar] Failed to get passing tests, but continuing with --force-test
+  ===> Installing: CSS::Grammar:ver<0.4.3>:auth<zef:dwarring>
+  ===> Install [OK] for CSS::Grammar:ver<0.4.3>:auth<zef:dwarring>
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 22.862s
+               CPU time consumed: 25.623s
+                     Memory peak: 824.2M (swap: 0B)
+
+  ```
+  </details>
+* [ ] [CSS::Module](https://raku.land/zef:dwarring/CSS::Module) – Fail, Bisected: [b180d60](https://github.com/rakudo/rakudo/commit/b180d6078dd3f2359929e0315bc40c4b680f0a17) [da2a525](https://github.com/rakudo/rakudo/commit/da2a52539d735095ec620b744e441037b046208d)
+  <details><Summary>Old Output</summary>
+
+  ```
+  Running as unit: run-p3031883-i3038191.service; invocation ID: d635fd2849254a25b79ab32d9d931343
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: CSS::Module
+  ===> Found: CSS::Module:ver<0.7.7>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
+  [CSS::Module] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870779.3031884.6666.621447709799/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz https://360.zef.pm/C/SS/CSS_MODULE/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
+  ===> Fetching [OK]: CSS::Module:ver<0.7.7>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870779.3031884.6666.621447709799/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
+  [CSS::Module] Command: tar -t -f ./e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
+  [CSS::Module] Command: tar -xvf ./e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz -C ../e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
+  ===> Extraction [OK]: CSS::Module to /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
+  ===> Testing: CSS::Module:ver<0.7.7>:auth<zef:dwarring>
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/00basic.t
+  [CSS::Module] ok 1 - not css1 unicode: 012AF
+  [CSS::Module] ok 2 - css21 unicode: 012AF
+  [CSS::Module] ok 3 - css3 unicode: 012AF
+  [CSS::Module] ok 4 - not css1 unicode: 012AFc
+  [CSS::Module] ok 5 - css21 unicode: 012AFc
+  [CSS::Module] ok 6 - css3 unicode: 012AFc
+  [CSS::Module] ok 7 - not non-ascii css1: 
+  [CSS::Module] ok 8 - not non-ascii css21: 
+  [CSS::Module] ok 9 - non-ascii css3: 
+  [CSS::Module] # Subtest: {unknown-prop: someval}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {unknown-prop: someval}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {unknown-prop: someval}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {unknown-prop: someval}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: {unknown-prop: someval}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { unknown-prop:someval; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 10 - {unknown-prop: someval}
+  [CSS::Module] # Subtest: {unknown-prop: unknown-func()}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {unknown-prop: unknown-func()}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {unknown-prop: unknown-func()}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {unknown-prop: unknown-func()}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: {unknown-prop: unknown-func()}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { unknown-prop:unknown-func(); }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 11 - {unknown-prop: unknown-func()}
+  [CSS::Module] # Subtest: { @guff {color:red} }
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: { @guff {color:red} }
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: { @guff {color:red} }
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: { @guff {color:red} }
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: { @guff {color:red} }
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { @guff { color:red; } }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 12 - { @guff {color:red} }
+  [CSS::Module] # Subtest: {background-attachment: crud}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: crud}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: crud}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: crud}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: crud}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 13 - {background-attachment: crud}
+  [CSS::Module] # Subtest: {background-attachment: FiXed}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { background-attachment:fixed; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { background-attachment:fixed; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { background-attachment:fixed; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { background-attachment:fixed; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 14 - {background-attachment: FiXed}
+  [CSS::Module] # Subtest: {font-family: "unclosed-string}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: "unclosed-string}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: "unclosed-string}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: "unclosed-string}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: "unclosed-string}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 15 - {font-family: "unclosed-string}
+  [CSS::Module] # Subtest: {/*aa*/COLoR/*bb*/:<!--cc-->BLUE /*dd*/;}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {/*aa*/COLoR/*bb*/:<!--cc-->BLUE /*dd*/;}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { color:blue; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {/*aa*/COLoR/*bb*/:<!--cc-->BLUE /*dd*/;}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { color:blue; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {/*aa*/COLoR/*bb*/:<!--cc-->BLUE /*dd*/;}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { color:blue; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: {/*aa*/COLoR/*bb*/:<!--cc-->BLUE /*dd*/;}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { color:blue; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 16 - {/*aa*/COLoR/*bb*/:<!--cc-->BLUE /*dd*/;}
+  [CSS::Module] # Subtest: {margin: 2em 3em}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 2em 3em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { margin:2em 3em; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 2em 3em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { margin:2em 3em; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 2em 3em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { margin:2em 3em; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 2em 3em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { margin:2em 3em; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 17 - {margin: 2em 3em}
+  [CSS::Module] # Subtest: {background-attachment: fixed !Important;}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: fixed !Important;}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { background-attachment:fixed!important; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: fixed !Important;}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { background-attachment:fixed!important; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: fixed !Important;}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { background-attachment:fixed!important; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: fixed !Important;}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { background-attachment:fixed!important; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 18 - {background-attachment: fixed !Important;}
+  [CSS::Module] # Subtest: H1:active
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  simple-selector parse: H1:active
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1:active
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  simple-selector parse: H1:active
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1:active
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  simple-selector parse: H1:active
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1:active
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  simple-selector parse: H1:active
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1:active
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 19 - H1:active
+  [CSS::Module] # Subtest: h1:eq(0)
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  simple-selector parse: h1:eq(0)
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1:eq
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  simple-selector parse: h1:eq(0)
+  [CSS::Module]         ok 2 -  simple-selector warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  simple-selector parse: h1:eq(0)
+  [CSS::Module]         ok 2 -  simple-selector warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  simple-selector parse: h1:eq(0)
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1:eq(0)
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 20 - h1:eq(0)
+  [CSS::Module] # Subtest: h1[id$=ess]
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  simple-selector parse: h1[id$=ess]
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  simple-selector parse: h1[id$=ess]
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  simple-selector parse: h1[id$=ess]
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1[id$=ess]
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  simple-selector parse: h1[id$=ess]
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1[id$=ess]
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 21 - h1[id$=ess]
+  [CSS::Module] 1..21
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css1-properties.t
+  [CSS::Module] # Subtest: {background-color: #37a}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background-color:  \#37a}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-color:  \#37a}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-color: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-color:  \#37a}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-color: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {background-color: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 1 - {background-color:  \#37a}
+  [CSS::Module] # Subtest: {background-image: url(images/ok.png)}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background-image: url(images/ok.png)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-image: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-image: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-image: url(images/ok.png)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-image: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-image: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-image: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-image: url(images/ok.png)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-image: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-image: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-image: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {background-image: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 2 - {background-image: url(images/ok.png)}
+  [CSS::Module] # Subtest: {background-repeat: Repeat-x}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background-repeat: Repeat-x}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-repeat: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-repeat: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-repeat: Repeat-x}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-repeat: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-repeat: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-repeat: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-repeat: Repeat-x}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-repeat: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-repeat: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-repeat: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {background-repeat: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 3 - {background-repeat: Repeat-x}
+  [CSS::Module] # Subtest: {background-attachment: FiXed}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-attachment: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-attachment: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-attachment: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-attachment: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-attachment: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-attachment: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-attachment: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-attachment: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {background-attachment: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 4 - {background-attachment: FiXed}
+  [CSS::Module] # Subtest: {background-position: 100% 90%}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background-position: 100% 90%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-position: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-position: 100% 90%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-position: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-position: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-position: 100% 90%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-position: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-position: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {background-position: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 5 - {background-position: 100% 90%}
+  [CSS::Module] # Subtest: {background: url(chess.png) gray 50% repeat scroll}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background: url(chess.png) gray 50% repeat scroll}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background: able to parse unexpected input
+  [CSS::Module]             ok 2 - background: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background: url(chess.png) gray 50% repeat scroll}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background: able to parse unexpected input
+  [CSS::Module]             ok 2 - background: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background: url(chess.png) gray 50% repeat scroll}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background: able to parse unexpected input
+  [CSS::Module]             ok 2 - background: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {background: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 6 - {background: url(chess.png) gray 50% repeat scroll}
+  [CSS::Module] # Subtest: {border-top-width: thick}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-width: thick}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-width: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-width: thick}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-width: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-top-width: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-width: thick}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-width: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-top-width: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {border-top-width: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 7 - {border-top-width: thick}
+  [CSS::Module] # Subtest: {border-width: 2ex 1.5em 3ex 5%}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {border-width: 2ex 1.5em 3ex 5%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-width: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-width: 2ex 1.5em 3ex 5%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-width: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-width: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-width: 2ex 1.5em 3ex 5%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-width: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-width: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {border-width: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 8 - {border-width: 2ex 1.5em 3ex 5%}
+  [CSS::Module] # Subtest: {border-color: #a7f #aa77ff rgb(100,150,20) aqua}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {border-color:  \#a7f  \#aa77ff rgb(100,150,20) aqua}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-color:  \#a7f  \#aa77ff rgb(100,150,20) aqua}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-color: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-color:  \#a7f  \#aa77ff rgb(100,150,20) aqua}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-color: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {border-color: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 9 - {border-color:  \#a7f  \#aa77ff rgb(100,150,20) aqua}
+  [CSS::Module] # Subtest: {border-top-color: #aaa}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-color:  \#aaa}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-color:  \#aaa}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-top-color: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-color:  \#aaa}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-top-color: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {border-top-color: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 10 - {border-top-color:  \#aaa}
+  [CSS::Module] # Subtest: {border-style: groove}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {border-style: groove}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-style: groove}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-style: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-style: groove}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-style: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {border-style: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 11 - {border-style: groove}
+  [CSS::Module] # Subtest: {border-top-style: ridge}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-style: ridge}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-style: ridge}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-top-style: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-style: ridge}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-top-style: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {border-top-style: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 12 - {border-top-style: ridge}
+  [CSS::Module] # Subtest: {border: 1px solid red}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {border: 1px solid red}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border: able to parse unexpected input
+  [CSS::Module]             ok 2 - border: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border: 1px solid red}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border: able to parse unexpected input
+  [CSS::Module]             ok 2 - border: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border: 1px solid red}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border: able to parse unexpected input
+  [CSS::Module]             ok 2 - border: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {border: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 13 - {border: 1px solid red}
+  [CSS::Module] # Subtest: {border: 1px red blue}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {border: 1px red blue}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         1..2
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border: 1px red blue}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         1..2
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border: 1px red blue}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         1..2
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 14 - {border: 1px red blue}
+  [CSS::Module] # Subtest: {clear: both}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {clear: both}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - clear: able to parse unexpected input
+  [CSS::Module]             ok 2 - clear: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {clear: both}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - clear: able to parse unexpected input
+  [CSS::Module]             ok 2 - clear: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {clear: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {clear: both}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - clear: able to parse unexpected input
+  [CSS::Module]             ok 2 - clear: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {clear: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {clear: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 15 - {clear: both}
+  [CSS::Module] # Subtest: {color: #3377aa}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {color:  \#3377aa}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - color: able to parse unexpected input
+  [CSS::Module]             ok 2 - color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {color:  \#3377aa}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - color: able to parse unexpected input
+  [CSS::Module]             ok 2 - color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {color: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {color:  \#3377aa}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - color: able to parse unexpected input
+  [CSS::Module]             ok 2 - color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {color: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {color: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 16 - {color:  \#3377aa}
+  [CSS::Module] # Subtest: {display: list-item}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {display: list-item}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - display: able to parse unexpected input
+  [CSS::Module]             ok 2 - display: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {display: list-item}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - display: able to parse unexpected input
+  [CSS::Module]             ok 2 - display: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {display: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {display: list-item}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - display: able to parse unexpected input
+  [CSS::Module]             ok 2 - display: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {display: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {display: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 17 - {display: list-item}
+  [CSS::Module] # Subtest: {float: left}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {float: left}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - float: able to parse unexpected input
+  [CSS::Module]             ok 2 - float: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {float: left}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - float: able to parse unexpected input
+  [CSS::Module]             ok 2 - float: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {float: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {float: left}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - float: able to parse unexpected input
+  [CSS::Module]             ok 2 - float: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {float: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {float: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 18 - {float: left}
+  [CSS::Module] # Subtest: {font-family: Gill, 'Helvetica', sans-serif}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: Gill, 'Helvetica', sans-serif}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-family: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-family: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: Gill, 'Helvetica', sans-serif}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-family: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-family: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-family: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: Gill, 'Helvetica', sans-serif}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-family: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-family: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-family: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {font-family: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 19 - {font-family: Gill, 'Helvetica', sans-serif}
+  [CSS::Module] # Subtest: {font-family: New Century Schoolbook}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: New Century Schoolbook}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: New Century Schoolbook}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: New Century Schoolbook}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 20 - {font-family: New Century Schoolbook}
+  [CSS::Module] # Subtest: {font-family: New
+  [CSS::Module] # Century  Schoolbook}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: New
+  [CSS::Module]         # Century  Schoolbook}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: New
+  [CSS::Module]         # Century  Schoolbook}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: New
+  [CSS::Module]         # Century  Schoolbook}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 21 - {font-family: New
+  [CSS::Module] # Century  Schoolbook}
+  [CSS::Module] # Subtest: {font-style: italic}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-style: italic}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-style: italic}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-style: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-style: italic}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-style: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {font-style: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 22 - {font-style: italic}
+  [CSS::Module] # Subtest: {font-variant: small-caps}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-variant: small-caps}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-variant: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-variant: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-variant: small-caps}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-variant: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-variant: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-variant: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-variant: small-caps}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-variant: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-variant: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-variant: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {font-variant: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 23 - {font-variant: small-caps}
+  [CSS::Module] # Subtest: {font-weight: bolder}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-weight: bolder}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-weight: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-weight: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-weight: bolder}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-weight: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-weight: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-weight: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-weight: bolder}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-weight: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-weight: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-weight: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {font-weight: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 24 - {font-weight: bolder}
+  [CSS::Module] # Subtest: {font-weight: 800}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-weight: 800}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-weight: 800}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-weight: 800}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 25 - {font-weight: 800}
+  [CSS::Module] # Subtest: {font-size: 12pt}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: 12pt}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-size: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-size: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: 12pt}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-size: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-size: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-size: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: 12pt}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-size: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-size: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-size: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {font-size: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 26 - {font-size: 12pt}
+  [CSS::Module] # Subtest: {font-size: 150%}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: 150%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: 150%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: 150%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 27 - {font-size: 150%}
+  [CSS::Module] # Subtest: {font-size: Larger}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: Larger}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: Larger}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: Larger}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 28 - {font-size: Larger}
+  [CSS::Module] # Subtest: {font: 12pt/14pt sans-serif}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font: 12pt/14pt sans-serif}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font: able to parse unexpected input
+  [CSS::Module]             ok 2 - font: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font: 12pt/14pt sans-serif}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font: able to parse unexpected input
+  [CSS::Module]             ok 2 - font: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font: 12pt/14pt sans-serif}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font: able to parse unexpected input
+  [CSS::Module]             ok 2 - font: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {font: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 29 - {font: 12pt/14pt sans-serif}
+  [CSS::Module] # Subtest: {font: normal small-caps 120%/120% fantasy}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font: normal small-caps 120%/120% fantasy}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font: normal small-caps 120%/120% fantasy}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font: normal small-caps 120%/120% fantasy}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 30 - {font: normal small-caps 120%/120% fantasy}
+  [CSS::Module] # Subtest: {font: 10pt courier bold}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font: 10pt courier bold}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font: 10pt courier bold}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font: 10pt courier bold}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 31 - {font: 10pt courier bold}
+  [CSS::Module] # Subtest: {letter-spacing: normal}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {letter-spacing: normal}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - letter-spacing: able to parse unexpected input
+  [CSS::Module]             ok 2 - letter-spacing: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {letter-spacing: normal}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - letter-spacing: able to parse unexpected input
+  [CSS::Module]             ok 2 - letter-spacing: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {letter-spacing: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {letter-spacing: normal}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - letter-spacing: able to parse unexpected input
+  [CSS::Module]             ok 2 - letter-spacing: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {letter-spacing: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {letter-spacing: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 32 - {letter-spacing: normal}
+  [CSS::Module] # Subtest: {line-height: 120%}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {line-height: 120%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - line-height: able to parse unexpected input
+  [CSS::Module]             ok 2 - line-height: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {line-height: 120%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - line-height: able to parse unexpected input
+  [CSS::Module]             ok 2 - line-height: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {line-height: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {line-height: 120%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - line-height: able to parse unexpected input
+  [CSS::Module]             ok 2 - line-height: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {line-height: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {line-height: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 33 - {line-height: 120%}
+  [CSS::Module] # Subtest: {list-style-type: square}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-type: square}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-type: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-type: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-type: square}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-type: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-type: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {list-style-type: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-type: square}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-type: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-type: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {list-style-type: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {list-style-type: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 34 - {list-style-type: square}
+  [CSS::Module] # Subtest: {list-style-image: url(snoopy.png)}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-image: url(snoopy.png)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-image: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-image: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-image: url(snoopy.png)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-image: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-image: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {list-style-image: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-image: url(snoopy.png)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-image: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-image: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {list-style-image: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {list-style-image: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 35 - {list-style-image: url(snoopy.png)}
+  [CSS::Module] # Subtest: {list-style-position: outside}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-position: outside}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-position: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-position: outside}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-position: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {list-style-position: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-position: outside}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-position: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {list-style-position: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {list-style-position: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 36 - {list-style-position: outside}
+  [CSS::Module] # Subtest: {list-style: url(http://png.com/ellipse.png) disc outside}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {list-style: url(http://png.com/ellipse.png) disc outside}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {list-style: url(http://png.com/ellipse.png) disc outside}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {list-style: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {list-style: url(http://png.com/ellipse.png) disc outside}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {list-style: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {list-style: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 37 - {list-style: url(http://png.com/ellipse.png) disc outside}
+  [CSS::Module] # Subtest: {overflow: scroll}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {overflow: scroll}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - overflow: able to parse unexpected input
+  [CSS::Module]             ok 2 - overflow: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {overflow: scroll}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - overflow: able to parse unexpected input
+  [CSS::Module]             ok 2 - overflow: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {overflow: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {overflow: scroll}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - overflow: able to parse unexpected input
+  [CSS::Module]             ok 2 - overflow: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {overflow: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {overflow: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 38 - {overflow: scroll}
+  [CSS::Module] # Subtest: {padding-bottom: 2em}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {padding-bottom: 2em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - padding-bottom: able to parse unexpected input
+  [CSS::Module]             ok 2 - padding-bottom: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {padding-bottom: 2em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - padding-bottom: able to parse unexpected input
+  [CSS::Module]             ok 2 - padding-bottom: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {padding-bottom: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {padding-bottom: 2em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - padding-bottom: able to parse unexpected input
+  [CSS::Module]             ok 2 - padding-bottom: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {padding-bottom: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {padding-bottom: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 39 - {padding-bottom: 2em}
+  [CSS::Module] # Subtest: {position: absolute}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {position: absolute}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - position: able to parse unexpected input
+  [CSS::Module]             ok 2 - position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {position: absolute}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - position: able to parse unexpected input
+  [CSS::Module]             ok 2 - position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {position: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {position: absolute}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - position: able to parse unexpected input
+  [CSS::Module]             ok 2 - position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {position: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {position: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 40 - {position: absolute}
+  [CSS::Module] # Subtest: {margin-top: 1.25ex}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {margin-top: 1.25ex}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - margin-top: able to parse unexpected input
+  [CSS::Module]             ok 2 - margin-top: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {margin-top: 1.25ex}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - margin-top: able to parse unexpected input
+  [CSS::Module]             ok 2 - margin-top: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {margin-top: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {margin-top: 1.25ex}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - margin-top: able to parse unexpected input
+  [CSS::Module]             ok 2 - margin-top: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {margin-top: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {margin-top: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 41 - {margin-top: 1.25ex}
+  [CSS::Module] # Subtest: {margin: 1.2ex 1.5em 125% 0}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 1.2ex 1.5em 125% 0}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - margin: able to parse unexpected input
+  [CSS::Module]             ok 2 - margin: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 1.2ex 1.5em 125% 0}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - margin: able to parse unexpected input
+  [CSS::Module]             ok 2 - margin: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {margin: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 1.2ex 1.5em 125% 0}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - margin: able to parse unexpected input
+  [CSS::Module]             ok 2 - margin: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {margin: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {margin: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 42 - {margin: 1.2ex 1.5em 125% 0}
+  [CSS::Module] # Subtest: {margin: 1.2ex 1.5em}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 1.2ex 1.5em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 1.2ex 1.5em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 1.2ex 1.5em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 43 - {margin: 1.2ex 1.5em}
+  [CSS::Module] # Subtest: {text-decoration: Underline}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {text-decoration: Underline}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-decoration: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-decoration: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {text-decoration: Underline}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-decoration: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-decoration: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {text-decoration: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {text-decoration: Underline}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-decoration: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-decoration: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {text-decoration: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {text-decoration: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 44 - {text-decoration: Underline}
+  [CSS::Module] # Subtest: {text-transform: uppercase}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {text-transform: uppercase}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-transform: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-transform: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {text-transform: uppercase}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-transform: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-transform: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {text-transform: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {text-transform: uppercase}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-transform: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-transform: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {text-transform: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {text-transform: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 45 - {text-transform: uppercase}
+  [CSS::Module] # Subtest: {text-align: justify}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {text-align: justify}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-align: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-align: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {text-align: justify}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-align: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-align: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {text-align: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {text-align: justify}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-align: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-align: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {text-align: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {text-align: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 46 - {text-align: justify}
+  [CSS::Module] # Subtest: {text-decoration: underline}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {text-decoration: underline}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {text-decoration: underline}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {text-decoration: underline}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 47 - {text-decoration: underline}
+  [CSS::Module] # Subtest: {vertical-align: text-top}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {vertical-align: text-top}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - vertical-align: able to parse unexpected input
+  [CSS::Module]             ok 2 - vertical-align: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {vertical-align: text-top}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - vertical-align: able to parse unexpected input
+  [CSS::Module]             ok 2 - vertical-align: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {vertical-align: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {vertical-align: text-top}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - vertical-align: able to parse unexpected input
+  [CSS::Module]             ok 2 - vertical-align: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {vertical-align: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {vertical-align: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 48 - {vertical-align: text-top}
+  [CSS::Module] # Subtest: {width: 55mm}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {width: 55mm}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - width: able to parse unexpected input
+  [CSS::Module]             ok 2 - width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {width: 55mm}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - width: able to parse unexpected input
+  [CSS::Module]             ok 2 - width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {width: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {width: 55mm}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - width: able to parse unexpected input
+  [CSS::Module]             ok 2 - width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {width: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {width: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 49 - {width: 55mm}
+  [CSS::Module] # Subtest: {word-spacing: 1.5em}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {word-spacing: 1.5em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - word-spacing: able to parse unexpected input
+  [CSS::Module]             ok 2 - word-spacing: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {word-spacing: 1.5em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - word-spacing: able to parse unexpected input
+  [CSS::Module]             ok 2 - word-spacing: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {word-spacing: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {word-spacing: 1.5em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - word-spacing: able to parse unexpected input
+  [CSS::Module]             ok 2 - word-spacing: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {word-spacing: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {word-spacing: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 50 - {word-spacing: 1.5em}
+  [CSS::Module] # Subtest: {white-space: nowrap}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {white-space: nowrap}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - white-space: able to parse unexpected input
+  [CSS::Module]             ok 2 - white-space: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {white-space: nowrap}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - white-space: able to parse unexpected input
+  [CSS::Module]             ok 2 - white-space: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {white-space: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {white-space: nowrap}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - white-space: able to parse unexpected input
+  [CSS::Module]             ok 2 - white-space: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {white-space: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {white-space: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 51 - {white-space: nowrap}
+  [CSS::Module] # Subtest: {z-index: -3}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {z-index: -3}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - z-index: able to parse unexpected input
+  [CSS::Module]             ok 2 - z-index: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {z-index: -3}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - z-index: able to parse unexpected input
+  [CSS::Module]             ok 2 - z-index: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {z-index: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {z-index: -3}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - z-index: able to parse unexpected input
+  [CSS::Module]             ok 2 - z-index: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {z-index: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {z-index: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 52 - {z-index: -3}
+  [CSS::Module] 1..52
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css21-properties.t
+  [CSS::Module] # Subtest: {azimuth: 30deg}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: 30deg}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - azimuth: able to parse unexpected input
+  [CSS::Module]         ok 5 - azimuth: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {azimuth: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: 30deg}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - azimuth: able to parse unexpected input
+  [CSS::Module]         ok 9 - azimuth: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {azimuth: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {azimuth: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 1 - {azimuth: 30deg}
+  [CSS::Module] # Subtest: {azimuth: far-right}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: far-right}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: far-right}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 2 - {azimuth: far-right}
+  [CSS::Module] # Subtest: {azimuth: center-left behind}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: center-left behind}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: center-left behind}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 3 - {azimuth: center-left behind}
+  [CSS::Module] # Subtest: {azimuth: Rightwards}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: Rightwards}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: Rightwards}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 4 - {azimuth: Rightwards}
+  [CSS::Module] # Subtest: {azimuth: inherit}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: inherit}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: inherit}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 5 - {azimuth: inherit}
+  [CSS::Module] # Subtest: {background-attachment: FiXed}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - background-attachment: able to parse unexpected input
+  [CSS::Module]         ok 5 - background-attachment: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {background-attachment: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - background-attachment: able to parse unexpected input
+  [CSS::Module]         ok 9 - background-attachment: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {background-attachment: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {background-attachment: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 6 - {background-attachment: FiXed}
+  [CSS::Module] # Subtest: {background-attachment: inherit}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: inherit}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: inherit}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 7 - {background-attachment: inherit}
+  [CSS::Module] # Subtest: {background-color: #37a}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-color:  \#37a}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - background-color: able to parse unexpected input
+  [CSS::Module]         ok 5 - background-color: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {background-color: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-color:  \#37a}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - background-color: able to parse unexpected input
+  [CSS::Module]         ok 9 - background-color: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {background-color: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {background-color: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 8 - {background-color:  \#37a}
+  [CSS::Module] # Subtest: {background-color: transparent}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-color: transparent}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-color: transparent}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 9 - {background-color: transparent}
+  [CSS::Module] # Subtest: {background-image: url(images/ok.png)}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-image: url(images/ok.png)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - background-image: able to parse unexpected input
+  [CSS::Module]         ok 5 - background-image: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {background-image: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-image: url(images/ok.png)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - background-image: able to parse unexpected input
+  [CSS::Module]         ok 9 - background-image: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {background-image: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {background-image: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 10 - {background-image: url(images/ok.png)}
+  [CSS::Module] # Subtest: {background-repeat: Repeat-x}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-repeat: Repeat-x}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - background-repeat: able to parse unexpected input
+  [CSS::Module]         ok 5 - background-repeat: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {background-repeat: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-repeat: Repeat-x}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - background-repeat: able to parse unexpected input
+  [CSS::Module]         ok 9 - background-repeat: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {background-repeat: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {background-repeat: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 11 - {background-repeat: Repeat-x}
+  [CSS::Module] # Subtest: {background-position: 100% 90%}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-position: 100% 90%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - background-position: able to parse unexpected input
+  [CSS::Module]         ok 5 - background-position: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {background-position: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-position: 100% 90%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - background-position: able to parse unexpected input
+  [CSS::Module]         ok 9 - background-position: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {background-position: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {background-position: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 12 - {background-position: 100% 90%}
+  [CSS::Module] # Subtest: {background-position: right top}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-position: right top}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-position: right top}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 13 - {background-position: right top}
+  [CSS::Module] # Subtest: {border-collapse: separate}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-collapse: separate}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - border-collapse: able to parse unexpected input
+  [CSS::Module]         ok 5 - border-collapse: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {border-collapse: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-collapse: separate}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - border-collapse: able to parse unexpected input
+  [CSS::Module]         ok 9 - border-collapse: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {border-collapse: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {border-collapse: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 14 - {border-collapse: separate}
+  [CSS::Module] # Subtest: {border-spacing: 3em}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-spacing: 3em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - border-spacing: able to parse unexpected input
+  [CSS::Module]         ok 5 - border-spacing: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {border-spacing: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-spacing: 3em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - border-spacing: able to parse unexpected input
+  [CSS::Module]         ok 9 - border-spacing: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {border-spacing: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {border-spacing: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 15 - {border-spacing: 3em}
+  [CSS::Module] # Subtest: {border-bottom: thick dotted red}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-bottom: thick dotted red}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - border-bottom: able to parse unexpected input
+  [CSS::Module]         ok 5 - border-bottom: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {border-bottom: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-bottom: thick dotted red}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - border-bottom: able to parse unexpected input
+  [CSS::Module]         ok 9 - border-bottom: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {border-bottom: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {border-bottom: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 16 - {border-bottom: thick dotted red}
+  [CSS::Module] # Subtest: {border-bottom-width: medium}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-bottom-width: medium}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - border-bottom-width: able to parse unexpected input
+  [CSS::Module]         ok 5 - border-bottom-width: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {border-bottom-width: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-bottom-width: medium}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - border-bottom-width: able to parse unexpected input
+  [CSS::Module]         ok 9 - border-bottom-width: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {border-bottom-width: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {border-bottom-width: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 17 - {border-bottom-width: medium}
+  [CSS::Module] # Subtest: {border-collapse: collapse}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-collapse: collapse}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-collapse: collapse}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 18 - {border-collapse: collapse}
+  [CSS::Module] # Subtest: {border-spacing: 2px .1cm}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-spacing: 2px .1cm}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-spacing: 2px .1cm}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 19 - {border-spacing: 2px .1cm}
+  [CSS::Module] # Subtest: {border-right-color: green}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-right-color: green}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - border-right-color: able to parse unexpected input
+  [CSS::Module]         ok 5 - border-right-color: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {border-right-color: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-right-color: green}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - border-right-color: able to parse unexpected input
+  [CSS::Module]         ok 9 - border-right-color: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {border-right-color: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {border-right-color: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 20 - {border-right-color: green}
+  [CSS::Module] # Subtest: {border-style: dotted dashed}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-style: dotted dashed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - border-style: able to parse unexpected input
+  [CSS::Module]         ok 5 - border-style: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {border-style: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-style: dotted dashed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - border-style: able to parse unexpected input
+  [CSS::Module]         ok 9 - border-style: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {border-style: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {border-style: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 21 - {border-style: dotted dashed}
+  [CSS::Module] # Subtest: {border-bottom-style: outset}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-bottom-style: outset}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - border-bottom-style: able to parse unexpected input
+  [CSS::Module]         ok 5 - border-bottom-style: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {border-bottom-style: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-bottom-style: outset}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - border-bottom-style: able to parse unexpected input
+  [CSS::Module]         ok 9 - border-bottom-style: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {border-bottom-style: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {border-bottom-style: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 22 - {border-bottom-style: outset}
+  [CSS::Module] # Subtest: {bottom: 5%}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {bottom: 5%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - bottom: able to parse unexpected input
+  [CSS::Module]         ok 5 - bottom: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {bottom: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {bottom: 5%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - bottom: able to parse unexpected input
+  [CSS::Module]         ok 9 - bottom: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {bottom: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {bottom: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 23 - {bottom: 5%}
+  [CSS::Module] # Subtest: {caption-side: top}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {caption-side: top}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - caption-side: able to parse unexpected input
+  [CSS::Module]         ok 5 - caption-side: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {caption-side: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {caption-side: top}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - caption-side: able to parse unexpected input
+  [CSS::Module]         ok 9 - caption-side: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {caption-side: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {caption-side: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 24 - {caption-side: top}
+  [CSS::Module] # Subtest: {clip: rect(5px, 40px, auto, 5px)}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {clip: rect(5px, 40px, auto, 5px)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - clip: able to parse unexpected input
+  [CSS::Module]         ok 5 - clip: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {clip: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {clip: rect(5px, 40px, auto, 5px)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - clip: able to parse unexpected input
+  [CSS::Module]         ok 9 - clip: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {clip: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {clip: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 25 - {clip: rect(5px, 40px, auto, 5px)}
+  [CSS::Module] 1..25
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3-_base.t
+  [CSS::Module] ok 1 - not number: 0%
+  [CSS::Module] ok 2 - percentage: 0%
+  [CSS::Module] ok 3 - not angle: 0%
+  [CSS::Module] ok 4 - not number: 0deg
+  [CSS::Module] ok 5 - not percentage: 0deg
+  [CSS::Module] ok 6 - angle: 0deg
+  [CSS::Module] ok 7 - number: 0
+  [CSS::Module] ok 8 - not percentage: 0
+  [CSS::Module] ok 9 - angle: 0
+  [CSS::Module] ok 10 - number: 1
+  [CSS::Module] ok 11 - not percentage: 1
+  [CSS::Module] ok 12 - angle: 1
+  [CSS::Module] ok 13 - css3 terms number parse: 123.45
+  [CSS::Module] ok 14 - css3 terms number no warnings
+  [CSS::Module] ok 15 - css3 terms number ast
+  [CSS::Module] ok 16 - css3 terms integer parse: 123
+  [CSS::Module] ok 17 - css3 terms integer no warnings
+  [CSS::Module] ok 18 - css3 terms integer ast
+  [CSS::Module] ok 19 - css3 terms uri parse: url(foo.jpg)
+  [CSS::Module] ok 20 - css3 terms uri no warnings
+  [CSS::Module] ok 21 - css3 terms uri ast
+  [CSS::Module] ok 22 - css3 terms keyw parse: Abc
+  [CSS::Module] ok 23 - css3 terms keyw no warnings
+  [CSS::Module] ok 24 - css3 terms keyw ast
+  [CSS::Module] ok 25 - css3 terms identifier parse: Foo
+  [CSS::Module] ok 26 - css3 terms identifier no warnings
+  [CSS::Module] ok 27 - css3 terms identifier ast
+  [CSS::Module] ok 28 - css3 terms identifiers parse: Aaa bb
+  [CSS::Module] ok 29 - css3 terms identifiers no warnings
+  [CSS::Module] ok 30 - css3 terms identifiers ast
+  [CSS::Module] 1..30
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-colors.t
+  [CSS::Module] ok 1 - css3-color term parse: rgb(70%, 50%, 10%)
+  [CSS::Module] ok 2 - css3-color term no warnings
+  [CSS::Module] ok 3 - css3-color term ast
+  [CSS::Module] ok 4 - ast reserialization
+  [CSS::Module] ok 5 -   -- css3-color reserialized term parse: rgb(179, 128, 26)
+  [CSS::Module] ok 6 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 7 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 8 - css3-color term parse: rgba(100%, 128, 0%, 0.1)
+  [CSS::Module] ok 9 - css3-color term no warnings
+  [CSS::Module] ok 10 - css3-color term ast
+  [CSS::Module] ok 11 - ast reserialization
+  [CSS::Module] ok 12 -   -- css3-color reserialized term parse: rgba(255, 128, 0, 0.1)
+  [CSS::Module] ok 13 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 14 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 15 - css3-color term parse: rgb(100%, 128, 0%, 0.1)
+  [CSS::Module] ok 16 - css3-color term no warnings
+  [CSS::Module] ok 17 - css3-color term ast
+  [CSS::Module] ok 18 - ast reserialization
+  [CSS::Module] ok 19 -   -- css3-color reserialized term parse: rgba(255, 128, 0, 0.1)
+  [CSS::Module] ok 20 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 21 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 22 - css3-color term parse: rgba(100%, 128, 0%, 10%)
+  [CSS::Module] ok 23 - css3-color term no warnings
+  [CSS::Module] ok 24 - css3-color term ast
+  [CSS::Module] ok 25 - ast reserialization
+  [CSS::Module] ok 26 -   -- css3-color reserialized term parse: rgba(255, 128, 0, 10%)
+  [CSS::Module] ok 27 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 28 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 29 - css3-color term parse: hsl(120, 100%, 50%)
+  [CSS::Module] ok 30 - css3-color term no warnings
+  [CSS::Module] ok 31 - css3-color term ast
+  [CSS::Module] ok 32 - ast reserialization
+  [CSS::Module] ok 33 -   -- css3-color reserialized term parse: hsl(120, 100%, 50%)
+  [CSS::Module] ok 34 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 35 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 36 - css3-color term parse: hsla( 180, 100%, 50%, .75 )
+  [CSS::Module] ok 37 - css3-color term no warnings
+  [CSS::Module] ok 38 - css3-color term ast
+  [CSS::Module] ok 39 - ast reserialization
+  [CSS::Module] ok 40 -   -- css3-color reserialized term parse: hsla(180, 100%, 50%, 0.75)
+  [CSS::Module] ok 41 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 42 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 43 - css3-color term parse: rgba(101%, 50%, -5%, +1.1)
+  [CSS::Module] ok 44 - css3-color term no warnings
+  [CSS::Module] ok 45 - css3-color term ast
+  [CSS::Module] ok 46 - ast reserialization
+  [CSS::Module] ok 47 -   -- css3-color reserialized term parse: rgb(255, 128, 0)
+  [CSS::Module] ok 48 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 49 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 50 - css3-color term parse: hsl(120, 110%, -50%)
+  [CSS::Module] ok 51 - css3-color term no warnings
+  [CSS::Module] ok 52 - css3-color term ast
+  [CSS::Module] ok 53 - ast reserialization
+  [CSS::Module] ok 54 -   -- css3-color reserialized term parse: hsl(120, 100%, 0%)
+  [CSS::Module] ok 55 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 56 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 57 - css3-color term parse: hsla( 180, -100%, 150%, 1.75 )
+  [CSS::Module] ok 58 - css3-color term no warnings
+  [CSS::Module] ok 59 - css3-color term ast
+  [CSS::Module] ok 60 - ast reserialization
+  [CSS::Module] ok 61 -   -- css3-color reserialized term parse: hsla(180, 0%, 100%, 1)
+  [CSS::Module] ok 62 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 63 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 64 - css3-color term parse: rgba(10%,20%,30%)
+  [CSS::Module] ok 65 - css3-color term no warnings
+  [CSS::Module] ok 66 - css3-color term ast
+  [CSS::Module] ok 67 - ast reserialization
+  [CSS::Module] ok 68 -   -- css3-color reserialized term parse: rgb(26, 51, 77)
+  [CSS::Module] ok 69 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 70 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 71 - css3-color term parse: hsl(junk)
+  [CSS::Module] ok 72 - css3-color term warnings
+  [CSS::Module] ok 73 - css3-color term parse: hsla()
+  [CSS::Module] ok 74 - css3-color term warnings
+  [CSS::Module] ok 75 - css3-color color parse: orange
+  [CSS::Module] ok 76 - css3-color color no warnings
+  [CSS::Module] ok 77 - css3-color color ast
+  [CSS::Module] ok 78 - ast reserialization
+  [CSS::Module] ok 79 -   -- css3-color reserialized color parse: rgb(255, 165, 0)
+  [CSS::Module] ok 80 -   -- css3-color reserialized color no warnings
+  [CSS::Module] ok 81 -   -- css3-color reserialized color ast
+  [CSS::Module] ok 82 - css3-color color parse: hotpink
+  [CSS::Module] ok 83 - css3-color color no warnings
+  [CSS::Module] ok 84 - css3-color color ast
+  [CSS::Module] ok 85 - ast reserialization
+  [CSS::Module] ok 86 -   -- css3-color reserialized color parse: rgb(255, 105, 180)
+  [CSS::Module] ok 87 -   -- css3-color reserialized color no warnings
+  [CSS::Module] ok 88 -   -- css3-color reserialized color ast
+  [CSS::Module] ok 89 - css3-color color parse: lavenderblush
+  [CSS::Module] ok 90 - css3-color color no warnings
+  [CSS::Module] ok 91 - css3-color color ast
+  [CSS::Module] ok 92 - ast reserialization
+  [CSS::Module] ok 93 -   -- css3-color reserialized color parse: rgb(255, 240, 245)
+  [CSS::Module] ok 94 -   -- css3-color reserialized color no warnings
+  [CSS::Module] ok 95 -   -- css3-color reserialized color ast
+  [CSS::Module] ok 96 - css3-color color parse: black
+  [CSS::Module] ok 97 - css3-color color no warnings
+  [CSS::Module] ok 98 - css3-color color ast
+  [CSS::Module] ok 99 - ast reserialization
+  [CSS::Module] ok 100 -   -- css3-color reserialized color parse: rgb(0, 0, 0)
+  [CSS::Module] ok 101 -   -- css3-color reserialized color no warnings
+  [CSS::Module] ok 102 -   -- css3-color reserialized color ast
+  [CSS::Module] ok 103 - css3-color color parse: currentcolor
+  [CSS::Module] ok 104 - css3-color color no warnings
+  [CSS::Module] ok 105 - css3-color color ast
+  [CSS::Module] ok 106 - ast reserialization
+  [CSS::Module] ok 107 -   -- css3-color reserialized color parse: currentcolor
+  [CSS::Module] ok 108 -   -- css3-color reserialized color no warnings
+  [CSS::Module] ok 109 -   -- css3-color reserialized color ast
+  [CSS::Module] ok 110 - css3-color color parse: transparent
+  [CSS::Module] ok 111 - css3-color color no warnings
+  [CSS::Module] ok 112 - css3-color color ast
+  [CSS::Module] ok 113 - ast reserialization
+  [CSS::Module] ok 114 -   -- css3-color reserialized color parse: transparent
+  [CSS::Module] ok 115 -   -- css3-color reserialized color no warnings
+  [CSS::Module] ok 116 -   -- css3-color reserialized color ast
+  [CSS::Module] 1..116
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-fonts.t
+  [CSS::Module] ok 1 - css3x-fonts at-rule parse: @font-face { font-family: MainText; src: url(gentium.eot); /* for use with older user agents */ src: local('Gentium'), url(gentium.ttf) format('truetype');  /* Overrides src definition */ }
+  [CSS::Module] ok 2 - css3x-fonts at-rule no warnings
+  [CSS::Module] ok 3 - css3x-fonts at-rule ast
+  [CSS::Module] ok 4 - ast reserialization
+  [CSS::Module] ok 5 -   -- css3x-fonts reserialized at-rule parse: @font-face {... }
+  [CSS::Module] ok 6 -   -- css3x-fonts reserialized at-rule no warnings
+  [CSS::Module] ok 7 -   -- css3x-fonts reserialized at-rule ast
+  [CSS::Module] ok 8 - css21 at-rule parse: @font-face { font-family: MainText; src: url(gentium.eot); /* for use with older user agents */ src: local('Gentium'), url(gentium.ttf) format('truetype');  /* Overrides src definition */ }
+  [CSS::Module] ok 9 - css21 at-rule no warnings
+  [CSS::Module] ok 10 - css3x-fonts declarations parse: {font-family: 21st Century, fantasy;}
+  [CSS::Module] ok 11 - css3x-fonts declarations no warnings
+  [CSS::Module] ok 12 - css3x-fonts declarations ast
+  [CSS::Module] ok 13 - ast reserialization
+  [CSS::Module] ok 14 -   -- css3x-fonts reserialized declarations parse: {... }
+  [CSS::Module] ok 15 -   -- css3x-fonts reserialized declarations no warnings
+  [CSS::Module] ok 16 -   -- css3x-fonts reserialized declarations ast
+  [CSS::Module] ok 17 - css21 declarations parse: {font-family: 21st Century, fantasy;}
+  [CSS::Module] ok 18 - css21 declarations no warnings
+  [CSS::Module] ok 19 - css21 declarations ast
+  [CSS::Module] ok 20 - ast reserialization
+  [CSS::Module] ok 21 -   -- css21 reserialized declarations parse: {... }
+  [CSS::Module] ok 22 -   -- css21 reserialized declarations no warnings
+  [CSS::Module] ok 23 -   -- css21 reserialized declarations ast
+  [CSS::Module] ok 24 - css3x-fonts at-rule parse: @font-face { font-family: BBCBengali; src: url(fonts/BBCBengali.ttf) format("opentype"); unicode-range: U+00-FF, U+980-9FF; }
+  [CSS::Module] ok 25 - css3x-fonts at-rule no warnings
+  [CSS::Module] ok 26 - css3x-fonts at-rule ast
+  [CSS::Module] ok 27 - ast reserialization
+  [CSS::Module] ok 28 -   -- css3x-fonts reserialized at-rule parse: @font-face {... }
+  [CSS::Module] ok 29 -   -- css3x-fonts reserialized at-rule no warnings
+  [CSS::Module] ok 30 -   -- css3x-fonts reserialized at-rule ast
+  [CSS::Module] ok 31 - css21 at-rule parse: @font-face { font-family: BBCBengali; src: url(fonts/BBCBengali.ttf) format("opentype"); unicode-range: U+00-FF, U+980-9FF; }
+  [CSS::Module] ok 32 - css21 at-rule no warnings
+  [CSS::Module] ok 33 - css3x-fonts declarations parse: {font-feature-settings: "smcp", "swsh" 2;}
+  [CSS::Module] ok 34 - css3x-fonts declarations no warnings
+  [CSS::Module] ok 35 - css3x-fonts declarations ast
+  [CSS::Module] ok 36 - ast reserialization
+  [CSS::Module] ok 37 -   -- css3x-fonts reserialized declarations parse: {... }
+  [CSS::Module] ok 38 -   -- css3x-fonts reserialized declarations no warnings
+  [CSS::Module] ok 39 -   -- css3x-fonts reserialized declarations ast
+  [CSS::Module] ok 40 - css21 declarations parse: {font-feature-settings: "smcp", "swsh" 2;}
+  [CSS::Module] ok 41 - css21 declarations warnings
+  [CSS::Module] ok 42 - css3x-fonts declaration parse: font-weight: lighter;
+  [CSS::Module] ok 43 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 44 - css3x-fonts declaration ast
+  [CSS::Module] ok 45 - ast reserialization
+  [CSS::Module] ok 46 -   -- css3x-fonts reserialized declaration parse: font-weight: lighter;
+  [CSS::Module] ok 47 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 48 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 49 - css21 declaration parse: font-weight: lighter;
+  [CSS::Module] ok 50 - css21 declaration no warnings
+  [CSS::Module] ok 51 - css21 declaration ast
+  [CSS::Module] ok 52 - ast reserialization
+  [CSS::Module] ok 53 -   -- css21 reserialized declaration parse: font-weight: lighter;
+  [CSS::Module] ok 54 -   -- css21 reserialized declaration no warnings
+  [CSS::Module] ok 55 -   -- css21 reserialized declaration ast
+  [CSS::Module] ok 56 - css3x-fonts declaration parse: font-weight: initial;
+  [CSS::Module] ok 57 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 58 - css3x-fonts declaration ast
+  [CSS::Module] ok 59 - ast reserialization
+  [CSS::Module] ok 60 -   -- css3x-fonts reserialized declaration parse: font-weight: initial;
+  [CSS::Module] ok 61 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 62 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 63 - css21 declaration parse: font-weight: initial;
+  [CSS::Module] ok 64 - css21 declaration warnings
+  [CSS::Module] ok 65 - css3x-fonts declaration parse: font-weight: inherit
+  [CSS::Module] ok 66 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 67 - css3x-fonts declaration ast
+  [CSS::Module] ok 68 - ast reserialization
+  [CSS::Module] ok 69 -   -- css3x-fonts reserialized declaration parse: font-weight: inherit;
+  [CSS::Module] ok 70 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 71 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 72 - css21 declaration parse: font-weight: inherit
+  [CSS::Module] ok 73 - css21 declaration no warnings
+  [CSS::Module] ok 74 - css21 declaration ast
+  [CSS::Module] ok 75 - ast reserialization
+  [CSS::Module] ok 76 -   -- css21 reserialized declaration parse: font-weight: inherit;
+  [CSS::Module] ok 77 -   -- css21 reserialized declaration no warnings
+  [CSS::Module] ok 78 -   -- css21 reserialized declaration ast
+  [CSS::Module] ok 79 - css3x-fonts declaration parse: font-stretch: extra-expanded
+  [CSS::Module] ok 80 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 81 - css3x-fonts declaration ast
+  [CSS::Module] ok 82 - ast reserialization
+  [CSS::Module] ok 83 -   -- css3x-fonts reserialized declaration parse: font-stretch: extra-expanded;
+  [CSS::Module] ok 84 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 85 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 86 - css21 declaration parse: font-stretch: extra-expanded
+  [CSS::Module] ok 87 - css21 declaration warnings
+  [CSS::Module] ok 88 - css3x-fonts declaration parse: font-style: oblique;
+  [CSS::Module] ok 89 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 90 - css3x-fonts declaration ast
+  [CSS::Module] ok 91 - ast reserialization
+  [CSS::Module] ok 92 -   -- css3x-fonts reserialized declaration parse: font-style: oblique;
+  [CSS::Module] ok 93 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 94 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 95 - css21 declaration parse: font-style: oblique;
+  [CSS::Module] ok 96 - css21 declaration no warnings
+  [CSS::Module] ok 97 - css21 declaration ast
+  [CSS::Module] ok 98 - ast reserialization
+  [CSS::Module] ok 99 -   -- css21 reserialized declaration parse: font-style: oblique;
+  [CSS::Module] ok 100 -   -- css21 reserialized declaration no warnings
+  [CSS::Module] ok 101 -   -- css21 reserialized declaration ast
+  [CSS::Module] ok 102 - css3x-fonts declaration parse: font-size-adjust: .7;
+  [CSS::Module] ok 103 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 104 - css3x-fonts declaration ast
+  [CSS::Module] ok 105 - ast reserialization
+  [CSS::Module] ok 106 -   -- css3x-fonts reserialized declaration parse: font-size-adjust: 0.7;
+  [CSS::Module] ok 107 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 108 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 109 - css21 declaration parse: font-size-adjust: .7;
+  [CSS::Module] ok 110 - css21 declaration warnings
+  [CSS::Module] ok 111 - css3x-fonts declaration parse: font: x-large/110% 'new century schoolbook', serif;
+  [CSS::Module] ok 112 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 113 - css3x-fonts declaration ast
+  [CSS::Module] ok 114 - ast reserialization
+  [CSS::Module] ok 115 -   -- css3x-fonts reserialized declaration parse: font: x-large/110% 'new century schoolbook', serif;
+  [CSS::Module] ok 116 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 117 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 118 - css21 declaration parse: font: x-large/110% 'new century schoolbook', serif;
+  [CSS::Module] ok 119 - css21 declaration no warnings
+  [CSS::Module] ok 120 - css21 declaration ast
+  [CSS::Module] ok 121 - ast reserialization
+  [CSS::Module] ok 122 -   -- css21 reserialized declaration parse: font: x-large/110% 'new century schoolbook', serif;
+  [CSS::Module] ok 123 -   -- css21 reserialized declaration no warnings
+  [CSS::Module] ok 124 -   -- css21 reserialized declaration ast
+  [CSS::Module] ok 125 - css3x-fonts declaration parse: font-variant: small-caps;
+  [CSS::Module] ok 126 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 127 - css3x-fonts declaration ast
+  [CSS::Module] ok 128 - ast reserialization
+  [CSS::Module] ok 129 -   -- css3x-fonts reserialized declaration parse: font-variant: small-caps;
+  [CSS::Module] ok 130 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 131 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 132 - css21 declaration parse: font-variant: small-caps;
+  [CSS::Module] ok 133 - css21 declaration no warnings
+  [CSS::Module] ok 134 - css21 declaration ast
+  [CSS::Module] ok 135 - ast reserialization
+  [CSS::Module] ok 136 -   -- css21 reserialized declaration parse: font-variant: small-caps;
+  [CSS::Module] ok 137 -   -- css21 reserialized declaration no warnings
+  [CSS::Module] ok 138 -   -- css21 reserialized declaration ast
+  [CSS::Module] ok 139 - css3x-fonts declaration parse: font-variant: annotation(circled);
+  [CSS::Module] ok 140 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 141 - css3x-fonts declaration ast
+  [CSS::Module] ok 142 - ast reserialization
+  [CSS::Module] ok 143 -   -- css3x-fonts reserialized declaration parse: font-variant: annotation(circled);
+  [CSS::Module] ok 144 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 145 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 146 - css21 declaration parse: font-variant: annotation(circled);
+  [CSS::Module] ok 147 - css21 declaration warnings
+  [CSS::Module] ok 148 - css3x-fonts declaration parse: font-synthesis: weight;
+  [CSS::Module] ok 149 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 150 - css3x-fonts declaration ast
+  [CSS::Module] ok 151 - ast reserialization
+  [CSS::Module] ok 152 -   -- css3x-fonts reserialized declaration parse: font-synthesis: weight;
+  [CSS::Module] ok 153 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 154 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 155 - css21 declaration parse: font-synthesis: weight;
+  [CSS::Module] ok 156 - css21 declaration warnings
+  [CSS::Module] ok 157 - css3x-fonts declaration parse: font-variant: discretionary-ligatures character-variant(leo-B, leo-M, leo-N, leo-T, leo-U);
+  [CSS::Module] ok 158 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 159 - css3x-fonts declaration ast
+  [CSS::Module] ok 160 - ast reserialization
+  [CSS::Module] ok 161 -   -- css3x-fonts reserialized declaration parse: font-variant: discretionary-ligatures character-variant(leo-B, leo-M, leo-N, leo-T, leo-U);
+  [CSS::Module] ok 162 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 163 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 164 - css21 declaration parse: font-variant: discretionary-ligatures character-variant(leo-B, leo-M, leo-N, leo-T, leo-U);
+  [CSS::Module] ok 165 - css21 declaration warnings
+  [CSS::Module] ok 166 - css3x-fonts declaration parse: line-height: 1.2em ;
+  [CSS::Module] ok 167 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 168 - css3x-fonts declaration ast
+  [CSS::Module] ok 169 - ast reserialization
+  [CSS::Module] ok 170 -   -- css3x-fonts reserialized declaration parse: line-height: 1.2em;
+  [CSS::Module] ok 171 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 172 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 173 - css21 declaration parse: line-height: 1.2em ;
+  [CSS::Module] ok 174 - css21 declaration no warnings
+  [CSS::Module] ok 175 - css21 declaration ast
+  [CSS::Module] ok 176 - ast reserialization
+  [CSS::Module] ok 177 -   -- css21 reserialized declaration parse: line-height: 1.2em;
+  [CSS::Module] ok 178 -   -- css21 reserialized declaration no warnings
+  [CSS::Module] ok 179 -   -- css21 reserialized declaration ast
+  [CSS::Module] 1..179
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-media-queries.t
+  [CSS::Module] # Subtest: resolution: 300dpi
+  [CSS::Module]     ok 1 - css3 @media resolution parse: 300dpi
+  [CSS::Module]     ok 2 - css3 @media resolution no warnings
+  [CSS::Module]     ok 3 - css3 @media resolution ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized resolution parse: 300dpi
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized resolution no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized resolution ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 1 - resolution: 300dpi
+  [CSS::Module] # Subtest: media-expr: max-width: foo
+  [CSS::Module]     ok 1 - css3 @media media-expr parse: max-width: foo
+  [CSS::Module]     ok 2 - css3 @media media-expr warnings
+  [CSS::Module]     1..2
+  [CSS::Module] ok 2 - media-expr: max-width: foo
+  [CSS::Module] # Subtest: at-rule: @media all { body { background:lime } }
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media all { body { background:lime } }
+  [CSS::Module]     ok 2 - css3 @media at-rule no warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media all {... }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 3 - at-rule: @media all { body { background:lime } }
+  [CSS::Module] # Subtest: at-rule: @media all and (color) { }
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media all and (color) { }
+  [CSS::Module]     ok 2 - css3 @media at-rule no warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media all and (color) {
+  [CSS::Module]     # }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 4 - at-rule: @media all and (color) { }
+  [CSS::Module] # Subtest: at-rule: @media screen { * { font-family: sans-serif } }
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media screen { * { font-family: sans-serif } }
+  [CSS::Module]     ok 2 - css3 @media at-rule no warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media screen {... }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 5 - at-rule: @media screen { * { font-family: sans-serif } }
+  [CSS::Module] # Subtest: at-rule: @media all AND (min-resolution: 300dpi) And (max-resolution: 118dpcm) {}
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media all AND (min-resolution: 300dpi) And (max-resolution: 118dpcm) {}
+  [CSS::Module]     ok 2 - css3 @media at-rule no warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media all and (min-resolution: 300dpi) and (max-resolution: 118dpcm) {
+  [CSS::Module]     # }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 6 - at-rule: @media all AND (min-resolution: 300dpi) And (max-resolution: 118dpcm) {}
+  [CSS::Module] # Subtest: at-rule: @media noT print {body{margin : 1cm}}
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media noT print {body{margin : 1cm}}
+  [CSS::Module]     ok 2 - css3 @media at-rule no warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media not print {... }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 7 - at-rule: @media noT print {body{margin : 1cm}}
+  [CSS::Module] # Subtest: at-rule: @media ONLY all And (none) { }
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media ONLY all And (none) { }
+  [CSS::Module]     ok 2 - css3 @media at-rule warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media not all {
+  [CSS::Module]     # }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 8 - at-rule: @media ONLY all And (none) { }
+  [CSS::Module] # Subtest: at-rule: @media not all {}
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media not all {}
+  [CSS::Module]     ok 2 - css3 @media at-rule no warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media not all {
+  [CSS::Module]     # }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 9 - at-rule: @media not all {}
+  [CSS::Module] # Subtest: at-rule: @media (min-orientation:portrait) {}
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media (min-orientation:portrait) {}
+  [CSS::Module]     ok 2 - css3 @media at-rule warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media not all {
+  [CSS::Module]     # }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 10 - at-rule: @media (min-orientation:portrait) {}
+  [CSS::Module] # Subtest: at-rule: @media (color:20example) {}
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media (color:20example) {}
+  [CSS::Module]     ok 2 - css3 @media at-rule warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media not all {
+  [CSS::Module]     # }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 11 - at-rule: @media (color:20example) {}
+  [CSS::Module] # Subtest: at-rule: @media (example, all,), speech {}
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media (example, all,), speech {}
+  [CSS::Module]     ok 2 - css3 @media at-rule warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media not all {
+  [CSS::Module]     # }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 12 - at-rule: @media (example, all,), speech {}
+  [CSS::Module] # Subtest: at-rule: @media &test, screen {}
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media &test, screen {}
+  [CSS::Module]     ok 2 - css3 @media at-rule warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media not all {
+  [CSS::Module]     # }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 13 - at-rule: @media &test, screen {}
+  [CSS::Module] # Subtest: import: @import url(example.css) screen and (color), projection and (color);
+  [CSS::Module]     ok 1 - css3 @media import parse: @import url(example.css) screen and (color), projection and (color);
+  [CSS::Module]     ok 2 - css3 @media import no warnings
+  [CSS::Module]     ok 3 - css3 @media import ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized import parse: @import url('example.css') screen and (color), projection and (color);
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized import no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized import ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 14 - import: @import url(example.css) screen and (color), projection and (color);
+  [CSS::Module] 1..14
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-namespaces.t
+  [CSS::Module] ok 1 - css3-namespaces at-decl parse: @namespace empty "";
+  [CSS::Module] ok 2 - css3-namespaces at-decl no warnings
+  [CSS::Module] ok 3 - css3-namespaces at-decl ast
+  [CSS::Module] ok 4 - ast reserialization
+  [CSS::Module] ok 5 -   -- css3-namespaces reserialized at-decl parse: @namespace empty url('');
+  [CSS::Module] ok 6 -   -- css3-namespaces reserialized at-decl no warnings
+  [CSS::Module] ok 7 -   -- css3-namespaces reserialized at-decl ast
+  [CSS::Module] ok 8 - css3-namespaces at-decl parse: @NAMESPACE "";
+  [CSS::Module] ok 9 - css3-namespaces at-decl no warnings
+  [CSS::Module] ok 10 - css3-namespaces at-decl ast
+  [CSS::Module] ok 11 - ast reserialization
+  [CSS::Module] ok 12 -   -- css3-namespaces reserialized at-decl parse: @namespace url('');
+  [CSS::Module] ok 13 -   -- css3-namespaces reserialized at-decl no warnings
+  [CSS::Module] ok 14 -   -- css3-namespaces reserialized at-decl ast
+  [CSS::Module] ok 15 - css3-namespaces at-decl parse: @namespace "http://www.w3.org/1999/xhtml";
+  [CSS::Module] ok 16 - css3-namespaces at-decl no warnings
+  [CSS::Module] ok 17 - css3-namespaces at-decl ast
+  [CSS::Module] ok 18 - ast reserialization
+  [CSS::Module] ok 19 -   -- css3-namespaces reserialized at-decl parse: @namespace url('http://www.w3.org/1999/xhtml');
+  [CSS::Module] ok 20 -   -- css3-namespaces reserialized at-decl no warnings
+  [CSS::Module] ok 21 -   -- css3-namespaces reserialized at-decl ast
+  [CSS::Module] ok 22 - css3-namespaces at-decl parse: @namespace svg "http://www.w3.org/2000/svg";
+  [CSS::Module] ok 23 - css3-namespaces at-decl no warnings
+  [CSS::Module] ok 24 - css3-namespaces at-decl ast
+  [CSS::Module] ok 25 - ast reserialization
+  [CSS::Module] ok 26 -   -- css3-namespaces reserialized at-decl parse: @namespace svg url('http://www.w3.org/2000/svg');
+  [CSS::Module] ok 27 -   -- css3-namespaces reserialized at-decl no warnings
+  [CSS::Module] ok 28 -   -- css3-namespaces reserialized at-decl ast
+  [CSS::Module] ok 29 - css3-namespaces stylesheet parse: @namespace toto url(http://toto.example.org);
+  [CSS::Module] ok 30 - css3-namespaces stylesheet no warnings
+  [CSS::Module] ok 31 - css3-namespaces stylesheet ast
+  [CSS::Module] ok 32 - ast reserialization
+  [CSS::Module] ok 33 -   -- css3-namespaces reserialized stylesheet parse: @namespace toto url('http://toto.example.org');
+  [CSS::Module] ok 34 -   -- css3-namespaces reserialized stylesheet no warnings
+  [CSS::Module] ok 35 -   -- css3-namespaces reserialized stylesheet ast
+  [CSS::Module] 1..35
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-paged-media.t
+  [CSS::Module] ok 1 - css3 @page at-rule parse: @page :left { margin-left: 4cm; size: a4 }
+  [CSS::Module] ok 2 - css3 @page at-rule no warnings
+  [CSS::Module] ok 3 - css3 @page at-rule ast
+  [CSS::Module] ok 4 - ast reserialization
+  [CSS::Module] ok 5 -   -- css3 @page reserialized at-rule parse: @page :left {... }
+  [CSS::Module] ok 6 -   -- css3 @page reserialized at-rule no warnings
+  [CSS::Module] ok 7 -   -- css3 @page reserialized at-rule ast
+  [CSS::Module] ok 8 - css3 @page at-rule parse: @page :right { tickety: boo; size: A3 }
+  [CSS::Module] ok 9 - css3 @page at-rule warnings
+  [CSS::Module] ok 10 - css3 @page at-rule ast
+  [CSS::Module] ok 11 - ast reserialization
+  [CSS::Module] ok 12 -   -- css3 @page reserialized at-rule parse: @page :right {... }
+  [CSS::Module] ok 13 -   -- css3 @page reserialized at-rule no warnings
+  [CSS::Module] ok 14 -   -- css3 @page reserialized at-rule ast
+  [CSS::Module] ok 15 - css3 @page at-rule parse: @PAGE :junk { margin-right: 2cm }
+  [CSS::Module] ok 16 - css3 @page at-rule warnings
+  [CSS::Module] ok 17 - css3 @page at-rule ast
+  [CSS::Module] ok 18 - ast reserialization
+  [CSS::Module] ok 19 -   -- css3 @page reserialized at-rule parse: @page {... }
+  [CSS::Module] ok 20 -   -- css3 @page reserialized at-rule no warnings
+  [CSS::Module] ok 21 -   -- css3 @page reserialized at-rule ast
+  [CSS::Module] ok 22 - css3 @page at-rule parse: @page : { margin-right: 2cm }
+  [CSS::Module] ok 23 - css3 @page at-rule warnings
+  [CSS::Module] ok 24 - css3 @page page-declarations parse: {@bottom-right-CorNeR {color:blue}}
+  [CSS::Module] ok 25 - css3 @page page-declarations no warnings
+  [CSS::Module] ok 26 - css3 @page page-declarations ast
+  [CSS::Module] ok 27 - ast reserialization
+  [CSS::Module] ok 28 -   -- css3 @page reserialized page-declarations parse: {... }
+  [CSS::Module] ok 29 -   -- css3 @page reserialized page-declarations no warnings
+  [CSS::Module] ok 30 -   -- css3 @page reserialized page-declarations ast
+  [CSS::Module] ok 31 - css3 @page page-declarations parse: { @Top-CENTER {content: 'Page ' counters(page);} }
+  [CSS::Module] ok 32 - css3 @page page-declarations no warnings
+  [CSS::Module] ok 33 - css3 @page page-declarations ast
+  [CSS::Module] ok 34 - ast reserialization
+  [CSS::Module] ok 35 -   -- css3 @page reserialized page-declarations parse: {... }
+  [CSS::Module] ok 36 -   -- css3 @page reserialized page-declarations no warnings
+  [CSS::Module] ok 37 -   -- css3 @page reserialized page-declarations ast
+  [CSS::Module] ok 38 - css3 @page at-rule parse: @page { color: red; @top-center { content: 'Page ' counters(page,'.'); } }
+  [CSS::Module] ok 39 - css3 @page at-rule no warnings
+  [CSS::Module] ok 40 - css3 @page at-rule ast
+  [CSS::Module] ok 41 - ast reserialization
+  [CSS::Module] ok 42 -   -- css3 @page reserialized at-rule parse: @page {... }
+  [CSS::Module] ok 43 -   -- css3 @page reserialized at-rule no warnings
+  [CSS::Module] ok 44 -   -- css3 @page reserialized at-rule ast
+  [CSS::Module] 1..44
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-values-and-units.t
+  [CSS::Module] # Subtest: font-size: 8vw
+  [CSS::Module]     ok 1 - css3x-units declaration parse: font-size: 8vw
+  [CSS::Module]     ok 2 - css3x-units declaration no warnings
+  [CSS::Module]     ok 3 - css3x-units declaration ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3x-units reserialized declaration parse: font-size: 8vw;
+  [CSS::Module]     ok 6 -   -- css3x-units reserialized declaration no warnings
+  [CSS::Module]     ok 7 -   -- css3x-units reserialized declaration ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 1 - font-size: 8vw
+  [CSS::Module] # Subtest: margin-left: 1.2rem
+  [CSS::Module]     ok 1 - css3x-units declaration parse: margin-left: 1.2rem
+  [CSS::Module]     ok 2 - css3x-units declaration no warnings
+  [CSS::Module]     ok 3 - css3x-units declaration ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3x-units reserialized declaration parse: margin-left: 1.2rem;
+  [CSS::Module]     ok 6 -   -- css3x-units reserialized declaration no warnings
+  [CSS::Module]     ok 7 -   -- css3x-units reserialized declaration ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 2 - margin-left: 1.2rem
+  [CSS::Module] # Subtest: azimuth: .5turn
+  [CSS::Module]     ok 1 - css3x-units declaration parse: azimuth: .5turn
+  [CSS::Module]     ok 2 - css3x-units declaration no warnings
+  [CSS::Module]     ok 3 - css3x-units declaration ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3x-units reserialized declaration parse: azimuth: 0.5turn;
+  [CSS::Module]     ok 6 -   -- css3x-units reserialized declaration no warnings
+  [CSS::Module]     ok 7 -   -- css3x-units reserialized declaration ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 3 - azimuth: .5turn
+  [CSS::Module] # Subtest: 5dppx
+  [CSS::Module]     ok 1 - css3x-units resolution parse: 5dppx
+  [CSS::Module]     ok 2 - css3x-units resolution no warnings
+  [CSS::Module]     ok 3 - css3x-units resolution ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3x-units reserialized resolution parse: 5dppx
+  [CSS::Module]     ok 6 -   -- css3x-units reserialized resolution no warnings
+  [CSS::Module]     ok 7 -   -- css3x-units reserialized resolution ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 4 - 5dppx
+  [CSS::Module] # Subtest: width: calc(100%/3 - 2*1em - 2px)
+  [CSS::Module]     ok 1 - css3x-units declaration parse: width: calc(100%/3 - 2*1em - 2px)
+  [CSS::Module]     ok 2 - css3x-units declaration no warnings
+  [CSS::Module]     ok 3 - css3x-units declaration ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3x-units reserialized declaration parse: width: calc(100% / 3 - 2 * em - 2px);
+  [CSS::Module]     ok 6 -   -- css3x-units reserialized declaration no warnings
+  [CSS::Module]     ok 7 -   -- css3x-units reserialized declaration ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 5 - width: calc(100%/3 - 2*1em - 2px)
+  [CSS::Module] # Subtest: elevation: calc(.5turn - 30deg)
+  [CSS::Module]     ok 1 - css3x-units declaration parse: elevation: calc(.5turn - 30deg)
+  [CSS::Module]     ok 2 - css3x-units declaration no warnings
+  [CSS::Module]     ok 3 - css3x-units declaration ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3x-units reserialized declaration parse: elevation: calc(0.5turn - 30deg);
+  [CSS::Module]     ok 6 -   -- css3x-units reserialized declaration no warnings
+  [CSS::Module]     ok 7 -   -- css3x-units reserialized declaration ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 6 - elevation: calc(.5turn - 30deg)
+  [CSS::Module] # Subtest: pause: calc(2s/3.1 - 100ms)
+  [CSS::Module]     ok 1 - css3x-units declaration parse: pause: calc(2s/3.1 - 100ms)
+  [CSS::Module]     ok 2 - css3x-units declaration no warnings
+  [CSS::Module]     ok 3 - css3x-units declaration ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3x-units reserialized declaration parse: pause: calc(2s / 3.1 - 100ms);
+  [CSS::Module]     ok 6 -   -- css3x-units reserialized declaration no warnings
+  [CSS::Module]     ok 7 -   -- css3x-units reserialized declaration ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 7 - pause: calc(2s/3.1 - 100ms)
+  [CSS::Module] 1..7
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/error-handling.t
+  [CSS::Module] ok 1 - css3 declarations parse: {background:url('http://www.bg.com/pinkish.gif')}
+  [CSS::Module] ok 2 - css3 declarations no warnings
+  [CSS::Module] ok 3 - css3 declarations ast
+  [CSS::Module] ok 4 - ast reserialization
+  [CSS::Module] ok 5 -   -- css3 reserialized declarations parse: {... }
+  [CSS::Module] ok 6 -   -- css3 reserialized declarations no warnings
+  [CSS::Module] ok 7 -   -- css3 reserialized declarations ast
+  [CSS::Module] ok 8 - css3 declarations parse: {background:URL(http://www.bg.com/pinkish.gif)}
+  [CSS::Module] ok 9 - css3 declarations no warnings
+  [CSS::Module] ok 10 - css3 declarations ast
+  [CSS::Module] ok 11 - ast reserialization
+  [CSS::Module] ok 12 -   -- css3 reserialized declarations parse: {... }
+  [CSS::Module] ok 13 -   -- css3 reserialized declarations no warnings
+  [CSS::Module] ok 14 -   -- css3 reserialized declarations ast
+  [CSS::Module] ok 15 - css3 declarations parse: {background:URL(http://www.bg.com/pinkish.gif
+  [CSS::Module] # }
+  [CSS::Module] ok 16 - css3 declarations warnings
+  [CSS::Module] ok 17 - css3 declarations ast
+  [CSS::Module] ok 18 - ast reserialization
+  [CSS::Module] ok 19 -   -- css3 reserialized declarations parse: {... }
+  [CSS::Module] ok 20 -   -- css3 reserialized declarations no warnings
+  [CSS::Module] ok 21 -   -- css3 reserialized declarations ast
+  [CSS::Module] ok 22 - css3 declarations parse: {background:URL('http://www.bg.com/pinkish.gif
+  [CSS::Module] # }
+  [CSS::Module] ok 23 - css3 declarations warnings
+  [CSS::Module] ok 24 - css3 ruleset parse: h1 { color: red; rotation: 70minutes }
+  [CSS::Module] ok 25 - css3 ruleset warnings
+  [CSS::Module] ok 26 - css3 ruleset ast
+  [CSS::Module] ok 27 - ast reserialization
+  [CSS::Module] ok 28 -   -- css3 reserialized ruleset parse: h1 {... }
+  [CSS::Module] ok 29 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 30 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 31 - css3 ruleset parse: h1 {content:'kept1'; color: dropped1 rgb(10,20,30 dropped2; font-family:kept2}
+  [CSS::Module] ok 32 - css3 ruleset warnings
+  [CSS::Module] ok 33 - css3 ruleset ast
+  [CSS::Module] ok 34 - ast reserialization
+  [CSS::Module] ok 35 -   -- css3 reserialized ruleset parse: h1 {... }
+  [CSS::Module] ok 36 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 37 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 38 - css3 ruleset parse: h1 {color:red; content:'Section' counter(hdr-1)}
+  [CSS::Module] ok 39 - css3 ruleset no warnings
+  [CSS::Module] ok 40 - css3 ruleset ast
+  [CSS::Module] ok 41 - ast reserialization
+  [CSS::Module] ok 42 -   -- css3 reserialized ruleset parse: h1 {... }
+  [CSS::Module] ok 43 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 44 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 45 - css3 ruleset parse: h2 {bad: dropme 'http://unclosed-string.org; color:blue;
+  [CSS::Module] #     background-color: \#ccc;}
+  [CSS::Module] ok 46 - css3 ruleset warnings
+  [CSS::Module] ok 47 - css3 ruleset ast
+  [CSS::Module] ok 48 - ast reserialization
+  [CSS::Module] ok 49 -   -- css3 reserialized ruleset parse: h2 {... }
+  [CSS::Module] ok 50 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 51 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 52 - css3 ruleset parse: p { color:rgb(10,17); }
+  [CSS::Module] ok 53 - css3 ruleset warnings
+  [CSS::Module] ok 54 - css3 ruleset ast
+  [CSS::Module] ok 55 - ast reserialization
+  [CSS::Module] ok 56 -   -- css3 reserialized ruleset parse: p {... }
+  [CSS::Module] ok 57 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 58 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 59 - css3 ruleset parse: p:foo(42) { color: \#abc; }
+  [CSS::Module] ok 60 - css3 ruleset warnings
+  [CSS::Module] ok 61 - css3 ruleset parse: p { color:bar({37+5}); }
+  [CSS::Module] ok 62 - css3 ruleset warnings
+  [CSS::Module] ok 63 - css3 ruleset parse: p { color }
+  [CSS::Module] ok 64 - css3 ruleset warnings
+  [CSS::Module] ok 65 - css3 ruleset ast
+  [CSS::Module] ok 66 - ast reserialization
+  [CSS::Module] ok 67 -   -- css3 reserialized ruleset parse: p {... }
+  [CSS::Module] ok 68 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 69 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 70 - css3 ruleset parse: p { content:'a'; color; font-family:b }
+  [CSS::Module] ok 71 - css3 ruleset warnings
+  [CSS::Module] ok 72 - css3 ruleset ast
+  [CSS::Module] ok 73 - ast reserialization
+  [CSS::Module] ok 74 -   -- css3 reserialized ruleset parse: p {... }
+  [CSS::Module] ok 75 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 76 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 77 - css3 ruleset parse: p {content:'a'; color: }
+  [CSS::Module] ok 78 - css3 ruleset warnings
+  [CSS::Module] ok 79 - css3 ruleset ast
+  [CSS::Module] ok 80 - ast reserialization
+  [CSS::Module] ok 81 -   -- css3 reserialized ruleset parse: p {... }
+  [CSS::Module] ok 82 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 83 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 84 - css3 ruleset parse: p { content:'a'; color:; font-family:b }
+  [CSS::Module] ok 85 - css3 ruleset warnings
+  [CSS::Module] ok 86 - css3 ruleset ast
+  [CSS::Module] ok 87 - ast reserialization
+  [CSS::Module] ok 88 -   -- css3 reserialized ruleset parse: p {... }
+  [CSS::Module] ok 89 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 90 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 91 - css3 ruleset parse: p { content:'a'; color{;color:maroon} }
+  [CSS::Module] ok 92 - css3 ruleset warnings
+  [CSS::Module] ok 93 - css3 ruleset parse: p { content:'a'; color{;color:maroon}; color:green }
+  [CSS::Module] ok 94 - css3 ruleset warnings
+  [CSS::Module] ok 95 - css3 stylesheet parse: p @here {color: red}
+  [CSS::Module] ok 96 - css3 stylesheet warnings
+  [CSS::Module] ok 97 - css3 stylesheet parse: @foo @bar;
+  [CSS::Module] ok 98 - css3 stylesheet warnings
+  [CSS::Module] ok 99 - css3 stylesheet parse: }} {{ - }}
+  [CSS::Module] ok 100 - css3 stylesheet warnings
+  [CSS::Module] ok 101 - css3 stylesheet parse: h1, h2 {color: green }... h6 {color: black }
+  [CSS::Module] ok 102 - css3 stylesheet warnings
+  [CSS::Module] ok 103 - css3 stylesheet ast
+  [CSS::Module] ok 104 - ast reserialization
+  [CSS::Module] ok 105 -   -- css3 reserialized stylesheet parse: h1, h2 {... }
+  [CSS::Module] ok 106 -   -- css3 reserialized stylesheet no warnings
+  [CSS::Module] ok 107 -   -- css3 reserialized stylesheet ast
+  [CSS::Module] ok 108 - css3 stylesheet parse: @three-dee { @background-lighting { azimuth: 30deg; elevation: 190deg; } h1 { color: red } }  h1 { color: blue }
+  [CSS::Module] ok 109 - css3 stylesheet warnings
+  [CSS::Module] ok 110 - css3 stylesheet ast
+  [CSS::Module] ok 111 - ast reserialization
+  [CSS::Module] ok 112 -   -- css3 reserialized stylesheet parse: h1 {... }
+  [CSS::Module] ok 113 -   -- css3 reserialized stylesheet no warnings
+  [CSS::Module] ok 114 -   -- css3 reserialized stylesheet ast
+  [CSS::Module] ok 115 - css3 stylesheet parse: @media print and (width: 21cm) { @page { margin: 3cm; @top-center { content: 'Page ' counter(page); }}}
+  [CSS::Module] ok 116 - css3 stylesheet no warnings
+  [CSS::Module] ok 117 - css3 stylesheet ast
+  [CSS::Module] ok 118 - ast reserialization
+  [CSS::Module] ok 119 -   -- css3 reserialized stylesheet parse: @media print and (width: 21cm) {... }
+  [CSS::Module] ok 120 -   -- css3 reserialized stylesheet no warnings
+  [CSS::Module] ok 121 -   -- css3 reserialized stylesheet ast
+  [CSS::Module] ok 122 - css3 stylesheet parse: * foo|* |h1 body:not(.home) h2 + p:first-letter tr:nth-last-child(-n+2) object[type^='image/'] {color:blue}
+  [CSS::Module] ok 123 - css3 stylesheet no warnings
+  [CSS::Module] ok 124 - css3 stylesheet ast
+  [CSS::Module] ok 125 - ast reserialization
+  [CSS::Module] ok 126 -   -- css3 reserialized stylesheet parse: * foo|* |h1 body:not(.home) h2 + p::first-letter tr:nth-last-child(-n+2) object[type^='image/'] {... }
+  [CSS::Module] ok 127 -   -- css3 reserialized stylesheet no warnings
+  [CSS::Module] ok 128 -   -- css3 reserialized stylesheet ast
+  [CSS::Module] 1..128
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/module-extensions.t
+  [CSS::Module] ok 1 - index
+  [CSS::Module] ok 2 - index
+  [CSS::Module] ok 3 - module.name
+  [CSS::Module] ok 4 - css3 grammar
+  [CSS::Module] ok 5 - css3 actions
+  [CSS::Module] ok 6 - 'like' extension property
+  [CSS::Module] ok 7 - coerced extension property
+  [CSS::Module] ok 8 - alias extension property
+  [CSS::Module] ok 9 - misc extension property
+  [CSS::Module] ok 10 - misc extension property
+  [CSS::Module] ok 11 - extensions are isolated
+  [CSS::Module] 1..11
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/module-vivify.t
+  [CSS::Module] ok 1 - 
+  [CSS::Module] ok 2 - 
+  [CSS::Module] ok 3 - 
+  [CSS::Module] ok 4 - 
+  [CSS::Module] ok 5 - 
+  [CSS::Module] ok 6 - 
+  [CSS::Module] 1..6
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/module.t
+  [CSS::Module] ok 1 - CSS::Specification version
+  [CSS::Module] ok 2 - css1 grammar
+  [CSS::Module] ok 3 - css1 actions
+  [CSS::Module] ok 4 - css1 does not have azimuth
+  [CSS::Module] ok 5 - css1 border
+  [CSS::Module] ok 6 - css1 border-style
+  [CSS::Module] ok 7 - module.parse-property method
+  [CSS::Module] ok 8 - module.parse-property method
+  [CSS::Module] ok 9 - module.parse-property failure
+  [CSS::Module] ok 10 - colors
+  [CSS::Module] ok 11 - 
+  [CSS::Module] ok 12 - 
+  [CSS::Module] ok 13 - 
+  [CSS::Module] ok 14 - 
+  [CSS::Module] ok 15 - 
+  [CSS::Module] ok 16 - 
+  [CSS::Module] ok 17 - 
+  [CSS::Module] ok 18 - 
+  [CSS::Module] ok 19 - 
+  [CSS::Module] ok 20 - css21 grammar
+  [CSS::Module] ok 21 - css21 actions
+  [CSS::Module] ok 22 - css21 has azimuth
+  [CSS::Module] ok 23 - css21 border
+  [CSS::Module] ok 24 - css21 border-style
+  [CSS::Module] ok 25 - css21 alias property metadata
+  [CSS::Module] ok 26 - css21 alias property metadata
+  [CSS::Module] ok 27 - colors
+  [CSS::Module] ok 28 - 
+  [CSS::Module] ok 29 - 
+  [CSS::Module] ok 30 - 
+  [CSS::Module] ok 31 - module.name
+  [CSS::Module] ok 32 - css3 grammar
+  [CSS::Module] ok 33 - css3 actions
+  [CSS::Module] ok 34 - css3 azimuth
+  [CSS::Module] ok 35 - css3 border
+  [CSS::Module] ok 36 - css3 border-style
+  [CSS::Module] ok 37 - colors
+  [CSS::Module] ok 38 - 
+  [CSS::Module] ok 39 - 
+  [CSS::Module] ok 40 - 
+  [CSS::Module] ok 41 - @font-face grammar
+  [CSS::Module] ok 42 - @font-face actions
+  [CSS::Module] ok 43 - @font-face font-style
+  [CSS::Module] ok 44 - svg grammar
+  [CSS::Module] ok 45 - svg actions
+  [CSS::Module] ok 46 - svg azimuth
+  [CSS::Module] ok 47 - svg alignment-baseline
+  [CSS::Module] ok 48 - svg font-style
+  [CSS::Module] 1..48
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/svg-properties.t
+  [CSS::Module] ok 1 - SVG declarations parse: {alignment-baseline: after-edge}
+  [CSS::Module] ok 2 - SVG declarations no warnings
+  [CSS::Module] ok 3 - SVG declarations ast
+  [CSS::Module] ok 4 - ast reserialization
+  [CSS::Module] ok 5 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 6 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 7 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 8 - SVG alignment-baseline: able to parse unexpected input
+  [CSS::Module] ok 9 - SVG alignment-baseline: unexpected input produces warning
+  [CSS::Module] ok 10 - SVG declarations parse: {alignment-baseline: inherit}
+  [CSS::Module] ok 11 - SVG declarations no warnings
+  [CSS::Module] ok 12 - SVG declarations ast
+  [CSS::Module] ok 13 - SVG declarations parse: {alignment-baseline: initial}
+  [CSS::Module] ok 14 - SVG declarations no warnings
+  [CSS::Module] ok 15 - SVG declarations ast
+  [CSS::Module] ok 16 - SVG declarations parse: {alignment-baseline: baseline}
+  [CSS::Module] ok 17 - SVG declarations no warnings
+  [CSS::Module] ok 18 - SVG declarations ast
+  [CSS::Module] ok 19 - ast reserialization
+  [CSS::Module] ok 20 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 21 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 22 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 23 - SVG declarations parse: {baseline-shift: super}
+  [CSS::Module] ok 24 - SVG declarations no warnings
+  [CSS::Module] ok 25 - SVG declarations ast
+  [CSS::Module] ok 26 - ast reserialization
+  [CSS::Module] ok 27 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 28 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 29 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 30 - SVG baseline-shift: able to parse unexpected input
+  [CSS::Module] ok 31 - SVG baseline-shift: unexpected input produces warning
+  [CSS::Module] ok 32 - SVG declarations parse: {baseline-shift: inherit}
+  [CSS::Module] ok 33 - SVG declarations no warnings
+  [CSS::Module] ok 34 - SVG declarations ast
+  [CSS::Module] ok 35 - SVG declarations parse: {baseline-shift: initial}
+  [CSS::Module] ok 36 - SVG declarations no warnings
+  [CSS::Module] ok 37 - SVG declarations ast
+  [CSS::Module] ok 38 - SVG declarations parse: {baseline-shift: 1.5em}
+  [CSS::Module] ok 39 - SVG declarations no warnings
+  [CSS::Module] ok 40 - SVG declarations ast
+  [CSS::Module] ok 41 - ast reserialization
+  [CSS::Module] ok 42 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 43 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 44 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 45 - SVG declarations parse: {baseline-shift: 4%}
+  [CSS::Module] ok 46 - SVG declarations no warnings
+  [CSS::Module] ok 47 - SVG declarations ast
+  [CSS::Module] ok 48 - ast reserialization
+  [CSS::Module] ok 49 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 50 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 51 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 52 - SVG declarations parse: {color: red}
+  [CSS::Module] ok 53 - SVG declarations no warnings
+  [CSS::Module] ok 54 - SVG declarations ast
+  [CSS::Module] ok 55 - ast reserialization
+  [CSS::Module] ok 56 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 57 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 58 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 59 - SVG color: able to parse unexpected input
+  [CSS::Module] ok 60 - SVG color: unexpected input produces warning
+  [CSS::Module] ok 61 - SVG declarations parse: {color: inherit}
+  [CSS::Module] ok 62 - SVG declarations no warnings
+  [CSS::Module] ok 63 - SVG declarations ast
+  [CSS::Module] ok 64 - SVG declarations parse: {color: initial}
+  [CSS::Module] ok 65 - SVG declarations no warnings
+  [CSS::Module] ok 66 - SVG declarations ast
+  [CSS::Module] ok 67 - SVG declarations parse: {color: rgb(10,20,30)}
+  [CSS::Module] ok 68 - SVG declarations no warnings
+  [CSS::Module] ok 69 - SVG declarations ast
+  [CSS::Module] ok 70 - ast reserialization
+  [CSS::Module] ok 71 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 72 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 73 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 74 - SVG declarations parse: {color-interpolation: sRGB}
+  [CSS::Module] ok 75 - SVG declarations no warnings
+  [CSS::Module] ok 76 - SVG declarations ast
+  [CSS::Module] ok 77 - ast reserialization
+  [CSS::Module] ok 78 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 79 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 80 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 81 - SVG color-interpolation: able to parse unexpected input
+  [CSS::Module] ok 82 - SVG color-interpolation: unexpected input produces warning
+  [CSS::Module] ok 83 - SVG declarations parse: {color-interpolation: inherit}
+  [CSS::Module] ok 84 - SVG declarations no warnings
+  [CSS::Module] ok 85 - SVG declarations ast
+  [CSS::Module] ok 86 - SVG declarations parse: {color-interpolation: initial}
+  [CSS::Module] ok 87 - SVG declarations no warnings
+  [CSS::Module] ok 88 - SVG declarations ast
+  [CSS::Module] ok 89 - SVG declarations parse: {color-interpolation: Srgb}
+  [CSS::Module] ok 90 - SVG declarations no warnings
+  [CSS::Module] ok 91 - SVG declarations ast
+  [CSS::Module] ok 92 - ast reserialization
+  [CSS::Module] ok 93 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 94 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 95 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 96 - SVG declarations parse: {color-interpolation-filters: Srgb}
+  [CSS::Module] ok 97 - SVG declarations no warnings
+  [CSS::Module] ok 98 - SVG declarations ast
+  [CSS::Module] ok 99 - ast reserialization
+  [CSS::Module] ok 100 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 101 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 102 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 103 - SVG color-interpolation-filters: able to parse unexpected input
+  [CSS::Module] ok 104 - SVG color-interpolation-filters: unexpected input produces warning
+  [CSS::Module] ok 105 - SVG declarations parse: {color-interpolation-filters: inherit}
+  [CSS::Module] ok 106 - SVG declarations no warnings
+  [CSS::Module] ok 107 - SVG declarations ast
+  [CSS::Module] ok 108 - SVG declarations parse: {color-interpolation-filters: initial}
+  [CSS::Module] ok 109 - SVG declarations no warnings
+  [CSS::Module] ok 110 - SVG declarations ast
+  [CSS::Module] ok 111 - SVG declarations parse: {color-rendering: optimizeSpeed}
+  [CSS::Module] ok 112 - SVG declarations no warnings
+  [CSS::Module] ok 113 - SVG declarations ast
+  [CSS::Module] ok 114 - ast reserialization
+  [CSS::Module] ok 115 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 116 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 117 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 118 - SVG color-rendering: able to parse unexpected input
+  [CSS::Module] ok 119 - SVG color-rendering: unexpected input produces warning
+  [CSS::Module] ok 120 - SVG declarations parse: {color-rendering: inherit}
+  [CSS::Module] ok 121 - SVG declarations no warnings
+  [CSS::Module] ok 122 - SVG declarations ast
+  [CSS::Module] ok 123 - SVG declarations parse: {color-rendering: initial}
+  [CSS::Module] ok 124 - SVG declarations no warnings
+  [CSS::Module] ok 125 - SVG declarations ast
+  [CSS::Module] ok 126 - SVG declarations parse: {cursor: e-resize}
+  [CSS::Module] ok 127 - SVG declarations no warnings
+  [CSS::Module] ok 128 - SVG declarations ast
+  [CSS::Module] ok 129 - ast reserialization
+  [CSS::Module] ok 130 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 131 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 132 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 133 - SVG cursor: able to parse unexpected input
+  [CSS::Module] ok 134 - SVG cursor: unexpected input produces warning
+  [CSS::Module] ok 135 - SVG declarations parse: {cursor: inherit}
+  [CSS::Module] ok 136 - SVG declarations no warnings
+  [CSS::Module] ok 137 - SVG declarations ast
+  [CSS::Module] ok 138 - SVG declarations parse: {cursor: initial}
+  [CSS::Module] ok 139 - SVG declarations no warnings
+  [CSS::Module] ok 140 - SVG declarations ast
+  [CSS::Module] ok 141 - SVG declarations parse: {direction: ltr}
+  [CSS::Module] ok 142 - SVG declarations no warnings
+  [CSS::Module] ok 143 - SVG declarations ast
+  [CSS::Module] ok 144 - ast reserialization
+  [CSS::Module] ok 145 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 146 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 147 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 148 - SVG direction: able to parse unexpected input
+  [CSS::Module] ok 149 - SVG direction: unexpected input produces warning
+  [CSS::Module] ok 150 - SVG declarations parse: {direction: inherit}
+  [CSS::Module] ok 151 - SVG declarations no warnings
+  [CSS::Module] ok 152 - SVG declarations ast
+  [CSS::Module] ok 153 - SVG declarations parse: {direction: initial}
+  [CSS::Module] ok 154 - SVG declarations no warnings
+  [CSS::Module] ok 155 - SVG declarations ast
+  [CSS::Module] ok 156 - SVG declarations parse: {display: table-cell}
+  [CSS::Module] ok 157 - SVG declarations no warnings
+  [CSS::Module] ok 158 - SVG declarations ast
+  [CSS::Module] ok 159 - ast reserialization
+  [CSS::Module] ok 160 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 161 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 162 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 163 - SVG display: able to parse unexpected input
+  [CSS::Module] ok 164 - SVG display: unexpected input produces warning
+  [CSS::Module] ok 165 - SVG declarations parse: {display: inherit}
+  [CSS::Module] ok 166 - SVG declarations no warnings
+  [CSS::Module] ok 167 - SVG declarations ast
+  [CSS::Module] ok 168 - SVG declarations parse: {display: initial}
+  [CSS::Module] ok 169 - SVG declarations no warnings
+  [CSS::Module] ok 170 - SVG declarations ast
+  [CSS::Module] ok 171 - SVG declarations parse: {dominant-baseline: hanging}
+  [CSS::Module] ok 172 - SVG declarations no warnings
+  [CSS::Module] ok 173 - SVG declarations ast
+  [CSS::Module] ok 174 - ast reserialization
+  [CSS::Module] ok 175 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 176 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 177 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 178 - SVG dominant-baseline: able to parse unexpected input
+  [CSS::Module] ok 179 - SVG dominant-baseline: unexpected input produces warning
+  [CSS::Module] ok 180 - SVG declarations parse: {dominant-baseline: inherit}
+  [CSS::Module] ok 181 - SVG declarations no warnings
+  [CSS::Module] ok 182 - SVG declarations ast
+  [CSS::Module] ok 183 - SVG declarations parse: {dominant-baseline: initial}
+  [CSS::Module] ok 184 - SVG declarations no warnings
+  [CSS::Module] ok 185 - SVG declarations ast
+  [CSS::Module] ok 186 - SVG declarations parse: {fill: rgb(10,20,10%)}
+  [CSS::Module] ok 187 - SVG declarations no warnings
+  [CSS::Module] ok 188 - SVG declarations ast
+  [CSS::Module] ok 189 - ast reserialization
+  [CSS::Module] ok 190 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 191 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 192 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 193 - SVG fill: able to parse unexpected input
+  [CSS::Module] ok 194 - SVG fill: unexpected input produces warning
+  [CSS::Module] ok 195 - SVG declarations parse: {fill: inherit}
+  [CSS::Module] ok 196 - SVG declarations no warnings
+  [CSS::Module] ok 197 - SVG declarations ast
+  [CSS::Module] ok 198 - SVG declarations parse: {fill: initial}
+  [CSS::Module] ok 199 - SVG declarations no warnings
+  [CSS::Module] ok 200 - SVG declarations ast
+  [CSS::Module] ok 201 - SVG declarations parse: {fill-opacity: 0.75}
+  [CSS::Module] ok 202 - SVG declarations no warnings
+  [CSS::Module] ok 203 - SVG declarations ast
+  [CSS::Module] ok 204 - ast reserialization
+  [CSS::Module] ok 205 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 206 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 207 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 208 - SVG fill-opacity: able to parse unexpected input
+  [CSS::Module] ok 209 - SVG fill-opacity: unexpected input produces warning
+  [CSS::Module] ok 210 - SVG declarations parse: {fill-opacity: inherit}
+  [CSS::Module] ok 211 - SVG declarations no warnings
+  [CSS::Module] ok 212 - SVG declarations ast
+  [CSS::Module] ok 213 - SVG declarations parse: {fill-opacity: initial}
+  [CSS::Module] ok 214 - SVG declarations no warnings
+  [CSS::Module] ok 215 - SVG declarations ast
+  [CSS::Module] ok 216 - SVG declarations parse: {fill-opacity: 75%}
+  [CSS::Module] ok 217 - SVG declarations no warnings
+  [CSS::Module] ok 218 - SVG declarations ast
+  [CSS::Module] ok 219 - ast reserialization
+  [CSS::Module] ok 220 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 221 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 222 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 223 - SVG declarations parse: {fill-rule: evenOdD}
+  [CSS::Module] ok 224 - SVG declarations no warnings
+  [CSS::Module] ok 225 - SVG declarations ast
+  [CSS::Module] ok 226 - ast reserialization
+  [CSS::Module] ok 227 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 228 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 229 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 230 - SVG fill-rule: able to parse unexpected input
+  [CSS::Module] ok 231 - SVG fill-rule: unexpected input produces warning
+  [CSS::Module] ok 232 - SVG declarations parse: {fill-rule: inherit}
+  [CSS::Module] ok 233 - SVG declarations no warnings
+  [CSS::Module] ok 234 - SVG declarations ast
+  [CSS::Module] ok 235 - SVG declarations parse: {fill-rule: initial}
+  [CSS::Module] ok 236 - SVG declarations no warnings
+  [CSS::Module] ok 237 - SVG declarations ast
+  [CSS::Module] ok 238 - SVG declarations parse: {font: 12pt/14pt sans-serif}
+  [CSS::Module] ok 239 - SVG declarations no warnings
+  [CSS::Module] ok 240 - SVG declarations ast
+  [CSS::Module] ok 241 - ast reserialization
+  [CSS::Module] ok 242 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 243 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 244 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 245 - SVG font: able to parse unexpected input
+  [CSS::Module] ok 246 - SVG font: unexpected input produces warning
+  [CSS::Module] ok 247 - SVG declarations parse: {font: inherit}
+  [CSS::Module] ok 248 - SVG declarations no warnings
+  [CSS::Module] ok 249 - SVG declarations ast
+  [CSS::Module] ok 250 - SVG declarations parse: {font: initial}
+  [CSS::Module] ok 251 - SVG declarations no warnings
+  [CSS::Module] ok 252 - SVG declarations ast
+  [CSS::Module] ok 253 - SVG declarations parse: {font-size-adjust: .7}
+  [CSS::Module] ok 254 - SVG declarations no warnings
+  [CSS::Module] ok 255 - SVG declarations ast
+  [CSS::Module] ok 256 - ast reserialization
+  [CSS::Module] ok 257 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 258 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 259 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 260 - SVG font-size-adjust: able to parse unexpected input
+  [CSS::Module] ok 261 - SVG font-size-adjust: unexpected input produces warning
+  [CSS::Module] ok 262 - SVG declarations parse: {font-size-adjust: inherit}
+  [CSS::Module] ok 263 - SVG declarations no warnings
+  [CSS::Module] ok 264 - SVG declarations ast
+  [CSS::Module] ok 265 - SVG declarations parse: {font-size-adjust: initial}
+  [CSS::Module] ok 266 - SVG declarations no warnings
+  [CSS::Module] ok 267 - SVG declarations ast
+  [CSS::Module] ok 268 - SVG declarations parse: {font-variant: small-Caps}
+  [CSS::Module] ok 269 - SVG declarations no warnings
+  [CSS::Module] ok 270 - SVG declarations ast
+  [CSS::Module] ok 271 - ast reserialization
+  [CSS::Module] ok 272 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 273 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 274 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 275 - SVG font-variant: able to parse unexpected input
+  [CSS::Module] ok 276 - SVG font-variant: unexpected input produces warning
+  [CSS::Module] ok 277 - SVG declarations parse: {font-variant: inherit}
+  [CSS::Module] ok 278 - SVG declarations no warnings
+  [CSS::Module] ok 279 - SVG declarations ast
+  [CSS::Module] ok 280 - SVG declarations parse: {font-variant: initial}
+  [CSS::Module] ok 281 - SVG declarations no warnings
+  [CSS::Module] ok 282 - SVG declarations ast
+  [CSS::Module] ok 283 - SVG declarations parse: {glyph-orientation-vertical: 45deg}
+  [CSS::Module] ok 284 - SVG declarations no warnings
+  [CSS::Module] ok 285 - SVG declarations ast
+  [CSS::Module] ok 286 - ast reserialization
+  [CSS::Module] ok 287 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 288 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 289 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 290 - SVG glyph-orientation-vertical: able to parse unexpected input
+  [CSS::Module] ok 291 - SVG glyph-orientation-vertical: unexpected input produces warning
+  [CSS::Module] ok 292 - SVG declarations parse: {glyph-orientation-vertical: inherit}
+  [CSS::Module] ok 293 - SVG declarations no warnings
+  [CSS::Module] ok 294 - SVG declarations ast
+  [CSS::Module] ok 295 - SVG declarations parse: {glyph-orientation-vertical: initial}
+  [CSS::Module] ok 296 - SVG declarations no warnings
+  [CSS::Module] ok 297 - SVG declarations ast
+  [CSS::Module] ok 298 - SVG declarations parse: {glyph-orientation-vertical: 7}
+  [CSS::Module] ok 299 - SVG declarations no warnings
+  [CSS::Module] ok 300 - SVG declarations ast
+  [CSS::Module] ok 301 - ast reserialization
+  [CSS::Module] ok 302 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 303 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 304 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 305 - SVG declarations parse: {image-rendering: optimizeQuality}
+  [CSS::Module] ok 306 - SVG declarations no warnings
+  [CSS::Module] ok 307 - SVG declarations ast
+  [CSS::Module] ok 308 - ast reserialization
+  [CSS::Module] ok 309 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 310 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 311 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 312 - SVG image-rendering: able to parse unexpected input
+  [CSS::Module] ok 313 - SVG image-rendering: unexpected input produces warning
+  [CSS::Module] ok 314 - SVG declarations parse: {image-rendering: inherit}
+  [CSS::Module] ok 315 - SVG declarations no warnings
+  [CSS::Module] ok 316 - SVG declarations ast
+  [CSS::Module] ok 317 - SVG declarations parse: {image-rendering: initial}
+  [CSS::Module] ok 318 - SVG declarations no warnings
+  [CSS::Module] ok 319 - SVG declarations ast
+  [CSS::Module] ok 320 - SVG declarations parse: {letter-spacing: normal}
+  [CSS::Module] ok 321 - SVG declarations no warnings
+  [CSS::Module] ok 322 - SVG declarations ast
+  [CSS::Module] ok 323 - ast reserialization
+  [CSS::Module] ok 324 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 325 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 326 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 327 - SVG letter-spacing: able to parse unexpected input
+  [CSS::Module] ok 328 - SVG letter-spacing: unexpected input produces warning
+  [CSS::Module] ok 329 - SVG declarations parse: {letter-spacing: inherit}
+  [CSS::Module] ok 330 - SVG declarations no warnings
+  [CSS::Module] ok 331 - SVG declarations ast
+  [CSS::Module] ok 332 - SVG declarations parse: {letter-spacing: initial}
+  [CSS::Module] ok 333 - SVG declarations no warnings
+  [CSS::Module] ok 334 - SVG declarations ast
+  [CSS::Module] ok 335 - SVG declarations parse: {lighting-color: blue}
+  [CSS::Module] ok 336 - SVG declarations no warnings
+  [CSS::Module] ok 337 - SVG declarations ast
+  [CSS::Module] ok 338 - ast reserialization
+  [CSS::Module] ok 339 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 340 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 341 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 342 - SVG lighting-color: able to parse unexpected input
+  [CSS::Module] ok 343 - SVG lighting-color: unexpected input produces warning
+  [CSS::Module] ok 344 - SVG declarations parse: {lighting-color: inherit}
+  [CSS::Module] ok 345 - SVG declarations no warnings
+  [CSS::Module] ok 346 - SVG declarations ast
+  [CSS::Module] ok 347 - SVG declarations parse: {lighting-color: initial}
+  [CSS::Module] ok 348 - SVG declarations no warnings
+  [CSS::Module] ok 349 - SVG declarations ast
+  [CSS::Module] ok 350 - SVG declarations parse: {line-height: 90%}
+  [CSS::Module] ok 351 - SVG declarations no warnings
+  [CSS::Module] ok 352 - SVG declarations ast
+  [CSS::Module] ok 353 - ast reserialization
+  [CSS::Module] ok 354 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 355 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 356 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 357 - SVG line-height: able to parse unexpected input
+  [CSS::Module] ok 358 - SVG line-height: unexpected input produces warning
+  [CSS::Module] ok 359 - SVG declarations parse: {line-height: inherit}
+  [CSS::Module] ok 360 - SVG declarations no warnings
+  [CSS::Module] ok 361 - SVG declarations ast
+  [CSS::Module] ok 362 - SVG declarations parse: {line-height: initial}
+  [CSS::Module] ok 363 - SVG declarations no warnings
+  [CSS::Module] ok 364 - SVG declarations ast
+  [CSS::Module] ok 365 - SVG declarations parse: {line-height: normal}
+  [CSS::Module] ok 366 - SVG declarations no warnings
+  [CSS::Module] ok 367 - SVG declarations ast
+  [CSS::Module] ok 368 - ast reserialization
+  [CSS::Module] ok 369 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 370 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 371 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 372 - SVG declarations parse: {line-height: 42}
+  [CSS::Module] ok 373 - SVG declarations no warnings
+  [CSS::Module] ok 374 - SVG declarations ast
+  [CSS::Module] ok 375 - ast reserialization
+  [CSS::Module] ok 376 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 377 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 378 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 379 - SVG declarations parse: {marker-start: none}
+  [CSS::Module] ok 380 - SVG declarations no warnings
+  [CSS::Module] ok 381 - SVG declarations ast
+  [CSS::Module] ok 382 - ast reserialization
+  [CSS::Module] ok 383 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 384 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 385 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 386 - SVG marker-start: able to parse unexpected input
+  [CSS::Module] ok 387 - SVG marker-start: unexpected input produces warning
+  [CSS::Module] ok 388 - SVG declarations parse: {marker-start: inherit}
+  [CSS::Module] ok 389 - SVG declarations no warnings
+  [CSS::Module] ok 390 - SVG declarations ast
+  [CSS::Module] ok 391 - SVG declarations parse: {marker-start: initial}
+  [CSS::Module] ok 392 - SVG declarations no warnings
+  [CSS::Module] ok 393 - SVG declarations ast
+  [CSS::Module] ok 394 - SVG declarations parse: {marker-start: url(http://www.example.com/pinkish.gif)}
+  [CSS::Module] ok 395 - SVG declarations no warnings
+  [CSS::Module] ok 396 - SVG declarations ast
+  [CSS::Module] ok 397 - ast reserialization
+  [CSS::Module] ok 398 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 399 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 400 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 401 - SVG declarations parse: {marker-mid: none}
+  [CSS::Module] ok 402 - SVG declarations no warnings
+  [CSS::Module] ok 403 - SVG declarations ast
+  [CSS::Module] ok 404 - ast reserialization
+  [CSS::Module] ok 405 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 406 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 407 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 408 - SVG marker-mid: able to parse unexpected input
+  [CSS::Module] ok 409 - SVG marker-mid: unexpected input produces warning
+  [CSS::Module] ok 410 - SVG declarations parse: {marker-mid: inherit}
+  [CSS::Module] ok 411 - SVG declarations no warnings
+  [CSS::Module] ok 412 - SVG declarations ast
+  [CSS::Module] ok 413 - SVG declarations parse: {marker-mid: initial}
+  [CSS::Module] ok 414 - SVG declarations no warnings
+  [CSS::Module] ok 415 - SVG declarations ast
+  [CSS::Module] ok 416 - SVG declarations parse: {marker-end: none}
+  [CSS::Module] ok 417 - SVG declarations no warnings
+  [CSS::Module] ok 418 - SVG declarations ast
+  [CSS::Module] ok 419 - ast reserialization
+  [CSS::Module] ok 420 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 421 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 422 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 423 - SVG marker-end: able to parse unexpected input
+  [CSS::Module] ok 424 - SVG marker-end: unexpected input produces warning
+  [CSS::Module] ok 425 - SVG declarations parse: {marker-end: inherit}
+  [CSS::Module] ok 426 - SVG declarations no warnings
+  [CSS::Module] ok 427 - SVG declarations ast
+  [CSS::Module] ok 428 - SVG declarations parse: {marker-end: initial}
+  [CSS::Module] ok 429 - SVG declarations no warnings
+  [CSS::Module] ok 430 - SVG declarations ast
+  [CSS::Module] ok 431 - SVG declarations parse: {marker: none url(http://www.example.com/pinkish.gif)}
+  [CSS::Module] ok 432 - SVG declarations no warnings
+  [CSS::Module] ok 433 - SVG declarations ast
+  [CSS::Module] ok 434 - ast reserialization
+  [CSS::Module] ok 435 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 436 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 437 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 438 - SVG marker: able to parse unexpected input
+  [CSS::Module] ok 439 - SVG marker: unexpected input produces warning
+  [CSS::Module] ok 440 - SVG declarations parse: {marker: inherit}
+  [CSS::Module] ok 441 - SVG declarations no warnings
+  [CSS::Module] ok 442 - SVG declarations ast
+  [CSS::Module] ok 443 - SVG declarations parse: {marker: initial}
+  [CSS::Module] ok 444 - SVG declarations no warnings
+  [CSS::Module] ok 445 - SVG declarations ast
+  [CSS::Module] ok 446 - SVG declarations parse: {opacity: 0.75}
+  [CSS::Module] ok 447 - SVG declarations no warnings
+  [CSS::Module] ok 448 - SVG declarations ast
+  [CSS::Module] ok 449 - ast reserialization
+  [CSS::Module] ok 450 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 451 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 452 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 453 - SVG opacity: able to parse unexpected input
+  [CSS::Module] ok 454 - SVG opacity: unexpected input produces warning
+  [CSS::Module] ok 455 - SVG declarations parse: {opacity: inherit}
+  [CSS::Module] ok 456 - SVG declarations no warnings
+  [CSS::Module] ok 457 - SVG declarations ast
+  [CSS::Module] ok 458 - SVG declarations parse: {opacity: initial}
+  [CSS::Module] ok 459 - SVG declarations no warnings
+  [CSS::Module] ok 460 - SVG declarations ast
+  [CSS::Module] ok 461 - SVG declarations parse: {opacity: 75%}
+  [CSS::Module] ok 462 - SVG declarations no warnings
+  [CSS::Module] ok 463 - SVG declarations ast
+  [CSS::Module] ok 464 - ast reserialization
+  [CSS::Module] ok 465 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 466 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 467 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 468 - SVG declarations parse: {overflow: hidden}
+  [CSS::Module] ok 469 - SVG declarations no warnings
+  [CSS::Module] ok 470 - SVG declarations ast
+  [CSS::Module] ok 471 - ast reserialization
+  [CSS::Module] ok 472 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 473 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 474 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 475 - SVG overflow: able to parse unexpected input
+  [CSS::Module] ok 476 - SVG overflow: unexpected input produces warning
+  [CSS::Module] ok 477 - SVG declarations parse: {overflow: inherit}
+  [CSS::Module] ok 478 - SVG declarations no warnings
+  [CSS::Module] ok 479 - SVG declarations ast
+  [CSS::Module] ok 480 - SVG declarations parse: {overflow: initial}
+  [CSS::Module] ok 481 - SVG declarations no warnings
+  [CSS::Module] ok 482 - SVG declarations ast
+  [CSS::Module] ok 483 - SVG declarations parse: {paint-order: fill stroke}
+  [CSS::Module] ok 484 - SVG declarations no warnings
+  [CSS::Module] ok 485 - SVG declarations ast
+  [CSS::Module] ok 486 - ast reserialization
+  [CSS::Module] ok 487 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 488 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 489 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 490 - SVG paint-order: able to parse unexpected input
+  [CSS::Module] ok 491 - SVG paint-order: unexpected input produces warning
+  [CSS::Module] ok 492 - SVG declarations parse: {paint-order: inherit}
+  [CSS::Module] ok 493 - SVG declarations no warnings
+  [CSS::Module] ok 494 - SVG declarations ast
+  [CSS::Module] ok 495 - SVG declarations parse: {paint-order: initial}
+  [CSS::Module] ok 496 - SVG declarations no warnings
+  [CSS::Module] ok 497 - SVG declarations ast
+  [CSS::Module] ok 498 - SVG declarations parse: {pointer-events: stroke}
+  [CSS::Module] ok 499 - SVG declarations no warnings
+  [CSS::Module] ok 500 - SVG declarations ast
+  [CSS::Module] ok 501 - ast reserialization
+  [CSS::Module] ok 502 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 503 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 504 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 505 - SVG pointer-events: able to parse unexpected input
+  [CSS::Module] ok 506 - SVG pointer-events: unexpected input produces warning
+  [CSS::Module] ok 507 - SVG declarations parse: {pointer-events: inherit}
+  [CSS::Module] ok 508 - SVG declarations no warnings
+  [CSS::Module] ok 509 - SVG declarations ast
+  [CSS::Module] ok 510 - SVG declarations parse: {pointer-events: initial}
+  [CSS::Module] ok 511 - SVG declarations no warnings
+  [CSS::Module] ok 512 - SVG declarations ast
+  [CSS::Module] ok 513 - SVG declarations parse: {shape-rendering: crispEdges}
+  [CSS::Module] ok 514 - SVG declarations no warnings
+  [CSS::Module] ok 515 - SVG declarations ast
+  [CSS::Module] ok 516 - ast reserialization
+  [CSS::Module] ok 517 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 518 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 519 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 520 - SVG shape-rendering: able to parse unexpected input
+  [CSS::Module] ok 521 - SVG shape-rendering: unexpected input produces warning
+  [CSS::Module] ok 522 - SVG declarations parse: {shape-rendering: inherit}
+  [CSS::Module] ok 523 - SVG declarations no warnings
+  [CSS::Module] ok 524 - SVG declarations ast
+  [CSS::Module] ok 525 - SVG declarations parse: {shape-rendering: initial}
+  [CSS::Module] ok 526 - SVG declarations no warnings
+  [CSS::Module] ok 527 - SVG declarations ast
+  [CSS::Module] ok 528 - SVG declarations parse: {stop-color: blue}
+  [CSS::Module] ok 529 - SVG declarations no warnings
+  [CSS::Module] ok 530 - SVG declarations ast
+  [CSS::Module] ok 531 - ast reserialization
+  [CSS::Module] ok 532 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 533 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 534 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 535 - SVG stop-color: able to parse unexpected input
+  [CSS::Module] ok 536 - SVG stop-color: unexpected input produces warning
+  [CSS::Module] ok 537 - SVG declarations parse: {stop-color: inherit}
+  [CSS::Module] ok 538 - SVG declarations no warnings
+  [CSS::Module] ok 539 - SVG declarations ast
+  [CSS::Module] ok 540 - SVG declarations parse: {stop-color: initial}
+  [CSS::Module] ok 541 - SVG declarations no warnings
+  [CSS::Module] ok 542 - SVG declarations ast
+  [CSS::Module] ok 543 - SVG declarations parse: {stop-opacity: 0.75}
+  [CSS::Module] ok 544 - SVG declarations no warnings
+  [CSS::Module] ok 545 - SVG declarations ast
+  [CSS::Module] ok 546 - ast reserialization
+  [CSS::Module] ok 547 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 548 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 549 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 550 - SVG stop-opacity: able to parse unexpected input
+  [CSS::Module] ok 551 - SVG stop-opacity: unexpected input produces warning
+  [CSS::Module] ok 552 - SVG declarations parse: {stop-opacity: inherit}
+  [CSS::Module] ok 553 - SVG declarations no warnings
+  [CSS::Module] ok 554 - SVG declarations ast
+  [CSS::Module] ok 555 - SVG declarations parse: {stop-opacity: initial}
+  [CSS::Module] ok 556 - SVG declarations no warnings
+  [CSS::Module] ok 557 - SVG declarations ast
+  [CSS::Module] ok 558 - SVG declarations parse: {stop-opacity: 75%}
+  [CSS::Module] ok 559 - SVG declarations no warnings
+  [CSS::Module] ok 560 - SVG declarations ast
+  [CSS::Module] ok 561 - ast reserialization
+  [CSS::Module] ok 562 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 563 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 564 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 565 - SVG declarations parse: {stroke: none}
+  [CSS::Module] ok 566 - SVG declarations no warnings
+  [CSS::Module] ok 567 - SVG declarations ast
+  [CSS::Module] ok 568 - ast reserialization
+  [CSS::Module] ok 569 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 570 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 571 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 572 - SVG stroke: able to parse unexpected input
+  [CSS::Module] ok 573 - SVG stroke: unexpected input produces warning
+  [CSS::Module] ok 574 - SVG declarations parse: {stroke: inherit}
+  [CSS::Module] ok 575 - SVG declarations no warnings
+  [CSS::Module] ok 576 - SVG declarations ast
+  [CSS::Module] ok 577 - SVG declarations parse: {stroke: initial}
+  [CSS::Module] ok 578 - SVG declarations no warnings
+  [CSS::Module] ok 579 - SVG declarations ast
+  [CSS::Module] ok 580 - SVG declarations parse: {stroke: black}
+  [CSS::Module] ok 581 - SVG declarations no warnings
+  [CSS::Module] ok 582 - SVG declarations ast
+  [CSS::Module] ok 583 - ast reserialization
+  [CSS::Module] ok 584 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 585 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 586 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 587 - SVG declarations parse: {stroke-dasharray: 20,10}
+  [CSS::Module] ok 588 - SVG declarations no warnings
+  [CSS::Module] ok 589 - SVG declarations ast
+  [CSS::Module] ok 590 - ast reserialization
+  [CSS::Module] ok 591 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 592 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 593 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 594 - SVG stroke-dasharray: able to parse unexpected input
+  [CSS::Module] ok 595 - SVG stroke-dasharray: unexpected input produces warning
+  [CSS::Module] ok 596 - SVG declarations parse: {stroke-dasharray: inherit}
+  [CSS::Module] ok 597 - SVG declarations no warnings
+  [CSS::Module] ok 598 - SVG declarations ast
+  [CSS::Module] ok 599 - SVG declarations parse: {stroke-dasharray: initial}
+  [CSS::Module] ok 600 - SVG declarations no warnings
+  [CSS::Module] ok 601 - SVG declarations ast
+  [CSS::Module] ok 602 - SVG declarations parse: {stroke-dasharray: em,2em}
+  [CSS::Module] ok 603 - SVG declarations no warnings
+  [CSS::Module] ok 604 - SVG declarations ast
+  [CSS::Module] ok 605 - ast reserialization
+  [CSS::Module] ok 606 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 607 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 608 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 609 - SVG declarations parse: {stroke-dashoffset: 3em}
+  [CSS::Module] ok 610 - SVG declarations no warnings
+  [CSS::Module] ok 611 - SVG declarations ast
+  [CSS::Module] ok 612 - ast reserialization
+  [CSS::Module] ok 613 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 614 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 615 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 616 - SVG stroke-dashoffset: able to parse unexpected input
+  [CSS::Module] ok 617 - SVG stroke-dashoffset: unexpected input produces warning
+  [CSS::Module] ok 618 - SVG declarations parse: {stroke-dashoffset: inherit}
+  [CSS::Module] ok 619 - SVG declarations no warnings
+  [CSS::Module] ok 620 - SVG declarations ast
+  [CSS::Module] ok 621 - SVG declarations parse: {stroke-dashoffset: initial}
+  [CSS::Module] ok 622 - SVG declarations no warnings
+  [CSS::Module] ok 623 - SVG declarations ast
+  [CSS::Module] ok 624 - SVG declarations parse: {stroke-linecap: round}
+  [CSS::Module] ok 625 - SVG declarations no warnings
+  [CSS::Module] ok 626 - SVG declarations ast
+  [CSS::Module] ok 627 - ast reserialization
+  [CSS::Module] ok 628 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 629 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 630 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 631 - SVG stroke-linecap: able to parse unexpected input
+  [CSS::Module] ok 632 - SVG stroke-linecap: unexpected input produces warning
+  [CSS::Module] ok 633 - SVG declarations parse: {stroke-linecap: inherit}
+  [CSS::Module] ok 634 - SVG declarations no warnings
+  [CSS::Module] ok 635 - SVG declarations ast
+  [CSS::Module] ok 636 - SVG declarations parse: {stroke-linecap: initial}
+  [CSS::Module] ok 637 - SVG declarations no warnings
+  [CSS::Module] ok 638 - SVG declarations ast
+  [CSS::Module] ok 639 - SVG declarations parse: {stroke-linejoin: bevel}
+  [CSS::Module] ok 640 - SVG declarations no warnings
+  [CSS::Module] ok 641 - SVG declarations ast
+  [CSS::Module] ok 642 - ast reserialization
+  [CSS::Module] ok 643 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 644 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 645 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 646 - SVG stroke-linejoin: able to parse unexpected input
+  [CSS::Module] ok 647 - SVG stroke-linejoin: unexpected input produces warning
+  [CSS::Module] ok 648 - SVG declarations parse: {stroke-linejoin: inherit}
+  [CSS::Module] ok 649 - SVG declarations no warnings
+  [CSS::Module] ok 650 - SVG declarations ast
+  [CSS::Module] ok 651 - SVG declarations parse: {stroke-linejoin: initial}
+  [CSS::Module] ok 652 - SVG declarations no warnings
+  [CSS::Module] ok 653 - SVG declarations ast
+  [CSS::Module] ok 654 - SVG declarations parse: {stroke-miterlimit: 7}
+  [CSS::Module] ok 655 - SVG declarations no warnings
+  [CSS::Module] ok 656 - SVG declarations ast
+  [CSS::Module] ok 657 - ast reserialization
+  [CSS::Module] ok 658 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 659 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 660 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 661 - SVG stroke-miterlimit: able to parse unexpected input
+  [CSS::Module] ok 662 - SVG stroke-miterlimit: unexpected input produces warning
+  [CSS::Module] ok 663 - SVG declarations parse: {stroke-miterlimit: inherit}
+  [CSS::Module] ok 664 - SVG declarations no warnings
+  [CSS::Module] ok 665 - SVG declarations ast
+  [CSS::Module] ok 666 - SVG declarations parse: {stroke-miterlimit: initial}
+  [CSS::Module] ok 667 - SVG declarations no warnings
+  [CSS::Module] ok 668 - SVG declarations ast
+  [CSS::Module] ok 669 - SVG declarations parse: {stroke-opacity: 0.75}
+  [CSS::Module] ok 670 - SVG declarations no warnings
+  [CSS::Module] ok 671 - SVG declarations ast
+  [CSS::Module] ok 672 - ast reserialization
+  [CSS::Module] ok 673 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 674 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 675 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 676 - SVG stroke-opacity: able to parse unexpected input
+  [CSS::Module] ok 677 - SVG stroke-opacity: unexpected input produces warning
+  [CSS::Module] ok 678 - SVG declarations parse: {stroke-opacity: inherit}
+  [CSS::Module] ok 679 - SVG declarations no warnings
+  [CSS::Module] ok 680 - SVG declarations ast
+  [CSS::Module] ok 681 - SVG declarations parse: {stroke-opacity: initial}
+  [CSS::Module] ok 682 - SVG declarations no warnings
+  [CSS::Module] ok 683 - SVG declarations ast
+  [CSS::Module] ok 684 - SVG declarations parse: {stroke-opacity: 75%}
+  [CSS::Module] ok 685 - SVG declarations no warnings
+  [CSS::Module] ok 686 - SVG declarations ast
+  [CSS::Module] ok 687 - ast reserialization
+  [CSS::Module] ok 688 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 689 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 690 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 691 - SVG declarations parse: {stroke-width: .1em}
+  [CSS::Module] ok 692 - SVG declarations no warnings
+  [CSS::Module] ok 693 - SVG declarations ast
+  [CSS::Module] ok 694 - ast reserialization
+  [CSS::Module] ok 695 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 696 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 697 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 698 - SVG stroke-width: able to parse unexpected input
+  [CSS::Module] ok 699 - SVG stroke-width: unexpected input produces warning
+  [CSS::Module] ok 700 - SVG declarations parse: {stroke-width: inherit}
+  [CSS::Module] ok 701 - SVG declarations no warnings
+  [CSS::Module] ok 702 - SVG declarations ast
+  [CSS::Module] ok 703 - SVG declarations parse: {stroke-width: initial}
+  [CSS::Module] ok 704 - SVG declarations no warnings
+  [CSS::Module] ok 705 - SVG declarations ast
+  [CSS::Module] ok 706 - SVG declarations parse: {stroke-width: 3}
+  [CSS::Module] ok 707 - SVG declarations no warnings
+  [CSS::Module] ok 708 - SVG declarations ast
+  [CSS::Module] ok 709 - ast reserialization
+  [CSS::Module] ok 710 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 711 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 712 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 713 - SVG declarations parse: {stroke-width: 5%}
+  [CSS::Module] ok 714 - SVG declarations no warnings
+  [CSS::Module] ok 715 - SVG declarations ast
+  [CSS::Module] ok 716 - ast reserialization
+  [CSS::Module] ok 717 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 718 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 719 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 720 - SVG declarations parse: {text-anchor: start}
+  [CSS::Module] ok 721 - SVG declarations no warnings
+  [CSS::Module] ok 722 - SVG declarations ast
+  [CSS::Module] ok 723 - ast reserialization
+  [CSS::Module] ok 724 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 725 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 726 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 727 - SVG text-anchor: able to parse unexpected input
+  [CSS::Module] ok 728 - SVG text-anchor: unexpected input produces warning
+  [CSS::Module] ok 729 - SVG declarations parse: {text-anchor: inherit}
+  [CSS::Module] ok 730 - SVG declarations no warnings
+  [CSS::Module] ok 731 - SVG declarations ast
+  [CSS::Module] ok 732 - SVG declarations parse: {text-anchor: initial}
+  [CSS::Module] ok 733 - SVG declarations no warnings
+  [CSS::Module] ok 734 - SVG declarations ast
+  [CSS::Module] ok 735 - SVG declarations parse: {text-decoration: underline blink}
+  [CSS::Module] ok 736 - SVG declarations no warnings
+  [CSS::Module] ok 737 - SVG declarations ast
+  [CSS::Module] ok 738 - ast reserialization
+  [CSS::Module] ok 739 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 740 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 741 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 742 - SVG text-decoration: able to parse unexpected input
+  [CSS::Module] ok 743 - SVG text-decoration: unexpected input produces warning
+  [CSS::Module] ok 744 - SVG declarations parse: {text-decoration: inherit}
+  [CSS::Module] ok 745 - SVG declarations no warnings
+  [CSS::Module] ok 746 - SVG declarations ast
+  [CSS::Module] ok 747 - SVG declarations parse: {text-decoration: initial}
+  [CSS::Module] ok 748 - SVG declarations no warnings
+  [CSS::Module] ok 749 - SVG declarations ast
+  [CSS::Module] ok 750 - SVG declarations parse: {text-overflow: clip}
+  [CSS::Module] ok 751 - SVG declarations no warnings
+  [CSS::Module] ok 752 - SVG declarations ast
+  [CSS::Module] ok 753 - ast reserialization
+  [CSS::Module] ok 754 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 755 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 756 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 757 - SVG text-overflow: able to parse unexpected input
+  [CSS::Module] ok 758 - SVG text-overflow: unexpected input produces warning
+  [CSS::Module] ok 759 - SVG declarations parse: {text-overflow: inherit}
+  [CSS::Module] ok 760 - SVG declarations no warnings
+  [CSS::Module] ok 761 - SVG declarations ast
+  [CSS::Module] ok 762 - SVG declarations parse: {text-overflow: initial}
+  [CSS::Module] ok 763 - SVG declarations no warnings
+  [CSS::Module] ok 764 - SVG declarations ast
+  [CSS::Module] ok 765 - SVG declarations parse: {text-rendering: geometricPrecision}
+  [CSS::Module] ok 766 - SVG declarations no warnings
+  [CSS::Module] ok 767 - SVG declarations ast
+  [CSS::Module] ok 768 - ast reserialization
+  [CSS::Module] ok 769 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 770 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 771 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 772 - SVG text-rendering: able to parse unexpected input
+  [CSS::Module] ok 773 - SVG text-rendering: unexpected input produces warning
+  [CSS::Module] ok 774 - SVG declarations parse: {text-rendering: inherit}
+  [CSS::Module] ok 775 - SVG declarations no warnings
+  [CSS::Module] ok 776 - SVG declarations ast
+  [CSS::Module] ok 777 - SVG declarations parse: {text-rendering: initial}
+  [CSS::Module] ok 778 - SVG declarations no warnings
+  [CSS::Module] ok 779 - SVG declarations ast
+  [CSS::Module] ok 780 - SVG declarations parse: {unicode-bidi: embed}
+  [CSS::Module] ok 781 - SVG declarations no warnings
+  [CSS::Module] ok 782 - SVG declarations ast
+  [CSS::Module] ok 783 - ast reserialization
+  [CSS::Module] ok 784 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 785 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 786 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 787 - SVG unicode-bidi: able to parse unexpected input
+  [CSS::Module] ok 788 - SVG unicode-bidi: unexpected input produces warning
+  [CSS::Module] ok 789 - SVG declarations parse: {unicode-bidi: inherit}
+  [CSS::Module] ok 790 - SVG declarations no warnings
+  [CSS::Module] ok 791 - SVG declarations ast
+  [CSS::Module] ok 792 - SVG declarations parse: {unicode-bidi: initial}
+  [CSS::Module] ok 793 - SVG declarations no warnings
+  [CSS::Module] ok 794 - SVG declarations ast
+  [CSS::Module] ok 795 - SVG declarations parse: {vector-effect: none}
+  [CSS::Module] ok 796 - SVG declarations no warnings
+  [CSS::Module] ok 797 - SVG declarations ast
+  [CSS::Module] ok 798 - ast reserialization
+  [CSS::Module] ok 799 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 800 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 801 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 802 - SVG vector-effect: able to parse unexpected input
+  [CSS::Module] ok 803 - SVG vector-effect: unexpected input produces warning
+  [CSS::Module] ok 804 - SVG declarations parse: {vector-effect: inherit}
+  [CSS::Module] ok 805 - SVG declarations no warnings
+  [CSS::Module] ok 806 - SVG declarations ast
+  [CSS::Module] ok 807 - SVG declarations parse: {vector-effect: initial}
+  [CSS::Module] ok 808 - SVG declarations no warnings
+  [CSS::Module] ok 809 - SVG declarations ast
+  [CSS::Module] ok 810 - SVG declarations parse: {visibility: hidden}
+  [CSS::Module] ok 811 - SVG declarations no warnings
+  [CSS::Module] ok 812 - SVG declarations ast
+  [CSS::Module] ok 813 - ast reserialization
+  [CSS::Module] ok 814 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 815 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 816 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 817 - SVG visibility: able to parse unexpected input
+  [CSS::Module] ok 818 - SVG visibility: unexpected input produces warning
+  [CSS::Module] ok 819 - SVG declarations parse: {visibility: inherit}
+  [CSS::Module] ok 820 - SVG declarations no warnings
+  [CSS::Module] ok 821 - SVG declarations ast
+  [CSS::Module] ok 822 - SVG declarations parse: {visibility: initial}
+  [CSS::Module] ok 823 - SVG declarations no warnings
+  [CSS::Module] ok 824 - SVG declarations ast
+  [CSS::Module] ok 825 - SVG declarations parse: {white-space: pre}
+  [CSS::Module] ok 826 - SVG declarations no warnings
+  [CSS::Module] ok 827 - SVG declarations ast
+  [CSS::Module] ok 828 - ast reserialization
+  [CSS::Module] ok 829 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 830 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 831 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 832 - SVG white-space: able to parse unexpected input
+  [CSS::Module] ok 833 - SVG white-space: unexpected input produces warning
+  [CSS::Module] ok 834 - SVG declarations parse: {white-space: inherit}
+  [CSS::Module] ok 835 - SVG declarations no warnings
+  [CSS::Module] ok 836 - SVG declarations ast
+  [CSS::Module] ok 837 - SVG declarations parse: {white-space: initial}
+  [CSS::Module] ok 838 - SVG declarations no warnings
+  [CSS::Module] ok 839 - SVG declarations ast
+  [CSS::Module] ok 840 - SVG declarations parse: {word-spacing: 1.5em}
+  [CSS::Module] ok 841 - SVG declarations no warnings
+  [CSS::Module] ok 842 - SVG declarations ast
+  [CSS::Module] ok 843 - ast reserialization
+  [CSS::Module] ok 844 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 845 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 846 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 847 - SVG word-spacing: able to parse unexpected input
+  [CSS::Module] ok 848 - SVG word-spacing: unexpected input produces warning
+  [CSS::Module] ok 849 - SVG declarations parse: {word-spacing: inherit}
+  [CSS::Module] ok 850 - SVG declarations no warnings
+  [CSS::Module] ok 851 - SVG declarations ast
+  [CSS::Module] ok 852 - SVG declarations parse: {word-spacing: initial}
+  [CSS::Module] ok 853 - SVG declarations no warnings
+  [CSS::Module] ok 854 - SVG declarations ast
+  [CSS::Module] ok 855 - SVG declarations parse: {writing-mode: rl-tb}
+  [CSS::Module] ok 856 - SVG declarations no warnings
+  [CSS::Module] ok 857 - SVG declarations ast
+  [CSS::Module] ok 858 - ast reserialization
+  [CSS::Module] ok 859 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 860 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 861 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 862 - SVG writing-mode: able to parse unexpected input
+  [CSS::Module] ok 863 - SVG writing-mode: unexpected input produces warning
+  [CSS::Module] ok 864 - SVG declarations parse: {writing-mode: inherit}
+  [CSS::Module] ok 865 - SVG declarations no warnings
+  [CSS::Module] ok 866 - SVG declarations ast
+  [CSS::Module] ok 867 - SVG declarations parse: {writing-mode: initial}
+  [CSS::Module] ok 868 - SVG declarations no warnings
+  [CSS::Module] ok 869 - SVG declarations ast
+  [CSS::Module] 1..869
+  ===> Testing [OK] for CSS::Module:ver<0.7.7>:auth<zef:dwarring>
+  ===> Installing: CSS::Module:ver<0.7.7>:auth<zef:dwarring>
+  ===> Install [OK] for CSS::Module:ver<0.7.7>:auth<zef:dwarring>
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 25.082s
+               CPU time consumed: 37.668s
+                     Memory peak: 1.1G (swap: 0B)
+
+  ```
+  </details>
+  <details>
+  <summary>New Output</summary>
+
+  ```
+  Running as unit: run-p3031712-i3033419.service; invocation ID: 1a72bc8bc4944b429022707097faf26b
+  Press ^] three times within 1s to disconnect TTY.
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_0:1
+      ------> [32mity>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_1:1
+      ------> [32mZef>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_2:1
+      ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_3:1
+      ------> [32mery>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_4:1
+      ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_5:1
+      ------> [32mcal>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_6:1
+      ------> [32mory>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_7:1
+      ------> [32mtem>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_8:1
+      ------> [32mtch>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_9:1
+      ------> [32mact>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_10:1
+      ------> [32mild>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_11:1
+      ------> [32mest>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_12:1
+      ------> [32mall>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_13:1
+      ------> [32mort>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_14:1
+      ------> [32ment>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_15:1
+      ------> [32mfig>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  Potential difficulties:
+      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+        or :auth-matcher() to represent the empty list more accurately
+      at /home/coke/sandbox/blin/EVAL_16:1
+      ------> [32mURI>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+  ===> Searching for: CSS::Module
+  ===> Found: CSS::Module:ver<0.7.7>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
+  [CSS::Module] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870754.3031713.2487.587813268319/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz https://360.zef.pm/C/SS/CSS_MODULE/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
+  ===> Fetching [OK]: CSS::Module:ver<0.7.7>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870754.3031713.2487.587813268319/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
+  [CSS::Module] Command: tar -t -f ./e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
+  [CSS::Module] Command: tar -xvf ./e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz -C ../e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
+  ===> Extraction [OK]: CSS::Module to /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
+  ===> Testing: CSS::Module:ver<0.7.7>:auth<zef:dwarring>
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/00basic.t
+  [CSS::Module] ok 1 - not css1 unicode: 012AF
+  [CSS::Module] ok 2 - css21 unicode: 012AF
+  [CSS::Module] ok 3 - css3 unicode: 012AF
+  [CSS::Module] ok 4 - not css1 unicode: 012AFc
+  [CSS::Module] ok 5 - css21 unicode: 012AFc
+  [CSS::Module] ok 6 - css3 unicode: 012AFc
+  [CSS::Module] ok 7 - not non-ascii css1: 
+  [CSS::Module] ok 8 - not non-ascii css21: 
+  [CSS::Module] ok 9 - non-ascii css3: 
+  [CSS::Module] # Subtest: {unknown-prop: someval}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {unknown-prop: someval}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {unknown-prop: someval}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {unknown-prop: someval}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: {unknown-prop: someval}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { unknown-prop:someval; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 10 - {unknown-prop: someval}
+  [CSS::Module] # Subtest: {unknown-prop: unknown-func()}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {unknown-prop: unknown-func()}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {unknown-prop: unknown-func()}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {unknown-prop: unknown-func()}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: {unknown-prop: unknown-func()}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { unknown-prop:unknown-func(); }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 11 - {unknown-prop: unknown-func()}
+  [CSS::Module] # Subtest: { @guff {color:red} }
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: { @guff {color:red} }
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: { @guff {color:red} }
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: { @guff {color:red} }
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: { @guff {color:red} }
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { @guff { color:red; } }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 12 - { @guff {color:red} }
+  [CSS::Module] # Subtest: {background-attachment: crud}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: crud}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: crud}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: crud}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: crud}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 13 - {background-attachment: crud}
+  [CSS::Module] # Subtest: {background-attachment: FiXed}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { background-attachment:fixed; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { background-attachment:fixed; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { background-attachment:fixed; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { background-attachment:fixed; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 14 - {background-attachment: FiXed}
+  [CSS::Module] # Subtest: {font-family: "unclosed-string}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: "unclosed-string}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: "unclosed-string}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: "unclosed-string}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: "unclosed-string}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {  }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 15 - {font-family: "unclosed-string}
+  [CSS::Module] # Subtest: {/*aa*/COLoR/*bb*/:<!--cc-->BLUE /*dd*/;}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {/*aa*/COLoR/*bb*/:<!--cc-->BLUE /*dd*/;}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { color:blue; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {/*aa*/COLoR/*bb*/:<!--cc-->BLUE /*dd*/;}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { color:blue; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {/*aa*/COLoR/*bb*/:<!--cc-->BLUE /*dd*/;}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { color:blue; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: {/*aa*/COLoR/*bb*/:<!--cc-->BLUE /*dd*/;}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { color:blue; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 16 - {/*aa*/COLoR/*bb*/:<!--cc-->BLUE /*dd*/;}
+  [CSS::Module] # Subtest: {margin: 2em 3em}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 2em 3em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { margin:2em 3em; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 2em 3em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { margin:2em 3em; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 2em 3em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { margin:2em 3em; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 2em 3em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { margin:2em 3em; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 17 - {margin: 2em 3em}
+  [CSS::Module] # Subtest: {background-attachment: fixed !Important;}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: fixed !Important;}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { background-attachment:fixed!important; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: fixed !Important;}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { background-attachment:fixed!important; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: fixed !Important;}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { background-attachment:fixed!important; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: fixed !Important;}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: { background-attachment:fixed!important; }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 18 - {background-attachment: fixed !Important;}
+  [CSS::Module] # Subtest: H1:active
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  simple-selector parse: H1:active
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1:active
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  simple-selector parse: H1:active
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1:active
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  simple-selector parse: H1:active
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1:active
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  simple-selector parse: H1:active
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1:active
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 19 - H1:active
+  [CSS::Module] # Subtest: h1:eq(0)
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  simple-selector parse: h1:eq(0)
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1:eq
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  simple-selector parse: h1:eq(0)
+  [CSS::Module]         ok 2 -  simple-selector warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  simple-selector parse: h1:eq(0)
+  [CSS::Module]         ok 2 -  simple-selector warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  simple-selector parse: h1:eq(0)
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1:eq(0)
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 20 - h1:eq(0)
+  [CSS::Module] # Subtest: h1[id$=ess]
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  simple-selector parse: h1[id$=ess]
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  simple-selector parse: h1[id$=ess]
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  simple-selector parse: h1[id$=ess]
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1[id$=ess]
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     # Subtest: CSS3(lax)
+  [CSS::Module]         ok 1 -  simple-selector parse: h1[id$=ess]
+  [CSS::Module]         ok 2 -  simple-selector no warnings
+  [CSS::Module]         ok 3 -  simple-selector ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized simple-selector parse: h1[id$=ess]
+  [CSS::Module]         ok 6 -   --  reserialized simple-selector no warnings
+  [CSS::Module]         ok 7 -   --  reserialized simple-selector ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 4 - CSS3(lax)
+  [CSS::Module]     1..4
+  [CSS::Module] ok 21 - h1[id$=ess]
+  [CSS::Module] 1..21
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css1-properties.t
+  [CSS::Module] # Subtest: {background-color: #37a}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background-color:  \#37a}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-color:  \#37a}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-color: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-color:  \#37a}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-color: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {background-color: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 1 - {background-color:  \#37a}
+  [CSS::Module] # Subtest: {background-image: url(images/ok.png)}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background-image: url(images/ok.png)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-image: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-image: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-image: url(images/ok.png)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-image: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-image: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-image: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-image: url(images/ok.png)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-image: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-image: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-image: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {background-image: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 2 - {background-image: url(images/ok.png)}
+  [CSS::Module] # Subtest: {background-repeat: Repeat-x}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background-repeat: Repeat-x}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-repeat: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-repeat: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-repeat: Repeat-x}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-repeat: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-repeat: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-repeat: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-repeat: Repeat-x}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-repeat: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-repeat: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-repeat: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {background-repeat: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 3 - {background-repeat: Repeat-x}
+  [CSS::Module] # Subtest: {background-attachment: FiXed}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-attachment: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-attachment: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-attachment: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-attachment: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-attachment: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-attachment: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-attachment: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-attachment: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {background-attachment: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 4 - {background-attachment: FiXed}
+  [CSS::Module] # Subtest: {background-position: 100% 90%}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background-position: 100% 90%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-position: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-position: 100% 90%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-position: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-position: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-position: 100% 90%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background-position: able to parse unexpected input
+  [CSS::Module]             ok 2 - background-position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background-position: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {background-position: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 5 - {background-position: 100% 90%}
+  [CSS::Module] # Subtest: {background: url(chess.png) gray 50% repeat scroll}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {background: url(chess.png) gray 50% repeat scroll}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background: able to parse unexpected input
+  [CSS::Module]             ok 2 - background: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background: url(chess.png) gray 50% repeat scroll}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background: able to parse unexpected input
+  [CSS::Module]             ok 2 - background: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background: url(chess.png) gray 50% repeat scroll}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - background: able to parse unexpected input
+  [CSS::Module]             ok 2 - background: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {background: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {background: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 6 - {background: url(chess.png) gray 50% repeat scroll}
+  [CSS::Module] # Subtest: {border-top-width: thick}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-width: thick}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-width: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-width: thick}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-width: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-top-width: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-width: thick}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-width: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-top-width: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {border-top-width: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 7 - {border-top-width: thick}
+  [CSS::Module] # Subtest: {border-width: 2ex 1.5em 3ex 5%}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {border-width: 2ex 1.5em 3ex 5%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-width: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-width: 2ex 1.5em 3ex 5%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-width: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-width: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-width: 2ex 1.5em 3ex 5%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-width: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-width: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {border-width: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 8 - {border-width: 2ex 1.5em 3ex 5%}
+  [CSS::Module] # Subtest: {border-color: #a7f #aa77ff rgb(100,150,20) aqua}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {border-color:  \#a7f  \#aa77ff rgb(100,150,20) aqua}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-color:  \#a7f  \#aa77ff rgb(100,150,20) aqua}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-color: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-color:  \#a7f  \#aa77ff rgb(100,150,20) aqua}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-color: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {border-color: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 9 - {border-color:  \#a7f  \#aa77ff rgb(100,150,20) aqua}
+  [CSS::Module] # Subtest: {border-top-color: #aaa}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-color:  \#aaa}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-color:  \#aaa}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-top-color: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-color:  \#aaa}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-color: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-top-color: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {border-top-color: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 10 - {border-top-color:  \#aaa}
+  [CSS::Module] # Subtest: {border-style: groove}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {border-style: groove}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-style: groove}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-style: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-style: groove}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-style: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {border-style: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 11 - {border-style: groove}
+  [CSS::Module] # Subtest: {border-top-style: ridge}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-style: ridge}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-style: ridge}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-top-style: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-top-style: ridge}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border-top-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - border-top-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border-top-style: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {border-top-style: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 12 - {border-top-style: ridge}
+  [CSS::Module] # Subtest: {border: 1px solid red}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {border: 1px solid red}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border: able to parse unexpected input
+  [CSS::Module]             ok 2 - border: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border: 1px solid red}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border: able to parse unexpected input
+  [CSS::Module]             ok 2 - border: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border: 1px solid red}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - border: able to parse unexpected input
+  [CSS::Module]             ok 2 - border: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {border: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {border: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 13 - {border: 1px solid red}
+  [CSS::Module] # Subtest: {border: 1px red blue}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {border: 1px red blue}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         1..2
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border: 1px red blue}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         1..2
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border: 1px red blue}
+  [CSS::Module]         ok 2 -  declarations warnings
+  [CSS::Module]         1..2
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 14 - {border: 1px red blue}
+  [CSS::Module] # Subtest: {clear: both}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {clear: both}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - clear: able to parse unexpected input
+  [CSS::Module]             ok 2 - clear: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {clear: both}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - clear: able to parse unexpected input
+  [CSS::Module]             ok 2 - clear: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {clear: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {clear: both}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - clear: able to parse unexpected input
+  [CSS::Module]             ok 2 - clear: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {clear: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {clear: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 15 - {clear: both}
+  [CSS::Module] # Subtest: {color: #3377aa}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {color:  \#3377aa}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - color: able to parse unexpected input
+  [CSS::Module]             ok 2 - color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {color:  \#3377aa}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - color: able to parse unexpected input
+  [CSS::Module]             ok 2 - color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {color: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {color:  \#3377aa}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - color: able to parse unexpected input
+  [CSS::Module]             ok 2 - color: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {color: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {color: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 16 - {color:  \#3377aa}
+  [CSS::Module] # Subtest: {display: list-item}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {display: list-item}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - display: able to parse unexpected input
+  [CSS::Module]             ok 2 - display: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {display: list-item}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - display: able to parse unexpected input
+  [CSS::Module]             ok 2 - display: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {display: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {display: list-item}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - display: able to parse unexpected input
+  [CSS::Module]             ok 2 - display: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {display: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {display: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 17 - {display: list-item}
+  [CSS::Module] # Subtest: {float: left}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {float: left}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - float: able to parse unexpected input
+  [CSS::Module]             ok 2 - float: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {float: left}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - float: able to parse unexpected input
+  [CSS::Module]             ok 2 - float: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {float: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {float: left}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - float: able to parse unexpected input
+  [CSS::Module]             ok 2 - float: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {float: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {float: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 18 - {float: left}
+  [CSS::Module] # Subtest: {font-family: Gill, 'Helvetica', sans-serif}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: Gill, 'Helvetica', sans-serif}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-family: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-family: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: Gill, 'Helvetica', sans-serif}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-family: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-family: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-family: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: Gill, 'Helvetica', sans-serif}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-family: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-family: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-family: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {font-family: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 19 - {font-family: Gill, 'Helvetica', sans-serif}
+  [CSS::Module] # Subtest: {font-family: New Century Schoolbook}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: New Century Schoolbook}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: New Century Schoolbook}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: New Century Schoolbook}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 20 - {font-family: New Century Schoolbook}
+  [CSS::Module] # Subtest: {font-family: New
+  [CSS::Module] # Century  Schoolbook}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: New
+  [CSS::Module]         # Century  Schoolbook}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: New
+  [CSS::Module]         # Century  Schoolbook}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-family: New
+  [CSS::Module]         # Century  Schoolbook}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 21 - {font-family: New
+  [CSS::Module] # Century  Schoolbook}
+  [CSS::Module] # Subtest: {font-style: italic}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-style: italic}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-style: italic}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-style: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-style: italic}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-style: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {font-style: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 22 - {font-style: italic}
+  [CSS::Module] # Subtest: {font-variant: small-caps}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-variant: small-caps}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-variant: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-variant: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-variant: small-caps}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-variant: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-variant: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-variant: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-variant: small-caps}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-variant: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-variant: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-variant: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {font-variant: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 23 - {font-variant: small-caps}
+  [CSS::Module] # Subtest: {font-weight: bolder}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-weight: bolder}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-weight: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-weight: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-weight: bolder}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-weight: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-weight: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-weight: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-weight: bolder}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-weight: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-weight: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-weight: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {font-weight: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 24 - {font-weight: bolder}
+  [CSS::Module] # Subtest: {font-weight: 800}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-weight: 800}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-weight: 800}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-weight: 800}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 25 - {font-weight: 800}
+  [CSS::Module] # Subtest: {font-size: 12pt}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: 12pt}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-size: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-size: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: 12pt}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-size: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-size: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-size: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: 12pt}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font-size: able to parse unexpected input
+  [CSS::Module]             ok 2 - font-size: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font-size: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {font-size: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 26 - {font-size: 12pt}
+  [CSS::Module] # Subtest: {font-size: 150%}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: 150%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: 150%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: 150%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 27 - {font-size: 150%}
+  [CSS::Module] # Subtest: {font-size: Larger}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: Larger}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: Larger}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font-size: Larger}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 28 - {font-size: Larger}
+  [CSS::Module] # Subtest: {font: 12pt/14pt sans-serif}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font: 12pt/14pt sans-serif}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font: able to parse unexpected input
+  [CSS::Module]             ok 2 - font: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font: 12pt/14pt sans-serif}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font: able to parse unexpected input
+  [CSS::Module]             ok 2 - font: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font: 12pt/14pt sans-serif}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - font: able to parse unexpected input
+  [CSS::Module]             ok 2 - font: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {font: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {font: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 29 - {font: 12pt/14pt sans-serif}
+  [CSS::Module] # Subtest: {font: normal small-caps 120%/120% fantasy}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font: normal small-caps 120%/120% fantasy}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font: normal small-caps 120%/120% fantasy}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font: normal small-caps 120%/120% fantasy}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 30 - {font: normal small-caps 120%/120% fantasy}
+  [CSS::Module] # Subtest: {font: 10pt courier bold}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {font: 10pt courier bold}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {font: 10pt courier bold}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {font: 10pt courier bold}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 31 - {font: 10pt courier bold}
+  [CSS::Module] # Subtest: {letter-spacing: normal}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {letter-spacing: normal}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - letter-spacing: able to parse unexpected input
+  [CSS::Module]             ok 2 - letter-spacing: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {letter-spacing: normal}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - letter-spacing: able to parse unexpected input
+  [CSS::Module]             ok 2 - letter-spacing: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {letter-spacing: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {letter-spacing: normal}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - letter-spacing: able to parse unexpected input
+  [CSS::Module]             ok 2 - letter-spacing: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {letter-spacing: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {letter-spacing: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 32 - {letter-spacing: normal}
+  [CSS::Module] # Subtest: {line-height: 120%}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {line-height: 120%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - line-height: able to parse unexpected input
+  [CSS::Module]             ok 2 - line-height: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {line-height: 120%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - line-height: able to parse unexpected input
+  [CSS::Module]             ok 2 - line-height: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {line-height: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {line-height: 120%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - line-height: able to parse unexpected input
+  [CSS::Module]             ok 2 - line-height: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {line-height: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {line-height: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 33 - {line-height: 120%}
+  [CSS::Module] # Subtest: {list-style-type: square}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-type: square}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-type: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-type: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-type: square}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-type: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-type: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {list-style-type: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-type: square}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-type: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-type: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {list-style-type: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {list-style-type: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 34 - {list-style-type: square}
+  [CSS::Module] # Subtest: {list-style-image: url(snoopy.png)}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-image: url(snoopy.png)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-image: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-image: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-image: url(snoopy.png)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-image: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-image: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {list-style-image: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-image: url(snoopy.png)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-image: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-image: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {list-style-image: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {list-style-image: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 35 - {list-style-image: url(snoopy.png)}
+  [CSS::Module] # Subtest: {list-style-position: outside}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-position: outside}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-position: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-position: outside}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-position: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {list-style-position: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {list-style-position: outside}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style-position: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style-position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {list-style-position: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {list-style-position: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 36 - {list-style-position: outside}
+  [CSS::Module] # Subtest: {list-style: url(http://png.com/ellipse.png) disc outside}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {list-style: url(http://png.com/ellipse.png) disc outside}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {list-style: url(http://png.com/ellipse.png) disc outside}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {list-style: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {list-style: url(http://png.com/ellipse.png) disc outside}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - list-style: able to parse unexpected input
+  [CSS::Module]             ok 2 - list-style: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {list-style: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {list-style: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 37 - {list-style: url(http://png.com/ellipse.png) disc outside}
+  [CSS::Module] # Subtest: {overflow: scroll}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {overflow: scroll}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - overflow: able to parse unexpected input
+  [CSS::Module]             ok 2 - overflow: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {overflow: scroll}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - overflow: able to parse unexpected input
+  [CSS::Module]             ok 2 - overflow: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {overflow: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {overflow: scroll}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - overflow: able to parse unexpected input
+  [CSS::Module]             ok 2 - overflow: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {overflow: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {overflow: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 38 - {overflow: scroll}
+  [CSS::Module] # Subtest: {padding-bottom: 2em}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {padding-bottom: 2em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - padding-bottom: able to parse unexpected input
+  [CSS::Module]             ok 2 - padding-bottom: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {padding-bottom: 2em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - padding-bottom: able to parse unexpected input
+  [CSS::Module]             ok 2 - padding-bottom: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {padding-bottom: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {padding-bottom: 2em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - padding-bottom: able to parse unexpected input
+  [CSS::Module]             ok 2 - padding-bottom: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {padding-bottom: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {padding-bottom: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 39 - {padding-bottom: 2em}
+  [CSS::Module] # Subtest: {position: absolute}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {position: absolute}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - position: able to parse unexpected input
+  [CSS::Module]             ok 2 - position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {position: absolute}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - position: able to parse unexpected input
+  [CSS::Module]             ok 2 - position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {position: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {position: absolute}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - position: able to parse unexpected input
+  [CSS::Module]             ok 2 - position: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {position: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {position: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 40 - {position: absolute}
+  [CSS::Module] # Subtest: {margin-top: 1.25ex}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {margin-top: 1.25ex}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - margin-top: able to parse unexpected input
+  [CSS::Module]             ok 2 - margin-top: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {margin-top: 1.25ex}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - margin-top: able to parse unexpected input
+  [CSS::Module]             ok 2 - margin-top: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {margin-top: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {margin-top: 1.25ex}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - margin-top: able to parse unexpected input
+  [CSS::Module]             ok 2 - margin-top: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {margin-top: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {margin-top: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 41 - {margin-top: 1.25ex}
+  [CSS::Module] # Subtest: {margin: 1.2ex 1.5em 125% 0}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 1.2ex 1.5em 125% 0}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - margin: able to parse unexpected input
+  [CSS::Module]             ok 2 - margin: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 1.2ex 1.5em 125% 0}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - margin: able to parse unexpected input
+  [CSS::Module]             ok 2 - margin: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {margin: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 1.2ex 1.5em 125% 0}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - margin: able to parse unexpected input
+  [CSS::Module]             ok 2 - margin: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {margin: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {margin: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 42 - {margin: 1.2ex 1.5em 125% 0}
+  [CSS::Module] # Subtest: {margin: 1.2ex 1.5em}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 1.2ex 1.5em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 1.2ex 1.5em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {margin: 1.2ex 1.5em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 43 - {margin: 1.2ex 1.5em}
+  [CSS::Module] # Subtest: {text-decoration: Underline}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {text-decoration: Underline}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-decoration: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-decoration: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {text-decoration: Underline}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-decoration: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-decoration: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {text-decoration: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {text-decoration: Underline}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-decoration: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-decoration: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {text-decoration: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {text-decoration: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 44 - {text-decoration: Underline}
+  [CSS::Module] # Subtest: {text-transform: uppercase}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {text-transform: uppercase}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-transform: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-transform: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {text-transform: uppercase}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-transform: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-transform: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {text-transform: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {text-transform: uppercase}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-transform: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-transform: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {text-transform: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {text-transform: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 45 - {text-transform: uppercase}
+  [CSS::Module] # Subtest: {text-align: justify}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {text-align: justify}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-align: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-align: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {text-align: justify}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-align: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-align: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {text-align: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {text-align: justify}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - text-align: able to parse unexpected input
+  [CSS::Module]             ok 2 - text-align: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {text-align: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {text-align: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 46 - {text-align: justify}
+  [CSS::Module] # Subtest: {text-decoration: underline}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {text-decoration: underline}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {text-decoration: underline}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {text-decoration: underline}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 47 - {text-decoration: underline}
+  [CSS::Module] # Subtest: {vertical-align: text-top}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {vertical-align: text-top}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - vertical-align: able to parse unexpected input
+  [CSS::Module]             ok 2 - vertical-align: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {vertical-align: text-top}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - vertical-align: able to parse unexpected input
+  [CSS::Module]             ok 2 - vertical-align: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {vertical-align: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {vertical-align: text-top}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - vertical-align: able to parse unexpected input
+  [CSS::Module]             ok 2 - vertical-align: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {vertical-align: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {vertical-align: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 48 - {vertical-align: text-top}
+  [CSS::Module] # Subtest: {width: 55mm}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {width: 55mm}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - width: able to parse unexpected input
+  [CSS::Module]             ok 2 - width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {width: 55mm}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - width: able to parse unexpected input
+  [CSS::Module]             ok 2 - width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {width: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {width: 55mm}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - width: able to parse unexpected input
+  [CSS::Module]             ok 2 - width: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {width: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {width: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 49 - {width: 55mm}
+  [CSS::Module] # Subtest: {word-spacing: 1.5em}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {word-spacing: 1.5em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - word-spacing: able to parse unexpected input
+  [CSS::Module]             ok 2 - word-spacing: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {word-spacing: 1.5em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - word-spacing: able to parse unexpected input
+  [CSS::Module]             ok 2 - word-spacing: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {word-spacing: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {word-spacing: 1.5em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - word-spacing: able to parse unexpected input
+  [CSS::Module]             ok 2 - word-spacing: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {word-spacing: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {word-spacing: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 50 - {word-spacing: 1.5em}
+  [CSS::Module] # Subtest: {white-space: nowrap}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {white-space: nowrap}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - white-space: able to parse unexpected input
+  [CSS::Module]             ok 2 - white-space: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {white-space: nowrap}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - white-space: able to parse unexpected input
+  [CSS::Module]             ok 2 - white-space: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {white-space: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {white-space: nowrap}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - white-space: able to parse unexpected input
+  [CSS::Module]             ok 2 - white-space: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {white-space: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {white-space: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 51 - {white-space: nowrap}
+  [CSS::Module] # Subtest: {z-index: -3}
+  [CSS::Module]     # Subtest: CSS1
+  [CSS::Module]         ok 1 -  declarations parse: {z-index: -3}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - z-index: able to parse unexpected input
+  [CSS::Module]             ok 2 - z-index: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             1..0
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 1 - CSS1
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {z-index: -3}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - z-index: able to parse unexpected input
+  [CSS::Module]             ok 2 - z-index: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 4 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {z-index: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             1..3
+  [CSS::Module]         ok 5 - proforma
+  [CSS::Module]         1..5
+  [CSS::Module]     ok 2 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {z-index: -3}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         # Subtest: Unexpected input
+  [CSS::Module]             ok 1 - z-index: able to parse unexpected input
+  [CSS::Module]             ok 2 - z-index: unexpected input produces warning
+  [CSS::Module]             1..2
+  [CSS::Module]         ok 8 - Unexpected input
+  [CSS::Module]         # Subtest: proforma
+  [CSS::Module]             ok 1 - inherit declarations parse: {z-index: inherit}
+  [CSS::Module]             ok 2 - inherit declarations no warnings
+  [CSS::Module]             ok 3 - inherit declarations ast
+  [CSS::Module]             ok 4 - initial declarations parse: {z-index: initial}
+  [CSS::Module]             ok 5 - initial declarations no warnings
+  [CSS::Module]             ok 6 - initial declarations ast
+  [CSS::Module]             1..6
+  [CSS::Module]         ok 9 - proforma
+  [CSS::Module]         1..9
+  [CSS::Module]     ok 3 - CSS3
+  [CSS::Module]     1..3
+  [CSS::Module] ok 52 - {z-index: -3}
+  [CSS::Module] 1..52
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css21-properties.t
+  [CSS::Module] # Subtest: {azimuth: 30deg}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: 30deg}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - azimuth: able to parse unexpected input
+  [CSS::Module]         ok 5 - azimuth: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {azimuth: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: 30deg}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - azimuth: able to parse unexpected input
+  [CSS::Module]         ok 9 - azimuth: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {azimuth: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {azimuth: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 1 - {azimuth: 30deg}
+  [CSS::Module] # Subtest: {azimuth: far-right}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: far-right}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: far-right}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 2 - {azimuth: far-right}
+  [CSS::Module] # Subtest: {azimuth: center-left behind}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: center-left behind}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: center-left behind}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 3 - {azimuth: center-left behind}
+  [CSS::Module] # Subtest: {azimuth: Rightwards}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: Rightwards}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: Rightwards}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 4 - {azimuth: Rightwards}
+  [CSS::Module] # Subtest: {azimuth: inherit}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: inherit}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {azimuth: inherit}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 5 - {azimuth: inherit}
+  [CSS::Module] # Subtest: {background-attachment: FiXed}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - background-attachment: able to parse unexpected input
+  [CSS::Module]         ok 5 - background-attachment: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {background-attachment: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: FiXed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - background-attachment: able to parse unexpected input
+  [CSS::Module]         ok 9 - background-attachment: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {background-attachment: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {background-attachment: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 6 - {background-attachment: FiXed}
+  [CSS::Module] # Subtest: {background-attachment: inherit}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: inherit}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-attachment: inherit}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 7 - {background-attachment: inherit}
+  [CSS::Module] # Subtest: {background-color: #37a}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-color:  \#37a}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - background-color: able to parse unexpected input
+  [CSS::Module]         ok 5 - background-color: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {background-color: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-color:  \#37a}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - background-color: able to parse unexpected input
+  [CSS::Module]         ok 9 - background-color: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {background-color: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {background-color: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 8 - {background-color:  \#37a}
+  [CSS::Module] # Subtest: {background-color: transparent}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-color: transparent}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-color: transparent}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 9 - {background-color: transparent}
+  [CSS::Module] # Subtest: {background-image: url(images/ok.png)}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-image: url(images/ok.png)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - background-image: able to parse unexpected input
+  [CSS::Module]         ok 5 - background-image: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {background-image: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-image: url(images/ok.png)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - background-image: able to parse unexpected input
+  [CSS::Module]         ok 9 - background-image: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {background-image: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {background-image: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 10 - {background-image: url(images/ok.png)}
+  [CSS::Module] # Subtest: {background-repeat: Repeat-x}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-repeat: Repeat-x}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - background-repeat: able to parse unexpected input
+  [CSS::Module]         ok 5 - background-repeat: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {background-repeat: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-repeat: Repeat-x}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - background-repeat: able to parse unexpected input
+  [CSS::Module]         ok 9 - background-repeat: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {background-repeat: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {background-repeat: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 11 - {background-repeat: Repeat-x}
+  [CSS::Module] # Subtest: {background-position: 100% 90%}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-position: 100% 90%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - background-position: able to parse unexpected input
+  [CSS::Module]         ok 5 - background-position: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {background-position: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-position: 100% 90%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - background-position: able to parse unexpected input
+  [CSS::Module]         ok 9 - background-position: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {background-position: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {background-position: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 12 - {background-position: 100% 90%}
+  [CSS::Module] # Subtest: {background-position: right top}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {background-position: right top}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {background-position: right top}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 13 - {background-position: right top}
+  [CSS::Module] # Subtest: {border-collapse: separate}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-collapse: separate}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - border-collapse: able to parse unexpected input
+  [CSS::Module]         ok 5 - border-collapse: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {border-collapse: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-collapse: separate}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - border-collapse: able to parse unexpected input
+  [CSS::Module]         ok 9 - border-collapse: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {border-collapse: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {border-collapse: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 14 - {border-collapse: separate}
+  [CSS::Module] # Subtest: {border-spacing: 3em}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-spacing: 3em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - border-spacing: able to parse unexpected input
+  [CSS::Module]         ok 5 - border-spacing: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {border-spacing: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-spacing: 3em}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - border-spacing: able to parse unexpected input
+  [CSS::Module]         ok 9 - border-spacing: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {border-spacing: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {border-spacing: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 15 - {border-spacing: 3em}
+  [CSS::Module] # Subtest: {border-bottom: thick dotted red}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-bottom: thick dotted red}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - border-bottom: able to parse unexpected input
+  [CSS::Module]         ok 5 - border-bottom: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {border-bottom: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-bottom: thick dotted red}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - border-bottom: able to parse unexpected input
+  [CSS::Module]         ok 9 - border-bottom: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {border-bottom: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {border-bottom: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 16 - {border-bottom: thick dotted red}
+  [CSS::Module] # Subtest: {border-bottom-width: medium}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-bottom-width: medium}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - border-bottom-width: able to parse unexpected input
+  [CSS::Module]         ok 5 - border-bottom-width: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {border-bottom-width: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-bottom-width: medium}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - border-bottom-width: able to parse unexpected input
+  [CSS::Module]         ok 9 - border-bottom-width: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {border-bottom-width: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {border-bottom-width: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 17 - {border-bottom-width: medium}
+  [CSS::Module] # Subtest: {border-collapse: collapse}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-collapse: collapse}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-collapse: collapse}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 18 - {border-collapse: collapse}
+  [CSS::Module] # Subtest: {border-spacing: 2px .1cm}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-spacing: 2px .1cm}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         1..3
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-spacing: 2px .1cm}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         1..7
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 19 - {border-spacing: 2px .1cm}
+  [CSS::Module] # Subtest: {border-right-color: green}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-right-color: green}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - border-right-color: able to parse unexpected input
+  [CSS::Module]         ok 5 - border-right-color: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {border-right-color: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-right-color: green}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - border-right-color: able to parse unexpected input
+  [CSS::Module]         ok 9 - border-right-color: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {border-right-color: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {border-right-color: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 20 - {border-right-color: green}
+  [CSS::Module] # Subtest: {border-style: dotted dashed}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-style: dotted dashed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - border-style: able to parse unexpected input
+  [CSS::Module]         ok 5 - border-style: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {border-style: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-style: dotted dashed}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - border-style: able to parse unexpected input
+  [CSS::Module]         ok 9 - border-style: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {border-style: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {border-style: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 21 - {border-style: dotted dashed}
+  [CSS::Module] # Subtest: {border-bottom-style: outset}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {border-bottom-style: outset}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - border-bottom-style: able to parse unexpected input
+  [CSS::Module]         ok 5 - border-bottom-style: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {border-bottom-style: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {border-bottom-style: outset}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - border-bottom-style: able to parse unexpected input
+  [CSS::Module]         ok 9 - border-bottom-style: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {border-bottom-style: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {border-bottom-style: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 22 - {border-bottom-style: outset}
+  [CSS::Module] # Subtest: {bottom: 5%}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {bottom: 5%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - bottom: able to parse unexpected input
+  [CSS::Module]         ok 5 - bottom: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {bottom: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {bottom: 5%}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - bottom: able to parse unexpected input
+  [CSS::Module]         ok 9 - bottom: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {bottom: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {bottom: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 23 - {bottom: 5%}
+  [CSS::Module] # Subtest: {caption-side: top}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {caption-side: top}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - caption-side: able to parse unexpected input
+  [CSS::Module]         ok 5 - caption-side: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {caption-side: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {caption-side: top}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - caption-side: able to parse unexpected input
+  [CSS::Module]         ok 9 - caption-side: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {caption-side: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {caption-side: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 24 - {caption-side: top}
+  [CSS::Module] # Subtest: {clip: rect(5px, 40px, auto, 5px)}
+  [CSS::Module]     # Subtest: CSS2.1
+  [CSS::Module]         ok 1 -  declarations parse: {clip: rect(5px, 40px, auto, 5px)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - clip: able to parse unexpected input
+  [CSS::Module]         ok 5 - clip: unexpected input produces warning
+  [CSS::Module]         ok 6 -  declarations parse: {clip: inherit}
+  [CSS::Module]         ok 7 -  declarations no warnings
+  [CSS::Module]         ok 8 -  declarations ast
+  [CSS::Module]         1..8
+  [CSS::Module]     ok 1 - CSS2.1
+  [CSS::Module]     # Subtest: CSS3
+  [CSS::Module]         ok 1 -  declarations parse: {clip: rect(5px, 40px, auto, 5px)}
+  [CSS::Module]         ok 2 -  declarations no warnings
+  [CSS::Module]         ok 3 -  declarations ast
+  [CSS::Module]         ok 4 - ast reserialization
+  [CSS::Module]         ok 5 -   --  reserialized declarations parse: {... }
+  [CSS::Module]         ok 6 -   --  reserialized declarations no warnings
+  [CSS::Module]         ok 7 -   --  reserialized declarations ast
+  [CSS::Module]         ok 8 - clip: able to parse unexpected input
+  [CSS::Module]         ok 9 - clip: unexpected input produces warning
+  [CSS::Module]         ok 10 -  declarations parse: {clip: inherit}
+  [CSS::Module]         ok 11 -  declarations no warnings
+  [CSS::Module]         ok 12 -  declarations ast
+  [CSS::Module]         ok 13 -  declarations parse: {clip: initial}
+  [CSS::Module]         ok 14 -  declarations no warnings
+  [CSS::Module]         ok 15 -  declarations ast
+  [CSS::Module]         1..15
+  [CSS::Module]     ok 2 - CSS3
+  [CSS::Module]     1..2
+  [CSS::Module] ok 25 - {clip: rect(5px, 40px, auto, 5px)}
+  [CSS::Module] 1..25
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3-_base.t
+  [CSS::Module] ok 1 - not number: 0%
+  [CSS::Module] ok 2 - percentage: 0%
+  [CSS::Module] ok 3 - not angle: 0%
+  [CSS::Module] ok 4 - not number: 0deg
+  [CSS::Module] ok 5 - not percentage: 0deg
+  [CSS::Module] ok 6 - angle: 0deg
+  [CSS::Module] ok 7 - number: 0
+  [CSS::Module] ok 8 - not percentage: 0
+  [CSS::Module] ok 9 - angle: 0
+  [CSS::Module] ok 10 - number: 1
+  [CSS::Module] ok 11 - not percentage: 1
+  [CSS::Module] ok 12 - angle: 1
+  [CSS::Module] ok 13 - css3 terms number parse: 123.45
+  [CSS::Module] ok 14 - css3 terms number no warnings
+  [CSS::Module] ok 15 - css3 terms number ast
+  [CSS::Module] ok 16 - css3 terms integer parse: 123
+  [CSS::Module] ok 17 - css3 terms integer no warnings
+  [CSS::Module] ok 18 - css3 terms integer ast
+  [CSS::Module] ok 19 - css3 terms uri parse: url(foo.jpg)
+  [CSS::Module] ok 20 - css3 terms uri no warnings
+  [CSS::Module] ok 21 - css3 terms uri ast
+  [CSS::Module] ok 22 - css3 terms keyw parse: Abc
+  [CSS::Module] ok 23 - css3 terms keyw no warnings
+  [CSS::Module] ok 24 - css3 terms keyw ast
+  [CSS::Module] ok 25 - css3 terms identifier parse: Foo
+  [CSS::Module] ok 26 - css3 terms identifier no warnings
+  [CSS::Module] ok 27 - css3 terms identifier ast
+  [CSS::Module] ok 28 - css3 terms identifiers parse: Aaa bb
+  [CSS::Module] ok 29 - css3 terms identifiers no warnings
+  [CSS::Module] ok 30 - css3 terms identifiers ast
+  [CSS::Module] 1..30
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-colors.t
+  [CSS::Module] ok 1 - css3-color term parse: rgb(70%, 50%, 10%)
+  [CSS::Module] ok 2 - css3-color term no warnings
+  [CSS::Module] ok 3 - css3-color term ast
+  [CSS::Module] ok 4 - ast reserialization
+  [CSS::Module] ok 5 -   -- css3-color reserialized term parse: rgb(179, 128, 26)
+  [CSS::Module] ok 6 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 7 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 8 - css3-color term parse: rgba(100%, 128, 0%, 0.1)
+  [CSS::Module] ok 9 - css3-color term no warnings
+  [CSS::Module] ok 10 - css3-color term ast
+  [CSS::Module] ok 11 - ast reserialization
+  [CSS::Module] ok 12 -   -- css3-color reserialized term parse: rgba(255, 128, 0, 0.1)
+  [CSS::Module] ok 13 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 14 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 15 - css3-color term parse: rgb(100%, 128, 0%, 0.1)
+  [CSS::Module] ok 16 - css3-color term no warnings
+  [CSS::Module] ok 17 - css3-color term ast
+  [CSS::Module] ok 18 - ast reserialization
+  [CSS::Module] ok 19 -   -- css3-color reserialized term parse: rgba(255, 128, 0, 0.1)
+  [CSS::Module] ok 20 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 21 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 22 - css3-color term parse: rgba(100%, 128, 0%, 10%)
+  [CSS::Module] ok 23 - css3-color term no warnings
+  [CSS::Module] ok 24 - css3-color term ast
+  [CSS::Module] ok 25 - ast reserialization
+  [CSS::Module] ok 26 -   -- css3-color reserialized term parse: rgba(255, 128, 0, 10%)
+  [CSS::Module] ok 27 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 28 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 29 - css3-color term parse: hsl(120, 100%, 50%)
+  [CSS::Module] ok 30 - css3-color term no warnings
+  [CSS::Module] ok 31 - css3-color term ast
+  [CSS::Module] ok 32 - ast reserialization
+  [CSS::Module] ok 33 -   -- css3-color reserialized term parse: hsl(120, 100%, 50%)
+  [CSS::Module] ok 34 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 35 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 36 - css3-color term parse: hsla( 180, 100%, 50%, .75 )
+  [CSS::Module] ok 37 - css3-color term no warnings
+  [CSS::Module] ok 38 - css3-color term ast
+  [CSS::Module] ok 39 - ast reserialization
+  [CSS::Module] ok 40 -   -- css3-color reserialized term parse: hsla(180, 100%, 50%, 0.75)
+  [CSS::Module] ok 41 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 42 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 43 - css3-color term parse: rgba(101%, 50%, -5%, +1.1)
+  [CSS::Module] ok 44 - css3-color term no warnings
+  [CSS::Module] ok 45 - css3-color term ast
+  [CSS::Module] ok 46 - ast reserialization
+  [CSS::Module] ok 47 -   -- css3-color reserialized term parse: rgb(255, 128, 0)
+  [CSS::Module] ok 48 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 49 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 50 - css3-color term parse: hsl(120, 110%, -50%)
+  [CSS::Module] ok 51 - css3-color term no warnings
+  [CSS::Module] ok 52 - css3-color term ast
+  [CSS::Module] ok 53 - ast reserialization
+  [CSS::Module] ok 54 -   -- css3-color reserialized term parse: hsl(120, 100%, 0%)
+  [CSS::Module] ok 55 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 56 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 57 - css3-color term parse: hsla( 180, -100%, 150%, 1.75 )
+  [CSS::Module] ok 58 - css3-color term no warnings
+  [CSS::Module] ok 59 - css3-color term ast
+  [CSS::Module] ok 60 - ast reserialization
+  [CSS::Module] ok 61 -   -- css3-color reserialized term parse: hsla(180, 0%, 100%, 1)
+  [CSS::Module] ok 62 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 63 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 64 - css3-color term parse: rgba(10%,20%,30%)
+  [CSS::Module] ok 65 - css3-color term no warnings
+  [CSS::Module] ok 66 - css3-color term ast
+  [CSS::Module] ok 67 - ast reserialization
+  [CSS::Module] ok 68 -   -- css3-color reserialized term parse: rgb(26, 51, 77)
+  [CSS::Module] ok 69 -   -- css3-color reserialized term no warnings
+  [CSS::Module] ok 70 -   -- css3-color reserialized term ast
+  [CSS::Module] ok 71 - css3-color term parse: hsl(junk)
+  [CSS::Module] ok 72 - css3-color term warnings
+  [CSS::Module] ok 73 - css3-color term parse: hsla()
+  [CSS::Module] ok 74 - css3-color term warnings
+  [CSS::Module] ok 75 - css3-color color parse: orange
+  [CSS::Module] ok 76 - css3-color color no warnings
+  [CSS::Module] ok 77 - css3-color color ast
+  [CSS::Module] ok 78 - ast reserialization
+  [CSS::Module] ok 79 -   -- css3-color reserialized color parse: rgb(255, 165, 0)
+  [CSS::Module] ok 80 -   -- css3-color reserialized color no warnings
+  [CSS::Module] ok 81 -   -- css3-color reserialized color ast
+  [CSS::Module] ok 82 - css3-color color parse: hotpink
+  [CSS::Module] ok 83 - css3-color color no warnings
+  [CSS::Module] ok 84 - css3-color color ast
+  [CSS::Module] ok 85 - ast reserialization
+  [CSS::Module] ok 86 -   -- css3-color reserialized color parse: rgb(255, 105, 180)
+  [CSS::Module] ok 87 -   -- css3-color reserialized color no warnings
+  [CSS::Module] ok 88 -   -- css3-color reserialized color ast
+  [CSS::Module] ok 89 - css3-color color parse: lavenderblush
+  [CSS::Module] ok 90 - css3-color color no warnings
+  [CSS::Module] ok 91 - css3-color color ast
+  [CSS::Module] ok 92 - ast reserialization
+  [CSS::Module] ok 93 -   -- css3-color reserialized color parse: rgb(255, 240, 245)
+  [CSS::Module] ok 94 -   -- css3-color reserialized color no warnings
+  [CSS::Module] ok 95 -   -- css3-color reserialized color ast
+  [CSS::Module] ok 96 - css3-color color parse: black
+  [CSS::Module] ok 97 - css3-color color no warnings
+  [CSS::Module] ok 98 - css3-color color ast
+  [CSS::Module] ok 99 - ast reserialization
+  [CSS::Module] ok 100 -   -- css3-color reserialized color parse: rgb(0, 0, 0)
+  [CSS::Module] ok 101 -   -- css3-color reserialized color no warnings
+  [CSS::Module] ok 102 -   -- css3-color reserialized color ast
+  [CSS::Module] ok 103 - css3-color color parse: currentcolor
+  [CSS::Module] ok 104 - css3-color color no warnings
+  [CSS::Module] ok 105 - css3-color color ast
+  [CSS::Module] ok 106 - ast reserialization
+  [CSS::Module] ok 107 -   -- css3-color reserialized color parse: currentcolor
+  [CSS::Module] ok 108 -   -- css3-color reserialized color no warnings
+  [CSS::Module] ok 109 -   -- css3-color reserialized color ast
+  [CSS::Module] ok 110 - css3-color color parse: transparent
+  [CSS::Module] ok 111 - css3-color color no warnings
+  [CSS::Module] ok 112 - css3-color color ast
+  [CSS::Module] ok 113 - ast reserialization
+  [CSS::Module] ok 114 -   -- css3-color reserialized color parse: transparent
+  [CSS::Module] ok 115 -   -- css3-color reserialized color no warnings
+  [CSS::Module] ok 116 -   -- css3-color reserialized color ast
+  [CSS::Module] 1..116
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-fonts.t
+  [CSS::Module] ok 1 - css3x-fonts at-rule parse: @font-face { font-family: MainText; src: url(gentium.eot); /* for use with older user agents */ src: local('Gentium'), url(gentium.ttf) format('truetype');  /* Overrides src definition */ }
+  [CSS::Module] ok 2 - css3x-fonts at-rule no warnings
+  [CSS::Module] ok 3 - css3x-fonts at-rule ast
+  [CSS::Module] ok 4 - ast reserialization
+  [CSS::Module] ok 5 -   -- css3x-fonts reserialized at-rule parse: @font-face {... }
+  [CSS::Module] ok 6 -   -- css3x-fonts reserialized at-rule no warnings
+  [CSS::Module] ok 7 -   -- css3x-fonts reserialized at-rule ast
+  [CSS::Module] ok 8 - css21 at-rule parse: @font-face { font-family: MainText; src: url(gentium.eot); /* for use with older user agents */ src: local('Gentium'), url(gentium.ttf) format('truetype');  /* Overrides src definition */ }
+  [CSS::Module] ok 9 - css21 at-rule no warnings
+  [CSS::Module] ok 10 - css3x-fonts declarations parse: {font-family: 21st Century, fantasy;}
+  [CSS::Module] ok 11 - css3x-fonts declarations no warnings
+  [CSS::Module] ok 12 - css3x-fonts declarations ast
+  [CSS::Module] ok 13 - ast reserialization
+  [CSS::Module] ok 14 -   -- css3x-fonts reserialized declarations parse: {... }
+  [CSS::Module] ok 15 -   -- css3x-fonts reserialized declarations no warnings
+  [CSS::Module] ok 16 -   -- css3x-fonts reserialized declarations ast
+  [CSS::Module] ok 17 - css21 declarations parse: {font-family: 21st Century, fantasy;}
+  [CSS::Module] ok 18 - css21 declarations no warnings
+  [CSS::Module] ok 19 - css21 declarations ast
+  [CSS::Module] ok 20 - ast reserialization
+  [CSS::Module] ok 21 -   -- css21 reserialized declarations parse: {... }
+  [CSS::Module] ok 22 -   -- css21 reserialized declarations no warnings
+  [CSS::Module] ok 23 -   -- css21 reserialized declarations ast
+  [CSS::Module] ok 24 - css3x-fonts at-rule parse: @font-face { font-family: BBCBengali; src: url(fonts/BBCBengali.ttf) format("opentype"); unicode-range: U+00-FF, U+980-9FF; }
+  [CSS::Module] ok 25 - css3x-fonts at-rule no warnings
+  [CSS::Module] ok 26 - css3x-fonts at-rule ast
+  [CSS::Module] ok 27 - ast reserialization
+  [CSS::Module] ok 28 -   -- css3x-fonts reserialized at-rule parse: @font-face {... }
+  [CSS::Module] ok 29 -   -- css3x-fonts reserialized at-rule no warnings
+  [CSS::Module] ok 30 -   -- css3x-fonts reserialized at-rule ast
+  [CSS::Module] ok 31 - css21 at-rule parse: @font-face { font-family: BBCBengali; src: url(fonts/BBCBengali.ttf) format("opentype"); unicode-range: U+00-FF, U+980-9FF; }
+  [CSS::Module] ok 32 - css21 at-rule no warnings
+  [CSS::Module] ok 33 - css3x-fonts declarations parse: {font-feature-settings: "smcp", "swsh" 2;}
+  [CSS::Module] ok 34 - css3x-fonts declarations no warnings
+  [CSS::Module] ok 35 - css3x-fonts declarations ast
+  [CSS::Module] ok 36 - ast reserialization
+  [CSS::Module] ok 37 -   -- css3x-fonts reserialized declarations parse: {... }
+  [CSS::Module] ok 38 -   -- css3x-fonts reserialized declarations no warnings
+  [CSS::Module] ok 39 -   -- css3x-fonts reserialized declarations ast
+  [CSS::Module] ok 40 - css21 declarations parse: {font-feature-settings: "smcp", "swsh" 2;}
+  [CSS::Module] ok 41 - css21 declarations warnings
+  [CSS::Module] ok 42 - css3x-fonts declaration parse: font-weight: lighter;
+  [CSS::Module] ok 43 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 44 - css3x-fonts declaration ast
+  [CSS::Module] ok 45 - ast reserialization
+  [CSS::Module] ok 46 -   -- css3x-fonts reserialized declaration parse: font-weight: lighter;
+  [CSS::Module] ok 47 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 48 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 49 - css21 declaration parse: font-weight: lighter;
+  [CSS::Module] ok 50 - css21 declaration no warnings
+  [CSS::Module] ok 51 - css21 declaration ast
+  [CSS::Module] ok 52 - ast reserialization
+  [CSS::Module] ok 53 -   -- css21 reserialized declaration parse: font-weight: lighter;
+  [CSS::Module] ok 54 -   -- css21 reserialized declaration no warnings
+  [CSS::Module] ok 55 -   -- css21 reserialized declaration ast
+  [CSS::Module] ok 56 - css3x-fonts declaration parse: font-weight: initial;
+  [CSS::Module] ok 57 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 58 - css3x-fonts declaration ast
+  [CSS::Module] ok 59 - ast reserialization
+  [CSS::Module] ok 60 -   -- css3x-fonts reserialized declaration parse: font-weight: initial;
+  [CSS::Module] ok 61 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 62 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 63 - css21 declaration parse: font-weight: initial;
+  [CSS::Module] ok 64 - css21 declaration warnings
+  [CSS::Module] ok 65 - css3x-fonts declaration parse: font-weight: inherit
+  [CSS::Module] ok 66 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 67 - css3x-fonts declaration ast
+  [CSS::Module] ok 68 - ast reserialization
+  [CSS::Module] ok 69 -   -- css3x-fonts reserialized declaration parse: font-weight: inherit;
+  [CSS::Module] ok 70 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 71 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 72 - css21 declaration parse: font-weight: inherit
+  [CSS::Module] ok 73 - css21 declaration no warnings
+  [CSS::Module] ok 74 - css21 declaration ast
+  [CSS::Module] ok 75 - ast reserialization
+  [CSS::Module] ok 76 -   -- css21 reserialized declaration parse: font-weight: inherit;
+  [CSS::Module] ok 77 -   -- css21 reserialized declaration no warnings
+  [CSS::Module] ok 78 -   -- css21 reserialized declaration ast
+  [CSS::Module] ok 79 - css3x-fonts declaration parse: font-stretch: extra-expanded
+  [CSS::Module] ok 80 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 81 - css3x-fonts declaration ast
+  [CSS::Module] ok 82 - ast reserialization
+  [CSS::Module] ok 83 -   -- css3x-fonts reserialized declaration parse: font-stretch: extra-expanded;
+  [CSS::Module] ok 84 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 85 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 86 - css21 declaration parse: font-stretch: extra-expanded
+  [CSS::Module] ok 87 - css21 declaration warnings
+  [CSS::Module] ok 88 - css3x-fonts declaration parse: font-style: oblique;
+  [CSS::Module] ok 89 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 90 - css3x-fonts declaration ast
+  [CSS::Module] ok 91 - ast reserialization
+  [CSS::Module] ok 92 -   -- css3x-fonts reserialized declaration parse: font-style: oblique;
+  [CSS::Module] ok 93 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 94 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 95 - css21 declaration parse: font-style: oblique;
+  [CSS::Module] ok 96 - css21 declaration no warnings
+  [CSS::Module] ok 97 - css21 declaration ast
+  [CSS::Module] ok 98 - ast reserialization
+  [CSS::Module] ok 99 -   -- css21 reserialized declaration parse: font-style: oblique;
+  [CSS::Module] ok 100 -   -- css21 reserialized declaration no warnings
+  [CSS::Module] ok 101 -   -- css21 reserialized declaration ast
+  [CSS::Module] ok 102 - css3x-fonts declaration parse: font-size-adjust: .7;
+  [CSS::Module] ok 103 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 104 - css3x-fonts declaration ast
+  [CSS::Module] ok 105 - ast reserialization
+  [CSS::Module] ok 106 -   -- css3x-fonts reserialized declaration parse: font-size-adjust: 0.7;
+  [CSS::Module] ok 107 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 108 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 109 - css21 declaration parse: font-size-adjust: .7;
+  [CSS::Module] ok 110 - css21 declaration warnings
+  [CSS::Module] ok 111 - css3x-fonts declaration parse: font: x-large/110% 'new century schoolbook', serif;
+  [CSS::Module] ok 112 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 113 - css3x-fonts declaration ast
+  [CSS::Module] ok 114 - ast reserialization
+  [CSS::Module] ok 115 -   -- css3x-fonts reserialized declaration parse: font: x-large/110% 'new century schoolbook', serif;
+  [CSS::Module] ok 116 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 117 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 118 - css21 declaration parse: font: x-large/110% 'new century schoolbook', serif;
+  [CSS::Module] ok 119 - css21 declaration no warnings
+  [CSS::Module] ok 120 - css21 declaration ast
+  [CSS::Module] ok 121 - ast reserialization
+  [CSS::Module] ok 122 -   -- css21 reserialized declaration parse: font: x-large/110% 'new century schoolbook', serif;
+  [CSS::Module] ok 123 -   -- css21 reserialized declaration no warnings
+  [CSS::Module] ok 124 -   -- css21 reserialized declaration ast
+  [CSS::Module] ok 125 - css3x-fonts declaration parse: font-variant: small-caps;
+  [CSS::Module] ok 126 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 127 - css3x-fonts declaration ast
+  [CSS::Module] ok 128 - ast reserialization
+  [CSS::Module] ok 129 -   -- css3x-fonts reserialized declaration parse: font-variant: small-caps;
+  [CSS::Module] ok 130 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 131 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 132 - css21 declaration parse: font-variant: small-caps;
+  [CSS::Module] ok 133 - css21 declaration no warnings
+  [CSS::Module] ok 134 - css21 declaration ast
+  [CSS::Module] ok 135 - ast reserialization
+  [CSS::Module] ok 136 -   -- css21 reserialized declaration parse: font-variant: small-caps;
+  [CSS::Module] ok 137 -   -- css21 reserialized declaration no warnings
+  [CSS::Module] ok 138 -   -- css21 reserialized declaration ast
+  [CSS::Module] ok 139 - css3x-fonts declaration parse: font-variant: annotation(circled);
+  [CSS::Module] ok 140 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 141 - css3x-fonts declaration ast
+  [CSS::Module] ok 142 - ast reserialization
+  [CSS::Module] ok 143 -   -- css3x-fonts reserialized declaration parse: font-variant: annotation(circled);
+  [CSS::Module] ok 144 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 145 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 146 - css21 declaration parse: font-variant: annotation(circled);
+  [CSS::Module] ok 147 - css21 declaration warnings
+  [CSS::Module] ok 148 - css3x-fonts declaration parse: font-synthesis: weight;
+  [CSS::Module] ok 149 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 150 - css3x-fonts declaration ast
+  [CSS::Module] ok 151 - ast reserialization
+  [CSS::Module] ok 152 -   -- css3x-fonts reserialized declaration parse: font-synthesis: weight;
+  [CSS::Module] ok 153 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 154 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 155 - css21 declaration parse: font-synthesis: weight;
+  [CSS::Module] ok 156 - css21 declaration warnings
+  [CSS::Module] ok 157 - css3x-fonts declaration parse: font-variant: discretionary-ligatures character-variant(leo-B, leo-M, leo-N, leo-T, leo-U);
+  [CSS::Module] ok 158 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 159 - css3x-fonts declaration ast
+  [CSS::Module] ok 160 - ast reserialization
+  [CSS::Module] ok 161 -   -- css3x-fonts reserialized declaration parse: font-variant: discretionary-ligatures character-variant(leo-B, leo-M, leo-N, leo-T, leo-U);
+  [CSS::Module] ok 162 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 163 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 164 - css21 declaration parse: font-variant: discretionary-ligatures character-variant(leo-B, leo-M, leo-N, leo-T, leo-U);
+  [CSS::Module] ok 165 - css21 declaration warnings
+  [CSS::Module] ok 166 - css3x-fonts declaration parse: line-height: 1.2em ;
+  [CSS::Module] ok 167 - css3x-fonts declaration no warnings
+  [CSS::Module] ok 168 - css3x-fonts declaration ast
+  [CSS::Module] ok 169 - ast reserialization
+  [CSS::Module] ok 170 -   -- css3x-fonts reserialized declaration parse: line-height: 1.2em;
+  [CSS::Module] ok 171 -   -- css3x-fonts reserialized declaration no warnings
+  [CSS::Module] ok 172 -   -- css3x-fonts reserialized declaration ast
+  [CSS::Module] ok 173 - css21 declaration parse: line-height: 1.2em ;
+  [CSS::Module] ok 174 - css21 declaration no warnings
+  [CSS::Module] ok 175 - css21 declaration ast
+  [CSS::Module] ok 176 - ast reserialization
+  [CSS::Module] ok 177 -   -- css21 reserialized declaration parse: line-height: 1.2em;
+  [CSS::Module] ok 178 -   -- css21 reserialized declaration no warnings
+  [CSS::Module] ok 179 -   -- css21 reserialized declaration ast
+  [CSS::Module] 1..179
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-media-queries.t
+  [CSS::Module] # Subtest: resolution: 300dpi
+  [CSS::Module]     ok 1 - css3 @media resolution parse: 300dpi
+  [CSS::Module]     ok 2 - css3 @media resolution no warnings
+  [CSS::Module]     ok 3 - css3 @media resolution ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized resolution parse: 300dpi
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized resolution no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized resolution ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 1 - resolution: 300dpi
+  [CSS::Module] # Subtest: media-expr: max-width: foo
+  [CSS::Module]     ok 1 - css3 @media media-expr parse: max-width: foo
+  [CSS::Module]     ok 2 - css3 @media media-expr warnings
+  [CSS::Module]     1..2
+  [CSS::Module] ok 2 - media-expr: max-width: foo
+  [CSS::Module] # Subtest: at-rule: @media all { body { background:lime } }
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media all { body { background:lime } }
+  [CSS::Module]     ok 2 - css3 @media at-rule no warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media all {... }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 3 - at-rule: @media all { body { background:lime } }
+  [CSS::Module] # Subtest: at-rule: @media all and (color) { }
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media all and (color) { }
+  [CSS::Module]     ok 2 - css3 @media at-rule no warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media all and (color) {
+  [CSS::Module]     # }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 4 - at-rule: @media all and (color) { }
+  [CSS::Module] # Subtest: at-rule: @media screen { * { font-family: sans-serif } }
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media screen { * { font-family: sans-serif } }
+  [CSS::Module]     ok 2 - css3 @media at-rule no warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media screen {... }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 5 - at-rule: @media screen { * { font-family: sans-serif } }
+  [CSS::Module] # Subtest: at-rule: @media all AND (min-resolution: 300dpi) And (max-resolution: 118dpcm) {}
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media all AND (min-resolution: 300dpi) And (max-resolution: 118dpcm) {}
+  [CSS::Module]     ok 2 - css3 @media at-rule no warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media all and (min-resolution: 300dpi) and (max-resolution: 118dpcm) {
+  [CSS::Module]     # }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 6 - at-rule: @media all AND (min-resolution: 300dpi) And (max-resolution: 118dpcm) {}
+  [CSS::Module] # Subtest: at-rule: @media noT print {body{margin : 1cm}}
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media noT print {body{margin : 1cm}}
+  [CSS::Module]     ok 2 - css3 @media at-rule no warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media not print {... }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 7 - at-rule: @media noT print {body{margin : 1cm}}
+  [CSS::Module] # Subtest: at-rule: @media ONLY all And (none) { }
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media ONLY all And (none) { }
+  [CSS::Module]     ok 2 - css3 @media at-rule warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media not all {
+  [CSS::Module]     # }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 8 - at-rule: @media ONLY all And (none) { }
+  [CSS::Module] # Subtest: at-rule: @media not all {}
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media not all {}
+  [CSS::Module]     ok 2 - css3 @media at-rule no warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media not all {
+  [CSS::Module]     # }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 9 - at-rule: @media not all {}
+  [CSS::Module] # Subtest: at-rule: @media (min-orientation:portrait) {}
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media (min-orientation:portrait) {}
+  [CSS::Module]     ok 2 - css3 @media at-rule warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media not all {
+  [CSS::Module]     # }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 10 - at-rule: @media (min-orientation:portrait) {}
+  [CSS::Module] # Subtest: at-rule: @media (color:20example) {}
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media (color:20example) {}
+  [CSS::Module]     ok 2 - css3 @media at-rule warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media not all {
+  [CSS::Module]     # }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 11 - at-rule: @media (color:20example) {}
+  [CSS::Module] # Subtest: at-rule: @media (example, all,), speech {}
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media (example, all,), speech {}
+  [CSS::Module]     ok 2 - css3 @media at-rule warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media not all {
+  [CSS::Module]     # }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 12 - at-rule: @media (example, all,), speech {}
+  [CSS::Module] # Subtest: at-rule: @media &test, screen {}
+  [CSS::Module]     ok 1 - css3 @media at-rule parse: @media &test, screen {}
+  [CSS::Module]     ok 2 - css3 @media at-rule warnings
+  [CSS::Module]     ok 3 - css3 @media at-rule ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized at-rule parse: @media not all {
+  [CSS::Module]     # }
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized at-rule no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized at-rule ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 13 - at-rule: @media &test, screen {}
+  [CSS::Module] # Subtest: import: @import url(example.css) screen and (color), projection and (color);
+  [CSS::Module]     ok 1 - css3 @media import parse: @import url(example.css) screen and (color), projection and (color);
+  [CSS::Module]     ok 2 - css3 @media import no warnings
+  [CSS::Module]     ok 3 - css3 @media import ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3 @media reserialized import parse: @import url('example.css') screen and (color), projection and (color);
+  [CSS::Module]     ok 6 -   -- css3 @media reserialized import no warnings
+  [CSS::Module]     ok 7 -   -- css3 @media reserialized import ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 14 - import: @import url(example.css) screen and (color), projection and (color);
+  [CSS::Module] 1..14
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-namespaces.t
+  [CSS::Module] ok 1 - css3-namespaces at-decl parse: @namespace empty "";
+  [CSS::Module] ok 2 - css3-namespaces at-decl no warnings
+  [CSS::Module] ok 3 - css3-namespaces at-decl ast
+  [CSS::Module] ok 4 - ast reserialization
+  [CSS::Module] ok 5 -   -- css3-namespaces reserialized at-decl parse: @namespace empty url('');
+  [CSS::Module] ok 6 -   -- css3-namespaces reserialized at-decl no warnings
+  [CSS::Module] ok 7 -   -- css3-namespaces reserialized at-decl ast
+  [CSS::Module] ok 8 - css3-namespaces at-decl parse: @NAMESPACE "";
+  [CSS::Module] ok 9 - css3-namespaces at-decl no warnings
+  [CSS::Module] ok 10 - css3-namespaces at-decl ast
+  [CSS::Module] ok 11 - ast reserialization
+  [CSS::Module] not ok 12 -   -- css3-namespaces reserialized at-decl parse: @namespace url('');
+  [CSS::Module] # Failed test '  -- css3-namespaces reserialized at-decl parse: @namespace url('');'
+  [CSS::Module] # at /home/coke/sandbox/blin/installed/CSS::Grammar_zef:dwarring_0.4.3_0/sources/109E18CFFDDAF96D07ABDB035C149D6E407796E7 (CSS::Grammar::Test) line 56
+  [CSS::Module] # expected: '@namespace url('');'
+  [CSS::Module] #      got: ''
+  [CSS::Module] ok 13 -   -- css3-namespaces reserialized at-decl no warnings
+  [CSS::Module] data type mismatch
+  [CSS::Module]     - expected: {
+  [CSS::Module]   "at-rule": {
+  [CSS::Module]     "at-keyw": "namespace",
+  [CSS::Module]     "url": ""
+  [CSS::Module]   }
+  [CSS::Module] }
+  [CSS::Module]     - got: null
+  [CSS::Module] not ok 14 -   -- css3-namespaces reserialized at-decl ast
+  [CSS::Module] # Failed test '  -- css3-namespaces reserialized at-decl ast'
+  [CSS::Module] # at /home/coke/sandbox/blin/installed/CSS::Grammar_zef:dwarring_0.4.3_0/sources/109E18CFFDDAF96D07ABDB035C149D6E407796E7 (CSS::Grammar::Test) line 85
+  [CSS::Module] # expected: :at-rule({:at-keyw("namespace"), :url("")})
+  [CSS::Module] #  matcher: 'json-eqv'
+  [CSS::Module] #      got: Any
+  [CSS::Module] ok 15 - css3-namespaces at-decl parse: @namespace "http://www.w3.org/1999/xhtml";
+  [CSS::Module] ok 16 - css3-namespaces at-decl no warnings
+  [CSS::Module] ok 17 - css3-namespaces at-decl ast
+  [CSS::Module] ok 18 - ast reserialization
+  [CSS::Module] not ok 19 -   -- css3-namespaces reserialized at-decl parse: @namespace url('http://www.w3.org/1999/xhtml');
+  [CSS::Module] # Failed test '  -- css3-namespaces reserialized at-decl parse: @namespace url('http://www.w3.org/1999/xhtml');'
+  [CSS::Module] # at /home/coke/sandbox/blin/installed/CSS::Grammar_zef:dwarring_0.4.3_0/sources/109E18CFFDDAF96D07ABDB035C149D6E407796E7 (CSS::Grammar::Test) line 56
+  [CSS::Module] # expected: '@namespace url('http://www.w3.org/1999/xhtml');'
+  [CSS::Module] #      got: ''
+  [CSS::Module] ok 20 -   -- css3-namespaces reserialized at-decl no warnings
+  [CSS::Module] data type mismatch
+  [CSS::Module]     - expected: {
+  [CSS::Module]   "at-rule": {
+  [CSS::Module]     "at-keyw": "namespace",
+  [CSS::Module]     "url": "http://www.w3.org/1999/xhtml"
+  [CSS::Module]   }
+  [CSS::Module] }
+  [CSS::Module]     - got: null
+  [CSS::Module] not ok 21 -   -- css3-namespaces reserialized at-decl ast
+  [CSS::Module] # Failed test '  -- css3-namespaces reserialized at-decl ast'
+  [CSS::Module] # at /home/coke/sandbox/blin/installed/CSS::Grammar_zef:dwarring_0.4.3_0/sources/109E18CFFDDAF96D07ABDB035C149D6E407796E7 (CSS::Grammar::Test) line 85
+  [CSS::Module] # expected: :at-rule({:at-keyw("namespace"), :url("http://www.w3.org/1999/xhtml")})
+  [CSS::Module] #  matcher: 'json-eqv'
+  [CSS::Module] #      got: Any
+  [CSS::Module] ok 22 - css3-namespaces at-decl parse: @namespace svg "http://www.w3.org/2000/svg";
+  [CSS::Module] ok 23 - css3-namespaces at-decl no warnings
+  [CSS::Module] ok 24 - css3-namespaces at-decl ast
+  [CSS::Module] ok 25 - ast reserialization
+  [CSS::Module] ok 26 -   -- css3-namespaces reserialized at-decl parse: @namespace svg url('http://www.w3.org/2000/svg');
+  [CSS::Module] ok 27 -   -- css3-namespaces reserialized at-decl no warnings
+  [CSS::Module] ok 28 -   -- css3-namespaces reserialized at-decl ast
+  [CSS::Module] ok 29 - css3-namespaces stylesheet parse: @namespace toto url(http://toto.example.org);
+  [CSS::Module] ok 30 - css3-namespaces stylesheet no warnings
+  [CSS::Module] ok 31 - css3-namespaces stylesheet ast
+  [CSS::Module] ok 32 - ast reserialization
+  [CSS::Module] ok 33 -   -- css3-namespaces reserialized stylesheet parse: @namespace toto url('http://toto.example.org');
+  [CSS::Module] ok 34 -   -- css3-namespaces reserialized stylesheet no warnings
+  [CSS::Module] ok 35 -   -- css3-namespaces reserialized stylesheet ast
+  [CSS::Module] 1..35
+  [CSS::Module] # You failed 4 tests of 35
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-paged-media.t
+  [CSS::Module] ok 1 - css3 @page at-rule parse: @page :left { margin-left: 4cm; size: a4 }
+  [CSS::Module] ok 2 - css3 @page at-rule no warnings
+  [CSS::Module] ok 3 - css3 @page at-rule ast
+  [CSS::Module] ok 4 - ast reserialization
+  [CSS::Module] ok 5 -   -- css3 @page reserialized at-rule parse: @page :left {... }
+  [CSS::Module] ok 6 -   -- css3 @page reserialized at-rule no warnings
+  [CSS::Module] ok 7 -   -- css3 @page reserialized at-rule ast
+  [CSS::Module] ok 8 - css3 @page at-rule parse: @page :right { tickety: boo; size: A3 }
+  [CSS::Module] ok 9 - css3 @page at-rule warnings
+  [CSS::Module] ok 10 - css3 @page at-rule ast
+  [CSS::Module] ok 11 - ast reserialization
+  [CSS::Module] ok 12 -   -- css3 @page reserialized at-rule parse: @page :right {... }
+  [CSS::Module] ok 13 -   -- css3 @page reserialized at-rule no warnings
+  [CSS::Module] ok 14 -   -- css3 @page reserialized at-rule ast
+  [CSS::Module] ok 15 - css3 @page at-rule parse: @PAGE :junk { margin-right: 2cm }
+  [CSS::Module] ok 16 - css3 @page at-rule warnings
+  [CSS::Module] ok 17 - css3 @page at-rule ast
+  [CSS::Module] ok 18 - ast reserialization
+  [CSS::Module] ok 19 -   -- css3 @page reserialized at-rule parse: @page {... }
+  [CSS::Module] ok 20 -   -- css3 @page reserialized at-rule no warnings
+  [CSS::Module] ok 21 -   -- css3 @page reserialized at-rule ast
+  [CSS::Module] ok 22 - css3 @page at-rule parse: @page : { margin-right: 2cm }
+  [CSS::Module] ok 23 - css3 @page at-rule warnings
+  [CSS::Module] ok 24 - css3 @page page-declarations parse: {@bottom-right-CorNeR {color:blue}}
+  [CSS::Module] ok 25 - css3 @page page-declarations no warnings
+  [CSS::Module] ok 26 - css3 @page page-declarations ast
+  [CSS::Module] ok 27 - ast reserialization
+  [CSS::Module] ok 28 -   -- css3 @page reserialized page-declarations parse: {... }
+  [CSS::Module] ok 29 -   -- css3 @page reserialized page-declarations no warnings
+  [CSS::Module] ok 30 -   -- css3 @page reserialized page-declarations ast
+  [CSS::Module] ok 31 - css3 @page page-declarations parse: { @Top-CENTER {content: 'Page ' counters(page);} }
+  [CSS::Module] ok 32 - css3 @page page-declarations no warnings
+  [CSS::Module] ok 33 - css3 @page page-declarations ast
+  [CSS::Module] ok 34 - ast reserialization
+  [CSS::Module] ok 35 -   -- css3 @page reserialized page-declarations parse: {... }
+  [CSS::Module] ok 36 -   -- css3 @page reserialized page-declarations no warnings
+  [CSS::Module] ok 37 -   -- css3 @page reserialized page-declarations ast
+  [CSS::Module] ok 38 - css3 @page at-rule parse: @page { color: red; @top-center { content: 'Page ' counters(page,'.'); } }
+  [CSS::Module] ok 39 - css3 @page at-rule no warnings
+  [CSS::Module] ok 40 - css3 @page at-rule ast
+  [CSS::Module] ok 41 - ast reserialization
+  [CSS::Module] ok 42 -   -- css3 @page reserialized at-rule parse: @page {... }
+  [CSS::Module] ok 43 -   -- css3 @page reserialized at-rule no warnings
+  [CSS::Module] ok 44 -   -- css3 @page reserialized at-rule ast
+  [CSS::Module] 1..44
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-values-and-units.t
+  [CSS::Module] # Subtest: font-size: 8vw
+  [CSS::Module]     ok 1 - css3x-units declaration parse: font-size: 8vw
+  [CSS::Module]     ok 2 - css3x-units declaration no warnings
+  [CSS::Module]     ok 3 - css3x-units declaration ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3x-units reserialized declaration parse: font-size: 8vw;
+  [CSS::Module]     ok 6 -   -- css3x-units reserialized declaration no warnings
+  [CSS::Module]     ok 7 -   -- css3x-units reserialized declaration ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 1 - font-size: 8vw
+  [CSS::Module] # Subtest: margin-left: 1.2rem
+  [CSS::Module]     ok 1 - css3x-units declaration parse: margin-left: 1.2rem
+  [CSS::Module]     ok 2 - css3x-units declaration no warnings
+  [CSS::Module]     ok 3 - css3x-units declaration ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3x-units reserialized declaration parse: margin-left: 1.2rem;
+  [CSS::Module]     ok 6 -   -- css3x-units reserialized declaration no warnings
+  [CSS::Module]     ok 7 -   -- css3x-units reserialized declaration ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 2 - margin-left: 1.2rem
+  [CSS::Module] # Subtest: azimuth: .5turn
+  [CSS::Module]     ok 1 - css3x-units declaration parse: azimuth: .5turn
+  [CSS::Module]     ok 2 - css3x-units declaration no warnings
+  [CSS::Module]     ok 3 - css3x-units declaration ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3x-units reserialized declaration parse: azimuth: 0.5turn;
+  [CSS::Module]     ok 6 -   -- css3x-units reserialized declaration no warnings
+  [CSS::Module]     ok 7 -   -- css3x-units reserialized declaration ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 3 - azimuth: .5turn
+  [CSS::Module] # Subtest: 5dppx
+  [CSS::Module]     ok 1 - css3x-units resolution parse: 5dppx
+  [CSS::Module]     ok 2 - css3x-units resolution no warnings
+  [CSS::Module]     ok 3 - css3x-units resolution ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3x-units reserialized resolution parse: 5dppx
+  [CSS::Module]     ok 6 -   -- css3x-units reserialized resolution no warnings
+  [CSS::Module]     ok 7 -   -- css3x-units reserialized resolution ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 4 - 5dppx
+  [CSS::Module] # Subtest: width: calc(100%/3 - 2*1em - 2px)
+  [CSS::Module]     ok 1 - css3x-units declaration parse: width: calc(100%/3 - 2*1em - 2px)
+  [CSS::Module]     ok 2 - css3x-units declaration no warnings
+  [CSS::Module]     ok 3 - css3x-units declaration ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3x-units reserialized declaration parse: width: calc(100% / 3 - 2 * em - 2px);
+  [CSS::Module]     ok 6 -   -- css3x-units reserialized declaration no warnings
+  [CSS::Module]     ok 7 -   -- css3x-units reserialized declaration ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 5 - width: calc(100%/3 - 2*1em - 2px)
+  [CSS::Module] # Subtest: elevation: calc(.5turn - 30deg)
+  [CSS::Module]     ok 1 - css3x-units declaration parse: elevation: calc(.5turn - 30deg)
+  [CSS::Module]     ok 2 - css3x-units declaration no warnings
+  [CSS::Module]     ok 3 - css3x-units declaration ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3x-units reserialized declaration parse: elevation: calc(0.5turn - 30deg);
+  [CSS::Module]     ok 6 -   -- css3x-units reserialized declaration no warnings
+  [CSS::Module]     ok 7 -   -- css3x-units reserialized declaration ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 6 - elevation: calc(.5turn - 30deg)
+  [CSS::Module] # Subtest: pause: calc(2s/3.1 - 100ms)
+  [CSS::Module]     ok 1 - css3x-units declaration parse: pause: calc(2s/3.1 - 100ms)
+  [CSS::Module]     ok 2 - css3x-units declaration no warnings
+  [CSS::Module]     ok 3 - css3x-units declaration ast
+  [CSS::Module]     ok 4 - ast reserialization
+  [CSS::Module]     ok 5 -   -- css3x-units reserialized declaration parse: pause: calc(2s / 3.1 - 100ms);
+  [CSS::Module]     ok 6 -   -- css3x-units reserialized declaration no warnings
+  [CSS::Module]     ok 7 -   -- css3x-units reserialized declaration ast
+  [CSS::Module]     1..7
+  [CSS::Module] ok 7 - pause: calc(2s/3.1 - 100ms)
+  [CSS::Module] 1..7
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/error-handling.t
+  [CSS::Module] ok 1 - css3 declarations parse: {background:url('http://www.bg.com/pinkish.gif')}
+  [CSS::Module] ok 2 - css3 declarations no warnings
+  [CSS::Module] ok 3 - css3 declarations ast
+  [CSS::Module] ok 4 - ast reserialization
+  [CSS::Module] ok 5 -   -- css3 reserialized declarations parse: {... }
+  [CSS::Module] ok 6 -   -- css3 reserialized declarations no warnings
+  [CSS::Module] ok 7 -   -- css3 reserialized declarations ast
+  [CSS::Module] ok 8 - css3 declarations parse: {background:URL(http://www.bg.com/pinkish.gif)}
+  [CSS::Module] ok 9 - css3 declarations no warnings
+  [CSS::Module] ok 10 - css3 declarations ast
+  [CSS::Module] ok 11 - ast reserialization
+  [CSS::Module] ok 12 -   -- css3 reserialized declarations parse: {... }
+  [CSS::Module] ok 13 -   -- css3 reserialized declarations no warnings
+  [CSS::Module] ok 14 -   -- css3 reserialized declarations ast
+  [CSS::Module] ok 15 - css3 declarations parse: {background:URL(http://www.bg.com/pinkish.gif
+  [CSS::Module] # }
+  [CSS::Module] ok 16 - css3 declarations warnings
+  [CSS::Module] ok 17 - css3 declarations ast
+  [CSS::Module] ok 18 - ast reserialization
+  [CSS::Module] ok 19 -   -- css3 reserialized declarations parse: {... }
+  [CSS::Module] ok 20 -   -- css3 reserialized declarations no warnings
+  [CSS::Module] ok 21 -   -- css3 reserialized declarations ast
+  [CSS::Module] ok 22 - css3 declarations parse: {background:URL('http://www.bg.com/pinkish.gif
+  [CSS::Module] # }
+  [CSS::Module] ok 23 - css3 declarations warnings
+  [CSS::Module] ok 24 - css3 ruleset parse: h1 { color: red; rotation: 70minutes }
+  [CSS::Module] ok 25 - css3 ruleset warnings
+  [CSS::Module] ok 26 - css3 ruleset ast
+  [CSS::Module] ok 27 - ast reserialization
+  [CSS::Module] ok 28 -   -- css3 reserialized ruleset parse: h1 {... }
+  [CSS::Module] ok 29 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 30 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 31 - css3 ruleset parse: h1 {content:'kept1'; color: dropped1 rgb(10,20,30 dropped2; font-family:kept2}
+  [CSS::Module] ok 32 - css3 ruleset warnings
+  [CSS::Module] ok 33 - css3 ruleset ast
+  [CSS::Module] ok 34 - ast reserialization
+  [CSS::Module] ok 35 -   -- css3 reserialized ruleset parse: h1 {... }
+  [CSS::Module] ok 36 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 37 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 38 - css3 ruleset parse: h1 {color:red; content:'Section' counter(hdr-1)}
+  [CSS::Module] ok 39 - css3 ruleset no warnings
+  [CSS::Module] ok 40 - css3 ruleset ast
+  [CSS::Module] ok 41 - ast reserialization
+  [CSS::Module] ok 42 -   -- css3 reserialized ruleset parse: h1 {... }
+  [CSS::Module] ok 43 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 44 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 45 - css3 ruleset parse: h2 {bad: dropme 'http://unclosed-string.org; color:blue;
+  [CSS::Module] #     background-color: \#ccc;}
+  [CSS::Module] ok 46 - css3 ruleset warnings
+  [CSS::Module] ok 47 - css3 ruleset ast
+  [CSS::Module] ok 48 - ast reserialization
+  [CSS::Module] ok 49 -   -- css3 reserialized ruleset parse: h2 {... }
+  [CSS::Module] ok 50 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 51 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 52 - css3 ruleset parse: p { color:rgb(10,17); }
+  [CSS::Module] ok 53 - css3 ruleset warnings
+  [CSS::Module] ok 54 - css3 ruleset ast
+  [CSS::Module] ok 55 - ast reserialization
+  [CSS::Module] ok 56 -   -- css3 reserialized ruleset parse: p {... }
+  [CSS::Module] ok 57 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 58 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 59 - css3 ruleset parse: p:foo(42) { color: \#abc; }
+  [CSS::Module] ok 60 - css3 ruleset warnings
+  [CSS::Module] ok 61 - css3 ruleset parse: p { color:bar({37+5}); }
+  [CSS::Module] ok 62 - css3 ruleset warnings
+  [CSS::Module] ok 63 - css3 ruleset parse: p { color }
+  [CSS::Module] ok 64 - css3 ruleset warnings
+  [CSS::Module] ok 65 - css3 ruleset ast
+  [CSS::Module] ok 66 - ast reserialization
+  [CSS::Module] ok 67 -   -- css3 reserialized ruleset parse: p {... }
+  [CSS::Module] ok 68 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 69 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 70 - css3 ruleset parse: p { content:'a'; color; font-family:b }
+  [CSS::Module] ok 71 - css3 ruleset warnings
+  [CSS::Module] ok 72 - css3 ruleset ast
+  [CSS::Module] ok 73 - ast reserialization
+  [CSS::Module] ok 74 -   -- css3 reserialized ruleset parse: p {... }
+  [CSS::Module] ok 75 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 76 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 77 - css3 ruleset parse: p {content:'a'; color: }
+  [CSS::Module] ok 78 - css3 ruleset warnings
+  [CSS::Module] ok 79 - css3 ruleset ast
+  [CSS::Module] ok 80 - ast reserialization
+  [CSS::Module] ok 81 -   -- css3 reserialized ruleset parse: p {... }
+  [CSS::Module] ok 82 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 83 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 84 - css3 ruleset parse: p { content:'a'; color:; font-family:b }
+  [CSS::Module] ok 85 - css3 ruleset warnings
+  [CSS::Module] ok 86 - css3 ruleset ast
+  [CSS::Module] ok 87 - ast reserialization
+  [CSS::Module] ok 88 -   -- css3 reserialized ruleset parse: p {... }
+  [CSS::Module] ok 89 -   -- css3 reserialized ruleset no warnings
+  [CSS::Module] ok 90 -   -- css3 reserialized ruleset ast
+  [CSS::Module] ok 91 - css3 ruleset parse: p { content:'a'; color{;color:maroon} }
+  [CSS::Module] ok 92 - css3 ruleset warnings
+  [CSS::Module] ok 93 - css3 ruleset parse: p { content:'a'; color{;color:maroon}; color:green }
+  [CSS::Module] ok 94 - css3 ruleset warnings
+  [CSS::Module] ok 95 - css3 stylesheet parse: p @here {color: red}
+  [CSS::Module] ok 96 - css3 stylesheet warnings
+  [CSS::Module] ok 97 - css3 stylesheet parse: @foo @bar;
+  [CSS::Module] ok 98 - css3 stylesheet warnings
+  [CSS::Module] ok 99 - css3 stylesheet parse: }} {{ - }}
+  [CSS::Module] ok 100 - css3 stylesheet warnings
+  [CSS::Module] ok 101 - css3 stylesheet parse: h1, h2 {color: green }... h6 {color: black }
+  [CSS::Module] ok 102 - css3 stylesheet warnings
+  [CSS::Module] ok 103 - css3 stylesheet ast
+  [CSS::Module] ok 104 - ast reserialization
+  [CSS::Module] ok 105 -   -- css3 reserialized stylesheet parse: h1, h2 {... }
+  [CSS::Module] ok 106 -   -- css3 reserialized stylesheet no warnings
+  [CSS::Module] ok 107 -   -- css3 reserialized stylesheet ast
+  [CSS::Module] ok 108 - css3 stylesheet parse: @three-dee { @background-lighting { azimuth: 30deg; elevation: 190deg; } h1 { color: red } }  h1 { color: blue }
+  [CSS::Module] ok 109 - css3 stylesheet warnings
+  [CSS::Module] ok 110 - css3 stylesheet ast
+  [CSS::Module] ok 111 - ast reserialization
+  [CSS::Module] ok 112 -   -- css3 reserialized stylesheet parse: h1 {... }
+  [CSS::Module] ok 113 -   -- css3 reserialized stylesheet no warnings
+  [CSS::Module] ok 114 -   -- css3 reserialized stylesheet ast
+  [CSS::Module] ok 115 - css3 stylesheet parse: @media print and (width: 21cm) { @page { margin: 3cm; @top-center { content: 'Page ' counter(page); }}}
+  [CSS::Module] ok 116 - css3 stylesheet no warnings
+  [CSS::Module] ok 117 - css3 stylesheet ast
+  [CSS::Module] ok 118 - ast reserialization
+  [CSS::Module] ok 119 -   -- css3 reserialized stylesheet parse: @media print and (width: 21cm) {... }
+  [CSS::Module] ok 120 -   -- css3 reserialized stylesheet no warnings
+  [CSS::Module] ok 121 -   -- css3 reserialized stylesheet ast
+  [CSS::Module] ok 122 - css3 stylesheet parse: * foo|* |h1 body:not(.home) h2 + p:first-letter tr:nth-last-child(-n+2) object[type^='image/'] {color:blue}
+  [CSS::Module] ok 123 - css3 stylesheet no warnings
+  [CSS::Module] ok 124 - css3 stylesheet ast
+  [CSS::Module] ok 125 - ast reserialization
+  [CSS::Module] ok 126 -   -- css3 reserialized stylesheet parse: * foo|* |h1 body:not(.home) h2 + p::first-letter tr:nth-last-child(-n+2) object[type^='image/'] {... }
+  [CSS::Module] ok 127 -   -- css3 reserialized stylesheet no warnings
+  [CSS::Module] ok 128 -   -- css3 reserialized stylesheet ast
+  [CSS::Module] 1..128
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/module-extensions.t
+  [CSS::Module] ok 1 - index
+  [CSS::Module] ok 2 - index
+  [CSS::Module] ok 3 - module.name
+  [CSS::Module] ok 4 - css3 grammar
+  [CSS::Module] ok 5 - css3 actions
+  [CSS::Module] ok 6 - 'like' extension property
+  [CSS::Module] ok 7 - coerced extension property
+  [CSS::Module] ok 8 - alias extension property
+  [CSS::Module] ok 9 - misc extension property
+  [CSS::Module] ok 10 - misc extension property
+  [CSS::Module] ok 11 - extensions are isolated
+  [CSS::Module] 1..11
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/module-vivify.t
+  [CSS::Module] ok 1 - 
+  [CSS::Module] ok 2 - 
+  [CSS::Module] ok 3 - 
+  [CSS::Module] ok 4 - 
+  [CSS::Module] ok 5 - 
+  [CSS::Module] ok 6 - 
+  [CSS::Module] 1..6
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/module.t
+  [CSS::Module] ok 1 - CSS::Specification version
+  [CSS::Module] ok 2 - css1 grammar
+  [CSS::Module] ok 3 - css1 actions
+  [CSS::Module] ok 4 - css1 does not have azimuth
+  [CSS::Module] ok 5 - css1 border
+  [CSS::Module] ok 6 - css1 border-style
+  [CSS::Module] ok 7 - module.parse-property method
+  [CSS::Module] ok 8 - module.parse-property method
+  [CSS::Module] ok 9 - module.parse-property failure
+  [CSS::Module] ok 10 - colors
+  [CSS::Module] ok 11 - 
+  [CSS::Module] ok 12 - 
+  [CSS::Module] ok 13 - 
+  [CSS::Module] ok 14 - 
+  [CSS::Module] ok 15 - 
+  [CSS::Module] ok 16 - 
+  [CSS::Module] ok 17 - 
+  [CSS::Module] ok 18 - 
+  [CSS::Module] ok 19 - 
+  [CSS::Module] ok 20 - css21 grammar
+  [CSS::Module] ok 21 - css21 actions
+  [CSS::Module] ok 22 - css21 has azimuth
+  [CSS::Module] ok 23 - css21 border
+  [CSS::Module] ok 24 - css21 border-style
+  [CSS::Module] ok 25 - css21 alias property metadata
+  [CSS::Module] ok 26 - css21 alias property metadata
+  [CSS::Module] ok 27 - colors
+  [CSS::Module] ok 28 - 
+  [CSS::Module] ok 29 - 
+  [CSS::Module] ok 30 - 
+  [CSS::Module] ok 31 - module.name
+  [CSS::Module] ok 32 - css3 grammar
+  [CSS::Module] ok 33 - css3 actions
+  [CSS::Module] ok 34 - css3 azimuth
+  [CSS::Module] ok 35 - css3 border
+  [CSS::Module] ok 36 - css3 border-style
+  [CSS::Module] ok 37 - colors
+  [CSS::Module] ok 38 - 
+  [CSS::Module] ok 39 - 
+  [CSS::Module] ok 40 - 
+  [CSS::Module] ok 41 - @font-face grammar
+  [CSS::Module] ok 42 - @font-face actions
+  [CSS::Module] ok 43 - @font-face font-style
+  [CSS::Module] ok 44 - svg grammar
+  [CSS::Module] ok 45 - svg actions
+  [CSS::Module] ok 46 - svg azimuth
+  [CSS::Module] ok 47 - svg alignment-baseline
+  [CSS::Module] ok 48 - svg font-style
+  [CSS::Module] 1..48
+  [CSS::Module] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/svg-properties.t
+  [CSS::Module] ok 1 - SVG declarations parse: {alignment-baseline: after-edge}
+  [CSS::Module] ok 2 - SVG declarations no warnings
+  [CSS::Module] ok 3 - SVG declarations ast
+  [CSS::Module] ok 4 - ast reserialization
+  [CSS::Module] ok 5 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 6 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 7 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 8 - SVG alignment-baseline: able to parse unexpected input
+  [CSS::Module] ok 9 - SVG alignment-baseline: unexpected input produces warning
+  [CSS::Module] ok 10 - SVG declarations parse: {alignment-baseline: inherit}
+  [CSS::Module] ok 11 - SVG declarations no warnings
+  [CSS::Module] ok 12 - SVG declarations ast
+  [CSS::Module] ok 13 - SVG declarations parse: {alignment-baseline: initial}
+  [CSS::Module] ok 14 - SVG declarations no warnings
+  [CSS::Module] ok 15 - SVG declarations ast
+  [CSS::Module] ok 16 - SVG declarations parse: {alignment-baseline: baseline}
+  [CSS::Module] ok 17 - SVG declarations no warnings
+  [CSS::Module] ok 18 - SVG declarations ast
+  [CSS::Module] ok 19 - ast reserialization
+  [CSS::Module] ok 20 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 21 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 22 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 23 - SVG declarations parse: {baseline-shift: super}
+  [CSS::Module] ok 24 - SVG declarations no warnings
+  [CSS::Module] ok 25 - SVG declarations ast
+  [CSS::Module] ok 26 - ast reserialization
+  [CSS::Module] ok 27 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 28 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 29 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 30 - SVG baseline-shift: able to parse unexpected input
+  [CSS::Module] ok 31 - SVG baseline-shift: unexpected input produces warning
+  [CSS::Module] ok 32 - SVG declarations parse: {baseline-shift: inherit}
+  [CSS::Module] ok 33 - SVG declarations no warnings
+  [CSS::Module] ok 34 - SVG declarations ast
+  [CSS::Module] ok 35 - SVG declarations parse: {baseline-shift: initial}
+  [CSS::Module] ok 36 - SVG declarations no warnings
+  [CSS::Module] ok 37 - SVG declarations ast
+  [CSS::Module] ok 38 - SVG declarations parse: {baseline-shift: 1.5em}
+  [CSS::Module] ok 39 - SVG declarations no warnings
+  [CSS::Module] ok 40 - SVG declarations ast
+  [CSS::Module] ok 41 - ast reserialization
+  [CSS::Module] ok 42 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 43 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 44 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 45 - SVG declarations parse: {baseline-shift: 4%}
+  [CSS::Module] ok 46 - SVG declarations no warnings
+  [CSS::Module] ok 47 - SVG declarations ast
+  [CSS::Module] ok 48 - ast reserialization
+  [CSS::Module] ok 49 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 50 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 51 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 52 - SVG declarations parse: {color: red}
+  [CSS::Module] ok 53 - SVG declarations no warnings
+  [CSS::Module] ok 54 - SVG declarations ast
+  [CSS::Module] ok 55 - ast reserialization
+  [CSS::Module] ok 56 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 57 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 58 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 59 - SVG color: able to parse unexpected input
+  [CSS::Module] ok 60 - SVG color: unexpected input produces warning
+  [CSS::Module] ok 61 - SVG declarations parse: {color: inherit}
+  [CSS::Module] ok 62 - SVG declarations no warnings
+  [CSS::Module] ok 63 - SVG declarations ast
+  [CSS::Module] ok 64 - SVG declarations parse: {color: initial}
+  [CSS::Module] ok 65 - SVG declarations no warnings
+  [CSS::Module] ok 66 - SVG declarations ast
+  [CSS::Module] ok 67 - SVG declarations parse: {color: rgb(10,20,30)}
+  [CSS::Module] ok 68 - SVG declarations no warnings
+  [CSS::Module] ok 69 - SVG declarations ast
+  [CSS::Module] ok 70 - ast reserialization
+  [CSS::Module] ok 71 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 72 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 73 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 74 - SVG declarations parse: {color-interpolation: sRGB}
+  [CSS::Module] ok 75 - SVG declarations no warnings
+  [CSS::Module] ok 76 - SVG declarations ast
+  [CSS::Module] ok 77 - ast reserialization
+  [CSS::Module] ok 78 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 79 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 80 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 81 - SVG color-interpolation: able to parse unexpected input
+  [CSS::Module] ok 82 - SVG color-interpolation: unexpected input produces warning
+  [CSS::Module] ok 83 - SVG declarations parse: {color-interpolation: inherit}
+  [CSS::Module] ok 84 - SVG declarations no warnings
+  [CSS::Module] ok 85 - SVG declarations ast
+  [CSS::Module] ok 86 - SVG declarations parse: {color-interpolation: initial}
+  [CSS::Module] ok 87 - SVG declarations no warnings
+  [CSS::Module] ok 88 - SVG declarations ast
+  [CSS::Module] ok 89 - SVG declarations parse: {color-interpolation: Srgb}
+  [CSS::Module] ok 90 - SVG declarations no warnings
+  [CSS::Module] ok 91 - SVG declarations ast
+  [CSS::Module] ok 92 - ast reserialization
+  [CSS::Module] ok 93 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 94 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 95 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 96 - SVG declarations parse: {color-interpolation-filters: Srgb}
+  [CSS::Module] ok 97 - SVG declarations no warnings
+  [CSS::Module] ok 98 - SVG declarations ast
+  [CSS::Module] ok 99 - ast reserialization
+  [CSS::Module] ok 100 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 101 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 102 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 103 - SVG color-interpolation-filters: able to parse unexpected input
+  [CSS::Module] ok 104 - SVG color-interpolation-filters: unexpected input produces warning
+  [CSS::Module] ok 105 - SVG declarations parse: {color-interpolation-filters: inherit}
+  [CSS::Module] ok 106 - SVG declarations no warnings
+  [CSS::Module] ok 107 - SVG declarations ast
+  [CSS::Module] ok 108 - SVG declarations parse: {color-interpolation-filters: initial}
+  [CSS::Module] ok 109 - SVG declarations no warnings
+  [CSS::Module] ok 110 - SVG declarations ast
+  [CSS::Module] ok 111 - SVG declarations parse: {color-rendering: optimizeSpeed}
+  [CSS::Module] ok 112 - SVG declarations no warnings
+  [CSS::Module] ok 113 - SVG declarations ast
+  [CSS::Module] ok 114 - ast reserialization
+  [CSS::Module] ok 115 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 116 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 117 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 118 - SVG color-rendering: able to parse unexpected input
+  [CSS::Module] ok 119 - SVG color-rendering: unexpected input produces warning
+  [CSS::Module] ok 120 - SVG declarations parse: {color-rendering: inherit}
+  [CSS::Module] ok 121 - SVG declarations no warnings
+  [CSS::Module] ok 122 - SVG declarations ast
+  [CSS::Module] ok 123 - SVG declarations parse: {color-rendering: initial}
+  [CSS::Module] ok 124 - SVG declarations no warnings
+  [CSS::Module] ok 125 - SVG declarations ast
+  [CSS::Module] ok 126 - SVG declarations parse: {cursor: e-resize}
+  [CSS::Module] ok 127 - SVG declarations no warnings
+  [CSS::Module] ok 128 - SVG declarations ast
+  [CSS::Module] ok 129 - ast reserialization
+  [CSS::Module] ok 130 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 131 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 132 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 133 - SVG cursor: able to parse unexpected input
+  [CSS::Module] ok 134 - SVG cursor: unexpected input produces warning
+  [CSS::Module] ok 135 - SVG declarations parse: {cursor: inherit}
+  [CSS::Module] ok 136 - SVG declarations no warnings
+  [CSS::Module] ok 137 - SVG declarations ast
+  [CSS::Module] ok 138 - SVG declarations parse: {cursor: initial}
+  [CSS::Module] ok 139 - SVG declarations no warnings
+  [CSS::Module] ok 140 - SVG declarations ast
+  [CSS::Module] ok 141 - SVG declarations parse: {direction: ltr}
+  [CSS::Module] ok 142 - SVG declarations no warnings
+  [CSS::Module] ok 143 - SVG declarations ast
+  [CSS::Module] ok 144 - ast reserialization
+  [CSS::Module] ok 145 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 146 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 147 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 148 - SVG direction: able to parse unexpected input
+  [CSS::Module] ok 149 - SVG direction: unexpected input produces warning
+  [CSS::Module] ok 150 - SVG declarations parse: {direction: inherit}
+  [CSS::Module] ok 151 - SVG declarations no warnings
+  [CSS::Module] ok 152 - SVG declarations ast
+  [CSS::Module] ok 153 - SVG declarations parse: {direction: initial}
+  [CSS::Module] ok 154 - SVG declarations no warnings
+  [CSS::Module] ok 155 - SVG declarations ast
+  [CSS::Module] ok 156 - SVG declarations parse: {display: table-cell}
+  [CSS::Module] ok 157 - SVG declarations no warnings
+  [CSS::Module] ok 158 - SVG declarations ast
+  [CSS::Module] ok 159 - ast reserialization
+  [CSS::Module] ok 160 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 161 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 162 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 163 - SVG display: able to parse unexpected input
+  [CSS::Module] ok 164 - SVG display: unexpected input produces warning
+  [CSS::Module] ok 165 - SVG declarations parse: {display: inherit}
+  [CSS::Module] ok 166 - SVG declarations no warnings
+  [CSS::Module] ok 167 - SVG declarations ast
+  [CSS::Module] ok 168 - SVG declarations parse: {display: initial}
+  [CSS::Module] ok 169 - SVG declarations no warnings
+  [CSS::Module] ok 170 - SVG declarations ast
+  [CSS::Module] ok 171 - SVG declarations parse: {dominant-baseline: hanging}
+  [CSS::Module] ok 172 - SVG declarations no warnings
+  [CSS::Module] ok 173 - SVG declarations ast
+  [CSS::Module] ok 174 - ast reserialization
+  [CSS::Module] ok 175 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 176 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 177 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 178 - SVG dominant-baseline: able to parse unexpected input
+  [CSS::Module] ok 179 - SVG dominant-baseline: unexpected input produces warning
+  [CSS::Module] ok 180 - SVG declarations parse: {dominant-baseline: inherit}
+  [CSS::Module] ok 181 - SVG declarations no warnings
+  [CSS::Module] ok 182 - SVG declarations ast
+  [CSS::Module] ok 183 - SVG declarations parse: {dominant-baseline: initial}
+  [CSS::Module] ok 184 - SVG declarations no warnings
+  [CSS::Module] ok 185 - SVG declarations ast
+  [CSS::Module] ok 186 - SVG declarations parse: {fill: rgb(10,20,10%)}
+  [CSS::Module] ok 187 - SVG declarations no warnings
+  [CSS::Module] ok 188 - SVG declarations ast
+  [CSS::Module] ok 189 - ast reserialization
+  [CSS::Module] ok 190 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 191 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 192 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 193 - SVG fill: able to parse unexpected input
+  [CSS::Module] ok 194 - SVG fill: unexpected input produces warning
+  [CSS::Module] ok 195 - SVG declarations parse: {fill: inherit}
+  [CSS::Module] ok 196 - SVG declarations no warnings
+  [CSS::Module] ok 197 - SVG declarations ast
+  [CSS::Module] ok 198 - SVG declarations parse: {fill: initial}
+  [CSS::Module] ok 199 - SVG declarations no warnings
+  [CSS::Module] ok 200 - SVG declarations ast
+  [CSS::Module] ok 201 - SVG declarations parse: {fill-opacity: 0.75}
+  [CSS::Module] ok 202 - SVG declarations no warnings
+  [CSS::Module] ok 203 - SVG declarations ast
+  [CSS::Module] ok 204 - ast reserialization
+  [CSS::Module] ok 205 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 206 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 207 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 208 - SVG fill-opacity: able to parse unexpected input
+  [CSS::Module] ok 209 - SVG fill-opacity: unexpected input produces warning
+  [CSS::Module] ok 210 - SVG declarations parse: {fill-opacity: inherit}
+  [CSS::Module] ok 211 - SVG declarations no warnings
+  [CSS::Module] ok 212 - SVG declarations ast
+  [CSS::Module] ok 213 - SVG declarations parse: {fill-opacity: initial}
+  [CSS::Module] ok 214 - SVG declarations no warnings
+  [CSS::Module] ok 215 - SVG declarations ast
+  [CSS::Module] ok 216 - SVG declarations parse: {fill-opacity: 75%}
+  [CSS::Module] ok 217 - SVG declarations no warnings
+  [CSS::Module] ok 218 - SVG declarations ast
+  [CSS::Module] ok 219 - ast reserialization
+  [CSS::Module] ok 220 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 221 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 222 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 223 - SVG declarations parse: {fill-rule: evenOdD}
+  [CSS::Module] ok 224 - SVG declarations no warnings
+  [CSS::Module] ok 225 - SVG declarations ast
+  [CSS::Module] ok 226 - ast reserialization
+  [CSS::Module] ok 227 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 228 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 229 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 230 - SVG fill-rule: able to parse unexpected input
+  [CSS::Module] ok 231 - SVG fill-rule: unexpected input produces warning
+  [CSS::Module] ok 232 - SVG declarations parse: {fill-rule: inherit}
+  [CSS::Module] ok 233 - SVG declarations no warnings
+  [CSS::Module] ok 234 - SVG declarations ast
+  [CSS::Module] ok 235 - SVG declarations parse: {fill-rule: initial}
+  [CSS::Module] ok 236 - SVG declarations no warnings
+  [CSS::Module] ok 237 - SVG declarations ast
+  [CSS::Module] ok 238 - SVG declarations parse: {font: 12pt/14pt sans-serif}
+  [CSS::Module] ok 239 - SVG declarations no warnings
+  [CSS::Module] ok 240 - SVG declarations ast
+  [CSS::Module] ok 241 - ast reserialization
+  [CSS::Module] ok 242 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 243 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 244 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 245 - SVG font: able to parse unexpected input
+  [CSS::Module] ok 246 - SVG font: unexpected input produces warning
+  [CSS::Module] ok 247 - SVG declarations parse: {font: inherit}
+  [CSS::Module] ok 248 - SVG declarations no warnings
+  [CSS::Module] ok 249 - SVG declarations ast
+  [CSS::Module] ok 250 - SVG declarations parse: {font: initial}
+  [CSS::Module] ok 251 - SVG declarations no warnings
+  [CSS::Module] ok 252 - SVG declarations ast
+  [CSS::Module] ok 253 - SVG declarations parse: {font-size-adjust: .7}
+  [CSS::Module] ok 254 - SVG declarations no warnings
+  [CSS::Module] ok 255 - SVG declarations ast
+  [CSS::Module] ok 256 - ast reserialization
+  [CSS::Module] ok 257 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 258 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 259 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 260 - SVG font-size-adjust: able to parse unexpected input
+  [CSS::Module] ok 261 - SVG font-size-adjust: unexpected input produces warning
+  [CSS::Module] ok 262 - SVG declarations parse: {font-size-adjust: inherit}
+  [CSS::Module] ok 263 - SVG declarations no warnings
+  [CSS::Module] ok 264 - SVG declarations ast
+  [CSS::Module] ok 265 - SVG declarations parse: {font-size-adjust: initial}
+  [CSS::Module] ok 266 - SVG declarations no warnings
+  [CSS::Module] ok 267 - SVG declarations ast
+  [CSS::Module] ok 268 - SVG declarations parse: {font-variant: small-Caps}
+  [CSS::Module] ok 269 - SVG declarations no warnings
+  [CSS::Module] ok 270 - SVG declarations ast
+  [CSS::Module] ok 271 - ast reserialization
+  [CSS::Module] ok 272 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 273 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 274 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 275 - SVG font-variant: able to parse unexpected input
+  [CSS::Module] ok 276 - SVG font-variant: unexpected input produces warning
+  [CSS::Module] ok 277 - SVG declarations parse: {font-variant: inherit}
+  [CSS::Module] ok 278 - SVG declarations no warnings
+  [CSS::Module] ok 279 - SVG declarations ast
+  [CSS::Module] ok 280 - SVG declarations parse: {font-variant: initial}
+  [CSS::Module] ok 281 - SVG declarations no warnings
+  [CSS::Module] ok 282 - SVG declarations ast
+  [CSS::Module] ok 283 - SVG declarations parse: {glyph-orientation-vertical: 45deg}
+  [CSS::Module] ok 284 - SVG declarations no warnings
+  [CSS::Module] ok 285 - SVG declarations ast
+  [CSS::Module] ok 286 - ast reserialization
+  [CSS::Module] ok 287 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 288 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 289 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 290 - SVG glyph-orientation-vertical: able to parse unexpected input
+  [CSS::Module] ok 291 - SVG glyph-orientation-vertical: unexpected input produces warning
+  [CSS::Module] ok 292 - SVG declarations parse: {glyph-orientation-vertical: inherit}
+  [CSS::Module] ok 293 - SVG declarations no warnings
+  [CSS::Module] ok 294 - SVG declarations ast
+  [CSS::Module] ok 295 - SVG declarations parse: {glyph-orientation-vertical: initial}
+  [CSS::Module] ok 296 - SVG declarations no warnings
+  [CSS::Module] ok 297 - SVG declarations ast
+  [CSS::Module] ok 298 - SVG declarations parse: {glyph-orientation-vertical: 7}
+  [CSS::Module] ok 299 - SVG declarations no warnings
+  [CSS::Module] ok 300 - SVG declarations ast
+  [CSS::Module] ok 301 - ast reserialization
+  [CSS::Module] ok 302 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 303 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 304 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 305 - SVG declarations parse: {image-rendering: optimizeQuality}
+  [CSS::Module] ok 306 - SVG declarations no warnings
+  [CSS::Module] ok 307 - SVG declarations ast
+  [CSS::Module] ok 308 - ast reserialization
+  [CSS::Module] ok 309 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 310 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 311 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 312 - SVG image-rendering: able to parse unexpected input
+  [CSS::Module] ok 313 - SVG image-rendering: unexpected input produces warning
+  [CSS::Module] ok 314 - SVG declarations parse: {image-rendering: inherit}
+  [CSS::Module] ok 315 - SVG declarations no warnings
+  [CSS::Module] ok 316 - SVG declarations ast
+  [CSS::Module] ok 317 - SVG declarations parse: {image-rendering: initial}
+  [CSS::Module] ok 318 - SVG declarations no warnings
+  [CSS::Module] ok 319 - SVG declarations ast
+  [CSS::Module] ok 320 - SVG declarations parse: {letter-spacing: normal}
+  [CSS::Module] ok 321 - SVG declarations no warnings
+  [CSS::Module] ok 322 - SVG declarations ast
+  [CSS::Module] ok 323 - ast reserialization
+  [CSS::Module] ok 324 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 325 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 326 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 327 - SVG letter-spacing: able to parse unexpected input
+  [CSS::Module] ok 328 - SVG letter-spacing: unexpected input produces warning
+  [CSS::Module] ok 329 - SVG declarations parse: {letter-spacing: inherit}
+  [CSS::Module] ok 330 - SVG declarations no warnings
+  [CSS::Module] ok 331 - SVG declarations ast
+  [CSS::Module] ok 332 - SVG declarations parse: {letter-spacing: initial}
+  [CSS::Module] ok 333 - SVG declarations no warnings
+  [CSS::Module] ok 334 - SVG declarations ast
+  [CSS::Module] ok 335 - SVG declarations parse: {lighting-color: blue}
+  [CSS::Module] ok 336 - SVG declarations no warnings
+  [CSS::Module] ok 337 - SVG declarations ast
+  [CSS::Module] ok 338 - ast reserialization
+  [CSS::Module] ok 339 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 340 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 341 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 342 - SVG lighting-color: able to parse unexpected input
+  [CSS::Module] ok 343 - SVG lighting-color: unexpected input produces warning
+  [CSS::Module] ok 344 - SVG declarations parse: {lighting-color: inherit}
+  [CSS::Module] ok 345 - SVG declarations no warnings
+  [CSS::Module] ok 346 - SVG declarations ast
+  [CSS::Module] ok 347 - SVG declarations parse: {lighting-color: initial}
+  [CSS::Module] ok 348 - SVG declarations no warnings
+  [CSS::Module] ok 349 - SVG declarations ast
+  [CSS::Module] ok 350 - SVG declarations parse: {line-height: 90%}
+  [CSS::Module] ok 351 - SVG declarations no warnings
+  [CSS::Module] ok 352 - SVG declarations ast
+  [CSS::Module] ok 353 - ast reserialization
+  [CSS::Module] ok 354 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 355 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 356 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 357 - SVG line-height: able to parse unexpected input
+  [CSS::Module] ok 358 - SVG line-height: unexpected input produces warning
+  [CSS::Module] ok 359 - SVG declarations parse: {line-height: inherit}
+  [CSS::Module] ok 360 - SVG declarations no warnings
+  [CSS::Module] ok 361 - SVG declarations ast
+  [CSS::Module] ok 362 - SVG declarations parse: {line-height: initial}
+  [CSS::Module] ok 363 - SVG declarations no warnings
+  [CSS::Module] ok 364 - SVG declarations ast
+  [CSS::Module] ok 365 - SVG declarations parse: {line-height: normal}
+  [CSS::Module] ok 366 - SVG declarations no warnings
+  [CSS::Module] ok 367 - SVG declarations ast
+  [CSS::Module] ok 368 - ast reserialization
+  [CSS::Module] ok 369 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 370 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 371 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 372 - SVG declarations parse: {line-height: 42}
+  [CSS::Module] ok 373 - SVG declarations no warnings
+  [CSS::Module] ok 374 - SVG declarations ast
+  [CSS::Module] ok 375 - ast reserialization
+  [CSS::Module] ok 376 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 377 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 378 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 379 - SVG declarations parse: {marker-start: none}
+  [CSS::Module] ok 380 - SVG declarations no warnings
+  [CSS::Module] ok 381 - SVG declarations ast
+  [CSS::Module] ok 382 - ast reserialization
+  [CSS::Module] ok 383 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 384 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 385 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 386 - SVG marker-start: able to parse unexpected input
+  [CSS::Module] ok 387 - SVG marker-start: unexpected input produces warning
+  [CSS::Module] ok 388 - SVG declarations parse: {marker-start: inherit}
+  [CSS::Module] ok 389 - SVG declarations no warnings
+  [CSS::Module] ok 390 - SVG declarations ast
+  [CSS::Module] ok 391 - SVG declarations parse: {marker-start: initial}
+  [CSS::Module] ok 392 - SVG declarations no warnings
+  [CSS::Module] ok 393 - SVG declarations ast
+  [CSS::Module] ok 394 - SVG declarations parse: {marker-start: url(http://www.example.com/pinkish.gif)}
+  [CSS::Module] ok 395 - SVG declarations no warnings
+  [CSS::Module] ok 396 - SVG declarations ast
+  [CSS::Module] ok 397 - ast reserialization
+  [CSS::Module] ok 398 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 399 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 400 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 401 - SVG declarations parse: {marker-mid: none}
+  [CSS::Module] ok 402 - SVG declarations no warnings
+  [CSS::Module] ok 403 - SVG declarations ast
+  [CSS::Module] ok 404 - ast reserialization
+  [CSS::Module] ok 405 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 406 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 407 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 408 - SVG marker-mid: able to parse unexpected input
+  [CSS::Module] ok 409 - SVG marker-mid: unexpected input produces warning
+  [CSS::Module] ok 410 - SVG declarations parse: {marker-mid: inherit}
+  [CSS::Module] ok 411 - SVG declarations no warnings
+  [CSS::Module] ok 412 - SVG declarations ast
+  [CSS::Module] ok 413 - SVG declarations parse: {marker-mid: initial}
+  [CSS::Module] ok 414 - SVG declarations no warnings
+  [CSS::Module] ok 415 - SVG declarations ast
+  [CSS::Module] ok 416 - SVG declarations parse: {marker-end: none}
+  [CSS::Module] ok 417 - SVG declarations no warnings
+  [CSS::Module] ok 418 - SVG declarations ast
+  [CSS::Module] ok 419 - ast reserialization
+  [CSS::Module] ok 420 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 421 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 422 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 423 - SVG marker-end: able to parse unexpected input
+  [CSS::Module] ok 424 - SVG marker-end: unexpected input produces warning
+  [CSS::Module] ok 425 - SVG declarations parse: {marker-end: inherit}
+  [CSS::Module] ok 426 - SVG declarations no warnings
+  [CSS::Module] ok 427 - SVG declarations ast
+  [CSS::Module] ok 428 - SVG declarations parse: {marker-end: initial}
+  [CSS::Module] ok 429 - SVG declarations no warnings
+  [CSS::Module] ok 430 - SVG declarations ast
+  [CSS::Module] ok 431 - SVG declarations parse: {marker: none url(http://www.example.com/pinkish.gif)}
+  [CSS::Module] ok 432 - SVG declarations no warnings
+  [CSS::Module] ok 433 - SVG declarations ast
+  [CSS::Module] ok 434 - ast reserialization
+  [CSS::Module] ok 435 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 436 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 437 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 438 - SVG marker: able to parse unexpected input
+  [CSS::Module] ok 439 - SVG marker: unexpected input produces warning
+  [CSS::Module] ok 440 - SVG declarations parse: {marker: inherit}
+  [CSS::Module] ok 441 - SVG declarations no warnings
+  [CSS::Module] ok 442 - SVG declarations ast
+  [CSS::Module] ok 443 - SVG declarations parse: {marker: initial}
+  [CSS::Module] ok 444 - SVG declarations no warnings
+  [CSS::Module] ok 445 - SVG declarations ast
+  [CSS::Module] ok 446 - SVG declarations parse: {opacity: 0.75}
+  [CSS::Module] ok 447 - SVG declarations no warnings
+  [CSS::Module] ok 448 - SVG declarations ast
+  [CSS::Module] ok 449 - ast reserialization
+  [CSS::Module] ok 450 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 451 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 452 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 453 - SVG opacity: able to parse unexpected input
+  [CSS::Module] ok 454 - SVG opacity: unexpected input produces warning
+  [CSS::Module] ok 455 - SVG declarations parse: {opacity: inherit}
+  [CSS::Module] ok 456 - SVG declarations no warnings
+  [CSS::Module] ok 457 - SVG declarations ast
+  [CSS::Module] ok 458 - SVG declarations parse: {opacity: initial}
+  [CSS::Module] ok 459 - SVG declarations no warnings
+  [CSS::Module] ok 460 - SVG declarations ast
+  [CSS::Module] ok 461 - SVG declarations parse: {opacity: 75%}
+  [CSS::Module] ok 462 - SVG declarations no warnings
+  [CSS::Module] ok 463 - SVG declarations ast
+  [CSS::Module] ok 464 - ast reserialization
+  [CSS::Module] ok 465 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 466 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 467 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 468 - SVG declarations parse: {overflow: hidden}
+  [CSS::Module] ok 469 - SVG declarations no warnings
+  [CSS::Module] ok 470 - SVG declarations ast
+  [CSS::Module] ok 471 - ast reserialization
+  [CSS::Module] ok 472 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 473 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 474 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 475 - SVG overflow: able to parse unexpected input
+  [CSS::Module] ok 476 - SVG overflow: unexpected input produces warning
+  [CSS::Module] ok 477 - SVG declarations parse: {overflow: inherit}
+  [CSS::Module] ok 478 - SVG declarations no warnings
+  [CSS::Module] ok 479 - SVG declarations ast
+  [CSS::Module] ok 480 - SVG declarations parse: {overflow: initial}
+  [CSS::Module] ok 481 - SVG declarations no warnings
+  [CSS::Module] ok 482 - SVG declarations ast
+  [CSS::Module] ok 483 - SVG declarations parse: {paint-order: fill stroke}
+  [CSS::Module] ok 484 - SVG declarations no warnings
+  [CSS::Module] ok 485 - SVG declarations ast
+  [CSS::Module] ok 486 - ast reserialization
+  [CSS::Module] ok 487 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 488 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 489 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 490 - SVG paint-order: able to parse unexpected input
+  [CSS::Module] ok 491 - SVG paint-order: unexpected input produces warning
+  [CSS::Module] ok 492 - SVG declarations parse: {paint-order: inherit}
+  [CSS::Module] ok 493 - SVG declarations no warnings
+  [CSS::Module] ok 494 - SVG declarations ast
+  [CSS::Module] ok 495 - SVG declarations parse: {paint-order: initial}
+  [CSS::Module] ok 496 - SVG declarations no warnings
+  [CSS::Module] ok 497 - SVG declarations ast
+  [CSS::Module] ok 498 - SVG declarations parse: {pointer-events: stroke}
+  [CSS::Module] ok 499 - SVG declarations no warnings
+  [CSS::Module] ok 500 - SVG declarations ast
+  [CSS::Module] ok 501 - ast reserialization
+  [CSS::Module] ok 502 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 503 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 504 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 505 - SVG pointer-events: able to parse unexpected input
+  [CSS::Module] ok 506 - SVG pointer-events: unexpected input produces warning
+  [CSS::Module] ok 507 - SVG declarations parse: {pointer-events: inherit}
+  [CSS::Module] ok 508 - SVG declarations no warnings
+  [CSS::Module] ok 509 - SVG declarations ast
+  [CSS::Module] ok 510 - SVG declarations parse: {pointer-events: initial}
+  [CSS::Module] ok 511 - SVG declarations no warnings
+  [CSS::Module] ok 512 - SVG declarations ast
+  [CSS::Module] ok 513 - SVG declarations parse: {shape-rendering: crispEdges}
+  [CSS::Module] ok 514 - SVG declarations no warnings
+  [CSS::Module] ok 515 - SVG declarations ast
+  [CSS::Module] ok 516 - ast reserialization
+  [CSS::Module] ok 517 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 518 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 519 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 520 - SVG shape-rendering: able to parse unexpected input
+  [CSS::Module] ok 521 - SVG shape-rendering: unexpected input produces warning
+  [CSS::Module] ok 522 - SVG declarations parse: {shape-rendering: inherit}
+  [CSS::Module] ok 523 - SVG declarations no warnings
+  [CSS::Module] ok 524 - SVG declarations ast
+  [CSS::Module] ok 525 - SVG declarations parse: {shape-rendering: initial}
+  [CSS::Module] ok 526 - SVG declarations no warnings
+  [CSS::Module] ok 527 - SVG declarations ast
+  [CSS::Module] ok 528 - SVG declarations parse: {stop-color: blue}
+  [CSS::Module] ok 529 - SVG declarations no warnings
+  [CSS::Module] ok 530 - SVG declarations ast
+  [CSS::Module] ok 531 - ast reserialization
+  [CSS::Module] ok 532 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 533 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 534 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 535 - SVG stop-color: able to parse unexpected input
+  [CSS::Module] ok 536 - SVG stop-color: unexpected input produces warning
+  [CSS::Module] ok 537 - SVG declarations parse: {stop-color: inherit}
+  [CSS::Module] ok 538 - SVG declarations no warnings
+  [CSS::Module] ok 539 - SVG declarations ast
+  [CSS::Module] ok 540 - SVG declarations parse: {stop-color: initial}
+  [CSS::Module] ok 541 - SVG declarations no warnings
+  [CSS::Module] ok 542 - SVG declarations ast
+  [CSS::Module] ok 543 - SVG declarations parse: {stop-opacity: 0.75}
+  [CSS::Module] ok 544 - SVG declarations no warnings
+  [CSS::Module] ok 545 - SVG declarations ast
+  [CSS::Module] ok 546 - ast reserialization
+  [CSS::Module] ok 547 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 548 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 549 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 550 - SVG stop-opacity: able to parse unexpected input
+  [CSS::Module] ok 551 - SVG stop-opacity: unexpected input produces warning
+  [CSS::Module] ok 552 - SVG declarations parse: {stop-opacity: inherit}
+  [CSS::Module] ok 553 - SVG declarations no warnings
+  [CSS::Module] ok 554 - SVG declarations ast
+  [CSS::Module] ok 555 - SVG declarations parse: {stop-opacity: initial}
+  [CSS::Module] ok 556 - SVG declarations no warnings
+  [CSS::Module] ok 557 - SVG declarations ast
+  [CSS::Module] ok 558 - SVG declarations parse: {stop-opacity: 75%}
+  [CSS::Module] ok 559 - SVG declarations no warnings
+  [CSS::Module] ok 560 - SVG declarations ast
+  [CSS::Module] ok 561 - ast reserialization
+  [CSS::Module] ok 562 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 563 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 564 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 565 - SVG declarations parse: {stroke: none}
+  [CSS::Module] ok 566 - SVG declarations no warnings
+  [CSS::Module] ok 567 - SVG declarations ast
+  [CSS::Module] ok 568 - ast reserialization
+  [CSS::Module] ok 569 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 570 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 571 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 572 - SVG stroke: able to parse unexpected input
+  [CSS::Module] ok 573 - SVG stroke: unexpected input produces warning
+  [CSS::Module] ok 574 - SVG declarations parse: {stroke: inherit}
+  [CSS::Module] ok 575 - SVG declarations no warnings
+  [CSS::Module] ok 576 - SVG declarations ast
+  [CSS::Module] ok 577 - SVG declarations parse: {stroke: initial}
+  [CSS::Module] ok 578 - SVG declarations no warnings
+  [CSS::Module] ok 579 - SVG declarations ast
+  [CSS::Module] ok 580 - SVG declarations parse: {stroke: black}
+  [CSS::Module] ok 581 - SVG declarations no warnings
+  [CSS::Module] ok 582 - SVG declarations ast
+  [CSS::Module] ok 583 - ast reserialization
+  [CSS::Module] ok 584 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 585 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 586 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 587 - SVG declarations parse: {stroke-dasharray: 20,10}
+  [CSS::Module] ok 588 - SVG declarations no warnings
+  [CSS::Module] ok 589 - SVG declarations ast
+  [CSS::Module] ok 590 - ast reserialization
+  [CSS::Module] ok 591 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 592 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 593 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 594 - SVG stroke-dasharray: able to parse unexpected input
+  [CSS::Module] ok 595 - SVG stroke-dasharray: unexpected input produces warning
+  [CSS::Module] ok 596 - SVG declarations parse: {stroke-dasharray: inherit}
+  [CSS::Module] ok 597 - SVG declarations no warnings
+  [CSS::Module] ok 598 - SVG declarations ast
+  [CSS::Module] ok 599 - SVG declarations parse: {stroke-dasharray: initial}
+  [CSS::Module] ok 600 - SVG declarations no warnings
+  [CSS::Module] ok 601 - SVG declarations ast
+  [CSS::Module] ok 602 - SVG declarations parse: {stroke-dasharray: em,2em}
+  [CSS::Module] ok 603 - SVG declarations no warnings
+  [CSS::Module] ok 604 - SVG declarations ast
+  [CSS::Module] ok 605 - ast reserialization
+  [CSS::Module] ok 606 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 607 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 608 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 609 - SVG declarations parse: {stroke-dashoffset: 3em}
+  [CSS::Module] ok 610 - SVG declarations no warnings
+  [CSS::Module] ok 611 - SVG declarations ast
+  [CSS::Module] ok 612 - ast reserialization
+  [CSS::Module] ok 613 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 614 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 615 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 616 - SVG stroke-dashoffset: able to parse unexpected input
+  [CSS::Module] ok 617 - SVG stroke-dashoffset: unexpected input produces warning
+  [CSS::Module] ok 618 - SVG declarations parse: {stroke-dashoffset: inherit}
+  [CSS::Module] ok 619 - SVG declarations no warnings
+  [CSS::Module] ok 620 - SVG declarations ast
+  [CSS::Module] ok 621 - SVG declarations parse: {stroke-dashoffset: initial}
+  [CSS::Module] ok 622 - SVG declarations no warnings
+  [CSS::Module] ok 623 - SVG declarations ast
+  [CSS::Module] ok 624 - SVG declarations parse: {stroke-linecap: round}
+  [CSS::Module] ok 625 - SVG declarations no warnings
+  [CSS::Module] ok 626 - SVG declarations ast
+  [CSS::Module] ok 627 - ast reserialization
+  [CSS::Module] ok 628 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 629 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 630 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 631 - SVG stroke-linecap: able to parse unexpected input
+  [CSS::Module] ok 632 - SVG stroke-linecap: unexpected input produces warning
+  [CSS::Module] ok 633 - SVG declarations parse: {stroke-linecap: inherit}
+  [CSS::Module] ok 634 - SVG declarations no warnings
+  [CSS::Module] ok 635 - SVG declarations ast
+  [CSS::Module] ok 636 - SVG declarations parse: {stroke-linecap: initial}
+  [CSS::Module] ok 637 - SVG declarations no warnings
+  [CSS::Module] ok 638 - SVG declarations ast
+  [CSS::Module] ok 639 - SVG declarations parse: {stroke-linejoin: bevel}
+  [CSS::Module] ok 640 - SVG declarations no warnings
+  [CSS::Module] ok 641 - SVG declarations ast
+  [CSS::Module] ok 642 - ast reserialization
+  [CSS::Module] ok 643 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 644 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 645 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 646 - SVG stroke-linejoin: able to parse unexpected input
+  [CSS::Module] ok 647 - SVG stroke-linejoin: unexpected input produces warning
+  [CSS::Module] ok 648 - SVG declarations parse: {stroke-linejoin: inherit}
+  [CSS::Module] ok 649 - SVG declarations no warnings
+  [CSS::Module] ok 650 - SVG declarations ast
+  [CSS::Module] ok 651 - SVG declarations parse: {stroke-linejoin: initial}
+  [CSS::Module] ok 652 - SVG declarations no warnings
+  [CSS::Module] ok 653 - SVG declarations ast
+  [CSS::Module] ok 654 - SVG declarations parse: {stroke-miterlimit: 7}
+  [CSS::Module] ok 655 - SVG declarations no warnings
+  [CSS::Module] ok 656 - SVG declarations ast
+  [CSS::Module] ok 657 - ast reserialization
+  [CSS::Module] ok 658 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 659 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 660 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 661 - SVG stroke-miterlimit: able to parse unexpected input
+  [CSS::Module] ok 662 - SVG stroke-miterlimit: unexpected input produces warning
+  [CSS::Module] ok 663 - SVG declarations parse: {stroke-miterlimit: inherit}
+  [CSS::Module] ok 664 - SVG declarations no warnings
+  [CSS::Module] ok 665 - SVG declarations ast
+  [CSS::Module] ok 666 - SVG declarations parse: {stroke-miterlimit: initial}
+  [CSS::Module] ok 667 - SVG declarations no warnings
+  [CSS::Module] ok 668 - SVG declarations ast
+  [CSS::Module] ok 669 - SVG declarations parse: {stroke-opacity: 0.75}
+  [CSS::Module] ok 670 - SVG declarations no warnings
+  [CSS::Module] ok 671 - SVG declarations ast
+  [CSS::Module] ok 672 - ast reserialization
+  [CSS::Module] ok 673 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 674 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 675 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 676 - SVG stroke-opacity: able to parse unexpected input
+  [CSS::Module] ok 677 - SVG stroke-opacity: unexpected input produces warning
+  [CSS::Module] ok 678 - SVG declarations parse: {stroke-opacity: inherit}
+  [CSS::Module] ok 679 - SVG declarations no warnings
+  [CSS::Module] ok 680 - SVG declarations ast
+  [CSS::Module] ok 681 - SVG declarations parse: {stroke-opacity: initial}
+  [CSS::Module] ok 682 - SVG declarations no warnings
+  [CSS::Module] ok 683 - SVG declarations ast
+  [CSS::Module] ok 684 - SVG declarations parse: {stroke-opacity: 75%}
+  [CSS::Module] ok 685 - SVG declarations no warnings
+  [CSS::Module] ok 686 - SVG declarations ast
+  [CSS::Module] ok 687 - ast reserialization
+  [CSS::Module] ok 688 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 689 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 690 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 691 - SVG declarations parse: {stroke-width: .1em}
+  [CSS::Module] ok 692 - SVG declarations no warnings
+  [CSS::Module] ok 693 - SVG declarations ast
+  [CSS::Module] ok 694 - ast reserialization
+  [CSS::Module] ok 695 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 696 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 697 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 698 - SVG stroke-width: able to parse unexpected input
+  [CSS::Module] ok 699 - SVG stroke-width: unexpected input produces warning
+  [CSS::Module] ok 700 - SVG declarations parse: {stroke-width: inherit}
+  [CSS::Module] ok 701 - SVG declarations no warnings
+  [CSS::Module] ok 702 - SVG declarations ast
+  [CSS::Module] ok 703 - SVG declarations parse: {stroke-width: initial}
+  [CSS::Module] ok 704 - SVG declarations no warnings
+  [CSS::Module] ok 705 - SVG declarations ast
+  [CSS::Module] ok 706 - SVG declarations parse: {stroke-width: 3}
+  [CSS::Module] ok 707 - SVG declarations no warnings
+  [CSS::Module] ok 708 - SVG declarations ast
+  [CSS::Module] ok 709 - ast reserialization
+  [CSS::Module] ok 710 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 711 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 712 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 713 - SVG declarations parse: {stroke-width: 5%}
+  [CSS::Module] ok 714 - SVG declarations no warnings
+  [CSS::Module] ok 715 - SVG declarations ast
+  [CSS::Module] ok 716 - ast reserialization
+  [CSS::Module] ok 717 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 718 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 719 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 720 - SVG declarations parse: {text-anchor: start}
+  [CSS::Module] ok 721 - SVG declarations no warnings
+  [CSS::Module] ok 722 - SVG declarations ast
+  [CSS::Module] ok 723 - ast reserialization
+  [CSS::Module] ok 724 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 725 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 726 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 727 - SVG text-anchor: able to parse unexpected input
+  [CSS::Module] ok 728 - SVG text-anchor: unexpected input produces warning
+  [CSS::Module] ok 729 - SVG declarations parse: {text-anchor: inherit}
+  [CSS::Module] ok 730 - SVG declarations no warnings
+  [CSS::Module] ok 731 - SVG declarations ast
+  [CSS::Module] ok 732 - SVG declarations parse: {text-anchor: initial}
+  [CSS::Module] ok 733 - SVG declarations no warnings
+  [CSS::Module] ok 734 - SVG declarations ast
+  [CSS::Module] ok 735 - SVG declarations parse: {text-decoration: underline blink}
+  [CSS::Module] ok 736 - SVG declarations no warnings
+  [CSS::Module] ok 737 - SVG declarations ast
+  [CSS::Module] ok 738 - ast reserialization
+  [CSS::Module] ok 739 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 740 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 741 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 742 - SVG text-decoration: able to parse unexpected input
+  [CSS::Module] ok 743 - SVG text-decoration: unexpected input produces warning
+  [CSS::Module] ok 744 - SVG declarations parse: {text-decoration: inherit}
+  [CSS::Module] ok 745 - SVG declarations no warnings
+  [CSS::Module] ok 746 - SVG declarations ast
+  [CSS::Module] ok 747 - SVG declarations parse: {text-decoration: initial}
+  [CSS::Module] ok 748 - SVG declarations no warnings
+  [CSS::Module] ok 749 - SVG declarations ast
+  [CSS::Module] ok 750 - SVG declarations parse: {text-overflow: clip}
+  [CSS::Module] ok 751 - SVG declarations no warnings
+  [CSS::Module] ok 752 - SVG declarations ast
+  [CSS::Module] ok 753 - ast reserialization
+  [CSS::Module] ok 754 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 755 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 756 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 757 - SVG text-overflow: able to parse unexpected input
+  [CSS::Module] ok 758 - SVG text-overflow: unexpected input produces warning
+  [CSS::Module] ok 759 - SVG declarations parse: {text-overflow: inherit}
+  [CSS::Module] ok 760 - SVG declarations no warnings
+  [CSS::Module] ok 761 - SVG declarations ast
+  [CSS::Module] ok 762 - SVG declarations parse: {text-overflow: initial}
+  [CSS::Module] ok 763 - SVG declarations no warnings
+  [CSS::Module] ok 764 - SVG declarations ast
+  [CSS::Module] ok 765 - SVG declarations parse: {text-rendering: geometricPrecision}
+  [CSS::Module] ok 766 - SVG declarations no warnings
+  [CSS::Module] ok 767 - SVG declarations ast
+  [CSS::Module] ok 768 - ast reserialization
+  [CSS::Module] ok 769 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 770 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 771 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 772 - SVG text-rendering: able to parse unexpected input
+  [CSS::Module] ok 773 - SVG text-rendering: unexpected input produces warning
+  [CSS::Module] ok 774 - SVG declarations parse: {text-rendering: inherit}
+  [CSS::Module] ok 775 - SVG declarations no warnings
+  [CSS::Module] ok 776 - SVG declarations ast
+  [CSS::Module] ok 777 - SVG declarations parse: {text-rendering: initial}
+  [CSS::Module] ok 778 - SVG declarations no warnings
+  [CSS::Module] ok 779 - SVG declarations ast
+  [CSS::Module] ok 780 - SVG declarations parse: {unicode-bidi: embed}
+  [CSS::Module] ok 781 - SVG declarations no warnings
+  [CSS::Module] ok 782 - SVG declarations ast
+  [CSS::Module] ok 783 - ast reserialization
+  [CSS::Module] ok 784 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 785 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 786 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 787 - SVG unicode-bidi: able to parse unexpected input
+  [CSS::Module] ok 788 - SVG unicode-bidi: unexpected input produces warning
+  [CSS::Module] ok 789 - SVG declarations parse: {unicode-bidi: inherit}
+  [CSS::Module] ok 790 - SVG declarations no warnings
+  [CSS::Module] ok 791 - SVG declarations ast
+  [CSS::Module] ok 792 - SVG declarations parse: {unicode-bidi: initial}
+  [CSS::Module] ok 793 - SVG declarations no warnings
+  [CSS::Module] ok 794 - SVG declarations ast
+  [CSS::Module] ok 795 - SVG declarations parse: {vector-effect: none}
+  [CSS::Module] ok 796 - SVG declarations no warnings
+  [CSS::Module] ok 797 - SVG declarations ast
+  [CSS::Module] ok 798 - ast reserialization
+  [CSS::Module] ok 799 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 800 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 801 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 802 - SVG vector-effect: able to parse unexpected input
+  [CSS::Module] ok 803 - SVG vector-effect: unexpected input produces warning
+  [CSS::Module] ok 804 - SVG declarations parse: {vector-effect: inherit}
+  [CSS::Module] ok 805 - SVG declarations no warnings
+  [CSS::Module] ok 806 - SVG declarations ast
+  [CSS::Module] ok 807 - SVG declarations parse: {vector-effect: initial}
+  [CSS::Module] ok 808 - SVG declarations no warnings
+  [CSS::Module] ok 809 - SVG declarations ast
+  [CSS::Module] ok 810 - SVG declarations parse: {visibility: hidden}
+  [CSS::Module] ok 811 - SVG declarations no warnings
+  [CSS::Module] ok 812 - SVG declarations ast
+  [CSS::Module] ok 813 - ast reserialization
+  [CSS::Module] ok 814 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 815 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 816 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 817 - SVG visibility: able to parse unexpected input
+  [CSS::Module] ok 818 - SVG visibility: unexpected input produces warning
+  [CSS::Module] ok 819 - SVG declarations parse: {visibility: inherit}
+  [CSS::Module] ok 820 - SVG declarations no warnings
+  [CSS::Module] ok 821 - SVG declarations ast
+  [CSS::Module] ok 822 - SVG declarations parse: {visibility: initial}
+  [CSS::Module] ok 823 - SVG declarations no warnings
+  [CSS::Module] ok 824 - SVG declarations ast
+  [CSS::Module] ok 825 - SVG declarations parse: {white-space: pre}
+  [CSS::Module] ok 826 - SVG declarations no warnings
+  [CSS::Module] ok 827 - SVG declarations ast
+  [CSS::Module] ok 828 - ast reserialization
+  [CSS::Module] ok 829 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 830 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 831 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 832 - SVG white-space: able to parse unexpected input
+  [CSS::Module] ok 833 - SVG white-space: unexpected input produces warning
+  [CSS::Module] ok 834 - SVG declarations parse: {white-space: inherit}
+  [CSS::Module] ok 835 - SVG declarations no warnings
+  [CSS::Module] ok 836 - SVG declarations ast
+  [CSS::Module] ok 837 - SVG declarations parse: {white-space: initial}
+  [CSS::Module] ok 838 - SVG declarations no warnings
+  [CSS::Module] ok 839 - SVG declarations ast
+  [CSS::Module] ok 840 - SVG declarations parse: {word-spacing: 1.5em}
+  [CSS::Module] ok 841 - SVG declarations no warnings
+  [CSS::Module] ok 842 - SVG declarations ast
+  [CSS::Module] ok 843 - ast reserialization
+  [CSS::Module] ok 844 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 845 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 846 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 847 - SVG word-spacing: able to parse unexpected input
+  [CSS::Module] ok 848 - SVG word-spacing: unexpected input produces warning
+  [CSS::Module] ok 849 - SVG declarations parse: {word-spacing: inherit}
+  [CSS::Module] ok 850 - SVG declarations no warnings
+  [CSS::Module] ok 851 - SVG declarations ast
+  [CSS::Module] ok 852 - SVG declarations parse: {word-spacing: initial}
+  [CSS::Module] ok 853 - SVG declarations no warnings
+  [CSS::Module] ok 854 - SVG declarations ast
+  [CSS::Module] ok 855 - SVG declarations parse: {writing-mode: rl-tb}
+  [CSS::Module] ok 856 - SVG declarations no warnings
+  [CSS::Module] ok 857 - SVG declarations ast
+  [CSS::Module] ok 858 - ast reserialization
+  [CSS::Module] ok 859 -   -- SVG reserialized declarations parse: {... }
+  [CSS::Module] ok 860 -   -- SVG reserialized declarations no warnings
+  [CSS::Module] ok 861 -   -- SVG reserialized declarations ast
+  [CSS::Module] ok 862 - SVG writing-mode: able to parse unexpected input
+  [CSS::Module] ok 863 - SVG writing-mode: unexpected input produces warning
+  [CSS::Module] ok 864 - SVG declarations parse: {writing-mode: inherit}
+  [CSS::Module] ok 865 - SVG declarations no warnings
+  [CSS::Module] ok 866 - SVG declarations ast
+  [CSS::Module] ok 867 - SVG declarations parse: {writing-mode: initial}
+  [CSS::Module] ok 868 - SVG declarations no warnings
+  [CSS::Module] ok 869 - SVG declarations ast
+  [CSS::Module] 1..869
+  ===> Testing [FAIL]: CSS::Module:ver<0.7.7>:auth<zef:dwarring>
+  [CSS::Module] Failed to get passing tests, but continuing with --force-test
+  ===> Installing: CSS::Module:ver<0.7.7>:auth<zef:dwarring>
+  ===> Install [OK] for CSS::Module:ver<0.7.7>:auth<zef:dwarring>
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 11.684s
+               CPU time consumed: 16.215s
+                     Memory peak: 950.4M (swap: 0B)
+
+  ```
+  </details>
+* [ ] [Grammar::Modelica](https://raku.land/zef:raku-community-modules/Grammar::Modelica) – Fail, Bisected: [b180d60](https://github.com/rakudo/rakudo/commit/b180d6078dd3f2359929e0315bc40c4b680f0a17) [da2a525](https://github.com/rakudo/rakudo/commit/da2a52539d735095ec620b744e441037b046208d)
+  <details><Summary>Old Output</summary>
+
+  ```
+  Running as unit: run-p3013521-i2964004.service; invocation ID: 2a91240926c749f3867b12d28eaeee81
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: Grammar::Modelica
+  ===> Found: Grammar::Modelica:ver<0.1.3>:auth<zef:raku-community-modules> [via Zef::Repository::Ecosystems<fez>]
+  [Grammar::Modelica] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870320.3013522.7982.485121964105/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz https://360.zef.pm/G/RA/GRAMMAR_MODELICA/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz
+  ===> Fetching [OK]: Grammar::Modelica:ver<0.1.3>:auth<zef:raku-community-modules> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870320.3013522.7982.485121964105/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz
+  [Grammar::Modelica] Command: tar -t -f ./cf609d989163d3c71bfee42fd718ff0437693735.tar.gz
+  [Grammar::Modelica] Command: tar -xvf ./cf609d989163d3c71bfee42fd718ff0437693735.tar.gz -C ../cf609d989163d3c71bfee42fd718ff0437693735.tar.gz
+  ===> Extraction [OK]: Grammar::Modelica to /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz
+  ===> Testing: Grammar::Modelica:ver<0.1.3>:auth<zef:raku-community-modules>
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/ClassDefinition.rakutest
+  [Grammar::Modelica] 1..121
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] ok 10 - 
+  [Grammar::Modelica] ok 11 - 
+  [Grammar::Modelica] ok 12 - 
+  [Grammar::Modelica] ok 13 - 
+  [Grammar::Modelica] ok 14 - 
+  [Grammar::Modelica] ok 15 - 
+  [Grammar::Modelica] ok 16 - 
+  [Grammar::Modelica] ok 17 - 
+  [Grammar::Modelica] ok 18 - 
+  [Grammar::Modelica] ok 19 - 
+  [Grammar::Modelica] ok 20 - 
+  [Grammar::Modelica] ok 21 - 
+  [Grammar::Modelica] ok 22 - 
+  [Grammar::Modelica] ok 23 - 
+  [Grammar::Modelica] ok 24 - 
+  [Grammar::Modelica] ok 25 - 
+  [Grammar::Modelica] ok 26 - 
+  [Grammar::Modelica] ok 27 - 
+  [Grammar::Modelica] ok 28 - 
+  [Grammar::Modelica] ok 29 - 
+  [Grammar::Modelica] ok 30 - 
+  [Grammar::Modelica] ok 31 - 
+  [Grammar::Modelica] ok 32 - 
+  [Grammar::Modelica] ok 33 - 
+  [Grammar::Modelica] ok 34 - 
+  [Grammar::Modelica] ok 35 - 
+  [Grammar::Modelica] ok 36 - 
+  [Grammar::Modelica] ok 37 - 
+  [Grammar::Modelica] ok 38 - 
+  [Grammar::Modelica] ok 39 - 
+  [Grammar::Modelica] ok 40 - 
+  [Grammar::Modelica] ok 41 - 
+  [Grammar::Modelica] ok 42 - 
+  [Grammar::Modelica] ok 43 - 
+  [Grammar::Modelica] ok 44 - 
+  [Grammar::Modelica] ok 45 - 
+  [Grammar::Modelica] ok 46 - 
+  [Grammar::Modelica] ok 47 - 
+  [Grammar::Modelica] ok 48 - 
+  [Grammar::Modelica] ok 49 - 
+  [Grammar::Modelica] ok 50 - 
+  [Grammar::Modelica] ok 51 - 
+  [Grammar::Modelica] ok 52 - 
+  [Grammar::Modelica] ok 53 - 
+  [Grammar::Modelica] ok 54 - 
+  [Grammar::Modelica] ok 55 - 
+  [Grammar::Modelica] ok 56 - 
+  [Grammar::Modelica] ok 57 - 
+  [Grammar::Modelica] ok 58 - 
+  [Grammar::Modelica] ok 59 - 
+  [Grammar::Modelica] ok 60 - 
+  [Grammar::Modelica] ok 61 - 
+  [Grammar::Modelica] ok 62 - 
+  [Grammar::Modelica] ok 63 - 
+  [Grammar::Modelica] ok 64 - 
+  [Grammar::Modelica] ok 65 - 
+  [Grammar::Modelica] ok 66 - 
+  [Grammar::Modelica] ok 67 - 
+  [Grammar::Modelica] ok 68 - 
+  [Grammar::Modelica] ok 69 - 
+  [Grammar::Modelica] ok 70 - 
+  [Grammar::Modelica] ok 71 - 
+  [Grammar::Modelica] ok 72 - 
+  [Grammar::Modelica] ok 73 - 
+  [Grammar::Modelica] ok 74 - 
+  [Grammar::Modelica] ok 75 - 
+  [Grammar::Modelica] ok 76 - 
+  [Grammar::Modelica] ok 77 - 
+  [Grammar::Modelica] ok 78 - 
+  [Grammar::Modelica] ok 79 - 
+  [Grammar::Modelica] ok 80 - 
+  [Grammar::Modelica] ok 81 - 
+  [Grammar::Modelica] ok 82 - 
+  [Grammar::Modelica] ok 83 - 
+  [Grammar::Modelica] ok 84 - 
+  [Grammar::Modelica] ok 85 - 
+  [Grammar::Modelica] ok 86 - 
+  [Grammar::Modelica] ok 87 - 
+  [Grammar::Modelica] ok 88 - 
+  [Grammar::Modelica] ok 89 - 
+  [Grammar::Modelica] ok 90 - 
+  [Grammar::Modelica] ok 91 - 
+  [Grammar::Modelica] ok 92 - 
+  [Grammar::Modelica] ok 93 - 
+  [Grammar::Modelica] ok 94 - 
+  [Grammar::Modelica] ok 95 - 
+  [Grammar::Modelica] ok 96 - 
+  [Grammar::Modelica] ok 97 - 
+  [Grammar::Modelica] ok 98 - 
+  [Grammar::Modelica] ok 99 - 
+  [Grammar::Modelica] ok 100 - 
+  [Grammar::Modelica] ok 101 - 
+  [Grammar::Modelica] ok 102 - 
+  [Grammar::Modelica] ok 103 - 
+  [Grammar::Modelica] ok 104 - 
+  [Grammar::Modelica] ok 105 - 
+  [Grammar::Modelica] ok 106 - 
+  [Grammar::Modelica] ok 107 - 
+  [Grammar::Modelica] ok 108 - 
+  [Grammar::Modelica] ok 109 - 
+  [Grammar::Modelica] ok 110 - 
+  [Grammar::Modelica] ok 111 - 
+  [Grammar::Modelica] ok 112 - 
+  [Grammar::Modelica] ok 113 - 
+  [Grammar::Modelica] ok 114 - 
+  [Grammar::Modelica] ok 115 - 
+  [Grammar::Modelica] ok 116 - 
+  [Grammar::Modelica] ok 117 - 
+  [Grammar::Modelica] ok 118 - 
+  [Grammar::Modelica] ok 119 - 
+  [Grammar::Modelica] ok 120 - 
+  [Grammar::Modelica] ok 121 - 
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/ComponentClause.rakutest
+  [Grammar::Modelica] 1..34
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] ok 10 - 
+  [Grammar::Modelica] ok 11 - 
+  [Grammar::Modelica] ok 12 - 
+  [Grammar::Modelica] ok 13 - 
+  [Grammar::Modelica] ok 14 - 
+  [Grammar::Modelica] ok 15 - 
+  [Grammar::Modelica] ok 16 - 
+  [Grammar::Modelica] ok 17 - 
+  [Grammar::Modelica] ok 18 - 
+  [Grammar::Modelica] ok 19 - 
+  [Grammar::Modelica] ok 20 - 
+  [Grammar::Modelica] ok 21 - 
+  [Grammar::Modelica] ok 22 - 
+  [Grammar::Modelica] ok 23 - 
+  [Grammar::Modelica] ok 24 - 
+  [Grammar::Modelica] ok 25 - 
+  [Grammar::Modelica] ok 26 - 
+  [Grammar::Modelica] ok 27 - 
+  [Grammar::Modelica] ok 28 - 
+  [Grammar::Modelica] ok 29 - 
+  [Grammar::Modelica] ok 30 - 
+  [Grammar::Modelica] ok 31 - 
+  [Grammar::Modelica] ok 32 - 
+  [Grammar::Modelica] ok 33 - 
+  [Grammar::Modelica] ok 34 - 
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/Equations.rakutest
+  [Grammar::Modelica] 1..170
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] ok 10 - 
+  [Grammar::Modelica] ok 11 - 
+  [Grammar::Modelica] ok 12 - 
+  [Grammar::Modelica] ok 13 - 
+  [Grammar::Modelica] ok 14 - 
+  [Grammar::Modelica] ok 15 - 
+  [Grammar::Modelica] ok 16 - 
+  [Grammar::Modelica] ok 17 - 
+  [Grammar::Modelica] ok 18 - 
+  [Grammar::Modelica] ok 19 - 
+  [Grammar::Modelica] ok 20 - 
+  [Grammar::Modelica] ok 21 - 
+  [Grammar::Modelica] ok 22 - 
+  [Grammar::Modelica] ok 23 - 
+  [Grammar::Modelica] ok 24 - 
+  [Grammar::Modelica] ok 25 - 
+  [Grammar::Modelica] ok 26 - 
+  [Grammar::Modelica] ok 27 - 
+  [Grammar::Modelica] ok 28 - 
+  [Grammar::Modelica] ok 29 - 
+  [Grammar::Modelica] ok 30 - 
+  [Grammar::Modelica] ok 31 - 
+  [Grammar::Modelica] ok 32 - 
+  [Grammar::Modelica] ok 33 - 
+  [Grammar::Modelica] ok 34 - 
+  [Grammar::Modelica] ok 35 - 
+  [Grammar::Modelica] ok 36 - 
+  [Grammar::Modelica] ok 37 - 
+  [Grammar::Modelica] ok 38 - 
+  [Grammar::Modelica] ok 39 - 
+  [Grammar::Modelica] ok 40 - 
+  [Grammar::Modelica] ok 41 - 
+  [Grammar::Modelica] ok 42 - 
+  [Grammar::Modelica] ok 43 - 
+  [Grammar::Modelica] ok 44 - 
+  [Grammar::Modelica] ok 45 - 
+  [Grammar::Modelica] ok 46 - 
+  [Grammar::Modelica] ok 47 - 
+  [Grammar::Modelica] ok 48 - 
+  [Grammar::Modelica] ok 49 - 
+  [Grammar::Modelica] ok 50 - 
+  [Grammar::Modelica] ok 51 - 
+  [Grammar::Modelica] ok 52 - 
+  [Grammar::Modelica] ok 53 - 
+  [Grammar::Modelica] ok 54 - 
+  [Grammar::Modelica] ok 55 - 
+  [Grammar::Modelica] ok 56 - 
+  [Grammar::Modelica] ok 57 - 
+  [Grammar::Modelica] ok 58 - 
+  [Grammar::Modelica] ok 59 - 
+  [Grammar::Modelica] ok 60 - 
+  [Grammar::Modelica] ok 61 - 
+  [Grammar::Modelica] ok 62 - 
+  [Grammar::Modelica] ok 63 - 
+  [Grammar::Modelica] ok 64 - 
+  [Grammar::Modelica] ok 65 - 
+  [Grammar::Modelica] ok 66 - 
+  [Grammar::Modelica] ok 67 - 
+  [Grammar::Modelica] ok 68 - 
+  [Grammar::Modelica] ok 69 - 
+  [Grammar::Modelica] ok 70 - 
+  [Grammar::Modelica] ok 71 - 
+  [Grammar::Modelica] ok 72 - 
+  [Grammar::Modelica] ok 73 - 
+  [Grammar::Modelica] ok 74 - 
+  [Grammar::Modelica] ok 75 - 
+  [Grammar::Modelica] ok 76 - 
+  [Grammar::Modelica] ok 77 - 
+  [Grammar::Modelica] ok 78 - 
+  [Grammar::Modelica] ok 79 - 
+  [Grammar::Modelica] ok 80 - 
+  [Grammar::Modelica] ok 81 - 
+  [Grammar::Modelica] ok 82 - 
+  [Grammar::Modelica] ok 83 - 
+  [Grammar::Modelica] ok 84 - 
+  [Grammar::Modelica] ok 85 - 
+  [Grammar::Modelica] ok 86 - 
+  [Grammar::Modelica] ok 87 - 
+  [Grammar::Modelica] ok 88 - 
+  [Grammar::Modelica] ok 89 - 
+  [Grammar::Modelica] ok 90 - 
+  [Grammar::Modelica] ok 91 - 
+  [Grammar::Modelica] ok 92 - 
+  [Grammar::Modelica] ok 93 - 
+  [Grammar::Modelica] ok 94 - 
+  [Grammar::Modelica] ok 95 - 
+  [Grammar::Modelica] ok 96 - 
+  [Grammar::Modelica] ok 97 - 
+  [Grammar::Modelica] ok 98 - 
+  [Grammar::Modelica] ok 99 - 
+  [Grammar::Modelica] ok 100 - 
+  [Grammar::Modelica] ok 101 - 
+  [Grammar::Modelica] ok 102 - 
+  [Grammar::Modelica] ok 103 - 
+  [Grammar::Modelica] ok 104 - 
+  [Grammar::Modelica] ok 105 - 
+  [Grammar::Modelica] ok 106 - 
+  [Grammar::Modelica] ok 107 - 
+  [Grammar::Modelica] ok 108 - 
+  [Grammar::Modelica] ok 109 - 
+  [Grammar::Modelica] ok 110 - 
+  [Grammar::Modelica] ok 111 - 
+  [Grammar::Modelica] ok 112 - 
+  [Grammar::Modelica] ok 113 - 
+  [Grammar::Modelica] ok 114 - 
+  [Grammar::Modelica] ok 115 - 
+  [Grammar::Modelica] ok 116 - 
+  [Grammar::Modelica] ok 117 - 
+  [Grammar::Modelica] ok 118 - 
+  [Grammar::Modelica] ok 119 - 
+  [Grammar::Modelica] ok 120 - 
+  [Grammar::Modelica] ok 121 - 
+  [Grammar::Modelica] ok 122 - 
+  [Grammar::Modelica] ok 123 - 
+  [Grammar::Modelica] ok 124 - 
+  [Grammar::Modelica] ok 125 - 
+  [Grammar::Modelica] ok 126 - 
+  [Grammar::Modelica] ok 127 - 
+  [Grammar::Modelica] ok 128 - 
+  [Grammar::Modelica] ok 129 - 
+  [Grammar::Modelica] ok 130 - 
+  [Grammar::Modelica] ok 131 - 
+  [Grammar::Modelica] ok 132 - 
+  [Grammar::Modelica] ok 133 - 
+  [Grammar::Modelica] ok 134 - 
+  [Grammar::Modelica] ok 135 - 
+  [Grammar::Modelica] ok 136 - 
+  [Grammar::Modelica] ok 137 - 
+  [Grammar::Modelica] ok 138 - 
+  [Grammar::Modelica] ok 139 - 
+  [Grammar::Modelica] ok 140 - 
+  [Grammar::Modelica] ok 141 - 
+  [Grammar::Modelica] ok 142 - 
+  [Grammar::Modelica] ok 143 - 
+  [Grammar::Modelica] ok 144 - 
+  [Grammar::Modelica] ok 145 - 
+  [Grammar::Modelica] ok 146 - 
+  [Grammar::Modelica] ok 147 - 
+  [Grammar::Modelica] ok 148 - 
+  [Grammar::Modelica] ok 149 - 
+  [Grammar::Modelica] ok 150 - 
+  [Grammar::Modelica] ok 151 - 
+  [Grammar::Modelica] ok 152 - 
+  [Grammar::Modelica] ok 153 - 
+  [Grammar::Modelica] ok 154 - 
+  [Grammar::Modelica] ok 155 - 
+  [Grammar::Modelica] ok 156 - 
+  [Grammar::Modelica] ok 157 - 
+  [Grammar::Modelica] ok 158 - 
+  [Grammar::Modelica] ok 159 - 
+  [Grammar::Modelica] ok 160 - 
+  [Grammar::Modelica] ok 161 - 
+  [Grammar::Modelica] ok 162 - 
+  [Grammar::Modelica] ok 163 - 
+  [Grammar::Modelica] ok 164 - 
+  [Grammar::Modelica] ok 165 - 
+  [Grammar::Modelica] ok 166 - 
+  [Grammar::Modelica] ok 167 - 
+  [Grammar::Modelica] ok 168 - 
+  [Grammar::Modelica] ok 169 - 
+  [Grammar::Modelica] ok 170 - 
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/Expression_regression.rakutest
+  [Grammar::Modelica] 1..15
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] ok 10 - 
+  [Grammar::Modelica] ok 11 - 
+  [Grammar::Modelica] ok 12 - 
+  [Grammar::Modelica] ok 13 - 
+  [Grammar::Modelica] ok 14 - 
+  [Grammar::Modelica] ok 15 - 
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/Expressions.rakutest
+  [Grammar::Modelica] 1..168
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] ok 10 - 
+  [Grammar::Modelica] ok 11 - 
+  [Grammar::Modelica] ok 12 - 
+  [Grammar::Modelica] ok 13 - 
+  [Grammar::Modelica] ok 14 - 
+  [Grammar::Modelica] ok 15 - 
+  [Grammar::Modelica] ok 16 - 
+  [Grammar::Modelica] ok 17 - 
+  [Grammar::Modelica] ok 18 - 
+  [Grammar::Modelica] ok 19 - 
+  [Grammar::Modelica] ok 20 - 
+  [Grammar::Modelica] ok 21 - 
+  [Grammar::Modelica] ok 22 - 
+  [Grammar::Modelica] ok 23 - 
+  [Grammar::Modelica] ok 24 - 
+  [Grammar::Modelica] ok 25 - 
+  [Grammar::Modelica] ok 26 - 
+  [Grammar::Modelica] ok 27 - 
+  [Grammar::Modelica] ok 28 - 
+  [Grammar::Modelica] ok 29 - 
+  [Grammar::Modelica] ok 30 - 
+  [Grammar::Modelica] ok 31 - 
+  [Grammar::Modelica] ok 32 - 
+  [Grammar::Modelica] ok 33 - 
+  [Grammar::Modelica] ok 34 - 
+  [Grammar::Modelica] ok 35 - 
+  [Grammar::Modelica] ok 36 - 
+  [Grammar::Modelica] ok 37 - 
+  [Grammar::Modelica] ok 38 - 
+  [Grammar::Modelica] ok 39 - 
+  [Grammar::Modelica] ok 40 - 
+  [Grammar::Modelica] ok 41 - 
+  [Grammar::Modelica] ok 42 - 
+  [Grammar::Modelica] ok 43 - 
+  [Grammar::Modelica] ok 44 - 
+  [Grammar::Modelica] ok 45 - 
+  [Grammar::Modelica] ok 46 - 
+  [Grammar::Modelica] ok 47 - 
+  [Grammar::Modelica] ok 48 - 
+  [Grammar::Modelica] ok 49 - 
+  [Grammar::Modelica] ok 50 - 
+  [Grammar::Modelica] ok 51 - 
+  [Grammar::Modelica] ok 52 - 
+  [Grammar::Modelica] ok 53 - 
+  [Grammar::Modelica] ok 54 - 
+  [Grammar::Modelica] ok 55 - 
+  [Grammar::Modelica] ok 56 - 
+  [Grammar::Modelica] ok 57 - 
+  [Grammar::Modelica] ok 58 - 
+  [Grammar::Modelica] ok 59 - 
+  [Grammar::Modelica] ok 60 - 
+  [Grammar::Modelica] ok 61 - 
+  [Grammar::Modelica] ok 62 - 
+  [Grammar::Modelica] ok 63 - 
+  [Grammar::Modelica] ok 64 - 
+  [Grammar::Modelica] ok 65 - 
+  [Grammar::Modelica] ok 66 - 
+  [Grammar::Modelica] ok 67 - 
+  [Grammar::Modelica] ok 68 - 
+  [Grammar::Modelica] ok 69 - 
+  [Grammar::Modelica] ok 70 - 
+  [Grammar::Modelica] ok 71 - 
+  [Grammar::Modelica] ok 72 - 
+  [Grammar::Modelica] ok 73 - 
+  [Grammar::Modelica] ok 74 - 
+  [Grammar::Modelica] ok 75 - 
+  [Grammar::Modelica] ok 76 - 
+  [Grammar::Modelica] ok 77 - 
+  [Grammar::Modelica] ok 78 - 
+  [Grammar::Modelica] ok 79 - 
+  [Grammar::Modelica] ok 80 - 
+  [Grammar::Modelica] ok 81 - 
+  [Grammar::Modelica] ok 82 - 
+  [Grammar::Modelica] ok 83 - 
+  [Grammar::Modelica] ok 84 - 
+  [Grammar::Modelica] ok 85 - 
+  [Grammar::Modelica] ok 86 - 
+  [Grammar::Modelica] ok 87 - 
+  [Grammar::Modelica] ok 88 - 
+  [Grammar::Modelica] ok 89 - 
+  [Grammar::Modelica] ok 90 - 
+  [Grammar::Modelica] ok 91 - 
+  [Grammar::Modelica] ok 92 - 
+  [Grammar::Modelica] ok 93 - 
+  [Grammar::Modelica] ok 94 - 
+  [Grammar::Modelica] ok 95 - 
+  [Grammar::Modelica] ok 96 - 
+  [Grammar::Modelica] ok 97 - 
+  [Grammar::Modelica] ok 98 - 
+  [Grammar::Modelica] ok 99 - 
+  [Grammar::Modelica] ok 100 - 
+  [Grammar::Modelica] ok 101 - 
+  [Grammar::Modelica] ok 102 - 
+  [Grammar::Modelica] ok 103 - 
+  [Grammar::Modelica] ok 104 - 
+  [Grammar::Modelica] ok 105 - 
+  [Grammar::Modelica] ok 106 - 
+  [Grammar::Modelica] ok 107 - 
+  [Grammar::Modelica] ok 108 - 
+  [Grammar::Modelica] ok 109 - 
+  [Grammar::Modelica] ok 110 - 
+  [Grammar::Modelica] ok 111 - 
+  [Grammar::Modelica] ok 112 - 
+  [Grammar::Modelica] ok 113 - 
+  [Grammar::Modelica] ok 114 - 
+  [Grammar::Modelica] ok 115 - 
+  [Grammar::Modelica] ok 116 - 
+  [Grammar::Modelica] ok 117 - 
+  [Grammar::Modelica] ok 118 - 
+  [Grammar::Modelica] ok 119 - 
+  [Grammar::Modelica] ok 120 - 
+  [Grammar::Modelica] ok 121 - 
+  [Grammar::Modelica] ok 122 - 
+  [Grammar::Modelica] ok 123 - 
+  [Grammar::Modelica] ok 124 - 
+  [Grammar::Modelica] ok 125 - 
+  [Grammar::Modelica] ok 126 - 
+  [Grammar::Modelica] ok 127 - 
+  [Grammar::Modelica] ok 128 - 
+  [Grammar::Modelica] ok 129 - 
+  [Grammar::Modelica] ok 130 - 
+  [Grammar::Modelica] ok 131 - 
+  [Grammar::Modelica] ok 132 - 
+  [Grammar::Modelica] ok 133 - 
+  [Grammar::Modelica] ok 134 - 
+  [Grammar::Modelica] ok 135 - 
+  [Grammar::Modelica] ok 136 - 
+  [Grammar::Modelica] ok 137 - 
+  [Grammar::Modelica] ok 138 - 
+  [Grammar::Modelica] ok 139 - 
+  [Grammar::Modelica] ok 140 - 
+  [Grammar::Modelica] ok 141 - 
+  [Grammar::Modelica] ok 142 - 
+  [Grammar::Modelica] ok 143 - 
+  [Grammar::Modelica] ok 144 - 
+  [Grammar::Modelica] ok 145 - 
+  [Grammar::Modelica] ok 146 - 
+  [Grammar::Modelica] ok 147 - 
+  [Grammar::Modelica] ok 148 - 
+  [Grammar::Modelica] ok 149 - 
+  [Grammar::Modelica] ok 150 - 
+  [Grammar::Modelica] ok 151 - 
+  [Grammar::Modelica] ok 152 - 
+  [Grammar::Modelica] ok 153 - 
+  [Grammar::Modelica] ok 154 - 
+  [Grammar::Modelica] ok 155 - 
+  [Grammar::Modelica] ok 156 - 
+  [Grammar::Modelica] ok 157 - 
+  [Grammar::Modelica] ok 158 - 
+  [Grammar::Modelica] ok 159 - 
+  [Grammar::Modelica] ok 160 - 
+  [Grammar::Modelica] ok 161 - 
+  [Grammar::Modelica] ok 162 - 
+  [Grammar::Modelica] ok 163 - 
+  [Grammar::Modelica] ok 164 - 
+  [Grammar::Modelica] ok 165 - 
+  [Grammar::Modelica] ok 166 - 
+  [Grammar::Modelica] ok 167 - 
+  [Grammar::Modelica] ok 168 - 
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/Extends.rakutest
+  [Grammar::Modelica] 1..9
+  [Grammar::Modelica] Test extends_clause
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] Test constraining_clause
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/LexicalConventions.rakutest
+  [Grammar::Modelica] 1..90
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] ok 10 - 
+  [Grammar::Modelica] ok 11 - 
+  [Grammar::Modelica] ok 12 - 
+  [Grammar::Modelica] ok 13 - 
+  [Grammar::Modelica] ok 14 - 
+  [Grammar::Modelica] ok 15 - 
+  [Grammar::Modelica] ok 16 - 
+  [Grammar::Modelica] ok 17 - 
+  [Grammar::Modelica] ok 18 - 
+  [Grammar::Modelica] ok 19 - 
+  [Grammar::Modelica] ok 20 - 
+  [Grammar::Modelica] ok 21 - 
+  [Grammar::Modelica] ok 22 - 
+  [Grammar::Modelica] ok 23 - 
+  [Grammar::Modelica] ok 24 - 
+  [Grammar::Modelica] ok 25 - 
+  [Grammar::Modelica] ok 26 - 
+  [Grammar::Modelica] ok 27 - 
+  [Grammar::Modelica] ok 28 - 
+  [Grammar::Modelica] ok 29 - 
+  [Grammar::Modelica] ok 30 - 
+  [Grammar::Modelica] ok 31 - 
+  [Grammar::Modelica] ok 32 - 
+  [Grammar::Modelica] ok 33 - Should disalow keywords as IDENT
+  [Grammar::Modelica] ok 34 - 
+  [Grammar::Modelica] ok 35 - 
+  [Grammar::Modelica] ok 36 - 
+  [Grammar::Modelica] ok 37 - 
+  [Grammar::Modelica] ok 38 - 
+  [Grammar::Modelica] ok 39 - 
+  [Grammar::Modelica] ok 40 - 
+  [Grammar::Modelica] ok 41 - 
+  [Grammar::Modelica] ok 42 - 
+  [Grammar::Modelica] ok 43 - 
+  [Grammar::Modelica] ok 44 - 
+  [Grammar::Modelica] ok 45 - 
+  [Grammar::Modelica] ok 46 - 
+  [Grammar::Modelica] ok 47 - 
+  [Grammar::Modelica] ok 48 - 
+  [Grammar::Modelica] ok 49 - 
+  [Grammar::Modelica] ok 50 - 
+  [Grammar::Modelica] ok 51 - 
+  [Grammar::Modelica] ok 52 - 
+  [Grammar::Modelica] ok 53 - 
+  [Grammar::Modelica] ok 54 - 
+  [Grammar::Modelica] ok 55 - 
+  [Grammar::Modelica] ok 56 - 
+  [Grammar::Modelica] ok 57 - 
+  [Grammar::Modelica] ok 58 - 
+  [Grammar::Modelica] ok 59 - 
+  [Grammar::Modelica] ok 60 - 
+  [Grammar::Modelica] ok 61 - 
+  [Grammar::Modelica] ok 62 - 
+  [Grammar::Modelica] ok 63 - 
+  [Grammar::Modelica] ok 64 - 
+  [Grammar::Modelica] ok 65 - 
+  [Grammar::Modelica] ok 66 - 
+  [Grammar::Modelica] ok 67 - 
+  [Grammar::Modelica] ok 68 - 
+  [Grammar::Modelica] ok 69 - 
+  [Grammar::Modelica] ok 70 - 
+  [Grammar::Modelica] ok 71 - 
+  [Grammar::Modelica] ok 72 - 
+  [Grammar::Modelica] ok 73 - 
+  [Grammar::Modelica] ok 74 - 
+  [Grammar::Modelica] ok 75 - 
+  [Grammar::Modelica] ok 76 - 
+  [Grammar::Modelica] ok 77 - 
+  [Grammar::Modelica] ok 78 - 
+  [Grammar::Modelica] ok 79 - 
+  [Grammar::Modelica] ok 80 - 
+  [Grammar::Modelica] ok 81 - 
+  [Grammar::Modelica] ok 82 - 
+  [Grammar::Modelica] ok 83 - 
+  [Grammar::Modelica] ok 84 - 
+  [Grammar::Modelica] ok 85 - 
+  [Grammar::Modelica] ok 86 - 
+  [Grammar::Modelica] ok 87 - 
+  [Grammar::Modelica] ok 88 - 
+  [Grammar::Modelica] ok 89 - 
+  [Grammar::Modelica] ok 90 - 
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/Modelica.rakutest
+  [Grammar::Modelica] 1..15
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] ok 10 - 
+  [Grammar::Modelica] ok 11 - 
+  [Grammar::Modelica] ok 12 - 
+  [Grammar::Modelica] ok 13 - 
+  [Grammar::Modelica] ok 14 - 
+  [Grammar::Modelica] ok 15 - 
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/Modification.rakutest
+  [Grammar::Modelica] 1..49
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] ok 10 - 
+  [Grammar::Modelica] ok 11 - 
+  [Grammar::Modelica] ok 12 - 
+  [Grammar::Modelica] ok 13 - 
+  [Grammar::Modelica] ok 14 - 
+  [Grammar::Modelica] ok 15 - 
+  [Grammar::Modelica] ok 16 - 
+  [Grammar::Modelica] ok 17 - 
+  [Grammar::Modelica] ok 18 - 
+  [Grammar::Modelica] ok 19 - 
+  [Grammar::Modelica] ok 20 - 
+  [Grammar::Modelica] ok 21 - 
+  [Grammar::Modelica] ok 22 - 
+  [Grammar::Modelica] ok 23 - 
+  [Grammar::Modelica] ok 24 - 
+  [Grammar::Modelica] ok 25 - 
+  [Grammar::Modelica] ok 26 - 
+  [Grammar::Modelica] ok 27 - 
+  [Grammar::Modelica] ok 28 - 
+  [Grammar::Modelica] ok 29 - 
+  [Grammar::Modelica] ok 30 - 
+  [Grammar::Modelica] ok 31 - 
+  [Grammar::Modelica] ok 32 - 
+  [Grammar::Modelica] ok 33 - 
+  [Grammar::Modelica] ok 34 - 
+  [Grammar::Modelica] ok 35 - 
+  [Grammar::Modelica] ok 36 - 
+  [Grammar::Modelica] ok 37 - 
+  [Grammar::Modelica] ok 38 - 
+  [Grammar::Modelica] ok 39 - 
+  [Grammar::Modelica] ok 40 - 
+  [Grammar::Modelica] ok 41 - 
+  [Grammar::Modelica] ok 42 - 
+  [Grammar::Modelica] ok 43 - 
+  [Grammar::Modelica] ok 44 - 
+  [Grammar::Modelica] ok 45 - 
+  [Grammar::Modelica] ok 46 - 
+  [Grammar::Modelica] ok 47 - 
+  [Grammar::Modelica] ok 48 - 
+  [Grammar::Modelica] ok 49 - 
+  ===> Testing [OK] for Grammar::Modelica:ver<0.1.3>:auth<zef:raku-community-modules>
+  ===> Installing: Grammar::Modelica:ver<0.1.3>:auth<zef:raku-community-modules>
+  ===> Install [OK] for Grammar::Modelica:ver<0.1.3>:auth<zef:raku-community-modules>
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 58.121s
+               CPU time consumed: 1min 21.900s
+                     Memory peak: 1.1G (swap: 0B)
+
+  ```
+  </details>
+  <details>
+  <summary>New Output</summary>
+
+  ```
+  Running as unit: run-p3011869-i2991958.service; invocation ID: dc5ffa3fe59a4bff864aaabbc307ddce
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: Grammar::Modelica
+  ===> Found: Grammar::Modelica:ver<0.1.3>:auth<zef:raku-community-modules> [via Zef::Repository::Ecosystems<fez>]
+  [Grammar::Modelica] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870258.3011871.9751.884335960634/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz https://360.zef.pm/G/RA/GRAMMAR_MODELICA/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz
+  ===> Fetching [OK]: Grammar::Modelica:ver<0.1.3>:auth<zef:raku-community-modules> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870258.3011871.9751.884335960634/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz
+  [Grammar::Modelica] Command: tar -t -f ./cf609d989163d3c71bfee42fd718ff0437693735.tar.gz
+  [Grammar::Modelica] Command: tar -xvf ./cf609d989163d3c71bfee42fd718ff0437693735.tar.gz -C ../cf609d989163d3c71bfee42fd718ff0437693735.tar.gz
+  ===> Extraction [OK]: Grammar::Modelica to /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz
+  ===> Testing: Grammar::Modelica:ver<0.1.3>:auth<zef:raku-community-modules>
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/ClassDefinition.rakutest
+  [Grammar::Modelica] 1..121
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] ok 10 - 
+  [Grammar::Modelica] ok 11 - 
+  [Grammar::Modelica] ok 12 - 
+  [Grammar::Modelica] ok 13 - 
+  [Grammar::Modelica] ok 14 - 
+  [Grammar::Modelica] ok 15 - 
+  [Grammar::Modelica] ok 16 - 
+  [Grammar::Modelica] ok 17 - 
+  [Grammar::Modelica] ok 18 - 
+  [Grammar::Modelica] ok 19 - 
+  [Grammar::Modelica] ok 20 - 
+  [Grammar::Modelica] ok 21 - 
+  [Grammar::Modelica] ok 22 - 
+  [Grammar::Modelica] ok 23 - 
+  [Grammar::Modelica] ok 24 - 
+  [Grammar::Modelica] ok 25 - 
+  [Grammar::Modelica] ok 26 - 
+  [Grammar::Modelica] ok 27 - 
+  [Grammar::Modelica] ok 28 - 
+  [Grammar::Modelica] ok 29 - 
+  [Grammar::Modelica] ok 30 - 
+  [Grammar::Modelica] ok 31 - 
+  [Grammar::Modelica] ok 32 - 
+  [Grammar::Modelica] ok 33 - 
+  [Grammar::Modelica] ok 34 - 
+  [Grammar::Modelica] ok 35 - 
+  [Grammar::Modelica] ok 36 - 
+  [Grammar::Modelica] ok 37 - 
+  [Grammar::Modelica] ok 38 - 
+  [Grammar::Modelica] ok 39 - 
+  [Grammar::Modelica] ok 40 - 
+  [Grammar::Modelica] ok 41 - 
+  [Grammar::Modelica] ok 42 - 
+  [Grammar::Modelica] ok 43 - 
+  [Grammar::Modelica] ok 44 - 
+  [Grammar::Modelica] ok 45 - 
+  [Grammar::Modelica] ok 46 - 
+  [Grammar::Modelica] ok 47 - 
+  [Grammar::Modelica] ok 48 - 
+  [Grammar::Modelica] ok 49 - 
+  [Grammar::Modelica] ok 50 - 
+  [Grammar::Modelica] ok 51 - 
+  [Grammar::Modelica] ok 52 - 
+  [Grammar::Modelica] ok 53 - 
+  [Grammar::Modelica] ok 54 - 
+  [Grammar::Modelica] ok 55 - 
+  [Grammar::Modelica] ok 56 - 
+  [Grammar::Modelica] ok 57 - 
+  [Grammar::Modelica] ok 58 - 
+  [Grammar::Modelica] ok 59 - 
+  [Grammar::Modelica] ok 60 - 
+  [Grammar::Modelica] ok 61 - 
+  [Grammar::Modelica] ok 62 - 
+  [Grammar::Modelica] not ok 63 - 
+  [Grammar::Modelica] # Failed test at t/ClassDefinition.rakutest line 103
+  [Grammar::Modelica] ok 64 - 
+  [Grammar::Modelica] ok 65 - 
+  [Grammar::Modelica] ok 66 - 
+  [Grammar::Modelica] ok 67 - 
+  [Grammar::Modelica] ok 68 - 
+  [Grammar::Modelica] ok 69 - 
+  [Grammar::Modelica] ok 70 - 
+  [Grammar::Modelica] ok 71 - 
+  [Grammar::Modelica] ok 72 - 
+  [Grammar::Modelica] ok 73 - 
+  [Grammar::Modelica] ok 74 - 
+  [Grammar::Modelica] ok 75 - 
+  [Grammar::Modelica] ok 76 - 
+  [Grammar::Modelica] ok 77 - 
+  [Grammar::Modelica] ok 78 - 
+  [Grammar::Modelica] ok 79 - 
+  [Grammar::Modelica] ok 80 - 
+  [Grammar::Modelica] ok 81 - 
+  [Grammar::Modelica] ok 82 - 
+  [Grammar::Modelica] ok 83 - 
+  [Grammar::Modelica] ok 84 - 
+  [Grammar::Modelica] ok 85 - 
+  [Grammar::Modelica] ok 86 - 
+  [Grammar::Modelica] ok 87 - 
+  [Grammar::Modelica] ok 88 - 
+  [Grammar::Modelica] ok 89 - 
+  [Grammar::Modelica] ok 90 - 
+  [Grammar::Modelica] ok 91 - 
+  [Grammar::Modelica] ok 92 - 
+  [Grammar::Modelica] ok 93 - 
+  [Grammar::Modelica] ok 94 - 
+  [Grammar::Modelica] ok 95 - 
+  [Grammar::Modelica] ok 96 - 
+  [Grammar::Modelica] ok 97 - 
+  [Grammar::Modelica] ok 98 - 
+  [Grammar::Modelica] ok 99 - 
+  [Grammar::Modelica] ok 100 - 
+  [Grammar::Modelica] ok 101 - 
+  [Grammar::Modelica] ok 102 - 
+  [Grammar::Modelica] ok 103 - 
+  [Grammar::Modelica] ok 104 - 
+  [Grammar::Modelica] ok 105 - 
+  [Grammar::Modelica] ok 106 - 
+  [Grammar::Modelica] ok 107 - 
+  [Grammar::Modelica] ok 108 - 
+  [Grammar::Modelica] ok 109 - 
+  [Grammar::Modelica] ok 110 - 
+  [Grammar::Modelica] ok 111 - 
+  [Grammar::Modelica] ok 112 - 
+  [Grammar::Modelica] ok 113 - 
+  [Grammar::Modelica] ok 114 - 
+  [Grammar::Modelica] ok 115 - 
+  [Grammar::Modelica] ok 116 - 
+  [Grammar::Modelica] ok 117 - 
+  [Grammar::Modelica] ok 118 - 
+  [Grammar::Modelica] ok 119 - 
+  [Grammar::Modelica] ok 120 - 
+  [Grammar::Modelica] ok 121 - 
+  [Grammar::Modelica] # You failed 1 test of 121
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/ComponentClause.rakutest
+  [Grammar::Modelica] 1..34
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] ok 10 - 
+  [Grammar::Modelica] ok 11 - 
+  [Grammar::Modelica] ok 12 - 
+  [Grammar::Modelica] ok 13 - 
+  [Grammar::Modelica] ok 14 - 
+  [Grammar::Modelica] ok 15 - 
+  [Grammar::Modelica] ok 16 - 
+  [Grammar::Modelica] ok 17 - 
+  [Grammar::Modelica] ok 18 - 
+  [Grammar::Modelica] ok 19 - 
+  [Grammar::Modelica] ok 20 - 
+  [Grammar::Modelica] ok 21 - 
+  [Grammar::Modelica] ok 22 - 
+  [Grammar::Modelica] ok 23 - 
+  [Grammar::Modelica] ok 24 - 
+  [Grammar::Modelica] ok 25 - 
+  [Grammar::Modelica] ok 26 - 
+  [Grammar::Modelica] ok 27 - 
+  [Grammar::Modelica] ok 28 - 
+  [Grammar::Modelica] ok 29 - 
+  [Grammar::Modelica] ok 30 - 
+  [Grammar::Modelica] ok 31 - 
+  [Grammar::Modelica] ok 32 - 
+  [Grammar::Modelica] ok 33 - 
+  [Grammar::Modelica] ok 34 - 
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/Equations.rakutest
+  [Grammar::Modelica] 1..170
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] ok 10 - 
+  [Grammar::Modelica] ok 11 - 
+  [Grammar::Modelica] ok 12 - 
+  [Grammar::Modelica] ok 13 - 
+  [Grammar::Modelica] ok 14 - 
+  [Grammar::Modelica] ok 15 - 
+  [Grammar::Modelica] ok 16 - 
+  [Grammar::Modelica] ok 17 - 
+  [Grammar::Modelica] ok 18 - 
+  [Grammar::Modelica] ok 19 - 
+  [Grammar::Modelica] ok 20 - 
+  [Grammar::Modelica] ok 21 - 
+  [Grammar::Modelica] ok 22 - 
+  [Grammar::Modelica] ok 23 - 
+  [Grammar::Modelica] ok 24 - 
+  [Grammar::Modelica] ok 25 - 
+  [Grammar::Modelica] ok 26 - 
+  [Grammar::Modelica] ok 27 - 
+  [Grammar::Modelica] ok 28 - 
+  [Grammar::Modelica] ok 29 - 
+  [Grammar::Modelica] ok 30 - 
+  [Grammar::Modelica] ok 31 - 
+  [Grammar::Modelica] ok 32 - 
+  [Grammar::Modelica] ok 33 - 
+  [Grammar::Modelica] ok 34 - 
+  [Grammar::Modelica] ok 35 - 
+  [Grammar::Modelica] ok 36 - 
+  [Grammar::Modelica] ok 37 - 
+  [Grammar::Modelica] ok 38 - 
+  [Grammar::Modelica] ok 39 - 
+  [Grammar::Modelica] ok 40 - 
+  [Grammar::Modelica] ok 41 - 
+  [Grammar::Modelica] ok 42 - 
+  [Grammar::Modelica] ok 43 - 
+  [Grammar::Modelica] ok 44 - 
+  [Grammar::Modelica] ok 45 - 
+  [Grammar::Modelica] ok 46 - 
+  [Grammar::Modelica] ok 47 - 
+  [Grammar::Modelica] ok 48 - 
+  [Grammar::Modelica] ok 49 - 
+  [Grammar::Modelica] ok 50 - 
+  [Grammar::Modelica] ok 51 - 
+  [Grammar::Modelica] ok 52 - 
+  [Grammar::Modelica] ok 53 - 
+  [Grammar::Modelica] ok 54 - 
+  [Grammar::Modelica] ok 55 - 
+  [Grammar::Modelica] ok 56 - 
+  [Grammar::Modelica] ok 57 - 
+  [Grammar::Modelica] ok 58 - 
+  [Grammar::Modelica] ok 59 - 
+  [Grammar::Modelica] ok 60 - 
+  [Grammar::Modelica] ok 61 - 
+  [Grammar::Modelica] ok 62 - 
+  [Grammar::Modelica] ok 63 - 
+  [Grammar::Modelica] ok 64 - 
+  [Grammar::Modelica] ok 65 - 
+  [Grammar::Modelica] ok 66 - 
+  [Grammar::Modelica] ok 67 - 
+  [Grammar::Modelica] ok 68 - 
+  [Grammar::Modelica] ok 69 - 
+  [Grammar::Modelica] ok 70 - 
+  [Grammar::Modelica] ok 71 - 
+  [Grammar::Modelica] ok 72 - 
+  [Grammar::Modelica] ok 73 - 
+  [Grammar::Modelica] ok 74 - 
+  [Grammar::Modelica] ok 75 - 
+  [Grammar::Modelica] ok 76 - 
+  [Grammar::Modelica] ok 77 - 
+  [Grammar::Modelica] ok 78 - 
+  [Grammar::Modelica] ok 79 - 
+  [Grammar::Modelica] ok 80 - 
+  [Grammar::Modelica] ok 81 - 
+  [Grammar::Modelica] ok 82 - 
+  [Grammar::Modelica] ok 83 - 
+  [Grammar::Modelica] ok 84 - 
+  [Grammar::Modelica] ok 85 - 
+  [Grammar::Modelica] ok 86 - 
+  [Grammar::Modelica] ok 87 - 
+  [Grammar::Modelica] ok 88 - 
+  [Grammar::Modelica] ok 89 - 
+  [Grammar::Modelica] ok 90 - 
+  [Grammar::Modelica] ok 91 - 
+  [Grammar::Modelica] ok 92 - 
+  [Grammar::Modelica] ok 93 - 
+  [Grammar::Modelica] ok 94 - 
+  [Grammar::Modelica] ok 95 - 
+  [Grammar::Modelica] ok 96 - 
+  [Grammar::Modelica] ok 97 - 
+  [Grammar::Modelica] ok 98 - 
+  [Grammar::Modelica] ok 99 - 
+  [Grammar::Modelica] ok 100 - 
+  [Grammar::Modelica] ok 101 - 
+  [Grammar::Modelica] ok 102 - 
+  [Grammar::Modelica] ok 103 - 
+  [Grammar::Modelica] ok 104 - 
+  [Grammar::Modelica] ok 105 - 
+  [Grammar::Modelica] ok 106 - 
+  [Grammar::Modelica] ok 107 - 
+  [Grammar::Modelica] ok 108 - 
+  [Grammar::Modelica] ok 109 - 
+  [Grammar::Modelica] ok 110 - 
+  [Grammar::Modelica] ok 111 - 
+  [Grammar::Modelica] ok 112 - 
+  [Grammar::Modelica] ok 113 - 
+  [Grammar::Modelica] ok 114 - 
+  [Grammar::Modelica] ok 115 - 
+  [Grammar::Modelica] ok 116 - 
+  [Grammar::Modelica] ok 117 - 
+  [Grammar::Modelica] ok 118 - 
+  [Grammar::Modelica] ok 119 - 
+  [Grammar::Modelica] ok 120 - 
+  [Grammar::Modelica] ok 121 - 
+  [Grammar::Modelica] ok 122 - 
+  [Grammar::Modelica] ok 123 - 
+  [Grammar::Modelica] ok 124 - 
+  [Grammar::Modelica] ok 125 - 
+  [Grammar::Modelica] ok 126 - 
+  [Grammar::Modelica] ok 127 - 
+  [Grammar::Modelica] ok 128 - 
+  [Grammar::Modelica] ok 129 - 
+  [Grammar::Modelica] ok 130 - 
+  [Grammar::Modelica] ok 131 - 
+  [Grammar::Modelica] ok 132 - 
+  [Grammar::Modelica] ok 133 - 
+  [Grammar::Modelica] ok 134 - 
+  [Grammar::Modelica] ok 135 - 
+  [Grammar::Modelica] ok 136 - 
+  [Grammar::Modelica] ok 137 - 
+  [Grammar::Modelica] ok 138 - 
+  [Grammar::Modelica] ok 139 - 
+  [Grammar::Modelica] ok 140 - 
+  [Grammar::Modelica] ok 141 - 
+  [Grammar::Modelica] ok 142 - 
+  [Grammar::Modelica] ok 143 - 
+  [Grammar::Modelica] ok 144 - 
+  [Grammar::Modelica] ok 145 - 
+  [Grammar::Modelica] ok 146 - 
+  [Grammar::Modelica] ok 147 - 
+  [Grammar::Modelica] ok 148 - 
+  [Grammar::Modelica] ok 149 - 
+  [Grammar::Modelica] ok 150 - 
+  [Grammar::Modelica] ok 151 - 
+  [Grammar::Modelica] ok 152 - 
+  [Grammar::Modelica] ok 153 - 
+  [Grammar::Modelica] ok 154 - 
+  [Grammar::Modelica] ok 155 - 
+  [Grammar::Modelica] ok 156 - 
+  [Grammar::Modelica] ok 157 - 
+  [Grammar::Modelica] ok 158 - 
+  [Grammar::Modelica] ok 159 - 
+  [Grammar::Modelica] ok 160 - 
+  [Grammar::Modelica] ok 161 - 
+  [Grammar::Modelica] ok 162 - 
+  [Grammar::Modelica] ok 163 - 
+  [Grammar::Modelica] ok 164 - 
+  [Grammar::Modelica] ok 165 - 
+  [Grammar::Modelica] ok 166 - 
+  [Grammar::Modelica] ok 167 - 
+  [Grammar::Modelica] ok 168 - 
+  [Grammar::Modelica] ok 169 - 
+  [Grammar::Modelica] ok 170 - 
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/Expression_regression.rakutest
+  [Grammar::Modelica] 1..15
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] ok 10 - 
+  [Grammar::Modelica] ok 11 - 
+  [Grammar::Modelica] ok 12 - 
+  [Grammar::Modelica] ok 13 - 
+  [Grammar::Modelica] ok 14 - 
+  [Grammar::Modelica] ok 15 - 
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/Expressions.rakutest
+  [Grammar::Modelica] 1..168
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] ok 10 - 
+  [Grammar::Modelica] ok 11 - 
+  [Grammar::Modelica] ok 12 - 
+  [Grammar::Modelica] ok 13 - 
+  [Grammar::Modelica] ok 14 - 
+  [Grammar::Modelica] ok 15 - 
+  [Grammar::Modelica] ok 16 - 
+  [Grammar::Modelica] ok 17 - 
+  [Grammar::Modelica] ok 18 - 
+  [Grammar::Modelica] ok 19 - 
+  [Grammar::Modelica] ok 20 - 
+  [Grammar::Modelica] ok 21 - 
+  [Grammar::Modelica] ok 22 - 
+  [Grammar::Modelica] ok 23 - 
+  [Grammar::Modelica] ok 24 - 
+  [Grammar::Modelica] ok 25 - 
+  [Grammar::Modelica] ok 26 - 
+  [Grammar::Modelica] ok 27 - 
+  [Grammar::Modelica] ok 28 - 
+  [Grammar::Modelica] ok 29 - 
+  [Grammar::Modelica] ok 30 - 
+  [Grammar::Modelica] ok 31 - 
+  [Grammar::Modelica] ok 32 - 
+  [Grammar::Modelica] ok 33 - 
+  [Grammar::Modelica] ok 34 - 
+  [Grammar::Modelica] ok 35 - 
+  [Grammar::Modelica] ok 36 - 
+  [Grammar::Modelica] ok 37 - 
+  [Grammar::Modelica] ok 38 - 
+  [Grammar::Modelica] ok 39 - 
+  [Grammar::Modelica] ok 40 - 
+  [Grammar::Modelica] ok 41 - 
+  [Grammar::Modelica] ok 42 - 
+  [Grammar::Modelica] ok 43 - 
+  [Grammar::Modelica] ok 44 - 
+  [Grammar::Modelica] ok 45 - 
+  [Grammar::Modelica] ok 46 - 
+  [Grammar::Modelica] ok 47 - 
+  [Grammar::Modelica] ok 48 - 
+  [Grammar::Modelica] ok 49 - 
+  [Grammar::Modelica] ok 50 - 
+  [Grammar::Modelica] ok 51 - 
+  [Grammar::Modelica] ok 52 - 
+  [Grammar::Modelica] ok 53 - 
+  [Grammar::Modelica] ok 54 - 
+  [Grammar::Modelica] ok 55 - 
+  [Grammar::Modelica] ok 56 - 
+  [Grammar::Modelica] ok 57 - 
+  [Grammar::Modelica] ok 58 - 
+  [Grammar::Modelica] ok 59 - 
+  [Grammar::Modelica] ok 60 - 
+  [Grammar::Modelica] ok 61 - 
+  [Grammar::Modelica] ok 62 - 
+  [Grammar::Modelica] ok 63 - 
+  [Grammar::Modelica] ok 64 - 
+  [Grammar::Modelica] ok 65 - 
+  [Grammar::Modelica] ok 66 - 
+  [Grammar::Modelica] ok 67 - 
+  [Grammar::Modelica] ok 68 - 
+  [Grammar::Modelica] ok 69 - 
+  [Grammar::Modelica] ok 70 - 
+  [Grammar::Modelica] ok 71 - 
+  [Grammar::Modelica] ok 72 - 
+  [Grammar::Modelica] ok 73 - 
+  [Grammar::Modelica] ok 74 - 
+  [Grammar::Modelica] ok 75 - 
+  [Grammar::Modelica] ok 76 - 
+  [Grammar::Modelica] ok 77 - 
+  [Grammar::Modelica] ok 78 - 
+  [Grammar::Modelica] ok 79 - 
+  [Grammar::Modelica] ok 80 - 
+  [Grammar::Modelica] ok 81 - 
+  [Grammar::Modelica] ok 82 - 
+  [Grammar::Modelica] ok 83 - 
+  [Grammar::Modelica] ok 84 - 
+  [Grammar::Modelica] ok 85 - 
+  [Grammar::Modelica] ok 86 - 
+  [Grammar::Modelica] ok 87 - 
+  [Grammar::Modelica] ok 88 - 
+  [Grammar::Modelica] ok 89 - 
+  [Grammar::Modelica] ok 90 - 
+  [Grammar::Modelica] ok 91 - 
+  [Grammar::Modelica] ok 92 - 
+  [Grammar::Modelica] ok 93 - 
+  [Grammar::Modelica] ok 94 - 
+  [Grammar::Modelica] ok 95 - 
+  [Grammar::Modelica] ok 96 - 
+  [Grammar::Modelica] ok 97 - 
+  [Grammar::Modelica] ok 98 - 
+  [Grammar::Modelica] ok 99 - 
+  [Grammar::Modelica] ok 100 - 
+  [Grammar::Modelica] ok 101 - 
+  [Grammar::Modelica] ok 102 - 
+  [Grammar::Modelica] ok 103 - 
+  [Grammar::Modelica] ok 104 - 
+  [Grammar::Modelica] ok 105 - 
+  [Grammar::Modelica] ok 106 - 
+  [Grammar::Modelica] ok 107 - 
+  [Grammar::Modelica] ok 108 - 
+  [Grammar::Modelica] ok 109 - 
+  [Grammar::Modelica] ok 110 - 
+  [Grammar::Modelica] ok 111 - 
+  [Grammar::Modelica] ok 112 - 
+  [Grammar::Modelica] ok 113 - 
+  [Grammar::Modelica] ok 114 - 
+  [Grammar::Modelica] ok 115 - 
+  [Grammar::Modelica] ok 116 - 
+  [Grammar::Modelica] ok 117 - 
+  [Grammar::Modelica] ok 118 - 
+  [Grammar::Modelica] ok 119 - 
+  [Grammar::Modelica] ok 120 - 
+  [Grammar::Modelica] ok 121 - 
+  [Grammar::Modelica] ok 122 - 
+  [Grammar::Modelica] ok 123 - 
+  [Grammar::Modelica] ok 124 - 
+  [Grammar::Modelica] ok 125 - 
+  [Grammar::Modelica] ok 126 - 
+  [Grammar::Modelica] ok 127 - 
+  [Grammar::Modelica] ok 128 - 
+  [Grammar::Modelica] ok 129 - 
+  [Grammar::Modelica] ok 130 - 
+  [Grammar::Modelica] ok 131 - 
+  [Grammar::Modelica] ok 132 - 
+  [Grammar::Modelica] ok 133 - 
+  [Grammar::Modelica] ok 134 - 
+  [Grammar::Modelica] ok 135 - 
+  [Grammar::Modelica] ok 136 - 
+  [Grammar::Modelica] ok 137 - 
+  [Grammar::Modelica] ok 138 - 
+  [Grammar::Modelica] ok 139 - 
+  [Grammar::Modelica] ok 140 - 
+  [Grammar::Modelica] ok 141 - 
+  [Grammar::Modelica] ok 142 - 
+  [Grammar::Modelica] ok 143 - 
+  [Grammar::Modelica] ok 144 - 
+  [Grammar::Modelica] ok 145 - 
+  [Grammar::Modelica] ok 146 - 
+  [Grammar::Modelica] ok 147 - 
+  [Grammar::Modelica] ok 148 - 
+  [Grammar::Modelica] ok 149 - 
+  [Grammar::Modelica] ok 150 - 
+  [Grammar::Modelica] ok 151 - 
+  [Grammar::Modelica] ok 152 - 
+  [Grammar::Modelica] ok 153 - 
+  [Grammar::Modelica] ok 154 - 
+  [Grammar::Modelica] ok 155 - 
+  [Grammar::Modelica] ok 156 - 
+  [Grammar::Modelica] ok 157 - 
+  [Grammar::Modelica] ok 158 - 
+  [Grammar::Modelica] ok 159 - 
+  [Grammar::Modelica] ok 160 - 
+  [Grammar::Modelica] ok 161 - 
+  [Grammar::Modelica] ok 162 - 
+  [Grammar::Modelica] ok 163 - 
+  [Grammar::Modelica] ok 164 - 
+  [Grammar::Modelica] ok 165 - 
+  [Grammar::Modelica] ok 166 - 
+  [Grammar::Modelica] ok 167 - 
+  [Grammar::Modelica] ok 168 - 
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/Extends.rakutest
+  [Grammar::Modelica] 1..9
+  [Grammar::Modelica] Test extends_clause
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] Test constraining_clause
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/LexicalConventions.rakutest
+  [Grammar::Modelica] 1..90
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] ok 10 - 
+  [Grammar::Modelica] ok 11 - 
+  [Grammar::Modelica] ok 12 - 
+  [Grammar::Modelica] ok 13 - 
+  [Grammar::Modelica] ok 14 - 
+  [Grammar::Modelica] ok 15 - 
+  [Grammar::Modelica] ok 16 - 
+  [Grammar::Modelica] ok 17 - 
+  [Grammar::Modelica] ok 18 - 
+  [Grammar::Modelica] ok 19 - 
+  [Grammar::Modelica] ok 20 - 
+  [Grammar::Modelica] ok 21 - 
+  [Grammar::Modelica] ok 22 - 
+  [Grammar::Modelica] ok 23 - 
+  [Grammar::Modelica] ok 24 - 
+  [Grammar::Modelica] ok 25 - 
+  [Grammar::Modelica] ok 26 - 
+  [Grammar::Modelica] ok 27 - 
+  [Grammar::Modelica] ok 28 - 
+  [Grammar::Modelica] ok 29 - 
+  [Grammar::Modelica] ok 30 - 
+  [Grammar::Modelica] ok 31 - 
+  [Grammar::Modelica] ok 32 - 
+  [Grammar::Modelica] ok 33 - Should disalow keywords as IDENT
+  [Grammar::Modelica] ok 34 - 
+  [Grammar::Modelica] ok 35 - 
+  [Grammar::Modelica] ok 36 - 
+  [Grammar::Modelica] ok 37 - 
+  [Grammar::Modelica] ok 38 - 
+  [Grammar::Modelica] ok 39 - 
+  [Grammar::Modelica] ok 40 - 
+  [Grammar::Modelica] ok 41 - 
+  [Grammar::Modelica] ok 42 - 
+  [Grammar::Modelica] ok 43 - 
+  [Grammar::Modelica] ok 44 - 
+  [Grammar::Modelica] ok 45 - 
+  [Grammar::Modelica] ok 46 - 
+  [Grammar::Modelica] ok 47 - 
+  [Grammar::Modelica] ok 48 - 
+  [Grammar::Modelica] ok 49 - 
+  [Grammar::Modelica] ok 50 - 
+  [Grammar::Modelica] ok 51 - 
+  [Grammar::Modelica] ok 52 - 
+  [Grammar::Modelica] ok 53 - 
+  [Grammar::Modelica] ok 54 - 
+  [Grammar::Modelica] ok 55 - 
+  [Grammar::Modelica] ok 56 - 
+  [Grammar::Modelica] ok 57 - 
+  [Grammar::Modelica] ok 58 - 
+  [Grammar::Modelica] ok 59 - 
+  [Grammar::Modelica] ok 60 - 
+  [Grammar::Modelica] ok 61 - 
+  [Grammar::Modelica] ok 62 - 
+  [Grammar::Modelica] ok 63 - 
+  [Grammar::Modelica] ok 64 - 
+  [Grammar::Modelica] ok 65 - 
+  [Grammar::Modelica] ok 66 - 
+  [Grammar::Modelica] ok 67 - 
+  [Grammar::Modelica] ok 68 - 
+  [Grammar::Modelica] ok 69 - 
+  [Grammar::Modelica] ok 70 - 
+  [Grammar::Modelica] ok 71 - 
+  [Grammar::Modelica] ok 72 - 
+  [Grammar::Modelica] ok 73 - 
+  [Grammar::Modelica] ok 74 - 
+  [Grammar::Modelica] ok 75 - 
+  [Grammar::Modelica] ok 76 - 
+  [Grammar::Modelica] ok 77 - 
+  [Grammar::Modelica] ok 78 - 
+  [Grammar::Modelica] ok 79 - 
+  [Grammar::Modelica] ok 80 - 
+  [Grammar::Modelica] ok 81 - 
+  [Grammar::Modelica] ok 82 - 
+  [Grammar::Modelica] ok 83 - 
+  [Grammar::Modelica] ok 84 - 
+  [Grammar::Modelica] ok 85 - 
+  [Grammar::Modelica] ok 86 - 
+  [Grammar::Modelica] ok 87 - 
+  [Grammar::Modelica] ok 88 - 
+  [Grammar::Modelica] ok 89 - 
+  [Grammar::Modelica] ok 90 - 
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/Modelica.rakutest
+  [Grammar::Modelica] 1..15
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] ok 10 - 
+  [Grammar::Modelica] ok 11 - 
+  [Grammar::Modelica] ok 12 - 
+  [Grammar::Modelica] ok 13 - 
+  [Grammar::Modelica] ok 14 - 
+  [Grammar::Modelica] ok 15 - 
+  [Grammar::Modelica] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf609d989163d3c71bfee42fd718ff0437693735.tar.gz/Grammar-Modelica-0.1.3 t/Modification.rakutest
+  [Grammar::Modelica] 1..49
+  [Grammar::Modelica] ok 1 - 
+  [Grammar::Modelica] ok 2 - 
+  [Grammar::Modelica] ok 3 - 
+  [Grammar::Modelica] ok 4 - 
+  [Grammar::Modelica] ok 5 - 
+  [Grammar::Modelica] ok 6 - 
+  [Grammar::Modelica] ok 7 - 
+  [Grammar::Modelica] ok 8 - 
+  [Grammar::Modelica] ok 9 - 
+  [Grammar::Modelica] ok 10 - 
+  [Grammar::Modelica] ok 11 - 
+  [Grammar::Modelica] ok 12 - 
+  [Grammar::Modelica] ok 13 - 
+  [Grammar::Modelica] ok 14 - 
+  [Grammar::Modelica] ok 15 - 
+  [Grammar::Modelica] ok 16 - 
+  [Grammar::Modelica] ok 17 - 
+  [Grammar::Modelica] ok 18 - 
+  [Grammar::Modelica] ok 19 - 
+  [Grammar::Modelica] ok 20 - 
+  [Grammar::Modelica] ok 21 - 
+  [Grammar::Modelica] ok 22 - 
+  [Grammar::Modelica] ok 23 - 
+  [Grammar::Modelica] ok 24 - 
+  [Grammar::Modelica] ok 25 - 
+  [Grammar::Modelica] ok 26 - 
+  [Grammar::Modelica] ok 27 - 
+  [Grammar::Modelica] ok 28 - 
+  [Grammar::Modelica] ok 29 - 
+  [Grammar::Modelica] ok 30 - 
+  [Grammar::Modelica] ok 31 - 
+  [Grammar::Modelica] ok 32 - 
+  [Grammar::Modelica] ok 33 - 
+  [Grammar::Modelica] ok 34 - 
+  [Grammar::Modelica] ok 35 - 
+  [Grammar::Modelica] ok 36 - 
+  [Grammar::Modelica] ok 37 - 
+  [Grammar::Modelica] ok 38 - 
+  [Grammar::Modelica] ok 39 - 
+  [Grammar::Modelica] ok 40 - 
+  [Grammar::Modelica] ok 41 - 
+  [Grammar::Modelica] ok 42 - 
+  [Grammar::Modelica] ok 43 - 
+  [Grammar::Modelica] ok 44 - 
+  [Grammar::Modelica] ok 45 - 
+  [Grammar::Modelica] ok 46 - 
+  [Grammar::Modelica] ok 47 - 
+  [Grammar::Modelica] ok 48 - 
+  [Grammar::Modelica] ok 49 - 
+  ===> Testing [FAIL]: Grammar::Modelica:ver<0.1.3>:auth<zef:raku-community-modules>
+  [Grammar::Modelica] Failed to get passing tests, but continuing with --force-test
+  ===> Installing: Grammar::Modelica:ver<0.1.3>:auth<zef:raku-community-modules>
+  ===> Install [OK] for Grammar::Modelica:ver<0.1.3>:auth<zef:raku-community-modules>
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 36.005s
+               CPU time consumed: 26.462s
+                     Memory peak: 830.8M (swap: 0B)
+
+  ```
+  </details>
+* [ ] [Math::Symbolic](https://raku.land/zef:raku-community-modules/Math::Symbolic) – Fail, Bisected: [b180d60](https://github.com/rakudo/rakudo/commit/b180d6078dd3f2359929e0315bc40c4b680f0a17) [da2a525](https://github.com/rakudo/rakudo/commit/da2a52539d735095ec620b744e441037b046208d)
+  <details><Summary>Old Output</summary>
+
+  ```
+  Running as unit: run-p3013212-i3000840.service; invocation ID: 4ec119fe3c614c3e8331613bb3034526
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: Math::Symbolic
+  ===> Found: Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules> [via Zef::Repository::Ecosystems<fez>]
+  [Math::Symbolic] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870316.3013213.8322.251420760707/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz https://360.zef.pm/M/AT/MATH_SYMBOLIC/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz
+  ===> Fetching [OK]: Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870316.3013213.8322.251420760707/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz
+  [Math::Symbolic] Command: tar -t -f ./d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz
+  [Math::Symbolic] Command: tar -xvf ./d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz -C ../d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz
+  ===> Extraction [OK]: Math::Symbolic to /home/coke/sandbox/blin/data/zef-data/tmp/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz
+  ===> Testing: Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules>
+  [Math::Symbolic] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz/Math-Symbolic-0.1 t/01-basics.rakutest
+  [Math::Symbolic] 1..11
+  [Math::Symbolic] ok 1 - .new() works
+  [Math::Symbolic] ok 2 - .isolate() works
+  [Math::Symbolic] ok 3 - .evaluate() works
+  [Math::Symbolic] ok 4 - .expand() works
+  [Math::Symbolic] ok 5 - .condense() works
+  [Math::Symbolic] ok 6 - .expression() works
+  [Math::Symbolic] ok 7 - README slope-intercept example works
+  [Math::Symbolic] ok 8 - .simplify documentation is correct
+  [Math::Symbolic] ok 9 - .routine().EVAL works
+  [Math::Symbolic] ok 10 - can convert Pythagorean theorem into Raku distance subroutine
+  [Math::Symbolic] ok 11 - quadratic solution to the leading problem in 1D seems correct
+  ===> Testing [OK] for Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules>
+  ===> Installing: Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules>
+  ===> Install [OK] for Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules>
+
+  1 bin/ script [symbolic] installed to:
+  /tmp/lK3IhbtDRg/bin
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 53.562s
+               CPU time consumed: 1min 14.498s
+                     Memory peak: 1.1G (swap: 0B)
+
+  ```
+  </details>
+  <details>
+  <summary>New Output</summary>
+
+  ```
+  Running as unit: run-p3011898-i2989885.service; invocation ID: c6a5b14067ef4726b420cce0102d159d
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: Math::Symbolic
+  ===> Found: Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules> [via Zef::Repository::Ecosystems<fez>]
+  [Math::Symbolic] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870263.3011900.9511.266137612487/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz https://360.zef.pm/M/AT/MATH_SYMBOLIC/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz
+  ===> Fetching [OK]: Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870263.3011900.9511.266137612487/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz
+  [Math::Symbolic] Command: tar -t -f ./d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz
+  [Math::Symbolic] Command: tar -xvf ./d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz -C ../d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz
+  ===> Extraction [OK]: Math::Symbolic to /home/coke/sandbox/blin/data/zef-data/tmp/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz
+  ===> Testing: Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules>
+  [Math::Symbolic] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz/Math-Symbolic-0.1 t/01-basics.rakutest
+  [Math::Symbolic] 1..11
+  [Math::Symbolic] ok 1 - .new() works
+  [Math::Symbolic] ok 2 - .isolate() works
+  [Math::Symbolic] ok 3 - .evaluate() works
+  [Math::Symbolic] ok 4 - .expand() works
+  [Math::Symbolic] ok 5 - .condense() works
+  [Math::Symbolic] ok 6 - .expression() works
+  [Math::Symbolic] ok 7 - README slope-intercept example works
+  [Math::Symbolic] ok 8 - .simplify documentation is correct
+  [Math::Symbolic] Parse failure: invalid expression
+  [Math::Symbolic]   in method new at /home/coke/sandbox/blin/data/zef-data/tmp/d7c9d1008592b8e2e35e5d7bb0e699aa22888696.tar.gz/Math-Symbolic-0.1/lib/Math/Symbolic.rakumod (Math::Symbolic) line 16
+  [Math::Symbolic]   in block <unit> at t/01-basics.rakutest line 25
+  [Math::Symbolic] # You planned 11 tests, but ran 8
+  ===> Testing [FAIL]: Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules>
+  [Math::Symbolic] Failed to get passing tests, but continuing with --force-test
+  ===> Installing: Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules>
+  ===> Install [OK] for Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules>
+
+  1 bin/ script [symbolic] installed to:
+  /home/coke/sandbox/blin/installed/Math::Symbolic_zef:raku-community-modules_0.1_0/bin
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 30.557s
+               CPU time consumed: 12.218s
+                     Memory peak: 801.7M (swap: 0B)
+
+  ```
+  </details>
+* [ ] [SQL::Lexer](https://raku.land/github:dmaestro/SQL::Lexer) – Fail, Bisected: [b180d60](https://github.com/rakudo/rakudo/commit/b180d6078dd3f2359929e0315bc40c4b680f0a17) [da2a525](https://github.com/rakudo/rakudo/commit/da2a52539d735095ec620b744e441037b046208d)
+  <details><Summary>Old Output</summary>
+
+  ```
+  Running as unit: run-p3012572-i3072353.service; invocation ID: 8bac9b04de7c4a51819d26dd9217ed45
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: SQL::Lexer
+  ===> Found: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro> [via Zef::Repository::Ecosystems<rea>]
+  [SQL::Lexer] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870318.3012573.9962.219702632394/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/SQL%3A%3ALexer/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+  ===> Fetching [OK]: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870318.3012573.9962.219702632394/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+  [SQL::Lexer] Command: tar -t -f ./SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+  [SQL::Lexer] Command: tar -xvf ./SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz -C ../SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+  ===> Extraction [OK]: SQL::Lexer to /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+  ===> Testing: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>
+  [SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/comments.t
+  [SQL::Lexer] ok 1 - Good comment
+  [SQL::Lexer] # -- a standard single-line comment
+  [SQL::Lexer] # 
+  [SQL::Lexer] # ---
+  [SQL::Lexer] ok 2 - Good comment
+  [SQL::Lexer] # -- a comment with Unicode »ö«
+  [SQL::Lexer] # 
+  [SQL::Lexer] # ---
+  [SQL::Lexer] ok 3 - Good comment
+  [SQL::Lexer] #  \# an extended (unix-style) comment
+  [SQL::Lexer] # 
+  [SQL::Lexer] # ---
+  [SQL::Lexer] ok 4 - Good comment
+  [SQL::Lexer] # /* a multi-line
+  [SQL::Lexer] #  * comment
+  [SQL::Lexer] #  */
+  [SQL::Lexer] # ---
+  [SQL::Lexer] ok 5 - Good comment
+  [SQL::Lexer] # /* an embedded comment */
+  [SQL::Lexer] # ---
+  [SQL::Lexer] ok 6 - Bad comment
+  [SQL::Lexer] # -- single-line comment
+  [SQL::Lexer] # over two lines
+  [SQL::Lexer] # 
+  [SQL::Lexer] # ---
+  [SQL::Lexer] ok 7 - Bad comment
+  [SQL::Lexer] # -- single-line comment followed by whitespace
+  [SQL::Lexer] #   
+  [SQL::Lexer] # ---
+  [SQL::Lexer] 1..7
+  [SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/compound_statement.t
+  [SQL::Lexer] ok 1 - Successful match returned
+  [SQL::Lexer] ok 2 - One compound statement matched
+  [SQL::Lexer] ok 3 - Statement delimited by BEGIN / END
+  [SQL::Lexer] 1..3
+  [SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/datetime.t
+  [SQL::Lexer] ok 1 - Good datetime(date-string): '0000-00-00'
+  [SQL::Lexer] ok 2 - Good datetime(date-string): "2017-12-25"
+  [SQL::Lexer] ok 3 - Good datetime(date-string): '2017-12-00'
+  [SQL::Lexer] ok 4 - Good datetime(time-string): '00:00:00'
+  [SQL::Lexer] ok 5 - Good datetime(time-string): '23:59:59'
+  [SQL::Lexer] ok 6 - Good datetime(time-string): '12:30:00-06:00'
+  [SQL::Lexer] ok 7 - Good datetime(time-string): '6:30:00+04:00'
+  [SQL::Lexer] ok 8 - Good datetime(timestamp-string): '1492-10-12 11:30:21'
+  [SQL::Lexer] ok 9 - Good datetime(date-literal): DATE "2017-12-25"
+  [SQL::Lexer] ok 10 - Good datetime(time-literal): TIME '12:30:00-06:00'
+  [SQL::Lexer] ok 11 - Good datetime(timestamp-literal): TIMESTAMP '1492-10-12 11:30:21'
+  [SQL::Lexer] ok 12 - Bad literal: |DATE "2017-12-25'|
+  [SQL::Lexer] ok 13 - Bad literal: |DATE 2017-12-25|
+  [SQL::Lexer] ok 14 - Bad literal: |TIME "2017-12-25"|
+  [SQL::Lexer] 1..14
+  [SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/literals.t
+  [SQL::Lexer] ok 1 - Good literal: |124|
+  [SQL::Lexer] ok 2 - Correct type: unsigned-numeric-literal
+  [SQL::Lexer] ok 3 - Good literal: |12.4|
+  [SQL::Lexer] ok 4 - Correct type: unsigned-numeric-literal
+  [SQL::Lexer] ok 5 - Good literal: |+12.4|
+  [SQL::Lexer] ok 6 - Correct type: signed-numeric-literal
+  [SQL::Lexer] ok 7 - Good literal: |-12.4|
+  [SQL::Lexer] ok 8 - Correct type: signed-numeric-literal
+  [SQL::Lexer] ok 9 - Good literal: |-0|
+  [SQL::Lexer] ok 10 - Correct type: signed-numeric-literal
+  [SQL::Lexer] ok 11 - Good literal: |+1|
+  [SQL::Lexer] ok 12 - Correct type: signed-numeric-literal
+  [SQL::Lexer] ok 13 - Good literal: |'abc'|
+  [SQL::Lexer] ok 14 - Correct type: char-string-literal
+  [SQL::Lexer] ok 15 - Good literal: |'ab cd '|
+  [SQL::Lexer] ok 16 - Correct type: char-string-literal
+  [SQL::Lexer] ok 17 - Good literal: |'ab"cd '|
+  [SQL::Lexer] ok 18 - Correct type: char-string-literal
+  [SQL::Lexer] ok 19 - Good literal: |'ab''c'|
+  [SQL::Lexer] ok 20 - Correct type: char-string-literal
+  [SQL::Lexer] ok 21 - Good literal: |"abc"|
+  [SQL::Lexer] ok 22 - Correct type: char-string-literal
+  [SQL::Lexer] ok 23 - Good literal: |"ab""c"|
+  [SQL::Lexer] ok 24 - Correct type: char-string-literal
+  [SQL::Lexer] ok 25 - Good literal: |"ab''c"|
+  [SQL::Lexer] ok 26 - Correct type: char-string-literal
+  [SQL::Lexer] ok 27 - Good literal: |""""|
+  [SQL::Lexer] ok 28 - Correct type: char-string-literal
+  [SQL::Lexer] ok 29 - Good literal: |''|
+  [SQL::Lexer] ok 30 - Correct type: char-string-literal
+  [SQL::Lexer] ok 31 - Good literal: |TRUE|
+  [SQL::Lexer] ok 32 - Correct type: boolean-literal
+  [SQL::Lexer] ok 33 - Good literal: |FALSE|
+  [SQL::Lexer] ok 34 - Correct type: boolean-literal
+  [SQL::Lexer] ok 35 - Bad literal: |12a4|
+  [SQL::Lexer] ok 36 - Bad literal: |12.34.56|
+  [SQL::Lexer] ok 37 - Bad literal: |e12|
+  [SQL::Lexer] ok 38 - Bad literal: |-+0|
+  [SQL::Lexer] ok 39 - Bad literal: |1,002|
+  [SQL::Lexer] ok 40 - Bad literal: |'a'b'|
+  [SQL::Lexer] ok 41 - Bad literal: |'abc"|
+  [SQL::Lexer] ok 42 - Bad literal: |"def'|
+  [SQL::Lexer] 1..42
+  [SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/load_both.t
+  [SQL::Lexer] ok 1 - SQL::Lexer module can be use-d ok
+  [SQL::Lexer] ok 2 - SQL::Basic module can be use-d ok
+  [SQL::Lexer] ok 3 - Basic module can be loaded with SQL::Lexer
+  [SQL::Lexer] 1..3
+  ===> Testing [OK] for SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>
+  ===> Installing: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>
+  ===> Install [OK] for SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 1min 12.125s
+               CPU time consumed: 1min 33.735s
+                     Memory peak: 1.2G (swap: 0B)
+
+  ```
+  </details>
+  <details>
+  <summary>New Output</summary>
+
+  ```
+  Running as unit: run-p3011951-i2959975.service; invocation ID: 1d73f3c0913145aaa523455dddd7336b
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: SQL::Lexer
+  ===> Found: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro> [via Zef::Repository::Ecosystems<rea>]
+  [SQL::Lexer] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1788870246.3011956.8762.550184798072/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/SQL%3A%3ALexer/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+  ===> Fetching [OK]: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro> to /home/coke/sandbox/blin/data/zef-data/tmp/1788870246.3011956.8762.550184798072/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+  [SQL::Lexer] Command: tar -t -f ./SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+  [SQL::Lexer] Command: tar -xvf ./SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz -C ../SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+  ===> Extraction [OK]: SQL::Lexer to /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+  ===> Testing: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>
+  [SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/comments.t
+  [SQL::Lexer] ok 1 - Good comment
+  [SQL::Lexer] # -- a standard single-line comment
+  [SQL::Lexer] # 
+  [SQL::Lexer] # ---
+  [SQL::Lexer] ok 2 - Good comment
+  [SQL::Lexer] # -- a comment with Unicode »ö«
+  [SQL::Lexer] # 
+  [SQL::Lexer] # ---
+  [SQL::Lexer] ok 3 - Good comment
+  [SQL::Lexer] #  \# an extended (unix-style) comment
+  [SQL::Lexer] # 
+  [SQL::Lexer] # ---
+  [SQL::Lexer] ok 4 - Good comment
+  [SQL::Lexer] # /* a multi-line
+  [SQL::Lexer] #  * comment
+  [SQL::Lexer] #  */
+  [SQL::Lexer] # ---
+  [SQL::Lexer] ok 5 - Good comment
+  [SQL::Lexer] # /* an embedded comment */
+  [SQL::Lexer] # ---
+  [SQL::Lexer] ok 6 - Bad comment
+  [SQL::Lexer] # -- single-line comment
+  [SQL::Lexer] # over two lines
+  [SQL::Lexer] # 
+  [SQL::Lexer] # ---
+  [SQL::Lexer] ok 7 - Bad comment
+  [SQL::Lexer] # -- single-line comment followed by whitespace
+  [SQL::Lexer] #   
+  [SQL::Lexer] # ---
+  [SQL::Lexer] 1..7
+  [SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/compound_statement.t
+  [SQL::Lexer] ok 1 - Successful match returned
+  [SQL::Lexer] not ok 2 - One compound statement matched
+  [SQL::Lexer] # Failed test 'One compound statement matched'
+  [SQL::Lexer] # at t/compound_statement.t line 38
+  [SQL::Lexer] # expected: '1'
+  [SQL::Lexer] #      got: '0'
+  [SQL::Lexer] No such method 'value' for invocant of type 'Any'. Did you mean
+  [SQL::Lexer] 'values'?
+  [SQL::Lexer]   in block <unit> at t/compound_statement.t line 40
+  [SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/datetime.t
+  [SQL::Lexer] ok 1 - Good datetime(date-string): '0000-00-00'
+  [SQL::Lexer] ok 2 - Good datetime(date-string): "2017-12-25"
+  [SQL::Lexer] ok 3 - Good datetime(date-string): '2017-12-00'
+  [SQL::Lexer] ok 4 - Good datetime(time-string): '00:00:00'
+  [SQL::Lexer] ok 5 - Good datetime(time-string): '23:59:59'
+  [SQL::Lexer] ok 6 - Good datetime(time-string): '12:30:00-06:00'
+  [SQL::Lexer] ok 7 - Good datetime(time-string): '6:30:00+04:00'
+  [SQL::Lexer] ok 8 - Good datetime(timestamp-string): '1492-10-12 11:30:21'
+  [SQL::Lexer] ok 9 - Good datetime(date-literal): DATE "2017-12-25"
+  [SQL::Lexer] ok 10 - Good datetime(time-literal): TIME '12:30:00-06:00'
+  [SQL::Lexer] ok 11 - Good datetime(timestamp-literal): TIMESTAMP '1492-10-12 11:30:21'
+  [SQL::Lexer] ok 12 - Bad literal: |DATE "2017-12-25'|
+  [SQL::Lexer] ok 13 - Bad literal: |DATE 2017-12-25|
+  [SQL::Lexer] ok 14 - Bad literal: |TIME "2017-12-25"|
+  [SQL::Lexer] 1..14
+  [SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/literals.t
+  [SQL::Lexer] ok 1 - Good literal: |124|
+  [SQL::Lexer] ok 2 - Correct type: unsigned-numeric-literal
+  [SQL::Lexer] ok 3 - Good literal: |12.4|
+  [SQL::Lexer] ok 4 - Correct type: unsigned-numeric-literal
+  [SQL::Lexer] ok 5 - Good literal: |+12.4|
+  [SQL::Lexer] ok 6 - Correct type: signed-numeric-literal
+  [SQL::Lexer] ok 7 - Good literal: |-12.4|
+  [SQL::Lexer] ok 8 - Correct type: signed-numeric-literal
+  [SQL::Lexer] ok 9 - Good literal: |-0|
+  [SQL::Lexer] ok 10 - Correct type: signed-numeric-literal
+  [SQL::Lexer] ok 11 - Good literal: |+1|
+  [SQL::Lexer] ok 12 - Correct type: signed-numeric-literal
+  [SQL::Lexer] ok 13 - Good literal: |'abc'|
+  [SQL::Lexer] ok 14 - Correct type: char-string-literal
+  [SQL::Lexer] ok 15 - Good literal: |'ab cd '|
+  [SQL::Lexer] ok 16 - Correct type: char-string-literal
+  [SQL::Lexer] ok 17 - Good literal: |'ab"cd '|
+  [SQL::Lexer] ok 18 - Correct type: char-string-literal
+  [SQL::Lexer] ok 19 - Good literal: |'ab''c'|
+  [SQL::Lexer] ok 20 - Correct type: char-string-literal
+  [SQL::Lexer] ok 21 - Good literal: |"abc"|
+  [SQL::Lexer] ok 22 - Correct type: char-string-literal
+  [SQL::Lexer] ok 23 - Good literal: |"ab""c"|
+  [SQL::Lexer] ok 24 - Correct type: char-string-literal
+  [SQL::Lexer] ok 25 - Good literal: |"ab''c"|
+  [SQL::Lexer] ok 26 - Correct type: char-string-literal
+  [SQL::Lexer] ok 27 - Good literal: |""""|
+  [SQL::Lexer] ok 28 - Correct type: char-string-literal
+  [SQL::Lexer] ok 29 - Good literal: |''|
+  [SQL::Lexer] ok 30 - Correct type: char-string-literal
+  [SQL::Lexer] ok 31 - Good literal: |TRUE|
+  [SQL::Lexer] ok 32 - Correct type: boolean-literal
+  [SQL::Lexer] ok 33 - Good literal: |FALSE|
+  [SQL::Lexer] ok 34 - Correct type: boolean-literal
+  [SQL::Lexer] ok 35 - Bad literal: |12a4|
+  [SQL::Lexer] ok 36 - Bad literal: |12.34.56|
+  [SQL::Lexer] ok 37 - Bad literal: |e12|
+  [SQL::Lexer] ok 38 - Bad literal: |-+0|
+  [SQL::Lexer] ok 39 - Bad literal: |1,002|
+  [SQL::Lexer] ok 40 - Bad literal: |'a'b'|
+  [SQL::Lexer] ok 41 - Bad literal: |'abc"|
+  [SQL::Lexer] ok 42 - Bad literal: |"def'|
+  [SQL::Lexer] 1..42
+  [SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/b180d6078dd3f2359929e0315bc40c4b680f0a17/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/load_both.t
+  [SQL::Lexer] ok 1 - SQL::Lexer module can be use-d ok
+  [SQL::Lexer] ok 2 - SQL::Basic module can be use-d ok
+  [SQL::Lexer] ok 3 - Basic module can be loaded with SQL::Lexer
+  [SQL::Lexer] 1..3
+  ===> Testing [FAIL]: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>
+  [SQL::Lexer] Failed to get passing tests, but continuing with --force-test
+  ===> Installing: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>
+  ===> Install [OK] for SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 13.926s
+               CPU time consumed: 13.472s
+                     Memory peak: 1.2G (swap: 0B)
 
   ```
   </details>
@@ -6569,12 +21947,14 @@
 
 | Status                    | Count |          Modules          |
 | :------------------------ | :---: | :------------------------ |
-| Fail                      |     1 | [Needle::Compile](https://raku.land/zef:lizmat/Needle::Compile) |
-| OK                        |     4 | [File::Which](https://raku.land//File::Which) [Getopt::Long](https://raku.land/cpan:LEONT/Getopt::Long) [String::Utils](https://raku.land/zef:lizmat/String::Utils) [has-word](https://raku.land/zef:lizmat/has-word) |
+| InstallableButUntested    |     1 | [IO::Socket::Async::SSL](https://raku.land/zef:raku-community-modules/IO::Socket::Async::SSL) |
+| Fail                      |     7 | [ASN::Grammar](https://raku.land/zef:Altai-man/ASN::Grammar) [CSS::Grammar](https://raku.land/zef:dwarring/CSS::Grammar) [CSS::Module](https://raku.land/zef:dwarring/CSS::Module) [Grammar::Modelica](https://raku.land/zef:raku-community-modules/Grammar::Modelica) [Math::Symbolic](https://raku.land/zef:raku-community-modules/Math::Symbolic) [Needle::Compile](https://raku.land/zef:lizmat/Needle::Compile) [SQL::Lexer](https://raku.land/github:dmaestro/SQL::Lexer) |
+| AlwaysFail                |     8 | [AttrX::Mooish](https://raku.land/zef:vrurg/AttrX::Mooish) [JSON::Class](https://raku.land/zef:jonathanstowe/JSON::Class) [LLM::Chat](https://raku.land/zef:apogee/LLM::Chat) [License::SPDX](https://raku.land/zef:jonathanstowe/License::SPDX) [META6](https://raku.land/zef:jonathanstowe/META6) [Net::DNS](https://raku.land/zef:rbt/Net::DNS) [Semaphore::ReadersWriters](https://raku.land//Semaphore::ReadersWriters) [Test::META](https://raku.land/zef:jonathanstowe/Test::META) |
+| OK                        |    90 | ⋯                         |
 
 
 
-This run started on 2026-09-07T22:15:18Z and finished in 6 minutes.
+This run started on 2026-09-08T12:37:49Z and finished in 14 minutes.
 
 <!--
 Graph of bisected modules and their dependencies:
