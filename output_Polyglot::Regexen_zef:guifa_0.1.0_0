@@ -1,0 +1,183 @@
+Running as unit: run-p2914053-i7113972.service
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Polyglot::Regexen
+===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<rea>]
+[Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789313462.2914057.9290.067042391094/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/P/Polyglot%3A%3ARegexen/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
+===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789313462.2914057.9290.067042391094/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
+[Polyglot::Regexen] Command: tar -t -f ./Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
+[Polyglot::Regexen] Command: tar -xvf ./Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz -C ../Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
+===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
+===> Testing: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/00-sanity.rakutest
+[Polyglot::Regexen] ok 1 - 
+[Polyglot::Regexen] 1..1
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/01-literals.rakutest
+[Polyglot::Regexen] ok 1 - Single literal, alpha
+[Polyglot::Regexen] ok 2 - Double literal
+[Polyglot::Regexen] ok 3 - Single literal, digit
+[Polyglot::Regexen] ok 4 - ECMA literal, Raku escaped
+[Polyglot::Regexen] ok 5 - ECMA literal sequence, Raku sequence with embedded escaped
+[Polyglot::Regexen] ok 6 - Hex escape sequence, Raku literal
+[Polyglot::Regexen] ok 7 - Unicode escape sequence, Raku literal
+[Polyglot::Regexen] ok 8 - Hex escape sequence, Raku escaped
+[Polyglot::Regexen] ok 9 - Unicode escape sequence, Raku escaped
+[Polyglot::Regexen] 1..9
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/02-character-classes.rakutest
+[Polyglot::Regexen] not ok 1 - Hyphen as sole character
+[Polyglot::Regexen] # Failed test 'Hyphen as sole character'
+[Polyglot::Regexen] # at t/ecma/02-character-classes.rakutest line 47
+[Polyglot::Regexen] # expected: '/<+[-]>/'
+[Polyglot::Regexen] #      got: '/<+[\-]>/'
+[Polyglot::Regexen] not ok 2 - Hyphen as first character
+[Polyglot::Regexen] # Failed test 'Hyphen as first character'
+[Polyglot::Regexen] # at t/ecma/02-character-classes.rakutest line 48
+[Polyglot::Regexen] # expected: '/<+[- a]>/'
+[Polyglot::Regexen] #      got: '/<+[\- a]>/'
+[Polyglot::Regexen] not ok 3 - Hyphen as final character
+[Polyglot::Regexen] # Failed test 'Hyphen as final character'
+[Polyglot::Regexen] # at t/ecma/02-character-classes.rakutest line 49
+[Polyglot::Regexen] # expected: '/<+[a -]>/'
+[Polyglot::Regexen] #      got: '/<+[a \-]>/'
+[Polyglot::Regexen] ok 4 - Range after literal
+[Polyglot::Regexen] ok 5 - Range before literal
+[Polyglot::Regexen] ok 6 - Sequential range
+[Polyglot::Regexen] 1..6
+[Polyglot::Regexen] # You failed 3 tests of 6
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/03-alternation.rakutest
+[Polyglot::Regexen] ok 1 - Simple alternation, two terms
+[Polyglot::Regexen] ok 2 - Simple alternation, three terms
+[Polyglot::Regexen] 1..2
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/04-assertions.rakutest
+[Polyglot::Regexen] ok 1 - Simple lookahead
+[Polyglot::Regexen] ok 2 - Simple negative lookahead
+[Polyglot::Regexen] ok 3 - Simple lookbehind
+[Polyglot::Regexen] ok 4 - Simple negative lookbehind
+[Polyglot::Regexen] 1..4
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/05-quantifiers.rakutest
+[Polyglot::Regexen] ok 1 - One or none
+[Polyglot::Regexen] ok 2 - One or more
+[Polyglot::Regexen] ok 3 - None or more
+[Polyglot::Regexen] ok 4 - Exactly some number
+[Polyglot::Regexen] ok 5 - Some number or more
+[Polyglot::Regexen] ok 6 - Some number to another number
+[Polyglot::Regexen] ok 7 - Frugal one or none
+[Polyglot::Regexen] ok 8 - Frugal one or more
+[Polyglot::Regexen] ok 9 - Frugal none or more
+[Polyglot::Regexen] ok 10 - Frugal exactly some number
+[Polyglot::Regexen] ok 11 - Frugal some number or more
+[Polyglot::Regexen] ok 12 - Frugal some number to another number
+[Polyglot::Regexen] 1..12
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/06-captures.rakutest
+[Polyglot::Regexen] ok 1 - Simple positional
+[Polyglot::Regexen] ok 2 - Embedded positional
+[Polyglot::Regexen] ok 3 - Sequential positional
+[Polyglot::Regexen] ok 4 - Complex positional
+[Polyglot::Regexen] ok 5 - Simple named
+[Polyglot::Regexen] ok 6 - Simple named with simple positional
+[Polyglot::Regexen] 1..6
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/07-unicode.rakutest
+[Polyglot::Regexen] ok 1 - 
+[Polyglot::Regexen] ok 2 - 
+[Polyglot::Regexen] ok 3 - 
+[Polyglot::Regexen] ok 4 - 
+[Polyglot::Regexen] ok 5 - 
+[Polyglot::Regexen] ok 6 - 
+[Polyglot::Regexen] ok 7 - 
+[Polyglot::Regexen] ok 8 - 
+[Polyglot::Regexen] ok 9 - 
+[Polyglot::Regexen] ok 10 - 
+[Polyglot::Regexen] ok 11 - 
+[Polyglot::Regexen] ok 12 - 
+[Polyglot::Regexen] 1..12
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/08-modifiers.rakutest
+[Polyglot::Regexen] ok 1 - 
+[Polyglot::Regexen] ok 2 - 
+[Polyglot::Regexen] ok 3 - 
+[Polyglot::Regexen] ok 4 - 
+[Polyglot::Regexen] 1..4
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/09-role.rakutest
+[Polyglot::Regexen] # Subtest: Pretty print
+[Polyglot::Regexen]     ok 1 - 
+[Polyglot::Regexen]     ok 2 - 
+[Polyglot::Regexen]     ok 3 - 
+[Polyglot::Regexen]     1..3
+[Polyglot::Regexen] ok 1 - Pretty print
+[Polyglot::Regexen] # Subtest: Match variable functionality
+[Polyglot::Regexen]     ok 1 - 
+[Polyglot::Regexen]     ok 2 - 
+[Polyglot::Regexen]     ok 3 - 
+[Polyglot::Regexen]     ok 4 - 
+[Polyglot::Regexen]     ok 5 - 
+[Polyglot::Regexen]     ok 6 - 
+[Polyglot::Regexen]     ok 7 - 
+[Polyglot::Regexen]     1..7
+[Polyglot::Regexen] ok 2 - Match variable functionality
+[Polyglot::Regexen] # Subtest: Positional matches
+[Polyglot::Regexen]     ok 1 - Sequential
+[Polyglot::Regexen]     ok 2 - Simple embedded
+[Polyglot::Regexen]     ok 3 - Deep right embedded
+[Polyglot::Regexen]     ok 4 - Deep left embedded
+[Polyglot::Regexen]     ok 5 - Complex embedded
+[Polyglot::Regexen]     1..5
+[Polyglot::Regexen] ok 3 - Positional matches
+[Polyglot::Regexen] # Subtest: Named matches
+[Polyglot::Regexen]     ok 1 - Sequential
+[Polyglot::Regexen]     ok 2 - Simple embedded
+[Polyglot::Regexen]     ok 3 - Deep right embedded
+[Polyglot::Regexen]     ok 4 - Deep left embedded
+[Polyglot::Regexen] IO::Handle<IO::Special.new("<STDERR>")>(opened){a => a, b => ab, c => cdef, d => d, e => de, g => abcdefgh, h => h, i => abcdefghi}
+[Polyglot::Regexen]     ok 5 - Complex embedded
+[Polyglot::Regexen]     1..5
+[Polyglot::Regexen] ok 4 - Named matches
+[Polyglot::Regexen] # Subtest: Positional match backreferences
+[Polyglot::Regexen]     ok 1 - Sequential
+[Polyglot::Regexen]     ok 2 - Simple embedded
+[Polyglot::Regexen]     ok 3 - Deep right embedded
+[Polyglot::Regexen]     ok 4 - Deep left embedded
+[Polyglot::Regexen]     ok 5 - Complex embedded
+[Polyglot::Regexen]     ok 6 - Multi sequential
+[Polyglot::Regexen]     1..6
+[Polyglot::Regexen] ok 5 - Positional match backreferences
+[Polyglot::Regexen] # Subtest: Named match backreferences
+[Polyglot::Regexen]     ok 1 - Sequential
+[Polyglot::Regexen]     ok 2 - Simple embedded
+[Polyglot::Regexen]     ok 3 - Deep right embedded
+[Polyglot::Regexen]     ok 4 - Deep left embedded
+[Polyglot::Regexen]     ok 5 - Complex embedded
+[Polyglot::Regexen]     ok 6 - Multi sequential
+[Polyglot::Regexen]     1..6
+[Polyglot::Regexen] ok 6 - Named match backreferences
+[Polyglot::Regexen] 1..6
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/10-usage.rakutest
+[Polyglot::Regexen] # Subtest: Quoted forms
+[Polyglot::Regexen]     ok 1 - No modifiers in bare quoted form
+[Polyglot::Regexen]     ok 2 - Postquote case-insensitive bare quoted form
+[Polyglot::Regexen]     ok 3 - Prequote case-insensitive bare quoted form
+[Polyglot::Regexen]     1..3
+[Polyglot::Regexen] ok 1 - Quoted forms
+[Polyglot::Regexen] # Subtest: Grammar-scoped forms
+[Polyglot::Regexen]     ok 1 - Base regex in grammar
+[Polyglot::Regexen]     ok 2 - Regex with case-insensitive modifier in grammar
+[Polyglot::Regexen]     ok 3 - Yes, that’s really an e-mail regex
+[Polyglot::Regexen]     1..3
+[Polyglot::Regexen] ok 2 - Grammar-scoped forms
+[Polyglot::Regexen] # Subtest: Lexically-scoped forms
+[Polyglot::Regexen]     ok 1 - My scoped regex
+[Polyglot::Regexen]     ok 2 - My-scoped regex in package
+[Polyglot::Regexen]     ok 3 - Our-scoped regex in own package
+[Polyglot::Regexen]     ok 4 - My-scoped regex in package not visible from outside
+[Polyglot::Regexen]     ok 5 - Our-scoped regex in package not immediately visible from outside
+[Polyglot::Regexen]     ok 6 - My-scoped regex in package not visible from outside with package name
+[Polyglot::Regexen]     ok 7 - Our-scoped regex in package visible visible from outside with package name
+[Polyglot::Regexen]     1..7
+[Polyglot::Regexen] ok 3 - Lexically-scoped forms
+[Polyglot::Regexen] 1..3
+===> Testing [FAIL]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
+[Polyglot::Regexen] Failed to get passing tests, but continuing with --force-test
+===> Installing: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
+===> Install [OK] for Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 29.631s
+             CPU time consumed: 26.495s
+                   Memory peak: 1.8G (swap: 0B)

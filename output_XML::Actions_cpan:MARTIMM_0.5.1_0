@@ -1,0 +1,191 @@
+Running as unit: run-p2940047-i7189254.service; invocation ID: f365905436054dfeac7c6d98a0695be8
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: XML::Actions
+===> Found: XML::Actions:ver<0.5.1>:auth<cpan:MARTIMM> [via Zef::Repository::Ecosystems<rea>]
+[XML::Actions] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789315477.2940048.8520.64680373896/XML%3A%3AActions%3Aver%3C0.5.1%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/X/XML%3A%3AActions/XML%3A%3AActions%3Aver%3C0.5.1%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz
+===> Fetching [OK]: XML::Actions:ver<0.5.1>:auth<cpan:MARTIMM> to /home/coke/sandbox/blin/data/zef-data/tmp/1789315477.2940048.8520.64680373896/XML%3A%3AActions%3Aver%3C0.5.1%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz
+[XML::Actions] Command: tar -t -f ./XML%3A%3AActions%3Aver%3C0.5.1%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz
+[XML::Actions] Command: tar -xvf ./XML%3A%3AActions%3Aver%3C0.5.1%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz -C ../XML%3A%3AActions%3Aver%3C0.5.1%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz
+===> Extraction [OK]: XML::Actions to /home/coke/sandbox/blin/data/zef-data/tmp/XML%3A%3AActions%3Aver%3C0.5.1%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz
+===> Testing: XML::Actions:ver<0.5.1>:auth<cpan:MARTIMM>
+[XML::Actions] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/XML%3A%3AActions%3Aver%3C0.5.1%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz/XmlActions-0.5.1 t/100-Actions.t
+[XML::Actions] # Subtest: Action primitives
+[XML::Actions]     # Subtest: did we throws-like X::XML::Actions?
+[XML::Actions]         1..3
+[XML::Actions]         ok 1 - code dies
+[XML::Actions]         ok 2 - right exception type (X::XML::Actions)
+[XML::Actions]         ok 3 - .message matches File 'non-existent-file' not found
+[XML::Actions]     ok 1 - did we throws-like X::XML::Actions?
+[XML::Actions]     # Subtest: did we throws-like X::XML::Actions?
+[XML::Actions]         1..3
+[XML::Actions]         ok 1 - code dies
+[XML::Actions]         ok 2 - right exception type (X::XML::Actions)
+[XML::Actions]         ok 3 - .message matches No xml document to work on
+[XML::Actions]     ok 2 - did we throws-like X::XML::Actions?
+[XML::Actions]     1..2
+[XML::Actions] ok 1 - Action primitives
+[XML::Actions] # Subtest: Action object from file
+[XML::Actions]     ok 1 - final called: id = hello
+[XML::Actions]     ok 2 - this node is final
+[XML::Actions]     ok 3 - parent node is scxml
+[XML::Actions]     ok 4 - this node is onentry
+[XML::Actions]     ok 5 - parent node is final
+[XML::Actions]     ok 6 - parent parents node is scxml
+[XML::Actions]     ok 7 - <scxml final onentry> found in parent array
+[XML::Actions]     ok 8 - log called: expr = 'hello world'
+[XML::Actions]     ok 9 - <scxml final onentry log> found in parent array
+[XML::Actions]     ok 10 - this node is onentry after processing children
+[XML::Actions]     ok 11 - logging done: ok
+[XML::Actions]     1..11
+[XML::Actions] ok 2 - Action object from file
+[XML::Actions] # Subtest: Actions returning Truncate
+[XML::Actions]     ok 1 - final called: id = hello
+[XML::Actions]     ok 2 - this node is final
+[XML::Actions]     ok 3 - parent node is scxml
+[XML::Actions]     ok 4 - logging not done: not ok
+[XML::Actions]     1..4
+[XML::Actions] ok 3 - Actions returning Truncate
+[XML::Actions] # Subtest: Action object from string
+[XML::Actions]     ok 1 - final called: id = hello
+[XML::Actions]     ok 2 - this node is final
+[XML::Actions]     ok 3 - parent node is scxml
+[XML::Actions]     ok 4 - this node is onentry
+[XML::Actions]     ok 5 - parent node is final
+[XML::Actions]     ok 6 - parent parents node is scxml
+[XML::Actions]     ok 7 - <scxml final onentry> found in parent array
+[XML::Actions]     ok 8 - log called: expr = 'hello world'
+[XML::Actions]     ok 9 - <scxml final onentry log> found in parent array
+[XML::Actions]     ok 10 - this node is onentry after processing children
+[XML::Actions]     ok 11 - logging done: ok
+[XML::Actions]     1..11
+[XML::Actions] ok 4 - Action object from string
+[XML::Actions] 1..4
+[XML::Actions] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/XML%3A%3AActions%3Aver%3C0.5.1%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz/XmlActions-0.5.1 t/101-Actions.t
+[XML::Actions] # Subtest: Action object
+[XML::Actions]     ok 1 - .new(:file)
+[XML::Actions]     ok 2 - <complexType name='ShipsFromType'>
+[XML::Actions]     ok 3 - <all>
+[XML::Actions]     ok 4 - start xyz:element
+[XML::Actions]     ok 5 - attribute xyz:name
+[XML::Actions]     ok 6 - attribute minOccurs
+[XML::Actions]     ok 7 - end xyz:element
+[XML::Actions]     ok 8 - start xyz:element
+[XML::Actions]     ok 9 - attribute xyz:name
+[XML::Actions]     ok 10 - attribute minOccurs
+[XML::Actions]     ok 11 - end xyz:element
+[XML::Actions]     ok 12 - </all>
+[XML::Actions]     ok 13 - </complexType>
+[XML::Actions]     ok 14 - element <all> seen
+[XML::Actions]     1..14
+[XML::Actions] ok 1 - Action object
+[XML::Actions] 1..1
+[XML::Actions] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/XML%3A%3AActions%3Aver%3C0.5.1%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz/XmlActions-0.5.1 t/102-ActionsStream.t
+[XML::Actions] # Subtest: Action object
+[XML::Actions]     ok 1 - type ok
+[XML::Actions]     ok 2 - dtd text found
+[XML::Actions]     ok 3 - final called: id = hello
+[XML::Actions]     ok 4 - this node is final
+[XML::Actions]     ok 5 - parent node is scxml
+[XML::Actions]     ok 6 - this node is onentry
+[XML::Actions]     ok 7 - parent node is final
+[XML::Actions]     ok 8 - parent parents node is scxml
+[XML::Actions]     ok 9 - <scxml final onentry> found in parent array
+[XML::Actions]     ok 10 - log called: expr = 'hello world'
+[XML::Actions]     ok 11 - <scxml final onentry log> found in parent array
+[XML::Actions]     ok 12 - empty attribute value
+[XML::Actions]     ok 13 - <log .../>
+[XML::Actions]     ok 14 - this node is onentry after processing children
+[XML::Actions]     ok 15 - end of scxml
+[XML::Actions]     not ok 16 - prolog seen
+[XML::Actions]     ok 17 - doctype seen
+[XML::Actions]     ok 18 - logging done
+[XML::Actions]     1..18
+[XML::Actions] not ok 1 - Action object
+[XML::Actions] 1..1
+[XML::Actions]     # Failed test 'prolog seen'
+[XML::Actions]     # at t/102-ActionsStream.t line 90
+[XML::Actions]     # You failed 1 test of 18
+[XML::Actions] # Failed test 'Action object'
+[XML::Actions] # at t/102-ActionsStream.t line 84
+[XML::Actions] # You failed 1 test of 1
+[XML::Actions] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/XML%3A%3AActions%3Aver%3C0.5.1%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz/XmlActions-0.5.1 t/103-ActionsStream.t
+[XML::Actions] # Subtest: Action object 1
+[XML::Actions]     ok 1 - type ok
+[XML::Actions]     ok 2 - dtd has content
+[XML::Actions]     ok 3 - dtd text found
+[XML::Actions]     ok 4 - doctype seen
+[XML::Actions]     1..4
+[XML::Actions] ok 1 - Action object 1
+[XML::Actions] # Subtest: Action object 2
+[XML::Actions]     ok 1 - dtd has content
+[XML::Actions]     ok 2 - url found
+[XML::Actions]     ok 3 - doctype seen
+[XML::Actions]     1..3
+[XML::Actions] ok 2 - Action object 2
+[XML::Actions] # Subtest: Action object 3
+[XML::Actions]     ok 1 - dtd has content
+[XML::Actions]     ok 2 - url found
+[XML::Actions]     ok 3 - dtd text found
+[XML::Actions]     ok 4 - doctype seen
+[XML::Actions]     1..4
+[XML::Actions] ok 3 - Action object 3
+[XML::Actions] # Subtest: Action object 4
+[XML::Actions]     ok 1 - dtd has content
+[XML::Actions]     ok 2 - url found
+[XML::Actions]     ok 3 - fpi found
+[XML::Actions]     ok 4 - dtd text found
+[XML::Actions]     ok 5 - doctype seen
+[XML::Actions]     1..5
+[XML::Actions] ok 4 - Action object 4
+[XML::Actions] # Subtest: Action object 5
+[XML::Actions]     ok 1 - dtd has no content
+[XML::Actions]     ok 2 - Root element is <someElement>
+[XML::Actions]     ok 3 - doctype seen
+[XML::Actions]     1..3
+[XML::Actions] ok 5 - Action object 5
+[XML::Actions] 1..5
+[XML::Actions] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/XML%3A%3AActions%3Aver%3C0.5.1%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz/XmlActions-0.5.1 t/104-ActionsStream.t
+[XML::Actions] # Subtest: check doctype 1
+[XML::Actions]     # Subtest: doctype DTD not ended properly
+[XML::Actions]         1..3
+[XML::Actions]         ok 1 - code dies
+[XML::Actions]         ok 2 - right exception type (X::XML::Actions::Stream)
+[XML::Actions]         ok 3 - .message matches /:s Parsing error/
+[XML::Actions]     ok 1 - doctype DTD not ended properly
+[XML::Actions]     1..1
+[XML::Actions] ok 1 - check doctype 1
+[XML::Actions] # Subtest: check element 1
+[XML::Actions]     # Subtest: attribute wrong
+[XML::Actions]         1..3
+[XML::Actions]         ok 1 - code dies
+[XML::Actions]         ok 2 - right exception type (X::XML::Actions::Stream)
+[XML::Actions]         ok 3 - .message matches /:s Parsing error/
+[XML::Actions]     ok 1 - attribute wrong
+[XML::Actions]     1..1
+[XML::Actions] ok 2 - check element 1
+[XML::Actions] 1..2
+[XML::Actions] Command: /tmp/whateverable/rakudo-moar/00fca760bb90c69b66a7229d60d61606728b5b71/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/XML%3A%3AActions%3Aver%3C0.5.1%3E%3Aauth%3Ccpan%3AMARTIMM%3E.tar.gz/XmlActions-0.5.1 t/200-Other-nodes.t
+[XML::Actions] # Subtest: Actions on object 1
+[XML::Actions]     ok 1 - type ok
+[XML::Actions]     ok 2 - Text 'Test for text' found
+[XML::Actions]     ok 3 - parent node is h1
+[XML::Actions]     ok 4 - Text ' Test for comment ' found
+[XML::Actions]     ok 5 - parent node is body
+[XML::Actions]     ok 6 - Text ' Test for CDATA' found
+[XML::Actions]     ok 7 - parent node is body
+[XML::Actions]     ok 8 - Target 'PITarget' found
+[XML::Actions]     ok 9 - Text 'Test for PI' found
+[XML::Actions]     ok 10 - parent node is body
+[XML::Actions]     ok 11 - nbr tests ok
+[XML::Actions]     1..11
+[XML::Actions] ok 1 - Actions on object 1
+[XML::Actions] 1..1
+===> Testing [FAIL]: XML::Actions:ver<0.5.1>:auth<cpan:MARTIMM>
+[XML::Actions] Failed to get passing tests, but continuing with --force-test
+===> Installing: XML::Actions:ver<0.5.1>:auth<cpan:MARTIMM>
+===> Install [OK] for XML::Actions:ver<0.5.1>:auth<cpan:MARTIMM>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 31.580s
+             CPU time consumed: 37.163s
+                   Memory peak: 1.9G (swap: 0B)
