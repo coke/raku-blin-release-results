@@ -4,12 +4,12 @@
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p81997-i8400123.service; invocation ID: 3544efbfe5af438fb6dfbb02998bcce9
+  Running as unit: run-p95692-i8441196.service; invocation ID: 615b4239e8ab478986905322375e9294
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Text::Fortune
   ===> Found: Text::Fortune:ver<0.03>:auth<github:zengargoyle> [via Zef::Repository::Ecosystems<rea>]
-  [Text::Fortune] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789391878.81998.6473.258273049376/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/T/Text%3A%3AFortune/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
-  ===> Fetching [OK]: Text::Fortune:ver<0.03>:auth<github:zengargoyle> to /home/coke/sandbox/blin/data/zef-data/tmp/1789391878.81998.6473.258273049376/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+  [Text::Fortune] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789393866.95693.3714.40384046261/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/T/Text%3A%3AFortune/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+  ===> Fetching [OK]: Text::Fortune:ver<0.03>:auth<github:zengargoyle> to /home/coke/sandbox/blin/data/zef-data/tmp/1789393866.95693.3714.40384046261/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
   [Text::Fortune] Command: tar -t -f ./Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
   [Text::Fortune] Command: tar -xvf ./Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz -C ../Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
   ===> Extraction [OK]: Text::Fortune to /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
@@ -100,11 +100,11 @@
   ===> Install [OK] for Text::Fortune:ver<0.03>:auth<github:zengargoyle>
 
   2 bin/ scripts [strfile.pl fortune.pl] installed to:
-  /tmp/b2NPQKl0Pi/bin
+  /tmp/qy1zOJr667/bin
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 36.807s
-               CPU time consumed: 51.416s
+                 Service runtime: 26.651s
+               CPU time consumed: 36.537s
                      Memory peak: 1.3G (swap: 0B)
 
   ```
@@ -113,12 +113,12 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p80692-i8516126.service; invocation ID: d194dcf031e24fc7afbad8530ebce8f3
+  Running as unit: run-p95496-i8465519.service; invocation ID: eb7a9a0e40fd4cf491630de17eaa541a
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Text::Fortune
   ===> Found: Text::Fortune:ver<0.03>:auth<github:zengargoyle> [via Zef::Repository::Ecosystems<rea>]
-  [Text::Fortune] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789391841.80694.3226.516218182853/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/T/Text%3A%3AFortune/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
-  ===> Fetching [OK]: Text::Fortune:ver<0.03>:auth<github:zengargoyle> to /home/coke/sandbox/blin/data/zef-data/tmp/1789391841.80694.3226.516218182853/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+  [Text::Fortune] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789393839.95497.9012.12066351416/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/T/Text%3A%3AFortune/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+  ===> Fetching [OK]: Text::Fortune:ver<0.03>:auth<github:zengargoyle> to /home/coke/sandbox/blin/data/zef-data/tmp/1789393839.95497.9012.12066351416/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
   [Text::Fortune] Command: tar -t -f ./Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
   [Text::Fortune] Command: tar -xvf ./Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz -C ../Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
   ===> Extraction [OK]: Text::Fortune to /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
@@ -147,13 +147,13 @@
   ===> Installing: Text::Fortune:ver<0.03>:auth<github:zengargoyle>
   ===> Install [OK] for Text::Fortune:ver<0.03>:auth<github:zengargoyle>
 
-  2 bin/ scripts [fortune.pl strfile.pl] installed to:
+  2 bin/ scripts [strfile.pl fortune.pl] installed to:
   /home/coke/sandbox/blin/installed/Text::Fortune_github:zengargoyle_0.03_0/bin
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 26.670s
-               CPU time consumed: 16.560s
-                     Memory peak: 1.4G (swap: 0B)
+                 Service runtime: 10.675s
+               CPU time consumed: 11.738s
+                     Memory peak: 1.3G (swap: 0B)
 
   ```
   </details>
@@ -161,12 +161,12 @@
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p81883-i8400114.service; invocation ID: 8412565a9a3a459c8cc1400261c20dcf
+  Running as unit: run-p95577-i8470099.service; invocation ID: 09b76e2cfca743f69fd8031fee69da7d
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Polyglot::Regexen
   ===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<fez>]
-  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789391870.81884.6101.216346963658/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
-  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789391870.81884.6101.216346963658/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789393854.95578.4958.138591425686/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789393854.95578.4958.138591425686/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   [Polyglot::Regexen] Command: tar -t -f ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   [Polyglot::Regexen] Command: tar -xvf ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz -C ../17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   ===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
@@ -327,8 +327,8 @@
   ===> Install [OK] for Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 37.158s
-               CPU time consumed: 55.482s
+                 Service runtime: 26.273s
+               CPU time consumed: 38.815s
                      Memory peak: 1.5G (swap: 0B)
 
   ```
@@ -337,12 +337,12 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p80361-i8516108.service
+  Running as unit: run-p95373-i8517072.service
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Polyglot::Regexen
   ===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<fez>]
-  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789391828.80366.9428.121040292932/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
-  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789391828.80366.9428.121040292932/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789393827.95378.352.0706312283506/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789393827.95378.352.0706312283506/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   [Polyglot::Regexen] Command: tar -t -f ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   [Polyglot::Regexen] Command: tar -xvf ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz -C ../17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   ===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
@@ -417,11 +417,11 @@
   [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 11
   [Polyglot::Regexen] # expected: '/[$<1>=[a[$<2>=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }]/'
   [Polyglot::Regexen] #      got: '/[$1=[a[$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }]/'
+  [Polyglot::Regexen] not ok 3 - Sequential positional
   [Polyglot::Regexen] # Failed test 'Sequential positional'
   [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 14
   [Polyglot::Regexen] # expected: '/[$<1>=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$<2>=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
   [Polyglot::Regexen] #      got: '/[$1=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
-  [Polyglot::Regexen] not ok 3 - Sequential positional
   [Polyglot::Regexen] not ok 4 - Complex positional
   [Polyglot::Regexen] # Failed test 'Complex positional'
   [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 17
@@ -542,127 +542,9 @@
   ===> Install [OK] for Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 32.515s
-               CPU time consumed: 27.282s
-                     Memory peak: 1.5G (swap: 0B)
-
-  ```
-  </details>
-* [ ] [Color::Scheme](https://raku.land/cpan:HOLLI/Color::Scheme) – Fail, Bisected: [b88ac8f](https://github.com/rakudo/rakudo/commit/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a)
-  <details><Summary>Old Output</summary>
-
-  ```
-  Running as unit: run-p81227-i8396030.service; invocation ID: b914bfdd1e9b43e59aa6aa42ce18396a
-  Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: Color::Scheme
-  ===> Found: Color::Scheme:ver<1.001003>:auth<cpan:HOLLI>:api<1> [via Zef::Repository::Ecosystems<rea>]
-  [Color::Scheme] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789391870.81228.7100.044729081471/Color%3A%3AScheme%3Aver%3C1.001003%3E%3Aauth%3Ccpan%3AHOLLI%3E%3Aapi%3C1%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/C/Color%3A%3AScheme/Color%3A%3AScheme%3Aver%3C1.001003%3E%3Aauth%3Ccpan%3AHOLLI%3E%3Aapi%3C1%3E.tar.gz
-  ===> Fetching [OK]: Color::Scheme:ver<1.001003>:auth<cpan:HOLLI>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789391870.81228.7100.044729081471/Color%3A%3AScheme%3Aver%3C1.001003%3E%3Aauth%3Ccpan%3AHOLLI%3E%3Aapi%3C1%3E.tar.gz
-  [Color::Scheme] Command: tar -t -f ./Color%3A%3AScheme%3Aver%3C1.001003%3E%3Aauth%3Ccpan%3AHOLLI%3E%3Aapi%3C1%3E.tar.gz
-  [Color::Scheme] Command: tar -xvf ./Color%3A%3AScheme%3Aver%3C1.001003%3E%3Aauth%3Ccpan%3AHOLLI%3E%3Aapi%3C1%3E.tar.gz -C ../Color%3A%3AScheme%3Aver%3C1.001003%3E%3Aauth%3Ccpan%3AHOLLI%3E%3Aapi%3C1%3E.tar.gz
-  ===> Extraction [OK]: Color::Scheme to /home/coke/sandbox/blin/data/zef-data/tmp/Color%3A%3AScheme%3Aver%3C1.001003%3E%3Aauth%3Ccpan%3AHOLLI%3E%3Aapi%3C1%3E.tar.gz
-  ===> Testing: Color::Scheme:ver<1.001003>:auth<github:holli-holzer>:api<1>
-  [Color::Scheme] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Color%3A%3AScheme%3Aver%3C1.001003%3E%3Aauth%3Ccpan%3AHOLLI%3E%3Aapi%3C1%3E.tar.gz/Color-Scheme-1.001003 t/01-basic.t
-  [Color::Scheme] 1..19
-  [Color::Scheme] ok 1 - 
-  [Color::Scheme] ok 2 - 
-  [Color::Scheme] ok 3 - 
-  [Color::Scheme] ok 4 - 
-  [Color::Scheme] ok 5 - 
-  [Color::Scheme] ok 6 - 
-  [Color::Scheme] ok 7 - 
-  [Color::Scheme] ok 8 - 
-  [Color::Scheme] ok 9 - 
-  [Color::Scheme] ok 10 - 
-  [Color::Scheme] ok 11 - 
-  [Color::Scheme] ok 12 - 
-  [Color::Scheme] ok 13 - 
-  [Color::Scheme] ok 14 - 
-  [Color::Scheme] ok 15 - 
-  [Color::Scheme] ok 16 - 
-  [Color::Scheme] ok 17 - 
-  [Color::Scheme] ok 18 - 
-  [Color::Scheme] ok 19 - 
-  ===> Testing [OK] for Color::Scheme:ver<1.001003>:auth<github:holli-holzer>:api<1>
-  ===> Installing: Color::Scheme:ver<1.001003>:auth<github:holli-holzer>:api<1>
-  ===> Install [OK] for Color::Scheme:ver<1.001003>:auth<github:holli-holzer>:api<1>
-            Finished with result: success
-  Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 45.369s
-               CPU time consumed: 1min 2.721s
-                     Memory peak: 1.8G (swap: 0B)
-
-  ```
-  </details>
-  <details>
-  <summary>New Output</summary>
-
-  ```
-  Running as unit: run-p80945-i8436225.service; invocation ID: 5cd359f5f1be4d2ab1c97f70fd8908ea
-  Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: Color::Scheme
-  No candidates found matching identity: Color::Scheme
-            Finished with result: exit-code
-  Main processes terminated with: code=exited, status=255/EXCEPTION
-                 Service runtime: 6.380s
-               CPU time consumed: 6.779s
-                     Memory peak: 559.4M (swap: 0B)
-
-  ```
-  </details>
-* [ ] [XML::Writer](https://raku.land//XML::Writer) – Fail, Bisected: [b88ac8f](https://github.com/rakudo/rakudo/commit/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a)
-  <details><Summary>Old Output</summary>
-
-  ```
-  Running as unit: run-p81381-i8400087.service
-  Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: XML::Writer
-  ===> Found: XML::Writer [via Zef::Repository::Ecosystems<rea>]
-  [XML::Writer] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789391868.81384.8660.601727495516/XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/X/XML%3A%3AWriter/XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz
-  ===> Fetching [OK]: XML::Writer to /home/coke/sandbox/blin/data/zef-data/tmp/1789391868.81384.8660.601727495516/XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz
-  [XML::Writer] Command: tar -t -f ./XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz
-  [XML::Writer] Command: tar -xvf ./XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz -C ../XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz
-  ===> Extraction [OK]: XML::Writer to /home/coke/sandbox/blin/data/zef-data/tmp/XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz
-  ===> Testing: XML::Writer
-  [XML::Writer] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz/xml-writer-master t/escaping.t
-  [XML::Writer] 1..3
-  [XML::Writer] ok 1 - plain text is escaped (<>)
-  [XML::Writer] ok 2 - plain text is escaped (&)
-  [XML::Writer] ok 3 - plain text is escaped (")
-  [XML::Writer] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz/xml-writer-master t/structure.t
-  [XML::Writer] 1..8
-  [XML::Writer] ok 1 - Cannot serialize nothing
-  [XML::Writer] ok 2 - Single root element (named)
-  [XML::Writer] ok 3 - Single root element (positional)
-  [XML::Writer] ok 4 - Can either pass named or positional
-  [XML::Writer] ok 5 - Single root element with text contents
-  [XML::Writer] ok 6 - attribute
-  [XML::Writer] ok 7 - numbers also work like text
-  [XML::Writer] ok 8 - Long XML is occasionally line-wrapped
-  ===> Testing [OK] for XML::Writer
-  ===> Installing: XML::Writer
-  ===> Install [OK] for XML::Writer
-            Finished with result: success
-  Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 36.863s
-               CPU time consumed: 51.909s
-                     Memory peak: 1.3G (swap: 0B)
-
-  ```
-  </details>
-  <details>
-  <summary>New Output</summary>
-
-  ```
-  Running as unit: run-p80388-i8508745.service
-  Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: XML::Writer
-  No candidates found matching identity: XML::Writer
-            Finished with result: exit-code
-  Main processes terminated with: code=exited, status=255/EXCEPTION
-                 Service runtime: 22.540s
-               CPU time consumed: 5.256s
-                     Memory peak: 591.5M (swap: 0B)
+                 Service runtime: 12.499s
+               CPU time consumed: 15.725s
+                     Memory peak: 1.4G (swap: 0B)
 
   ```
   </details>
@@ -671,13 +553,12 @@
 
 | Status                    | Count |          Modules          |
 | :------------------------ | :---: | :------------------------ |
-| Fail                      |     4 | [Color::Scheme](https://raku.land/cpan:HOLLI/Color::Scheme) [Polyglot::Regexen](https://raku.land/zef:guifa/Polyglot::Regexen) [Text::Fortune](https://raku.land/github:zengargoyle/Text::Fortune) [XML::Writer](https://raku.land//XML::Writer) |
-| AlwaysFail                |     6 | [Intl::LanguageTag](https://raku.land/zef:guifa/Intl::LanguageTag) [JSON::Class](https://raku.land/zef:jonathanstowe/JSON::Class) [License::SPDX](https://raku.land/zef:jonathanstowe/License::SPDX) [META6](https://raku.land/zef:jonathanstowe/META6) [Test::META](https://raku.land/zef:jonathanstowe/Test::META) [User::Language](https://raku.land/zef:guifa/User::Language) |
-| OK                        |    36 | ⋯                         |
+| Fail                      |     2 | [Polyglot::Regexen](https://raku.land/zef:guifa/Polyglot::Regexen) [Text::Fortune](https://raku.land/github:zengargoyle/Text::Fortune) |
+| OK                        |     4 | [Color](https://raku.land/zef:raku-community-modules/Color) [Color::Scheme](https://raku.land/cpan:HOLLI/Color::Scheme) [File::Find](https://raku.land/zef:raku-community-modules/File::Find) [XML::Writer](https://raku.land//XML::Writer) |
 
 
 
-This run started on 2026-09-14T13:24:56Z and finished in 9 minutes.
+This run started on 2026-09-14T13:56:46Z and finished in 7 minutes.
 
 <!--
 Graph of bisected modules and their dependencies:

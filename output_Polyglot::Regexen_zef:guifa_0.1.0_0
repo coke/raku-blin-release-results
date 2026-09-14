@@ -1,9 +1,9 @@
-Running as unit: run-p80361-i8516108.service
+Running as unit: run-p95373-i8517072.service
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Polyglot::Regexen
 ===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<fez>]
-[Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789391828.80366.9428.121040292932/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
-===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789391828.80366.9428.121040292932/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+[Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789393827.95378.352.0706312283506/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789393827.95378.352.0706312283506/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
 [Polyglot::Regexen] Command: tar -t -f ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
 [Polyglot::Regexen] Command: tar -xvf ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz -C ../17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
 ===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
@@ -78,11 +78,11 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 11
 [Polyglot::Regexen] # expected: '/[$<1>=[a[$<2>=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }]/'
 [Polyglot::Regexen] #      got: '/[$1=[a[$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }]/'
+[Polyglot::Regexen] not ok 3 - Sequential positional
 [Polyglot::Regexen] # Failed test 'Sequential positional'
 [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 14
 [Polyglot::Regexen] # expected: '/[$<1>=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$<2>=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
 [Polyglot::Regexen] #      got: '/[$1=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
-[Polyglot::Regexen] not ok 3 - Sequential positional
 [Polyglot::Regexen] not ok 4 - Complex positional
 [Polyglot::Regexen] # Failed test 'Complex positional'
 [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 17
@@ -203,6 +203,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 32.515s
-             CPU time consumed: 27.282s
-                   Memory peak: 1.5G (swap: 0B)
+               Service runtime: 12.499s
+             CPU time consumed: 15.725s
+                   Memory peak: 1.4G (swap: 0B)

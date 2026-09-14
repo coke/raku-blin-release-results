@@ -1,9 +1,9 @@
-Running as unit: run-p80692-i8516126.service; invocation ID: d194dcf031e24fc7afbad8530ebce8f3
+Running as unit: run-p95496-i8465519.service; invocation ID: eb7a9a0e40fd4cf491630de17eaa541a
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Text::Fortune
 ===> Found: Text::Fortune:ver<0.03>:auth<github:zengargoyle> [via Zef::Repository::Ecosystems<rea>]
-[Text::Fortune] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789391841.80694.3226.516218182853/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/T/Text%3A%3AFortune/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
-===> Fetching [OK]: Text::Fortune:ver<0.03>:auth<github:zengargoyle> to /home/coke/sandbox/blin/data/zef-data/tmp/1789391841.80694.3226.516218182853/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+[Text::Fortune] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789393839.95497.9012.12066351416/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/T/Text%3A%3AFortune/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+===> Fetching [OK]: Text::Fortune:ver<0.03>:auth<github:zengargoyle> to /home/coke/sandbox/blin/data/zef-data/tmp/1789393839.95497.9012.12066351416/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
 [Text::Fortune] Command: tar -t -f ./Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
 [Text::Fortune] Command: tar -xvf ./Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz -C ../Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
 ===> Extraction [OK]: Text::Fortune to /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
@@ -32,10 +32,10 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Installing: Text::Fortune:ver<0.03>:auth<github:zengargoyle>
 ===> Install [OK] for Text::Fortune:ver<0.03>:auth<github:zengargoyle>
 
-2 bin/ scripts [fortune.pl strfile.pl] installed to:
+2 bin/ scripts [strfile.pl fortune.pl] installed to:
 /home/coke/sandbox/blin/installed/Text::Fortune_github:zengargoyle_0.03_0/bin
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 26.670s
-             CPU time consumed: 16.560s
-                   Memory peak: 1.4G (swap: 0B)
+               Service runtime: 10.675s
+             CPU time consumed: 11.738s
+                   Memory peak: 1.3G (swap: 0B)
