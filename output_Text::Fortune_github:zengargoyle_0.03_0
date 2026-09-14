@@ -1,0 +1,41 @@
+Running as unit: run-p80692-i8516126.service; invocation ID: d194dcf031e24fc7afbad8530ebce8f3
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Text::Fortune
+===> Found: Text::Fortune:ver<0.03>:auth<github:zengargoyle> [via Zef::Repository::Ecosystems<rea>]
+[Text::Fortune] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789391841.80694.3226.516218182853/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/T/Text%3A%3AFortune/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+===> Fetching [OK]: Text::Fortune:ver<0.03>:auth<github:zengargoyle> to /home/coke/sandbox/blin/data/zef-data/tmp/1789391841.80694.3226.516218182853/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+[Text::Fortune] Command: tar -t -f ./Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+[Text::Fortune] Command: tar -xvf ./Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz -C ../Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+===> Extraction [OK]: Text::Fortune to /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+===> Testing: Text::Fortune:ver<0.03>:auth<github:zengargoyle>
+[Text::Fortune] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/01_empty.t
+[Text::Fortune] Type check failed in assignment; expected IO but got Str ("t/test_data")
+[Text::Fortune]   in block <unit> at t/01_empty.t line 5
+[Text::Fortune] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/02_simple.t
+[Text::Fortune] Type check failed in assignment; expected IO but got Str ("t/test_data")
+[Text::Fortune]   in block <unit> at t/02_simple.t line 5
+[Text::Fortune] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/03_dodat.t
+[Text::Fortune] Type check failed in assignment; expected IO but got Str ("t/test_data")
+[Text::Fortune]   in block <unit> at t/03_dodat.t line 5
+[Text::Fortune] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/04_nodat.t
+[Text::Fortune] Type check failed in assignment; expected IO but got Str ("t/test_data")
+[Text::Fortune]   in block <unit> at t/04_nodat.t line 5
+[Text::Fortune] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/05_broken.t
+[Text::Fortune] ok 1 - bogus
+[Text::Fortune] Type check failed in assignment; expected IO but got Str ("t/test_data")
+[Text::Fortune]   in block <unit> at t/05_broken.t line 6
+[Text::Fortune] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/10_basic.t
+[Text::Fortune] Type check failed in assignment; expected IO but got Str ("t/test_data")
+[Text::Fortune]   in block <unit> at t/10_basic.t line 5
+===> Testing [FAIL]: Text::Fortune:ver<0.03>:auth<github:zengargoyle>
+[Text::Fortune] Failed to get passing tests, but continuing with --force-test
+===> Installing: Text::Fortune:ver<0.03>:auth<github:zengargoyle>
+===> Install [OK] for Text::Fortune:ver<0.03>:auth<github:zengargoyle>
+
+2 bin/ scripts [fortune.pl strfile.pl] installed to:
+/home/coke/sandbox/blin/installed/Text::Fortune_github:zengargoyle_0.03_0/bin
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 26.670s
+             CPU time consumed: 16.560s
+                   Memory peak: 1.4G (swap: 0B)

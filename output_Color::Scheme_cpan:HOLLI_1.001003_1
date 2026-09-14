@@ -1,0 +1,9 @@
+Running as unit: run-p80945-i8436225.service; invocation ID: 5cd359f5f1be4d2ab1c97f70fd8908ea
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Color::Scheme
+No candidates found matching identity: Color::Scheme
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=255/EXCEPTION
+               Service runtime: 6.380s
+             CPU time consumed: 6.779s
+                   Memory peak: 559.4M (swap: 0B)

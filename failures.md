@@ -1,75 +1,111 @@
-[Blin](https://github.com/Raku/Blin) results between 2026.08 ([24e6e53](https://github.com/rakudo/rakudo/commit/24e6e5312f2868680413b0597aef8772f6b5bcea)) and 00feb606ab ([00feb60](https://github.com/rakudo/rakudo/commit/00feb606ab6eda4beedfd7102d8ae62a20b1a2e2)):
+[Blin](https://github.com/Raku/Blin) results between 2026.08 ([24e6e53](https://github.com/rakudo/rakudo/commit/24e6e5312f2868680413b0597aef8772f6b5bcea)) and b88ac8f ([b88ac8f](https://github.com/rakudo/rakudo/commit/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a)):
 
-* [ ] [Proxy::Watched](https://raku.land/cpan:THINCH/Proxy::Watched) – Fail, Bisected: [00feb60](https://github.com/rakudo/rakudo/commit/00feb606ab6eda4beedfd7102d8ae62a20b1a2e2)
+* [ ] [Text::Fortune](https://raku.land/github:zengargoyle/Text::Fortune) – Fail, Bisected: [a22cab8](https://github.com/rakudo/rakudo/commit/a22cab8f9df9b8ad14bd5674cd089c34d62f8a12)
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p3616983-i7872900.service; invocation ID: e6a7013ef9914c0ea7cf636789a5c273
+  Running as unit: run-p81997-i8400123.service; invocation ID: 3544efbfe5af438fb6dfbb02998bcce9
   Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: Proxy::Watched
-  ===> Found: Proxy::Watched:ver<0.0.2>:auth<cpan:THINCH> [via Zef::Repository::Ecosystems<rea>]
-  [Proxy::Watched] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789344963.3616991.635.1593013250567/Proxy%3A%3AWatched%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ATHINCH%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/P/Proxy%3A%3AWatched/Proxy%3A%3AWatched%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ATHINCH%3E.tar.gz
-  ===> Fetching [OK]: Proxy::Watched:ver<0.0.2>:auth<cpan:THINCH> to /home/coke/sandbox/blin/data/zef-data/tmp/1789344963.3616991.635.1593013250567/Proxy%3A%3AWatched%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ATHINCH%3E.tar.gz
-  [Proxy::Watched] Command: tar -t -f ./Proxy%3A%3AWatched%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ATHINCH%3E.tar.gz
-  [Proxy::Watched] Command: tar -xvf ./Proxy%3A%3AWatched%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ATHINCH%3E.tar.gz -C ../Proxy%3A%3AWatched%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ATHINCH%3E.tar.gz
-  ===> Extraction [OK]: Proxy::Watched to /home/coke/sandbox/blin/data/zef-data/tmp/Proxy%3A%3AWatched%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ATHINCH%3E.tar.gz
-  ===> Testing: Proxy::Watched:ver<0.0.2>:auth<github:spidererrol>
-  [Proxy::Watched] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Proxy%3A%3AWatched%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ATHINCH%3E.tar.gz/Proxy-Watched-0.0.2 t/01-basic.t
-  [Proxy::Watched] 1..46
-  [Proxy::Watched] ok 1 - watched-int created
-  [Proxy::Watched] ok 2 - watched-int tapped
-  [Proxy::Watched] ok 3 - watched-int is correct
-  [Proxy::Watched] ok 4 - Tap got correct value
-  [Proxy::Watched] ok 5 - Type error when assigning string to watched-int
-  [Proxy::Watched] ok 6 - No extra tap triggered
-  [Proxy::Watched] ok 7 - watched-int-init is defined
-  [Proxy::Watched] ok 8 - watched-int-init is 7
-  [Proxy::Watched] ok 9 - watched-six created
-  [Proxy::Watched] ok 10 - watched-six tapped
-  [Proxy::Watched] ok 11 - watched-six is correct
-  [Proxy::Watched] ok 12 - Tap got correct value
-  [Proxy::Watched] ok 13 - watched-any created
-  [Proxy::Watched] ok 14 - watched-any tapped
-  [Proxy::Watched] ok 15 - watched-any is correct
-  [Proxy::Watched] ok 16 - Tap got correct value
-  [Proxy::Watched] ok 17 - watched-any-init
-  [Proxy::Watched] ok 18 - waitfor created
-  [Proxy::Watched] ok 19 - waitfor succeeded
-  [Proxy::Watched] ok 20 - Check correct value was waited for
-  [Proxy::Watched] ok 21 - joint created
-  [Proxy::Watched] ok 22 - Joint value changed correctly
-  [Proxy::Watched] ok 23 - Tap updated with correct value
-  [Proxy::Watched] ok 24 - Joint value change to string
-  [Proxy::Watched] ok 25 - Tap updated with string value
-  [Proxy::Watched] ok 26 - joint wait-for succeeded
-  [Proxy::Watched] ok 27 - joint wait-for already-met set succeeded
-  [Proxy::Watched] ok 28 - Confirm joint value is as waited for
-  [Proxy::Watched] ok 29 - Confirm tapped value is as waited for
-  [Proxy::Watched] ok 30 - joint-typed is Int-ish
-  [Proxy::Watched] ok 31 - joint-typed is 7
-  [Proxy::Watched] ok 32 - Type error when assigning string to joint-typed
-  [Proxy::Watched] ok 33 - joint-typed is still 7
-  [Proxy::Watched] ok 34 - joint-typed-init is 7
-  [Proxy::Watched] ok 35 - Type error when assigning string to joint-typed-init
-  [Proxy::Watched] ok 36 - joint-typed-init is still 7
-  [Proxy::Watched] ok 37 - joint-init-by-type is 7
-  [Proxy::Watched] ok 38 - Type error when assigning string to joint-init-by-type
-  [Proxy::Watched] ok 39 - joint-init-by-type is still 7
-  [Proxy::Watched] ok 40 - joint-any-init is 7
-  [Proxy::Watched] ok 41 - No type error when assigning string to joint-any-init
-  [Proxy::Watched] ok 42 - joint-any-init is now String
-  [Proxy::Watched] ok 43 - Ensure wait-for(&code) works
-  [Proxy::Watched] ok 44 - Ensure wait-for(Junction) works (10)
-  [Proxy::Watched] ok 45 - Ensure wait-while(Junction) works (8)
-  [Proxy::Watched] ok 46 - Ensure combined wait-for(Junction) works (10)
-  ===> Testing [OK] for Proxy::Watched:ver<0.0.2>:auth<github:spidererrol>
-  ===> Installing: Proxy::Watched:ver<0.0.2>:auth<github:spidererrol>
-  ===> Install [OK] for Proxy::Watched:ver<0.0.2>:auth<github:spidererrol>
+  ===> Searching for: Text::Fortune
+  ===> Found: Text::Fortune:ver<0.03>:auth<github:zengargoyle> [via Zef::Repository::Ecosystems<rea>]
+  [Text::Fortune] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789391878.81998.6473.258273049376/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/T/Text%3A%3AFortune/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+  ===> Fetching [OK]: Text::Fortune:ver<0.03>:auth<github:zengargoyle> to /home/coke/sandbox/blin/data/zef-data/tmp/1789391878.81998.6473.258273049376/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+  [Text::Fortune] Command: tar -t -f ./Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+  [Text::Fortune] Command: tar -xvf ./Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz -C ../Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+  ===> Extraction [OK]: Text::Fortune to /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+  ===> Testing: Text::Fortune:ver<0.03>:auth<github:zengargoyle>
+  [Text::Fortune] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/01_empty.t
+  [Text::Fortune] Buf[uint8]:0x<00 00 00 02 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 25 00 00 00 00 00 00 00>
+  [Text::Fortune] ok 1 - is version: 2
+  [Text::Fortune] ok 2 - matches empty.dat
+  [Text::Fortune] ok 3 - flags might work
+  [Text::Fortune] ok 4 - can set delimiter
+  [Text::Fortune] ok 5 - is rotated
+  [Text::Fortune] 1..5
+  [Text::Fortune] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/02_simple.t
+  [Text::Fortune] # Subtest: did we throws-like Text::Fortune::X::Index::NotFound?
+  [Text::Fortune]     1..3
+  [Text::Fortune]     ok 1 - code dies
+  [Text::Fortune]     ok 2 - right exception type (Text::Fortune::X::Index::NotFound)
+  [Text::Fortune]     ok 3 - .message matches rx:s/not found/
+  [Text::Fortune] ok 1 - did we throws-like Text::Fortune::X::Index::NotFound?
+  [Text::Fortune] ok 2 - is version: 2
+  [Text::Fortune] ok 3 - has count: 0
+  [Text::Fortune] ok 4 - has longest: 0
+  [Text::Fortune] ok 5 - has shortest: -1
+  [Text::Fortune] ok 6 - has flags: 0
+  [Text::Fortune] ok 7 - has rotated: False
+  [Text::Fortune] ok 8 - has delimiter: %
+  [Text::Fortune] ok 9 - only offset is: 0
+  [Text::Fortune] ok 10 - serializes correctly
+  [Text::Fortune] 1..10
+  [Text::Fortune] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/03_dodat.t
+  [Text::Fortune] ok 1 - first offset correct
+  [Text::Fortune] ok 2 - last offset correct
+  [Text::Fortune] ok 3 - final offset correct
+  [Text::Fortune] ok 4 - first length correct
+  [Text::Fortune] ok 5 - last length correct
+  [Text::Fortune] # Subtest: did we throws-like Text::Fortune::X::Index::OutOfBounds?
+  [Text::Fortune]     1..2
+  [Text::Fortune]     ok 1 - code dies
+  [Text::Fortune]     ok 2 - right exception type (Text::Fortune::X::Index::OutOfBounds)
+  [Text::Fortune] ok 6 - did we throws-like Text::Fortune::X::Index::OutOfBounds?
+  [Text::Fortune] ok 7 - serializes correctly
+  [Text::Fortune] 1..7
+  [Text::Fortune] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/04_nodat.t
+  [Text::Fortune] ok 1 - first offset correct
+  [Text::Fortune] ok 2 - last offset correct
+  [Text::Fortune] ok 3 - final offset correct
+  [Text::Fortune] ok 4 - first length correct
+  [Text::Fortune] ok 5 - last length correct
+  [Text::Fortune] # Subtest: did we throws-like Text::Fortune::X::Index::OutOfBounds?
+  [Text::Fortune]     1..2
+  [Text::Fortune]     ok 1 - code dies
+  [Text::Fortune]     ok 2 - right exception type (Text::Fortune::X::Index::OutOfBounds)
+  [Text::Fortune] ok 6 - did we throws-like Text::Fortune::X::Index::OutOfBounds?
+  [Text::Fortune] ok 7 - serializes correctly
+  [Text::Fortune] ok 8 - first/last/final offset correct
+  [Text::Fortune] # Subtest: did we throws-like Text::Fortune::X::Index::OutOfBounds?
+  [Text::Fortune]     1..2
+  [Text::Fortune]     ok 1 - code dies
+  [Text::Fortune]     ok 2 - right exception type (Text::Fortune::X::Index::OutOfBounds)
+  [Text::Fortune] ok 9 - did we throws-like Text::Fortune::X::Index::OutOfBounds?
+  [Text::Fortune] ok 10 - serializes correctly
+  [Text::Fortune] 1..10
+  [Text::Fortune] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/05_broken.t
+  [Text::Fortune] ok 1 - bogus
+  [Text::Fortune] Buf[uint8]:0x<00 00 00 02 00 00 00 03 00 00 00 06 00 00 00 02 00 00 00 00 25 00 00 00 00 00 00 00 00 00 00 04 00 00 00 09 00 00 00 11>
+  [Text::Fortune] Buf:0x<00 00 00 02 00 00 00 03 00 00 00 06 00 00 00 02 00 00 00 00 25 00 00 00 00 00 00 00 00 00 00 04 00 00 00 09 00 00 00 11>
+  [Text::Fortune] Buf[uint8]:0x<00 00 00 02 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 25 00 00 00 00 00 00 00>
+  [Text::Fortune] Buf:0x<00 00 00 02 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 25 00 00 00 00 00 00 00>
+  [Text::Fortune] 1..1
+  [Text::Fortune] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/10_basic.t
+  [Text::Fortune] ok 1 - got out count
+  [Text::Fortune] ok 2 - not rotated
+  [Text::Fortune] ok 3 - got first fortune
+  [Text::Fortune] ok 4 - got last fortune
+  [Text::Fortune] ok 5 - got first fortune
+  [Text::Fortune] ok 6 - got last fortune
+  [Text::Fortune] ok 7 - got out count
+  [Text::Fortune] ok 8 - got first fortune
+  [Text::Fortune] ok 9 - got last fortune
+  [Text::Fortune] ok 10 - got first fortune
+  [Text::Fortune] ok 11 - got last fortune
+  [Text::Fortune] ok 12 - forced rotation
+  [Text::Fortune] ok 13 - got first fortune
+  [Text::Fortune] ok 14 - got last fortune
+  [Text::Fortune] 1..14
+  ===> Testing [OK] for Text::Fortune:ver<0.03>:auth<github:zengargoyle>
+  ===> Installing: Text::Fortune:ver<0.03>:auth<github:zengargoyle>
+  ===> Install [OK] for Text::Fortune:ver<0.03>:auth<github:zengargoyle>
+
+  2 bin/ scripts [strfile.pl fortune.pl] installed to:
+  /tmp/b2NPQKl0Pi/bin
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 2min 2.378s
-               CPU time consumed: 2min 8.429s
-                     Memory peak: 1.3G (swap: 175.9M)
+                 Service runtime: 36.807s
+               CPU time consumed: 51.416s
+                     Memory peak: 1.3G (swap: 0B)
 
   ```
   </details>
@@ -77,78 +113,47 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p3615097-i7880992.service; invocation ID: 9aa3184a4b7f441f9c41efc77373718c
+  Running as unit: run-p80692-i8516126.service; invocation ID: d194dcf031e24fc7afbad8530ebce8f3
   Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: Proxy::Watched
-  ===> Found: Proxy::Watched:ver<0.0.2>:auth<cpan:THINCH> [via Zef::Repository::Ecosystems<rea>]
-  [Proxy::Watched] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789344840.3615098.3343.0056795235187/Proxy%3A%3AWatched%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ATHINCH%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/P/Proxy%3A%3AWatched/Proxy%3A%3AWatched%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ATHINCH%3E.tar.gz
-  ===> Fetching [OK]: Proxy::Watched:ver<0.0.2>:auth<cpan:THINCH> to /home/coke/sandbox/blin/data/zef-data/tmp/1789344840.3615098.3343.0056795235187/Proxy%3A%3AWatched%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ATHINCH%3E.tar.gz
-  [Proxy::Watched] Command: tar -t -f ./Proxy%3A%3AWatched%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ATHINCH%3E.tar.gz
-  [Proxy::Watched] Command: tar -xvf ./Proxy%3A%3AWatched%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ATHINCH%3E.tar.gz -C ../Proxy%3A%3AWatched%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ATHINCH%3E.tar.gz
-  ===> Extraction [OK]: Proxy::Watched to /home/coke/sandbox/blin/data/zef-data/tmp/Proxy%3A%3AWatched%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ATHINCH%3E.tar.gz
-  ===> Testing: Proxy::Watched:ver<0.0.2>:auth<github:spidererrol>
-  [Proxy::Watched] Command: /tmp/whateverable/rakudo-moar/00feb606ab6eda4beedfd7102d8ae62a20b1a2e2/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Proxy%3A%3AWatched%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ATHINCH%3E.tar.gz/Proxy-Watched-0.0.2 t/01-basic.t
-  [Proxy::Watched] 1..46
-  [Proxy::Watched] ok 1 - watched-int created
-  [Proxy::Watched] ok 2 - watched-int tapped
-  [Proxy::Watched] ok 3 - watched-int is correct
-  [Proxy::Watched] ok 4 - Tap got correct value
-  [Proxy::Watched] ok 5 - Type error when assigning string to watched-int
-  [Proxy::Watched] ok 6 - No extra tap triggered
-  [Proxy::Watched] ok 7 - watched-int-init is defined
-  [Proxy::Watched] ok 8 - watched-int-init is 7
-  [Proxy::Watched] ok 9 - watched-six created
-  [Proxy::Watched] ok 10 - watched-six tapped
-  [Proxy::Watched] ok 11 - watched-six is correct
-  [Proxy::Watched] ok 12 - Tap got correct value
-  [Proxy::Watched] ok 13 - watched-any created
-  [Proxy::Watched] ok 14 - watched-any tapped
-  [Proxy::Watched] ok 15 - watched-any is correct
-  [Proxy::Watched] ok 16 - Tap got correct value
-  [Proxy::Watched] ok 17 - watched-any-init
-  [Proxy::Watched] ok 18 - waitfor created
-  [Proxy::Watched] not ok 19 - Failed to wait-for
-  [Proxy::Watched] # Failed test 'Failed to wait-for'
-  [Proxy::Watched] # at t/01-basic.t line 67
-  [Proxy::Watched] ok 20 - waitfor succeeded
-  [Proxy::Watched] ok 21 - Check correct value was waited for
-  [Proxy::Watched] ok 22 - joint created
-  [Proxy::Watched] ok 23 - Joint value changed correctly
-  [Proxy::Watched] ok 24 - Tap updated with correct value
-  [Proxy::Watched] ok 25 - Joint value change to string
-  [Proxy::Watched] ok 26 - Tap updated with string value
-  [Proxy::Watched] ok 27 - joint wait-for succeeded
-  [Proxy::Watched] ok 28 - joint wait-for already-met set succeeded
-  [Proxy::Watched] ok 29 - Confirm joint value is as waited for
-  [Proxy::Watched] ok 30 - Confirm tapped value is as waited for
-  [Proxy::Watched] ok 31 - joint-typed is Int-ish
-  [Proxy::Watched] ok 32 - joint-typed is 7
-  [Proxy::Watched] ok 33 - Type error when assigning string to joint-typed
-  [Proxy::Watched] ok 34 - joint-typed is still 7
-  [Proxy::Watched] ok 35 - joint-typed-init is 7
-  [Proxy::Watched] ok 36 - Type error when assigning string to joint-typed-init
-  [Proxy::Watched] ok 37 - joint-typed-init is still 7
-  [Proxy::Watched] ok 38 - joint-init-by-type is 7
-  [Proxy::Watched] ok 39 - Type error when assigning string to joint-init-by-type
-  [Proxy::Watched] ok 40 - joint-init-by-type is still 7
-  [Proxy::Watched] ok 41 - joint-any-init is 7
-  [Proxy::Watched] ok 42 - No type error when assigning string to joint-any-init
-  [Proxy::Watched] ok 43 - joint-any-init is now String
-  [Proxy::Watched] ok 44 - Ensure wait-for(&code) works
-  [Proxy::Watched] ok 45 - Ensure wait-for(Junction) works (10)
-  [Proxy::Watched] ok 46 - Ensure wait-while(Junction) works (8)
-  [Proxy::Watched] ok 47 - Ensure combined wait-for(Junction) works (10)
-  [Proxy::Watched] # You planned 46 tests, but ran 47
-  [Proxy::Watched] # You failed 1 test of 47
-  ===> Testing [FAIL]: Proxy::Watched:ver<0.0.2>:auth<github:spidererrol>
-  [Proxy::Watched] Failed to get passing tests, but continuing with --force-test
-  ===> Installing: Proxy::Watched:ver<0.0.2>:auth<github:spidererrol>
-  ===> Install [OK] for Proxy::Watched:ver<0.0.2>:auth<github:spidererrol>
+  ===> Searching for: Text::Fortune
+  ===> Found: Text::Fortune:ver<0.03>:auth<github:zengargoyle> [via Zef::Repository::Ecosystems<rea>]
+  [Text::Fortune] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789391841.80694.3226.516218182853/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/T/Text%3A%3AFortune/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+  ===> Fetching [OK]: Text::Fortune:ver<0.03>:auth<github:zengargoyle> to /home/coke/sandbox/blin/data/zef-data/tmp/1789391841.80694.3226.516218182853/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+  [Text::Fortune] Command: tar -t -f ./Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+  [Text::Fortune] Command: tar -xvf ./Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz -C ../Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+  ===> Extraction [OK]: Text::Fortune to /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz
+  ===> Testing: Text::Fortune:ver<0.03>:auth<github:zengargoyle>
+  [Text::Fortune] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/01_empty.t
+  [Text::Fortune] Type check failed in assignment; expected IO but got Str ("t/test_data")
+  [Text::Fortune]   in block <unit> at t/01_empty.t line 5
+  [Text::Fortune] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/02_simple.t
+  [Text::Fortune] Type check failed in assignment; expected IO but got Str ("t/test_data")
+  [Text::Fortune]   in block <unit> at t/02_simple.t line 5
+  [Text::Fortune] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/03_dodat.t
+  [Text::Fortune] Type check failed in assignment; expected IO but got Str ("t/test_data")
+  [Text::Fortune]   in block <unit> at t/03_dodat.t line 5
+  [Text::Fortune] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/04_nodat.t
+  [Text::Fortune] Type check failed in assignment; expected IO but got Str ("t/test_data")
+  [Text::Fortune]   in block <unit> at t/04_nodat.t line 5
+  [Text::Fortune] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/05_broken.t
+  [Text::Fortune] ok 1 - bogus
+  [Text::Fortune] Type check failed in assignment; expected IO but got Str ("t/test_data")
+  [Text::Fortune]   in block <unit> at t/05_broken.t line 6
+  [Text::Fortune] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Text%3A%3AFortune%3Aver%3C0.03%3E%3Aauth%3Cgithub%3Azengargoyle%3E.tar.gz/Text-Fortune-master t/10_basic.t
+  [Text::Fortune] Type check failed in assignment; expected IO but got Str ("t/test_data")
+  [Text::Fortune]   in block <unit> at t/10_basic.t line 5
+  ===> Testing [FAIL]: Text::Fortune:ver<0.03>:auth<github:zengargoyle>
+  [Text::Fortune] Failed to get passing tests, but continuing with --force-test
+  ===> Installing: Text::Fortune:ver<0.03>:auth<github:zengargoyle>
+  ===> Install [OK] for Text::Fortune:ver<0.03>:auth<github:zengargoyle>
+
+  2 bin/ scripts [fortune.pl strfile.pl] installed to:
+  /home/coke/sandbox/blin/installed/Text::Fortune_github:zengargoyle_0.03_0/bin
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 40.922s
-               CPU time consumed: 35.604s
-                     Memory peak: 1.2G (swap: 0B)
+                 Service runtime: 26.670s
+               CPU time consumed: 16.560s
+                     Memory peak: 1.4G (swap: 0B)
 
   ```
   </details>
@@ -156,12 +161,12 @@
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p3617776-i7836324.service; invocation ID: 9f28f1da7f89412abd1f4879230f9a44
+  Running as unit: run-p81883-i8400114.service; invocation ID: 8412565a9a3a459c8cc1400261c20dcf
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Polyglot::Regexen
   ===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<fez>]
-  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789344954.3617777.7322.804729451475/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
-  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789344954.3617777.7322.804729451475/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789391870.81884.6101.216346963658/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789391870.81884.6101.216346963658/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   [Polyglot::Regexen] Command: tar -t -f ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   [Polyglot::Regexen] Command: tar -xvf ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz -C ../17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   ===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
@@ -322,9 +327,9 @@
   ===> Install [OK] for Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 1min 52.688s
-               CPU time consumed: 2min 16.022s
-                     Memory peak: 1.5G (swap: 2.9M)
+                 Service runtime: 37.158s
+               CPU time consumed: 55.482s
+                     Memory peak: 1.5G (swap: 0B)
 
   ```
   </details>
@@ -332,20 +337,20 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p3614913-i7872861.service
+  Running as unit: run-p80361-i8516108.service
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Polyglot::Regexen
-  ===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<rea>]
-  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789344822.3614914.3682.7555271100578/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/P/Polyglot%3A%3ARegexen/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
-  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789344822.3614914.3682.7555271100578/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
-  [Polyglot::Regexen] Command: tar -t -f ./Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
-  [Polyglot::Regexen] Command: tar -xvf ./Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz -C ../Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
-  ===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
+  ===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<fez>]
+  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789391828.80366.9428.121040292932/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789391828.80366.9428.121040292932/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  [Polyglot::Regexen] Command: tar -t -f ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  [Polyglot::Regexen] Command: tar -xvf ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz -C ../17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  ===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   ===> Testing: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00feb606ab6eda4beedfd7102d8ae62a20b1a2e2/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/00-sanity.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/00-sanity.rakutest
   [Polyglot::Regexen] ok 1 - 
   [Polyglot::Regexen] 1..1
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00feb606ab6eda4beedfd7102d8ae62a20b1a2e2/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/01-literals.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/01-literals.rakutest
   [Polyglot::Regexen] ok 1 - Single literal, alpha
   [Polyglot::Regexen] ok 2 - Double literal
   [Polyglot::Regexen] ok 3 - Single literal, digit
@@ -356,7 +361,7 @@
   [Polyglot::Regexen] ok 8 - Hex escape sequence, Raku escaped
   [Polyglot::Regexen] ok 9 - Unicode escape sequence, Raku escaped
   [Polyglot::Regexen] 1..9
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00feb606ab6eda4beedfd7102d8ae62a20b1a2e2/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/02-character-classes.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/02-character-classes.rakutest
   [Polyglot::Regexen] not ok 1 - Hyphen as sole character
   [Polyglot::Regexen] # Failed test 'Hyphen as sole character'
   [Polyglot::Regexen] # at t/ecma/02-character-classes.rakutest line 47
@@ -377,17 +382,17 @@
   [Polyglot::Regexen] ok 6 - Sequential range
   [Polyglot::Regexen] 1..6
   [Polyglot::Regexen] # You failed 3 tests of 6
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00feb606ab6eda4beedfd7102d8ae62a20b1a2e2/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/03-alternation.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/03-alternation.rakutest
   [Polyglot::Regexen] ok 1 - Simple alternation, two terms
   [Polyglot::Regexen] ok 2 - Simple alternation, three terms
   [Polyglot::Regexen] 1..2
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00feb606ab6eda4beedfd7102d8ae62a20b1a2e2/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/04-assertions.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/04-assertions.rakutest
   [Polyglot::Regexen] ok 1 - Simple lookahead
   [Polyglot::Regexen] ok 2 - Simple negative lookahead
   [Polyglot::Regexen] ok 3 - Simple lookbehind
   [Polyglot::Regexen] ok 4 - Simple negative lookbehind
   [Polyglot::Regexen] 1..4
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00feb606ab6eda4beedfd7102d8ae62a20b1a2e2/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/05-quantifiers.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/05-quantifiers.rakutest
   [Polyglot::Regexen] ok 1 - One or none
   [Polyglot::Regexen] ok 2 - One or more
   [Polyglot::Regexen] ok 3 - None or more
@@ -401,7 +406,7 @@
   [Polyglot::Regexen] ok 11 - Frugal some number or more
   [Polyglot::Regexen] ok 12 - Frugal some number to another number
   [Polyglot::Regexen] 1..12
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00feb606ab6eda4beedfd7102d8ae62a20b1a2e2/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/06-captures.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/06-captures.rakutest
   [Polyglot::Regexen] not ok 1 - Simple positional
   [Polyglot::Regexen] # Failed test 'Simple positional'
   [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 8
@@ -412,11 +417,11 @@
   [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 11
   [Polyglot::Regexen] # expected: '/[$<1>=[a[$<2>=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }]/'
   [Polyglot::Regexen] #      got: '/[$1=[a[$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }]/'
-  [Polyglot::Regexen] not ok 3 - Sequential positional
   [Polyglot::Regexen] # Failed test 'Sequential positional'
   [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 14
   [Polyglot::Regexen] # expected: '/[$<1>=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$<2>=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
   [Polyglot::Regexen] #      got: '/[$1=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
+  [Polyglot::Regexen] not ok 3 - Sequential positional
   [Polyglot::Regexen] not ok 4 - Complex positional
   [Polyglot::Regexen] # Failed test 'Complex positional'
   [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 17
@@ -434,7 +439,7 @@
   [Polyglot::Regexen] #      got: '/[$1=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
   [Polyglot::Regexen] 1..6
   [Polyglot::Regexen] # You failed 6 tests of 6
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00feb606ab6eda4beedfd7102d8ae62a20b1a2e2/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/07-unicode.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/07-unicode.rakutest
   [Polyglot::Regexen] ok 1 - 
   [Polyglot::Regexen] ok 2 - 
   [Polyglot::Regexen] ok 3 - 
@@ -448,13 +453,13 @@
   [Polyglot::Regexen] ok 11 - 
   [Polyglot::Regexen] ok 12 - 
   [Polyglot::Regexen] 1..12
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00feb606ab6eda4beedfd7102d8ae62a20b1a2e2/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/08-modifiers.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/08-modifiers.rakutest
   [Polyglot::Regexen] ok 1 - 
   [Polyglot::Regexen] ok 2 - 
   [Polyglot::Regexen] ok 3 - 
   [Polyglot::Regexen] ok 4 - 
   [Polyglot::Regexen] 1..4
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00feb606ab6eda4beedfd7102d8ae62a20b1a2e2/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/09-role.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/09-role.rakutest
   [Polyglot::Regexen] # Subtest: Pretty print
   [Polyglot::Regexen]     ok 1 - 
   [Polyglot::Regexen]     ok 2 - 
@@ -507,7 +512,7 @@
   [Polyglot::Regexen]     1..6
   [Polyglot::Regexen] ok 6 - Named match backreferences
   [Polyglot::Regexen] 1..6
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/00feb606ab6eda4beedfd7102d8ae62a20b1a2e2/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/10-usage.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/10-usage.rakutest
   [Polyglot::Regexen] # Subtest: Quoted forms
   [Polyglot::Regexen]     ok 1 - No modifiers in bare quoted form
   [Polyglot::Regexen]     ok 2 - Postquote case-insensitive bare quoted form
@@ -537,9 +542,127 @@
   ===> Install [OK] for Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 1min 6.233s
-               CPU time consumed: 1min 5.617s
-                     Memory peak: 1.5G (swap: 59.3M)
+                 Service runtime: 32.515s
+               CPU time consumed: 27.282s
+                     Memory peak: 1.5G (swap: 0B)
+
+  ```
+  </details>
+* [ ] [Color::Scheme](https://raku.land/cpan:HOLLI/Color::Scheme) – Fail, Bisected: [b88ac8f](https://github.com/rakudo/rakudo/commit/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a)
+  <details><Summary>Old Output</summary>
+
+  ```
+  Running as unit: run-p81227-i8396030.service; invocation ID: b914bfdd1e9b43e59aa6aa42ce18396a
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: Color::Scheme
+  ===> Found: Color::Scheme:ver<1.001003>:auth<cpan:HOLLI>:api<1> [via Zef::Repository::Ecosystems<rea>]
+  [Color::Scheme] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789391870.81228.7100.044729081471/Color%3A%3AScheme%3Aver%3C1.001003%3E%3Aauth%3Ccpan%3AHOLLI%3E%3Aapi%3C1%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/C/Color%3A%3AScheme/Color%3A%3AScheme%3Aver%3C1.001003%3E%3Aauth%3Ccpan%3AHOLLI%3E%3Aapi%3C1%3E.tar.gz
+  ===> Fetching [OK]: Color::Scheme:ver<1.001003>:auth<cpan:HOLLI>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789391870.81228.7100.044729081471/Color%3A%3AScheme%3Aver%3C1.001003%3E%3Aauth%3Ccpan%3AHOLLI%3E%3Aapi%3C1%3E.tar.gz
+  [Color::Scheme] Command: tar -t -f ./Color%3A%3AScheme%3Aver%3C1.001003%3E%3Aauth%3Ccpan%3AHOLLI%3E%3Aapi%3C1%3E.tar.gz
+  [Color::Scheme] Command: tar -xvf ./Color%3A%3AScheme%3Aver%3C1.001003%3E%3Aauth%3Ccpan%3AHOLLI%3E%3Aapi%3C1%3E.tar.gz -C ../Color%3A%3AScheme%3Aver%3C1.001003%3E%3Aauth%3Ccpan%3AHOLLI%3E%3Aapi%3C1%3E.tar.gz
+  ===> Extraction [OK]: Color::Scheme to /home/coke/sandbox/blin/data/zef-data/tmp/Color%3A%3AScheme%3Aver%3C1.001003%3E%3Aauth%3Ccpan%3AHOLLI%3E%3Aapi%3C1%3E.tar.gz
+  ===> Testing: Color::Scheme:ver<1.001003>:auth<github:holli-holzer>:api<1>
+  [Color::Scheme] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Color%3A%3AScheme%3Aver%3C1.001003%3E%3Aauth%3Ccpan%3AHOLLI%3E%3Aapi%3C1%3E.tar.gz/Color-Scheme-1.001003 t/01-basic.t
+  [Color::Scheme] 1..19
+  [Color::Scheme] ok 1 - 
+  [Color::Scheme] ok 2 - 
+  [Color::Scheme] ok 3 - 
+  [Color::Scheme] ok 4 - 
+  [Color::Scheme] ok 5 - 
+  [Color::Scheme] ok 6 - 
+  [Color::Scheme] ok 7 - 
+  [Color::Scheme] ok 8 - 
+  [Color::Scheme] ok 9 - 
+  [Color::Scheme] ok 10 - 
+  [Color::Scheme] ok 11 - 
+  [Color::Scheme] ok 12 - 
+  [Color::Scheme] ok 13 - 
+  [Color::Scheme] ok 14 - 
+  [Color::Scheme] ok 15 - 
+  [Color::Scheme] ok 16 - 
+  [Color::Scheme] ok 17 - 
+  [Color::Scheme] ok 18 - 
+  [Color::Scheme] ok 19 - 
+  ===> Testing [OK] for Color::Scheme:ver<1.001003>:auth<github:holli-holzer>:api<1>
+  ===> Installing: Color::Scheme:ver<1.001003>:auth<github:holli-holzer>:api<1>
+  ===> Install [OK] for Color::Scheme:ver<1.001003>:auth<github:holli-holzer>:api<1>
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 45.369s
+               CPU time consumed: 1min 2.721s
+                     Memory peak: 1.8G (swap: 0B)
+
+  ```
+  </details>
+  <details>
+  <summary>New Output</summary>
+
+  ```
+  Running as unit: run-p80945-i8436225.service; invocation ID: 5cd359f5f1be4d2ab1c97f70fd8908ea
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: Color::Scheme
+  No candidates found matching identity: Color::Scheme
+            Finished with result: exit-code
+  Main processes terminated with: code=exited, status=255/EXCEPTION
+                 Service runtime: 6.380s
+               CPU time consumed: 6.779s
+                     Memory peak: 559.4M (swap: 0B)
+
+  ```
+  </details>
+* [ ] [XML::Writer](https://raku.land//XML::Writer) – Fail, Bisected: [b88ac8f](https://github.com/rakudo/rakudo/commit/b88ac8f8f0c5442dcb826b5a9cca668b0282d28a)
+  <details><Summary>Old Output</summary>
+
+  ```
+  Running as unit: run-p81381-i8400087.service
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: XML::Writer
+  ===> Found: XML::Writer [via Zef::Repository::Ecosystems<rea>]
+  [XML::Writer] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789391868.81384.8660.601727495516/XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/X/XML%3A%3AWriter/XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz
+  ===> Fetching [OK]: XML::Writer to /home/coke/sandbox/blin/data/zef-data/tmp/1789391868.81384.8660.601727495516/XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz
+  [XML::Writer] Command: tar -t -f ./XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz
+  [XML::Writer] Command: tar -xvf ./XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz -C ../XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz
+  ===> Extraction [OK]: XML::Writer to /home/coke/sandbox/blin/data/zef-data/tmp/XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz
+  ===> Testing: XML::Writer
+  [XML::Writer] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz/xml-writer-master t/escaping.t
+  [XML::Writer] 1..3
+  [XML::Writer] ok 1 - plain text is escaped (<>)
+  [XML::Writer] ok 2 - plain text is escaped (&)
+  [XML::Writer] ok 3 - plain text is escaped (")
+  [XML::Writer] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/XML%3A%3AWriter%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Amasak%3E.tar.gz/xml-writer-master t/structure.t
+  [XML::Writer] 1..8
+  [XML::Writer] ok 1 - Cannot serialize nothing
+  [XML::Writer] ok 2 - Single root element (named)
+  [XML::Writer] ok 3 - Single root element (positional)
+  [XML::Writer] ok 4 - Can either pass named or positional
+  [XML::Writer] ok 5 - Single root element with text contents
+  [XML::Writer] ok 6 - attribute
+  [XML::Writer] ok 7 - numbers also work like text
+  [XML::Writer] ok 8 - Long XML is occasionally line-wrapped
+  ===> Testing [OK] for XML::Writer
+  ===> Installing: XML::Writer
+  ===> Install [OK] for XML::Writer
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 36.863s
+               CPU time consumed: 51.909s
+                     Memory peak: 1.3G (swap: 0B)
+
+  ```
+  </details>
+  <details>
+  <summary>New Output</summary>
+
+  ```
+  Running as unit: run-p80388-i8508745.service
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: XML::Writer
+  No candidates found matching identity: XML::Writer
+            Finished with result: exit-code
+  Main processes terminated with: code=exited, status=255/EXCEPTION
+                 Service runtime: 22.540s
+               CPU time consumed: 5.256s
+                     Memory peak: 591.5M (swap: 0B)
 
   ```
   </details>
@@ -548,14 +671,13 @@
 
 | Status                    | Count |          Modules          |
 | :------------------------ | :---: | :------------------------ |
-| InstallableButUntested    |     1 | [IO::Socket::Async::SSL](https://raku.land/zef:raku-community-modules/IO::Socket::Async::SSL) |
-| Fail                      |     2 | [Polyglot::Regexen](https://raku.land/zef:guifa/Polyglot::Regexen) [Proxy::Watched](https://raku.land/cpan:THINCH/Proxy::Watched) |
-| AlwaysFail                |    14 | [AttrX::Mooish](https://raku.land/zef:vrurg/AttrX::Mooish) [Cairo](https://raku.land//Cairo) [Code::Coverable](https://raku.land/zef:lizmat/Code::Coverable) [DBIish](https://raku.land/zef:raku-community-modules/DBIish) [DBIish](https://raku.land/github:raku-community-modules/DBIish) [DOM::Tiny](https://raku.land/cpan:HANENKAMP/DOM::Tiny) [Data::Dump::Tree](https://raku.land/zef:raku-community-modules/Data::Dump::Tree) [JSON::Class](https://raku.land/zef:jonathanstowe/JSON::Class) [License::SPDX](https://raku.land/zef:jonathanstowe/License::SPDX) [META6](https://raku.land/zef:jonathanstowe/META6) [Net::DNS](https://raku.land/zef:rbt/Net::DNS) [Semaphore::ReadersWriters](https://raku.land//Semaphore::ReadersWriters) [Test::META](https://raku.land/zef:jonathanstowe/Test::META) [Text::CSV](https://raku.land/zef:Tux/Text::CSV) |
-| OK                        |   156 | ⋯                         |
+| Fail                      |     4 | [Color::Scheme](https://raku.land/cpan:HOLLI/Color::Scheme) [Polyglot::Regexen](https://raku.land/zef:guifa/Polyglot::Regexen) [Text::Fortune](https://raku.land/github:zengargoyle/Text::Fortune) [XML::Writer](https://raku.land//XML::Writer) |
+| AlwaysFail                |     6 | [Intl::LanguageTag](https://raku.land/zef:guifa/Intl::LanguageTag) [JSON::Class](https://raku.land/zef:jonathanstowe/JSON::Class) [License::SPDX](https://raku.land/zef:jonathanstowe/License::SPDX) [META6](https://raku.land/zef:jonathanstowe/META6) [Test::META](https://raku.land/zef:jonathanstowe/Test::META) [User::Language](https://raku.land/zef:guifa/User::Language) |
+| OK                        |    36 | ⋯                         |
 
 
 
-This run started on 2026-09-14T00:25:42Z and finished in 13 minutes.
+This run started on 2026-09-14T13:24:56Z and finished in 9 minutes.
 
 <!--
 Graph of bisected modules and their dependencies:
