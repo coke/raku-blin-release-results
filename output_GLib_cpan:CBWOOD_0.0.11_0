@@ -1,0 +1,298 @@
+Running as unit: run-p531368-i535862.service; invocation ID: 99428237068a44af8f9664f9bd124fc0
+Press ^] three times within 1s to disconnect TTY.
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_0:1
+    ------> [32mity>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_1:1
+    ------> [32mZef>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_2:1
+    ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_3:1
+    ------> [32mery>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_4:1
+    ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_5:1
+    ------> [32mcal>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_6:1
+    ------> [32mory>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_7:1
+    ------> [32mtem>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_8:1
+    ------> [32mtch>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_9:1
+    ------> [32mact>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_10:1
+    ------> [32mild>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_11:1
+    ------> [32mest>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_12:1
+    ------> [32mall>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_13:1
+    ------> [32mort>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_14:1
+    ------> [32ment>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_15:1
+    ------> [32mfig>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+Potential difficulties:
+    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
+      or :auth-matcher() to represent the empty list more accurately
+    at /home/coke/sandbox/blin/EVAL_16:1
+    ------> [32mURI>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
+===> Searching for: GLib
+===> Found: GLib:ver<0.0.11>:auth<cpan:CBWOOD> [via Zef::Repository::Ecosystems<rea>]
+[GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789564014.531369.5296.015317568506/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789564014.531369.5296.015317568506/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+[GLib] Command: tar -t -f ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+[GLib] Command: tar -xvf ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz -C ../GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+===> Extraction [OK]: GLib to /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+===> Testing: GLib:ver<0.0.11>:auth<cpan:CBWOOD>
+[GLib] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00-struct-sizes.t
+[GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00-struct-sizes.t
+[GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs)
+[GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Exceptions.pm6 (GLib::Raw::Exceptions)
+[GLib] Can only use : as invocant marker in a signature after the first parameter
+[GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Exceptions.pm6 (GLib::Raw::Exceptions):133
+[GLib] ------>   method new (<HERE> :
+[GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs):10
+[GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00-struct-sizes.t:7
+[GLib] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00b-class-struct-sizes.t
+[GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00b-class-struct-sizes.t
+[GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs)
+[GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Exceptions.pm6 (GLib::Raw::Exceptions)
+[GLib] Can only use : as invocant marker in a signature after the first parameter
+[GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Exceptions.pm6 (GLib::Raw::Exceptions):133
+[GLib] ------>   method new (<HERE> :
+[GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs):10
+[GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00b-class-struct-sizes.t:7
+[GLib] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/01-modules.t
+[GLib] 1..174
+[GLib] ok 1 - GLib
+[GLib] ok 2 - GLib::Array
+[GLib] ok 3 - GLib::AsyncQueue
+[GLib] ok 4 - GLib::Base64
+[GLib] ok 5 - GLib::BookmarkFile
+[GLib] ok 6 - GLib::ByteArray
+[GLib] ok 7 - GLib::Bytes
+[GLib] ok 8 - GLib::Checksum
+[GLib] ok 9 - GLib::Class::Object
+[GLib] ok 10 - GLib::Class::Structs
+[GLib] ok 11 - GLib::Class::TypeModule
+[GLib] ok 12 - GLib::Compat::Definitions
+[GLib] ok 13 - GLib::Cond
+[GLib] ok 14 - GLib::Convert
+[GLib] ok 15 - GLib::Dataset
+[GLib] ok 16 - GLib::Date
+[GLib] ok 17 - GLib::DateTime
+[GLib] ok 18 - GLib::Env
+[GLib] ok 19 - GLib::Error
+[GLib] ok 20 - GLib::FileUtils
+[GLib] ok 21 - GLib::GList
+[GLib] ok 22 - GLib::GSList
+[GLib] ok 23 - GLib::HMAC
+[GLib] ok 24 - GLib::HashTable
+[GLib] ok 25 - GLib::Hostname
+[GLib] ok 26 - GLib::IOChannel
+[GLib] ok 27 - GLib::KeyFile
+[GLib] ok 28 - GLib::Log
+[GLib] ok 29 - GLib::MainContext
+[GLib] ok 30 - GLib::MainLoop
+[GLib] ok 31 - GLib::MappedFile
+[GLib] ok 32 - GLib::Markup
+[GLib] ok 33 - GLib::MatchInfo
+[GLib] ok 34 - GLib::Memory
+[GLib] ok 35 - GLib::Module
+[GLib] ok 36 - GLib::Mutex
+[GLib] ok 37 - GLib::Node
+[GLib] ok 38 - GLib::Object::Binding
+[GLib] ok 39 - GLib::Object::Closure
+[GLib] ok 40 - GLib::Object::IsType
+[GLib] ok 41 - GLib::Object::ParamSpec
+[GLib] ok 42 - GLib::Object::Raw::Binding
+[GLib] ok 43 - GLib::Object::Raw::Closure
+[GLib] ok 44 - GLib::Object::Raw::ParamSpec
+[GLib] ok 45 - GLib::Object::Raw::TypeModule
+[GLib] ok 46 - GLib::Object::Raw::Types
+[GLib] ok 47 - GLib::Object::Supplyish
+[GLib] ok 48 - GLib::Object::Type
+[GLib] ok 49 - GLib::Object::TypeModule
+[GLib] ok 50 - GLib::Object::Types
+[GLib] ok 51 - GLib::Pattern
+[GLib] ok 52 - GLib::PtrArray
+[GLib] ok 53 - GLib::Quark
+[GLib] ok 54 - GLib::Queue
+[GLib] ok 55 - GLib::Rand
+[GLib] ok 56 - GLib::Raw::Array
+[GLib] ok 57 - GLib::Raw::Arrays
+[GLib] ok 58 - GLib::Raw::AsyncQueue
+[GLib] ok 59 - GLib::Raw::Base64
+[GLib] ok 60 - GLib::Raw::BookmarkFile
+[GLib] ok 61 - GLib::Raw::Bytes
+[GLib] ok 62 - GLib::Raw::Checksum
+[GLib] ok 63 - GLib::Raw::Convert
+[GLib] ok 64 - GLib::Raw::Dataset
+[GLib] ok 65 - GLib::Raw::Date
+[GLib] ok 66 - GLib::Raw::DateTime
+[GLib] ok 67 - GLib::Raw::Debug
+[GLib] ok 68 - GLib::Raw::Definitions
+[GLib] ok 69 - GLib::Raw::Distro
+[GLib] ok 70 - GLib::Raw::Enum
+[GLib] ok 71 - GLib::Raw::Enums
+[GLib] ok 72 - GLib::Raw::Env
+[GLib] ok 73 - GLib::Raw::Error
+[GLib] ok 74 - GLib::Raw::Exceptions
+[GLib] ok 75 - GLib::Raw::Exports
+[GLib] ok 76 - GLib::Raw::ExtendedTypes
+[GLib] ok 77 - GLib::Raw::FileUtils
+[GLib] ok 78 - GLib::Raw::GList
+[GLib] ok 79 - GLib::Raw::GSList
+[GLib] ok 80 - GLib::Raw::GenericList
+[GLib] ok 81 - GLib::Raw::HMAC
+[GLib] ok 82 - GLib::Raw::HashTable
+[GLib] ok 83 - GLib::Raw::Hostname
+[GLib] ok 84 - GLib::Raw::IOChannel
+[GLib] ok 85 - GLib::Raw::KeyFile
+[GLib] ok 86 - GLib::Raw::Log
+[GLib] ok 87 - GLib::Raw::Macros
+[GLib] ok 88 - GLib::Raw::Main
+[GLib] ok 89 - GLib::Raw::MappedFile
+[GLib] ok 90 - GLib::Raw::Markup
+[GLib] ok 91 - GLib::Raw::Memory
+[GLib] ok 92 - GLib::Raw::Module
+[GLib] ok 93 - GLib::Raw::Node
+[GLib] ok 94 - GLib::Raw::Object
+[GLib] ok 95 - GLib::Raw::Pattern
+[GLib] ok 96 - GLib::Raw::Pointers
+[GLib] ok 97 - GLib::Raw::Quark
+[GLib] ok 98 - GLib::Raw::Quarks
+[GLib] ok 99 - GLib::Raw::Queue
+[GLib] ok 100 - GLib::Raw::Rand
+[GLib] ok 101 - GLib::Raw::Regex
+[GLib] ok 102 - GLib::Raw::ReturnedValue
+[GLib] ok 103 - GLib::Raw::Scanner
+[GLib] ok 104 - GLib::Raw::Sequence
+[GLib] ok 105 - GLib::Raw::Signal
+[GLib] ok 106 - GLib::Raw::Slice
+[GLib] ok 107 - GLib::Raw::Spawn
+[GLib] ok 108 - GLib::Raw::String
+[GLib] ok 109 - GLib::Raw::String::Chunk
+[GLib] ok 110 - GLib::Raw::Struct_Subs
+[GLib] ok 111 - GLib::Raw::Structs
+[GLib] ok 112 - GLib::Raw::Subs
+[GLib] ok 113 - GLib::Raw::Test
+[GLib] ok 114 - GLib::Raw::Thread
+[GLib] ok 115 - GLib::Raw::ThreadPool
+[GLib] ok 116 - GLib::Raw::TimeZone
+[GLib] ok 117 - GLib::Raw::Timer
+[GLib] ok 118 - GLib::Raw::Traits
+[GLib] ok 119 - GLib::Raw::Traps
+[GLib] ok 120 - GLib::Raw::Tree
+[GLib] ok 121 - GLib::Raw::Type
+[GLib] ok 122 - GLib::Raw::TypePlugin
+[GLib] ok 123 - GLib::Raw::Types
+[GLib] ok 124 - GLib::Raw::Unicode
+[GLib] ok 125 - GLib::Raw::Uri
+[GLib] ok 126 - GLib::Raw::Utils
+[GLib] ok 127 - GLib::Raw::Value
+[GLib] ok 128 - GLib::Raw::Variant
+[GLib] ok 129 - GLib::Raw::VariantType
+[GLib] ok 130 - GLib::Raw::VariantTypes
+[GLib] ok 131 - GLib::Regex
+[GLib] ok 132 - GLib::Roles::Bindable
+[GLib] ok 133 - GLib::Roles::HashObject
+[GLib] ok 134 - GLib::Roles::Implementor
+[GLib] ok 135 - GLib::Roles::ListData
+[GLib] ok 136 - GLib::Roles::NewGObject
+[GLib] ok 137 - GLib::Roles::Object
+[GLib] ok 138 - GLib::Roles::PointerBasedList
+[GLib] ok 139 - GLib::Roles::Pointers
+[GLib] ok 140 - GLib::Roles::Properties
+[GLib] ok 141 - GLib::Roles::Protection
+[GLib] ok 142 - GLib::Roles::References
+[GLib] ok 143 - GLib::Roles::Signals::Generic
+[GLib] ok 144 - GLib::Roles::StaticClass
+[GLib] ok 145 - GLib::Roles::TreeData
+[GLib] ok 146 - GLib::Roles::TypeInstance
+[GLib] ok 147 - GLib::Roles::TypePlugin
+[GLib] ok 148 - GLib::Roles::TypedArray
+[GLib] ok 149 - GLib::Roles::TypedBuffer
+[GLib] ok 150 - GLib::Roles::TypedQueue
+[GLib] ok 151 - GLib::Roles::Value
+[GLib] ok 152 - GLib::Scanner
+[GLib] ok 153 - GLib::Sequence
+[GLib] ok 154 - GLib::Signal
+[GLib] ok 155 - GLib::Slice
+[GLib] ok 156 - GLib::Source
+[GLib] ok 157 - GLib::Spawn
+[GLib] ok 158 - GLib::String
+[GLib] ok 159 - GLib::String::Chunk
+[GLib] ok 160 - GLib::Test
+[GLib] ok 161 - GLib::ThreadPool
+[GLib] ok 162 - GLib::TimeZone
+[GLib] ok 163 - GLib::Timeout
+[GLib] ok 164 - GLib::Timer
+[GLib] ok 165 - GLib::Tree
+[GLib] ok 166 - GLib::UUID
+[GLib] ok 167 - GLib::Unicode
+[GLib] ok 168 - GLib::Uri
+[GLib] ok 169 - GLib::Utils
+[GLib] ok 170 - GLib::Value
+[GLib] ok 171 - GLib::Variant
+[GLib] ok 172 - GLib::VariantDict
+[GLib] ok 173 - GLib::VariantIter
+[GLib] ok 174 - GLib::VariantType
+===> Testing [FAIL]: GLib:ver<0.0.11>:auth<cpan:CBWOOD>
+[GLib] Failed to get passing tests, but continuing with --force-test
+===> Installing: GLib:ver<0.0.11>:auth<cpan:CBWOOD>
+===> Install [OK] for GLib:ver<0.0.11>:auth<cpan:CBWOOD>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 17.555s
+             CPU time consumed: 20.757s
+                   Memory peak: 2.3G (swap: 0B)
