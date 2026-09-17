@@ -1,17 +1,17 @@
-Running as unit: run-p515304-i449415.service; invocation ID: 851863c8b578441abdf72ab0f540906a
+Running as unit: run-p636215-i607871.service
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Polyglot::Regexen
-===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<rea>]
-[Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789563710.515306.6679.637709999919/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/P/Polyglot%3A%3ARegexen/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
-===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789563710.515306.6679.637709999919/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
-[Polyglot::Regexen] Command: tar -t -f ./Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
-[Polyglot::Regexen] Command: tar -xvf ./Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz -C ../Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
-===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
+===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<fez>]
+[Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789650809.636217.1359.954927520991/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789650809.636217.1359.954927520991/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+[Polyglot::Regexen] Command: tar -t -f ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+[Polyglot::Regexen] Command: tar -xvf ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz -C ../17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
 ===> Testing: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/00-sanity.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/00-sanity.rakutest
 [Polyglot::Regexen] ok 1 - 
 [Polyglot::Regexen] 1..1
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/01-literals.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/01-literals.rakutest
 [Polyglot::Regexen] ok 1 - Single literal, alpha
 [Polyglot::Regexen] ok 2 - Double literal
 [Polyglot::Regexen] ok 3 - Single literal, digit
@@ -22,7 +22,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen] ok 8 - Hex escape sequence, Raku escaped
 [Polyglot::Regexen] ok 9 - Unicode escape sequence, Raku escaped
 [Polyglot::Regexen] 1..9
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/02-character-classes.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/02-character-classes.rakutest
 [Polyglot::Regexen] not ok 1 - Hyphen as sole character
 [Polyglot::Regexen] # Failed test 'Hyphen as sole character'
 [Polyglot::Regexen] # at t/ecma/02-character-classes.rakutest line 47
@@ -43,17 +43,17 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen] ok 6 - Sequential range
 [Polyglot::Regexen] 1..6
 [Polyglot::Regexen] # You failed 3 tests of 6
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/03-alternation.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/03-alternation.rakutest
 [Polyglot::Regexen] ok 1 - Simple alternation, two terms
 [Polyglot::Regexen] ok 2 - Simple alternation, three terms
 [Polyglot::Regexen] 1..2
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/04-assertions.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/04-assertions.rakutest
 [Polyglot::Regexen] ok 1 - Simple lookahead
 [Polyglot::Regexen] ok 2 - Simple negative lookahead
 [Polyglot::Regexen] ok 3 - Simple lookbehind
 [Polyglot::Regexen] ok 4 - Simple negative lookbehind
 [Polyglot::Regexen] 1..4
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/05-quantifiers.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/05-quantifiers.rakutest
 [Polyglot::Regexen] ok 1 - One or none
 [Polyglot::Regexen] ok 2 - One or more
 [Polyglot::Regexen] ok 3 - None or more
@@ -67,7 +67,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen] ok 11 - Frugal some number or more
 [Polyglot::Regexen] ok 12 - Frugal some number to another number
 [Polyglot::Regexen] 1..12
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/06-captures.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/06-captures.rakutest
 [Polyglot::Regexen] not ok 1 - Simple positional
 [Polyglot::Regexen] # Failed test 'Simple positional'
 [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 8
@@ -78,11 +78,11 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 11
 [Polyglot::Regexen] # expected: '/[$<1>=[a[$<2>=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }]/'
 [Polyglot::Regexen] #      got: '/[$1=[a[$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }]/'
-[Polyglot::Regexen] not ok 3 - Sequential positional
 [Polyglot::Regexen] # Failed test 'Sequential positional'
 [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 14
 [Polyglot::Regexen] # expected: '/[$<1>=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$<2>=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
 [Polyglot::Regexen] #      got: '/[$1=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
+[Polyglot::Regexen] not ok 3 - Sequential positional
 [Polyglot::Regexen] not ok 4 - Complex positional
 [Polyglot::Regexen] # Failed test 'Complex positional'
 [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 17
@@ -100,7 +100,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen] #      got: '/[$1=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
 [Polyglot::Regexen] 1..6
 [Polyglot::Regexen] # You failed 6 tests of 6
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/07-unicode.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/07-unicode.rakutest
 [Polyglot::Regexen] ok 1 - 
 [Polyglot::Regexen] ok 2 - 
 [Polyglot::Regexen] ok 3 - 
@@ -114,13 +114,13 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen] ok 11 - 
 [Polyglot::Regexen] ok 12 - 
 [Polyglot::Regexen] 1..12
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/08-modifiers.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/08-modifiers.rakutest
 [Polyglot::Regexen] ok 1 - 
 [Polyglot::Regexen] ok 2 - 
 [Polyglot::Regexen] ok 3 - 
 [Polyglot::Regexen] ok 4 - 
 [Polyglot::Regexen] 1..4
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/09-role.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/09-role.rakutest
 [Polyglot::Regexen] # Subtest: Pretty print
 [Polyglot::Regexen]     ok 1 - 
 [Polyglot::Regexen]     ok 2 - 
@@ -173,7 +173,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen]     1..6
 [Polyglot::Regexen] ok 6 - Named match backreferences
 [Polyglot::Regexen] 1..6
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/10-usage.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/10-usage.rakutest
 [Polyglot::Regexen] # Subtest: Quoted forms
 [Polyglot::Regexen]     ok 1 - No modifiers in bare quoted form
 [Polyglot::Regexen]     ok 2 - Postquote case-insensitive bare quoted form
@@ -203,6 +203,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 41.220s
-             CPU time consumed: 48.431s
-                   Memory peak: 1.7G (swap: 0B)
+               Service runtime: 33.550s
+             CPU time consumed: 23.239s
+                   Memory peak: 1.5G (swap: 0B)

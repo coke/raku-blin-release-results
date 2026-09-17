@@ -1,15 +1,15 @@
-[Blin](https://github.com/Raku/Blin) results between 2026.08 ([24e6e53](https://github.com/rakudo/rakudo/commit/24e6e5312f2868680413b0597aef8772f6b5bcea)) and ff41340331 ([ff41340](https://github.com/rakudo/rakudo/commit/ff413403319a5472eb5d249978e3acac2c36dcc6)):
+[Blin](https://github.com/Raku/Blin) results between 2026.08 ([24e6e53](https://github.com/rakudo/rakudo/commit/24e6e5312f2868680413b0597aef8772f6b5bcea)) and b83057b10c ([b83057b](https://github.com/rakudo/rakudo/commit/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8)):
 
 * [ ] [Polyglot::Regexen](https://raku.land/zef:guifa/Polyglot::Regexen) – Fail, Bisected: [aab0778](https://github.com/rakudo/rakudo/commit/aab0778725da5848824f07514c0ae355d972926a)
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p517390-i473633.service; invocation ID: c1bc7c8db32c4b9fb755626644282428
+  Running as unit: run-p637754-i645503.service; invocation ID: 43539e535c1b4f00b5d26bbb5459c1ea
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Polyglot::Regexen
   ===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<fez>]
-  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789563771.517393.578.3507842046654/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
-  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789563771.517393.578.3507842046654/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789650841.637755.5690.040414612839/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789650841.637755.5690.040414612839/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   [Polyglot::Regexen] Command: tar -t -f ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   [Polyglot::Regexen] Command: tar -xvf ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz -C ../17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   ===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
@@ -170,8 +170,8 @@
   ===> Install [OK] for Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 43.535s
-               CPU time consumed: 1min 5.009s
+                 Service runtime: 25.727s
+               CPU time consumed: 38.521s
                      Memory peak: 1.5G (swap: 0B)
 
   ```
@@ -180,20 +180,20 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p515304-i449415.service; invocation ID: 851863c8b578441abdf72ab0f540906a
+  Running as unit: run-p636215-i607871.service
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Polyglot::Regexen
-  ===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<rea>]
-  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789563710.515306.6679.637709999919/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/P/Polyglot%3A%3ARegexen/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
-  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789563710.515306.6679.637709999919/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
-  [Polyglot::Regexen] Command: tar -t -f ./Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
-  [Polyglot::Regexen] Command: tar -xvf ./Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz -C ../Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
-  ===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz
+  ===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<fez>]
+  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789650809.636217.1359.954927520991/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789650809.636217.1359.954927520991/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  [Polyglot::Regexen] Command: tar -t -f ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  [Polyglot::Regexen] Command: tar -xvf ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz -C ../17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  ===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   ===> Testing: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/00-sanity.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/00-sanity.rakutest
   [Polyglot::Regexen] ok 1 - 
   [Polyglot::Regexen] 1..1
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/01-literals.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/01-literals.rakutest
   [Polyglot::Regexen] ok 1 - Single literal, alpha
   [Polyglot::Regexen] ok 2 - Double literal
   [Polyglot::Regexen] ok 3 - Single literal, digit
@@ -204,7 +204,7 @@
   [Polyglot::Regexen] ok 8 - Hex escape sequence, Raku escaped
   [Polyglot::Regexen] ok 9 - Unicode escape sequence, Raku escaped
   [Polyglot::Regexen] 1..9
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/02-character-classes.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/02-character-classes.rakutest
   [Polyglot::Regexen] not ok 1 - Hyphen as sole character
   [Polyglot::Regexen] # Failed test 'Hyphen as sole character'
   [Polyglot::Regexen] # at t/ecma/02-character-classes.rakutest line 47
@@ -225,17 +225,17 @@
   [Polyglot::Regexen] ok 6 - Sequential range
   [Polyglot::Regexen] 1..6
   [Polyglot::Regexen] # You failed 3 tests of 6
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/03-alternation.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/03-alternation.rakutest
   [Polyglot::Regexen] ok 1 - Simple alternation, two terms
   [Polyglot::Regexen] ok 2 - Simple alternation, three terms
   [Polyglot::Regexen] 1..2
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/04-assertions.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/04-assertions.rakutest
   [Polyglot::Regexen] ok 1 - Simple lookahead
   [Polyglot::Regexen] ok 2 - Simple negative lookahead
   [Polyglot::Regexen] ok 3 - Simple lookbehind
   [Polyglot::Regexen] ok 4 - Simple negative lookbehind
   [Polyglot::Regexen] 1..4
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/05-quantifiers.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/05-quantifiers.rakutest
   [Polyglot::Regexen] ok 1 - One or none
   [Polyglot::Regexen] ok 2 - One or more
   [Polyglot::Regexen] ok 3 - None or more
@@ -249,7 +249,7 @@
   [Polyglot::Regexen] ok 11 - Frugal some number or more
   [Polyglot::Regexen] ok 12 - Frugal some number to another number
   [Polyglot::Regexen] 1..12
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/06-captures.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/06-captures.rakutest
   [Polyglot::Regexen] not ok 1 - Simple positional
   [Polyglot::Regexen] # Failed test 'Simple positional'
   [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 8
@@ -260,11 +260,11 @@
   [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 11
   [Polyglot::Regexen] # expected: '/[$<1>=[a[$<2>=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }]/'
   [Polyglot::Regexen] #      got: '/[$1=[a[$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }]/'
-  [Polyglot::Regexen] not ok 3 - Sequential positional
   [Polyglot::Regexen] # Failed test 'Sequential positional'
   [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 14
   [Polyglot::Regexen] # expected: '/[$<1>=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$<2>=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
   [Polyglot::Regexen] #      got: '/[$1=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
+  [Polyglot::Regexen] not ok 3 - Sequential positional
   [Polyglot::Regexen] not ok 4 - Complex positional
   [Polyglot::Regexen] # Failed test 'Complex positional'
   [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 17
@@ -282,7 +282,7 @@
   [Polyglot::Regexen] #      got: '/[$1=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
   [Polyglot::Regexen] 1..6
   [Polyglot::Regexen] # You failed 6 tests of 6
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/07-unicode.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/07-unicode.rakutest
   [Polyglot::Regexen] ok 1 - 
   [Polyglot::Regexen] ok 2 - 
   [Polyglot::Regexen] ok 3 - 
@@ -296,13 +296,13 @@
   [Polyglot::Regexen] ok 11 - 
   [Polyglot::Regexen] ok 12 - 
   [Polyglot::Regexen] 1..12
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/08-modifiers.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/08-modifiers.rakutest
   [Polyglot::Regexen] ok 1 - 
   [Polyglot::Regexen] ok 2 - 
   [Polyglot::Regexen] ok 3 - 
   [Polyglot::Regexen] ok 4 - 
   [Polyglot::Regexen] 1..4
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/09-role.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/09-role.rakutest
   [Polyglot::Regexen] # Subtest: Pretty print
   [Polyglot::Regexen]     ok 1 - 
   [Polyglot::Regexen]     ok 2 - 
@@ -355,7 +355,7 @@
   [Polyglot::Regexen]     1..6
   [Polyglot::Regexen] ok 6 - Named match backreferences
   [Polyglot::Regexen] 1..6
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Polyglot%3A%3ARegexen%3Aver%3C0.1.0%3E%3Aauth%3Czef%3Aguifa%3E.tar.gz/dist t/ecma/10-usage.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/10-usage.rakutest
   [Polyglot::Regexen] # Subtest: Quoted forms
   [Polyglot::Regexen]     ok 1 - No modifiers in bare quoted form
   [Polyglot::Regexen]     ok 2 - Postquote case-insensitive bare quoted form
@@ -385,9 +385,9 @@
   ===> Install [OK] for Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 41.220s
-               CPU time consumed: 48.431s
-                     Memory peak: 1.7G (swap: 0B)
+                 Service runtime: 33.550s
+               CPU time consumed: 23.239s
+                     Memory peak: 1.5G (swap: 0B)
 
   ```
   </details>
@@ -395,12 +395,12 @@
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p531663-i490265.service; invocation ID: 93472d999b884083a6488a5f0c701f44
+  Running as unit: run-p645603-i632872.service; invocation ID: 8ac8a39ff54d4c5fb1c5be53a051fdcb
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: GLib
   ===> Found: GLib:ver<0.0.11>:auth<cpan:CBWOOD> [via Zef::Repository::Ecosystems<rea>]
-  [GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789564044.531664.6491.815400416113/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
-  ===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789564044.531664.6491.815400416113/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  [GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789651025.645604.3501.8684422383817/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  ===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789651025.645604.3501.8684422383817/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [GLib] Command: tar -t -f ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [GLib] Command: tar -xvf ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz -C ../GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Extraction [OK]: GLib to /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
@@ -667,8 +667,8 @@
   ===> Install [OK] for GLib:ver<0.0.11>:auth<cpan:CBWOOD>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 58.146s
-               CPU time consumed: 1min 23.278s
+                 Service runtime: 46.475s
+               CPU time consumed: 1min 6.199s
                      Memory peak: 3.5G (swap: 0B)
 
   ```
@@ -677,102 +677,17 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p531368-i535862.service; invocation ID: 99428237068a44af8f9664f9bd124fc0
+  Running as unit: run-p645322-i641901.service; invocation ID: 0bea317312a641fe81bc993f61a05b11
   Press ^] three times within 1s to disconnect TTY.
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_0:1
-      ------> [32mity>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_1:1
-      ------> [32mZef>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_2:1
-      ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_3:1
-      ------> [32mery>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_4:1
-      ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_5:1
-      ------> [32mcal>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_6:1
-      ------> [32mory>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_7:1
-      ------> [32mtem>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_8:1
-      ------> [32mtch>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_9:1
-      ------> [32mact>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_10:1
-      ------> [32mild>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_11:1
-      ------> [32mest>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_12:1
-      ------> [32mall>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_13:1
-      ------> [32mort>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_14:1
-      ------> [32ment>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_15:1
-      ------> [32mfig>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_16:1
-      ------> [32mURI>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
   ===> Searching for: GLib
   ===> Found: GLib:ver<0.0.11>:auth<cpan:CBWOOD> [via Zef::Repository::Ecosystems<rea>]
-  [GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789564014.531369.5296.015317568506/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
-  ===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789564014.531369.5296.015317568506/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  [GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789651001.645323.5766.278481167446/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  ===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789651001.645323.5766.278481167446/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [GLib] Command: tar -t -f ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [GLib] Command: tar -xvf ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz -C ../GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Extraction [OK]: GLib to /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Testing: GLib:ver<0.0.11>:auth<cpan:CBWOOD>
-  [GLib] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00-struct-sizes.t
+  [GLib] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00-struct-sizes.t
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00-struct-sizes.t
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs)
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Exceptions.pm6 (GLib::Raw::Exceptions)
@@ -781,7 +696,7 @@
   [GLib] ------>   method new (<HERE> :
   [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs):10
   [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00-struct-sizes.t:7
-  [GLib] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00b-class-struct-sizes.t
+  [GLib] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00b-class-struct-sizes.t
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00b-class-struct-sizes.t
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs)
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Exceptions.pm6 (GLib::Raw::Exceptions)
@@ -790,7 +705,7 @@
   [GLib] ------>   method new (<HERE> :
   [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs):10
   [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00b-class-struct-sizes.t:7
-  [GLib] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/01-modules.t
+  [GLib] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/01-modules.t
   [GLib] 1..174
   [GLib] ok 1 - GLib
   [GLib] ok 2 - GLib::Array
@@ -972,8 +887,8 @@
   ===> Install [OK] for GLib:ver<0.0.11>:auth<cpan:CBWOOD>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 17.555s
-               CPU time consumed: 20.757s
+                 Service runtime: 13.850s
+               CPU time consumed: 16.941s
                      Memory peak: 2.3G (swap: 0B)
 
   ```
@@ -982,12 +897,12 @@
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p539468-i581871.service; invocation ID: 6dd48dad2ce94665a7240114b1087995
+  Running as unit: run-p650395-i617799.service; invocation ID: 74ac1a4c3ff548c2920a3e84132da66a
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: JSON::GLib::Node
   ===> Found: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> [via Zef::Repository::Ecosystems<rea>]
-  [JSON::GLib::Node] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789564673.539469.6524.491688328006/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/J/JSON%3A%3AGLib%3A%3ANode/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
-  ===> Fetching [OK]: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789564673.539469.6524.491688328006/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  [JSON::GLib::Node] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789651413.650396.1544.3958657868018/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/J/JSON%3A%3AGLib%3A%3ANode/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  ===> Fetching [OK]: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789651413.650396.1544.3958657868018/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [JSON::GLib::Node] Command: tar -t -f ./JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [JSON::GLib::Node] Command: tar -xvf ./JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz -C ../JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Extraction [OK]: JSON::GLib::Node to /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
@@ -1018,9 +933,9 @@
   ===> Install [OK] for JSON::GLib::Node:ver<0.0.1>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 1min 21.720s
-               CPU time consumed: 1min 55.708s
-                     Memory peak: 3G (swap: 0B)
+                 Service runtime: 58.450s
+               CPU time consumed: 1min 22.989s
+                     Memory peak: 3.1G (swap: 0B)
 
   ```
   </details>
@@ -1028,102 +943,17 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p539314-i566770.service; invocation ID: d808cf2c96944cf39228042e38535eb4
+  Running as unit: run-p650242-i712747.service; invocation ID: e2be7bdb8aa64d059a47fe271f3e250d
   Press ^] three times within 1s to disconnect TTY.
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_0:1
-      ------> [32mity>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_1:1
-      ------> [32mZef>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_2:1
-      ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_3:1
-      ------> [32mery>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_4:1
-      ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_5:1
-      ------> [32mcal>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_6:1
-      ------> [32mory>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_7:1
-      ------> [32mtem>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_8:1
-      ------> [32mtch>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_9:1
-      ------> [32mact>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_10:1
-      ------> [32mild>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_11:1
-      ------> [32mest>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_12:1
-      ------> [32mall>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_13:1
-      ------> [32mort>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_14:1
-      ------> [32ment>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_15:1
-      ------> [32mfig>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-  Potential difficulties:
-      Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-        or :auth-matcher() to represent the empty list more accurately
-      at /home/coke/sandbox/blin/EVAL_16:1
-      ------> [32mURI>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
   ===> Searching for: JSON::GLib::Node
   ===> Found: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> [via Zef::Repository::Ecosystems<rea>]
-  [JSON::GLib::Node] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789564646.539315.478.03698156135385/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/J/JSON%3A%3AGLib%3A%3ANode/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
-  ===> Fetching [OK]: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789564646.539315.478.03698156135385/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  [JSON::GLib::Node] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789651393.650243.756.0471866601548/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/J/JSON%3A%3AGLib%3A%3ANode/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  ===> Fetching [OK]: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789651393.650243.756.0471866601548/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [JSON::GLib::Node] Command: tar -t -f ./JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [JSON::GLib::Node] Command: tar -xvf ./JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz -C ../JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Extraction [OK]: JSON::GLib::Node to /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Testing: JSON::GLib::Node:ver<0.0.1>
-  [JSON::GLib::Node] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/JSON-GLib-Node-0.0.1 t/01-basic.t
+  [JSON::GLib::Node] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/JSON-GLib-Node-0.0.1 t/01-basic.t
   [JSON::GLib::Node] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/JSON-GLib-Node-0.0.1/t/01-basic.t
   [JSON::GLib::Node] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/JSON-GLib-Node-0.0.1/lib/JSON/GLib/Array.pm6 (JSON::GLib::Array)
   [JSON::GLib::Node] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/0C336C09131938C526DC4C924AD2A0CDE35A600C (GLib::GList)
@@ -1142,8 +972,8 @@
   ===> Install [OK] for JSON::GLib::Node:ver<0.0.1>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 13.276s
-               CPU time consumed: 16.285s
+                 Service runtime: 9.732s
+               CPU time consumed: 11.775s
                      Memory peak: 2.6G (swap: 0B)
 
   ```
@@ -1153,14 +983,13 @@
 
 | Status                    | Count |          Modules          |
 | :------------------------ | :---: | :------------------------ |
-| InstallableButUntested    |     1 | [IO::Socket::Async::SSL](https://raku.land/zef:raku-community-modules/IO::Socket::Async::SSL) |
 | Fail                      |     3 | [GLib](https://raku.land/cpan:CBWOOD/GLib) [JSON::GLib::Node](https://raku.land/cpan:CBWOOD/JSON::GLib::Node) [Polyglot::Regexen](https://raku.land/zef:guifa/Polyglot::Regexen) |
 | AlwaysFail                |     6 | [DOM::Tiny](https://raku.land/cpan:HANENKAMP/DOM::Tiny) [Data::Dump::Tree](https://raku.land/zef:raku-community-modules/Data::Dump::Tree) [JSON::Class](https://raku.land/zef:jonathanstowe/JSON::Class) [License::SPDX](https://raku.land/zef:jonathanstowe/License::SPDX) [META6](https://raku.land/zef:jonathanstowe/META6) [Test::META](https://raku.land/zef:jonathanstowe/Test::META) |
-| OK                        |   103 | ⋯                         |
+| OK                        |    44 | ⋯                         |
 
 
 
-This run started on 2026-09-16T13:30:43Z and finished in 30 minutes.
+This run started on 2026-09-17T13:30:37Z and finished in 18 minutes.
 
 <!--
 Graph of bisected modules and their dependencies:

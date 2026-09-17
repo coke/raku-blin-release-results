@@ -1,99 +1,14 @@
-Running as unit: run-p531368-i535862.service; invocation ID: 99428237068a44af8f9664f9bd124fc0
+Running as unit: run-p645322-i641901.service; invocation ID: 0bea317312a641fe81bc993f61a05b11
 Press ^] three times within 1s to disconnect TTY.
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_0:1
-    ------> [32mity>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_1:1
-    ------> [32mZef>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_2:1
-    ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_3:1
-    ------> [32mery>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_4:1
-    ------> [32mion>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_5:1
-    ------> [32mcal>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_6:1
-    ------> [32mory>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_7:1
-    ------> [32mtem>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_8:1
-    ------> [32mtch>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_9:1
-    ------> [32mact>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_10:1
-    ------> [32mild>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_11:1
-    ------> [32mest>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_12:1
-    ------> [32mall>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_13:1
-    ------> [32mort>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_14:1
-    ------> [32ment>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_15:1
-    ------> [32mfig>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
-Potential difficulties:
-    Pair with <> really means an empty list, not null string; use :auth-matcher('') to represent the null string,
-      or :auth-matcher() to represent the empty list more accurately
-    at /home/coke/sandbox/blin/EVAL_16:1
-    ------> [32mURI>,:version-matcher<*>,:auth-matcher<>[33m⏏[31m,:api-matcher<*>)[0m
 ===> Searching for: GLib
 ===> Found: GLib:ver<0.0.11>:auth<cpan:CBWOOD> [via Zef::Repository::Ecosystems<rea>]
-[GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789564014.531369.5296.015317568506/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
-===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789564014.531369.5296.015317568506/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+[GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789651001.645323.5766.278481167446/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789651001.645323.5766.278481167446/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
 [GLib] Command: tar -t -f ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
 [GLib] Command: tar -xvf ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz -C ../GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
 ===> Extraction [OK]: GLib to /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
 ===> Testing: GLib:ver<0.0.11>:auth<cpan:CBWOOD>
-[GLib] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00-struct-sizes.t
+[GLib] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00-struct-sizes.t
 [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00-struct-sizes.t
 [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs)
 [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Exceptions.pm6 (GLib::Raw::Exceptions)
@@ -102,7 +17,7 @@ Potential difficulties:
 [GLib] ------>   method new (<HERE> :
 [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs):10
 [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00-struct-sizes.t:7
-[GLib] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00b-class-struct-sizes.t
+[GLib] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00b-class-struct-sizes.t
 [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00b-class-struct-sizes.t
 [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs)
 [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Exceptions.pm6 (GLib::Raw::Exceptions)
@@ -111,7 +26,7 @@ Potential difficulties:
 [GLib] ------>   method new (<HERE> :
 [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs):10
 [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00b-class-struct-sizes.t:7
-[GLib] Command: /tmp/whateverable/rakudo-moar/ff413403319a5472eb5d249978e3acac2c36dcc6/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/01-modules.t
+[GLib] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/01-modules.t
 [GLib] 1..174
 [GLib] ok 1 - GLib
 [GLib] ok 2 - GLib::Array
@@ -293,6 +208,6 @@ Potential difficulties:
 ===> Install [OK] for GLib:ver<0.0.11>:auth<cpan:CBWOOD>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 17.555s
-             CPU time consumed: 20.757s
+               Service runtime: 13.850s
+             CPU time consumed: 16.941s
                    Memory peak: 2.3G (swap: 0B)
