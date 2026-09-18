@@ -1,14 +1,14 @@
-Running as unit: run-p645322-i641901.service; invocation ID: 0bea317312a641fe81bc993f61a05b11
+Running as unit: run-p1128315-i1137166.service; invocation ID: 1306ba5213b34e47857a0f36fa91b306
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: GLib
 ===> Found: GLib:ver<0.0.11>:auth<cpan:CBWOOD> [via Zef::Repository::Ecosystems<rea>]
-[GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789651001.645323.5766.278481167446/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
-===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789651001.645323.5766.278481167446/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+[GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789700956.1128325.7774.788904124121/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789700956.1128325.7774.788904124121/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
 [GLib] Command: tar -t -f ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
 [GLib] Command: tar -xvf ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz -C ../GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
 ===> Extraction [OK]: GLib to /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
 ===> Testing: GLib:ver<0.0.11>:auth<cpan:CBWOOD>
-[GLib] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00-struct-sizes.t
+[GLib] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00-struct-sizes.t
 [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00-struct-sizes.t
 [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs)
 [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Exceptions.pm6 (GLib::Raw::Exceptions)
@@ -17,7 +17,7 @@ Press ^] three times within 1s to disconnect TTY.
 [GLib] ------>   method new (<HERE> :
 [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs):10
 [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00-struct-sizes.t:7
-[GLib] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00b-class-struct-sizes.t
+[GLib] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00b-class-struct-sizes.t
 [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00b-class-struct-sizes.t
 [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs)
 [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Exceptions.pm6 (GLib::Raw::Exceptions)
@@ -26,7 +26,7 @@ Press ^] three times within 1s to disconnect TTY.
 [GLib] ------>   method new (<HERE> :
 [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs):10
 [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00b-class-struct-sizes.t:7
-[GLib] Command: /tmp/whateverable/rakudo-moar/b83057b10c4d37a91a087ab2c87b5cfba8e2c4b8/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/01-modules.t
+[GLib] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/01-modules.t
 [GLib] 1..174
 [GLib] ok 1 - GLib
 [GLib] ok 2 - GLib::Array
@@ -205,9 +205,36 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Testing [FAIL]: GLib:ver<0.0.11>:auth<cpan:CBWOOD>
 [GLib] Failed to get passing tests, but continuing with --force-test
 ===> Installing: GLib:ver<0.0.11>:auth<cpan:CBWOOD>
-===> Install [OK] for GLib:ver<0.0.11>:auth<cpan:CBWOOD>
-          Finished with result: success
-Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 13.850s
-             CPU time consumed: 16.941s
-                   Memory peak: 2.3G (swap: 0B)
+===> Install [FAIL] for GLib:ver<0.0.11>:auth<cpan:CBWOOD>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/F0C9879CCDBF598DAF96BD37D9F1CE815D9D1FE3 (GLib)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/E460938D8BE5E569C3EC400A0BA8E44BE67D41D3 (GLib::Array)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/1EA21A570A7AEB653962EFCBE486E61D713CC8D2 (GLib::Raw::Types)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/3E6796E3681A9E7317502A97903E4856F1C3F0B1 (GLib::Raw::Exceptions)
+Can only use : as invocant marker in a signature after the first parameter
+at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/3E6796E3681A9E7317502A97903E4856F1C3F0B1 (GLib::Raw::Exceptions):133
+------>   method new (<HERE> :
+
+at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/1EA21A570A7AEB653962EFCBE486E61D713CC8D2 (GLib::Raw::Types):10
+
+at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/E460938D8BE5E569C3EC400A0BA8E44BE67D41D3 (GLib::Array):5
+
+at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/F0C9879CCDBF598DAF96BD37D9F1CE815D9D1FE3 (GLib):1
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/F0C9879CCDBF598DAF96BD37D9F1CE815D9D1FE3 (GLib)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/E460938D8BE5E569C3EC400A0BA8E44BE67D41D3 (GLib::Array)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/1EA21A570A7AEB653962EFCBE486E61D713CC8D2 (GLib::Raw::Types)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/3E6796E3681A9E7317502A97903E4856F1C3F0B1 (GLib::Raw::Exceptions)
+Can only use : as invocant marker in a signature after the first parameter
+at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/3E6796E3681A9E7317502A97903E4856F1C3F0B1 (GLib::Raw::Exceptions):133
+------>   method new (<HERE> :
+
+at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/1EA21A570A7AEB653962EFCBE486E61D713CC8D2 (GLib::Raw::Types):10
+
+at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/E460938D8BE5E569C3EC400A0BA8E44BE67D41D3 (GLib::Array):5
+
+at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/F0C9879CCDBF598DAF96BD37D9F1CE815D9D1FE3 (GLib):1
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 2min 49.504s
+             CPU time consumed: 2min 42.232s
+                   Memory peak: 2.4G (swap: 324.6M)

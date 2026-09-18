@@ -1,0 +1,341 @@
+Running as unit: run-p1259257-i1307749.service; invocation ID: 558be04a8d254ae68cc88a4c8c0c9761
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: GIO
+===> Found: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> [via Zef::Repository::Ecosystems<rea>]
+[GIO] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789704598.1259258.9978.078735028874/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GIO/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
+===> Fetching [OK]: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789704598.1259258.9978.078735028874/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
+[GIO] Command: tar -t -f ./GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
+[GIO] Command: tar -xvf ./GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz -C ../GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
+===> Extraction [OK]: GIO to /home/coke/sandbox/blin/data/zef-data/tmp/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
+===> Testing: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1>
+[GIO] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz/GIO-0.0.4 t/01-modules.t
+[GIO] 1..294
+[GIO] ok 1 - GIO
+[GIO] ok 2 - GIO::AppInfoMonitor
+[GIO] ok 3 - GIO::Application
+[GIO] ok 4 - GIO::ApplicationCommandLine
+[GIO] ok 5 - GIO::BufferedInputStream
+[GIO] ok 6 - GIO::BufferedOutputStream
+[GIO] ok 7 - GIO::Builder
+[GIO] ok 8 - GIO::BytesIcon
+[GIO] ok 9 - GIO::Cancellable
+[GIO] ok 10 - GIO::CharsetConverter
+[GIO] ok 11 - GIO::ContentType
+[GIO] ok 12 - GIO::ConverterInputStream
+[GIO] ok 13 - GIO::ConverterOutputStream
+[GIO] ok 14 - GIO::Credentials
+[GIO] ok 15 - GIO::DBus::ActionGroup
+[GIO] ok 16 - GIO::DBus::Address
+[GIO] ok 17 - GIO::DBus::AuthObserver
+[GIO] ok 18 - GIO::DBus::Connection
+[GIO] ok 19 - GIO::DBus::Error
+[GIO] ok 20 - GIO::DBus::InterfaceSkeleton
+[GIO] ok 21 - GIO::DBus::Message
+[GIO] ok 22 - GIO::DBus::MethodInvocation
+[GIO] ok 23 - GIO::DBus::ObjectManagerClient
+[GIO] ok 24 - GIO::DBus::ObjectManagerServer
+[GIO] ok 25 - GIO::DBus::ObjectProxy
+[GIO] ok 26 - GIO::DBus::ObjectSkeleton
+[GIO] ok 27 - GIO::DBus::Proxy
+[GIO] ok 28 - GIO::DBus::Raw::Address
+[GIO] ok 29 - GIO::DBus::Raw::Connection
+[GIO] ok 30 - GIO::DBus::Raw::Error
+[GIO] ok 31 - GIO::DBus::Raw::Interface
+[GIO] ok 32 - GIO::DBus::Raw::InterfaceSkeleton
+[GIO] ok 33 - GIO::DBus::Raw::Message
+[GIO] ok 34 - GIO::DBus::Raw::MethodInvocation
+[GIO] ok 35 - GIO::DBus::Raw::ObjectManager
+[GIO] ok 36 - GIO::DBus::Raw::ObjectManagerClient
+[GIO] ok 37 - GIO::DBus::Raw::ObjectManagerServer
+[GIO] ok 38 - GIO::DBus::Raw::ObjectSkeleton
+[GIO] ok 39 - GIO::DBus::Raw::Proxy
+[GIO] ok 40 - GIO::DBus::Raw::Server
+[GIO] ok 41 - GIO::DBus::Raw::Subs
+[GIO] ok 42 - GIO::DBus::Raw::Types
+[GIO] ok 43 - GIO::DBus::Raw::Utils
+[GIO] ok 44 - GIO::DBus::Roles::Interface
+[GIO] ok 45 - GIO::DBus::Roles::Object
+[GIO] ok 46 - GIO::DBus::Roles::ObjectManager
+[GIO] ok 47 - GIO::DBus::Roles::Signals::AuthObserver
+[GIO] ok 48 - GIO::DBus::Roles::Signals::Connection
+[GIO] ok 49 - GIO::DBus::Roles::Signals::InterfaceSkeleton
+[GIO] ok 50 - GIO::DBus::Roles::Signals::Object
+[GIO] ok 51 - GIO::DBus::Roles::Signals::ObjectManager
+[GIO] ok 52 - GIO::DBus::Roles::Signals::ObjectManagerClient
+[GIO] ok 53 - GIO::DBus::Roles::Signals::ObjectSkeleton
+[GIO] ok 54 - GIO::DBus::Roles::Signals::Proxy
+[GIO] ok 55 - GIO::DBus::Roles::Signals::Server
+[GIO] ok 56 - GIO::DBus::Roles::SupplyCallback
+[GIO] ok 57 - GIO::DBus::Server
+[GIO] ok 58 - GIO::DBus::Utils
+[GIO] ok 59 - GIO::DataInputStream
+[GIO] ok 60 - GIO::DataOutputStream
+[GIO] ok 61 - GIO::DesktopAppInfo
+[GIO] ok 62 - GIO::Emblem
+[GIO] ok 63 - GIO::EmblemedIcon
+[GIO] ok 64 - GIO::Enums
+[GIO] ok 65 - GIO::FileAttributeInfoList
+[GIO] ok 66 - GIO::FileAttributeMatcher
+[GIO] ok 67 - GIO::FileEnumerator
+[GIO] ok 68 - GIO::FileIOStream
+[GIO] ok 69 - GIO::FileIcon
+[GIO] ok 70 - GIO::FileInfo
+[GIO] ok 71 - GIO::FileInputStream
+[GIO] ok 72 - GIO::FileMonitor
+[GIO] ok 73 - GIO::FileMonitor::Local
+[GIO] ok 74 - GIO::FileOutputStream
+[GIO] ok 75 - GIO::FilenameCompleter
+[GIO] ok 76 - GIO::FilterInputStream
+[GIO] ok 77 - GIO::FilterOutputStream
+[GIO] ok 78 - GIO::InetAddress
+[GIO] ok 79 - GIO::InetAddressMask
+[GIO] ok 80 - GIO::InetSocketAddress
+[GIO] ok 81 - GIO::InputStream
+[GIO] ok 82 - GIO::LaunchContext
+[GIO] ok 83 - GIO::ListStore
+[GIO] ok 84 - GIO::MemoryInputStream
+[GIO] ok 85 - GIO::MemoryOutputStream
+[GIO] ok 86 - GIO::Menu
+[GIO] ok 87 - GIO::MenuAttributeIter
+[GIO] ok 88 - GIO::MenuItem
+[GIO] ok 89 - GIO::MenuLinkIter
+[GIO] ok 90 - GIO::MenuModel
+[GIO] ok 91 - GIO::MiscTypes
+[GIO] ok 92 - GIO::MountOperation
+[GIO] ok 93 - GIO::NetworkAddress
+[GIO] ok 94 - GIO::NetworkService
+[GIO] ok 95 - GIO::Notification
+[GIO] ok 96 - GIO::OutputStream
+[GIO] ok 97 - GIO::Permission
+[GIO] ok 98 - GIO::PropertyAction
+[GIO] ok 99 - GIO::ProxyAddress
+[GIO] ok 100 - GIO::ProxyAddressEnumerator
+[GIO] ok 101 - GIO::Raw::Action
+[GIO] ok 102 - GIO::Raw::ActionGroup
+[GIO] ok 103 - GIO::Raw::AppInfo
+[GIO] ok 104 - GIO::Raw::Application
+[GIO] ok 105 - GIO::Raw::ApplicationCommandLine
+[GIO] ok 106 - GIO::Raw::AsyncInitable
+[GIO] ok 107 - GIO::Raw::AsyncResult
+[GIO] ok 108 - GIO::Raw::BufferedInputStream
+[GIO] ok 109 - GIO::Raw::BufferedOutputStream
+[GIO] ok 110 - GIO::Raw::Cancellable
+[GIO] ok 111 - GIO::Raw::CharsetConverter
+[GIO] ok 112 - GIO::Raw::ContentType
+[GIO] ok 113 - GIO::Raw::Credentials
+[GIO] ok 114 - GIO::Raw::DataInputStream
+[GIO] ok 115 - GIO::Raw::DataOutputStream
+[GIO] ok 116 - GIO::Raw::DatagramBased
+[GIO] ok 117 - GIO::Raw::Definitions
+[GIO] ok 118 - GIO::Raw::DesktopAppInfo
+[GIO] ok 119 - GIO::Raw::Distro
+[GIO] ok 120 - GIO::Raw::Drive
+[GIO] ok 121 - GIO::Raw::DtlsClientConnection
+[GIO] ok 122 - GIO::Raw::DtlsConnection
+[GIO] ok 123 - GIO::Raw::Emblem
+[GIO] ok 124 - GIO::Raw::EmblemedIcon
+[GIO] ok 125 - GIO::Raw::Enums
+[GIO] ok 126 - GIO::Raw::Exports
+[GIO] ok 127 - GIO::Raw::FileAttributeInfoList
+[GIO] ok 128 - GIO::Raw::FileAttributeTypes
+[GIO] ok 129 - GIO::Raw::FileEnumerator
+[GIO] ok 130 - GIO::Raw::FileIOStream
+[GIO] ok 131 - GIO::Raw::FileInfo
+[GIO] ok 132 - GIO::Raw::FileMonitor
+[GIO] ok 133 - GIO::Raw::FileMonitor::Local
+[GIO] ok 134 - GIO::Raw::FilenameCompleter
+[GIO] ok 135 - GIO::Raw::FilterInputStream
+[GIO] ok 136 - GIO::Raw::FilterOutputStream
+[GIO] ok 137 - GIO::Raw::GFile
+[GIO] ok 138 - GIO::Raw::Icon
+[GIO] ok 139 - GIO::Raw::InetAddress
+[GIO] ok 140 - GIO::Raw::InetAddressMask
+[GIO] ok 141 - GIO::Raw::InetSocketAddress
+[GIO] ok 142 - GIO::Raw::InputStream
+[GIO] ok 143 - GIO::Raw::ListModel
+[GIO] ok 144 - GIO::Raw::ListStore
+[GIO] ok 145 - GIO::Raw::MemoryInputStream
+[GIO] ok 146 - GIO::Raw::MemoryOutputStream
+[GIO] ok 147 - GIO::Raw::Menu
+[GIO] ok 148 - GIO::Raw::MenuModel
+[GIO] ok 149 - GIO::Raw::Mount
+[GIO] ok 150 - GIO::Raw::MountOperation
+[GIO] ok 151 - GIO::Raw::NetworkAddress
+[GIO] ok 152 - GIO::Raw::NetworkMonitor
+[GIO] ok 153 - GIO::Raw::NetworkService
+[GIO] ok 154 - GIO::Raw::Notification
+[GIO] ok 155 - GIO::Raw::OutputStream
+[GIO] ok 156 - GIO::Raw::Permission
+[GIO] ok 157 - GIO::Raw::PollableInputStream
+[GIO] ok 158 - GIO::Raw::PollableOutputStream
+[GIO] ok 159 - GIO::Raw::Proxy
+[GIO] ok 160 - GIO::Raw::ProxyAddress
+[GIO] ok 161 - GIO::Raw::ProxyResolver
+[GIO] ok 162 - GIO::Raw::Quarks
+[GIO] ok 163 - GIO::Raw::Resolver
+[GIO] ok 164 - GIO::Raw::Resource
+[GIO] ok 165 - GIO::Raw::Seekable
+[GIO] ok 166 - GIO::Raw::Settings
+[GIO] ok 167 - GIO::Raw::SettingsBackend
+[GIO] ok 168 - GIO::Raw::SettingsSchema
+[GIO] ok 169 - GIO::Raw::SimpleAction
+[GIO] ok 170 - GIO::Raw::SimpleActionGroup
+[GIO] ok 171 - GIO::Raw::SimpleAsyncResult
+[GIO] ok 172 - GIO::Raw::SimpleProxyResolver
+[GIO] ok 173 - GIO::Raw::Socket
+[GIO] ok 174 - GIO::Raw::SocketAddress
+[GIO] ok 175 - GIO::Raw::SocketClient
+[GIO] ok 176 - GIO::Raw::SocketConnection
+[GIO] ok 177 - GIO::Raw::SocketControlMessage
+[GIO] ok 178 - GIO::Raw::SocketListener
+[GIO] ok 179 - GIO::Raw::SocketService
+[GIO] ok 180 - GIO::Raw::SrvTarget
+[GIO] ok 181 - GIO::Raw::Stream
+[GIO] ok 182 - GIO::Raw::Structs
+[GIO] ok 183 - GIO::Raw::Subs
+[GIO] ok 184 - GIO::Raw::Task
+[GIO] ok 185 - GIO::Raw::ThemedIcon
+[GIO] ok 186 - GIO::Raw::TlsBackend
+[GIO] ok 187 - GIO::Raw::TlsCertificate
+[GIO] ok 188 - GIO::Raw::TlsClientConnection
+[GIO] ok 189 - GIO::Raw::TlsConnection
+[GIO] ok 190 - GIO::Raw::TlsDatabase
+[GIO] ok 191 - GIO::Raw::TlsInteraction
+[GIO] ok 192 - GIO::Raw::TlsPassword
+[GIO] ok 193 - GIO::Raw::Traps
+[GIO] ok 194 - GIO::Raw::Types
+[GIO] ok 195 - GIO::Raw::UnixConnection
+[GIO] ok 196 - GIO::Raw::UnixCredentialsMessage
+[GIO] ok 197 - GIO::Raw::UnixFDList
+[GIO] ok 198 - GIO::Raw::UnixFDMessage
+[GIO] ok 199 - GIO::Raw::UnixInputStream
+[GIO] ok 200 - GIO::Raw::UnixMounts
+[GIO] ok 201 - GIO::Raw::UnixOutputStream
+[GIO] ok 202 - GIO::Raw::UnixSocketAddress
+[GIO] ok 203 - GIO::Raw::VFS
+[GIO] ok 204 - GIO::Raw::Volume
+[GIO] ok 205 - GIO::Raw::VolumeMonitor
+[GIO] ok 206 - GIO::Resolver
+[GIO] ok 207 - GIO::Resource
+[GIO] ok 208 - GIO::Roles::Action
+[GIO] ok 209 - GIO::Roles::ActionGroup
+[GIO] ok 210 - GIO::Roles::ActionMap
+[GIO] ok 211 - GIO::Roles::AppInfo
+[GIO] ok 212 - GIO::Roles::AsyncInitable
+[GIO] ok 213 - GIO::Roles::AsyncResult
+[GIO] ok 214 - GIO::Roles::Converter
+[GIO] ok 215 - GIO::Roles::DTlsClientConnection
+[GIO] ok 216 - GIO::Roles::DTlsServerConnection
+[GIO] ok 217 - GIO::Roles::DatagramBased
+[GIO] ok 218 - GIO::Roles::Drive
+[GIO] ok 219 - GIO::Roles::DtlsConnection
+[GIO] ok 220 - GIO::Roles::FileDescriptorBased
+[GIO] ok 221 - GIO::Roles::GFile
+[GIO] ok 222 - GIO::Roles::Icon
+[GIO] ok 223 - GIO::Roles::Initable
+[GIO] ok 224 - GIO::Roles::ListModel
+[GIO] ok 225 - GIO::Roles::LoadableIcon
+[GIO] ok 226 - GIO::Roles::Mount
+[GIO] ok 227 - GIO::Roles::NetworkMonitor
+[GIO] ok 228 - GIO::Roles::NetworkMonitorBase
+[GIO] ok 229 - GIO::Roles::PollableInputStream
+[GIO] ok 230 - GIO::Roles::PollableOutputStream
+[GIO] ok 231 - GIO::Roles::Proxy
+[GIO] ok 232 - GIO::Roles::ProxyResolver
+[GIO] ok 233 - GIO::Roles::RemoteActionGroup
+[GIO] ok 234 - GIO::Roles::Seekable
+[GIO] ok 235 - GIO::Roles::Signals::ActionGroup
+[GIO] ok 236 - GIO::Roles::Signals::Application
+[GIO] ok 237 - GIO::Roles::Signals::DtlsConnection
+[GIO] ok 238 - GIO::Roles::Signals::FileMonitor
+[GIO] ok 239 - GIO::Roles::Signals::ListModel
+[GIO] ok 240 - GIO::Roles::Signals::MenuModel
+[GIO] ok 241 - GIO::Roles::Signals::MountOperation
+[GIO] ok 242 - GIO::Roles::Signals::NetworkMonitor
+[GIO] ok 243 - GIO::Roles::Signals::Settings
+[GIO] ok 244 - GIO::Roles::Signals::SocketListener
+[GIO] ok 245 - GIO::Roles::Signals::SocketService
+[GIO] ok 246 - GIO::Roles::Signals::ThreadedSocketService
+[GIO] ok 247 - GIO::Roles::Signals::TlsConnection
+[GIO] ok 248 - GIO::Roles::Signals::VolumeMonitor
+[GIO] ok 249 - GIO::Roles::SocketConnectable
+[GIO] ok 250 - GIO::Roles::TlsBackend
+[GIO] ok 251 - GIO::Roles::TlsClientConnection
+[GIO] ok 252 - GIO::Roles::TlsFileDatabase
+[GIO] ok 253 - GIO::Roles::TlsServerConnection
+[GIO] ok 254 - GIO::Roles::Volume
+[GIO] ok 255 - GIO::Settings
+[GIO] ok 256 - GIO::Settings::Backend
+[GIO] ok 257 - GIO::Settings::Schema
+[GIO] ok 258 - GIO::SimpleAction
+[GIO] ok 259 - GIO::SimpleActionGroup
+[GIO] ok 260 - GIO::SimplePermission
+[GIO] ok 261 - GIO::SimpleProxyResolver
+[GIO] ok 262 - GIO::Socket
+[GIO] ok 263 - GIO::SocketAddress
+[GIO] ok 264 - GIO::SocketAddressEnumerator
+[GIO] ok 265 - GIO::SocketClient
+[GIO] ok 266 - GIO::SocketConnection
+[GIO] ok 267 - GIO::SocketControlMessage
+[GIO] ok 268 - GIO::SocketListener
+[GIO] ok 269 - GIO::SocketService
+[GIO] ok 270 - GIO::SrvTarget
+[GIO] ok 271 - GIO::Stream
+[GIO] ok 272 - GIO::Task
+[GIO] ok 273 - GIO::TcpConnection
+[GIO] ok 274 - GIO::TcpWrapperConnection
+[GIO] ok 275 - GIO::ThemedIcon
+[GIO] ok 276 - GIO::ThreadedSocketService
+[GIO] ok 277 - GIO::TlsCertificate
+[GIO] ok 278 - GIO::TlsConnection
+[GIO] ok 279 - GIO::TlsDatabase
+[GIO] ok 280 - GIO::TlsInteraction
+[GIO] ok 281 - GIO::TlsPassword
+[GIO] ok 282 - GIO::TypeManifest
+[GIO] ok 283 - GIO::Unix::Connection
+[GIO] ok 284 - GIO::Unix::CredentialsMessage
+[GIO] ok 285 - GIO::Unix::FDList
+[GIO] ok 286 - GIO::Unix::FDMessage
+[GIO] ok 287 - GIO::Unix::InputStream
+[GIO] ok 288 - GIO::Unix::Mounts
+[GIO] ok 289 - GIO::Unix::OutputStream
+[GIO] ok 290 - GIO::Unix::SocketAddress
+[GIO] ok 291 - GIO::VFS
+[GIO] ok 292 - GIO::VolumeMonitor
+[GIO] ok 293 - GIO::ZlibCompressor
+[GIO] ok 294 - GIO::ZlibDecompressor
+===> Testing [OK] for GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1>
+===> Installing: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1>
+===> Install [FAIL] for GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/52C01D560A2FDF37C89638F865165F50944209FE (GIO)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/B3DF2080E9C47497139F66F002DF654B59CC04A1 (GIO::AppInfoMonitor)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/ED0C5738485BD7549FE65E5169CC8CA5A9961294 (GIO::Raw::Types)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/3E6796E3681A9E7317502A97903E4856F1C3F0B1 (GLib::Raw::Exceptions)
+Can only use : as invocant marker in a signature after the first parameter
+at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/3E6796E3681A9E7317502A97903E4856F1C3F0B1 (GLib::Raw::Exceptions):133
+------>   method new (<HERE> :
+
+at /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/ED0C5738485BD7549FE65E5169CC8CA5A9961294 (GIO::Raw::Types):13
+
+at /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/B3DF2080E9C47497139F66F002DF654B59CC04A1 (GIO::AppInfoMonitor):5
+
+at /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/52C01D560A2FDF37C89638F865165F50944209FE (GIO):3
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/52C01D560A2FDF37C89638F865165F50944209FE (GIO)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/B3DF2080E9C47497139F66F002DF654B59CC04A1 (GIO::AppInfoMonitor)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/ED0C5738485BD7549FE65E5169CC8CA5A9961294 (GIO::Raw::Types)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/3E6796E3681A9E7317502A97903E4856F1C3F0B1 (GLib::Raw::Exceptions)
+Can only use : as invocant marker in a signature after the first parameter
+at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/3E6796E3681A9E7317502A97903E4856F1C3F0B1 (GLib::Raw::Exceptions):133
+------>   method new (<HERE> :
+
+at /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/ED0C5738485BD7549FE65E5169CC8CA5A9961294 (GIO::Raw::Types):13
+
+at /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/B3DF2080E9C47497139F66F002DF654B59CC04A1 (GIO::AppInfoMonitor):5
+
+at /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/52C01D560A2FDF37C89638F865165F50944209FE (GIO):3
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 22.568s
+             CPU time consumed: 28.574s
+                   Memory peak: 2.2G (swap: 0B)
