@@ -1,141 +1,185 @@
-[Blin](https://github.com/Raku/Blin) results between 2026.08 ([24e6e53](https://github.com/rakudo/rakudo/commit/24e6e5312f2868680413b0597aef8772f6b5bcea)) and 7a3abc5aba ([7a3abc5](https://github.com/rakudo/rakudo/commit/7a3abc5ababa5842e6346438d5e0675f2599ecb3)):
+[Blin](https://github.com/Raku/Blin) results between 2026.08 ([24e6e53](https://github.com/rakudo/rakudo/commit/24e6e5312f2868680413b0597aef8772f6b5bcea)) and 7ded5ff7de ([7ded5ff](https://github.com/rakudo/rakudo/commit/7ded5ff7de2c55911b07e909d1daa968255bc96b)):
 
------
-
-* [ ] [Terminal::UI](https://raku.land/zef:bduggan/Terminal::UI) – Fail, Bisected: [8464af2](https://github.com/rakudo/rakudo/commit/8464af23d703d9f86ace5d19ea4e2dd3e5f80ec5)
+* [ ] [DAWG](https://raku.land/zef:slavenskoj/DAWG) – Fail, Bisected: [495ddcb](https://github.com/rakudo/rakudo/commit/495ddcb96c3989406326e3372653243992a2ac6e)
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p950379-i983610.service; invocation ID: 1e6416db2c0e4de49e79d1deb9d0823c
+  Running as unit: run-p1469728-i1415666.service; invocation ID: 67d6dbe3e4df493a8139a28dedde1b50
   Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: Terminal::UI
-  ===> Found: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> [via Zef::Repository::Ecosystems<fez>]
-  [Terminal::UI] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789696276.950393.9515.921883805193/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz https://360.zef.pm/T/ER/TERMINAL_UI/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
-  ===> Fetching [OK]: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> to /home/coke/sandbox/blin/data/zef-data/tmp/1789696276.950393.9515.921883805193/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
-  [Terminal::UI] Command: tar -t -f ./97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
-  [Terminal::UI] Command: tar -xvf ./97be0392703c0ef562b9092d0a52c2623157131c.tar.gz -C ../97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
-  ===> Extraction [OK]: Terminal::UI to /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
-  ===> Testing: Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/00-basic.rakutest
-  [Terminal::UI] 1..6
-  [Terminal::UI] ok 1 - Terminal::UI module can be use-d ok
-  [Terminal::UI] ok 2 - Terminal::UI::Screen module can be use-d ok
-  [Terminal::UI] ok 3 - Terminal::UI::Frame module can be use-d ok
-  [Terminal::UI] ok 4 - Terminal::UI::Pane module can be use-d ok
-  [Terminal::UI] ok 5 - Terminal::UI::Input module can be use-d ok
-  [Terminal::UI] ok 6 - Terminal::UI::Style module can be use-d ok
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/01-sizes.rakutest
-  [Terminal::UI] 1..41
-  [Terminal::UI] ok 1 - screen height
-  [Terminal::UI] ok 2 - screen rows
-  [Terminal::UI] ok 3 - top
-  [Terminal::UI] ok 4 - height
-  [Terminal::UI] ok 5 - height
-  [Terminal::UI] ok 6 - frame width
-  [Terminal::UI] ok 7 - pane top
-  [Terminal::UI] ok 8 - pane height
-  [Terminal::UI] ok 9 - pane left
-  [Terminal::UI] ok 10 - pane width
-  [Terminal::UI] ok 11 - full top is 1
-  [Terminal::UI] ok 12 - full has screen rows
-  [Terminal::UI] ok 13 - height 1
-  [Terminal::UI] ok 14 - height 2
-  [Terminal::UI] ok 15 - check is ok
-  [Terminal::UI] ok 16 - divider
-  [Terminal::UI] ok 17 - height 1
-  [Terminal::UI] ok 18 - check is ok
-  [Terminal::UI] ok 19 - height 1
-  [Terminal::UI] ok 20 - height 2
-  [Terminal::UI] ok 21 - height 3
-  [Terminal::UI] ok 22 - check is ok
-  [Terminal::UI] ok 23 - height 1
-  [Terminal::UI] ok 24 - height 2
-  [Terminal::UI] ok 25 - height 3
-  [Terminal::UI] ok 26 - check is ok
-  [Terminal::UI] ok 27 - height 1
-  [Terminal::UI] ok 28 - height 2
-  [Terminal::UI] ok 29 - height 3
-  [Terminal::UI] ok 30 - check is ok
-  [Terminal::UI] ok 31 - height 1
-  [Terminal::UI] ok 32 - height 2
-  [Terminal::UI] ok 33 - check is ok
-  [Terminal::UI] ok 34 - height 1
-  [Terminal::UI] ok 35 - height 2
-  [Terminal::UI] ok 36 - height 3
-  [Terminal::UI] ok 37 - check is ok
-  [Terminal::UI] ok 38 - height 1
-  [Terminal::UI] ok 39 - height 2
-  [Terminal::UI] ok 40 - height 3
-  [Terminal::UI] ok 41 - check is ok
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/02-screen.rakutest
-  [Terminal::UI] ok 1 - rows
-  [Terminal::UI] ok 2 - cols
-  [Terminal::UI] 1..2
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/03-pane.rakutest
-  [Terminal::UI] ok 1 - bottom
-  [Terminal::UI] ok 2 - right
-  [Terminal::UI] ok 3 - lines
-  [Terminal::UI] ok 4 - two lines
-  [Terminal::UI] ok 5 - scroll up
-  [Terminal::UI] ok 6 - word wrap with indent
-  [Terminal::UI] ok 7 - hard wrap with indent
-  [Terminal::UI] ok 8 - word wrap with hang
-  [Terminal::UI] 1..8
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/04-frame.rakutest
-  [Terminal::UI] ok 1 - full
-  [Terminal::UI] ok 2 - render
-  [Terminal::UI] 1..2
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/05-style.rakutest
-  [Terminal::UI] 1..2
-  [Terminal::UI] ok 1 - set a value
-  [Terminal::UI] ok 2 - singleton works
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/06-ui.rakutest
-  [Terminal::UI] ok 1 - height
-  [Terminal::UI] ok 2 - width
-  [Terminal::UI] ok 3 - top
-  [Terminal::UI] ok 4 - left
-  [Terminal::UI] ok 5 - render
-  [Terminal::UI] 1..5
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/07-alert.rakutest
-  [Terminal::UI] ok 1 - initial screen
-  [Terminal::UI] ok 2 - alert
-  [Terminal::UI] ok 3 - dismissed
-  [Terminal::UI] 1..3
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/08-resize.rakutest
-  [Terminal::UI] 1..2
-  [Terminal::UI] ok 1 - initial heights
-  [Terminal::UI] ok 2 - resize
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/09-print.rakutest
-  [Terminal::UI] 1..21
-  [Terminal::UI] ok 1 - prints characters to line
-  [Terminal::UI] ok 2 - newline moves to next line
-  [Terminal::UI] ok 3 - carriage return resets to start of line
-  [Terminal::UI] ok 4 - lines accumulate for scrollback
-  [Terminal::UI] ok 5 - can access historical lines
-  [Terminal::UI] ok 6 - escape sequences not stored in content
-  [Terminal::UI] ok 7 - print writes to last line
-  [Terminal::UI] ok 8 - first-visible updates when content exceeds height
-  [Terminal::UI] ok 9 - string with newlines splits correctly
-  [Terminal::UI] ok 10 - first line from batched string
-  [Terminal::UI] ok 11 - third line from batched string
-  [Terminal::UI] ok 12 - mixed string with carriage return
-  [Terminal::UI] ok 13 - stream handles basic text
-  [Terminal::UI] ok 14 - stream handles newlines
-  [Terminal::UI] ok 15 - stream first line correct
-  [Terminal::UI] ok 16 - stream filters ANSI sequences
-  [Terminal::UI] ok 17 - put then print creates two lines
-  [Terminal::UI] ok 18 - put creates first line
-  [Terminal::UI] ok 19 - print goes to second line after put
-  [Terminal::UI] ok 20 - two prints then put creates two lines
-  [Terminal::UI] ok 21 - prints combine on same line, put adds new line
-  ===> Testing [OK] for Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
-  ===> Installing: Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
-  ===> Install [OK] for Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
+  ===> Searching for: DAWG
+  ===> Found: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1> [via Zef::Repository::Ecosystems<fez>]
+  [DAWG] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789819591.1469729.1662.5582914063941/48669da30db3d18158aea0a50e9cab840208a319.tar.gz https://360.zef.pm/D/AW/DAWG/48669da30db3d18158aea0a50e9cab840208a319.tar.gz
+  ===> Fetching [OK]: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789819591.1469729.1662.5582914063941/48669da30db3d18158aea0a50e9cab840208a319.tar.gz
+  [DAWG] Command: tar -t -f ./48669da30db3d18158aea0a50e9cab840208a319.tar.gz
+  [DAWG] Command: tar -xvf ./48669da30db3d18158aea0a50e9cab840208a319.tar.gz -C ../48669da30db3d18158aea0a50e9cab840208a319.tar.gz
+  ===> Extraction [OK]: DAWG to /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz
+  ===> Testing: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/01-basic.rakutest
+  [DAWG] 1..15
+  [DAWG] ok 1 - Can create DAWG instance
+  [DAWG] ok 2 - Can add word without value
+  [DAWG] ok 3 - Can add word with value
+  [DAWG] ok 4 - Can add word with complex value
+  [DAWG] ok 5 - Contains added word
+  [DAWG] ok 6 - Does not contain non-added word
+  [DAWG] ok 7 - Lookup returns result
+  [DAWG] ok 8 - Lookup returns correct word
+  [DAWG] ok 9 - Lookup returns correct value
+  [DAWG] ok 10 - Prefix search returns correct count
+  [DAWG] ok 11 - Prefix search includes exact match
+  [DAWG] ok 12 - Prefix search includes longer words
+  [DAWG] DAWG minimized: 14 nodes, 13 edges
+  [DAWG] ok 13 - Can minimize DAWG
+  [DAWG] ok 14 - Stats reports nodes
+  [DAWG] ok 15 - Stats reports minimized state
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/02-serialization.rakutest
+  [DAWG] 1..8
+  [DAWG] DAWG minimized: 14 nodes, 13 edges
+  [DAWG] ok 1 - Can save DAWG in binary format
+  [DAWG] ok 2 - Save file exists
+  [DAWG] ok 3 - Can load DAWG
+  [DAWG] ok 4 - Loaded DAWG exists
+  [DAWG] ok 5 - Loaded DAWG contains original words
+  [DAWG] ok 6 - Loaded DAWG preserves values
+  [DAWG] ok 7 - Loaded DAWG prefix search works
+  [DAWG] ok 8 - Temp file cleaned up
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/03-binary.rakutest
+  [DAWG] 1..12
+  [DAWG] DAWG minimized: 20 nodes, 19 edges
+  [DAWG] ok 1 - Can save DAWG in binary format
+  [DAWG] ok 2 - Binary file exists
+  [DAWG] ok 3 - Binary file has correct magic number
+  [DAWG] ok 4 - Can load binary DAWG
+  [DAWG] ok 5 - Loaded DAWG exists
+  [DAWG] ok 6 - Loaded DAWG contains original words
+  [DAWG] ok 7 - Loaded DAWG preserves values
+  [DAWG] ok 8 - Loaded DAWG prefix search works
+  [DAWG] ok 9 - Can load DAWG using memory mapping
+  [DAWG] ok 10 - Memory-mapped DAWG contains original words
+  [DAWG] ok 11 - Memory-mapped DAWG preserves values
+  [DAWG] ok 12 - Can close memory-mapped DAWG
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/04-edge-cases.rakutest
+  [DAWG] 1..20
+  [DAWG] DAWG minimized: 1 nodes, 0 edges
+  [DAWG] ok 1 - Empty DAWG contains nothing
+  [DAWG] ok 2 - Empty DAWG has no prefixes
+  [DAWG] ok 3 - Empty DAWG lookup returns Nil
+  [DAWG] DAWG minimized: 4 nodes, 3 edges
+  [DAWG] ok 4 - Contains single character
+  [DAWG] ok 5 - Single character lookup works
+  [DAWG] ok 6 - Empty prefix returns all words
+  [DAWG] DAWG minimized: 15 nodes, 14 edges
+  [DAWG] ok 7 - Contains Cyrillic word
+  [DAWG] ok 8 - Contains Chinese word
+  [DAWG] ok 9 - Contains Arabic word
+  [DAWG] ok 10 - Contains emoji
+  [DAWG] ok 11 - Unicode lookup preserves value
+  [DAWG] DAWG minimized: 5 nodes, 4 edges
+  [DAWG] ok 12 - Duplicate word overwrites value
+  [DAWG] DAWG minimized: 1001 nodes, 1000 edges
+  [DAWG] ok 13 - Contains very long word
+  [DAWG] ok 14 - Long word lookup works
+  [DAWG] DAWG minimized: 9 nodes, 10 edges
+  [DAWG] ok 15 - Find all words with common prefix
+  [DAWG] ok 16 - Results include exact match
+  [DAWG] ok 17 - Results include longer match
+  [DAWG] DAWG minimized: 30 nodes, 29 edges
+  [DAWG] ok 18 - Contains hyphenated word
+  [DAWG] ok 19 - Contains word with space
+  [DAWG] ok 20 - Special character lookup works
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/05-performance.rakutest
+  [DAWG] 1..10
+  [DAWG] DAWG minimized: 376 nodes, 375 edges
+  [DAWG] ok 1 - Minimization completes in reasonable time (<5s, actual: 0.214s)
+  [DAWG] ok 2 - Good compression ratio (nodes: 376, words: ~1000)
+  [DAWG] ok 3 - DAWG is minimized
+  [DAWG] ok 4 - Fast lookups (<1ms, actual: 0.07ms)
+  [DAWG] ok 5 - Binary save is fast (<1s, actual: 0.261s)
+  [DAWG] ok 6 - Binary file size is reasonable (<1MB, actual: 29.8KB)
+  [DAWG] ok 7 - Binary load is fast (<1s, actual: 0.125s)
+  [DAWG] ok 8 - Memory-mapped load is very fast (<100ms, actual: 96.53ms)
+  [DAWG] ok 9 - Binary loaded DAWG works correctly
+  [DAWG] ok 10 - Memory-mapped DAWG works correctly
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/06-node-ids.rakutest
+  [DAWG] 1..12
+  [DAWG] ok 1 - Root node has an ID
+  [DAWG] ok 2 - Root node ID is 0
+  [DAWG] ok 3 - Can retrieve root by ID
+  [DAWG] ok 4 - Child node has ID
+  [DAWG] ok 5 - Child node ID is greater than 0
+  [DAWG] ok 6 - Can retrieve node by ID
+  [DAWG] ok 7 - Retrieved node is the same object
+  [DAWG] DAWG minimized: 6 nodes, 6 edges
+  [DAWG] ok 8 - Root ID exists after minimization
+  [DAWG] ok 9 - Node ID map rebuilt after minimization
+  [DAWG] ok 10 - Can get root after minimization
+  [DAWG] ok 11 - Child nodes have IDs after minimization
+  [DAWG] ok 12 - Invalid ID returns undefined
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/07-subtree-stats.rakutest
+  [DAWG] 1..10
+  [DAWG] DAWG minimized: 12 nodes, 15 edges
+  [DAWG] ok 1 - Root has correct word count
+  [DAWG] ok 2 - Root depth is 0
+  [DAWG] ok 3 - Prefix "a" has 3 words
+  [DAWG] ok 4 - Node "a" is at depth 1
+  [DAWG] ok 5 - Prefix "d" has 3 words
+  [DAWG] ok 6 - Prefix "do" has 3 words
+  [DAWG] ok 7 - Node "do" is at depth 2
+  [DAWG] ok 8 - Node "dog" is terminal
+  [DAWG] ok 9 - Prefix "dog" has 3 words
+  [DAWG] ok 10 - Node "a" is terminal
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/08-pattern-matching.rakutest
+  [DAWG] 1..20
+  [DAWG] DAWG minimized: 25 nodes, 32 edges
+  [DAWG] ok 1 - Pattern "c?t" matches "cat"
+  [DAWG] ok 2 - Pattern "ca?" matches "car" and "cat"
+  [DAWG] ok 3 - Pattern "?ar" matches "car"
+  [DAWG] ok 4 - Pattern "c??" matches 3-letter words starting with c
+  [DAWG] ok 5 - Pattern "???" matches all 3-letter words
+  [DAWG] ok 6 - Pattern "ca*" matches all words starting with "ca"
+  [DAWG] ok 7 - Pattern "app*" matches all words starting with "app"
+  [DAWG] ok 8 - Pattern "*at" matches words ending with "at"
+  [DAWG] ok 9 - Pattern "*tion" matches words ending with "tion"
+  [DAWG] ok 10 - Pattern "c*t" matches words starting with "c" and ending with "t"
+  [DAWG] ok 11 - Pattern "c*e" matches "care"
+  [DAWG] ok 12 - Pattern "c?r*" matches correctly
+  [DAWG] ok 13 - Pattern "*a?" matches words with "a" as second-to-last char
+  [DAWG] ok 14 - Pattern "c*a*" matches words with "c" then "a"
+  [DAWG] ok 15 - Pattern with no matches returns empty
+  [DAWG] ok 16 - Pattern "?????" matches 5-letter words
+  [DAWG] ok 17 - Exact pattern "dog" matches only "dog"
+  [DAWG] ok 18 - Empty pattern returns no matches
+  [DAWG] ok 19 - Pattern "*" matches all words
+  [DAWG] ok 20 - Pattern "**" matches all words
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/09-fuzzy-search.rakutest
+  [DAWG] 1..18
+  [DAWG] DAWG minimized: 21 nodes, 29 edges
+  [DAWG] ok 1 - Exact match returns one result
+  [DAWG] ok 2 - Exact match is correct
+  [DAWG] ok 3 - Distance is 0 for exact match
+  [DAWG] ok 4 - Found "cat" from "cot" (1 substitution)
+  [DAWG] ok 5 - Found "dot" from "cot" (1 substitution)
+  [DAWG] ok 6 - Found "cat" from "ct" (1 deletion)
+  [DAWG] ok 7 - Found "car" from "cart" (1 insertion)
+  [DAWG] ok 8 - Found "card" from "cart" (1 substitution)
+  [DAWG] ok 9 - Found "apple" from "aple" (1 insertion)
+  [DAWG] ok 10 - Found "world" from "wrld" (1 insertion)
+  [DAWG] ok 11 - No matches for "xyz" within distance 1
+  [DAWG] ok 12 - Found matches for "cars"
+  [DAWG] ok 13 - Results are sorted by distance
+  [DAWG] ok 14 - Empty string matches 3-letter words
+  [DAWG] ok 15 - Empty string matches 3-letter words
+  [DAWG] ok 16 - Large distance threshold returns many matches
+  [DAWG] ok 17 - Fuzzy search is case-sensitive
+  [DAWG] ok 18 - Exact match is lowercase
+  ===> Testing [OK] for DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
+  ===> Installing: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
+  ===> Install [OK] for DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 3min 7.819s
-               CPU time consumed: 3min 11.355s
-                     Memory peak: 1.6G (swap: 288.3M)
+                 Service runtime: 2min 45.924s
+               CPU time consumed: 2min 54.120s
+                     Memory peak: 1.5G (swap: 123.4M)
 
   ```
   </details>
@@ -143,142 +187,528 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p944314-i964340.service; invocation ID: e5b0090a38ea4522ad6283dec10f4e01
+  Running as unit: run-p1464118-i1427574.service
   Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: Terminal::UI
-  ===> Found: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> [via Zef::Repository::Ecosystems<fez>]
-  [Terminal::UI] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789696115.944321.9917.683746449433/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz https://360.zef.pm/T/ER/TERMINAL_UI/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
-  ===> Fetching [OK]: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> to /home/coke/sandbox/blin/data/zef-data/tmp/1789696115.944321.9917.683746449433/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
-  [Terminal::UI] Command: tar -t -f ./97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
-  [Terminal::UI] Command: tar -xvf ./97be0392703c0ef562b9092d0a52c2623157131c.tar.gz -C ../97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
-  ===> Extraction [OK]: Terminal::UI to /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
-  ===> Testing: Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/00-basic.rakutest
-  [Terminal::UI] 1..6
-  [Terminal::UI] ok 1 - Terminal::UI module can be use-d ok
-  [Terminal::UI] ok 2 - Terminal::UI::Screen module can be use-d ok
-  [Terminal::UI] ok 3 - Terminal::UI::Frame module can be use-d ok
-  [Terminal::UI] ok 4 - Terminal::UI::Pane module can be use-d ok
-  [Terminal::UI] ok 5 - Terminal::UI::Input module can be use-d ok
-  [Terminal::UI] ok 6 - Terminal::UI::Style module can be use-d ok
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/01-sizes.rakutest
-  [Terminal::UI] 1..41
-  [Terminal::UI] ok 1 - screen height
-  [Terminal::UI] ok 2 - screen rows
-  [Terminal::UI] ok 3 - top
-  [Terminal::UI] ok 4 - height
-  [Terminal::UI] ok 5 - height
-  [Terminal::UI] ok 6 - frame width
-  [Terminal::UI] ok 7 - pane top
-  [Terminal::UI] ok 8 - pane height
-  [Terminal::UI] ok 9 - pane left
-  [Terminal::UI] ok 10 - pane width
-  [Terminal::UI] ok 11 - full top is 1
-  [Terminal::UI] ok 12 - full has screen rows
-  [Terminal::UI] ok 13 - height 1
-  [Terminal::UI] ok 14 - height 2
-  [Terminal::UI] ok 15 - check is ok
-  [Terminal::UI] ok 16 - divider
-  [Terminal::UI] ok 17 - height 1
-  [Terminal::UI] ok 18 - check is ok
-  [Terminal::UI] ok 19 - height 1
-  [Terminal::UI] ok 20 - height 2
-  [Terminal::UI] ok 21 - height 3
-  [Terminal::UI] ok 22 - check is ok
-  [Terminal::UI] ok 23 - height 1
-  [Terminal::UI] ok 24 - height 2
-  [Terminal::UI] ok 25 - height 3
-  [Terminal::UI] ok 26 - check is ok
-  [Terminal::UI] ok 27 - height 1
-  [Terminal::UI] ok 28 - height 2
-  [Terminal::UI] ok 29 - height 3
-  [Terminal::UI] ok 30 - check is ok
-  [Terminal::UI] ok 31 - height 1
-  [Terminal::UI] ok 32 - height 2
-  [Terminal::UI] ok 33 - check is ok
-  [Terminal::UI] ok 34 - height 1
-  [Terminal::UI] ok 35 - height 2
-  [Terminal::UI] ok 36 - height 3
-  [Terminal::UI] ok 37 - check is ok
-  [Terminal::UI] ok 38 - height 1
-  [Terminal::UI] ok 39 - height 2
-  [Terminal::UI] ok 40 - height 3
-  [Terminal::UI] ok 41 - check is ok
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/02-screen.rakutest
-  [Terminal::UI] ok 1 - rows
-  [Terminal::UI] ok 2 - cols
-  [Terminal::UI] 1..2
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/03-pane.rakutest
-  [Terminal::UI] ok 1 - bottom
-  [Terminal::UI] ok 2 - right
-  [Terminal::UI] ok 3 - lines
-  [Terminal::UI] ok 4 - two lines
-  [Terminal::UI] ok 5 - scroll up
-  [Terminal::UI] ok 6 - word wrap with indent
-  [Terminal::UI] ok 7 - hard wrap with indent
-  [Terminal::UI] ok 8 - word wrap with hang
-  [Terminal::UI] 1..8
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/04-frame.rakutest
-  [Terminal::UI] ok 1 - full
-  [Terminal::UI] ok 2 - render
-  [Terminal::UI] 1..2
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/05-style.rakutest
-  [Terminal::UI] 1..2
-  [Terminal::UI] ok 1 - set a value
-  [Terminal::UI] ok 2 - singleton works
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/06-ui.rakutest
-  [Terminal::UI] ok 1 - height
-  [Terminal::UI] ok 2 - width
-  [Terminal::UI] ok 3 - top
-  [Terminal::UI] ok 4 - left
-  [Terminal::UI] ok 5 - render
-  [Terminal::UI] 1..5
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/07-alert.rakutest
-  [Terminal::UI] ok 1 - initial screen
-  [Terminal::UI] not ok 2 - alert
-  [Terminal::UI] # Failed test 'alert'
-  [Terminal::UI] # at t/07-alert.rakutest line 45
-  [Terminal::UI] # expected: '"╔══════════════════╗\n║Hello!            ║\n║w╔══════════════╗ ║\n║ ║   ¡ALERT!    ║ ║\n║ ╟──────────────╢ ║\n║ ╢      ok      ║ ║\n║ ╚══════════════╝ ║\n║                  ║\n║                  ║\n╚══════════════════╝\n"'
-  [Terminal::UI] #      got: '"╔══════════════════╗\n║Hello!            ║\n║w╔══════════════╗ ║\n║ ║   ¡ALERT!    ║ ║\n║ ╟──────────────╢ ║\n║ ║      ok      ║ ║\n║ ╚══════════════╝ ║\n║                  ║\n║                  ║\n╚══════════════════╝\n"'
-  [Terminal::UI] ok 3 - dismissed
-  [Terminal::UI] 1..3
-  [Terminal::UI] # You failed 1 test of 3
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/08-resize.rakutest
-  [Terminal::UI] 1..2
-  [Terminal::UI] ok 1 - initial heights
-  [Terminal::UI] ok 2 - resize
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/09-print.rakutest
-  [Terminal::UI] 1..21
-  [Terminal::UI] ok 1 - prints characters to line
-  [Terminal::UI] ok 2 - newline moves to next line
-  [Terminal::UI] ok 3 - carriage return resets to start of line
-  [Terminal::UI] ok 4 - lines accumulate for scrollback
-  [Terminal::UI] ok 5 - can access historical lines
-  [Terminal::UI] ok 6 - escape sequences not stored in content
-  [Terminal::UI] ok 7 - print writes to last line
-  [Terminal::UI] ok 8 - first-visible updates when content exceeds height
-  [Terminal::UI] ok 9 - string with newlines splits correctly
-  [Terminal::UI] ok 10 - first line from batched string
-  [Terminal::UI] ok 11 - third line from batched string
-  [Terminal::UI] ok 12 - mixed string with carriage return
-  [Terminal::UI] ok 13 - stream handles basic text
-  [Terminal::UI] ok 14 - stream handles newlines
-  [Terminal::UI] ok 15 - stream first line correct
-  [Terminal::UI] ok 16 - stream filters ANSI sequences
-  [Terminal::UI] ok 17 - put then print creates two lines
-  [Terminal::UI] ok 18 - put creates first line
-  [Terminal::UI] ok 19 - print goes to second line after put
-  [Terminal::UI] ok 20 - two prints then put creates two lines
-  [Terminal::UI] ok 21 - prints combine on same line, put adds new line
-  ===> Testing [FAIL]: Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
-  [Terminal::UI] Failed to get passing tests, but continuing with --force-test
-  ===> Installing: Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
-  ===> Install [OK] for Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
+  ===> Searching for: DAWG
+  ===> Found: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1> [via Zef::Repository::Ecosystems<fez>]
+  [DAWG] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789819438.1464119.3739.4017883913057/48669da30db3d18158aea0a50e9cab840208a319.tar.gz https://360.zef.pm/D/AW/DAWG/48669da30db3d18158aea0a50e9cab840208a319.tar.gz
+  ===> Fetching [OK]: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789819438.1464119.3739.4017883913057/48669da30db3d18158aea0a50e9cab840208a319.tar.gz
+  [DAWG] Command: tar -t -f ./48669da30db3d18158aea0a50e9cab840208a319.tar.gz
+  [DAWG] Command: tar -xvf ./48669da30db3d18158aea0a50e9cab840208a319.tar.gz -C ../48669da30db3d18158aea0a50e9cab840208a319.tar.gz
+  ===> Extraction [OK]: DAWG to /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz
+  ===> Testing: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/01-basic.rakutest
+  [DAWG] 1..15
+  [DAWG] ok 1 - Can create DAWG instance
+  [DAWG] ok 2 - Can add word without value
+  [DAWG] ok 3 - Can add word with value
+  [DAWG] ok 4 - Can add word with complex value
+  [DAWG] ok 5 - Contains added word
+  [DAWG] ok 6 - Does not contain non-added word
+  [DAWG] ok 7 - Lookup returns result
+  [DAWG] ok 8 - Lookup returns correct word
+  [DAWG] ok 9 - Lookup returns correct value
+  [DAWG] ok 10 - Prefix search returns correct count
+  [DAWG] ok 11 - Prefix search includes exact match
+  [DAWG] ok 12 - Prefix search includes longer words
+  [DAWG] DAWG minimized: 14 nodes, 13 edges
+  [DAWG] ok 13 - Can minimize DAWG
+  [DAWG] ok 14 - Stats reports nodes
+  [DAWG] ok 15 - Stats reports minimized state
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/02-serialization.rakutest
+  [DAWG] 1..8
+  [DAWG] DAWG minimized: 14 nodes, 13 edges
+  [DAWG] ok 1 - Can save DAWG in binary format
+  [DAWG] ok 2 - Save file exists
+  [DAWG] ok 3 - Can load DAWG
+  [DAWG] ok 4 - Loaded DAWG exists
+  [DAWG] ok 5 - Loaded DAWG contains original words
+  [DAWG] ok 6 - Loaded DAWG preserves values
+  [DAWG] ok 7 - Loaded DAWG prefix search works
+  [DAWG] ok 8 - Temp file cleaned up
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/03-binary.rakutest
+  [DAWG] 1..12
+  [DAWG] DAWG minimized: 20 nodes, 19 edges
+  [DAWG] ok 1 - Can save DAWG in binary format
+  [DAWG] ok 2 - Binary file exists
+  [DAWG] ok 3 - Binary file has correct magic number
+  [DAWG] ok 4 - Can load binary DAWG
+  [DAWG] ok 5 - Loaded DAWG exists
+  [DAWG] ok 6 - Loaded DAWG contains original words
+  [DAWG] ok 7 - Loaded DAWG preserves values
+  [DAWG] ok 8 - Loaded DAWG prefix search works
+  [DAWG] ok 9 - Can load DAWG using memory mapping
+  [DAWG] ok 10 - Memory-mapped DAWG contains original words
+  [DAWG] ok 11 - Memory-mapped DAWG preserves values
+  [DAWG] ok 12 - Can close memory-mapped DAWG
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/04-edge-cases.rakutest
+  [DAWG] 1..20
+  [DAWG] DAWG minimized: 1 nodes, 0 edges
+  [DAWG] ok 1 - Empty DAWG contains nothing
+  [DAWG] ok 2 - Empty DAWG has no prefixes
+  [DAWG] ok 3 - Empty DAWG lookup returns Nil
+  [DAWG] DAWG minimized: 4 nodes, 3 edges
+  [DAWG] ok 4 - Contains single character
+  [DAWG] ok 5 - Single character lookup works
+  [DAWG] ok 6 - Empty prefix returns all words
+  [DAWG] DAWG minimized: 15 nodes, 14 edges
+  [DAWG] ok 7 - Contains Cyrillic word
+  [DAWG] ok 8 - Contains Chinese word
+  [DAWG] ok 9 - Contains Arabic word
+  [DAWG] ok 10 - Contains emoji
+  [DAWG] ok 11 - Unicode lookup preserves value
+  [DAWG] DAWG minimized: 5 nodes, 4 edges
+  [DAWG] ok 12 - Duplicate word overwrites value
+  [DAWG] DAWG minimized: 1001 nodes, 1000 edges
+  [DAWG] ok 13 - Contains very long word
+  [DAWG] ok 14 - Long word lookup works
+  [DAWG] DAWG minimized: 9 nodes, 10 edges
+  [DAWG] ok 15 - Find all words with common prefix
+  [DAWG] ok 16 - Results include exact match
+  [DAWG] ok 17 - Results include longer match
+  [DAWG] DAWG minimized: 30 nodes, 29 edges
+  [DAWG] ok 18 - Contains hyphenated word
+  [DAWG] ok 19 - Contains word with space
+  [DAWG] ok 20 - Special character lookup works
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/05-performance.rakutest
+  [DAWG] 1..10
+  [DAWG] DAWG minimized: 376 nodes, 375 edges
+  [DAWG] ok 1 - Minimization completes in reasonable time (<5s, actual: 0.162s)
+  [DAWG] ok 2 - Good compression ratio (nodes: 376, words: ~1000)
+  [DAWG] ok 3 - DAWG is minimized
+  [DAWG] ok 4 - Fast lookups (<1ms, actual: 0.08ms)
+  [DAWG] ok 5 - Binary save is fast (<1s, actual: 0.238s)
+  [DAWG] ok 6 - Binary file size is reasonable (<1MB, actual: 29.8KB)
+  [DAWG] ok 7 - Binary load is fast (<1s, actual: 0.138s)
+  [DAWG] not ok 8 - Memory-mapped load is very fast (<100ms, actual: 101.93ms)
+  [DAWG] # Failed test 'Memory-mapped load is very fast (<100ms, actual: 101.93ms)'
+  [DAWG] # at t/05-performance.rakutest line 1
+  [DAWG] ok 9 - Binary loaded DAWG works correctly
+  [DAWG] ok 10 - Memory-mapped DAWG works correctly
+  [DAWG] # You failed 1 test of 10
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/06-node-ids.rakutest
+  [DAWG] 1..12
+  [DAWG] ok 1 - Root node has an ID
+  [DAWG] ok 2 - Root node ID is 0
+  [DAWG] ok 3 - Can retrieve root by ID
+  [DAWG] ok 4 - Child node has ID
+  [DAWG] ok 5 - Child node ID is greater than 0
+  [DAWG] ok 6 - Can retrieve node by ID
+  [DAWG] ok 7 - Retrieved node is the same object
+  [DAWG] DAWG minimized: 6 nodes, 6 edges
+  [DAWG] ok 8 - Root ID exists after minimization
+  [DAWG] ok 9 - Node ID map rebuilt after minimization
+  [DAWG] ok 10 - Can get root after minimization
+  [DAWG] ok 11 - Child nodes have IDs after minimization
+  [DAWG] ok 12 - Invalid ID returns undefined
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/07-subtree-stats.rakutest
+  [DAWG] 1..10
+  [DAWG] DAWG minimized: 12 nodes, 15 edges
+  [DAWG] ok 1 - Root has correct word count
+  [DAWG] ok 2 - Root depth is 0
+  [DAWG] ok 3 - Prefix "a" has 3 words
+  [DAWG] ok 4 - Node "a" is at depth 1
+  [DAWG] ok 5 - Prefix "d" has 3 words
+  [DAWG] ok 6 - Prefix "do" has 3 words
+  [DAWG] ok 7 - Node "do" is at depth 2
+  [DAWG] ok 8 - Node "dog" is terminal
+  [DAWG] ok 9 - Prefix "dog" has 3 words
+  [DAWG] ok 10 - Node "a" is terminal
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/08-pattern-matching.rakutest
+  [DAWG] 1..20
+  [DAWG] DAWG minimized: 25 nodes, 32 edges
+  [DAWG] ok 1 - Pattern "c?t" matches "cat"
+  [DAWG] ok 2 - Pattern "ca?" matches "car" and "cat"
+  [DAWG] ok 3 - Pattern "?ar" matches "car"
+  [DAWG] ok 4 - Pattern "c??" matches 3-letter words starting with c
+  [DAWG] ok 5 - Pattern "???" matches all 3-letter words
+  [DAWG] ok 6 - Pattern "ca*" matches all words starting with "ca"
+  [DAWG] ok 7 - Pattern "app*" matches all words starting with "app"
+  [DAWG] ok 8 - Pattern "*at" matches words ending with "at"
+  [DAWG] ok 9 - Pattern "*tion" matches words ending with "tion"
+  [DAWG] ok 10 - Pattern "c*t" matches words starting with "c" and ending with "t"
+  [DAWG] ok 11 - Pattern "c*e" matches "care"
+  [DAWG] ok 12 - Pattern "c?r*" matches correctly
+  [DAWG] ok 13 - Pattern "*a?" matches words with "a" as second-to-last char
+  [DAWG] ok 14 - Pattern "c*a*" matches words with "c" then "a"
+  [DAWG] ok 15 - Pattern with no matches returns empty
+  [DAWG] ok 16 - Pattern "?????" matches 5-letter words
+  [DAWG] ok 17 - Exact pattern "dog" matches only "dog"
+  [DAWG] ok 18 - Empty pattern returns no matches
+  [DAWG] ok 19 - Pattern "*" matches all words
+  [DAWG] ok 20 - Pattern "**" matches all words
+  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/09-fuzzy-search.rakutest
+  [DAWG] 1..18
+  [DAWG] DAWG minimized: 21 nodes, 29 edges
+  [DAWG] ok 1 - Exact match returns one result
+  [DAWG] ok 2 - Exact match is correct
+  [DAWG] ok 3 - Distance is 0 for exact match
+  [DAWG] ok 4 - Found "cat" from "cot" (1 substitution)
+  [DAWG] ok 5 - Found "dot" from "cot" (1 substitution)
+  [DAWG] ok 6 - Found "cat" from "ct" (1 deletion)
+  [DAWG] ok 7 - Found "car" from "cart" (1 insertion)
+  [DAWG] ok 8 - Found "card" from "cart" (1 substitution)
+  [DAWG] ok 9 - Found "apple" from "aple" (1 insertion)
+  [DAWG] ok 10 - Found "world" from "wrld" (1 insertion)
+  [DAWG] ok 11 - No matches for "xyz" within distance 1
+  [DAWG] ok 12 - Found matches for "cars"
+  [DAWG] ok 13 - Results are sorted by distance
+  [DAWG] ok 14 - Empty string matches 3-letter words
+  [DAWG] ok 15 - Empty string matches 3-letter words
+  [DAWG] ok 16 - Large distance threshold returns many matches
+  [DAWG] ok 17 - Fuzzy search is case-sensitive
+  [DAWG] ok 18 - Exact match is lowercase
+  ===> Testing [FAIL]: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
+  [DAWG] Failed to get passing tests, but continuing with --force-test
+  ===> Installing: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
+  ===> Install [OK] for DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 2min 37.041s
-               CPU time consumed: 2min 39.388s
-                     Memory peak: 1.4G (swap: 187.5M)
+                 Service runtime: 2min 31.946s
+               CPU time consumed: 2min 38.244s
+                     Memory peak: 1.3G (swap: 5.6M)
+
+  ```
+  </details>
+* [ ] [FontConfig](https://raku.land/zef:dwarring/FontConfig) – Fail, Bisected: [7ded5ff](https://github.com/rakudo/rakudo/commit/7ded5ff7de2c55911b07e909d1daa968255bc96b)
+  <details><Summary>Old Output</summary>
+
+  ```
+  Running as unit: run-p1572304-i1595267.service; invocation ID: f43466a5896442078b5fdab92fafcfc8
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: FontConfig
+  ===> Found: FontConfig:ver<0.1.9>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
+  [FontConfig] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789822308.1572313.5826.367727139239/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz https://360.zef.pm/F/ON/FONTCONFIG/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
+  ===> Fetching [OK]: FontConfig:ver<0.1.9>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1789822308.1572313.5826.367727139239/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
+  [FontConfig] Command: tar -t -f ./aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
+  [FontConfig] Command: tar -xvf ./aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz -C ../aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
+  ===> Extraction [OK]: FontConfig to /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
+  ===> Building: FontConfig:ver<0.1.9>:auth<zef:dwarring>
+  [FontConfig] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -e require '/home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9/Build.pm6'; ::('Build').new.build('/home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9') ?? exit(0) !! exit(1);
+  [FontConfig] make: Nothing to be done for 'all'.
+  [FontConfig] make: Nothing to be done for 'all'.
+  ===> Building [OK] for FontConfig:ver<0.1.9>:auth<zef:dwarring>
+  ===> Testing: FontConfig:ver<0.1.9>:auth<zef:dwarring>
+  [FontConfig] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/00raw.t
+  [FontConfig] 1..6
+  [FontConfig] ok 1 - 
+  [FontConfig] ok 2 - 
+  [FontConfig] ok 3 - 
+  [FontConfig] ok 4 - 
+  [FontConfig] ok 5 - known constant
+  [FontConfig] ok 6 - 
+  [FontConfig] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/basic.t
+  [FontConfig] 1..4
+  [FontConfig] fontconfig library version: 2.17.01
+  [FontConfig] ok 1 - fontconfig library >= 2.13.01 (minimum version)
+  [FontConfig] ok 2 - weight object
+  [FontConfig] # Subtest: pattern tests
+  [FontConfig]     1..17
+  [FontConfig]     ok 1 - have pattern
+  [FontConfig]     ok 2 - stringified, initial
+  [FontConfig]     ok 3 - elems
+  [FontConfig]     ok 4 - pattern members, intial
+  [FontConfig]     ok 5 - pattern family members
+  [FontConfig]     ok 6 - set weight property to fixed value (bold)
+  [FontConfig]     ok 7 - set weight property to range
+  [FontConfig]     ok 8 - unset value return type
+  [FontConfig]     ok 9 - pattern members, after add
+  [FontConfig]     ok 10 - associative property
+  [FontConfig]     ok 11 - stringified, after add
+  [FontConfig]     ok 12 - stringified, after add and associative delete
+  [FontConfig]     ok 13 - pattern members, after add and delete
+  [FontConfig]     ok 14 - pattern elems, after configure
+  [FontConfig]     ok 15 - pattern stringified, after configure
+  [FontConfig]     ok 16 - patern file property, after configure
+  [FontConfig]     ok 17 - patern file property, after configure
+  [FontConfig] ok 3 - pattern tests
+  [FontConfig] # Subtest: match tests
+  [FontConfig]     1..7
+  [FontConfig]     ok 1 - match lives
+  [FontConfig]     ok 2 - weight property
+  [FontConfig]     ok 3 - file associative property exists
+  [FontConfig]     ok 4 - file associative property defined
+  [FontConfig]     ok 5 - The object is-a 'Str'
+  [FontConfig]     ok 6 - file accessor
+  [FontConfig]     ok 7 - matched a file
+  [FontConfig] ok 4 - match tests
+  [FontConfig] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/custom-conf.t
+  [FontConfig] 1..15
+  [FontConfig] ok 1 - 
+  [FontConfig] ok 2 - 
+  [FontConfig] ok 3 - 
+  [FontConfig] ok 4 - 
+  [FontConfig] ok 5 - 
+  [FontConfig] ok 6 - 
+  [FontConfig] ok 7 - 
+  [FontConfig] ok 8 - 
+  [FontConfig] ok 9 - 
+  [FontConfig] ok 10 - 
+  [FontConfig] ok 11 - 
+  [FontConfig] ok 12 - 
+  [FontConfig] ok 13 - 
+  [FontConfig] ok 14 - 
+  [FontConfig] ok 15 - 
+  [FontConfig] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/empty-config.t
+  [FontConfig] 1..8
+  [FontConfig] ok 1 - 
+  [FontConfig] ok 2 - The object is-a '"FontConfig"'
+  [FontConfig] ok 3 - FontConfig
+  [FontConfig] ok 4 - 
+  [FontConfig] ok 5 - 
+  [FontConfig] ok 6 - 
+  [FontConfig] ok 7 - The object is-a 'FontConfig::Match'
+  [FontConfig] ok 8 - Matching has been disabled
+  [FontConfig] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/match-series.t
+  [FontConfig] 1..11
+  [FontConfig] ok 1 - series elems
+  [FontConfig] # Subtest: first match
+  [FontConfig]     ok 1 - family
+  [FontConfig]     ok 2 - style
+  [FontConfig]     ok 3 - file
+  [FontConfig]     1..3
+  [FontConfig] ok 2 - first match
+  [FontConfig] # Subtest: second match
+  [FontConfig]     ok 1 - family
+  [FontConfig]     ok 2 - style
+  [FontConfig]     ok 3 - file
+  [FontConfig]     1..3
+  [FontConfig] ok 3 - second match
+  [FontConfig] ok 4 - trim series elems
+  [FontConfig] # Subtest: first trim match
+  [FontConfig]     ok 1 - family
+  [FontConfig]     ok 2 - style
+  [FontConfig]     ok 3 - file
+  [FontConfig]     1..3
+  [FontConfig] ok 5 - first trim match
+  [FontConfig] ok 6 - :!best
+  [FontConfig] ok 7 - :best
+  [FontConfig] ok 8 - :best series elems
+  [FontConfig] # Subtest: first trim match
+  [FontConfig]     ok 1 - family
+  [FontConfig]     ok 2 - style
+  [FontConfig]     ok 3 - file
+  [FontConfig]     1..3
+  [FontConfig] ok 9 - first trim match
+  [FontConfig] # Subtest: series iteration
+  [FontConfig]     ok 1 - family[0]
+  [FontConfig]     ok 2 - style[0]
+  [FontConfig]     ok 3 - file[0]
+  [FontConfig]     ok 4 - family[1]
+  [FontConfig]     ok 5 - style[1]
+  [FontConfig]     ok 6 - file[1]
+  [FontConfig]     ok 7 - iteration count
+  [FontConfig]     1..7
+  [FontConfig] ok 10 - series iteration
+  [FontConfig] # Subtest: fontconfig match-series
+  [FontConfig]     ok 1 - 
+  [FontConfig]     ok 2 - family[0]
+  [FontConfig]     ok 3 - style[0]
+  [FontConfig]     ok 4 - file[0]
+  [FontConfig]     ok 5 - family[1]
+  [FontConfig]     ok 6 - style[1]
+  [FontConfig]     ok 7 - file[1]
+  [FontConfig]     ok 8 - 
+  [FontConfig]     ok 9 - family[0]
+  [FontConfig]     ok 10 - style[0]
+  [FontConfig]     ok 11 - file[0]
+  [FontConfig]     ok 12 - family[1]
+  [FontConfig]     ok 13 - style[1]
+  [FontConfig]     ok 14 - file[1]
+  [FontConfig]     ok 15 - 
+  [FontConfig]     ok 16 - family[0]
+  [FontConfig]     ok 17 - style[0]
+  [FontConfig]     ok 18 - file[0]
+  [FontConfig]     ok 19 - family[1]
+  [FontConfig]     ok 20 - style[1]
+  [FontConfig]     ok 21 - file[1]
+  [FontConfig]     1..21
+  [FontConfig] ok 11 - fontconfig match-series
+  [FontConfig] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/query-ft-face.t
+  [FontConfig] 1..3
+  [FontConfig] ok 1 - # SKIP Font::FreeType needs to be installed to test query-ft-face()
+  [FontConfig] ok 2 - # SKIP Font::FreeType needs to be installed to test query-ft-face()
+  [FontConfig] ok 3 - # SKIP Font::FreeType needs to be installed to test query-ft-face()
+  ===> Testing [OK] for FontConfig:ver<0.1.9>:auth<zef:dwarring>
+  ===> Installing: FontConfig:ver<0.1.9>:auth<zef:dwarring>
+  ===> Install [OK] for FontConfig:ver<0.1.9>:auth<zef:dwarring>
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 2min 27.150s
+               CPU time consumed: 2min 30.124s
+                     Memory peak: 1.3G (swap: 52K)
+
+  ```
+  </details>
+  <details>
+  <summary>New Output</summary>
+
+  ```
+  Running as unit: run-p1566360-i1578735.service; invocation ID: 3bccac8da1354685887dcf852f127c1f
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: FontConfig
+  ===> Found: FontConfig:ver<0.1.9>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
+  [FontConfig] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789822166.1566378.7963.114269278888/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz https://360.zef.pm/F/ON/FONTCONFIG/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
+  ===> Fetching [OK]: FontConfig:ver<0.1.9>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1789822166.1566378.7963.114269278888/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
+  [FontConfig] Command: tar -t -f ./aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
+  [FontConfig] Command: tar -xvf ./aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz -C ../aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
+  ===> Extraction [OK]: FontConfig to /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
+  ===> Building: FontConfig:ver<0.1.9>:auth<zef:dwarring>
+  [FontConfig] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -e require '/home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9/Build.pm6'; ::('Build').new.build('/home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9') ?? exit(0) !! exit(1);
+  [FontConfig] gcc -I src  -c -fPIC -fwrapv -std=gnu99 -Wextra -Wall -Wno-unused-parameter -Wno-unused-function -Wno-missing-braces -Werror=pointer-arith -O3 -DNDEBUG  -D_REENTRANT -D_FILE_OFFSET_BITS=64 -fPIC -DMVM_HEAPSNAPSHOT_FORMAT=2 -D_GNU_SOURCE -o src/fc_raku.o src/fc_raku.c
+  [FontConfig] gcc  -shared -fPIC -lfontconfig  -O3 -DNDEBUG -Wl,-rpath,"//tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/lib" -o resources/libraries/libfc_raku.so src/fc_raku.o
+  [FontConfig] make: Nothing to be done for 'all'.
+  ===> Building [FAIL]: FontConfig:ver<0.1.9>:auth<zef:dwarring>
+  [FontConfig] Failed to build, but continuing with --force-build
+  ===> Testing: FontConfig:ver<0.1.9>:auth<zef:dwarring>
+  [FontConfig] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/00raw.t
+  [FontConfig] 1..6
+  [FontConfig] ok 1 - 
+  [FontConfig] ok 2 - 
+  [FontConfig] ok 3 - 
+  [FontConfig] ok 4 - 
+  [FontConfig] ok 5 - known constant
+  [FontConfig] ok 6 - 
+  [FontConfig] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/basic.t
+  [FontConfig] 1..4
+  [FontConfig] fontconfig library version: 2.17.01
+  [FontConfig] ok 1 - fontconfig library >= 2.13.01 (minimum version)
+  [FontConfig] ok 2 - weight object
+  [FontConfig] # Subtest: pattern tests
+  [FontConfig]     1..17
+  [FontConfig]     ok 1 - have pattern
+  [FontConfig]     ok 2 - stringified, initial
+  [FontConfig]     ok 3 - elems
+  [FontConfig]     ok 4 - pattern members, intial
+  [FontConfig]     ok 5 - pattern family members
+  [FontConfig]     ok 6 - set weight property to fixed value (bold)
+  [FontConfig]     ok 7 - set weight property to range
+  [FontConfig]     ok 8 - unset value return type
+  [FontConfig]     ok 9 - pattern members, after add
+  [FontConfig]     ok 10 - associative property
+  [FontConfig]     ok 11 - stringified, after add
+  [FontConfig]     ok 12 - stringified, after add and associative delete
+  [FontConfig]     ok 13 - pattern members, after add and delete
+  [FontConfig]     ok 14 - pattern elems, after configure
+  [FontConfig]     ok 15 - pattern stringified, after configure
+  [FontConfig]     ok 16 - patern file property, after configure
+  [FontConfig]     ok 17 - patern file property, after configure
+  [FontConfig] ok 3 - pattern tests
+  [FontConfig] # Subtest: match tests
+  [FontConfig]     1..7
+  [FontConfig]     ok 1 - match lives
+  [FontConfig]     ok 2 - weight property
+  [FontConfig]     ok 3 - file associative property exists
+  [FontConfig]     ok 4 - file associative property defined
+  [FontConfig]     ok 5 - The object is-a 'Str'
+  [FontConfig]     ok 6 - file accessor
+  [FontConfig]     ok 7 - matched a file
+  [FontConfig] ok 4 - match tests
+  [FontConfig] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/custom-conf.t
+  [FontConfig] 1..15
+  [FontConfig] ok 1 - 
+  [FontConfig] ok 2 - 
+  [FontConfig] ok 3 - 
+  [FontConfig] ok 4 - 
+  [FontConfig] ok 5 - 
+  [FontConfig] ok 6 - 
+  [FontConfig] ok 7 - 
+  [FontConfig] ok 8 - 
+  [FontConfig] ok 9 - 
+  [FontConfig] ok 10 - 
+  [FontConfig] ok 11 - 
+  [FontConfig] ok 12 - 
+  [FontConfig] ok 13 - 
+  [FontConfig] ok 14 - 
+  [FontConfig] ok 15 - 
+  [FontConfig] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/empty-config.t
+  [FontConfig] 1..8
+  [FontConfig] ok 1 - 
+  [FontConfig] ok 2 - The object is-a '"FontConfig"'
+  [FontConfig] ok 3 - FontConfig
+  [FontConfig] ok 4 - 
+  [FontConfig] ok 5 - 
+  [FontConfig] ok 6 - 
+  [FontConfig] ok 7 - The object is-a 'FontConfig::Match'
+  [FontConfig] ok 8 - Matching has been disabled
+  [FontConfig] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/match-series.t
+  [FontConfig] 1..11
+  [FontConfig] ok 1 - series elems
+  [FontConfig] # Subtest: first match
+  [FontConfig]     ok 1 - family
+  [FontConfig]     ok 2 - style
+  [FontConfig]     ok 3 - file
+  [FontConfig]     1..3
+  [FontConfig] ok 2 - first match
+  [FontConfig] # Subtest: second match
+  [FontConfig]     ok 1 - family
+  [FontConfig]     ok 2 - style
+  [FontConfig]     ok 3 - file
+  [FontConfig]     1..3
+  [FontConfig] ok 3 - second match
+  [FontConfig] ok 4 - trim series elems
+  [FontConfig] # Subtest: first trim match
+  [FontConfig]     ok 1 - family
+  [FontConfig]     ok 2 - style
+  [FontConfig]     ok 3 - file
+  [FontConfig]     1..3
+  [FontConfig] ok 5 - first trim match
+  [FontConfig] ok 6 - :!best
+  [FontConfig] ok 7 - :best
+  [FontConfig] ok 8 - :best series elems
+  [FontConfig] # Subtest: first trim match
+  [FontConfig]     ok 1 - family
+  [FontConfig]     ok 2 - style
+  [FontConfig]     ok 3 - file
+  [FontConfig]     1..3
+  [FontConfig] ok 9 - first trim match
+  [FontConfig] # Subtest: series iteration
+  [FontConfig]     ok 1 - family[0]
+  [FontConfig]     ok 2 - style[0]
+  [FontConfig]     ok 3 - file[0]
+  [FontConfig]     ok 4 - family[1]
+  [FontConfig]     ok 5 - style[1]
+  [FontConfig]     ok 6 - file[1]
+  [FontConfig]     ok 7 - iteration count
+  [FontConfig]     1..7
+  [FontConfig] ok 10 - series iteration
+  [FontConfig] # Subtest: fontconfig match-series
+  [FontConfig]     ok 1 - 
+  [FontConfig]     ok 2 - family[0]
+  [FontConfig]     ok 3 - style[0]
+  [FontConfig]     ok 4 - file[0]
+  [FontConfig]     ok 5 - family[1]
+  [FontConfig]     ok 6 - style[1]
+  [FontConfig]     ok 7 - file[1]
+  [FontConfig]     ok 8 - 
+  [FontConfig]     ok 9 - family[0]
+  [FontConfig]     ok 10 - style[0]
+  [FontConfig]     ok 11 - file[0]
+  [FontConfig]     ok 12 - family[1]
+  [FontConfig]     ok 13 - style[1]
+  [FontConfig]     ok 14 - file[1]
+  [FontConfig]     ok 15 - 
+  [FontConfig]     ok 16 - family[0]
+  [FontConfig]     ok 17 - style[0]
+  [FontConfig]     ok 18 - file[0]
+  [FontConfig]     ok 19 - family[1]
+  [FontConfig]     ok 20 - style[1]
+  [FontConfig]     ok 21 - file[1]
+  [FontConfig]     1..21
+  [FontConfig] ok 11 - fontconfig match-series
+  [FontConfig] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/query-ft-face.t
+  [FontConfig] 1..3
+  [FontConfig] ok 1 - # SKIP Font::FreeType needs to be installed to test query-ft-face()
+  [FontConfig] ok 2 - # SKIP Font::FreeType needs to be installed to test query-ft-face()
+  [FontConfig] ok 3 - # SKIP Font::FreeType needs to be installed to test query-ft-face()
+  ===> Testing [OK] for FontConfig:ver<0.1.9>:auth<zef:dwarring>
+  ===> Installing: FontConfig:ver<0.1.9>:auth<zef:dwarring>
+  ===> Install [OK] for FontConfig:ver<0.1.9>:auth<zef:dwarring>
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 2min 19.477s
+               CPU time consumed: 2min 23.423s
+                     Memory peak: 1.1G (swap: 0B)
 
   ```
   </details>
@@ -286,12 +716,12 @@
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p764673-i803064.service; invocation ID: f8d8741f0a4445968974dd58599c87fc
+  Running as unit: run-p1399665-i1403558.service; invocation ID: 2926665495504432927144efecc52a27
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Polyglot::Regexen
   ===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<fez>]
-  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789691379.764674.340.9944496280981/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
-  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789691379.764674.340.9944496280981/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789817650.1399667.9838.181092043615/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789817650.1399667.9838.181092043615/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   [Polyglot::Regexen] Command: tar -t -f ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   [Polyglot::Regexen] Command: tar -xvf ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz -C ../17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   ===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
@@ -452,8 +882,8 @@
   ===> Install [OK] for Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 2min 9.334s
-               CPU time consumed: 2min 23.673s
+                 Service runtime: 2min 14.339s
+               CPU time consumed: 2min 29.541s
                      Memory peak: 1.6G (swap: 0B)
 
   ```
@@ -462,214 +892,794 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p760160-i724863.service; invocation ID: 31faaa72fccc4b27b9e59466bd8fcff1
+  Running as unit: run-p1395183-i1414143.service; invocation ID: 58bc90ce67064b56a856ef7147526e15
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Polyglot::Regexen
   ===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<fez>]
-  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789691252.760162.9094.799066130821/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
-  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789691252.760162.9094.799066130821/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789817522.1395188.9888.87059194195/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789817522.1395188.9888.87059194195/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   [Polyglot::Regexen] Command: tar -t -f ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   [Polyglot::Regexen] Command: tar -xvf ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz -C ../17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   ===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   ===> Testing: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/00-sanity.rakutest
-  [Polyglot::Regexen] ok 1 - 
-  [Polyglot::Regexen] 1..1
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/01-literals.rakutest
-  [Polyglot::Regexen] ok 1 - Single literal, alpha
-  [Polyglot::Regexen] ok 2 - Double literal
-  [Polyglot::Regexen] ok 3 - Single literal, digit
-  [Polyglot::Regexen] ok 4 - ECMA literal, Raku escaped
-  [Polyglot::Regexen] ok 5 - ECMA literal sequence, Raku sequence with embedded escaped
-  [Polyglot::Regexen] ok 6 - Hex escape sequence, Raku literal
-  [Polyglot::Regexen] ok 7 - Unicode escape sequence, Raku literal
-  [Polyglot::Regexen] ok 8 - Hex escape sequence, Raku escaped
-  [Polyglot::Regexen] ok 9 - Unicode escape sequence, Raku escaped
-  [Polyglot::Regexen] 1..9
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/02-character-classes.rakutest
-  [Polyglot::Regexen] not ok 1 - Hyphen as sole character
-  [Polyglot::Regexen] # Failed test 'Hyphen as sole character'
-  [Polyglot::Regexen] # at t/ecma/02-character-classes.rakutest line 47
-  [Polyglot::Regexen] # expected: '/<+[-]>/'
-  [Polyglot::Regexen] #      got: '/<+[\-]>/'
-  [Polyglot::Regexen] not ok 2 - Hyphen as first character
-  [Polyglot::Regexen] # Failed test 'Hyphen as first character'
-  [Polyglot::Regexen] # at t/ecma/02-character-classes.rakutest line 48
-  [Polyglot::Regexen] # expected: '/<+[- a]>/'
-  [Polyglot::Regexen] #      got: '/<+[\- a]>/'
-  [Polyglot::Regexen] not ok 3 - Hyphen as final character
-  [Polyglot::Regexen] # Failed test 'Hyphen as final character'
-  [Polyglot::Regexen] # at t/ecma/02-character-classes.rakutest line 49
-  [Polyglot::Regexen] # expected: '/<+[a -]>/'
-  [Polyglot::Regexen] #      got: '/<+[a \-]>/'
-  [Polyglot::Regexen] ok 4 - Range after literal
-  [Polyglot::Regexen] ok 5 - Range before literal
-  [Polyglot::Regexen] ok 6 - Sequential range
-  [Polyglot::Regexen] 1..6
-  [Polyglot::Regexen] # You failed 3 tests of 6
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/03-alternation.rakutest
-  [Polyglot::Regexen] ok 1 - Simple alternation, two terms
-  [Polyglot::Regexen] ok 2 - Simple alternation, three terms
-  [Polyglot::Regexen] 1..2
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/04-assertions.rakutest
-  [Polyglot::Regexen] ok 1 - Simple lookahead
-  [Polyglot::Regexen] ok 2 - Simple negative lookahead
-  [Polyglot::Regexen] ok 3 - Simple lookbehind
-  [Polyglot::Regexen] ok 4 - Simple negative lookbehind
-  [Polyglot::Regexen] 1..4
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/05-quantifiers.rakutest
-  [Polyglot::Regexen] ok 1 - One or none
-  [Polyglot::Regexen] ok 2 - One or more
-  [Polyglot::Regexen] ok 3 - None or more
-  [Polyglot::Regexen] ok 4 - Exactly some number
-  [Polyglot::Regexen] ok 5 - Some number or more
-  [Polyglot::Regexen] ok 6 - Some number to another number
-  [Polyglot::Regexen] ok 7 - Frugal one or none
-  [Polyglot::Regexen] ok 8 - Frugal one or more
-  [Polyglot::Regexen] ok 9 - Frugal none or more
-  [Polyglot::Regexen] ok 10 - Frugal exactly some number
-  [Polyglot::Regexen] ok 11 - Frugal some number or more
-  [Polyglot::Regexen] ok 12 - Frugal some number to another number
-  [Polyglot::Regexen] 1..12
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/06-captures.rakutest
-  [Polyglot::Regexen] not ok 1 - Simple positional
-  [Polyglot::Regexen] # Failed test 'Simple positional'
-  [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 8
-  [Polyglot::Regexen] # expected: '/[$<1>=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }]/'
-  [Polyglot::Regexen] #      got: '/[$1=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }]/'
-  [Polyglot::Regexen] not ok 2 - Embedded positional
-  [Polyglot::Regexen] # Failed test 'Embedded positional'
-  [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 11
-  [Polyglot::Regexen] # expected: '/[$<1>=[a[$<2>=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }]/'
-  [Polyglot::Regexen] #      got: '/[$1=[a[$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }]/'
-  [Polyglot::Regexen] not ok 3 - Sequential positional
-  [Polyglot::Regexen] # Failed test 'Sequential positional'
-  [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 14
-  [Polyglot::Regexen] # expected: '/[$<1>=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$<2>=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
-  [Polyglot::Regexen] #      got: '/[$1=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
-  [Polyglot::Regexen] not ok 4 - Complex positional
-  [Polyglot::Regexen] # Failed test 'Complex positional'
-  [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 17
-  [Polyglot::Regexen] # expected: '/[$<1>=[a[$<2>=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$<3>=[c]{ $¢.register-position($/.AT-POS(3, :ECMA262-INTERNAL), 3) }]/'
-  [Polyglot::Regexen] #      got: '/[$1=[a[$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$3=[c]{ $¢.register-position($/.AT-POS(3, :ECMA262-INTERNAL), 3) }]/'
-  [Polyglot::Regexen] not ok 5 - Simple named
-  [Polyglot::Regexen] # Failed test 'Simple named'
-  [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 20
-  [Polyglot::Regexen] # expected: '/[$<1>=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }]/'
-  [Polyglot::Regexen] #      got: '/[$1=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }]/'
-  [Polyglot::Regexen] not ok 6 - Simple named with simple positional
-  [Polyglot::Regexen] # Failed test 'Simple named with simple positional'
-  [Polyglot::Regexen] # at t/ecma/06-captures.rakutest line 23
-  [Polyglot::Regexen] # expected: '/[$<1>=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$<2>=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
-  [Polyglot::Regexen] #      got: '/[$1=[a]{ $¢.register-position($/.AT-POS(1, :ECMA262-INTERNAL), 1) }][$2=[b]{ $¢.register-position($/.AT-POS(2, :ECMA262-INTERNAL), 2) }]/'
-  [Polyglot::Regexen] 1..6
-  [Polyglot::Regexen] # You failed 6 tests of 6
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/07-unicode.rakutest
-  [Polyglot::Regexen] ok 1 - 
-  [Polyglot::Regexen] ok 2 - 
-  [Polyglot::Regexen] ok 3 - 
-  [Polyglot::Regexen] ok 4 - 
-  [Polyglot::Regexen] ok 5 - 
-  [Polyglot::Regexen] ok 6 - 
-  [Polyglot::Regexen] ok 7 - 
-  [Polyglot::Regexen] ok 8 - 
-  [Polyglot::Regexen] ok 9 - 
-  [Polyglot::Regexen] ok 10 - 
-  [Polyglot::Regexen] ok 11 - 
-  [Polyglot::Regexen] ok 12 - 
-  [Polyglot::Regexen] 1..12
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/08-modifiers.rakutest
-  [Polyglot::Regexen] ok 1 - 
-  [Polyglot::Regexen] ok 2 - 
-  [Polyglot::Regexen] ok 3 - 
-  [Polyglot::Regexen] ok 4 - 
-  [Polyglot::Regexen] 1..4
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/09-role.rakutest
-  [Polyglot::Regexen] # Subtest: Pretty print
-  [Polyglot::Regexen]     ok 1 - 
-  [Polyglot::Regexen]     ok 2 - 
-  [Polyglot::Regexen]     ok 3 - 
-  [Polyglot::Regexen]     1..3
-  [Polyglot::Regexen] ok 1 - Pretty print
-  [Polyglot::Regexen] # Subtest: Match variable functionality
-  [Polyglot::Regexen]     ok 1 - 
-  [Polyglot::Regexen]     ok 2 - 
-  [Polyglot::Regexen]     ok 3 - 
-  [Polyglot::Regexen]     ok 4 - 
-  [Polyglot::Regexen]     ok 5 - 
-  [Polyglot::Regexen]     ok 6 - 
-  [Polyglot::Regexen]     ok 7 - 
-  [Polyglot::Regexen]     1..7
-  [Polyglot::Regexen] ok 2 - Match variable functionality
-  [Polyglot::Regexen] # Subtest: Positional matches
-  [Polyglot::Regexen]     ok 1 - Sequential
-  [Polyglot::Regexen]     ok 2 - Simple embedded
-  [Polyglot::Regexen]     ok 3 - Deep right embedded
-  [Polyglot::Regexen]     ok 4 - Deep left embedded
-  [Polyglot::Regexen]     ok 5 - Complex embedded
-  [Polyglot::Regexen]     1..5
-  [Polyglot::Regexen] ok 3 - Positional matches
-  [Polyglot::Regexen] # Subtest: Named matches
-  [Polyglot::Regexen]     ok 1 - Sequential
-  [Polyglot::Regexen]     ok 2 - Simple embedded
-  [Polyglot::Regexen]     ok 3 - Deep right embedded
-  [Polyglot::Regexen]     ok 4 - Deep left embedded
-  [Polyglot::Regexen] IO::Handle<IO::Special.new("<STDERR>")>(opened){a => a, b => ab, c => cdef, d => d, e => de, g => abcdefgh, h => h, i => abcdefghi}
-  [Polyglot::Regexen]     ok 5 - Complex embedded
-  [Polyglot::Regexen]     1..5
-  [Polyglot::Regexen] ok 4 - Named matches
-  [Polyglot::Regexen] # Subtest: Positional match backreferences
-  [Polyglot::Regexen]     ok 1 - Sequential
-  [Polyglot::Regexen]     ok 2 - Simple embedded
-  [Polyglot::Regexen]     ok 3 - Deep right embedded
-  [Polyglot::Regexen]     ok 4 - Deep left embedded
-  [Polyglot::Regexen]     ok 5 - Complex embedded
-  [Polyglot::Regexen]     ok 6 - Multi sequential
-  [Polyglot::Regexen]     1..6
-  [Polyglot::Regexen] ok 5 - Positional match backreferences
-  [Polyglot::Regexen] # Subtest: Named match backreferences
-  [Polyglot::Regexen]     ok 1 - Sequential
-  [Polyglot::Regexen]     ok 2 - Simple embedded
-  [Polyglot::Regexen]     ok 3 - Deep right embedded
-  [Polyglot::Regexen]     ok 4 - Deep left embedded
-  [Polyglot::Regexen]     ok 5 - Complex embedded
-  [Polyglot::Regexen]     ok 6 - Multi sequential
-  [Polyglot::Regexen]     1..6
-  [Polyglot::Regexen] ok 6 - Named match backreferences
-  [Polyglot::Regexen] 1..6
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/10-usage.rakutest
-  [Polyglot::Regexen] # Subtest: Quoted forms
-  [Polyglot::Regexen]     ok 1 - No modifiers in bare quoted form
-  [Polyglot::Regexen]     ok 2 - Postquote case-insensitive bare quoted form
-  [Polyglot::Regexen]     ok 3 - Prequote case-insensitive bare quoted form
-  [Polyglot::Regexen]     1..3
-  [Polyglot::Regexen] ok 1 - Quoted forms
-  [Polyglot::Regexen] # Subtest: Grammar-scoped forms
-  [Polyglot::Regexen]     ok 1 - Base regex in grammar
-  [Polyglot::Regexen]     ok 2 - Regex with case-insensitive modifier in grammar
-  [Polyglot::Regexen]     ok 3 - Yes, that’s really an e-mail regex
-  [Polyglot::Regexen]     1..3
-  [Polyglot::Regexen] ok 2 - Grammar-scoped forms
-  [Polyglot::Regexen] # Subtest: Lexically-scoped forms
-  [Polyglot::Regexen]     ok 1 - My scoped regex
-  [Polyglot::Regexen]     ok 2 - My-scoped regex in package
-  [Polyglot::Regexen]     ok 3 - Our-scoped regex in own package
-  [Polyglot::Regexen]     ok 4 - My-scoped regex in package not visible from outside
-  [Polyglot::Regexen]     ok 5 - Our-scoped regex in package not immediately visible from outside
-  [Polyglot::Regexen]     ok 6 - My-scoped regex in package not visible from outside with package name
-  [Polyglot::Regexen]     ok 7 - Our-scoped regex in package visible visible from outside with package name
-  [Polyglot::Regexen]     1..7
-  [Polyglot::Regexen] ok 3 - Lexically-scoped forms
-  [Polyglot::Regexen] 1..3
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/00-sanity.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/00-sanity.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regexen.rakumod (Polyglot::Regexen)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions-Mixin.rakumod (Polyglot::Regex::ECMA262::Actions-Mixin)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
+  [Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+  [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+  [Polyglot::Regexen] Exception details:
+  [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions-Mixin.rakumod (Polyglot::Regex::ECMA262::Actions-Mixin):8
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regexen.rakumod (Polyglot::Regexen):5
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/00-sanity.rakutest:3
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/01-literals.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/01-literals.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
+  [Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+  [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+  [Polyglot::Regexen] Exception details:
+  [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/01-literals.rakutest:4
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/02-character-classes.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/02-character-classes.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
+  [Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+  [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+  [Polyglot::Regexen] Exception details:
+  [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/02-character-classes.rakutest:4
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/03-alternation.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/03-alternation.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
+  [Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+  [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+  [Polyglot::Regexen] Exception details:
+  [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/03-alternation.rakutest:4
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/04-assertions.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/04-assertions.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
+  [Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+  [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+  [Polyglot::Regexen] Exception details:
+  [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/04-assertions.rakutest:4
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/05-quantifiers.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/05-quantifiers.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
+  [Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+  [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+  [Polyglot::Regexen] Exception details:
+  [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/05-quantifiers.rakutest:4
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/06-captures.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/06-captures.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
+  [Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+  [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+  [Polyglot::Regexen] Exception details:
+  [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/06-captures.rakutest:4
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/07-unicode.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/07-unicode.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
+  [Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+  [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+  [Polyglot::Regexen] Exception details:
+  [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/07-unicode.rakutest:4
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/08-modifiers.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/08-modifiers.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
+  [Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+  [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+  [Polyglot::Regexen] Exception details:
+  [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/08-modifiers.rakutest:4
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/09-role.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/09-role.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
+  [Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+  [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+  [Polyglot::Regexen] Exception details:
+  [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/09-role.rakutest:3
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/10-usage.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/10-usage.rakutest
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regexen.rakumod (Polyglot::Regexen)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions-Mixin.rakumod (Polyglot::Regex::ECMA262::Actions-Mixin)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
+  [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
+  [Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+  [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+  [Polyglot::Regexen] Exception details:
+  [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions-Mixin.rakumod (Polyglot::Regex::ECMA262::Actions-Mixin):8
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regexen.rakumod (Polyglot::Regexen):5
+  [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/10-usage.rakutest:1
   ===> Testing [FAIL]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
   [Polyglot::Regexen] Failed to get passing tests, but continuing with --force-test
   ===> Installing: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
-  ===> Install [OK] for Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
+  ===> Install [FAIL] for Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/BC6D3C1653A62CB7973AF2249F0997287ACC0612 (Polyglot::Regex::ECMA262::Actions)
+  ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/963BC5BF2466B70304F9EA3766FAD96D15589D78 (Polyglot::Regex::ECMA262::Classes)
+  An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+  Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/963BC5BF2466B70304F9EA3766FAD96D15589D78 (Polyglot::Regex::ECMA262::Classes):222
+  Exception details:
+    Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+      in any new at src/Raku/ast/regex.rakumod line 2062
+      in block  at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/963BC5BF2466B70304F9EA3766FAD96D15589D78 (Polyglot::Regex::ECMA262::Classes) line 222
+
+
+  at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/BC6D3C1653A62CB7973AF2249F0997287ACC0612 (Polyglot::Regex::ECMA262::Actions):2
+
+  ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/BC6D3C1653A62CB7973AF2249F0997287ACC0612 (Polyglot::Regex::ECMA262::Actions)
+  ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/963BC5BF2466B70304F9EA3766FAD96D15589D78 (Polyglot::Regex::ECMA262::Classes)
+  An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+  Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+  at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/963BC5BF2466B70304F9EA3766FAD96D15589D78 (Polyglot::Regex::ECMA262::Classes):222
+  Exception details:
+    Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
+      in any new at src/Raku/ast/regex.rakumod line 2062
+      in block  at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/963BC5BF2466B70304F9EA3766FAD96D15589D78 (Polyglot::Regex::ECMA262::Classes) line 222
+
+
+  at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/BC6D3C1653A62CB7973AF2249F0997287ACC0612 (Polyglot::Regex::ECMA262::Actions):2
+
+            Finished with result: exit-code
+  Main processes terminated with: code=exited, status=1/FAILURE
+                 Service runtime: 2min 14.562s
+               CPU time consumed: 2min 20.816s
+                     Memory peak: 1.3G (swap: 187.4M)
+
+  ```
+  </details>
+* [ ] [Terminal::UI](https://raku.land/zef:bduggan/Terminal::UI) – Fail, Bisected: [c2209ec](https://github.com/rakudo/rakudo/commit/c2209ec2c58ae4a747c51980d85ad8d711408416)
+  <details><Summary>Old Output</summary>
+
+  ```
+  Running as unit: run-p1596387-i1502842.service; invocation ID: 362e77d923654c47812fb49dd0e2beee
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: Terminal::UI
+  ===> Found: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> [via Zef::Repository::Ecosystems<fez>]
+  [Terminal::UI] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789822913.1596397.4480.864036135278/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz https://360.zef.pm/T/ER/TERMINAL_UI/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+  ===> Fetching [OK]: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> to /home/coke/sandbox/blin/data/zef-data/tmp/1789822913.1596397.4480.864036135278/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+  [Terminal::UI] Command: tar -t -f ./97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+  [Terminal::UI] Command: tar -xvf ./97be0392703c0ef562b9092d0a52c2623157131c.tar.gz -C ../97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+  ===> Extraction [OK]: Terminal::UI to /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+  ===> Testing: Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/00-basic.rakutest
+  [Terminal::UI] 1..6
+  [Terminal::UI] ok 1 - Terminal::UI module can be use-d ok
+  [Terminal::UI] ok 2 - Terminal::UI::Screen module can be use-d ok
+  [Terminal::UI] ok 3 - Terminal::UI::Frame module can be use-d ok
+  [Terminal::UI] ok 4 - Terminal::UI::Pane module can be use-d ok
+  [Terminal::UI] ok 5 - Terminal::UI::Input module can be use-d ok
+  [Terminal::UI] ok 6 - Terminal::UI::Style module can be use-d ok
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/01-sizes.rakutest
+  [Terminal::UI] 1..41
+  [Terminal::UI] ok 1 - screen height
+  [Terminal::UI] ok 2 - screen rows
+  [Terminal::UI] ok 3 - top
+  [Terminal::UI] ok 4 - height
+  [Terminal::UI] ok 5 - height
+  [Terminal::UI] ok 6 - frame width
+  [Terminal::UI] ok 7 - pane top
+  [Terminal::UI] ok 8 - pane height
+  [Terminal::UI] ok 9 - pane left
+  [Terminal::UI] ok 10 - pane width
+  [Terminal::UI] ok 11 - full top is 1
+  [Terminal::UI] ok 12 - full has screen rows
+  [Terminal::UI] ok 13 - height 1
+  [Terminal::UI] ok 14 - height 2
+  [Terminal::UI] ok 15 - check is ok
+  [Terminal::UI] ok 16 - divider
+  [Terminal::UI] ok 17 - height 1
+  [Terminal::UI] ok 18 - check is ok
+  [Terminal::UI] ok 19 - height 1
+  [Terminal::UI] ok 20 - height 2
+  [Terminal::UI] ok 21 - height 3
+  [Terminal::UI] ok 22 - check is ok
+  [Terminal::UI] ok 23 - height 1
+  [Terminal::UI] ok 24 - height 2
+  [Terminal::UI] ok 25 - height 3
+  [Terminal::UI] ok 26 - check is ok
+  [Terminal::UI] ok 27 - height 1
+  [Terminal::UI] ok 28 - height 2
+  [Terminal::UI] ok 29 - height 3
+  [Terminal::UI] ok 30 - check is ok
+  [Terminal::UI] ok 31 - height 1
+  [Terminal::UI] ok 32 - height 2
+  [Terminal::UI] ok 33 - check is ok
+  [Terminal::UI] ok 34 - height 1
+  [Terminal::UI] ok 35 - height 2
+  [Terminal::UI] ok 36 - height 3
+  [Terminal::UI] ok 37 - check is ok
+  [Terminal::UI] ok 38 - height 1
+  [Terminal::UI] ok 39 - height 2
+  [Terminal::UI] ok 40 - height 3
+  [Terminal::UI] ok 41 - check is ok
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/02-screen.rakutest
+  [Terminal::UI] ok 1 - rows
+  [Terminal::UI] ok 2 - cols
+  [Terminal::UI] 1..2
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/03-pane.rakutest
+  [Terminal::UI] ok 1 - bottom
+  [Terminal::UI] ok 2 - right
+  [Terminal::UI] ok 3 - lines
+  [Terminal::UI] ok 4 - two lines
+  [Terminal::UI] ok 5 - scroll up
+  [Terminal::UI] ok 6 - word wrap with indent
+  [Terminal::UI] ok 7 - hard wrap with indent
+  [Terminal::UI] ok 8 - word wrap with hang
+  [Terminal::UI] 1..8
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/04-frame.rakutest
+  [Terminal::UI] ok 1 - full
+  [Terminal::UI] ok 2 - render
+  [Terminal::UI] 1..2
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/05-style.rakutest
+  [Terminal::UI] 1..2
+  [Terminal::UI] ok 1 - set a value
+  [Terminal::UI] ok 2 - singleton works
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/06-ui.rakutest
+  [Terminal::UI] ok 1 - height
+  [Terminal::UI] ok 2 - width
+  [Terminal::UI] ok 3 - top
+  [Terminal::UI] ok 4 - left
+  [Terminal::UI] ok 5 - render
+  [Terminal::UI] 1..5
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/07-alert.rakutest
+  [Terminal::UI] ok 1 - initial screen
+  [Terminal::UI] ok 2 - alert
+  [Terminal::UI] ok 3 - dismissed
+  [Terminal::UI] 1..3
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/08-resize.rakutest
+  [Terminal::UI] 1..2
+  [Terminal::UI] ok 1 - initial heights
+  [Terminal::UI] ok 2 - resize
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/09-print.rakutest
+  [Terminal::UI] 1..21
+  [Terminal::UI] ok 1 - prints characters to line
+  [Terminal::UI] ok 2 - newline moves to next line
+  [Terminal::UI] ok 3 - carriage return resets to start of line
+  [Terminal::UI] ok 4 - lines accumulate for scrollback
+  [Terminal::UI] ok 5 - can access historical lines
+  [Terminal::UI] ok 6 - escape sequences not stored in content
+  [Terminal::UI] ok 7 - print writes to last line
+  [Terminal::UI] ok 8 - first-visible updates when content exceeds height
+  [Terminal::UI] ok 9 - string with newlines splits correctly
+  [Terminal::UI] ok 10 - first line from batched string
+  [Terminal::UI] ok 11 - third line from batched string
+  [Terminal::UI] ok 12 - mixed string with carriage return
+  [Terminal::UI] ok 13 - stream handles basic text
+  [Terminal::UI] ok 14 - stream handles newlines
+  [Terminal::UI] ok 15 - stream first line correct
+  [Terminal::UI] ok 16 - stream filters ANSI sequences
+  [Terminal::UI] ok 17 - put then print creates two lines
+  [Terminal::UI] ok 18 - put creates first line
+  [Terminal::UI] ok 19 - print goes to second line after put
+  [Terminal::UI] ok 20 - two prints then put creates two lines
+  [Terminal::UI] ok 21 - prints combine on same line, put adds new line
+  ===> Testing [OK] for Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
+  ===> Installing: Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
+  ===> Install [OK] for Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 2min 16.251s
-               CPU time consumed: 2min 23.895s
-                     Memory peak: 1.5G (swap: 0B)
+                 Service runtime: 3min 22.734s
+               CPU time consumed: 3min 15.741s
+                     Memory peak: 1.5G (swap: 352.2M)
+
+  ```
+  </details>
+  <details>
+  <summary>New Output</summary>
+
+  ```
+  Running as unit: run-p1590392-i1655048.service; invocation ID: 366062cf33b342c6aac951274b994859
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: Terminal::UI
+  ===> Found: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> [via Zef::Repository::Ecosystems<fez>]
+  [Terminal::UI] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789822751.1590401.2324.265654825982/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz https://360.zef.pm/T/ER/TERMINAL_UI/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+  ===> Fetching [OK]: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> to /home/coke/sandbox/blin/data/zef-data/tmp/1789822751.1590401.2324.265654825982/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+  [Terminal::UI] Command: tar -t -f ./97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+  [Terminal::UI] Command: tar -xvf ./97be0392703c0ef562b9092d0a52c2623157131c.tar.gz -C ../97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+  ===> Extraction [OK]: Terminal::UI to /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+  ===> Testing: Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/00-basic.rakutest
+  [Terminal::UI] 1..6
+  [Terminal::UI] ok 1 - Terminal::UI module can be use-d ok
+  [Terminal::UI] ok 2 - Terminal::UI::Screen module can be use-d ok
+  [Terminal::UI] ok 3 - Terminal::UI::Frame module can be use-d ok
+  [Terminal::UI] ok 4 - Terminal::UI::Pane module can be use-d ok
+  [Terminal::UI] ok 5 - Terminal::UI::Input module can be use-d ok
+  [Terminal::UI] ok 6 - Terminal::UI::Style module can be use-d ok
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/01-sizes.rakutest
+  [Terminal::UI] 1..41
+  [Terminal::UI] ok 1 - screen height
+  [Terminal::UI] ok 2 - screen rows
+  [Terminal::UI] ok 3 - top
+  [Terminal::UI] ok 4 - height
+  [Terminal::UI] ok 5 - height
+  [Terminal::UI] ok 6 - frame width
+  [Terminal::UI] ok 7 - pane top
+  [Terminal::UI] ok 8 - pane height
+  [Terminal::UI] ok 9 - pane left
+  [Terminal::UI] ok 10 - pane width
+  [Terminal::UI] ok 11 - full top is 1
+  [Terminal::UI] ok 12 - full has screen rows
+  [Terminal::UI] ok 13 - height 1
+  [Terminal::UI] ok 14 - height 2
+  [Terminal::UI] ok 15 - check is ok
+  [Terminal::UI] ok 16 - divider
+  [Terminal::UI] ok 17 - height 1
+  [Terminal::UI] ok 18 - check is ok
+  [Terminal::UI] ok 19 - height 1
+  [Terminal::UI] ok 20 - height 2
+  [Terminal::UI] ok 21 - height 3
+  [Terminal::UI] ok 22 - check is ok
+  [Terminal::UI] ok 23 - height 1
+  [Terminal::UI] ok 24 - height 2
+  [Terminal::UI] ok 25 - height 3
+  [Terminal::UI] ok 26 - check is ok
+  [Terminal::UI] ok 27 - height 1
+  [Terminal::UI] ok 28 - height 2
+  [Terminal::UI] ok 29 - height 3
+  [Terminal::UI] ok 30 - check is ok
+  [Terminal::UI] ok 31 - height 1
+  [Terminal::UI] ok 32 - height 2
+  [Terminal::UI] ok 33 - check is ok
+  [Terminal::UI] ok 34 - height 1
+  [Terminal::UI] ok 35 - height 2
+  [Terminal::UI] ok 36 - height 3
+  [Terminal::UI] ok 37 - check is ok
+  [Terminal::UI] ok 38 - height 1
+  [Terminal::UI] ok 39 - height 2
+  [Terminal::UI] ok 40 - height 3
+  [Terminal::UI] ok 41 - check is ok
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/02-screen.rakutest
+  [Terminal::UI] ok 1 - rows
+  [Terminal::UI] ok 2 - cols
+  [Terminal::UI] 1..2
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/03-pane.rakutest
+  [Terminal::UI] ok 1 - bottom
+  [Terminal::UI] ok 2 - right
+  [Terminal::UI] ok 3 - lines
+  [Terminal::UI] ok 4 - two lines
+  [Terminal::UI] ok 5 - scroll up
+  [Terminal::UI] ok 6 - word wrap with indent
+  [Terminal::UI] ok 7 - hard wrap with indent
+  [Terminal::UI] ok 8 - word wrap with hang
+  [Terminal::UI] 1..8
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/04-frame.rakutest
+  [Terminal::UI] ok 1 - full
+  [Terminal::UI] ok 2 - render
+  [Terminal::UI] 1..2
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/05-style.rakutest
+  [Terminal::UI] 1..2
+  [Terminal::UI] ok 1 - set a value
+  [Terminal::UI] ok 2 - singleton works
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/06-ui.rakutest
+  [Terminal::UI] ok 1 - height
+  [Terminal::UI] ok 2 - width
+  [Terminal::UI] ok 3 - top
+  [Terminal::UI] ok 4 - left
+  [Terminal::UI] ok 5 - render
+  [Terminal::UI] 1..5
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/07-alert.rakutest
+  [Terminal::UI] ok 1 - initial screen
+  [Terminal::UI] not ok 2 - alert
+  [Terminal::UI] # Failed test 'alert'
+  [Terminal::UI] # at t/07-alert.rakutest line 45
+  [Terminal::UI] # expected: '"╔══════════════════╗\n║Hello!            ║\n║w╔══════════════╗ ║\n║ ║   ¡ALERT!    ║ ║\n║ ╟──────────────╢ ║\n║ ╢      ok      ║ ║\n║ ╚══════════════╝ ║\n║                  ║\n║                  ║\n╚══════════════════╝\n"'
+  [Terminal::UI] #      got: '"╔══════════════════╗\n║Hello!            ║\n║world             ║\n║                  ║\n║                  ║\n║                  ║\n║                  ║\n║                  ║\n║                  ║\n╚══════════════════╝\n"'
+  [Terminal::UI] no focused frame
+  [Terminal::UI]   in method focused at /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI.rakumod (Terminal::UI) line 80
+  [Terminal::UI]   in block <unit> at t/07-alert.rakutest line 58
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/08-resize.rakutest
+  [Terminal::UI] 1..2
+  [Terminal::UI] ok 1 - initial heights
+  [Terminal::UI] ok 2 - resize
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/09-print.rakutest
+  [Terminal::UI] 1..21
+  [Terminal::UI] ok 1 - prints characters to line
+  [Terminal::UI] ok 2 - newline moves to next line
+  [Terminal::UI] ok 3 - carriage return resets to start of line
+  [Terminal::UI] ok 4 - lines accumulate for scrollback
+  [Terminal::UI] ok 5 - can access historical lines
+  [Terminal::UI] ok 6 - escape sequences not stored in content
+  [Terminal::UI] ok 7 - print writes to last line
+  [Terminal::UI] ok 8 - first-visible updates when content exceeds height
+  [Terminal::UI] ok 9 - string with newlines splits correctly
+  [Terminal::UI] ok 10 - first line from batched string
+  [Terminal::UI] ok 11 - third line from batched string
+  [Terminal::UI] ok 12 - mixed string with carriage return
+  [Terminal::UI] ok 13 - stream handles basic text
+  [Terminal::UI] ok 14 - stream handles newlines
+  [Terminal::UI] ok 15 - stream first line correct
+  [Terminal::UI] ok 16 - stream filters ANSI sequences
+  [Terminal::UI] ok 17 - put then print creates two lines
+  [Terminal::UI] ok 18 - put creates first line
+  [Terminal::UI] ok 19 - print goes to second line after put
+  [Terminal::UI] ok 20 - two prints then put creates two lines
+  [Terminal::UI] ok 21 - prints combine on same line, put adds new line
+  ===> Testing [FAIL]: Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
+  [Terminal::UI] Failed to get passing tests, but continuing with --force-test
+  ===> Installing: Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
+  ===> Install [OK] for Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 2min 37.846s
+               CPU time consumed: 2min 43.995s
+                     Memory peak: 1.4G (swap: 130.5M)
+
+  ```
+  </details>
+* [ ] [LWP::Simple](https://raku.land/zef:dwarring/LWP::Simple) – Fail, Bisected: [cc07979](https://github.com/rakudo/rakudo/commit/cc07979788efe684d72f5cb8db5e3f3e4c4c2702)
+  <details><Summary>Old Output</summary>
+
+  ```
+  Running as unit: run-p1509829-i1460764.service; invocation ID: 006c7110a91844a69b686b716d314214
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: LWP::Simple
+  ===> Found: LWP::Simple:ver<0.109>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
+  [LWP::Simple] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789820684.1509831.5732.255640614567/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz https://360.zef.pm/L/WP/LWP_SIMPLE/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
+  ===> Fetching [OK]: LWP::Simple:ver<0.109>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1789820684.1509831.5732.255640614567/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
+  [LWP::Simple] Command: tar -t -f ./e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
+  [LWP::Simple] Command: tar -xvf ./e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz -C ../e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
+  ===> Extraction [OK]: LWP::Simple to /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
+  ===> Testing: LWP::Simple:ver<0.109>:auth<zef:dwarring>
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/000-load-module.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] ok 1 - LWP::Simple is loaded
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/basic-auth.t
+  [LWP::Simple] 1..9
+  [LWP::Simple] ok 1 - Scheme parsed correctly
+  [LWP::Simple] ok 2 - Hostname contains basic auth info
+  [LWP::Simple] ok 3 - HTTPS demands port 443
+  [LWP::Simple] ok 4 - Path extracted correctly
+  [LWP::Simple] ok 5 - Basic auth info extracted correctly: user
+  [LWP::Simple] ok 6 - Basic auth info extracted correctly: pass
+  [LWP::Simple] ok 7 - Basic auth info extracted correctly: hostname
+  [LWP::Simple] ok 8 - Base64 encoding works
+  [LWP::Simple] ok 9 - # SKIP  \#51 'www.software-path.com' not resolving
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/custom-headers-and-content.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] ok 1 - call to JSON-RPC service using headers and content params
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/delete-headers.t
+  [LWP::Simple] 1..2
+  [LWP::Simple] ok 1 - User agent header is sent by DELETE
+  [LWP::Simple] ok 2 - Accept header is sent by DELETE
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-404.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] # Subtest: did we throws-like LWP::Simple::X::LWP::Simple::Response?
+  [LWP::Simple]     1..3
+  [LWP::Simple]     ok 1 - code dies
+  [LWP::Simple]     ok 2 - right exception type (LWP::Simple::X::LWP::Simple::Response)
+  [LWP::Simple]     ok 3 - .status matches rx:i:s/404 Not Found/
+  [LWP::Simple] ok 1 - did we throws-like LWP::Simple::X::LWP::Simple::Response?
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-binary-camelia.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] 8090 68
+  [LWP::Simple] ok 1 - Fetched Camelia Logo
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-chunked-6guts.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] ok 1 - Pulled down whole chunked article
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-headers.t
+  [LWP::Simple] 1..4
+  [LWP::Simple] ok 1 - User agent header is sent by GET
+  [LWP::Simple] ok 2 - Accept header is sent by GET
+  [LWP::Simple] ok 3 - Response from PUT is correct
+  [LWP::Simple] ok 4 - Response case insensitive
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-perl6-org.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] ok 1 - homepage is downloaded and has "Herman" in it
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-unsized.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] ok 1 - we pulled whole document without sizing from misbehaved server [http://localhost:42153]
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-w3-latin1-utf8.t
+  [LWP::Simple] 1..2
+  [LWP::Simple] ok 1 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] ok 2 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-w3-redirect.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] ok 1 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/getstore.t
+  [LWP::Simple] 1..10
+  [LWP::Simple] ok 1 - getstore() returned success
+  [LWP::Simple] ok 2 - Opened file handle written by getstore()
+  [LWP::Simple] ok 3 - Found pattern in downloaded file
+  [LWP::Simple] ok 4 - Close the temporary file
+  [LWP::Simple] ok 5 - Delete the temporary file
+  [LWP::Simple] ok 6 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] ok 7 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] ok 8 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] ok 9 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] ok 10 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/head.t
+  [LWP::Simple] # Subtest: head fetched good content over HTTP
+  [LWP::Simple]     ok 1 - Content is correct
+  [LWP::Simple]     ok 2 - Server is correct
+  [LWP::Simple]     1..2
+  [LWP::Simple] ok 1 - head fetched good content over HTTP
+  [LWP::Simple] # IO::Socket::SSL not available, not testing https
+  [LWP::Simple] 1..1
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/issue-7.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] ok 1 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/parse-url.t
+  [LWP::Simple] 1..25
+  [LWP::Simple] ok 1 - Scheme for http://www.rakudo.org is http
+  [LWP::Simple] ok 2 - Hostname for http://www.rakudo.org is www.rakudo.org
+  [LWP::Simple] ok 3 - Port for http://www.rakudo.org is 80
+  [LWP::Simple] ok 4 - Path for http://www.rakudo.org is /
+  [LWP::Simple] ok 5 - Scheme for http://www.altavista.com:81 is http
+  [LWP::Simple] ok 6 - Hostname for http://www.altavista.com:81 is www.altavista.com
+  [LWP::Simple] ok 7 - Port for http://www.altavista.com:81 is 81
+  [LWP::Simple] ok 8 - Path for http://www.altavista.com:81 is /
+  [LWP::Simple] ok 9 - Scheme for https://www.rakudo.org/rakudo-latest.tar.bz2 is https
+  [LWP::Simple] ok 10 - Hostname for https://www.rakudo.org/rakudo-latest.tar.bz2 is www.rakudo.org
+  [LWP::Simple] ok 11 - Port for https://www.rakudo.org/rakudo-latest.tar.bz2 is 443
+  [LWP::Simple] ok 12 - Path for https://www.rakudo.org/rakudo-latest.tar.bz2 is /rakudo-latest.tar.bz2
+  [LWP::Simple] ok 13 - Scheme for http://www.c64.com/path/with/multiple/slashes/ is http
+  [LWP::Simple] ok 14 - Hostname for http://www.c64.com/path/with/multiple/slashes/ is www.c64.com
+  [LWP::Simple] ok 15 - Port for http://www.c64.com/path/with/multiple/slashes/ is 80
+  [LWP::Simple] ok 16 - Path for http://www.c64.com/path/with/multiple/slashes/ is /path/with/multiple/slashes/
+  [LWP::Simple] ok 17 - Scheme for ftp://get.opera.com/pub/opera/win/1054/en/Opera_1054_en_Setup.exe is ftp
+  [LWP::Simple] ok 18 - Hostname for ftp://get.opera.com/pub/opera/win/1054/en/Opera_1054_en_Setup.exe is get.opera.com
+  [LWP::Simple] ok 19 - Port for ftp://get.opera.com/pub/opera/win/1054/en/Opera_1054_en_Setup.exe is 21
+  [LWP::Simple] ok 20 - Path for ftp://get.opera.com/pub/opera/win/1054/en/Opera_1054_en_Setup.exe is /pub/opera/win/1054/en/Opera_1054_en_Setup.exe
+  [LWP::Simple] ok 21 - Scheme for http://tinyurl.com/api-create.php?url=http://digg.com is http
+  [LWP::Simple] ok 22 - Hostname for http://tinyurl.com/api-create.php?url=http://digg.com is tinyurl.com
+  [LWP::Simple] ok 23 - Port for http://tinyurl.com/api-create.php?url=http://digg.com is 80
+  [LWP::Simple] ok 24 - Path for http://tinyurl.com/api-create.php?url=http://digg.com is /api-create.php?url=http://digg.com
+  [LWP::Simple] ok 25 - port is returned as a Int, to avoid problems on sock.open()
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/put-request.t
+  [LWP::Simple] 1..2
+  [LWP::Simple] ok 1 - User agent header is sent by PUT
+  [LWP::Simple] ok 2 - Accept header is sent by PUT
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/stringify-headers.t
+  [LWP::Simple] 1..6
+  [LWP::Simple] ok 1 - OK - User-Agent: Opera/9.80 (WinNT; 6.0) Version/10.60
+  [LWP::Simple] ok 2 - OK - Connection: close
+  [LWP::Simple] ok 3 - Composite headers are stringified correctly
+  [LWP::Simple] ok 4 - Composite headers are stringified correctly
+  [LWP::Simple] ok 5 - Composite headers are stringified correctly
+  [LWP::Simple] ok 6 - Composite headers are stringified correctly
+  ===> Testing [OK] for LWP::Simple:ver<0.109>:auth<zef:dwarring>
+  ===> Installing: LWP::Simple:ver<0.109>:auth<zef:dwarring>
+  ===> Install [OK] for LWP::Simple:ver<0.109>:auth<zef:dwarring>
+
+  2 bin/ scripts [lwp-get.p6 lwp-download.p6] installed to:
+  /tmp/FDU7T6ifvm/bin
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 2min 28.527s
+               CPU time consumed: 2min 41.037s
+                     Memory peak: 1.7G (swap: 0B)
+
+  ```
+  </details>
+  <details>
+  <summary>New Output</summary>
+
+  ```
+  Running as unit: run-p1505539-i1529144.service; invocation ID: bb6712a6b3814bb39903766370b7d3e5
+  Press ^] three times within 1s to disconnect TTY.
+  ===> Searching for: LWP::Simple
+  ===> Found: LWP::Simple:ver<0.109>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
+  [LWP::Simple] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789820567.1505546.9783.958636409348/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz https://360.zef.pm/L/WP/LWP_SIMPLE/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
+  ===> Fetching [OK]: LWP::Simple:ver<0.109>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1789820567.1505546.9783.958636409348/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
+  [LWP::Simple] Command: tar -t -f ./e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
+  [LWP::Simple] Command: tar -xvf ./e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz -C ../e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
+  ===> Extraction [OK]: LWP::Simple to /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
+  ===> Testing: LWP::Simple:ver<0.109>:auth<zef:dwarring>
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/000-load-module.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] ok 1 - LWP::Simple is loaded
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/basic-auth.t
+  [LWP::Simple] 1..9
+  [LWP::Simple] ok 1 - Scheme parsed correctly
+  [LWP::Simple] ok 2 - Hostname contains basic auth info
+  [LWP::Simple] ok 3 - HTTPS demands port 443
+  [LWP::Simple] ok 4 - Path extracted correctly
+  [LWP::Simple] ok 5 - Basic auth info extracted correctly: user
+  [LWP::Simple] ok 6 - Basic auth info extracted correctly: pass
+  [LWP::Simple] ok 7 - Basic auth info extracted correctly: hostname
+  [LWP::Simple] ok 8 - Base64 encoding works
+  [LWP::Simple] ok 9 - # SKIP  \#51 'www.software-path.com' not resolving
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/custom-headers-and-content.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] ok 1 - call to JSON-RPC service using headers and content params
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/delete-headers.t
+  [LWP::Simple] 1..2
+  [LWP::Simple] ok 1 - User agent header is sent by DELETE
+  [LWP::Simple] ok 2 - Accept header is sent by DELETE
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-404.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] # Subtest: did we throws-like LWP::Simple::X::LWP::Simple::Response?
+  [LWP::Simple]     1..3
+  [LWP::Simple]     ok 1 - code dies
+  [LWP::Simple]     ok 2 - right exception type (LWP::Simple::X::LWP::Simple::Response)
+  [LWP::Simple]     ok 3 - .status matches rx:i:s/404 Not Found/
+  [LWP::Simple] ok 1 - did we throws-like LWP::Simple::X::LWP::Simple::Response?
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-binary-camelia.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] 8090 68
+  [LWP::Simple] ok 1 - Fetched Camelia Logo
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-chunked-6guts.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] ok 1 - Pulled down whole chunked article
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-headers.t
+  [LWP::Simple] 1..4
+  [LWP::Simple] ok 1 - User agent header is sent by GET
+  [LWP::Simple] ok 2 - Accept header is sent by GET
+  [LWP::Simple] Use of Nil in string context
+  [LWP::Simple]   in sub from-json at /home/coke/sandbox/blin/installed/JSON::Tiny_cpan:MORITZ_1.0_0/sources/E9ADAAC409BF6670CBBCBC429FCEFC52221E2DB8 (JSON::Tiny) line 57
+  [LWP::Simple] Use of Nil.chars coerced to empty string
+  [LWP::Simple]   in sub from-json at /home/coke/sandbox/blin/installed/JSON::Tiny_cpan:MORITZ_1.0_0/sources/E9ADAAC409BF6670CBBCBC429FCEFC52221E2DB8 (JSON::Tiny) line 57
+  [LWP::Simple] This type cannot unbox to a native integer: P6opaque, Str
+  [LWP::Simple]   in sub from-json at /home/coke/sandbox/blin/installed/JSON::Tiny_cpan:MORITZ_1.0_0/sources/E9ADAAC409BF6670CBBCBC429FCEFC52221E2DB8 (JSON::Tiny) line 57
+  [LWP::Simple]   in block <unit> at t/get-headers.t line 32
+  [LWP::Simple] # You planned 4 tests, but ran 2
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-perl6-org.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] ok 1 - homepage is downloaded and has "Herman" in it
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-unsized.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] ok 1 - we pulled whole document without sizing from misbehaved server [http://localhost:43721]
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-w3-latin1-utf8.t
+  [LWP::Simple] 1..2
+  [LWP::Simple] ok 1 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] ok 2 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-w3-redirect.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] ok 1 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/getstore.t
+  [LWP::Simple] 1..10
+  [LWP::Simple] ok 1 - getstore() returned success
+  [LWP::Simple] ok 2 - Opened file handle written by getstore()
+  [LWP::Simple] ok 3 - Found pattern in downloaded file
+  [LWP::Simple] ok 4 - Close the temporary file
+  [LWP::Simple] ok 5 - Delete the temporary file
+  [LWP::Simple] ok 6 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] ok 7 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] ok 8 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] ok 9 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] ok 10 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/head.t
+  [LWP::Simple] # Subtest: head fetched good content over HTTP
+  [LWP::Simple]     ok 1 - Content is correct
+  [LWP::Simple]     ok 2 - Server is correct
+  [LWP::Simple]     1..2
+  [LWP::Simple] ok 1 - head fetched good content over HTTP
+  [LWP::Simple] # IO::Socket::SSL not available, not testing https
+  [LWP::Simple] 1..1
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/issue-7.t
+  [LWP::Simple] 1..1
+  [LWP::Simple] ok 1 - # SKIP IO::Socket::SSL not available
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/parse-url.t
+  [LWP::Simple] 1..25
+  [LWP::Simple] ok 1 - Scheme for http://www.rakudo.org is http
+  [LWP::Simple] ok 2 - Hostname for http://www.rakudo.org is www.rakudo.org
+  [LWP::Simple] ok 3 - Port for http://www.rakudo.org is 80
+  [LWP::Simple] ok 4 - Path for http://www.rakudo.org is /
+  [LWP::Simple] ok 5 - Scheme for http://www.altavista.com:81 is http
+  [LWP::Simple] ok 6 - Hostname for http://www.altavista.com:81 is www.altavista.com
+  [LWP::Simple] ok 7 - Port for http://www.altavista.com:81 is 81
+  [LWP::Simple] ok 8 - Path for http://www.altavista.com:81 is /
+  [LWP::Simple] ok 9 - Scheme for https://www.rakudo.org/rakudo-latest.tar.bz2 is https
+  [LWP::Simple] ok 10 - Hostname for https://www.rakudo.org/rakudo-latest.tar.bz2 is www.rakudo.org
+  [LWP::Simple] ok 11 - Port for https://www.rakudo.org/rakudo-latest.tar.bz2 is 443
+  [LWP::Simple] ok 12 - Path for https://www.rakudo.org/rakudo-latest.tar.bz2 is /rakudo-latest.tar.bz2
+  [LWP::Simple] ok 13 - Scheme for http://www.c64.com/path/with/multiple/slashes/ is http
+  [LWP::Simple] ok 14 - Hostname for http://www.c64.com/path/with/multiple/slashes/ is www.c64.com
+  [LWP::Simple] ok 15 - Port for http://www.c64.com/path/with/multiple/slashes/ is 80
+  [LWP::Simple] ok 16 - Path for http://www.c64.com/path/with/multiple/slashes/ is /path/with/multiple/slashes/
+  [LWP::Simple] ok 17 - Scheme for ftp://get.opera.com/pub/opera/win/1054/en/Opera_1054_en_Setup.exe is ftp
+  [LWP::Simple] ok 18 - Hostname for ftp://get.opera.com/pub/opera/win/1054/en/Opera_1054_en_Setup.exe is get.opera.com
+  [LWP::Simple] ok 19 - Port for ftp://get.opera.com/pub/opera/win/1054/en/Opera_1054_en_Setup.exe is 21
+  [LWP::Simple] ok 20 - Path for ftp://get.opera.com/pub/opera/win/1054/en/Opera_1054_en_Setup.exe is /pub/opera/win/1054/en/Opera_1054_en_Setup.exe
+  [LWP::Simple] ok 21 - Scheme for http://tinyurl.com/api-create.php?url=http://digg.com is http
+  [LWP::Simple] ok 22 - Hostname for http://tinyurl.com/api-create.php?url=http://digg.com is tinyurl.com
+  [LWP::Simple] ok 23 - Port for http://tinyurl.com/api-create.php?url=http://digg.com is 80
+  [LWP::Simple] ok 24 - Path for http://tinyurl.com/api-create.php?url=http://digg.com is /api-create.php?url=http://digg.com
+  [LWP::Simple] ok 25 - port is returned as a Int, to avoid problems on sock.open()
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/put-request.t
+  [LWP::Simple] 1..2
+  [LWP::Simple] ok 1 - User agent header is sent by PUT
+  [LWP::Simple] ok 2 - Accept header is sent by PUT
+  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/stringify-headers.t
+  [LWP::Simple] 1..6
+  [LWP::Simple] ok 1 - OK - User-Agent: Opera/9.80 (WinNT; 6.0) Version/10.60
+  [LWP::Simple] ok 2 - OK - Connection: close
+  [LWP::Simple] ok 3 - Composite headers are stringified correctly
+  [LWP::Simple] ok 4 - Composite headers are stringified correctly
+  [LWP::Simple] ok 5 - Composite headers are stringified correctly
+  [LWP::Simple] ok 6 - Composite headers are stringified correctly
+  ===> Testing [FAIL]: LWP::Simple:ver<0.109>:auth<zef:dwarring>
+  [LWP::Simple] Failed to get passing tests, but continuing with --force-test
+  ===> Installing: LWP::Simple:ver<0.109>:auth<zef:dwarring>
+  ===> Install [OK] for LWP::Simple:ver<0.109>:auth<zef:dwarring>
+
+  2 bin/ scripts [lwp-get.p6 lwp-download.p6] installed to:
+  /home/coke/sandbox/blin/installed/LWP::Simple_zef:dwarring_0.109_0/bin
+            Finished with result: success
+  Main processes terminated with: code=exited, status=0/SUCCESS
+                 Service runtime: 2min 35ms
+               CPU time consumed: 2min 3.436s
+                     Memory peak: 1G (swap: 26.1M)
 
   ```
   </details>
@@ -677,12 +1687,12 @@
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p1259562-i1307805.service; invocation ID: ad82b994ed1b407c9a8c50da680af8d6
+  Running as unit: run-p1907902-i1960076.service; invocation ID: 848a0f3c87fe46489a8d44fdda9cac48
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: GIO
   ===> Found: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> [via Zef::Repository::Ecosystems<rea>]
-  [GIO] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789704621.1259563.8570.988910806222/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GIO/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
-  ===> Fetching [OK]: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789704621.1259563.8570.988910806222/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
+  [GIO] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789832055.1907909.9844.5096328511/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GIO/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
+  ===> Fetching [OK]: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789832055.1907909.9844.5096328511/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
   [GIO] Command: tar -t -f ./GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
   [GIO] Command: tar -xvf ./GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz -C ../GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
   ===> Extraction [OK]: GIO to /home/coke/sandbox/blin/data/zef-data/tmp/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
@@ -998,8 +2008,8 @@
   ===> Install [OK] for GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 3min 39.581s
-               CPU time consumed: 5min 2.989s
+                 Service runtime: 3min 40.172s
+               CPU time consumed: 5min 4.591s
                      Memory peak: 4G (swap: 0B)
 
   ```
@@ -1008,17 +2018,17 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p1259257-i1307749.service; invocation ID: 558be04a8d254ae68cc88a4c8c0c9761
+  Running as unit: run-p1907614-i1898375.service; invocation ID: 664d7dce2a814b14ab88a2ed25eafcbd
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: GIO
   ===> Found: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> [via Zef::Repository::Ecosystems<rea>]
-  [GIO] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789704598.1259258.9978.078735028874/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GIO/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
-  ===> Fetching [OK]: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789704598.1259258.9978.078735028874/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
+  [GIO] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789832033.1907615.1072.5320751207046/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GIO/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
+  ===> Fetching [OK]: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789832033.1907615.1072.5320751207046/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
   [GIO] Command: tar -t -f ./GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
   [GIO] Command: tar -xvf ./GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz -C ../GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
   ===> Extraction [OK]: GIO to /home/coke/sandbox/blin/data/zef-data/tmp/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
   ===> Testing: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1>
-  [GIO] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz/GIO-0.0.4 t/01-modules.t
+  [GIO] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz/GIO-0.0.4 t/01-modules.t
   [GIO] 1..294
   [GIO] ok 1 - GIO
   [GIO] ok 2 - GIO::AppInfoMonitor
@@ -1346,8 +2356,8 @@
 
             Finished with result: exit-code
   Main processes terminated with: code=exited, status=1/FAILURE
-                 Service runtime: 22.568s
-               CPU time consumed: 28.574s
+                 Service runtime: 21.728s
+               CPU time consumed: 28.618s
                      Memory peak: 2.2G (swap: 0B)
 
   ```
@@ -1356,12 +2366,12 @@
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p1134937-i1064134.service; invocation ID: 103febc063c341eea98c4bba052f59c4
+  Running as unit: run-p1780128-i1674989.service; invocation ID: 08a909cc478d4f7ca9f16d015b4b4ec3
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: GLib
   ===> Found: GLib:ver<0.0.11>:auth<cpan:CBWOOD> [via Zef::Repository::Ecosystems<rea>]
-  [GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789701147.1134944.9188.913109196386/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
-  ===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789701147.1134944.9188.913109196386/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  [GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789828007.1780137.5757.033423575804/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  ===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789828007.1780137.5757.033423575804/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [GLib] Command: tar -t -f ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [GLib] Command: tar -xvf ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz -C ../GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Extraction [OK]: GLib to /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
@@ -1633,14 +2643,14 @@
       class GLib::Class::Object;' in its own file (or otherwise avoid the
       package+same-named-class collision) to work the same way on either
       revision.
-      at /tmp/zXi1mSwCaD/sources/6CA058F1742AC15AF9A8D119F6535617F1C5EFF5 (GLib::Class::Object):103
+      at /tmp/kNnuty6YSA/sources/6CA058F1742AC15AF9A8D119F6535617F1C5EFF5 (GLib::Class::Object):103
       ------> class <HERE>GLib::Class::Object is export {
   ===> Install [OK] for GLib:ver<0.0.11>:auth<cpan:CBWOOD>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 16min 979ms
-               CPU time consumed: 15min 15.665s
-                     Memory peak: 2.3G (swap: 1.3G)
+                 Service runtime: 17min 28.073s
+               CPU time consumed: 16min 2.072s
+                     Memory peak: 2.4G (swap: 1.2G)
 
   ```
   </details>
@@ -1648,17 +2658,17 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p1128315-i1137166.service; invocation ID: 1306ba5213b34e47857a0f36fa91b306
+  Running as unit: run-p1773545-i1771631.service
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: GLib
   ===> Found: GLib:ver<0.0.11>:auth<cpan:CBWOOD> [via Zef::Repository::Ecosystems<rea>]
-  [GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789700956.1128325.7774.788904124121/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
-  ===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789700956.1128325.7774.788904124121/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  [GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789827822.1773556.8282.708071985038/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  ===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789827822.1773556.8282.708071985038/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [GLib] Command: tar -t -f ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [GLib] Command: tar -xvf ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz -C ../GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Extraction [OK]: GLib to /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Testing: GLib:ver<0.0.11>:auth<cpan:CBWOOD>
-  [GLib] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00-struct-sizes.t
+  [GLib] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00-struct-sizes.t
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00-struct-sizes.t
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs)
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Exceptions.pm6 (GLib::Raw::Exceptions)
@@ -1667,7 +2677,7 @@
   [GLib] ------>   method new (<HERE> :
   [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs):10
   [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00-struct-sizes.t:7
-  [GLib] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00b-class-struct-sizes.t
+  [GLib] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00b-class-struct-sizes.t
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00b-class-struct-sizes.t
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs)
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Exceptions.pm6 (GLib::Raw::Exceptions)
@@ -1676,7 +2686,7 @@
   [GLib] ------>   method new (<HERE> :
   [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs):10
   [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00b-class-struct-sizes.t:7
-  [GLib] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/01-modules.t
+  [GLib] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/01-modules.t
   [GLib] 1..174
   [GLib] ok 1 - GLib
   [GLib] ok 2 - GLib::Array
@@ -1885,9 +2895,9 @@
 
             Finished with result: exit-code
   Main processes terminated with: code=exited, status=1/FAILURE
-                 Service runtime: 2min 49.504s
-               CPU time consumed: 2min 42.232s
-                     Memory peak: 2.4G (swap: 324.6M)
+                 Service runtime: 2min 57.707s
+               CPU time consumed: 2min 46.490s
+                     Memory peak: 2.2G (swap: 697.4M)
 
   ```
   </details>
@@ -1895,12 +2905,12 @@
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p1273930-i1261135.service; invocation ID: 95b57e40193f410f80b102c73cfa5715
+  Running as unit: run-p1928613-i1979044.service; invocation ID: 6b92eebcc58c4e15950a6bf27bc70c13
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: JSON::GLib::Node
   ===> Found: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> [via Zef::Repository::Ecosystems<rea>]
-  [JSON::GLib::Node] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789706480.1273931.9885.270775139752/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/J/JSON%3A%3AGLib%3A%3ANode/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
-  ===> Fetching [OK]: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789706480.1273931.9885.270775139752/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  [JSON::GLib::Node] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789834713.1928614.5822.534891646494/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/J/JSON%3A%3AGLib%3A%3ANode/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  ===> Fetching [OK]: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789834713.1928614.5822.534891646494/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [JSON::GLib::Node] Command: tar -t -f ./JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [JSON::GLib::Node] Command: tar -xvf ./JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz -C ../JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Extraction [OK]: JSON::GLib::Node to /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
@@ -1941,8 +2951,8 @@
   ===> Install [OK] for JSON::GLib::Node:ver<0.0.1>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 1min 44.034s
-               CPU time consumed: 2min 27.692s
+                 Service runtime: 1min 44.627s
+               CPU time consumed: 2min 28.637s
                      Memory peak: 3.1G (swap: 0B)
 
   ```
@@ -1951,17 +2961,17 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p1273782-i1327913.service; invocation ID: 04011309cbe04caaa411422dfed57c9b
+  Running as unit: run-p1928466-i1979015.service; invocation ID: 4100d7cbfc5a4884a73495082830f3f5
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: JSON::GLib::Node
   ===> Found: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> [via Zef::Repository::Ecosystems<rea>]
-  [JSON::GLib::Node] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789706461.1273783.5383.203910326105/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/J/JSON%3A%3AGLib%3A%3ANode/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
-  ===> Fetching [OK]: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789706461.1273783.5383.203910326105/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  [JSON::GLib::Node] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789834693.1928467.125.87088524240953/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/J/JSON%3A%3AGLib%3A%3ANode/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  ===> Fetching [OK]: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789834693.1928467.125.87088524240953/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [JSON::GLib::Node] Command: tar -t -f ./JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [JSON::GLib::Node] Command: tar -xvf ./JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz -C ../JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Extraction [OK]: JSON::GLib::Node to /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Testing: JSON::GLib::Node:ver<0.0.1>
-  [JSON::GLib::Node] Command: /tmp/whateverable/rakudo-moar/7a3abc5ababa5842e6346438d5e0675f2599ecb3/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/JSON-GLib-Node-0.0.1 t/01-basic.t
+  [JSON::GLib::Node] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/JSON-GLib-Node-0.0.1 t/01-basic.t
   [JSON::GLib::Node] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/JSON-GLib-Node-0.0.1/t/01-basic.t
   [JSON::GLib::Node] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/JSON-GLib-Node-0.0.1/lib/JSON/GLib/Array.pm6 (JSON::GLib::Array)
   [JSON::GLib::Node] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/0C336C09131938C526DC4C924AD2A0CDE35A600C (GLib::GList)
@@ -2007,8 +3017,8 @@
 
             Finished with result: exit-code
   Main processes terminated with: code=exited, status=1/FAILURE
-                 Service runtime: 19.699s
-               CPU time consumed: 26.356s
+                 Service runtime: 19.230s
+               CPU time consumed: 25.635s
                      Memory peak: 2.1G (swap: 0B)
 
   ```
@@ -2019,18 +3029,18 @@
 | Status                    | Count |          Modules          |
 | :------------------------ | :---: | :------------------------ |
 | UnhandledException        |     1 | [Foo:: Foo](https://raku.land/github:AlexDaniel/Foo:: Foo) |
-| Flapper                   |     1 | [Proc::Q](https://raku.land//Proc::Q) |
-| Fail                      |     5 | [GIO](https://raku.land/cpan:CBWOOD/GIO) [GLib](https://raku.land/cpan:CBWOOD/GLib) [JSON::GLib::Node](https://raku.land/cpan:CBWOOD/JSON::GLib::Node) [Polyglot::Regexen](https://raku.land/zef:guifa/Polyglot::Regexen) [Terminal::UI](https://raku.land/zef:bduggan/Terminal::UI) |
+| Flapper                   |     2 | [MCP](https://raku.land/zef:wkusnierczyk/MCP) [Stomp](https://raku.land/zef:raku-community-modules/Stomp) |
+| Fail                      |     8 | [DAWG](https://raku.land/zef:slavenskoj/DAWG) [FontConfig](https://raku.land/zef:dwarring/FontConfig) [GIO](https://raku.land/cpan:CBWOOD/GIO) [GLib](https://raku.land/cpan:CBWOOD/GLib) [JSON::GLib::Node](https://raku.land/cpan:CBWOOD/JSON::GLib::Node) [LWP::Simple](https://raku.land/zef:dwarring/LWP::Simple) [Polyglot::Regexen](https://raku.land/zef:guifa/Polyglot::Regexen) [Terminal::UI](https://raku.land/zef:bduggan/Terminal::UI) |
 | InstallableButUntested    |    10 | [HTTP::Server::Async](https://raku.land/zef:raku-community-modules/HTTP::Server::Async) [IO::Socket::Async::SSL](https://raku.land/zef:raku-community-modules/IO::Socket::Async::SSL) [IRC::Client](https://raku.land/zef:lizmat/IRC::Client) [Log::Minimal](https://raku.land//Log::Minimal) [Russian](https://raku.land/zef:slavenskoj/Russian) [Text::Markdown::Discount](https://raku.land/github:hartenfels/Text::Markdown::Discount) [Time::Duration](https://raku.land/zef:masukomi/Time::Duration) [Toaster](https://raku.land//Toaster) [Uzu](https://raku.land/cpan:SACOMO/Uzu) [Web::Scraper](https://raku.land/zef:tony-o/Web::Scraper) |
 | MissingDependency         |    11 | [App::Ebread](https://raku.land/zef:samy/App::Ebread) [App::Perl6LangServer](https://raku.land/cpan:AZAWAWI/App::Perl6LangServer) [Chemistry::Elements](https://raku.land/github:briandfoy/Chemistry::Elements) [DBIx::NamedQueries](https://raku.land/cpan:MZIESCHA/DBIx::NamedQueries) [Ethelia](https://raku.land/zef:knarkhov/Ethelia) [Learn::Raku::With](https://raku.land/zef:codesections/Learn::Raku::With) [META6::To::Man](https://raku.land/cpan:TBROWDER/META6::To::Man) [Pakku](https://raku.land/zef:hythm/Pakku) [Perl6::Tracer](https://raku.land/github:jaffa4/Perl6::Tracer) [Task::Galaxy](https://raku.land//Task::Galaxy) [Touch](https://raku.land/zef:rir/Touch) |
-| ZefFailure                |    13 | [BDD::Behave](https://raku.land/zef:gdonald/BDD::Behave) [Concurrent::BoundedChannel](https://raku.land/zef:raku-community-modules/Concurrent::BoundedChannel) [Cro::RPC::JSON](https://raku.land/zef:vrurg/Cro::RPC::JSON) [Cro::ZeroMQ](https://raku.land/cpan:JNTHN/Cro::ZeroMQ) [Gnome::Gtk4](https://raku.land/zef:martimm/Gnome::Gtk4) [ParaSeq](https://raku.land/zef:lizmat/ParaSeq) [Proc::ZMQed](https://raku.land/zef:antononcube/Proc::ZMQed) [Sitemap](https://raku.land/zef:sasha/Sitemap) [Syndicate](https://raku.land/zef:sasha/Syndicate) [TXN](https://raku.land//TXN) [TXN::Parser](https://raku.land//TXN::Parser) [TXN::Remarshal](https://raku.land//TXN::Remarshal) [cro](https://raku.land/zef:cro/cro) |
+| ZefFailure                |    13 | [BDD::Behave](https://raku.land/zef:gdonald/BDD::Behave) [Cro::RPC::JSON](https://raku.land/zef:vrurg/Cro::RPC::JSON) [Gnome::Gtk4](https://raku.land/zef:martimm/Gnome::Gtk4) [MongoDB](https://raku.land/cpan:MARTIMM/MongoDB) [ParaSeq](https://raku.land/zef:lizmat/ParaSeq) [Proc::ZMQed](https://raku.land/zef:antononcube/Proc::ZMQed) [Sitemap](https://raku.land/zef:sasha/Sitemap) [Syndicate](https://raku.land/zef:sasha/Syndicate) [TXN](https://raku.land//TXN) [TXN::Parser](https://raku.land//TXN::Parser) [TXN::Remarshal](https://raku.land//TXN::Remarshal) [WAT](https://raku.land/zef:nige123/WAT) [cro](https://raku.land/zef:cro/cro) |
 | CyclicDependency          |    48 | ⋯                         |
 | AlwaysFail                |   781 | ⋯                         |
-| OK                        |  1661 | ⋯                         |
+| OK                        |  1657 | ⋯                         |
 
 
 
-This run started on 2026-09-18T04:54:25Z and finished in ≈5 hours.
+This run started on 2026-09-19T16:38:08Z and finished in ≈5 hours.
 
 <!--
 Graph of bisected modules and their dependencies:

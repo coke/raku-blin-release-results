@@ -1,0 +1,180 @@
+Running as unit: run-p1464118-i1427574.service
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: DAWG
+===> Found: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1> [via Zef::Repository::Ecosystems<fez>]
+[DAWG] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789819438.1464119.3739.4017883913057/48669da30db3d18158aea0a50e9cab840208a319.tar.gz https://360.zef.pm/D/AW/DAWG/48669da30db3d18158aea0a50e9cab840208a319.tar.gz
+===> Fetching [OK]: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789819438.1464119.3739.4017883913057/48669da30db3d18158aea0a50e9cab840208a319.tar.gz
+[DAWG] Command: tar -t -f ./48669da30db3d18158aea0a50e9cab840208a319.tar.gz
+[DAWG] Command: tar -xvf ./48669da30db3d18158aea0a50e9cab840208a319.tar.gz -C ../48669da30db3d18158aea0a50e9cab840208a319.tar.gz
+===> Extraction [OK]: DAWG to /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz
+===> Testing: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
+[DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/01-basic.rakutest
+[DAWG] 1..15
+[DAWG] ok 1 - Can create DAWG instance
+[DAWG] ok 2 - Can add word without value
+[DAWG] ok 3 - Can add word with value
+[DAWG] ok 4 - Can add word with complex value
+[DAWG] ok 5 - Contains added word
+[DAWG] ok 6 - Does not contain non-added word
+[DAWG] ok 7 - Lookup returns result
+[DAWG] ok 8 - Lookup returns correct word
+[DAWG] ok 9 - Lookup returns correct value
+[DAWG] ok 10 - Prefix search returns correct count
+[DAWG] ok 11 - Prefix search includes exact match
+[DAWG] ok 12 - Prefix search includes longer words
+[DAWG] DAWG minimized: 14 nodes, 13 edges
+[DAWG] ok 13 - Can minimize DAWG
+[DAWG] ok 14 - Stats reports nodes
+[DAWG] ok 15 - Stats reports minimized state
+[DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/02-serialization.rakutest
+[DAWG] 1..8
+[DAWG] DAWG minimized: 14 nodes, 13 edges
+[DAWG] ok 1 - Can save DAWG in binary format
+[DAWG] ok 2 - Save file exists
+[DAWG] ok 3 - Can load DAWG
+[DAWG] ok 4 - Loaded DAWG exists
+[DAWG] ok 5 - Loaded DAWG contains original words
+[DAWG] ok 6 - Loaded DAWG preserves values
+[DAWG] ok 7 - Loaded DAWG prefix search works
+[DAWG] ok 8 - Temp file cleaned up
+[DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/03-binary.rakutest
+[DAWG] 1..12
+[DAWG] DAWG minimized: 20 nodes, 19 edges
+[DAWG] ok 1 - Can save DAWG in binary format
+[DAWG] ok 2 - Binary file exists
+[DAWG] ok 3 - Binary file has correct magic number
+[DAWG] ok 4 - Can load binary DAWG
+[DAWG] ok 5 - Loaded DAWG exists
+[DAWG] ok 6 - Loaded DAWG contains original words
+[DAWG] ok 7 - Loaded DAWG preserves values
+[DAWG] ok 8 - Loaded DAWG prefix search works
+[DAWG] ok 9 - Can load DAWG using memory mapping
+[DAWG] ok 10 - Memory-mapped DAWG contains original words
+[DAWG] ok 11 - Memory-mapped DAWG preserves values
+[DAWG] ok 12 - Can close memory-mapped DAWG
+[DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/04-edge-cases.rakutest
+[DAWG] 1..20
+[DAWG] DAWG minimized: 1 nodes, 0 edges
+[DAWG] ok 1 - Empty DAWG contains nothing
+[DAWG] ok 2 - Empty DAWG has no prefixes
+[DAWG] ok 3 - Empty DAWG lookup returns Nil
+[DAWG] DAWG minimized: 4 nodes, 3 edges
+[DAWG] ok 4 - Contains single character
+[DAWG] ok 5 - Single character lookup works
+[DAWG] ok 6 - Empty prefix returns all words
+[DAWG] DAWG minimized: 15 nodes, 14 edges
+[DAWG] ok 7 - Contains Cyrillic word
+[DAWG] ok 8 - Contains Chinese word
+[DAWG] ok 9 - Contains Arabic word
+[DAWG] ok 10 - Contains emoji
+[DAWG] ok 11 - Unicode lookup preserves value
+[DAWG] DAWG minimized: 5 nodes, 4 edges
+[DAWG] ok 12 - Duplicate word overwrites value
+[DAWG] DAWG minimized: 1001 nodes, 1000 edges
+[DAWG] ok 13 - Contains very long word
+[DAWG] ok 14 - Long word lookup works
+[DAWG] DAWG minimized: 9 nodes, 10 edges
+[DAWG] ok 15 - Find all words with common prefix
+[DAWG] ok 16 - Results include exact match
+[DAWG] ok 17 - Results include longer match
+[DAWG] DAWG minimized: 30 nodes, 29 edges
+[DAWG] ok 18 - Contains hyphenated word
+[DAWG] ok 19 - Contains word with space
+[DAWG] ok 20 - Special character lookup works
+[DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/05-performance.rakutest
+[DAWG] 1..10
+[DAWG] DAWG minimized: 376 nodes, 375 edges
+[DAWG] ok 1 - Minimization completes in reasonable time (<5s, actual: 0.162s)
+[DAWG] ok 2 - Good compression ratio (nodes: 376, words: ~1000)
+[DAWG] ok 3 - DAWG is minimized
+[DAWG] ok 4 - Fast lookups (<1ms, actual: 0.08ms)
+[DAWG] ok 5 - Binary save is fast (<1s, actual: 0.238s)
+[DAWG] ok 6 - Binary file size is reasonable (<1MB, actual: 29.8KB)
+[DAWG] ok 7 - Binary load is fast (<1s, actual: 0.138s)
+[DAWG] not ok 8 - Memory-mapped load is very fast (<100ms, actual: 101.93ms)
+[DAWG] # Failed test 'Memory-mapped load is very fast (<100ms, actual: 101.93ms)'
+[DAWG] # at t/05-performance.rakutest line 1
+[DAWG] ok 9 - Binary loaded DAWG works correctly
+[DAWG] ok 10 - Memory-mapped DAWG works correctly
+[DAWG] # You failed 1 test of 10
+[DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/06-node-ids.rakutest
+[DAWG] 1..12
+[DAWG] ok 1 - Root node has an ID
+[DAWG] ok 2 - Root node ID is 0
+[DAWG] ok 3 - Can retrieve root by ID
+[DAWG] ok 4 - Child node has ID
+[DAWG] ok 5 - Child node ID is greater than 0
+[DAWG] ok 6 - Can retrieve node by ID
+[DAWG] ok 7 - Retrieved node is the same object
+[DAWG] DAWG minimized: 6 nodes, 6 edges
+[DAWG] ok 8 - Root ID exists after minimization
+[DAWG] ok 9 - Node ID map rebuilt after minimization
+[DAWG] ok 10 - Can get root after minimization
+[DAWG] ok 11 - Child nodes have IDs after minimization
+[DAWG] ok 12 - Invalid ID returns undefined
+[DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/07-subtree-stats.rakutest
+[DAWG] 1..10
+[DAWG] DAWG minimized: 12 nodes, 15 edges
+[DAWG] ok 1 - Root has correct word count
+[DAWG] ok 2 - Root depth is 0
+[DAWG] ok 3 - Prefix "a" has 3 words
+[DAWG] ok 4 - Node "a" is at depth 1
+[DAWG] ok 5 - Prefix "d" has 3 words
+[DAWG] ok 6 - Prefix "do" has 3 words
+[DAWG] ok 7 - Node "do" is at depth 2
+[DAWG] ok 8 - Node "dog" is terminal
+[DAWG] ok 9 - Prefix "dog" has 3 words
+[DAWG] ok 10 - Node "a" is terminal
+[DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/08-pattern-matching.rakutest
+[DAWG] 1..20
+[DAWG] DAWG minimized: 25 nodes, 32 edges
+[DAWG] ok 1 - Pattern "c?t" matches "cat"
+[DAWG] ok 2 - Pattern "ca?" matches "car" and "cat"
+[DAWG] ok 3 - Pattern "?ar" matches "car"
+[DAWG] ok 4 - Pattern "c??" matches 3-letter words starting with c
+[DAWG] ok 5 - Pattern "???" matches all 3-letter words
+[DAWG] ok 6 - Pattern "ca*" matches all words starting with "ca"
+[DAWG] ok 7 - Pattern "app*" matches all words starting with "app"
+[DAWG] ok 8 - Pattern "*at" matches words ending with "at"
+[DAWG] ok 9 - Pattern "*tion" matches words ending with "tion"
+[DAWG] ok 10 - Pattern "c*t" matches words starting with "c" and ending with "t"
+[DAWG] ok 11 - Pattern "c*e" matches "care"
+[DAWG] ok 12 - Pattern "c?r*" matches correctly
+[DAWG] ok 13 - Pattern "*a?" matches words with "a" as second-to-last char
+[DAWG] ok 14 - Pattern "c*a*" matches words with "c" then "a"
+[DAWG] ok 15 - Pattern with no matches returns empty
+[DAWG] ok 16 - Pattern "?????" matches 5-letter words
+[DAWG] ok 17 - Exact pattern "dog" matches only "dog"
+[DAWG] ok 18 - Empty pattern returns no matches
+[DAWG] ok 19 - Pattern "*" matches all words
+[DAWG] ok 20 - Pattern "**" matches all words
+[DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/09-fuzzy-search.rakutest
+[DAWG] 1..18
+[DAWG] DAWG minimized: 21 nodes, 29 edges
+[DAWG] ok 1 - Exact match returns one result
+[DAWG] ok 2 - Exact match is correct
+[DAWG] ok 3 - Distance is 0 for exact match
+[DAWG] ok 4 - Found "cat" from "cot" (1 substitution)
+[DAWG] ok 5 - Found "dot" from "cot" (1 substitution)
+[DAWG] ok 6 - Found "cat" from "ct" (1 deletion)
+[DAWG] ok 7 - Found "car" from "cart" (1 insertion)
+[DAWG] ok 8 - Found "card" from "cart" (1 substitution)
+[DAWG] ok 9 - Found "apple" from "aple" (1 insertion)
+[DAWG] ok 10 - Found "world" from "wrld" (1 insertion)
+[DAWG] ok 11 - No matches for "xyz" within distance 1
+[DAWG] ok 12 - Found matches for "cars"
+[DAWG] ok 13 - Results are sorted by distance
+[DAWG] ok 14 - Empty string matches 3-letter words
+[DAWG] ok 15 - Empty string matches 3-letter words
+[DAWG] ok 16 - Large distance threshold returns many matches
+[DAWG] ok 17 - Fuzzy search is case-sensitive
+[DAWG] ok 18 - Exact match is lowercase
+===> Testing [FAIL]: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
+[DAWG] Failed to get passing tests, but continuing with --force-test
+===> Installing: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
+===> Install [OK] for DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 2min 31.946s
+             CPU time consumed: 2min 38.244s
+                   Memory peak: 1.3G (swap: 5.6M)
