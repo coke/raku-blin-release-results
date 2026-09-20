@@ -1,14 +1,14 @@
-Running as unit: run-p1590392-i1655048.service; invocation ID: 366062cf33b342c6aac951274b994859
+Running as unit: run-p2231541-i2294492.service
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Terminal::UI
 ===> Found: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> [via Zef::Repository::Ecosystems<fez>]
-[Terminal::UI] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789822751.1590401.2324.265654825982/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz https://360.zef.pm/T/ER/TERMINAL_UI/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
-===> Fetching [OK]: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> to /home/coke/sandbox/blin/data/zef-data/tmp/1789822751.1590401.2324.265654825982/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+[Terminal::UI] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789875451.2231552.2759.5564539295824/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz https://360.zef.pm/T/ER/TERMINAL_UI/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+===> Fetching [OK]: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> to /home/coke/sandbox/blin/data/zef-data/tmp/1789875451.2231552.2759.5564539295824/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
 [Terminal::UI] Command: tar -t -f ./97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
 [Terminal::UI] Command: tar -xvf ./97be0392703c0ef562b9092d0a52c2623157131c.tar.gz -C ../97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
 ===> Extraction [OK]: Terminal::UI to /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
 ===> Testing: Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
-[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/00-basic.rakutest
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/00-basic.rakutest
 [Terminal::UI] 1..6
 [Terminal::UI] ok 1 - Terminal::UI module can be use-d ok
 [Terminal::UI] ok 2 - Terminal::UI::Screen module can be use-d ok
@@ -16,7 +16,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Terminal::UI] ok 4 - Terminal::UI::Pane module can be use-d ok
 [Terminal::UI] ok 5 - Terminal::UI::Input module can be use-d ok
 [Terminal::UI] ok 6 - Terminal::UI::Style module can be use-d ok
-[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/01-sizes.rakutest
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/01-sizes.rakutest
 [Terminal::UI] 1..41
 [Terminal::UI] ok 1 - screen height
 [Terminal::UI] ok 2 - screen rows
@@ -59,11 +59,11 @@ Press ^] three times within 1s to disconnect TTY.
 [Terminal::UI] ok 39 - height 2
 [Terminal::UI] ok 40 - height 3
 [Terminal::UI] ok 41 - check is ok
-[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/02-screen.rakutest
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/02-screen.rakutest
 [Terminal::UI] ok 1 - rows
 [Terminal::UI] ok 2 - cols
 [Terminal::UI] 1..2
-[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/03-pane.rakutest
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/03-pane.rakutest
 [Terminal::UI] ok 1 - bottom
 [Terminal::UI] ok 2 - right
 [Terminal::UI] ok 3 - lines
@@ -73,36 +73,36 @@ Press ^] three times within 1s to disconnect TTY.
 [Terminal::UI] ok 7 - hard wrap with indent
 [Terminal::UI] ok 8 - word wrap with hang
 [Terminal::UI] 1..8
-[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/04-frame.rakutest
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/04-frame.rakutest
 [Terminal::UI] ok 1 - full
 [Terminal::UI] ok 2 - render
 [Terminal::UI] 1..2
-[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/05-style.rakutest
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/05-style.rakutest
 [Terminal::UI] 1..2
 [Terminal::UI] ok 1 - set a value
 [Terminal::UI] ok 2 - singleton works
-[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/06-ui.rakutest
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/06-ui.rakutest
 [Terminal::UI] ok 1 - height
 [Terminal::UI] ok 2 - width
 [Terminal::UI] ok 3 - top
 [Terminal::UI] ok 4 - left
 [Terminal::UI] ok 5 - render
 [Terminal::UI] 1..5
-[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/07-alert.rakutest
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/07-alert.rakutest
 [Terminal::UI] ok 1 - initial screen
 [Terminal::UI] not ok 2 - alert
 [Terminal::UI] # Failed test 'alert'
 [Terminal::UI] # at t/07-alert.rakutest line 45
 [Terminal::UI] # expected: '"╔══════════════════╗\n║Hello!            ║\n║w╔══════════════╗ ║\n║ ║   ¡ALERT!    ║ ║\n║ ╟──────────────╢ ║\n║ ╢      ok      ║ ║\n║ ╚══════════════╝ ║\n║                  ║\n║                  ║\n╚══════════════════╝\n"'
-[Terminal::UI] #      got: '"╔══════════════════╗\n║Hello!            ║\n║world             ║\n║                  ║\n║                  ║\n║                  ║\n║                  ║\n║                  ║\n║                  ║\n╚══════════════════╝\n"'
-[Terminal::UI] no focused frame
-[Terminal::UI]   in method focused at /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI.rakumod (Terminal::UI) line 80
-[Terminal::UI]   in block <unit> at t/07-alert.rakutest line 58
-[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/08-resize.rakutest
+[Terminal::UI] #      got: '"╔══════════════════╗\n║Hello!            ║\n║w╔══════════════╗ ║\n║ ║   ¡ALERT!    ║ ║\n║ ║              ║ ║\n║ ║      ok      ║ ║\n║ ╚══════════════╝ ║\n║                  ║\n║                  ║\n╚══════════════════╝\n"'
+[Terminal::UI] ok 3 - dismissed
+[Terminal::UI] 1..3
+[Terminal::UI] # You failed 1 test of 3
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/08-resize.rakutest
 [Terminal::UI] 1..2
 [Terminal::UI] ok 1 - initial heights
 [Terminal::UI] ok 2 - resize
-[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/09-print.rakutest
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/09-print.rakutest
 [Terminal::UI] 1..21
 [Terminal::UI] ok 1 - prints characters to line
 [Terminal::UI] ok 2 - newline moves to next line
@@ -131,6 +131,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 2min 37.846s
-             CPU time consumed: 2min 43.995s
-                   Memory peak: 1.4G (swap: 130.5M)
+               Service runtime: 2min 33.816s
+             CPU time consumed: 2min 40.891s
+                   Memory peak: 1.2G (swap: 136.1M)

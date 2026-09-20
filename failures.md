@@ -1,185 +1,231 @@
-[Blin](https://github.com/Raku/Blin) results between 2026.08 ([24e6e53](https://github.com/rakudo/rakudo/commit/24e6e5312f2868680413b0597aef8772f6b5bcea)) and 7ded5ff7de ([7ded5ff](https://github.com/rakudo/rakudo/commit/7ded5ff7de2c55911b07e909d1daa968255bc96b)):
+[Blin](https://github.com/Raku/Blin) results between 2026.08 ([24e6e53](https://github.com/rakudo/rakudo/commit/24e6e5312f2868680413b0597aef8772f6b5bcea)) and be8107f365 ([be8107f](https://github.com/rakudo/rakudo/commit/be8107f365b15e3b75859bd093302ba5a39f28ab)):
 
-* [ ] [DAWG](https://raku.land/zef:slavenskoj/DAWG) – Fail, Bisected: [495ddcb](https://github.com/rakudo/rakudo/commit/495ddcb96c3989406326e3372653243992a2ac6e)
+* [ ] [Stomp](https://raku.land/zef:raku-community-modules/Stomp) – Fail, Bisected: [29d41e0](https://github.com/rakudo/rakudo/commit/29d41e01f80b6fc67bb4a2472987de0c9ff580c9)
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p1469728-i1415666.service; invocation ID: 67d6dbe3e4df493a8139a28dedde1b50
+  Running as unit: run-p2187094-i2228772.service
   Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: DAWG
-  ===> Found: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1> [via Zef::Repository::Ecosystems<fez>]
-  [DAWG] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789819591.1469729.1662.5582914063941/48669da30db3d18158aea0a50e9cab840208a319.tar.gz https://360.zef.pm/D/AW/DAWG/48669da30db3d18158aea0a50e9cab840208a319.tar.gz
-  ===> Fetching [OK]: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789819591.1469729.1662.5582914063941/48669da30db3d18158aea0a50e9cab840208a319.tar.gz
-  [DAWG] Command: tar -t -f ./48669da30db3d18158aea0a50e9cab840208a319.tar.gz
-  [DAWG] Command: tar -xvf ./48669da30db3d18158aea0a50e9cab840208a319.tar.gz -C ../48669da30db3d18158aea0a50e9cab840208a319.tar.gz
-  ===> Extraction [OK]: DAWG to /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz
-  ===> Testing: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/01-basic.rakutest
-  [DAWG] 1..15
-  [DAWG] ok 1 - Can create DAWG instance
-  [DAWG] ok 2 - Can add word without value
-  [DAWG] ok 3 - Can add word with value
-  [DAWG] ok 4 - Can add word with complex value
-  [DAWG] ok 5 - Contains added word
-  [DAWG] ok 6 - Does not contain non-added word
-  [DAWG] ok 7 - Lookup returns result
-  [DAWG] ok 8 - Lookup returns correct word
-  [DAWG] ok 9 - Lookup returns correct value
-  [DAWG] ok 10 - Prefix search returns correct count
-  [DAWG] ok 11 - Prefix search includes exact match
-  [DAWG] ok 12 - Prefix search includes longer words
-  [DAWG] DAWG minimized: 14 nodes, 13 edges
-  [DAWG] ok 13 - Can minimize DAWG
-  [DAWG] ok 14 - Stats reports nodes
-  [DAWG] ok 15 - Stats reports minimized state
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/02-serialization.rakutest
-  [DAWG] 1..8
-  [DAWG] DAWG minimized: 14 nodes, 13 edges
-  [DAWG] ok 1 - Can save DAWG in binary format
-  [DAWG] ok 2 - Save file exists
-  [DAWG] ok 3 - Can load DAWG
-  [DAWG] ok 4 - Loaded DAWG exists
-  [DAWG] ok 5 - Loaded DAWG contains original words
-  [DAWG] ok 6 - Loaded DAWG preserves values
-  [DAWG] ok 7 - Loaded DAWG prefix search works
-  [DAWG] ok 8 - Temp file cleaned up
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/03-binary.rakutest
-  [DAWG] 1..12
-  [DAWG] DAWG minimized: 20 nodes, 19 edges
-  [DAWG] ok 1 - Can save DAWG in binary format
-  [DAWG] ok 2 - Binary file exists
-  [DAWG] ok 3 - Binary file has correct magic number
-  [DAWG] ok 4 - Can load binary DAWG
-  [DAWG] ok 5 - Loaded DAWG exists
-  [DAWG] ok 6 - Loaded DAWG contains original words
-  [DAWG] ok 7 - Loaded DAWG preserves values
-  [DAWG] ok 8 - Loaded DAWG prefix search works
-  [DAWG] ok 9 - Can load DAWG using memory mapping
-  [DAWG] ok 10 - Memory-mapped DAWG contains original words
-  [DAWG] ok 11 - Memory-mapped DAWG preserves values
-  [DAWG] ok 12 - Can close memory-mapped DAWG
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/04-edge-cases.rakutest
-  [DAWG] 1..20
-  [DAWG] DAWG minimized: 1 nodes, 0 edges
-  [DAWG] ok 1 - Empty DAWG contains nothing
-  [DAWG] ok 2 - Empty DAWG has no prefixes
-  [DAWG] ok 3 - Empty DAWG lookup returns Nil
-  [DAWG] DAWG minimized: 4 nodes, 3 edges
-  [DAWG] ok 4 - Contains single character
-  [DAWG] ok 5 - Single character lookup works
-  [DAWG] ok 6 - Empty prefix returns all words
-  [DAWG] DAWG minimized: 15 nodes, 14 edges
-  [DAWG] ok 7 - Contains Cyrillic word
-  [DAWG] ok 8 - Contains Chinese word
-  [DAWG] ok 9 - Contains Arabic word
-  [DAWG] ok 10 - Contains emoji
-  [DAWG] ok 11 - Unicode lookup preserves value
-  [DAWG] DAWG minimized: 5 nodes, 4 edges
-  [DAWG] ok 12 - Duplicate word overwrites value
-  [DAWG] DAWG minimized: 1001 nodes, 1000 edges
-  [DAWG] ok 13 - Contains very long word
-  [DAWG] ok 14 - Long word lookup works
-  [DAWG] DAWG minimized: 9 nodes, 10 edges
-  [DAWG] ok 15 - Find all words with common prefix
-  [DAWG] ok 16 - Results include exact match
-  [DAWG] ok 17 - Results include longer match
-  [DAWG] DAWG minimized: 30 nodes, 29 edges
-  [DAWG] ok 18 - Contains hyphenated word
-  [DAWG] ok 19 - Contains word with space
-  [DAWG] ok 20 - Special character lookup works
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/05-performance.rakutest
-  [DAWG] 1..10
-  [DAWG] DAWG minimized: 376 nodes, 375 edges
-  [DAWG] ok 1 - Minimization completes in reasonable time (<5s, actual: 0.214s)
-  [DAWG] ok 2 - Good compression ratio (nodes: 376, words: ~1000)
-  [DAWG] ok 3 - DAWG is minimized
-  [DAWG] ok 4 - Fast lookups (<1ms, actual: 0.07ms)
-  [DAWG] ok 5 - Binary save is fast (<1s, actual: 0.261s)
-  [DAWG] ok 6 - Binary file size is reasonable (<1MB, actual: 29.8KB)
-  [DAWG] ok 7 - Binary load is fast (<1s, actual: 0.125s)
-  [DAWG] ok 8 - Memory-mapped load is very fast (<100ms, actual: 96.53ms)
-  [DAWG] ok 9 - Binary loaded DAWG works correctly
-  [DAWG] ok 10 - Memory-mapped DAWG works correctly
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/06-node-ids.rakutest
-  [DAWG] 1..12
-  [DAWG] ok 1 - Root node has an ID
-  [DAWG] ok 2 - Root node ID is 0
-  [DAWG] ok 3 - Can retrieve root by ID
-  [DAWG] ok 4 - Child node has ID
-  [DAWG] ok 5 - Child node ID is greater than 0
-  [DAWG] ok 6 - Can retrieve node by ID
-  [DAWG] ok 7 - Retrieved node is the same object
-  [DAWG] DAWG minimized: 6 nodes, 6 edges
-  [DAWG] ok 8 - Root ID exists after minimization
-  [DAWG] ok 9 - Node ID map rebuilt after minimization
-  [DAWG] ok 10 - Can get root after minimization
-  [DAWG] ok 11 - Child nodes have IDs after minimization
-  [DAWG] ok 12 - Invalid ID returns undefined
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/07-subtree-stats.rakutest
-  [DAWG] 1..10
-  [DAWG] DAWG minimized: 12 nodes, 15 edges
-  [DAWG] ok 1 - Root has correct word count
-  [DAWG] ok 2 - Root depth is 0
-  [DAWG] ok 3 - Prefix "a" has 3 words
-  [DAWG] ok 4 - Node "a" is at depth 1
-  [DAWG] ok 5 - Prefix "d" has 3 words
-  [DAWG] ok 6 - Prefix "do" has 3 words
-  [DAWG] ok 7 - Node "do" is at depth 2
-  [DAWG] ok 8 - Node "dog" is terminal
-  [DAWG] ok 9 - Prefix "dog" has 3 words
-  [DAWG] ok 10 - Node "a" is terminal
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/08-pattern-matching.rakutest
-  [DAWG] 1..20
-  [DAWG] DAWG minimized: 25 nodes, 32 edges
-  [DAWG] ok 1 - Pattern "c?t" matches "cat"
-  [DAWG] ok 2 - Pattern "ca?" matches "car" and "cat"
-  [DAWG] ok 3 - Pattern "?ar" matches "car"
-  [DAWG] ok 4 - Pattern "c??" matches 3-letter words starting with c
-  [DAWG] ok 5 - Pattern "???" matches all 3-letter words
-  [DAWG] ok 6 - Pattern "ca*" matches all words starting with "ca"
-  [DAWG] ok 7 - Pattern "app*" matches all words starting with "app"
-  [DAWG] ok 8 - Pattern "*at" matches words ending with "at"
-  [DAWG] ok 9 - Pattern "*tion" matches words ending with "tion"
-  [DAWG] ok 10 - Pattern "c*t" matches words starting with "c" and ending with "t"
-  [DAWG] ok 11 - Pattern "c*e" matches "care"
-  [DAWG] ok 12 - Pattern "c?r*" matches correctly
-  [DAWG] ok 13 - Pattern "*a?" matches words with "a" as second-to-last char
-  [DAWG] ok 14 - Pattern "c*a*" matches words with "c" then "a"
-  [DAWG] ok 15 - Pattern with no matches returns empty
-  [DAWG] ok 16 - Pattern "?????" matches 5-letter words
-  [DAWG] ok 17 - Exact pattern "dog" matches only "dog"
-  [DAWG] ok 18 - Empty pattern returns no matches
-  [DAWG] ok 19 - Pattern "*" matches all words
-  [DAWG] ok 20 - Pattern "**" matches all words
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/09-fuzzy-search.rakutest
-  [DAWG] 1..18
-  [DAWG] DAWG minimized: 21 nodes, 29 edges
-  [DAWG] ok 1 - Exact match returns one result
-  [DAWG] ok 2 - Exact match is correct
-  [DAWG] ok 3 - Distance is 0 for exact match
-  [DAWG] ok 4 - Found "cat" from "cot" (1 substitution)
-  [DAWG] ok 5 - Found "dot" from "cot" (1 substitution)
-  [DAWG] ok 6 - Found "cat" from "ct" (1 deletion)
-  [DAWG] ok 7 - Found "car" from "cart" (1 insertion)
-  [DAWG] ok 8 - Found "card" from "cart" (1 substitution)
-  [DAWG] ok 9 - Found "apple" from "aple" (1 insertion)
-  [DAWG] ok 10 - Found "world" from "wrld" (1 insertion)
-  [DAWG] ok 11 - No matches for "xyz" within distance 1
-  [DAWG] ok 12 - Found matches for "cars"
-  [DAWG] ok 13 - Results are sorted by distance
-  [DAWG] ok 14 - Empty string matches 3-letter words
-  [DAWG] ok 15 - Empty string matches 3-letter words
-  [DAWG] ok 16 - Large distance threshold returns many matches
-  [DAWG] ok 17 - Fuzzy search is case-sensitive
-  [DAWG] ok 18 - Exact match is lowercase
-  ===> Testing [OK] for DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
-  ===> Installing: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
-  ===> Install [OK] for DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
+  ===> Searching for: Stomp
+  ===> Found: Stomp:ver<0.1.0>:auth<zef:raku-community-modules> [via Zef::Repository::Ecosystems<fez>]
+  [Stomp] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789874336.2187103.9908.05310479809/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz https://360.zef.pm/S/TO/STOMP/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz
+  ===> Fetching [OK]: Stomp:ver<0.1.0>:auth<zef:raku-community-modules> to /home/coke/sandbox/blin/data/zef-data/tmp/1789874336.2187103.9908.05310479809/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz
+  [Stomp] Command: tar -t -f ./ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz
+  [Stomp] Command: tar -xvf ./ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz -C ../ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz
+  ===> Extraction [OK]: Stomp to /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz
+  ===> Testing: Stomp:ver<0.1.0>:auth<zef:raku-community-modules>
+  [Stomp] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz/dist t/001-meta.rakutest
+  [Stomp] 1..1
+  [Stomp] ok 1 - # SKIP no Test::META - skipping
+  [Stomp] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz/dist t/client.rakutest
+  [Stomp] 1..31
+  [Stomp] ok 1 - Connected to the correct host
+  [Stomp] ok 2 - Connected to the correct port
+  [Stomp] ok 3 - Failed STOMP server connection breaks connect Promise
+  [Stomp] ok 4 - Client sent valid message to server
+  [Stomp] ok 5 - Client sent a CONNECT command
+  [Stomp] ok 6 - Client sent login
+  [Stomp] ok 7 - Client sent password
+  [Stomp] ok 8 - Client sent accept-version header
+  [Stomp] ok 9 - Client sent no message body
+  [Stomp] ok 10 - CONNECTED message completes connection
+  [Stomp] ok 11 - send method sent well-formed message
+  [Stomp] ok 12 - message has SEND command
+  [Stomp] ok 13 - destination header correct
+  [Stomp] ok 14 - has default content-type header
+  [Stomp] ok 15 - message had expected body
+  [Stomp] ok 16 - Promise retunred by send was kept
+  [Stomp] ok 17 - can set content-type header
+  [Stomp] ok 18 - subscribe returns a Supply
+  [Stomp] ok 19 - did not yet send subscription request
+  [Stomp] ok 20 - subscribe method sent well-formed message
+  [Stomp] ok 21 - message has SUBSCRIBE command
+  [Stomp] ok 22 - destination header correct
+  [Stomp] ok 23 - had an id header
+  [Stomp] ok 24 - no messages received yet
+  [Stomp] ok 25 - one message now received
+  [Stomp] ok 26 - it's a Stomp::Message
+  [Stomp] ok 27 - has the command MESSAGE
+  [Stomp] ok 28 - has the correct body
+  [Stomp] ok 29 - unsubscribing sent well-formed message
+  [Stomp] ok 30 - message has UNSUBSCRIBE command
+  [Stomp] ok 31 - id matched the subscription
+  [Stomp] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz/dist t/message.rakutest
+  [Stomp] 1..3
+  [Stomp] ok 1 - SEND message correctly formatted
+  [Stomp] ok 2 - Stomp::Message must be constructed with a command
+  [Stomp] ok 3 - CONNECT message with empty body correctly formatted
+  [Stomp] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz/dist t/parser.rakutest
+  [Stomp] 1..51
+  [Stomp] ok 1 - Can parse CONNECTED command (no headers/body)
+  [Stomp] ok 2 - Can parse MESSAGE command (no headers/body)
+  [Stomp] ok 3 - Can parse RECEIPT command (no headers/body)
+  [Stomp] ok 4 - Can parse ERROR command (no headers/body)
+  [Stomp] ok 5 - Can parse SEND command (no headers/body)
+  [Stomp] ok 6 - Can parse SUBSCRIBE command (no headers/body)
+  [Stomp] ok 7 - Can parse UNSUBSCRIBE command (no headers/body)
+  [Stomp] ok 8 - Can parse BEGIN command (no headers/body)
+  [Stomp] ok 9 - Can parse COMMIT command (no headers/body)
+  [Stomp] ok 10 - Can parse ABORT command (no headers/body)
+  [Stomp] ok 11 - Can parse ACK command (no headers/body)
+  [Stomp] ok 12 - Can parse NACK command (no headers/body)
+  [Stomp] ok 13 - Can parse DISCONNECT command (no headers/body)
+  [Stomp] ok 14 - Can parse CONNECT command (no headers/body)
+  [Stomp] ok 15 - Can parse STOMP command (no headers/body)
+  [Stomp] # Subtest: Cannot parse unknown command FOO
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 16 - Cannot parse unknown command FOO
+  [Stomp] ok 17 - Server parser accepts CONNECTED
+  [Stomp] # Subtest: Client parser rejects CONNECTED
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 18 - Client parser rejects CONNECTED
+  [Stomp] ok 19 - Server parser accepts MESSAGE
+  [Stomp] # Subtest: Client parser rejects MESSAGE
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 20 - Client parser rejects MESSAGE
+  [Stomp] ok 21 - Server parser accepts RECEIPT
+  [Stomp] # Subtest: Client parser rejects RECEIPT
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 22 - Client parser rejects RECEIPT
+  [Stomp] ok 23 - Server parser accepts ERROR
+  [Stomp] # Subtest: Client parser rejects ERROR
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 24 - Client parser rejects ERROR
+  [Stomp] ok 25 - Client parser accepts SEND
+  [Stomp] # Subtest: Server parser rejects SEND
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 26 - Server parser rejects SEND
+  [Stomp] ok 27 - Client parser accepts SUBSCRIBE
+  [Stomp] # Subtest: Server parser rejects SUBSCRIBE
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 28 - Server parser rejects SUBSCRIBE
+  [Stomp] ok 29 - Client parser accepts UNSUBSCRIBE
+  [Stomp] # Subtest: Server parser rejects UNSUBSCRIBE
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 30 - Server parser rejects UNSUBSCRIBE
+  [Stomp] ok 31 - Client parser accepts BEGIN
+  [Stomp] # Subtest: Server parser rejects BEGIN
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 32 - Server parser rejects BEGIN
+  [Stomp] ok 33 - Client parser accepts COMMIT
+  [Stomp] # Subtest: Server parser rejects COMMIT
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 34 - Server parser rejects COMMIT
+  [Stomp] ok 35 - Client parser accepts ABORT
+  [Stomp] # Subtest: Server parser rejects ABORT
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 36 - Server parser rejects ABORT
+  [Stomp] ok 37 - Client parser accepts ACK
+  [Stomp] # Subtest: Server parser rejects ACK
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 38 - Server parser rejects ACK
+  [Stomp] ok 39 - Client parser accepts NACK
+  [Stomp] # Subtest: Server parser rejects NACK
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 40 - Server parser rejects NACK
+  [Stomp] ok 41 - Client parser accepts DISCONNECT
+  [Stomp] # Subtest: Server parser rejects DISCONNECT
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 42 - Server parser rejects DISCONNECT
+  [Stomp] ok 43 - Client parser accepts CONNECT
+  [Stomp] # Subtest: Server parser rejects CONNECT
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 44 - Server parser rejects CONNECT
+  [Stomp] ok 45 - Client parser accepts STOMP
+  [Stomp] # Subtest: Server parser rejects STOMP
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 46 - Server parser rejects STOMP
+  [Stomp] ok 47 - Parsed message with header/body
+  [Stomp] ok 48 - Parser made a Stomp::Message
+  [Stomp] ok 49 - Command is correct
+  [Stomp] ok 50 - Header is correct
+  [Stomp] ok 51 - Body is correct
+  [Stomp] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz/dist t/server.rakutest
+  [Stomp] 1..28
+  [Stomp] ok 1 - Must provide host and port to new (1)
+  [Stomp] ok 2 - Must provide host and port to new (2)
+  [Stomp] ok 3 - Must provide host and port to new (3)
+  [Stomp] ok 4 - Stomp::Server listen method returns a Supply
+  [Stomp] ok 5 - Not listening before supply is tapped
+  [Stomp] ok 6 - Listening once supply is tapped
+  [Stomp] ok 7 - Listening on correct host
+  [Stomp] ok 8 - Listening on correct port
+  [Stomp] ok 9 - Closing supply tap also closes socket
+  [Stomp] ok 10 - Server responded to CONNECT with valid message
+  [Stomp] ok 11 - Server sent CONNECTED command
+  [Stomp] ok 12 - Server sent version header
+  [Stomp] ok 13 - Server sent no message body
+  [Stomp] ok 14 - and the tap received the correct object
+  [Stomp] ok 15 - new connection doesn't have a subscription
+  [Stomp] ok 16 - now have one subscription
+  [Stomp] ok 17 - and it has the right id
+  [Stomp] ok 18 - and it has the right destination
+  [Stomp] ok 19 - and the ack is 'auto'
+  [Stomp] ok 20 - subscription matches message to that destination
+  [Stomp] ok 21 - subscription-for-message
+  [Stomp] ok 22 - connection matches message to that destination
+  [Stomp] ok 23 - got the message from published-messages
+  [Stomp] ok 24 - now have no subscription after unsubscribe
+  [Stomp] ok 25 - subscription no longer matches message to that destination
+  [Stomp] ok 26 - connection no longer matches message to that destination
+  [Stomp] ok 27 - Server responded to invalid message with valid message
+  [Stomp] ok 28 - Server sent ERROR command
+  ===> Testing [OK] for Stomp:ver<0.1.0>:auth<zef:raku-community-modules>
+  ===> Installing: Stomp:ver<0.1.0>:auth<zef:raku-community-modules>
+  ===> Install [OK] for Stomp:ver<0.1.0>:auth<zef:raku-community-modules>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 2min 45.924s
-               CPU time consumed: 2min 54.120s
-                     Memory peak: 1.5G (swap: 123.4M)
+                 Service runtime: 1min 57.923s
+               CPU time consumed: 2min 9.615s
+                     Memory peak: 1.4G (swap: 0B)
 
   ```
   </details>
@@ -187,356 +233,967 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p1464118-i1427574.service
+  Running as unit: run-p2182882-i2104521.service; invocation ID: ae60f87be5104f778f66bfb61a6f056c
   Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: DAWG
-  ===> Found: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1> [via Zef::Repository::Ecosystems<fez>]
-  [DAWG] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789819438.1464119.3739.4017883913057/48669da30db3d18158aea0a50e9cab840208a319.tar.gz https://360.zef.pm/D/AW/DAWG/48669da30db3d18158aea0a50e9cab840208a319.tar.gz
-  ===> Fetching [OK]: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789819438.1464119.3739.4017883913057/48669da30db3d18158aea0a50e9cab840208a319.tar.gz
-  [DAWG] Command: tar -t -f ./48669da30db3d18158aea0a50e9cab840208a319.tar.gz
-  [DAWG] Command: tar -xvf ./48669da30db3d18158aea0a50e9cab840208a319.tar.gz -C ../48669da30db3d18158aea0a50e9cab840208a319.tar.gz
-  ===> Extraction [OK]: DAWG to /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz
-  ===> Testing: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/01-basic.rakutest
-  [DAWG] 1..15
-  [DAWG] ok 1 - Can create DAWG instance
-  [DAWG] ok 2 - Can add word without value
-  [DAWG] ok 3 - Can add word with value
-  [DAWG] ok 4 - Can add word with complex value
-  [DAWG] ok 5 - Contains added word
-  [DAWG] ok 6 - Does not contain non-added word
-  [DAWG] ok 7 - Lookup returns result
-  [DAWG] ok 8 - Lookup returns correct word
-  [DAWG] ok 9 - Lookup returns correct value
-  [DAWG] ok 10 - Prefix search returns correct count
-  [DAWG] ok 11 - Prefix search includes exact match
-  [DAWG] ok 12 - Prefix search includes longer words
-  [DAWG] DAWG minimized: 14 nodes, 13 edges
-  [DAWG] ok 13 - Can minimize DAWG
-  [DAWG] ok 14 - Stats reports nodes
-  [DAWG] ok 15 - Stats reports minimized state
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/02-serialization.rakutest
-  [DAWG] 1..8
-  [DAWG] DAWG minimized: 14 nodes, 13 edges
-  [DAWG] ok 1 - Can save DAWG in binary format
-  [DAWG] ok 2 - Save file exists
-  [DAWG] ok 3 - Can load DAWG
-  [DAWG] ok 4 - Loaded DAWG exists
-  [DAWG] ok 5 - Loaded DAWG contains original words
-  [DAWG] ok 6 - Loaded DAWG preserves values
-  [DAWG] ok 7 - Loaded DAWG prefix search works
-  [DAWG] ok 8 - Temp file cleaned up
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/03-binary.rakutest
-  [DAWG] 1..12
-  [DAWG] DAWG minimized: 20 nodes, 19 edges
-  [DAWG] ok 1 - Can save DAWG in binary format
-  [DAWG] ok 2 - Binary file exists
-  [DAWG] ok 3 - Binary file has correct magic number
-  [DAWG] ok 4 - Can load binary DAWG
-  [DAWG] ok 5 - Loaded DAWG exists
-  [DAWG] ok 6 - Loaded DAWG contains original words
-  [DAWG] ok 7 - Loaded DAWG preserves values
-  [DAWG] ok 8 - Loaded DAWG prefix search works
-  [DAWG] ok 9 - Can load DAWG using memory mapping
-  [DAWG] ok 10 - Memory-mapped DAWG contains original words
-  [DAWG] ok 11 - Memory-mapped DAWG preserves values
-  [DAWG] ok 12 - Can close memory-mapped DAWG
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/04-edge-cases.rakutest
-  [DAWG] 1..20
-  [DAWG] DAWG minimized: 1 nodes, 0 edges
-  [DAWG] ok 1 - Empty DAWG contains nothing
-  [DAWG] ok 2 - Empty DAWG has no prefixes
-  [DAWG] ok 3 - Empty DAWG lookup returns Nil
-  [DAWG] DAWG minimized: 4 nodes, 3 edges
-  [DAWG] ok 4 - Contains single character
-  [DAWG] ok 5 - Single character lookup works
-  [DAWG] ok 6 - Empty prefix returns all words
-  [DAWG] DAWG minimized: 15 nodes, 14 edges
-  [DAWG] ok 7 - Contains Cyrillic word
-  [DAWG] ok 8 - Contains Chinese word
-  [DAWG] ok 9 - Contains Arabic word
-  [DAWG] ok 10 - Contains emoji
-  [DAWG] ok 11 - Unicode lookup preserves value
-  [DAWG] DAWG minimized: 5 nodes, 4 edges
-  [DAWG] ok 12 - Duplicate word overwrites value
-  [DAWG] DAWG minimized: 1001 nodes, 1000 edges
-  [DAWG] ok 13 - Contains very long word
-  [DAWG] ok 14 - Long word lookup works
-  [DAWG] DAWG minimized: 9 nodes, 10 edges
-  [DAWG] ok 15 - Find all words with common prefix
-  [DAWG] ok 16 - Results include exact match
-  [DAWG] ok 17 - Results include longer match
-  [DAWG] DAWG minimized: 30 nodes, 29 edges
-  [DAWG] ok 18 - Contains hyphenated word
-  [DAWG] ok 19 - Contains word with space
-  [DAWG] ok 20 - Special character lookup works
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/05-performance.rakutest
-  [DAWG] 1..10
-  [DAWG] DAWG minimized: 376 nodes, 375 edges
-  [DAWG] ok 1 - Minimization completes in reasonable time (<5s, actual: 0.162s)
-  [DAWG] ok 2 - Good compression ratio (nodes: 376, words: ~1000)
-  [DAWG] ok 3 - DAWG is minimized
-  [DAWG] ok 4 - Fast lookups (<1ms, actual: 0.08ms)
-  [DAWG] ok 5 - Binary save is fast (<1s, actual: 0.238s)
-  [DAWG] ok 6 - Binary file size is reasonable (<1MB, actual: 29.8KB)
-  [DAWG] ok 7 - Binary load is fast (<1s, actual: 0.138s)
-  [DAWG] not ok 8 - Memory-mapped load is very fast (<100ms, actual: 101.93ms)
-  [DAWG] # Failed test 'Memory-mapped load is very fast (<100ms, actual: 101.93ms)'
-  [DAWG] # at t/05-performance.rakutest line 1
-  [DAWG] ok 9 - Binary loaded DAWG works correctly
-  [DAWG] ok 10 - Memory-mapped DAWG works correctly
-  [DAWG] # You failed 1 test of 10
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/06-node-ids.rakutest
-  [DAWG] 1..12
-  [DAWG] ok 1 - Root node has an ID
-  [DAWG] ok 2 - Root node ID is 0
-  [DAWG] ok 3 - Can retrieve root by ID
-  [DAWG] ok 4 - Child node has ID
-  [DAWG] ok 5 - Child node ID is greater than 0
-  [DAWG] ok 6 - Can retrieve node by ID
-  [DAWG] ok 7 - Retrieved node is the same object
-  [DAWG] DAWG minimized: 6 nodes, 6 edges
-  [DAWG] ok 8 - Root ID exists after minimization
-  [DAWG] ok 9 - Node ID map rebuilt after minimization
-  [DAWG] ok 10 - Can get root after minimization
-  [DAWG] ok 11 - Child nodes have IDs after minimization
-  [DAWG] ok 12 - Invalid ID returns undefined
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/07-subtree-stats.rakutest
-  [DAWG] 1..10
-  [DAWG] DAWG minimized: 12 nodes, 15 edges
-  [DAWG] ok 1 - Root has correct word count
-  [DAWG] ok 2 - Root depth is 0
-  [DAWG] ok 3 - Prefix "a" has 3 words
-  [DAWG] ok 4 - Node "a" is at depth 1
-  [DAWG] ok 5 - Prefix "d" has 3 words
-  [DAWG] ok 6 - Prefix "do" has 3 words
-  [DAWG] ok 7 - Node "do" is at depth 2
-  [DAWG] ok 8 - Node "dog" is terminal
-  [DAWG] ok 9 - Prefix "dog" has 3 words
-  [DAWG] ok 10 - Node "a" is terminal
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/08-pattern-matching.rakutest
-  [DAWG] 1..20
-  [DAWG] DAWG minimized: 25 nodes, 32 edges
-  [DAWG] ok 1 - Pattern "c?t" matches "cat"
-  [DAWG] ok 2 - Pattern "ca?" matches "car" and "cat"
-  [DAWG] ok 3 - Pattern "?ar" matches "car"
-  [DAWG] ok 4 - Pattern "c??" matches 3-letter words starting with c
-  [DAWG] ok 5 - Pattern "???" matches all 3-letter words
-  [DAWG] ok 6 - Pattern "ca*" matches all words starting with "ca"
-  [DAWG] ok 7 - Pattern "app*" matches all words starting with "app"
-  [DAWG] ok 8 - Pattern "*at" matches words ending with "at"
-  [DAWG] ok 9 - Pattern "*tion" matches words ending with "tion"
-  [DAWG] ok 10 - Pattern "c*t" matches words starting with "c" and ending with "t"
-  [DAWG] ok 11 - Pattern "c*e" matches "care"
-  [DAWG] ok 12 - Pattern "c?r*" matches correctly
-  [DAWG] ok 13 - Pattern "*a?" matches words with "a" as second-to-last char
-  [DAWG] ok 14 - Pattern "c*a*" matches words with "c" then "a"
-  [DAWG] ok 15 - Pattern with no matches returns empty
-  [DAWG] ok 16 - Pattern "?????" matches 5-letter words
-  [DAWG] ok 17 - Exact pattern "dog" matches only "dog"
-  [DAWG] ok 18 - Empty pattern returns no matches
-  [DAWG] ok 19 - Pattern "*" matches all words
-  [DAWG] ok 20 - Pattern "**" matches all words
-  [DAWG] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/48669da30db3d18158aea0a50e9cab840208a319.tar.gz/dist t/09-fuzzy-search.rakutest
-  [DAWG] 1..18
-  [DAWG] DAWG minimized: 21 nodes, 29 edges
-  [DAWG] ok 1 - Exact match returns one result
-  [DAWG] ok 2 - Exact match is correct
-  [DAWG] ok 3 - Distance is 0 for exact match
-  [DAWG] ok 4 - Found "cat" from "cot" (1 substitution)
-  [DAWG] ok 5 - Found "dot" from "cot" (1 substitution)
-  [DAWG] ok 6 - Found "cat" from "ct" (1 deletion)
-  [DAWG] ok 7 - Found "car" from "cart" (1 insertion)
-  [DAWG] ok 8 - Found "card" from "cart" (1 substitution)
-  [DAWG] ok 9 - Found "apple" from "aple" (1 insertion)
-  [DAWG] ok 10 - Found "world" from "wrld" (1 insertion)
-  [DAWG] ok 11 - No matches for "xyz" within distance 1
-  [DAWG] ok 12 - Found matches for "cars"
-  [DAWG] ok 13 - Results are sorted by distance
-  [DAWG] ok 14 - Empty string matches 3-letter words
-  [DAWG] ok 15 - Empty string matches 3-letter words
-  [DAWG] ok 16 - Large distance threshold returns many matches
-  [DAWG] ok 17 - Fuzzy search is case-sensitive
-  [DAWG] ok 18 - Exact match is lowercase
-  ===> Testing [FAIL]: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
-  [DAWG] Failed to get passing tests, but continuing with --force-test
-  ===> Installing: DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
-  ===> Install [OK] for DAWG:ver<0.1.6>:auth<zef:slavenskoj>:api<1>
+  ===> Searching for: Stomp
+  ===> Found: Stomp:ver<0.1.0>:auth<zef:raku-community-modules> [via Zef::Repository::Ecosystems<fez>]
+  [Stomp] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789874226.2182890.4774.561715057947/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz https://360.zef.pm/S/TO/STOMP/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz
+  ===> Fetching [OK]: Stomp:ver<0.1.0>:auth<zef:raku-community-modules> to /home/coke/sandbox/blin/data/zef-data/tmp/1789874226.2182890.4774.561715057947/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz
+  [Stomp] Command: tar -t -f ./ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz
+  [Stomp] Command: tar -xvf ./ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz -C ../ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz
+  ===> Extraction [OK]: Stomp to /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz
+  ===> Testing: Stomp:ver<0.1.0>:auth<zef:raku-community-modules>
+  [Stomp] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz/dist t/001-meta.rakutest
+  [Stomp] 1..1
+  [Stomp] ok 1 - # SKIP no Test::META - skipping
+  [Stomp] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz/dist t/client.rakutest
+  [Stomp] 1..31
+  [Stomp] ok 1 - Connected to the correct host
+  [Stomp] ok 2 - Connected to the correct port
+  [Stomp] ok 3 - Failed STOMP server connection breaks connect Promise
+  [Stomp] ok 4 - Client sent valid message to server
+  [Stomp] ok 5 - Client sent a CONNECT command
+  [Stomp] ok 6 - Client sent login
+  [Stomp] ok 7 - Client sent password
+  [Stomp] ok 8 - Client sent accept-version header
+  [Stomp] ok 9 - Client sent no message body
+  [Stomp] ok 10 - CONNECTED message completes connection
+  [Stomp] ok 11 - send method sent well-formed message
+  [Stomp] ok 12 - message has SEND command
+  [Stomp] ok 13 - destination header correct
+  [Stomp] ok 14 - has default content-type header
+  [Stomp] ok 15 - message had expected body
+  [Stomp] ok 16 - Promise retunred by send was kept
+  [Stomp] ok 17 - can set content-type header
+  [Stomp] ok 18 - subscribe returns a Supply
+  [Stomp] ok 19 - did not yet send subscription request
+  [Stomp] ok 20 - subscribe method sent well-formed message
+  [Stomp] ok 21 - message has SUBSCRIBE command
+  [Stomp] ok 22 - destination header correct
+  [Stomp] ok 23 - had an id header
+  [Stomp] ok 24 - no messages received yet
+  [Stomp] ok 25 - one message now received
+  [Stomp] ok 26 - it's a Stomp::Message
+  [Stomp] ok 27 - has the command MESSAGE
+  [Stomp] ok 28 - has the correct body
+  [Stomp] ok 29 - unsubscribing sent well-formed message
+  [Stomp] ok 30 - message has UNSUBSCRIBE command
+  [Stomp] ok 31 - id matched the subscription
+  [Stomp] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz/dist t/message.rakutest
+  [Stomp] 1..3
+  [Stomp] ok 1 - SEND message correctly formatted
+  [Stomp] ok 2 - Stomp::Message must be constructed with a command
+  [Stomp] ok 3 - CONNECT message with empty body correctly formatted
+  [Stomp] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz/dist t/parser.rakutest
+  [Stomp] 1..51
+  [Stomp] ok 1 - Can parse CONNECTED command (no headers/body)
+  [Stomp] ok 2 - Can parse MESSAGE command (no headers/body)
+  [Stomp] ok 3 - Can parse RECEIPT command (no headers/body)
+  [Stomp] ok 4 - Can parse ERROR command (no headers/body)
+  [Stomp] ok 5 - Can parse SEND command (no headers/body)
+  [Stomp] ok 6 - Can parse SUBSCRIBE command (no headers/body)
+  [Stomp] ok 7 - Can parse UNSUBSCRIBE command (no headers/body)
+  [Stomp] ok 8 - Can parse BEGIN command (no headers/body)
+  [Stomp] ok 9 - Can parse COMMIT command (no headers/body)
+  [Stomp] ok 10 - Can parse ABORT command (no headers/body)
+  [Stomp] ok 11 - Can parse ACK command (no headers/body)
+  [Stomp] ok 12 - Can parse NACK command (no headers/body)
+  [Stomp] ok 13 - Can parse DISCONNECT command (no headers/body)
+  [Stomp] ok 14 - Can parse CONNECT command (no headers/body)
+  [Stomp] ok 15 - Can parse STOMP command (no headers/body)
+  [Stomp] # Subtest: Cannot parse unknown command FOO
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 16 - Cannot parse unknown command FOO
+  [Stomp] ok 17 - Server parser accepts CONNECTED
+  [Stomp] # Subtest: Client parser rejects CONNECTED
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 18 - Client parser rejects CONNECTED
+  [Stomp] ok 19 - Server parser accepts MESSAGE
+  [Stomp] # Subtest: Client parser rejects MESSAGE
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 20 - Client parser rejects MESSAGE
+  [Stomp] ok 21 - Server parser accepts RECEIPT
+  [Stomp] # Subtest: Client parser rejects RECEIPT
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 22 - Client parser rejects RECEIPT
+  [Stomp] ok 23 - Server parser accepts ERROR
+  [Stomp] # Subtest: Client parser rejects ERROR
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 24 - Client parser rejects ERROR
+  [Stomp] ok 25 - Client parser accepts SEND
+  [Stomp] # Subtest: Server parser rejects SEND
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 26 - Server parser rejects SEND
+  [Stomp] ok 27 - Client parser accepts SUBSCRIBE
+  [Stomp] # Subtest: Server parser rejects SUBSCRIBE
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 28 - Server parser rejects SUBSCRIBE
+  [Stomp] ok 29 - Client parser accepts UNSUBSCRIBE
+  [Stomp] # Subtest: Server parser rejects UNSUBSCRIBE
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 30 - Server parser rejects UNSUBSCRIBE
+  [Stomp] ok 31 - Client parser accepts BEGIN
+  [Stomp] # Subtest: Server parser rejects BEGIN
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 32 - Server parser rejects BEGIN
+  [Stomp] ok 33 - Client parser accepts COMMIT
+  [Stomp] # Subtest: Server parser rejects COMMIT
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 34 - Server parser rejects COMMIT
+  [Stomp] ok 35 - Client parser accepts ABORT
+  [Stomp] # Subtest: Server parser rejects ABORT
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 36 - Server parser rejects ABORT
+  [Stomp] ok 37 - Client parser accepts ACK
+  [Stomp] # Subtest: Server parser rejects ACK
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 38 - Server parser rejects ACK
+  [Stomp] ok 39 - Client parser accepts NACK
+  [Stomp] # Subtest: Server parser rejects NACK
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 40 - Server parser rejects NACK
+  [Stomp] ok 41 - Client parser accepts DISCONNECT
+  [Stomp] # Subtest: Server parser rejects DISCONNECT
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 42 - Server parser rejects DISCONNECT
+  [Stomp] ok 43 - Client parser accepts CONNECT
+  [Stomp] # Subtest: Server parser rejects CONNECT
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 44 - Server parser rejects CONNECT
+  [Stomp] ok 45 - Client parser accepts STOMP
+  [Stomp] # Subtest: Server parser rejects STOMP
+  [Stomp]     1..3
+  [Stomp]     ok 1 - code dies
+  [Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+  [Stomp]     ok 3 - .reason matches invalid command
+  [Stomp] ok 46 - Server parser rejects STOMP
+  [Stomp] ok 47 - Parsed message with header/body
+  [Stomp] ok 48 - Parser made a Stomp::Message
+  [Stomp] ok 49 - Command is correct
+  [Stomp] ok 50 - Header is correct
+  [Stomp] ok 51 - Body is correct
+  [Stomp] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz/dist t/server.rakutest
+  [Stomp] 1..28
+  [Stomp] ok 1 - Must provide host and port to new (1)
+  [Stomp] ok 2 - Must provide host and port to new (2)
+  [Stomp] ok 3 - Must provide host and port to new (3)
+  [Stomp] ok 4 - Stomp::Server listen method returns a Supply
+  [Stomp] ok 5 - Not listening before supply is tapped
+  [Stomp] ok 6 - Listening once supply is tapped
+  [Stomp] ok 7 - Listening on correct host
+  [Stomp] ok 8 - Listening on correct port
+  [Stomp] ok 9 - Closing supply tap also closes socket
+  [Stomp] ok 10 - Server responded to CONNECT with valid message
+  [Stomp] ok 11 - Server sent CONNECTED command
+  [Stomp] ok 12 - Server sent version header
+  [Stomp] ok 13 - Server sent no message body
+  [Stomp] ok 14 - and the tap received the correct object
+  [Stomp] No such method 'subscriptions' for invocant of type 'Any'
+  [Stomp]   in block <unit> at t/server.rakutest line 85
+  [Stomp] # You planned 28 tests, but ran 14
+  ===> Testing [FAIL]: Stomp:ver<0.1.0>:auth<zef:raku-community-modules>
+  [Stomp] Failed to get passing tests, but continuing with --force-test
+  ===> Installing: Stomp:ver<0.1.0>:auth<zef:raku-community-modules>
+  ===> Install [OK] for Stomp:ver<0.1.0>:auth<zef:raku-community-modules>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 2min 31.946s
-               CPU time consumed: 2min 38.244s
-                     Memory peak: 1.3G (swap: 5.6M)
+                 Service runtime: 1min 42.449s
+               CPU time consumed: 1min 56.162s
+                     Memory peak: 1.2G (swap: 0B)
 
   ```
   </details>
-* [ ] [FontConfig](https://raku.land/zef:dwarring/FontConfig) – Fail, Bisected: [7ded5ff](https://github.com/rakudo/rakudo/commit/7ded5ff7de2c55911b07e909d1daa968255bc96b)
+* [ ] [CSS::Properties](https://raku.land/zef:dwarring/CSS::Properties) – Fail, Bisected: [6cf7c71](https://github.com/rakudo/rakudo/commit/6cf7c71a971f04d1a2ac2322998631a9a1bcdaac)
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p1572304-i1595267.service; invocation ID: f43466a5896442078b5fdab92fafcfc8
+  Running as unit: run-p2282261-i2202347.service; invocation ID: 7fefdf07d88a40449486f636b31ab0b5
   Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: FontConfig
-  ===> Found: FontConfig:ver<0.1.9>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
-  [FontConfig] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789822308.1572313.5826.367727139239/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz https://360.zef.pm/F/ON/FONTCONFIG/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
-  ===> Fetching [OK]: FontConfig:ver<0.1.9>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1789822308.1572313.5826.367727139239/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
-  [FontConfig] Command: tar -t -f ./aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
-  [FontConfig] Command: tar -xvf ./aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz -C ../aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
-  ===> Extraction [OK]: FontConfig to /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
-  ===> Building: FontConfig:ver<0.1.9>:auth<zef:dwarring>
-  [FontConfig] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -e require '/home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9/Build.pm6'; ::('Build').new.build('/home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9') ?? exit(0) !! exit(1);
-  [FontConfig] make: Nothing to be done for 'all'.
-  [FontConfig] make: Nothing to be done for 'all'.
-  ===> Building [OK] for FontConfig:ver<0.1.9>:auth<zef:dwarring>
-  ===> Testing: FontConfig:ver<0.1.9>:auth<zef:dwarring>
-  [FontConfig] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/00raw.t
-  [FontConfig] 1..6
-  [FontConfig] ok 1 - 
-  [FontConfig] ok 2 - 
-  [FontConfig] ok 3 - 
-  [FontConfig] ok 4 - 
-  [FontConfig] ok 5 - known constant
-  [FontConfig] ok 6 - 
-  [FontConfig] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/basic.t
-  [FontConfig] 1..4
-  [FontConfig] fontconfig library version: 2.17.01
-  [FontConfig] ok 1 - fontconfig library >= 2.13.01 (minimum version)
-  [FontConfig] ok 2 - weight object
-  [FontConfig] # Subtest: pattern tests
-  [FontConfig]     1..17
-  [FontConfig]     ok 1 - have pattern
-  [FontConfig]     ok 2 - stringified, initial
-  [FontConfig]     ok 3 - elems
-  [FontConfig]     ok 4 - pattern members, intial
-  [FontConfig]     ok 5 - pattern family members
-  [FontConfig]     ok 6 - set weight property to fixed value (bold)
-  [FontConfig]     ok 7 - set weight property to range
-  [FontConfig]     ok 8 - unset value return type
-  [FontConfig]     ok 9 - pattern members, after add
-  [FontConfig]     ok 10 - associative property
-  [FontConfig]     ok 11 - stringified, after add
-  [FontConfig]     ok 12 - stringified, after add and associative delete
-  [FontConfig]     ok 13 - pattern members, after add and delete
-  [FontConfig]     ok 14 - pattern elems, after configure
-  [FontConfig]     ok 15 - pattern stringified, after configure
-  [FontConfig]     ok 16 - patern file property, after configure
-  [FontConfig]     ok 17 - patern file property, after configure
-  [FontConfig] ok 3 - pattern tests
-  [FontConfig] # Subtest: match tests
-  [FontConfig]     1..7
-  [FontConfig]     ok 1 - match lives
-  [FontConfig]     ok 2 - weight property
-  [FontConfig]     ok 3 - file associative property exists
-  [FontConfig]     ok 4 - file associative property defined
-  [FontConfig]     ok 5 - The object is-a 'Str'
-  [FontConfig]     ok 6 - file accessor
-  [FontConfig]     ok 7 - matched a file
-  [FontConfig] ok 4 - match tests
-  [FontConfig] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/custom-conf.t
-  [FontConfig] 1..15
-  [FontConfig] ok 1 - 
-  [FontConfig] ok 2 - 
-  [FontConfig] ok 3 - 
-  [FontConfig] ok 4 - 
-  [FontConfig] ok 5 - 
-  [FontConfig] ok 6 - 
-  [FontConfig] ok 7 - 
-  [FontConfig] ok 8 - 
-  [FontConfig] ok 9 - 
-  [FontConfig] ok 10 - 
-  [FontConfig] ok 11 - 
-  [FontConfig] ok 12 - 
-  [FontConfig] ok 13 - 
-  [FontConfig] ok 14 - 
-  [FontConfig] ok 15 - 
-  [FontConfig] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/empty-config.t
-  [FontConfig] 1..8
-  [FontConfig] ok 1 - 
-  [FontConfig] ok 2 - The object is-a '"FontConfig"'
-  [FontConfig] ok 3 - FontConfig
-  [FontConfig] ok 4 - 
-  [FontConfig] ok 5 - 
-  [FontConfig] ok 6 - 
-  [FontConfig] ok 7 - The object is-a 'FontConfig::Match'
-  [FontConfig] ok 8 - Matching has been disabled
-  [FontConfig] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/match-series.t
-  [FontConfig] 1..11
-  [FontConfig] ok 1 - series elems
-  [FontConfig] # Subtest: first match
-  [FontConfig]     ok 1 - family
-  [FontConfig]     ok 2 - style
-  [FontConfig]     ok 3 - file
-  [FontConfig]     1..3
-  [FontConfig] ok 2 - first match
-  [FontConfig] # Subtest: second match
-  [FontConfig]     ok 1 - family
-  [FontConfig]     ok 2 - style
-  [FontConfig]     ok 3 - file
-  [FontConfig]     1..3
-  [FontConfig] ok 3 - second match
-  [FontConfig] ok 4 - trim series elems
-  [FontConfig] # Subtest: first trim match
-  [FontConfig]     ok 1 - family
-  [FontConfig]     ok 2 - style
-  [FontConfig]     ok 3 - file
-  [FontConfig]     1..3
-  [FontConfig] ok 5 - first trim match
-  [FontConfig] ok 6 - :!best
-  [FontConfig] ok 7 - :best
-  [FontConfig] ok 8 - :best series elems
-  [FontConfig] # Subtest: first trim match
-  [FontConfig]     ok 1 - family
-  [FontConfig]     ok 2 - style
-  [FontConfig]     ok 3 - file
-  [FontConfig]     1..3
-  [FontConfig] ok 9 - first trim match
-  [FontConfig] # Subtest: series iteration
-  [FontConfig]     ok 1 - family[0]
-  [FontConfig]     ok 2 - style[0]
-  [FontConfig]     ok 3 - file[0]
-  [FontConfig]     ok 4 - family[1]
-  [FontConfig]     ok 5 - style[1]
-  [FontConfig]     ok 6 - file[1]
-  [FontConfig]     ok 7 - iteration count
-  [FontConfig]     1..7
-  [FontConfig] ok 10 - series iteration
-  [FontConfig] # Subtest: fontconfig match-series
-  [FontConfig]     ok 1 - 
-  [FontConfig]     ok 2 - family[0]
-  [FontConfig]     ok 3 - style[0]
-  [FontConfig]     ok 4 - file[0]
-  [FontConfig]     ok 5 - family[1]
-  [FontConfig]     ok 6 - style[1]
-  [FontConfig]     ok 7 - file[1]
-  [FontConfig]     ok 8 - 
-  [FontConfig]     ok 9 - family[0]
-  [FontConfig]     ok 10 - style[0]
-  [FontConfig]     ok 11 - file[0]
-  [FontConfig]     ok 12 - family[1]
-  [FontConfig]     ok 13 - style[1]
-  [FontConfig]     ok 14 - file[1]
-  [FontConfig]     ok 15 - 
-  [FontConfig]     ok 16 - family[0]
-  [FontConfig]     ok 17 - style[0]
-  [FontConfig]     ok 18 - file[0]
-  [FontConfig]     ok 19 - family[1]
-  [FontConfig]     ok 20 - style[1]
-  [FontConfig]     ok 21 - file[1]
-  [FontConfig]     1..21
-  [FontConfig] ok 11 - fontconfig match-series
-  [FontConfig] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/query-ft-face.t
-  [FontConfig] 1..3
-  [FontConfig] ok 1 - # SKIP Font::FreeType needs to be installed to test query-ft-face()
-  [FontConfig] ok 2 - # SKIP Font::FreeType needs to be installed to test query-ft-face()
-  [FontConfig] ok 3 - # SKIP Font::FreeType needs to be installed to test query-ft-face()
-  ===> Testing [OK] for FontConfig:ver<0.1.9>:auth<zef:dwarring>
-  ===> Installing: FontConfig:ver<0.1.9>:auth<zef:dwarring>
-  ===> Install [OK] for FontConfig:ver<0.1.9>:auth<zef:dwarring>
+  ===> Searching for: CSS::Properties
+  ===> Found: CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10> [via Zef::Repository::Ecosystems<fez>]
+  [CSS::Properties] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789876827.2282268.7711.627623105575/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz https://360.zef.pm/C/SS/CSS_PROPERTIES/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz
+  ===> Fetching [OK]: CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10> to /home/coke/sandbox/blin/data/zef-data/tmp/1789876827.2282268.7711.627623105575/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz
+  [CSS::Properties] Command: tar -t -f ./f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz
+  [CSS::Properties] Command: tar -xvf ./f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz -C ../f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz
+  ===> Extraction [OK]: CSS::Properties to /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz
+  ===> Testing: CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10>
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/00-readme.t
+  [CSS::Properties] 1..12
+  [CSS::Properties] ok 1 - code sample
+  [CSS::Properties] dropping unknown CSS1 property azimuth
+  [CSS::Properties] ok 2 - code sample
+  [CSS::Properties] ok 3 - code sample
+  [CSS::Properties] ok 4 - code sample
+  [CSS::Properties] ok 5 - code sample
+  [CSS::Properties] ok 6 - code sample
+  [CSS::Properties] ok 7 - code sample
+  [CSS::Properties] ok 8 - code sample
+  [CSS::Properties] ok 9 - code sample
+  [CSS::Properties] ok 10 - code sample
+  [CSS::Properties] ok 11 - code sample
+  [CSS::Properties] ok 12 - code sample
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/01-property-basic.t
+  [CSS::Properties] 1..18
+  [CSS::Properties] ok 1 - $prop.name
+  [CSS::Properties] ok 2 - $prop.box
+  [CSS::Properties] ok 3 - $prop.inherit
+  [CSS::Properties] ok 4 - $prop.synopsis
+  [CSS::Properties] ok 5 - $prop.default
+  [CSS::Properties] ok 6 - missing edges detected
+  [CSS::Properties] ok 7 - $prop.name
+  [CSS::Properties] ok 8 - $prop.box
+  [CSS::Properties] ok 9 - $prop.inherit
+  [CSS::Properties] ok 10 - $prop.synopsis
+  [CSS::Properties] ok 11 - $prop.top.name
+  [CSS::Properties] ok 12 - declared property
+  [CSS::Properties] ok 13 - defaulted property
+  [CSS::Properties] ok 14 - write
+  [CSS::Properties] ok 15 - write
+  [CSS::Properties] ok 16 - copy/write
+  [CSS::Properties] ok 17 - 
+  [CSS::Properties] ok 18 - 
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/02-style-basic.t
+  [CSS::Properties] 1..15
+  [CSS::Properties] ok 1 - 
+  [CSS::Properties] ok 2 - 
+  [CSS::Properties] ok 3 - 
+  [CSS::Properties] ok 4 - 
+  [CSS::Properties] ok 5 - 
+  [CSS::Properties] ok 6 - 
+  [CSS::Properties] ok 7 - 
+  [CSS::Properties] ok 8 - important property
+  [CSS::Properties] ok 9 - unimportant property
+  [CSS::Properties] ok 10 - 
+  [CSS::Properties] ok 11 - 
+  [CSS::Properties] ok 12 - 
+  [CSS::Properties] ok 13 - 
+  [CSS::Properties] ok 14 - 
+  [CSS::Properties] ok 15 - 
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/ast.t
+  [CSS::Properties] 1..4
+  [CSS::Properties] ok 1 - ast
+  [CSS::Properties] ok 2 - style unoptimized
+  [CSS::Properties] ok 3 - ast
+  [CSS::Properties] ok 4 - style optimized
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/at-font-face.t
+  [CSS::Properties] 1..30
+  [CSS::Properties] ok 1 - 
+  [CSS::Properties] ok 2 - 
+  [CSS::Properties] ok 3 - 
+  [CSS::Properties] ok 4 - 
+  [CSS::Properties] ok 5 - 
+  [CSS::Properties] ok 6 - 
+  [CSS::Properties] ok 7 - 
+  [CSS::Properties] ok 8 - 
+  [CSS::Properties] ok 9 - 
+  [CSS::Properties] ok 10 - 
+  [CSS::Properties] ok 11 - 
+  [CSS::Properties] ok 12 - 
+  [CSS::Properties] ok 13 - 
+  [CSS::Properties] ok 14 - 
+  [CSS::Properties] ok 15 - 
+  [CSS::Properties] ok 16 - 
+  [CSS::Properties] ok 17 - 
+  [CSS::Properties] ok 18 - 
+  [CSS::Properties] ok 19 - 
+  [CSS::Properties] ok 20 - 
+  [CSS::Properties] ok 21 - 
+  [CSS::Properties] ok 22 - 
+  [CSS::Properties] ok 23 - 
+  [CSS::Properties] ok 24 - 
+  [CSS::Properties] ok 25 - 
+  [CSS::Properties] ok 26 - 
+  [CSS::Properties] ok 27 - 
+  [CSS::Properties] ok 28 - 
+  [CSS::Properties] ok 29 - 
+  [CSS::Properties] ok 30 - 
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/box-fonts.t
+  [CSS::Properties] 1..5
+  [CSS::Properties] # Subtest: basic
+  [CSS::Properties]     1..9
+  [CSS::Properties]     ok 1 - em
+  [CSS::Properties]     ok 2 - ex
+  [CSS::Properties]     ok 3 - font-style
+  [CSS::Properties]     ok 4 - font-weight
+  [CSS::Properties]     ok 5 - font-family
+  [CSS::Properties]     ok 6 - line-height
+  [CSS::Properties]     ok 7 - font-stretch
+  [CSS::Properties]     ok 8 - measuring unit
+  [CSS::Properties]     ok 9 - $font.Str
+  [CSS::Properties] ok 1 - basic
+  [CSS::Properties] # Subtest: measure
+  [CSS::Properties]     1..9
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - measure numeric
+  [CSS::Properties]     ok 5 - measure percentage font-size
+  [CSS::Properties]     ok 6 - measure percentage font-size
+  [CSS::Properties]     ok 7 - measure percentage font-size
+  [CSS::Properties]     ok 8 - measure named font-size
+  [CSS::Properties]     ok 9 - measure named font-size
+  [CSS::Properties] ok 2 - measure
+  [CSS::Properties] # Subtest: patterns
+  [CSS::Properties]     1..3
+  [CSS::Properties]     ok 1 - fontconfig-pattern
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - fontconfig-pattern
+  [CSS::Properties] ok 3 - patterns
+  [CSS::Properties] # Subtest: match basic
+  [CSS::Properties]     1..2
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties] ok 4 - match basic
+  [CSS::Properties] # Subtest: match styles
+  [CSS::Properties]     1..6
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     ok 5 - 
+  [CSS::Properties]     ok 6 - 
+  [CSS::Properties] ok 5 - match styles
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/box-measure.t
+  [CSS::Properties] 1..19
+  [CSS::Properties] ok 1 - default units
+  [CSS::Properties] ok 2 - .Array
+  [CSS::Properties] ok 3 - .padding
+  [CSS::Properties] ok 4 - .border
+  [CSS::Properties] ok 5 - .margin
+  [CSS::Properties] ok 6 - .width
+  [CSS::Properties] ok 7 - .height
+  [CSS::Properties] ok 8 - .width("padding")
+  [CSS::Properties] ok 9 - .height("padding")
+  [CSS::Properties] ok 10 - .padding-XXX
+  [CSS::Properties] ok 11 - .border-XXX
+  [CSS::Properties] ok 12 - .margin-XXX
+  [CSS::Properties] ok 13 - .border-width
+  [CSS::Properties] ok 14 - .border-height
+  [CSS::Properties] ok 15 - 
+  [CSS::Properties] ok 16 - changed units
+  [CSS::Properties] ok 17 - .Array
+  [CSS::Properties] ok 18 - .padding
+  [CSS::Properties] ok 19 - adjusted .margin
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/box.t
+  [CSS::Properties] 1..20
+  [CSS::Properties] ok 1 - .Array
+  [CSS::Properties] ok 2 - .padding
+  [CSS::Properties] ok 3 - .border
+  [CSS::Properties] ok 4 - .margin
+  [CSS::Properties] ok 5 - .width
+  [CSS::Properties] ok 6 - .height
+  [CSS::Properties] ok 7 - .width("padding")
+  [CSS::Properties] ok 8 - .height("padding")
+  [CSS::Properties] ok 9 - .padding-XXX
+  [CSS::Properties] ok 10 - .border-XXX
+  [CSS::Properties] ok 11 - .margin-XXX
+  [CSS::Properties] ok 12 - .border-width
+  [CSS::Properties] ok 13 - .border-height
+  [CSS::Properties] ok 14 - .translate
+  [CSS::Properties] ok 15 - translate padding
+  [CSS::Properties] ok 16 - .move
+  [CSS::Properties] ok 17 - move padding
+  [CSS::Properties] ok 18 - .resize
+  [CSS::Properties] ok 19 - illegal initial size
+  [CSS::Properties] not ok 20 - illegal resize # TODO reimplement resize checks
+  [CSS::Properties] # Failed test 'illegal resize'
+  [CSS::Properties] # at t/box.t line 52
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/calc.t
+  [CSS::Properties] 1..4
+  [CSS::Properties] # Subtest: font-size
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     1..3
+  [CSS::Properties] ok 1 - font-size
+  [CSS::Properties] # Subtest: basic arithmetic
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     1..4
+  [CSS::Properties] ok 2 - basic arithmetic
+  [CSS::Properties] # Subtest: associativety/precedence
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     ok 5 - 
+  [CSS::Properties]     ok 6 - 
+  [CSS::Properties]     ok 7 - 
+  [CSS::Properties]     1..7
+  [CSS::Properties] ok 3 - associativety/precedence
+  [CSS::Properties] # Subtest: div/minus
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     1..4
+  [CSS::Properties] ok 4 - div/minus
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/colors.t
+  [CSS::Properties] 1..33
+  [CSS::Properties] ok 1 - :values constructor
+  [CSS::Properties] ok 2 - :values constructor
+  [CSS::Properties] ok 3 - serialization
+  [CSS::Properties] ok 4 - :values constructor
+  [CSS::Properties] ok 5 - :values constructor
+  [CSS::Properties] ok 6 - :values constructor
+  [CSS::Properties] ok 7 - serialization
+  [CSS::Properties] ok 8 - :values constructor
+  [CSS::Properties] ok 9 - :values constructor
+  [CSS::Properties] ok 10 - :values constructor
+  [CSS::Properties] ok 11 - :values constructor
+  [CSS::Properties] ok 12 - serialization
+  [CSS::Properties] ok 13 - :values constructor
+  [CSS::Properties] ok 14 - :values constructor
+  [CSS::Properties] ok 15 - :values constructor
+  [CSS::Properties] ok 16 - serialization
+  [CSS::Properties] ok 17 - :values constructor
+  [CSS::Properties] ok 18 - :values constructor
+  [CSS::Properties] ok 19 - :values constructor
+  [CSS::Properties] ok 20 - serialization
+  [CSS::Properties] ok 21 - :values constructor
+  [CSS::Properties] ok 22 - :values constructor
+  [CSS::Properties] ok 23 - :values constructor
+  [CSS::Properties] ok 24 - serialization
+  [CSS::Properties] ok 25 - :values constructor
+  [CSS::Properties] ok 26 - :values constructor
+  [CSS::Properties] ok 27 - :values constructor
+  [CSS::Properties] ok 28 - serialization
+  [CSS::Properties] ok 29 - border-*-color default
+  [CSS::Properties] ok 30 - border-*-color default
+  [CSS::Properties] ok 31 - border-*-color default
+  [CSS::Properties] ok 32 - color assignment
+  [CSS::Properties] ok 33 - color assigment
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/css-fonts.t
+  [CSS::Properties] 1..4
+  [CSS::Properties] # Subtest: props
+  [CSS::Properties]     ok 1 - font-style
+  [CSS::Properties]     ok 2 - font-weight
+  [CSS::Properties]     ok 3 - font-family
+  [CSS::Properties]     ok 4 - font-size
+  [CSS::Properties]     ok 5 - line-height
+  [CSS::Properties]     1..5
+  [CSS::Properties] ok 1 - props
+  [CSS::Properties] # Subtest: serialization
+  [CSS::Properties]     1..33
+  [CSS::Properties]     ok 1 - serialization
+  [CSS::Properties]     ok 2 - (empty)
+  [CSS::Properties]     ok 3 - font-family
+  [CSS::Properties]     ok 4 - line-height
+  [CSS::Properties]     ok 5 - font-family line-height
+  [CSS::Properties]     ok 6 - font-size
+  [CSS::Properties]     ok 7 - font-family font-size
+  [CSS::Properties]     ok 8 - font-size line-height
+  [CSS::Properties]     ok 9 - font-family font-size line-height
+  [CSS::Properties]     ok 10 - font-weight
+  [CSS::Properties]     ok 11 - font-family font-weight
+  [CSS::Properties]     ok 12 - font-weight line-height
+  [CSS::Properties]     ok 13 - font-family font-weight line-height
+  [CSS::Properties]     ok 14 - font-size font-weight
+  [CSS::Properties]     ok 15 - font-family font-size font-weight
+  [CSS::Properties]     ok 16 - font-size font-weight line-height
+  [CSS::Properties]     ok 17 - font-family font-size font-weight line-height
+  [CSS::Properties]     ok 18 - font-style
+  [CSS::Properties]     ok 19 - font-family font-style
+  [CSS::Properties]     ok 20 - font-style line-height
+  [CSS::Properties]     ok 21 - font-family font-style line-height
+  [CSS::Properties]     ok 22 - font-size font-style
+  [CSS::Properties]     ok 23 - font-family font-size font-style
+  [CSS::Properties]     ok 24 - font-size font-style line-height
+  [CSS::Properties]     ok 25 - font-family font-size font-style line-height
+  [CSS::Properties]     ok 26 - font-style font-weight
+  [CSS::Properties]     ok 27 - font-family font-style font-weight
+  [CSS::Properties]     ok 28 - font-style font-weight line-height
+  [CSS::Properties]     ok 29 - font-family font-style font-weight line-height
+  [CSS::Properties]     ok 30 - font-size font-style font-weight
+  [CSS::Properties]     ok 31 - font-family font-size font-style font-weight
+  [CSS::Properties]     ok 32 - font-size font-style font-weight line-height
+  [CSS::Properties]     ok 33 - font-family font-size font-style font-weight line-height
+  [CSS::Properties] ok 2 - serialization
+  [CSS::Properties] # Subtest: issue#23
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     1..1
+  [CSS::Properties] ok 3 - issue \#23
+  [CSS::Properties] # Subtest: change em
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     1..2
+  [CSS::Properties] ok 4 - change em
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/declarations.t
+  [CSS::Properties] 1..47
+  [CSS::Properties] ok 1 - :values constructor
+  [CSS::Properties] ok 2 - box property
+  [CSS::Properties] ok 3 - edges property
+  [CSS::Properties] ok 4 - simple property
+  [CSS::Properties] ok 5 - margin-left is a margin edge
+  [CSS::Properties] ok 6 - default azimuth
+  [CSS::Properties] ok 7 - default azimuth
+  [CSS::Properties] ok 8 - default background position
+  [CSS::Properties] ok 9 - default margin
+  [CSS::Properties] ok 10 - default margin-left
+  [CSS::Properties] ok 11 - default margin left type
+  [CSS::Properties] ok 12 - default background-color
+  [CSS::Properties] ok 13 - default background-color
+  [CSS::Properties] ok 14 - basic css rewritten
+  [CSS::Properties] ok 15 - list parse
+  [CSS::Properties] ok 16 - list parse
+  [CSS::Properties] ok 17 - list parse
+  [CSS::Properties] ok 18 - background-color reset
+  [CSS::Properties] ok 19 - background-color reset
+  [CSS::Properties] ok 20 - updated margin-right value
+  [CSS::Properties] ok 21 - updated margin-right units
+  [CSS::Properties] ok 22 - updated margin-right units
+  [CSS::Properties] ok 23 - updated margin
+  [CSS::Properties] ok 24 - measured margin
+  [CSS::Properties] ok 25 - reset margin
+  [CSS::Properties] ok 26 - reset margin-left
+  [CSS::Properties] ok 27 - named and rgb colors
+  [CSS::Properties] ok 28 - 
+  [CSS::Properties] ok 29 - border-color string coercement
+  [CSS::Properties] ok 30 - border-color reset
+  [CSS::Properties] ok 31 - struct str assignment
+  [CSS::Properties] ok 32 - border top
+  [CSS::Properties] ok 33 - border top width
+  [CSS::Properties] ok 34 - border top width
+  [CSS::Properties] ok 35 - border top color
+  [CSS::Properties] ok 36 - border top color
+  [CSS::Properties] ok 37 - struct hash assignment
+  [CSS::Properties] ok 38 - border top width
+  [CSS::Properties] ok 39 - border top color
+  [CSS::Properties] ok 40 - border top color
+  [CSS::Properties] ok 41 - border top color
+  [CSS::Properties] ok 42 - reset border top width
+  [CSS::Properties] ok 43 - reset border top color
+  [CSS::Properties] ok 44 - info on a container property
+  [CSS::Properties] ok 45 - default text-align
+  [CSS::Properties] ok 46 - default text-align (direction rtl)
+  [CSS::Properties] ok 47 - updated text-direction
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/errors.t
+  [CSS::Properties] 1..6
+  [CSS::Properties] ok 1 - 
+  [CSS::Properties] unable to parse CSS property 'width: 2furlongs;'
+  [CSS::Properties] ok 2 - 
+  [CSS::Properties] ok 3 - 
+  [CSS::Properties] ok 4 - 
+  [CSS::Properties] unable to parse CSS property 'width: foo(42);'
+  [CSS::Properties] ok 5 - 
+  [CSS::Properties] expected type of length, got number: calc(42)
+  [CSS::Properties] ok 6 - 
+  [CSS::Properties] unable to evaluate expression: calc(2em + 3hz)
+  [CSS::Properties] usage: calc( <calc-sum> )
+  [CSS::Properties] unable to evaluate expression: calc('foo')
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/extend.t
+  [CSS::Properties] 1..22
+  [CSS::Properties] ok 1 - info.name
+  [CSS::Properties] ok 2 - info.synopsis
+  [CSS::Properties] ok 3 - info.default
+  [CSS::Properties] ok 4 - info.name
+  [CSS::Properties] ok 5 - 
+  [CSS::Properties] ok 6 - info.default
+  [CSS::Properties] ok 7 - coercer called
+  [CSS::Properties] ok 8 - 
+  [CSS::Properties] ok 9 - The object is-a 'Int'
+  [CSS::Properties] ok 10 - property set
+  [CSS::Properties] ok 11 - coercer called
+  [CSS::Properties] ok 12 - property get
+  [CSS::Properties] ok 13 - properties
+  [CSS::Properties] ok 14 - serialization
+  [CSS::Properties] ok 15 - serialization (default)
+  [CSS::Properties] ok 16 - reserialization
+  [CSS::Properties] ok 17 - 
+  [CSS::Properties] ok 18 - 
+  [CSS::Properties] ok 19 - case insensitivity
+  [CSS::Properties] # Subtest: parse
+  [CSS::Properties]     ok 1 - coercer called
+  [CSS::Properties]     ok 2 - coercer called
+  [CSS::Properties]     ok 3 - serialization
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     ok 5 - The object is-a 'Int'
+  [CSS::Properties]     ok 6 - 
+  [CSS::Properties]     1..6
+  [CSS::Properties] ok 20 - parse
+  [CSS::Properties] # Subtest: invalid
+  [CSS::Properties]     ok 1 - serialization
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - The object is-a 'Int'
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     1..4
+  [CSS::Properties] ok 21 - invalid
+  [CSS::Properties] # Subtest: any
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     ok 5 - 
+  [CSS::Properties]     1..5
+  [CSS::Properties] ok 22 - any
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/important.t
+  [CSS::Properties] 1..14
+  [CSS::Properties] ok 1 - 
+  [CSS::Properties] ok 2 - 
+  [CSS::Properties] ok 3 - 
+  [CSS::Properties] ok 4 - 
+  [CSS::Properties] ok 5 - 
+  [CSS::Properties] ok 6 - importance setter
+  [CSS::Properties] ok 7 - importance setter - box
+  [CSS::Properties] ok 8 - importance setter - box
+  [CSS::Properties] ok 9 - 
+  [CSS::Properties] ok 10 - 
+  [CSS::Properties] ok 11 - 
+  [CSS::Properties] ok 12 - 
+  [CSS::Properties] ok 13 - 
+  [CSS::Properties] ok 14 - 
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/inherit.t
+  [CSS::Properties] 1..23
+  [CSS::Properties] ok 1 - 
+  [CSS::Properties] ok 2 - overridden value
+  [CSS::Properties] ok 3 - overridden value
+  [CSS::Properties] ok 4 - 'initial'
+  [CSS::Properties] ok 5 - 'initial'
+  [CSS::Properties] ok 6 - 'inherit'
+  [CSS::Properties] ok 7 - 'inherit'
+  [CSS::Properties] ok 8 - color inherit metadata
+  [CSS::Properties] ok 9 - inherited property
+  [CSS::Properties] ok 10 - margin-bottom inherit metadata
+  [CSS::Properties] ok 11 - non-inhertiable property
+  [CSS::Properties] ok 12 - inherited box value
+  [CSS::Properties] ok 13 - inherited value
+  [CSS::Properties] ok 14 - initial box value
+  [CSS::Properties] ok 15 - inherited !important property
+  [CSS::Properties] ok 16 - !important is not inherited
+  [CSS::Properties] ok 17 - inherit from object
+  [CSS::Properties] ok 18 - inherit from string
+  [CSS::Properties] # Subtest: font-size inheritance
+  [CSS::Properties]     ok 1 - inherit absolute font-size
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - inheritance of relative font-size
+  [CSS::Properties]     ok 4 - relative font-size inheritance
+  [CSS::Properties]     ok 5 - inherited font size measurement
+  [CSS::Properties]     ok 6 - computed font size measurement
+  [CSS::Properties]     ok 7 - relative font size measurement
+  [CSS::Properties]     ok 8 - relative font size measurement
+  [CSS::Properties]     1..8
+  [CSS::Properties] ok 19 - font-size inheritance
+  [CSS::Properties] # Subtest: inherit+clone
+  [CSS::Properties]     ok 1 - cloned css
+  [CSS::Properties]     ok 2 - cloned css
+  [CSS::Properties]     ok 3 - cloned+inherited css
+  [CSS::Properties]     ok 4 - inherited+cloned css
+  [CSS::Properties]     ok 5 - 
+  [CSS::Properties]     ok 6 - 
+  [CSS::Properties]     ok 7 - 
+  [CSS::Properties]     ok 8 - original css
+  [CSS::Properties]     1..8
+  [CSS::Properties] ok 20 - inherit+clone
+  [CSS::Properties] # Subtest: issue#11 inheritence
+  [CSS::Properties]     1..2
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties] ok 21 - issue \#11 inheritence
+  [CSS::Properties] # Subtest: early inheritence
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     1..3
+  [CSS::Properties] ok 22 - early inheritence
+  [CSS::Properties] # Subtest: late inheritance
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     1..4
+  [CSS::Properties] ok 23 - late inheritance
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/measure.t
+  [CSS::Properties] 1..32
+  [CSS::Properties] ok 1 - $css.measure($.viewport-width)
+  [CSS::Properties] ok 2 - $css.measure($.viewport-height)
+  [CSS::Properties] ok 3 - default units
+  [CSS::Properties] ok 4 - $css.measure(pt)
+  [CSS::Properties] ok 5 - $css.measure(px)
+  [CSS::Properties] ok 6 - $css.measure(pc)
+  [CSS::Properties] ok 7 - $css.measure(em)
+  [CSS::Properties] ok 8 - $css.measure(ex)
+  [CSS::Properties] ok 9 - $css.measure(vw)
+  [CSS::Properties] ok 10 - $css.measure(vh)
+  [CSS::Properties] ok 11 - $css.measure("thin")
+  [CSS::Properties] ok 12 - $css.measure("medium")
+  [CSS::Properties] ok 13 - $css.measure(:font-size<medium>)
+  [CSS::Properties] ok 14 - $css.measure("thick")
+  [CSS::Properties] ok 15 - $css.measure("x-large")
+  [CSS::Properties] ok 16 - $css.measure("smaller")
+  [CSS::Properties] # Subtest: font-size
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     ok 5 - 
+  [CSS::Properties]     ok 6 - 
+  [CSS::Properties]     ok 7 - 
+  [CSS::Properties]     ok 8 - 
+  [CSS::Properties]     ok 9 - 
+  [CSS::Properties]     ok 10 - 
+  [CSS::Properties]     ok 11 - 
+  [CSS::Properties]     ok 12 - 
+  [CSS::Properties]     ok 13 - 
+  [CSS::Properties]     ok 14 - 
+  [CSS::Properties]     1..14
+  [CSS::Properties] ok 17 - font-size
+  [CSS::Properties] # Subtest: font-weight
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     ok 5 - 
+  [CSS::Properties]     ok 6 - 
+  [CSS::Properties]     ok 7 - 
+  [CSS::Properties]     ok 8 - 
+  [CSS::Properties]     ok 9 - 
+  [CSS::Properties]     ok 10 - 
+  [CSS::Properties]     ok 11 - 
+  [CSS::Properties]     ok 12 - 
+  [CSS::Properties]     ok 13 - 
+  [CSS::Properties]     1..13
+  [CSS::Properties] ok 18 - font-weight
+  [CSS::Properties] ok 19 - 
+  [CSS::Properties] ok 20 - 
+  [CSS::Properties] ok 21 - 
+  [CSS::Properties] ok 22 - changed units
+  [CSS::Properties] ok 23 - $css.measure(in)
+  [CSS::Properties] ok 24 - $css.measure(in)
+  [CSS::Properties] ok 25 - $css.measure(in)
+  [CSS::Properties] ok 26 - 
+  [CSS::Properties] ok 27 - 
+  [CSS::Properties] ok 28 - 
+  [CSS::Properties] ok 29 - 
+  [CSS::Properties] ok 30 - 
+  [CSS::Properties] ok 31 - 
+  [CSS::Properties] ok 32 - 
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/modules.t
+  [CSS::Properties] 1..5
+  [CSS::Properties] ok 1 - azimuth is unknown in CSS1
+  [CSS::Properties] ok 2 - azimuth is known in CSS21
+  [CSS::Properties] ok 3 - azimuth is known in CSS3
+  [CSS::Properties] dropping unknown @fontface property azimuth
+  [CSS::Properties] ok 4 - src is known in @font-face
+  [CSS::Properties] ok 5 - azimuth is unknown in @font-face
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/optimize.t
+  [CSS::Properties] 1..16
+  [CSS::Properties] ok 1 - optimised ast border:1px solid red;
+  [CSS::Properties] ok 2 - optimised css border:1px solid red;
+  [CSS::Properties] ok 3 - optimised ast border-width:5pt 5px 5in 5mm;
+  [CSS::Properties] ok 4 - optimised css border-width:5pt 5px 5in 5mm;
+  [CSS::Properties] ok 5 - optimised ast border-top:5px!important;
+  [CSS::Properties] ok 6 - optimised css border-top:5px!important;
+  [CSS::Properties] ok 7 - optimised ast border:5pt solid; border-color:red green blue yellow;
+  [CSS::Properties] ok 8 - optimised css border:5pt solid; border-color:red green blue yellow;
+  [CSS::Properties] ok 9 - optimised ast font-family:times; font-size:inherit; font-weight:inherit;
+  [CSS::Properties] ok 10 - optimised css font-family:times; font-size:inherit; font-weight:inherit;
+  [CSS::Properties] ok 11 - optimised ast background:no-repeat 50% 75%;
+  [CSS::Properties] ok 12 - optimised css background:no-repeat 50% 75%;
+  [CSS::Properties] ok 13 - optimised ast font:1.1em/1.3 Verdana, Arial, sans-serif;
+  [CSS::Properties] ok 14 - optimised css font:1.1em/1.3 Verdana, Arial, sans-serif;
+  [CSS::Properties] ok 15 - optimised ast list-style:circle;
+  [CSS::Properties] ok 16 - optimised css list-style:circle;
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/page-box.t
+  [CSS::Properties] 1..19
+  [CSS::Properties] ok 1 - 
+  [CSS::Properties] ok 2 - .Array
+  [CSS::Properties] ok 3 - .Array
+  [CSS::Properties] ok 4 - css
+  [CSS::Properties] ok 5 - .margin (mm)
+  [CSS::Properties] ok 6 - .margin (pt)
+  [CSS::Properties] ok 7 - .border
+  [CSS::Properties] ok 8 - .padding
+  [CSS::Properties] ok 9 - .content
+  [CSS::Properties] ok 10 - .margin auto
+  [CSS::Properties] ok 11 - .border auto
+  [CSS::Properties] ok 12 - .padding auto
+  [CSS::Properties] ok 13 - .content auto
+  [CSS::Properties] ok 14 - .margin auto
+  [CSS::Properties] ok 15 - .border auto
+  [CSS::Properties] ok 16 - .padding auto
+  [CSS::Properties] ok 17 - .content auto (mm)
+  [CSS::Properties] ok 18 - .content auto (pt)
+  [CSS::Properties] ok 19 - auto/min/max
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/svg-properties.t
+  [CSS::Properties] ok 1 - alignment-baseline:after-edge;
+  [CSS::Properties] ok 2 - baseline-shift:super;
+  [CSS::Properties] ok 3 - baseline-shift:1.5em;
+  [CSS::Properties] ok 4 - baseline-shift:1.5em; - type
+  [CSS::Properties] ok 5 - baseline-shift:4%;
+  [CSS::Properties] ok 6 - baseline-shift:4%; - type
+  [CSS::Properties] ok 7 - color:red;
+  [CSS::Properties] ok 8 - color:rgb(10%,20,30);
+  [CSS::Properties] ok 9 - color:rgb(10%,20,30); - type
+  [CSS::Properties] ok 10 - color-interpolation:sRGB;
+  [CSS::Properties] ok 11 - color-interpolation:Srgb;
+  [CSS::Properties] ok 12 - color-interpolation:lInearRgB;
+  [CSS::Properties] ok 13 - color-rendering:optimizeSpeed;
+  [CSS::Properties] ok 14 - direction:ltr;
+  [CSS::Properties] ok 15 - direction:rtl;
+  [CSS::Properties] ok 16 - display:table-cell;
+  [CSS::Properties] ok 17 - dominant-baseline:hanging;
+  [CSS::Properties] ok 18 - fill:rgb(10,20,10%);
+  [CSS::Properties] ok 19 - fill-opacity:0.75;
+  [CSS::Properties] ok 20 - fill-opacity:75%;
+  [CSS::Properties] ok 21 - fill-rule:evenOdD;
+  [CSS::Properties] ok 22 - font-variant:small-Caps;
+  [CSS::Properties] ok 23 - glyph-orientation-vertical:45deg;
+  [CSS::Properties] ok 24 - glyph-orientation-vertical:7;
+  [CSS::Properties] ok 25 - image-rendering:optimizeQuality;
+  [CSS::Properties] ok 26 - line-height:90%;
+  [CSS::Properties] ok 27 - line-height:normal;
+  [CSS::Properties] ok 28 - line-height:42;
+  [CSS::Properties] ok 29 - marker-start:none;
+  [CSS::Properties] ok 30 - marker-start:url('http://www.example.com/pinkish.gif');
+  [CSS::Properties] ok 31 - marker-mid:none;
+  [CSS::Properties] ok 32 - marker-end:none;
+  [CSS::Properties] ok 33 - marker:url('http://www.example.com/greenish.gif') url('http://www.example.com/pinkish.gif');
+  [CSS::Properties] ok 34 - opacity:0.75;
+  [CSS::Properties] ok 35 - opacity:75%;
+  [CSS::Properties] ok 36 - overflow:hidden;
+  [CSS::Properties] ok 37 - paint-order:fill stroke;
+  [CSS::Properties] ok 38 - shape-rendering:crispEdges;
+  [CSS::Properties] ok 39 - stop-opacity:0.75;
+  [CSS::Properties] ok 40 - stop-opacity:75%;
+  [CSS::Properties] ok 41 - stroke:none;
+  [CSS::Properties] ok 42 - stroke:black;
+  [CSS::Properties] ok 43 - stroke-dasharray:20, 10;
+  [CSS::Properties] ok 44 - stroke-dasharray:em, 2em;
+  [CSS::Properties] ok 45 - stroke-dashoffset:3em;
+  [CSS::Properties] ok 46 - stroke-linecap:round;
+  [CSS::Properties] ok 47 - stroke-linejoin:bevel;
+  [CSS::Properties] ok 48 - stroke-opacity:0.75;
+  [CSS::Properties] ok 49 - stroke-opacity:75%;
+  [CSS::Properties] ok 50 - stroke-width:0.1em;
+  [CSS::Properties] ok 51 - stroke-width:2.5;
+  [CSS::Properties] ok 52 - stroke-miterlimit:5;
+  [CSS::Properties] ok 53 - text-anchor:middle;
+  [CSS::Properties] ok 54 - text-decoration:underline blink;
+  [CSS::Properties] ok 55 - text-rendering:geometricPrecision;
+  [CSS::Properties] ok 56 - visibility:hidden;
+  [CSS::Properties] ok 57 - white-space:pre;
+  [CSS::Properties] ok 58 - writing-mode:rl-tb;
+  [CSS::Properties] 1..58
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/threads.t
+  [CSS::Properties] 1..4
+  [CSS::Properties] ok 1 - basic
+  [CSS::Properties] ok 2 - info
+  [CSS::Properties] ok 3 - no property name errors
+  [CSS::Properties] ok 4 - mixed modules
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/units.t
+  [CSS::Properties] ok 1 - pt + pt
+  [CSS::Properties] ok 2 - pt + pt
+  [CSS::Properties] ok 3 - gist
+  [CSS::Properties] ok 4 - pt += pt
+  [CSS::Properties] ok 5 - pt += pt
+  [CSS::Properties] ok 6 - pt + mm
+  [CSS::Properties] ok 7 - pt + mm
+  [CSS::Properties] ok 8 - pt + mm
+  [CSS::Properties] ok 9 - pt - in
+  [CSS::Properties] ok 10 - pt + in
+  [CSS::Properties] ok 11 - pt +css in
+  [CSS::Properties] ok 12 - pt + px
+  [CSS::Properties] ok 13 - pt + pc
+  [CSS::Properties] ok 14 - pt - pc
+  [CSS::Properties] ok 15 - pt -css pc
+  [CSS::Properties] ok 16 - ms to s
+  [CSS::Properties] ok 17 - hz to khz
+  [CSS::Properties] ok 18 - turn to deg
+  [CSS::Properties] ok 19 - turn to rad
+  [CSS::Properties] ok 20 - px to pt
+  [CSS::Properties] ok 21 - dpi to dpcm
+  [CSS::Properties] ok 22 - dppx to dpi
+  [CSS::Properties] 1..22
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/vivify.t
+  [CSS::Properties] 1..6
+  [CSS::Properties] ok 1 - vivifed-name
+  [CSS::Properties] ok 2 - 
+  [CSS::Properties] ok 3 - 
+  [CSS::Properties] ok 4 - 
+  [CSS::Properties] ok 5 - 
+  [CSS::Properties] ok 6 - 
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/write.t
+  [CSS::Properties] 1..25
+  [CSS::Properties] ok 1 - unoptimized edge property
+  [CSS::Properties] ok 2 - edge property
+  [CSS::Properties] ok 3 - consolidation of edge properties
+  [CSS::Properties] ok 4 - consolidation of edge properties
+  [CSS::Properties] ok 5 - optimized properties
+  [CSS::Properties] ok 6 - edge unoptimized
+  [CSS::Properties] ok 7 - edge optimized
+  [CSS::Properties] ok 8 - compound edge
+  [CSS::Properties] ok 9 - compound edge - unoptimized
+  [CSS::Properties] ok 10 - compound edge - re-optimized
+  [CSS::Properties] ok 11 - compound edge - partial optimization
+  [CSS::Properties] ok 12 - optimization of default values
+  [CSS::Properties] ok 13 - 
+  [CSS::Properties] ok 14 - 
+  [CSS::Properties] ok 15 - 
+  [CSS::Properties] ok 16 - 
+  [CSS::Properties] ok 17 - 
+  [CSS::Properties] ok 18 - 
+  [CSS::Properties] ok 19 - 
+  [CSS::Properties] ok 20 - 
+  [CSS::Properties] ok 21 - 
+  [CSS::Properties] ok 22 - 
+  [CSS::Properties] ok 23 - 
+  [CSS::Properties] ok 24 - 
+  [CSS::Properties] ok 25 - 
+  ===> Testing [OK] for CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10>
+  ===> Installing: CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10>
+  ===> Install [OK] for CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 2min 27.150s
-               CPU time consumed: 2min 30.124s
-                     Memory peak: 1.3G (swap: 52K)
+                 Service runtime: 9min 41.396s
+               CPU time consumed: 10min 549ms
+                     Memory peak: 2G (swap: 766.5M)
 
   ```
   </details>
@@ -544,171 +1201,763 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p1566360-i1578735.service; invocation ID: 3bccac8da1354685887dcf852f127c1f
+  Running as unit: run-p2271494-i2137988.service; invocation ID: b8f08de647e7486f87f0deacb0cb6e4b
   Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: FontConfig
-  ===> Found: FontConfig:ver<0.1.9>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
-  [FontConfig] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789822166.1566378.7963.114269278888/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz https://360.zef.pm/F/ON/FONTCONFIG/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
-  ===> Fetching [OK]: FontConfig:ver<0.1.9>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1789822166.1566378.7963.114269278888/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
-  [FontConfig] Command: tar -t -f ./aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
-  [FontConfig] Command: tar -xvf ./aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz -C ../aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
-  ===> Extraction [OK]: FontConfig to /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz
-  ===> Building: FontConfig:ver<0.1.9>:auth<zef:dwarring>
-  [FontConfig] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -e require '/home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9/Build.pm6'; ::('Build').new.build('/home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9') ?? exit(0) !! exit(1);
-  [FontConfig] gcc -I src  -c -fPIC -fwrapv -std=gnu99 -Wextra -Wall -Wno-unused-parameter -Wno-unused-function -Wno-missing-braces -Werror=pointer-arith -O3 -DNDEBUG  -D_REENTRANT -D_FILE_OFFSET_BITS=64 -fPIC -DMVM_HEAPSNAPSHOT_FORMAT=2 -D_GNU_SOURCE -o src/fc_raku.o src/fc_raku.c
-  [FontConfig] gcc  -shared -fPIC -lfontconfig  -O3 -DNDEBUG -Wl,-rpath,"//tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/lib" -o resources/libraries/libfc_raku.so src/fc_raku.o
-  [FontConfig] make: Nothing to be done for 'all'.
-  ===> Building [FAIL]: FontConfig:ver<0.1.9>:auth<zef:dwarring>
-  [FontConfig] Failed to build, but continuing with --force-build
-  ===> Testing: FontConfig:ver<0.1.9>:auth<zef:dwarring>
-  [FontConfig] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/00raw.t
-  [FontConfig] 1..6
-  [FontConfig] ok 1 - 
-  [FontConfig] ok 2 - 
-  [FontConfig] ok 3 - 
-  [FontConfig] ok 4 - 
-  [FontConfig] ok 5 - known constant
-  [FontConfig] ok 6 - 
-  [FontConfig] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/basic.t
-  [FontConfig] 1..4
-  [FontConfig] fontconfig library version: 2.17.01
-  [FontConfig] ok 1 - fontconfig library >= 2.13.01 (minimum version)
-  [FontConfig] ok 2 - weight object
-  [FontConfig] # Subtest: pattern tests
-  [FontConfig]     1..17
-  [FontConfig]     ok 1 - have pattern
-  [FontConfig]     ok 2 - stringified, initial
-  [FontConfig]     ok 3 - elems
-  [FontConfig]     ok 4 - pattern members, intial
-  [FontConfig]     ok 5 - pattern family members
-  [FontConfig]     ok 6 - set weight property to fixed value (bold)
-  [FontConfig]     ok 7 - set weight property to range
-  [FontConfig]     ok 8 - unset value return type
-  [FontConfig]     ok 9 - pattern members, after add
-  [FontConfig]     ok 10 - associative property
-  [FontConfig]     ok 11 - stringified, after add
-  [FontConfig]     ok 12 - stringified, after add and associative delete
-  [FontConfig]     ok 13 - pattern members, after add and delete
-  [FontConfig]     ok 14 - pattern elems, after configure
-  [FontConfig]     ok 15 - pattern stringified, after configure
-  [FontConfig]     ok 16 - patern file property, after configure
-  [FontConfig]     ok 17 - patern file property, after configure
-  [FontConfig] ok 3 - pattern tests
-  [FontConfig] # Subtest: match tests
-  [FontConfig]     1..7
-  [FontConfig]     ok 1 - match lives
-  [FontConfig]     ok 2 - weight property
-  [FontConfig]     ok 3 - file associative property exists
-  [FontConfig]     ok 4 - file associative property defined
-  [FontConfig]     ok 5 - The object is-a 'Str'
-  [FontConfig]     ok 6 - file accessor
-  [FontConfig]     ok 7 - matched a file
-  [FontConfig] ok 4 - match tests
-  [FontConfig] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/custom-conf.t
-  [FontConfig] 1..15
-  [FontConfig] ok 1 - 
-  [FontConfig] ok 2 - 
-  [FontConfig] ok 3 - 
-  [FontConfig] ok 4 - 
-  [FontConfig] ok 5 - 
-  [FontConfig] ok 6 - 
-  [FontConfig] ok 7 - 
-  [FontConfig] ok 8 - 
-  [FontConfig] ok 9 - 
-  [FontConfig] ok 10 - 
-  [FontConfig] ok 11 - 
-  [FontConfig] ok 12 - 
-  [FontConfig] ok 13 - 
-  [FontConfig] ok 14 - 
-  [FontConfig] ok 15 - 
-  [FontConfig] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/empty-config.t
-  [FontConfig] 1..8
-  [FontConfig] ok 1 - 
-  [FontConfig] ok 2 - The object is-a '"FontConfig"'
-  [FontConfig] ok 3 - FontConfig
-  [FontConfig] ok 4 - 
-  [FontConfig] ok 5 - 
-  [FontConfig] ok 6 - 
-  [FontConfig] ok 7 - The object is-a 'FontConfig::Match'
-  [FontConfig] ok 8 - Matching has been disabled
-  [FontConfig] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/match-series.t
-  [FontConfig] 1..11
-  [FontConfig] ok 1 - series elems
-  [FontConfig] # Subtest: first match
-  [FontConfig]     ok 1 - family
-  [FontConfig]     ok 2 - style
-  [FontConfig]     ok 3 - file
-  [FontConfig]     1..3
-  [FontConfig] ok 2 - first match
-  [FontConfig] # Subtest: second match
-  [FontConfig]     ok 1 - family
-  [FontConfig]     ok 2 - style
-  [FontConfig]     ok 3 - file
-  [FontConfig]     1..3
-  [FontConfig] ok 3 - second match
-  [FontConfig] ok 4 - trim series elems
-  [FontConfig] # Subtest: first trim match
-  [FontConfig]     ok 1 - family
-  [FontConfig]     ok 2 - style
-  [FontConfig]     ok 3 - file
-  [FontConfig]     1..3
-  [FontConfig] ok 5 - first trim match
-  [FontConfig] ok 6 - :!best
-  [FontConfig] ok 7 - :best
-  [FontConfig] ok 8 - :best series elems
-  [FontConfig] # Subtest: first trim match
-  [FontConfig]     ok 1 - family
-  [FontConfig]     ok 2 - style
-  [FontConfig]     ok 3 - file
-  [FontConfig]     1..3
-  [FontConfig] ok 9 - first trim match
-  [FontConfig] # Subtest: series iteration
-  [FontConfig]     ok 1 - family[0]
-  [FontConfig]     ok 2 - style[0]
-  [FontConfig]     ok 3 - file[0]
-  [FontConfig]     ok 4 - family[1]
-  [FontConfig]     ok 5 - style[1]
-  [FontConfig]     ok 6 - file[1]
-  [FontConfig]     ok 7 - iteration count
-  [FontConfig]     1..7
-  [FontConfig] ok 10 - series iteration
-  [FontConfig] # Subtest: fontconfig match-series
-  [FontConfig]     ok 1 - 
-  [FontConfig]     ok 2 - family[0]
-  [FontConfig]     ok 3 - style[0]
-  [FontConfig]     ok 4 - file[0]
-  [FontConfig]     ok 5 - family[1]
-  [FontConfig]     ok 6 - style[1]
-  [FontConfig]     ok 7 - file[1]
-  [FontConfig]     ok 8 - 
-  [FontConfig]     ok 9 - family[0]
-  [FontConfig]     ok 10 - style[0]
-  [FontConfig]     ok 11 - file[0]
-  [FontConfig]     ok 12 - family[1]
-  [FontConfig]     ok 13 - style[1]
-  [FontConfig]     ok 14 - file[1]
-  [FontConfig]     ok 15 - 
-  [FontConfig]     ok 16 - family[0]
-  [FontConfig]     ok 17 - style[0]
-  [FontConfig]     ok 18 - file[0]
-  [FontConfig]     ok 19 - family[1]
-  [FontConfig]     ok 20 - style[1]
-  [FontConfig]     ok 21 - file[1]
-  [FontConfig]     1..21
-  [FontConfig] ok 11 - fontconfig match-series
-  [FontConfig] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/aafc4c897f43dabffd93b2eaeee1d9bcdfb24803.tar.gz/FontConfig-0.1.9 t/query-ft-face.t
-  [FontConfig] 1..3
-  [FontConfig] ok 1 - # SKIP Font::FreeType needs to be installed to test query-ft-face()
-  [FontConfig] ok 2 - # SKIP Font::FreeType needs to be installed to test query-ft-face()
-  [FontConfig] ok 3 - # SKIP Font::FreeType needs to be installed to test query-ft-face()
-  ===> Testing [OK] for FontConfig:ver<0.1.9>:auth<zef:dwarring>
-  ===> Installing: FontConfig:ver<0.1.9>:auth<zef:dwarring>
-  ===> Install [OK] for FontConfig:ver<0.1.9>:auth<zef:dwarring>
+  ===> Searching for: CSS::Properties
+  ===> Found: CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10> [via Zef::Repository::Ecosystems<fez>]
+  [CSS::Properties] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789876510.2271509.1736.3482167161815/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz https://360.zef.pm/C/SS/CSS_PROPERTIES/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz
+  ===> Fetching [OK]: CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10> to /home/coke/sandbox/blin/data/zef-data/tmp/1789876510.2271509.1736.3482167161815/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz
+  [CSS::Properties] Command: tar -t -f ./f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz
+  [CSS::Properties] Command: tar -xvf ./f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz -C ../f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz
+  ===> Extraction [OK]: CSS::Properties to /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz
+  ===> Testing: CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10>
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/00-readme.t
+  [CSS::Properties] 1..12
+  [CSS::Properties] ok 1 - code sample
+  [CSS::Properties] dropping unknown CSS1 property azimuth
+  [CSS::Properties] ok 2 - code sample
+  [CSS::Properties] ok 3 - code sample
+  [CSS::Properties] ok 4 - code sample
+  [CSS::Properties] ok 5 - code sample
+  [CSS::Properties] ok 6 - code sample
+  [CSS::Properties] ok 7 - code sample
+  [CSS::Properties] ok 8 - code sample
+  [CSS::Properties] ok 9 - code sample
+  [CSS::Properties] ok 10 - code sample
+  [CSS::Properties] ok 11 - code sample
+  [CSS::Properties] ok 12 - code sample
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/01-property-basic.t
+  [CSS::Properties] 1..18
+  [CSS::Properties] ok 1 - $prop.name
+  [CSS::Properties] ok 2 - $prop.box
+  [CSS::Properties] ok 3 - $prop.inherit
+  [CSS::Properties] ok 4 - $prop.synopsis
+  [CSS::Properties] ok 5 - $prop.default
+  [CSS::Properties] ok 6 - missing edges detected
+  [CSS::Properties] ok 7 - $prop.name
+  [CSS::Properties] ok 8 - $prop.box
+  [CSS::Properties] ok 9 - $prop.inherit
+  [CSS::Properties] ok 10 - $prop.synopsis
+  [CSS::Properties] ok 11 - $prop.top.name
+  [CSS::Properties] ok 12 - declared property
+  [CSS::Properties] ok 13 - defaulted property
+  [CSS::Properties] ok 14 - write
+  [CSS::Properties] ok 15 - write
+  [CSS::Properties] ok 16 - copy/write
+  [CSS::Properties] ok 17 - 
+  [CSS::Properties] ok 18 - 
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/02-style-basic.t
+  [CSS::Properties] 1..15
+  [CSS::Properties] ok 1 - 
+  [CSS::Properties] ok 2 - 
+  [CSS::Properties] ok 3 - 
+  [CSS::Properties] ok 4 - 
+  [CSS::Properties] ok 5 - 
+  [CSS::Properties] ok 6 - 
+  [CSS::Properties] ok 7 - 
+  [CSS::Properties] ok 8 - important property
+  [CSS::Properties] ok 9 - unimportant property
+  [CSS::Properties] ok 10 - 
+  [CSS::Properties] ok 11 - 
+  [CSS::Properties] ok 12 - 
+  [CSS::Properties] ok 13 - 
+  [CSS::Properties] ok 14 - 
+  [CSS::Properties] ok 15 - 
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/ast.t
+  [CSS::Properties] 1..4
+  [CSS::Properties] ok 1 - ast
+  [CSS::Properties] ok 2 - style unoptimized
+  [CSS::Properties] ok 3 - ast
+  [CSS::Properties] ok 4 - style optimized
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/at-font-face.t
+  [CSS::Properties] 1..30
+  [CSS::Properties] ok 1 - 
+  [CSS::Properties] ok 2 - 
+  [CSS::Properties] ok 3 - 
+  [CSS::Properties] ok 4 - 
+  [CSS::Properties] ok 5 - 
+  [CSS::Properties] ok 6 - 
+  [CSS::Properties] ok 7 - 
+  [CSS::Properties] ok 8 - 
+  [CSS::Properties] ok 9 - 
+  [CSS::Properties] ok 10 - 
+  [CSS::Properties] ok 11 - 
+  [CSS::Properties] ok 12 - 
+  [CSS::Properties] ok 13 - 
+  [CSS::Properties] ok 14 - 
+  [CSS::Properties] ok 15 - 
+  [CSS::Properties] ok 16 - 
+  [CSS::Properties] ok 17 - 
+  [CSS::Properties] ok 18 - 
+  [CSS::Properties] ok 19 - 
+  [CSS::Properties] ok 20 - 
+  [CSS::Properties] ok 21 - 
+  [CSS::Properties] ok 22 - 
+  [CSS::Properties] ok 23 - 
+  [CSS::Properties] ok 24 - 
+  [CSS::Properties] ok 25 - 
+  [CSS::Properties] ok 26 - 
+  [CSS::Properties] ok 27 - 
+  [CSS::Properties] ok 28 - 
+  [CSS::Properties] ok 29 - 
+  [CSS::Properties] ok 30 - 
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/box-fonts.t
+  [CSS::Properties] 1..5
+  [CSS::Properties] # Subtest: basic
+  [CSS::Properties]     1..9
+  [CSS::Properties]     ok 1 - em
+  [CSS::Properties]     ok 2 - ex
+  [CSS::Properties]     ok 3 - font-style
+  [CSS::Properties]     ok 4 - font-weight
+  [CSS::Properties]     ok 5 - font-family
+  [CSS::Properties]     ok 6 - line-height
+  [CSS::Properties]     ok 7 - font-stretch
+  [CSS::Properties]     ok 8 - measuring unit
+  [CSS::Properties]     ok 9 - $font.Str
+  [CSS::Properties] ok 1 - basic
+  [CSS::Properties] # Subtest: measure
+  [CSS::Properties]     1..9
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - measure numeric
+  [CSS::Properties]     ok 5 - measure percentage font-size
+  [CSS::Properties]     ok 6 - measure percentage font-size
+  [CSS::Properties]     ok 7 - measure percentage font-size
+  [CSS::Properties]     ok 8 - measure named font-size
+  [CSS::Properties]     ok 9 - measure named font-size
+  [CSS::Properties] ok 2 - measure
+  [CSS::Properties] # Subtest: patterns
+  [CSS::Properties]     1..3
+  [CSS::Properties]     ok 1 - fontconfig-pattern
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - fontconfig-pattern
+  [CSS::Properties] ok 3 - patterns
+  [CSS::Properties] # Subtest: match basic
+  [CSS::Properties]     1..2
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties] ok 4 - match basic
+  [CSS::Properties] # Subtest: match styles
+  [CSS::Properties]     1..6
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     ok 5 - 
+  [CSS::Properties]     ok 6 - 
+  [CSS::Properties] ok 5 - match styles
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/box-measure.t
+  [CSS::Properties] 1..19
+  [CSS::Properties] ok 1 - default units
+  [CSS::Properties] ok 2 - .Array
+  [CSS::Properties] ok 3 - .padding
+  [CSS::Properties] ok 4 - .border
+  [CSS::Properties] ok 5 - .margin
+  [CSS::Properties] ok 6 - .width
+  [CSS::Properties] ok 7 - .height
+  [CSS::Properties] ok 8 - .width("padding")
+  [CSS::Properties] ok 9 - .height("padding")
+  [CSS::Properties] ok 10 - .padding-XXX
+  [CSS::Properties] ok 11 - .border-XXX
+  [CSS::Properties] ok 12 - .margin-XXX
+  [CSS::Properties] ok 13 - .border-width
+  [CSS::Properties] ok 14 - .border-height
+  [CSS::Properties] ok 15 - 
+  [CSS::Properties] ok 16 - changed units
+  [CSS::Properties] ok 17 - .Array
+  [CSS::Properties] ok 18 - .padding
+  [CSS::Properties] ok 19 - adjusted .margin
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/box.t
+  [CSS::Properties] 1..20
+  [CSS::Properties] ok 1 - .Array
+  [CSS::Properties] ok 2 - .padding
+  [CSS::Properties] ok 3 - .border
+  [CSS::Properties] ok 4 - .margin
+  [CSS::Properties] ok 5 - .width
+  [CSS::Properties] ok 6 - .height
+  [CSS::Properties] ok 7 - .width("padding")
+  [CSS::Properties] ok 8 - .height("padding")
+  [CSS::Properties] ok 9 - .padding-XXX
+  [CSS::Properties] ok 10 - .border-XXX
+  [CSS::Properties] ok 11 - .margin-XXX
+  [CSS::Properties] ok 12 - .border-width
+  [CSS::Properties] ok 13 - .border-height
+  [CSS::Properties] ok 14 - .translate
+  [CSS::Properties] ok 15 - translate padding
+  [CSS::Properties] ok 16 - .move
+  [CSS::Properties] ok 17 - move padding
+  [CSS::Properties] ok 18 - .resize
+  [CSS::Properties] ok 19 - illegal initial size
+  [CSS::Properties] not ok 20 - illegal resize # TODO reimplement resize checks
+  [CSS::Properties] # Failed test 'illegal resize'
+  [CSS::Properties] # at t/box.t line 52
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/calc.t
+  [CSS::Properties] 1..4
+  [CSS::Properties] # Subtest: font-size
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     1..3
+  [CSS::Properties] ok 1 - font-size
+  [CSS::Properties] # Subtest: basic arithmetic
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     1..4
+  [CSS::Properties] ok 2 - basic arithmetic
+  [CSS::Properties] # Subtest: associativety/precedence
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     ok 5 - 
+  [CSS::Properties]     ok 6 - 
+  [CSS::Properties]     ok 7 - 
+  [CSS::Properties]     1..7
+  [CSS::Properties] ok 3 - associativety/precedence
+  [CSS::Properties] # Subtest: div/minus
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     1..4
+  [CSS::Properties] ok 4 - div/minus
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/colors.t
+  [CSS::Properties] 1..33
+  [CSS::Properties] ok 1 - :values constructor
+  [CSS::Properties] ok 2 - :values constructor
+  [CSS::Properties] ok 3 - serialization
+  [CSS::Properties] ok 4 - :values constructor
+  [CSS::Properties] ok 5 - :values constructor
+  [CSS::Properties] ok 6 - :values constructor
+  [CSS::Properties] ok 7 - serialization
+  [CSS::Properties] ok 8 - :values constructor
+  [CSS::Properties] ok 9 - :values constructor
+  [CSS::Properties] ok 10 - :values constructor
+  [CSS::Properties] ok 11 - :values constructor
+  [CSS::Properties] ok 12 - serialization
+  [CSS::Properties] ok 13 - :values constructor
+  [CSS::Properties] ok 14 - :values constructor
+  [CSS::Properties] ok 15 - :values constructor
+  [CSS::Properties] ok 16 - serialization
+  [CSS::Properties] ok 17 - :values constructor
+  [CSS::Properties] ok 18 - :values constructor
+  [CSS::Properties] ok 19 - :values constructor
+  [CSS::Properties] ok 20 - serialization
+  [CSS::Properties] ok 21 - :values constructor
+  [CSS::Properties] ok 22 - :values constructor
+  [CSS::Properties] ok 23 - :values constructor
+  [CSS::Properties] ok 24 - serialization
+  [CSS::Properties] ok 25 - :values constructor
+  [CSS::Properties] ok 26 - :values constructor
+  [CSS::Properties] ok 27 - :values constructor
+  [CSS::Properties] ok 28 - serialization
+  [CSS::Properties] ok 29 - border-*-color default
+  [CSS::Properties] ok 30 - border-*-color default
+  [CSS::Properties] ok 31 - border-*-color default
+  [CSS::Properties] ok 32 - color assignment
+  [CSS::Properties] ok 33 - color assigment
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/css-fonts.t
+  [CSS::Properties] 1..4
+  [CSS::Properties] # Subtest: props
+  [CSS::Properties]     ok 1 - font-style
+  [CSS::Properties]     ok 2 - font-weight
+  [CSS::Properties]     ok 3 - font-family
+  [CSS::Properties]     ok 4 - font-size
+  [CSS::Properties]     ok 5 - line-height
+  [CSS::Properties]     1..5
+  [CSS::Properties] ok 1 - props
+  [CSS::Properties] # Subtest: serialization
+  [CSS::Properties]     1..33
+  [CSS::Properties]     ok 1 - serialization
+  [CSS::Properties]     ok 2 - (empty)
+  [CSS::Properties]     ok 3 - font-family
+  [CSS::Properties]     ok 4 - line-height
+  [CSS::Properties]     ok 5 - font-family line-height
+  [CSS::Properties]     ok 6 - font-size
+  [CSS::Properties]     ok 7 - font-family font-size
+  [CSS::Properties]     ok 8 - font-size line-height
+  [CSS::Properties]     ok 9 - font-family font-size line-height
+  [CSS::Properties]     ok 10 - font-weight
+  [CSS::Properties]     ok 11 - font-family font-weight
+  [CSS::Properties]     ok 12 - font-weight line-height
+  [CSS::Properties]     ok 13 - font-family font-weight line-height
+  [CSS::Properties]     ok 14 - font-size font-weight
+  [CSS::Properties]     ok 15 - font-family font-size font-weight
+  [CSS::Properties]     ok 16 - font-size font-weight line-height
+  [CSS::Properties]     ok 17 - font-family font-size font-weight line-height
+  [CSS::Properties]     ok 18 - font-style
+  [CSS::Properties]     ok 19 - font-family font-style
+  [CSS::Properties]     ok 20 - font-style line-height
+  [CSS::Properties]     ok 21 - font-family font-style line-height
+  [CSS::Properties]     ok 22 - font-size font-style
+  [CSS::Properties]     ok 23 - font-family font-size font-style
+  [CSS::Properties]     ok 24 - font-size font-style line-height
+  [CSS::Properties]     ok 25 - font-family font-size font-style line-height
+  [CSS::Properties]     ok 26 - font-style font-weight
+  [CSS::Properties]     ok 27 - font-family font-style font-weight
+  [CSS::Properties]     ok 28 - font-style font-weight line-height
+  [CSS::Properties]     ok 29 - font-family font-style font-weight line-height
+  [CSS::Properties]     ok 30 - font-size font-style font-weight
+  [CSS::Properties]     ok 31 - font-family font-size font-style font-weight
+  [CSS::Properties]     ok 32 - font-size font-style font-weight line-height
+  [CSS::Properties]     ok 33 - font-family font-size font-style font-weight line-height
+  [CSS::Properties] ok 2 - serialization
+  [CSS::Properties] # Subtest: issue#23
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     1..1
+  [CSS::Properties] ok 3 - issue \#23
+  [CSS::Properties] # Subtest: change em
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     1..2
+  [CSS::Properties] ok 4 - change em
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/declarations.t
+  [CSS::Properties] 1..47
+  [CSS::Properties] ok 1 - :values constructor
+  [CSS::Properties] ok 2 - box property
+  [CSS::Properties] ok 3 - edges property
+  [CSS::Properties] ok 4 - simple property
+  [CSS::Properties] ok 5 - margin-left is a margin edge
+  [CSS::Properties] ok 6 - default azimuth
+  [CSS::Properties] ok 7 - default azimuth
+  [CSS::Properties] ok 8 - default background position
+  [CSS::Properties] ok 9 - default margin
+  [CSS::Properties] ok 10 - default margin-left
+  [CSS::Properties] ok 11 - default margin left type
+  [CSS::Properties] ok 12 - default background-color
+  [CSS::Properties] ok 13 - default background-color
+  [CSS::Properties] ok 14 - basic css rewritten
+  [CSS::Properties] ok 15 - list parse
+  [CSS::Properties] ok 16 - list parse
+  [CSS::Properties] ok 17 - list parse
+  [CSS::Properties] ok 18 - background-color reset
+  [CSS::Properties] ok 19 - background-color reset
+  [CSS::Properties] ok 20 - updated margin-right value
+  [CSS::Properties] ok 21 - updated margin-right units
+  [CSS::Properties] ok 22 - updated margin-right units
+  [CSS::Properties] ok 23 - updated margin
+  [CSS::Properties] ok 24 - measured margin
+  [CSS::Properties] ok 25 - reset margin
+  [CSS::Properties] ok 26 - reset margin-left
+  [CSS::Properties] ok 27 - named and rgb colors
+  [CSS::Properties] ok 28 - 
+  [CSS::Properties] ok 29 - border-color string coercement
+  [CSS::Properties] ok 30 - border-color reset
+  [CSS::Properties] ok 31 - struct str assignment
+  [CSS::Properties] ok 32 - border top
+  [CSS::Properties] ok 33 - border top width
+  [CSS::Properties] ok 34 - border top width
+  [CSS::Properties] ok 35 - border top color
+  [CSS::Properties] ok 36 - border top color
+  [CSS::Properties] ok 37 - struct hash assignment
+  [CSS::Properties] ok 38 - border top width
+  [CSS::Properties] ok 39 - border top color
+  [CSS::Properties] ok 40 - border top color
+  [CSS::Properties] ok 41 - border top color
+  [CSS::Properties] ok 42 - reset border top width
+  [CSS::Properties] ok 43 - reset border top color
+  [CSS::Properties] ok 44 - info on a container property
+  [CSS::Properties] ok 45 - default text-align
+  [CSS::Properties] ok 46 - default text-align (direction rtl)
+  [CSS::Properties] ok 47 - updated text-direction
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/errors.t
+  [CSS::Properties] 1..6
+  [CSS::Properties] ok 1 - 
+  [CSS::Properties] unable to parse CSS property 'width: 2furlongs;'
+  [CSS::Properties] ok 2 - 
+  [CSS::Properties] ok 3 - 
+  [CSS::Properties] ok 4 - 
+  [CSS::Properties] unable to parse CSS property 'width: foo(42);'
+  [CSS::Properties] ok 5 - 
+  [CSS::Properties] expected type of length, got number: calc(42)
+  [CSS::Properties] ok 6 - 
+  [CSS::Properties] unable to evaluate expression: calc(2em + 3hz)
+  [CSS::Properties] usage: calc( <calc-sum> )
+  [CSS::Properties] unable to evaluate expression: calc('foo')
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/extend.t
+  [CSS::Properties] 1..22
+  [CSS::Properties] ok 1 - info.name
+  [CSS::Properties] ok 2 - info.synopsis
+  [CSS::Properties] ok 3 - info.default
+  [CSS::Properties] ok 4 - info.name
+  [CSS::Properties] ok 5 - 
+  [CSS::Properties] ok 6 - info.default
+  [CSS::Properties] ok 7 - coercer called
+  [CSS::Properties] ok 8 - 
+  [CSS::Properties] ok 9 - The object is-a 'Int'
+  [CSS::Properties] ok 10 - property set
+  [CSS::Properties] ok 11 - coercer called
+  [CSS::Properties] ok 12 - property get
+  [CSS::Properties] ok 13 - properties
+  [CSS::Properties] ok 14 - serialization
+  [CSS::Properties] ok 15 - serialization (default)
+  [CSS::Properties] ok 16 - reserialization
+  [CSS::Properties] ok 17 - 
+  [CSS::Properties] ok 18 - 
+  [CSS::Properties] ok 19 - case insensitivity
+  [CSS::Properties] # Subtest: parse
+  [CSS::Properties]     ok 1 - coercer called
+  [CSS::Properties]     ok 2 - coercer called
+  [CSS::Properties]     ok 3 - serialization
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     ok 5 - The object is-a 'Int'
+  [CSS::Properties]     ok 6 - 
+  [CSS::Properties]     1..6
+  [CSS::Properties] ok 20 - parse
+  [CSS::Properties] # Subtest: invalid
+  [CSS::Properties]     ok 1 - serialization
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - The object is-a 'Int'
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     1..4
+  [CSS::Properties] ok 21 - invalid
+  [CSS::Properties] # Subtest: any
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     ok 5 - 
+  [CSS::Properties]     1..5
+  [CSS::Properties] ok 22 - any
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/important.t
+  [CSS::Properties] 1..14
+  [CSS::Properties] ok 1 - 
+  [CSS::Properties] ok 2 - 
+  [CSS::Properties] ok 3 - 
+  [CSS::Properties] ok 4 - 
+  [CSS::Properties] ok 5 - 
+  [CSS::Properties] ok 6 - importance setter
+  [CSS::Properties] ok 7 - importance setter - box
+  [CSS::Properties] ok 8 - importance setter - box
+  [CSS::Properties] ok 9 - 
+  [CSS::Properties] ok 10 - 
+  [CSS::Properties] ok 11 - 
+  [CSS::Properties] ok 12 - 
+  [CSS::Properties] ok 13 - 
+  [CSS::Properties] ok 14 - 
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/inherit.t
+  [CSS::Properties] 1..23
+  [CSS::Properties] ok 1 - 
+  [CSS::Properties] ok 2 - overridden value
+  [CSS::Properties] ok 3 - overridden value
+  [CSS::Properties] ok 4 - 'initial'
+  [CSS::Properties] ok 5 - 'initial'
+  [CSS::Properties] ok 6 - 'inherit'
+  [CSS::Properties] ok 7 - 'inherit'
+  [CSS::Properties] ok 8 - color inherit metadata
+  [CSS::Properties] ok 9 - inherited property
+  [CSS::Properties] ok 10 - margin-bottom inherit metadata
+  [CSS::Properties] ok 11 - non-inhertiable property
+  [CSS::Properties] ok 12 - inherited box value
+  [CSS::Properties] ok 13 - inherited value
+  [CSS::Properties] ok 14 - initial box value
+  [CSS::Properties] ok 15 - inherited !important property
+  [CSS::Properties] ok 16 - !important is not inherited
+  [CSS::Properties] ok 17 - inherit from object
+  [CSS::Properties] ok 18 - inherit from string
+  [CSS::Properties] # Subtest: font-size inheritance
+  [CSS::Properties]     ok 1 - inherit absolute font-size
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - inheritance of relative font-size
+  [CSS::Properties]     ok 4 - relative font-size inheritance
+  [CSS::Properties]     ok 5 - inherited font size measurement
+  [CSS::Properties]     ok 6 - computed font size measurement
+  [CSS::Properties]     ok 7 - relative font size measurement
+  [CSS::Properties]     ok 8 - relative font size measurement
+  [CSS::Properties]     1..8
+  [CSS::Properties] ok 19 - font-size inheritance
+  [CSS::Properties] # Subtest: inherit+clone
+  [CSS::Properties]     ok 1 - cloned css
+  [CSS::Properties]     ok 2 - cloned css
+  [CSS::Properties]     ok 3 - cloned+inherited css
+  [CSS::Properties]     ok 4 - inherited+cloned css
+  [CSS::Properties]     ok 5 - 
+  [CSS::Properties]     ok 6 - 
+  [CSS::Properties]     ok 7 - 
+  [CSS::Properties]     ok 8 - original css
+  [CSS::Properties]     1..8
+  [CSS::Properties] ok 20 - inherit+clone
+  [CSS::Properties] # Subtest: issue#11 inheritence
+  [CSS::Properties]     1..2
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties] ok 21 - issue \#11 inheritence
+  [CSS::Properties] # Subtest: early inheritence
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     1..3
+  [CSS::Properties] ok 22 - early inheritence
+  [CSS::Properties] # Subtest: late inheritance
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     1..4
+  [CSS::Properties] ok 23 - late inheritance
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/measure.t
+  [CSS::Properties] 1..32
+  [CSS::Properties] ok 1 - $css.measure($.viewport-width)
+  [CSS::Properties] ok 2 - $css.measure($.viewport-height)
+  [CSS::Properties] ok 3 - default units
+  [CSS::Properties] ok 4 - $css.measure(pt)
+  [CSS::Properties] ok 5 - $css.measure(px)
+  [CSS::Properties] ok 6 - $css.measure(pc)
+  [CSS::Properties] ok 7 - $css.measure(em)
+  [CSS::Properties] ok 8 - $css.measure(ex)
+  [CSS::Properties] ok 9 - $css.measure(vw)
+  [CSS::Properties] ok 10 - $css.measure(vh)
+  [CSS::Properties] ok 11 - $css.measure("thin")
+  [CSS::Properties] ok 12 - $css.measure("medium")
+  [CSS::Properties] ok 13 - $css.measure(:font-size<medium>)
+  [CSS::Properties] ok 14 - $css.measure("thick")
+  [CSS::Properties] ok 15 - $css.measure("x-large")
+  [CSS::Properties] ok 16 - $css.measure("smaller")
+  [CSS::Properties] # Subtest: font-size
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     ok 5 - 
+  [CSS::Properties]     ok 6 - 
+  [CSS::Properties]     ok 7 - 
+  [CSS::Properties]     ok 8 - 
+  [CSS::Properties]     ok 9 - 
+  [CSS::Properties]     ok 10 - 
+  [CSS::Properties]     ok 11 - 
+  [CSS::Properties]     ok 12 - 
+  [CSS::Properties]     ok 13 - 
+  [CSS::Properties]     ok 14 - 
+  [CSS::Properties]     1..14
+  [CSS::Properties] ok 17 - font-size
+  [CSS::Properties] # Subtest: font-weight
+  [CSS::Properties]     ok 1 - 
+  [CSS::Properties]     ok 2 - 
+  [CSS::Properties]     ok 3 - 
+  [CSS::Properties]     ok 4 - 
+  [CSS::Properties]     ok 5 - 
+  [CSS::Properties]     ok 6 - 
+  [CSS::Properties]     ok 7 - 
+  [CSS::Properties]     ok 8 - 
+  [CSS::Properties]     ok 9 - 
+  [CSS::Properties]     ok 10 - 
+  [CSS::Properties]     ok 11 - 
+  [CSS::Properties]     ok 12 - 
+  [CSS::Properties]     ok 13 - 
+  [CSS::Properties]     1..13
+  [CSS::Properties] ok 18 - font-weight
+  [CSS::Properties] ok 19 - 
+  [CSS::Properties] ok 20 - 
+  [CSS::Properties] ok 21 - 
+  [CSS::Properties] ok 22 - changed units
+  [CSS::Properties] ok 23 - $css.measure(in)
+  [CSS::Properties] ok 24 - $css.measure(in)
+  [CSS::Properties] ok 25 - $css.measure(in)
+  [CSS::Properties] ok 26 - 
+  [CSS::Properties] ok 27 - 
+  [CSS::Properties] ok 28 - 
+  [CSS::Properties] ok 29 - 
+  [CSS::Properties] ok 30 - 
+  [CSS::Properties] ok 31 - 
+  [CSS::Properties] ok 32 - 
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/modules.t
+  [CSS::Properties] 1..5
+  [CSS::Properties] ok 1 - azimuth is unknown in CSS1
+  [CSS::Properties] ok 2 - azimuth is known in CSS21
+  [CSS::Properties] ok 3 - azimuth is known in CSS3
+  [CSS::Properties] dropping unknown @fontface property azimuth
+  [CSS::Properties] ok 4 - src is known in @font-face
+  [CSS::Properties] ok 5 - azimuth is unknown in @font-face
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/optimize.t
+  [CSS::Properties] 1..16
+  [CSS::Properties] ok 1 - optimised ast border:1px solid red;
+  [CSS::Properties] ok 2 - optimised css border:1px solid red;
+  [CSS::Properties] ok 3 - optimised ast border-width:5pt 5px 5in 5mm;
+  [CSS::Properties] ok 4 - optimised css border-width:5pt 5px 5in 5mm;
+  [CSS::Properties] ok 5 - optimised ast border-top:5px!important;
+  [CSS::Properties] ok 6 - optimised css border-top:5px!important;
+  [CSS::Properties] ok 7 - optimised ast border:5pt solid; border-color:red green blue yellow;
+  [CSS::Properties] ok 8 - optimised css border:5pt solid; border-color:red green blue yellow;
+  [CSS::Properties] ok 9 - optimised ast font-family:times; font-size:inherit; font-weight:inherit;
+  [CSS::Properties] ok 10 - optimised css font-family:times; font-size:inherit; font-weight:inherit;
+  [CSS::Properties] ok 11 - optimised ast background:no-repeat 50% 75%;
+  [CSS::Properties] ok 12 - optimised css background:no-repeat 50% 75%;
+  [CSS::Properties] ok 13 - optimised ast font:1.1em/1.3 Verdana, Arial, sans-serif;
+  [CSS::Properties] ok 14 - optimised css font:1.1em/1.3 Verdana, Arial, sans-serif;
+  [CSS::Properties] ok 15 - optimised ast list-style:circle;
+  [CSS::Properties] ok 16 - optimised css list-style:circle;
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/page-box.t
+  [CSS::Properties] 1..19
+  [CSS::Properties] ok 1 - 
+  [CSS::Properties] ok 2 - .Array
+  [CSS::Properties] ok 3 - .Array
+  [CSS::Properties] ok 4 - css
+  [CSS::Properties] ok 5 - .margin (mm)
+  [CSS::Properties] ok 6 - .margin (pt)
+  [CSS::Properties] ok 7 - .border
+  [CSS::Properties] ok 8 - .padding
+  [CSS::Properties] ok 9 - .content
+  [CSS::Properties] ok 10 - .margin auto
+  [CSS::Properties] ok 11 - .border auto
+  [CSS::Properties] ok 12 - .padding auto
+  [CSS::Properties] ok 13 - .content auto
+  [CSS::Properties] ok 14 - .margin auto
+  [CSS::Properties] ok 15 - .border auto
+  [CSS::Properties] ok 16 - .padding auto
+  [CSS::Properties] ok 17 - .content auto (mm)
+  [CSS::Properties] ok 18 - .content auto (pt)
+  [CSS::Properties] ok 19 - auto/min/max
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/svg-properties.t
+  [CSS::Properties] ok 1 - alignment-baseline:after-edge;
+  [CSS::Properties] ok 2 - baseline-shift:super;
+  [CSS::Properties] ok 3 - baseline-shift:1.5em;
+  [CSS::Properties] ok 4 - baseline-shift:1.5em; - type
+  [CSS::Properties] ok 5 - baseline-shift:4%;
+  [CSS::Properties] ok 6 - baseline-shift:4%; - type
+  [CSS::Properties] ok 7 - color:red;
+  [CSS::Properties] ok 8 - color:rgb(10%,20,30);
+  [CSS::Properties] ok 9 - color:rgb(10%,20,30); - type
+  [CSS::Properties] ok 10 - color-interpolation:sRGB;
+  [CSS::Properties] ok 11 - color-interpolation:Srgb;
+  [CSS::Properties] ok 12 - color-interpolation:lInearRgB;
+  [CSS::Properties] ok 13 - color-rendering:optimizeSpeed;
+  [CSS::Properties] ok 14 - direction:ltr;
+  [CSS::Properties] ok 15 - direction:rtl;
+  [CSS::Properties] ok 16 - display:table-cell;
+  [CSS::Properties] ok 17 - dominant-baseline:hanging;
+  [CSS::Properties] ok 18 - fill:rgb(10,20,10%);
+  [CSS::Properties] ok 19 - fill-opacity:0.75;
+  [CSS::Properties] ok 20 - fill-opacity:75%;
+  [CSS::Properties] ok 21 - fill-rule:evenOdD;
+  [CSS::Properties] ok 22 - font-variant:small-Caps;
+  [CSS::Properties] ok 23 - glyph-orientation-vertical:45deg;
+  [CSS::Properties] ok 24 - glyph-orientation-vertical:7;
+  [CSS::Properties] ok 25 - image-rendering:optimizeQuality;
+  [CSS::Properties] ok 26 - line-height:90%;
+  [CSS::Properties] ok 27 - line-height:normal;
+  [CSS::Properties] ok 28 - line-height:42;
+  [CSS::Properties] ok 29 - marker-start:none;
+  [CSS::Properties] ok 30 - marker-start:url('http://www.example.com/pinkish.gif');
+  [CSS::Properties] ok 31 - marker-mid:none;
+  [CSS::Properties] ok 32 - marker-end:none;
+  [CSS::Properties] ok 33 - marker:url('http://www.example.com/greenish.gif') url('http://www.example.com/pinkish.gif');
+  [CSS::Properties] ok 34 - opacity:0.75;
+  [CSS::Properties] ok 35 - opacity:75%;
+  [CSS::Properties] ok 36 - overflow:hidden;
+  [CSS::Properties] ok 37 - paint-order:fill stroke;
+  [CSS::Properties] ok 38 - shape-rendering:crispEdges;
+  [CSS::Properties] ok 39 - stop-opacity:0.75;
+  [CSS::Properties] ok 40 - stop-opacity:75%;
+  [CSS::Properties] ok 41 - stroke:none;
+  [CSS::Properties] ok 42 - stroke:black;
+  [CSS::Properties] ok 43 - stroke-dasharray:20, 10;
+  [CSS::Properties] ok 44 - stroke-dasharray:em, 2em;
+  [CSS::Properties] ok 45 - stroke-dashoffset:3em;
+  [CSS::Properties] ok 46 - stroke-linecap:round;
+  [CSS::Properties] ok 47 - stroke-linejoin:bevel;
+  [CSS::Properties] ok 48 - stroke-opacity:0.75;
+  [CSS::Properties] ok 49 - stroke-opacity:75%;
+  [CSS::Properties] ok 50 - stroke-width:0.1em;
+  [CSS::Properties] ok 51 - stroke-width:2.5;
+  [CSS::Properties] ok 52 - stroke-miterlimit:5;
+  [CSS::Properties] ok 53 - text-anchor:middle;
+  [CSS::Properties] ok 54 - text-decoration:underline blink;
+  [CSS::Properties] ok 55 - text-rendering:geometricPrecision;
+  [CSS::Properties] ok 56 - visibility:hidden;
+  [CSS::Properties] ok 57 - white-space:pre;
+  [CSS::Properties] ok 58 - writing-mode:rl-tb;
+  [CSS::Properties] 1..58
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/threads.t
+  [CSS::Properties] 1..4
+  [CSS::Properties] MoarVM oops: MVM_str_hash_fetch_nocheck called with a stale hashtable pointer
+  [CSS::Properties]    at SETTING::src/core.c/Hash/Typed.rakumod:11  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:ASSIGN-KEY)
+  [CSS::Properties]  from /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9/lib/CSS/Properties.rakumod (CSS::Properties):330  (/home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9/.precomp/ACC227A2C59C784F0B2E45F5498F1A3C9796FD8F/74/743BD9FCBFC0D9B0D4D5F4BE67AFA4FE449F40FF:)
+  [CSS::Properties]  from SETTING::src/core.c/operators.rakumod:360  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:infix:<andthen>)
+  [CSS::Properties]  from /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9/lib/CSS/Properties.rakumod (CSS::Properties):329  (/home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9/.precomp/ACC227A2C59C784F0B2E45F5498F1A3C9796FD8F/74/743BD9FCBFC0D9B0D4D5F4BE67AFA4FE449F40FF:)
+  [CSS::Properties]  from /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9/lib/CSS/Properties.rakumod (CSS::Properties):322  (/home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9/.precomp/ACC227A2C59C784F0B2E45F5498F1A3C9796FD8F/74/743BD9FCBFC0D9B0D4D5F4BE67AFA4FE449F40FF:STORE)
+  [CSS::Properties]  from src/Perl6/bootstrap.c/BOOTSTRAP.nqp:2614  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/lib/Perl6/BOOTSTRAP/v6c.moarvm:)
+  [CSS::Properties]  from t/threads.t:28  (<ephemeral file>:)
+  [CSS::Properties]  from SETTING::src/core.c/Rakudo/Internals/HyperRaceSharedImpl.rakumod:106  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:process-batch)
+  [CSS::Properties]  from SETTING::src/core.c/Rakudo/Internals/HyperPipeline.rakumod:124  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:)
+  [CSS::Properties]  from SETTING::src/core.c/Rakudo/Internals/HyperPipeline.rakumod:123  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:)
+  [CSS::Properties]  from SETTING::src/core.c/Rakudo/Internals/HyperPipeline.rakumod:113  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:)
+  [CSS::Properties]  from SETTING::src/core.c/Promise.rakumod:370  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:)
+  [CSS::Properties]  from SETTING::src/core.c/ThreadPoolScheduler.rakumod:911  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:)
+  [CSS::Properties]  from SETTING::src/core.c/ThreadPoolScheduler.rakumod:271  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:)
+  [CSS::Properties]  from SETTING::src/core.c/ThreadPoolScheduler.rakumod:249  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:run-one)
+  [CSS::Properties]  from SETTING::src/core.c/ThreadPoolScheduler.rakumod:290  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:)
+  [CSS::Properties]  from SETTING::src/core.c/Thread.rakumod:84  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:THREAD-ENTRY)
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/units.t
+  [CSS::Properties] ok 1 - pt + pt
+  [CSS::Properties] ok 2 - pt + pt
+  [CSS::Properties] ok 3 - gist
+  [CSS::Properties] ok 4 - pt += pt
+  [CSS::Properties] ok 5 - pt += pt
+  [CSS::Properties] ok 6 - pt + mm
+  [CSS::Properties] ok 7 - pt + mm
+  [CSS::Properties] ok 8 - pt + mm
+  [CSS::Properties] ok 9 - pt - in
+  [CSS::Properties] ok 10 - pt + in
+  [CSS::Properties] ok 11 - pt +css in
+  [CSS::Properties] ok 12 - pt + px
+  [CSS::Properties] ok 13 - pt + pc
+  [CSS::Properties] ok 14 - pt - pc
+  [CSS::Properties] ok 15 - pt -css pc
+  [CSS::Properties] ok 16 - ms to s
+  [CSS::Properties] ok 17 - hz to khz
+  [CSS::Properties] ok 18 - turn to deg
+  [CSS::Properties] ok 19 - turn to rad
+  [CSS::Properties] ok 20 - px to pt
+  [CSS::Properties] ok 21 - dpi to dpcm
+  [CSS::Properties] ok 22 - dppx to dpi
+  [CSS::Properties] 1..22
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/vivify.t
+  [CSS::Properties] 1..6
+  [CSS::Properties] ok 1 - vivifed-name
+  [CSS::Properties] ok 2 - 
+  [CSS::Properties] ok 3 - 
+  [CSS::Properties] ok 4 - 
+  [CSS::Properties] ok 5 - 
+  [CSS::Properties] ok 6 - 
+  [CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/write.t
+  [CSS::Properties] 1..25
+  [CSS::Properties] ok 1 - unoptimized edge property
+  [CSS::Properties] ok 2 - edge property
+  [CSS::Properties] ok 3 - consolidation of edge properties
+  [CSS::Properties] ok 4 - consolidation of edge properties
+  [CSS::Properties] ok 5 - optimized properties
+  [CSS::Properties] ok 6 - edge unoptimized
+  [CSS::Properties] ok 7 - edge optimized
+  [CSS::Properties] ok 8 - compound edge
+  [CSS::Properties] ok 9 - compound edge - unoptimized
+  [CSS::Properties] ok 10 - compound edge - re-optimized
+  [CSS::Properties] ok 11 - compound edge - partial optimization
+  [CSS::Properties] ok 12 - optimization of default values
+  [CSS::Properties] ok 13 - 
+  [CSS::Properties] ok 14 - 
+  [CSS::Properties] ok 15 - 
+  [CSS::Properties] ok 16 - 
+  [CSS::Properties] ok 17 - 
+  [CSS::Properties] ok 18 - 
+  [CSS::Properties] ok 19 - 
+  [CSS::Properties] ok 20 - 
+  [CSS::Properties] ok 21 - 
+  [CSS::Properties] ok 22 - 
+  [CSS::Properties] ok 23 - 
+  [CSS::Properties] ok 24 - 
+  [CSS::Properties] ok 25 - 
+  ===> Testing [FAIL]: CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10>
+  [CSS::Properties] Failed to get passing tests, but continuing with --force-test
+  ===> Installing: CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10>
+  ===> Install [OK] for CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 2min 19.477s
-               CPU time consumed: 2min 23.423s
-                     Memory peak: 1.1G (swap: 0B)
+                 Service runtime: 5min 23.020s
+               CPU time consumed: 5min 15.633s
+                     Memory peak: 1.1G (swap: 621.3M)
 
   ```
   </details>
@@ -716,12 +1965,12 @@
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p1399665-i1403558.service; invocation ID: 2926665495504432927144efecc52a27
+  Running as unit: run-p2049275-i2070637.service; invocation ID: 6a6fc99da63040c7a1c640f1cdaf1489
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Polyglot::Regexen
   ===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<fez>]
-  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789817650.1399667.9838.181092043615/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
-  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789817650.1399667.9838.181092043615/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789870523.2049282.2662.638383207373/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789870523.2049282.2662.638383207373/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   [Polyglot::Regexen] Command: tar -t -f ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   [Polyglot::Regexen] Command: tar -xvf ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz -C ../17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   ===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
@@ -882,8 +2131,8 @@
   ===> Install [OK] for Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 2min 14.339s
-               CPU time consumed: 2min 29.541s
+                 Service runtime: 2min 17.361s
+               CPU time consumed: 2min 31.755s
                      Memory peak: 1.6G (swap: 0B)
 
   ```
@@ -892,17 +2141,17 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p1395183-i1414143.service; invocation ID: 58bc90ce67064b56a856ef7147526e15
+  Running as unit: run-p2044618-i2009106.service; invocation ID: 284e33c725544177bfc70207b9618c81
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Polyglot::Regexen
   ===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<fez>]
-  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789817522.1395188.9888.87059194195/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
-  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789817522.1395188.9888.87059194195/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  [Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789870384.2044619.2734.827234857157/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+  ===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789870384.2044619.2734.827234857157/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   [Polyglot::Regexen] Command: tar -t -f ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   [Polyglot::Regexen] Command: tar -xvf ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz -C ../17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   ===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
   ===> Testing: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/00-sanity.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/00-sanity.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/00-sanity.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regexen.rakumod (Polyglot::Regexen)
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions-Mixin.rakumod (Polyglot::Regex::ECMA262::Actions-Mixin)
@@ -913,13 +2162,13 @@
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
   [Polyglot::Regexen] Exception details:
   [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
-  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
   [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions-Mixin.rakumod (Polyglot::Regex::ECMA262::Actions-Mixin):8
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regexen.rakumod (Polyglot::Regexen):5
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/00-sanity.rakutest:3
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/01-literals.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/01-literals.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/01-literals.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
@@ -929,12 +2178,12 @@
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
   [Polyglot::Regexen] Exception details:
   [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
-  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
   [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/01-literals.rakutest:4
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/02-character-classes.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/02-character-classes.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/02-character-classes.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
@@ -944,12 +2193,12 @@
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
   [Polyglot::Regexen] Exception details:
   [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
-  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
   [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/02-character-classes.rakutest:4
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/03-alternation.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/03-alternation.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/03-alternation.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
@@ -959,12 +2208,12 @@
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
   [Polyglot::Regexen] Exception details:
   [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
-  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
   [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/03-alternation.rakutest:4
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/04-assertions.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/04-assertions.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/04-assertions.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
@@ -974,12 +2223,12 @@
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
   [Polyglot::Regexen] Exception details:
   [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
-  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
   [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/04-assertions.rakutest:4
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/05-quantifiers.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/05-quantifiers.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/05-quantifiers.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
@@ -989,12 +2238,12 @@
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
   [Polyglot::Regexen] Exception details:
   [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
-  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
   [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/05-quantifiers.rakutest:4
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/06-captures.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/06-captures.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/06-captures.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
@@ -1004,12 +2253,12 @@
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
   [Polyglot::Regexen] Exception details:
   [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
-  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
   [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/06-captures.rakutest:4
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/07-unicode.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/07-unicode.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/07-unicode.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
@@ -1019,12 +2268,12 @@
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
   [Polyglot::Regexen] Exception details:
   [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
-  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
   [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/07-unicode.rakutest:4
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/08-modifiers.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/08-modifiers.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/08-modifiers.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
@@ -1034,12 +2283,12 @@
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
   [Polyglot::Regexen] Exception details:
   [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
-  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
   [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/08-modifiers.rakutest:4
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/09-role.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/09-role.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/09-role.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
@@ -1048,11 +2297,11 @@
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
   [Polyglot::Regexen] Exception details:
   [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
-  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
   [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/09-role.rakutest:3
-  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/10-usage.rakutest
+  [Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/10-usage.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/10-usage.rakutest
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regexen.rakumod (Polyglot::Regexen)
   [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions-Mixin.rakumod (Polyglot::Regex::ECMA262::Actions-Mixin)
@@ -1063,7 +2312,7 @@
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
   [Polyglot::Regexen] Exception details:
   [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
-  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2062
+  [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
   [Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
   [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions-Mixin.rakumod (Polyglot::Regex::ECMA262::Actions-Mixin):8
@@ -1079,7 +2328,7 @@
   at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/963BC5BF2466B70304F9EA3766FAD96D15589D78 (Polyglot::Regex::ECMA262::Classes):222
   Exception details:
     Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
-      in any new at src/Raku/ast/regex.rakumod line 2062
+      in any new at src/Raku/ast/regex.rakumod line 2061
       in block  at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/963BC5BF2466B70304F9EA3766FAD96D15589D78 (Polyglot::Regex::ECMA262::Classes) line 222
 
 
@@ -1092,7 +2341,7 @@
   at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/963BC5BF2466B70304F9EA3766FAD96D15589D78 (Polyglot::Regex::ECMA262::Classes):222
   Exception details:
     Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
-      in any new at src/Raku/ast/regex.rakumod line 2062
+      in any new at src/Raku/ast/regex.rakumod line 2061
       in block  at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/963BC5BF2466B70304F9EA3766FAD96D15589D78 (Polyglot::Regex::ECMA262::Classes) line 222
 
 
@@ -1100,22 +2349,22 @@
 
             Finished with result: exit-code
   Main processes terminated with: code=exited, status=1/FAILURE
-                 Service runtime: 2min 14.562s
-               CPU time consumed: 2min 20.816s
-                     Memory peak: 1.3G (swap: 187.4M)
+                 Service runtime: 2min 21.136s
+               CPU time consumed: 2min 25.947s
+                     Memory peak: 1.4G (swap: 0B)
 
   ```
   </details>
-* [ ] [Terminal::UI](https://raku.land/zef:bduggan/Terminal::UI) – Fail, Bisected: [c2209ec](https://github.com/rakudo/rakudo/commit/c2209ec2c58ae4a747c51980d85ad8d711408416)
+* [ ] [Terminal::UI](https://raku.land/zef:bduggan/Terminal::UI) – Fail, Bisected: [f841d9a](https://github.com/rakudo/rakudo/commit/f841d9ace153fb2c99d01b79bfadebbd39704a0a) [6b65291](https://github.com/rakudo/rakudo/commit/6b65291224e70825fc33ce1421444fd1688fd3ab)
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p1596387-i1502842.service; invocation ID: 362e77d923654c47812fb49dd0e2beee
+  Running as unit: run-p2237327-i2199506.service; invocation ID: ce97d9d644cf4014bf22800f713e3f7e
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Terminal::UI
   ===> Found: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> [via Zef::Repository::Ecosystems<fez>]
-  [Terminal::UI] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789822913.1596397.4480.864036135278/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz https://360.zef.pm/T/ER/TERMINAL_UI/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
-  ===> Fetching [OK]: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> to /home/coke/sandbox/blin/data/zef-data/tmp/1789822913.1596397.4480.864036135278/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+  [Terminal::UI] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789875603.2237328.6537.978463655059/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz https://360.zef.pm/T/ER/TERMINAL_UI/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+  ===> Fetching [OK]: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> to /home/coke/sandbox/blin/data/zef-data/tmp/1789875603.2237328.6537.978463655059/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
   [Terminal::UI] Command: tar -t -f ./97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
   [Terminal::UI] Command: tar -xvf ./97be0392703c0ef562b9092d0a52c2623157131c.tar.gz -C ../97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
   ===> Extraction [OK]: Terminal::UI to /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
@@ -1237,9 +2486,9 @@
   ===> Install [OK] for Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 3min 22.734s
-               CPU time consumed: 3min 15.741s
-                     Memory peak: 1.5G (swap: 352.2M)
+                 Service runtime: 3min 79ms
+               CPU time consumed: 3min 13.768s
+                     Memory peak: 1.5G (swap: 136.8M)
 
   ```
   </details>
@@ -1247,17 +2496,17 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p1590392-i1655048.service; invocation ID: 366062cf33b342c6aac951274b994859
+  Running as unit: run-p2231541-i2294492.service
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: Terminal::UI
   ===> Found: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> [via Zef::Repository::Ecosystems<fez>]
-  [Terminal::UI] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789822751.1590401.2324.265654825982/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz https://360.zef.pm/T/ER/TERMINAL_UI/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
-  ===> Fetching [OK]: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> to /home/coke/sandbox/blin/data/zef-data/tmp/1789822751.1590401.2324.265654825982/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+  [Terminal::UI] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789875451.2231552.2759.5564539295824/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz https://360.zef.pm/T/ER/TERMINAL_UI/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+  ===> Fetching [OK]: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> to /home/coke/sandbox/blin/data/zef-data/tmp/1789875451.2231552.2759.5564539295824/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
   [Terminal::UI] Command: tar -t -f ./97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
   [Terminal::UI] Command: tar -xvf ./97be0392703c0ef562b9092d0a52c2623157131c.tar.gz -C ../97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
   ===> Extraction [OK]: Terminal::UI to /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
   ===> Testing: Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/00-basic.rakutest
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/00-basic.rakutest
   [Terminal::UI] 1..6
   [Terminal::UI] ok 1 - Terminal::UI module can be use-d ok
   [Terminal::UI] ok 2 - Terminal::UI::Screen module can be use-d ok
@@ -1265,7 +2514,7 @@
   [Terminal::UI] ok 4 - Terminal::UI::Pane module can be use-d ok
   [Terminal::UI] ok 5 - Terminal::UI::Input module can be use-d ok
   [Terminal::UI] ok 6 - Terminal::UI::Style module can be use-d ok
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/01-sizes.rakutest
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/01-sizes.rakutest
   [Terminal::UI] 1..41
   [Terminal::UI] ok 1 - screen height
   [Terminal::UI] ok 2 - screen rows
@@ -1308,11 +2557,11 @@
   [Terminal::UI] ok 39 - height 2
   [Terminal::UI] ok 40 - height 3
   [Terminal::UI] ok 41 - check is ok
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/02-screen.rakutest
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/02-screen.rakutest
   [Terminal::UI] ok 1 - rows
   [Terminal::UI] ok 2 - cols
   [Terminal::UI] 1..2
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/03-pane.rakutest
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/03-pane.rakutest
   [Terminal::UI] ok 1 - bottom
   [Terminal::UI] ok 2 - right
   [Terminal::UI] ok 3 - lines
@@ -1322,36 +2571,36 @@
   [Terminal::UI] ok 7 - hard wrap with indent
   [Terminal::UI] ok 8 - word wrap with hang
   [Terminal::UI] 1..8
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/04-frame.rakutest
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/04-frame.rakutest
   [Terminal::UI] ok 1 - full
   [Terminal::UI] ok 2 - render
   [Terminal::UI] 1..2
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/05-style.rakutest
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/05-style.rakutest
   [Terminal::UI] 1..2
   [Terminal::UI] ok 1 - set a value
   [Terminal::UI] ok 2 - singleton works
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/06-ui.rakutest
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/06-ui.rakutest
   [Terminal::UI] ok 1 - height
   [Terminal::UI] ok 2 - width
   [Terminal::UI] ok 3 - top
   [Terminal::UI] ok 4 - left
   [Terminal::UI] ok 5 - render
   [Terminal::UI] 1..5
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/07-alert.rakutest
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/07-alert.rakutest
   [Terminal::UI] ok 1 - initial screen
   [Terminal::UI] not ok 2 - alert
   [Terminal::UI] # Failed test 'alert'
   [Terminal::UI] # at t/07-alert.rakutest line 45
   [Terminal::UI] # expected: '"╔══════════════════╗\n║Hello!            ║\n║w╔══════════════╗ ║\n║ ║   ¡ALERT!    ║ ║\n║ ╟──────────────╢ ║\n║ ╢      ok      ║ ║\n║ ╚══════════════╝ ║\n║                  ║\n║                  ║\n╚══════════════════╝\n"'
-  [Terminal::UI] #      got: '"╔══════════════════╗\n║Hello!            ║\n║world             ║\n║                  ║\n║                  ║\n║                  ║\n║                  ║\n║                  ║\n║                  ║\n╚══════════════════╝\n"'
-  [Terminal::UI] no focused frame
-  [Terminal::UI]   in method focused at /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI.rakumod (Terminal::UI) line 80
-  [Terminal::UI]   in block <unit> at t/07-alert.rakutest line 58
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/08-resize.rakutest
+  [Terminal::UI] #      got: '"╔══════════════════╗\n║Hello!            ║\n║w╔══════════════╗ ║\n║ ║   ¡ALERT!    ║ ║\n║ ║              ║ ║\n║ ║      ok      ║ ║\n║ ╚══════════════╝ ║\n║                  ║\n║                  ║\n╚══════════════════╝\n"'
+  [Terminal::UI] ok 3 - dismissed
+  [Terminal::UI] 1..3
+  [Terminal::UI] # You failed 1 test of 3
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/08-resize.rakutest
   [Terminal::UI] 1..2
   [Terminal::UI] ok 1 - initial heights
   [Terminal::UI] ok 2 - resize
-  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/09-print.rakutest
+  [Terminal::UI] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/09-print.rakutest
   [Terminal::UI] 1..21
   [Terminal::UI] ok 1 - prints characters to line
   [Terminal::UI] ok 2 - newline moves to next line
@@ -1380,306 +2629,9 @@
   ===> Install [OK] for Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 2min 37.846s
-               CPU time consumed: 2min 43.995s
-                     Memory peak: 1.4G (swap: 130.5M)
-
-  ```
-  </details>
-* [ ] [LWP::Simple](https://raku.land/zef:dwarring/LWP::Simple) – Fail, Bisected: [cc07979](https://github.com/rakudo/rakudo/commit/cc07979788efe684d72f5cb8db5e3f3e4c4c2702)
-  <details><Summary>Old Output</summary>
-
-  ```
-  Running as unit: run-p1509829-i1460764.service; invocation ID: 006c7110a91844a69b686b716d314214
-  Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: LWP::Simple
-  ===> Found: LWP::Simple:ver<0.109>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
-  [LWP::Simple] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789820684.1509831.5732.255640614567/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz https://360.zef.pm/L/WP/LWP_SIMPLE/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
-  ===> Fetching [OK]: LWP::Simple:ver<0.109>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1789820684.1509831.5732.255640614567/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
-  [LWP::Simple] Command: tar -t -f ./e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
-  [LWP::Simple] Command: tar -xvf ./e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz -C ../e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
-  ===> Extraction [OK]: LWP::Simple to /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
-  ===> Testing: LWP::Simple:ver<0.109>:auth<zef:dwarring>
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/000-load-module.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] ok 1 - LWP::Simple is loaded
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/basic-auth.t
-  [LWP::Simple] 1..9
-  [LWP::Simple] ok 1 - Scheme parsed correctly
-  [LWP::Simple] ok 2 - Hostname contains basic auth info
-  [LWP::Simple] ok 3 - HTTPS demands port 443
-  [LWP::Simple] ok 4 - Path extracted correctly
-  [LWP::Simple] ok 5 - Basic auth info extracted correctly: user
-  [LWP::Simple] ok 6 - Basic auth info extracted correctly: pass
-  [LWP::Simple] ok 7 - Basic auth info extracted correctly: hostname
-  [LWP::Simple] ok 8 - Base64 encoding works
-  [LWP::Simple] ok 9 - # SKIP  \#51 'www.software-path.com' not resolving
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/custom-headers-and-content.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] ok 1 - call to JSON-RPC service using headers and content params
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/delete-headers.t
-  [LWP::Simple] 1..2
-  [LWP::Simple] ok 1 - User agent header is sent by DELETE
-  [LWP::Simple] ok 2 - Accept header is sent by DELETE
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-404.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] # Subtest: did we throws-like LWP::Simple::X::LWP::Simple::Response?
-  [LWP::Simple]     1..3
-  [LWP::Simple]     ok 1 - code dies
-  [LWP::Simple]     ok 2 - right exception type (LWP::Simple::X::LWP::Simple::Response)
-  [LWP::Simple]     ok 3 - .status matches rx:i:s/404 Not Found/
-  [LWP::Simple] ok 1 - did we throws-like LWP::Simple::X::LWP::Simple::Response?
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-binary-camelia.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] 8090 68
-  [LWP::Simple] ok 1 - Fetched Camelia Logo
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-chunked-6guts.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] ok 1 - Pulled down whole chunked article
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-headers.t
-  [LWP::Simple] 1..4
-  [LWP::Simple] ok 1 - User agent header is sent by GET
-  [LWP::Simple] ok 2 - Accept header is sent by GET
-  [LWP::Simple] ok 3 - Response from PUT is correct
-  [LWP::Simple] ok 4 - Response case insensitive
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-perl6-org.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] ok 1 - homepage is downloaded and has "Herman" in it
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-unsized.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] ok 1 - we pulled whole document without sizing from misbehaved server [http://localhost:42153]
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-w3-latin1-utf8.t
-  [LWP::Simple] 1..2
-  [LWP::Simple] ok 1 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] ok 2 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-w3-redirect.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] ok 1 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/getstore.t
-  [LWP::Simple] 1..10
-  [LWP::Simple] ok 1 - getstore() returned success
-  [LWP::Simple] ok 2 - Opened file handle written by getstore()
-  [LWP::Simple] ok 3 - Found pattern in downloaded file
-  [LWP::Simple] ok 4 - Close the temporary file
-  [LWP::Simple] ok 5 - Delete the temporary file
-  [LWP::Simple] ok 6 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] ok 7 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] ok 8 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] ok 9 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] ok 10 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/head.t
-  [LWP::Simple] # Subtest: head fetched good content over HTTP
-  [LWP::Simple]     ok 1 - Content is correct
-  [LWP::Simple]     ok 2 - Server is correct
-  [LWP::Simple]     1..2
-  [LWP::Simple] ok 1 - head fetched good content over HTTP
-  [LWP::Simple] # IO::Socket::SSL not available, not testing https
-  [LWP::Simple] 1..1
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/issue-7.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] ok 1 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/parse-url.t
-  [LWP::Simple] 1..25
-  [LWP::Simple] ok 1 - Scheme for http://www.rakudo.org is http
-  [LWP::Simple] ok 2 - Hostname for http://www.rakudo.org is www.rakudo.org
-  [LWP::Simple] ok 3 - Port for http://www.rakudo.org is 80
-  [LWP::Simple] ok 4 - Path for http://www.rakudo.org is /
-  [LWP::Simple] ok 5 - Scheme for http://www.altavista.com:81 is http
-  [LWP::Simple] ok 6 - Hostname for http://www.altavista.com:81 is www.altavista.com
-  [LWP::Simple] ok 7 - Port for http://www.altavista.com:81 is 81
-  [LWP::Simple] ok 8 - Path for http://www.altavista.com:81 is /
-  [LWP::Simple] ok 9 - Scheme for https://www.rakudo.org/rakudo-latest.tar.bz2 is https
-  [LWP::Simple] ok 10 - Hostname for https://www.rakudo.org/rakudo-latest.tar.bz2 is www.rakudo.org
-  [LWP::Simple] ok 11 - Port for https://www.rakudo.org/rakudo-latest.tar.bz2 is 443
-  [LWP::Simple] ok 12 - Path for https://www.rakudo.org/rakudo-latest.tar.bz2 is /rakudo-latest.tar.bz2
-  [LWP::Simple] ok 13 - Scheme for http://www.c64.com/path/with/multiple/slashes/ is http
-  [LWP::Simple] ok 14 - Hostname for http://www.c64.com/path/with/multiple/slashes/ is www.c64.com
-  [LWP::Simple] ok 15 - Port for http://www.c64.com/path/with/multiple/slashes/ is 80
-  [LWP::Simple] ok 16 - Path for http://www.c64.com/path/with/multiple/slashes/ is /path/with/multiple/slashes/
-  [LWP::Simple] ok 17 - Scheme for ftp://get.opera.com/pub/opera/win/1054/en/Opera_1054_en_Setup.exe is ftp
-  [LWP::Simple] ok 18 - Hostname for ftp://get.opera.com/pub/opera/win/1054/en/Opera_1054_en_Setup.exe is get.opera.com
-  [LWP::Simple] ok 19 - Port for ftp://get.opera.com/pub/opera/win/1054/en/Opera_1054_en_Setup.exe is 21
-  [LWP::Simple] ok 20 - Path for ftp://get.opera.com/pub/opera/win/1054/en/Opera_1054_en_Setup.exe is /pub/opera/win/1054/en/Opera_1054_en_Setup.exe
-  [LWP::Simple] ok 21 - Scheme for http://tinyurl.com/api-create.php?url=http://digg.com is http
-  [LWP::Simple] ok 22 - Hostname for http://tinyurl.com/api-create.php?url=http://digg.com is tinyurl.com
-  [LWP::Simple] ok 23 - Port for http://tinyurl.com/api-create.php?url=http://digg.com is 80
-  [LWP::Simple] ok 24 - Path for http://tinyurl.com/api-create.php?url=http://digg.com is /api-create.php?url=http://digg.com
-  [LWP::Simple] ok 25 - port is returned as a Int, to avoid problems on sock.open()
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/put-request.t
-  [LWP::Simple] 1..2
-  [LWP::Simple] ok 1 - User agent header is sent by PUT
-  [LWP::Simple] ok 2 - Accept header is sent by PUT
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/24e6e5312f2868680413b0597aef8772f6b5bcea/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/stringify-headers.t
-  [LWP::Simple] 1..6
-  [LWP::Simple] ok 1 - OK - User-Agent: Opera/9.80 (WinNT; 6.0) Version/10.60
-  [LWP::Simple] ok 2 - OK - Connection: close
-  [LWP::Simple] ok 3 - Composite headers are stringified correctly
-  [LWP::Simple] ok 4 - Composite headers are stringified correctly
-  [LWP::Simple] ok 5 - Composite headers are stringified correctly
-  [LWP::Simple] ok 6 - Composite headers are stringified correctly
-  ===> Testing [OK] for LWP::Simple:ver<0.109>:auth<zef:dwarring>
-  ===> Installing: LWP::Simple:ver<0.109>:auth<zef:dwarring>
-  ===> Install [OK] for LWP::Simple:ver<0.109>:auth<zef:dwarring>
-
-  2 bin/ scripts [lwp-get.p6 lwp-download.p6] installed to:
-  /tmp/FDU7T6ifvm/bin
-            Finished with result: success
-  Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 2min 28.527s
-               CPU time consumed: 2min 41.037s
-                     Memory peak: 1.7G (swap: 0B)
-
-  ```
-  </details>
-  <details>
-  <summary>New Output</summary>
-
-  ```
-  Running as unit: run-p1505539-i1529144.service; invocation ID: bb6712a6b3814bb39903766370b7d3e5
-  Press ^] three times within 1s to disconnect TTY.
-  ===> Searching for: LWP::Simple
-  ===> Found: LWP::Simple:ver<0.109>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
-  [LWP::Simple] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789820567.1505546.9783.958636409348/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz https://360.zef.pm/L/WP/LWP_SIMPLE/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
-  ===> Fetching [OK]: LWP::Simple:ver<0.109>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1789820567.1505546.9783.958636409348/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
-  [LWP::Simple] Command: tar -t -f ./e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
-  [LWP::Simple] Command: tar -xvf ./e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz -C ../e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
-  ===> Extraction [OK]: LWP::Simple to /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz
-  ===> Testing: LWP::Simple:ver<0.109>:auth<zef:dwarring>
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/000-load-module.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] ok 1 - LWP::Simple is loaded
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/basic-auth.t
-  [LWP::Simple] 1..9
-  [LWP::Simple] ok 1 - Scheme parsed correctly
-  [LWP::Simple] ok 2 - Hostname contains basic auth info
-  [LWP::Simple] ok 3 - HTTPS demands port 443
-  [LWP::Simple] ok 4 - Path extracted correctly
-  [LWP::Simple] ok 5 - Basic auth info extracted correctly: user
-  [LWP::Simple] ok 6 - Basic auth info extracted correctly: pass
-  [LWP::Simple] ok 7 - Basic auth info extracted correctly: hostname
-  [LWP::Simple] ok 8 - Base64 encoding works
-  [LWP::Simple] ok 9 - # SKIP  \#51 'www.software-path.com' not resolving
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/custom-headers-and-content.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] ok 1 - call to JSON-RPC service using headers and content params
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/delete-headers.t
-  [LWP::Simple] 1..2
-  [LWP::Simple] ok 1 - User agent header is sent by DELETE
-  [LWP::Simple] ok 2 - Accept header is sent by DELETE
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-404.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] # Subtest: did we throws-like LWP::Simple::X::LWP::Simple::Response?
-  [LWP::Simple]     1..3
-  [LWP::Simple]     ok 1 - code dies
-  [LWP::Simple]     ok 2 - right exception type (LWP::Simple::X::LWP::Simple::Response)
-  [LWP::Simple]     ok 3 - .status matches rx:i:s/404 Not Found/
-  [LWP::Simple] ok 1 - did we throws-like LWP::Simple::X::LWP::Simple::Response?
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-binary-camelia.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] 8090 68
-  [LWP::Simple] ok 1 - Fetched Camelia Logo
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-chunked-6guts.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] ok 1 - Pulled down whole chunked article
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-headers.t
-  [LWP::Simple] 1..4
-  [LWP::Simple] ok 1 - User agent header is sent by GET
-  [LWP::Simple] ok 2 - Accept header is sent by GET
-  [LWP::Simple] Use of Nil in string context
-  [LWP::Simple]   in sub from-json at /home/coke/sandbox/blin/installed/JSON::Tiny_cpan:MORITZ_1.0_0/sources/E9ADAAC409BF6670CBBCBC429FCEFC52221E2DB8 (JSON::Tiny) line 57
-  [LWP::Simple] Use of Nil.chars coerced to empty string
-  [LWP::Simple]   in sub from-json at /home/coke/sandbox/blin/installed/JSON::Tiny_cpan:MORITZ_1.0_0/sources/E9ADAAC409BF6670CBBCBC429FCEFC52221E2DB8 (JSON::Tiny) line 57
-  [LWP::Simple] This type cannot unbox to a native integer: P6opaque, Str
-  [LWP::Simple]   in sub from-json at /home/coke/sandbox/blin/installed/JSON::Tiny_cpan:MORITZ_1.0_0/sources/E9ADAAC409BF6670CBBCBC429FCEFC52221E2DB8 (JSON::Tiny) line 57
-  [LWP::Simple]   in block <unit> at t/get-headers.t line 32
-  [LWP::Simple] # You planned 4 tests, but ran 2
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-perl6-org.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] ok 1 - homepage is downloaded and has "Herman" in it
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-unsized.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] ok 1 - we pulled whole document without sizing from misbehaved server [http://localhost:43721]
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-w3-latin1-utf8.t
-  [LWP::Simple] 1..2
-  [LWP::Simple] ok 1 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] ok 2 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/get-w3-redirect.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] ok 1 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/getstore.t
-  [LWP::Simple] 1..10
-  [LWP::Simple] ok 1 - getstore() returned success
-  [LWP::Simple] ok 2 - Opened file handle written by getstore()
-  [LWP::Simple] ok 3 - Found pattern in downloaded file
-  [LWP::Simple] ok 4 - Close the temporary file
-  [LWP::Simple] ok 5 - Delete the temporary file
-  [LWP::Simple] ok 6 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] ok 7 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] ok 8 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] ok 9 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] ok 10 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/head.t
-  [LWP::Simple] # Subtest: head fetched good content over HTTP
-  [LWP::Simple]     ok 1 - Content is correct
-  [LWP::Simple]     ok 2 - Server is correct
-  [LWP::Simple]     1..2
-  [LWP::Simple] ok 1 - head fetched good content over HTTP
-  [LWP::Simple] # IO::Socket::SSL not available, not testing https
-  [LWP::Simple] 1..1
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/issue-7.t
-  [LWP::Simple] 1..1
-  [LWP::Simple] ok 1 - # SKIP IO::Socket::SSL not available
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/parse-url.t
-  [LWP::Simple] 1..25
-  [LWP::Simple] ok 1 - Scheme for http://www.rakudo.org is http
-  [LWP::Simple] ok 2 - Hostname for http://www.rakudo.org is www.rakudo.org
-  [LWP::Simple] ok 3 - Port for http://www.rakudo.org is 80
-  [LWP::Simple] ok 4 - Path for http://www.rakudo.org is /
-  [LWP::Simple] ok 5 - Scheme for http://www.altavista.com:81 is http
-  [LWP::Simple] ok 6 - Hostname for http://www.altavista.com:81 is www.altavista.com
-  [LWP::Simple] ok 7 - Port for http://www.altavista.com:81 is 81
-  [LWP::Simple] ok 8 - Path for http://www.altavista.com:81 is /
-  [LWP::Simple] ok 9 - Scheme for https://www.rakudo.org/rakudo-latest.tar.bz2 is https
-  [LWP::Simple] ok 10 - Hostname for https://www.rakudo.org/rakudo-latest.tar.bz2 is www.rakudo.org
-  [LWP::Simple] ok 11 - Port for https://www.rakudo.org/rakudo-latest.tar.bz2 is 443
-  [LWP::Simple] ok 12 - Path for https://www.rakudo.org/rakudo-latest.tar.bz2 is /rakudo-latest.tar.bz2
-  [LWP::Simple] ok 13 - Scheme for http://www.c64.com/path/with/multiple/slashes/ is http
-  [LWP::Simple] ok 14 - Hostname for http://www.c64.com/path/with/multiple/slashes/ is www.c64.com
-  [LWP::Simple] ok 15 - Port for http://www.c64.com/path/with/multiple/slashes/ is 80
-  [LWP::Simple] ok 16 - Path for http://www.c64.com/path/with/multiple/slashes/ is /path/with/multiple/slashes/
-  [LWP::Simple] ok 17 - Scheme for ftp://get.opera.com/pub/opera/win/1054/en/Opera_1054_en_Setup.exe is ftp
-  [LWP::Simple] ok 18 - Hostname for ftp://get.opera.com/pub/opera/win/1054/en/Opera_1054_en_Setup.exe is get.opera.com
-  [LWP::Simple] ok 19 - Port for ftp://get.opera.com/pub/opera/win/1054/en/Opera_1054_en_Setup.exe is 21
-  [LWP::Simple] ok 20 - Path for ftp://get.opera.com/pub/opera/win/1054/en/Opera_1054_en_Setup.exe is /pub/opera/win/1054/en/Opera_1054_en_Setup.exe
-  [LWP::Simple] ok 21 - Scheme for http://tinyurl.com/api-create.php?url=http://digg.com is http
-  [LWP::Simple] ok 22 - Hostname for http://tinyurl.com/api-create.php?url=http://digg.com is tinyurl.com
-  [LWP::Simple] ok 23 - Port for http://tinyurl.com/api-create.php?url=http://digg.com is 80
-  [LWP::Simple] ok 24 - Path for http://tinyurl.com/api-create.php?url=http://digg.com is /api-create.php?url=http://digg.com
-  [LWP::Simple] ok 25 - port is returned as a Int, to avoid problems on sock.open()
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/put-request.t
-  [LWP::Simple] 1..2
-  [LWP::Simple] ok 1 - User agent header is sent by PUT
-  [LWP::Simple] ok 2 - Accept header is sent by PUT
-  [LWP::Simple] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e7634dd54754b55a001b7ebef2554d1d77b9eebf.tar.gz/LWP-Simple-0.109 t/stringify-headers.t
-  [LWP::Simple] 1..6
-  [LWP::Simple] ok 1 - OK - User-Agent: Opera/9.80 (WinNT; 6.0) Version/10.60
-  [LWP::Simple] ok 2 - OK - Connection: close
-  [LWP::Simple] ok 3 - Composite headers are stringified correctly
-  [LWP::Simple] ok 4 - Composite headers are stringified correctly
-  [LWP::Simple] ok 5 - Composite headers are stringified correctly
-  [LWP::Simple] ok 6 - Composite headers are stringified correctly
-  ===> Testing [FAIL]: LWP::Simple:ver<0.109>:auth<zef:dwarring>
-  [LWP::Simple] Failed to get passing tests, but continuing with --force-test
-  ===> Installing: LWP::Simple:ver<0.109>:auth<zef:dwarring>
-  ===> Install [OK] for LWP::Simple:ver<0.109>:auth<zef:dwarring>
-
-  2 bin/ scripts [lwp-get.p6 lwp-download.p6] installed to:
-  /home/coke/sandbox/blin/installed/LWP::Simple_zef:dwarring_0.109_0/bin
-            Finished with result: success
-  Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 2min 35ms
-               CPU time consumed: 2min 3.436s
-                     Memory peak: 1G (swap: 26.1M)
+                 Service runtime: 2min 33.816s
+               CPU time consumed: 2min 40.891s
+                     Memory peak: 1.2G (swap: 136.1M)
 
   ```
   </details>
@@ -1687,12 +2639,12 @@
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p1907902-i1960076.service; invocation ID: 848a0f3c87fe46489a8d44fdda9cac48
+  Running as unit: run-p2552231-i2538201.service; invocation ID: 8e1642f89b084b06856f4ea34867a63c
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: GIO
   ===> Found: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> [via Zef::Repository::Ecosystems<rea>]
-  [GIO] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789832055.1907909.9844.5096328511/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GIO/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
-  ===> Fetching [OK]: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789832055.1907909.9844.5096328511/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
+  [GIO] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789884747.2552232.6220.072139306217/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GIO/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
+  ===> Fetching [OK]: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789884747.2552232.6220.072139306217/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
   [GIO] Command: tar -t -f ./GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
   [GIO] Command: tar -xvf ./GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz -C ../GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
   ===> Extraction [OK]: GIO to /home/coke/sandbox/blin/data/zef-data/tmp/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
@@ -2008,8 +2960,8 @@
   ===> Install [OK] for GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 3min 40.172s
-               CPU time consumed: 5min 4.591s
+                 Service runtime: 3min 40.718s
+               CPU time consumed: 5min 5.888s
                      Memory peak: 4G (swap: 0B)
 
   ```
@@ -2018,17 +2970,17 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p1907614-i1898375.service; invocation ID: 664d7dce2a814b14ab88a2ed25eafcbd
+  Running as unit: run-p2551942-i2543133.service; invocation ID: e64142f7016e426f9216049fd596c1d9
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: GIO
   ===> Found: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> [via Zef::Repository::Ecosystems<rea>]
-  [GIO] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789832033.1907615.1072.5320751207046/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GIO/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
-  ===> Fetching [OK]: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789832033.1907615.1072.5320751207046/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
+  [GIO] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789884725.2551943.4787.604030042436/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GIO/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
+  ===> Fetching [OK]: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789884725.2551943.4787.604030042436/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
   [GIO] Command: tar -t -f ./GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
   [GIO] Command: tar -xvf ./GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz -C ../GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
   ===> Extraction [OK]: GIO to /home/coke/sandbox/blin/data/zef-data/tmp/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
   ===> Testing: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1>
-  [GIO] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz/GIO-0.0.4 t/01-modules.t
+  [GIO] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz/GIO-0.0.4 t/01-modules.t
   [GIO] 1..294
   [GIO] ok 1 - GIO
   [GIO] ok 2 - GIO::AppInfoMonitor
@@ -2356,9 +3308,9 @@
 
             Finished with result: exit-code
   Main processes terminated with: code=exited, status=1/FAILURE
-                 Service runtime: 21.728s
-               CPU time consumed: 28.618s
-                     Memory peak: 2.2G (swap: 0B)
+                 Service runtime: 21.808s
+               CPU time consumed: 28.862s
+                     Memory peak: 2.3G (swap: 0B)
 
   ```
   </details>
@@ -2366,12 +3318,12 @@
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p1780128-i1674989.service; invocation ID: 08a909cc478d4f7ca9f16d015b4b4ec3
+  Running as unit: run-p2425564-i2479018.service; invocation ID: dc2e9d8d1cf44da9a756e6cfe36e05b2
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: GLib
   ===> Found: GLib:ver<0.0.11>:auth<cpan:CBWOOD> [via Zef::Repository::Ecosystems<rea>]
-  [GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789828007.1780137.5757.033423575804/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
-  ===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789828007.1780137.5757.033423575804/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  [GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789880853.2425567.7761.782153766373/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  ===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789880853.2425567.7761.782153766373/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [GLib] Command: tar -t -f ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [GLib] Command: tar -xvf ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz -C ../GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Extraction [OK]: GLib to /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
@@ -2643,14 +3595,14 @@
       class GLib::Class::Object;' in its own file (or otherwise avoid the
       package+same-named-class collision) to work the same way on either
       revision.
-      at /tmp/kNnuty6YSA/sources/6CA058F1742AC15AF9A8D119F6535617F1C5EFF5 (GLib::Class::Object):103
+      at /tmp/GwQ3TY8GrZ/sources/6CA058F1742AC15AF9A8D119F6535617F1C5EFF5 (GLib::Class::Object):103
       ------> class <HERE>GLib::Class::Object is export {
   ===> Install [OK] for GLib:ver<0.0.11>:auth<cpan:CBWOOD>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 17min 28.073s
-               CPU time consumed: 16min 2.072s
-                     Memory peak: 2.4G (swap: 1.2G)
+                 Service runtime: 18min 41.925s
+               CPU time consumed: 15min 17.525s
+                     Memory peak: 2.6G (swap: 1.2G)
 
   ```
   </details>
@@ -2658,17 +3610,17 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p1773545-i1771631.service
+  Running as unit: run-p2418783-i2462891.service; invocation ID: 14e5caccfcf943dda44af9ca098f6094
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: GLib
   ===> Found: GLib:ver<0.0.11>:auth<cpan:CBWOOD> [via Zef::Repository::Ecosystems<rea>]
-  [GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789827822.1773556.8282.708071985038/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
-  ===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789827822.1773556.8282.708071985038/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  [GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789880667.2418792.5922.254033745487/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  ===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789880667.2418792.5922.254033745487/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [GLib] Command: tar -t -f ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [GLib] Command: tar -xvf ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz -C ../GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Extraction [OK]: GLib to /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Testing: GLib:ver<0.0.11>:auth<cpan:CBWOOD>
-  [GLib] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00-struct-sizes.t
+  [GLib] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00-struct-sizes.t
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00-struct-sizes.t
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs)
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Exceptions.pm6 (GLib::Raw::Exceptions)
@@ -2677,7 +3629,7 @@
   [GLib] ------>   method new (<HERE> :
   [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs):10
   [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00-struct-sizes.t:7
-  [GLib] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00b-class-struct-sizes.t
+  [GLib] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00b-class-struct-sizes.t
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00b-class-struct-sizes.t
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs)
   [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Exceptions.pm6 (GLib::Raw::Exceptions)
@@ -2686,7 +3638,7 @@
   [GLib] ------>   method new (<HERE> :
   [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs):10
   [GLib] at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/t/00b-class-struct-sizes.t:7
-  [GLib] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/01-modules.t
+  [GLib] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/01-modules.t
   [GLib] 1..174
   [GLib] ok 1 - GLib
   [GLib] ok 2 - GLib::Array
@@ -2895,9 +3847,9 @@
 
             Finished with result: exit-code
   Main processes terminated with: code=exited, status=1/FAILURE
-                 Service runtime: 2min 57.707s
-               CPU time consumed: 2min 46.490s
-                     Memory peak: 2.2G (swap: 697.4M)
+                 Service runtime: 2min 58.613s
+               CPU time consumed: 2min 54.322s
+                     Memory peak: 2.3G (swap: 498.1M)
 
   ```
   </details>
@@ -2905,12 +3857,12 @@
   <details><Summary>Old Output</summary>
 
   ```
-  Running as unit: run-p1928613-i1979044.service; invocation ID: 6b92eebcc58c4e15950a6bf27bc70c13
+  Running as unit: run-p2566891-i2636966.service; invocation ID: bc19c11a78894299a465c57617987299
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: JSON::GLib::Node
   ===> Found: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> [via Zef::Repository::Ecosystems<rea>]
-  [JSON::GLib::Node] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789834713.1928614.5822.534891646494/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/J/JSON%3A%3AGLib%3A%3ANode/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
-  ===> Fetching [OK]: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789834713.1928614.5822.534891646494/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  [JSON::GLib::Node] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789886618.2566892.5447.59147260517/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/J/JSON%3A%3AGLib%3A%3ANode/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  ===> Fetching [OK]: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789886618.2566892.5447.59147260517/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [JSON::GLib::Node] Command: tar -t -f ./JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [JSON::GLib::Node] Command: tar -xvf ./JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz -C ../JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Extraction [OK]: JSON::GLib::Node to /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
@@ -2951,9 +3903,9 @@
   ===> Install [OK] for JSON::GLib::Node:ver<0.0.1>
             Finished with result: success
   Main processes terminated with: code=exited, status=0/SUCCESS
-                 Service runtime: 1min 44.627s
-               CPU time consumed: 2min 28.637s
-                     Memory peak: 3.1G (swap: 0B)
+                 Service runtime: 1min 44.956s
+               CPU time consumed: 2min 29.042s
+                     Memory peak: 3.2G (swap: 0B)
 
   ```
   </details>
@@ -2961,17 +3913,17 @@
   <summary>New Output</summary>
 
   ```
-  Running as unit: run-p1928466-i1979015.service; invocation ID: 4100d7cbfc5a4884a73495082830f3f5
+  Running as unit: run-p2566744-i2636939.service; invocation ID: 51e08ff699ba497f8c1be1c2298c5afe
   Press ^] three times within 1s to disconnect TTY.
   ===> Searching for: JSON::GLib::Node
   ===> Found: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> [via Zef::Repository::Ecosystems<rea>]
-  [JSON::GLib::Node] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789834693.1928467.125.87088524240953/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/J/JSON%3A%3AGLib%3A%3ANode/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
-  ===> Fetching [OK]: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789834693.1928467.125.87088524240953/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  [JSON::GLib::Node] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789886599.2566745.4686.421922137538/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/J/JSON%3A%3AGLib%3A%3ANode/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+  ===> Fetching [OK]: JSON::GLib::Node:ver<0.0.1>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1789886599.2566745.4686.421922137538/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [JSON::GLib::Node] Command: tar -t -f ./JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   [JSON::GLib::Node] Command: tar -xvf ./JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz -C ../JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Extraction [OK]: JSON::GLib::Node to /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
   ===> Testing: JSON::GLib::Node:ver<0.0.1>
-  [JSON::GLib::Node] Command: /tmp/whateverable/rakudo-moar/7ded5ff7de2c55911b07e909d1daa968255bc96b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/JSON-GLib-Node-0.0.1 t/01-basic.t
+  [JSON::GLib::Node] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/JSON-GLib-Node-0.0.1 t/01-basic.t
   [JSON::GLib::Node] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/JSON-GLib-Node-0.0.1/t/01-basic.t
   [JSON::GLib::Node] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/JSON%3A%3AGLib%3A%3ANode%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/JSON-GLib-Node-0.0.1/lib/JSON/GLib/Array.pm6 (JSON::GLib::Array)
   [JSON::GLib::Node] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/0C336C09131938C526DC4C924AD2A0CDE35A600C (GLib::GList)
@@ -3017,9 +3969,9 @@
 
             Finished with result: exit-code
   Main processes terminated with: code=exited, status=1/FAILURE
-                 Service runtime: 19.230s
-               CPU time consumed: 25.635s
-                     Memory peak: 2.1G (swap: 0B)
+                 Service runtime: 19.182s
+               CPU time consumed: 25.902s
+                     Memory peak: 2G (swap: 0B)
 
   ```
   </details>
@@ -3029,18 +3981,18 @@
 | Status                    | Count |          Modules          |
 | :------------------------ | :---: | :------------------------ |
 | UnhandledException        |     1 | [Foo:: Foo](https://raku.land/github:AlexDaniel/Foo:: Foo) |
-| Flapper                   |     2 | [MCP](https://raku.land/zef:wkusnierczyk/MCP) [Stomp](https://raku.land/zef:raku-community-modules/Stomp) |
-| Fail                      |     8 | [DAWG](https://raku.land/zef:slavenskoj/DAWG) [FontConfig](https://raku.land/zef:dwarring/FontConfig) [GIO](https://raku.land/cpan:CBWOOD/GIO) [GLib](https://raku.land/cpan:CBWOOD/GLib) [JSON::GLib::Node](https://raku.land/cpan:CBWOOD/JSON::GLib::Node) [LWP::Simple](https://raku.land/zef:dwarring/LWP::Simple) [Polyglot::Regexen](https://raku.land/zef:guifa/Polyglot::Regexen) [Terminal::UI](https://raku.land/zef:bduggan/Terminal::UI) |
+| Flapper                   |     2 | [LWP::Simple](https://raku.land/zef:dwarring/LWP::Simple) [Proc::Q](https://raku.land//Proc::Q) |
+| Fail                      |     7 | [CSS::Properties](https://raku.land/zef:dwarring/CSS::Properties) [GIO](https://raku.land/cpan:CBWOOD/GIO) [GLib](https://raku.land/cpan:CBWOOD/GLib) [JSON::GLib::Node](https://raku.land/cpan:CBWOOD/JSON::GLib::Node) [Polyglot::Regexen](https://raku.land/zef:guifa/Polyglot::Regexen) [Stomp](https://raku.land/zef:raku-community-modules/Stomp) [Terminal::UI](https://raku.land/zef:bduggan/Terminal::UI) |
 | InstallableButUntested    |    10 | [HTTP::Server::Async](https://raku.land/zef:raku-community-modules/HTTP::Server::Async) [IO::Socket::Async::SSL](https://raku.land/zef:raku-community-modules/IO::Socket::Async::SSL) [IRC::Client](https://raku.land/zef:lizmat/IRC::Client) [Log::Minimal](https://raku.land//Log::Minimal) [Russian](https://raku.land/zef:slavenskoj/Russian) [Text::Markdown::Discount](https://raku.land/github:hartenfels/Text::Markdown::Discount) [Time::Duration](https://raku.land/zef:masukomi/Time::Duration) [Toaster](https://raku.land//Toaster) [Uzu](https://raku.land/cpan:SACOMO/Uzu) [Web::Scraper](https://raku.land/zef:tony-o/Web::Scraper) |
 | MissingDependency         |    11 | [App::Ebread](https://raku.land/zef:samy/App::Ebread) [App::Perl6LangServer](https://raku.land/cpan:AZAWAWI/App::Perl6LangServer) [Chemistry::Elements](https://raku.land/github:briandfoy/Chemistry::Elements) [DBIx::NamedQueries](https://raku.land/cpan:MZIESCHA/DBIx::NamedQueries) [Ethelia](https://raku.land/zef:knarkhov/Ethelia) [Learn::Raku::With](https://raku.land/zef:codesections/Learn::Raku::With) [META6::To::Man](https://raku.land/cpan:TBROWDER/META6::To::Man) [Pakku](https://raku.land/zef:hythm/Pakku) [Perl6::Tracer](https://raku.land/github:jaffa4/Perl6::Tracer) [Task::Galaxy](https://raku.land//Task::Galaxy) [Touch](https://raku.land/zef:rir/Touch) |
-| ZefFailure                |    13 | [BDD::Behave](https://raku.land/zef:gdonald/BDD::Behave) [Cro::RPC::JSON](https://raku.land/zef:vrurg/Cro::RPC::JSON) [Gnome::Gtk4](https://raku.land/zef:martimm/Gnome::Gtk4) [MongoDB](https://raku.land/cpan:MARTIMM/MongoDB) [ParaSeq](https://raku.land/zef:lizmat/ParaSeq) [Proc::ZMQed](https://raku.land/zef:antononcube/Proc::ZMQed) [Sitemap](https://raku.land/zef:sasha/Sitemap) [Syndicate](https://raku.land/zef:sasha/Syndicate) [TXN](https://raku.land//TXN) [TXN::Parser](https://raku.land//TXN::Parser) [TXN::Remarshal](https://raku.land//TXN::Remarshal) [WAT](https://raku.land/zef:nige123/WAT) [cro](https://raku.land/zef:cro/cro) |
+| ZefFailure                |    14 | [BDD::Behave](https://raku.land/zef:gdonald/BDD::Behave) [Concurrent::BoundedChannel](https://raku.land/zef:raku-community-modules/Concurrent::BoundedChannel) [Cro::ZeroMQ](https://raku.land/cpan:JNTHN/Cro::ZeroMQ) [Gnome::Gtk4](https://raku.land/zef:martimm/Gnome::Gtk4) [ORM::ActiveRecord](https://raku.land/zef:gdonald/ORM::ActiveRecord) [ParaSeq](https://raku.land/zef:lizmat/ParaSeq) [Proc::ZMQed](https://raku.land/zef:antononcube/Proc::ZMQed) [Sitemap](https://raku.land/zef:sasha/Sitemap) [Syndicate](https://raku.land/zef:sasha/Syndicate) [TXN](https://raku.land//TXN) [TXN::Parser](https://raku.land//TXN::Parser) [TXN::Remarshal](https://raku.land//TXN::Remarshal) [Test::Time](https://raku.land/zef:FCO/Test::Time) [cro](https://raku.land/zef:cro/cro) |
 | CyclicDependency          |    48 | ⋯                         |
-| AlwaysFail                |   781 | ⋯                         |
-| OK                        |  1657 | ⋯                         |
+| AlwaysFail                |   782 | ⋯                         |
+| OK                        |  1656 | ⋯                         |
 
 
 
-This run started on 2026-09-19T16:38:08Z and finished in ≈5 hours.
+This run started on 2026-09-20T06:57:12Z and finished in ≈5 hours.
 
 <!--
 Graph of bisected modules and their dependencies:

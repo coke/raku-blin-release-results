@@ -1,0 +1,212 @@
+Running as unit: run-p2182882-i2104521.service; invocation ID: ae60f87be5104f778f66bfb61a6f056c
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Stomp
+===> Found: Stomp:ver<0.1.0>:auth<zef:raku-community-modules> [via Zef::Repository::Ecosystems<fez>]
+[Stomp] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789874226.2182890.4774.561715057947/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz https://360.zef.pm/S/TO/STOMP/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz
+===> Fetching [OK]: Stomp:ver<0.1.0>:auth<zef:raku-community-modules> to /home/coke/sandbox/blin/data/zef-data/tmp/1789874226.2182890.4774.561715057947/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz
+[Stomp] Command: tar -t -f ./ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz
+[Stomp] Command: tar -xvf ./ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz -C ../ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz
+===> Extraction [OK]: Stomp to /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz
+===> Testing: Stomp:ver<0.1.0>:auth<zef:raku-community-modules>
+[Stomp] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz/dist t/001-meta.rakutest
+[Stomp] 1..1
+[Stomp] ok 1 - # SKIP no Test::META - skipping
+[Stomp] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz/dist t/client.rakutest
+[Stomp] 1..31
+[Stomp] ok 1 - Connected to the correct host
+[Stomp] ok 2 - Connected to the correct port
+[Stomp] ok 3 - Failed STOMP server connection breaks connect Promise
+[Stomp] ok 4 - Client sent valid message to server
+[Stomp] ok 5 - Client sent a CONNECT command
+[Stomp] ok 6 - Client sent login
+[Stomp] ok 7 - Client sent password
+[Stomp] ok 8 - Client sent accept-version header
+[Stomp] ok 9 - Client sent no message body
+[Stomp] ok 10 - CONNECTED message completes connection
+[Stomp] ok 11 - send method sent well-formed message
+[Stomp] ok 12 - message has SEND command
+[Stomp] ok 13 - destination header correct
+[Stomp] ok 14 - has default content-type header
+[Stomp] ok 15 - message had expected body
+[Stomp] ok 16 - Promise retunred by send was kept
+[Stomp] ok 17 - can set content-type header
+[Stomp] ok 18 - subscribe returns a Supply
+[Stomp] ok 19 - did not yet send subscription request
+[Stomp] ok 20 - subscribe method sent well-formed message
+[Stomp] ok 21 - message has SUBSCRIBE command
+[Stomp] ok 22 - destination header correct
+[Stomp] ok 23 - had an id header
+[Stomp] ok 24 - no messages received yet
+[Stomp] ok 25 - one message now received
+[Stomp] ok 26 - it's a Stomp::Message
+[Stomp] ok 27 - has the command MESSAGE
+[Stomp] ok 28 - has the correct body
+[Stomp] ok 29 - unsubscribing sent well-formed message
+[Stomp] ok 30 - message has UNSUBSCRIBE command
+[Stomp] ok 31 - id matched the subscription
+[Stomp] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz/dist t/message.rakutest
+[Stomp] 1..3
+[Stomp] ok 1 - SEND message correctly formatted
+[Stomp] ok 2 - Stomp::Message must be constructed with a command
+[Stomp] ok 3 - CONNECT message with empty body correctly formatted
+[Stomp] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz/dist t/parser.rakutest
+[Stomp] 1..51
+[Stomp] ok 1 - Can parse CONNECTED command (no headers/body)
+[Stomp] ok 2 - Can parse MESSAGE command (no headers/body)
+[Stomp] ok 3 - Can parse RECEIPT command (no headers/body)
+[Stomp] ok 4 - Can parse ERROR command (no headers/body)
+[Stomp] ok 5 - Can parse SEND command (no headers/body)
+[Stomp] ok 6 - Can parse SUBSCRIBE command (no headers/body)
+[Stomp] ok 7 - Can parse UNSUBSCRIBE command (no headers/body)
+[Stomp] ok 8 - Can parse BEGIN command (no headers/body)
+[Stomp] ok 9 - Can parse COMMIT command (no headers/body)
+[Stomp] ok 10 - Can parse ABORT command (no headers/body)
+[Stomp] ok 11 - Can parse ACK command (no headers/body)
+[Stomp] ok 12 - Can parse NACK command (no headers/body)
+[Stomp] ok 13 - Can parse DISCONNECT command (no headers/body)
+[Stomp] ok 14 - Can parse CONNECT command (no headers/body)
+[Stomp] ok 15 - Can parse STOMP command (no headers/body)
+[Stomp] # Subtest: Cannot parse unknown command FOO
+[Stomp]     1..3
+[Stomp]     ok 1 - code dies
+[Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+[Stomp]     ok 3 - .reason matches invalid command
+[Stomp] ok 16 - Cannot parse unknown command FOO
+[Stomp] ok 17 - Server parser accepts CONNECTED
+[Stomp] # Subtest: Client parser rejects CONNECTED
+[Stomp]     1..3
+[Stomp]     ok 1 - code dies
+[Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+[Stomp]     ok 3 - .reason matches invalid command
+[Stomp] ok 18 - Client parser rejects CONNECTED
+[Stomp] ok 19 - Server parser accepts MESSAGE
+[Stomp] # Subtest: Client parser rejects MESSAGE
+[Stomp]     1..3
+[Stomp]     ok 1 - code dies
+[Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+[Stomp]     ok 3 - .reason matches invalid command
+[Stomp] ok 20 - Client parser rejects MESSAGE
+[Stomp] ok 21 - Server parser accepts RECEIPT
+[Stomp] # Subtest: Client parser rejects RECEIPT
+[Stomp]     1..3
+[Stomp]     ok 1 - code dies
+[Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+[Stomp]     ok 3 - .reason matches invalid command
+[Stomp] ok 22 - Client parser rejects RECEIPT
+[Stomp] ok 23 - Server parser accepts ERROR
+[Stomp] # Subtest: Client parser rejects ERROR
+[Stomp]     1..3
+[Stomp]     ok 1 - code dies
+[Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+[Stomp]     ok 3 - .reason matches invalid command
+[Stomp] ok 24 - Client parser rejects ERROR
+[Stomp] ok 25 - Client parser accepts SEND
+[Stomp] # Subtest: Server parser rejects SEND
+[Stomp]     1..3
+[Stomp]     ok 1 - code dies
+[Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+[Stomp]     ok 3 - .reason matches invalid command
+[Stomp] ok 26 - Server parser rejects SEND
+[Stomp] ok 27 - Client parser accepts SUBSCRIBE
+[Stomp] # Subtest: Server parser rejects SUBSCRIBE
+[Stomp]     1..3
+[Stomp]     ok 1 - code dies
+[Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+[Stomp]     ok 3 - .reason matches invalid command
+[Stomp] ok 28 - Server parser rejects SUBSCRIBE
+[Stomp] ok 29 - Client parser accepts UNSUBSCRIBE
+[Stomp] # Subtest: Server parser rejects UNSUBSCRIBE
+[Stomp]     1..3
+[Stomp]     ok 1 - code dies
+[Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+[Stomp]     ok 3 - .reason matches invalid command
+[Stomp] ok 30 - Server parser rejects UNSUBSCRIBE
+[Stomp] ok 31 - Client parser accepts BEGIN
+[Stomp] # Subtest: Server parser rejects BEGIN
+[Stomp]     1..3
+[Stomp]     ok 1 - code dies
+[Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+[Stomp]     ok 3 - .reason matches invalid command
+[Stomp] ok 32 - Server parser rejects BEGIN
+[Stomp] ok 33 - Client parser accepts COMMIT
+[Stomp] # Subtest: Server parser rejects COMMIT
+[Stomp]     1..3
+[Stomp]     ok 1 - code dies
+[Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+[Stomp]     ok 3 - .reason matches invalid command
+[Stomp] ok 34 - Server parser rejects COMMIT
+[Stomp] ok 35 - Client parser accepts ABORT
+[Stomp] # Subtest: Server parser rejects ABORT
+[Stomp]     1..3
+[Stomp]     ok 1 - code dies
+[Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+[Stomp]     ok 3 - .reason matches invalid command
+[Stomp] ok 36 - Server parser rejects ABORT
+[Stomp] ok 37 - Client parser accepts ACK
+[Stomp] # Subtest: Server parser rejects ACK
+[Stomp]     1..3
+[Stomp]     ok 1 - code dies
+[Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+[Stomp]     ok 3 - .reason matches invalid command
+[Stomp] ok 38 - Server parser rejects ACK
+[Stomp] ok 39 - Client parser accepts NACK
+[Stomp] # Subtest: Server parser rejects NACK
+[Stomp]     1..3
+[Stomp]     ok 1 - code dies
+[Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+[Stomp]     ok 3 - .reason matches invalid command
+[Stomp] ok 40 - Server parser rejects NACK
+[Stomp] ok 41 - Client parser accepts DISCONNECT
+[Stomp] # Subtest: Server parser rejects DISCONNECT
+[Stomp]     1..3
+[Stomp]     ok 1 - code dies
+[Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+[Stomp]     ok 3 - .reason matches invalid command
+[Stomp] ok 42 - Server parser rejects DISCONNECT
+[Stomp] ok 43 - Client parser accepts CONNECT
+[Stomp] # Subtest: Server parser rejects CONNECT
+[Stomp]     1..3
+[Stomp]     ok 1 - code dies
+[Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+[Stomp]     ok 3 - .reason matches invalid command
+[Stomp] ok 44 - Server parser rejects CONNECT
+[Stomp] ok 45 - Client parser accepts STOMP
+[Stomp] # Subtest: Server parser rejects STOMP
+[Stomp]     1..3
+[Stomp]     ok 1 - code dies
+[Stomp]     ok 2 - right exception type (X::Stomp::MalformedMessage)
+[Stomp]     ok 3 - .reason matches invalid command
+[Stomp] ok 46 - Server parser rejects STOMP
+[Stomp] ok 47 - Parsed message with header/body
+[Stomp] ok 48 - Parser made a Stomp::Message
+[Stomp] ok 49 - Command is correct
+[Stomp] ok 50 - Header is correct
+[Stomp] ok 51 - Body is correct
+[Stomp] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ef8d4d443a711d336ff54fd80ba239b5657caada.tar.gz/dist t/server.rakutest
+[Stomp] 1..28
+[Stomp] ok 1 - Must provide host and port to new (1)
+[Stomp] ok 2 - Must provide host and port to new (2)
+[Stomp] ok 3 - Must provide host and port to new (3)
+[Stomp] ok 4 - Stomp::Server listen method returns a Supply
+[Stomp] ok 5 - Not listening before supply is tapped
+[Stomp] ok 6 - Listening once supply is tapped
+[Stomp] ok 7 - Listening on correct host
+[Stomp] ok 8 - Listening on correct port
+[Stomp] ok 9 - Closing supply tap also closes socket
+[Stomp] ok 10 - Server responded to CONNECT with valid message
+[Stomp] ok 11 - Server sent CONNECTED command
+[Stomp] ok 12 - Server sent version header
+[Stomp] ok 13 - Server sent no message body
+[Stomp] ok 14 - and the tap received the correct object
+[Stomp] No such method 'subscriptions' for invocant of type 'Any'
+[Stomp]   in block <unit> at t/server.rakutest line 85
+[Stomp] # You planned 28 tests, but ran 14
+===> Testing [FAIL]: Stomp:ver<0.1.0>:auth<zef:raku-community-modules>
+[Stomp] Failed to get passing tests, but continuing with --force-test
+===> Installing: Stomp:ver<0.1.0>:auth<zef:raku-community-modules>
+===> Install [OK] for Stomp:ver<0.1.0>:auth<zef:raku-community-modules>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 1min 42.449s
+             CPU time consumed: 1min 56.162s
+                   Memory peak: 1.2G (swap: 0B)

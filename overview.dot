@@ -1,0 +1,2522 @@
+digraph {
+    rankdir = BT;
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "PDF::Lite_zef:dwarring_0.0.15_0" [color=green];
+    "PDF::Lite_zef:dwarring_0.0.15_0" -> "PDF::Content_zef:dwarring_0.9.11_0";
+    "PDF::Lite_zef:dwarring_0.0.15_0" -> "PDF_zef:dwarring_0.6.15_0";
+
+    "PDF_zef:dwarring_0.6.15_0" [color=green];
+    "PDF_zef:dwarring_0.6.15_0" -> "OpenSSL_zef:raku-community-modules_0.2.9_0";
+    "PDF_zef:dwarring_0.6.15_0" -> "PDF::Grammar_zef:dwarring_0.3.6_0";
+    "PDF_zef:dwarring_0.6.15_0" -> "Hash::int_zef:lizmat_0.0.7_0";
+    "PDF_zef:dwarring_0.6.15_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "PDF_zef:dwarring_0.6.15_0" -> "Compress::Zlib__1.1.0_0";
+    "PDF_zef:dwarring_0.6.15_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "App::samaki_zef:bduggan_0.0.13_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+
+    "CSS::Writer_zef:dwarring_0.3.3_0" [color=green];
+    "CSS::Writer_zef:dwarring_0.3.3_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "CSS::Writer_zef:dwarring_0.3.3_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Writer_zef:dwarring_0.3.3_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+
+    "CSS::Minifier_zef:sasha_0.0.5_0" [color=gray];
+    "CSS::Minifier_zef:sasha_0.0.5_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Minifier_zef:sasha_0.0.5_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Minifier_zef:sasha_0.0.5_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+
+    "CSS::Minifier_zef:sasha_0.0.4_0" [color=gray];
+    "CSS::Minifier_zef:sasha_0.0.4_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::Minifier_zef:sasha_0.0.4_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Minifier_zef:sasha_0.0.4_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "HTML::Canvas_cpan:WARRINGD_0.0.19_0" [color=gray];
+    "HTML::Canvas_cpan:WARRINGD_0.0.19_0" -> "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.19_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.19_0" -> "Hash::Agnostic_zef:lizmat_0.0.20_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.19_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.19_0" -> "Font::FreeType_zef:dwarring_0.5.16_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.19_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas_cpan:WARRINGD_0.0.19_0" -> "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.19_0" -> "Base64::Native_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.19_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.19_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.19_0" -> "Cairo__0.3.6_0";
+
+    "Timezones::ZoneInfo_zef:guifa_0.5.0_0" [color=green];
+
+    "App::samaki_zef:bduggan_0.0.29_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+
+    "License::SPDX_zef:jonathanstowe_3.29.0_1.0" [color=violet];
+    "License::SPDX_zef:jonathanstowe_3.29.0_1.0" -> "JSON::Class_zef:jonathanstowe_0.0.21_1.0";
+
+    "CSS::Minifier_zef:sasha_0.0.1_0" [color=gray];
+    "CSS::Minifier_zef:sasha_0.0.1_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::Minifier_zef:sasha_0.0.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Minifier_zef:sasha_0.0.1_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "CSS::TagSet_zef:dwarring_0.1.2_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "JSON::OptIn_zef:jonathanstowe_0.0.2_0" [color=green];
+
+    "AI::Gator_zef:bduggan_0.0.9_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.9_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.9_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "AI::Gator_zef:bduggan_0.0.9_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.9_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.9_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.9_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.9_0" -> "Readline_zef:clarkema_0.1.8_0";
+
+    "HTML::Canvas_zef:dwarring_0.1.3_0" [color=gray];
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "FontConfig_zef:dwarring_0.1.9_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "Hash::Agnostic_zef:lizmat_0.0.20_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "Font::FreeType_zef:dwarring_0.5.16_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "Cairo__0.3.6_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "Base64::Native_zef:dwarring_0.0.10_0";
+
+    "File::Directory::Tree_zef:raku-community-modules_0.2_0" [color=green];
+
+    "AI::Gator_zef:bduggan_0.0.7_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.7_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.7_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.7_0" -> "Readline_zef:clarkema_0.1.8_0";
+    "AI::Gator_zef:bduggan_0.0.7_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.7_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.7_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "AI::Gator_zef:bduggan_0.0.7_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+
+    "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0" [color=green];
+    "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0" -> "OO::Monitors_zef:raku-community-modules_1.1.7_0";
+
+    "App::samaki_zef:bduggan_0.0.10_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+
+    "App::samaki_zef:bduggan_0.0.6_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Duckie_zef:bduggan_0.0.12_0";
+
+    "CSS::Minifier_zef:sasha_0.0.5_0" [color=gray];
+    "CSS::Minifier_zef:sasha_0.0.5_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Minifier_zef:sasha_0.0.5_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::Minifier_zef:sasha_0.0.5_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "CSS::TagSet_zef:dwarring_0.1.0_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+
+    "Digest_zef:grondilu_1.1.0_0" [color=green];
+
+    "Rakudo_Yet Another Society_2026.07_0" [color=green];
+
+    "AI::Gator_zef:bduggan_0.0.9_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.9_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.9_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.9_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "AI::Gator_zef:bduggan_0.0.9_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.9_0" -> "Readline_zef:clarkema_0.1.8_0";
+    "AI::Gator_zef:bduggan_0.0.9_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.9_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "WWW::Ollama_zef:antononcube_0.0.7_0" [color=green];
+    "WWW::Ollama_zef:antononcube_0.0.7_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "WWW::Ollama_zef:antononcube_0.0.7_0" -> "MIME::Base64_zef:raku-community-modules_1.2.5_0";
+    "WWW::Ollama_zef:antononcube_0.0.7_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "WWW::Ollama_zef:antononcube_0.0.7_0" -> "IO::Socket::SSL_zef:raku-community-modules_0.0.4_0";
+    "WWW::Ollama_zef:antononcube_0.0.7_0" -> "Image::Markup::Utilities_zef:antononcube_0.1.2_0";
+
+    "HTML::Canvas_cpan:WARRINGD_0.0.20_0" [color=gray];
+    "HTML::Canvas_cpan:WARRINGD_0.0.20_0" -> "Hash::Agnostic_zef:lizmat_0.0.20_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.20_0" -> "Base64::Native_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.20_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.20_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.20_0" -> "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.20_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.20_0" -> "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.20_0" -> "Cairo__0.3.6_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.20_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.20_0" -> "Font::FreeType_zef:dwarring_0.5.16_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.20_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "App::samaki_zef:bduggan_0.0.23_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+
+    "Shell::Command_zef:raku-community-modules_1.2_0" [color=green];
+    "Shell::Command_zef:raku-community-modules_1.2_0" -> "File::Find_zef:raku-community-modules_0.2.5_0";
+
+    "AI::Gator_zef:bduggan_0.0.6_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.6_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.6_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.6_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.6_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.6_0" -> "Prompt_zef:lizmat_0.0.11_0";
+    "AI::Gator_zef:bduggan_0.0.6_0" -> "Readline_zef:clarkema_0.1.8_0";
+    "AI::Gator_zef:bduggan_0.0.6_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.6_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+
+    "UUID__1.0.0_0" [color=green];
+
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" [color=gray];
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "PDF::Font::Loader::HarfBuzz_zef:dwarring_0.0.2_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "PDF::Font::Loader_zef:dwarring_0.8.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "PDF::Lite_zef:dwarring_0.0.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "PDF::Content_zef:dwarring_0.9.11_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "PDF_zef:dwarring_0.6.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "HTML::Canvas_zef:dwarring_0.1.4_0";
+
+    "LLM::DWIM_zef:bduggan_0.0.6_0" [color=green];
+    "LLM::DWIM_zef:bduggan_0.0.6_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "LLM::DWIM_zef:bduggan_0.0.6_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "LLM::DWIM_zef:bduggan_0.0.6_0" -> "LLM::Prompts_zef:antononcube_0.2.15_1";
+    "LLM::DWIM_zef:bduggan_0.0.6_0" -> "LLM::Functions_zef:antononcube_0.5.10_1";
+    "LLM::DWIM_zef:bduggan_0.0.6_0" -> "Prompt_zef:lizmat_0.0.11_0";
+    "LLM::DWIM_zef:bduggan_0.0.6_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "LLM::DWIM_zef:bduggan_0.0.6_0" -> "TOML_zef:tony-o_3_0";
+
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" [color=gray];
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "PDF_zef:dwarring_0.6.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "PDF::Content_zef:dwarring_0.9.11_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "PDF::Font::Loader_zef:dwarring_0.8.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "PDF::Lite_zef:dwarring_0.0.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "HTML::Canvas_zef:dwarring_0.1.4_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "MIME::Base64_zef:raku-community-modules_1.2.5_0" [color=green];
+
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "Font::FreeType_zef:dwarring_0.5.16_0" [color=green];
+    "Font::FreeType_zef:dwarring_0.5.16_0" -> "MacOS::NativeLib_zef:lizmat_0.0.6_0";
+    "Font::FreeType_zef:dwarring_0.5.16_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "Font::FreeType_zef:dwarring_0.5.16_0" -> "LibraryMake_zef:jjmerelo_1.0.5_0";
+
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.29_0" [color=gray];
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.29_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.29_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.29_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.29_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.29_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.29_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.29_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.27_0" [color=gray];
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.27_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.27_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.27_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.27_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.27_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.27_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.27_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "App::samaki_zef:bduggan_0.0.34_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Timezone::Simple_zef:bduggan_0.0.1_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+
+    "App::samaki_zef:bduggan_0.0.34_1" [color=violet];
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Timezone::Simple_zef:bduggan_0.0.1_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.34_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+
+    "Timezone::Simple_zef:bduggan_0.0.1_0" [color=green];
+    "Timezone::Simple_zef:bduggan_0.0.1_0" -> "Timezones::ZoneInfo_zef:guifa_0.5.0_0";
+
+    "CSS::TagSet_zef:dwarring_0.1.1_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "URI_zef:raku-community-modules_0.3.8_0" [color=green];
+
+    "GIO_cpan:CBWOOD_0.0.1_1" [color=gray];
+    "GIO_cpan:CBWOOD_0.0.1_1" -> "GLib_cpan:CBWOOD_0.0.11_0";
+    "GIO_cpan:CBWOOD_0.0.1_1" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+
+    "CSS::Properties_zef:dwarring_0.10.9_0.10" [color=red];
+    "CSS::Properties_zef:dwarring_0.10.9_0.10" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Properties_zef:dwarring_0.10.9_0.10" -> "Color_zef:raku-community-modules_1.004001_0";
+    "CSS::Properties_zef:dwarring_0.10.9_0.10" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Properties_zef:dwarring_0.10.9_0.10" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "Terminal-API_zef:patrickb_1.0.5_0" [color=green];
+
+    "App::samaki_zef:bduggan_0.0.22_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0" [color=green];
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0" -> "XML_zef:raku-community-modules_0.3.6_0";
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+
+    "Method::Protected_zef:lizmat_0.0.4_0" [color=green];
+
+    "HTTP::Tiny_zef:jjatria_0.2.6_0" [color=green];
+
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "Hash::Merge_cpan:TYIL_2.0.0_2" [color=green];
+    "Hash::Merge_cpan:TYIL_2.0.0_2" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+
+    "CSS_zef:dwarring_0.1.0_0" [color=gray];
+    "CSS_zef:dwarring_0.1.0_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_zef:dwarring_0.1.0_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_zef:dwarring_0.1.0_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.26_0" [color=gray];
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.26_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.26_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.26_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.26_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.26_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.26_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" [color=gray];
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "PDF::Content_zef:dwarring_0.9.11_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "HTML::Canvas_zef:dwarring_0.1.4_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "PDF::Lite_zef:dwarring_0.0.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "PDF_zef:dwarring_0.6.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "Color_zef:raku-community-modules_1.004001_0";
+
+    "File::Temp_zef:raku-community-modules_0.0.12_0" [color=green];
+    "File::Temp_zef:raku-community-modules_0.0.12_0" -> "File::Directory::Tree_zef:raku-community-modules_0.2_0";
+
+    "App::samaki_zef:bduggan_0.0.1_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.1_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+
+    "CSS_zef:dwarring_0.1.2_0" [color=violet];
+    "CSS_zef:dwarring_0.1.2_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_zef:dwarring_0.1.2_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_zef:dwarring_0.1.2_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "Terminal::Print_zef:terminal-printers_0.978_0" [color=green];
+    "Terminal::Print_zef:terminal-printers_0.978_0" -> "Terminal::ANSIColor_zef:raku-community-modules_0.14_0";
+    "Terminal::Print_zef:terminal-printers_0.978_0" -> "Terminal-API_zef:patrickb_1.0.5_0";
+    "Terminal::Print_zef:terminal-printers_0.978_0" -> "OO::Monitors_zef:raku-community-modules_1.1.7_0";
+
+    "Method::Also_zef:lizmat_0.0.10_0" [color=green];
+
+    "AI::Gator_zef:bduggan_0.0.13_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.13_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "AI::Gator_zef:bduggan_0.0.13_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.13_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.13_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.13_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.13_0" -> "IO::Socket::SSL_zef:raku-community-modules_0.0.4_0";
+    "AI::Gator_zef:bduggan_0.0.13_0" -> "Readline_zef:clarkema_0.1.8_0";
+    "AI::Gator_zef:bduggan_0.0.13_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+
+    "App::samaki_zef:bduggan_0.0.33_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Timezone::Simple_zef:bduggan_0.0.1_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+
+    "CSS_zef:dwarring_0.1.1_0" [color=gray];
+    "CSS_zef:dwarring_0.1.1_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_zef:dwarring_0.1.1_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_zef:dwarring_0.1.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_zef:dwarring_0.1.1_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_zef:dwarring_0.1.1_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_zef:dwarring_0.1.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_zef:dwarring_0.1.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+
+    "DateTime::Grammar_zef:antononcube_0.1.3_1" [color=green];
+
+    "CSS_cpan:WARRINGD_0.0.22_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.22_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.22_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_cpan:WARRINGD_0.0.22_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.22_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_cpan:WARRINGD_0.0.22_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_cpan:WARRINGD_0.0.22_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_cpan:WARRINGD_0.0.22_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.3_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+
+    "App::samaki_zef:bduggan_0.0.7_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.8_0" [color=gray];
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.8_0" -> "PDF::Content_zef:dwarring_0.9.11_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.8_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.8_0" -> "PDF::Lite_zef:dwarring_0.0.15_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.8_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.8_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.8_0" -> "PDF_zef:dwarring_0.6.15_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.8_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.8_0" -> "HTML::Canvas_zef:dwarring_0.1.4_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.8_0" -> "PDF::Font::Loader_zef:dwarring_0.8.15_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.8_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "App::samaki_zef:bduggan_0.0.16_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.16_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Text::Markdown_zef:JJMERELO_1.1.1_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+
+    "HTML::Canvas_cpan:WARRINGD_0.1.0_0" [color=gray];
+    "HTML::Canvas_cpan:WARRINGD_0.1.0_0" -> "Cairo__0.3.6_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.0_0" -> "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.0_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.0_0" -> "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.0_0" -> "Font::FreeType_zef:dwarring_0.5.16_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.0_0" -> "Base64::Native_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.0_0" -> "Hash::Agnostic_zef:lizmat_0.0.20_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.0_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.0_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.0_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas_cpan:WARRINGD_0.1.0_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+
+    "App::Prove6_zef:leont_0.0.18_0" [color=green];
+    "App::Prove6_zef:leont_0.0.18_0" -> "Pod::Usage_zef:leont_0.0.1_0";
+    "App::Prove6_zef:leont_0.0.18_0" -> "sigpipe_zef:leont_0.0.3_0";
+    "App::Prove6_zef:leont_0.0.18_0" -> "Path::Finder_zef:leont_0.4.7_0";
+    "App::Prove6_zef:leont_0.0.18_0" -> "TAP_zef:leont_0.3.15_0";
+    "App::Prove6_zef:leont_0.0.18_0" -> "Getopt::Long_cpan:LEONT_0.4.2_0";
+
+    "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0" [color=green];
+    "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0" -> "PDF::Font::Loader_zef:dwarring_0.8.15_0";
+
+    "App::samaki_zef:bduggan_0.0.3_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+
+    "HTML::Canvas_zef:dwarring_0.1.2_0" [color=gray];
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "FontConfig_zef:dwarring_0.1.9_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "Base64::Native_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "Cairo__0.3.6_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "Hash::Agnostic_zef:lizmat_0.0.20_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "Font::FreeType_zef:dwarring_0.5.16_0";
+
+    "Config::INI_zef:raku-community-modules_1.2_0" [color=green];
+
+    "META6_zef:jonathanstowe_0.0.31_1.0" [color=violet];
+    "META6_zef:jonathanstowe_0.0.31_1.0" -> "JSON::Name_zef:jonathanstowe_0.0.7_1.0";
+    "META6_zef:jonathanstowe_0.0.31_1.0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "META6_zef:jonathanstowe_0.0.31_1.0" -> "JSON::Class_zef:jonathanstowe_0.0.21_1.0";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.0_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "Draku_zef:bduggan_0.0.4_0" [color=green];
+    "Draku_zef:bduggan_0.0.4_0" -> "Pretty::Table_cpan:ANTONOV_0.0.4_0";
+    "Draku_zef:bduggan_0.0.4_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "Draku_zef:bduggan_0.0.4_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "Draku_zef:bduggan_0.0.4_0" -> "Pod::To::Raku_zef:bduggan_0.0.4_0";
+    "Draku_zef:bduggan_0.0.4_0" -> "Cache::Dir_cpan:BDUGGAN_0.0.2_0";
+    "Draku_zef:bduggan_0.0.4_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "Draku_zef:bduggan_0.0.4_0" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+
+    "App::samaki_zef:bduggan_0.0.33_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.33_1" -> "Timezone::Simple_zef:bduggan_0.0.1_0";
+
+    "AI::Gator_zef:bduggan_0.0.12_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.12_0" -> "IO::Socket::SSL_zef:raku-community-modules_0.0.4_0";
+    "AI::Gator_zef:bduggan_0.0.12_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.12_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.12_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.12_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "AI::Gator_zef:bduggan_0.0.12_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.12_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.12_0" -> "Readline_zef:clarkema_0.1.8_0";
+
+    "taurus_zef:andinus_0.1.1_0" [color=green];
+    "taurus_zef:andinus_0.1.1_0" -> "CSV::Parser_zef:tony-o_0.1.4_0";
+    "taurus_zef:andinus_0.1.1_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "taurus_zef:andinus_0.1.1_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+
+    "File::Which__1.0.4_0" [color=green];
+
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.8_0" [color=gray];
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.8_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.8_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.8_0" -> "Temp::Path__1.001008_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.8_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.8_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+
+    "App::samaki_zef:bduggan_0.0.26_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+
+    "CSS::TagSet_zef:dwarring_0.1.3_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+
+    "AI::Gator_zef:bduggan_0.0.13_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.13_0" -> "IO::Socket::SSL_zef:raku-community-modules_0.0.4_0";
+    "AI::Gator_zef:bduggan_0.0.13_0" -> "Readline_zef:clarkema_0.1.8_0";
+    "AI::Gator_zef:bduggan_0.0.13_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.13_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.13_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.13_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "AI::Gator_zef:bduggan_0.0.13_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.13_0" -> "TOML_zef:tony-o_3_0";
+
+    "App::samaki_zef:bduggan_0.0.30_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+
+    "CSS::TagSet_cpan:WARRINGD_0.0.21_0" [color=gray];
+    "CSS::TagSet_cpan:WARRINGD_0.0.21_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.21_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_cpan:WARRINGD_0.0.21_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.21_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+
+    "Image::Markup::Utilities_zef:antononcube_0.1.2_0" [color=green];
+    "Image::Markup::Utilities_zef:antononcube_0.1.2_0" -> "MIME::Base64_zef:raku-community-modules_1.2.5_0";
+    "Image::Markup::Utilities_zef:antononcube_0.1.2_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+
+    "CSS_cpan:WARRINGD_0.0.25_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.25_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.25_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.25_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_cpan:WARRINGD_0.0.25_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.25_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_cpan:WARRINGD_0.0.25_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_cpan:WARRINGD_0.0.25_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+
+    "CSS_cpan:WARRINGD_0.0.28_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.28_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_cpan:WARRINGD_0.0.28_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.28_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_cpan:WARRINGD_0.0.28_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_cpan:WARRINGD_0.0.28_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.28_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.28_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+
+    "App::samaki_zef:bduggan_0.0.31_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" [color=gray];
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "PDF_zef:dwarring_0.6.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "PDF::Content_zef:dwarring_0.9.11_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "HTML::Canvas_zef:dwarring_0.1.4_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "PDF::Lite_zef:dwarring_0.0.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "Color_zef:raku-community-modules_1.004001_0";
+
+    "TOML_zef:tony-o_3_0" [color=green];
+
+    "App::samaki_zef:bduggan_0.0.27_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+
+    "Text::Markdown_zef:JJMERELO_1.1.1_0" [color=green];
+    "Text::Markdown_zef:JJMERELO_1.1.1_0" -> "HTML::Escape__0.0.1_0";
+
+    "Compress::Zlib__1.1.0_0" [color=green];
+    "Compress::Zlib__1.1.0_0" -> "Compress::Zlib::Raw__1.0.1_0";
+
+    "CodeUnit_zef:lizmat_0.0.11_0" [color=green];
+
+    "Hash::int_zef:lizmat_0.0.7_0" [color=green];
+
+    "AI::Gator_zef:bduggan_0.0.10_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.10_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.10_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.10_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.10_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.10_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.10_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "AI::Gator_zef:bduggan_0.0.10_0" -> "Readline_zef:clarkema_0.1.8_0";
+
+    "CSS::Minifier_zef:sasha_0.0.2_0" [color=gray];
+    "CSS::Minifier_zef:sasha_0.0.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Minifier_zef:sasha_0.0.2_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::Minifier_zef:sasha_0.0.2_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "App::samaki_zef:bduggan_0.0.22_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.22_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+
+    "Inline::Perl5_cpan:NINE_0.61_0" [color=green];
+    "Inline::Perl5_cpan:NINE_0.61_0" -> "File::Temp_zef:raku-community-modules_0.0.12_0";
+    "Inline::Perl5_cpan:NINE_0.61_0" -> "Distribution::Builder::MakeFromJSON_github:niner_0.6_0";
+
+    "AI::Gator_zef:bduggan_0.0.10_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.10_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.10_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.10_0" -> "Readline_zef:clarkema_0.1.8_0";
+    "AI::Gator_zef:bduggan_0.0.10_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "AI::Gator_zef:bduggan_0.0.10_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.10_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.10_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" [color=violet];
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "PDF::Font::Loader_zef:dwarring_0.8.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "PDF::Font::Loader::HarfBuzz_zef:dwarring_0.0.2_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "PDF_zef:dwarring_0.6.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "PDF::Content_zef:dwarring_0.9.11_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "PDF::Lite_zef:dwarring_0.0.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "HTML::Canvas_zef:dwarring_0.1.4_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.13_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "HTML::Canvas_zef:dwarring_0.1.4_0" [color=violet];
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "Hash::Agnostic_zef:lizmat_0.0.20_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "Font::FreeType_zef:dwarring_0.5.16_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "Base64::Native_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "FontConfig_zef:dwarring_0.1.9_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "Cairo__0.3.6_0";
+
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.6_0" [color=gray];
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.6_0" -> "HTML::Canvas_zef:dwarring_0.1.4_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.6_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.6_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.6_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.6_0" -> "PDF_zef:dwarring_0.6.15_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.6_0" -> "PDF::Content_zef:dwarring_0.9.11_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.6_0" -> "PDF::Font::Loader_zef:dwarring_0.8.15_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.6_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.6_0" -> "PDF::Lite_zef:dwarring_0.0.15_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.6_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+
+    "CSS_cpan:WARRINGD_0.0.24_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.24_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.24_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_cpan:WARRINGD_0.0.24_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_cpan:WARRINGD_0.0.24_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.24_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_cpan:WARRINGD_0.0.24_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.24_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+
+    "App::samaki_zef:bduggan_0.0.14_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+
+    "OpenSSL_zef:raku-community-modules_0.2.9_0" [color=green];
+    "OpenSSL_zef:raku-community-modules_0.2.9_0" -> "File::Directory::Tree_zef:raku-community-modules_0.2_0";
+    "OpenSSL_zef:raku-community-modules_0.2.9_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "App::samaki_zef:bduggan_0.0.27_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.27_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.7_0" [color=gray];
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.7_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.7_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.7_0" -> "PDF::Content_zef:dwarring_0.9.11_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.7_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.7_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.7_0" -> "PDF::Lite_zef:dwarring_0.0.15_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.7_0" -> "PDF_zef:dwarring_0.6.15_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.7_0" -> "PDF::Font::Loader_zef:dwarring_0.8.15_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.7_0" -> "HTML::Canvas_zef:dwarring_0.1.4_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.7_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "Compress::Zlib::Raw__1.0.1_0" [color=green];
+
+    "Cache::Dir_cpan:BDUGGAN_0.0.2_0" [color=green];
+    "Cache::Dir_cpan:BDUGGAN_0.0.2_0" -> "Digest::SHA1::Native_zef:bduggan_1.0.1_0";
+
+    "CSV::Parser_zef:tony-o_0.1.4_0" [color=green];
+
+    "GLib_cpan:CBWOOD_0.0.11_0" [color=red];
+    "GLib_cpan:CBWOOD_0.0.11_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+    "GLib_cpan:CBWOOD_0.0.11_0" -> "DOM::Tiny_cpan:HANENKAMP_0.5.2_0";
+    "GLib_cpan:CBWOOD_0.0.11_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "GLib_cpan:CBWOOD_0.0.11_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+    "GLib_cpan:CBWOOD_0.0.11_0" -> "File::Find_zef:raku-community-modules_0.2.5_0";
+    "GLib_cpan:CBWOOD_0.0.11_0" -> "Config::INI_zef:raku-community-modules_1.2_0";
+    "GLib_cpan:CBWOOD_0.0.11_0" -> "NativeHelpers::Blob_zef:raku-community-modules_0.1.13_0";
+    "GLib_cpan:CBWOOD_0.0.11_0" -> "Dependency::Sort__1_0";
+    "GLib_cpan:CBWOOD_0.0.11_0" -> "IO::Socket::SSL_zef:raku-community-modules_0.0.4_0";
+    "GLib_cpan:CBWOOD_0.0.11_0" -> "raku-RandomColor_zef:Xliff_v.0.12_0";
+    "GLib_cpan:CBWOOD_0.0.11_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "GLib_cpan:CBWOOD_0.0.11_0" -> "CompUnit::Util_zef:lizmat_0.7.0_0";
+    "GLib_cpan:CBWOOD_0.0.11_0" -> "Data::Dump::Tree_zef:raku-community-modules_2.9.4_0";
+    "GLib_cpan:CBWOOD_0.0.11_0" -> "Inline::Perl5_cpan:NINE_0.61_0";
+    "GLib_cpan:CBWOOD_0.0.11_0" -> "Text::Table::Simple_github:ugexe_0.1.0_0";
+
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.5_0" [color=gray];
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.5_0" -> "PDF::Lite_zef:dwarring_0.0.15_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.5_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.5_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.5_0" -> "HTML::Canvas_zef:dwarring_0.1.4_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.5_0" -> "PDF::Font::Loader_zef:dwarring_0.8.15_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.5_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.5_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.5_0" -> "PDF_zef:dwarring_0.6.15_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.5_0" -> "PDF::Content_zef:dwarring_0.9.11_0";
+
+    "Draku_zef:bduggan_0.0.2_0" [color=gray];
+    "Draku_zef:bduggan_0.0.2_0" -> "Pod::To::Raku_zef:bduggan_0.0.4_0";
+    "Draku_zef:bduggan_0.0.2_0" -> "Pretty::Table_cpan:ANTONOV_0.0.4_0";
+    "Draku_zef:bduggan_0.0.2_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "Draku_zef:bduggan_0.0.2_0" -> "Cache::Dir_cpan:BDUGGAN_0.0.2_0";
+    "Draku_zef:bduggan_0.0.2_0" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "Draku_zef:bduggan_0.0.2_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "Draku_zef:bduggan_0.0.2_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "Digest::SHA1::Native_zef:bduggan_1.0.1_0" [color=green];
+    "Digest::SHA1::Native_zef:bduggan_1.0.1_0" -> "Shell::Command_zef:raku-community-modules_1.2_0";
+    "Digest::SHA1::Native_zef:bduggan_1.0.1_0" -> "LibraryMake_zef:jjmerelo_1.0.5_0";
+
+    "App::samaki_zef:bduggan_0.0.8_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.8_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+
+    "AI::Gator_zef:bduggan_0.0.5_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.5_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.5_0" -> "Prompt_zef:lizmat_0.0.11_0";
+    "AI::Gator_zef:bduggan_0.0.5_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "AI::Gator_zef:bduggan_0.0.5_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.5_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.5_0" -> "Readline_zef:clarkema_0.1.8_0";
+    "AI::Gator_zef:bduggan_0.0.5_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+
+    "Prompt_zef:lizmat_0.0.11_0" [color=green];
+
+    "Readline_zef:clarkema_0.1.8_0" [color=green];
+    "Readline_zef:clarkema_0.1.8_0" -> "LibraryCheck_zef:jonathanstowe_0.0.12_1.0";
+
+    "Pod::Usage_zef:leont_0.0.1_0" [color=green];
+
+    "CSS::TagSet_cpan:WARRINGD_0.0.22_0" [color=gray];
+    "CSS::TagSet_cpan:WARRINGD_0.0.22_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_cpan:WARRINGD_0.0.22_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.22_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.22_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+
+    "taurus_zef:andinus_0.1.0_0" [color=gray];
+    "taurus_zef:andinus_0.1.0_0" -> "CSV::Parser_zef:tony-o_0.1.4_0";
+    "taurus_zef:andinus_0.1.0_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "taurus_zef:andinus_0.1.0_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+
+    "Duckie_zef:bduggan_0.0.12_0" [color=violet];
+    "Duckie_zef:bduggan_0.0.12_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+
+    "App::samaki_zef:bduggan_0.0.17_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+
+    "Text::Table::Simple_github:ugexe_0.1.0_0" [color=green];
+    "Text::Table::Simple_github:ugexe_0.1.0_0" -> "Rakudo_Yet Another Society_2026.07_0";
+
+    "XML_zef:raku-community-modules_0.3.6_0" [color=green];
+
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.2_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "AI::Gator_zef:bduggan_0.0.8_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.8_0" -> "Readline_zef:clarkema_0.1.8_0";
+    "AI::Gator_zef:bduggan_0.0.8_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.8_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.8_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.8_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.8_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "AI::Gator_zef:bduggan_0.0.8_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "App::samaki_zef:bduggan_0.0.24_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+
+    "Font::AFM_zef:dwarring_1.24.10_0" [color=green];
+
+    "CSS::Font::Resources_zef:dwarring_0.0.10_0" [color=gray];
+    "CSS::Font::Resources_zef:dwarring_0.0.10_0" -> "Temp::Path__1.001008_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.10_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.10_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.10_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.10_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "Draku_zef:bduggan_0.0.2_0" [color=gray];
+    "Draku_zef:bduggan_0.0.2_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "Draku_zef:bduggan_0.0.2_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "Draku_zef:bduggan_0.0.2_0" -> "Cache::Dir_cpan:BDUGGAN_0.0.2_0";
+    "Draku_zef:bduggan_0.0.2_0" -> "Pod::To::Raku_zef:bduggan_0.0.4_0";
+    "Draku_zef:bduggan_0.0.2_0" -> "Pretty::Table_cpan:ANTONOV_0.0.4_0";
+    "Draku_zef:bduggan_0.0.2_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "Draku_zef:bduggan_0.0.2_0" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+
+    "System::Query_zef:tony-o_0.1.6_0" [color=green];
+    "System::Query_zef:tony-o_0.1.6_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "CSS::Minifier_zef:sasha_0.0.4_0" [color=gray];
+    "CSS::Minifier_zef:sasha_0.0.4_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Minifier_zef:sasha_0.0.4_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::Minifier_zef:sasha_0.0.4_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "HTML::Escape__0.0.1_0" [color=green];
+
+    "CSS_cpan:WARRINGD_0.0.23_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.23_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.23_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_cpan:WARRINGD_0.0.23_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_cpan:WARRINGD_0.0.23_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.23_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.23_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_cpan:WARRINGD_0.0.23_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "CSS::TagSet_zef:dwarring_0.1.0_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_zef:dwarring_0.1.0_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+
+    "App::samaki_zef:bduggan_0.0.17_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.17_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+
+    "App::samaki_zef:bduggan_0.0.8_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.8_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+
+    "Grammar::PrettyErrors_zef:bduggan_0.0.7_0" [color=green];
+    "Grammar::PrettyErrors_zef:bduggan_0.0.7_0" -> "Terminal::ANSIColor_zef:raku-community-modules_0.14_0";
+
+    "App::samaki_zef:bduggan_0.0.9_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+
+    "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0" [color=green];
+    "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0" -> "HarfBuzz_zef:dwarring_0.1.7_0";
+    "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0" -> "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0";
+    "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0" -> "LibraryMake_zef:jjmerelo_1.0.5_0";
+    "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0" -> "Cairo__0.3.6_0";
+
+    "raku-RandomColor_zef:Xliff_v.0.12_0" [color=green];
+    "raku-RandomColor_zef:Xliff_v.0.12_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+
+    "App::samaki_zef:bduggan_0.0.28_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+
+    "CSS::TagSet_cpan:WARRINGD_0.0.23_0" [color=gray];
+    "CSS::TagSet_cpan:WARRINGD_0.0.23_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.23_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.23_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.23_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.23_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0" [color=gray];
+    "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0" -> "PDF::Font::Loader_zef:dwarring_0.8.15_0";
+
+    "App::samaki_zef:bduggan_0.0.6_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.6_1" -> "Duckie_zef:bduggan_0.0.12_0";
+
+    "GIO_cpan:CBWOOD_0.0.2_1" [color=gray];
+    "GIO_cpan:CBWOOD_0.0.2_1" -> "GLib_cpan:CBWOOD_0.0.11_0";
+    "GIO_cpan:CBWOOD_0.0.2_1" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+
+    "AI::Gator_zef:bduggan_0.0.7_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.7_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.7_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.7_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.7_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.7_0" -> "Readline_zef:clarkema_0.1.8_0";
+    "AI::Gator_zef:bduggan_0.0.7_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "AI::Gator_zef:bduggan_0.0.7_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+
+    "WWW::OpenAI_zef:antononcube_0.3.20_1" [color=green];
+    "WWW::OpenAI_zef:antononcube_0.3.20_1" -> "IO::Socket::SSL_zef:raku-community-modules_0.0.4_0";
+    "WWW::OpenAI_zef:antononcube_0.3.20_1" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "WWW::OpenAI_zef:antononcube_0.3.20_1" -> "MIME::Base64_zef:raku-community-modules_1.2.5_0";
+    "WWW::OpenAI_zef:antononcube_0.3.20_1" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "WWW::OpenAI_zef:antononcube_0.3.20_1" -> "Image::Markup::Utilities_zef:antononcube_0.1.2_0";
+
+    "Dependency::Sort__1_0" [color=green];
+
+    "CompUnit::Util_zef:lizmat_0.7.0_0" [color=green];
+
+    "Color_zef:raku-community-modules_1.004001_0" [color=green];
+
+    "Path::Finder_zef:leont_0.4.7_0" [color=green];
+    "Path::Finder_zef:leont_0.4.7_0" -> "File::Temp_zef:raku-community-modules_0.0.12_0";
+
+    "JSON::GLib_cpan:CBWOOD_0.0.1_0" [color=violet];
+    "JSON::GLib_cpan:CBWOOD_0.0.1_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+    "JSON::GLib_cpan:CBWOOD_0.0.1_0" -> "GLib_cpan:CBWOOD_0.0.11_0";
+
+    "Data::Dump::Tree_zef:raku-community-modules_2.9.4_0" [color=violet];
+    "Data::Dump::Tree_zef:raku-community-modules_2.9.4_0" -> "Terminal::Print_zef:terminal-printers_0.978_0";
+    "Data::Dump::Tree_zef:raku-community-modules_2.9.4_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+
+    "AI::Gator_zef:bduggan_0.0.6_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.6_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.6_0" -> "Readline_zef:clarkema_0.1.8_0";
+    "AI::Gator_zef:bduggan_0.0.6_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "AI::Gator_zef:bduggan_0.0.6_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.6_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.6_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.6_0" -> "Prompt_zef:lizmat_0.0.11_0";
+    "AI::Gator_zef:bduggan_0.0.6_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+
+    "AI::Gator_zef:bduggan_0.0.12_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.12_0" -> "IO::Socket::SSL_zef:raku-community-modules_0.0.4_0";
+    "AI::Gator_zef:bduggan_0.0.12_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.12_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.12_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.12_0" -> "Readline_zef:clarkema_0.1.8_0";
+    "AI::Gator_zef:bduggan_0.0.12_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.12_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.12_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+
+    "Pod::To::Raku_zef:bduggan_0.0.4_0" [color=green];
+    "Pod::To::Raku_zef:bduggan_0.0.4_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "Concurrent::Iterator_zef:raku-community-modules_1.1_0" [color=green];
+
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" [color=gray];
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "PDF_zef:dwarring_0.6.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "HTML::Canvas_zef:dwarring_0.1.4_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "PDF::Lite_zef:dwarring_0.0.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.11_0" -> "PDF::Content_zef:dwarring_0.9.11_0";
+
+    "Time::Duration_zef:masukomi_2.0.2_0" [color=yellowgreen];
+
+    "App::samaki_zef:bduggan_0.0.30_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.30_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+
+    "Draku_zef:bduggan_0.0.3_0" [color=gray];
+    "Draku_zef:bduggan_0.0.3_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "Draku_zef:bduggan_0.0.3_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "Draku_zef:bduggan_0.0.3_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "Draku_zef:bduggan_0.0.3_0" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "Draku_zef:bduggan_0.0.3_0" -> "Cache::Dir_cpan:BDUGGAN_0.0.2_0";
+    "Draku_zef:bduggan_0.0.3_0" -> "Pretty::Table_cpan:ANTONOV_0.0.4_0";
+    "Draku_zef:bduggan_0.0.3_0" -> "Pod::To::Raku_zef:bduggan_0.0.4_0";
+
+    "Stomp_zef:raku-community-modules_0.1.0_0" [color=red];
+    "Stomp_zef:raku-community-modules_0.1.0_0" -> "UUID__1.0.0_0";
+    "Stomp_zef:raku-community-modules_0.1.0_0" -> "Concurrent::Iterator_zef:raku-community-modules_1.1_0";
+    "Stomp_zef:raku-community-modules_0.1.0_0" -> "Test::IO::Socket::Async_zef:raku-community-modules_0.3_0";
+
+    "App::samaki_zef:bduggan_0.0.23_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.23_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+
+    "JSON::GLib::Node_cpan:CBWOOD_0.0.1_0" [color=red];
+    "JSON::GLib::Node_cpan:CBWOOD_0.0.1_0" -> "GIO_cpan:CBWOOD_0.0.4_1";
+    "JSON::GLib::Node_cpan:CBWOOD_0.0.1_0" -> "GLib_cpan:CBWOOD_0.0.11_0";
+    "JSON::GLib::Node_cpan:CBWOOD_0.0.1_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+
+    "JSON::Class_zef:jonathanstowe_0.0.21_1.0" [color=violet];
+    "JSON::Class_zef:jonathanstowe_0.0.21_1.0" -> "JSON::OptIn_zef:jonathanstowe_0.0.2_0";
+    "JSON::Class_zef:jonathanstowe_0.0.21_1.0" -> "JSON::Name_zef:jonathanstowe_0.0.7_1.0";
+    "JSON::Class_zef:jonathanstowe_0.0.21_1.0" -> "JSON::Unmarshal_zef:raku-community-modules_0.18_0";
+    "JSON::Class_zef:jonathanstowe_0.0.21_1.0" -> "JSON::Marshal_zef:jonathanstowe_0.0.25_1.0";
+    "JSON::Class_zef:jonathanstowe_0.0.21_1.0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+
+    "taurus_zef:andinus_0.1.0_0" [color=gray];
+    "taurus_zef:andinus_0.1.0_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "taurus_zef:andinus_0.1.0_0" -> "CSV::Parser_zef:tony-o_0.1.4_0";
+    "taurus_zef:andinus_0.1.0_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+
+    "App::samaki_zef:bduggan_0.0.4_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+
+    "App::samaki_zef:bduggan_0.0.32_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+
+    "Native::Packing_zef:dwarring_0.0.6_0" [color=green];
+
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "App::samaki_zef:bduggan_0.0.19_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+
+    "Terminal::ANSIParser_zef:japhb_0.0.4_0" [color=green];
+
+    "App::samaki_zef:bduggan_0.0.15_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+
+    "Log::Async_zef:bduggan_0.0.17_0" [color=green];
+    "Log::Async_zef:bduggan_0.0.17_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+
+    "CSS::Font::Resources_zef:dwarring_0.0.9_0" [color=gray];
+    "CSS::Font::Resources_zef:dwarring_0.0.9_0" -> "Temp::Path__1.001008_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.9_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.9_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.9_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.9_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "Duck::CSV_zef:bduggan_0.0.2_0" [color=violet];
+    "Duck::CSV_zef:bduggan_0.0.2_0" -> "Duckie_zef:bduggan_0.0.12_0";
+
+    "CSS_zef:dwarring_0.1.0_0" [color=gray];
+    "CSS_zef:dwarring_0.1.0_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_zef:dwarring_0.1.0_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_zef:dwarring_0.1.0_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+
+    "CSS::Grammar_zef:dwarring_0.4.3_0" [color=green];
+    "CSS::Grammar_zef:dwarring_0.4.3_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "File::Find_zef:raku-community-modules_0.2.5_0" [color=green];
+
+    "CSS::Font::Resources_zef:dwarring_0.0.10_0" [color=gray];
+    "CSS::Font::Resources_zef:dwarring_0.0.10_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.10_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.10_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Font::Resources_zef:dwarring_0.0.10_0" -> "Temp::Path__1.001008_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.10_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+
+    "AI::Gator_zef:bduggan_0.0.14_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.14_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.14_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.14_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "AI::Gator_zef:bduggan_0.0.14_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.14_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.14_0" -> "Readline_zef:clarkema_0.1.8_0";
+    "AI::Gator_zef:bduggan_0.0.14_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.14_0" -> "IO::Socket::SSL_zef:raku-community-modules_0.0.4_0";
+
+    "Test::IO::Socket::Async_zef:raku-community-modules_0.3_0" [color=green];
+    "Test::IO::Socket::Async_zef:raku-community-modules_0.3_0" -> "Method::Protected_zef:lizmat_0.0.4_0";
+
+    "TAP_zef:leont_0.3.15_0" [color=green];
+
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" [color=green];
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "App::samaki_zef:bduggan_0.0.31_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.31_1" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0";
+    "App::samaki_zef:bduggan_0.0.31_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+
+    "Color::Names_zef:thundergnat_2.0.0_2" [color=green];
+
+    "PDF::Content_zef:dwarring_0.9.11_0" [color=green];
+    "PDF::Content_zef:dwarring_0.9.11_0" -> "PDF::Grammar_zef:dwarring_0.3.6_0";
+    "PDF::Content_zef:dwarring_0.9.11_0" -> "PDF_zef:dwarring_0.6.15_0";
+    "PDF::Content_zef:dwarring_0.9.11_0" -> "Base64::Native_zef:dwarring_0.0.10_0";
+    "PDF::Content_zef:dwarring_0.9.11_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "PDF::Content_zef:dwarring_0.9.11_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "PDF::Content_zef:dwarring_0.9.11_0" -> "Native::Packing_zef:dwarring_0.0.6_0";
+    "PDF::Content_zef:dwarring_0.9.11_0" -> "Font::AFM_zef:dwarring_1.24.10_0";
+    "PDF::Content_zef:dwarring_0.9.11_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "PDF::Content_zef:dwarring_0.9.11_0" -> "Compress::Zlib::Raw__1.0.1_0";
+
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.24_0" [color=gray];
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.24_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.24_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.24_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.24_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.24_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.24_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "CSS::TagSet_zef:dwarring_0.1.4_0" [color=green];
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+
+    "AI::Gator_zef:bduggan_0.0.5_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.5_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.5_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "AI::Gator_zef:bduggan_0.0.5_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.5_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.5_0" -> "Prompt_zef:lizmat_0.0.11_0";
+    "AI::Gator_zef:bduggan_0.0.5_0" -> "Readline_zef:clarkema_0.1.8_0";
+    "AI::Gator_zef:bduggan_0.0.5_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+
+    "App::samaki_zef:bduggan_0.0.20_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+
+    "AI::Gator_zef:bduggan_0.0.11_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.11_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.11_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.11_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.11_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.11_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "AI::Gator_zef:bduggan_0.0.11_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.11_0" -> "Readline_zef:clarkema_0.1.8_0";
+
+    "Color::Scheme_cpan:HOLLI_1.001003_1" [color=green];
+    "Color::Scheme_cpan:HOLLI_1.001003_1" -> "Color_zef:raku-community-modules_1.004001_0";
+
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" [color=gray];
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "PDF::Font::Loader_zef:dwarring_0.8.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "PDF::Content_zef:dwarring_0.9.11_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "PDF::Lite_zef:dwarring_0.0.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "HTML::Canvas_zef:dwarring_0.1.4_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "PDF_zef:dwarring_0.6.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.12_0" -> "Color_zef:raku-community-modules_1.004001_0";
+
+    "JSON::Marshal_zef:jonathanstowe_0.0.25_1.0" [color=green];
+    "JSON::Marshal_zef:jonathanstowe_0.0.25_1.0" -> "JSON::Name_zef:jonathanstowe_0.0.7_1.0";
+    "JSON::Marshal_zef:jonathanstowe_0.0.25_1.0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "JSON::Marshal_zef:jonathanstowe_0.0.25_1.0" -> "JSON::OptIn_zef:jonathanstowe_0.0.2_0";
+
+    "App::samaki_zef:bduggan_0.0.21_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+
+    "LLM::Functions_zef:antononcube_0.5.10_1" [color=green];
+    "LLM::Functions_zef:antononcube_0.5.10_1" -> "WWW::OpenRouter_zef:antononcube_0.0.3_0";
+    "LLM::Functions_zef:antononcube_0.5.10_1" -> "WWW::Ollama_zef:antononcube_0.0.7_0";
+    "LLM::Functions_zef:antononcube_0.5.10_1" -> "WWW::LLaMA_zef:antononcube_0.1.3_1";
+    "LLM::Functions_zef:antononcube_0.5.10_1" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "LLM::Functions_zef:antononcube_0.5.10_1" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "LLM::Functions_zef:antononcube_0.5.10_1" -> "WWW::Gemini_zef:antononcube_0.0.25_0";
+    "LLM::Functions_zef:antononcube_0.5.10_1" -> "Image::Markup::Utilities_zef:antononcube_0.1.2_0";
+    "LLM::Functions_zef:antononcube_0.5.10_1" -> "Text::SubParsers_zef:antononcube_0.1.4_1";
+    "LLM::Functions_zef:antononcube_0.5.10_1" -> "WWW::MistralAI_zef:antononcube_0.1.3_1";
+    "LLM::Functions_zef:antononcube_0.5.10_1" -> "Hash::Merge_cpan:TYIL_2.0.0_2";
+    "LLM::Functions_zef:antononcube_0.5.10_1" -> "WWW::OpenAI_zef:antononcube_0.3.20_1";
+
+    "App::samaki_zef:bduggan_0.0.5_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+
+    "App::samaki_zef:bduggan_0.0.20_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.20_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.20_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+
+    "App::samaki_zef:bduggan_0.0.14_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.14_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.2_0" [color=gray];
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.2_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.2_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.2_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.2_0" -> "Temp::Path__1.001008_0";
+
+    "JSON::Name_zef:jonathanstowe_0.0.7_1.0" [color=green];
+    "JSON::Name_zef:jonathanstowe_0.0.7_1.0" -> "JSON::OptIn_zef:jonathanstowe_0.0.2_0";
+
+    "NativeHelpers::Blob_zef:raku-community-modules_0.1.13_0" [color=green];
+
+    "Test::META_zef:jonathanstowe_0.0.20_1.0" [color=violet];
+    "Test::META_zef:jonathanstowe_0.0.20_1.0" -> "License::SPDX_zef:jonathanstowe_3.29.0_1.0";
+    "Test::META_zef:jonathanstowe_0.0.20_1.0" -> "META6_zef:jonathanstowe_0.0.31_1.0";
+    "Test::META_zef:jonathanstowe_0.0.20_1.0" -> "URI_zef:raku-community-modules_0.3.8_0";
+
+    "MacOS::NativeLib_zef:lizmat_0.0.6_0" [color=green];
+
+    "App::samaki_zef:bduggan_0.0.9_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.9_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.28_0" [color=gray];
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.28_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.28_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.28_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.28_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.28_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.28_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.28_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "CSS::TagSet_zef:dwarring_0.1.2_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_zef:dwarring_0.1.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "Polyglot::Regexen_zef:guifa_0.1.0_0" [color=red];
+
+    "Prettier::Table_zef:masukomi_1.1.3_1" [color=green];
+    "Prettier::Table_zef:masukomi_1.1.3_1" -> "Text::Wrap_zef:jkramer_0.0.5_0";
+    "Prettier::Table_zef:masukomi_1.1.3_1" -> "Listicles_zef:masukomi_1.6.0_1";
+
+    "CSS_cpan:WARRINGD_0.0.20_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.20_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.20_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_cpan:WARRINGD_0.0.20_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.20_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_cpan:WARRINGD_0.0.20_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.20_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "Terminal::ANSIColor_zef:raku-community-modules_0.14_0" [color=green];
+
+    "App::samaki_zef:bduggan_0.0.24_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.24_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.24_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+
+    "App::samaki_zef:bduggan_0.0.21_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.21_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.21_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+
+    "CSS::Module_zef:dwarring_0.7.7_0" [color=green];
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0";
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module_zef:dwarring_0.7.7_0" -> "CSS::Specification_zef:dwarring_0.5.3_0";
+
+    "CSS::TagSet_zef:dwarring_0.1.1_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+
+    "App::samaki_zef:bduggan_0.0.10_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.10_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+
+    "CSS::Minifier_zef:sasha_0.0.6_0" [color=gray];
+    "CSS::Minifier_zef:sasha_0.0.6_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Minifier_zef:sasha_0.0.6_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::Minifier_zef:sasha_0.0.6_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.23_0" [color=gray];
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.23_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.23_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.23_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.23_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.23_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.23_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+
+    "Text::SubParsers_zef:antononcube_0.1.4_1" [color=green];
+    "Text::SubParsers_zef:antononcube_0.1.4_1" -> "DateTime::Grammar_zef:antononcube_0.1.3_1";
+    "Text::SubParsers_zef:antononcube_0.1.4_1" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "Distribution::Builder::MakeFromJSON_github:niner_0.6_0" [color=green];
+    "Distribution::Builder::MakeFromJSON_github:niner_0.6_0" -> "System::Query_zef:tony-o_0.1.6_0";
+
+    "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0" [color=green];
+
+    "FontConfig_zef:dwarring_0.1.9_0" [color=green];
+    "FontConfig_zef:dwarring_0.1.9_0" -> "LibraryMake_zef:jjmerelo_1.0.5_0";
+    "FontConfig_zef:dwarring_0.1.9_0" -> "MacOS::NativeLib_zef:lizmat_0.0.6_0";
+
+    "JSON::Tiny_cpan:MORITZ_1.0_0" [color=green];
+
+    "HarfBuzz_zef:dwarring_0.1.7_0" [color=green];
+    "HarfBuzz_zef:dwarring_0.1.7_0" -> "MacOS::NativeLib_zef:lizmat_0.0.6_0";
+    "HarfBuzz_zef:dwarring_0.1.7_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "AI::Gator_zef:bduggan_0.0.14_0" [color=green];
+    "AI::Gator_zef:bduggan_0.0.14_0" -> "Readline_zef:clarkema_0.1.8_0";
+    "AI::Gator_zef:bduggan_0.0.14_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.14_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.14_0" -> "IO::Socket::SSL_zef:raku-community-modules_0.0.4_0";
+    "AI::Gator_zef:bduggan_0.0.14_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.14_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.14_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.14_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+
+    "CSS::TagSet_zef:dwarring_0.1.4_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_zef:dwarring_0.1.4_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+
+    "Getopt::Long_cpan:LEONT_0.4.2_0" [color=green];
+
+    "App::samaki_zef:bduggan_0.0.18_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.18_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+
+    "App::samaki_zef:bduggan_0.0.26_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.26_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.26_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+
+    "CSS::Minifier_zef:sasha_0.0.2_0" [color=gray];
+    "CSS::Minifier_zef:sasha_0.0.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Minifier_zef:sasha_0.0.2_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::Minifier_zef:sasha_0.0.2_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.4_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "Terminal::UI_zef:bduggan_0.1.14_0" [color=red];
+    "Terminal::UI_zef:bduggan_0.1.14_0" -> "Unicode::UTF8-Parser_zef:raku-community-modules_0.3_0";
+    "Terminal::UI_zef:bduggan_0.1.14_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "Terminal::UI_zef:bduggan_0.1.14_0" -> "Terminal::ANSIParser_zef:japhb_0.0.4_0";
+    "Terminal::UI_zef:bduggan_0.1.14_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+
+    "App::samaki_zef:bduggan_0.0.13_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.13_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+
+    "HTML::Canvas_zef:dwarring_0.1.3_0" [color=gray];
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "Hash::Agnostic_zef:lizmat_0.0.20_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "Base64::Native_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "Font::FreeType_zef:dwarring_0.5.16_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "FontConfig_zef:dwarring_0.1.9_0";
+    "HTML::Canvas_zef:dwarring_0.1.3_0" -> "Cairo__0.3.6_0";
+
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.25_0" [color=gray];
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.25_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.25_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.25_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.25_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.25_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_cpan:WARRINGD_0.0.25_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "HTML::Canvas_zef:dwarring_0.1.2_0" [color=gray];
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "FontConfig_zef:dwarring_0.1.9_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "Base64::Native_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "Cairo__0.3.6_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "Font::FreeType_zef:dwarring_0.5.16_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "Hash::Agnostic_zef:lizmat_0.0.20_0";
+    "HTML::Canvas_zef:dwarring_0.1.2_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+
+    "Base64::Native_zef:dwarring_0.0.10_0" [color=green];
+    "Base64::Native_zef:dwarring_0.0.10_0" -> "LibraryMake_zef:jjmerelo_1.0.5_0";
+    "Base64::Native_zef:dwarring_0.0.10_0" -> "App::Prove6_zef:leont_0.0.18_0";
+
+    "App::samaki_zef:bduggan_0.0.5_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.5_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+
+    "LLM::Prompts_zef:antononcube_0.2.15_1" [color=green];
+    "LLM::Prompts_zef:antononcube_0.2.15_1" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "LLM::Prompts_zef:antononcube_0.2.15_1" -> "XDG::BaseDirectory_zef:jonathanstowe_0.0.15_1.0";
+
+    "Text::Wrap_zef:jkramer_0.0.5_0" [color=green];
+
+    "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0" [color=green];
+    "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0" -> "HarfBuzz_zef:dwarring_0.1.7_0";
+    "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0" -> "Font::FreeType_zef:dwarring_0.5.16_0";
+    "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0" -> "LibraryMake_zef:jjmerelo_1.0.5_0";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.5_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" [color=gray];
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "CSS::Stylesheet_zef:dwarring_0.1.1_0" -> "CSS::Selector::To::XPath_zef:dwarring_0.0.9_0";
+
+    "JSON::Unmarshal_zef:raku-community-modules_0.18_0" [color=green];
+    "JSON::Unmarshal_zef:raku-community-modules_0.18_0" -> "JSON::OptIn_zef:jonathanstowe_0.0.2_0";
+    "JSON::Unmarshal_zef:raku-community-modules_0.18_0" -> "JSON::Name_zef:jonathanstowe_0.0.7_1.0";
+    "JSON::Unmarshal_zef:raku-community-modules_0.18_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "Draku_zef:bduggan_0.0.4_0" [color=gray];
+    "Draku_zef:bduggan_0.0.4_0" -> "Cache::Dir_cpan:BDUGGAN_0.0.2_0";
+    "Draku_zef:bduggan_0.0.4_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "Draku_zef:bduggan_0.0.4_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "Draku_zef:bduggan_0.0.4_0" -> "Pretty::Table_cpan:ANTONOV_0.0.4_0";
+    "Draku_zef:bduggan_0.0.4_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "Draku_zef:bduggan_0.0.4_0" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "Draku_zef:bduggan_0.0.4_0" -> "Pod::To::Raku_zef:bduggan_0.0.4_0";
+
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.6_0" [color=gray];
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.6_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.6_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.6_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.6_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.6_0" -> "Temp::Path__1.001008_0";
+
+    "HTML::Canvas_cpan:WARRINGD_0.1.1_0" [color=gray];
+    "HTML::Canvas_cpan:WARRINGD_0.1.1_0" -> "Cairo__0.3.6_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.1_0" -> "Font::FreeType_zef:dwarring_0.5.16_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.1_0" -> "FontConfig_zef:dwarring_0.1.9_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.1_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.1_0" -> "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.1_0" -> "Hash::Agnostic_zef:lizmat_0.0.20_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.1_0" -> "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.1_0" -> "Base64::Native_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.1_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.1_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.1_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_cpan:WARRINGD_0.1.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "App::samaki_zef:bduggan_0.0.1_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.1_1" -> "Color_zef:raku-community-modules_1.004001_0";
+
+    "Pretty::Table_cpan:ANTONOV_0.0.4_0" [color=green];
+    "Pretty::Table_cpan:ANTONOV_0.0.4_0" -> "Text::Wrap_zef:jkramer_0.0.5_0";
+
+    "App::samaki_zef:bduggan_0.0.12_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+
+    "CSS_cpan:WARRINGD_0.0.27_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.27_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.27_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_cpan:WARRINGD_0.0.27_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.27_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_cpan:WARRINGD_0.0.27_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_cpan:WARRINGD_0.0.27_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.27_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.7_0" [color=gray];
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.7_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.7_0" -> "Temp::Path__1.001008_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.7_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.7_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.7_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "App::samaki_zef:bduggan_0.0.7_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.7_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.7_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+
+    "LibraryMake_zef:jjmerelo_1.0.5_0" [color=green];
+    "LibraryMake_zef:jjmerelo_1.0.5_0" -> "Shell::Command_zef:raku-community-modules_1.2_0";
+    "LibraryMake_zef:jjmerelo_1.0.5_0" -> "File::Which__1.0.4_0";
+
+    "DOM::Tiny_cpan:HANENKAMP_0.5.2_0" [color=violet];
+    "DOM::Tiny_cpan:HANENKAMP_0.5.2_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+
+    "CSS::Minifier_zef:sasha_0.0.3_0" [color=gray];
+    "CSS::Minifier_zef:sasha_0.0.3_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Minifier_zef:sasha_0.0.3_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::Minifier_zef:sasha_0.0.3_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "App::samaki_zef:bduggan_0.0.28_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.28_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+
+    "GIO_cpan:CBWOOD_0.0.3_1" [color=gray];
+    "GIO_cpan:CBWOOD_0.0.3_1" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+    "GIO_cpan:CBWOOD_0.0.3_1" -> "GLib_cpan:CBWOOD_0.0.11_0";
+
+    "OO::Monitors_zef:raku-community-modules_1.1.7_0" [color=green];
+
+    "App::samaki_zef:bduggan_0.0.18_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.18_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+
+    "PDF::Font::Loader_zef:dwarring_0.8.15_0" [color=green];
+    "PDF::Font::Loader_zef:dwarring_0.8.15_0" -> "Native::Packing_zef:dwarring_0.0.6_0";
+    "PDF::Font::Loader_zef:dwarring_0.8.15_0" -> "PDF::Lite_zef:dwarring_0.0.15_0";
+    "PDF::Font::Loader_zef:dwarring_0.8.15_0" -> "FontConfig_zef:dwarring_0.1.9_0";
+    "PDF::Font::Loader_zef:dwarring_0.8.15_0" -> "PDF::Content_zef:dwarring_0.9.11_0";
+    "PDF::Font::Loader_zef:dwarring_0.8.15_0" -> "Hash::int_zef:lizmat_0.0.7_0";
+    "PDF::Font::Loader_zef:dwarring_0.8.15_0" -> "PDF_zef:dwarring_0.6.15_0";
+    "PDF::Font::Loader_zef:dwarring_0.8.15_0" -> "Font::FreeType_zef:dwarring_0.5.16_0";
+    "PDF::Font::Loader_zef:dwarring_0.8.15_0" -> "Font::AFM_zef:dwarring_1.24.10_0";
+
+    "AI::Gator_zef:bduggan_0.0.8_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.8_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.8_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.8_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.8_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.8_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.8_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "AI::Gator_zef:bduggan_0.0.8_0" -> "Readline_zef:clarkema_0.1.8_0";
+
+    "sigpipe_zef:leont_0.0.3_0" [color=green];
+
+    "LibraryCheck_zef:jonathanstowe_0.0.12_1.0" [color=green];
+
+    "CSS_zef:dwarring_0.1.1_0" [color=gray];
+    "CSS_zef:dwarring_0.1.1_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_zef:dwarring_0.1.1_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_zef:dwarring_0.1.1_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_zef:dwarring_0.1.1_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_zef:dwarring_0.1.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_zef:dwarring_0.1.1_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_zef:dwarring_0.1.1_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "App::samaki_zef:bduggan_0.0.19_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.19_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+
+    "Cairo__0.3.6_0" [color=violet];
+
+    "Temp::Path__1.001008_0" [color=green];
+    "Temp::Path__1.001008_0" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+    "Temp::Path__1.001008_0" -> "File::Directory::Tree_zef:raku-community-modules_0.2_0";
+    "Temp::Path__1.001008_0" -> "Digest_zef:grondilu_1.1.0_0";
+    "Temp::Path__1.001008_0" -> "Testo_zef:raku-community-modules_1.003009_0";
+
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" [color=gray];
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "PDF_zef:dwarring_0.6.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "PDF::Lite_zef:dwarring_0.0.15_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "PDF::Content_zef:dwarring_0.9.11_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "HTML::Canvas_zef:dwarring_0.1.4_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas::To::PDF_zef:dwarring_0.0.10_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+
+    "Hash::Agnostic_zef:lizmat_0.0.20_0" [color=green];
+
+    "Testo_zef:raku-community-modules_1.003009_0" [color=green];
+
+    "GIO_cpan:CBWOOD_0.0.4_1" [color=red];
+    "GIO_cpan:CBWOOD_0.0.4_1" -> "GLib_cpan:CBWOOD_0.0.11_0";
+    "GIO_cpan:CBWOOD_0.0.4_1" -> "Test::META_zef:jonathanstowe_0.0.20_1.0";
+
+    "CSS::Font::Resources_zef:dwarring_0.0.9_0" [color=gray];
+    "CSS::Font::Resources_zef:dwarring_0.0.9_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.9_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.9_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.9_0" -> "Temp::Path__1.001008_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.9_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.4_0" [color=gray];
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.4_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.4_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.4_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.4_0" -> "Temp::Path__1.001008_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.4_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "AI::Gator_zef:bduggan_0.0.11_0" [color=gray];
+    "AI::Gator_zef:bduggan_0.0.11_0" -> "Readline_zef:clarkema_0.1.8_0";
+    "AI::Gator_zef:bduggan_0.0.11_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "AI::Gator_zef:bduggan_0.0.11_0" -> "TOML_zef:tony-o_3_0";
+    "AI::Gator_zef:bduggan_0.0.11_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "AI::Gator_zef:bduggan_0.0.11_0" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "AI::Gator_zef:bduggan_0.0.11_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "AI::Gator_zef:bduggan_0.0.11_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+
+    "CSS::Minifier_zef:sasha_0.0.1_0" [color=gray];
+    "CSS::Minifier_zef:sasha_0.0.1_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Minifier_zef:sasha_0.0.1_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::Minifier_zef:sasha_0.0.1_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "CSS::TagSet_cpan:WARRINGD_0.0.20_0" [color=gray];
+    "CSS::TagSet_cpan:WARRINGD_0.0.20_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_cpan:WARRINGD_0.0.20_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.20_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_cpan:WARRINGD_0.0.20_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "CSS::Specification_zef:dwarring_0.5.3_0" [color=green];
+    "CSS::Specification_zef:dwarring_0.5.3_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+    "CSS::Specification_zef:dwarring_0.5.3_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Specification_zef:dwarring_0.5.3_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "App::samaki_zef:bduggan_0.0.4_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.4_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+
+    "App::samaki_zef:bduggan_0.0.25_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+
+    "Markdown::Grammar_zef:antononcube_0.6.4_1" [color=green];
+    "Markdown::Grammar_zef:antononcube_0.6.4_1" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "App::samaki_zef:bduggan_0.0.16_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Text::Markdown_zef:JJMERELO_1.1.1_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.16_1" -> "Color_zef:raku-community-modules_1.004001_0";
+
+    "Unicode::UTF8-Parser_zef:raku-community-modules_0.3_0" [color=green];
+
+    "Listicles_zef:masukomi_1.6.0_1" [color=green];
+
+    "WWW::Gemini_zef:antononcube_0.0.25_0" [color=green];
+    "WWW::Gemini_zef:antononcube_0.0.25_0" -> "Image::Markup::Utilities_zef:antononcube_0.1.2_0";
+    "WWW::Gemini_zef:antononcube_0.0.25_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "WWW::Gemini_zef:antononcube_0.0.25_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "HTML::Canvas_cpan:WARRINGD_0.0.17_0" [color=gray];
+    "HTML::Canvas_cpan:WARRINGD_0.0.17_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.17_0" -> "Base64::Native_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.17_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.17_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.17_0" -> "Hash::Agnostic_zef:lizmat_0.0.20_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.17_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas_cpan:WARRINGD_0.0.17_0" -> "Cairo__0.3.6_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.17_0" -> "Font::FreeType_zef:dwarring_0.5.16_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.17_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.17_0" -> "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.17_0" -> "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0";
+
+    "CSS::Minifier_zef:sasha_0.0.3_0" [color=gray];
+    "CSS::Minifier_zef:sasha_0.0.3_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Minifier_zef:sasha_0.0.3_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Minifier_zef:sasha_0.0.3_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+
+    "Draku_zef:bduggan_0.0.3_0" [color=gray];
+    "Draku_zef:bduggan_0.0.3_0" -> "Pod::To::Raku_zef:bduggan_0.0.4_0";
+    "Draku_zef:bduggan_0.0.3_0" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "Draku_zef:bduggan_0.0.3_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "Draku_zef:bduggan_0.0.3_0" -> "Pretty::Table_cpan:ANTONOV_0.0.4_0";
+    "Draku_zef:bduggan_0.0.3_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "Draku_zef:bduggan_0.0.3_0" -> "Cache::Dir_cpan:BDUGGAN_0.0.2_0";
+    "Draku_zef:bduggan_0.0.3_0" -> "Color::Names_zef:thundergnat_2.0.0_2";
+
+    "App::samaki_zef:bduggan_0.0.29_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.29_1" -> "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0";
+
+    "W3C::DOM_zef:dwarring_0.0.3_0" [color=green];
+
+    "App::samaki_zef:bduggan_0.0.12_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.12_1" -> "Color_zef:raku-community-modules_1.004001_0";
+
+    "PDF::Grammar_zef:dwarring_0.3.6_0" [color=green];
+    "PDF::Grammar_zef:dwarring_0.3.6_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" [color=gray];
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" -> "Temp::Path__1.001008_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "CSS::TagSet_zef:dwarring_0.1.3_0" [color=gray];
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::TagSet_zef:dwarring_0.1.3_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.3_0" [color=gray];
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.3_0" -> "Temp::Path__1.001008_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.3_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.3_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.3_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.3_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "App::samaki_zef:bduggan_0.0.15_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.15_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.15_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+
+    "HTML::Canvas_zef:dwarring_0.1.4_0" [color=gray];
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "FontConfig_zef:dwarring_0.1.9_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "Hash::Agnostic_zef:lizmat_0.0.20_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "Font::FreeType_zef:dwarring_0.5.16_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "Base64::Native_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_zef:dwarring_0.1.4_0" -> "Cairo__0.3.6_0";
+
+    "WWW::MistralAI_zef:antononcube_0.1.3_1" [color=green];
+    "WWW::MistralAI_zef:antononcube_0.1.3_1" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "WWW::MistralAI_zef:antononcube_0.1.3_1" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "WWW::MistralAI_zef:antononcube_0.1.3_1" -> "IO::Socket::SSL_zef:raku-community-modules_0.0.4_0";
+
+    "IO::Socket::SSL_zef:raku-community-modules_0.0.4_0" [color=green];
+    "IO::Socket::SSL_zef:raku-community-modules_0.0.4_0" -> "OpenSSL_zef:raku-community-modules_0.2.9_0";
+
+    "LibXML_zef:dwarring_0.11.3_0.11" [color=green];
+    "LibXML_zef:dwarring_0.11.3_0.11" -> "XML_zef:raku-community-modules_0.3.6_0";
+    "LibXML_zef:dwarring_0.11.3_0.11" -> "App::Prove6_zef:leont_0.0.18_0";
+    "LibXML_zef:dwarring_0.11.3_0.11" -> "LibraryMake_zef:jjmerelo_1.0.5_0";
+    "LibXML_zef:dwarring_0.11.3_0.11" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "LibXML_zef:dwarring_0.11.3_0.11" -> "File::Temp_zef:raku-community-modules_0.0.12_0";
+    "LibXML_zef:dwarring_0.11.3_0.11" -> "W3C::DOM_zef:dwarring_0.0.3_0";
+    "LibXML_zef:dwarring_0.11.3_0.11" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "JSON::Fast_zef:timo_0.21.0_0" [color=green];
+
+    "App::samaki_zef:bduggan_0.0.25_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.25_1" -> "Duckie_zef:bduggan_0.0.12_0";
+
+    "WWW::LLaMA_zef:antononcube_0.1.3_1" [color=green];
+    "WWW::LLaMA_zef:antononcube_0.1.3_1" -> "IO::Socket::SSL_zef:raku-community-modules_0.0.4_0";
+    "WWW::LLaMA_zef:antononcube_0.1.3_1" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "WWW::LLaMA_zef:antononcube_0.1.3_1" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+
+    "App::samaki_zef:bduggan_0.0.3_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Color::Scheme_cpan:HOLLI_1.001003_1";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Grammar::PrettyErrors_zef:bduggan_0.0.7_0";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.3_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+
+    "PDF::Font::Loader::HarfBuzz_zef:dwarring_0.0.2_0" [color=green];
+    "PDF::Font::Loader::HarfBuzz_zef:dwarring_0.0.2_0" -> "PDF::Font::Loader_zef:dwarring_0.8.15_0";
+    "PDF::Font::Loader::HarfBuzz_zef:dwarring_0.0.2_0" -> "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0";
+    "PDF::Font::Loader::HarfBuzz_zef:dwarring_0.0.2_0" -> "HarfBuzz_zef:dwarring_0.1.7_0";
+    "PDF::Font::Loader::HarfBuzz_zef:dwarring_0.0.2_0" -> "PDF::Content_zef:dwarring_0.9.11_0";
+    "PDF::Font::Loader::HarfBuzz_zef:dwarring_0.0.2_0" -> "PDF::Grammar_zef:dwarring_0.3.6_0";
+
+    "Text::FriBidi_zef:dwarring_0.0.7_0" [color=green];
+    "Text::FriBidi_zef:dwarring_0.0.7_0" -> "MacOS::NativeLib_zef:lizmat_0.0.6_0";
+
+    "CSS_cpan:WARRINGD_0.0.21_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.21_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.21_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_cpan:WARRINGD_0.0.21_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.21_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_cpan:WARRINGD_0.0.21_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.21_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.5_0" [color=gray];
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.5_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.5_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.5_0" -> "Temp::Path__1.001008_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.5_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+    "CSS::Font::Resources_cpan:WARRINGD_0.0.5_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "taurus_zef:andinus_0.1.1_0" [color=gray];
+    "taurus_zef:andinus_0.1.1_0" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "taurus_zef:andinus_0.1.1_0" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+    "taurus_zef:andinus_0.1.1_0" -> "CSV::Parser_zef:tony-o_0.1.4_0";
+
+    "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0" [color=green];
+    "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0" -> "CSS::Grammar_zef:dwarring_0.4.3_0";
+    "CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+
+    "HTML::Canvas_cpan:WARRINGD_0.0.18_0" [color=gray];
+    "HTML::Canvas_cpan:WARRINGD_0.0.18_0" -> "Cairo__0.3.6_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.18_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.18_0" -> "HarfBuzz::Font::FreeType_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.18_0" -> "HarfBuzz::Shaper::Cairo_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.18_0" -> "Hash::Agnostic_zef:lizmat_0.0.20_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.18_0" -> "Base64::Native_zef:dwarring_0.0.10_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.18_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas_cpan:WARRINGD_0.0.18_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.18_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.18_0" -> "Font::FreeType_zef:dwarring_0.5.16_0";
+    "HTML::Canvas_cpan:WARRINGD_0.0.18_0" -> "Color_zef:raku-community-modules_1.004001_0";
+
+    "WWW::OpenRouter_zef:antononcube_0.0.3_0" [color=green];
+    "WWW::OpenRouter_zef:antononcube_0.0.3_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "WWW::OpenRouter_zef:antononcube_0.0.3_0" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+
+    "LWP::Simple_zef:dwarring_0.109_0" [color=yellow];
+    "LWP::Simple_zef:dwarring_0.109_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "LWP::Simple_zef:dwarring_0.109_0" -> "MIME::Base64_zef:raku-community-modules_1.2.5_0";
+    "LWP::Simple_zef:dwarring_0.109_0" -> "JSON::Tiny_cpan:MORITZ_1.0_0";
+
+    "CSS_cpan:WARRINGD_0.0.26_0" [color=gray];
+    "CSS_cpan:WARRINGD_0.0.26_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_cpan:WARRINGD_0.0.26_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_cpan:WARRINGD_0.0.26_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_cpan:WARRINGD_0.0.26_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+    "CSS_cpan:WARRINGD_0.0.26_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_cpan:WARRINGD_0.0.26_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_cpan:WARRINGD_0.0.26_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.9_0" [color=gray];
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.9_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.9_0" -> "Color_zef:raku-community-modules_1.004001_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.9_0" -> "PDF::Lite_zef:dwarring_0.0.15_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.9_0" -> "Text::FriBidi_zef:dwarring_0.0.7_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.9_0" -> "HTML::Canvas_zef:dwarring_0.1.4_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.9_0" -> "PDF::Content_zef:dwarring_0.9.11_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.9_0" -> "CSS::Font::Resources_zef:dwarring_0.0.11_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.9_0" -> "PDF_zef:dwarring_0.6.15_0";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.9_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "HTML::Canvas::To::PDF_cpan:WARRINGD_0.0.9_0" -> "PDF::Font::Loader::CSS_zef:dwarring_0.0.1_0";
+
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" [color=green];
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" -> "LWP::Simple_zef:dwarring_0.109_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" -> "Temp::Path__1.001008_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" -> "JSON::Fast_zef:timo_0.21.0_0";
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS::Font::Resources_zef:dwarring_0.0.11_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+
+    "CSS::Minifier_zef:sasha_0.0.6_0" [color=gray];
+    "CSS::Minifier_zef:sasha_0.0.6_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS::Minifier_zef:sasha_0.0.6_0" -> "CSS::Writer_zef:dwarring_0.3.3_0";
+    "CSS::Minifier_zef:sasha_0.0.6_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+
+    "CSS_zef:dwarring_0.1.2_0" [color=gray];
+    "CSS_zef:dwarring_0.1.2_0" -> "CSS::Properties_zef:dwarring_0.10.9_0.10";
+    "CSS_zef:dwarring_0.1.2_0" -> "CSS::Stylesheet_zef:dwarring_0.1.5_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "URI_zef:raku-community-modules_0.3.8_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "LibXML_zef:dwarring_0.11.3_0.11";
+    "CSS_zef:dwarring_0.1.2_0" -> "CSS::TagSet_zef:dwarring_0.1.4_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "CSS::Module_zef:dwarring_0.7.7_0";
+    "CSS_zef:dwarring_0.1.2_0" -> "Method::Also_zef:lizmat_0.0.10_0";
+
+    "App::samaki_zef:bduggan_0.0.32_1" [color=gray];
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Terminal::UI_zef:bduggan_0.1.14_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Log::Async_zef:bduggan_0.0.17_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Time::Duration_zef:masukomi_2.0.2_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Color_zef:raku-community-modules_1.004001_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Prettier::Table_zef:masukomi_1.1.3_1";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "LLM::DWIM_zef:bduggan_0.0.6_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Terminal::WCWidth_zef:raku-community-modules_0.1.5_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Markdown::Grammar_zef:antononcube_0.6.4_1";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Duckie_zef:bduggan_0.0.12_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "CodeUnit_zef:lizmat_0.0.11_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "HTTP::Tiny_zef:jjatria_0.2.6_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Duck::CSV_zef:bduggan_0.0.2_0";
+    "App::samaki_zef:bduggan_0.0.32_1" -> "Terminal::ANSI_cpan:BDUGGAN_0.0.25_0";
+
+    "XDG::BaseDirectory_zef:jonathanstowe_0.0.15_1.0" [color=green];
+    "XDG::BaseDirectory_zef:jonathanstowe_0.0.15_1.0" -> "File::Find_zef:raku-community-modules_0.2.5_0";
+    "XDG::BaseDirectory_zef:jonathanstowe_0.0.15_1.0" -> "Shell::Command_zef:raku-community-modules_1.2_0";
+
+
+}

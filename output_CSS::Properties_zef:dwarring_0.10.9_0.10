@@ -1,0 +1,757 @@
+Running as unit: run-p2271494-i2137988.service; invocation ID: b8f08de647e7486f87f0deacb0cb6e4b
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: CSS::Properties
+===> Found: CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10> [via Zef::Repository::Ecosystems<fez>]
+[CSS::Properties] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789876510.2271509.1736.3482167161815/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz https://360.zef.pm/C/SS/CSS_PROPERTIES/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz
+===> Fetching [OK]: CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10> to /home/coke/sandbox/blin/data/zef-data/tmp/1789876510.2271509.1736.3482167161815/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz
+[CSS::Properties] Command: tar -t -f ./f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz
+[CSS::Properties] Command: tar -xvf ./f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz -C ../f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz
+===> Extraction [OK]: CSS::Properties to /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz
+===> Testing: CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10>
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/00-readme.t
+[CSS::Properties] 1..12
+[CSS::Properties] ok 1 - code sample
+[CSS::Properties] dropping unknown CSS1 property azimuth
+[CSS::Properties] ok 2 - code sample
+[CSS::Properties] ok 3 - code sample
+[CSS::Properties] ok 4 - code sample
+[CSS::Properties] ok 5 - code sample
+[CSS::Properties] ok 6 - code sample
+[CSS::Properties] ok 7 - code sample
+[CSS::Properties] ok 8 - code sample
+[CSS::Properties] ok 9 - code sample
+[CSS::Properties] ok 10 - code sample
+[CSS::Properties] ok 11 - code sample
+[CSS::Properties] ok 12 - code sample
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/01-property-basic.t
+[CSS::Properties] 1..18
+[CSS::Properties] ok 1 - $prop.name
+[CSS::Properties] ok 2 - $prop.box
+[CSS::Properties] ok 3 - $prop.inherit
+[CSS::Properties] ok 4 - $prop.synopsis
+[CSS::Properties] ok 5 - $prop.default
+[CSS::Properties] ok 6 - missing edges detected
+[CSS::Properties] ok 7 - $prop.name
+[CSS::Properties] ok 8 - $prop.box
+[CSS::Properties] ok 9 - $prop.inherit
+[CSS::Properties] ok 10 - $prop.synopsis
+[CSS::Properties] ok 11 - $prop.top.name
+[CSS::Properties] ok 12 - declared property
+[CSS::Properties] ok 13 - defaulted property
+[CSS::Properties] ok 14 - write
+[CSS::Properties] ok 15 - write
+[CSS::Properties] ok 16 - copy/write
+[CSS::Properties] ok 17 - 
+[CSS::Properties] ok 18 - 
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/02-style-basic.t
+[CSS::Properties] 1..15
+[CSS::Properties] ok 1 - 
+[CSS::Properties] ok 2 - 
+[CSS::Properties] ok 3 - 
+[CSS::Properties] ok 4 - 
+[CSS::Properties] ok 5 - 
+[CSS::Properties] ok 6 - 
+[CSS::Properties] ok 7 - 
+[CSS::Properties] ok 8 - important property
+[CSS::Properties] ok 9 - unimportant property
+[CSS::Properties] ok 10 - 
+[CSS::Properties] ok 11 - 
+[CSS::Properties] ok 12 - 
+[CSS::Properties] ok 13 - 
+[CSS::Properties] ok 14 - 
+[CSS::Properties] ok 15 - 
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/ast.t
+[CSS::Properties] 1..4
+[CSS::Properties] ok 1 - ast
+[CSS::Properties] ok 2 - style unoptimized
+[CSS::Properties] ok 3 - ast
+[CSS::Properties] ok 4 - style optimized
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/at-font-face.t
+[CSS::Properties] 1..30
+[CSS::Properties] ok 1 - 
+[CSS::Properties] ok 2 - 
+[CSS::Properties] ok 3 - 
+[CSS::Properties] ok 4 - 
+[CSS::Properties] ok 5 - 
+[CSS::Properties] ok 6 - 
+[CSS::Properties] ok 7 - 
+[CSS::Properties] ok 8 - 
+[CSS::Properties] ok 9 - 
+[CSS::Properties] ok 10 - 
+[CSS::Properties] ok 11 - 
+[CSS::Properties] ok 12 - 
+[CSS::Properties] ok 13 - 
+[CSS::Properties] ok 14 - 
+[CSS::Properties] ok 15 - 
+[CSS::Properties] ok 16 - 
+[CSS::Properties] ok 17 - 
+[CSS::Properties] ok 18 - 
+[CSS::Properties] ok 19 - 
+[CSS::Properties] ok 20 - 
+[CSS::Properties] ok 21 - 
+[CSS::Properties] ok 22 - 
+[CSS::Properties] ok 23 - 
+[CSS::Properties] ok 24 - 
+[CSS::Properties] ok 25 - 
+[CSS::Properties] ok 26 - 
+[CSS::Properties] ok 27 - 
+[CSS::Properties] ok 28 - 
+[CSS::Properties] ok 29 - 
+[CSS::Properties] ok 30 - 
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/box-fonts.t
+[CSS::Properties] 1..5
+[CSS::Properties] # Subtest: basic
+[CSS::Properties]     1..9
+[CSS::Properties]     ok 1 - em
+[CSS::Properties]     ok 2 - ex
+[CSS::Properties]     ok 3 - font-style
+[CSS::Properties]     ok 4 - font-weight
+[CSS::Properties]     ok 5 - font-family
+[CSS::Properties]     ok 6 - line-height
+[CSS::Properties]     ok 7 - font-stretch
+[CSS::Properties]     ok 8 - measuring unit
+[CSS::Properties]     ok 9 - $font.Str
+[CSS::Properties] ok 1 - basic
+[CSS::Properties] # Subtest: measure
+[CSS::Properties]     1..9
+[CSS::Properties]     ok 1 - 
+[CSS::Properties]     ok 2 - 
+[CSS::Properties]     ok 3 - 
+[CSS::Properties]     ok 4 - measure numeric
+[CSS::Properties]     ok 5 - measure percentage font-size
+[CSS::Properties]     ok 6 - measure percentage font-size
+[CSS::Properties]     ok 7 - measure percentage font-size
+[CSS::Properties]     ok 8 - measure named font-size
+[CSS::Properties]     ok 9 - measure named font-size
+[CSS::Properties] ok 2 - measure
+[CSS::Properties] # Subtest: patterns
+[CSS::Properties]     1..3
+[CSS::Properties]     ok 1 - fontconfig-pattern
+[CSS::Properties]     ok 2 - 
+[CSS::Properties]     ok 3 - fontconfig-pattern
+[CSS::Properties] ok 3 - patterns
+[CSS::Properties] # Subtest: match basic
+[CSS::Properties]     1..2
+[CSS::Properties]     ok 1 - 
+[CSS::Properties]     ok 2 - 
+[CSS::Properties] ok 4 - match basic
+[CSS::Properties] # Subtest: match styles
+[CSS::Properties]     1..6
+[CSS::Properties]     ok 1 - 
+[CSS::Properties]     ok 2 - 
+[CSS::Properties]     ok 3 - 
+[CSS::Properties]     ok 4 - 
+[CSS::Properties]     ok 5 - 
+[CSS::Properties]     ok 6 - 
+[CSS::Properties] ok 5 - match styles
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/box-measure.t
+[CSS::Properties] 1..19
+[CSS::Properties] ok 1 - default units
+[CSS::Properties] ok 2 - .Array
+[CSS::Properties] ok 3 - .padding
+[CSS::Properties] ok 4 - .border
+[CSS::Properties] ok 5 - .margin
+[CSS::Properties] ok 6 - .width
+[CSS::Properties] ok 7 - .height
+[CSS::Properties] ok 8 - .width("padding")
+[CSS::Properties] ok 9 - .height("padding")
+[CSS::Properties] ok 10 - .padding-XXX
+[CSS::Properties] ok 11 - .border-XXX
+[CSS::Properties] ok 12 - .margin-XXX
+[CSS::Properties] ok 13 - .border-width
+[CSS::Properties] ok 14 - .border-height
+[CSS::Properties] ok 15 - 
+[CSS::Properties] ok 16 - changed units
+[CSS::Properties] ok 17 - .Array
+[CSS::Properties] ok 18 - .padding
+[CSS::Properties] ok 19 - adjusted .margin
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/box.t
+[CSS::Properties] 1..20
+[CSS::Properties] ok 1 - .Array
+[CSS::Properties] ok 2 - .padding
+[CSS::Properties] ok 3 - .border
+[CSS::Properties] ok 4 - .margin
+[CSS::Properties] ok 5 - .width
+[CSS::Properties] ok 6 - .height
+[CSS::Properties] ok 7 - .width("padding")
+[CSS::Properties] ok 8 - .height("padding")
+[CSS::Properties] ok 9 - .padding-XXX
+[CSS::Properties] ok 10 - .border-XXX
+[CSS::Properties] ok 11 - .margin-XXX
+[CSS::Properties] ok 12 - .border-width
+[CSS::Properties] ok 13 - .border-height
+[CSS::Properties] ok 14 - .translate
+[CSS::Properties] ok 15 - translate padding
+[CSS::Properties] ok 16 - .move
+[CSS::Properties] ok 17 - move padding
+[CSS::Properties] ok 18 - .resize
+[CSS::Properties] ok 19 - illegal initial size
+[CSS::Properties] not ok 20 - illegal resize # TODO reimplement resize checks
+[CSS::Properties] # Failed test 'illegal resize'
+[CSS::Properties] # at t/box.t line 52
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/calc.t
+[CSS::Properties] 1..4
+[CSS::Properties] # Subtest: font-size
+[CSS::Properties]     ok 1 - 
+[CSS::Properties]     ok 2 - 
+[CSS::Properties]     ok 3 - 
+[CSS::Properties]     1..3
+[CSS::Properties] ok 1 - font-size
+[CSS::Properties] # Subtest: basic arithmetic
+[CSS::Properties]     ok 1 - 
+[CSS::Properties]     ok 2 - 
+[CSS::Properties]     ok 3 - 
+[CSS::Properties]     ok 4 - 
+[CSS::Properties]     1..4
+[CSS::Properties] ok 2 - basic arithmetic
+[CSS::Properties] # Subtest: associativety/precedence
+[CSS::Properties]     ok 1 - 
+[CSS::Properties]     ok 2 - 
+[CSS::Properties]     ok 3 - 
+[CSS::Properties]     ok 4 - 
+[CSS::Properties]     ok 5 - 
+[CSS::Properties]     ok 6 - 
+[CSS::Properties]     ok 7 - 
+[CSS::Properties]     1..7
+[CSS::Properties] ok 3 - associativety/precedence
+[CSS::Properties] # Subtest: div/minus
+[CSS::Properties]     ok 1 - 
+[CSS::Properties]     ok 2 - 
+[CSS::Properties]     ok 3 - 
+[CSS::Properties]     ok 4 - 
+[CSS::Properties]     1..4
+[CSS::Properties] ok 4 - div/minus
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/colors.t
+[CSS::Properties] 1..33
+[CSS::Properties] ok 1 - :values constructor
+[CSS::Properties] ok 2 - :values constructor
+[CSS::Properties] ok 3 - serialization
+[CSS::Properties] ok 4 - :values constructor
+[CSS::Properties] ok 5 - :values constructor
+[CSS::Properties] ok 6 - :values constructor
+[CSS::Properties] ok 7 - serialization
+[CSS::Properties] ok 8 - :values constructor
+[CSS::Properties] ok 9 - :values constructor
+[CSS::Properties] ok 10 - :values constructor
+[CSS::Properties] ok 11 - :values constructor
+[CSS::Properties] ok 12 - serialization
+[CSS::Properties] ok 13 - :values constructor
+[CSS::Properties] ok 14 - :values constructor
+[CSS::Properties] ok 15 - :values constructor
+[CSS::Properties] ok 16 - serialization
+[CSS::Properties] ok 17 - :values constructor
+[CSS::Properties] ok 18 - :values constructor
+[CSS::Properties] ok 19 - :values constructor
+[CSS::Properties] ok 20 - serialization
+[CSS::Properties] ok 21 - :values constructor
+[CSS::Properties] ok 22 - :values constructor
+[CSS::Properties] ok 23 - :values constructor
+[CSS::Properties] ok 24 - serialization
+[CSS::Properties] ok 25 - :values constructor
+[CSS::Properties] ok 26 - :values constructor
+[CSS::Properties] ok 27 - :values constructor
+[CSS::Properties] ok 28 - serialization
+[CSS::Properties] ok 29 - border-*-color default
+[CSS::Properties] ok 30 - border-*-color default
+[CSS::Properties] ok 31 - border-*-color default
+[CSS::Properties] ok 32 - color assignment
+[CSS::Properties] ok 33 - color assigment
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/css-fonts.t
+[CSS::Properties] 1..4
+[CSS::Properties] # Subtest: props
+[CSS::Properties]     ok 1 - font-style
+[CSS::Properties]     ok 2 - font-weight
+[CSS::Properties]     ok 3 - font-family
+[CSS::Properties]     ok 4 - font-size
+[CSS::Properties]     ok 5 - line-height
+[CSS::Properties]     1..5
+[CSS::Properties] ok 1 - props
+[CSS::Properties] # Subtest: serialization
+[CSS::Properties]     1..33
+[CSS::Properties]     ok 1 - serialization
+[CSS::Properties]     ok 2 - (empty)
+[CSS::Properties]     ok 3 - font-family
+[CSS::Properties]     ok 4 - line-height
+[CSS::Properties]     ok 5 - font-family line-height
+[CSS::Properties]     ok 6 - font-size
+[CSS::Properties]     ok 7 - font-family font-size
+[CSS::Properties]     ok 8 - font-size line-height
+[CSS::Properties]     ok 9 - font-family font-size line-height
+[CSS::Properties]     ok 10 - font-weight
+[CSS::Properties]     ok 11 - font-family font-weight
+[CSS::Properties]     ok 12 - font-weight line-height
+[CSS::Properties]     ok 13 - font-family font-weight line-height
+[CSS::Properties]     ok 14 - font-size font-weight
+[CSS::Properties]     ok 15 - font-family font-size font-weight
+[CSS::Properties]     ok 16 - font-size font-weight line-height
+[CSS::Properties]     ok 17 - font-family font-size font-weight line-height
+[CSS::Properties]     ok 18 - font-style
+[CSS::Properties]     ok 19 - font-family font-style
+[CSS::Properties]     ok 20 - font-style line-height
+[CSS::Properties]     ok 21 - font-family font-style line-height
+[CSS::Properties]     ok 22 - font-size font-style
+[CSS::Properties]     ok 23 - font-family font-size font-style
+[CSS::Properties]     ok 24 - font-size font-style line-height
+[CSS::Properties]     ok 25 - font-family font-size font-style line-height
+[CSS::Properties]     ok 26 - font-style font-weight
+[CSS::Properties]     ok 27 - font-family font-style font-weight
+[CSS::Properties]     ok 28 - font-style font-weight line-height
+[CSS::Properties]     ok 29 - font-family font-style font-weight line-height
+[CSS::Properties]     ok 30 - font-size font-style font-weight
+[CSS::Properties]     ok 31 - font-family font-size font-style font-weight
+[CSS::Properties]     ok 32 - font-size font-style font-weight line-height
+[CSS::Properties]     ok 33 - font-family font-size font-style font-weight line-height
+[CSS::Properties] ok 2 - serialization
+[CSS::Properties] # Subtest: issue#23
+[CSS::Properties]     ok 1 - 
+[CSS::Properties]     1..1
+[CSS::Properties] ok 3 - issue \#23
+[CSS::Properties] # Subtest: change em
+[CSS::Properties]     ok 1 - 
+[CSS::Properties]     ok 2 - 
+[CSS::Properties]     1..2
+[CSS::Properties] ok 4 - change em
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/declarations.t
+[CSS::Properties] 1..47
+[CSS::Properties] ok 1 - :values constructor
+[CSS::Properties] ok 2 - box property
+[CSS::Properties] ok 3 - edges property
+[CSS::Properties] ok 4 - simple property
+[CSS::Properties] ok 5 - margin-left is a margin edge
+[CSS::Properties] ok 6 - default azimuth
+[CSS::Properties] ok 7 - default azimuth
+[CSS::Properties] ok 8 - default background position
+[CSS::Properties] ok 9 - default margin
+[CSS::Properties] ok 10 - default margin-left
+[CSS::Properties] ok 11 - default margin left type
+[CSS::Properties] ok 12 - default background-color
+[CSS::Properties] ok 13 - default background-color
+[CSS::Properties] ok 14 - basic css rewritten
+[CSS::Properties] ok 15 - list parse
+[CSS::Properties] ok 16 - list parse
+[CSS::Properties] ok 17 - list parse
+[CSS::Properties] ok 18 - background-color reset
+[CSS::Properties] ok 19 - background-color reset
+[CSS::Properties] ok 20 - updated margin-right value
+[CSS::Properties] ok 21 - updated margin-right units
+[CSS::Properties] ok 22 - updated margin-right units
+[CSS::Properties] ok 23 - updated margin
+[CSS::Properties] ok 24 - measured margin
+[CSS::Properties] ok 25 - reset margin
+[CSS::Properties] ok 26 - reset margin-left
+[CSS::Properties] ok 27 - named and rgb colors
+[CSS::Properties] ok 28 - 
+[CSS::Properties] ok 29 - border-color string coercement
+[CSS::Properties] ok 30 - border-color reset
+[CSS::Properties] ok 31 - struct str assignment
+[CSS::Properties] ok 32 - border top
+[CSS::Properties] ok 33 - border top width
+[CSS::Properties] ok 34 - border top width
+[CSS::Properties] ok 35 - border top color
+[CSS::Properties] ok 36 - border top color
+[CSS::Properties] ok 37 - struct hash assignment
+[CSS::Properties] ok 38 - border top width
+[CSS::Properties] ok 39 - border top color
+[CSS::Properties] ok 40 - border top color
+[CSS::Properties] ok 41 - border top color
+[CSS::Properties] ok 42 - reset border top width
+[CSS::Properties] ok 43 - reset border top color
+[CSS::Properties] ok 44 - info on a container property
+[CSS::Properties] ok 45 - default text-align
+[CSS::Properties] ok 46 - default text-align (direction rtl)
+[CSS::Properties] ok 47 - updated text-direction
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/errors.t
+[CSS::Properties] 1..6
+[CSS::Properties] ok 1 - 
+[CSS::Properties] unable to parse CSS property 'width: 2furlongs;'
+[CSS::Properties] ok 2 - 
+[CSS::Properties] ok 3 - 
+[CSS::Properties] ok 4 - 
+[CSS::Properties] unable to parse CSS property 'width: foo(42);'
+[CSS::Properties] ok 5 - 
+[CSS::Properties] expected type of length, got number: calc(42)
+[CSS::Properties] ok 6 - 
+[CSS::Properties] unable to evaluate expression: calc(2em + 3hz)
+[CSS::Properties] usage: calc( <calc-sum> )
+[CSS::Properties] unable to evaluate expression: calc('foo')
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/extend.t
+[CSS::Properties] 1..22
+[CSS::Properties] ok 1 - info.name
+[CSS::Properties] ok 2 - info.synopsis
+[CSS::Properties] ok 3 - info.default
+[CSS::Properties] ok 4 - info.name
+[CSS::Properties] ok 5 - 
+[CSS::Properties] ok 6 - info.default
+[CSS::Properties] ok 7 - coercer called
+[CSS::Properties] ok 8 - 
+[CSS::Properties] ok 9 - The object is-a 'Int'
+[CSS::Properties] ok 10 - property set
+[CSS::Properties] ok 11 - coercer called
+[CSS::Properties] ok 12 - property get
+[CSS::Properties] ok 13 - properties
+[CSS::Properties] ok 14 - serialization
+[CSS::Properties] ok 15 - serialization (default)
+[CSS::Properties] ok 16 - reserialization
+[CSS::Properties] ok 17 - 
+[CSS::Properties] ok 18 - 
+[CSS::Properties] ok 19 - case insensitivity
+[CSS::Properties] # Subtest: parse
+[CSS::Properties]     ok 1 - coercer called
+[CSS::Properties]     ok 2 - coercer called
+[CSS::Properties]     ok 3 - serialization
+[CSS::Properties]     ok 4 - 
+[CSS::Properties]     ok 5 - The object is-a 'Int'
+[CSS::Properties]     ok 6 - 
+[CSS::Properties]     1..6
+[CSS::Properties] ok 20 - parse
+[CSS::Properties] # Subtest: invalid
+[CSS::Properties]     ok 1 - serialization
+[CSS::Properties]     ok 2 - 
+[CSS::Properties]     ok 3 - The object is-a 'Int'
+[CSS::Properties]     ok 4 - 
+[CSS::Properties]     1..4
+[CSS::Properties] ok 21 - invalid
+[CSS::Properties] # Subtest: any
+[CSS::Properties]     ok 1 - 
+[CSS::Properties]     ok 2 - 
+[CSS::Properties]     ok 3 - 
+[CSS::Properties]     ok 4 - 
+[CSS::Properties]     ok 5 - 
+[CSS::Properties]     1..5
+[CSS::Properties] ok 22 - any
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/important.t
+[CSS::Properties] 1..14
+[CSS::Properties] ok 1 - 
+[CSS::Properties] ok 2 - 
+[CSS::Properties] ok 3 - 
+[CSS::Properties] ok 4 - 
+[CSS::Properties] ok 5 - 
+[CSS::Properties] ok 6 - importance setter
+[CSS::Properties] ok 7 - importance setter - box
+[CSS::Properties] ok 8 - importance setter - box
+[CSS::Properties] ok 9 - 
+[CSS::Properties] ok 10 - 
+[CSS::Properties] ok 11 - 
+[CSS::Properties] ok 12 - 
+[CSS::Properties] ok 13 - 
+[CSS::Properties] ok 14 - 
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/inherit.t
+[CSS::Properties] 1..23
+[CSS::Properties] ok 1 - 
+[CSS::Properties] ok 2 - overridden value
+[CSS::Properties] ok 3 - overridden value
+[CSS::Properties] ok 4 - 'initial'
+[CSS::Properties] ok 5 - 'initial'
+[CSS::Properties] ok 6 - 'inherit'
+[CSS::Properties] ok 7 - 'inherit'
+[CSS::Properties] ok 8 - color inherit metadata
+[CSS::Properties] ok 9 - inherited property
+[CSS::Properties] ok 10 - margin-bottom inherit metadata
+[CSS::Properties] ok 11 - non-inhertiable property
+[CSS::Properties] ok 12 - inherited box value
+[CSS::Properties] ok 13 - inherited value
+[CSS::Properties] ok 14 - initial box value
+[CSS::Properties] ok 15 - inherited !important property
+[CSS::Properties] ok 16 - !important is not inherited
+[CSS::Properties] ok 17 - inherit from object
+[CSS::Properties] ok 18 - inherit from string
+[CSS::Properties] # Subtest: font-size inheritance
+[CSS::Properties]     ok 1 - inherit absolute font-size
+[CSS::Properties]     ok 2 - 
+[CSS::Properties]     ok 3 - inheritance of relative font-size
+[CSS::Properties]     ok 4 - relative font-size inheritance
+[CSS::Properties]     ok 5 - inherited font size measurement
+[CSS::Properties]     ok 6 - computed font size measurement
+[CSS::Properties]     ok 7 - relative font size measurement
+[CSS::Properties]     ok 8 - relative font size measurement
+[CSS::Properties]     1..8
+[CSS::Properties] ok 19 - font-size inheritance
+[CSS::Properties] # Subtest: inherit+clone
+[CSS::Properties]     ok 1 - cloned css
+[CSS::Properties]     ok 2 - cloned css
+[CSS::Properties]     ok 3 - cloned+inherited css
+[CSS::Properties]     ok 4 - inherited+cloned css
+[CSS::Properties]     ok 5 - 
+[CSS::Properties]     ok 6 - 
+[CSS::Properties]     ok 7 - 
+[CSS::Properties]     ok 8 - original css
+[CSS::Properties]     1..8
+[CSS::Properties] ok 20 - inherit+clone
+[CSS::Properties] # Subtest: issue#11 inheritence
+[CSS::Properties]     1..2
+[CSS::Properties]     ok 1 - 
+[CSS::Properties]     ok 2 - 
+[CSS::Properties] ok 21 - issue \#11 inheritence
+[CSS::Properties] # Subtest: early inheritence
+[CSS::Properties]     ok 1 - 
+[CSS::Properties]     ok 2 - 
+[CSS::Properties]     ok 3 - 
+[CSS::Properties]     1..3
+[CSS::Properties] ok 22 - early inheritence
+[CSS::Properties] # Subtest: late inheritance
+[CSS::Properties]     ok 1 - 
+[CSS::Properties]     ok 2 - 
+[CSS::Properties]     ok 3 - 
+[CSS::Properties]     ok 4 - 
+[CSS::Properties]     1..4
+[CSS::Properties] ok 23 - late inheritance
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/measure.t
+[CSS::Properties] 1..32
+[CSS::Properties] ok 1 - $css.measure($.viewport-width)
+[CSS::Properties] ok 2 - $css.measure($.viewport-height)
+[CSS::Properties] ok 3 - default units
+[CSS::Properties] ok 4 - $css.measure(pt)
+[CSS::Properties] ok 5 - $css.measure(px)
+[CSS::Properties] ok 6 - $css.measure(pc)
+[CSS::Properties] ok 7 - $css.measure(em)
+[CSS::Properties] ok 8 - $css.measure(ex)
+[CSS::Properties] ok 9 - $css.measure(vw)
+[CSS::Properties] ok 10 - $css.measure(vh)
+[CSS::Properties] ok 11 - $css.measure("thin")
+[CSS::Properties] ok 12 - $css.measure("medium")
+[CSS::Properties] ok 13 - $css.measure(:font-size<medium>)
+[CSS::Properties] ok 14 - $css.measure("thick")
+[CSS::Properties] ok 15 - $css.measure("x-large")
+[CSS::Properties] ok 16 - $css.measure("smaller")
+[CSS::Properties] # Subtest: font-size
+[CSS::Properties]     ok 1 - 
+[CSS::Properties]     ok 2 - 
+[CSS::Properties]     ok 3 - 
+[CSS::Properties]     ok 4 - 
+[CSS::Properties]     ok 5 - 
+[CSS::Properties]     ok 6 - 
+[CSS::Properties]     ok 7 - 
+[CSS::Properties]     ok 8 - 
+[CSS::Properties]     ok 9 - 
+[CSS::Properties]     ok 10 - 
+[CSS::Properties]     ok 11 - 
+[CSS::Properties]     ok 12 - 
+[CSS::Properties]     ok 13 - 
+[CSS::Properties]     ok 14 - 
+[CSS::Properties]     1..14
+[CSS::Properties] ok 17 - font-size
+[CSS::Properties] # Subtest: font-weight
+[CSS::Properties]     ok 1 - 
+[CSS::Properties]     ok 2 - 
+[CSS::Properties]     ok 3 - 
+[CSS::Properties]     ok 4 - 
+[CSS::Properties]     ok 5 - 
+[CSS::Properties]     ok 6 - 
+[CSS::Properties]     ok 7 - 
+[CSS::Properties]     ok 8 - 
+[CSS::Properties]     ok 9 - 
+[CSS::Properties]     ok 10 - 
+[CSS::Properties]     ok 11 - 
+[CSS::Properties]     ok 12 - 
+[CSS::Properties]     ok 13 - 
+[CSS::Properties]     1..13
+[CSS::Properties] ok 18 - font-weight
+[CSS::Properties] ok 19 - 
+[CSS::Properties] ok 20 - 
+[CSS::Properties] ok 21 - 
+[CSS::Properties] ok 22 - changed units
+[CSS::Properties] ok 23 - $css.measure(in)
+[CSS::Properties] ok 24 - $css.measure(in)
+[CSS::Properties] ok 25 - $css.measure(in)
+[CSS::Properties] ok 26 - 
+[CSS::Properties] ok 27 - 
+[CSS::Properties] ok 28 - 
+[CSS::Properties] ok 29 - 
+[CSS::Properties] ok 30 - 
+[CSS::Properties] ok 31 - 
+[CSS::Properties] ok 32 - 
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/modules.t
+[CSS::Properties] 1..5
+[CSS::Properties] ok 1 - azimuth is unknown in CSS1
+[CSS::Properties] ok 2 - azimuth is known in CSS21
+[CSS::Properties] ok 3 - azimuth is known in CSS3
+[CSS::Properties] dropping unknown @fontface property azimuth
+[CSS::Properties] ok 4 - src is known in @font-face
+[CSS::Properties] ok 5 - azimuth is unknown in @font-face
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/optimize.t
+[CSS::Properties] 1..16
+[CSS::Properties] ok 1 - optimised ast border:1px solid red;
+[CSS::Properties] ok 2 - optimised css border:1px solid red;
+[CSS::Properties] ok 3 - optimised ast border-width:5pt 5px 5in 5mm;
+[CSS::Properties] ok 4 - optimised css border-width:5pt 5px 5in 5mm;
+[CSS::Properties] ok 5 - optimised ast border-top:5px!important;
+[CSS::Properties] ok 6 - optimised css border-top:5px!important;
+[CSS::Properties] ok 7 - optimised ast border:5pt solid; border-color:red green blue yellow;
+[CSS::Properties] ok 8 - optimised css border:5pt solid; border-color:red green blue yellow;
+[CSS::Properties] ok 9 - optimised ast font-family:times; font-size:inherit; font-weight:inherit;
+[CSS::Properties] ok 10 - optimised css font-family:times; font-size:inherit; font-weight:inherit;
+[CSS::Properties] ok 11 - optimised ast background:no-repeat 50% 75%;
+[CSS::Properties] ok 12 - optimised css background:no-repeat 50% 75%;
+[CSS::Properties] ok 13 - optimised ast font:1.1em/1.3 Verdana, Arial, sans-serif;
+[CSS::Properties] ok 14 - optimised css font:1.1em/1.3 Verdana, Arial, sans-serif;
+[CSS::Properties] ok 15 - optimised ast list-style:circle;
+[CSS::Properties] ok 16 - optimised css list-style:circle;
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/page-box.t
+[CSS::Properties] 1..19
+[CSS::Properties] ok 1 - 
+[CSS::Properties] ok 2 - .Array
+[CSS::Properties] ok 3 - .Array
+[CSS::Properties] ok 4 - css
+[CSS::Properties] ok 5 - .margin (mm)
+[CSS::Properties] ok 6 - .margin (pt)
+[CSS::Properties] ok 7 - .border
+[CSS::Properties] ok 8 - .padding
+[CSS::Properties] ok 9 - .content
+[CSS::Properties] ok 10 - .margin auto
+[CSS::Properties] ok 11 - .border auto
+[CSS::Properties] ok 12 - .padding auto
+[CSS::Properties] ok 13 - .content auto
+[CSS::Properties] ok 14 - .margin auto
+[CSS::Properties] ok 15 - .border auto
+[CSS::Properties] ok 16 - .padding auto
+[CSS::Properties] ok 17 - .content auto (mm)
+[CSS::Properties] ok 18 - .content auto (pt)
+[CSS::Properties] ok 19 - auto/min/max
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/svg-properties.t
+[CSS::Properties] ok 1 - alignment-baseline:after-edge;
+[CSS::Properties] ok 2 - baseline-shift:super;
+[CSS::Properties] ok 3 - baseline-shift:1.5em;
+[CSS::Properties] ok 4 - baseline-shift:1.5em; - type
+[CSS::Properties] ok 5 - baseline-shift:4%;
+[CSS::Properties] ok 6 - baseline-shift:4%; - type
+[CSS::Properties] ok 7 - color:red;
+[CSS::Properties] ok 8 - color:rgb(10%,20,30);
+[CSS::Properties] ok 9 - color:rgb(10%,20,30); - type
+[CSS::Properties] ok 10 - color-interpolation:sRGB;
+[CSS::Properties] ok 11 - color-interpolation:Srgb;
+[CSS::Properties] ok 12 - color-interpolation:lInearRgB;
+[CSS::Properties] ok 13 - color-rendering:optimizeSpeed;
+[CSS::Properties] ok 14 - direction:ltr;
+[CSS::Properties] ok 15 - direction:rtl;
+[CSS::Properties] ok 16 - display:table-cell;
+[CSS::Properties] ok 17 - dominant-baseline:hanging;
+[CSS::Properties] ok 18 - fill:rgb(10,20,10%);
+[CSS::Properties] ok 19 - fill-opacity:0.75;
+[CSS::Properties] ok 20 - fill-opacity:75%;
+[CSS::Properties] ok 21 - fill-rule:evenOdD;
+[CSS::Properties] ok 22 - font-variant:small-Caps;
+[CSS::Properties] ok 23 - glyph-orientation-vertical:45deg;
+[CSS::Properties] ok 24 - glyph-orientation-vertical:7;
+[CSS::Properties] ok 25 - image-rendering:optimizeQuality;
+[CSS::Properties] ok 26 - line-height:90%;
+[CSS::Properties] ok 27 - line-height:normal;
+[CSS::Properties] ok 28 - line-height:42;
+[CSS::Properties] ok 29 - marker-start:none;
+[CSS::Properties] ok 30 - marker-start:url('http://www.example.com/pinkish.gif');
+[CSS::Properties] ok 31 - marker-mid:none;
+[CSS::Properties] ok 32 - marker-end:none;
+[CSS::Properties] ok 33 - marker:url('http://www.example.com/greenish.gif') url('http://www.example.com/pinkish.gif');
+[CSS::Properties] ok 34 - opacity:0.75;
+[CSS::Properties] ok 35 - opacity:75%;
+[CSS::Properties] ok 36 - overflow:hidden;
+[CSS::Properties] ok 37 - paint-order:fill stroke;
+[CSS::Properties] ok 38 - shape-rendering:crispEdges;
+[CSS::Properties] ok 39 - stop-opacity:0.75;
+[CSS::Properties] ok 40 - stop-opacity:75%;
+[CSS::Properties] ok 41 - stroke:none;
+[CSS::Properties] ok 42 - stroke:black;
+[CSS::Properties] ok 43 - stroke-dasharray:20, 10;
+[CSS::Properties] ok 44 - stroke-dasharray:em, 2em;
+[CSS::Properties] ok 45 - stroke-dashoffset:3em;
+[CSS::Properties] ok 46 - stroke-linecap:round;
+[CSS::Properties] ok 47 - stroke-linejoin:bevel;
+[CSS::Properties] ok 48 - stroke-opacity:0.75;
+[CSS::Properties] ok 49 - stroke-opacity:75%;
+[CSS::Properties] ok 50 - stroke-width:0.1em;
+[CSS::Properties] ok 51 - stroke-width:2.5;
+[CSS::Properties] ok 52 - stroke-miterlimit:5;
+[CSS::Properties] ok 53 - text-anchor:middle;
+[CSS::Properties] ok 54 - text-decoration:underline blink;
+[CSS::Properties] ok 55 - text-rendering:geometricPrecision;
+[CSS::Properties] ok 56 - visibility:hidden;
+[CSS::Properties] ok 57 - white-space:pre;
+[CSS::Properties] ok 58 - writing-mode:rl-tb;
+[CSS::Properties] 1..58
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/threads.t
+[CSS::Properties] 1..4
+[CSS::Properties] MoarVM oops: MVM_str_hash_fetch_nocheck called with a stale hashtable pointer
+[CSS::Properties]    at SETTING::src/core.c/Hash/Typed.rakumod:11  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:ASSIGN-KEY)
+[CSS::Properties]  from /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9/lib/CSS/Properties.rakumod (CSS::Properties):330  (/home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9/.precomp/ACC227A2C59C784F0B2E45F5498F1A3C9796FD8F/74/743BD9FCBFC0D9B0D4D5F4BE67AFA4FE449F40FF:)
+[CSS::Properties]  from SETTING::src/core.c/operators.rakumod:360  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:infix:<andthen>)
+[CSS::Properties]  from /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9/lib/CSS/Properties.rakumod (CSS::Properties):329  (/home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9/.precomp/ACC227A2C59C784F0B2E45F5498F1A3C9796FD8F/74/743BD9FCBFC0D9B0D4D5F4BE67AFA4FE449F40FF:)
+[CSS::Properties]  from /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9/lib/CSS/Properties.rakumod (CSS::Properties):322  (/home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9/.precomp/ACC227A2C59C784F0B2E45F5498F1A3C9796FD8F/74/743BD9FCBFC0D9B0D4D5F4BE67AFA4FE449F40FF:STORE)
+[CSS::Properties]  from src/Perl6/bootstrap.c/BOOTSTRAP.nqp:2614  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/lib/Perl6/BOOTSTRAP/v6c.moarvm:)
+[CSS::Properties]  from t/threads.t:28  (<ephemeral file>:)
+[CSS::Properties]  from SETTING::src/core.c/Rakudo/Internals/HyperRaceSharedImpl.rakumod:106  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:process-batch)
+[CSS::Properties]  from SETTING::src/core.c/Rakudo/Internals/HyperPipeline.rakumod:124  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:)
+[CSS::Properties]  from SETTING::src/core.c/Rakudo/Internals/HyperPipeline.rakumod:123  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:)
+[CSS::Properties]  from SETTING::src/core.c/Rakudo/Internals/HyperPipeline.rakumod:113  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:)
+[CSS::Properties]  from SETTING::src/core.c/Promise.rakumod:370  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:)
+[CSS::Properties]  from SETTING::src/core.c/ThreadPoolScheduler.rakumod:911  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:)
+[CSS::Properties]  from SETTING::src/core.c/ThreadPoolScheduler.rakumod:271  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:)
+[CSS::Properties]  from SETTING::src/core.c/ThreadPoolScheduler.rakumod:249  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:run-one)
+[CSS::Properties]  from SETTING::src/core.c/ThreadPoolScheduler.rakumod:290  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:)
+[CSS::Properties]  from SETTING::src/core.c/Thread.rakumod:84  (/tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/share/perl6/runtime/CORE.c.setting.moarvm:THREAD-ENTRY)
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/units.t
+[CSS::Properties] ok 1 - pt + pt
+[CSS::Properties] ok 2 - pt + pt
+[CSS::Properties] ok 3 - gist
+[CSS::Properties] ok 4 - pt += pt
+[CSS::Properties] ok 5 - pt += pt
+[CSS::Properties] ok 6 - pt + mm
+[CSS::Properties] ok 7 - pt + mm
+[CSS::Properties] ok 8 - pt + mm
+[CSS::Properties] ok 9 - pt - in
+[CSS::Properties] ok 10 - pt + in
+[CSS::Properties] ok 11 - pt +css in
+[CSS::Properties] ok 12 - pt + px
+[CSS::Properties] ok 13 - pt + pc
+[CSS::Properties] ok 14 - pt - pc
+[CSS::Properties] ok 15 - pt -css pc
+[CSS::Properties] ok 16 - ms to s
+[CSS::Properties] ok 17 - hz to khz
+[CSS::Properties] ok 18 - turn to deg
+[CSS::Properties] ok 19 - turn to rad
+[CSS::Properties] ok 20 - px to pt
+[CSS::Properties] ok 21 - dpi to dpcm
+[CSS::Properties] ok 22 - dppx to dpi
+[CSS::Properties] 1..22
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/vivify.t
+[CSS::Properties] 1..6
+[CSS::Properties] ok 1 - vivifed-name
+[CSS::Properties] ok 2 - 
+[CSS::Properties] ok 3 - 
+[CSS::Properties] ok 4 - 
+[CSS::Properties] ok 5 - 
+[CSS::Properties] ok 6 - 
+[CSS::Properties] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f1b1015317c03fb74197067930bc3cdd939038eb.tar.gz/CSS-Properties-0.10.9 t/write.t
+[CSS::Properties] 1..25
+[CSS::Properties] ok 1 - unoptimized edge property
+[CSS::Properties] ok 2 - edge property
+[CSS::Properties] ok 3 - consolidation of edge properties
+[CSS::Properties] ok 4 - consolidation of edge properties
+[CSS::Properties] ok 5 - optimized properties
+[CSS::Properties] ok 6 - edge unoptimized
+[CSS::Properties] ok 7 - edge optimized
+[CSS::Properties] ok 8 - compound edge
+[CSS::Properties] ok 9 - compound edge - unoptimized
+[CSS::Properties] ok 10 - compound edge - re-optimized
+[CSS::Properties] ok 11 - compound edge - partial optimization
+[CSS::Properties] ok 12 - optimization of default values
+[CSS::Properties] ok 13 - 
+[CSS::Properties] ok 14 - 
+[CSS::Properties] ok 15 - 
+[CSS::Properties] ok 16 - 
+[CSS::Properties] ok 17 - 
+[CSS::Properties] ok 18 - 
+[CSS::Properties] ok 19 - 
+[CSS::Properties] ok 20 - 
+[CSS::Properties] ok 21 - 
+[CSS::Properties] ok 22 - 
+[CSS::Properties] ok 23 - 
+[CSS::Properties] ok 24 - 
+[CSS::Properties] ok 25 - 
+===> Testing [FAIL]: CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10>
+[CSS::Properties] Failed to get passing tests, but continuing with --force-test
+===> Installing: CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10>
+===> Install [OK] for CSS::Properties:ver<0.10.9>:auth<zef:dwarring>:api<0.10>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 5min 23.020s
+             CPU time consumed: 5min 15.633s
+                   Memory peak: 1.1G (swap: 621.3M)
