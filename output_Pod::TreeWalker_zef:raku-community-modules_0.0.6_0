@@ -1,0 +1,112 @@
+Running as unit: run-p798756-i813814.service; invocation ID: 311ba12438fb47afa7a15859f395aeee
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Pod::TreeWalker
+===> Found: Pod::TreeWalker:ver<0.0.6>:auth<zef:raku-community-modules> [via Zef::Repository::Ecosystems<fez>]
+[Pod::TreeWalker] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790146666.798760.5912.866061233315/32c216da28e177e61eed61946253a28514e5410a.tar.gz https://360.zef.pm/P/OD/POD_TREEWALKER/32c216da28e177e61eed61946253a28514e5410a.tar.gz
+===> Fetching [OK]: Pod::TreeWalker:ver<0.0.6>:auth<zef:raku-community-modules> to /home/coke/sandbox/blin/data/zef-data/tmp/1790146666.798760.5912.866061233315/32c216da28e177e61eed61946253a28514e5410a.tar.gz
+[Pod::TreeWalker] Command: tar -t -f ./32c216da28e177e61eed61946253a28514e5410a.tar.gz
+[Pod::TreeWalker] Command: tar -xvf ./32c216da28e177e61eed61946253a28514e5410a.tar.gz -C ../32c216da28e177e61eed61946253a28514e5410a.tar.gz
+===> Extraction [OK]: Pod::TreeWalker to /home/coke/sandbox/blin/data/zef-data/tmp/32c216da28e177e61eed61946253a28514e5410a.tar.gz
+===> Testing: Pod::TreeWalker:ver<0.0.6>:auth<zef:raku-community-modules>
+[Pod::TreeWalker] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/32c216da28e177e61eed61946253a28514e5410a.tar.gz/Pod-TreeWalker-0.0.6 t/basic.rakutest
+[Pod::TreeWalker] 1..9
+[Pod::TreeWalker] # Subtest: single =head1
+[Pod::TreeWalker]     ok 1 - got expected events
+[Pod::TreeWalker]     1..1
+[Pod::TreeWalker] ok 1 - single =head1
+[Pod::TreeWalker] # Subtest: code block
+[Pod::TreeWalker]     ok 1 - got expected events
+[Pod::TreeWalker]     1..1
+[Pod::TreeWalker] ok 2 - code block
+[Pod::TreeWalker] # Subtest: pod comment
+[Pod::TreeWalker]     ok 1 - got expected events
+[Pod::TreeWalker]     1..1
+[Pod::TreeWalker] ok 3 - pod comment
+[Pod::TreeWalker] # Subtest: two paragraphs
+[Pod::TreeWalker]     ok 1 - got expected events
+[Pod::TreeWalker]     1..1
+[Pod::TreeWalker] ok 4 - two paragraphs
+[Pod::TreeWalker] # Subtest: table
+[Pod::TreeWalker]     ok 1 - got expected events
+[Pod::TreeWalker]     1..1
+[Pod::TreeWalker] ok 5 - table
+[Pod::TreeWalker] # Subtest: formatting codes
+[Pod::TreeWalker]     ok 1 - got expected events
+[Pod::TreeWalker]     ok 2 - text content of pod
+[Pod::TreeWalker]     1..2
+[Pod::TreeWalker] ok 6 - formatting codes
+[Pod::TreeWalker] # Subtest: code block
+[Pod::TreeWalker]     ok 1 - got expected events
+[Pod::TreeWalker]     1..1
+[Pod::TreeWalker] ok 7 - code block
+[Pod::TreeWalker] # Subtest: heading, named block, and paragraph
+[Pod::TreeWalker]     ok 1 - got expected events
+[Pod::TreeWalker]     1..1
+[Pod::TreeWalker] ok 8 - heading, named block, and paragraph
+[Pod::TreeWalker] # Subtest: =defn block
+[Pod::TreeWalker]     not ok 1 - got expected events # TODO https://rt.perl.org/Ticket/Display.html?id=126651
+[Pod::TreeWalker]     # Failed test 'got expected events'
+[Pod::TreeWalker]     # at t/basic.rakutest line 242
+[Pod::TreeWalker]     # expected: $[{:name("pod"), :start(Bool::True), :type("named")}, {:start(Bool::True), :type("defn")}, {:start(Bool::True), :type("para")}, {:text("Definition")}, {:end(Bool::True), :type("defn")}, {:end(Bool::True), :type("para")}, {:end(Bool::True), :name("pod"), :type("named")}]
+[Pod::TreeWalker]     #      got: $[{:name("pod"), :start(Bool::True), :type("named")}, {:end(Bool::True), :name("pod"), :type("named")}]
+[Pod::TreeWalker]     1..1
+[Pod::TreeWalker] ok 9 - =defn block
+[Pod::TreeWalker] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/32c216da28e177e61eed61946253a28514e5410a.tar.gz/Pod-TreeWalker-0.0.6 t/declarators.rakutest
+[Pod::TreeWalker] 1..1
+[Pod::TreeWalker] # Subtest: declarators
+[Pod::TreeWalker]     ok 1 - got expected events for class declarator
+[Pod::TreeWalker]     not ok 2 - got expected events for attribute declarator
+[Pod::TreeWalker]     # Failed test 'got expected events for attribute declarator'
+[Pod::TreeWalker]     # at t/declarators.rakutest line 37
+[Pod::TreeWalker]     # expected: $[{:start(Bool::True), :type("declarator"), :wherefore(Any)}, {:text("a foo!")}, {:end(Bool::True), :type("declarator"), :wherefore(Any)}]
+[Pod::TreeWalker]     #      got: $[{:start(Bool::True), :type("declarator"), :wherefore(Attribute.new)}, {:text("a foo!")}, {:end(Bool::True), :type("declarator"), :wherefore(Attribute.new)}]
+[Pod::TreeWalker]     1..2
+[Pod::TreeWalker]     # You failed 1 test of 2
+[Pod::TreeWalker] not ok 1 - declarators
+[Pod::TreeWalker] # Failed test 'declarators'
+[Pod::TreeWalker] # at t/declarators.rakutest line 15
+[Pod::TreeWalker] # You failed 1 test of 1
+[Pod::TreeWalker] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/32c216da28e177e61eed61946253a28514e5410a.tar.gz/Pod-TreeWalker-0.0.6 t/document.rakutest
+[Pod::TreeWalker] 1..1
+[Pod::TreeWalker] ok 1 - got expected events for pod document
+[Pod::TreeWalker] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/32c216da28e177e61eed61946253a28514e5410a.tar.gz/Pod-TreeWalker-0.0.6 t/lists.rakutest
+[Pod::TreeWalker] 1..6
+[Pod::TreeWalker] # Subtest: single-item list surrounded by paragraphs
+[Pod::TreeWalker]     ok 1 - got expected events
+[Pod::TreeWalker]     1..1
+[Pod::TreeWalker] ok 1 - single-item list surrounded by paragraphs
+[Pod::TreeWalker] # Subtest: =for item with numbered items
+[Pod::TreeWalker]     ok 1 - got expected events
+[Pod::TreeWalker]     1..1
+[Pod::TreeWalker] ok 2 - =for item with numbered items
+[Pod::TreeWalker] # Subtest: 2 levels of =item
+[Pod::TreeWalker]     ok 1 - got expected events
+[Pod::TreeWalker]     1..1
+[Pod::TreeWalker] ok 3 - 2 levels of =item
+[Pod::TreeWalker] # Subtest: list ends with =item2
+[Pod::TreeWalker]     ok 1 - got expected events
+[Pod::TreeWalker]     1..1
+[Pod::TreeWalker] ok 4 - list ends with =item2
+[Pod::TreeWalker] # Subtest: jumble of list items skipping levels up and down
+[Pod::TreeWalker]     ok 1 - got expected events
+[Pod::TreeWalker]     1..1
+[Pod::TreeWalker] ok 5 - jumble of list items skipping levels up and down
+[Pod::TreeWalker] # Subtest: list of pod objects created directly
+[Pod::TreeWalker]     ok 1 - got expected events
+[Pod::TreeWalker]     1..1
+[Pod::TreeWalker] ok 6 - list of pod objects created directly
+[Pod::TreeWalker] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/32c216da28e177e61eed61946253a28514e5410a.tar.gz/Pod-TreeWalker-0.0.6 t/no-descend.rakutest
+[Pod::TreeWalker] 1..1
+[Pod::TreeWalker] # Subtest: when NodeListener object returns false from start method, contents are ignored
+[Pod::TreeWalker]     ok 1 - got expected events
+[Pod::TreeWalker]     1..1
+[Pod::TreeWalker] ok 1 - when NodeListener object returns false from start method, contents are ignored
+===> Testing [FAIL]: Pod::TreeWalker:ver<0.0.6>:auth<zef:raku-community-modules>
+[Pod::TreeWalker] Failed to get passing tests, but continuing with --force-test
+===> Installing: Pod::TreeWalker:ver<0.0.6>:auth<zef:raku-community-modules>
+===> Install [OK] for Pod::TreeWalker:ver<0.0.6>:auth<zef:raku-community-modules>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 1min 6.947s
+             CPU time consumed: 1min 29.509s
+                   Memory peak: 1.1G (swap: 0B)

@@ -1,0 +1,30 @@
+Running as unit: run-p715368-i746720.service; invocation ID: 5c186f6c3d7e4409b73b766bade9cf98
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Display::Listings
+===> Found: Display::Listings:ver<0.1.9>:auth<zef:grizzlysmit> [via Zef::Repository::Ecosystems<fez>]
+[Display::Listings] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790144872.715371.7990.29246951251/6d5ff3ddfdec696cc0fd3026aec7c74b4bbd3621.tar.gz https://360.zef.pm/D/IS/DISPLAY_LISTINGS/6d5ff3ddfdec696cc0fd3026aec7c74b4bbd3621.tar.gz
+===> Fetching [OK]: Display::Listings:ver<0.1.9>:auth<zef:grizzlysmit> to /home/coke/sandbox/blin/data/zef-data/tmp/1790144872.715371.7990.29246951251/6d5ff3ddfdec696cc0fd3026aec7c74b4bbd3621.tar.gz
+[Display::Listings] Command: tar -t -f ./6d5ff3ddfdec696cc0fd3026aec7c74b4bbd3621.tar.gz
+[Display::Listings] Command: tar -xvf ./6d5ff3ddfdec696cc0fd3026aec7c74b4bbd3621.tar.gz -C ../6d5ff3ddfdec696cc0fd3026aec7c74b4bbd3621.tar.gz
+===> Extraction [OK]: Display::Listings to /home/coke/sandbox/blin/data/zef-data/tmp/6d5ff3ddfdec696cc0fd3026aec7c74b4bbd3621.tar.gz
+===> Testing: Display::Listings:ver<0.1.9>:auth<zef:grizzlysmit>
+[Display::Listings] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/6d5ff3ddfdec696cc0fd3026aec7c74b4bbd3621.tar.gz t/000-Display::Listings.rakutest
+[Display::Listings] 1..4
+[Display::Listings] Type check failed in binding to parameter '%chnk'; expected Associative but got Any
+[Display::Listings]   in sub strip-ansi at /home/coke/sandbox/blin/installed/Gzz::Text::Utils_zef:grizzlysmit_0.1.23_0/sources/17B02955824D371E48E6A0F77AA2AC288CB01328 (Gzz::Text::Utils) line 1014
+[Display::Listings]   in sub hwcswidth at /home/coke/sandbox/blin/installed/Gzz::Text::Utils_zef:grizzlysmit_0.1.23_0/sources/17B02955824D371E48E6A0F77AA2AC288CB01328 (Gzz::Text::Utils) line 1051
+[Display::Listings]   in sub list-by at /home/coke/sandbox/blin/data/zef-data/tmp/6d5ff3ddfdec696cc0fd3026aec7c74b4bbd3621.tar.gz/lib/Display/Listings.rakumod (Display::Listings) line 664
+[Display::Listings]   in block <unit> at t/000-Display::Listings.rakutest line 22
+[Display::Listings] # You planned 4 tests, but ran 0
+[Display::Listings] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/6d5ff3ddfdec696cc0fd3026aec7c74b4bbd3621.tar.gz t/001-Meta-test.rakutest
+[Display::Listings] 1..1
+[Display::Listings] ok 1 - # SKIP Skipping author test
+===> Testing [FAIL]: Display::Listings:ver<0.1.9>:auth<zef:grizzlysmit>
+[Display::Listings] Failed to get passing tests, but continuing with --force-test
+===> Installing: Display::Listings:ver<0.1.9>:auth<zef:grizzlysmit>
+===> Install [OK] for Display::Listings:ver<0.1.9>:auth<zef:grizzlysmit>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 1min 42.632s
+             CPU time consumed: 2min 1.078s
+                   Memory peak: 1017.3M (swap: 61.6M)

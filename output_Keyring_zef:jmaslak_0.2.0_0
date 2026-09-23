@@ -1,0 +1,44 @@
+Running as unit: run-p72197-i38589.service; invocation ID: 9f16de8893aa4975b4392d618e4d2470
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Keyring
+===> Found: Keyring:ver<0.2.0>:auth<zef:jmaslak> [via Zef::Repository::Ecosystems<fez>]
+[Keyring] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790128626.72199.1882.2388665278854/e36232bcb60823663915223230470a4aadf6b4ba.tar.gz https://360.zef.pm/K/EY/KEYRING/e36232bcb60823663915223230470a4aadf6b4ba.tar.gz
+===> Fetching [OK]: Keyring:ver<0.2.0>:auth<zef:jmaslak> to /home/coke/sandbox/blin/data/zef-data/tmp/1790128626.72199.1882.2388665278854/e36232bcb60823663915223230470a4aadf6b4ba.tar.gz
+[Keyring] Command: tar -t -f ./e36232bcb60823663915223230470a4aadf6b4ba.tar.gz
+[Keyring] Command: tar -xvf ./e36232bcb60823663915223230470a4aadf6b4ba.tar.gz -C ../e36232bcb60823663915223230470a4aadf6b4ba.tar.gz
+===> Extraction [OK]: Keyring to /home/coke/sandbox/blin/data/zef-data/tmp/e36232bcb60823663915223230470a4aadf6b4ba.tar.gz
+===> Testing: Keyring:ver<0.2.0>:auth<zef:jmaslak>
+[Keyring] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e36232bcb60823663915223230470a4aadf6b4ba.tar.gz/Keyring-0.2.0 t/01-procedural.t
+[Keyring] ===SORRY!=== Error while compiling t/01-procedural.t
+[Keyring] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/e36232bcb60823663915223230470a4aadf6b4ba.tar.gz/Keyring-0.2.0/lib/Keyring.rakumod (Keyring)
+[Keyring] Can never assign default value "Positional" to attribute '@!backend-priority', it expects: "Keyring::Backend:U"
+[Keyring] at /home/coke/sandbox/blin/data/zef-data/tmp/e36232bcb60823663915223230470a4aadf6b4ba.tar.gz/Keyring-0.2.0/lib/Keyring.rakumod (Keyring):21
+[Keyring] ------> has Keyring::Backend:U <HERE>@.backend-priority = @default-backends;
+[Keyring] at t/01-procedural.t:10
+[Keyring] ------> <BOL><HERE>use Keyring;
+[Keyring] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e36232bcb60823663915223230470a4aadf6b4ba.tar.gz/Keyring-0.2.0 t/02-subscript.t
+[Keyring] ===SORRY!=== Error while compiling t/02-subscript.t
+[Keyring] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/e36232bcb60823663915223230470a4aadf6b4ba.tar.gz/Keyring-0.2.0/lib/Keyring.rakumod (Keyring)
+[Keyring] Can never assign default value "Positional" to attribute '@!backend-priority', it expects: "Keyring::Backend:U"
+[Keyring] at /home/coke/sandbox/blin/data/zef-data/tmp/e36232bcb60823663915223230470a4aadf6b4ba.tar.gz/Keyring-0.2.0/lib/Keyring.rakumod (Keyring):21
+[Keyring] ------> has Keyring::Backend:U <HERE>@.backend-priority = @default-backends;
+[Keyring] at t/02-subscript.t:10
+[Keyring] ------> <BOL><HERE>use Keyring;
+===> Testing [FAIL]: Keyring:ver<0.2.0>:auth<zef:jmaslak>
+[Keyring] Failed to get passing tests, but continuing with --force-test
+===> Installing: Keyring:ver<0.2.0>:auth<zef:jmaslak>
+===> Install [FAIL] for Keyring:ver<0.2.0>:auth<zef:jmaslak>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Keyring_zef:jmaslak_0.2.0_0/sources/07A03A6398F16248CA1E48A39796E07721EA8ACF (Keyring)
+Can never assign default value "Positional" to attribute '@!backend-priority', it expects: "Keyring::Backend:U"
+at /home/coke/sandbox/blin/installed/Keyring_zef:jmaslak_0.2.0_0/sources/07A03A6398F16248CA1E48A39796E07721EA8ACF (Keyring):21
+------> has Keyring::Backend:U <HERE>@.backend-priority = @default-backends;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Keyring_zef:jmaslak_0.2.0_0/sources/07A03A6398F16248CA1E48A39796E07721EA8ACF (Keyring)
+Can never assign default value "Positional" to attribute '@!backend-priority', it expects: "Keyring::Backend:U"
+at /home/coke/sandbox/blin/installed/Keyring_zef:jmaslak_0.2.0_0/sources/07A03A6398F16248CA1E48A39796E07721EA8ACF (Keyring):21
+------> has Keyring::Backend:U <HERE>@.backend-priority = @default-backends;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1min 57.678s
+             CPU time consumed: 1min 57.680s
+                   Memory peak: 1.1G (swap: 180K)

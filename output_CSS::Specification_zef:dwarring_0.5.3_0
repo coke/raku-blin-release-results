@@ -1,0 +1,254 @@
+Running as unit: run-p318688-i377987.service; invocation ID: 5b1f450ddbd349eb9b0106716db365c7
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: CSS::Specification
+===> Found: CSS::Specification:ver<0.5.3>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
+[CSS::Specification] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790135326.318698.3872.495065196373/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz https://360.zef.pm/C/SS/CSS_SPECIFICATION/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz
+===> Fetching [OK]: CSS::Specification:ver<0.5.3>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1790135326.318698.3872.495065196373/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz
+[CSS::Specification] Command: tar -t -f ./2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz
+[CSS::Specification] Command: tar -xvf ./2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz -C ../2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz
+===> Extraction [OK]: CSS::Specification to /home/coke/sandbox/blin/data/zef-data/tmp/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz
+===> Testing: CSS::Specification:ver<0.5.3>:auth<zef:dwarring>
+[CSS::Specification] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz/CSS-Specification-0.5.3 t/00basic.t
+[CSS::Specification] not ok 1 - CSS::Grammar version
+[CSS::Specification] # Failed test 'CSS::Grammar version'
+[CSS::Specification] # at t/00basic.t line 10
+[CSS::Specification] # Could not find CSS::Grammar:ver<0.3.0..*> in:
+[CSS::Specification] #     /home/coke/sandbox/blin/data/zef-data/tmp/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz/CSS-Specification-0.5.3
+[CSS::Specification] #     /home/coke/sandbox/blin/installed/CSS::Specification_zef:dwarring_0.5.3_0
+[CSS::Specification] #     /home/coke/sandbox/blin/data/zef-data/tmp/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz/CSS-Specification-0.5.3/data/zef/lib
+[CSS::Specification] #     /home/coke/sandbox/blin/installed/Color::Names_zef:thundergnat_2.0.0_2
+[CSS::Specification] #     /home/coke/sandbox/blin/installed/CSS::Grammar_zef:dwarring_0.4.3_0
+[CSS::Specification] #     /home/coke/sandbox/blin/installed/JSON::Fast_zef:timo_0.21.0_0
+[CSS::Specification] #     /home/coke/sandbox/blin/installed/Method::Also_zef:lizmat_0.0.10_0
+[CSS::Specification] #     /home/coke/.raku
+[CSS::Specification] #     /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/site
+[CSS::Specification] #     /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/vendor
+[CSS::Specification] #     /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/core
+[CSS::Specification] #     CompUnit::Repository::AbsolutePath<4780785062920>
+[CSS::Specification] #     CompUnit::Repository::NQP<4780837340608>
+[CSS::Specification] #     CompUnit::Repository::Perl5<4780837340648>
+[CSS::Specification] # 
+[CSS::Specification] # Please note that a 'META6.json' file was found in '.', of which the 'provides' section was used to determine if a dependency is available or not.  Perhaps you need to add 'CSS::Grammar:ver<0.3.0..*>' in the <provides> section of that file?  Or need to specify a directory that does *not* have a 'META6.json' file?
+[CSS::Specification] # Subtest: values: thin
+[CSS::Specification]     ok 1 - spec values parse: thin
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 2 - values: thin
+[CSS::Specification] # Subtest: values: thin?
+[CSS::Specification]     ok 1 - spec values parse: thin?
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 3 - values: thin?
+[CSS::Specification] # Subtest: values: thick | thin
+[CSS::Specification]     ok 1 - spec values parse: thick | thin
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 4 - values: thick | thin
+[CSS::Specification] # Subtest: values: 35 | 7
+[CSS::Specification]     ok 1 - spec values parse: 35 | 7
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 5 - values: 35 | 7
+[CSS::Specification] # Subtest: values: 35 | 7 | 42?
+[CSS::Specification]     ok 1 - spec values parse: 35 | 7 | 42?
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 6 - values: 35 | 7 | 42?
+[CSS::Specification] # Subtest: values: <rule-ref>
+[CSS::Specification]     ok 1 - spec values parse: <rule-ref>
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 7 - values: <rule-ref>
+[CSS::Specification] # Subtest: values: <rule-ref> [ 'css21-prop' <'css3-prop'> ]?
+[CSS::Specification]     ok 1 - spec values parse: <rule-ref> [ 'css21-prop' <'css3-prop'> ]?
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 8 - values: <rule-ref> [ 'css21-prop' <'css3-prop'> ]?
+[CSS::Specification] # Subtest: values: <rule-ref> [, [ 'css21-prop' | <'css3-prop'> ] ]*
+[CSS::Specification]     ok 1 - spec values parse: <rule-ref> [, [ 'css21-prop' | <'css3-prop'> ] ]*
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 9 - values: <rule-ref> [, [ 'css21-prop' | <'css3-prop'> ] ]*
+[CSS::Specification] # Subtest: values: <length>{4}
+[CSS::Specification]     ok 1 - spec values parse: <length>{4}
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 10 - values: <length>{4}
+[CSS::Specification] # Subtest: values: <length>#
+[CSS::Specification]     ok 1 - spec values parse: <length> \#
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 11 - values: <length> \#
+[CSS::Specification] # Subtest: values: <length>#{1,4}
+[CSS::Specification]     ok 1 - spec values parse: <length> \#{1,4}
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 12 - values: <length> \#{1,4}
+[CSS::Specification] # Subtest: values: bold thin && <length>
+[CSS::Specification]     ok 1 - spec values parse: bold thin && <length>
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 13 - values: bold thin && <length>
+[CSS::Specification] # Subtest: values: bold || thin && <length>
+[CSS::Specification]     ok 1 - spec values parse: bold || thin && <length>
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 14 - values: bold || thin && <length>
+[CSS::Specification] # Subtest: values: example( first? , second? , third? )
+[CSS::Specification]     ok 1 - spec values parse: example( first? , second? , third? )
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 15 - values: example( first? , second? , third? )
+[CSS::Specification] # Subtest: term: [<length> | auto]#{4,4}
+[CSS::Specification]     ok 1 - spec term parse: [<length> | auto] \#{4,4}
+[CSS::Specification]     ok 2 - spec term no warnings
+[CSS::Specification]     ok 3 - spec term ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 16 - term: [<length> | auto] \#{4,4}
+[CSS::Specification] # Subtest: func-proto: attr(<identifier>)
+[CSS::Specification]     ok 1 - spec func-proto parse: attr(<identifier>)
+[CSS::Specification]     ok 2 - spec func-proto no warnings
+[CSS::Specification]     ok 3 - spec func-proto ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 17 - func-proto: attr(<identifier>)
+[CSS::Specification] # Subtest: func-proto: linear-gradient( [ <linear-gradient-syntax> ] )
+[CSS::Specification]     ok 1 - spec func-proto parse: linear-gradient( [ <linear-gradient-syntax> ] )
+[CSS::Specification]     ok 2 - spec func-proto no warnings
+[CSS::Specification]     ok 3 - spec func-proto ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 18 - func-proto: linear-gradient( [ <linear-gradient-syntax> ] )
+[CSS::Specification] # Subtest: func-spec: <linear-gradient()> = linear-gradient( [ <linear-gradient-syntax> ] )
+[CSS::Specification]     ok 1 - spec func-spec parse: <linear-gradient()> = linear-gradient( [ <linear-gradient-syntax> ] )
+[CSS::Specification]     ok 2 - spec func-spec no warnings
+[CSS::Specification]     ok 3 - spec func-spec ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 19 - func-spec: <linear-gradient()> = linear-gradient( [ <linear-gradient-syntax> ] )
+[CSS::Specification] # Subtest: values: [ <length-percentage [0,∞]> | auto ]{1,2} | cover | contain
+[CSS::Specification]     ok 1 - spec values parse: [ <length-percentage [0,∞]> | auto ]{1,2} | cover | contain
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 20 - values: [ <length-percentage [0,∞]> | auto ]{1,2} | cover | contain
+[CSS::Specification] # Subtest: values: <bg-layer>#? <final-bg-layer>
+[CSS::Specification]     ok 1 - spec values parse: <bg-layer> \#? <final-bg-layer>
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 21 - values: <bg-layer> \#? <final-bg-layer>
+[CSS::Specification] # Subtest: values: <bg-layer>#? , <final-bg-layer>
+[CSS::Specification]     ok 1 - spec values parse: <bg-layer> \#? , <final-bg-layer>
+[CSS::Specification]     ok 2 - spec values no warnings
+[CSS::Specification]     ok 3 - spec values ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 22 - values: <bg-layer> \#? , <final-bg-layer>
+[CSS::Specification] # Subtest: prop-spec: 'direction'	ltr | rtl | inherit	ltr	all elements, but see prose	yes
+[CSS::Specification]     ok 1 - spec prop-spec parse: 'direction'	ltr | rtl | inherit	ltr	all elements, but see prose	yes
+[CSS::Specification]     ok 2 - spec prop-spec no warnings
+[CSS::Specification]     ok 3 - spec prop-spec ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 23 - prop-spec: 'direction'	ltr | rtl | inherit	ltr	all elements, but see prose	yes
+[CSS::Specification] # Subtest: prop-spec: 'content'	normal | none | [ <string> | <uri> | <counter> | attr(<identifier>) | open-quote | close-quote | no-open-quote | no-close-quote ]+ | inherit	normal	:before and :after pseudo-elements	no
+[CSS::Specification]     ok 1 - spec prop-spec parse: 'content'	normal | none | [ <string> | <uri> | <counter> | attr(<identifier>) | open-quote | close-quote | no-open-quote | no-close-quote ]+ | inherit	normal	:before and :after pseudo-elements	no
+[CSS::Specification]     ok 2 - spec prop-spec no warnings
+[CSS::Specification]     ok 3 - spec prop-spec ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 24 - prop-spec: 'content'	normal | none | [ <string> | <uri> | <counter> | attr(<identifier>) | open-quote | close-quote | no-open-quote | no-close-quote ]+ | inherit	normal	:before and :after pseudo-elements	no
+[CSS::Specification] # Subtest: func-spec: <calc()> = calc( <calc-sum> )
+[CSS::Specification]     ok 1 - spec func-spec parse: <calc()> = calc( <calc-sum> )
+[CSS::Specification]     ok 2 - spec func-spec no warnings
+[CSS::Specification]     ok 3 - spec func-spec ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 25 - func-spec: <calc()> = calc( <calc-sum> )
+[CSS::Specification] # Subtest: func-spec: <example()> = example( first , second? , third? )
+[CSS::Specification]     ok 1 - spec func-spec parse: <example()> = example( first , second? , third? )
+[CSS::Specification]     ok 2 - spec func-spec no warnings
+[CSS::Specification]     ok 3 - spec func-spec ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 26 - func-spec: <example()> = example( first , second? , third? )
+[CSS::Specification] # Subtest: rule-spec: <calc-sum> = <calc-product> [ [ '+' | '-' ] <calc-product> ]*
+[CSS::Specification]     ok 1 - spec rule-spec parse: <calc-sum> = <calc-product> [ [ '+' | '-' ] <calc-product> ]*
+[CSS::Specification]     ok 2 - spec rule-spec no warnings
+[CSS::Specification]     ok 3 - spec rule-spec ast
+[CSS::Specification]     1..3
+[CSS::Specification] ok 27 - rule-spec: <calc-sum> = <calc-product> [ [ '+' | '-' ] <calc-product> ]*
+[CSS::Specification] # Subtest: prop-spec: 'width' *	<length> | <percentage> | auto	auto	all elements but non-replaced inline elements, table rows, and row groups	no
+[CSS::Specification]     ok 1 - spec prop-spec parse: 'width' *	<length> | <percentage> | auto	auto	all elements but non-replaced inline elements, table rows, and row groups	no
+[CSS::Specification]     ok 2 - spec prop-spec no warnings
+[CSS::Specification]     1..2
+[CSS::Specification] ok 28 - prop-spec: 'width' *	<length> | <percentage> | auto	auto	all elements but non-replaced inline elements, table rows, and row groups	no
+[CSS::Specification] 1..28
+[CSS::Specification] # You failed 1 test of 28
+[CSS::Specification] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz/CSS-Specification-0.5.3 t/defs.t
+[CSS::Specification] ok 1 - not number: 0%
+[CSS::Specification] ok 2 - percentage: 0%
+[CSS::Specification] ok 3 - length: 0%
+[CSS::Specification] ok 4 - not angle: 0%
+[CSS::Specification] ok 5 - not number: 10%
+[CSS::Specification] ok 6 - percentage: 10%
+[CSS::Specification] ok 7 - length: 10%
+[CSS::Specification] ok 8 - not angle: 10%
+[CSS::Specification] ok 9 - not number: 0deg
+[CSS::Specification] ok 10 - not percentage: 0deg
+[CSS::Specification] ok 11 - not length: 0deg
+[CSS::Specification] ok 12 - angle: 0deg
+[CSS::Specification] ok 13 - number: 0
+[CSS::Specification] ok 14 - not percentage: 0
+[CSS::Specification] ok 15 - length: 0
+[CSS::Specification] ok 16 - angle: 0
+[CSS::Specification] ok 17 - number: 1
+[CSS::Specification] ok 18 - not percentage: 1
+[CSS::Specification] ok 19 - not length: 1
+[CSS::Specification] ok 20 - angle: 1
+[CSS::Specification] ok 21 - css3 terms number parse: 123.45
+[CSS::Specification] ok 22 - css3 terms number no warnings
+[CSS::Specification] ok 23 - css3 terms number ast
+[CSS::Specification] ok 24 - css3 terms integer parse: 123
+[CSS::Specification] ok 25 - css3 terms integer no warnings
+[CSS::Specification] ok 26 - css3 terms integer ast
+[CSS::Specification] ok 27 - css3 terms uri parse: url(foo.jpg)
+[CSS::Specification] ok 28 - css3 terms uri no warnings
+[CSS::Specification] ok 29 - css3 terms uri ast
+[CSS::Specification] ok 30 - css3 terms keyw parse: Abc
+[CSS::Specification] ok 31 - css3 terms keyw no warnings
+[CSS::Specification] ok 32 - css3 terms keyw ast
+[CSS::Specification] ok 33 - css3 terms identifier parse: Foo
+[CSS::Specification] ok 34 - css3 terms identifier no warnings
+[CSS::Specification] ok 35 - css3 terms identifier ast
+[CSS::Specification] ok 36 - css3 terms identifier parse: Foo  
+[CSS::Specification] # 
+[CSS::Specification] ok 37 - css3 terms identifier no warnings
+[CSS::Specification] ok 38 - css3 terms identifier ast
+[CSS::Specification] ok 39 - css3 terms identifiers parse: Aaa bb
+[CSS::Specification] ok 40 - css3 terms identifiers no warnings
+[CSS::Specification] ok 41 - css3 terms identifiers ast
+[CSS::Specification] ok 42 - css3 terms identifiers parse: Aaa  bb
+[CSS::Specification] ok 43 - css3 terms identifiers no warnings
+[CSS::Specification] ok 44 - css3 terms identifiers ast
+[CSS::Specification] ok 45 - css3 terms identifiers parse: Aaa
+[CSS::Specification] bb
+[CSS::Specification] ok 46 - css3 terms identifiers no warnings
+[CSS::Specification] ok 47 - css3 terms identifiers ast
+[CSS::Specification] 1..47
+===> Testing [FAIL]: CSS::Specification:ver<0.5.3>:auth<zef:dwarring>
+[CSS::Specification] Failed to get passing tests, but continuing with --force-test
+===> Installing: CSS::Specification:ver<0.5.3>:auth<zef:dwarring>
+===> Install [OK] for CSS::Specification:ver<0.5.3>:auth<zef:dwarring>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 2min 186ms
+             CPU time consumed: 2min 11.819s
+                   Memory peak: 1G (swap: 2.7M)

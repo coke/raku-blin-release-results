@@ -1,0 +1,80 @@
+Running as unit: run-p448497-i428822.service; invocation ID: 26089f66a75a44c2b76ce8ceec2a4500
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: CPAN::Uploader::Tiny
+===> Found: CPAN::Uploader::Tiny:ver<0.1.0>:auth<zef:skaji> [via Zef::Repository::Ecosystems<fez>]
+[CPAN::Uploader::Tiny] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790138551.448501.6907.510996528181/cf18fad5569032bdba28eb310df3af6a2263931c.tar.gz https://360.zef.pm/C/PA/CPAN_UPLOADER_TINY/cf18fad5569032bdba28eb310df3af6a2263931c.tar.gz
+===> Fetching [OK]: CPAN::Uploader::Tiny:ver<0.1.0>:auth<zef:skaji> to /home/coke/sandbox/blin/data/zef-data/tmp/1790138551.448501.6907.510996528181/cf18fad5569032bdba28eb310df3af6a2263931c.tar.gz
+[CPAN::Uploader::Tiny] Command: tar -t -f ./cf18fad5569032bdba28eb310df3af6a2263931c.tar.gz
+[CPAN::Uploader::Tiny] Command: tar -xvf ./cf18fad5569032bdba28eb310df3af6a2263931c.tar.gz -C ../cf18fad5569032bdba28eb310df3af6a2263931c.tar.gz
+===> Extraction [OK]: CPAN::Uploader::Tiny to /home/coke/sandbox/blin/data/zef-data/tmp/cf18fad5569032bdba28eb310df3af6a2263931c.tar.gz
+===> Testing: CPAN::Uploader::Tiny:ver<0.1.0>:auth<zef:skaji>
+[CPAN::Uploader::Tiny] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/cf18fad5569032bdba28eb310df3af6a2263931c.tar.gz/CPAN-Uploader-Tiny-0.1.0 t/01-basic.rakutest
+[CPAN::Uploader::Tiny] ===SORRY!=== Error while compiling t/01-basic.rakutest
+[CPAN::Uploader::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/cf18fad5569032bdba28eb310df3af6a2263931c.tar.gz/CPAN-Uploader-Tiny-0.1.0/lib/CPAN/Uploader/Tiny.rakumod (CPAN::Uploader::Tiny)
+[CPAN::Uploader::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+[CPAN::Uploader::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+[CPAN::Uploader::Tiny] ===SORRY!===
+[CPAN::Uploader::Tiny] Unrecognized regex metacharacter - (must be quoted to match literally)
+[CPAN::Uploader::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[CPAN::Uploader::Tiny] ------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[CPAN::Uploader::Tiny] Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+[CPAN::Uploader::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[CPAN::Uploader::Tiny] ------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[CPAN::Uploader::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+[CPAN::Uploader::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Base;
+[CPAN::Uploader::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+[CPAN::Uploader::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Curl;
+[CPAN::Uploader::Tiny] at /home/coke/sandbox/blin/data/zef-data/tmp/cf18fad5569032bdba28eb310df3af6a2263931c.tar.gz/CPAN-Uploader-Tiny-0.1.0/lib/CPAN/Uploader/Tiny.rakumod (CPAN::Uploader::Tiny):4
+[CPAN::Uploader::Tiny] ------> <BOL><HERE>use HTTP::Tinyish;
+[CPAN::Uploader::Tiny] at t/01-basic.rakutest:2
+[CPAN::Uploader::Tiny] ------> <BOL><HERE>use CPAN::Uploader::Tiny;
+===> Testing [FAIL]: CPAN::Uploader::Tiny:ver<0.1.0>:auth<zef:skaji>
+[CPAN::Uploader::Tiny] Failed to get passing tests, but continuing with --force-test
+===> Installing: CPAN::Uploader::Tiny:ver<0.1.0>:auth<zef:skaji>
+===> Install [FAIL] for CPAN::Uploader::Tiny:ver<0.1.0>:auth<zef:skaji>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/CPAN::Uploader::Tiny_zef:skaji_0.1.0_0/sources/2F7E6C8A956E22E7D5B8A251DACDA9AD42B21F10 (CPAN::Uploader::Tiny)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+===SORRY!===
+Unrecognized regex metacharacter - (must be quoted to match literally)
+at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+
+
+at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+------> <BOL><HERE>use HTTP::Tinyish::Base;
+
+at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+------> <BOL><HERE>use HTTP::Tinyish::Curl;
+
+at /home/coke/sandbox/blin/installed/CPAN::Uploader::Tiny_zef:skaji_0.1.0_0/sources/2F7E6C8A956E22E7D5B8A251DACDA9AD42B21F10 (CPAN::Uploader::Tiny):4
+------> <BOL><HERE>use HTTP::Tinyish;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/CPAN::Uploader::Tiny_zef:skaji_0.1.0_0/sources/2F7E6C8A956E22E7D5B8A251DACDA9AD42B21F10 (CPAN::Uploader::Tiny)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+===SORRY!===
+Unrecognized regex metacharacter - (must be quoted to match literally)
+at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+
+
+at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+------> <BOL><HERE>use HTTP::Tinyish::Base;
+
+at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+------> <BOL><HERE>use HTTP::Tinyish::Curl;
+
+at /home/coke/sandbox/blin/installed/CPAN::Uploader::Tiny_zef:skaji_0.1.0_0/sources/2F7E6C8A956E22E7D5B8A251DACDA9AD42B21F10 (CPAN::Uploader::Tiny):4
+------> <BOL><HERE>use HTTP::Tinyish;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1min 56.243s
+             CPU time consumed: 1min 57.922s
+                   Memory peak: 1.3G (swap: 12.9M)

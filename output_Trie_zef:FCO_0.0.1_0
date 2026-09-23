@@ -1,0 +1,58 @@
+Running as unit: run-p273384-i257203.service
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Trie
+===> Found: Trie:ver<0.0.1>:auth<zef:FCO> [via Zef::Repository::Ecosystems<fez>]
+[Trie] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790134055.273388.5000.970560406363/5fd049406f61c5016605e823908deae7910f80cf.tar.gz https://360.zef.pm/T/RI/TRIE/5fd049406f61c5016605e823908deae7910f80cf.tar.gz
+===> Fetching [OK]: Trie:ver<0.0.1>:auth<zef:FCO> to /home/coke/sandbox/blin/data/zef-data/tmp/1790134055.273388.5000.970560406363/5fd049406f61c5016605e823908deae7910f80cf.tar.gz
+[Trie] Command: tar -t -f ./5fd049406f61c5016605e823908deae7910f80cf.tar.gz
+[Trie] Command: tar -xvf ./5fd049406f61c5016605e823908deae7910f80cf.tar.gz -C ../5fd049406f61c5016605e823908deae7910f80cf.tar.gz
+===> Extraction [OK]: Trie to /home/coke/sandbox/blin/data/zef-data/tmp/5fd049406f61c5016605e823908deae7910f80cf.tar.gz
+===> Testing: Trie:ver<0.0.1>:auth<zef:FCO>
+[Trie] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5fd049406f61c5016605e823908deae7910f80cf.tar.gz/Trie-0.0.1 t/01-basic.rakutest
+[Trie] ===SORRY!=== Error while compiling t/01-basic.rakutest
+[Trie] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/5fd049406f61c5016605e823908deae7910f80cf.tar.gz/Trie-0.0.1/lib/Trie.rakumod (Trie)
+[Trie] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/OrderedHash_zef:FCO_0.0.4_0/sources/770353CDE8D85E343BEEC7699FE49961352B9FDD (OrderedHash)
+[Trie] Can never assign default value "T" to attribute '$!of', it expects: "Mu:U"
+[Trie] at /home/coke/sandbox/blin/installed/OrderedHash_zef:FCO_0.0.4_0/sources/770353CDE8D85E343BEEC7699FE49961352B9FDD (OrderedHash):2
+[Trie] ------> has Mu:U    <HERE>$!of    = T;
+[Trie] at /home/coke/sandbox/blin/data/zef-data/tmp/5fd049406f61c5016605e823908deae7910f80cf.tar.gz/Trie-0.0.1/lib/Trie.rakumod (Trie):2
+[Trie] ------> <BOL><HERE>use OrderedHash;
+[Trie] at t/01-basic.rakutest:3
+[Trie] ------> <BOL><HERE>use Trie;
+[Trie] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5fd049406f61c5016605e823908deae7910f80cf.tar.gz/Trie-0.0.1 t/02-trie.rakutest
+[Trie] ===SORRY!=== Error while compiling t/02-trie.rakutest
+[Trie] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/5fd049406f61c5016605e823908deae7910f80cf.tar.gz/Trie-0.0.1/lib/Trie.rakumod (Trie)
+[Trie] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/OrderedHash_zef:FCO_0.0.4_0/sources/770353CDE8D85E343BEEC7699FE49961352B9FDD (OrderedHash)
+[Trie] Can never assign default value "T" to attribute '$!of', it expects: "Mu:U"
+[Trie] at /home/coke/sandbox/blin/installed/OrderedHash_zef:FCO_0.0.4_0/sources/770353CDE8D85E343BEEC7699FE49961352B9FDD (OrderedHash):2
+[Trie] ------> has Mu:U    <HERE>$!of    = T;
+[Trie] at /home/coke/sandbox/blin/data/zef-data/tmp/5fd049406f61c5016605e823908deae7910f80cf.tar.gz/Trie-0.0.1/lib/Trie.rakumod (Trie):2
+[Trie] ------> <BOL><HERE>use OrderedHash;
+[Trie] at t/02-trie.rakutest:1
+[Trie] ------> <BOL><HERE>use Trie;
+===> Testing [FAIL]: Trie:ver<0.0.1>:auth<zef:FCO>
+[Trie] Failed to get passing tests, but continuing with --force-test
+===> Installing: Trie:ver<0.0.1>:auth<zef:FCO>
+===> Install [FAIL] for Trie:ver<0.0.1>:auth<zef:FCO>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Trie_zef:FCO_0.0.1_0/sources/E563EC13A1BDD55E755E83366A886A017701570F (Trie)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/OrderedHash_zef:FCO_0.0.4_0/sources/770353CDE8D85E343BEEC7699FE49961352B9FDD (OrderedHash)
+Can never assign default value "T" to attribute '$!of', it expects: "Mu:U"
+at /home/coke/sandbox/blin/installed/OrderedHash_zef:FCO_0.0.4_0/sources/770353CDE8D85E343BEEC7699FE49961352B9FDD (OrderedHash):2
+------> has Mu:U    <HERE>$!of    = T;
+
+at /home/coke/sandbox/blin/installed/Trie_zef:FCO_0.0.1_0/sources/E563EC13A1BDD55E755E83366A886A017701570F (Trie):2
+------> <BOL><HERE>use OrderedHash;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Trie_zef:FCO_0.0.1_0/sources/E563EC13A1BDD55E755E83366A886A017701570F (Trie)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/OrderedHash_zef:FCO_0.0.4_0/sources/770353CDE8D85E343BEEC7699FE49961352B9FDD (OrderedHash)
+Can never assign default value "T" to attribute '$!of', it expects: "Mu:U"
+at /home/coke/sandbox/blin/installed/OrderedHash_zef:FCO_0.0.4_0/sources/770353CDE8D85E343BEEC7699FE49961352B9FDD (OrderedHash):2
+------> has Mu:U    <HERE>$!of    = T;
+
+at /home/coke/sandbox/blin/installed/Trie_zef:FCO_0.0.1_0/sources/E563EC13A1BDD55E755E83366A886A017701570F (Trie):2
+------> <BOL><HERE>use OrderedHash;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 2min 7.589s
+             CPU time consumed: 2min 14.694s
+                   Memory peak: 1.1G (swap: 0B)

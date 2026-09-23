@@ -1,0 +1,147 @@
+Running as unit: run-p774396-i781596.service; invocation ID: 5dce30bdd2ee491ab854519fe3a6844a
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Selkie::UI
+===> Found: Selkie::UI:ver<0.0.4>:auth<zef:FCO> [via Zef::Repository::Ecosystems<fez>]
+[Selkie::UI] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790146145.774418.9724.293484907357/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz https://360.zef.pm/S/EL/SELKIE_UI/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz
+===> Fetching [OK]: Selkie::UI:ver<0.0.4>:auth<zef:FCO> to /home/coke/sandbox/blin/data/zef-data/tmp/1790146145.774418.9724.293484907357/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz
+[Selkie::UI] Command: tar -t -f ./94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz
+[Selkie::UI] Command: tar -xvf ./94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz -C ../94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz
+===> Extraction [OK]: Selkie::UI to /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz
+===> Testing: Selkie::UI:ver<0.0.4>:auth<zef:FCO>
+[Selkie::UI] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4 t/01-button-textinput.rakutest
+[Selkie::UI] ===SORRY!=== Error while compiling t/01-button-textinput.rakutest
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI.rakumod (Selkie::UI)
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI/AppBuilder.rakumod (Selkie::UI::AppBuilder)
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App)
+[Selkie::UI] ===SORRY!===
+[Selkie::UI] QAST::Block with cuid 83, cuid 82, cuid 81, cuid 50, cuid 48, cuid 47, cuid 46, cuid 45 has not appeared in /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/5547EAFEE4F06C0459F57E9B6E3AB6CD21B703B5 (Selkie::App::Internal::ErrorLog)
+[Selkie::UI] at /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App):402
+[Selkie::UI] ------> <BOL><HERE>use Selkie::App::Internal::ErrorLog;
+[Selkie::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI/AppBuilder.rakumod (Selkie::UI::AppBuilder):3
+[Selkie::UI] ------> <BOL><HERE>use Selkie::App;
+[Selkie::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI.rakumod (Selkie::UI):5
+[Selkie::UI] ------> <BOL><HERE>use Selkie::UI::AppBuilder;
+[Selkie::UI] at t/01-button-textinput.rakutest:2
+[Selkie::UI] ------> <BOL><HERE>use Selkie::UI;
+[Selkie::UI] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4 t/02-layout-structure.rakutest
+[Selkie::UI] ===SORRY!=== Error while compiling t/02-layout-structure.rakutest
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App)
+[Selkie::UI] ===SORRY!===
+[Selkie::UI] QAST::Block with cuid 59, cuid 58, cuid 57, cuid 26, cuid 24, cuid 23, cuid 22, cuid 21 has not appeared in /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/5547EAFEE4F06C0459F57E9B6E3AB6CD21B703B5 (Selkie::App::Internal::ErrorLog)
+[Selkie::UI] at /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App):402
+[Selkie::UI] ------> <BOL><HERE>use Selkie::App::Internal::ErrorLog;
+[Selkie::UI] at t/02-layout-structure.rakutest:2
+[Selkie::UI] ------> <BOL><HERE>use Selkie::App;
+[Selkie::UI] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4 t/03-text-stream-collection.rakutest
+[Selkie::UI] ===SORRY!=== Error while compiling t/03-text-stream-collection.rakutest
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI.rakumod (Selkie::UI)
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI/AppBuilder.rakumod (Selkie::UI::AppBuilder)
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App)
+[Selkie::UI] ===SORRY!===
+[Selkie::UI] QAST::Block with cuid 59, cuid 58, cuid 57, cuid 26, cuid 24, cuid 23, cuid 22, cuid 21 has not appeared in /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/5547EAFEE4F06C0459F57E9B6E3AB6CD21B703B5 (Selkie::App::Internal::ErrorLog)
+[Selkie::UI] at /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App):402
+[Selkie::UI] ------> <BOL><HERE>use Selkie::App::Internal::ErrorLog;
+[Selkie::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI/AppBuilder.rakumod (Selkie::UI::AppBuilder):3
+[Selkie::UI] ------> <BOL><HERE>use Selkie::App;
+[Selkie::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI.rakumod (Selkie::UI):5
+[Selkie::UI] ------> <BOL><HERE>use Selkie::UI::AppBuilder;
+[Selkie::UI] at t/03-text-stream-collection.rakutest:2
+[Selkie::UI] ------> <BOL><HERE>use Selkie::UI;
+[Selkie::UI] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4 t/04-data-visualization.rakutest
+[Selkie::UI] ===SORRY!=== Error while compiling t/04-data-visualization.rakutest
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI.rakumod (Selkie::UI)
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI/AppBuilder.rakumod (Selkie::UI::AppBuilder)
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App)
+[Selkie::UI] ===SORRY!===
+[Selkie::UI] QAST::Block with cuid 59, cuid 58, cuid 57, cuid 26, cuid 24, cuid 23, cuid 22, cuid 21 has not appeared in /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/5547EAFEE4F06C0459F57E9B6E3AB6CD21B703B5 (Selkie::App::Internal::ErrorLog)
+[Selkie::UI] at /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App):402
+[Selkie::UI] ------> <BOL><HERE>use Selkie::App::Internal::ErrorLog;
+[Selkie::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI/AppBuilder.rakumod (Selkie::UI::AppBuilder):3
+[Selkie::UI] ------> <BOL><HERE>use Selkie::App;
+[Selkie::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI.rakumod (Selkie::UI):5
+[Selkie::UI] ------> <BOL><HERE>use Selkie::UI::AppBuilder;
+[Selkie::UI] at t/04-data-visualization.rakutest:2
+[Selkie::UI] ------> <BOL><HERE>use Selkie::UI;
+[Selkie::UI] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4 t/05-system-helpers.rakutest
+[Selkie::UI] ===SORRY!=== Error while compiling t/05-system-helpers.rakutest
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI.rakumod (Selkie::UI)
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI/AppBuilder.rakumod (Selkie::UI::AppBuilder)
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App)
+[Selkie::UI] ===SORRY!===
+[Selkie::UI] QAST::Block with cuid 59, cuid 58, cuid 57, cuid 26, cuid 24, cuid 23, cuid 22, cuid 21 has not appeared in /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/5547EAFEE4F06C0459F57E9B6E3AB6CD21B703B5 (Selkie::App::Internal::ErrorLog)
+[Selkie::UI] at /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App):402
+[Selkie::UI] ------> <BOL><HERE>use Selkie::App::Internal::ErrorLog;
+[Selkie::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI/AppBuilder.rakumod (Selkie::UI::AppBuilder):3
+[Selkie::UI] ------> <BOL><HERE>use Selkie::App;
+[Selkie::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI.rakumod (Selkie::UI):5
+[Selkie::UI] ------> <BOL><HERE>use Selkie::UI::AppBuilder;
+[Selkie::UI] at t/05-system-helpers.rakutest:2
+[Selkie::UI] ------> <BOL><HERE>use Selkie::UI;
+[Selkie::UI] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4 t/06-reactive-state.rakutest
+[Selkie::UI] ===SORRY!=== Error while compiling t/06-reactive-state.rakutest
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI.rakumod (Selkie::UI)
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI/AppBuilder.rakumod (Selkie::UI::AppBuilder)
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App)
+[Selkie::UI] ===SORRY!===
+[Selkie::UI] QAST::Block with cuid 59, cuid 58, cuid 57, cuid 26, cuid 24, cuid 23, cuid 22, cuid 21 has not appeared in /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/5547EAFEE4F06C0459F57E9B6E3AB6CD21B703B5 (Selkie::App::Internal::ErrorLog)
+[Selkie::UI] at /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App):402
+[Selkie::UI] ------> <BOL><HERE>use Selkie::App::Internal::ErrorLog;
+[Selkie::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI/AppBuilder.rakumod (Selkie::UI::AppBuilder):3
+[Selkie::UI] ------> <BOL><HERE>use Selkie::App;
+[Selkie::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI.rakumod (Selkie::UI):5
+[Selkie::UI] ------> <BOL><HERE>use Selkie::UI::AppBuilder;
+[Selkie::UI] at t/06-reactive-state.rakutest:2
+[Selkie::UI] ------> <BOL><HERE>use Selkie::UI;
+[Selkie::UI] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4 t/08-builder-extensions.rakutest
+[Selkie::UI] ===SORRY!=== Error while compiling t/08-builder-extensions.rakutest
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI.rakumod (Selkie::UI)
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI/AppBuilder.rakumod (Selkie::UI::AppBuilder)
+[Selkie::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App)
+[Selkie::UI] ===SORRY!===
+[Selkie::UI] QAST::Block with cuid 59, cuid 58, cuid 57, cuid 26, cuid 24, cuid 23, cuid 22, cuid 21 has not appeared in /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/5547EAFEE4F06C0459F57E9B6E3AB6CD21B703B5 (Selkie::App::Internal::ErrorLog)
+[Selkie::UI] at /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App):402
+[Selkie::UI] ------> <BOL><HERE>use Selkie::App::Internal::ErrorLog;
+[Selkie::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI/AppBuilder.rakumod (Selkie::UI::AppBuilder):3
+[Selkie::UI] ------> <BOL><HERE>use Selkie::App;
+[Selkie::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/94159aef61f1935117c1575b39a04d8ed5ee8674.tar.gz/Selkie-UI-0.0.4/lib/Selkie/UI.rakumod (Selkie::UI):5
+[Selkie::UI] ------> <BOL><HERE>use Selkie::UI::AppBuilder;
+[Selkie::UI] at t/08-builder-extensions.rakutest:2
+[Selkie::UI] ------> <BOL><HERE>use Selkie::UI;
+===> Testing [FAIL]: Selkie::UI:ver<0.0.4>:auth<zef:FCO>
+[Selkie::UI] Failed to get passing tests, but continuing with --force-test
+===> Installing: Selkie::UI:ver<0.0.4>:auth<zef:FCO>
+===> Install [FAIL] for Selkie::UI:ver<0.0.4>:auth<zef:FCO>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie::UI_zef:FCO_0.0.4_0/sources/6078066F9AD53B2CFA8A614469942D508F6E52D3 (Selkie::UI)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie::UI_zef:FCO_0.0.4_0/sources/89D8FC8B1FFFC5C771D1C2B3764C8B96512EDF58 (Selkie::UI::AppBuilder)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App)
+===SORRY!===
+QAST::Block with cuid 83, cuid 82, cuid 81, cuid 50, cuid 48, cuid 47, cuid 46, cuid 45 has not appeared in /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/5547EAFEE4F06C0459F57E9B6E3AB6CD21B703B5 (Selkie::App::Internal::ErrorLog)
+
+at /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App):402
+------> <BOL><HERE>use Selkie::App::Internal::ErrorLog;
+
+at /home/coke/sandbox/blin/installed/Selkie::UI_zef:FCO_0.0.4_0/sources/89D8FC8B1FFFC5C771D1C2B3764C8B96512EDF58 (Selkie::UI::AppBuilder):3
+------> <BOL><HERE>use Selkie::App;
+
+at /home/coke/sandbox/blin/installed/Selkie::UI_zef:FCO_0.0.4_0/sources/6078066F9AD53B2CFA8A614469942D508F6E52D3 (Selkie::UI):5
+------> <BOL><HERE>use Selkie::UI::AppBuilder;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie::UI_zef:FCO_0.0.4_0/sources/6078066F9AD53B2CFA8A614469942D508F6E52D3 (Selkie::UI)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie::UI_zef:FCO_0.0.4_0/sources/89D8FC8B1FFFC5C771D1C2B3764C8B96512EDF58 (Selkie::UI::AppBuilder)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App)
+===SORRY!===
+QAST::Block with cuid 83, cuid 82, cuid 81, cuid 50, cuid 48, cuid 47, cuid 46, cuid 45 has not appeared in /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/5547EAFEE4F06C0459F57E9B6E3AB6CD21B703B5 (Selkie::App::Internal::ErrorLog)
+
+at /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App):402
+------> <BOL><HERE>use Selkie::App::Internal::ErrorLog;
+
+at /home/coke/sandbox/blin/installed/Selkie::UI_zef:FCO_0.0.4_0/sources/89D8FC8B1FFFC5C771D1C2B3764C8B96512EDF58 (Selkie::UI::AppBuilder):3
+------> <BOL><HERE>use Selkie::App;
+
+at /home/coke/sandbox/blin/installed/Selkie::UI_zef:FCO_0.0.4_0/sources/6078066F9AD53B2CFA8A614469942D508F6E52D3 (Selkie::UI):5
+------> <BOL><HERE>use Selkie::UI::AppBuilder;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 3min 8.575s
+             CPU time consumed: 3min 40.306s
+                   Memory peak: 1.8G (swap: 23.6M)

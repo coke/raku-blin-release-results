@@ -1,0 +1,523 @@
+Running as unit: run-p981698-i1010654.service; invocation ID: aef1eb0f5fe8444b9f106c81350360bc
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: PDF::Document
+===> Found: PDF::Document:ver<0.0.10>:auth<zef:tbrowder>:api<1> [via Zef::Repository::Ecosystems<fez>]
+[PDF::Document] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790151955.981699.8826.5857516971/d9eca68dbabd8ac57322014609d6cad855086d41.tar.gz https://360.zef.pm/P/DF/PDF_DOCUMENT/d9eca68dbabd8ac57322014609d6cad855086d41.tar.gz
+===> Fetching [OK]: PDF::Document:ver<0.0.10>:auth<zef:tbrowder>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790151955.981699.8826.5857516971/d9eca68dbabd8ac57322014609d6cad855086d41.tar.gz
+[PDF::Document] Command: tar -t -f ./d9eca68dbabd8ac57322014609d6cad855086d41.tar.gz
+[PDF::Document] Command: tar -xvf ./d9eca68dbabd8ac57322014609d6cad855086d41.tar.gz -C ../d9eca68dbabd8ac57322014609d6cad855086d41.tar.gz
+===> Extraction [OK]: PDF::Document to /home/coke/sandbox/blin/data/zef-data/tmp/d9eca68dbabd8ac57322014609d6cad855086d41.tar.gz
+===> Testing: PDF::Document:ver<0.0.10>:auth<zef:tbrowder>:api<1>
+[PDF::Document] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d9eca68dbabd8ac57322014609d6cad855086d41.tar.gz/PDF-Document-0.0.10 t/0-load.t
+[PDF::Document] Potential difficulties:
+[PDF::Document]     Useless use of $val in sink context
+[PDF::Document]     at /home/coke/sandbox/blin/data/zef-data/tmp/d9eca68dbabd8ac57322014609d6cad855086d41.tar.gz/PDF-Document-0.0.10/lib/PDF/Document.rakumod (PDF::Document):779
+[PDF::Document]     ------>                 when /r|rad/   { <HERE>$val }
+[PDF::Document] ok 1 - PDF::Document module can be use-d ok
+[PDF::Document] ok 2 - PDF::Document::Role module can be use-d ok
+[PDF::Document] 1..2
+[PDF::Document] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d9eca68dbabd8ac57322014609d6cad855086d41.tar.gz/PDF-Document-0.0.10 t/1-constants.t
+[PDF::Document] ok 1 - testing deg2rad
+[PDF::Document] ok 2 - testing deg2rad
+[PDF::Document] ok 3 - testing deg2rad
+[PDF::Document] ok 4 - testing deg2rad
+[PDF::Document] ok 5 - testing deg2rad
+[PDF::Document] ok 6 - testing deg2rad
+[PDF::Document] ok 7 - testing deg2rad
+[PDF::Document] ok 8 - testing deg2rad
+[PDF::Document] ok 9 - testing rad2deg
+[PDF::Document] ok 10 - testing deg2rad
+[PDF::Document] ok 11 - testing deg2rad
+[PDF::Document] ok 12 - testing deg2rad
+[PDF::Document] ok 13 - testing deg2rad
+[PDF::Document] ok 14 - testing deg2rad
+[PDF::Document] ok 15 - testing deg2rad
+[PDF::Document] ok 16 - testing deg2rad
+[PDF::Document] ok 17 - testing i2p
+[PDF::Document] ok 18 - testing f2p
+[PDF::Document] ok 19 - testing f2p
+[PDF::Document] ok 20 - testing c2p
+[PDF::Document] ok 21 - testing d2p
+[PDF::Document] ok 22 - testing m2p
+[PDF::Document] ok 23 - testing mm2p
+[PDF::Document] 1..23
+[PDF::Document] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d9eca68dbabd8ac57322014609d6cad855086d41.tar.gz/PDF-Document-0.0.10 t/2-fonts.t
+[PDF::Document] ok 1 - checking pdf instantiation
+[PDF::Document] ok 2 - checking find-font, name: Times-Bold
+[PDF::Document] ok 3 - checking select-docfont, name: Times-Bold, size: 10
+[PDF::Document] ok 4 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 5 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 6 - checking raw font access, name: Times-Bold
+[PDF::Document] ok 7 - checking raw Font afm access, name: Times-Bold
+[PDF::Document] ok 8 - checking find-font, name: Zapfdingbats
+[PDF::Document] ok 9 - checking select-docfont, name: Zapfdingbats, size: 10
+[PDF::Document] ok 10 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 11 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 12 - checking raw font access, name: Zapfdingbats
+[PDF::Document] ok 13 - checking raw Font afm access, name: Zapfdingbats
+[PDF::Document] ok 14 - checking find-font, name: Courier-Bold
+[PDF::Document] ok 15 - checking select-docfont, name: Courier-Bold, size: 10
+[PDF::Document] ok 16 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 17 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 18 - checking raw font access, name: Courier-Bold
+[PDF::Document] ok 19 - checking raw Font afm access, name: Courier-Bold
+[PDF::Document] ok 20 - checking find-font, name: Times-Italic
+[PDF::Document] ok 21 - checking select-docfont, name: Times-Italic, size: 10
+[PDF::Document] ok 22 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 23 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 24 - checking raw font access, name: Times-Italic
+[PDF::Document] ok 25 - checking raw Font afm access, name: Times-Italic
+[PDF::Document] ok 26 - checking find-font, name: Symbol
+[PDF::Document] ok 27 - checking select-docfont, name: Symbol, size: 10
+[PDF::Document] ok 28 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 29 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 30 - checking raw font access, name: Symbol
+[PDF::Document] ok 31 - checking raw Font afm access, name: Symbol
+[PDF::Document] ok 32 - checking find-font, name: Helvetica
+[PDF::Document] ok 33 - checking select-docfont, name: Helvetica, size: 10
+[PDF::Document] ok 34 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 35 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 36 - checking raw font access, name: Helvetica
+[PDF::Document] ok 37 - checking raw Font afm access, name: Helvetica
+[PDF::Document] ok 38 - checking find-font, name: Courier-BoldOblique
+[PDF::Document] ok 39 - checking select-docfont, name: Courier-BoldOblique, size: 10
+[PDF::Document] ok 40 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 41 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 42 - checking raw font access, name: Courier-BoldOblique
+[PDF::Document] ok 43 - checking raw Font afm access, name: Courier-BoldOblique
+[PDF::Document] ok 44 - checking find-font, name: Helvetica-BoldOblique
+[PDF::Document] ok 45 - checking select-docfont, name: Helvetica-BoldOblique, size: 10
+[PDF::Document] ok 46 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 47 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 48 - checking raw font access, name: Helvetica-BoldOblique
+[PDF::Document] ok 49 - checking raw Font afm access, name: Helvetica-BoldOblique
+[PDF::Document] ok 50 - checking find-font, name: Helvetica-Bold
+[PDF::Document] ok 51 - checking select-docfont, name: Helvetica-Bold, size: 10
+[PDF::Document] ok 52 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 53 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 54 - checking raw font access, name: Helvetica-Bold
+[PDF::Document] ok 55 - checking raw Font afm access, name: Helvetica-Bold
+[PDF::Document] ok 56 - checking find-font, name: Helvetica-Oblique
+[PDF::Document] ok 57 - checking select-docfont, name: Helvetica-Oblique, size: 10
+[PDF::Document] ok 58 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 59 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 60 - checking raw font access, name: Helvetica-Oblique
+[PDF::Document] ok 61 - checking raw Font afm access, name: Helvetica-Oblique
+[PDF::Document] ok 62 - checking find-font, name: Courier
+[PDF::Document] ok 63 - checking select-docfont, name: Courier, size: 10
+[PDF::Document] ok 64 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 65 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 66 - checking raw font access, name: Courier
+[PDF::Document] ok 67 - checking raw Font afm access, name: Courier
+[PDF::Document] ok 68 - checking find-font, name: Times-Roman
+[PDF::Document] ok 69 - checking select-docfont, name: Times-Roman, size: 10
+[PDF::Document] ok 70 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 71 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 72 - checking raw font access, name: Times-Roman
+[PDF::Document] ok 73 - checking raw Font afm access, name: Times-Roman
+[PDF::Document] ok 74 - checking find-font, name: Times-BoldItalic
+[PDF::Document] ok 75 - checking select-docfont, name: Times-BoldItalic, size: 10
+[PDF::Document] ok 76 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 77 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 78 - checking raw font access, name: Times-BoldItalic
+[PDF::Document] ok 79 - checking raw Font afm access, name: Times-BoldItalic
+[PDF::Document] ok 80 - checking find-font, name: Courier-Oblique
+[PDF::Document] ok 81 - checking select-docfont, name: Courier-Oblique, size: 10
+[PDF::Document] ok 82 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 83 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 84 - checking raw font access, name: Courier-Oblique
+[PDF::Document] ok 85 - checking raw Font afm access, name: Courier-Oblique
+[PDF::Document] ok 86 - checking find-font by alias, alias: HBI
+[PDF::Document] ok 87 - checking select-font by alias, : HBI, size: 10
+[PDF::Document] ok 88 - checking find-font by alias, alias: CBO
+[PDF::Document] ok 89 - checking select-font by alias, : CBO, size: 10
+[PDF::Document] ok 90 - checking find-font by alias, alias: H
+[PDF::Document] ok 91 - checking select-font by alias, : H, size: 10
+[PDF::Document] ok 92 - checking find-font by alias, alias: HOB
+[PDF::Document] ok 93 - checking select-font by alias, : HOB, size: 10
+[PDF::Document] ok 94 - checking find-font by alias, alias: CIB
+[PDF::Document] ok 95 - checking select-font by alias, : CIB, size: 10
+[PDF::Document] ok 96 - checking find-font by alias, alias: HO
+[PDF::Document] ok 97 - checking select-font by alias, : HO, size: 10
+[PDF::Document] ok 98 - checking find-font by alias, alias: TI
+[PDF::Document] ok 99 - checking select-font by alias, : TI, size: 10
+[PDF::Document] ok 100 - checking find-font by alias, alias: TB
+[PDF::Document] ok 101 - checking select-font by alias, : TB, size: 10
+[PDF::Document] ok 102 - checking find-font by alias, alias: CBI
+[PDF::Document] ok 103 - checking select-font by alias, : CBI, size: 10
+[PDF::Document] ok 104 - checking find-font by alias, alias: HBO
+[PDF::Document] ok 105 - checking select-font by alias, : HBO, size: 10
+[PDF::Document] ok 106 - checking find-font by alias, alias: HI
+[PDF::Document] ok 107 - checking select-font by alias, : HI, size: 10
+[PDF::Document] ok 108 - checking find-font by alias, alias: TOB
+[PDF::Document] ok 109 - checking select-font by alias, : TOB, size: 10
+[PDF::Document] ok 110 - checking find-font by alias, alias: CO
+[PDF::Document] ok 111 - checking select-font by alias, : CO, size: 10
+[PDF::Document] ok 112 - checking find-font by alias, alias: S
+[PDF::Document] ok 113 - checking select-font by alias, : S, size: 10
+[PDF::Document] ok 114 - checking find-font by alias, alias: COB
+[PDF::Document] ok 115 - checking select-font by alias, : COB, size: 10
+[PDF::Document] ok 116 - checking find-font by alias, alias: CI
+[PDF::Document] ok 117 - checking select-font by alias, : CI, size: 10
+[PDF::Document] ok 118 - checking find-font by alias, alias: TIB
+[PDF::Document] ok 119 - checking select-font by alias, : TIB, size: 10
+[PDF::Document] ok 120 - checking find-font by alias, alias: CB
+[PDF::Document] ok 121 - checking select-font by alias, : CB, size: 10
+[PDF::Document] ok 122 - checking find-font by alias, alias: TBO
+[PDF::Document] ok 123 - checking select-font by alias, : TBO, size: 10
+[PDF::Document] ok 124 - checking find-font by alias, alias: TO
+[PDF::Document] ok 125 - checking select-font by alias, : TO, size: 10
+[PDF::Document] ok 126 - checking find-font by alias, alias: Z
+[PDF::Document] ok 127 - checking select-font by alias, : Z, size: 10
+[PDF::Document] ok 128 - checking find-font by alias, alias: T
+[PDF::Document] ok 129 - checking select-font by alias, : T, size: 10
+[PDF::Document] ok 130 - checking find-font by alias, alias: C
+[PDF::Document] ok 131 - checking select-font by alias, : C, size: 10
+[PDF::Document] ok 132 - checking find-font by alias, alias: TBI
+[PDF::Document] ok 133 - checking select-font by alias, : TBI, size: 10
+[PDF::Document] ok 134 - checking find-font by alias, alias: HIB
+[PDF::Document] ok 135 - checking select-font by alias, : HIB, size: 10
+[PDF::Document] ok 136 - checking find-font by alias, alias: HB
+[PDF::Document] ok 137 - checking select-font by alias, : HB, size: 10
+[PDF::Document] 1..137
+[PDF::Document] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d9eca68dbabd8ac57322014609d6cad855086d41.tar.gz/PDF-Document-0.0.10 t/3-text.t
+[PDF::Document] ok 1 - checking pdf instantiation
+[PDF::Document] ok 2 - checking raw font access, name: Helvetica-Oblique
+[PDF::Document] ok 3 - checking raw Font afm access, name: Helvetica-Oblique
+[PDF::Document] ok 4 - checking find-docfont , name: Helvetica-Oblique
+[PDF::Document] ok 5 - checking select-docfont, name: Helvetica-Oblique, size: 10
+[PDF::Document] ok 6 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 7 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 8 - checking raw font access, name: Helvetica-Oblique
+[PDF::Document] ok 9 - checking raw Font afm access, name: Helvetica-Oblique
+[PDF::Document] ok 10 - checking raw font access, name: Helvetica
+[PDF::Document] ok 11 - checking raw Font afm access, name: Helvetica
+[PDF::Document] ok 12 - checking find-docfont , name: Helvetica
+[PDF::Document] ok 13 - checking select-docfont, name: Helvetica, size: 10
+[PDF::Document] ok 14 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 15 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 16 - checking raw font access, name: Helvetica
+[PDF::Document] ok 17 - checking raw Font afm access, name: Helvetica
+[PDF::Document] ok 18 - checking raw font access, name: Courier-BoldOblique
+[PDF::Document] ok 19 - checking raw Font afm access, name: Courier-BoldOblique
+[PDF::Document] ok 20 - checking find-docfont , name: Courier-BoldOblique
+[PDF::Document] ok 21 - checking select-docfont, name: Courier-BoldOblique, size: 10
+[PDF::Document] ok 22 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 23 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 24 - checking raw font access, name: Courier-BoldOblique
+[PDF::Document] ok 25 - checking raw Font afm access, name: Courier-BoldOblique
+[PDF::Document] ok 26 - checking raw font access, name: Times-Roman
+[PDF::Document] ok 27 - checking raw Font afm access, name: Times-Roman
+[PDF::Document] ok 28 - checking find-docfont , name: Times-Roman
+[PDF::Document] ok 29 - checking select-docfont, name: Times-Roman, size: 10
+[PDF::Document] ok 30 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 31 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 32 - checking raw font access, name: Times-Roman
+[PDF::Document] ok 33 - checking raw Font afm access, name: Times-Roman
+[PDF::Document] ok 34 - checking raw font access, name: Times-BoldItalic
+[PDF::Document] ok 35 - checking raw Font afm access, name: Times-BoldItalic
+[PDF::Document] ok 36 - checking find-docfont , name: Times-BoldItalic
+[PDF::Document] ok 37 - checking select-docfont, name: Times-BoldItalic, size: 10
+[PDF::Document] ok 38 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 39 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 40 - checking raw font access, name: Times-BoldItalic
+[PDF::Document] ok 41 - checking raw Font afm access, name: Times-BoldItalic
+[PDF::Document] ok 42 - checking raw font access, name: Symbol
+[PDF::Document] ok 43 - checking raw Font afm access, name: Symbol
+[PDF::Document] ok 44 - checking find-docfont , name: Symbol
+[PDF::Document] ok 45 - checking select-docfont, name: Symbol, size: 10
+[PDF::Document] ok 46 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 47 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 48 - checking raw font access, name: Symbol
+[PDF::Document] ok 49 - checking raw Font afm access, name: Symbol
+[PDF::Document] ok 50 - checking raw font access, name: Zapfdingbats
+[PDF::Document] ok 51 - checking raw Font afm access, name: Zapfdingbats
+[PDF::Document] ok 52 - checking find-docfont , name: Zapfdingbats
+[PDF::Document] ok 53 - checking select-docfont, name: Zapfdingbats, size: 10
+[PDF::Document] ok 54 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 55 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 56 - checking raw font access, name: Zapfdingbats
+[PDF::Document] ok 57 - checking raw Font afm access, name: Zapfdingbats
+[PDF::Document] ok 58 - checking raw font access, name: Times-Bold
+[PDF::Document] ok 59 - checking raw Font afm access, name: Times-Bold
+[PDF::Document] ok 60 - checking find-docfont , name: Times-Bold
+[PDF::Document] ok 61 - checking select-docfont, name: Times-Bold, size: 10
+[PDF::Document] ok 62 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 63 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 64 - checking raw font access, name: Times-Bold
+[PDF::Document] ok 65 - checking raw Font afm access, name: Times-Bold
+[PDF::Document] ok 66 - checking raw font access, name: Courier
+[PDF::Document] ok 67 - checking raw Font afm access, name: Courier
+[PDF::Document] ok 68 - checking find-docfont , name: Courier
+[PDF::Document] ok 69 - checking select-docfont, name: Courier, size: 10
+[PDF::Document] ok 70 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 71 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 72 - checking raw font access, name: Courier
+[PDF::Document] ok 73 - checking raw Font afm access, name: Courier
+[PDF::Document] ok 74 - checking raw font access, name: Helvetica-BoldOblique
+[PDF::Document] ok 75 - checking raw Font afm access, name: Helvetica-BoldOblique
+[PDF::Document] ok 76 - checking find-docfont , name: Helvetica-BoldOblique
+[PDF::Document] ok 77 - checking select-docfont, name: Helvetica-BoldOblique, size: 10
+[PDF::Document] ok 78 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 79 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 80 - checking raw font access, name: Helvetica-BoldOblique
+[PDF::Document] ok 81 - checking raw Font afm access, name: Helvetica-BoldOblique
+[PDF::Document] ok 82 - checking raw font access, name: Times-Italic
+[PDF::Document] ok 83 - checking raw Font afm access, name: Times-Italic
+[PDF::Document] ok 84 - checking find-docfont , name: Times-Italic
+[PDF::Document] ok 85 - checking select-docfont, name: Times-Italic, size: 10
+[PDF::Document] ok 86 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 87 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 88 - checking raw font access, name: Times-Italic
+[PDF::Document] ok 89 - checking raw Font afm access, name: Times-Italic
+[PDF::Document] ok 90 - checking raw font access, name: Helvetica-Bold
+[PDF::Document] ok 91 - checking raw Font afm access, name: Helvetica-Bold
+[PDF::Document] ok 92 - checking find-docfont , name: Helvetica-Bold
+[PDF::Document] ok 93 - checking select-docfont, name: Helvetica-Bold, size: 10
+[PDF::Document] ok 94 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 95 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 96 - checking raw font access, name: Helvetica-Bold
+[PDF::Document] ok 97 - checking raw Font afm access, name: Helvetica-Bold
+[PDF::Document] ok 98 - checking raw font access, name: Courier-Bold
+[PDF::Document] ok 99 - checking raw Font afm access, name: Courier-Bold
+[PDF::Document] ok 100 - checking find-docfont , name: Courier-Bold
+[PDF::Document] ok 101 - checking select-docfont, name: Courier-Bold, size: 10
+[PDF::Document] ok 102 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 103 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 104 - checking raw font access, name: Courier-Bold
+[PDF::Document] ok 105 - checking raw Font afm access, name: Courier-Bold
+[PDF::Document] ok 106 - checking raw font access, name: Courier-Oblique
+[PDF::Document] ok 107 - checking raw Font afm access, name: Courier-Oblique
+[PDF::Document] ok 108 - checking find-docfont , name: Courier-Oblique
+[PDF::Document] ok 109 - checking select-docfont, name: Courier-Oblique, size: 10
+[PDF::Document] ok 110 - checking font afm use for UnderlinePosition
+[PDF::Document] ok 111 - checking font afm use for UnderlineThickness
+[PDF::Document] ok 112 - checking raw font access, name: Courier-Oblique
+[PDF::Document] ok 113 - checking raw Font afm access, name: Courier-Oblique
+[PDF::Document] ok 114 - checking pdf page generation
+[PDF::Document] ok 115 - checking text write with selected raw font
+[PDF::Document] ok 116 - checking text write with selected composite font: Courier-Oblique
+[PDF::Document] ok 117 - saving pdf doc 'text.pdf'
+[PDF::Document] ok 118 - getting a font factory
+[PDF::Document] ok 119 - getting a font from the -font factory
+[PDF::Document] ok 120 - getting a font from the -font factory
+[PDF::Document] ok 121 - getting a font from the -font factory
+[PDF::Document] 1..121
+[PDF::Document] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d9eca68dbabd8ac57322014609d6cad855086d41.tar.gz/PDF-Document-0.0.10 t/4-point-docbox.t
+[PDF::Document] ok 1 - checking instantiation
+[PDF::Document] ok 2 - 
+[PDF::Document] ok 3 - 
+[PDF::Document] ok 4 - 
+[PDF::Document] ok 5 - 
+[PDF::Document] ok 6 - 
+[PDF::Document] ok 7 - 
+[PDF::Document] ok 8 - checking instantiation
+[PDF::Document] ok 9 - 
+[PDF::Document] ok 10 - checking instantiation
+[PDF::Document] ok 11 - checking instantiation
+[PDF::Document] ok 12 - 
+[PDF::Document] ok 13 - 
+[PDF::Document] ok 14 - 
+[PDF::Document] ok 15 - 
+[PDF::Document] ok 16 - checking instantiation
+[PDF::Document] ok 17 - checking fracx out of bounds
+[PDF::Document] ok 18 - checking fracx out of bounds
+[PDF::Document] ok 19 - checking fracy out of bounds
+[PDF::Document] ok 20 - checking fracy out of bounds
+[PDF::Document] ok 21 - checking instantiation
+[PDF::Document] ok 22 - checking failed instantiation
+[PDF::Document] ok 23 - checking failed instantiation
+[PDF::Document] ok 24 - checking failed instantiation
+[PDF::Document] ok 25 - checking failed instantiation
+[PDF::Document] ok 26 - checking failed instantiation
+[PDF::Document] ok 27 - checking failed instantiation
+[PDF::Document] ok 28 - 
+[PDF::Document] ok 29 - 
+[PDF::Document] ok 30 - 
+[PDF::Document] ok 31 - 
+[PDF::Document] ok 32 - 
+[PDF::Document] ok 33 - 
+[PDF::Document] ok 34 - 
+[PDF::Document] ok 35 - 
+[PDF::Document] ok 36 - 
+[PDF::Document] ok 37 - 
+[PDF::Document] ok 38 - 
+[PDF::Document] ok 39 - 
+[PDF::Document] ok 40 - 
+[PDF::Document] ok 41 - 
+[PDF::Document] ok 42 - 
+[PDF::Document] ok 43 - 
+[PDF::Document] ok 44 - 
+[PDF::Document] ok 45 - 
+[PDF::Document] ok 46 - 
+[PDF::Document] ok 47 - 
+[PDF::Document] 1..47
+[PDF::Document] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d9eca68dbabd8ac57322014609d6cad855086d41.tar.gz/PDF-Document-0.0.10 t/88-pdf-methods.t
+[PDF::Document] ok 1 - testing method 'TextLeading'
+[PDF::Document] ok 2 - testing method 'TextLeading', alias 'Tl'
+[PDF::Document] not ok 3 - testing method 'SetStrokeGray'
+[PDF::Document] # Failed test 'testing method 'SetStrokeGray''
+[PDF::Document] # at t/88-pdf-methods.t line 32
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 4 - testing method 'SetStrokeGray', alias 'G'
+[PDF::Document] # Failed test 'testing method 'SetStrokeGray', alias 'G''
+[PDF::Document] # at t/88-pdf-methods.t line 39
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 5 - testing method 'SetFillGray'
+[PDF::Document] # Failed test 'testing method 'SetFillGray''
+[PDF::Document] # at t/88-pdf-methods.t line 46
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 6 - testing method 'SetFillGray', alias 'g'
+[PDF::Document] # Failed test 'testing method 'SetFillGray', alias 'g''
+[PDF::Document] # at t/88-pdf-methods.t line 53
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 7 - testing method 'SetStrokeRGB'
+[PDF::Document] # Failed test 'testing method 'SetStrokeRGB''
+[PDF::Document] # at t/88-pdf-methods.t line 60
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 8 - testing method 'SetStrokeRGB', alias 'RG'
+[PDF::Document] # Failed test 'testing method 'SetStrokeRGB', alias 'RG''
+[PDF::Document] # at t/88-pdf-methods.t line 69
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 9 - testing method 'SetFillRGB'
+[PDF::Document] # Failed test 'testing method 'SetFillRGB''
+[PDF::Document] # at t/88-pdf-methods.t line 78
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 10 - testing method 'SetFillRGB', alias 'rg'
+[PDF::Document] # Failed test 'testing method 'SetFillRGB', alias 'rg''
+[PDF::Document] # at t/88-pdf-methods.t line 87
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 11 - testing method 'SetLineWidth'
+[PDF::Document] # Failed test 'testing method 'SetLineWidth''
+[PDF::Document] # at t/88-pdf-methods.t line 96
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 12 - testing method 'SetLineWidth', alias 'w'
+[PDF::Document] # Failed test 'testing method 'SetLineWidth', alias 'w''
+[PDF::Document] # at t/88-pdf-methods.t line 103
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 13 - testing method 'SetLineCap'
+[PDF::Document] # Failed test 'testing method 'SetLineCap''
+[PDF::Document] # at t/88-pdf-methods.t line 110
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 14 - testing method 'SetLineCap', alias 'J'
+[PDF::Document] # Failed test 'testing method 'SetLineCap', alias 'J''
+[PDF::Document] # at t/88-pdf-methods.t line 117
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 15 - testing method 'SetLineJoin'
+[PDF::Document] # Failed test 'testing method 'SetLineJoin''
+[PDF::Document] # at t/88-pdf-methods.t line 124
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 16 - testing method 'SetLineJoin', alias 'j'
+[PDF::Document] # Failed test 'testing method 'SetLineJoin', alias 'j''
+[PDF::Document] # at t/88-pdf-methods.t line 131
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 17 - testing method 'SetMiterLimit'
+[PDF::Document] # Failed test 'testing method 'SetMiterLimit''
+[PDF::Document] # at t/88-pdf-methods.t line 138
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 18 - testing method 'SetMiterLimit', alias 'M'
+[PDF::Document] # Failed test 'testing method 'SetMiterLimit', alias 'M''
+[PDF::Document] # at t/88-pdf-methods.t line 145
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 19 - testing method 'SetDashPattern'
+[PDF::Document] # Failed test 'testing method 'SetDashPattern''
+[PDF::Document] # at t/88-pdf-methods.t line 152
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] not ok 20 - testing method 'SetDashPattern', alias 'd'
+[PDF::Document] # Failed test 'testing method 'SetDashPattern', alias 'd''
+[PDF::Document] # at t/88-pdf-methods.t line 160
+[PDF::Document] # No such method 'graphics-state' for invocant of type
+[PDF::Document] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Document] ok 21 - testing method 'TextMove'
+[PDF::Document] ok 22 - testing method 'TextMove', alias 'Td'
+[PDF::Document] ok 23 - testing method 'TextMoveSet'
+[PDF::Document] ok 24 - testing method 'TextMoveSet', alias 'TD'
+[PDF::Document] ok 25 - testing method 'TextNextLine'
+[PDF::Document] ok 26 - testing method 'ShowText'
+[PDF::Document] ok 27 - testing method 'ShowText', alias 'Tj'
+[PDF::Document] ok 28 - testing method 'MoveShowText'
+[PDF::Document] ok 29 - testing method 'MoveSetShowText'
+[PDF::Document] ok 30 - testing method 'MoveTo'
+[PDF::Document] ok 31 - testing method 'MoveTo', alias 'm'
+[PDF::Document] ok 32 - testing method 'LineTo'
+[PDF::Document] ok 33 - testing method 'LineTo', alias 'l'
+[PDF::Document] ok 34 - testing method 'CurveTo'
+[PDF::Document] ok 35 - testing method 'CurveTo', alias 'c'
+[PDF::Document] ok 36 - testing method 'ClosePath'
+[PDF::Document] ok 37 - testing method 'ClosePath', alias 'h'
+[PDF::Document] ok 38 - testing method 'Rectangle'
+[PDF::Document] ok 39 - testing method 'Rectangle', alias 're'
+[PDF::Document] 1..39
+[PDF::Document] # You failed 18 tests of 39
+[PDF::Document] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d9eca68dbabd8ac57322014609d6cad855086d41.tar.gz/PDF-Document-0.0.10 t/99-check-example-progs.t
+[PDF::Document] ok 1 - testing example doc 'PDF-6-Lite-ups-2-modes.raku' with no args
+[PDF::Document] ok 2 - testing example doc 'PDF-9-Lite-more-mixed-media.raku' with no args
+[PDF::Document] ok 3 - testing example doc 'PDF-8-Lite-mixed-media-ttf-fonts.raku' with no args
+[PDF::Document] ok 4 - testing example doc 'PDF-4-Lite-picture-import.raku' with no args
+[PDF::Document] ok 5 - testing example doc 'PDF-3-Lite-http-link.raku' with no args
+[PDF::Document] ok 6 - testing example doc 'PDF-7-Lite-ups-docs.raku' with no args
+[PDF::Document] ok 7 - testing example doc 'pdf-doc-demo-paper.raku' with no args
+[PDF::Document] ok 8 - testing example doc 'PDF-2-Lite-media-scale-up-simple.raku' with no args
+[PDF::Document] ok 9 - testing example doc 'PDF-5-Lite-media-mixed.raku' with no args
+[PDF::Document] ok 10 - testing example doc 'make-check.raku' with no args
+[PDF::Document] ok 11 - testing example doc 'PDF-5-Lite-media-simple.raku' with no args
+[PDF::Document] ok 12 - testing example doc 'PDF-1-Lite-calendar-mode-ups.raku' with no args
+[PDF::Document] ok 13 - testing example doc 'check-fonts.raku' with no args
+[PDF::Document] ok 14 - testing example doc 'simple.raku' with no args
+[PDF::Document] ok 15 - testing example doc 'seq.raku' with no args
+[PDF::Document] ok 16 - testing example doc 'rotate-for-landscape.raku' with no args
+[PDF::Document] ok 17 - testing example doc 'doc-media.raku' with no args
+[PDF::Document] ok 18 - testing example doc 'reflect.raku' with no args
+[PDF::Document] ok 19 - testing example doc 'example2.raku' with no args
+[PDF::Document] ok 20 - testing example doc 'capture.raku' with no args
+[PDF::Document] ok 21 - testing example doc 'show-fonts.raku' with no args
+[PDF::Document] ok 22 - testing example doc 'no-rotate.raku' with no args
+[PDF::Document] ok 23 - testing example doc 'simple-2-page.raku' with no args
+[PDF::Document] ok 24 - testing example doc 'check-refl-rot.raku' with no args
+[PDF::Document] ok 25 - testing example doc 'make-grid.raku' with no args
+[PDF::Document] ok 26 - testing example doc 'make-example-moon-phases.raku' with no args
+[PDF::Document] ok 27 - testing example doc 'make-single-moon.raku' with no args
+[PDF::Document] ok 28 - testing example doc 'make-example-rooms.raku' with no args
+[PDF::Document] ok 29 - testing example doc 'check-afm.raku' with no args
+[PDF::Document] ok 30 - testing example doc 'example-doc.raku' with no args
+[PDF::Document] ok 31 - testing example doc 'sample-text-pdf-lite.raku' with no args
+[PDF::Document] ok 32 - testing example doc 'make-example-doc.raku' with no args
+[PDF::Document] ok 33 - testing example doc 'media-box-tests.raku' with no args
+[PDF::Document] ok 34 - testing example doc 'check-moon-phase-frac.raku' with no args
+[PDF::Document] ok 35 - testing example doc 'make-ps-ruler.raku' with no args
+[PDF::Document] ok 36 - testing example doc 'check-factory.raku' with no args
+[PDF::Document] ok 37 - testing example doc 'gen-code.raku' with no args
+[PDF::Document] ok 38 - testing the example doc with no args
+[PDF::Document] ok 39 - testing the example doc with args
+[PDF::Document] ok 40 - testing the example doc with args
+[PDF::Document] 1..40
+===> Testing [FAIL]: PDF::Document:ver<0.0.10>:auth<zef:tbrowder>:api<1>
+[PDF::Document] Failed to get passing tests, but continuing with --force-test
+===> Installing: PDF::Document:ver<0.0.10>:auth<zef:tbrowder>:api<1>
+Potential difficulties:
+    Useless use of $val in sink context
+    at /home/coke/sandbox/blin/installed/PDF::Document_zef:tbrowder_0.0.10_1/sources/65720A2E7106D280D288E1027BA944361558D6D2 (PDF::Document):779
+    ------>                 when /r|rad/   { <HERE>$val }
+===> Install [OK] for PDF::Document:ver<0.0.10>:auth<zef:tbrowder>:api<1>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 56.836s
+             CPU time consumed: 1min 16.030s
+                   Memory peak: 1.8G (swap: 0B)

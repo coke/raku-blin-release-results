@@ -1,0 +1,116 @@
+Running as unit: run-p46633-i128755.service; invocation ID: eb5ffe911b98425b8b5cba755a764408
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: FindBin
+===> Found: FindBin:ver<0.6.3>:auth<cpan:LEMBARK> [via Zef::Repository::Ecosystems<rea>]
+[FindBin] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790127883.46636.635.278063481326/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/F/FindBin/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
+===> Fetching [OK]: FindBin:ver<0.6.3>:auth<cpan:LEMBARK> to /home/coke/sandbox/blin/data/zef-data/tmp/1790127883.46636.635.278063481326/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
+[FindBin] Command: tar -t -f ./FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
+[FindBin] Command: tar -xvf ./FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz -C ../FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
+===> Extraction [OK]: FindBin to /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
+===> Testing: FindBin:ver<0.6.3>:auth<CPAN:lembark>
+[FindBin] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3 t/01-FindBin.rakutest
+[FindBin] # Madness: 'FindBin' (t/01-FindBin.rakutest)
+[FindBin] ok 1 - FindBin module can be use-d ok
+[FindBin] ok 2 - Package 'FindBin' installed (FindBin).
+[FindBin] ok 3 - require 'FindBin' survives.
+[FindBin] 1..3
+[FindBin] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3 t/02-export.rakutest
+[FindBin] ok 1 - Bin not installed before use.
+[FindBin] ok 2 - Script not installed before use.
+[FindBin] ok 3 - _FindBin_RESOLVE-DEF false before use.
+[FindBin] ok 4 - _FindBin_VERBOSE-DEF false before use.
+[FindBin] # FindBin
+[FindBin] ok 5 - Bin installed by default.
+[FindBin] ok 6 - Script installed by default.
+[FindBin] ok 7 - _FindBin_RESOLVE-DEF false by default.
+[FindBin] ok 8 - _FindBin_VERBOSE-DEF false by default.
+[FindBin] # Bin is:    /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3/t
+[FindBin] # Script is: 02-export.rakutest
+[FindBin] ok 9 - Bin is lexicaly scoped.
+[FindBin] ok 10 - Script is lexicaly scoped.
+[FindBin] ok 11 - Resolve is lexically scoped.
+[FindBin] ok 12 - Verbose is lexically scoped.
+[FindBin] # FindBin :Bin
+[FindBin] ok 13 - Bin installed.
+[FindBin] ok 14 - Script not installed.
+[FindBin] ok 15 - Resolve not installed
+[FindBin] ok 16 - Verbose not installed
+[FindBin] # Bin is:    /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3/t
+[FindBin] # FindBin :Script 
+[FindBin] # Script is: 02-export.rakutest
+[FindBin] # FindBin :resolve, :verbose
+[FindBin] ok 17 - Bin not installed.
+[FindBin] ok 18 - Script installed.
+[FindBin] ok 19 - Resolve not installed
+[FindBin] ok 20 - Verbose not installed
+[FindBin] ok 21 - Bin installed with :resolve :verboose.
+[FindBin] ok 22 - Script installed with :resolve :verboose.
+[FindBin] ok 23 - Resolve is true.
+[FindBin] ok 24 - Verbose is true.
+[FindBin] # Bin()
+[FindBin] This type cannot unbox to a native string: P6opaque, Junction
+[FindBin]   in sub Bin at /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3/lib/FindBin.rakumod (FindBin) line 79
+[FindBin]   in block <unit> at t/02-export.rakutest line 77
+[FindBin] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3 t/03-constants.rakutest
+[FindBin] ok 1 - false :verbose outside of block
+[FindBin] ok 2 - false :resolve outside of block
+[FindBin] ok 3 - false :verbose inside of block
+[FindBin] ok 4 - false :resolve inside of block
+[FindBin] ok 5 - false :verbose outside of block
+[FindBin] ok 6 - false :resolve outside of block
+[FindBin] ok 7 - true  :verbose inside of block
+[FindBin] ok 8 - false :resolve inside of block
+[FindBin] ok 9 - false :verbose outside of block
+[FindBin] ok 10 - false :resolve outside of block
+[FindBin] ok 11 - false :verbose inside of block
+[FindBin] ok 12 - true  :resolve inside of block
+[FindBin] ok 13 - false :verbose outside of block
+[FindBin] ok 14 - false :resolve outside of block
+[FindBin] ok 15 - true  :verbose inside of block
+[FindBin] ok 16 - true  :resolve inside of block
+[FindBin] ok 17 - false :verbose outside of block
+[FindBin] ok 18 - false :resolve outside of block
+[FindBin] ok 19 - true  :verbose inside of block
+[FindBin] ok 20 - true  :resolve inside of block
+[FindBin] ok 21 - false :verbose outside of block
+[FindBin] ok 22 - false :resolve outside of block
+[FindBin] 1..22
+[FindBin] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3 t/04-program-script.rakutest
+[FindBin] ok 1 - Script returns 04-program-script.rakutest
+[FindBin] ok 2 - $*PROGRAM.basename is 04-program-script.rakutest
+[FindBin] ok 3 - Script matches basename.
+[FindBin] 1..3
+[FindBin] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3 t/05-program-bin.rakutest
+[FindBin] Program is: /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3/t/05-program-bin.rakutest
+[FindBin] ok 1 - true  :verbose
+[FindBin] ok 2 - false :resolve
+[FindBin] # Bin()
+[FindBin] This type cannot unbox to a native string: P6opaque, Junction
+[FindBin]   in sub Bin at /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3/lib/FindBin.rakumod (FindBin) line 79
+[FindBin]   in block <unit> at t/05-program-bin.rakutest line 13
+[FindBin] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3 t/08-cmdline-script.rakutest
+[FindBin] # Expect: '-e'
+[FindBin] # Found:  '-e'
+[FindBin] ok 1 - 'raku -e' returns '-e' (-e)
+[FindBin] 1..1
+[FindBin] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3 t/09-cmdline-bin.rakutest
+[FindBin] # Expect: '/home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3'
+[FindBin] # Found:  '/home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3'
+[FindBin] ok 1 - 'raku -e' returns '/home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3' (/home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3)
+[FindBin] 1..1
+[FindBin] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3 t/10-arg_format.rakutest
+[FindBin] ok 1 - Match with false.
+[FindBin] ok 2 - Match with false.
+[FindBin] # Bin()
+[FindBin] This type cannot unbox to a native string: P6opaque, Junction
+[FindBin]   in sub Bin at /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3Aver%3C0.6.3%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-0.6.3/lib/FindBin.rakumod (FindBin) line 79
+[FindBin]   in block <unit> at t/10-arg_format.rakutest line 15
+===> Testing [FAIL]: FindBin:ver<0.6.3>:auth<CPAN:lembark>
+[FindBin] Failed to get passing tests, but continuing with --force-test
+===> Installing: FindBin:ver<0.6.3>:auth<CPAN:lembark>
+===> Install [OK] for FindBin:ver<0.6.3>:auth<CPAN:lembark>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 2min 12.280s
+             CPU time consumed: 2min 11.585s
+                   Memory peak: 1.3G (swap: 0B)

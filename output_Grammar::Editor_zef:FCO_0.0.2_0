@@ -1,0 +1,58 @@
+Running as unit: run-p904200-i948307.service; invocation ID: 3a5d3362a5914650975359c898f27c0a
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Grammar::Editor
+===> Found: Grammar::Editor:ver<0.0.2>:auth<zef:FCO> [via Zef::Repository::Ecosystems<fez>]
+[Grammar::Editor] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790149478.904208.3803.2654286406278/74e5835dcf748674c4290a8612fbc00dc124e8fb.tar.gz https://360.zef.pm/G/RA/GRAMMAR_EDITOR/74e5835dcf748674c4290a8612fbc00dc124e8fb.tar.gz
+===> Fetching [OK]: Grammar::Editor:ver<0.0.2>:auth<zef:FCO> to /home/coke/sandbox/blin/data/zef-data/tmp/1790149478.904208.3803.2654286406278/74e5835dcf748674c4290a8612fbc00dc124e8fb.tar.gz
+[Grammar::Editor] Command: tar -t -f ./74e5835dcf748674c4290a8612fbc00dc124e8fb.tar.gz
+[Grammar::Editor] Command: tar -xvf ./74e5835dcf748674c4290a8612fbc00dc124e8fb.tar.gz -C ../74e5835dcf748674c4290a8612fbc00dc124e8fb.tar.gz
+===> Extraction [OK]: Grammar::Editor to /home/coke/sandbox/blin/data/zef-data/tmp/74e5835dcf748674c4290a8612fbc00dc124e8fb.tar.gz
+===> Testing: Grammar::Editor:ver<0.0.2>:auth<zef:FCO>
+[Grammar::Editor] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/74e5835dcf748674c4290a8612fbc00dc124e8fb.tar.gz/Grammar-Editor-0.0.2 t/01-basic.rakutest
+[Grammar::Editor] ok 1 - Grammar::Editor is a class
+[Grammar::Editor] 1..1
+===> Testing [OK] for Grammar::Editor:ver<0.0.2>:auth<zef:FCO>
+===> Installing: Grammar::Editor:ver<0.0.2>:auth<zef:FCO>
+===> Install [FAIL] for Grammar::Editor:ver<0.0.2>:auth<zef:FCO>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Grammar::Editor_zef:FCO_0.0.2_0/sources/6CE0C755CE5E4EAC014A4C635A4D84118F14BE8B (Grammar::Editor::Match)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie::UI_zef:FCO_0.0.4_0/sources/6078066F9AD53B2CFA8A614469942D508F6E52D3 (Selkie::UI)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie::UI_zef:FCO_0.0.4_0/sources/89D8FC8B1FFFC5C771D1C2B3764C8B96512EDF58 (Selkie::UI::AppBuilder)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App)
+===SORRY!===
+QAST::Block with cuid 83, cuid 82, cuid 81, cuid 50, cuid 48, cuid 47, cuid 46, cuid 45 has not appeared in /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/5547EAFEE4F06C0459F57E9B6E3AB6CD21B703B5 (Selkie::App::Internal::ErrorLog)
+
+at /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App):402
+------> <BOL><HERE>use Selkie::App::Internal::ErrorLog;
+
+at /home/coke/sandbox/blin/installed/Selkie::UI_zef:FCO_0.0.4_0/sources/89D8FC8B1FFFC5C771D1C2B3764C8B96512EDF58 (Selkie::UI::AppBuilder):3
+------> <BOL><HERE>use Selkie::App;
+
+at /home/coke/sandbox/blin/installed/Selkie::UI_zef:FCO_0.0.4_0/sources/6078066F9AD53B2CFA8A614469942D508F6E52D3 (Selkie::UI):5
+------> <BOL><HERE>use Selkie::UI::AppBuilder;
+
+at /home/coke/sandbox/blin/installed/Grammar::Editor_zef:FCO_0.0.2_0/sources/6CE0C755CE5E4EAC014A4C635A4D84118F14BE8B (Grammar::Editor::Match):3
+------> <BOL><HERE>use Selkie::UI;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Grammar::Editor_zef:FCO_0.0.2_0/sources/6CE0C755CE5E4EAC014A4C635A4D84118F14BE8B (Grammar::Editor::Match)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie::UI_zef:FCO_0.0.4_0/sources/6078066F9AD53B2CFA8A614469942D508F6E52D3 (Selkie::UI)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie::UI_zef:FCO_0.0.4_0/sources/89D8FC8B1FFFC5C771D1C2B3764C8B96512EDF58 (Selkie::UI::AppBuilder)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App)
+===SORRY!===
+QAST::Block with cuid 83, cuid 82, cuid 81, cuid 50, cuid 48, cuid 47, cuid 46, cuid 45 has not appeared in /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/5547EAFEE4F06C0459F57E9B6E3AB6CD21B703B5 (Selkie::App::Internal::ErrorLog)
+
+at /home/coke/sandbox/blin/installed/Selkie_zef:apogee_0.16.0_0/sources/2AAB09FC97AC7C0EE4EA207AF83A98908DB9ECF5 (Selkie::App):402
+------> <BOL><HERE>use Selkie::App::Internal::ErrorLog;
+
+at /home/coke/sandbox/blin/installed/Selkie::UI_zef:FCO_0.0.4_0/sources/89D8FC8B1FFFC5C771D1C2B3764C8B96512EDF58 (Selkie::UI::AppBuilder):3
+------> <BOL><HERE>use Selkie::App;
+
+at /home/coke/sandbox/blin/installed/Selkie::UI_zef:FCO_0.0.4_0/sources/6078066F9AD53B2CFA8A614469942D508F6E52D3 (Selkie::UI):5
+------> <BOL><HERE>use Selkie::UI::AppBuilder;
+
+at /home/coke/sandbox/blin/installed/Grammar::Editor_zef:FCO_0.0.2_0/sources/6CE0C755CE5E4EAC014A4C635A4D84118F14BE8B (Grammar::Editor::Match):3
+------> <BOL><HERE>use Selkie::UI;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 25.647s
+             CPU time consumed: 35.167s
+                   Memory peak: 1.7G (swap: 0B)

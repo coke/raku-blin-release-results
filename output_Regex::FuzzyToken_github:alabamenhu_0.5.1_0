@@ -1,0 +1,87 @@
+Running as unit: run-p135384-i47899.service
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Regex::FuzzyToken
+===> Found: Regex::FuzzyToken:ver<0.5.1>:auth<github:alabamenhu> [via Zef::Repository::Ecosystems<rea>]
+[Regex::FuzzyToken] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790130476.135389.5860.02666834414/Regex%3A%3AFuzzyToken%3Aver%3C0.5.1%3E%3Aauth%3Cgithub%3Aalabamenhu%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/R/Regex%3A%3AFuzzyToken/Regex%3A%3AFuzzyToken%3Aver%3C0.5.1%3E%3Aauth%3Cgithub%3Aalabamenhu%3E.tar.gz
+===> Fetching [OK]: Regex::FuzzyToken:ver<0.5.1>:auth<github:alabamenhu> to /home/coke/sandbox/blin/data/zef-data/tmp/1790130476.135389.5860.02666834414/Regex%3A%3AFuzzyToken%3Aver%3C0.5.1%3E%3Aauth%3Cgithub%3Aalabamenhu%3E.tar.gz
+[Regex::FuzzyToken] Command: tar -t -f ./Regex%3A%3AFuzzyToken%3Aver%3C0.5.1%3E%3Aauth%3Cgithub%3Aalabamenhu%3E.tar.gz
+[Regex::FuzzyToken] Command: tar -xvf ./Regex%3A%3AFuzzyToken%3Aver%3C0.5.1%3E%3Aauth%3Cgithub%3Aalabamenhu%3E.tar.gz -C ../Regex%3A%3AFuzzyToken%3Aver%3C0.5.1%3E%3Aauth%3Cgithub%3Aalabamenhu%3E.tar.gz
+===> Extraction [OK]: Regex::FuzzyToken to /home/coke/sandbox/blin/data/zef-data/tmp/Regex%3A%3AFuzzyToken%3Aver%3C0.5.1%3E%3Aauth%3Cgithub%3Aalabamenhu%3E.tar.gz
+===> Testing: Regex::FuzzyToken:ver<0.5.1>:auth<Matthew ‘Matéu’ Stephen Stuckwisch>
+[Regex::FuzzyToken] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Regex%3A%3AFuzzyToken%3Aver%3C0.5.1%3E%3Aauth%3Cgithub%3Aalabamenhu%3E.tar.gz/RegexFuzzyToken-master t/00-sanity.t
+[Regex::FuzzyToken] 1..0
+[Regex::FuzzyToken] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Regex%3A%3AFuzzyToken%3Aver%3C0.5.1%3E%3Aauth%3Cgithub%3Aalabamenhu%3E.tar.gz/RegexFuzzyToken-master t/01-basic.t
+[Regex::FuzzyToken] ok 1 - 
+[Regex::FuzzyToken] ok 2 - 
+[Regex::FuzzyToken] ok 3 - 
+[Regex::FuzzyToken] ok 4 - 
+[Regex::FuzzyToken] ok 5 - 
+[Regex::FuzzyToken] ok 6 - 
+[Regex::FuzzyToken] ok 7 - 
+[Regex::FuzzyToken] ok 8 - 
+[Regex::FuzzyToken] ok 9 - 
+[Regex::FuzzyToken] ok 10 - 
+[Regex::FuzzyToken] ok 11 - 
+[Regex::FuzzyToken] ok 12 - 
+[Regex::FuzzyToken] ok 13 - 
+[Regex::FuzzyToken] ok 14 - 
+[Regex::FuzzyToken] ok 15 - 
+[Regex::FuzzyToken] ok 16 - 
+[Regex::FuzzyToken] ok 17 - 
+[Regex::FuzzyToken] ok 18 - 
+[Regex::FuzzyToken] 1..18
+[Regex::FuzzyToken] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Regex%3A%3AFuzzyToken%3Aver%3C0.5.1%3E%3Aauth%3Cgithub%3Aalabamenhu%3E.tar.gz/RegexFuzzyToken-master t/02-captures.t
+[Regex::FuzzyToken] not ok 1 - 
+[Regex::FuzzyToken] # Failed test at t/02-captures.t line 8
+[Regex::FuzzyToken] # expected: 'aaa'
+[Regex::FuzzyToken] #      got: (Any)
+[Regex::FuzzyToken] not ok 2 - 
+[Regex::FuzzyToken] # Failed test at t/02-captures.t line 9
+[Regex::FuzzyToken] # expected: 'ccc'
+[Regex::FuzzyToken] #      got: (Any)
+[Regex::FuzzyToken] not ok 3 - 
+[Regex::FuzzyToken] # Failed test at t/02-captures.t line 16
+[Regex::FuzzyToken] # expected: '111'
+[Regex::FuzzyToken] #      got: (Any)
+[Regex::FuzzyToken] not ok 4 - 
+[Regex::FuzzyToken] # Failed test at t/02-captures.t line 17
+[Regex::FuzzyToken] # expected: '222'
+[Regex::FuzzyToken] #      got: (Any)
+[Regex::FuzzyToken] 1..4
+[Regex::FuzzyToken] # You failed 4 tests of 4
+[Regex::FuzzyToken] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Regex%3A%3AFuzzyToken%3Aver%3C0.5.1%3E%3Aauth%3Cgithub%3Aalabamenhu%3E.tar.gz/RegexFuzzyToken-master t/03-modifiers.t
+[Regex::FuzzyToken] not ok 1 - 
+[Regex::FuzzyToken] # Failed test at t/03-modifiers.t line 8
+[Regex::FuzzyToken] # expected: 'aaa'
+[Regex::FuzzyToken] #      got: (Any)
+[Regex::FuzzyToken] not ok 2 - 
+[Regex::FuzzyToken] # Failed test at t/03-modifiers.t line 9
+[Regex::FuzzyToken] # expected: 'ééé'
+[Regex::FuzzyToken] #      got: (Any)
+[Regex::FuzzyToken] not ok 3 - 
+[Regex::FuzzyToken] # Failed test at t/03-modifiers.t line 16
+[Regex::FuzzyToken] # expected: 'aaa'
+[Regex::FuzzyToken] #      got: (Any)
+[Regex::FuzzyToken] not ok 4 - 
+[Regex::FuzzyToken] # Failed test at t/03-modifiers.t line 17
+[Regex::FuzzyToken] # expected: 'ééé'
+[Regex::FuzzyToken] #      got: (Any)
+[Regex::FuzzyToken] not ok 5 - 
+[Regex::FuzzyToken] # Failed test at t/03-modifiers.t line 24
+[Regex::FuzzyToken] # expected: 'aaa'
+[Regex::FuzzyToken] #      got: (Any)
+[Regex::FuzzyToken] not ok 6 - 
+[Regex::FuzzyToken] # Failed test at t/03-modifiers.t line 25
+[Regex::FuzzyToken] # expected: 'ééé'
+[Regex::FuzzyToken] #      got: (Any)
+[Regex::FuzzyToken] 1..6
+[Regex::FuzzyToken] # You failed 6 tests of 6
+===> Testing [FAIL]: Regex::FuzzyToken:ver<0.5.1>:auth<Matthew ‘Matéu’ Stephen Stuckwisch>
+[Regex::FuzzyToken] Failed to get passing tests, but continuing with --force-test
+===> Installing: Regex::FuzzyToken:ver<0.5.1>:auth<Matthew ‘Matéu’ Stephen Stuckwisch>
+===> Install [OK] for Regex::FuzzyToken:ver<0.5.1>:auth<Matthew ‘Matéu’ Stephen Stuckwisch>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 1min 58.325s
+             CPU time consumed: 2min 4.440s
+                   Memory peak: 1.3G (swap: 0B)

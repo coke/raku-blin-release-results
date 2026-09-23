@@ -1,0 +1,124 @@
+Running as unit: run-p332551-i366571.service; invocation ID: d2c5cb343dcc46bca8a43ac1ca918308
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: LIVR
+===> Found: LIVR:ver<2.1.0>:auth<cpan:KOORCHIK> [via Zef::Repository::Ecosystems<rea>]
+[LIVR] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790135708.332552.7915.228692135858/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/L/LIVR/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz
+===> Fetching [OK]: LIVR:ver<2.1.0>:auth<cpan:KOORCHIK> to /home/coke/sandbox/blin/data/zef-data/tmp/1790135708.332552.7915.228692135858/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz
+[LIVR] Command: tar -t -f ./LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz
+[LIVR] Command: tar -xvf ./LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz -C ../LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz
+===> Extraction [OK]: LIVR to /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz
+===> Testing: LIVR:ver<2.1.0>
+[LIVR] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/00-simple.t
+[LIVR] ===SORRY!=== Error while compiling t/00-simple.t
+[LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR)
+[LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special)
+[LIVR] Quantifier quantifies nothing
+[LIVR] at /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special):31
+[LIVR] ------>     my $url-re = rx:P5`^(?:<HERE>(?:https?)://(?:(?:(?:(?:(?:(?:[a-zA-Z0-
+[LIVR] at /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR):7
+[LIVR] ------> <BOL><HERE>use LIVR::Rules::Special;
+[LIVR] at t/00-simple.t:4
+[LIVR] ------> <BOL><HERE>use LIVR;
+[LIVR] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/01-livr-test-suite.t
+[LIVR] ===SORRY!=== Error while compiling t/01-livr-test-suite.t
+[LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR)
+[LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special)
+[LIVR] Quantifier quantifies nothing
+[LIVR] at /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special):31
+[LIVR] ------>     my $url-re = rx:P5`^(?:<HERE>(?:https?)://(?:(?:(?:(?:(?:(?:[a-zA-Z0-
+[LIVR] at /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR):7
+[LIVR] ------> <BOL><HERE>use LIVR::Rules::Special;
+[LIVR] at t/01-livr-test-suite.t:6
+[LIVR] ------> <BOL><HERE>use LIVR;
+[LIVR] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/02-rules-registration.t
+[LIVR] ===SORRY!=== Error while compiling t/02-rules-registration.t
+[LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR)
+[LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special)
+[LIVR] Quantifier quantifies nothing
+[LIVR] at /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special):31
+[LIVR] ------>     my $url-re = rx:P5`^(?:<HERE>(?:https?)://(?:(?:(?:(?:(?:(?:[a-zA-Z0-
+[LIVR] at /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR):7
+[LIVR] ------> <BOL><HERE>use LIVR::Rules::Special;
+[LIVR] at t/02-rules-registration.t:4
+[LIVR] ------> <BOL><HERE>use LIVR;
+[LIVR] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/03-auto-trim.t
+[LIVR] ===SORRY!=== Error while compiling t/03-auto-trim.t
+[LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR)
+[LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special)
+[LIVR] Quantifier quantifies nothing
+[LIVR] at /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special):31
+[LIVR] ------>     my $url-re = rx:P5`^(?:<HERE>(?:https?)://(?:(?:(?:(?:(?:(?:[a-zA-Z0-
+[LIVR] at /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR):7
+[LIVR] ------> <BOL><HERE>use LIVR::Rules::Special;
+[LIVR] at t/03-auto-trim.t:4
+[LIVR] ------> <BOL><HERE>use LIVR;
+[LIVR] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/04-custom-filters.t
+[LIVR] ===SORRY!=== Error while compiling t/04-custom-filters.t
+[LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR)
+[LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special)
+[LIVR] Quantifier quantifies nothing
+[LIVR] at /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special):31
+[LIVR] ------>     my $url-re = rx:P5`^(?:<HERE>(?:https?)://(?:(?:(?:(?:(?:(?:[a-zA-Z0-
+[LIVR] at /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR):7
+[LIVR] ------> <BOL><HERE>use LIVR::Rules::Special;
+[LIVR] at t/04-custom-filters.t:4
+[LIVR] ------> <BOL><HERE>use LIVR;
+[LIVR] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/05-perl6-like.t
+[LIVR] ===SORRY!=== Error while compiling t/05-perl6-like.t
+[LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR)
+[LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special)
+[LIVR] Quantifier quantifies nothing
+[LIVR] at /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special):31
+[LIVR] ------>     my $url-re = rx:P5`^(?:<HERE>(?:https?)://(?:(?:(?:(?:(?:(?:[a-zA-Z0-
+[LIVR] at /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR):7
+[LIVR] ------> <BOL><HERE>use LIVR::Rules::Special;
+[LIVR] at t/05-perl6-like.t:4
+[LIVR] ------> <BOL><HERE>use LIVR;
+[LIVR] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/06-patch-all-rules.t
+[LIVR] ===SORRY!=== Error while compiling t/06-patch-all-rules.t
+[LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR)
+[LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special)
+[LIVR] Quantifier quantifies nothing
+[LIVR] at /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special):31
+[LIVR] ------>     my $url-re = rx:P5`^(?:<HERE>(?:https?)://(?:(?:(?:(?:(?:(?:[a-zA-Z0-
+[LIVR] at /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR):7
+[LIVR] ------> <BOL><HERE>use LIVR::Rules::Special;
+[LIVR] at t/06-patch-all-rules.t:4
+[LIVR] ------> <BOL><HERE>use LIVR;
+[LIVR] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/07-register-aliased-default-rule.t
+[LIVR] ===SORRY!=== Error while compiling t/07-register-aliased-default-rule.t
+[LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR)
+[LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special)
+[LIVR] Quantifier quantifies nothing
+[LIVR] at /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special):31
+[LIVR] ------>     my $url-re = rx:P5`^(?:<HERE>(?:https?)://(?:(?:(?:(?:(?:(?:[a-zA-Z0-
+[LIVR] at /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR):7
+[LIVR] ------> <BOL><HERE>use LIVR::Rules::Special;
+[LIVR] at t/07-register-aliased-default-rule.t:4
+[LIVR] ------> <BOL><HERE>use LIVR;
+===> Testing [FAIL]: LIVR:ver<2.1.0>
+[LIVR] Failed to get passing tests, but continuing with --force-test
+===> Installing: LIVR:ver<2.1.0>
+===> Install [FAIL] for LIVR:ver<2.1.0>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/LIVR_cpan:KOORCHIK_2.1.0_0/sources/B706D84CB0E5C4656C33650F95EE6C8EA3F170F5 (LIVR)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/LIVR_cpan:KOORCHIK_2.1.0_0/sources/D45B3ABCC4ECF401E29D07B9A4542FED2A48FED9 (LIVR::Rules::Special)
+Quantifier quantifies nothing
+at /home/coke/sandbox/blin/installed/LIVR_cpan:KOORCHIK_2.1.0_0/sources/D45B3ABCC4ECF401E29D07B9A4542FED2A48FED9 (LIVR::Rules::Special):31
+------>     my $url-re = rx:P5`^(?:<HERE>(?:https?)://(?:(?:(?:(?:(?:(?:[a-zA-Z0-
+
+at /home/coke/sandbox/blin/installed/LIVR_cpan:KOORCHIK_2.1.0_0/sources/B706D84CB0E5C4656C33650F95EE6C8EA3F170F5 (LIVR):7
+------> <BOL><HERE>use LIVR::Rules::Special;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/LIVR_cpan:KOORCHIK_2.1.0_0/sources/B706D84CB0E5C4656C33650F95EE6C8EA3F170F5 (LIVR)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/LIVR_cpan:KOORCHIK_2.1.0_0/sources/D45B3ABCC4ECF401E29D07B9A4542FED2A48FED9 (LIVR::Rules::Special)
+Quantifier quantifies nothing
+at /home/coke/sandbox/blin/installed/LIVR_cpan:KOORCHIK_2.1.0_0/sources/D45B3ABCC4ECF401E29D07B9A4542FED2A48FED9 (LIVR::Rules::Special):31
+------>     my $url-re = rx:P5`^(?:<HERE>(?:https?)://(?:(?:(?:(?:(?:(?:[a-zA-Z0-
+
+at /home/coke/sandbox/blin/installed/LIVR_cpan:KOORCHIK_2.1.0_0/sources/B706D84CB0E5C4656C33650F95EE6C8EA3F170F5 (LIVR):7
+------> <BOL><HERE>use LIVR::Rules::Special;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 2min 37.728s
+             CPU time consumed: 2min 46.843s
+                   Memory peak: 1.7G (swap: 0B)

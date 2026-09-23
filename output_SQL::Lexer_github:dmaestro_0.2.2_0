@@ -1,0 +1,615 @@
+Running as unit: run-p138481-i165505.service; invocation ID: bb6d340f42014fff93f9798473782e8a
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: SQL::Lexer
+===> Found: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro> [via Zef::Repository::Ecosystems<rea>]
+[SQL::Lexer] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790130551.138488.1858.8186166963194/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/SQL%3A%3ALexer/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+===> Fetching [OK]: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro> to /home/coke/sandbox/blin/data/zef-data/tmp/1790130551.138488.1858.8186166963194/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+[SQL::Lexer] Command: tar -t -f ./SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+[SQL::Lexer] Command: tar -xvf ./SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz -C ../SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+===> Extraction [OK]: SQL::Lexer to /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+===> Testing: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>
+[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/comments.t
+[SQL::Lexer] ok 1 - Good comment
+[SQL::Lexer] # -- a standard single-line comment
+[SQL::Lexer] # 
+[SQL::Lexer] # ---
+[SQL::Lexer] ok 2 - Good comment
+[SQL::Lexer] # -- a comment with Unicode »ö«
+[SQL::Lexer] # 
+[SQL::Lexer] # ---
+[SQL::Lexer] ok 3 - Good comment
+[SQL::Lexer] #  \# an extended (unix-style) comment
+[SQL::Lexer] # 
+[SQL::Lexer] # ---
+[SQL::Lexer] ok 4 - Good comment
+[SQL::Lexer] # /* a multi-line
+[SQL::Lexer] #  * comment
+[SQL::Lexer] #  */
+[SQL::Lexer] # ---
+[SQL::Lexer] ok 5 - Good comment
+[SQL::Lexer] # /* an embedded comment */
+[SQL::Lexer] # ---
+[SQL::Lexer] ok 6 - Bad comment
+[SQL::Lexer] # -- single-line comment
+[SQL::Lexer] # over two lines
+[SQL::Lexer] # 
+[SQL::Lexer] # ---
+[SQL::Lexer] ok 7 - Bad comment
+[SQL::Lexer] # -- single-line comment followed by whitespace
+[SQL::Lexer] #   
+[SQL::Lexer] # ---
+[SQL::Lexer] 1..7
+[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/compound_statement.t
+[SQL::Lexer] ===SORRY!=== Error while compiling t/compound_statement.t
+[SQL::Lexer] ===SORRY!===
+[SQL::Lexer] Cannot resolve caller trait_mod:<is>(SQL::Basic, SQL::Lexer:U, Str:D); none of these signatures matches:
+[SQL::Lexer]     (Mu:U $child, Mu:U $parent)
+[SQL::Lexer]     (Mu:U \child, Mu:U \parent, @subtypes)
+[SQL::Lexer]     (Mu:U $child, :DEPRECATED($)!)
+[SQL::Lexer]     (Mu:U $type, :rw($)!)
+[SQL::Lexer]     (Mu:U $type, :$nativesize!)
+[SQL::Lexer]     (Mu:U $type, :$ctype!)
+[SQL::Lexer]     (Mu:U $type, :$unsigned!)
+[SQL::Lexer]     (Mu:U $type, :hidden($)!)
+[SQL::Lexer]     (Mu:U $type, Mu :$array_type!)
+[SQL::Lexer]     (Mu:U $type, Mu:U $parent, Block)
+[SQL::Lexer]     (Mu:U $type, Mu:U $parent, Hash)
+[SQL::Lexer]     (Mu:U $type, :$implementation-detail!)
+[SQL::Lexer]     (Mu:U $type, *%fail)
+[SQL::Lexer]     (Attribute:D $attr, |c)
+[SQL::Lexer]     (Attribute:D $attr, :rw($)!)
+[SQL::Lexer]     (Attribute:D $attr, :readonly($)!)
+[SQL::Lexer]     (Attribute:D $attr, :$required!)
+[SQL::Lexer]     (Attribute:D $attr, Mu :$default!)
+[SQL::Lexer]     (Attribute:D $attr, :box_target($)!)
+[SQL::Lexer]     (Attribute:D $attr, :$DEPRECATED!)
+[SQL::Lexer]     (Attribute:D $attr, :$leading_docs!)
+[SQL::Lexer]     (Attribute:D $attr, :$trailing_docs!)
+[SQL::Lexer]     (Routine:D $r, |c)
+[SQL::Lexer]     (Routine:D $r, :rw($)!)
+[SQL::Lexer]     (Routine:D $r, :raw($)!)
+[SQL::Lexer]     (Routine:D $r, :default($)!)
+[SQL::Lexer]     (Routine:D $r, :$DEPRECATED!)
+[SQL::Lexer]     (Routine:D $r, Mu :$inlinable!)
+[SQL::Lexer]     (Routine:D $r, :onlystar($)!)
+[SQL::Lexer]     (Parameter:D $param, |c)
+[SQL::Lexer]     (Parameter:D $param, :readonly($)!)
+[SQL::Lexer]     (Parameter:D $param, :rw($)!)
+[SQL::Lexer]     (Parameter:D $param, :copy($)!)
+[SQL::Lexer]     (Parameter:D $param, :required($)!)
+[SQL::Lexer]     (Parameter:D $param, :raw($)!)
+[SQL::Lexer]     (Parameter:D $param, :onearg($)!)
+[SQL::Lexer]     (Parameter:D $param, :item($)!)
+[SQL::Lexer]     (Parameter:D $param, :$leading_docs!)
+[SQL::Lexer]     (Parameter:D $param, :$trailing_docs!)
+[SQL::Lexer]     (Routine:D $r, :$export!, :$SYMBOL = Code.new)
+[SQL::Lexer]     (Mu:U \type, :$export!)
+[SQL::Lexer]     (Mu \sym, :$export!, :$SYMBOL!)
+[SQL::Lexer]     (Block:D $r, :$leading_docs!)
+[SQL::Lexer]     (Block:D $r, :$trailing_docs!)
+[SQL::Lexer]     (Routine:D $r, :$leading_docs!)
+[SQL::Lexer]     (Routine:D $r, :$trailing_docs!)
+[SQL::Lexer]     (Mu:U $docee, :$leading_docs!)
+[SQL::Lexer]     (Mu:U $docee, :$trailing_docs!)
+[SQL::Lexer]     (Routine:D $r, Str :$revision-gated!)
+[SQL::Lexer]     (Routine:D $r, :$implementation-detail!)
+[SQL::Lexer]     (Routine:D $r, :$hidden-from-backtrace!)
+[SQL::Lexer]     (Routine:D $r, :$hidden-from-USAGE!)
+[SQL::Lexer]     (Routine:D $r, :$pure!)
+[SQL::Lexer]     (Routine:D $r, :$nodal!)
+[SQL::Lexer]     (Attribute:D $a, :$built!)
+[SQL::Lexer]     (Variable:D $v, |c)
+[SQL::Lexer]     (Variable:D $v, Mu :$default!)
+[SQL::Lexer]     (Variable:D $v, :$dynamic!)
+[SQL::Lexer]     (Variable:D $v, :$export!)
+[SQL::Lexer]     (Routine:D $r, :&equiv! --> Nil)
+[SQL::Lexer]     (Routine:D $r, Str:D :$equiv! --> Nil)
+[SQL::Lexer]     (Routine:D $r, :&tighter! --> Nil)
+[SQL::Lexer]     (Routine:D $r, Str:D :$tighter!)
+[SQL::Lexer]     (Routine:D $r, :&looser! --> Nil)
+[SQL::Lexer]     (Routine:D $r, Str:D :$looser!)
+[SQL::Lexer]     (Routine:D $r, :$assoc! --> Nil)
+[SQL::Lexer]     (Routine:D $r, :%prec! --> Nil)
+[SQL::Lexer]     (Operator:D $o, :&equiv! --> Nil)
+[SQL::Lexer]     (Operator:D $o, Str:D :$equiv! --> Nil)
+[SQL::Lexer]     (Operator:D $o, :&tighter! --> Nil)
+[SQL::Lexer]     (Operator:D $o, Str:D :$tighter! --> Nil)
+[SQL::Lexer]     (Operator:D $o, :&looser! --> Nil)
+[SQL::Lexer]     (Operator:D $o, Str:D :$looser! --> Nil)
+[SQL::Lexer]     (Operator:D $o, :$assoc! --> Nil)
+[SQL::Lexer]   in any IMPL-BEGIN-TIME-CALL at src/Raku/ast/base.rakumod line 4096
+[SQL::Lexer]   in any apply at src/Raku/ast/traits.rakumod line 168
+[SQL::Lexer]   in any  at src/Raku/ast/traits.rakumod line 64
+[SQL::Lexer]   in method apply-traits at src/Raku/ast/traits.rakumod line 50
+[SQL::Lexer]   in any PERFORM-BEGIN at src/Raku/ast/package.rakumod line 328
+[SQL::Lexer]   in any  at src/Raku/ast/begintime.rakumod line 22
+[SQL::Lexer]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[SQL::Lexer]   in any enter-package-scope at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any package-declarator:sym<grammar> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any term:sym<package-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any package-declarator:sym<package> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] Invalid type smiley ':ver' used, only ':D', ':U' and ':_' are allowed
+[SQL::Lexer] at /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master/lib/SQL/Basic.pm6 (SQL::Basic):5
+[SQL::Lexer] ------> grammar Basic:ver<0.2.2> is Lexer:ver<HERE><0.2.1..*> {
+[SQL::Lexer] at t/compound_statement.t:4
+[SQL::Lexer] ------> <BOL><HERE>use SQL::Basic;
+[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/datetime.t
+[SQL::Lexer] ok 1 - Good datetime(date-string): '0000-00-00'
+[SQL::Lexer] ok 2 - Good datetime(date-string): "2017-12-25"
+[SQL::Lexer] ok 3 - Good datetime(date-string): '2017-12-00'
+[SQL::Lexer] ok 4 - Good datetime(time-string): '00:00:00'
+[SQL::Lexer] ok 5 - Good datetime(time-string): '23:59:59'
+[SQL::Lexer] ok 6 - Good datetime(time-string): '12:30:00-06:00'
+[SQL::Lexer] ok 7 - Good datetime(time-string): '6:30:00+04:00'
+[SQL::Lexer] ok 8 - Good datetime(timestamp-string): '1492-10-12 11:30:21'
+[SQL::Lexer] ok 9 - Good datetime(date-literal): DATE "2017-12-25"
+[SQL::Lexer] ok 10 - Good datetime(time-literal): TIME '12:30:00-06:00'
+[SQL::Lexer] ok 11 - Good datetime(timestamp-literal): TIMESTAMP '1492-10-12 11:30:21'
+[SQL::Lexer] ok 12 - Bad literal: |DATE "2017-12-25'|
+[SQL::Lexer] ok 13 - Bad literal: |DATE 2017-12-25|
+[SQL::Lexer] ok 14 - Bad literal: |TIME "2017-12-25"|
+[SQL::Lexer] 1..14
+[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/literals.t
+[SQL::Lexer] ok 1 - Good literal: |124|
+[SQL::Lexer] ok 2 - Correct type: unsigned-numeric-literal
+[SQL::Lexer] ok 3 - Good literal: |12.4|
+[SQL::Lexer] ok 4 - Correct type: unsigned-numeric-literal
+[SQL::Lexer] ok 5 - Good literal: |+12.4|
+[SQL::Lexer] ok 6 - Correct type: signed-numeric-literal
+[SQL::Lexer] ok 7 - Good literal: |-12.4|
+[SQL::Lexer] ok 8 - Correct type: signed-numeric-literal
+[SQL::Lexer] ok 9 - Good literal: |-0|
+[SQL::Lexer] ok 10 - Correct type: signed-numeric-literal
+[SQL::Lexer] ok 11 - Good literal: |+1|
+[SQL::Lexer] ok 12 - Correct type: signed-numeric-literal
+[SQL::Lexer] ok 13 - Good literal: |'abc'|
+[SQL::Lexer] ok 14 - Correct type: char-string-literal
+[SQL::Lexer] ok 15 - Good literal: |'ab cd '|
+[SQL::Lexer] ok 16 - Correct type: char-string-literal
+[SQL::Lexer] ok 17 - Good literal: |'ab"cd '|
+[SQL::Lexer] ok 18 - Correct type: char-string-literal
+[SQL::Lexer] ok 19 - Good literal: |'ab''c'|
+[SQL::Lexer] ok 20 - Correct type: char-string-literal
+[SQL::Lexer] ok 21 - Good literal: |"abc"|
+[SQL::Lexer] ok 22 - Correct type: char-string-literal
+[SQL::Lexer] ok 23 - Good literal: |"ab""c"|
+[SQL::Lexer] ok 24 - Correct type: char-string-literal
+[SQL::Lexer] ok 25 - Good literal: |"ab''c"|
+[SQL::Lexer] ok 26 - Correct type: char-string-literal
+[SQL::Lexer] ok 27 - Good literal: |""""|
+[SQL::Lexer] ok 28 - Correct type: char-string-literal
+[SQL::Lexer] ok 29 - Good literal: |''|
+[SQL::Lexer] ok 30 - Correct type: char-string-literal
+[SQL::Lexer] ok 31 - Good literal: |TRUE|
+[SQL::Lexer] ok 32 - Correct type: boolean-literal
+[SQL::Lexer] ok 33 - Good literal: |FALSE|
+[SQL::Lexer] ok 34 - Correct type: boolean-literal
+[SQL::Lexer] ok 35 - Bad literal: |12a4|
+[SQL::Lexer] ok 36 - Bad literal: |12.34.56|
+[SQL::Lexer] ok 37 - Bad literal: |e12|
+[SQL::Lexer] ok 38 - Bad literal: |-+0|
+[SQL::Lexer] ok 39 - Bad literal: |1,002|
+[SQL::Lexer] ok 40 - Bad literal: |'a'b'|
+[SQL::Lexer] ok 41 - Bad literal: |'abc"|
+[SQL::Lexer] ok 42 - Bad literal: |"def'|
+[SQL::Lexer] 1..42
+[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/load_both.t
+[SQL::Lexer] ok 1 - SQL::Lexer module can be use-d ok
+[SQL::Lexer] not ok 2 - SQL::Basic module can be use-d ok
+[SQL::Lexer] # Failed test 'SQL::Basic module can be use-d ok'
+[SQL::Lexer] # at t/load_both.t line 6
+[SQL::Lexer] # ===SORRY!===
+[SQL::Lexer] # Cannot resolve caller trait_mod:<is>(SQL::Basic, SQL::Lexer:U, Str:D); none of these signatures matches:
+[SQL::Lexer] #     (Mu:U $child, Mu:U $parent)
+[SQL::Lexer] #     (Mu:U \child, Mu:U \parent, @subtypes)
+[SQL::Lexer] #     (Mu:U $child, :DEPRECATED($)!)
+[SQL::Lexer] #     (Mu:U $type, :rw($)!)
+[SQL::Lexer] #     (Mu:U $type, :$nativesize!)
+[SQL::Lexer] #     (Mu:U $type, :$ctype!)
+[SQL::Lexer] #     (Mu:U $type, :$unsigned!)
+[SQL::Lexer] #     (Mu:U $type, :hidden($)!)
+[SQL::Lexer] #     (Mu:U $type, Mu :$array_type!)
+[SQL::Lexer] #     (Mu:U $type, Mu:U $parent, Block)
+[SQL::Lexer] #     (Mu:U $type, Mu:U $parent, Hash)
+[SQL::Lexer] #     (Mu:U $type, :$implementation-detail!)
+[SQL::Lexer] #     (Mu:U $type, *%fail)
+[SQL::Lexer] #     (Attribute:D $attr, |c)
+[SQL::Lexer] #     (Attribute:D $attr, :rw($)!)
+[SQL::Lexer] #     (Attribute:D $attr, :readonly($)!)
+[SQL::Lexer] #     (Attribute:D $attr, :$required!)
+[SQL::Lexer] #     (Attribute:D $attr, Mu :$default!)
+[SQL::Lexer] #     (Attribute:D $attr, :box_target($)!)
+[SQL::Lexer] #     (Attribute:D $attr, :$DEPRECATED!)
+[SQL::Lexer] #     (Attribute:D $attr, :$leading_docs!)
+[SQL::Lexer] #     (Attribute:D $attr, :$trailing_docs!)
+[SQL::Lexer] #     (Routine:D $r, |c)
+[SQL::Lexer] #     (Routine:D $r, :rw($)!)
+[SQL::Lexer] #     (Routine:D $r, :raw($)!)
+[SQL::Lexer] #     (Routine:D $r, :default($)!)
+[SQL::Lexer] #     (Routine:D $r, :$DEPRECATED!)
+[SQL::Lexer] #     (Routine:D $r, Mu :$inlinable!)
+[SQL::Lexer] #     (Routine:D $r, :onlystar($)!)
+[SQL::Lexer] #     (Parameter:D $param, |c)
+[SQL::Lexer] #     (Parameter:D $param, :readonly($)!)
+[SQL::Lexer] #     (Parameter:D $param, :rw($)!)
+[SQL::Lexer] #     (Parameter:D $param, :copy($)!)
+[SQL::Lexer] #     (Parameter:D $param, :required($)!)
+[SQL::Lexer] #     (Parameter:D $param, :raw($)!)
+[SQL::Lexer] #     (Parameter:D $param, :onearg($)!)
+[SQL::Lexer] #     (Parameter:D $param, :item($)!)
+[SQL::Lexer] #     (Parameter:D $param, :$leading_docs!)
+[SQL::Lexer] #     (Parameter:D $param, :$trailing_docs!)
+[SQL::Lexer] #     (Routine:D $r, :$export!, :$SYMBOL = Code.new)
+[SQL::Lexer] #     (Mu:U \type, :$export!)
+[SQL::Lexer] #     (Mu \sym, :$export!, :$SYMBOL!)
+[SQL::Lexer] #     (Block:D $r, :$leading_docs!)
+[SQL::Lexer] #     (Block:D $r, :$trailing_docs!)
+[SQL::Lexer] #     (Routine:D $r, :$leading_docs!)
+[SQL::Lexer] #     (Routine:D $r, :$trailing_docs!)
+[SQL::Lexer] #     (Mu:U $docee, :$leading_docs!)
+[SQL::Lexer] #     (Mu:U $docee, :$trailing_docs!)
+[SQL::Lexer] #     (Routine:D $r, Str :$revision-gated!)
+[SQL::Lexer] #     (Routine:D $r, :$implementation-detail!)
+[SQL::Lexer] #     (Routine:D $r, :$hidden-from-backtrace!)
+[SQL::Lexer] #     (Routine:D $r, :$hidden-from-USAGE!)
+[SQL::Lexer] #     (Routine:D $r, :$pure!)
+[SQL::Lexer] #     (Routine:D $r, :$nodal!)
+[SQL::Lexer] #     (Attribute:D $a, :$built!)
+[SQL::Lexer] #     (Variable:D $v, |c)
+[SQL::Lexer] #     (Variable:D $v, Mu :$default!)
+[SQL::Lexer] #     (Variable:D $v, :$dynamic!)
+[SQL::Lexer] #     (Variable:D $v, :$export!)
+[SQL::Lexer] #     (Routine:D $r, :&equiv! --> Nil)
+[SQL::Lexer] #     (Routine:D $r, Str:D :$equiv! --> Nil)
+[SQL::Lexer] #     (Routine:D $r, :&tighter! --> Nil)
+[SQL::Lexer] #     (Routine:D $r, Str:D :$tighter!)
+[SQL::Lexer] #     (Routine:D $r, :&looser! --> Nil)
+[SQL::Lexer] #     (Routine:D $r, Str:D :$looser!)
+[SQL::Lexer] #     (Routine:D $r, :$assoc! --> Nil)
+[SQL::Lexer] #     (Routine:D $r, :%prec! --> Nil)
+[SQL::Lexer] #     (Operator:D $o, :&equiv! --> Nil)
+[SQL::Lexer] #     (Operator:D $o, Str:D :$equiv! --> Nil)
+[SQL::Lexer] #     (Operator:D $o, :&tighter! --> Nil)
+[SQL::Lexer] #     (Operator:D $o, Str:D :$tighter! --> Nil)
+[SQL::Lexer] #     (Operator:D $o, :&looser! --> Nil)
+[SQL::Lexer] #     (Operator:D $o, Str:D :$looser! --> Nil)
+[SQL::Lexer] #     (Operator:D $o, :$assoc! --> Nil)
+[SQL::Lexer] #   in any IMPL-BEGIN-TIME-CALL at src/Raku/ast/base.rakumod line 4096
+[SQL::Lexer] #   in any apply at src/Raku/ast/traits.rakumod line 168
+[SQL::Lexer] #   in any  at src/Raku/ast/traits.rakumod line 64
+[SQL::Lexer] #   in method apply-traits at src/Raku/ast/traits.rakumod line 50
+[SQL::Lexer] #   in any PERFORM-BEGIN at src/Raku/ast/package.rakumod line 328
+[SQL::Lexer] #   in any  at src/Raku/ast/begintime.rakumod line 22
+[SQL::Lexer] #   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[SQL::Lexer] #   in any enter-package-scope at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any package-declarator:sym<grammar> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any term:sym<package-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any package-declarator:sym<package> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] # 
+[SQL::Lexer] # Invalid type smiley ':ver' used, only ':D', ':U' and ':_' are allowed
+[SQL::Lexer] # at /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master/lib/SQL/Basic.pm6 (SQL::Basic):5
+[SQL::Lexer] # ------> grammar Basic:ver<0.2.2> is Lexer:ver<HERE><0.2.1..*> {
+[SQL::Lexer] # 
+[SQL::Lexer] # 
+[SQL::Lexer] ===SORRY!=== Error while compiling EVAL_2
+[SQL::Lexer] ===SORRY!===
+[SQL::Lexer] Cannot resolve caller trait_mod:<is>(SQL::Basic, SQL::Lexer:U, Str:D); none of these signatures matches:
+[SQL::Lexer]     (Mu:U $child, Mu:U $parent)
+[SQL::Lexer]     (Mu:U \child, Mu:U \parent, @subtypes)
+[SQL::Lexer]     (Mu:U $child, :DEPRECATED($)!)
+[SQL::Lexer]     (Mu:U $type, :rw($)!)
+[SQL::Lexer]     (Mu:U $type, :$nativesize!)
+[SQL::Lexer]     (Mu:U $type, :$ctype!)
+[SQL::Lexer]     (Mu:U $type, :$unsigned!)
+[SQL::Lexer]     (Mu:U $type, :hidden($)!)
+[SQL::Lexer]     (Mu:U $type, Mu :$array_type!)
+[SQL::Lexer]     (Mu:U $type, Mu:U $parent, Block)
+[SQL::Lexer]     (Mu:U $type, Mu:U $parent, Hash)
+[SQL::Lexer]     (Mu:U $type, :$implementation-detail!)
+[SQL::Lexer]     (Mu:U $type, *%fail)
+[SQL::Lexer]     (Attribute:D $attr, |c)
+[SQL::Lexer]     (Attribute:D $attr, :rw($)!)
+[SQL::Lexer]     (Attribute:D $attr, :readonly($)!)
+[SQL::Lexer]     (Attribute:D $attr, :$required!)
+[SQL::Lexer]     (Attribute:D $attr, Mu :$default!)
+[SQL::Lexer]     (Attribute:D $attr, :box_target($)!)
+[SQL::Lexer]     (Attribute:D $attr, :$DEPRECATED!)
+[SQL::Lexer]     (Attribute:D $attr, :$leading_docs!)
+[SQL::Lexer]     (Attribute:D $attr, :$trailing_docs!)
+[SQL::Lexer]     (Routine:D $r, |c)
+[SQL::Lexer]     (Routine:D $r, :rw($)!)
+[SQL::Lexer]     (Routine:D $r, :raw($)!)
+[SQL::Lexer]     (Routine:D $r, :default($)!)
+[SQL::Lexer]     (Routine:D $r, :$DEPRECATED!)
+[SQL::Lexer]     (Routine:D $r, Mu :$inlinable!)
+[SQL::Lexer]     (Routine:D $r, :onlystar($)!)
+[SQL::Lexer]     (Parameter:D $param, |c)
+[SQL::Lexer]     (Parameter:D $param, :readonly($)!)
+[SQL::Lexer]     (Parameter:D $param, :rw($)!)
+[SQL::Lexer]     (Parameter:D $param, :copy($)!)
+[SQL::Lexer]     (Parameter:D $param, :required($)!)
+[SQL::Lexer]     (Parameter:D $param, :raw($)!)
+[SQL::Lexer]     (Parameter:D $param, :onearg($)!)
+[SQL::Lexer]     (Parameter:D $param, :item($)!)
+[SQL::Lexer]     (Parameter:D $param, :$leading_docs!)
+[SQL::Lexer]     (Parameter:D $param, :$trailing_docs!)
+[SQL::Lexer]     (Routine:D $r, :$export!, :$SYMBOL = Code.new)
+[SQL::Lexer]     (Mu:U \type, :$export!)
+[SQL::Lexer]     (Mu \sym, :$export!, :$SYMBOL!)
+[SQL::Lexer]     (Block:D $r, :$leading_docs!)
+[SQL::Lexer]     (Block:D $r, :$trailing_docs!)
+[SQL::Lexer]     (Routine:D $r, :$leading_docs!)
+[SQL::Lexer]     (Routine:D $r, :$trailing_docs!)
+[SQL::Lexer]     (Mu:U $docee, :$leading_docs!)
+[SQL::Lexer]     (Mu:U $docee, :$trailing_docs!)
+[SQL::Lexer]     (Routine:D $r, Str :$revision-gated!)
+[SQL::Lexer]     (Routine:D $r, :$implementation-detail!)
+[SQL::Lexer]     (Routine:D $r, :$hidden-from-backtrace!)
+[SQL::Lexer]     (Routine:D $r, :$hidden-from-USAGE!)
+[SQL::Lexer]     (Routine:D $r, :$pure!)
+[SQL::Lexer]     (Routine:D $r, :$nodal!)
+[SQL::Lexer]     (Attribute:D $a, :$built!)
+[SQL::Lexer]     (Variable:D $v, |c)
+[SQL::Lexer]     (Variable:D $v, Mu :$default!)
+[SQL::Lexer]     (Variable:D $v, :$dynamic!)
+[SQL::Lexer]     (Variable:D $v, :$export!)
+[SQL::Lexer]     (Routine:D $r, :&equiv! --> Nil)
+[SQL::Lexer]     (Routine:D $r, Str:D :$equiv! --> Nil)
+[SQL::Lexer]     (Routine:D $r, :&tighter! --> Nil)
+[SQL::Lexer]     (Routine:D $r, Str:D :$tighter!)
+[SQL::Lexer]     (Routine:D $r, :&looser! --> Nil)
+[SQL::Lexer]     (Routine:D $r, Str:D :$looser!)
+[SQL::Lexer]     (Routine:D $r, :$assoc! --> Nil)
+[SQL::Lexer]     (Routine:D $r, :%prec! --> Nil)
+[SQL::Lexer]     (Operator:D $o, :&equiv! --> Nil)
+[SQL::Lexer]     (Operator:D $o, Str:D :$equiv! --> Nil)
+[SQL::Lexer]     (Operator:D $o, :&tighter! --> Nil)
+[SQL::Lexer]     (Operator:D $o, Str:D :$tighter! --> Nil)
+[SQL::Lexer]     (Operator:D $o, :&looser! --> Nil)
+[SQL::Lexer]     (Operator:D $o, Str:D :$looser! --> Nil)
+[SQL::Lexer]     (Operator:D $o, :$assoc! --> Nil)
+[SQL::Lexer]   in any IMPL-BEGIN-TIME-CALL at src/Raku/ast/base.rakumod line 4096
+[SQL::Lexer]   in any apply at src/Raku/ast/traits.rakumod line 168
+[SQL::Lexer]   in any  at src/Raku/ast/traits.rakumod line 64
+[SQL::Lexer]   in method apply-traits at src/Raku/ast/traits.rakumod line 50
+[SQL::Lexer]   in any PERFORM-BEGIN at src/Raku/ast/package.rakumod line 328
+[SQL::Lexer]   in any  at src/Raku/ast/begintime.rakumod line 22
+[SQL::Lexer]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[SQL::Lexer]   in any enter-package-scope at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any package-declarator:sym<grammar> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any term:sym<package-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any package-declarator:sym<package> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] Invalid type smiley ':ver' used, only ':D', ':U' and ':_' are allowed
+[SQL::Lexer] at /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master/lib/SQL/Basic.pm6 (SQL::Basic):5
+[SQL::Lexer] ------> grammar Basic:ver<0.2.2> is Lexer:ver<HERE><0.2.1..*> {
+[SQL::Lexer] at EVAL_2:1
+[SQL::Lexer] ------> use SQL::Lexer; <HERE>use SQL::Basic; my $a = 1
+===> Testing [FAIL]: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>
+[SQL::Lexer] Failed to get passing tests, but continuing with --force-test
+===> Installing: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>
+===> Install [FAIL] for SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>: ===SORRY!===
+Cannot resolve caller trait_mod:<is>(SQL::Basic, SQL::Lexer:U, Str:D); none of these signatures matches:
+    (Mu:U $child, Mu:U $parent)
+    (Mu:U \child, Mu:U \parent, @subtypes)
+    (Mu:U $child, :DEPRECATED($)!)
+    (Mu:U $type, :rw($)!)
+    (Mu:U $type, :$nativesize!)
+    (Mu:U $type, :$ctype!)
+    (Mu:U $type, :$unsigned!)
+    (Mu:U $type, :hidden($)!)
+    (Mu:U $type, Mu :$array_type!)
+    (Mu:U $type, Mu:U $parent, Block)
+    (Mu:U $type, Mu:U $parent, Hash)
+    (Mu:U $type, :$implementation-detail!)
+    (Mu:U $type, *%fail)
+    (Attribute:D $attr, |c)
+    (Attribute:D $attr, :rw($)!)
+    (Attribute:D $attr, :readonly($)!)
+    (Attribute:D $attr, :$required!)
+    (Attribute:D $attr, Mu :$default!)
+    (Attribute:D $attr, :box_target($)!)
+    (Attribute:D $attr, :$DEPRECATED!)
+    (Attribute:D $attr, :$leading_docs!)
+    (Attribute:D $attr, :$trailing_docs!)
+    (Routine:D $r, |c)
+    (Routine:D $r, :rw($)!)
+    (Routine:D $r, :raw($)!)
+    (Routine:D $r, :default($)!)
+    (Routine:D $r, :$DEPRECATED!)
+    (Routine:D $r, Mu :$inlinable!)
+    (Routine:D $r, :onlystar($)!)
+    (Parameter:D $param, |c)
+    (Parameter:D $param, :readonly($)!)
+    (Parameter:D $param, :rw($)!)
+    (Parameter:D $param, :copy($)!)
+    (Parameter:D $param, :required($)!)
+    (Parameter:D $param, :raw($)!)
+    (Parameter:D $param, :onearg($)!)
+    (Parameter:D $param, :item($)!)
+    (Parameter:D $param, :$leading_docs!)
+    (Parameter:D $param, :$trailing_docs!)
+    (Routine:D $r, :$export!, :$SYMBOL = Code.new)
+    (Mu:U \type, :$export!)
+    (Mu \sym, :$export!, :$SYMBOL!)
+    (Block:D $r, :$leading_docs!)
+    (Block:D $r, :$trailing_docs!)
+    (Routine:D $r, :$leading_docs!)
+    (Routine:D $r, :$trailing_docs!)
+    (Mu:U $docee, :$leading_docs!)
+    (Mu:U $docee, :$trailing_docs!)
+    (Routine:D $r, Str :$revision-gated!)
+    (Routine:D $r, :$implementation-detail!)
+    (Routine:D $r, :$hidden-from-backtrace!)
+    (Routine:D $r, :$hidden-from-USAGE!)
+    (Routine:D $r, :$pure!)
+    (Routine:D $r, :$nodal!)
+    (Attribute:D $a, :$built!)
+    (Variable:D $v, |c)
+    (Variable:D $v, Mu :$default!)
+    (Variable:D $v, :$dynamic!)
+    (Variable:D $v, :$export!)
+    (Routine:D $r, :&equiv! --> Nil)
+    (Routine:D $r, Str:D :$equiv! --> Nil)
+    (Routine:D $r, :&tighter! --> Nil)
+    (Routine:D $r, Str:D :$tighter!)
+    (Routine:D $r, :&looser! --> Nil)
+    (Routine:D $r, Str:D :$looser!)
+    (Routine:D $r, :$assoc! --> Nil)
+    (Routine:D $r, :%prec! --> Nil)
+    (Operator:D $o, :&equiv! --> Nil)
+    (Operator:D $o, Str:D :$equiv! --> Nil)
+    (Operator:D $o, :&tighter! --> Nil)
+    (Operator:D $o, Str:D :$tighter! --> Nil)
+    (Operator:D $o, :&looser! --> Nil)
+    (Operator:D $o, Str:D :$looser! --> Nil)
+    (Operator:D $o, :$assoc! --> Nil)
+  in any IMPL-BEGIN-TIME-CALL at src/Raku/ast/base.rakumod line 4096
+  in any apply at src/Raku/ast/traits.rakumod line 168
+  in any  at src/Raku/ast/traits.rakumod line 64
+  in method apply-traits at src/Raku/ast/traits.rakumod line 50
+  in any PERFORM-BEGIN at src/Raku/ast/package.rakumod line 328
+  in any  at src/Raku/ast/begintime.rakumod line 22
+  in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+  in any enter-package-scope at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any package-declarator:sym<grammar> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any term:sym<package-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any package-declarator:sym<package> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+
+Invalid type smiley ':ver' used, only ':D', ':U' and ':_' are allowed
+at /home/coke/sandbox/blin/installed/SQL::Lexer_github:dmaestro_0.2.2_0/sources/5B7FC68548A941EB06D2C93E26346A933B548D5C (SQL::Basic):5
+------> grammar Basic:ver<0.2.2> is Lexer:ver<HERE><0.2.1..*> {
+
+
+===SORRY!===
+Cannot resolve caller trait_mod:<is>(SQL::Basic, SQL::Lexer:U, Str:D); none of these signatures matches:
+    (Mu:U $child, Mu:U $parent)
+    (Mu:U \child, Mu:U \parent, @subtypes)
+    (Mu:U $child, :DEPRECATED($)!)
+    (Mu:U $type, :rw($)!)
+    (Mu:U $type, :$nativesize!)
+    (Mu:U $type, :$ctype!)
+    (Mu:U $type, :$unsigned!)
+    (Mu:U $type, :hidden($)!)
+    (Mu:U $type, Mu :$array_type!)
+    (Mu:U $type, Mu:U $parent, Block)
+    (Mu:U $type, Mu:U $parent, Hash)
+    (Mu:U $type, :$implementation-detail!)
+    (Mu:U $type, *%fail)
+    (Attribute:D $attr, |c)
+    (Attribute:D $attr, :rw($)!)
+    (Attribute:D $attr, :readonly($)!)
+    (Attribute:D $attr, :$required!)
+    (Attribute:D $attr, Mu :$default!)
+    (Attribute:D $attr, :box_target($)!)
+    (Attribute:D $attr, :$DEPRECATED!)
+    (Attribute:D $attr, :$leading_docs!)
+    (Attribute:D $attr, :$trailing_docs!)
+    (Routine:D $r, |c)
+    (Routine:D $r, :rw($)!)
+    (Routine:D $r, :raw($)!)
+    (Routine:D $r, :default($)!)
+    (Routine:D $r, :$DEPRECATED!)
+    (Routine:D $r, Mu :$inlinable!)
+    (Routine:D $r, :onlystar($)!)
+    (Parameter:D $param, |c)
+    (Parameter:D $param, :readonly($)!)
+    (Parameter:D $param, :rw($)!)
+    (Parameter:D $param, :copy($)!)
+    (Parameter:D $param, :required($)!)
+    (Parameter:D $param, :raw($)!)
+    (Parameter:D $param, :onearg($)!)
+    (Parameter:D $param, :item($)!)
+    (Parameter:D $param, :$leading_docs!)
+    (Parameter:D $param, :$trailing_docs!)
+    (Routine:D $r, :$export!, :$SYMBOL = Code.new)
+    (Mu:U \type, :$export!)
+    (Mu \sym, :$export!, :$SYMBOL!)
+    (Block:D $r, :$leading_docs!)
+    (Block:D $r, :$trailing_docs!)
+    (Routine:D $r, :$leading_docs!)
+    (Routine:D $r, :$trailing_docs!)
+    (Mu:U $docee, :$leading_docs!)
+    (Mu:U $docee, :$trailing_docs!)
+    (Routine:D $r, Str :$revision-gated!)
+    (Routine:D $r, :$implementation-detail!)
+    (Routine:D $r, :$hidden-from-backtrace!)
+    (Routine:D $r, :$hidden-from-USAGE!)
+    (Routine:D $r, :$pure!)
+    (Routine:D $r, :$nodal!)
+    (Attribute:D $a, :$built!)
+    (Variable:D $v, |c)
+    (Variable:D $v, Mu :$default!)
+    (Variable:D $v, :$dynamic!)
+    (Variable:D $v, :$export!)
+    (Routine:D $r, :&equiv! --> Nil)
+    (Routine:D $r, Str:D :$equiv! --> Nil)
+    (Routine:D $r, :&tighter! --> Nil)
+    (Routine:D $r, Str:D :$tighter!)
+    (Routine:D $r, :&looser! --> Nil)
+    (Routine:D $r, Str:D :$looser!)
+    (Routine:D $r, :$assoc! --> Nil)
+    (Routine:D $r, :%prec! --> Nil)
+    (Operator:D $o, :&equiv! --> Nil)
+    (Operator:D $o, Str:D :$equiv! --> Nil)
+    (Operator:D $o, :&tighter! --> Nil)
+    (Operator:D $o, Str:D :$tighter! --> Nil)
+    (Operator:D $o, :&looser! --> Nil)
+    (Operator:D $o, Str:D :$looser! --> Nil)
+    (Operator:D $o, :$assoc! --> Nil)
+  in any IMPL-BEGIN-TIME-CALL at src/Raku/ast/base.rakumod line 4096
+  in any apply at src/Raku/ast/traits.rakumod line 168
+  in any  at src/Raku/ast/traits.rakumod line 64
+  in method apply-traits at src/Raku/ast/traits.rakumod line 50
+  in any PERFORM-BEGIN at src/Raku/ast/package.rakumod line 328
+  in any  at src/Raku/ast/begintime.rakumod line 22
+  in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+  in any enter-package-scope at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any package-declarator:sym<grammar> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any term:sym<package-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any package-declarator:sym<package> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+
+Invalid type smiley ':ver' used, only ':D', ':U' and ':_' are allowed
+at /home/coke/sandbox/blin/installed/SQL::Lexer_github:dmaestro_0.2.2_0/sources/5B7FC68548A941EB06D2C93E26346A933B548D5C (SQL::Basic):5
+------> grammar Basic:ver<0.2.2> is Lexer:ver<HERE><0.2.1..*> {
+
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 2min 442ms
+             CPU time consumed: 2min 7.098s
+                   Memory peak: 1.4G (swap: 0B)

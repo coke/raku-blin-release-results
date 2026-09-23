@@ -1,0 +1,651 @@
+Running as unit: run-p469648-i536790.service; invocation ID: ff3b36717e444ca0b6865d5adc7eea8c
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: PDF::Content
+===> Found: PDF::Content:ver<0.9.11>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
+[PDF::Content] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790139097.469660.2676.6282843330778/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz https://360.zef.pm/P/DF/PDF_CONTENT/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz
+===> Fetching [OK]: PDF::Content:ver<0.9.11>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1790139097.469660.2676.6282843330778/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz
+[PDF::Content] Command: tar -t -f ./d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz
+[PDF::Content] Command: tar -xvf ./d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz -C ../d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz
+===> Extraction [OK]: PDF::Content to /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz
+===> Testing: PDF::Content:ver<0.9.11>:auth<zef:dwarring>
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/basic.t
+[PDF::Content] 1..6
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 950
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 935
+[PDF::Content]   in method FALLBACK at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 1166
+[PDF::Content]   in block <unit> at t/basic.t line 12
+[PDF::Content] # You planned 6 tests, but ran 0
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/canvas.t
+[PDF::Content] 1..4
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 950
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 935
+[PDF::Content]   in method ops at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 1
+[PDF::Content]   in method render at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Canvas.rakumod (PDF::Content::Canvas) line 104
+[PDF::Content]   in block <unit> at t/canvas.t line 14
+[PDF::Content] # You planned 4 tests, but ran 0
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/colors.t
+[PDF::Content] 1..11
+[PDF::Content] ok 1 - rgb export
+[PDF::Content] ok 2 - color enum
+[PDF::Content] ok 3 - cmyk color list
+[PDF::Content] ok 4 - cmyk color list
+[PDF::Content] ok 5 - rgb color list
+[PDF::Content] ok 6 - rgb 3 hex digits
+[PDF::Content] ok 7 - rgb 6 hex digits
+[PDF::Content] ok 8 - cmyk 3 hex digits
+[PDF::Content] ok 9 - cmyk 6 hex digits
+[PDF::Content] ok 10 - color object
+[PDF::Content] ok 11 - unknown color name
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/content-blocks.t
+[PDF::Content] 1..12
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 950
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 935
+[PDF::Content]   in method graphics at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content.rakumod (PDF::Content) line 61
+[PDF::Content]   in block <unit> at t/content-blocks.t line 12
+[PDF::Content] # You planned 12 tests, but ran 0
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/core-font.t
+[PDF::Content] 1..67
+[PDF::Content] ok 1 - core-font-name
+[PDF::Content] ok 2 - core-font-name
+[PDF::Content] ok 3 - core-font-name
+[PDF::Content] ok 4 - core-font-name
+[PDF::Content] ok 5 - font-name
+[PDF::Content] ok 6 - 
+[PDF::Content] ok 7 - is-embedded
+[PDF::Content] ok 8 - is-subset
+[PDF::Content] ok 9 - is-core-font
+[PDF::Content] ok 10 - font-name
+[PDF::Content] ok 11 - enc
+[PDF::Content] ok 12 - The object is-a '"Font::AFM"'
+[PDF::Content] ok 13 - .encode(...) sanity
+[PDF::Content] ok 14 - .decode(...) sanity
+[PDF::Content] ok 15 - charset
+[PDF::Content] ok 16 - The object is-a '"Font::AFM"'
+[PDF::Content] ok 17 - font-name
+[PDF::Content] ok 18 - .enc
+[PDF::Content] ok 19 - font height
+[PDF::Content] ok 20 - 
+[PDF::Content] ok 21 - font height hanging
+[PDF::Content] ok 22 - font height @ 12pt
+[PDF::Content] ok 23 - font base-height @ 12pt
+[PDF::Content] ok 24 - font hanging height @ 12pt
+[PDF::Content] ok 25 - .encode(...) sanity
+[PDF::Content] ok 26 - charset
+[PDF::Content] ok 27 - differences
+[PDF::Content] ok 28 - The object is-a '"Font::AFM"'
+[PDF::Content] ok 29 - font-name
+[PDF::Content] ok 30 - .encode(...) sanity
+[PDF::Content] ok 31 - :font-family => font-name
+[PDF::Content] ok 32 - font caching
+[PDF::Content] ok 33 - extended chars encoding
+[PDF::Content] ok 34 - extended chars decoding
+[PDF::Content] ok 35 - to-dict (extended chars)
+[PDF::Content] ok 36 - stringwidth :!kern
+[PDF::Content] ok 37 - stringwidth :kern
+[PDF::Content] ok 38 - .kern(...)
+[PDF::Content] ok 39 - .shape(...) kerning
+[PDF::Content] ok 40 - .shape(...) !kerning
+[PDF::Content] ok 41 - .shape(...) ligatures
+[PDF::Content] ok 42 - win encoding
+[PDF::Content] ok 43 - win decoding
+[PDF::Content] ok 44 - win raw decoding
+[PDF::Content] ok 45 - mac encoding
+[PDF::Content] ok 46 - mac decoding
+[PDF::Content] ok 47 - mac raw decoding
+[PDF::Content] ok 48 - The object is-a '"Font::Metrics::zapfdingbats"'
+[PDF::Content] ok 49 - .enc
+[PDF::Content] ok 50 - .encode(...)
+[PDF::Content] ok 51 - .decode(...)
+[PDF::Content] ok 52 - .decode(...)
+[PDF::Content] ok 53 - The object is-a '"Font::Metrics::courier-bold"'
+[PDF::Content] ok 54 - The object is-a '"Font::Metrics::symbol"'
+[PDF::Content] ok 55 - .enc
+[PDF::Content] ok 56 - .encode(...)
+[PDF::Content] ok 57 - .decode(...)
+[PDF::Content] ok 58 - win differences encoding
+[PDF::Content] ok 59 - dfferences to-dict
+[PDF::Content] ok 60 - mac-extra differences encoding
+[PDF::Content] ok 61 - mac-extra differences decoding
+[PDF::Content] ok 62 - dfferences to-dict
+[PDF::Content] ok 63 - 
+[PDF::Content] ok 64 - 
+[PDF::Content] ok 65 - PDF font caching
+[PDF::Content] ok 66 - font uniqueness 1
+[PDF::Content] ok 67 - font uniqueness 2
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/current-point.t
+[PDF::Content] 1..10
+[PDF::Content] ok 1 - 
+[PDF::Content] ok 2 - 
+[PDF::Content] ok 3 - 
+[PDF::Content] ok 4 - 
+[PDF::Content] ok 5 - 
+[PDF::Content] ok 6 - 
+[PDF::Content] ok 7 - 
+[PDF::Content] ok 8 - 
+[PDF::Content] ok 9 - 
+[PDF::Content] ok 10 - 
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/do.t
+[PDF::Content] 1..5
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 950
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 935
+[PDF::Content]   in method graphics at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content.rakumod (PDF::Content) line 61
+[PDF::Content]   in block <unit> at t/do.t line 15
+[PDF::Content] # You planned 5 tests, but ran 0
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/extended-ops.t
+[PDF::Content] 1..7
+[PDF::Content] # Subtest: did we throws-like X::PDF::Content::OP::Unknown?
+[PDF::Content]     1..3
+[PDF::Content]     ok 1 - code dies
+[PDF::Content]     ok 2 - right exception type (X::PDF::Content::OP::Unknown)
+[PDF::Content]     ok 3 - .message matches Unknown content operator: 'BAZINGA'
+[PDF::Content] ok 1 - did we throws-like X::PDF::Content::OP::Unknown?
+[PDF::Content] ok 2 - regular op, extensions enabled
+[PDF::Content] ok 3 - extended sequence lives
+[PDF::Content] ok 4 - unknown single op
+[PDF::Content] ok 5 - extended single op
+[PDF::Content] # Subtest: did we throws-like X::PDF::Content::OP::BadNesting?
+[PDF::Content]     1..3
+[PDF::Content]     ok 1 - code dies
+[PDF::Content]     ok 2 - right exception type (X::PDF::Content::OP::BadNesting)
+[PDF::Content]     ok 3 - .message matches Bad nesting; 'EX' (EndExtended) operator not matched by preceeding 'BX' (BeginExtended)
+[PDF::Content] ok 6 - did we throws-like X::PDF::Content::OP::BadNesting?
+[PDF::Content] ok 7 - rendered content
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/forms.t
+[PDF::Content] 1..2
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 950
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 935
+[PDF::Content]   in method graphics at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content.rakumod (PDF::Content) line 61
+[PDF::Content]   in block <unit> at t/forms.t line 14
+[PDF::Content] # You planned 2 tests, but ran 0
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/image-exceptions.t
+[PDF::Content] # Subtest: did we throws-like X::PDF::Content::Image::UnknownType?
+[PDF::Content]     1..3
+[PDF::Content]     ok 1 - code dies
+[PDF::Content]     ok 2 - right exception type (X::PDF::Content::Image::UnknownType)
+[PDF::Content]     ok 3 - .message matches Unable to open as an image: t/images.t
+[PDF::Content] ok 1 - did we throws-like X::PDF::Content::Image::UnknownType?
+[PDF::Content] # Subtest: did we throws-like X::PDF::Content::Image::UnknownMimeType?
+[PDF::Content]     1..3
+[PDF::Content]     ok 1 - code dies
+[PDF::Content]     ok 2 - right exception type (X::PDF::Content::Image::UnknownMimeType)
+[PDF::Content]     ok 3 - .message matches Expected mime-type 'image/*' or 'application/pdf', got 'text': data:text/plain;base64,
+[PDF::Content] ok 2 - did we throws-like X::PDF::Content::Image::UnknownMimeType?
+[PDF::Content] # Subtest: PNG header-check
+[PDF::Content]     1..3
+[PDF::Content]     ok 1 - code dies
+[PDF::Content]     ok 2 - right exception type (X::PDF::Content::Image::WrongHeader)
+[PDF::Content]     ok 3 - .message matches t/images/lightbulb.gif image doesn't have a PNG header: "GIF89a\x[13]\0"
+[PDF::Content] ok 3 - PNG header-check
+[PDF::Content] # Subtest: JPEG header-check
+[PDF::Content]     1..3
+[PDF::Content]     ok 1 - code dies
+[PDF::Content]     ok 2 - right exception type (X::PDF::Content::Image::WrongHeader)
+[PDF::Content]     ok 3 - .message matches t/images/lightbulb.gif image doesn't have a JPEG header: "GI"
+[PDF::Content] ok 4 - JPEG header-check
+[PDF::Content] # Subtest: GIF header-check
+[PDF::Content]     1..3
+[PDF::Content]     ok 1 - code dies
+[PDF::Content]     ok 2 - right exception type (X::PDF::Content::Image::WrongHeader)
+[PDF::Content]     ok 3 - .message matches t/images/basn0g01.png image doesn't have a GIF header: "\x[89]PNG\r\n"
+[PDF::Content] ok 5 - GIF header-check
+[PDF::Content] 1..5
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/images.t
+[PDF::Content] 1..196
+[PDF::Content] ok 1 - open jpeg - lives
+[PDF::Content] ok 2 - jpeg object
+[PDF::Content] ok 3 - jpeg type
+[PDF::Content] ok 4 - jpeg subtype
+[PDF::Content] ok 5 - jpeg width
+[PDF::Content] ok 6 - jpeg height
+[PDF::Content] ok 7 - jpeg bpc
+[PDF::Content] ok 8 - jpeg cs
+[PDF::Content] ok 9 - jpeg dict length
+[PDF::Content] ok 10 - jpeg encoded length
+[PDF::Content] ok 11 - jpeg width
+[PDF::Content] ok 12 - jpeg height
+[PDF::Content] ok 13 - 
+[PDF::Content] ok 14 - 
+[PDF::Content] ok 15 - open gif - lives
+[PDF::Content] ok 16 - gif object
+[PDF::Content] ok 17 - gif type
+[PDF::Content] ok 18 - gif subtype
+[PDF::Content] ok 19 - gif width
+[PDF::Content] ok 20 - gif height
+[PDF::Content] ok 21 - gif bpc
+[PDF::Content] ok 22 - gif cs
+[PDF::Content] ok 23 - gif dict length
+[PDF::Content] ok 24 - gif encoded length
+[PDF::Content] ok 25 - data-uri from file
+[PDF::Content] ok 26 - open PDF as image - lives
+[PDF::Content] ok 27 - PDF image width
+[PDF::Content] ok 28 - PDF image height
+[PDF::Content] ok 29 - open GIF data url - lives
+[PDF::Content] ok 30 - data-uri from source string
+[PDF::Content] ok 31 - open PNG data url - lives
+[PDF::Content] ok 32 - data-uri from source string
+[PDF::Content] ok 33 - round-trip open of PNG uri
+[PDF::Content] ok 34 - open png-1bit-gray - lives
+[PDF::Content] ok 35 - png-1bit-gray object
+[PDF::Content] ok 36 - png-1bit-gray type
+[PDF::Content] ok 37 - png-1bit-gray subtype
+[PDF::Content] ok 38 - png-1bit-gray width
+[PDF::Content] ok 39 - png-1bit-gray height
+[PDF::Content] ok 40 - png-1bit-gray filter
+[PDF::Content] ok 41 - png-1bit-gray color-space
+[PDF::Content] ok 42 - 
+[PDF::Content] ok 43 - png-1bit-gray decode bpc
+[PDF::Content] ok 44 - png-1bit-gray decode colors
+[PDF::Content] ok 45 - png-1bit-gray decode columns
+[PDF::Content] ok 46 - png-1bit-gray decode predictor
+[PDF::Content] ok 47 - open png-4bit-gray - lives
+[PDF::Content] ok 48 - png-4bit-gray object
+[PDF::Content] ok 49 - png-4bit-gray type
+[PDF::Content] ok 50 - png-4bit-gray subtype
+[PDF::Content] ok 51 - png-4bit-gray width
+[PDF::Content] ok 52 - png-4bit-gray height
+[PDF::Content] ok 53 - png-4bit-gray filter
+[PDF::Content] ok 54 - png-4bit-gray color-space
+[PDF::Content] ok 55 - 
+[PDF::Content] ok 56 - png-4bit-gray decode bpc
+[PDF::Content] ok 57 - png-4bit-gray decode colors
+[PDF::Content] ok 58 - png-4bit-gray decode columns
+[PDF::Content] ok 59 - png-4bit-gray decode predictor
+[PDF::Content] ok 60 - open png-8bit-gray - lives
+[PDF::Content] ok 61 - png-8bit-gray object
+[PDF::Content] ok 62 - png-8bit-gray type
+[PDF::Content] ok 63 - png-8bit-gray subtype
+[PDF::Content] ok 64 - png-8bit-gray width
+[PDF::Content] ok 65 - png-8bit-gray height
+[PDF::Content] ok 66 - png-8bit-gray filter
+[PDF::Content] ok 67 - png-8bit-gray color-space
+[PDF::Content] ok 68 - 
+[PDF::Content] ok 69 - png-8bit-gray decode bpc
+[PDF::Content] ok 70 - png-8bit-gray decode colors
+[PDF::Content] ok 71 - png-8bit-gray decode columns
+[PDF::Content] ok 72 - png-8bit-gray decode predictor
+[PDF::Content] ok 73 - open png-16bit-gray - lives
+[PDF::Content] ok 74 - png-16bit-gray object
+[PDF::Content] ok 75 - png-16bit-gray type
+[PDF::Content] ok 76 - png-16bit-gray subtype
+[PDF::Content] ok 77 - png-16bit-gray width
+[PDF::Content] ok 78 - png-16bit-gray height
+[PDF::Content] ok 79 - png-16bit-gray filter
+[PDF::Content] ok 80 - png-16bit-gray color-space
+[PDF::Content] ok 81 - 
+[PDF::Content] ok 82 - png-16bit-gray decode bpc
+[PDF::Content] ok 83 - png-16bit-gray decode colors
+[PDF::Content] ok 84 - png-16bit-gray decode columns
+[PDF::Content] ok 85 - png-16bit-gray decode predictor
+[PDF::Content] ok 86 - open png-8bit-rgb - lives
+[PDF::Content] ok 87 - png-8bit-rgb object
+[PDF::Content] ok 88 - png-8bit-rgb type
+[PDF::Content] ok 89 - png-8bit-rgb subtype
+[PDF::Content] ok 90 - png-8bit-rgb width
+[PDF::Content] ok 91 - png-8bit-rgb height
+[PDF::Content] ok 92 - png-8bit-rgb filter
+[PDF::Content] ok 93 - png-8bit-rgb color-space
+[PDF::Content] ok 94 - 
+[PDF::Content] ok 95 - png-8bit-rgb decode bpc
+[PDF::Content] ok 96 - png-8bit-rgb decode colors
+[PDF::Content] ok 97 - png-8bit-rgb decode columns
+[PDF::Content] ok 98 - png-8bit-rgb decode predictor
+[PDF::Content] ok 99 - open png-16bit-rgb - lives
+[PDF::Content] ok 100 - png-16bit-rgb object
+[PDF::Content] ok 101 - png-16bit-rgb type
+[PDF::Content] ok 102 - png-16bit-rgb subtype
+[PDF::Content] ok 103 - png-16bit-rgb width
+[PDF::Content] ok 104 - png-16bit-rgb height
+[PDF::Content] ok 105 - png-16bit-rgb filter
+[PDF::Content] ok 106 - png-16bit-rgb color-space
+[PDF::Content] ok 107 - 
+[PDF::Content] ok 108 - png-16bit-rgb decode bpc
+[PDF::Content] ok 109 - png-16bit-rgb decode colors
+[PDF::Content] ok 110 - png-16bit-rgb decode columns
+[PDF::Content] ok 111 - png-16bit-rgb decode predictor
+[PDF::Content] ok 112 - open png-8bit-rgb+alpha - lives
+[PDF::Content] ok 113 - png-8bit-rgb+alpha object
+[PDF::Content] ok 114 - png-8bit-rgb+alpha type
+[PDF::Content] ok 115 - png-8bit-rgb+alpha subtype
+[PDF::Content] ok 116 - png-8bit-rgb+alpha width
+[PDF::Content] ok 117 - png-8bit-rgb+alpha height
+[PDF::Content] ok 118 - png-8bit-rgb+alpha filter
+[PDF::Content] ok 119 - png-8bit-rgb+alpha color-space
+[PDF::Content] ok 120 - 
+[PDF::Content] ok 121 - png-8bit-rgb+alpha decode bpc
+[PDF::Content] ok 122 - png-8bit-rgb+alpha decode colors
+[PDF::Content] ok 123 - png-8bit-rgb+alpha decode columns
+[PDF::Content] ok 124 - png-8bit-rgb+alpha decode predictor
+[PDF::Content] ok 125 - open png-2bit-palette - lives
+[PDF::Content] ok 126 - png-2bit-palette object
+[PDF::Content] ok 127 - png-2bit-palette type
+[PDF::Content] ok 128 - png-2bit-palette subtype
+[PDF::Content] ok 129 - png-2bit-palette width
+[PDF::Content] ok 130 - png-2bit-palette height
+[PDF::Content] ok 131 - png-2bit-palette filter
+[PDF::Content] ok 132 - png-2bit-palette color-space
+[PDF::Content] ok 133 - 
+[PDF::Content] ok 134 - png-2bit-palette decode bpc
+[PDF::Content] ok 135 - png-2bit-palette decode colors
+[PDF::Content] ok 136 - png-2bit-palette decode columns
+[PDF::Content] ok 137 - png-2bit-palette decode predictor
+[PDF::Content] ok 138 - open png-8bit-gray+alpha - lives
+[PDF::Content] ok 139 - png-8bit-gray+alpha object
+[PDF::Content] ok 140 - png-8bit-gray+alpha type
+[PDF::Content] ok 141 - png-8bit-gray+alpha subtype
+[PDF::Content] ok 142 - png-8bit-gray+alpha width
+[PDF::Content] ok 143 - png-8bit-gray+alpha height
+[PDF::Content] ok 144 - png-8bit-gray+alpha filter
+[PDF::Content] ok 145 - png-8bit-gray+alpha color-space
+[PDF::Content] ok 146 - png-8bit-gray+alpha SMask
+[PDF::Content] ok 147 - 
+[PDF::Content] ok 148 - png-8bit-gray+alpha decode bpc
+[PDF::Content] ok 149 - png-8bit-gray+alpha decode colors
+[PDF::Content] ok 150 - png-8bit-gray+alpha decode columns
+[PDF::Content] ok 151 - png-8bit-gray+alpha decode predictor
+[PDF::Content] ok 152 - open png-16bit-gray+alpha - lives
+[PDF::Content] ok 153 - png-16bit-gray+alpha object
+[PDF::Content] ok 154 - png-16bit-gray+alpha type
+[PDF::Content] ok 155 - png-16bit-gray+alpha subtype
+[PDF::Content] ok 156 - png-16bit-gray+alpha width
+[PDF::Content] ok 157 - png-16bit-gray+alpha height
+[PDF::Content] ok 158 - png-16bit-gray+alpha filter
+[PDF::Content] ok 159 - png-16bit-gray+alpha color-space
+[PDF::Content] ok 160 - png-16bit-gray+alpha SMask
+[PDF::Content] ok 161 - 
+[PDF::Content] ok 162 - png-16bit-gray+alpha decode bpc
+[PDF::Content] ok 163 - png-16bit-gray+alpha decode colors
+[PDF::Content] ok 164 - png-16bit-gray+alpha decode columns
+[PDF::Content] ok 165 - png-16bit-gray+alpha decode predictor
+[PDF::Content] ok 166 - open png-8bit-rgb+alpha - lives
+[PDF::Content] ok 167 - png-8bit-rgb+alpha object
+[PDF::Content] ok 168 - png-8bit-rgb+alpha type
+[PDF::Content] ok 169 - png-8bit-rgb+alpha subtype
+[PDF::Content] ok 170 - png-8bit-rgb+alpha width
+[PDF::Content] ok 171 - png-8bit-rgb+alpha height
+[PDF::Content] ok 172 - png-8bit-rgb+alpha filter
+[PDF::Content] ok 173 - png-8bit-rgb+alpha color-space
+[PDF::Content] ok 174 - png-8bit-rgb+alpha SMask
+[PDF::Content] ok 175 - 
+[PDF::Content] ok 176 - png-8bit-rgb+alpha decode bpc
+[PDF::Content] ok 177 - png-8bit-rgb+alpha decode colors
+[PDF::Content] ok 178 - png-8bit-rgb+alpha decode columns
+[PDF::Content] ok 179 - png-8bit-rgb+alpha decode predictor
+[PDF::Content] ok 180 - open png-16bit-rgb+alpha - lives
+[PDF::Content] ok 181 - png-16bit-rgb+alpha object
+[PDF::Content] ok 182 - png-16bit-rgb+alpha type
+[PDF::Content] ok 183 - png-16bit-rgb+alpha subtype
+[PDF::Content] ok 184 - png-16bit-rgb+alpha width
+[PDF::Content] ok 185 - png-16bit-rgb+alpha height
+[PDF::Content] ok 186 - png-16bit-rgb+alpha filter
+[PDF::Content] ok 187 - png-16bit-rgb+alpha color-space
+[PDF::Content] ok 188 - png-16bit-rgb+alpha SMask
+[PDF::Content] ok 189 - 
+[PDF::Content] ok 190 - png-16bit-rgb+alpha decode bpc
+[PDF::Content] ok 191 - png-16bit-rgb+alpha decode colors
+[PDF::Content] ok 192 - png-16bit-rgb+alpha decode columns
+[PDF::Content] ok 193 - png-16bit-rgb+alpha decode predictor
+[PDF::Content] not ok 194 - save-images - lives
+[PDF::Content] # Failed test 'save-images - lives'
+[PDF::Content] # at t/images.t line 220
+[PDF::Content] # No such method 'graphics-state' for invocant of type
+[PDF::Content] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content] # You planned 196 tests, but ran 194
+[PDF::Content] # You failed 1 test of 194
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/op-exceptions.t
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 950
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 935
+[PDF::Content]   in method FALLBACK at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 1166
+[PDF::Content]   in block <unit> at t/op-exceptions.t line 32
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/ops-introspection.t
+[PDF::Content] 1..20
+[PDF::Content] ok 1 - gsave initial
+[PDF::Content] ok 2 - 
+[PDF::Content] ok 3 - 
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 950
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 935
+[PDF::Content]   in method FALLBACK at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 1166
+[PDF::Content]   in block <unit> at t/ops-introspection.t line 48
+[PDF::Content] # You planned 20 tests, but ran 3
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/ops.t
+[PDF::Content] 1..126
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 950
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 935
+[PDF::Content]   in block <unit> at t/ops.t line 18
+[PDF::Content] # You planned 126 tests, but ran 0
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/page-tree.t
+[PDF::Content] 1..18
+[PDF::Content] ok 1 - global resources scoping
+[PDF::Content] ok 2 - global resources scoping
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 950
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 935
+[PDF::Content]   in method graphics at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content.rakumod (PDF::Content) line 61
+[PDF::Content]   in sub add-page at t/page-tree.t line 17
+[PDF::Content]   in block <unit> at t/page-tree.t line 23
+[PDF::Content] # You planned 18 tests, but ran 2
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/page.t
+[PDF::Content] 1..9
+[PDF::Content] ok 1 - The object does role 'PDF::Content::Page'
+[PDF::Content] ok 2 - 
+[PDF::Content] ok 3 - 
+[PDF::Content] ok 4 - 
+[PDF::Content] ok 5 - 
+[PDF::Content] ok 6 - 
+[PDF::Content] ok 7 - 
+[PDF::Content] ok 8 - 
+[PDF::Content] ok 9 - 
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/patterns.t
+[PDF::Content] not ok 1 - 
+[PDF::Content] # Failed test at t/patterns.t line 9
+[PDF::Content] # No such method 'graphics-state' for invocant of type
+[PDF::Content] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content] 1..1
+[PDF::Content] # You failed 1 test of 1
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/pdf-text-align.t
+[PDF::Content] 1..9
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 950
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 935
+[PDF::Content]   in method FALLBACK at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 1166
+[PDF::Content]   in block <unit> at t/pdf-text-align.t line 40
+[PDF::Content] # You planned 9 tests, but ran 0
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/pdf-text-bidi.t
+[PDF::Content] 1..1
+[PDF::Content] ok 1 - # SKIP Text::FriBidi v0.0.4+ is required for :bidi tests
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/pdf-text-direction.t
+[PDF::Content] 1..1
+[PDF::Content] ok 1 - # SKIP Text::FriBidi v0.0.4+ is required for :bidi tests
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/pdf-text-hyphenation.t
+[PDF::Content] 1..1
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 950
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 935
+[PDF::Content]   in method FALLBACK at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 1166
+[PDF::Content]   in block <unit> at t/pdf-text-hyphenation.t line 40
+[PDF::Content] # You planned 1 test, but ran 0
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/pdf-text-indent.t
+[PDF::Content] 1..1
+[PDF::Content] ok 1 - 
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/pdf-text-margin.t
+[PDF::Content] 1..1
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 950
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 935
+[PDF::Content]   in method FALLBACK at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 1166
+[PDF::Content]   in block <unit> at t/pdf-text-margin.t line 40
+[PDF::Content] # You planned 1 test, but ran 0
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/pdf-text-offset.t
+[PDF::Content] 1..1
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 950
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 935
+[PDF::Content]   in method FALLBACK at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 1166
+[PDF::Content]   in block <unit> at t/pdf-text-offset.t line 40
+[PDF::Content] # You planned 1 test, but ran 0
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/pdf-text-style.t
+[PDF::Content] 1..3
+[PDF::Content] ok 1 - hello world (with kerning)
+[PDF::Content] ok 2 - shaping
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 938
+[PDF::Content]   in method FALLBACK at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 1166
+[PDF::Content]   in block <unit> at t/pdf-text-style.t line 110
+[PDF::Content] # You planned 3 tests, but ran 2
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/pdf-text-verbatim.t
+[PDF::Content] 1..1
+[PDF::Content] ok 1 - 
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/tags.t
+[PDF::Content] 1..11
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 950
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 935
+[PDF::Content]   in method graphics at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content.rakumod (PDF::Content) line 61
+[PDF::Content]   in block <unit> at t/tags.t line 18
+[PDF::Content] # You planned 11 tests, but ran 0
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/text-box-images.t
+[PDF::Content] 1..3
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 950
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 935
+[PDF::Content]   in method graphics at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content.rakumod (PDF::Content) line 61
+[PDF::Content]   in block <unit> at t/text-box-images.t line 32
+[PDF::Content] # You planned 3 tests, but ran 0
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/text-box.t
+[PDF::Content] 1..21
+[PDF::Content] ok 1 - text-box comb
+[PDF::Content] # Subtest: text box basic
+[PDF::Content]     ok 1 - 
+[PDF::Content]     ok 2 - 
+[PDF::Content]     ok 3 - 
+[PDF::Content]     ok 4 - default align
+[PDF::Content]     ok 5 - default valign
+[PDF::Content]     ok 6 - 
+[PDF::Content]     ok 7 - 
+[PDF::Content]     ok 8 - space-width
+[PDF::Content]     ok 9 - $.content-width
+[PDF::Content]     ok 10 - $.content-height
+[PDF::Content]     1..10
+[PDF::Content] ok 2 - text box basic
+[PDF::Content] # Subtest: text box line
+[PDF::Content]     ok 1 - 
+[PDF::Content]     ok 2 - 
+[PDF::Content]     ok 3 - 
+[PDF::Content]     ok 4 - 
+[PDF::Content]     ok 5 - 
+[PDF::Content]     ok 6 - 
+[PDF::Content]     1..6
+[PDF::Content] ok 3 - text box line
+[PDF::Content] # Subtest: baseline adjustments
+[PDF::Content]     ok 1 - 
+[PDF::Content]     ok 2 - 
+[PDF::Content]     ok 3 - 
+[PDF::Content]     ok 4 - 
+[PDF::Content]     1..4
+[PDF::Content] ok 4 - baseline adjustments
+[PDF::Content] # Subtest: text box cloning
+[PDF::Content]     ok 1 - $.text
+[PDF::Content]     ok 2 - $.lines
+[PDF::Content]     ok 3 - $.content-width
+[PDF::Content]     ok 4 - $.content-height
+[PDF::Content]     ok 5 - $.font-size
+[PDF::Content]     ok 6 - $.font
+[PDF::Content]     ok 7 - $.height
+[PDF::Content]     ok 8 - 
+[PDF::Content]     ok 9 - 
+[PDF::Content]     ok 10 - 
+[PDF::Content]     1..10
+[PDF::Content] ok 5 - text box cloning
+[PDF::Content] # Subtest: text box rendering
+[PDF::Content] No such method 'graphics-state' for invocant of type
+[PDF::Content] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 254
+[PDF::Content]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 950
+[PDF::Content]   in method op at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 935
+[PDF::Content]   in method FALLBACK at /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11/lib/PDF/Content/Ops.rakumod (PDF::Content::Ops) line 1166
+[PDF::Content]   in block <unit> at t/text-box.t line 73
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/threads.t
+[PDF::Content] 1..3
+[PDF::Content] not ok 1 - page insert race
+[PDF::Content] # Failed test 'page insert race'
+[PDF::Content] # at t/threads.t line 12
+[PDF::Content] # No such method 'graphics-state' for invocant of type
+[PDF::Content] # 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Content] ok 2 - page update race
+[PDF::Content] ok 3 - save-as
+[PDF::Content] # You failed 1 test of 3
+[PDF::Content] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d08934a0c783a280271680c48d2193a73bd1cc9f.tar.gz/PDF-Content-0.9.11 t/util-transform-matrix.t
+[PDF::Content] ok 1 - null transform
+[PDF::Content] ok 2 - translate transform
+[PDF::Content] ok 3 - translate transform
+[PDF::Content] ok 4 - reflect transform
+[PDF::Content] ok 5 - rotate transform
+[PDF::Content] ok 6 - scale transform
+[PDF::Content] ok 7 - scale transform
+[PDF::Content] ok 8 - identity dot product
+[PDF::Content] ok 9 - translated dot product
+[PDF::Content] ok 10 - rotated dot product
+[PDF::Content] ok 11 - scaled dot product
+[PDF::Content] ok 12 - skew transform
+[PDF::Content] ok 13 - skew transform
+[PDF::Content] ok 14 - skew transform
+[PDF::Content] ok 15 - skew transform
+[PDF::Content] ok 16 - chained transforms
+[PDF::Content] ok 17 - chained reflect and rotate transforms
+[PDF::Content] ok 18 - multiply matrix
+[PDF::Content] ok 19 - dot
+[PDF::Content] ok 20 - dot
+[PDF::Content] ok 21 - inverse-dot
+[PDF::Content] ok 22 - inverse
+[PDF::Content] ok 23 - inverse multiplication
+[PDF::Content] ok 24 - identity
+[PDF::Content] ok 25 - non-identity
+[PDF::Content] 1..25
+===> Testing [FAIL]: PDF::Content:ver<0.9.11>:auth<zef:dwarring>
+[PDF::Content] Failed to get passing tests, but continuing with --force-test
+===> Installing: PDF::Content:ver<0.9.11>:auth<zef:dwarring>
+===> Install [OK] for PDF::Content:ver<0.9.11>:auth<zef:dwarring>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 7min 48.857s
+             CPU time consumed: 9min 50.634s
+                   Memory peak: 2.3G (swap: 176.2M)

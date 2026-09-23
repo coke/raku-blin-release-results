@@ -1,0 +1,37 @@
+Running as unit: run-p272583-i285481.service; invocation ID: 1b6b534bffd04733a8f304ed04981b88
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: BioInfo
+===> Found: BioInfo:ver<0.4.3> [via Zef::Repository::Ecosystems<rea>]
+[BioInfo] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790134057.272588.5812.263744748028/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/B/BioInfo/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz
+===> Fetching [OK]: BioInfo:ver<0.4.3> to /home/coke/sandbox/blin/data/zef-data/tmp/1790134057.272588.5812.263744748028/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz
+[BioInfo] Command: tar -t -f ./BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz
+[BioInfo] Command: tar -xvf ./BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz -C ../BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz
+===> Extraction [OK]: BioInfo to /home/coke/sandbox/blin/data/zef-data/tmp/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz
+===> Testing: BioInfo:ver<0.4.3>
+[BioInfo] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz/BioInfo-master t/sequences.t
+[BioInfo] 1..13
+[BioInfo] ok 1 - Created DNA Seq successfully.
+[BioInfo] ok 2 - String coerced Seq produces FASTA output.
+[BioInfo] ok 3 - Complement of DNA is correctly created.
+[BioInfo] ok 4 - Reverse complement of DNA is correctly created.
+[BioInfo] ok 5 - Translating DNA created an Amino acid sequence.
+[BioInfo] ok 6 - Translated Amino acid sequence has the correct length when coerced to Numeric.
+[BioInfo] ok 7 - Producing a Bag from a sequence yields the Amino acid composition as a bag model.
+[BioInfo] ok 8 - 3frame translating produces three Amino acid sequences, upto one for each frame.
+[BioInfo] ok 9 - 3frame breaking-on-stop translating produces the necessary number of sequence objects.
+[BioInfo] ok 10 - 3frame breaking-on-stop and filtering by min-length correct number of sequence objects.
+[BioInfo] ok 11 - 6frame translating produces six Amino acid sequences, upto one for each frame.
+[BioInfo] ok 12 - 6frame breaking-on-stop translating produces the necessary number of sequence objects.
+[BioInfo] ok 13 - 6frame breaking-on-stop and filtering by min-length correct number of sequence objects.
+[BioInfo] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz/BioInfo-master t/slang.t
+[BioInfo] ===SORRY!===
+[BioInfo] Cannot find method 'to-begin-time' on object of type QAST::Op
+===> Testing [FAIL]: BioInfo:ver<0.4.3>
+[BioInfo] Failed to get passing tests, but continuing with --force-test
+===> Installing: BioInfo:ver<0.4.3>
+===> Install [OK] for BioInfo:ver<0.4.3>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 2min 25.205s
+             CPU time consumed: 2min 33.106s
+                   Memory peak: 2G (swap: 0B)

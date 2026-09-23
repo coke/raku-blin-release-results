@@ -1,0 +1,36 @@
+Running as unit: run-p298288-i312710.service; invocation ID: 58d148188e264993b58eb5fc8afbce58
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: CI::Gen
+===> Found: CI::Gen:ver<0.0.2>:auth<cpan:SHLOMIF> [via Zef::Repository::Ecosystems<rea>]
+[CI::Gen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790134795.298300.5780.342499553569/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/C/CI%3A%3AGen/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz
+===> Fetching [OK]: CI::Gen:ver<0.0.2>:auth<cpan:SHLOMIF> to /home/coke/sandbox/blin/data/zef-data/tmp/1790134795.298300.5780.342499553569/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz
+[CI::Gen] Command: tar -t -f ./CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz
+[CI::Gen] Command: tar -xvf ./CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz -C ../CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz
+===> Extraction [OK]: CI::Gen to /home/coke/sandbox/blin/data/zef-data/tmp/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz
+===> Testing: CI::Gen:ver<0.0.2>:auth<cpan:SHLOMIF>
+[CI::Gen] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz/CI-Gen-0.0.2 t/01-basic.t
+[CI::Gen] ===SORRY!=== Error while compiling t/01-basic.t
+[CI::Gen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz/CI-Gen-0.0.2/lib/CI/Gen.pm6 (CI::Gen)
+[CI::Gen] Adverb P5 not allowed on s
+[CI::Gen] at /home/coke/sandbox/blin/data/zef-data/tmp/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz/CI-Gen-0.0.2/lib/CI/Gen.pm6 (CI::Gen):125
+[CI::Gen] ------>             $before_install ~~ <HERE>s:g:P5:m/^/    /;
+[CI::Gen] at t/01-basic.t:4
+[CI::Gen] ------> <BOL><HERE>use CI::Gen;
+===> Testing [FAIL]: CI::Gen:ver<0.0.2>:auth<cpan:SHLOMIF>
+[CI::Gen] Failed to get passing tests, but continuing with --force-test
+===> Installing: CI::Gen:ver<0.0.2>:auth<cpan:SHLOMIF>
+===> Install [FAIL] for CI::Gen:ver<0.0.2>:auth<cpan:SHLOMIF>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/CI::Gen_cpan:SHLOMIF_0.0.2_0/sources/4F429C8B3E5F27784EA409FE2D5FBF2CA7D4F019 (CI::Gen)
+Adverb P5 not allowed on s
+at /home/coke/sandbox/blin/installed/CI::Gen_cpan:SHLOMIF_0.0.2_0/sources/4F429C8B3E5F27784EA409FE2D5FBF2CA7D4F019 (CI::Gen):125
+------>             $before_install ~~ <HERE>s:g:P5:m/^/    /;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/CI::Gen_cpan:SHLOMIF_0.0.2_0/sources/4F429C8B3E5F27784EA409FE2D5FBF2CA7D4F019 (CI::Gen)
+Adverb P5 not allowed on s
+at /home/coke/sandbox/blin/installed/CI::Gen_cpan:SHLOMIF_0.0.2_0/sources/4F429C8B3E5F27784EA409FE2D5FBF2CA7D4F019 (CI::Gen):125
+------>             $before_install ~~ <HERE>s:g:P5:m/^/    /;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 2min 2.013s
+             CPU time consumed: 2min 8.786s
+                   Memory peak: 1.3G (swap: 19.5M)

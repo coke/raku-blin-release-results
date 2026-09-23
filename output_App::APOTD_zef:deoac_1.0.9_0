@@ -1,0 +1,58 @@
+Running as unit: run-p432682-i483361.service; invocation ID: b91d330e3aa84a419936e297fbe41c9d
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: App::APOTD
+===> Found: App::APOTD:ver<1.0.9>:auth<zef:deoac> [via Zef::Repository::Ecosystems<fez>]
+[App::APOTD] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790138128.432694.9076.804165386327/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz https://360.zef.pm/A/PP/APP_APOTD/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz
+===> Fetching [OK]: App::APOTD:ver<1.0.9>:auth<zef:deoac> to /home/coke/sandbox/blin/data/zef-data/tmp/1790138128.432694.9076.804165386327/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz
+[App::APOTD] Command: tar -t -f ./5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz
+[App::APOTD] Command: tar -xvf ./5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz -C ../5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz
+===> Extraction [OK]: App::APOTD to /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz
+===> Testing: App::APOTD:ver<1.0.9>:auth<zef:deoac>
+[App::APOTD] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9 t/00-meta6.rakutest
+[App::APOTD] 1..1
+[App::APOTD] ok 1 - # SKIP Skipping author test
+[App::APOTD] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9 t/01-basic.rakutest
+[App::APOTD] ===SORRY!=== Error while compiling t/01-basic.rakutest
+[App::APOTD] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9/lib/App/APOTD.rakumod (App::APOTD)
+[App::APOTD] Calling mail-die(Str, Str, Str, Str) will never work with declared signature (Str $msg)
+[App::APOTD] at /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9/lib/App/APOTD.rakumod (App::APOTD):124
+[App::APOTD] ------>             <HERE>mail-die "Couldn't write the alt-text to
+[App::APOTD] at t/01-basic.rakutest:2
+[App::APOTD] ------> <BOL><HERE>use App::APOTD;
+[App::APOTD] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9 t/01-load.rakutest
+[App::APOTD] 1..1
+[App::APOTD] not ok 1 - Module loaded OK
+[App::APOTD] # Failed test 'Module loaded OK'
+[App::APOTD] # at t/01-load.rakutest line 6
+[App::APOTD] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9/lib/App/APOTD.rakumod (App::APOTD)
+[App::APOTD] # Calling mail-die(Str, Str, Str, Str) will never work with declared signature (Str $msg)
+[App::APOTD] # at /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9/lib/App/APOTD.rakumod (App::APOTD):124
+[App::APOTD] # ------>             <HERE>mail-die "Couldn't write the alt-text to
+[App::APOTD] # 
+[App::APOTD] # You failed 1 test of 1
+[App::APOTD] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9 t/02-exports.rakutest
+[App::APOTD] ===SORRY!=== Error while compiling t/02-exports.rakutest
+[App::APOTD] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9/lib/App/APOTD.rakumod (App::APOTD)
+[App::APOTD] Calling mail-die(Str, Str, Str, Str) will never work with declared signature (Str $msg)
+[App::APOTD] at /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9/lib/App/APOTD.rakumod (App::APOTD):124
+[App::APOTD] ------>             <HERE>mail-die "Couldn't write the alt-text to
+[App::APOTD] at t/02-exports.rakutest:3
+[App::APOTD] ------> <BOL><HERE>use App::APOTD;
+===> Testing [FAIL]: App::APOTD:ver<1.0.9>:auth<zef:deoac>
+[App::APOTD] Failed to get passing tests, but continuing with --force-test
+===> Installing: App::APOTD:ver<1.0.9>:auth<zef:deoac>
+===> Install [FAIL] for App::APOTD:ver<1.0.9>:auth<zef:deoac>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/App::APOTD_zef:deoac_1.0.9_0/sources/F049A1A7FD45EC8A09381D090DDBD2409D47B0A9 (App::APOTD)
+Calling mail-die(Str, Str, Str, Str) will never work with declared signature (Str $msg)
+at /home/coke/sandbox/blin/installed/App::APOTD_zef:deoac_1.0.9_0/sources/F049A1A7FD45EC8A09381D090DDBD2409D47B0A9 (App::APOTD):124
+------>             <HERE>mail-die "Couldn't write the alt-text to
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/App::APOTD_zef:deoac_1.0.9_0/sources/F049A1A7FD45EC8A09381D090DDBD2409D47B0A9 (App::APOTD)
+Calling mail-die(Str, Str, Str, Str) will never work with declared signature (Str $msg)
+at /home/coke/sandbox/blin/installed/App::APOTD_zef:deoac_1.0.9_0/sources/F049A1A7FD45EC8A09381D090DDBD2409D47B0A9 (App::APOTD):124
+------>             <HERE>mail-die "Couldn't write the alt-text to
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 2min 4.952s
+             CPU time consumed: 2min 2.986s
+                   Memory peak: 1006.5M (swap: 68.1M)

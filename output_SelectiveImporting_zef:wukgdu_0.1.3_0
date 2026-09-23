@@ -1,0 +1,34 @@
+Running as unit: run-p140986-i149283.service
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: SelectiveImporting
+===> Found: SelectiveImporting:ver<0.1.3>:auth<zef:wukgdu> [via Zef::Repository::Ecosystems<fez>]
+[SelectiveImporting] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790130605.140987.3174.6802397524666/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz https://360.zef.pm/S/EL/SELECTIVEIMPORTING/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz
+===> Fetching [OK]: SelectiveImporting:ver<0.1.3>:auth<zef:wukgdu> to /home/coke/sandbox/blin/data/zef-data/tmp/1790130605.140987.3174.6802397524666/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz
+[SelectiveImporting] Command: tar -t -f ./3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz
+[SelectiveImporting] Command: tar -xvf ./3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz -C ../3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz
+===> Extraction [OK]: SelectiveImporting to /home/coke/sandbox/blin/data/zef-data/tmp/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz
+===> Testing: SelectiveImporting:ver<0.1.3>:auth<zef:wukgdu>
+[SelectiveImporting] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz/SelectiveImporting-0.1.3 t/01-basic.rakutest
+[SelectiveImporting] ===SORRY!=== Error while compiling t/01-basic.rakutest
+[SelectiveImporting] Error while importing from 'testimporting': no such tag 'select'
+[SelectiveImporting] at t/01-basic.rakutest:8
+[SelectiveImporting] ------>     <HERE>use testimporting :select<&asdf2 &asdf5>
+[SelectiveImporting] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz/SelectiveImporting-0.1.3 t/02-export.rakutest
+[SelectiveImporting] ===SORRY!=== Error while compiling t/02-export.rakutest
+[SelectiveImporting] Error while importing from 'exportmodule': no such tag 'select'
+[SelectiveImporting] at t/02-export.rakutest:7
+[SelectiveImporting] ------>     <HERE>use exportmodule :select<$var &asdf>;
+[SelectiveImporting] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz/SelectiveImporting-0.1.3 t/03-except.rakutest
+[SelectiveImporting] ===SORRY!=== Error while compiling t/03-except.rakutest
+[SelectiveImporting] Error while importing from 'testimporting': no such tag 'except'
+[SelectiveImporting] at t/03-except.rakutest:11
+[SelectiveImporting] ------>     <HERE>use testimporting :except<&asdf2>;
+===> Testing [FAIL]: SelectiveImporting:ver<0.1.3>:auth<zef:wukgdu>
+[SelectiveImporting] Failed to get passing tests, but continuing with --force-test
+===> Installing: SelectiveImporting:ver<0.1.3>:auth<zef:wukgdu>
+===> Install [OK] for SelectiveImporting:ver<0.1.3>:auth<zef:wukgdu>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 1min 36.325s
+             CPU time consumed: 1min 45.562s
+                   Memory peak: 1012.9M (swap: 0B)

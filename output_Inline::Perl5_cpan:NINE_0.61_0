@@ -1,0 +1,1421 @@
+Running as unit: run-p412281-i411318.service
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Inline::Perl5
+===> Found: Inline::Perl5:ver<0.61>:auth<cpan:NINE> [via Zef::Repository::Ecosystems<rea>]
+[Inline::Perl5] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790137610.412284.3665.4579859263604/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/I/Inline%3A%3APerl5/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz
+===> Fetching [OK]: Inline::Perl5:ver<0.61>:auth<cpan:NINE> to /home/coke/sandbox/blin/data/zef-data/tmp/1790137610.412284.3665.4579859263604/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz
+[Inline::Perl5] Command: tar -t -f ./Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz
+[Inline::Perl5] Command: tar -xvf ./Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz -C ../Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz
+===> Extraction [OK]: Inline::Perl5 to /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz
+===> Building: Inline::Perl5:ver<0.61>:auth<github:niner>
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -e exit((require ::(q|Distribution::Builder::MakeFromJSON|)).new(:meta(Distribution::Path.new("/tmp/zef-distribution-builder/2026-09-23/1790137621-412284-8".IO).meta.hash)).build(q|/home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61|)??0!!1)
+[Inline::Perl5] gcc -Wall p5helper.c -Wl,-E  -fstack-protector-strong -L/usr/local/lib  -L/usr/lib/x86_64-linux-gnu/perl/5.40/CORE -lperl -ldl -lm -lpthread -lc -lcrypt -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fwrapv -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64  -I/usr/lib/x86_64-linux-gnu/perl/5.40/CORE  -shared -o "resources/libraries/libp5helper.so" -fPIC -g
+===> Building [OK] for Inline::Perl5:ver<0.61>:auth<github:niner>
+===> Testing: Inline::Perl5:ver<0.61>:auth<github:niner>
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/argv.t
+[Inline::Perl5] ok 1 - 
+[Inline::Perl5] 1..1
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/autoload.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/autoload.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/autoload.t:23
+[Inline::Perl5] ------> <BOL><HERE>use lib:from<Perl5> 't/lib';
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/call.t
+[Inline::Perl5] 1..12
+[Inline::Perl5] ok 1 - executing a parameterless function without return value
+[Inline::Perl5] ok 2 - int params
+[Inline::Perl5] ok 3 - str params
+[Inline::Perl5] 1
+[Inline::Perl5] ok 4 - return one int
+[Inline::Perl5] ok 5 - return multiple ints
+[Inline::Perl5] ok 6 - return one string
+[Inline::Perl5] ok 7 - return mixed values
+[Inline::Perl5] ok 8 - Perl 5 method call
+[Inline::Perl5] ok 9 - Perl 5 method call with parameters
+[Inline::Perl5] ok 10 - Any converted to undef
+[Inline::Perl5] ok 11 - Passing hashes to Perl 5
+[Inline::Perl5] ok 12 - Passing Perl 5 objects back from Raku
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/call_back.t
+[Inline::Perl5] ok 1
+[Inline::Perl5] ok 2
+[Inline::Perl5] ok 3
+[Inline::Perl5] ok 4
+[Inline::Perl5] ok 5
+[Inline::Perl5] ok 6
+[Inline::Perl5] ok 7
+[Inline::Perl5] ok 8
+[Inline::Perl5] ok 9
+[Inline::Perl5] ok 10
+[Inline::Perl5] ok 11
+[Inline::Perl5] ok 12
+[Inline::Perl5] ok 13
+[Inline::Perl5] ok 14
+[Inline::Perl5] ok 15
+[Inline::Perl5] ok 16
+[Inline::Perl5] ok 17
+[Inline::Perl5] ok 18
+[Inline::Perl5] ok 19
+[Inline::Perl5] ok 20
+[Inline::Perl5] ok 21
+[Inline::Perl5] ok 22
+[Inline::Perl5] ok 23
+[Inline::Perl5] ok 24
+[Inline::Perl5] ok 25
+[Inline::Perl5] ok 26
+[Inline::Perl5] ok 27
+[Inline::Perl5] ok 28
+[Inline::Perl5] ok 29
+[Inline::Perl5] ok 30
+[Inline::Perl5] ok 31
+[Inline::Perl5] ok 32
+[Inline::Perl5] ok 33
+[Inline::Perl5] ok 34
+[Inline::Perl5] ok 35
+[Inline::Perl5] ok 36
+[Inline::Perl5] ok 37
+[Inline::Perl5] ok 38
+[Inline::Perl5] ok 39
+[Inline::Perl5] ok 40
+[Inline::Perl5] ok 41
+[Inline::Perl5] ok 42
+[Inline::Perl5] ok 43
+[Inline::Perl5] ok 44
+[Inline::Perl5] ok 45
+[Inline::Perl5] ok 46
+[Inline::Perl5] ok 47
+[Inline::Perl5] ok 48
+[Inline::Perl5] ok 49
+[Inline::Perl5] ok 50
+[Inline::Perl5] ok 51
+[Inline::Perl5] ok 52
+[Inline::Perl5] ok 53
+[Inline::Perl5] ok 54
+[Inline::Perl5] ok 55
+[Inline::Perl5] ok 56
+[Inline::Perl5] ok 57
+[Inline::Perl5] ok 58
+[Inline::Perl5] ok 59
+[Inline::Perl5] ok 60
+[Inline::Perl5] ok 61
+[Inline::Perl5] ok 62
+[Inline::Perl5] ok 63
+[Inline::Perl5] ok 64
+[Inline::Perl5] ok 65
+[Inline::Perl5] ok 66
+[Inline::Perl5] ok 67
+[Inline::Perl5] ok 68
+[Inline::Perl5] ok 69
+[Inline::Perl5] ok 70
+[Inline::Perl5] ok 71
+[Inline::Perl5] ok 72
+[Inline::Perl5] ok 73
+[Inline::Perl5] ok 74
+[Inline::Perl5] ok 75
+[Inline::Perl5] ok 76
+[Inline::Perl5] ok 77
+[Inline::Perl5] ok 78
+[Inline::Perl5] ok 79
+[Inline::Perl5] ok 80
+[Inline::Perl5] ok 81
+[Inline::Perl5] ok 82
+[Inline::Perl5] ok 83
+[Inline::Perl5] ok 84
+[Inline::Perl5] ok 85
+[Inline::Perl5] ok 86
+[Inline::Perl5] ok 87
+[Inline::Perl5] ok 88
+[Inline::Perl5] ok 89
+[Inline::Perl5] ok 90
+[Inline::Perl5] ok 91
+[Inline::Perl5] ok 92
+[Inline::Perl5] ok 93
+[Inline::Perl5] ok 94
+[Inline::Perl5] ok 95
+[Inline::Perl5] ok 96
+[Inline::Perl5] ok 97
+[Inline::Perl5] ok 98
+[Inline::Perl5] ok 99
+[Inline::Perl5] ok 100
+[Inline::Perl5] ok 101
+[Inline::Perl5] ok 102
+[Inline::Perl5] ok 103
+[Inline::Perl5] ok 104
+[Inline::Perl5] ok 105
+[Inline::Perl5] ok 106
+[Inline::Perl5] ok 107
+[Inline::Perl5] ok 108
+[Inline::Perl5] ok 109
+[Inline::Perl5] ok 110
+[Inline::Perl5] ok 111
+[Inline::Perl5] ok 112
+[Inline::Perl5] ok 113
+[Inline::Perl5] ok 114
+[Inline::Perl5] ok 115
+[Inline::Perl5] ok 116
+[Inline::Perl5] ok 117
+[Inline::Perl5] ok 118
+[Inline::Perl5] ok 119
+[Inline::Perl5] ok 120
+[Inline::Perl5] ok 121
+[Inline::Perl5] ok 122
+[Inline::Perl5] ok 123
+[Inline::Perl5] ok 124
+[Inline::Perl5] ok 125
+[Inline::Perl5] ok 126
+[Inline::Perl5] ok 127
+[Inline::Perl5] ok 128
+[Inline::Perl5] ok 129
+[Inline::Perl5] ok 130
+[Inline::Perl5] ok 131
+[Inline::Perl5] ok 132
+[Inline::Perl5] ok 133
+[Inline::Perl5] ok 134
+[Inline::Perl5] ok 135
+[Inline::Perl5] ok 136
+[Inline::Perl5] ok 137
+[Inline::Perl5] ok 138
+[Inline::Perl5] ok 139
+[Inline::Perl5] ok 140
+[Inline::Perl5] ok 141
+[Inline::Perl5] ok 142
+[Inline::Perl5] ok 143
+[Inline::Perl5] ok 144
+[Inline::Perl5] ok 145
+[Inline::Perl5] ok 146
+[Inline::Perl5] ok 147
+[Inline::Perl5] ok 148
+[Inline::Perl5] ok 149
+[Inline::Perl5] ok 150
+[Inline::Perl5] ok 151
+[Inline::Perl5] ok 152
+[Inline::Perl5] ok 153
+[Inline::Perl5] ok 154
+[Inline::Perl5] ok 155
+[Inline::Perl5] ok 156
+[Inline::Perl5] ok 157
+[Inline::Perl5] ok 158
+[Inline::Perl5] ok 159
+[Inline::Perl5] ok 160
+[Inline::Perl5] ok 161
+[Inline::Perl5] ok 162
+[Inline::Perl5] ok 163
+[Inline::Perl5] ok 164
+[Inline::Perl5] ok 165
+[Inline::Perl5] ok 166
+[Inline::Perl5] ok 167
+[Inline::Perl5] ok 168
+[Inline::Perl5] ok 169
+[Inline::Perl5] ok 170
+[Inline::Perl5] ok 171
+[Inline::Perl5] ok 172
+[Inline::Perl5] ok 173
+[Inline::Perl5] ok 174
+[Inline::Perl5] ok 175
+[Inline::Perl5] ok 176
+[Inline::Perl5] ok 177
+[Inline::Perl5] ok 178
+[Inline::Perl5] ok 179
+[Inline::Perl5] ok 180
+[Inline::Perl5] ok 181
+[Inline::Perl5] ok 182
+[Inline::Perl5] ok 183
+[Inline::Perl5] ok 184
+[Inline::Perl5] ok 185
+[Inline::Perl5] ok 186
+[Inline::Perl5] ok 187
+[Inline::Perl5] ok 188
+[Inline::Perl5] ok 189
+[Inline::Perl5] ok 190
+[Inline::Perl5] ok 191
+[Inline::Perl5] ok 192
+[Inline::Perl5] ok 193
+[Inline::Perl5] ok 194
+[Inline::Perl5] ok 195
+[Inline::Perl5] ok 196
+[Inline::Perl5] ok 197
+[Inline::Perl5] ok 198
+[Inline::Perl5] ok 199
+[Inline::Perl5] ok 200
+[Inline::Perl5] ok 201
+[Inline::Perl5] ok 202
+[Inline::Perl5] ok 203
+[Inline::Perl5] ok 204
+[Inline::Perl5] ok 205
+[Inline::Perl5] ok 206
+[Inline::Perl5] ok 207
+[Inline::Perl5] ok 208
+[Inline::Perl5] ok 209
+[Inline::Perl5] ok 210
+[Inline::Perl5] ok 211
+[Inline::Perl5] ok 212
+[Inline::Perl5] ok 213
+[Inline::Perl5] ok 214
+[Inline::Perl5] ok 215
+[Inline::Perl5] ok 216
+[Inline::Perl5] ok 217
+[Inline::Perl5] ok 218
+[Inline::Perl5] ok 219
+[Inline::Perl5] ok 220
+[Inline::Perl5] ok 221
+[Inline::Perl5] ok 222
+[Inline::Perl5] ok 223
+[Inline::Perl5] ok 224
+[Inline::Perl5] ok 225
+[Inline::Perl5] ok 226
+[Inline::Perl5] ok 227
+[Inline::Perl5] ok 228
+[Inline::Perl5] ok 229
+[Inline::Perl5] ok 230
+[Inline::Perl5] ok 231
+[Inline::Perl5] ok 232
+[Inline::Perl5] ok 233
+[Inline::Perl5] ok 234
+[Inline::Perl5] ok 235
+[Inline::Perl5] ok 236
+[Inline::Perl5] ok 237
+[Inline::Perl5] ok 238
+[Inline::Perl5] ok 239
+[Inline::Perl5] ok 240
+[Inline::Perl5] ok 241
+[Inline::Perl5] ok 242
+[Inline::Perl5] ok 243
+[Inline::Perl5] ok 244
+[Inline::Perl5] ok 245
+[Inline::Perl5] ok 246
+[Inline::Perl5] ok 247
+[Inline::Perl5] ok 248
+[Inline::Perl5] ok 249
+[Inline::Perl5] ok 250
+[Inline::Perl5] ok 251
+[Inline::Perl5] ok 252
+[Inline::Perl5] ok 253
+[Inline::Perl5] ok 254
+[Inline::Perl5] ok 255
+[Inline::Perl5] ok 256
+[Inline::Perl5] ok 257
+[Inline::Perl5] ok 258
+[Inline::Perl5] ok 259
+[Inline::Perl5] ok 260
+[Inline::Perl5] ok 261
+[Inline::Perl5] ok 262
+[Inline::Perl5] ok 263
+[Inline::Perl5] ok 264
+[Inline::Perl5] ok 265
+[Inline::Perl5] ok 266
+[Inline::Perl5] ok 267
+[Inline::Perl5] ok 268
+[Inline::Perl5] ok 269
+[Inline::Perl5] ok 270
+[Inline::Perl5] ok 271
+[Inline::Perl5] ok 272
+[Inline::Perl5] ok 273
+[Inline::Perl5] ok 274
+[Inline::Perl5] ok 275
+[Inline::Perl5] ok 276
+[Inline::Perl5] ok 277
+[Inline::Perl5] ok 278
+[Inline::Perl5] ok 279
+[Inline::Perl5] ok 280
+[Inline::Perl5] ok 281
+[Inline::Perl5] ok 282
+[Inline::Perl5] ok 283
+[Inline::Perl5] ok 284
+[Inline::Perl5] ok 285
+[Inline::Perl5] ok 286
+[Inline::Perl5] ok 287
+[Inline::Perl5] ok 288
+[Inline::Perl5] ok 289
+[Inline::Perl5] ok 290
+[Inline::Perl5] ok 291
+[Inline::Perl5] ok 292
+[Inline::Perl5] ok 293
+[Inline::Perl5] ok 294
+[Inline::Perl5] ok 295
+[Inline::Perl5] ok 296
+[Inline::Perl5] ok 297
+[Inline::Perl5] ok 298
+[Inline::Perl5] ok 299
+[Inline::Perl5] ok 300
+[Inline::Perl5] ok 301
+[Inline::Perl5] ok 302
+[Inline::Perl5] ok 303
+[Inline::Perl5] ok 304
+[Inline::Perl5] ok 305
+[Inline::Perl5] ok 306
+[Inline::Perl5] ok 307
+[Inline::Perl5] ok 308
+[Inline::Perl5] ok 309
+[Inline::Perl5] ok 310
+[Inline::Perl5] ok 311
+[Inline::Perl5] ok 312
+[Inline::Perl5] ok 313
+[Inline::Perl5] ok 314
+[Inline::Perl5] ok 315
+[Inline::Perl5] ok 316
+[Inline::Perl5] ok 317
+[Inline::Perl5] ok 318
+[Inline::Perl5] ok 319
+[Inline::Perl5] ok 320
+[Inline::Perl5] ok 321
+[Inline::Perl5] ok 322
+[Inline::Perl5] ok 323
+[Inline::Perl5] ok 324
+[Inline::Perl5] ok 325
+[Inline::Perl5] ok 326
+[Inline::Perl5] ok 327
+[Inline::Perl5] ok 328
+[Inline::Perl5] ok 329
+[Inline::Perl5] ok 330
+[Inline::Perl5] ok 331
+[Inline::Perl5] ok 332
+[Inline::Perl5] ok 333
+[Inline::Perl5] ok 334
+[Inline::Perl5] ok 335
+[Inline::Perl5] ok 336
+[Inline::Perl5] ok 337
+[Inline::Perl5] ok 338
+[Inline::Perl5] ok 339
+[Inline::Perl5] ok 340
+[Inline::Perl5] ok 341
+[Inline::Perl5] ok 342
+[Inline::Perl5] ok 343
+[Inline::Perl5] ok 344
+[Inline::Perl5] ok 345
+[Inline::Perl5] ok 346
+[Inline::Perl5] ok 347
+[Inline::Perl5] ok 348
+[Inline::Perl5] ok 349
+[Inline::Perl5] ok 350
+[Inline::Perl5] ok 351
+[Inline::Perl5] ok 352
+[Inline::Perl5] ok 353
+[Inline::Perl5] ok 354
+[Inline::Perl5] ok 355
+[Inline::Perl5] ok 356
+[Inline::Perl5] ok 357
+[Inline::Perl5] ok 358
+[Inline::Perl5] ok 359
+[Inline::Perl5] ok 360
+[Inline::Perl5] ok 361
+[Inline::Perl5] ok 362
+[Inline::Perl5] ok 363
+[Inline::Perl5] ok 364
+[Inline::Perl5] ok 365
+[Inline::Perl5] ok 366
+[Inline::Perl5] ok 367
+[Inline::Perl5] ok 368
+[Inline::Perl5] ok 369
+[Inline::Perl5] ok 370
+[Inline::Perl5] ok 371
+[Inline::Perl5] ok 372
+[Inline::Perl5] ok 373
+[Inline::Perl5] ok 374
+[Inline::Perl5] ok 375
+[Inline::Perl5] ok 376
+[Inline::Perl5] ok 377
+[Inline::Perl5] ok 378
+[Inline::Perl5] ok 379
+[Inline::Perl5] ok 380
+[Inline::Perl5] ok 381
+[Inline::Perl5] ok 382
+[Inline::Perl5] ok 383
+[Inline::Perl5] ok 384
+[Inline::Perl5] ok 385
+[Inline::Perl5] ok 386
+[Inline::Perl5] ok 387
+[Inline::Perl5] ok 388
+[Inline::Perl5] ok 389
+[Inline::Perl5] ok 390
+[Inline::Perl5] ok 391
+[Inline::Perl5] ok 392
+[Inline::Perl5] ok 393
+[Inline::Perl5] ok 394
+[Inline::Perl5] ok 395
+[Inline::Perl5] ok 396
+[Inline::Perl5] ok 397
+[Inline::Perl5] ok 398
+[Inline::Perl5] ok 399
+[Inline::Perl5] ok 400
+[Inline::Perl5] ok 401
+[Inline::Perl5] ok 402
+[Inline::Perl5] ok 403
+[Inline::Perl5] ok 404
+[Inline::Perl5] ok 405
+[Inline::Perl5] ok 406
+[Inline::Perl5] ok 407
+[Inline::Perl5] ok 408
+[Inline::Perl5] ok 409
+[Inline::Perl5] ok 410
+[Inline::Perl5] ok 411
+[Inline::Perl5] ok 412
+[Inline::Perl5] ok 413
+[Inline::Perl5] ok 414
+[Inline::Perl5] ok 415
+[Inline::Perl5] ok 416
+[Inline::Perl5] ok 417
+[Inline::Perl5] ok 418
+[Inline::Perl5] ok 419
+[Inline::Perl5] ok 420
+[Inline::Perl5] ok 421
+[Inline::Perl5] ok 422
+[Inline::Perl5] ok 423
+[Inline::Perl5] ok 424
+[Inline::Perl5] ok 425
+[Inline::Perl5] ok 426
+[Inline::Perl5] ok 427
+[Inline::Perl5] ok 428
+[Inline::Perl5] ok 429
+[Inline::Perl5] ok 430
+[Inline::Perl5] ok 431
+[Inline::Perl5] ok 432
+[Inline::Perl5] ok 433
+[Inline::Perl5] ok 434
+[Inline::Perl5] ok 435
+[Inline::Perl5] ok 436
+[Inline::Perl5] ok 437
+[Inline::Perl5] ok 438
+[Inline::Perl5] ok 439
+[Inline::Perl5] ok 440
+[Inline::Perl5] ok 441
+[Inline::Perl5] ok 442
+[Inline::Perl5] ok 443
+[Inline::Perl5] ok 444
+[Inline::Perl5] ok 445
+[Inline::Perl5] ok 446
+[Inline::Perl5] ok 447
+[Inline::Perl5] ok 448
+[Inline::Perl5] ok 449
+[Inline::Perl5] ok 450
+[Inline::Perl5] ok 451
+[Inline::Perl5] ok 452
+[Inline::Perl5] ok 453
+[Inline::Perl5] ok 454
+[Inline::Perl5] ok 455
+[Inline::Perl5] ok 456
+[Inline::Perl5] ok 457
+[Inline::Perl5] ok 458
+[Inline::Perl5] ok 459
+[Inline::Perl5] ok 460
+[Inline::Perl5] ok 461
+[Inline::Perl5] ok 462
+[Inline::Perl5] ok 463
+[Inline::Perl5] ok 464
+[Inline::Perl5] ok 465
+[Inline::Perl5] ok 466
+[Inline::Perl5] ok 467
+[Inline::Perl5] ok 468
+[Inline::Perl5] ok 469
+[Inline::Perl5] ok 470
+[Inline::Perl5] ok 471
+[Inline::Perl5] ok 472
+[Inline::Perl5] ok 473
+[Inline::Perl5] ok 474
+[Inline::Perl5] ok 475
+[Inline::Perl5] ok 476
+[Inline::Perl5] ok 477
+[Inline::Perl5] ok 478
+[Inline::Perl5] ok 479
+[Inline::Perl5] ok 480
+[Inline::Perl5] ok 481
+[Inline::Perl5] ok 482
+[Inline::Perl5] ok 483
+[Inline::Perl5] ok 484
+[Inline::Perl5] ok 485
+[Inline::Perl5] ok 486
+[Inline::Perl5] ok 487
+[Inline::Perl5] ok 488
+[Inline::Perl5] ok 489
+[Inline::Perl5] ok 490
+[Inline::Perl5] ok 491
+[Inline::Perl5] ok 492
+[Inline::Perl5] ok 493
+[Inline::Perl5] ok 494
+[Inline::Perl5] ok 495
+[Inline::Perl5] ok 496
+[Inline::Perl5] ok 497
+[Inline::Perl5] ok 498
+[Inline::Perl5] ok 499
+[Inline::Perl5] ok 500
+[Inline::Perl5] ok 501
+[Inline::Perl5] ok 502
+[Inline::Perl5] ok 503
+[Inline::Perl5] ok 504
+[Inline::Perl5] ok 505
+[Inline::Perl5] ok 506
+[Inline::Perl5] ok 507
+[Inline::Perl5] ok 508
+[Inline::Perl5] ok 509
+[Inline::Perl5] ok 510
+[Inline::Perl5] ok 511
+[Inline::Perl5] ok 512
+[Inline::Perl5] ok 513
+[Inline::Perl5] ok 514
+[Inline::Perl5] ok 515
+[Inline::Perl5] ok 516
+[Inline::Perl5] ok 517
+[Inline::Perl5] ok 518
+[Inline::Perl5] ok 519
+[Inline::Perl5] ok 520
+[Inline::Perl5] ok 521
+[Inline::Perl5] ok 522
+[Inline::Perl5] ok 523
+[Inline::Perl5] ok 524
+[Inline::Perl5] ok 525
+[Inline::Perl5] ok 526
+[Inline::Perl5] ok 527
+[Inline::Perl5] ok 528
+[Inline::Perl5] ok 529
+[Inline::Perl5] ok 530
+[Inline::Perl5] ok 531
+[Inline::Perl5] ok 532
+[Inline::Perl5] ok 533
+[Inline::Perl5] ok 534
+[Inline::Perl5] ok 535
+[Inline::Perl5] ok 536
+[Inline::Perl5] ok 537
+[Inline::Perl5] ok 538
+[Inline::Perl5] ok 539
+[Inline::Perl5] ok 540
+[Inline::Perl5] ok 541
+[Inline::Perl5] ok 542
+[Inline::Perl5] ok 543
+[Inline::Perl5] ok 544
+[Inline::Perl5] ok 545
+[Inline::Perl5] ok 546
+[Inline::Perl5] ok 547
+[Inline::Perl5] ok 548
+[Inline::Perl5] ok 549
+[Inline::Perl5] ok 550
+[Inline::Perl5] ok 551
+[Inline::Perl5] ok 552
+[Inline::Perl5] ok 553
+[Inline::Perl5] ok 554
+[Inline::Perl5] ok 555
+[Inline::Perl5] ok 556
+[Inline::Perl5] ok 557
+[Inline::Perl5] ok 558
+[Inline::Perl5] ok 559
+[Inline::Perl5] ok 560
+[Inline::Perl5] ok 561
+[Inline::Perl5] ok 562
+[Inline::Perl5] ok 563
+[Inline::Perl5] ok 564
+[Inline::Perl5] ok 565
+[Inline::Perl5] ok 566
+[Inline::Perl5] ok 567
+[Inline::Perl5] ok 568
+[Inline::Perl5] ok 569
+[Inline::Perl5] ok 570
+[Inline::Perl5] ok 571
+[Inline::Perl5] ok 572
+[Inline::Perl5] ok 573
+[Inline::Perl5] ok 574
+[Inline::Perl5] ok 575
+[Inline::Perl5] ok 576
+[Inline::Perl5] ok 577
+[Inline::Perl5] ok 578
+[Inline::Perl5] ok 579
+[Inline::Perl5] ok 580
+[Inline::Perl5] ok 581
+[Inline::Perl5] ok 582
+[Inline::Perl5] ok 583
+[Inline::Perl5] ok 584
+[Inline::Perl5] ok 585
+[Inline::Perl5] ok 586
+[Inline::Perl5] ok 587
+[Inline::Perl5] ok 588
+[Inline::Perl5] ok 589
+[Inline::Perl5] ok 590
+[Inline::Perl5] ok 591
+[Inline::Perl5] ok 592
+[Inline::Perl5] ok 593
+[Inline::Perl5] ok 594
+[Inline::Perl5] ok 595
+[Inline::Perl5] ok 596
+[Inline::Perl5] ok 597
+[Inline::Perl5] ok 598
+[Inline::Perl5] ok 599
+[Inline::Perl5] ok 600
+[Inline::Perl5] ok 601
+[Inline::Perl5] ok 602
+[Inline::Perl5] ok 603
+[Inline::Perl5] ok 604
+[Inline::Perl5] ok 605
+[Inline::Perl5] ok 606
+[Inline::Perl5] ok 607
+[Inline::Perl5] ok 608
+[Inline::Perl5] ok 609
+[Inline::Perl5] ok 610
+[Inline::Perl5] ok 611
+[Inline::Perl5] ok 612
+[Inline::Perl5] ok 613
+[Inline::Perl5] ok 614
+[Inline::Perl5] ok 615
+[Inline::Perl5] ok 616
+[Inline::Perl5] ok 617
+[Inline::Perl5] ok 618
+[Inline::Perl5] ok 619
+[Inline::Perl5] ok 620
+[Inline::Perl5] ok 621
+[Inline::Perl5] ok 622
+[Inline::Perl5] ok 623
+[Inline::Perl5] ok 624
+[Inline::Perl5] ok 625
+[Inline::Perl5] ok 626
+[Inline::Perl5] ok 627
+[Inline::Perl5] ok 628
+[Inline::Perl5] ok 629
+[Inline::Perl5] ok 630
+[Inline::Perl5] ok 631
+[Inline::Perl5] ok 632
+[Inline::Perl5] ok 633
+[Inline::Perl5] ok 634
+[Inline::Perl5] ok 635
+[Inline::Perl5] ok 636
+[Inline::Perl5] ok 637
+[Inline::Perl5] ok 638
+[Inline::Perl5] ok 639
+[Inline::Perl5] ok 640
+[Inline::Perl5] ok 641
+[Inline::Perl5] ok 642
+[Inline::Perl5] ok 643
+[Inline::Perl5] ok 644
+[Inline::Perl5] ok 645
+[Inline::Perl5] ok 646
+[Inline::Perl5] ok 647
+[Inline::Perl5] ok 648
+[Inline::Perl5] ok 649
+[Inline::Perl5] ok 650
+[Inline::Perl5] ok 651
+[Inline::Perl5] ok 652
+[Inline::Perl5] ok 653
+[Inline::Perl5] ok 654
+[Inline::Perl5] ok 655
+[Inline::Perl5] ok 656
+[Inline::Perl5] ok 657
+[Inline::Perl5] ok 658
+[Inline::Perl5] ok 659
+[Inline::Perl5] ok 660
+[Inline::Perl5] ok 661
+[Inline::Perl5] ok 662
+[Inline::Perl5] ok 663
+[Inline::Perl5] ok 664
+[Inline::Perl5] ok 665
+[Inline::Perl5] ok 666
+[Inline::Perl5] ok 667
+[Inline::Perl5] ok 668
+[Inline::Perl5] ok 669
+[Inline::Perl5] ok 670
+[Inline::Perl5] ok 671
+[Inline::Perl5] ok 672
+[Inline::Perl5] ok 673
+[Inline::Perl5] ok 674
+[Inline::Perl5] ok 675
+[Inline::Perl5] ok 676
+[Inline::Perl5] ok 677
+[Inline::Perl5] ok 678
+[Inline::Perl5] ok 679
+[Inline::Perl5] ok 680
+[Inline::Perl5] ok 681
+[Inline::Perl5] ok 682
+[Inline::Perl5] ok 683
+[Inline::Perl5] ok 684
+[Inline::Perl5] ok 685
+[Inline::Perl5] ok 686
+[Inline::Perl5] ok 687
+[Inline::Perl5] ok 688
+[Inline::Perl5] ok 689
+[Inline::Perl5] ok 690
+[Inline::Perl5] ok 691
+[Inline::Perl5] ok 692
+[Inline::Perl5] ok 693
+[Inline::Perl5] ok 694
+[Inline::Perl5] ok 695
+[Inline::Perl5] ok 696
+[Inline::Perl5] ok 697
+[Inline::Perl5] ok 698
+[Inline::Perl5] ok 699
+[Inline::Perl5] ok 700
+[Inline::Perl5] ok 701
+[Inline::Perl5] ok 702
+[Inline::Perl5] ok 703
+[Inline::Perl5] ok 704
+[Inline::Perl5] ok 705
+[Inline::Perl5] ok 706
+[Inline::Perl5] ok 707
+[Inline::Perl5] ok 708
+[Inline::Perl5] ok 709
+[Inline::Perl5] ok 710
+[Inline::Perl5] ok 711
+[Inline::Perl5] ok 712
+[Inline::Perl5] ok 713
+[Inline::Perl5] ok 714
+[Inline::Perl5] ok 715
+[Inline::Perl5] ok 716
+[Inline::Perl5] ok 717
+[Inline::Perl5] ok 718
+[Inline::Perl5] ok 719
+[Inline::Perl5] ok 720
+[Inline::Perl5] ok 721
+[Inline::Perl5] ok 722
+[Inline::Perl5] ok 723
+[Inline::Perl5] ok 724
+[Inline::Perl5] ok 725
+[Inline::Perl5] ok 726
+[Inline::Perl5] ok 727
+[Inline::Perl5] ok 728
+[Inline::Perl5] ok 729
+[Inline::Perl5] ok 730
+[Inline::Perl5] ok 731
+[Inline::Perl5] ok 732
+[Inline::Perl5] ok 733
+[Inline::Perl5] ok 734
+[Inline::Perl5] ok 735
+[Inline::Perl5] ok 736
+[Inline::Perl5] ok 737
+[Inline::Perl5] ok 738
+[Inline::Perl5] ok 739
+[Inline::Perl5] ok 740
+[Inline::Perl5] ok 741
+[Inline::Perl5] ok 742
+[Inline::Perl5] ok 743
+[Inline::Perl5] ok 744
+[Inline::Perl5] ok 745
+[Inline::Perl5] ok 746
+[Inline::Perl5] ok 747
+[Inline::Perl5] ok 748
+[Inline::Perl5] ok 749
+[Inline::Perl5] ok 750
+[Inline::Perl5] ok 751
+[Inline::Perl5] ok 752
+[Inline::Perl5] ok 753
+[Inline::Perl5] ok 754
+[Inline::Perl5] ok 755
+[Inline::Perl5] ok 756
+[Inline::Perl5] ok 757
+[Inline::Perl5] ok 758
+[Inline::Perl5] ok 759
+[Inline::Perl5] ok 760
+[Inline::Perl5] ok 761
+[Inline::Perl5] ok 762
+[Inline::Perl5] ok 763
+[Inline::Perl5] ok 764
+[Inline::Perl5] ok 765
+[Inline::Perl5] ok 766
+[Inline::Perl5] ok 767
+[Inline::Perl5] ok 768
+[Inline::Perl5] ok 769
+[Inline::Perl5] ok 770
+[Inline::Perl5] ok 771
+[Inline::Perl5] ok 772
+[Inline::Perl5] ok 773
+[Inline::Perl5] ok 774
+[Inline::Perl5] ok 775
+[Inline::Perl5] ok 776
+[Inline::Perl5] ok 777
+[Inline::Perl5] ok 778
+[Inline::Perl5] ok 779
+[Inline::Perl5] ok 780
+[Inline::Perl5] ok 781
+[Inline::Perl5] ok 782
+[Inline::Perl5] ok 783
+[Inline::Perl5] ok 784
+[Inline::Perl5] ok 785
+[Inline::Perl5] ok 786
+[Inline::Perl5] ok 787
+[Inline::Perl5] ok 788
+[Inline::Perl5] ok 789
+[Inline::Perl5] ok 790
+[Inline::Perl5] ok 791
+[Inline::Perl5] ok 792
+[Inline::Perl5] ok 793
+[Inline::Perl5] ok 794
+[Inline::Perl5] ok 795
+[Inline::Perl5] ok 796
+[Inline::Perl5] ok 797
+[Inline::Perl5] ok 798
+[Inline::Perl5] ok 799
+[Inline::Perl5] ok 800
+[Inline::Perl5] 1..800
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/call_hash.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/call_hash.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/call_hash.t:5
+[Inline::Perl5] ------> <BOL><HERE>use lib:from<Perl5> <t/lib>;
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/call_p6_function_from_p5.t
+[Inline::Perl5] 1..2
+[Inline::Perl5] ok 1
+[Inline::Perl5] ok 2
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/callables.t
+[Inline::Perl5] 1..5
+[Inline::Perl5] ok 1 - code reference indistiguishable from Perl 5 code ref
+[Inline::Perl5] ok 2 - 
+[Inline::Perl5] ok 3 - 
+[Inline::Perl5] ok 4 - 
+[Inline::Perl5] ok 5 - 
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/can.t
+[Inline::Perl5] ok 1 - 
+[Inline::Perl5] ok 2 - 
+[Inline::Perl5] ok 3 - 
+[Inline::Perl5] ok 4 - 
+[Inline::Perl5] ok 5 - 
+[Inline::Perl5] ok 6 - 
+[Inline::Perl5] ok 7 - 
+[Inline::Perl5] ok 8 - 
+[Inline::Perl5] ok 9 - 
+[Inline::Perl5] ok 10 - 
+[Inline::Perl5] ok 11 - 
+[Inline::Perl5] 1..11
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/data.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/data.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/data.t:4
+[Inline::Perl5] ------> <BOL><HERE>use Data::Dumper:from<Perl5>;
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/data_in_module.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/data_in_module.t
+[Inline::Perl5] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/t/lib/Data.pm (Data)
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/t/lib/Data.pm (Data):1
+[Inline::Perl5] ------> <BOL><HERE>use lib:from<Perl5> 't/lib';
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Saw 1 occurrence of deprecated code.
+[Inline::Perl5] ================================================================================
+[Inline::Perl5] .pm file extension in raku library path seen at:
+[Inline::Perl5]   file#/home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/t/lib, line 0
+[Inline::Perl5] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[Inline::Perl5] --------------------------------------------------------------------------------
+[Inline::Perl5] Please contact the author to have these occurrences of deprecated code
+[Inline::Perl5] adapted, so that this message will disappear!
+[Inline::Perl5] at t/data_in_module.t:3
+[Inline::Perl5] ------> <BOL><HERE>use Data;
+[Inline::Perl5] Saw 1 occurrence of deprecated code.
+[Inline::Perl5] ================================================================================
+[Inline::Perl5] .pm file extension in raku library path seen at:
+[Inline::Perl5]   file#/home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/t/lib, line 0
+[Inline::Perl5] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[Inline::Perl5] --------------------------------------------------------------------------------
+[Inline::Perl5] Please contact the author to have these occurrences of deprecated code
+[Inline::Perl5] adapted, so that this message will disappear!
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/eval.t
+[Inline::Perl5] 1..3
+[Inline::Perl5] ok 1 - basic eval
+[Inline::Perl5] ok 2 - loading XS modules
+[Inline::Perl5] ok 3 - Inlined Perl 5 source code is UTF-8 encoded
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/eval_p6_in_p5.t
+[Inline::Perl5] ok 1 - 
+[Inline::Perl5] 1..1
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/eval_return_values.t
+[Inline::Perl5] 1..2
+[Inline::Perl5] ok 1 - 
+[Inline::Perl5] ok 2 - 
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/exceptions.t
+[Inline::Perl5] ok 1 - survived P5 die
+[Inline::Perl5] ok 2 - got an exception
+[Inline::Perl5] ok 3 - exception message found
+[Inline::Perl5] ok 4 - survived P5 die in function call
+[Inline::Perl5] ok 5 - got an exception from function call
+[Inline::Perl5] ok 6 - exception message found from function call
+[Inline::Perl5] ok 7 - survived P5 die in method call
+[Inline::Perl5] ok 8 - got an exception from method call
+[Inline::Perl5] ok 9 - exception message found from method call
+[Inline::Perl5] ok 10 - survived P5 die in method call
+[Inline::Perl5] ok 11 - got an exception from method call
+[Inline::Perl5] ok 12 - exception message found from method call
+[Inline::Perl5] ok 13 - survived P5 missing method
+[Inline::Perl5] ok 14 - exception message found from method call
+[Inline::Perl5] ok 15 - 
+[Inline::Perl5] ok 16 - P6 exception made it through P5 code
+[Inline::Perl5] ok 17 - got an exception from method call
+[Inline::Perl5] ok 18 - exception message found from method call
+[Inline::Perl5] 1..18
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/file_handles.t
+[Inline::Perl5] 1..2
+[Inline::Perl5] ok 1 - survived printing on a P6 file handle from P5
+[Inline::Perl5] ok 2 - 
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/from.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/from.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/from.t:9
+[Inline::Perl5] ------> <BOL><HERE>use P5Import:from<Perl5> <tests 2>;
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Saw 1 occurrence of deprecated code.
+[Inline::Perl5] ================================================================================
+[Inline::Perl5] .pm file extension in raku library path seen at:
+[Inline::Perl5]   file#/home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/t/lib, line 0
+[Inline::Perl5] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[Inline::Perl5] --------------------------------------------------------------------------------
+[Inline::Perl5] Please contact the author to have these occurrences of deprecated code
+[Inline::Perl5] adapted, so that this message will disappear!
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/globals.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/globals.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/globals.t:22
+[Inline::Perl5] ------> <BOL><HERE>use Data::Dumper:from<Perl5>;
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/import.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/import.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/import.t:1
+[Inline::Perl5] ------> <BOL><HERE>use Test::More:from<Perl5>;
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/inherit.t
+[Inline::Perl5] 1..15
+[Inline::Perl5] ok 1 - # SKIP Perl 5 Moose module not available
+[Inline::Perl5] ok 2 - # SKIP Perl 5 Moose module not available
+[Inline::Perl5] ok 3 - # SKIP Perl 5 Moose module not available
+[Inline::Perl5] ok 4 - # SKIP Perl 5 Moose module not available
+[Inline::Perl5] ok 5 - # SKIP Perl 5 Moose module not available
+[Inline::Perl5] ok 6 - # SKIP Perl 5 Moose module not available
+[Inline::Perl5] ok 7 - # SKIP Perl 5 Moose module not available
+[Inline::Perl5] ok 8 - # SKIP Perl 5 Moose module not available
+[Inline::Perl5] ok 9 - # SKIP Perl 5 Moose module not available
+[Inline::Perl5] ok 10 - # SKIP Perl 5 Moose module not available
+[Inline::Perl5] ok 11 - # SKIP Perl 5 Moose module not available
+[Inline::Perl5] ok 12 - # SKIP Perl 5 Moose module not available
+[Inline::Perl5] ok 13 - # SKIP Perl 5 Moose module not available
+[Inline::Perl5] ok 14 - # SKIP Perl 5 Moose module not available
+[Inline::Perl5] ok 15 - # SKIP Perl 5 Moose module not available
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/inner_package.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/inner_package.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/inner_package.t:4
+[Inline::Perl5] ------> <BOL><HERE>use lib:from<Perl5> 't/lib';
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/invoke.t
+[Inline::Perl5] ok 1 - 
+[Inline::Perl5] ok 2 - 
+[Inline::Perl5] ok 3 - 
+[Inline::Perl5] ok 4 - 
+[Inline::Perl5] ok 5 - 
+[Inline::Perl5] ok 6 - 
+[Inline::Perl5] ok 7 - 
+[Inline::Perl5] ok 8 - 
+[Inline::Perl5] ok 9 - 
+[Inline::Perl5] ok 10 - 
+[Inline::Perl5] ok 11 - 
+[Inline::Perl5] ok 12 - 
+[Inline::Perl5] ok 13 - 
+[Inline::Perl5] ok 14 - 
+[Inline::Perl5] ok 15 - 
+[Inline::Perl5] ok 16 - 
+[Inline::Perl5] ok 17 - 
+[Inline::Perl5] ok 18 - 
+[Inline::Perl5] ok 19 - 
+[Inline::Perl5] ok 20 - 
+[Inline::Perl5] ok 21 - 
+[Inline::Perl5] ok 22 - 
+[Inline::Perl5] ok 23 - 
+[Inline::Perl5] ok 24 - 
+[Inline::Perl5] ok 25 - 
+[Inline::Perl5] ok 26 - 
+[Inline::Perl5] ok 27 - 
+[Inline::Perl5] ok 28 - 
+[Inline::Perl5] ok 29 - 
+[Inline::Perl5] ok 30 - 
+[Inline::Perl5] ok 31 - 
+[Inline::Perl5] ok 32 - 
+[Inline::Perl5] ok 33 - 
+[Inline::Perl5] ok 34 - 
+[Inline::Perl5] ok 35 - 
+[Inline::Perl5] ok 36 - 
+[Inline::Perl5] ok 37 - 
+[Inline::Perl5] ok 38 - 
+[Inline::Perl5] ok 39 - 
+[Inline::Perl5] ok 40 - 
+[Inline::Perl5] 1..40
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/invoke_p6_method_from_p5.t
+[Inline::Perl5] ok 1
+[Inline::Perl5] ok 2
+[Inline::Perl5] ok 3
+[Inline::Perl5] 1..3
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/meta_model.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/meta_model.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/meta_model.t:2
+[Inline::Perl5] ------> <BOL><HERE>use lib:from<Perl5> <t/lib>;
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/modify_array.t
+[Inline::Perl5] 1..33
+[Inline::Perl5] ok 1 - Perl5Hash.elems works
+[Inline::Perl5] ok 2 - 
+[Inline::Perl5] ok 3 - 
+[Inline::Perl5] ok 4 - 
+[Inline::Perl5] ok 5 - 
+[Inline::Perl5] ok 6 - 
+[Inline::Perl5] ok 7 - 
+[Inline::Perl5] ok 8 - 
+[Inline::Perl5] ok 9 - 
+[Inline::Perl5] ok 10 - 
+[Inline::Perl5] ok 11 - 
+[Inline::Perl5] ok 12 - 
+[Inline::Perl5] ok 13 - 
+[Inline::Perl5] ok 14 - 
+[Inline::Perl5] ok 15 - 
+[Inline::Perl5] ok 16 - 
+[Inline::Perl5] ok 17 - 
+[Inline::Perl5] ok 18 - 
+[Inline::Perl5] ok 19 - 
+[Inline::Perl5] ok 20 - 
+[Inline::Perl5] ok 21 - 
+[Inline::Perl5] ok 22 - 
+[Inline::Perl5] ok 23 - 
+[Inline::Perl5] ok 24 - 
+[Inline::Perl5] ok 25 - 
+[Inline::Perl5] ok 26 - 
+[Inline::Perl5] ok 27 - 
+[Inline::Perl5] ok 28 - 
+[Inline::Perl5] ok 29 - 
+[Inline::Perl5] ok 30 - 
+[Inline::Perl5] ok 31 - 
+[Inline::Perl5] ok 32 - 
+[Inline::Perl5] ok 33 - array not containerized
+[Inline::Perl5] Saw 1 occurrence of deprecated code.
+[Inline::Perl5] ================================================================================
+[Inline::Perl5] Method perl (from Mu) seen at:
+[Inline::Perl5]   /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5/Array.pm6 (Inline::Perl5::Array), line 58
+[Inline::Perl5] Please use raku instead.
+[Inline::Perl5] --------------------------------------------------------------------------------
+[Inline::Perl5] Please contact the author to have these occurrences of deprecated code
+[Inline::Perl5] adapted, so that this message will disappear!
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/modify_hash.t
+[Inline::Perl5] 1..20
+[Inline::Perl5] ok 1 - Perl5Hash.elems works
+[Inline::Perl5] ok 2 - 
+[Inline::Perl5] ok 3 - 
+[Inline::Perl5] ok 4 - 
+[Inline::Perl5] ok 5 - 
+[Inline::Perl5] ok 6 - 
+[Inline::Perl5] ok 7 - 
+[Inline::Perl5] ok 8 - 
+[Inline::Perl5] ok 9 - 
+[Inline::Perl5] ok 10 - 
+[Inline::Perl5] ok 11 - 
+[Inline::Perl5] ok 12 - 
+[Inline::Perl5] ok 13 - 
+[Inline::Perl5] ok 14 - 
+[Inline::Perl5] ok 15 - 
+[Inline::Perl5] ok 16 - 
+[Inline::Perl5] ok 17 - 
+[Inline::Perl5] ok 18 - 
+[Inline::Perl5] ok 19 - 
+[Inline::Perl5] ok 20 - 
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/object_hash.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/object_hash.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/object_hash.t:6
+[Inline::Perl5] ------> <BOL><HERE>use lib:from<Perl5> 't/lib';
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/overload.t
+[Inline::Perl5] ok 1 - 
+[Inline::Perl5] ok 2 - text does not match /"Foo"\<\d+\>/
+[Inline::Perl5] ok 3 - 
+[Inline::Perl5] ok 4 - 
+[Inline::Perl5] ok 5 - text matches /"Bar"/
+[Inline::Perl5] ok 6 - 
+[Inline::Perl5] 1..6
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/p5_object_destructor.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/p5_object_destructor.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/p5_object_destructor.t:5
+[Inline::Perl5] ------> <BOL><HERE>use lib:from<Perl5> <t/lib>;
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/p5_to_p6.t
+[Inline::Perl5] ok 1 - 
+[Inline::Perl5] ok 2 - 
+[Inline::Perl5] ok 3 - 
+[Inline::Perl5] ok 4 - 
+[Inline::Perl5] ok 5 - 
+[Inline::Perl5] ok 6 - 
+[Inline::Perl5] ok 7 - 
+[Inline::Perl5] ok 8 - 
+[Inline::Perl5] ok 9 - 
+[Inline::Perl5] ok 10 - p5 undef maps to p6 Any
+[Inline::Perl5] ok 11 - 
+[Inline::Perl5] ok 12 - 
+[Inline::Perl5] 1..12
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/p6_object_destructor.t
+[Inline::Perl5] 1..1
+[Inline::Perl5] ok 1 - at least one destructor ran
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/p6_to_p5.t
+[Inline::Perl5] 1..21
+[Inline::Perl5] ok 1 - Can round-trip Str
+[Inline::Perl5] ok 2 - Can round-trip Str
+[Inline::Perl5] ok 3 - Can round-trip Blob[uint8]
+[Inline::Perl5] ok 4 - Can round-trip Int
+[Inline::Perl5] ok 5 - Can round-trip Num
+[Inline::Perl5] ok 6 - Can round-trip Hash
+[Inline::Perl5] ok 7 - Can round-trip Any
+[Inline::Perl5] ok 8 - Can round-trip Capture
+[Inline::Perl5] ok 9 - Can round-trip Foo
+[Inline::Perl5] ok 10 - UTF-8 string recognized in Perl 5
+[Inline::Perl5] ok 11 - Null safe conversion of Str from P6 to P5
+[Inline::Perl5] ok 12 - latin-1 works in Perl 5
+[Inline::Perl5] ok 13 - 
+[Inline::Perl5] ok 14 - 
+[Inline::Perl5] ok 15 - Map arrives as a HashRef
+[Inline::Perl5] ok 16 - 
+[Inline::Perl5] ok 17 - 
+[Inline::Perl5] ok 18 - positional args on object method
+[Inline::Perl5] ok 19 - named args on object method
+[Inline::Perl5] ok 20 - 
+[Inline::Perl5] ok 21 - 
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/perl5package.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/perl5package.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/perl5package.t:8
+[Inline::Perl5] ------> <BOL><HERE>use TestPerl5Package:from<Perl5>;
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/precomp.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/precomp.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/precomp.t:2
+[Inline::Perl5] ------> <BOL><HERE>use lib:from<Perl5> 't/lib';
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Saw 1 occurrence of deprecated code.
+[Inline::Perl5] ================================================================================
+[Inline::Perl5] .pm file extension in raku library path seen at:
+[Inline::Perl5]   file#/home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/t/lib, line 0
+[Inline::Perl5] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[Inline::Perl5] --------------------------------------------------------------------------------
+[Inline::Perl5] Please contact the author to have these occurrences of deprecated code
+[Inline::Perl5] adapted, so that this message will disappear!
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/precompiled_raku_block.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/precompiled_raku_block.t
+[Inline::Perl5] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/t/lib/UseRakuBlock.pm6 (UseRakuBlock)
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/t/lib/UseRakuBlock.pm6 (UseRakuBlock):1
+[Inline::Perl5] ------> <BOL><HERE>use lib:from<Perl5> <t/lib>;
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Saw 1 occurrence of deprecated code.
+[Inline::Perl5] ================================================================================
+[Inline::Perl5] .pm file extension in raku library path seen at:
+[Inline::Perl5]   file#/home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/t/lib, line 0
+[Inline::Perl5] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[Inline::Perl5] --------------------------------------------------------------------------------
+[Inline::Perl5] Please contact the author to have these occurrences of deprecated code
+[Inline::Perl5] adapted, so that this message will disappear!
+[Inline::Perl5] at t/precompiled_raku_block.t:8
+[Inline::Perl5] ------> <BOL><HERE>use UseRakuBlock;
+[Inline::Perl5] Saw 1 occurrence of deprecated code.
+[Inline::Perl5] ================================================================================
+[Inline::Perl5] .pm file extension in raku library path seen at:
+[Inline::Perl5]   file#/home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/t/lib, line 0
+[Inline::Perl5] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[Inline::Perl5] --------------------------------------------------------------------------------
+[Inline::Perl5] Please contact the author to have these occurrences of deprecated code
+[Inline::Perl5] adapted, so that this message will disappear!
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/raku_block.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/raku_block.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/raku_block.t:2
+[Inline::Perl5] ------> <BOL><HERE>use lib:from<Perl5> <t/lib>;
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/shadow.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/shadow.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/shadow.t:6
+[Inline::Perl5] ------> <BOL><HERE>use lib:from<Perl5> 't/lib';
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/stringify.t
+[Inline::Perl5] ok 1 - 
+[Inline::Perl5] ok 2 - text matches /Bar\<\-?\d+\>/
+[Inline::Perl5] ok 3 - 
+[Inline::Perl5] ok 4 - 
+[Inline::Perl5] ok 5 - 
+[Inline::Perl5] ok 6 - 
+[Inline::Perl5] ok 7 - 
+[Inline::Perl5] ok 8 - 
+[Inline::Perl5] ok 9 - 
+[Inline::Perl5] ok 10 - 
+[Inline::Perl5] ok 11 - 
+[Inline::Perl5] ok 12 - 
+[Inline::Perl5] ok 13 - 
+[Inline::Perl5] ok 14 - 
+[Inline::Perl5] ok 15 - 
+[Inline::Perl5] ok 16 - 
+[Inline::Perl5] ok 17 - 
+[Inline::Perl5] ok 18 - 
+[Inline::Perl5] 1..18
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/tie.t
+[Inline::Perl5] ok 1 - 
+[Inline::Perl5] ok 2 - 
+[Inline::Perl5] ok 3 - 
+[Inline::Perl5] 1..3
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/use.t
+[Inline::Perl5] 1..5
+[Inline::Perl5] ok 1 - use loaded the module
+[Inline::Perl5] ===SORRY!=== Error while compiling t/use.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/use.t:13
+[Inline::Perl5] ------> <BOL><HERE>use Test::More:from<Perl5>;
+[Inline::Perl5] # Looks like you planned 5 tests but ran 1.
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/use_nested.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/use_nested.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/use_nested.t:3
+[Inline::Perl5] ------> <BOL><HERE>use lib:from<Perl5> 't/lib';
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Inline::Perl5] Saw 1 occurrence of deprecated code.
+[Inline::Perl5] ================================================================================
+[Inline::Perl5] .pm file extension in raku library path seen at:
+[Inline::Perl5]   file#/home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/t/lib, line 0
+[Inline::Perl5] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[Inline::Perl5] --------------------------------------------------------------------------------
+[Inline::Perl5] Please contact the author to have these occurrences of deprecated code
+[Inline::Perl5] adapted, so that this message will disappear!
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/v5-inline.t
+[Inline::Perl5] 1..8
+[Inline::Perl5] ===SORRY!===
+[Inline::Perl5] Incompatible MROs in P6opaque rebless for types Raku::Grammar and Failure+{Perl5Slang} mixin
+[Inline::Perl5] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61 t/v6.t
+[Inline::Perl5] ===SORRY!=== Error while compiling t/v6.t
+[Inline::Perl5] Dynamic variable $*W not found
+[Inline::Perl5] at t/v6.t:7
+[Inline::Perl5] ------> <BOL><HERE>use lib:from<Perl5> <t/lib>;
+[Inline::Perl5] Actually thrown at:
+[Inline::Perl5]   in sub EXPORT at /home/coke/sandbox/blin/data/zef-data/tmp/Inline%3A%3APerl5%3Aver%3C0.61%3E%3Aauth%3Ccpan%3ANINE%3E.tar.gz/Inline-Perl5-0.61/lib/Inline/Perl5.pm6 (Inline::Perl5) line 1034
+[Inline::Perl5]   in any  at src/Raku/ast/statements.rakumod line 2585
+[Inline::Perl5]   in method IMPL-IMPORT at src/Raku/ast/statements.rakumod line 2555
+[Inline::Perl5]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2792
+[Inline::Perl5]   in any  at src/Raku/ast/begintime.rakumod line 21
+[Inline::Perl5]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Inline::Perl5]   in any statement-control at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+===> Testing [FAIL]: Inline::Perl5:ver<0.61>:auth<github:niner>
+[Inline::Perl5] Failed to get passing tests, but continuing with --force-test
+===> Installing: Inline::Perl5:ver<0.61>:auth<github:niner>
+===> Install [OK] for Inline::Perl5:ver<0.61>:auth<github:niner>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 4min 18.190s
+             CPU time consumed: 4min 34.198s
+                   Memory peak: 1.7G (swap: 298.3M)

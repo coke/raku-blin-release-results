@@ -1,0 +1,334 @@
+Running as unit: run-p910493-i900997.service; invocation ID: bc84cc63af97476786ae2420630dd24a
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: PDF::Font::Loader
+===> Found: PDF::Font::Loader:ver<0.8.15>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
+[PDF::Font::Loader] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790149720.910495.5966.065696163071/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz https://360.zef.pm/P/DF/PDF_FONT_LOADER/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz
+===> Fetching [OK]: PDF::Font::Loader:ver<0.8.15>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1790149720.910495.5966.065696163071/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz
+[PDF::Font::Loader] Command: tar -t -f ./0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz
+[PDF::Font::Loader] Command: tar -xvf ./0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz -C ../0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz
+===> Extraction [OK]: PDF::Font::Loader to /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz
+===> Testing: PDF::Font::Loader:ver<0.8.15>:auth<zef:dwarring>
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/cmap-fixed-width.t
+[PDF::Font::Loader] ok 1 - 
+[PDF::Font::Loader] ok 2 - decode-cids
+[PDF::Font::Loader] ok 3 - decode-ords
+[PDF::Font::Loader] ok 4 - decode
+[PDF::Font::Loader] ok 5 - ligature mapping
+[PDF::Font::Loader] ok 6 - decode ligature
+[PDF::Font::Loader] ok 7 - decode differences
+[PDF::Font::Loader] ok 8 - decode unknown
+[PDF::Font::Loader] ok 9 - adaptive encoding
+[PDF::Font::Loader] ok 10 - adaptive decoding
+[PDF::Font::Loader] 1..10
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/cmap-issue#34.t
+[PDF::Font::Loader] 1..3
+[PDF::Font::Loader] ok 1 - 
+[PDF::Font::Loader] ok 2 - 
+[PDF::Font::Loader] ok 3 - 
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/cmap-issue#35.t
+[PDF::Font::Loader] 1..4
+[PDF::Font::Loader] ok 1 - 
+[PDF::Font::Loader] ok 2 - decode
+[PDF::Font::Loader] ok 3 - encode
+[PDF::Font::Loader] ok 4 - decode
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/cmap-ligatures.t
+[PDF::Font::Loader] 1..2
+[PDF::Font::Loader] ok 1 - 
+[PDF::Font::Loader] ok 2 - 
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/cmap-utf16.t
+[PDF::Font::Loader] 1..3
+[PDF::Font::Loader] # Subtest: unit-tests
+[PDF::Font::Loader]     1..13
+[PDF::Font::Loader]     ok 1 - The object is-a 'PDF::Font::Loader::Enc::Unicode'
+[PDF::Font::Loader]     ok 2 - 
+[PDF::Font::Loader]     ok 3 - 
+[PDF::Font::Loader]     ok 4 - 
+[PDF::Font::Loader]     ok 5 - 
+[PDF::Font::Loader]     ok 6 - cid encoding sanity
+[PDF::Font::Loader]     ok 7 - utf16 encoding sanity
+[PDF::Font::Loader]     ok 8 - cid multibyte encoding sanity
+[PDF::Font::Loader]     ok 9 - multibyte encoding sanity
+[PDF::Font::Loader]     ok 10 - encode/decode round-trip
+[PDF::Font::Loader]     ok 11 - utf16 glyph "H"
+[PDF::Font::Loader]     ok 12 - utf16 glyph "i"
+[PDF::Font::Loader]     ok 13 - utf16 glyph "♥"
+[PDF::Font::Loader] ok 1 - unit-tests
+[PDF::Font::Loader] ok 2 - # SKIP Writing of PDFs with UTF16 encoded text is NYI
+[PDF::Font::Loader] ok 3 - # SKIP Writing of PDFs with UTF16 encoded text is NYI
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/cmap-utf32.t
+[PDF::Font::Loader] 1..3
+[PDF::Font::Loader] # Subtest: unit-tests
+[PDF::Font::Loader]     1..11
+[PDF::Font::Loader]     ok 1 - The object is-a 'PDF::Font::Loader::Enc::Unicode'
+[PDF::Font::Loader]     ok 2 - 
+[PDF::Font::Loader]     ok 3 - 
+[PDF::Font::Loader]     ok 4 - cid encoding sanity
+[PDF::Font::Loader]     ok 5 - utf32 encoding sanity
+[PDF::Font::Loader]     ok 6 - cid multibyte encoding sanity
+[PDF::Font::Loader]     ok 7 - multibyte encoding sanity
+[PDF::Font::Loader]     ok 8 - encode/decode round-trip
+[PDF::Font::Loader]     ok 9 - utf32 glyph "H"
+[PDF::Font::Loader]     ok 10 - utf32 glyph "i"
+[PDF::Font::Loader]     ok 11 - utf32 glyph "♥"
+[PDF::Font::Loader] ok 1 - unit-tests
+[PDF::Font::Loader] ok 2 - # SKIP Writing of PDFs with UTF32 encoded text is NYI
+[PDF::Font::Loader] ok 3 - # SKIP Writing of PDFs with UTF32 encoded text is NYI
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/cmap-utf8.t
+[PDF::Font::Loader] 1..3
+[PDF::Font::Loader] # Subtest: unit-tests
+[PDF::Font::Loader]     1..15
+[PDF::Font::Loader]     ok 1 - The object is-a 'PDF::Font::Loader::Enc::Unicode'
+[PDF::Font::Loader]     ok 2 - 
+[PDF::Font::Loader]     ok 3 - 
+[PDF::Font::Loader]     ok 4 - 
+[PDF::Font::Loader]     ok 5 - 
+[PDF::Font::Loader]     ok 6 - 
+[PDF::Font::Loader]     ok 7 - single byte code space
+[PDF::Font::Loader]     ok 8 - cid encoding sanity
+[PDF::Font::Loader]     ok 9 - utf8 encoding sanity
+[PDF::Font::Loader]     ok 10 - cid multibyte encoding sanity
+[PDF::Font::Loader]     ok 11 - multibyte encoding sanity
+[PDF::Font::Loader]     ok 12 - encode/decode round-trip
+[PDF::Font::Loader]     ok 13 - utf8 glyph "H"
+[PDF::Font::Loader]     ok 14 - utf8 glyph "i"
+[PDF::Font::Loader]     ok 15 - utf8 glyph "♥"
+[PDF::Font::Loader] ok 1 - unit-tests
+[PDF::Font::Loader] ok 2 - # SKIP Writing of PDFs with UTF8 encoded text is NYI
+[PDF::Font::Loader] ok 3 - # SKIP Writing of PDFs with UTF8 encoded text is NYI
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/cmap-variable-width.t
+[PDF::Font::Loader] ok 1 - 
+[PDF::Font::Loader] ok 2 - 
+[PDF::Font::Loader] ok 3 - 
+[PDF::Font::Loader] ok 4 - 
+[PDF::Font::Loader] ok 5 - 
+[PDF::Font::Loader] ok 6 - 
+[PDF::Font::Loader] ok 7 - 
+[PDF::Font::Loader] ok 8 - 
+[PDF::Font::Loader] ok 9 - 
+[PDF::Font::Loader] ok 10 - 
+[PDF::Font::Loader] ok 11 - 
+[PDF::Font::Loader] ok 12 - 
+[PDF::Font::Loader] ok 13 - 
+[PDF::Font::Loader] ok 14 - 
+[PDF::Font::Loader] ok 15 - 
+[PDF::Font::Loader] ok 16 - 
+[PDF::Font::Loader] ok 17 - 
+[PDF::Font::Loader] ok 18 - 
+[PDF::Font::Loader] ok 19 - 
+[PDF::Font::Loader] ok 20 - 
+[PDF::Font::Loader] ok 21 - 
+[PDF::Font::Loader] ok 22 - 
+[PDF::Font::Loader] ok 23 - 
+[PDF::Font::Loader] ok 24 - 
+[PDF::Font::Loader] 1..24
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/core-font.t
+[PDF::Font::Loader] ok 1 - The object is-a '"PDF::Content::Font::CoreFont"'
+[PDF::Font::Loader] ok 2 - The object is-a '"PDF::Content::Font::CoreFont"'
+[PDF::Font::Loader] ok 3 - 
+[PDF::Font::Loader] 1..3
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/fontobj.t
+[PDF::Font::Loader] ok 1 - 
+[PDF::Font::Loader] ok 2 - 
+[PDF::Font::Loader] ok 3 - 
+[PDF::Font::Loader] ok 4 - 
+[PDF::Font::Loader] ok 5 - 
+[PDF::Font::Loader] ok 6 - 
+[PDF::Font::Loader] ok 7 - 
+[PDF::Font::Loader] ok 8 - 
+[PDF::Font::Loader] ok 9 - 
+[PDF::Font::Loader] ok 10 - 
+[PDF::Font::Loader] 1..10
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/load-font.t
+[PDF::Font::Loader] 1..27
+[PDF::Font::Loader] ok 1 - FontWeight subset
+[PDF::Font::Loader] ok 2 - FontWeight subset
+[PDF::Font::Loader] ok 3 - FontWeight subset
+[PDF::Font::Loader] ok 4 - FontWeight subset
+[PDF::Font::Loader] ok 5 - FontWeight subset
+[PDF::Font::Loader] ok 6 - font-name
+[PDF::Font::Loader] ok 7 - font height
+[PDF::Font::Loader] ok 8 - font height from baseline
+[PDF::Font::Loader] ok 9 - font height hanging
+[PDF::Font::Loader] ok 10 - font height @ 12pt
+[PDF::Font::Loader] ok 11 - font base-height @ 12pt
+[PDF::Font::Loader] ok 12 - .encode(...) sanity
+[PDF::Font::Loader] ok 13 - type 1 shaping
+[PDF::Font::Loader] ok 14 - type 1 shaping
+[PDF::Font::Loader] ok 15 - stringwidth :!kern
+[PDF::Font::Loader] ok 16 - stringwidth :!kern @point-size
+[PDF::Font::Loader] ok 17 - stringwidth :kern
+[PDF::Font::Loader] ok 18 - .kern(...)
+[PDF::Font::Loader] ok 19 - .kern(...)
+[PDF::Font::Loader] ok 20 - 
+[PDF::Font::Loader] ok 21 - 
+[PDF::Font::Loader] ok 22 - stringwidth, width adjustment
+[PDF::Font::Loader] ok 23 - to-dict
+[PDF::Font::Loader] ok 24 - TimesNewRomanPS encoding
+[PDF::Font::Loader] ok 25 - TimesNewRomanPS decoding
+[PDF::Font::Loader] ok 26 - BitstreamVeraSans-Roman encoding
+[PDF::Font::Loader] ok 27 - BitstreamVeraSans-Roman decoding
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/pdf-text-align.t
+[PDF::Font::Loader] 1..2
+[PDF::Font::Loader] ok 1 - encode (identity-h)
+[PDF::Font::Loader] No such method 'graphics-state' for invocant of type
+[PDF::Font::Loader] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Font::Loader]   in method  at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/76D33018B7E8C361F5704ED6F2C29E300A9FBD45 (PDF::Content::Ops) line 254
+[PDF::Font::Loader]   in block  at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/76D33018B7E8C361F5704ED6F2C29E300A9FBD45 (PDF::Content::Ops) line 950
+[PDF::Font::Loader]   in method op at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/76D33018B7E8C361F5704ED6F2C29E300A9FBD45 (PDF::Content::Ops) line 935
+[PDF::Font::Loader]   in method FALLBACK at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/76D33018B7E8C361F5704ED6F2C29E300A9FBD45 (PDF::Content::Ops) line 1166
+[PDF::Font::Loader]   in block <unit> at t/pdf-text-align.t line 36
+[PDF::Font::Loader] # You planned 2 tests, but ran 1
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/reuse-cid.t
+[PDF::Font::Loader] 1..10
+[PDF::Font::Loader] No such method 'graphics-state' for invocant of type
+[PDF::Font::Loader] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Font::Loader]   in method  at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/76D33018B7E8C361F5704ED6F2C29E300A9FBD45 (PDF::Content::Ops) line 254
+[PDF::Font::Loader]   in block  at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/76D33018B7E8C361F5704ED6F2C29E300A9FBD45 (PDF::Content::Ops) line 950
+[PDF::Font::Loader]   in method op at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/76D33018B7E8C361F5704ED6F2C29E300A9FBD45 (PDF::Content::Ops) line 935
+[PDF::Font::Loader]   in method ops at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/76D33018B7E8C361F5704ED6F2C29E300A9FBD45 (PDF::Content::Ops) line 1
+[PDF::Font::Loader]   in method render at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/0AE6CFDC96011502FB094C90B3BC471656F750DB (PDF::Content::Canvas) line 104
+[PDF::Font::Loader]   in method render at t/reuse-cid.t line 26
+[PDF::Font::Loader]   in block <unit> at t/reuse-cid.t line 56
+[PDF::Font::Loader] # You planned 10 tests, but ran 0
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/reuse-type1.t
+[PDF::Font::Loader] 1..30
+[PDF::Font::Loader] ok 1 - 
+[PDF::Font::Loader] ok 2 - 
+[PDF::Font::Loader] ok 3 - F1 is embedded
+[PDF::Font::Loader] ok 4 - 
+[PDF::Font::Loader] ok 5 - font-name
+[PDF::Font::Loader] ok 6 - enc
+[PDF::Font::Loader] ok 7 - is embedded
+[PDF::Font::Loader] ok 8 - isn't subset
+[PDF::Font::Loader] ok 9 - reuse font
+[PDF::Font::Loader] ok 10 - 
+[PDF::Font::Loader] ok 11 - F2 is embedded
+[PDF::Font::Loader] ok 12 - 
+[PDF::Font::Loader] ok 13 - reuse font
+[PDF::Font::Loader] ok 14 - 
+[PDF::Font::Loader] ok 15 - F3 is embedded
+[PDF::Font::Loader] ok 16 - 
+[PDF::Font::Loader] ok 17 - reuse font
+[PDF::Font::Loader] ok 18 - 
+[PDF::Font::Loader] ok 19 - F4 is embedded
+[PDF::Font::Loader] ok 20 - 
+[PDF::Font::Loader] ok 21 - reuse font
+[PDF::Font::Loader] ok 22 - 
+[PDF::Font::Loader] ok 23 - F5 is embedded
+[PDF::Font::Loader] ok 24 - 
+[PDF::Font::Loader] ok 25 - reuse font
+[PDF::Font::Loader] ok 26 - 
+[PDF::Font::Loader] ok 27 - F6 is embedded
+[PDF::Font::Loader] ok 28 - 
+[PDF::Font::Loader] ok 29 - reuse font
+[PDF::Font::Loader] ok 30 - 
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/reuse-unembedded.t
+[PDF::Font::Loader] 1..3
+[PDF::Font::Loader] # Subtest: unembedded non-core
+[PDF::Font::Loader]     1..7
+[PDF::Font::Loader]     ok 1 - font name
+[PDF::Font::Loader]     ok 2 - enc
+[PDF::Font::Loader]     ok 3 - isn't core-font
+[PDF::Font::Loader]     ok 4 - is embedded
+[PDF::Font::Loader]     ok 5 - isn't subset
+[PDF::Font::Loader]     ok 6 - lacks core metrics
+[PDF::Font::Loader]     ok 7 - reuse unembedded font
+[PDF::Font::Loader] ok 1 - unembedded non-core
+[PDF::Font::Loader] # Subtest: unembedded core-font
+[PDF::Font::Loader]     1..8
+[PDF::Font::Loader]     ok 1 - font name
+[PDF::Font::Loader]     ok 2 - is core-font
+[PDF::Font::Loader]     ok 3 - enc
+[PDF::Font::Loader]     ok 4 - is embedded
+[PDF::Font::Loader]     ok 5 - isn't subset
+[PDF::Font::Loader]     ok 6 - has core metrics
+[PDF::Font::Loader]     ok 7 - sample core metrics
+[PDF::Font::Loader]     ok 8 - reuse core font
+[PDF::Font::Loader] ok 2 - unembedded core-font
+[PDF::Font::Loader] ok 3 - 
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/subset.t
+[PDF::Font::Loader] 1..6
+[PDF::Font::Loader] ok 1 - can-subset() returns False
+[PDF::Font::Loader] ok 2 - # SKIP HarfBuzz::Subset required to run subset tests
+[PDF::Font::Loader] ok 3 - # SKIP HarfBuzz::Subset required to run subset tests
+[PDF::Font::Loader] ok 4 - # SKIP HarfBuzz::Subset required to run subset tests
+[PDF::Font::Loader] ok 5 - # SKIP HarfBuzz::Subset required to run subset tests
+[PDF::Font::Loader] ok 6 - # SKIP HarfBuzz::Subset required to run subset tests
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/threads.t
+[PDF::Font::Loader] 1..2
+[PDF::Font::Loader] ok 1 - page insert race
+[PDF::Font::Loader] ok 2 - 
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/type1-add-encoding.t
+[PDF::Font::Loader] 1..13
+[PDF::Font::Loader] ok 1 - 
+[PDF::Font::Loader] ok 2 - 
+[PDF::Font::Loader] ok 3 - 
+[PDF::Font::Loader] ok 4 - 
+[PDF::Font::Loader] ok 5 - 
+[PDF::Font::Loader] ok 6 - 
+[PDF::Font::Loader] ok 7 - pre-save encoding
+[PDF::Font::Loader] ok 8 - pre-save encoding
+[PDF::Font::Loader] ok 9 - pre-save encoding
+[PDF::Font::Loader] ok 10 - reloaded encoding
+[PDF::Font::Loader] ok 11 - reloaded encoding
+[PDF::Font::Loader] ok 12 - reloaded encoding
+[PDF::Font::Loader] ok 13 - 
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/type1-encoding.t
+[PDF::Font::Loader] 1..4
+[PDF::Font::Loader] ok 1 - differences encoding
+[PDF::Font::Loader] ok 2 - 
+[PDF::Font::Loader] ok 3 - reload font from dict - lives
+[PDF::Font::Loader] ok 4 - differences re-encoding
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/type1-encoding_issue#12.t
+[PDF::Font::Loader] 1..9
+[PDF::Font::Loader] ok 1 - The object is-a 'PDF::Font::Loader::Enc::CMap'
+[PDF::Font::Loader] ok 2 - 
+[PDF::Font::Loader] ok 3 - 
+[PDF::Font::Loader] ok 4 - 
+[PDF::Font::Loader] ok 5 - cid encoding sanity
+[PDF::Font::Loader] ok 6 - str encoding sanity
+[PDF::Font::Loader] ok 7 - win encoding sanity
+[PDF::Font::Loader] ok 8 - glyph "H"
+[PDF::Font::Loader] ok 9 - glyph "i"
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/type1-stream.t
+[PDF::Font::Loader] ok 1 - PFB unpacking
+[PDF::Font::Loader] ok 2 - stream.length[0]
+[PDF::Font::Loader] ok 3 - stream.length[1]
+[PDF::Font::Loader] ok 4 - stream.length[2]
+[PDF::Font::Loader] ok 5 - stream bytes
+[PDF::Font::Loader] ok 6 - PFA unpacking
+[PDF::Font::Loader] ok 7 - stream.length[0]
+[PDF::Font::Loader] ok 8 - stream.length[1]
+[PDF::Font::Loader] ok 9 - stream.length[2]
+[PDF::Font::Loader] ok 10 - stream bytes
+[PDF::Font::Loader] 1..10
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/type1.t
+[PDF::Font::Loader] ok 1 - 
+[PDF::Font::Loader] 1..1
+[PDF::Font::Loader] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0b4e8f687d04825d7f059380a312d80b215c8be7.tar.gz/PDF-Font-Loader-0.8.15 t/type3-basic.t
+[PDF::Font::Loader] 1..12
+[PDF::Font::Loader] ok 1 - 
+[PDF::Font::Loader] ok 2 - is-core-font
+[PDF::Font::Loader] loading font: courier -> /usr/share/fonts/opentype/urw-base35/NimbusMonoPS-Regular.otf
+[PDF::Font::Loader] ok 3 - 
+[PDF::Font::Loader] ok 4 - font-name
+[PDF::Font::Loader] ok 5 - enc
+[PDF::Font::Loader] ok 6 - isn't embedded
+[PDF::Font::Loader] ok 7 - isn't subset
+[PDF::Font::Loader] ok 8 - has file path
+[PDF::Font::Loader] ok 9 - 
+[PDF::Font::Loader] ok 10 - 
+[PDF::Font::Loader] ok 11 - reuse font
+[PDF::Font::Loader] ok 12 - 
+===> Testing [FAIL]: PDF::Font::Loader:ver<0.8.15>:auth<zef:dwarring>
+[PDF::Font::Loader] Failed to get passing tests, but continuing with --force-test
+===> Installing: PDF::Font::Loader:ver<0.8.15>:auth<zef:dwarring>
+===> Install [OK] for PDF::Font::Loader:ver<0.8.15>:auth<zef:dwarring>
+
+1 bin/ script [pdf-font-preview.raku] installed to:
+/home/coke/sandbox/blin/installed/PDF::Font::Loader_zef:dwarring_0.8.15_0/bin
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 1min 44.404s
+             CPU time consumed: 2min 27.489s
+                   Memory peak: 1.8G (swap: 0B)

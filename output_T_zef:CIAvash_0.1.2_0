@@ -1,0 +1,240 @@
+Running as unit: run-p278218-i280096.service
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: T
+===> Found: T:ver<0.1.2>:auth<zef:CIAvash> [via Zef::Repository::Ecosystems<fez>]
+[T] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790134188.278221.1036.4263057836808/38d7e972b5a4da15e9972795a72b41791c1c8795.tar.gz https://360.zef.pm/T/T/38d7e972b5a4da15e9972795a72b41791c1c8795.tar.gz
+===> Fetching [OK]: T:ver<0.1.2>:auth<zef:CIAvash> to /home/coke/sandbox/blin/data/zef-data/tmp/1790134188.278221.1036.4263057836808/38d7e972b5a4da15e9972795a72b41791c1c8795.tar.gz
+[T] Command: tar -t -f ./38d7e972b5a4da15e9972795a72b41791c1c8795.tar.gz
+[T] Command: tar -xvf ./38d7e972b5a4da15e9972795a72b41791c1c8795.tar.gz -C ../38d7e972b5a4da15e9972795a72b41791c1c8795.tar.gz
+===> Extraction [OK]: T to /home/coke/sandbox/blin/data/zef-data/tmp/38d7e972b5a4da15e9972795a72b41791c1c8795.tar.gz
+===> Testing: T:ver<0.1.2>:auth<zef:CIAvash>
+[T] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/38d7e972b5a4da15e9972795a72b41791c1c8795.tar.gz/dist t/00-load.rakutest
+[T] 1..1
+[T] ok 1 - T:auth<zef:CIAvash> module can be use-d ok
+[T] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/38d7e972b5a4da15e9972795a72b41791c1c8795.tar.gz/dist t/01-t.rakutest
+[T] 1..9
+[T] # Subtest: Simple numberic equivalence test
+[T]     1..3
+[T]     not ok 1 - Exit code
+[T]     # Failed test 'Exit code'
+[T]     # at t/01-t.rakutest line 10
+[T]     # expected: 0
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: 1
+[T]     not ok 2 - STDERR
+[T]     # Failed test 'STDERR'
+[T]     # at t/01-t.rakutest line 10
+[T]     # expected: Any
+[T]     #  matcher: 'Block'
+[T]     #      got: "===SORRY!=== Error while compiling -e\nUndeclared routine:\n    t used at line 1\n\n"
+[T] Use of uninitialized value of type Any in string context.
+[T] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[T]   in sub cmp-ok at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/core/sources/7086F6B14C4EFA921378D958C52373716593BA32 (Test) line 270
+[T]     not ok 3 - STDOUT
+[T]     # Failed test 'STDOUT'
+[T]     # at t/01-t.rakutest line 10
+[T]     # expected: /'ok 1 - 2 == 2'/
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: Any
+[T]     # You failed 3 tests of 3
+[T] not ok 1 - Simple numberic equivalence test
+[T] # Failed test 'Simple numberic equivalence test'
+[T] # at t/01-t.rakutest line 10
+[T] # Subtest: Simple string equivalence test
+[T]     1..3
+[T]     not ok 1 - Exit code
+[T]     not ok 2 - STDERR
+[T]     # Failed test 'Exit code'
+[T]     # at t/01-t.rakutest line 12
+[T]     # expected: 0
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: 1
+[T]     # Failed test 'STDERR'
+[T]     # at t/01-t.rakutest line 12
+[T]     # expected: Any
+[T]     #  matcher: 'Block'
+[T]     #      got: "===SORRY!=== Error while compiling -e\nUndeclared routine:\n    t used at line 1\n\n"
+[T] Use of uninitialized value of type Any in string context.
+[T] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[T]   in sub cmp-ok at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/core/sources/7086F6B14C4EFA921378D958C52373716593BA32 (Test) line 270
+[T]     not ok 3 - STDOUT
+[T]     # Failed test 'STDOUT'
+[T]     # at t/01-t.rakutest line 12
+[T]     # expected: /'ok 1 - "abc".uc eq "ABC"'/
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: Any
+[T]     # You failed 3 tests of 3
+[T] # Failed test 'Simple string equivalence test'
+[T] # at t/01-t.rakutest line 12
+[T] not ok 2 - Simple string equivalence test
+[T] # Subtest: Simple string equivalence test failure
+[T]     1..3
+[T]     ok 1 - Exit code
+[T]     not ok 2 - STDERR
+[T]     # Failed test 'STDERR'
+[T]     # at t/01-t.rakutest line 14
+[T]     # expected: /'expected: "abc"' .* "matcher: 'infix:<eq>'" .* 'got: "ABC"'/
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: "===SORRY!=== Error while compiling -e\nUndeclared routine:\n    t used at line 1\n\n"
+[T] Use of uninitialized value of type Any in string context.
+[T] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[T]   in sub cmp-ok at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/core/sources/7086F6B14C4EFA921378D958C52373716593BA32 (Test) line 270
+[T]     not ok 3 - STDOUT
+[T]     # Failed test 'STDOUT'
+[T]     # at t/01-t.rakutest line 14
+[T]     # expected: /'not ok 1 - "abc".uc eq "abc"'/
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: Any
+[T]     # You failed 2 tests of 3
+[T] not ok 3 - Simple string equivalence test failure
+[T] # Failed test 'Simple string equivalence test failure'
+[T] # at t/01-t.rakutest line 14
+[T] # Subtest: Custom infix test
+[T]     1..3
+[T]     not ok 1 - Exit code
+[T]     # Failed test 'Exit code'
+[T]     # at t/01-t.rakutest line 20
+[T]     # expected: 0
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: 1
+[T]     not ok 2 - STDERR
+[T]     # Failed test 'STDERR'
+[T]     # at t/01-t.rakutest line 20
+[T]     # expected: Any
+[T]     #  matcher: 'Block'
+[T]     #      got: "===SORRY!=== Error while compiling -e\nUndeclared routine:\n    t used at line 1\n\n"
+[T] Use of uninitialized value of type Any in string context.
+[T] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[T]   in sub cmp-ok at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/core/sources/7086F6B14C4EFA921378D958C52373716593BA32 (Test) line 270
+[T]     not ok 3 - STDOUT
+[T]     # Failed test 'STDOUT'
+[T]     # at t/01-t.rakutest line 20
+[T]     # expected: /'ok 1 - 4 [&(* > *)] 2'/
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: Any
+[T]     # You failed 3 tests of 3
+[T] not ok 4 - Custom infix test
+[T] # Failed test 'Custom infix test'
+[T] # at t/01-t.rakutest line 20
+[T] # Subtest: Custom infix test failure
+[T]     1..3
+[T]     ok 1 - Exit code
+[T]     not ok 2 - STDERR
+[T]     # Failed test 'STDERR'
+[T]     # at t/01-t.rakutest line 22
+[T]     # expected: /'expected: 2' .* "matcher: 'WhateverCode'" .* 'got: 4'/
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: "===SORRY!=== Error while compiling -e\nUndeclared routine:\n    t used at line 1\n\n"
+[T] Use of uninitialized value of type Any in string context.
+[T] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[T]   in sub cmp-ok at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/core/sources/7086F6B14C4EFA921378D958C52373716593BA32 (Test) line 270
+[T]     not ok 3 - STDOUT
+[T]     # Failed test 'STDOUT'
+[T]     # at t/01-t.rakutest line 22
+[T]     # expected: /'not ok 1 - 4 [&(* < *)] 2'/
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: Any
+[T]     # You failed 2 tests of 3
+[T] not ok 5 - Custom infix test failure
+[T] # Failed test 'Custom infix test failure'
+[T] # at t/01-t.rakutest line 22
+[T] # Subtest: Infix containing "<" test failure
+[T]     1..3
+[T]     ok 1 - Exit code
+[T]     not ok 2 - STDERR
+[T]     # Failed test 'STDERR'
+[T]     # at t/01-t.rakutest line 28
+[T]     # expected: /'expected: 2' .* "matcher: 'infix:«<»'" .* 'got: 4'/
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: "===SORRY!=== Error while compiling -e\nUndeclared routine:\n    t used at line 1\n\n"
+[T] Use of uninitialized value of type Any in string context.
+[T] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[T]   in sub cmp-ok at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/core/sources/7086F6B14C4EFA921378D958C52373716593BA32 (Test) line 270
+[T]     not ok 3 - STDOUT
+[T]     # Failed test 'STDOUT'
+[T]     # at t/01-t.rakutest line 28
+[T]     # expected: /'not ok 1 - 4 < 2'/
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: Any
+[T]     # You failed 2 tests of 3
+[T] not ok 6 - Infix containing "<" test failure
+[T] # Failed test 'Infix containing "<" test failure'
+[T] # at t/01-t.rakutest line 28
+[T] # Subtest: Invalid test
+[T]     1..3
+[T]     ok 1 - Exit code
+[T]     not ok 2 - STDERR
+[T]     # Failed test 'STDERR'
+[T]     # at t/01-t.rakutest line 34
+[T]     # expected: /'test needs to be of form <got> <infix> <expected>'/
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: "===SORRY!=== Error while compiling -e\nTwo terms in a row\nat -e:1\n------> t 4<HERE> 3 2\n"
+[T]     ok 3 - STDOUT
+[T]     # You failed 1 test of 3
+[T] not ok 7 - Invalid test
+[T] # Failed test 'Invalid test'
+[T] # at t/01-t.rakutest line 34
+[T] # Subtest: Custom infix sub test
+[T]     1..3
+[T]     not ok 1 - Exit code
+[T]     # Failed test 'Exit code'
+[T]     # at t/01-t.rakutest line 39
+[T]     # expected: 0
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: 1
+[T]     not ok 2 - STDERR
+[T]     # Failed test 'STDERR'
+[T]     # at t/01-t.rakutest line 39
+[T]     # expected: Any
+[T]     #  matcher: 'Block'
+[T]     #      got: "===SORRY!=== Error while compiling -e\nUndeclared routine:\n    t used at line 1\n\n"
+[T] Use of uninitialized value of type Any in string context.
+[T] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[T]   in sub cmp-ok at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/core/sources/7086F6B14C4EFA921378D958C52373716593BA32 (Test) line 270
+[T]     # Failed test 'STDOUT'
+[T]     # at t/01-t.rakutest line 39
+[T]     # expected: /'ok 1 - 2 my_infix Int'/
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: Any
+[T]     # You failed 3 tests of 3
+[T] # Failed test 'Custom infix sub test'
+[T] # at t/01-t.rakutest line 39
+[T]     not ok 3 - STDOUT
+[T] not ok 8 - Custom infix sub test
+[T] # Subtest: Multiple tests with some code in between
+[T]     1..3
+[T]     not ok 1 - Exit code
+[T]     # Failed test 'Exit code'
+[T]     # at t/01-t.rakutest line 43
+[T]     # expected: 0
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: 1
+[T]     not ok 2 - STDERR
+[T]     # Failed test 'STDERR'
+[T]     # at t/01-t.rakutest line 43
+[T]     # expected: Any
+[T]     #  matcher: 'Block'
+[T]     #      got: "===SORRY!=== Error while compiling -e\nUndeclared routine:\n    t used at line 1\n\n"
+[T] Use of uninitialized value of type Any in string context.
+[T] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[T]   in sub cmp-ok at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/core/sources/7086F6B14C4EFA921378D958C52373716593BA32 (Test) line 270
+[T]     # Failed test 'STDOUT'
+[T]     # at t/01-t.rakutest line 43
+[T]     # expected: /'ok 1 - 2 == 2' .* 'ok 2 - "a" eq "a"' .* 'something in between' .* 'ok 3 - Int === Int'/
+[T]     #  matcher: 'infix:<~~>'
+[T]     #      got: Any
+[T]     # You failed 3 tests of 3
+[T]     not ok 3 - STDOUT
+[T] not ok 9 - Multiple tests with some code in between
+[T] # Failed test 'Multiple tests with some code in between'
+[T] # at t/01-t.rakutest line 43
+[T] # You failed 9 tests of 9
+===> Testing [FAIL]: T:ver<0.1.2>:auth<zef:CIAvash>
+[T] Failed to get passing tests, but continuing with --force-test
+===> Installing: T:ver<0.1.2>:auth<zef:CIAvash>
+===> Install [OK] for T:ver<0.1.2>:auth<zef:CIAvash>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 3min 6.765s
+             CPU time consumed: 3min 12.627s
+                   Memory peak: 1G (swap: 0B)

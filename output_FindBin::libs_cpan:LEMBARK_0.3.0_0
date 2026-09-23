@@ -1,0 +1,44 @@
+Running as unit: run-p335680-i321304.service; invocation ID: 9a251a9613964783bae7276fd83c15f8
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: FindBin::libs
+===> Found: FindBin::libs:ver<0.3.0>:auth<cpan:LEMBARK> [via Zef::Repository::Ecosystems<rea>]
+[FindBin::libs] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790135778.335683.5120.443053130017/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/F/FindBin%3A%3Alibs/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
+===> Fetching [OK]: FindBin::libs:ver<0.3.0>:auth<cpan:LEMBARK> to /home/coke/sandbox/blin/data/zef-data/tmp/1790135778.335683.5120.443053130017/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
+[FindBin::libs] Command: tar -t -f ./FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
+[FindBin::libs] Command: tar -xvf ./FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz -C ../FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
+===> Extraction [OK]: FindBin::libs to /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
+===> Testing: FindBin::libs:ver<0.3.0>:auth<CPAN:lembark>
+[FindBin::libs] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-libs-0.3.0 t/01-FindBin-libs.rakutest
+[FindBin::libs] # Madness: 'FindBin::libs' (01-)
+[FindBin::libs] ok 1 - FindBin::libs module can be use-d ok
+[FindBin::libs] ok 2 - Package 'FindBin::libs' installed (FindBin::libs).
+[FindBin::libs] ok 3 - require 'FindBin::libs' survives.
+[FindBin::libs] 1..3
+[FindBin::libs] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-libs-0.3.0 t/02-export.rakutest
+[FindBin::libs] ok 1 - Exported FindBin-libs-dirs
+[FindBin::libs] # libs:
+[FindBin::libs] #	/home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-libs-0.3.0/t/lib
+[FindBin::libs] #	/home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-libs-0.3.0/lib
+[FindBin::libs] #	/home/coke/sandbox/blin/data/zef-data/tmp/lib
+[FindBin::libs] #	/home/coke/sandbox/blin/lib
+[FindBin::libs] 1..1
+[FindBin::libs] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-libs-0.3.0 t/03-use-args.rakutest
+[FindBin::libs] # Bin()
+[FindBin::libs] ===SORRY!=== Error while compiling t/03-use-args.rakutest
+[FindBin::libs] This type cannot unbox to a native string: P6opaque, Junction
+[FindBin::libs] at t/03-use-args.rakutest:8
+[FindBin::libs] ------>     <HERE>use FindBin::libs < verbose >;
+[FindBin::libs] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-libs-0.3.0 t/10-use-frobnicate.rakutest
+[FindBin::libs] ok 1 - FrobPath exported.
+[FindBin::libs] # Expect: 't/lib/FindBin/Frobnicate.pm6'
+[FindBin::libs] ok 2 - Found 't/lib/FindBin/Frobnicate.pm6'
+[FindBin::libs] 1..2
+===> Testing [FAIL]: FindBin::libs:ver<0.3.0>:auth<CPAN:lembark>
+[FindBin::libs] Failed to get passing tests, but continuing with --force-test
+===> Installing: FindBin::libs:ver<0.3.0>:auth<CPAN:lembark>
+===> Install [OK] for FindBin::libs:ver<0.3.0>:auth<CPAN:lembark>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 1min 59.193s
+             CPU time consumed: 2min 7.552s
+                   Memory peak: 1.3G (swap: 0B)

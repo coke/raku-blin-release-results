@@ -1,0 +1,62 @@
+Running as unit: run-p133243-i177484.service; invocation ID: 0b0a6877e6424529af25363be875d539
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: RakupodObject
+===> Found: RakupodObject:ver<0.0.7>:auth<zef:tbrowder> [via Zef::Repository::Ecosystems<fez>]
+[RakupodObject] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790130389.133244.3626.3110739823924/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz https://360.zef.pm/R/AK/RAKUPODOBJECT/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz
+===> Fetching [OK]: RakupodObject:ver<0.0.7>:auth<zef:tbrowder> to /home/coke/sandbox/blin/data/zef-data/tmp/1790130389.133244.3626.3110739823924/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz
+[RakupodObject] Command: tar -t -f ./a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz
+[RakupodObject] Command: tar -xvf ./a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz -C ../a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz
+===> Extraction [OK]: RakupodObject to /home/coke/sandbox/blin/data/zef-data/tmp/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz
+===> Testing: RakupodObject:ver<0.0.7>:auth<zef:tbrowder>
+[RakupodObject] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz/RakupodObject-0.0.7 t/1-critical.t
+[RakupodObject] Potential difficulties:
+[RakupodObject]     Pair with <> really means an empty list, not null string; use :lang('') to represent the null string,
+[RakupodObject]       or :lang() to represent the empty list more accurately
+[RakupodObject]     at /home/coke/sandbox/blin/data/zef-data/tmp/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz/RakupodObject-0.0.7/EVAL_0:2
+[RakupodObject]     ------> =begin code :lang<><HERE><EOL>
+[RakupodObject]     Pair with <> really means an empty list, not null string; use :lang('') to represent the null string,
+[RakupodObject]       or :lang() to represent the empty list more accurately
+[RakupodObject]     at /home/coke/sandbox/blin/data/zef-data/tmp/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz/RakupodObject-0.0.7/EVAL_0:2
+[RakupodObject]     ------> =begin code :lang<><HERE><EOL>
+[RakupodObject]     Pair with <> really means an empty list, not null string; use :lang('') to represent the null string,
+[RakupodObject]       or :lang() to represent the empty list more accurately
+[RakupodObject]     at /home/coke/sandbox/blin/data/zef-data/tmp/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz/RakupodObject-0.0.7/EVAL_0:2
+[RakupodObject]     ------> =begin code :lang<><HERE><EOL>
+[RakupodObject] not ok 1 - bad pod string
+[RakupodObject] # Failed test 'bad pod string'
+[RakupodObject] # at t/1-critical.t line 14
+[RakupodObject] Potential difficulties:
+[RakupodObject]     Pair with <> really means an empty list, not null string; use :lang('') to represent the null string,
+[RakupodObject]       or :lang() to represent the empty list more accurately
+[RakupodObject]     at /home/coke/sandbox/blin/data/zef-data/tmp/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz/RakupodObject-0.0.7/EVAL_1:2
+[RakupodObject]     ------> =begin code :lang<><HERE><EOL>
+[RakupodObject]     Pair with <> really means an empty list, not null string; use :lang('') to represent the null string,
+[RakupodObject]       or :lang() to represent the empty list more accurately
+[RakupodObject]     at /home/coke/sandbox/blin/data/zef-data/tmp/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz/RakupodObject-0.0.7/EVAL_1:2
+[RakupodObject]     ------> =begin code :lang<><HERE><EOL>
+[RakupodObject]     Pair with <> really means an empty list, not null string; use :lang('') to represent the null string,
+[RakupodObject]       or :lang() to represent the empty list more accurately
+[RakupodObject]     at /home/coke/sandbox/blin/data/zef-data/tmp/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz/RakupodObject-0.0.7/EVAL_1:2
+[RakupodObject]     ------> =begin code :lang<><HERE><EOL>
+[RakupodObject] not ok 2 - bad pod file
+[RakupodObject] # Failed test 'bad pod file'
+[RakupodObject] # at t/1-critical.t line 18
+[RakupodObject] ok 3 - good pod string
+[RakupodObject] ok 4 - The object is-a 'Pod::Block::Named'
+[RakupodObject] ok 5 - is a Pod::Block
+[RakupodObject] ok 6 - good pod file
+[RakupodObject] ok 7 - The object is-a 'Pod::Block::Named'
+[RakupodObject] ok 8 - is a Pod::Block
+[RakupodObject] ok 9 - good raku file with pod
+[RakupodObject] ok 10 - is a Pod::Block
+[RakupodObject] 1..10
+[RakupodObject] # You failed 2 tests of 10
+===> Testing [FAIL]: RakupodObject:ver<0.0.7>:auth<zef:tbrowder>
+[RakupodObject] Failed to get passing tests, but continuing with --force-test
+===> Installing: RakupodObject:ver<0.0.7>:auth<zef:tbrowder>
+===> Install [OK] for RakupodObject:ver<0.0.7>:auth<zef:tbrowder>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 1min 26.256s
+             CPU time consumed: 1min 36.362s
+                   Memory peak: 1G (swap: 0B)

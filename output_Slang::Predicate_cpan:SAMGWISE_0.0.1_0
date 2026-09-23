@@ -1,0 +1,107 @@
+Running as unit: run-p145273-i64772.service; invocation ID: 6d9f7c94e5ae4aaea5224443de1df706
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Slang::Predicate
+===> Found: Slang::Predicate:ver<0.0.1>:auth<cpan:SAMGWISE> [via Zef::Repository::Ecosystems<rea>]
+[Slang::Predicate] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790130752.145274.4879.967848471285/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/Slang%3A%3APredicate/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
+===> Fetching [OK]: Slang::Predicate:ver<0.0.1>:auth<cpan:SAMGWISE> to /home/coke/sandbox/blin/data/zef-data/tmp/1790130752.145274.4879.967848471285/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
+[Slang::Predicate] Command: tar -t -f ./Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
+[Slang::Predicate] Command: tar -xvf ./Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz -C ../Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
+===> Extraction [OK]: Slang::Predicate to /home/coke/sandbox/blin/data/zef-data/tmp/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
+===> Testing: Slang::Predicate:ver<0.0.1>
+[Slang::Predicate] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/Slang-Predicate-0.0.1 t/01-basic.t
+[Slang::Predicate] ok 1 - Slang::Predicate module can be use-d ok
+[Slang::Predicate] ok 2 - T is True
+[Slang::Predicate] ok 3 - F is False
+[Slang::Predicate] ok 4 - T and F are usable like values (Positional).
+[Slang::Predicate] ok 5 - T is usable to test againts like a value.
+[Slang::Predicate] # ------------------------------------------------------------------------------
+[Slang::Predicate] ok 6 - True ∨ True ⇔ True
+[Slang::Predicate] ok 7 - False ∨ True ⇔ True
+[Slang::Predicate] ok 8 - True ∨ False ⇔ True
+[Slang::Predicate] ok 9 - False ∨ False ⇔ False
+[Slang::Predicate] # ------------------------------------------------------------------------------
+[Slang::Predicate] ok 10 - True ∧ True ⇔ True
+[Slang::Predicate] ok 11 - False ∧ True ⇔ False
+[Slang::Predicate] ok 12 - True ∧ False ⇔ False
+[Slang::Predicate] ok 13 - False ∧ False ⇔ False
+[Slang::Predicate] # ------------------------------------------------------------------------------
+[Slang::Predicate] ok 14 - True ⊻ True ⇔ False
+[Slang::Predicate] ok 15 - True ⊕ True ⇔ False
+[Slang::Predicate] ok 16 - False ⊻ True ⇔ True
+[Slang::Predicate] ok 17 - False ⊕ True ⇔ True
+[Slang::Predicate] ok 18 - True ⊻ False ⇔ True
+[Slang::Predicate] ok 19 - True ⊕ False ⇔ True
+[Slang::Predicate] ok 20 - False ⊻ False ⇔ False
+[Slang::Predicate] ok 21 - False ⊕ False ⇔ False
+[Slang::Predicate] ok 22 - ¬True ⇔ False
+[Slang::Predicate] ok 23 - ¬False ⇔ True
+[Slang::Predicate] ok 24 - ⊤True ⇔ True
+[Slang::Predicate] ok 25 - ⊤False ⇔ True
+[Slang::Predicate] # ------------------------------------------------------------------------------
+[Slang::Predicate] # ------------------------------------------------------------------------------
+[Slang::Predicate] # ------------------------------------------------------------------------------
+[Slang::Predicate] ok 26 - ⊥True ⇔ False
+[Slang::Predicate] ok 27 - ⊥False ⇔ False
+[Slang::Predicate] # ------------------------------------------------------------------------------
+[Slang::Predicate] ok 28 - True → True ⇔ True
+[Slang::Predicate] not ok 29 - True ⇒ True ⇔ True
+[Slang::Predicate] # Failed test 'True ⇒ True ⇔ True'
+[Slang::Predicate] # at t/01-basic.t line 87
+[Slang::Predicate] # expected: 'True'
+[Slang::Predicate] #      got: 'α	True'
+[Slang::Predicate] ok 30 - True ⊃ True ⇔ True
+[Slang::Predicate] ok 31 - False → True ⇔ True
+[Slang::Predicate] not ok 32 - False ⇒ True ⇔ True
+[Slang::Predicate] # Failed test 'False ⇒ True ⇔ True'
+[Slang::Predicate] # at t/01-basic.t line 87
+[Slang::Predicate] # expected: 'True'
+[Slang::Predicate] #      got: 'α	True'
+[Slang::Predicate] ok 33 - False ⊃ True ⇔ True
+[Slang::Predicate] ok 34 - True → False ⇔ False
+[Slang::Predicate] not ok 35 - True ⇒ False ⇔ False
+[Slang::Predicate] # Failed test 'True ⇒ False ⇔ False'
+[Slang::Predicate] # at t/01-basic.t line 87
+[Slang::Predicate] # expected: 'False'
+[Slang::Predicate] #      got: 'α	False'
+[Slang::Predicate] ok 36 - True ⊃ False ⇔ False
+[Slang::Predicate] ok 37 - False → False ⇔ True
+[Slang::Predicate] not ok 38 - False ⇒ False ⇔ True
+[Slang::Predicate] # Failed test 'False ⇒ False ⇔ True'
+[Slang::Predicate] # at t/01-basic.t line 87
+[Slang::Predicate] # expected: 'True'
+[Slang::Predicate] #      got: 'α	False'
+[Slang::Predicate] ok 39 - False ⊃ False ⇔ True
+[Slang::Predicate] # ------------------------------------------------------------------------------
+[Slang::Predicate] ok 40 - True ↔ True ⇔ True
+[Slang::Predicate] ok 41 - True ⇔ True ⇔ True
+[Slang::Predicate] ok 42 - True ≡ True ⇔ True
+[Slang::Predicate] ok 43 - False ↔ True ⇔ False
+[Slang::Predicate] ok 44 - False ⇔ True ⇔ False
+[Slang::Predicate] ok 45 - False ≡ True ⇔ False
+[Slang::Predicate] ok 46 - True ↔ False ⇔ False
+[Slang::Predicate] ok 47 - True ⇔ False ⇔ False
+[Slang::Predicate] ok 48 - True ≡ False ⇔ False
+[Slang::Predicate] ok 49 - False ↔ False ⇔ True
+[Slang::Predicate] ok 50 - False ⇔ False ⇔ True
+[Slang::Predicate] ok 51 - False ≡ False ⇔ True
+[Slang::Predicate] 1..51
+[Slang::Predicate] # You failed 4 tests of 51
+[Slang::Predicate] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/Slang-Predicate-0.0.1 t/10-expressions.t
+[Slang::Predicate] ok 1 - Conditional statment ⇔ conditional operator.
+[Slang::Predicate] ok 2 - Modus Ponens ⇔ Alternate spelling.
+[Slang::Predicate] ok 3 - Conditional statment ⇔ conditional operator.
+[Slang::Predicate] ok 4 - Modus Ponens ⇔ Alternate spelling.
+[Slang::Predicate] ok 5 - Conditional statment ⇔ conditional operator.
+[Slang::Predicate] ok 6 - Modus Ponens ⇔ Alternate spelling.
+[Slang::Predicate] ok 7 - Conditional statment ⇔ conditional operator.
+[Slang::Predicate] ok 8 - Modus Ponens ⇔ Alternate spelling.
+[Slang::Predicate] 1..8
+===> Testing [FAIL]: Slang::Predicate:ver<0.0.1>
+[Slang::Predicate] Failed to get passing tests, but continuing with --force-test
+===> Installing: Slang::Predicate:ver<0.0.1>
+===> Install [OK] for Slang::Predicate:ver<0.0.1>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 2min 18.501s
+             CPU time consumed: 2min 24.998s
+                   Memory peak: 1.5G (swap: 11.3M)

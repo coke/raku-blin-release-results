@@ -1,0 +1,26 @@
+Running as unit: run-p508444-i558374.service; invocation ID: 69af72710ae5483a9ffd2fc350d1d1e9
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: BusyIndicator
+===> Found: BusyIndicator:ver<0.6.2>:auth<zef:jmaslak> [via Zef::Repository::Ecosystems<fez>]
+[BusyIndicator] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790139988.508451.339.45788525159503/8ee2774692188f46bba5ef55580cf9ddd79a7a39.tar.gz https://360.zef.pm/B/US/BUSYINDICATOR/8ee2774692188f46bba5ef55580cf9ddd79a7a39.tar.gz
+===> Fetching [OK]: BusyIndicator:ver<0.6.2>:auth<zef:jmaslak> to /home/coke/sandbox/blin/data/zef-data/tmp/1790139988.508451.339.45788525159503/8ee2774692188f46bba5ef55580cf9ddd79a7a39.tar.gz
+[BusyIndicator] Command: tar -t -f ./8ee2774692188f46bba5ef55580cf9ddd79a7a39.tar.gz
+[BusyIndicator] Command: tar -xvf ./8ee2774692188f46bba5ef55580cf9ddd79a7a39.tar.gz -C ../8ee2774692188f46bba5ef55580cf9ddd79a7a39.tar.gz
+===> Extraction [OK]: BusyIndicator to /home/coke/sandbox/blin/data/zef-data/tmp/8ee2774692188f46bba5ef55580cf9ddd79a7a39.tar.gz
+===> Testing: BusyIndicator:ver<0.6.2>:auth<zef:jmaslak>
+[BusyIndicator] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/8ee2774692188f46bba5ef55580cf9ddd79a7a39.tar.gz/BusyIndicator-0.6.2 t/00-bogus.t
+[BusyIndicator] ok 1 - 
+[BusyIndicator] 1..1
+===> Testing [OK] for BusyIndicator:ver<0.6.2>:auth<zef:jmaslak>
+===> Installing: BusyIndicator:ver<0.6.2>:auth<zef:jmaslak>
+===> Install [FAIL] for BusyIndicator:ver<0.6.2>:auth<zef:jmaslak>: ===SORRY!===
+Cannot instantiate a native type
+
+===SORRY!===
+Cannot instantiate a native type
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1min 18.735s
+             CPU time consumed: 1min 40.308s
+                   Memory peak: 1G (swap: 0B)

@@ -1,0 +1,27 @@
+Running as unit: run-p32474-i13622.service; invocation ID: 44e1fb5ed57e4e71921cd38d254b3f36
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: DEBUG
+===> Found: DEBUG [via Zef::Repository::Ecosystems<rea>]
+[DEBUG] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790127445.32477.7276.235031116374/DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/D/DEBUG/DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz
+===> Fetching [OK]: DEBUG to /home/coke/sandbox/blin/data/zef-data/tmp/1790127445.32477.7276.235031116374/DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz
+[DEBUG] Command: tar -t -f ./DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz
+[DEBUG] Command: tar -xvf ./DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz -C ../DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz
+===> Extraction [OK]: DEBUG to /home/coke/sandbox/blin/data/zef-data/tmp/DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz
+===> Testing: DEBUG
+===> Testing [OK] for DEBUG
+===> Installing: DEBUG
+===> Install [FAIL] for DEBUG: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/DEBUG__*_0/sources/72A8D64904E2293F3D61CB9BE2E910C77C26A64E (assert)
+Error while importing from 'experimental': no such tag 'macros'
+at /home/coke/sandbox/blin/installed/DEBUG__*_0/sources/72A8D64904E2293F3D61CB9BE2E910C77C26A64E (assert):1
+------> <BOL><HERE>use experimental :macros;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/DEBUG__*_0/sources/72A8D64904E2293F3D61CB9BE2E910C77C26A64E (assert)
+Error while importing from 'experimental': no such tag 'macros'
+at /home/coke/sandbox/blin/installed/DEBUG__*_0/sources/72A8D64904E2293F3D61CB9BE2E910C77C26A64E (assert):1
+------> <BOL><HERE>use experimental :macros;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1min 59.410s
+             CPU time consumed: 1min 57.237s
+                   Memory peak: 1.1G (swap: 0B)

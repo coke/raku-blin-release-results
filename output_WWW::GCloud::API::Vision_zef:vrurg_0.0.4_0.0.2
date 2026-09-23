@@ -1,0 +1,78 @@
+Running as unit: run-p953303-i986447.service; invocation ID: 2d0dfd1d8cc9460990916860d4b50ad8
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: WWW::GCloud::API::Vision
+===> Found: WWW::GCloud::API::Vision:ver<0.0.4>:auth<zef:vrurg>:api<0.0.2> [via Zef::Repository::Ecosystems<fez>]
+[WWW::GCloud::API::Vision] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790150951.953310.9085.417749052227/3e50137f6079ab0e5d82c6b8a9aa879dbe238d5f.tar.gz https://360.zef.pm/W/WW/WWW_GCLOUD_API_VISION/3e50137f6079ab0e5d82c6b8a9aa879dbe238d5f.tar.gz
+===> Fetching [OK]: WWW::GCloud::API::Vision:ver<0.0.4>:auth<zef:vrurg>:api<0.0.2> to /home/coke/sandbox/blin/data/zef-data/tmp/1790150951.953310.9085.417749052227/3e50137f6079ab0e5d82c6b8a9aa879dbe238d5f.tar.gz
+[WWW::GCloud::API::Vision] Command: tar -t -f ./3e50137f6079ab0e5d82c6b8a9aa879dbe238d5f.tar.gz
+[WWW::GCloud::API::Vision] Command: tar -xvf ./3e50137f6079ab0e5d82c6b8a9aa879dbe238d5f.tar.gz -C ../3e50137f6079ab0e5d82c6b8a9aa879dbe238d5f.tar.gz
+===> Extraction [OK]: WWW::GCloud::API::Vision to /home/coke/sandbox/blin/data/zef-data/tmp/3e50137f6079ab0e5d82c6b8a9aa879dbe238d5f.tar.gz
+===> Testing: WWW::GCloud::API::Vision:ver<0.0.4>:auth<zef:vrurg>:api<0.0.2>
+[WWW::GCloud::API::Vision] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/3e50137f6079ab0e5d82c6b8a9aa879dbe238d5f.tar.gz/WWW-GCloud-API-Vision-v0.0.4 t/100-features.rakutest
+[WWW::GCloud::API::Vision] ===SORRY!=== Error while compiling t/100-features.rakutest
+[WWW::GCloud::API::Vision] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Test::Async_zef:vrurg_0.1.17_0.1.2/sources/7E7864271E963232F49BFD2612559D33B8270D1B (Test::Async)
+[WWW::GCloud::API::Vision] ===SORRY!===
+[WWW::GCloud::API::Vision] Type 'test-hub' is not declared
+[WWW::GCloud::API::Vision] at /home/coke/sandbox/blin/installed/Test::Async_zef:vrurg_0.1.17_0.1.2/sources/AAA72E49F02EF7E865B8E9CCEB09A3AA13D7F2B1 (Test::Async::Hub):6
+[WWW::GCloud::API::Vision] ------> unit test-hub<HERE> Test::Async::Hub;
+[WWW::GCloud::API::Vision] Malformed unit
+[WWW::GCloud::API::Vision] at /home/coke/sandbox/blin/installed/Test::Async_zef:vrurg_0.1.17_0.1.2/sources/AAA72E49F02EF7E865B8E9CCEB09A3AA13D7F2B1 (Test::Async::Hub):6
+[WWW::GCloud::API::Vision] ------> unit<HERE> test-hub Test::Async::Hub;
+[WWW::GCloud::API::Vision] at /home/coke/sandbox/blin/installed/Test::Async_zef:vrurg_0.1.17_0.1.2/sources/7E7864271E963232F49BFD2612559D33B8270D1B (Test::Async):8
+[WWW::GCloud::API::Vision] ------> <BOL><HERE>use Test::Async::Hub;
+[WWW::GCloud::API::Vision] at t/100-features.rakutest:2
+[WWW::GCloud::API::Vision] ------> <BOL><HERE>use Test::Async;
+===> Testing [FAIL]: WWW::GCloud::API::Vision:ver<0.0.4>:auth<zef:vrurg>:api<0.0.2>
+[WWW::GCloud::API::Vision] Failed to get passing tests, but continuing with --force-test
+===> Installing: WWW::GCloud::API::Vision:ver<0.0.4>:auth<zef:vrurg>:api<0.0.2>
+===> Install [FAIL] for WWW::GCloud::API::Vision:ver<0.0.4>:auth<zef:vrurg>:api<0.0.2>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/WWW::GCloud::API::Vision_zef:vrurg_0.0.4_0.0.2/sources/FD3563D8FB7EA51A06768758FA5A4D03EBC3CF3B (WWW::GCloud::API::Vision)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/WWW::GCloud_zef:vrurg_0.0.8_0.0.4/sources/FDB03B3799AC8762A86CAC41CCDFC2F79FA8D377 (WWW::GCloud)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/JSON::Class_zef:jonathanstowe_0.0.21_1.0/sources/2BD3654B4427C7AF8B152F0157D0C105A662E7DB (JSON::Class)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/JSON::Class_zef:jonathanstowe_0.0.21_1.0/sources/710A49098006CDB8CBD4954A2DBF63BFEC4A17DE (JSON::Class::ClassHOW)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/JSON::Class_zef:jonathanstowe_0.0.21_1.0/sources/EDD32FF3705308FE68A2A38E29E93AF07E0CC7A4 (JSON::Class::HOW::SelfConfigure)
+===SORRY!===
+Cannot find method 'nominalish' on object of type Archetypes
+
+at /home/coke/sandbox/blin/installed/JSON::Class_zef:jonathanstowe_0.0.21_1.0/sources/EDD32FF3705308FE68A2A38E29E93AF07E0CC7A4 (JSON::Class::HOW::SelfConfigure):4
+------> <BOL><HERE>use JSON::Class::Config;
+
+at /home/coke/sandbox/blin/installed/JSON::Class_zef:jonathanstowe_0.0.21_1.0/sources/710A49098006CDB8CBD4954A2DBF63BFEC4A17DE (JSON::Class::ClassHOW):14
+------> <BOL><HERE>use JSON::Class::HOW::SelfConfigure;
+
+at /home/coke/sandbox/blin/installed/JSON::Class_zef:jonathanstowe_0.0.21_1.0/sources/2BD3654B4427C7AF8B152F0157D0C105A662E7DB (JSON::Class):14
+------> <BOL><HERE>use JSON::Class::ClassHOW;
+
+at /home/coke/sandbox/blin/installed/WWW::GCloud_zef:vrurg_0.0.8_0.0.4/sources/FDB03B3799AC8762A86CAC41CCDFC2F79FA8D377 (WWW::GCloud):8
+------> <BOL><HERE>use JSON::Class:auth<zef:vrurg>;
+
+at /home/coke/sandbox/blin/installed/WWW::GCloud::API::Vision_zef:vrurg_0.0.4_0.0.2/sources/FD3563D8FB7EA51A06768758FA5A4D03EBC3CF3B (WWW::GCloud::API::Vision):6
+------> <BOL><HERE>use WWW::GCloud;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/WWW::GCloud::API::Vision_zef:vrurg_0.0.4_0.0.2/sources/FD3563D8FB7EA51A06768758FA5A4D03EBC3CF3B (WWW::GCloud::API::Vision)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/WWW::GCloud_zef:vrurg_0.0.8_0.0.4/sources/FDB03B3799AC8762A86CAC41CCDFC2F79FA8D377 (WWW::GCloud)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/JSON::Class_zef:jonathanstowe_0.0.21_1.0/sources/2BD3654B4427C7AF8B152F0157D0C105A662E7DB (JSON::Class)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/JSON::Class_zef:jonathanstowe_0.0.21_1.0/sources/710A49098006CDB8CBD4954A2DBF63BFEC4A17DE (JSON::Class::ClassHOW)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/JSON::Class_zef:jonathanstowe_0.0.21_1.0/sources/EDD32FF3705308FE68A2A38E29E93AF07E0CC7A4 (JSON::Class::HOW::SelfConfigure)
+===SORRY!===
+Cannot find method 'nominalish' on object of type Archetypes
+
+at /home/coke/sandbox/blin/installed/JSON::Class_zef:jonathanstowe_0.0.21_1.0/sources/EDD32FF3705308FE68A2A38E29E93AF07E0CC7A4 (JSON::Class::HOW::SelfConfigure):4
+------> <BOL><HERE>use JSON::Class::Config;
+
+at /home/coke/sandbox/blin/installed/JSON::Class_zef:jonathanstowe_0.0.21_1.0/sources/710A49098006CDB8CBD4954A2DBF63BFEC4A17DE (JSON::Class::ClassHOW):14
+------> <BOL><HERE>use JSON::Class::HOW::SelfConfigure;
+
+at /home/coke/sandbox/blin/installed/JSON::Class_zef:jonathanstowe_0.0.21_1.0/sources/2BD3654B4427C7AF8B152F0157D0C105A662E7DB (JSON::Class):14
+------> <BOL><HERE>use JSON::Class::ClassHOW;
+
+at /home/coke/sandbox/blin/installed/WWW::GCloud_zef:vrurg_0.0.8_0.0.4/sources/FDB03B3799AC8762A86CAC41CCDFC2F79FA8D377 (WWW::GCloud):8
+------> <BOL><HERE>use JSON::Class:auth<zef:vrurg>;
+
+at /home/coke/sandbox/blin/installed/WWW::GCloud::API::Vision_zef:vrurg_0.0.4_0.0.2/sources/FD3563D8FB7EA51A06768758FA5A4D03EBC3CF3B (WWW::GCloud::API::Vision):6
+------> <BOL><HERE>use WWW::GCloud;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 33.687s
+             CPU time consumed: 47.317s
+                   Memory peak: 2.2G (swap: 0B)

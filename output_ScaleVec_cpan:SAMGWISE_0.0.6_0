@@ -1,0 +1,2685 @@
+Running as unit: run-p268507-i320192.service; invocation ID: eca5c21242b246cf881b7eb6fb9b0f59
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: ScaleVec
+===> Found: ScaleVec:ver<0.0.6>:auth<cpan:SAMGWISE> [via Zef::Repository::Ecosystems<rea>]
+[ScaleVec] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790133944.268508.4045.381243828521/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/ScaleVec/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
+===> Fetching [OK]: ScaleVec:ver<0.0.6>:auth<cpan:SAMGWISE> to /home/coke/sandbox/blin/data/zef-data/tmp/1790133944.268508.4045.381243828521/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
+[ScaleVec] Command: tar -t -f ./ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
+[ScaleVec] Command: tar -xvf ./ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz -C ../ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
+===> Extraction [OK]: ScaleVec to /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
+===> Testing: ScaleVec:ver<0.0.6>
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec.t
+[ScaleVec] ok 1 - ScaleVec module can be use-d ok
+[ScaleVec] ok 2 - Instantiate ScaleVec object
+[ScaleVec] ok 3 - Pitch vector out matches pitch vector in
+[ScaleVec] ok 4 - Relative intervals for major triad
+[ScaleVec] ok 5 - interval-vector for major triad
+[ScaleVec] ok 6 - step 0 == $vector[0]
+[ScaleVec] ok 7 - step 1 == $vector[1]
+[ScaleVec] ok 8 - step 2 == $vector[2]
+[ScaleVec] ok 9 - root
+[ScaleVec] ok 10 - is chord set pitch vector matching
+[ScaleVec] ok 11 - Generate map between vector to set
+[ScaleVec] ok 12 - Generate map between vector to set of self
+[ScaleVec] ok 13 - inversion 0 => (60, 64, 67).Seq,  $(60, 64, 67).
+[ScaleVec] ok 14 - inversion 1 => (64, 67, 72).Seq,  (64, 67, 72).
+[ScaleVec] ok 15 - inversion 2 => (67, 72, 76).Seq,   (67, 72, 76).
+[ScaleVec] ok 16 - inversion 3 => (72, 76, 79).Seq,  (72, 76, 79).Seq.
+[ScaleVec] ok 17 - inversion -1 => (55, 60, 64).Seq,  (55, 60, 64).
+[ScaleVec] ok 18 - inversion -2 => (52, 55, 60).Seq,  (52, 55, 60).
+[ScaleVec] ok 19 - inversion -3 => (48, 52, 55).Seq,  (48, 52, 55).Seq.
+[ScaleVec] ok 20 - Chord retrograde
+[ScaleVec] ok 21 - Chord intervalic retrograde
+[ScaleVec] ok 22 - Chord diminish(1)
+[ScaleVec] ok 23 - Chord diminish(1/2)
+[ScaleVec] ok 24 - Chord augment(1)
+[ScaleVec] ok 25 - Chord augment(1)
+[ScaleVec] ok 26 - voice-leading-permutations on augment 1
+[ScaleVec] ok 27 - interval-vector-diff sums to 0 for same chord
+[ScaleVec] ok 28 - interval-vector-diff on augment 1 is (0, 0) - no difference
+[ScaleVec] ok 29 - interval-vector-diff on augment 1/2 is (2, 1.5)
+[ScaleVec] ok 30 - interval-vector-diff on diminish 1/2 is (-2, -1.5)
+[ScaleVec] ok 31 - mirror-inversion
+[ScaleVec] ok 32 - transpose
+[ScaleVec] ok 33 - 0 distance to self
+[ScaleVec] ok 34 - distance between self and augment(1)
+[ScaleVec] ok 35 - distance between self and diminish(1)
+[ScaleVec] ok 36 - cycle -4
+[ScaleVec] ok 37 - cycle -3
+[ScaleVec] ok 38 - cycle -2
+[ScaleVec] ok 39 - cycle -1
+[ScaleVec] ok 40 - cycle 0
+[ScaleVec] ok 41 - cycle 1
+[ScaleVec] ok 42 - cycle 2
+[ScaleVec] ok 43 - cycle 3
+[ScaleVec] ok 44 - cycle 4
+[ScaleVec] ok 45 - Reflexive step round trip for 42
+[ScaleVec] ok 46 - Reflexive step round trip for 42.333333
+[ScaleVec] ok 47 - Reflexive step round trip for 42.5
+[ScaleVec] ok 48 - Reflexive step round trip for 42.666667
+[ScaleVec] ok 49 - Reflexive step round trip for 43
+[ScaleVec] ok 50 - Reflexive step round trip for 43.333333
+[ScaleVec] ok 51 - Reflexive step round trip for 43.5
+[ScaleVec] ok 52 - Reflexive step round trip for 43.666667
+[ScaleVec] ok 53 - Reflexive step round trip for 44
+[ScaleVec] ok 54 - Reflexive step round trip for 44.333333
+[ScaleVec] ok 55 - Reflexive step round trip for 44.5
+[ScaleVec] ok 56 - Reflexive step round trip for 44.666667
+[ScaleVec] ok 57 - Reflexive step round trip for 45
+[ScaleVec] ok 58 - Reflexive step round trip for 45.333333
+[ScaleVec] ok 59 - Reflexive step round trip for 45.5
+[ScaleVec] ok 60 - Reflexive step round trip for 45.666667
+[ScaleVec] ok 61 - Reflexive step round trip for 46
+[ScaleVec] ok 62 - Reflexive step round trip for 46.333333
+[ScaleVec] ok 63 - Reflexive step round trip for 46.5
+[ScaleVec] ok 64 - Reflexive step round trip for 46.666667
+[ScaleVec] ok 65 - Reflexive step round trip for 47
+[ScaleVec] ok 66 - Reflexive step round trip for 47.333333
+[ScaleVec] ok 67 - Reflexive step round trip for 47.5
+[ScaleVec] ok 68 - Reflexive step round trip for 47.666667
+[ScaleVec] ok 69 - Reflexive step round trip for 48
+[ScaleVec] ok 70 - Reflexive step round trip for 48.333333
+[ScaleVec] ok 71 - Reflexive step round trip for 48.5
+[ScaleVec] ok 72 - Reflexive step round trip for 48.666667
+[ScaleVec] ok 73 - Reflexive step round trip for 49
+[ScaleVec] ok 74 - Reflexive step round trip for 49.333333
+[ScaleVec] ok 75 - Reflexive step round trip for 49.5
+[ScaleVec] ok 76 - Reflexive step round trip for 49.666667
+[ScaleVec] ok 77 - Reflexive step round trip for 50
+[ScaleVec] ok 78 - Reflexive step round trip for 50.333333
+[ScaleVec] ok 79 - Reflexive step round trip for 50.5
+[ScaleVec] ok 80 - Reflexive step round trip for 50.666667
+[ScaleVec] ok 81 - Reflexive step round trip for 51
+[ScaleVec] ok 82 - Reflexive step round trip for 51.333333
+[ScaleVec] ok 83 - Reflexive step round trip for 51.5
+[ScaleVec] ok 84 - Reflexive step round trip for 51.666667
+[ScaleVec] ok 85 - Reflexive step round trip for 52
+[ScaleVec] ok 86 - Reflexive step round trip for 52.333333
+[ScaleVec] ok 87 - Reflexive step round trip for 52.5
+[ScaleVec] ok 88 - Reflexive step round trip for 52.666667
+[ScaleVec] ok 89 - Reflexive step round trip for 53
+[ScaleVec] ok 90 - Reflexive step round trip for 53.333333
+[ScaleVec] ok 91 - Reflexive step round trip for 53.5
+[ScaleVec] ok 92 - Reflexive step round trip for 53.666667
+[ScaleVec] ok 93 - Reflexive step round trip for 54
+[ScaleVec] ok 94 - Reflexive step round trip for 54.333333
+[ScaleVec] ok 95 - Reflexive step round trip for 54.5
+[ScaleVec] ok 96 - Reflexive step round trip for 54.666667
+[ScaleVec] ok 97 - Reflexive step round trip for 55
+[ScaleVec] ok 98 - Reflexive step round trip for 55.333333
+[ScaleVec] ok 99 - Reflexive step round trip for 55.5
+[ScaleVec] ok 100 - Reflexive step round trip for 55.666667
+[ScaleVec] ok 101 - Reflexive step round trip for 56
+[ScaleVec] ok 102 - Reflexive step round trip for 56.333333
+[ScaleVec] ok 103 - Reflexive step round trip for 56.5
+[ScaleVec] ok 104 - Reflexive step round trip for 56.666667
+[ScaleVec] ok 105 - Reflexive step round trip for 57
+[ScaleVec] ok 106 - Reflexive step round trip for 57.333333
+[ScaleVec] ok 107 - Reflexive step round trip for 57.5
+[ScaleVec] ok 108 - Reflexive step round trip for 57.666667
+[ScaleVec] ok 109 - Reflexive step round trip for 58
+[ScaleVec] ok 110 - Reflexive step round trip for 58.333333
+[ScaleVec] ok 111 - Reflexive step round trip for 58.5
+[ScaleVec] ok 112 - Reflexive step round trip for 58.666667
+[ScaleVec] ok 113 - Reflexive step round trip for 59
+[ScaleVec] ok 114 - Reflexive step round trip for 59.333333
+[ScaleVec] ok 115 - Reflexive step round trip for 59.5
+[ScaleVec] ok 116 - Reflexive step round trip for 59.666667
+[ScaleVec] ok 117 - Reflexive step round trip for 60
+[ScaleVec] ok 118 - Reflexive step round trip for 60.333333
+[ScaleVec] ok 119 - Reflexive step round trip for 60.5
+[ScaleVec] ok 120 - Reflexive step round trip for 60.666667
+[ScaleVec] ok 121 - Reflexive step round trip for 61
+[ScaleVec] ok 122 - Reflexive step round trip for 61.333333
+[ScaleVec] ok 123 - Reflexive step round trip for 61.5
+[ScaleVec] ok 124 - Reflexive step round trip for 61.666667
+[ScaleVec] ok 125 - Reflexive step round trip for 62
+[ScaleVec] ok 126 - Reflexive step round trip for 62.333333
+[ScaleVec] ok 127 - Reflexive step round trip for 62.5
+[ScaleVec] ok 128 - Reflexive step round trip for 62.666667
+[ScaleVec] ok 129 - Reflexive step round trip for 63
+[ScaleVec] ok 130 - Reflexive step round trip for 63.333333
+[ScaleVec] ok 131 - Reflexive step round trip for 63.5
+[ScaleVec] ok 132 - Reflexive step round trip for 63.666667
+[ScaleVec] ok 133 - Reflexive step round trip for 64
+[ScaleVec] ok 134 - Reflexive step round trip for 64.333333
+[ScaleVec] ok 135 - Reflexive step round trip for 64.5
+[ScaleVec] ok 136 - Reflexive step round trip for 64.666667
+[ScaleVec] ok 137 - Reflexive step round trip for 65
+[ScaleVec] ok 138 - Reflexive step round trip for 65.333333
+[ScaleVec] ok 139 - Reflexive step round trip for 65.5
+[ScaleVec] ok 140 - Reflexive step round trip for 65.666667
+[ScaleVec] ok 141 - Reflexive step round trip for 66
+[ScaleVec] ok 142 - Reflexive step round trip for 66.333333
+[ScaleVec] ok 143 - Reflexive step round trip for 66.5
+[ScaleVec] ok 144 - Reflexive step round trip for 66.666667
+[ScaleVec] ok 145 - Reflexive step round trip for 67
+[ScaleVec] ok 146 - Reflexive step round trip for 67.333333
+[ScaleVec] ok 147 - Reflexive step round trip for 67.5
+[ScaleVec] ok 148 - Reflexive step round trip for 67.666667
+[ScaleVec] ok 149 - Reflexive step round trip for 68
+[ScaleVec] ok 150 - Reflexive step round trip for 68.333333
+[ScaleVec] ok 151 - Reflexive step round trip for 68.5
+[ScaleVec] ok 152 - Reflexive step round trip for 68.666667
+[ScaleVec] ok 153 - Reflexive step round trip for 69
+[ScaleVec] ok 154 - Reflexive step round trip for 69.333333
+[ScaleVec] ok 155 - Reflexive step round trip for 69.5
+[ScaleVec] ok 156 - Reflexive step round trip for 69.666667
+[ScaleVec] ok 157 - Reflexive step round trip for 70
+[ScaleVec] ok 158 - Reflexive step round trip for 70.333333
+[ScaleVec] ok 159 - Reflexive step round trip for 70.5
+[ScaleVec] ok 160 - Reflexive step round trip for 70.666667
+[ScaleVec] ok 161 - Reflexive step round trip for 71
+[ScaleVec] ok 162 - Reflexive step round trip for 71.333333
+[ScaleVec] ok 163 - Reflexive step round trip for 71.5
+[ScaleVec] ok 164 - Reflexive step round trip for 71.666667
+[ScaleVec] ok 165 - Reflexive step round trip for 72
+[ScaleVec] ok 166 - Reflexive step round trip for 72.333333
+[ScaleVec] ok 167 - Reflexive step round trip for 72.5
+[ScaleVec] ok 168 - Reflexive step round trip for 72.666667
+[ScaleVec] ok 169 - Reflexive step round trip for 73
+[ScaleVec] ok 170 - Reflexive step round trip for 73.333333
+[ScaleVec] ok 171 - Reflexive step round trip for 73.5
+[ScaleVec] ok 172 - Reflexive step round trip for 73.666667
+[ScaleVec] ok 173 - Reflexive step round trip for 74
+[ScaleVec] ok 174 - Reflexive step round trip for 74.333333
+[ScaleVec] ok 175 - Reflexive step round trip for 74.5
+[ScaleVec] ok 176 - Reflexive step round trip for 74.666667
+[ScaleVec] ok 177 - Reflexive step round trip for 75
+[ScaleVec] ok 178 - Reflexive step round trip for 75.333333
+[ScaleVec] ok 179 - Reflexive step round trip for 75.5
+[ScaleVec] ok 180 - Reflexive step round trip for 75.666667
+[ScaleVec] ok 181 - Reflexive step round trip for 76
+[ScaleVec] ok 182 - Reflexive step round trip for 76.333333
+[ScaleVec] ok 183 - Reflexive step round trip for 76.5
+[ScaleVec] ok 184 - Reflexive step round trip for 76.666667
+[ScaleVec] ok 185 - Reflexive step round trip for 77
+[ScaleVec] ok 186 - Reflexive step round trip for 77.333333
+[ScaleVec] ok 187 - Reflexive step round trip for 77.5
+[ScaleVec] ok 188 - Reflexive step round trip for 77.666667
+[ScaleVec] ok 189 - Reflexive step round trip for 78
+[ScaleVec] ok 190 - Reflexive step round trip for 78.333333
+[ScaleVec] ok 191 - Reflexive step round trip for 78.5
+[ScaleVec] ok 192 - Reflexive step round trip for 78.666667
+[ScaleVec] 1..192
+[ScaleVec] Saw 1 occurrence of deprecated code.
+[ScaleVec] ================================================================================
+[ScaleVec] Method perl (from Mu) seen at:
+[ScaleVec]   t/ScaleVec.t, lines 36,39,42,45,49,52,55
+[ScaleVec] Please use raku instead.
+[ScaleVec] --------------------------------------------------------------------------------
+[ScaleVec] Please contact the author to have these occurrences of deprecated code
+[ScaleVec] adapted, so that this message will disappear!
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Graph.t
+[ScaleVec] ok 1 - ScaleVec::Chord::Graph module can be use-d ok
+[ScaleVec] ok 2 - pitch-classes matches input
+[ScaleVec] ok 3 - add-pc does not add non-unique elements
+[ScaleVec] ok 4 - add-pv creates links
+[ScaleVec] ok 5 - add-pv then vector to check links to PCs
+[ScaleVec] ok 6 - add-pv then pitches to check links to PVs
+[ScaleVec] ok 7 - to-map output structure without links
+[ScaleVec] ok 8 - to-map <=> from-map round trip
+[ScaleVec] ok 9 - difference I to ii
+[ScaleVec] ok 10 - difference I to iii
+[ScaleVec] ok 11 - difference I to IV
+[ScaleVec] ok 12 - difference I to V
+[ScaleVec] ok 13 - difference I to V7
+[ScaleVec] ok 14 - difference I to vi
+[ScaleVec] ok 15 - difference I to vii
+[ScaleVec] ok 16 - neighbours returns all connected chords
+[ScaleVec] ok 17 - neighbours returns all connected chords
+[ScaleVec] ok 18 - is-eqv I = I?
+[ScaleVec] ok 19 - is-eqv I = V?
+[ScaleVec] ok 20 - is-eqv V = V7?
+[ScaleVec] ok 21 - is-eqv V7 = V?
+[ScaleVec] ok 22 - progression-lazy provides correct number of chords
+[ScaleVec] ok 23 - progression-lazy provides correct number of chords
+[ScaleVec] ok 24 - progression-lazy provides correct number of chords
+[ScaleVec] ok 25 - graph size for d-major, after generation
+[ScaleVec] ok 26 - graph size unioned
+[ScaleVec] ok 27 - Chord progression (lazy) starts on the chord the generator was given.
+[ScaleVec] ok 28 - Chord progression (lazy) ends on the chord the generator was given.
+[ScaleVec] ok 29 - Progression (lazy) is the correct length.
+[ScaleVec] ok 30 - Progression (lazy) difference 0 <- 1
+[ScaleVec] ok 31 - Progression (lazy) difference 1 <- 2
+[ScaleVec] ok 32 - Progression (lazy) difference 3 <- 4
+[ScaleVec] ok 33 - Chord progression (eager) starts on the chord the generator was given.
+[ScaleVec] ok 34 - Chord progression (eager) ends on the chord the generator was given.
+[ScaleVec] ok 35 - Progression (eager) is the correct length.
+[ScaleVec] ok 36 - Progression (eager) difference 0 <- 1
+[ScaleVec] ok 37 - Progression (eager) difference 1 <- 2
+[ScaleVec] ok 38 - Progression (eager) difference 2 <- 3
+[ScaleVec] # ------------------------------------------------------------------------------
+[ScaleVec] #  Beginning progression planner (exhastive) tests.
+[ScaleVec] # ------------------------------------------------------------------------------
+[ScaleVec] ok 39 - Chord progression (exhaustive) starts on the chord the generator was given.
+[ScaleVec] ok 40 - Chord progression (exhaustive) ends on the chord the generator was given.
+[ScaleVec] ok 41 - Progression (exhaustive) is the correct length.
+[ScaleVec] ok 42 - Progression (exhaustive) difference 0 <- 1
+[ScaleVec] ok 43 - Progression (exhaustive) difference 1 <- 2
+[ScaleVec] ok 44 - Progression (exhaustive) difference 2 <- 3
+[ScaleVec] ok 45 - Chord progression (exhaustive) starts on the chord the generator was given.
+[ScaleVec] ok 46 - Chord progression (exhaustive) ends on the chord the generator was given.
+[ScaleVec] ok 47 - Progression (exhaustive) is the correct length.
+[ScaleVec] ok 48 - Progression (exhaustive) difference 0 <- 1
+[ScaleVec] ok 49 - Progression (exhaustive) difference 1 <- 2
+[ScaleVec] ok 50 - Progression (exhaustive) difference 2 <- 3
+[ScaleVec] ok 51 - Chord progression (exhaustive) starts on the chord the generator was given.
+[ScaleVec] ok 52 - Chord progression (exhaustive) ends on the chord the generator was given.
+[ScaleVec] ok 53 - Progression (exhaustive) is the correct length.
+[ScaleVec] ok 54 - Progression (exhaustive) difference 0 <- 1
+[ScaleVec] ok 55 - Progression (exhaustive) difference 1 <- 2
+[ScaleVec] ok 56 - Progression (exhaustive) difference 2 <- 3
+[ScaleVec] ok 57 - Chord progression (exhaustive) starts on the chord the generator was given.
+[ScaleVec] ok 58 - Chord progression (exhaustive) ends on the chord the generator was given.
+[ScaleVec] ok 59 - Progression (exhaustive) is the correct length.
+[ScaleVec] ok 60 - Progression (exhaustive) difference 0 <- 1
+[ScaleVec] ok 61 - Progression (exhaustive) difference 1 <- 2
+[ScaleVec] ok 62 - Progression (exhaustive) difference 2 <- 3
+[ScaleVec] ok 63 - Chord progression (exhaustive) starts on the chord the generator was given.
+[ScaleVec] ok 64 - Chord progression (exhaustive) ends on the chord the generator was given.
+[ScaleVec] ok 65 - Progression (exhaustive) is the correct length.
+[ScaleVec] ok 66 - Progression (exhaustive) difference 0 <- 1
+[ScaleVec] ok 67 - Progression (exhaustive) difference 1 <- 2
+[ScaleVec] ok 68 - Progression (exhaustive) difference 2 <- 3
+[ScaleVec] Cannot pop from an empty Array[ScaleVec::Chord::Graph::PV]
+[ScaleVec]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6/lib/ScaleVec/Chord/Graph.pm6 (ScaleVec::Chord::Graph) line 236
+[ScaleVec]   in code  at /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6/lib/ScaleVec/Chord/Graph.pm6 (ScaleVec::Chord::Graph) line 199
+[ScaleVec]   in block <unit> at t/ScaleVec/Chord/Graph.t line 96
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Map.t
+[ScaleVec] 1..1
+[ScaleVec] ok 1 - ScaleVec::Chord::Map module can be use-d ok
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Set.t
+[ScaleVec] 1..7
+[ScaleVec] ok 1 - ScaleVec::Chord::Set module can be use-d ok
+[ScaleVec] ok 2 - Created ScaleVec::Chord::Set
+[ScaleVec] ok 3 - Graph is defined
+[ScaleVec] ok 4 - Map is defined
+[ScaleVec] ok 5 - Graph for provided scale C exists
+[ScaleVec] ok 6 - Graph is complete
+[ScaleVec] ok 7 - Map is complete
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Set/Major.t
+[ScaleVec] 1..8
+[ScaleVec] ok 1 - ScaleVec::Chord::Set::Major module can be use-d ok
+[ScaleVec] ok 2 - Major chord set instantiated.
+[ScaleVec] ok 3 - Major has 7 triads.
+[ScaleVec] ok 4 - All triads are defined values.
+[ScaleVec] ok 5 - Major has 8 triads.
+[ScaleVec] ok 6 - All triads are defined values.
+[ScaleVec] ok 7 - Major has 8 triads.
+[ScaleVec] ok 8 - All triads are defined values.
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Set/Minor/Harm.t
+[ScaleVec] 1..8
+[ScaleVec] ok 1 - ScaleVec::Chord::Set::Minor::Harm module can be use-d ok
+[ScaleVec] ok 2 - Minor chord set instantiated.
+[ScaleVec] ok 3 - Minor has 7 triads.
+[ScaleVec] ok 4 - All triads are defined values.
+[ScaleVec] ok 5 - Minor has 8 triads.
+[ScaleVec] ok 6 - All triads are defined values.
+[ScaleVec] ok 7 - Minor has 8 triads.
+[ScaleVec] ok 8 - All triads are defined values.
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Set/Minor/Nat.t
+[ScaleVec] 1..8
+[ScaleVec] ok 1 - ScaleVec::Chord::Set::Minor::Nat module can be use-d ok
+[ScaleVec] ok 2 - Minor chord set instantiated.
+[ScaleVec] ok 3 - Minor has 7 triads.
+[ScaleVec] ok 4 - All triads are defined values.
+[ScaleVec] ok 5 - Minor has 8 triads.
+[ScaleVec] ok 6 - All triads are defined values.
+[ScaleVec] ok 7 - Minor has 8 triads.
+[ScaleVec] ok 8 - All triads are defined values.
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/System.t
+[ScaleVec] 1..1
+[ScaleVec] ok 1 - ScaleVec::Chord::System module can be use-d ok
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/System/Foundation.t
+[ScaleVec] 1..7
+[ScaleVec] ok 1 - ScaleVec::Chord::System::Foundation module can be use-d ok
+[ScaleVec] ok 2 - Element1 is defined.
+[ScaleVec] ok 3 - Element2 is defined.
+[ScaleVec] ok 4 - Foundation is defined.
+[ScaleVec] ok 5 - .to-map produces required key.
+[ScaleVec] ok 6 - Foundation round-trip mapping.
+[ScaleVec] ok 7 - Foundation builds chord system.
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/System/Foundation/Element.t
+[ScaleVec] 1..5
+[ScaleVec] ok 1 - ScaleVec::Chord::System::Foundation::Element module can be use-d ok
+[ScaleVec] ok 2 - Element is defined.
+[ScaleVec] ok 3 - .to-map produces required keys.
+[ScaleVec] ok 4 - Element round-trip mapping.
+[ScaleVec] ok 5 - Element builds chord system.
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Voicer.t
+[ScaleVec] 1..10
+[ScaleVec] ok 1 - ScaleVec::Chord::Voicer module can be use-d ok
+[ScaleVec] ok 2 - Function voicing provides expected output
+[ScaleVec] ok 3 - Function voicing provides expected output
+[ScaleVec] ok 4 - Function voicing provides expected output
+[ScaleVec] ok 5 - Function voicing provides expected output
+[ScaleVec] ok 6 - Function voicing provides expected output
+[ScaleVec] ok 7 - Function voicing provides expected output
+[ScaleVec] ok 8 - Function voicing provides expected output
+[ScaleVec] ok 9 - Function voicing provides expected output
+[ScaleVec] ok 10 - Function voicing provides expected output
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Network.t
+[ScaleVec] ok 1 - ScaleVec::Network module can be use-d ok
+[ScaleVec] ok 2 - 
+[ScaleVec] ok 3 - Loaded map from t/res/test-network.json
+[ScaleVec] ok 4 - Built network with network-from-map
+[ScaleVec] ok 5 - Exported map agrees with imported map
+[ScaleVec] ok 6 - Correct number of goal objects
+[ScaleVec] ok 7 - Correct number of pitch vectors from goal 0
+[ScaleVec] ok 8 - Correct number of rhythm vectors from goal 0
+[ScaleVec] 1..8
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/P6.t
+[ScaleVec] ok 1 - ScaleVec module can be use-d ok
+[ScaleVec] ok 2 - Instantiate ScaleVec object
+[ScaleVec] ok 3 - Pitch vector out matches pitch vector in
+[ScaleVec] ok 4 - Relative intervals for major triad
+[ScaleVec] ok 5 - interval-vector for major triad
+[ScaleVec] ok 6 - step 0 == $vector[0]
+[ScaleVec] ok 7 - step 1 == $vector[1]
+[ScaleVec] ok 8 - step 2 == $vector[2]
+[ScaleVec] ok 9 - root
+[ScaleVec] ok 10 - is chord set pitch vector matching
+[ScaleVec] ok 11 - Generate map between vector to set
+[ScaleVec] ok 12 - Generate map between vector to set of self
+[ScaleVec] ok 13 - inversion 0 => (60, 64, 67).Seq,  $(60, 64, 67).
+[ScaleVec] ok 14 - inversion 1 => (64, 67, 72).Seq,  (64, 67, 72).
+[ScaleVec] ok 15 - inversion 2 => (67, 72, 76).Seq,   (67, 72, 76).
+[ScaleVec] ok 16 - inversion 3 => (72, 76, 79).Seq,  (72, 76, 79).Seq.
+[ScaleVec] ok 17 - inversion -1 => (55, 60, 64).Seq,  (55, 60, 64).
+[ScaleVec] ok 18 - inversion -2 => (52, 55, 60).Seq,  (52, 55, 60).
+[ScaleVec] ok 19 - inversion -3 => (48, 52, 55).Seq,  (48, 52, 55).Seq.
+[ScaleVec] ok 20 - Chord retrograde
+[ScaleVec] ok 21 - Chord intervalic retrograde
+[ScaleVec] ok 22 - Chord diminish(1)
+[ScaleVec] ok 23 - Chord diminish(1/2)
+[ScaleVec] ok 24 - Chord augment(1)
+[ScaleVec] ok 25 - Chord augment(1)
+[ScaleVec] ok 26 - voice-leading-permutations on augment 1
+[ScaleVec] ok 27 - interval-vector-diff sums to 0 for same chord
+[ScaleVec] ok 28 - interval-vector-diff on augment 1 is (0, 0) - no difference
+[ScaleVec] ok 29 - interval-vector-diff on augment 1/2 is (2, 1.5)
+[ScaleVec] ok 30 - interval-vector-diff on diminish 1/2 is (-2, -1.5)
+[ScaleVec] ok 31 - mirror-inversion
+[ScaleVec] ok 32 - transpose
+[ScaleVec] ok 33 - 0 distance to self
+[ScaleVec] ok 34 - distance between self and augment(1)
+[ScaleVec] ok 35 - distance between self and diminish(1)
+[ScaleVec] ok 36 - cycle -4
+[ScaleVec] ok 37 - cycle -3
+[ScaleVec] ok 38 - cycle -2
+[ScaleVec] ok 39 - cycle -1
+[ScaleVec] ok 40 - cycle 0
+[ScaleVec] ok 41 - cycle 1
+[ScaleVec] ok 42 - cycle 2
+[ScaleVec] ok 43 - cycle 3
+[ScaleVec] ok 44 - cycle 4
+[ScaleVec] 1..44
+[ScaleVec] Saw 1 occurrence of deprecated code.
+[ScaleVec] ================================================================================
+[ScaleVec] Method perl (from Mu) seen at:
+[ScaleVec]   t/ScaleVec/P6.t, lines 36,39,42,45,49,52,55
+[ScaleVec] Please use raku instead.
+[ScaleVec] --------------------------------------------------------------------------------
+[ScaleVec] Please contact the author to have these occurrences of deprecated code
+[ScaleVec] adapted, so that this message will disappear!
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Scale/EqualTemperment.t
+[ScaleVec] ok 1 - ScaleVec::Scale::EqualTemperment module can be use-d ok
+[ScaleVec] ok 2 - key 49(A⁴)
+[ScaleVec] ok 3 - key 37(A³)
+[ScaleVec] ok 4 - key 61(A⁵)
+[ScaleVec] ok 5 - key 40(C⁴)
+[ScaleVec] ok 6 - key 40(C⁴)
+[ScaleVec] ok 7 - key 46(F♯⁴)
+[ScaleVec] ok 8 - key 43(D♯⁴)
+[ScaleVec] 1..8
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Scale/Fence.t
+[ScaleVec] ok 1 - ScaleVec::Scale::Fence module can be use-d ok
+[ScaleVec] ok 2 - Fence created OK
+[ScaleVec] ok 3 - Step 1 unchanged
+[ScaleVec] ok 4 - Step 126 unchanged
+[ScaleVec] ok 5 - Step 0 unchanged (lower-limit)
+[ScaleVec] ok 6 - Step 127 unchanged (upper-limit)
+[ScaleVec] ok 7 - Step 128 -> 116
+[ScaleVec] ok 8 - Step 130 -> 118
+[ScaleVec] ok 9 - Step 141 -> 117
+[ScaleVec] ok 10 - Step -1 -> 11
+[ScaleVec] ok 11 - Step -3 -> 9
+[ScaleVec] ok 12 - Step -14 -> 10
+[ScaleVec] ok 13 - Pitches -48..48 convert to pitch classes recieved(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0)
+[ScaleVec] 1..13
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Scale/Intervalic.t
+[ScaleVec] ok 1 - ScaleVec::Scale::Intervalic module can be use-d ok
+[ScaleVec] ok 2 - Instantiate ScaleVec::Scale object ok.
+[ScaleVec] ok 3 - Is default repeat-interval 12 for major scale.
+[ScaleVec] ok 4 - Major step -7 (for root of 0)
+[ScaleVec] ok 5 - Major step -6 (for root of 0)
+[ScaleVec] ok 6 - Major step -5 (for root of 0)
+[ScaleVec] ok 7 - Major step -4 (for root of 0)
+[ScaleVec] ok 8 - Major step -3 (for root of 0)
+[ScaleVec] ok 9 - Major step -2 (for root of 0)
+[ScaleVec] ok 10 - Major step -1 (for root of 0)
+[ScaleVec] ok 11 - Major step 0 (for root of 0)
+[ScaleVec] ok 12 - Major step 1 (for root of 0)
+[ScaleVec] ok 13 - Major step 2 (for root of 0)
+[ScaleVec] ok 14 - Major step 3 (for root of 0)
+[ScaleVec] ok 15 - Major step 4 (for root of 0)
+[ScaleVec] ok 16 - Major step 5 (for root of 0)
+[ScaleVec] ok 17 - Major step 6 (for root of 0)
+[ScaleVec] ok 18 - Major step 7 (for root of 0)
+[ScaleVec] ok 19 - Major step 8 (0) (for root of 0)
+[ScaleVec] ok 20 - Major step 9 (1) (for root of 0)
+[ScaleVec] ok 21 - Major step 10 (2) (for root of 0)
+[ScaleVec] ok 22 - Major step 11 (3) (for root of 0)
+[ScaleVec] ok 23 - Major step 12 (4) (for root of 0)
+[ScaleVec] ok 24 - Major step 13 (5) (for root of 0)
+[ScaleVec] ok 25 - Major step 14 (6) (for root of 0)
+[ScaleVec] ok 26 - Major step 15 (for root of 0)
+[ScaleVec] ok 27 - Major step -8 (for root of 0)
+[ScaleVec] ok 28 - Major step -1 (for root of 1)
+[ScaleVec] ok 29 - Major step -14 (for root of 0)
+[ScaleVec] ok 30 - Map chord onto scale.
+[ScaleVec] ok 31 - Map chord onto scale and transpose
+[ScaleVec] ok 32 - Map chord onto scale.
+[ScaleVec] ok 33 - Identical IV chords repeat-interval is the same
+[ScaleVec] ok 34 - step-to-pc: -6 (chord I)
+[ScaleVec] ok 35 - step-to-pc: -6 (transperent-scale)
+[ScaleVec] ok 36 - step-to-pc: -5.666667 (transperent-scale)
+[ScaleVec] ok 37 - step-to-pc: -5.5 (transperent-scale)
+[ScaleVec] ok 38 - step-to-pc: -5.333333 (transperent-scale)
+[ScaleVec] ok 39 - step-to-pc: 54 (Chord I offset)
+[ScaleVec] ok 40 - step-to-pc: -6 (Chord IV)
+[ScaleVec] ok 41 - step-to-pc: -5 (chord I)
+[ScaleVec] ok 42 - step-to-pc: -5 (transperent-scale)
+[ScaleVec] ok 43 - step-to-pc: -4.666667 (transperent-scale)
+[ScaleVec] ok 44 - step-to-pc: -4.5 (transperent-scale)
+[ScaleVec] ok 45 - step-to-pc: -4.333333 (transperent-scale)
+[ScaleVec] ok 46 - step-to-pc: 55 (Chord I offset)
+[ScaleVec] ok 47 - step-to-pc: -5 (Chord IV)
+[ScaleVec] ok 48 - step-to-pc: -4 (chord I)
+[ScaleVec] ok 49 - step-to-pc: -4 (transperent-scale)
+[ScaleVec] ok 50 - step-to-pc: -3.666667 (transperent-scale)
+[ScaleVec] ok 51 - step-to-pc: -3.5 (transperent-scale)
+[ScaleVec] ok 52 - step-to-pc: -3.333333 (transperent-scale)
+[ScaleVec] ok 53 - step-to-pc: 56 (Chord I offset)
+[ScaleVec] ok 54 - step-to-pc: -4 (Chord IV)
+[ScaleVec] ok 55 - step-to-pc: -3 (chord I)
+[ScaleVec] ok 56 - step-to-pc: -3 (transperent-scale)
+[ScaleVec] ok 57 - step-to-pc: -2.666667 (transperent-scale)
+[ScaleVec] ok 58 - step-to-pc: -2.5 (transperent-scale)
+[ScaleVec] ok 59 - step-to-pc: -2.333333 (transperent-scale)
+[ScaleVec] ok 60 - step-to-pc: 57 (Chord I offset)
+[ScaleVec] ok 61 - step-to-pc: -3 (Chord IV)
+[ScaleVec] ok 62 - step-to-pc: -2 (chord I)
+[ScaleVec] ok 63 - step-to-pc: -2 (transperent-scale)
+[ScaleVec] ok 64 - step-to-pc: -1.666667 (transperent-scale)
+[ScaleVec] ok 65 - step-to-pc: -1.5 (transperent-scale)
+[ScaleVec] ok 66 - step-to-pc: -1.333333 (transperent-scale)
+[ScaleVec] ok 67 - step-to-pc: 58 (Chord I offset)
+[ScaleVec] ok 68 - step-to-pc: -2 (Chord IV)
+[ScaleVec] ok 69 - step-to-pc: -1 (chord I)
+[ScaleVec] ok 70 - step-to-pc: -1 (transperent-scale)
+[ScaleVec] ok 71 - step-to-pc: -0.666667 (transperent-scale)
+[ScaleVec] ok 72 - step-to-pc: -0.5 (transperent-scale)
+[ScaleVec] ok 73 - step-to-pc: -0.333333 (transperent-scale)
+[ScaleVec] ok 74 - step-to-pc: 59 (Chord I offset)
+[ScaleVec] ok 75 - step-to-pc: -1 (Chord IV)
+[ScaleVec] ok 76 - step-to-pc: 0 (chord I)
+[ScaleVec] ok 77 - step-to-pc: 0 (transperent-scale)
+[ScaleVec] ok 78 - step-to-pc: 0.333333 (transperent-scale)
+[ScaleVec] ok 79 - step-to-pc: 0.5 (transperent-scale)
+[ScaleVec] ok 80 - step-to-pc: 0.666667 (transperent-scale)
+[ScaleVec] ok 81 - step-to-pc: 60 (Chord I offset)
+[ScaleVec] ok 82 - step-to-pc: 0 (Chord IV)
+[ScaleVec] ok 83 - step-to-pc: 1 (chord I)
+[ScaleVec] ok 84 - step-to-pc: 1 (transperent-scale)
+[ScaleVec] ok 85 - step-to-pc: 1.333333 (transperent-scale)
+[ScaleVec] ok 86 - step-to-pc: 1.5 (transperent-scale)
+[ScaleVec] ok 87 - step-to-pc: 1.666667 (transperent-scale)
+[ScaleVec] ok 88 - step-to-pc: 61 (Chord I offset)
+[ScaleVec] ok 89 - step-to-pc: 1 (Chord IV)
+[ScaleVec] ok 90 - step-to-pc: 2 (chord I)
+[ScaleVec] ok 91 - step-to-pc: 2 (transperent-scale)
+[ScaleVec] ok 92 - step-to-pc: 2.333333 (transperent-scale)
+[ScaleVec] ok 93 - step-to-pc: 2.5 (transperent-scale)
+[ScaleVec] ok 94 - step-to-pc: 2.666667 (transperent-scale)
+[ScaleVec] ok 95 - step-to-pc: 62 (Chord I offset)
+[ScaleVec] ok 96 - step-to-pc: 2 (Chord IV)
+[ScaleVec] ok 97 - step-to-pc: 3 (chord I)
+[ScaleVec] ok 98 - step-to-pc: 3 (transperent-scale)
+[ScaleVec] ok 99 - step-to-pc: 3.333333 (transperent-scale)
+[ScaleVec] ok 100 - step-to-pc: 3.5 (transperent-scale)
+[ScaleVec] ok 101 - step-to-pc: 3.666667 (transperent-scale)
+[ScaleVec] ok 102 - step-to-pc: 63 (Chord I offset)
+[ScaleVec] ok 103 - step-to-pc: 3 (Chord IV)
+[ScaleVec] ok 104 - step-to-pc: 4 (chord I)
+[ScaleVec] ok 105 - step-to-pc: 4 (transperent-scale)
+[ScaleVec] ok 106 - step-to-pc: 4.333333 (transperent-scale)
+[ScaleVec] ok 107 - step-to-pc: 4.5 (transperent-scale)
+[ScaleVec] ok 108 - step-to-pc: 4.666667 (transperent-scale)
+[ScaleVec] ok 109 - step-to-pc: 64 (Chord I offset)
+[ScaleVec] ok 110 - step-to-pc: 4 (Chord IV)
+[ScaleVec] ok 111 - step-to-pc: 5 (chord I)
+[ScaleVec] ok 112 - step-to-pc: 5 (transperent-scale)
+[ScaleVec] ok 113 - step-to-pc: 5.333333 (transperent-scale)
+[ScaleVec] ok 114 - step-to-pc: 5.5 (transperent-scale)
+[ScaleVec] ok 115 - step-to-pc: 5.666667 (transperent-scale)
+[ScaleVec] ok 116 - step-to-pc: 65 (Chord I offset)
+[ScaleVec] ok 117 - step-to-pc: 5 (Chord IV)
+[ScaleVec] ok 118 - step-to-pc: 6 (chord I)
+[ScaleVec] ok 119 - step-to-pc: 6 (transperent-scale)
+[ScaleVec] ok 120 - step-to-pc: 6.333333 (transperent-scale)
+[ScaleVec] ok 121 - step-to-pc: 6.5 (transperent-scale)
+[ScaleVec] ok 122 - step-to-pc: 6.666667 (transperent-scale)
+[ScaleVec] ok 123 - step-to-pc: 66 (Chord I offset)
+[ScaleVec] ok 124 - step-to-pc: 6 (Chord IV)
+[ScaleVec] ok 125 - step-to-pc: -18 (major-scale)
+[ScaleVec] ok 126 - step-to-pc: -17 (major-scale)
+[ScaleVec] ok 127 - step-to-pc: -16 (major-scale)
+[ScaleVec] ok 128 - step-to-pc: -15 (major-scale)
+[ScaleVec] ok 129 - step-to-pc: -14 (major-scale)
+[ScaleVec] ok 130 - step-to-pc: -13 (major-scale)
+[ScaleVec] ok 131 - step-to-pc: -12 (major-scale)
+[ScaleVec] ok 132 - step-to-pc: -11 (major-scale)
+[ScaleVec] ok 133 - step-to-pc: -10 (major-scale)
+[ScaleVec] ok 134 - step-to-pc: -9 (major-scale)
+[ScaleVec] ok 135 - step-to-pc: -8 (major-scale)
+[ScaleVec] ok 136 - step-to-pc: -7 (major-scale)
+[ScaleVec] ok 137 - step-to-pc: -6 (major-scale)
+[ScaleVec] ok 138 - step-to-pc: -5 (major-scale)
+[ScaleVec] ok 139 - step-to-pc: -4 (major-scale)
+[ScaleVec] ok 140 - step-to-pc: -3 (major-scale)
+[ScaleVec] ok 141 - step-to-pc: -2 (major-scale)
+[ScaleVec] ok 142 - step-to-pc: -1 (major-scale)
+[ScaleVec] ok 143 - step-to-pc: 0 (major-scale)
+[ScaleVec] ok 144 - step-to-pc: 1 (major-scale)
+[ScaleVec] ok 145 - step-to-pc: 2 (major-scale)
+[ScaleVec] ok 146 - step-to-pc: 3 (major-scale)
+[ScaleVec] ok 147 - step-to-pc: 4 (major-scale)
+[ScaleVec] ok 148 - step-to-pc: 5 (major-scale)
+[ScaleVec] ok 149 - step-to-pc: 6 (major-scale)
+[ScaleVec] ok 150 - step-to-pc: 7 (major-scale)
+[ScaleVec] ok 151 - step-to-pc: 8 (major-scale)
+[ScaleVec] ok 152 - step-to-pc: 9 (major-scale)
+[ScaleVec] ok 153 - step-to-pc: 10 (major-scale)
+[ScaleVec] ok 154 - step-to-pc: 11 (major-scale)
+[ScaleVec] ok 155 - step-to-pc: 12 (major-scale)
+[ScaleVec] ok 156 - step-to-pc: 13 (major-scale)
+[ScaleVec] ok 157 - step-to-pc: 14 (major-scale)
+[ScaleVec] ok 158 - step-to-pc: 15 (major-scale)
+[ScaleVec] ok 159 - step-to-pc: 16 (major-scale)
+[ScaleVec] ok 160 - step-to-pc: 17 (major-scale)
+[ScaleVec] ok 161 - step-to-pc: 18 (major-scale)
+[ScaleVec] ok 162 - step-to-octave: -18 (major scale)
+[ScaleVec] ok 163 - step-to-octave: -18 (Chord I offset)
+[ScaleVec] ok 164 - step-to-octave: -18 (Chord IV)
+[ScaleVec] ok 165 - step-to-octave: -17 (major scale)
+[ScaleVec] ok 166 - step-to-octave: -17 (Chord I offset)
+[ScaleVec] ok 167 - step-to-octave: -17 (Chord IV)
+[ScaleVec] ok 168 - step-to-octave: -16 (major scale)
+[ScaleVec] ok 169 - step-to-octave: -16 (Chord I offset)
+[ScaleVec] ok 170 - step-to-octave: -16 (Chord IV)
+[ScaleVec] ok 171 - step-to-octave: -15 (major scale)
+[ScaleVec] ok 172 - step-to-octave: -15 (Chord I offset)
+[ScaleVec] ok 173 - step-to-octave: -15 (Chord IV)
+[ScaleVec] ok 174 - step-to-octave: -14 (major scale)
+[ScaleVec] ok 175 - step-to-octave: -14 (Chord I offset)
+[ScaleVec] ok 176 - step-to-octave: -14 (Chord IV)
+[ScaleVec] ok 177 - step-to-octave: -13 (major scale)
+[ScaleVec] ok 178 - step-to-octave: -13 (Chord I offset)
+[ScaleVec] ok 179 - step-to-octave: -13 (Chord IV)
+[ScaleVec] ok 180 - step-to-octave: -12 (major scale)
+[ScaleVec] ok 181 - step-to-octave: -12 (Chord I offset)
+[ScaleVec] ok 182 - step-to-octave: -12 (Chord IV)
+[ScaleVec] ok 183 - step-to-octave: -11 (major scale)
+[ScaleVec] ok 184 - step-to-octave: -11 (Chord I offset)
+[ScaleVec] ok 185 - step-to-octave: -11 (Chord IV)
+[ScaleVec] ok 186 - step-to-octave: -10 (major scale)
+[ScaleVec] ok 187 - step-to-octave: -10 (Chord I offset)
+[ScaleVec] ok 188 - step-to-octave: -10 (Chord IV)
+[ScaleVec] ok 189 - step-to-octave: -9 (major scale)
+[ScaleVec] ok 190 - step-to-octave: -9 (Chord I offset)
+[ScaleVec] ok 191 - step-to-octave: -9 (Chord IV)
+[ScaleVec] ok 192 - step-to-octave: -8 (major scale)
+[ScaleVec] ok 193 - step-to-octave: -8 (Chord I offset)
+[ScaleVec] ok 194 - step-to-octave: -8 (Chord IV)
+[ScaleVec] ok 195 - step-to-octave: -7 (major scale)
+[ScaleVec] ok 196 - step-to-octave: -7 (Chord I offset)
+[ScaleVec] ok 197 - step-to-octave: -7 (Chord IV)
+[ScaleVec] ok 198 - step-to-octave: -6 (major scale)
+[ScaleVec] ok 199 - step-to-octave: -6 (Chord I offset)
+[ScaleVec] ok 200 - step-to-octave: -6 (Chord IV)
+[ScaleVec] ok 201 - step-to-octave: -5 (major scale)
+[ScaleVec] ok 202 - step-to-octave: -5 (Chord I offset)
+[ScaleVec] ok 203 - step-to-octave: -5 (Chord IV)
+[ScaleVec] ok 204 - step-to-octave: -4 (major scale)
+[ScaleVec] ok 205 - step-to-octave: -4 (Chord I offset)
+[ScaleVec] ok 206 - step-to-octave: -4 (Chord IV)
+[ScaleVec] ok 207 - step-to-octave: -3 (major scale)
+[ScaleVec] ok 208 - step-to-octave: -3 (Chord I offset)
+[ScaleVec] ok 209 - step-to-octave: -3 (Chord IV)
+[ScaleVec] ok 210 - step-to-octave: -2 (major scale)
+[ScaleVec] ok 211 - step-to-octave: -2 (Chord I offset)
+[ScaleVec] ok 212 - step-to-octave: -2 (Chord IV)
+[ScaleVec] ok 213 - step-to-octave: -1 (major scale)
+[ScaleVec] ok 214 - step-to-octave: -1 (Chord I offset)
+[ScaleVec] ok 215 - step-to-octave: -1 (Chord IV)
+[ScaleVec] ok 216 - step-to-octave: 0 (major scale)
+[ScaleVec] ok 217 - step-to-octave: 0 (Chord I offset)
+[ScaleVec] ok 218 - step-to-octave: 0 (Chord IV)
+[ScaleVec] ok 219 - step-to-octave: 1 (major scale)
+[ScaleVec] ok 220 - step-to-octave: 1 (Chord I offset)
+[ScaleVec] ok 221 - step-to-octave: 1 (Chord IV)
+[ScaleVec] ok 222 - step-to-octave: 2 (major scale)
+[ScaleVec] ok 223 - step-to-octave: 2 (Chord I offset)
+[ScaleVec] ok 224 - step-to-octave: 2 (Chord IV)
+[ScaleVec] ok 225 - step-to-octave: 3 (major scale)
+[ScaleVec] ok 226 - step-to-octave: 3 (Chord I offset)
+[ScaleVec] ok 227 - step-to-octave: 3 (Chord IV)
+[ScaleVec] ok 228 - step-to-octave: 4 (major scale)
+[ScaleVec] ok 229 - step-to-octave: 4 (Chord I offset)
+[ScaleVec] ok 230 - step-to-octave: 4 (Chord IV)
+[ScaleVec] ok 231 - step-to-octave: 5 (major scale)
+[ScaleVec] ok 232 - step-to-octave: 5 (Chord I offset)
+[ScaleVec] ok 233 - step-to-octave: 5 (Chord IV)
+[ScaleVec] ok 234 - step-to-octave: 6 (major scale)
+[ScaleVec] ok 235 - step-to-octave: 6 (Chord I offset)
+[ScaleVec] ok 236 - step-to-octave: 6 (Chord IV)
+[ScaleVec] ok 237 - step-to-octave: 7 (major scale)
+[ScaleVec] ok 238 - step-to-octave: 7 (Chord I offset)
+[ScaleVec] ok 239 - step-to-octave: 7 (Chord IV)
+[ScaleVec] ok 240 - step-to-octave: 8 (major scale)
+[ScaleVec] ok 241 - step-to-octave: 8 (Chord I offset)
+[ScaleVec] ok 242 - step-to-octave: 8 (Chord IV)
+[ScaleVec] ok 243 - step-to-octave: 9 (major scale)
+[ScaleVec] ok 244 - step-to-octave: 9 (Chord I offset)
+[ScaleVec] ok 245 - step-to-octave: 9 (Chord IV)
+[ScaleVec] ok 246 - step-to-octave: 10 (major scale)
+[ScaleVec] ok 247 - step-to-octave: 10 (Chord I offset)
+[ScaleVec] ok 248 - step-to-octave: 10 (Chord IV)
+[ScaleVec] ok 249 - step-to-octave: 11 (major scale)
+[ScaleVec] ok 250 - step-to-octave: 11 (Chord I offset)
+[ScaleVec] ok 251 - step-to-octave: 11 (Chord IV)
+[ScaleVec] ok 252 - step-to-octave: 12 (major scale)
+[ScaleVec] ok 253 - step-to-octave: 12 (Chord I offset)
+[ScaleVec] ok 254 - step-to-octave: 12 (Chord IV)
+[ScaleVec] ok 255 - step-to-octave: 13 (major scale)
+[ScaleVec] ok 256 - step-to-octave: 13 (Chord I offset)
+[ScaleVec] ok 257 - step-to-octave: 13 (Chord IV)
+[ScaleVec] ok 258 - step-to-octave: 14 (major scale)
+[ScaleVec] ok 259 - step-to-octave: 14 (Chord I offset)
+[ScaleVec] ok 260 - step-to-octave: 14 (Chord IV)
+[ScaleVec] ok 261 - step-to-octave: 15 (major scale)
+[ScaleVec] ok 262 - step-to-octave: 15 (Chord I offset)
+[ScaleVec] ok 263 - step-to-octave: 15 (Chord IV)
+[ScaleVec] ok 264 - step-to-octave: 16 (major scale)
+[ScaleVec] ok 265 - step-to-octave: 16 (Chord I offset)
+[ScaleVec] ok 266 - step-to-octave: 16 (Chord IV)
+[ScaleVec] ok 267 - step-to-octave: 17 (major scale)
+[ScaleVec] ok 268 - step-to-octave: 17 (Chord I offset)
+[ScaleVec] ok 269 - step-to-octave: 17 (Chord IV)
+[ScaleVec] ok 270 - step-to-octave: 18 (major scale)
+[ScaleVec] ok 271 - step-to-octave: 18 (Chord I offset)
+[ScaleVec] ok 272 - step-to-octave: 18 (Chord IV)
+[ScaleVec] ok 273 - step: -6 (transperent-scale)
+[ScaleVec] ok 274 - step: -5.666667 (transperent-scale)
+[ScaleVec] ok 275 - step: -5.5 (transperent-scale)
+[ScaleVec] ok 276 - step: -5.333333 (transperent-scale)
+[ScaleVec] ok 277 - step: -5 (transperent-scale)
+[ScaleVec] ok 278 - step: -4.666667 (transperent-scale)
+[ScaleVec] ok 279 - step: -4.5 (transperent-scale)
+[ScaleVec] ok 280 - step: -4.333333 (transperent-scale)
+[ScaleVec] ok 281 - step: -4 (transperent-scale)
+[ScaleVec] ok 282 - step: -3.666667 (transperent-scale)
+[ScaleVec] ok 283 - step: -3.5 (transperent-scale)
+[ScaleVec] ok 284 - step: -3.333333 (transperent-scale)
+[ScaleVec] ok 285 - step: -3 (transperent-scale)
+[ScaleVec] ok 286 - step: -2.666667 (transperent-scale)
+[ScaleVec] ok 287 - step: -2.5 (transperent-scale)
+[ScaleVec] ok 288 - step: -2.333333 (transperent-scale)
+[ScaleVec] ok 289 - step: -2 (transperent-scale)
+[ScaleVec] ok 290 - step: -1.666667 (transperent-scale)
+[ScaleVec] ok 291 - step: -1.5 (transperent-scale)
+[ScaleVec] ok 292 - step: -1.333333 (transperent-scale)
+[ScaleVec] ok 293 - step: -1 (transperent-scale)
+[ScaleVec] ok 294 - step: -0.666667 (transperent-scale)
+[ScaleVec] ok 295 - step: -0.5 (transperent-scale)
+[ScaleVec] ok 296 - step: -0.333333 (transperent-scale)
+[ScaleVec] ok 297 - step: 0 (transperent-scale)
+[ScaleVec] ok 298 - step: 0.333333 (transperent-scale)
+[ScaleVec] ok 299 - step: 0.5 (transperent-scale)
+[ScaleVec] ok 300 - step: 0.666667 (transperent-scale)
+[ScaleVec] ok 301 - step: 1 (transperent-scale)
+[ScaleVec] ok 302 - step: 1.333333 (transperent-scale)
+[ScaleVec] ok 303 - step: 1.5 (transperent-scale)
+[ScaleVec] ok 304 - step: 1.666667 (transperent-scale)
+[ScaleVec] ok 305 - step: 2 (transperent-scale)
+[ScaleVec] ok 306 - step: 2.333333 (transperent-scale)
+[ScaleVec] ok 307 - step: 2.5 (transperent-scale)
+[ScaleVec] ok 308 - step: 2.666667 (transperent-scale)
+[ScaleVec] ok 309 - step: 3 (transperent-scale)
+[ScaleVec] ok 310 - step: 3.333333 (transperent-scale)
+[ScaleVec] ok 311 - step: 3.5 (transperent-scale)
+[ScaleVec] ok 312 - step: 3.666667 (transperent-scale)
+[ScaleVec] ok 313 - step: 4 (transperent-scale)
+[ScaleVec] ok 314 - step: 4.333333 (transperent-scale)
+[ScaleVec] ok 315 - step: 4.5 (transperent-scale)
+[ScaleVec] ok 316 - step: 4.666667 (transperent-scale)
+[ScaleVec] ok 317 - step: 5 (transperent-scale)
+[ScaleVec] ok 318 - step: 5.333333 (transperent-scale)
+[ScaleVec] ok 319 - step: 5.5 (transperent-scale)
+[ScaleVec] ok 320 - step: 5.666667 (transperent-scale)
+[ScaleVec] ok 321 - step: 6 (transperent-scale)
+[ScaleVec] ok 322 - step: 6.333333 (transperent-scale)
+[ScaleVec] ok 323 - step: 6.5 (transperent-scale)
+[ScaleVec] ok 324 - step: 6.666667 (transperent-scale)
+[ScaleVec] ok 325 - Transperent interval -6:-5.666667
+[ScaleVec] ok 326 - Transperent interval -6:-5.5
+[ScaleVec] ok 327 - Transperent interval -6:-5.333333
+[ScaleVec] ok 328 - Transperent interval -6:-5
+[ScaleVec] ok 329 - Transperent interval -5:-4.666667
+[ScaleVec] ok 330 - Transperent interval -5:-4.5
+[ScaleVec] ok 331 - Transperent interval -5:-4.333333
+[ScaleVec] ok 332 - Transperent interval -5:-4
+[ScaleVec] ok 333 - Transperent interval -4:-3.666667
+[ScaleVec] ok 334 - Transperent interval -4:-3.5
+[ScaleVec] ok 335 - Transperent interval -4:-3.333333
+[ScaleVec] ok 336 - Transperent interval -4:-3
+[ScaleVec] ok 337 - Transperent interval -3:-2.666667
+[ScaleVec] ok 338 - Transperent interval -3:-2.5
+[ScaleVec] ok 339 - Transperent interval -3:-2.333333
+[ScaleVec] ok 340 - Transperent interval -3:-2
+[ScaleVec] ok 341 - Transperent interval -2:-1.666667
+[ScaleVec] ok 342 - Transperent interval -2:-1.5
+[ScaleVec] ok 343 - Transperent interval -2:-1.333333
+[ScaleVec] ok 344 - Transperent interval -2:-1
+[ScaleVec] ok 345 - Transperent interval -1:-0.666667
+[ScaleVec] ok 346 - Transperent interval -1:-0.5
+[ScaleVec] ok 347 - Transperent interval -1:-0.333333
+[ScaleVec] ok 348 - Transperent interval -1:0
+[ScaleVec] ok 349 - Transperent interval 0:0.333333
+[ScaleVec] ok 350 - Transperent interval 0:0.5
+[ScaleVec] ok 351 - Transperent interval 0:0.666667
+[ScaleVec] ok 352 - Transperent interval 0:1
+[ScaleVec] ok 353 - Transperent interval 1:1.333333
+[ScaleVec] ok 354 - Transperent interval 1:1.5
+[ScaleVec] ok 355 - Transperent interval 1:1.666667
+[ScaleVec] ok 356 - Transperent interval 1:2
+[ScaleVec] ok 357 - Transperent interval 2:2.333333
+[ScaleVec] ok 358 - Transperent interval 2:2.5
+[ScaleVec] ok 359 - Transperent interval 2:2.666667
+[ScaleVec] ok 360 - Transperent interval 2:3
+[ScaleVec] ok 361 - Transperent interval 3:3.333333
+[ScaleVec] ok 362 - Transperent interval 3:3.5
+[ScaleVec] ok 363 - Transperent interval 3:3.666667
+[ScaleVec] ok 364 - Transperent interval 3:4
+[ScaleVec] ok 365 - Transperent interval 4:4.333333
+[ScaleVec] ok 366 - Transperent interval 4:4.5
+[ScaleVec] ok 367 - Transperent interval 4:4.666667
+[ScaleVec] ok 368 - Transperent interval 4:5
+[ScaleVec] ok 369 - Transperent interval 5:5.333333
+[ScaleVec] ok 370 - Transperent interval 5:5.5
+[ScaleVec] ok 371 - Transperent interval 5:5.666667
+[ScaleVec] ok 372 - Transperent interval 5:6
+[ScaleVec] ok 373 - Transperent interval 6:6.333333
+[ScaleVec] ok 374 - Transperent interval 6:6.5
+[ScaleVec] ok 375 - Transperent interval 6:6.666667
+[ScaleVec] ok 376 - Transperent interval 6:7
+[ScaleVec] ok 377 - interval 0 to 2 on major
+[ScaleVec] ok 378 - step 1.5 on major
+[ScaleVec] ok 379 - value-to-pc: -6
+[ScaleVec] ok 380 - value-to-pc: -5
+[ScaleVec] ok 381 - value-to-pc: -4
+[ScaleVec] ok 382 - value-to-pc: -3
+[ScaleVec] ok 383 - value-to-pc: -2
+[ScaleVec] ok 384 - value-to-pc: -1
+[ScaleVec] ok 385 - value-to-pc: 0
+[ScaleVec] ok 386 - value-to-pc: 1
+[ScaleVec] ok 387 - value-to-pc: 2
+[ScaleVec] ok 388 - value-to-pc: 3
+[ScaleVec] ok 389 - value-to-pc: 4
+[ScaleVec] ok 390 - value-to-pc: 5
+[ScaleVec] ok 391 - value-to-pc: 6
+[ScaleVec] ok 392 - value-to-octave: -18
+[ScaleVec] ok 393 - value-to-octave: 42 (Chord I offset)
+[ScaleVec] ok 394 - value-to-octave: -23 (Chord IV)
+[ScaleVec] ok 395 - value-to-octave: -17
+[ScaleVec] ok 396 - value-to-octave: 43 (Chord I offset)
+[ScaleVec] ok 397 - value-to-octave: -22 (Chord IV)
+[ScaleVec] ok 398 - value-to-octave: -16
+[ScaleVec] ok 399 - value-to-octave: 44 (Chord I offset)
+[ScaleVec] ok 400 - value-to-octave: -21 (Chord IV)
+[ScaleVec] ok 401 - value-to-octave: -15
+[ScaleVec] ok 402 - value-to-octave: 45 (Chord I offset)
+[ScaleVec] ok 403 - value-to-octave: -20 (Chord IV)
+[ScaleVec] ok 404 - value-to-octave: -14
+[ScaleVec] ok 405 - value-to-octave: 46 (Chord I offset)
+[ScaleVec] ok 406 - value-to-octave: -19 (Chord IV)
+[ScaleVec] ok 407 - value-to-octave: -13
+[ScaleVec] ok 408 - value-to-octave: 47 (Chord I offset)
+[ScaleVec] ok 409 - value-to-octave: -18 (Chord IV)
+[ScaleVec] ok 410 - value-to-octave: -12
+[ScaleVec] ok 411 - value-to-octave: 48 (Chord I offset)
+[ScaleVec] ok 412 - value-to-octave: -17 (Chord IV)
+[ScaleVec] ok 413 - value-to-octave: -11
+[ScaleVec] ok 414 - value-to-octave: 49 (Chord I offset)
+[ScaleVec] ok 415 - value-to-octave: -16 (Chord IV)
+[ScaleVec] ok 416 - value-to-octave: -10
+[ScaleVec] ok 417 - value-to-octave: 50 (Chord I offset)
+[ScaleVec] ok 418 - value-to-octave: -15 (Chord IV)
+[ScaleVec] ok 419 - value-to-octave: -9
+[ScaleVec] ok 420 - value-to-octave: 51 (Chord I offset)
+[ScaleVec] ok 421 - value-to-octave: -14 (Chord IV)
+[ScaleVec] ok 422 - value-to-octave: -8
+[ScaleVec] ok 423 - value-to-octave: 52 (Chord I offset)
+[ScaleVec] ok 424 - value-to-octave: -13 (Chord IV)
+[ScaleVec] ok 425 - value-to-octave: -7
+[ScaleVec] ok 426 - value-to-octave: 53 (Chord I offset)
+[ScaleVec] ok 427 - value-to-octave: -12 (Chord IV)
+[ScaleVec] ok 428 - value-to-octave: -6
+[ScaleVec] ok 429 - value-to-octave: 54 (Chord I offset)
+[ScaleVec] ok 430 - value-to-octave: -11 (Chord IV)
+[ScaleVec] ok 431 - value-to-octave: -5
+[ScaleVec] ok 432 - value-to-octave: 55 (Chord I offset)
+[ScaleVec] ok 433 - value-to-octave: -10 (Chord IV)
+[ScaleVec] ok 434 - value-to-octave: -4
+[ScaleVec] ok 435 - value-to-octave: 56 (Chord I offset)
+[ScaleVec] ok 436 - value-to-octave: -9 (Chord IV)
+[ScaleVec] ok 437 - value-to-octave: -3
+[ScaleVec] ok 438 - value-to-octave: 57 (Chord I offset)
+[ScaleVec] ok 439 - value-to-octave: -8 (Chord IV)
+[ScaleVec] ok 440 - value-to-octave: -2
+[ScaleVec] ok 441 - value-to-octave: 58 (Chord I offset)
+[ScaleVec] ok 442 - value-to-octave: -7 (Chord IV)
+[ScaleVec] ok 443 - value-to-octave: -1
+[ScaleVec] ok 444 - value-to-octave: 59 (Chord I offset)
+[ScaleVec] ok 445 - value-to-octave: -6 (Chord IV)
+[ScaleVec] ok 446 - value-to-octave: 0
+[ScaleVec] ok 447 - value-to-octave: 60 (Chord I offset)
+[ScaleVec] ok 448 - value-to-octave: -5 (Chord IV)
+[ScaleVec] ok 449 - value-to-octave: 1
+[ScaleVec] ok 450 - value-to-octave: 61 (Chord I offset)
+[ScaleVec] ok 451 - value-to-octave: -4 (Chord IV)
+[ScaleVec] ok 452 - value-to-octave: 2
+[ScaleVec] ok 453 - value-to-octave: 62 (Chord I offset)
+[ScaleVec] ok 454 - value-to-octave: -3 (Chord IV)
+[ScaleVec] ok 455 - value-to-octave: 3
+[ScaleVec] ok 456 - value-to-octave: 63 (Chord I offset)
+[ScaleVec] ok 457 - value-to-octave: -2 (Chord IV)
+[ScaleVec] ok 458 - value-to-octave: 4
+[ScaleVec] ok 459 - value-to-octave: 64 (Chord I offset)
+[ScaleVec] ok 460 - value-to-octave: -1 (Chord IV)
+[ScaleVec] ok 461 - value-to-octave: 5
+[ScaleVec] ok 462 - value-to-octave: 65 (Chord I offset)
+[ScaleVec] ok 463 - value-to-octave: 0 (Chord IV)
+[ScaleVec] ok 464 - value-to-octave: 6
+[ScaleVec] ok 465 - value-to-octave: 66 (Chord I offset)
+[ScaleVec] ok 466 - value-to-octave: 1 (Chord IV)
+[ScaleVec] ok 467 - value-to-octave: 7
+[ScaleVec] ok 468 - value-to-octave: 67 (Chord I offset)
+[ScaleVec] ok 469 - value-to-octave: 2 (Chord IV)
+[ScaleVec] ok 470 - value-to-octave: 8
+[ScaleVec] ok 471 - value-to-octave: 68 (Chord I offset)
+[ScaleVec] ok 472 - value-to-octave: 3 (Chord IV)
+[ScaleVec] ok 473 - value-to-octave: 9
+[ScaleVec] ok 474 - value-to-octave: 69 (Chord I offset)
+[ScaleVec] ok 475 - value-to-octave: 4 (Chord IV)
+[ScaleVec] ok 476 - value-to-octave: 10
+[ScaleVec] ok 477 - value-to-octave: 70 (Chord I offset)
+[ScaleVec] ok 478 - value-to-octave: 5 (Chord IV)
+[ScaleVec] ok 479 - value-to-octave: 11
+[ScaleVec] ok 480 - value-to-octave: 71 (Chord I offset)
+[ScaleVec] ok 481 - value-to-octave: 6 (Chord IV)
+[ScaleVec] ok 482 - value-to-octave: 12
+[ScaleVec] ok 483 - value-to-octave: 72 (Chord I offset)
+[ScaleVec] ok 484 - value-to-octave: 7 (Chord IV)
+[ScaleVec] ok 485 - value-to-octave: 13
+[ScaleVec] ok 486 - value-to-octave: 73 (Chord I offset)
+[ScaleVec] ok 487 - value-to-octave: 8 (Chord IV)
+[ScaleVec] ok 488 - value-to-octave: 14
+[ScaleVec] ok 489 - value-to-octave: 74 (Chord I offset)
+[ScaleVec] ok 490 - value-to-octave: 9 (Chord IV)
+[ScaleVec] ok 491 - value-to-octave: 15
+[ScaleVec] ok 492 - value-to-octave: 75 (Chord I offset)
+[ScaleVec] ok 493 - value-to-octave: 10 (Chord IV)
+[ScaleVec] ok 494 - value-to-octave: 16
+[ScaleVec] ok 495 - value-to-octave: 76 (Chord I offset)
+[ScaleVec] ok 496 - value-to-octave: 11 (Chord IV)
+[ScaleVec] ok 497 - value-to-octave: 17
+[ScaleVec] ok 498 - value-to-octave: 77 (Chord I offset)
+[ScaleVec] ok 499 - value-to-octave: 12 (Chord IV)
+[ScaleVec] ok 500 - value-to-octave: 18
+[ScaleVec] ok 501 - value-to-octave: 78 (Chord I offset)
+[ScaleVec] ok 502 - value-to-octave: 13 (Chord IV)
+[ScaleVec] ok 503 - value-to-octave: 60 (Chord I offset)
+[ScaleVec] ok 504 - value-to-octave: 59 (Chord I offset)
+[ScaleVec] ok 505 - value-to-octave: 0 (Major)
+[ScaleVec] ok 506 - value-to-octave: -1 (Major)
+[ScaleVec] ok 507 - value-to-octave: 1 (Major)
+[ScaleVec] ok 508 - value-to-octave: 11 (Major)
+[ScaleVec] ok 509 - value-to-octave: 12 (Major)
+[ScaleVec] ok 510 - value-to-octave: -4 (Chord IV)
+[ScaleVec] ok 511 - value-to-octave: -5 (Chord IV)
+[ScaleVec] ok 512 - value-to-octave: -3 (Chord IV)
+[ScaleVec] ok 513 - value-to-octave: 2 (Chord IV)
+[ScaleVec] ok 514 - value-to-octave: 3 (Chord IV)
+[ScaleVec] ok 515 - value-to-whole-step: -18
+[ScaleVec] ok 516 - value-to-whole-step: 42 (Chord I offset)
+[ScaleVec] ok 517 - value-to-whole-step: -23 (Chord I offset)
+[ScaleVec] ok 518 - value-to-whole-step: -17
+[ScaleVec] ok 519 - value-to-whole-step: 43 (Chord I offset)
+[ScaleVec] ok 520 - value-to-whole-step: -22 (Chord I offset)
+[ScaleVec] ok 521 - value-to-whole-step: -16
+[ScaleVec] ok 522 - value-to-whole-step: 44 (Chord I offset)
+[ScaleVec] ok 523 - value-to-whole-step: -21 (Chord I offset)
+[ScaleVec] ok 524 - value-to-whole-step: -15
+[ScaleVec] ok 525 - value-to-whole-step: 45 (Chord I offset)
+[ScaleVec] ok 526 - value-to-whole-step: -20 (Chord I offset)
+[ScaleVec] ok 527 - value-to-whole-step: -14
+[ScaleVec] ok 528 - value-to-whole-step: 46 (Chord I offset)
+[ScaleVec] ok 529 - value-to-whole-step: -19 (Chord I offset)
+[ScaleVec] ok 530 - value-to-whole-step: -13
+[ScaleVec] ok 531 - value-to-whole-step: 47 (Chord I offset)
+[ScaleVec] ok 532 - value-to-whole-step: -18 (Chord I offset)
+[ScaleVec] ok 533 - value-to-whole-step: -12
+[ScaleVec] ok 534 - value-to-whole-step: 48 (Chord I offset)
+[ScaleVec] ok 535 - value-to-whole-step: -17 (Chord I offset)
+[ScaleVec] ok 536 - value-to-whole-step: -11
+[ScaleVec] ok 537 - value-to-whole-step: 49 (Chord I offset)
+[ScaleVec] ok 538 - value-to-whole-step: -16 (Chord I offset)
+[ScaleVec] ok 539 - value-to-whole-step: -10
+[ScaleVec] ok 540 - value-to-whole-step: 50 (Chord I offset)
+[ScaleVec] ok 541 - value-to-whole-step: -15 (Chord I offset)
+[ScaleVec] ok 542 - value-to-whole-step: -9
+[ScaleVec] ok 543 - value-to-whole-step: 51 (Chord I offset)
+[ScaleVec] ok 544 - value-to-whole-step: -14 (Chord I offset)
+[ScaleVec] ok 545 - value-to-whole-step: -8
+[ScaleVec] ok 546 - value-to-whole-step: 52 (Chord I offset)
+[ScaleVec] ok 547 - value-to-whole-step: -13 (Chord I offset)
+[ScaleVec] ok 548 - value-to-whole-step: -7
+[ScaleVec] ok 549 - value-to-whole-step: 53 (Chord I offset)
+[ScaleVec] ok 550 - value-to-whole-step: -12 (Chord I offset)
+[ScaleVec] ok 551 - value-to-whole-step: -6
+[ScaleVec] ok 552 - value-to-whole-step: 54 (Chord I offset)
+[ScaleVec] ok 553 - value-to-whole-step: -11 (Chord I offset)
+[ScaleVec] ok 554 - value-to-whole-step: -5
+[ScaleVec] ok 555 - value-to-whole-step: 55 (Chord I offset)
+[ScaleVec] ok 556 - value-to-whole-step: -10 (Chord I offset)
+[ScaleVec] ok 557 - value-to-whole-step: -4
+[ScaleVec] ok 558 - value-to-whole-step: 56 (Chord I offset)
+[ScaleVec] ok 559 - value-to-whole-step: -9 (Chord I offset)
+[ScaleVec] ok 560 - value-to-whole-step: -3
+[ScaleVec] ok 561 - value-to-whole-step: 57 (Chord I offset)
+[ScaleVec] ok 562 - value-to-whole-step: -8 (Chord I offset)
+[ScaleVec] ok 563 - value-to-whole-step: -2
+[ScaleVec] ok 564 - value-to-whole-step: 58 (Chord I offset)
+[ScaleVec] ok 565 - value-to-whole-step: -7 (Chord I offset)
+[ScaleVec] ok 566 - value-to-whole-step: -1
+[ScaleVec] ok 567 - value-to-whole-step: 59 (Chord I offset)
+[ScaleVec] ok 568 - value-to-whole-step: -6 (Chord I offset)
+[ScaleVec] ok 569 - value-to-whole-step: 0
+[ScaleVec] ok 570 - value-to-whole-step: 60 (Chord I offset)
+[ScaleVec] ok 571 - value-to-whole-step: -5 (Chord I offset)
+[ScaleVec] ok 572 - value-to-whole-step: 1
+[ScaleVec] ok 573 - value-to-whole-step: 61 (Chord I offset)
+[ScaleVec] ok 574 - value-to-whole-step: -4 (Chord I offset)
+[ScaleVec] ok 575 - value-to-whole-step: 2
+[ScaleVec] ok 576 - value-to-whole-step: 62 (Chord I offset)
+[ScaleVec] ok 577 - value-to-whole-step: -3 (Chord I offset)
+[ScaleVec] ok 578 - value-to-whole-step: 3
+[ScaleVec] ok 579 - value-to-whole-step: 63 (Chord I offset)
+[ScaleVec] ok 580 - value-to-whole-step: -2 (Chord I offset)
+[ScaleVec] ok 581 - value-to-whole-step: 4
+[ScaleVec] ok 582 - value-to-whole-step: 64 (Chord I offset)
+[ScaleVec] ok 583 - value-to-whole-step: -1 (Chord I offset)
+[ScaleVec] ok 584 - value-to-whole-step: 5
+[ScaleVec] ok 585 - value-to-whole-step: 65 (Chord I offset)
+[ScaleVec] ok 586 - value-to-whole-step: 0 (Chord I offset)
+[ScaleVec] ok 587 - value-to-whole-step: 6
+[ScaleVec] ok 588 - value-to-whole-step: 66 (Chord I offset)
+[ScaleVec] ok 589 - value-to-whole-step: 1 (Chord I offset)
+[ScaleVec] ok 590 - value-to-whole-step: 7
+[ScaleVec] ok 591 - value-to-whole-step: 67 (Chord I offset)
+[ScaleVec] ok 592 - value-to-whole-step: 2 (Chord I offset)
+[ScaleVec] ok 593 - value-to-whole-step: 8
+[ScaleVec] ok 594 - value-to-whole-step: 68 (Chord I offset)
+[ScaleVec] ok 595 - value-to-whole-step: 3 (Chord I offset)
+[ScaleVec] ok 596 - value-to-whole-step: 9
+[ScaleVec] ok 597 - value-to-whole-step: 69 (Chord I offset)
+[ScaleVec] ok 598 - value-to-whole-step: 4 (Chord I offset)
+[ScaleVec] ok 599 - value-to-whole-step: 10
+[ScaleVec] ok 600 - value-to-whole-step: 70 (Chord I offset)
+[ScaleVec] ok 601 - value-to-whole-step: 5 (Chord I offset)
+[ScaleVec] ok 602 - value-to-whole-step: 11
+[ScaleVec] ok 603 - value-to-whole-step: 71 (Chord I offset)
+[ScaleVec] ok 604 - value-to-whole-step: 6 (Chord I offset)
+[ScaleVec] ok 605 - value-to-whole-step: 12
+[ScaleVec] ok 606 - value-to-whole-step: 72 (Chord I offset)
+[ScaleVec] ok 607 - value-to-whole-step: 7 (Chord I offset)
+[ScaleVec] ok 608 - value-to-whole-step: 13
+[ScaleVec] ok 609 - value-to-whole-step: 73 (Chord I offset)
+[ScaleVec] ok 610 - value-to-whole-step: 8 (Chord I offset)
+[ScaleVec] ok 611 - value-to-whole-step: 14
+[ScaleVec] ok 612 - value-to-whole-step: 74 (Chord I offset)
+[ScaleVec] ok 613 - value-to-whole-step: 9 (Chord I offset)
+[ScaleVec] ok 614 - value-to-whole-step: 15
+[ScaleVec] ok 615 - value-to-whole-step: 75 (Chord I offset)
+[ScaleVec] ok 616 - value-to-whole-step: 10 (Chord I offset)
+[ScaleVec] ok 617 - value-to-whole-step: 16
+[ScaleVec] ok 618 - value-to-whole-step: 76 (Chord I offset)
+[ScaleVec] ok 619 - value-to-whole-step: 11 (Chord I offset)
+[ScaleVec] ok 620 - value-to-whole-step: 17
+[ScaleVec] ok 621 - value-to-whole-step: 77 (Chord I offset)
+[ScaleVec] ok 622 - value-to-whole-step: 12 (Chord I offset)
+[ScaleVec] ok 623 - value-to-whole-step: 18
+[ScaleVec] ok 624 - value-to-whole-step: 78 (Chord I offset)
+[ScaleVec] ok 625 - value-to-whole-step: 13 (Chord I offset)
+[ScaleVec] ok 626 - value-to-whole-step: -1
+[ScaleVec] ok 627 - value-to-whole-step: -2
+[ScaleVec] ok 628 - value-to-whole-step: -1.5
+[ScaleVec] ok 629 - value-to-whole-step: -2.5
+[ScaleVec] ok 630 - value-to-sub-step: -17.666667
+[ScaleVec] ok 631 - value-to-sub-step: -17.5
+[ScaleVec] ok 632 - value-to-sub-step: -17.333333
+[ScaleVec] ok 633 - value-to-sub-step: -17.666667 (Chord I offset)
+[ScaleVec] ok 634 - value-to-sub-step: -17.5 (Chord I offset)
+[ScaleVec] ok 635 - value-to-sub-step: -17.333333 (Chord I offset)
+[ScaleVec] ok 636 - value-to-sub-step: -16.666667
+[ScaleVec] ok 637 - value-to-sub-step: -16.5
+[ScaleVec] ok 638 - value-to-sub-step: -16.333333
+[ScaleVec] ok 639 - value-to-sub-step: -16.666667 (Chord I offset)
+[ScaleVec] ok 640 - value-to-sub-step: -16.5 (Chord I offset)
+[ScaleVec] ok 641 - value-to-sub-step: -16.333333 (Chord I offset)
+[ScaleVec] ok 642 - value-to-sub-step: -15.666667
+[ScaleVec] ok 643 - value-to-sub-step: -15.5
+[ScaleVec] ok 644 - value-to-sub-step: -15.333333
+[ScaleVec] ok 645 - value-to-sub-step: -15.666667 (Chord I offset)
+[ScaleVec] ok 646 - value-to-sub-step: -15.5 (Chord I offset)
+[ScaleVec] ok 647 - value-to-sub-step: -15.333333 (Chord I offset)
+[ScaleVec] ok 648 - value-to-sub-step: -14.666667
+[ScaleVec] ok 649 - value-to-sub-step: -14.5
+[ScaleVec] ok 650 - value-to-sub-step: -14.333333
+[ScaleVec] ok 651 - value-to-sub-step: -14.666667 (Chord I offset)
+[ScaleVec] ok 652 - value-to-sub-step: -14.5 (Chord I offset)
+[ScaleVec] ok 653 - value-to-sub-step: -14.333333 (Chord I offset)
+[ScaleVec] ok 654 - value-to-sub-step: -13.666667
+[ScaleVec] ok 655 - value-to-sub-step: -13.5
+[ScaleVec] ok 656 - value-to-sub-step: -13.333333
+[ScaleVec] ok 657 - value-to-sub-step: -13.666667 (Chord I offset)
+[ScaleVec] ok 658 - value-to-sub-step: -13.5 (Chord I offset)
+[ScaleVec] ok 659 - value-to-sub-step: -13.333333 (Chord I offset)
+[ScaleVec] ok 660 - value-to-sub-step: -12.666667
+[ScaleVec] ok 661 - value-to-sub-step: -12.5
+[ScaleVec] ok 662 - value-to-sub-step: -12.333333
+[ScaleVec] ok 663 - value-to-sub-step: -12.666667 (Chord I offset)
+[ScaleVec] ok 664 - value-to-sub-step: -12.5 (Chord I offset)
+[ScaleVec] ok 665 - value-to-sub-step: -12.333333 (Chord I offset)
+[ScaleVec] ok 666 - value-to-sub-step: -11.666667
+[ScaleVec] ok 667 - value-to-sub-step: -11.5
+[ScaleVec] ok 668 - value-to-sub-step: -11.333333
+[ScaleVec] ok 669 - value-to-sub-step: -11.666667 (Chord I offset)
+[ScaleVec] ok 670 - value-to-sub-step: -11.5 (Chord I offset)
+[ScaleVec] ok 671 - value-to-sub-step: -11.333333 (Chord I offset)
+[ScaleVec] ok 672 - value-to-sub-step: -10.666667
+[ScaleVec] ok 673 - value-to-sub-step: -10.5
+[ScaleVec] ok 674 - value-to-sub-step: -10.333333
+[ScaleVec] ok 675 - value-to-sub-step: -10.666667 (Chord I offset)
+[ScaleVec] ok 676 - value-to-sub-step: -10.5 (Chord I offset)
+[ScaleVec] ok 677 - value-to-sub-step: -10.333333 (Chord I offset)
+[ScaleVec] ok 678 - value-to-sub-step: -9.666667
+[ScaleVec] ok 679 - value-to-sub-step: -9.5
+[ScaleVec] ok 680 - value-to-sub-step: -9.333333
+[ScaleVec] ok 681 - value-to-sub-step: -9.666667 (Chord I offset)
+[ScaleVec] ok 682 - value-to-sub-step: -9.5 (Chord I offset)
+[ScaleVec] ok 683 - value-to-sub-step: -9.333333 (Chord I offset)
+[ScaleVec] ok 684 - value-to-sub-step: -8.666667
+[ScaleVec] ok 685 - value-to-sub-step: -8.5
+[ScaleVec] ok 686 - value-to-sub-step: -8.333333
+[ScaleVec] ok 687 - value-to-sub-step: -8.666667 (Chord I offset)
+[ScaleVec] ok 688 - value-to-sub-step: -8.5 (Chord I offset)
+[ScaleVec] ok 689 - value-to-sub-step: -8.333333 (Chord I offset)
+[ScaleVec] ok 690 - value-to-sub-step: -7.666667
+[ScaleVec] ok 691 - value-to-sub-step: -7.5
+[ScaleVec] ok 692 - value-to-sub-step: -7.333333
+[ScaleVec] ok 693 - value-to-sub-step: -7.666667 (Chord I offset)
+[ScaleVec] ok 694 - value-to-sub-step: -7.5 (Chord I offset)
+[ScaleVec] ok 695 - value-to-sub-step: -7.333333 (Chord I offset)
+[ScaleVec] ok 696 - value-to-sub-step: -6.666667
+[ScaleVec] ok 697 - value-to-sub-step: -6.5
+[ScaleVec] ok 698 - value-to-sub-step: -6.333333
+[ScaleVec] ok 699 - value-to-sub-step: -6.666667 (Chord I offset)
+[ScaleVec] ok 700 - value-to-sub-step: -6.5 (Chord I offset)
+[ScaleVec] ok 701 - value-to-sub-step: -6.333333 (Chord I offset)
+[ScaleVec] ok 702 - value-to-sub-step: -5.666667
+[ScaleVec] ok 703 - value-to-sub-step: -5.5
+[ScaleVec] ok 704 - value-to-sub-step: -5.333333
+[ScaleVec] ok 705 - value-to-sub-step: -5.666667 (Chord I offset)
+[ScaleVec] ok 706 - value-to-sub-step: -5.5 (Chord I offset)
+[ScaleVec] ok 707 - value-to-sub-step: -5.333333 (Chord I offset)
+[ScaleVec] ok 708 - value-to-sub-step: -4.666667
+[ScaleVec] ok 709 - value-to-sub-step: -4.5
+[ScaleVec] ok 710 - value-to-sub-step: -4.333333
+[ScaleVec] ok 711 - value-to-sub-step: -4.666667 (Chord I offset)
+[ScaleVec] ok 712 - value-to-sub-step: -4.5 (Chord I offset)
+[ScaleVec] ok 713 - value-to-sub-step: -4.333333 (Chord I offset)
+[ScaleVec] ok 714 - value-to-sub-step: -3.666667
+[ScaleVec] ok 715 - value-to-sub-step: -3.5
+[ScaleVec] ok 716 - value-to-sub-step: -3.333333
+[ScaleVec] ok 717 - value-to-sub-step: -3.666667 (Chord I offset)
+[ScaleVec] ok 718 - value-to-sub-step: -3.5 (Chord I offset)
+[ScaleVec] ok 719 - value-to-sub-step: -3.333333 (Chord I offset)
+[ScaleVec] ok 720 - value-to-sub-step: -2.666667
+[ScaleVec] ok 721 - value-to-sub-step: -2.5
+[ScaleVec] ok 722 - value-to-sub-step: -2.333333
+[ScaleVec] ok 723 - value-to-sub-step: -2.666667 (Chord I offset)
+[ScaleVec] ok 724 - value-to-sub-step: -2.5 (Chord I offset)
+[ScaleVec] ok 725 - value-to-sub-step: -2.333333 (Chord I offset)
+[ScaleVec] ok 726 - value-to-sub-step: -1.666667
+[ScaleVec] ok 727 - value-to-sub-step: -1.5
+[ScaleVec] ok 728 - value-to-sub-step: -1.333333
+[ScaleVec] ok 729 - value-to-sub-step: -1.666667 (Chord I offset)
+[ScaleVec] ok 730 - value-to-sub-step: -1.5 (Chord I offset)
+[ScaleVec] ok 731 - value-to-sub-step: -1.333333 (Chord I offset)
+[ScaleVec] ok 732 - value-to-sub-step: -0.666667
+[ScaleVec] ok 733 - value-to-sub-step: -0.5
+[ScaleVec] ok 734 - value-to-sub-step: -0.333333
+[ScaleVec] ok 735 - value-to-sub-step: -0.666667 (Chord I offset)
+[ScaleVec] ok 736 - value-to-sub-step: -0.5 (Chord I offset)
+[ScaleVec] ok 737 - value-to-sub-step: -0.333333 (Chord I offset)
+[ScaleVec] ok 738 - value-to-sub-step: 0.333333
+[ScaleVec] ok 739 - value-to-sub-step: 0.5
+[ScaleVec] ok 740 - value-to-sub-step: 0.666667
+[ScaleVec] ok 741 - value-to-sub-step: 0.333333 (Chord I offset)
+[ScaleVec] ok 742 - value-to-sub-step: 0.5 (Chord I offset)
+[ScaleVec] ok 743 - value-to-sub-step: 0.666667 (Chord I offset)
+[ScaleVec] ok 744 - value-to-sub-step: 1.333333
+[ScaleVec] ok 745 - value-to-sub-step: 1.5
+[ScaleVec] ok 746 - value-to-sub-step: 1.666667
+[ScaleVec] ok 747 - value-to-sub-step: 1.333333 (Chord I offset)
+[ScaleVec] ok 748 - value-to-sub-step: 1.5 (Chord I offset)
+[ScaleVec] ok 749 - value-to-sub-step: 1.666667 (Chord I offset)
+[ScaleVec] ok 750 - value-to-sub-step: 2.333333
+[ScaleVec] ok 751 - value-to-sub-step: 2.5
+[ScaleVec] ok 752 - value-to-sub-step: 2.666667
+[ScaleVec] ok 753 - value-to-sub-step: 2.333333 (Chord I offset)
+[ScaleVec] ok 754 - value-to-sub-step: 2.5 (Chord I offset)
+[ScaleVec] ok 755 - value-to-sub-step: 2.666667 (Chord I offset)
+[ScaleVec] ok 756 - value-to-sub-step: 3.333333
+[ScaleVec] ok 757 - value-to-sub-step: 3.5
+[ScaleVec] ok 758 - value-to-sub-step: 3.666667
+[ScaleVec] ok 759 - value-to-sub-step: 3.333333 (Chord I offset)
+[ScaleVec] ok 760 - value-to-sub-step: 3.5 (Chord I offset)
+[ScaleVec] ok 761 - value-to-sub-step: 3.666667 (Chord I offset)
+[ScaleVec] ok 762 - value-to-sub-step: 4.333333
+[ScaleVec] ok 763 - value-to-sub-step: 4.5
+[ScaleVec] ok 764 - value-to-sub-step: 4.666667
+[ScaleVec] ok 765 - value-to-sub-step: 4.333333 (Chord I offset)
+[ScaleVec] ok 766 - value-to-sub-step: 4.5 (Chord I offset)
+[ScaleVec] ok 767 - value-to-sub-step: 4.666667 (Chord I offset)
+[ScaleVec] ok 768 - value-to-sub-step: 5.333333
+[ScaleVec] ok 769 - value-to-sub-step: 5.5
+[ScaleVec] ok 770 - value-to-sub-step: 5.666667
+[ScaleVec] ok 771 - value-to-sub-step: 5.333333 (Chord I offset)
+[ScaleVec] ok 772 - value-to-sub-step: 5.5 (Chord I offset)
+[ScaleVec] ok 773 - value-to-sub-step: 5.666667 (Chord I offset)
+[ScaleVec] ok 774 - value-to-sub-step: 6.333333
+[ScaleVec] ok 775 - value-to-sub-step: 6.5
+[ScaleVec] ok 776 - value-to-sub-step: 6.666667
+[ScaleVec] ok 777 - value-to-sub-step: 6.333333 (Chord I offset)
+[ScaleVec] ok 778 - value-to-sub-step: 6.5 (Chord I offset)
+[ScaleVec] ok 779 - value-to-sub-step: 6.666667 (Chord I offset)
+[ScaleVec] ok 780 - value-to-sub-step: 7.333333
+[ScaleVec] ok 781 - value-to-sub-step: 7.5
+[ScaleVec] ok 782 - value-to-sub-step: 7.666667
+[ScaleVec] ok 783 - value-to-sub-step: 7.333333 (Chord I offset)
+[ScaleVec] ok 784 - value-to-sub-step: 7.5 (Chord I offset)
+[ScaleVec] ok 785 - value-to-sub-step: 7.666667 (Chord I offset)
+[ScaleVec] ok 786 - value-to-sub-step: 8.333333
+[ScaleVec] ok 787 - value-to-sub-step: 8.5
+[ScaleVec] ok 788 - value-to-sub-step: 8.666667
+[ScaleVec] ok 789 - value-to-sub-step: 8.333333 (Chord I offset)
+[ScaleVec] ok 790 - value-to-sub-step: 8.5 (Chord I offset)
+[ScaleVec] ok 791 - value-to-sub-step: 8.666667 (Chord I offset)
+[ScaleVec] ok 792 - value-to-sub-step: 9.333333
+[ScaleVec] ok 793 - value-to-sub-step: 9.5
+[ScaleVec] ok 794 - value-to-sub-step: 9.666667
+[ScaleVec] ok 795 - value-to-sub-step: 9.333333 (Chord I offset)
+[ScaleVec] ok 796 - value-to-sub-step: 9.5 (Chord I offset)
+[ScaleVec] ok 797 - value-to-sub-step: 9.666667 (Chord I offset)
+[ScaleVec] ok 798 - value-to-sub-step: 10.333333
+[ScaleVec] ok 799 - value-to-sub-step: 10.5
+[ScaleVec] ok 800 - value-to-sub-step: 10.666667
+[ScaleVec] ok 801 - value-to-sub-step: 10.333333 (Chord I offset)
+[ScaleVec] ok 802 - value-to-sub-step: 10.5 (Chord I offset)
+[ScaleVec] ok 803 - value-to-sub-step: 10.666667 (Chord I offset)
+[ScaleVec] ok 804 - value-to-sub-step: 11.333333
+[ScaleVec] ok 805 - value-to-sub-step: 11.5
+[ScaleVec] ok 806 - value-to-sub-step: 11.666667
+[ScaleVec] ok 807 - value-to-sub-step: 11.333333 (Chord I offset)
+[ScaleVec] ok 808 - value-to-sub-step: 11.5 (Chord I offset)
+[ScaleVec] ok 809 - value-to-sub-step: 11.666667 (Chord I offset)
+[ScaleVec] ok 810 - value-to-sub-step: 12.333333
+[ScaleVec] ok 811 - value-to-sub-step: 12.5
+[ScaleVec] ok 812 - value-to-sub-step: 12.666667
+[ScaleVec] ok 813 - value-to-sub-step: 12.333333 (Chord I offset)
+[ScaleVec] ok 814 - value-to-sub-step: 12.5 (Chord I offset)
+[ScaleVec] ok 815 - value-to-sub-step: 12.666667 (Chord I offset)
+[ScaleVec] ok 816 - value-to-sub-step: 13.333333
+[ScaleVec] ok 817 - value-to-sub-step: 13.5
+[ScaleVec] ok 818 - value-to-sub-step: 13.666667
+[ScaleVec] ok 819 - value-to-sub-step: 13.333333 (Chord I offset)
+[ScaleVec] ok 820 - value-to-sub-step: 13.5 (Chord I offset)
+[ScaleVec] ok 821 - value-to-sub-step: 13.666667 (Chord I offset)
+[ScaleVec] ok 822 - value-to-sub-step: 14.333333
+[ScaleVec] ok 823 - value-to-sub-step: 14.5
+[ScaleVec] ok 824 - value-to-sub-step: 14.666667
+[ScaleVec] ok 825 - value-to-sub-step: 14.333333 (Chord I offset)
+[ScaleVec] ok 826 - value-to-sub-step: 14.5 (Chord I offset)
+[ScaleVec] ok 827 - value-to-sub-step: 14.666667 (Chord I offset)
+[ScaleVec] ok 828 - value-to-sub-step: 15.333333
+[ScaleVec] ok 829 - value-to-sub-step: 15.5
+[ScaleVec] ok 830 - value-to-sub-step: 15.666667
+[ScaleVec] ok 831 - value-to-sub-step: 15.333333 (Chord I offset)
+[ScaleVec] ok 832 - value-to-sub-step: 15.5 (Chord I offset)
+[ScaleVec] ok 833 - value-to-sub-step: 15.666667 (Chord I offset)
+[ScaleVec] ok 834 - value-to-sub-step: 16.333333
+[ScaleVec] ok 835 - value-to-sub-step: 16.5
+[ScaleVec] ok 836 - value-to-sub-step: 16.666667
+[ScaleVec] ok 837 - value-to-sub-step: 16.333333 (Chord I offset)
+[ScaleVec] ok 838 - value-to-sub-step: 16.5 (Chord I offset)
+[ScaleVec] ok 839 - value-to-sub-step: 16.666667 (Chord I offset)
+[ScaleVec] ok 840 - value-to-sub-step: 17.333333
+[ScaleVec] ok 841 - value-to-sub-step: 17.5
+[ScaleVec] ok 842 - value-to-sub-step: 17.666667
+[ScaleVec] ok 843 - value-to-sub-step: 17.333333 (Chord I offset)
+[ScaleVec] ok 844 - value-to-sub-step: 17.5 (Chord I offset)
+[ScaleVec] ok 845 - value-to-sub-step: 17.666667 (Chord I offset)
+[ScaleVec] ok 846 - value-to-sub-step: 18.333333
+[ScaleVec] ok 847 - value-to-sub-step: 18.5
+[ScaleVec] ok 848 - value-to-sub-step: 18.666667
+[ScaleVec] ok 849 - value-to-sub-step: 18.333333 (Chord I offset)
+[ScaleVec] ok 850 - value-to-sub-step: 18.5 (Chord I offset)
+[ScaleVec] ok 851 - value-to-sub-step: 18.666667 (Chord I offset)
+[ScaleVec] ok 852 - octave-to-step: -18
+[ScaleVec] ok 853 - octave-to-step: -18 (Chord IV)
+[ScaleVec] ok 854 - octave-to-step: -17
+[ScaleVec] ok 855 - octave-to-step: -17 (Chord IV)
+[ScaleVec] ok 856 - octave-to-step: -16
+[ScaleVec] ok 857 - octave-to-step: -16 (Chord IV)
+[ScaleVec] ok 858 - octave-to-step: -15
+[ScaleVec] ok 859 - octave-to-step: -15 (Chord IV)
+[ScaleVec] ok 860 - octave-to-step: -14
+[ScaleVec] ok 861 - octave-to-step: -14 (Chord IV)
+[ScaleVec] ok 862 - octave-to-step: -13
+[ScaleVec] ok 863 - octave-to-step: -13 (Chord IV)
+[ScaleVec] ok 864 - octave-to-step: -12
+[ScaleVec] ok 865 - octave-to-step: -12 (Chord IV)
+[ScaleVec] ok 866 - octave-to-step: -11
+[ScaleVec] ok 867 - octave-to-step: -11 (Chord IV)
+[ScaleVec] ok 868 - octave-to-step: -10
+[ScaleVec] ok 869 - octave-to-step: -10 (Chord IV)
+[ScaleVec] ok 870 - octave-to-step: -9
+[ScaleVec] ok 871 - octave-to-step: -9 (Chord IV)
+[ScaleVec] ok 872 - octave-to-step: -8
+[ScaleVec] ok 873 - octave-to-step: -8 (Chord IV)
+[ScaleVec] ok 874 - octave-to-step: -7
+[ScaleVec] ok 875 - octave-to-step: -7 (Chord IV)
+[ScaleVec] ok 876 - octave-to-step: -6
+[ScaleVec] ok 877 - octave-to-step: -6 (Chord IV)
+[ScaleVec] ok 878 - octave-to-step: -5
+[ScaleVec] ok 879 - octave-to-step: -5 (Chord IV)
+[ScaleVec] ok 880 - octave-to-step: -4
+[ScaleVec] ok 881 - octave-to-step: -4 (Chord IV)
+[ScaleVec] ok 882 - octave-to-step: -3
+[ScaleVec] ok 883 - octave-to-step: -3 (Chord IV)
+[ScaleVec] ok 884 - octave-to-step: -2
+[ScaleVec] ok 885 - octave-to-step: -2 (Chord IV)
+[ScaleVec] ok 886 - octave-to-step: -1
+[ScaleVec] ok 887 - octave-to-step: -1 (Chord IV)
+[ScaleVec] ok 888 - octave-to-step: 0
+[ScaleVec] ok 889 - octave-to-step: 0 (Chord IV)
+[ScaleVec] ok 890 - octave-to-step: 1
+[ScaleVec] ok 891 - octave-to-step: 1 (Chord IV)
+[ScaleVec] ok 892 - octave-to-step: 2
+[ScaleVec] ok 893 - octave-to-step: 2 (Chord IV)
+[ScaleVec] ok 894 - octave-to-step: 3
+[ScaleVec] ok 895 - octave-to-step: 3 (Chord IV)
+[ScaleVec] ok 896 - octave-to-step: 4
+[ScaleVec] ok 897 - octave-to-step: 4 (Chord IV)
+[ScaleVec] ok 898 - octave-to-step: 5
+[ScaleVec] ok 899 - octave-to-step: 5 (Chord IV)
+[ScaleVec] ok 900 - octave-to-step: 6
+[ScaleVec] ok 901 - octave-to-step: 6 (Chord IV)
+[ScaleVec] ok 902 - octave-to-step: 7
+[ScaleVec] ok 903 - octave-to-step: 7 (Chord IV)
+[ScaleVec] ok 904 - octave-to-step: 8
+[ScaleVec] ok 905 - octave-to-step: 8 (Chord IV)
+[ScaleVec] ok 906 - octave-to-step: 9
+[ScaleVec] ok 907 - octave-to-step: 9 (Chord IV)
+[ScaleVec] ok 908 - octave-to-step: 10
+[ScaleVec] ok 909 - octave-to-step: 10 (Chord IV)
+[ScaleVec] ok 910 - octave-to-step: 11
+[ScaleVec] ok 911 - octave-to-step: 11 (Chord IV)
+[ScaleVec] ok 912 - octave-to-step: 12
+[ScaleVec] ok 913 - octave-to-step: 12 (Chord IV)
+[ScaleVec] ok 914 - octave-to-step: 13
+[ScaleVec] ok 915 - octave-to-step: 13 (Chord IV)
+[ScaleVec] ok 916 - octave-to-step: 14
+[ScaleVec] ok 917 - octave-to-step: 14 (Chord IV)
+[ScaleVec] ok 918 - octave-to-step: 15
+[ScaleVec] ok 919 - octave-to-step: 15 (Chord IV)
+[ScaleVec] ok 920 - octave-to-step: 16
+[ScaleVec] ok 921 - octave-to-step: 16 (Chord IV)
+[ScaleVec] ok 922 - octave-to-step: 17
+[ScaleVec] ok 923 - octave-to-step: 17 (Chord IV)
+[ScaleVec] ok 924 - octave-to-step: 18
+[ScaleVec] ok 925 - octave-to-step: 18 (Chord IV)
+[ScaleVec] ok 926 - octave-to-step: 0
+[ScaleVec] ok 927 - octave-to-step: 1
+[ScaleVec] ok 928 - octave-to-step: 10
+[ScaleVec] ok 929 - octave-to-step: 12
+[ScaleVec] ok 930 - octave-to-step: 8
+[ScaleVec] ok 931 - Chord IV correct octave
+[ScaleVec] ok 932 - Chord IV correct octave
+[ScaleVec] ok 933 - transperent.reflexive-step(-12)
+[ScaleVec] ok 934 - transperent.reflexive-step(-11)
+[ScaleVec] ok 935 - transperent.reflexive-step(-10)
+[ScaleVec] ok 936 - transperent.reflexive-step(-9)
+[ScaleVec] ok 937 - transperent.reflexive-step(-8)
+[ScaleVec] ok 938 - transperent.reflexive-step(-7)
+[ScaleVec] ok 939 - transperent.reflexive-step(-6)
+[ScaleVec] ok 940 - transperent.reflexive-step(-5)
+[ScaleVec] ok 941 - transperent.reflexive-step(-4)
+[ScaleVec] ok 942 - transperent.reflexive-step(-3)
+[ScaleVec] ok 943 - transperent.reflexive-step(-2)
+[ScaleVec] ok 944 - transperent.reflexive-step(-1)
+[ScaleVec] ok 945 - transperent.reflexive-step(0)
+[ScaleVec] ok 946 - transperent.reflexive-step(1)
+[ScaleVec] ok 947 - transperent.reflexive-step(2)
+[ScaleVec] ok 948 - transperent.reflexive-step(3)
+[ScaleVec] ok 949 - transperent.reflexive-step(4)
+[ScaleVec] ok 950 - transperent.reflexive-step(5)
+[ScaleVec] ok 951 - transperent.reflexive-step(6)
+[ScaleVec] ok 952 - transperent.reflexive-step(7)
+[ScaleVec] ok 953 - transperent.reflexive-step(8)
+[ScaleVec] ok 954 - transperent.reflexive-step(9)
+[ScaleVec] ok 955 - transperent.reflexive-step(10)
+[ScaleVec] ok 956 - transperent.reflexive-step(11)
+[ScaleVec] ok 957 - transperent.reflexive-step(12)
+[ScaleVec] ok 958 - transperent.reflexive-step(-12)
+[ScaleVec] ok 959 - transperent.reflexive-step(-11.5)
+[ScaleVec] ok 960 - transperent.reflexive-step(-11)
+[ScaleVec] ok 961 - transperent.reflexive-step(-10.5)
+[ScaleVec] ok 962 - transperent.reflexive-step(-10)
+[ScaleVec] ok 963 - transperent.reflexive-step(-9.5)
+[ScaleVec] ok 964 - transperent.reflexive-step(-9)
+[ScaleVec] ok 965 - transperent.reflexive-step(-8.5)
+[ScaleVec] ok 966 - transperent.reflexive-step(-8)
+[ScaleVec] ok 967 - transperent.reflexive-step(-7.5)
+[ScaleVec] ok 968 - transperent.reflexive-step(-7)
+[ScaleVec] ok 969 - transperent.reflexive-step(-6.5)
+[ScaleVec] ok 970 - transperent.reflexive-step(-6)
+[ScaleVec] ok 971 - transperent.reflexive-step(-5.5)
+[ScaleVec] ok 972 - transperent.reflexive-step(-5)
+[ScaleVec] ok 973 - transperent.reflexive-step(-4.5)
+[ScaleVec] ok 974 - transperent.reflexive-step(-4)
+[ScaleVec] ok 975 - transperent.reflexive-step(-3.5)
+[ScaleVec] ok 976 - transperent.reflexive-step(-3)
+[ScaleVec] ok 977 - transperent.reflexive-step(-2.5)
+[ScaleVec] ok 978 - transperent.reflexive-step(-2)
+[ScaleVec] ok 979 - transperent.reflexive-step(-1.5)
+[ScaleVec] ok 980 - transperent.reflexive-step(-1)
+[ScaleVec] ok 981 - transperent.reflexive-step(-0.5)
+[ScaleVec] ok 982 - transperent.reflexive-step(0)
+[ScaleVec] ok 983 - transperent.reflexive-step(0.5)
+[ScaleVec] ok 984 - transperent.reflexive-step(1)
+[ScaleVec] ok 985 - transperent.reflexive-step(1.5)
+[ScaleVec] ok 986 - transperent.reflexive-step(2)
+[ScaleVec] ok 987 - transperent.reflexive-step(2.5)
+[ScaleVec] ok 988 - transperent.reflexive-step(3)
+[ScaleVec] ok 989 - transperent.reflexive-step(3.5)
+[ScaleVec] ok 990 - transperent.reflexive-step(4)
+[ScaleVec] ok 991 - transperent.reflexive-step(4.5)
+[ScaleVec] ok 992 - transperent.reflexive-step(5)
+[ScaleVec] ok 993 - transperent.reflexive-step(5.5)
+[ScaleVec] ok 994 - transperent.reflexive-step(6)
+[ScaleVec] ok 995 - transperent.reflexive-step(6.5)
+[ScaleVec] ok 996 - transperent.reflexive-step(7)
+[ScaleVec] ok 997 - transperent.reflexive-step(7.5)
+[ScaleVec] ok 998 - transperent.reflexive-step(8)
+[ScaleVec] ok 999 - transperent.reflexive-step(8.5)
+[ScaleVec] ok 1000 - transperent.reflexive-step(9)
+[ScaleVec] ok 1001 - transperent.reflexive-step(9.5)
+[ScaleVec] ok 1002 - transperent.reflexive-step(10)
+[ScaleVec] ok 1003 - transperent.reflexive-step(10.5)
+[ScaleVec] ok 1004 - transperent.reflexive-step(11)
+[ScaleVec] ok 1005 - transperent.reflexive-step(11.5)
+[ScaleVec] ok 1006 - transperent.reflexive-step(12)
+[ScaleVec] ok 1007 - major.reflexive-step(-9)
+[ScaleVec] ok 1008 - major.reflexive-step(-2)
+[ScaleVec] ok 1009 - major.reflexive-step(1)
+[ScaleVec] ok 1010 - major.reflexive-step(2)
+[ScaleVec] ok 1011 - major.reflexive-step(6)
+[ScaleVec] ok 1012 - major.reflexive-step(7)
+[ScaleVec] ok 1013 - major.reflexive-step(12)
+[ScaleVec] ok 1014 - major.reflexive-step(13)
+[ScaleVec] ok 1015 - Major(-12) == -12
+[ScaleVec] ok 1016 - Reflexive step round trip for -18 (Transperent)
+[ScaleVec] ok 1017 - Reflexive step round trip for -18 (Micro)
+[ScaleVec] ok 1018 - Reflexive step round trip for -18 (Negative offset)
+[ScaleVec] ok 1019 - Reflexive step round trip for -18 (Positive offset)
+[ScaleVec] ok 1020 - Reflexive step round trip for -18 (Chord I)
+[ScaleVec] ok 1021 - Reflexive step round trip for -18 (Chord I offset)
+[ScaleVec] ok 1022 - Reflexive step round trip for -18 (Major)
+[ScaleVec] ok 1023 - Chained reflexive step round trip for -18 (Major(-12) & Chord IV)
+[ScaleVec] ok 1024 - Reflexive step round trip for -17.666667 (Transperent)
+[ScaleVec] ok 1025 - Reflexive step round trip for -17.666667 (Micro)
+[ScaleVec] ok 1026 - Reflexive step round trip for -17.666667 (Negative offset)
+[ScaleVec] ok 1027 - Reflexive step round trip for -17.666667 (Positive offset)
+[ScaleVec] ok 1028 - Reflexive step round trip for -17.666667 (Chord I)
+[ScaleVec] ok 1029 - Reflexive step round trip for -17.666667 (Chord I offset)
+[ScaleVec] ok 1030 - Reflexive step round trip for -17.666667 (Major)
+[ScaleVec] ok 1031 - Chained reflexive step round trip for -17.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1032 - Reflexive step round trip for -17.5 (Transperent)
+[ScaleVec] ok 1033 - Reflexive step round trip for -17.5 (Micro)
+[ScaleVec] ok 1034 - Reflexive step round trip for -17.5 (Negative offset)
+[ScaleVec] ok 1035 - Reflexive step round trip for -17.5 (Positive offset)
+[ScaleVec] ok 1036 - Reflexive step round trip for -17.5 (Chord I)
+[ScaleVec] ok 1037 - Reflexive step round trip for -17.5 (Chord I offset)
+[ScaleVec] ok 1038 - Reflexive step round trip for -17.5 (Major)
+[ScaleVec] ok 1039 - Chained reflexive step round trip for -17.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1040 - Reflexive step round trip for -17.333333 (Transperent)
+[ScaleVec] ok 1041 - Reflexive step round trip for -17.333333 (Micro)
+[ScaleVec] ok 1042 - Reflexive step round trip for -17.333333 (Negative offset)
+[ScaleVec] ok 1043 - Reflexive step round trip for -17.333333 (Positive offset)
+[ScaleVec] ok 1044 - Reflexive step round trip for -17.333333 (Chord I)
+[ScaleVec] ok 1045 - Reflexive step round trip for -17.333333 (Chord I offset)
+[ScaleVec] ok 1046 - Reflexive step round trip for -17.333333 (Major)
+[ScaleVec] ok 1047 - Chained reflexive step round trip for -17.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1048 - Reflexive step round trip for -17 (Transperent)
+[ScaleVec] ok 1049 - Reflexive step round trip for -17 (Micro)
+[ScaleVec] ok 1050 - Reflexive step round trip for -17 (Negative offset)
+[ScaleVec] ok 1051 - Reflexive step round trip for -17 (Positive offset)
+[ScaleVec] ok 1052 - Reflexive step round trip for -17 (Chord I)
+[ScaleVec] ok 1053 - Reflexive step round trip for -17 (Chord I offset)
+[ScaleVec] ok 1054 - Reflexive step round trip for -17 (Major)
+[ScaleVec] ok 1055 - Chained reflexive step round trip for -17 (Major(-12) & Chord IV)
+[ScaleVec] ok 1056 - Reflexive step round trip for -16.666667 (Transperent)
+[ScaleVec] ok 1057 - Reflexive step round trip for -16.666667 (Micro)
+[ScaleVec] ok 1058 - Reflexive step round trip for -16.666667 (Negative offset)
+[ScaleVec] ok 1059 - Reflexive step round trip for -16.666667 (Positive offset)
+[ScaleVec] ok 1060 - Reflexive step round trip for -16.666667 (Chord I)
+[ScaleVec] ok 1061 - Reflexive step round trip for -16.666667 (Chord I offset)
+[ScaleVec] ok 1062 - Reflexive step round trip for -16.666667 (Major)
+[ScaleVec] ok 1063 - Chained reflexive step round trip for -16.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1064 - Reflexive step round trip for -16.5 (Transperent)
+[ScaleVec] ok 1065 - Reflexive step round trip for -16.5 (Micro)
+[ScaleVec] ok 1066 - Reflexive step round trip for -16.5 (Negative offset)
+[ScaleVec] ok 1067 - Reflexive step round trip for -16.5 (Positive offset)
+[ScaleVec] ok 1068 - Reflexive step round trip for -16.5 (Chord I)
+[ScaleVec] ok 1069 - Reflexive step round trip for -16.5 (Chord I offset)
+[ScaleVec] ok 1070 - Reflexive step round trip for -16.5 (Major)
+[ScaleVec] ok 1071 - Chained reflexive step round trip for -16.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1072 - Reflexive step round trip for -16.333333 (Transperent)
+[ScaleVec] ok 1073 - Reflexive step round trip for -16.333333 (Micro)
+[ScaleVec] ok 1074 - Reflexive step round trip for -16.333333 (Negative offset)
+[ScaleVec] ok 1075 - Reflexive step round trip for -16.333333 (Positive offset)
+[ScaleVec] ok 1076 - Reflexive step round trip for -16.333333 (Chord I)
+[ScaleVec] ok 1077 - Reflexive step round trip for -16.333333 (Chord I offset)
+[ScaleVec] ok 1078 - Reflexive step round trip for -16.333333 (Major)
+[ScaleVec] ok 1079 - Chained reflexive step round trip for -16.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1080 - Reflexive step round trip for -16 (Transperent)
+[ScaleVec] ok 1081 - Reflexive step round trip for -16 (Micro)
+[ScaleVec] ok 1082 - Reflexive step round trip for -16 (Negative offset)
+[ScaleVec] ok 1083 - Reflexive step round trip for -16 (Positive offset)
+[ScaleVec] ok 1084 - Reflexive step round trip for -16 (Chord I)
+[ScaleVec] ok 1085 - Reflexive step round trip for -16 (Chord I offset)
+[ScaleVec] ok 1086 - Reflexive step round trip for -16 (Major)
+[ScaleVec] ok 1087 - Chained reflexive step round trip for -16 (Major(-12) & Chord IV)
+[ScaleVec] ok 1088 - Reflexive step round trip for -15.666667 (Transperent)
+[ScaleVec] ok 1089 - Reflexive step round trip for -15.666667 (Micro)
+[ScaleVec] ok 1090 - Reflexive step round trip for -15.666667 (Negative offset)
+[ScaleVec] ok 1091 - Reflexive step round trip for -15.666667 (Positive offset)
+[ScaleVec] ok 1092 - Reflexive step round trip for -15.666667 (Chord I)
+[ScaleVec] ok 1093 - Reflexive step round trip for -15.666667 (Chord I offset)
+[ScaleVec] ok 1094 - Reflexive step round trip for -15.666667 (Major)
+[ScaleVec] ok 1095 - Chained reflexive step round trip for -15.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1096 - Reflexive step round trip for -15.5 (Transperent)
+[ScaleVec] ok 1097 - Reflexive step round trip for -15.5 (Micro)
+[ScaleVec] ok 1098 - Reflexive step round trip for -15.5 (Negative offset)
+[ScaleVec] ok 1099 - Reflexive step round trip for -15.5 (Positive offset)
+[ScaleVec] ok 1100 - Reflexive step round trip for -15.5 (Chord I)
+[ScaleVec] ok 1101 - Reflexive step round trip for -15.5 (Chord I offset)
+[ScaleVec] ok 1102 - Reflexive step round trip for -15.5 (Major)
+[ScaleVec] ok 1103 - Chained reflexive step round trip for -15.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1104 - Reflexive step round trip for -15.333333 (Transperent)
+[ScaleVec] ok 1105 - Reflexive step round trip for -15.333333 (Micro)
+[ScaleVec] ok 1106 - Reflexive step round trip for -15.333333 (Negative offset)
+[ScaleVec] ok 1107 - Reflexive step round trip for -15.333333 (Positive offset)
+[ScaleVec] ok 1108 - Reflexive step round trip for -15.333333 (Chord I)
+[ScaleVec] ok 1109 - Reflexive step round trip for -15.333333 (Chord I offset)
+[ScaleVec] ok 1110 - Reflexive step round trip for -15.333333 (Major)
+[ScaleVec] ok 1111 - Chained reflexive step round trip for -15.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1112 - Reflexive step round trip for -15 (Transperent)
+[ScaleVec] ok 1113 - Reflexive step round trip for -15 (Micro)
+[ScaleVec] ok 1114 - Reflexive step round trip for -15 (Negative offset)
+[ScaleVec] ok 1115 - Reflexive step round trip for -15 (Positive offset)
+[ScaleVec] ok 1116 - Reflexive step round trip for -15 (Chord I)
+[ScaleVec] ok 1117 - Reflexive step round trip for -15 (Chord I offset)
+[ScaleVec] ok 1118 - Reflexive step round trip for -15 (Major)
+[ScaleVec] ok 1119 - Chained reflexive step round trip for -15 (Major(-12) & Chord IV)
+[ScaleVec] ok 1120 - Reflexive step round trip for -14.666667 (Transperent)
+[ScaleVec] ok 1121 - Reflexive step round trip for -14.666667 (Micro)
+[ScaleVec] ok 1122 - Reflexive step round trip for -14.666667 (Negative offset)
+[ScaleVec] ok 1123 - Reflexive step round trip for -14.666667 (Positive offset)
+[ScaleVec] ok 1124 - Reflexive step round trip for -14.666667 (Chord I)
+[ScaleVec] ok 1125 - Reflexive step round trip for -14.666667 (Chord I offset)
+[ScaleVec] ok 1126 - Reflexive step round trip for -14.666667 (Major)
+[ScaleVec] ok 1127 - Chained reflexive step round trip for -14.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1128 - Reflexive step round trip for -14.5 (Transperent)
+[ScaleVec] ok 1129 - Reflexive step round trip for -14.5 (Micro)
+[ScaleVec] ok 1130 - Reflexive step round trip for -14.5 (Negative offset)
+[ScaleVec] ok 1131 - Reflexive step round trip for -14.5 (Positive offset)
+[ScaleVec] ok 1132 - Reflexive step round trip for -14.5 (Chord I)
+[ScaleVec] ok 1133 - Reflexive step round trip for -14.5 (Chord I offset)
+[ScaleVec] ok 1134 - Reflexive step round trip for -14.5 (Major)
+[ScaleVec] ok 1135 - Chained reflexive step round trip for -14.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1136 - Reflexive step round trip for -14.333333 (Transperent)
+[ScaleVec] ok 1137 - Reflexive step round trip for -14.333333 (Micro)
+[ScaleVec] ok 1138 - Reflexive step round trip for -14.333333 (Negative offset)
+[ScaleVec] ok 1139 - Reflexive step round trip for -14.333333 (Positive offset)
+[ScaleVec] ok 1140 - Reflexive step round trip for -14.333333 (Chord I)
+[ScaleVec] ok 1141 - Reflexive step round trip for -14.333333 (Chord I offset)
+[ScaleVec] ok 1142 - Reflexive step round trip for -14.333333 (Major)
+[ScaleVec] ok 1143 - Chained reflexive step round trip for -14.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1144 - Reflexive step round trip for -14 (Transperent)
+[ScaleVec] ok 1145 - Reflexive step round trip for -14 (Micro)
+[ScaleVec] ok 1146 - Reflexive step round trip for -14 (Negative offset)
+[ScaleVec] ok 1147 - Reflexive step round trip for -14 (Positive offset)
+[ScaleVec] ok 1148 - Reflexive step round trip for -14 (Chord I)
+[ScaleVec] ok 1149 - Reflexive step round trip for -14 (Chord I offset)
+[ScaleVec] ok 1150 - Reflexive step round trip for -14 (Major)
+[ScaleVec] ok 1151 - Chained reflexive step round trip for -14 (Major(-12) & Chord IV)
+[ScaleVec] ok 1152 - Reflexive step round trip for -13.666667 (Transperent)
+[ScaleVec] ok 1153 - Reflexive step round trip for -13.666667 (Micro)
+[ScaleVec] ok 1154 - Reflexive step round trip for -13.666667 (Negative offset)
+[ScaleVec] ok 1155 - Reflexive step round trip for -13.666667 (Positive offset)
+[ScaleVec] ok 1156 - Reflexive step round trip for -13.666667 (Chord I)
+[ScaleVec] ok 1157 - Reflexive step round trip for -13.666667 (Chord I offset)
+[ScaleVec] ok 1158 - Reflexive step round trip for -13.666667 (Major)
+[ScaleVec] ok 1159 - Chained reflexive step round trip for -13.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1160 - Reflexive step round trip for -13.5 (Transperent)
+[ScaleVec] ok 1161 - Reflexive step round trip for -13.5 (Micro)
+[ScaleVec] ok 1162 - Reflexive step round trip for -13.5 (Negative offset)
+[ScaleVec] ok 1163 - Reflexive step round trip for -13.5 (Positive offset)
+[ScaleVec] ok 1164 - Reflexive step round trip for -13.5 (Chord I)
+[ScaleVec] ok 1165 - Reflexive step round trip for -13.5 (Chord I offset)
+[ScaleVec] ok 1166 - Reflexive step round trip for -13.5 (Major)
+[ScaleVec] ok 1167 - Chained reflexive step round trip for -13.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1168 - Reflexive step round trip for -13.333333 (Transperent)
+[ScaleVec] ok 1169 - Reflexive step round trip for -13.333333 (Micro)
+[ScaleVec] ok 1170 - Reflexive step round trip for -13.333333 (Negative offset)
+[ScaleVec] ok 1171 - Reflexive step round trip for -13.333333 (Positive offset)
+[ScaleVec] ok 1172 - Reflexive step round trip for -13.333333 (Chord I)
+[ScaleVec] ok 1173 - Reflexive step round trip for -13.333333 (Chord I offset)
+[ScaleVec] ok 1174 - Reflexive step round trip for -13.333333 (Major)
+[ScaleVec] ok 1175 - Chained reflexive step round trip for -13.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1176 - Reflexive step round trip for -13 (Transperent)
+[ScaleVec] ok 1177 - Reflexive step round trip for -13 (Micro)
+[ScaleVec] ok 1178 - Reflexive step round trip for -13 (Negative offset)
+[ScaleVec] ok 1179 - Reflexive step round trip for -13 (Positive offset)
+[ScaleVec] ok 1180 - Reflexive step round trip for -13 (Chord I)
+[ScaleVec] ok 1181 - Reflexive step round trip for -13 (Chord I offset)
+[ScaleVec] ok 1182 - Reflexive step round trip for -13 (Major)
+[ScaleVec] ok 1183 - Chained reflexive step round trip for -13 (Major(-12) & Chord IV)
+[ScaleVec] ok 1184 - Reflexive step round trip for -12.666667 (Transperent)
+[ScaleVec] ok 1185 - Reflexive step round trip for -12.666667 (Micro)
+[ScaleVec] ok 1186 - Reflexive step round trip for -12.666667 (Negative offset)
+[ScaleVec] ok 1187 - Reflexive step round trip for -12.666667 (Positive offset)
+[ScaleVec] ok 1188 - Reflexive step round trip for -12.666667 (Chord I)
+[ScaleVec] ok 1189 - Reflexive step round trip for -12.666667 (Chord I offset)
+[ScaleVec] ok 1190 - Reflexive step round trip for -12.666667 (Major)
+[ScaleVec] ok 1191 - Chained reflexive step round trip for -12.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1192 - Reflexive step round trip for -12.5 (Transperent)
+[ScaleVec] ok 1193 - Reflexive step round trip for -12.5 (Micro)
+[ScaleVec] ok 1194 - Reflexive step round trip for -12.5 (Negative offset)
+[ScaleVec] ok 1195 - Reflexive step round trip for -12.5 (Positive offset)
+[ScaleVec] ok 1196 - Reflexive step round trip for -12.5 (Chord I)
+[ScaleVec] ok 1197 - Reflexive step round trip for -12.5 (Chord I offset)
+[ScaleVec] ok 1198 - Reflexive step round trip for -12.5 (Major)
+[ScaleVec] ok 1199 - Chained reflexive step round trip for -12.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1200 - Reflexive step round trip for -12.333333 (Transperent)
+[ScaleVec] ok 1201 - Reflexive step round trip for -12.333333 (Micro)
+[ScaleVec] ok 1202 - Reflexive step round trip for -12.333333 (Negative offset)
+[ScaleVec] ok 1203 - Reflexive step round trip for -12.333333 (Positive offset)
+[ScaleVec] ok 1204 - Reflexive step round trip for -12.333333 (Chord I)
+[ScaleVec] ok 1205 - Reflexive step round trip for -12.333333 (Chord I offset)
+[ScaleVec] ok 1206 - Reflexive step round trip for -12.333333 (Major)
+[ScaleVec] ok 1207 - Chained reflexive step round trip for -12.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1208 - Reflexive step round trip for -12 (Transperent)
+[ScaleVec] ok 1209 - Reflexive step round trip for -12 (Micro)
+[ScaleVec] ok 1210 - Reflexive step round trip for -12 (Negative offset)
+[ScaleVec] ok 1211 - Reflexive step round trip for -12 (Positive offset)
+[ScaleVec] ok 1212 - Reflexive step round trip for -12 (Chord I)
+[ScaleVec] ok 1213 - Reflexive step round trip for -12 (Chord I offset)
+[ScaleVec] ok 1214 - Reflexive step round trip for -12 (Major)
+[ScaleVec] ok 1215 - Chained reflexive step round trip for -12 (Major(-12) & Chord IV)
+[ScaleVec] ok 1216 - Reflexive step round trip for -11.666667 (Transperent)
+[ScaleVec] ok 1217 - Reflexive step round trip for -11.666667 (Micro)
+[ScaleVec] ok 1218 - Reflexive step round trip for -11.666667 (Negative offset)
+[ScaleVec] ok 1219 - Reflexive step round trip for -11.666667 (Positive offset)
+[ScaleVec] ok 1220 - Reflexive step round trip for -11.666667 (Chord I)
+[ScaleVec] ok 1221 - Reflexive step round trip for -11.666667 (Chord I offset)
+[ScaleVec] ok 1222 - Reflexive step round trip for -11.666667 (Major)
+[ScaleVec] ok 1223 - Chained reflexive step round trip for -11.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1224 - Reflexive step round trip for -11.5 (Transperent)
+[ScaleVec] ok 1225 - Reflexive step round trip for -11.5 (Micro)
+[ScaleVec] ok 1226 - Reflexive step round trip for -11.5 (Negative offset)
+[ScaleVec] ok 1227 - Reflexive step round trip for -11.5 (Positive offset)
+[ScaleVec] ok 1228 - Reflexive step round trip for -11.5 (Chord I)
+[ScaleVec] ok 1229 - Reflexive step round trip for -11.5 (Chord I offset)
+[ScaleVec] ok 1230 - Reflexive step round trip for -11.5 (Major)
+[ScaleVec] ok 1231 - Chained reflexive step round trip for -11.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1232 - Reflexive step round trip for -11.333333 (Transperent)
+[ScaleVec] ok 1233 - Reflexive step round trip for -11.333333 (Micro)
+[ScaleVec] ok 1234 - Reflexive step round trip for -11.333333 (Negative offset)
+[ScaleVec] ok 1235 - Reflexive step round trip for -11.333333 (Positive offset)
+[ScaleVec] ok 1236 - Reflexive step round trip for -11.333333 (Chord I)
+[ScaleVec] ok 1237 - Reflexive step round trip for -11.333333 (Chord I offset)
+[ScaleVec] ok 1238 - Reflexive step round trip for -11.333333 (Major)
+[ScaleVec] ok 1239 - Chained reflexive step round trip for -11.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1240 - Reflexive step round trip for -11 (Transperent)
+[ScaleVec] ok 1241 - Reflexive step round trip for -11 (Micro)
+[ScaleVec] ok 1242 - Reflexive step round trip for -11 (Negative offset)
+[ScaleVec] ok 1243 - Reflexive step round trip for -11 (Positive offset)
+[ScaleVec] ok 1244 - Reflexive step round trip for -11 (Chord I)
+[ScaleVec] ok 1245 - Reflexive step round trip for -11 (Chord I offset)
+[ScaleVec] ok 1246 - Reflexive step round trip for -11 (Major)
+[ScaleVec] ok 1247 - Chained reflexive step round trip for -11 (Major(-12) & Chord IV)
+[ScaleVec] ok 1248 - Reflexive step round trip for -10.666667 (Transperent)
+[ScaleVec] ok 1249 - Reflexive step round trip for -10.666667 (Micro)
+[ScaleVec] ok 1250 - Reflexive step round trip for -10.666667 (Negative offset)
+[ScaleVec] ok 1251 - Reflexive step round trip for -10.666667 (Positive offset)
+[ScaleVec] ok 1252 - Reflexive step round trip for -10.666667 (Chord I)
+[ScaleVec] ok 1253 - Reflexive step round trip for -10.666667 (Chord I offset)
+[ScaleVec] ok 1254 - Reflexive step round trip for -10.666667 (Major)
+[ScaleVec] ok 1255 - Chained reflexive step round trip for -10.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1256 - Reflexive step round trip for -10.5 (Transperent)
+[ScaleVec] ok 1257 - Reflexive step round trip for -10.5 (Micro)
+[ScaleVec] ok 1258 - Reflexive step round trip for -10.5 (Negative offset)
+[ScaleVec] ok 1259 - Reflexive step round trip for -10.5 (Positive offset)
+[ScaleVec] ok 1260 - Reflexive step round trip for -10.5 (Chord I)
+[ScaleVec] ok 1261 - Reflexive step round trip for -10.5 (Chord I offset)
+[ScaleVec] ok 1262 - Reflexive step round trip for -10.5 (Major)
+[ScaleVec] ok 1263 - Chained reflexive step round trip for -10.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1264 - Reflexive step round trip for -10.333333 (Transperent)
+[ScaleVec] ok 1265 - Reflexive step round trip for -10.333333 (Micro)
+[ScaleVec] ok 1266 - Reflexive step round trip for -10.333333 (Negative offset)
+[ScaleVec] ok 1267 - Reflexive step round trip for -10.333333 (Positive offset)
+[ScaleVec] ok 1268 - Reflexive step round trip for -10.333333 (Chord I)
+[ScaleVec] ok 1269 - Reflexive step round trip for -10.333333 (Chord I offset)
+[ScaleVec] ok 1270 - Reflexive step round trip for -10.333333 (Major)
+[ScaleVec] ok 1271 - Chained reflexive step round trip for -10.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1272 - Reflexive step round trip for -10 (Transperent)
+[ScaleVec] ok 1273 - Reflexive step round trip for -10 (Micro)
+[ScaleVec] ok 1274 - Reflexive step round trip for -10 (Negative offset)
+[ScaleVec] ok 1275 - Reflexive step round trip for -10 (Positive offset)
+[ScaleVec] ok 1276 - Reflexive step round trip for -10 (Chord I)
+[ScaleVec] ok 1277 - Reflexive step round trip for -10 (Chord I offset)
+[ScaleVec] ok 1278 - Reflexive step round trip for -10 (Major)
+[ScaleVec] ok 1279 - Chained reflexive step round trip for -10 (Major(-12) & Chord IV)
+[ScaleVec] ok 1280 - Reflexive step round trip for -9.666667 (Transperent)
+[ScaleVec] ok 1281 - Reflexive step round trip for -9.666667 (Micro)
+[ScaleVec] ok 1282 - Reflexive step round trip for -9.666667 (Negative offset)
+[ScaleVec] ok 1283 - Reflexive step round trip for -9.666667 (Positive offset)
+[ScaleVec] ok 1284 - Reflexive step round trip for -9.666667 (Chord I)
+[ScaleVec] ok 1285 - Reflexive step round trip for -9.666667 (Chord I offset)
+[ScaleVec] ok 1286 - Reflexive step round trip for -9.666667 (Major)
+[ScaleVec] ok 1287 - Chained reflexive step round trip for -9.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1288 - Reflexive step round trip for -9.5 (Transperent)
+[ScaleVec] ok 1289 - Reflexive step round trip for -9.5 (Micro)
+[ScaleVec] ok 1290 - Reflexive step round trip for -9.5 (Negative offset)
+[ScaleVec] ok 1291 - Reflexive step round trip for -9.5 (Positive offset)
+[ScaleVec] ok 1292 - Reflexive step round trip for -9.5 (Chord I)
+[ScaleVec] ok 1293 - Reflexive step round trip for -9.5 (Chord I offset)
+[ScaleVec] ok 1294 - Reflexive step round trip for -9.5 (Major)
+[ScaleVec] ok 1295 - Chained reflexive step round trip for -9.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1296 - Reflexive step round trip for -9.333333 (Transperent)
+[ScaleVec] ok 1297 - Reflexive step round trip for -9.333333 (Micro)
+[ScaleVec] ok 1298 - Reflexive step round trip for -9.333333 (Negative offset)
+[ScaleVec] ok 1299 - Reflexive step round trip for -9.333333 (Positive offset)
+[ScaleVec] ok 1300 - Reflexive step round trip for -9.333333 (Chord I)
+[ScaleVec] ok 1301 - Reflexive step round trip for -9.333333 (Chord I offset)
+[ScaleVec] ok 1302 - Reflexive step round trip for -9.333333 (Major)
+[ScaleVec] ok 1303 - Chained reflexive step round trip for -9.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1304 - Reflexive step round trip for -9 (Transperent)
+[ScaleVec] ok 1305 - Reflexive step round trip for -9 (Micro)
+[ScaleVec] ok 1306 - Reflexive step round trip for -9 (Negative offset)
+[ScaleVec] ok 1307 - Reflexive step round trip for -9 (Positive offset)
+[ScaleVec] ok 1308 - Reflexive step round trip for -9 (Chord I)
+[ScaleVec] ok 1309 - Reflexive step round trip for -9 (Chord I offset)
+[ScaleVec] ok 1310 - Reflexive step round trip for -9 (Major)
+[ScaleVec] ok 1311 - Chained reflexive step round trip for -9 (Major(-12) & Chord IV)
+[ScaleVec] ok 1312 - Reflexive step round trip for -8.666667 (Transperent)
+[ScaleVec] ok 1313 - Reflexive step round trip for -8.666667 (Micro)
+[ScaleVec] ok 1314 - Reflexive step round trip for -8.666667 (Negative offset)
+[ScaleVec] ok 1315 - Reflexive step round trip for -8.666667 (Positive offset)
+[ScaleVec] ok 1316 - Reflexive step round trip for -8.666667 (Chord I)
+[ScaleVec] ok 1317 - Reflexive step round trip for -8.666667 (Chord I offset)
+[ScaleVec] ok 1318 - Reflexive step round trip for -8.666667 (Major)
+[ScaleVec] ok 1319 - Chained reflexive step round trip for -8.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1320 - Reflexive step round trip for -8.5 (Transperent)
+[ScaleVec] ok 1321 - Reflexive step round trip for -8.5 (Micro)
+[ScaleVec] ok 1322 - Reflexive step round trip for -8.5 (Negative offset)
+[ScaleVec] ok 1323 - Reflexive step round trip for -8.5 (Positive offset)
+[ScaleVec] ok 1324 - Reflexive step round trip for -8.5 (Chord I)
+[ScaleVec] ok 1325 - Reflexive step round trip for -8.5 (Chord I offset)
+[ScaleVec] ok 1326 - Reflexive step round trip for -8.5 (Major)
+[ScaleVec] ok 1327 - Chained reflexive step round trip for -8.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1328 - Reflexive step round trip for -8.333333 (Transperent)
+[ScaleVec] ok 1329 - Reflexive step round trip for -8.333333 (Micro)
+[ScaleVec] ok 1330 - Reflexive step round trip for -8.333333 (Negative offset)
+[ScaleVec] ok 1331 - Reflexive step round trip for -8.333333 (Positive offset)
+[ScaleVec] ok 1332 - Reflexive step round trip for -8.333333 (Chord I)
+[ScaleVec] ok 1333 - Reflexive step round trip for -8.333333 (Chord I offset)
+[ScaleVec] ok 1334 - Reflexive step round trip for -8.333333 (Major)
+[ScaleVec] ok 1335 - Chained reflexive step round trip for -8.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1336 - Reflexive step round trip for -8 (Transperent)
+[ScaleVec] ok 1337 - Reflexive step round trip for -8 (Micro)
+[ScaleVec] ok 1338 - Reflexive step round trip for -8 (Negative offset)
+[ScaleVec] ok 1339 - Reflexive step round trip for -8 (Positive offset)
+[ScaleVec] ok 1340 - Reflexive step round trip for -8 (Chord I)
+[ScaleVec] ok 1341 - Reflexive step round trip for -8 (Chord I offset)
+[ScaleVec] ok 1342 - Reflexive step round trip for -8 (Major)
+[ScaleVec] ok 1343 - Chained reflexive step round trip for -8 (Major(-12) & Chord IV)
+[ScaleVec] ok 1344 - Reflexive step round trip for -7.666667 (Transperent)
+[ScaleVec] ok 1345 - Reflexive step round trip for -7.666667 (Micro)
+[ScaleVec] ok 1346 - Reflexive step round trip for -7.666667 (Negative offset)
+[ScaleVec] ok 1347 - Reflexive step round trip for -7.666667 (Positive offset)
+[ScaleVec] ok 1348 - Reflexive step round trip for -7.666667 (Chord I)
+[ScaleVec] ok 1349 - Reflexive step round trip for -7.666667 (Chord I offset)
+[ScaleVec] ok 1350 - Reflexive step round trip for -7.666667 (Major)
+[ScaleVec] ok 1351 - Chained reflexive step round trip for -7.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1352 - Reflexive step round trip for -7.5 (Transperent)
+[ScaleVec] ok 1353 - Reflexive step round trip for -7.5 (Micro)
+[ScaleVec] ok 1354 - Reflexive step round trip for -7.5 (Negative offset)
+[ScaleVec] ok 1355 - Reflexive step round trip for -7.5 (Positive offset)
+[ScaleVec] ok 1356 - Reflexive step round trip for -7.5 (Chord I)
+[ScaleVec] ok 1357 - Reflexive step round trip for -7.5 (Chord I offset)
+[ScaleVec] ok 1358 - Reflexive step round trip for -7.5 (Major)
+[ScaleVec] ok 1359 - Chained reflexive step round trip for -7.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1360 - Reflexive step round trip for -7.333333 (Transperent)
+[ScaleVec] ok 1361 - Reflexive step round trip for -7.333333 (Micro)
+[ScaleVec] ok 1362 - Reflexive step round trip for -7.333333 (Negative offset)
+[ScaleVec] ok 1363 - Reflexive step round trip for -7.333333 (Positive offset)
+[ScaleVec] ok 1364 - Reflexive step round trip for -7.333333 (Chord I)
+[ScaleVec] ok 1365 - Reflexive step round trip for -7.333333 (Chord I offset)
+[ScaleVec] ok 1366 - Reflexive step round trip for -7.333333 (Major)
+[ScaleVec] ok 1367 - Chained reflexive step round trip for -7.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1368 - Reflexive step round trip for -7 (Transperent)
+[ScaleVec] ok 1369 - Reflexive step round trip for -7 (Micro)
+[ScaleVec] ok 1370 - Reflexive step round trip for -7 (Negative offset)
+[ScaleVec] ok 1371 - Reflexive step round trip for -7 (Positive offset)
+[ScaleVec] ok 1372 - Reflexive step round trip for -7 (Chord I)
+[ScaleVec] ok 1373 - Reflexive step round trip for -7 (Chord I offset)
+[ScaleVec] ok 1374 - Reflexive step round trip for -7 (Major)
+[ScaleVec] ok 1375 - Chained reflexive step round trip for -7 (Major(-12) & Chord IV)
+[ScaleVec] ok 1376 - Reflexive step round trip for -6.666667 (Transperent)
+[ScaleVec] ok 1377 - Reflexive step round trip for -6.666667 (Micro)
+[ScaleVec] ok 1378 - Reflexive step round trip for -6.666667 (Negative offset)
+[ScaleVec] ok 1379 - Reflexive step round trip for -6.666667 (Positive offset)
+[ScaleVec] ok 1380 - Reflexive step round trip for -6.666667 (Chord I)
+[ScaleVec] ok 1381 - Reflexive step round trip for -6.666667 (Chord I offset)
+[ScaleVec] ok 1382 - Reflexive step round trip for -6.666667 (Major)
+[ScaleVec] ok 1383 - Chained reflexive step round trip for -6.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1384 - Reflexive step round trip for -6.5 (Transperent)
+[ScaleVec] ok 1385 - Reflexive step round trip for -6.5 (Micro)
+[ScaleVec] ok 1386 - Reflexive step round trip for -6.5 (Negative offset)
+[ScaleVec] ok 1387 - Reflexive step round trip for -6.5 (Positive offset)
+[ScaleVec] ok 1388 - Reflexive step round trip for -6.5 (Chord I)
+[ScaleVec] ok 1389 - Reflexive step round trip for -6.5 (Chord I offset)
+[ScaleVec] ok 1390 - Reflexive step round trip for -6.5 (Major)
+[ScaleVec] ok 1391 - Chained reflexive step round trip for -6.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1392 - Reflexive step round trip for -6.333333 (Transperent)
+[ScaleVec] ok 1393 - Reflexive step round trip for -6.333333 (Micro)
+[ScaleVec] ok 1394 - Reflexive step round trip for -6.333333 (Negative offset)
+[ScaleVec] ok 1395 - Reflexive step round trip for -6.333333 (Positive offset)
+[ScaleVec] ok 1396 - Reflexive step round trip for -6.333333 (Chord I)
+[ScaleVec] ok 1397 - Reflexive step round trip for -6.333333 (Chord I offset)
+[ScaleVec] ok 1398 - Reflexive step round trip for -6.333333 (Major)
+[ScaleVec] ok 1399 - Chained reflexive step round trip for -6.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1400 - Reflexive step round trip for -6 (Transperent)
+[ScaleVec] ok 1401 - Reflexive step round trip for -6 (Micro)
+[ScaleVec] ok 1402 - Reflexive step round trip for -6 (Negative offset)
+[ScaleVec] ok 1403 - Reflexive step round trip for -6 (Positive offset)
+[ScaleVec] ok 1404 - Reflexive step round trip for -6 (Chord I)
+[ScaleVec] ok 1405 - Reflexive step round trip for -6 (Chord I offset)
+[ScaleVec] ok 1406 - Reflexive step round trip for -6 (Major)
+[ScaleVec] ok 1407 - Chained reflexive step round trip for -6 (Major(-12) & Chord IV)
+[ScaleVec] ok 1408 - Reflexive step round trip for -5.666667 (Transperent)
+[ScaleVec] ok 1409 - Reflexive step round trip for -5.666667 (Micro)
+[ScaleVec] ok 1410 - Reflexive step round trip for -5.666667 (Negative offset)
+[ScaleVec] ok 1411 - Reflexive step round trip for -5.666667 (Positive offset)
+[ScaleVec] ok 1412 - Reflexive step round trip for -5.666667 (Chord I)
+[ScaleVec] ok 1413 - Reflexive step round trip for -5.666667 (Chord I offset)
+[ScaleVec] ok 1414 - Reflexive step round trip for -5.666667 (Major)
+[ScaleVec] ok 1415 - Chained reflexive step round trip for -5.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1416 - Reflexive step round trip for -5.5 (Transperent)
+[ScaleVec] ok 1417 - Reflexive step round trip for -5.5 (Micro)
+[ScaleVec] ok 1418 - Reflexive step round trip for -5.5 (Negative offset)
+[ScaleVec] ok 1419 - Reflexive step round trip for -5.5 (Positive offset)
+[ScaleVec] ok 1420 - Reflexive step round trip for -5.5 (Chord I)
+[ScaleVec] ok 1421 - Reflexive step round trip for -5.5 (Chord I offset)
+[ScaleVec] ok 1422 - Reflexive step round trip for -5.5 (Major)
+[ScaleVec] ok 1423 - Chained reflexive step round trip for -5.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1424 - Reflexive step round trip for -5.333333 (Transperent)
+[ScaleVec] ok 1425 - Reflexive step round trip for -5.333333 (Micro)
+[ScaleVec] ok 1426 - Reflexive step round trip for -5.333333 (Negative offset)
+[ScaleVec] ok 1427 - Reflexive step round trip for -5.333333 (Positive offset)
+[ScaleVec] ok 1428 - Reflexive step round trip for -5.333333 (Chord I)
+[ScaleVec] ok 1429 - Reflexive step round trip for -5.333333 (Chord I offset)
+[ScaleVec] ok 1430 - Reflexive step round trip for -5.333333 (Major)
+[ScaleVec] ok 1431 - Chained reflexive step round trip for -5.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1432 - Reflexive step round trip for -5 (Transperent)
+[ScaleVec] ok 1433 - Reflexive step round trip for -5 (Micro)
+[ScaleVec] ok 1434 - Reflexive step round trip for -5 (Negative offset)
+[ScaleVec] ok 1435 - Reflexive step round trip for -5 (Positive offset)
+[ScaleVec] ok 1436 - Reflexive step round trip for -5 (Chord I)
+[ScaleVec] ok 1437 - Reflexive step round trip for -5 (Chord I offset)
+[ScaleVec] ok 1438 - Reflexive step round trip for -5 (Major)
+[ScaleVec] ok 1439 - Chained reflexive step round trip for -5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1440 - Reflexive step round trip for -4.666667 (Transperent)
+[ScaleVec] ok 1441 - Reflexive step round trip for -4.666667 (Micro)
+[ScaleVec] ok 1442 - Reflexive step round trip for -4.666667 (Negative offset)
+[ScaleVec] ok 1443 - Reflexive step round trip for -4.666667 (Positive offset)
+[ScaleVec] ok 1444 - Reflexive step round trip for -4.666667 (Chord I)
+[ScaleVec] ok 1445 - Reflexive step round trip for -4.666667 (Chord I offset)
+[ScaleVec] ok 1446 - Reflexive step round trip for -4.666667 (Major)
+[ScaleVec] ok 1447 - Chained reflexive step round trip for -4.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1448 - Reflexive step round trip for -4.5 (Transperent)
+[ScaleVec] ok 1449 - Reflexive step round trip for -4.5 (Micro)
+[ScaleVec] ok 1450 - Reflexive step round trip for -4.5 (Negative offset)
+[ScaleVec] ok 1451 - Reflexive step round trip for -4.5 (Positive offset)
+[ScaleVec] ok 1452 - Reflexive step round trip for -4.5 (Chord I)
+[ScaleVec] ok 1453 - Reflexive step round trip for -4.5 (Chord I offset)
+[ScaleVec] ok 1454 - Reflexive step round trip for -4.5 (Major)
+[ScaleVec] ok 1455 - Chained reflexive step round trip for -4.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1456 - Reflexive step round trip for -4.333333 (Transperent)
+[ScaleVec] ok 1457 - Reflexive step round trip for -4.333333 (Micro)
+[ScaleVec] ok 1458 - Reflexive step round trip for -4.333333 (Negative offset)
+[ScaleVec] ok 1459 - Reflexive step round trip for -4.333333 (Positive offset)
+[ScaleVec] ok 1460 - Reflexive step round trip for -4.333333 (Chord I)
+[ScaleVec] ok 1461 - Reflexive step round trip for -4.333333 (Chord I offset)
+[ScaleVec] ok 1462 - Reflexive step round trip for -4.333333 (Major)
+[ScaleVec] ok 1463 - Chained reflexive step round trip for -4.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1464 - Reflexive step round trip for -4 (Transperent)
+[ScaleVec] ok 1465 - Reflexive step round trip for -4 (Micro)
+[ScaleVec] ok 1466 - Reflexive step round trip for -4 (Negative offset)
+[ScaleVec] ok 1467 - Reflexive step round trip for -4 (Positive offset)
+[ScaleVec] ok 1468 - Reflexive step round trip for -4 (Chord I)
+[ScaleVec] ok 1469 - Reflexive step round trip for -4 (Chord I offset)
+[ScaleVec] ok 1470 - Reflexive step round trip for -4 (Major)
+[ScaleVec] ok 1471 - Chained reflexive step round trip for -4 (Major(-12) & Chord IV)
+[ScaleVec] ok 1472 - Reflexive step round trip for -3.666667 (Transperent)
+[ScaleVec] ok 1473 - Reflexive step round trip for -3.666667 (Micro)
+[ScaleVec] ok 1474 - Reflexive step round trip for -3.666667 (Negative offset)
+[ScaleVec] ok 1475 - Reflexive step round trip for -3.666667 (Positive offset)
+[ScaleVec] ok 1476 - Reflexive step round trip for -3.666667 (Chord I)
+[ScaleVec] ok 1477 - Reflexive step round trip for -3.666667 (Chord I offset)
+[ScaleVec] ok 1478 - Reflexive step round trip for -3.666667 (Major)
+[ScaleVec] ok 1479 - Chained reflexive step round trip for -3.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1480 - Reflexive step round trip for -3.5 (Transperent)
+[ScaleVec] ok 1481 - Reflexive step round trip for -3.5 (Micro)
+[ScaleVec] ok 1482 - Reflexive step round trip for -3.5 (Negative offset)
+[ScaleVec] ok 1483 - Reflexive step round trip for -3.5 (Positive offset)
+[ScaleVec] ok 1484 - Reflexive step round trip for -3.5 (Chord I)
+[ScaleVec] ok 1485 - Reflexive step round trip for -3.5 (Chord I offset)
+[ScaleVec] ok 1486 - Reflexive step round trip for -3.5 (Major)
+[ScaleVec] ok 1487 - Chained reflexive step round trip for -3.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1488 - Reflexive step round trip for -3.333333 (Transperent)
+[ScaleVec] ok 1489 - Reflexive step round trip for -3.333333 (Micro)
+[ScaleVec] ok 1490 - Reflexive step round trip for -3.333333 (Negative offset)
+[ScaleVec] ok 1491 - Reflexive step round trip for -3.333333 (Positive offset)
+[ScaleVec] ok 1492 - Reflexive step round trip for -3.333333 (Chord I)
+[ScaleVec] ok 1493 - Reflexive step round trip for -3.333333 (Chord I offset)
+[ScaleVec] ok 1494 - Reflexive step round trip for -3.333333 (Major)
+[ScaleVec] ok 1495 - Chained reflexive step round trip for -3.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1496 - Reflexive step round trip for -3 (Transperent)
+[ScaleVec] ok 1497 - Reflexive step round trip for -3 (Micro)
+[ScaleVec] ok 1498 - Reflexive step round trip for -3 (Negative offset)
+[ScaleVec] ok 1499 - Reflexive step round trip for -3 (Positive offset)
+[ScaleVec] ok 1500 - Reflexive step round trip for -3 (Chord I)
+[ScaleVec] ok 1501 - Reflexive step round trip for -3 (Chord I offset)
+[ScaleVec] ok 1502 - Reflexive step round trip for -3 (Major)
+[ScaleVec] ok 1503 - Chained reflexive step round trip for -3 (Major(-12) & Chord IV)
+[ScaleVec] ok 1504 - Reflexive step round trip for -2.666667 (Transperent)
+[ScaleVec] ok 1505 - Reflexive step round trip for -2.666667 (Micro)
+[ScaleVec] ok 1506 - Reflexive step round trip for -2.666667 (Negative offset)
+[ScaleVec] ok 1507 - Reflexive step round trip for -2.666667 (Positive offset)
+[ScaleVec] ok 1508 - Reflexive step round trip for -2.666667 (Chord I)
+[ScaleVec] ok 1509 - Reflexive step round trip for -2.666667 (Chord I offset)
+[ScaleVec] ok 1510 - Reflexive step round trip for -2.666667 (Major)
+[ScaleVec] ok 1511 - Chained reflexive step round trip for -2.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1512 - Reflexive step round trip for -2.5 (Transperent)
+[ScaleVec] ok 1513 - Reflexive step round trip for -2.5 (Micro)
+[ScaleVec] ok 1514 - Reflexive step round trip for -2.5 (Negative offset)
+[ScaleVec] ok 1515 - Reflexive step round trip for -2.5 (Positive offset)
+[ScaleVec] ok 1516 - Reflexive step round trip for -2.5 (Chord I)
+[ScaleVec] ok 1517 - Reflexive step round trip for -2.5 (Chord I offset)
+[ScaleVec] ok 1518 - Reflexive step round trip for -2.5 (Major)
+[ScaleVec] ok 1519 - Chained reflexive step round trip for -2.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1520 - Reflexive step round trip for -2.333333 (Transperent)
+[ScaleVec] ok 1521 - Reflexive step round trip for -2.333333 (Micro)
+[ScaleVec] ok 1522 - Reflexive step round trip for -2.333333 (Negative offset)
+[ScaleVec] ok 1523 - Reflexive step round trip for -2.333333 (Positive offset)
+[ScaleVec] ok 1524 - Reflexive step round trip for -2.333333 (Chord I)
+[ScaleVec] ok 1525 - Reflexive step round trip for -2.333333 (Chord I offset)
+[ScaleVec] ok 1526 - Reflexive step round trip for -2.333333 (Major)
+[ScaleVec] ok 1527 - Chained reflexive step round trip for -2.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1528 - Reflexive step round trip for -2 (Transperent)
+[ScaleVec] ok 1529 - Reflexive step round trip for -2 (Micro)
+[ScaleVec] ok 1530 - Reflexive step round trip for -2 (Negative offset)
+[ScaleVec] ok 1531 - Reflexive step round trip for -2 (Positive offset)
+[ScaleVec] ok 1532 - Reflexive step round trip for -2 (Chord I)
+[ScaleVec] ok 1533 - Reflexive step round trip for -2 (Chord I offset)
+[ScaleVec] ok 1534 - Reflexive step round trip for -2 (Major)
+[ScaleVec] ok 1535 - Chained reflexive step round trip for -2 (Major(-12) & Chord IV)
+[ScaleVec] ok 1536 - Reflexive step round trip for -1.666667 (Transperent)
+[ScaleVec] ok 1537 - Reflexive step round trip for -1.666667 (Micro)
+[ScaleVec] ok 1538 - Reflexive step round trip for -1.666667 (Negative offset)
+[ScaleVec] ok 1539 - Reflexive step round trip for -1.666667 (Positive offset)
+[ScaleVec] ok 1540 - Reflexive step round trip for -1.666667 (Chord I)
+[ScaleVec] ok 1541 - Reflexive step round trip for -1.666667 (Chord I offset)
+[ScaleVec] ok 1542 - Reflexive step round trip for -1.666667 (Major)
+[ScaleVec] ok 1543 - Chained reflexive step round trip for -1.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1544 - Reflexive step round trip for -1.5 (Transperent)
+[ScaleVec] ok 1545 - Reflexive step round trip for -1.5 (Micro)
+[ScaleVec] ok 1546 - Reflexive step round trip for -1.5 (Negative offset)
+[ScaleVec] ok 1547 - Reflexive step round trip for -1.5 (Positive offset)
+[ScaleVec] ok 1548 - Reflexive step round trip for -1.5 (Chord I)
+[ScaleVec] ok 1549 - Reflexive step round trip for -1.5 (Chord I offset)
+[ScaleVec] ok 1550 - Reflexive step round trip for -1.5 (Major)
+[ScaleVec] ok 1551 - Chained reflexive step round trip for -1.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1552 - Reflexive step round trip for -1.333333 (Transperent)
+[ScaleVec] ok 1553 - Reflexive step round trip for -1.333333 (Micro)
+[ScaleVec] ok 1554 - Reflexive step round trip for -1.333333 (Negative offset)
+[ScaleVec] ok 1555 - Reflexive step round trip for -1.333333 (Positive offset)
+[ScaleVec] ok 1556 - Reflexive step round trip for -1.333333 (Chord I)
+[ScaleVec] ok 1557 - Reflexive step round trip for -1.333333 (Chord I offset)
+[ScaleVec] ok 1558 - Reflexive step round trip for -1.333333 (Major)
+[ScaleVec] ok 1559 - Chained reflexive step round trip for -1.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1560 - Reflexive step round trip for -1 (Transperent)
+[ScaleVec] ok 1561 - Reflexive step round trip for -1 (Micro)
+[ScaleVec] ok 1562 - Reflexive step round trip for -1 (Negative offset)
+[ScaleVec] ok 1563 - Reflexive step round trip for -1 (Positive offset)
+[ScaleVec] ok 1564 - Reflexive step round trip for -1 (Chord I)
+[ScaleVec] ok 1565 - Reflexive step round trip for -1 (Chord I offset)
+[ScaleVec] ok 1566 - Reflexive step round trip for -1 (Major)
+[ScaleVec] ok 1567 - Chained reflexive step round trip for -1 (Major(-12) & Chord IV)
+[ScaleVec] ok 1568 - Reflexive step round trip for -0.666667 (Transperent)
+[ScaleVec] ok 1569 - Reflexive step round trip for -0.666667 (Micro)
+[ScaleVec] ok 1570 - Reflexive step round trip for -0.666667 (Negative offset)
+[ScaleVec] ok 1571 - Reflexive step round trip for -0.666667 (Positive offset)
+[ScaleVec] ok 1572 - Reflexive step round trip for -0.666667 (Chord I)
+[ScaleVec] ok 1573 - Reflexive step round trip for -0.666667 (Chord I offset)
+[ScaleVec] ok 1574 - Reflexive step round trip for -0.666667 (Major)
+[ScaleVec] ok 1575 - Chained reflexive step round trip for -0.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1576 - Reflexive step round trip for -0.5 (Transperent)
+[ScaleVec] ok 1577 - Reflexive step round trip for -0.5 (Micro)
+[ScaleVec] ok 1578 - Reflexive step round trip for -0.5 (Negative offset)
+[ScaleVec] ok 1579 - Reflexive step round trip for -0.5 (Positive offset)
+[ScaleVec] ok 1580 - Reflexive step round trip for -0.5 (Chord I)
+[ScaleVec] ok 1581 - Reflexive step round trip for -0.5 (Chord I offset)
+[ScaleVec] ok 1582 - Reflexive step round trip for -0.5 (Major)
+[ScaleVec] ok 1583 - Chained reflexive step round trip for -0.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1584 - Reflexive step round trip for -0.333333 (Transperent)
+[ScaleVec] ok 1585 - Reflexive step round trip for -0.333333 (Micro)
+[ScaleVec] ok 1586 - Reflexive step round trip for -0.333333 (Negative offset)
+[ScaleVec] ok 1587 - Reflexive step round trip for -0.333333 (Positive offset)
+[ScaleVec] ok 1588 - Reflexive step round trip for -0.333333 (Chord I)
+[ScaleVec] ok 1589 - Reflexive step round trip for -0.333333 (Chord I offset)
+[ScaleVec] ok 1590 - Reflexive step round trip for -0.333333 (Major)
+[ScaleVec] ok 1591 - Chained reflexive step round trip for -0.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1592 - Reflexive step round trip for 0 (Transperent)
+[ScaleVec] ok 1593 - Reflexive step round trip for 0 (Micro)
+[ScaleVec] ok 1594 - Reflexive step round trip for 0 (Negative offset)
+[ScaleVec] ok 1595 - Reflexive step round trip for 0 (Positive offset)
+[ScaleVec] ok 1596 - Reflexive step round trip for 0 (Chord I)
+[ScaleVec] ok 1597 - Reflexive step round trip for 0 (Chord I offset)
+[ScaleVec] ok 1598 - Reflexive step round trip for 0 (Major)
+[ScaleVec] ok 1599 - Chained reflexive step round trip for 0 (Major(-12) & Chord IV)
+[ScaleVec] ok 1600 - Reflexive step round trip for 0.333333 (Transperent)
+[ScaleVec] ok 1601 - Reflexive step round trip for 0.333333 (Micro)
+[ScaleVec] ok 1602 - Reflexive step round trip for 0.333333 (Negative offset)
+[ScaleVec] ok 1603 - Reflexive step round trip for 0.333333 (Positive offset)
+[ScaleVec] ok 1604 - Reflexive step round trip for 0.333333 (Chord I)
+[ScaleVec] ok 1605 - Reflexive step round trip for 0.333333 (Chord I offset)
+[ScaleVec] ok 1606 - Reflexive step round trip for 0.333333 (Major)
+[ScaleVec] ok 1607 - Chained reflexive step round trip for 0.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1608 - Reflexive step round trip for 0.5 (Transperent)
+[ScaleVec] ok 1609 - Reflexive step round trip for 0.5 (Micro)
+[ScaleVec] ok 1610 - Reflexive step round trip for 0.5 (Negative offset)
+[ScaleVec] ok 1611 - Reflexive step round trip for 0.5 (Positive offset)
+[ScaleVec] ok 1612 - Reflexive step round trip for 0.5 (Chord I)
+[ScaleVec] ok 1613 - Reflexive step round trip for 0.5 (Chord I offset)
+[ScaleVec] ok 1614 - Reflexive step round trip for 0.5 (Major)
+[ScaleVec] ok 1615 - Chained reflexive step round trip for 0.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1616 - Reflexive step round trip for 0.666667 (Transperent)
+[ScaleVec] ok 1617 - Reflexive step round trip for 0.666667 (Micro)
+[ScaleVec] ok 1618 - Reflexive step round trip for 0.666667 (Negative offset)
+[ScaleVec] ok 1619 - Reflexive step round trip for 0.666667 (Positive offset)
+[ScaleVec] ok 1620 - Reflexive step round trip for 0.666667 (Chord I)
+[ScaleVec] ok 1621 - Reflexive step round trip for 0.666667 (Chord I offset)
+[ScaleVec] ok 1622 - Reflexive step round trip for 0.666667 (Major)
+[ScaleVec] ok 1623 - Chained reflexive step round trip for 0.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1624 - Reflexive step round trip for 1 (Transperent)
+[ScaleVec] ok 1625 - Reflexive step round trip for 1 (Micro)
+[ScaleVec] ok 1626 - Reflexive step round trip for 1 (Negative offset)
+[ScaleVec] ok 1627 - Reflexive step round trip for 1 (Positive offset)
+[ScaleVec] ok 1628 - Reflexive step round trip for 1 (Chord I)
+[ScaleVec] ok 1629 - Reflexive step round trip for 1 (Chord I offset)
+[ScaleVec] ok 1630 - Reflexive step round trip for 1 (Major)
+[ScaleVec] ok 1631 - Chained reflexive step round trip for 1 (Major(-12) & Chord IV)
+[ScaleVec] ok 1632 - Reflexive step round trip for 1.333333 (Transperent)
+[ScaleVec] ok 1633 - Reflexive step round trip for 1.333333 (Micro)
+[ScaleVec] ok 1634 - Reflexive step round trip for 1.333333 (Negative offset)
+[ScaleVec] ok 1635 - Reflexive step round trip for 1.333333 (Positive offset)
+[ScaleVec] ok 1636 - Reflexive step round trip for 1.333333 (Chord I)
+[ScaleVec] ok 1637 - Reflexive step round trip for 1.333333 (Chord I offset)
+[ScaleVec] ok 1638 - Reflexive step round trip for 1.333333 (Major)
+[ScaleVec] ok 1639 - Chained reflexive step round trip for 1.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1640 - Reflexive step round trip for 1.5 (Transperent)
+[ScaleVec] ok 1641 - Reflexive step round trip for 1.5 (Micro)
+[ScaleVec] ok 1642 - Reflexive step round trip for 1.5 (Negative offset)
+[ScaleVec] ok 1643 - Reflexive step round trip for 1.5 (Positive offset)
+[ScaleVec] ok 1644 - Reflexive step round trip for 1.5 (Chord I)
+[ScaleVec] ok 1645 - Reflexive step round trip for 1.5 (Chord I offset)
+[ScaleVec] ok 1646 - Reflexive step round trip for 1.5 (Major)
+[ScaleVec] ok 1647 - Chained reflexive step round trip for 1.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1648 - Reflexive step round trip for 1.666667 (Transperent)
+[ScaleVec] ok 1649 - Reflexive step round trip for 1.666667 (Micro)
+[ScaleVec] ok 1650 - Reflexive step round trip for 1.666667 (Negative offset)
+[ScaleVec] ok 1651 - Reflexive step round trip for 1.666667 (Positive offset)
+[ScaleVec] ok 1652 - Reflexive step round trip for 1.666667 (Chord I)
+[ScaleVec] ok 1653 - Reflexive step round trip for 1.666667 (Chord I offset)
+[ScaleVec] ok 1654 - Reflexive step round trip for 1.666667 (Major)
+[ScaleVec] ok 1655 - Chained reflexive step round trip for 1.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1656 - Reflexive step round trip for 2 (Transperent)
+[ScaleVec] ok 1657 - Reflexive step round trip for 2 (Micro)
+[ScaleVec] ok 1658 - Reflexive step round trip for 2 (Negative offset)
+[ScaleVec] ok 1659 - Reflexive step round trip for 2 (Positive offset)
+[ScaleVec] ok 1660 - Reflexive step round trip for 2 (Chord I)
+[ScaleVec] ok 1661 - Reflexive step round trip for 2 (Chord I offset)
+[ScaleVec] ok 1662 - Reflexive step round trip for 2 (Major)
+[ScaleVec] ok 1663 - Chained reflexive step round trip for 2 (Major(-12) & Chord IV)
+[ScaleVec] ok 1664 - Reflexive step round trip for 2.333333 (Transperent)
+[ScaleVec] ok 1665 - Reflexive step round trip for 2.333333 (Micro)
+[ScaleVec] ok 1666 - Reflexive step round trip for 2.333333 (Negative offset)
+[ScaleVec] ok 1667 - Reflexive step round trip for 2.333333 (Positive offset)
+[ScaleVec] ok 1668 - Reflexive step round trip for 2.333333 (Chord I)
+[ScaleVec] ok 1669 - Reflexive step round trip for 2.333333 (Chord I offset)
+[ScaleVec] ok 1670 - Reflexive step round trip for 2.333333 (Major)
+[ScaleVec] ok 1671 - Chained reflexive step round trip for 2.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1672 - Reflexive step round trip for 2.5 (Transperent)
+[ScaleVec] ok 1673 - Reflexive step round trip for 2.5 (Micro)
+[ScaleVec] ok 1674 - Reflexive step round trip for 2.5 (Negative offset)
+[ScaleVec] ok 1675 - Reflexive step round trip for 2.5 (Positive offset)
+[ScaleVec] ok 1676 - Reflexive step round trip for 2.5 (Chord I)
+[ScaleVec] ok 1677 - Reflexive step round trip for 2.5 (Chord I offset)
+[ScaleVec] ok 1678 - Reflexive step round trip for 2.5 (Major)
+[ScaleVec] ok 1679 - Chained reflexive step round trip for 2.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1680 - Reflexive step round trip for 2.666667 (Transperent)
+[ScaleVec] ok 1681 - Reflexive step round trip for 2.666667 (Micro)
+[ScaleVec] ok 1682 - Reflexive step round trip for 2.666667 (Negative offset)
+[ScaleVec] ok 1683 - Reflexive step round trip for 2.666667 (Positive offset)
+[ScaleVec] ok 1684 - Reflexive step round trip for 2.666667 (Chord I)
+[ScaleVec] ok 1685 - Reflexive step round trip for 2.666667 (Chord I offset)
+[ScaleVec] ok 1686 - Reflexive step round trip for 2.666667 (Major)
+[ScaleVec] ok 1687 - Chained reflexive step round trip for 2.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1688 - Reflexive step round trip for 3 (Transperent)
+[ScaleVec] ok 1689 - Reflexive step round trip for 3 (Micro)
+[ScaleVec] ok 1690 - Reflexive step round trip for 3 (Negative offset)
+[ScaleVec] ok 1691 - Reflexive step round trip for 3 (Positive offset)
+[ScaleVec] ok 1692 - Reflexive step round trip for 3 (Chord I)
+[ScaleVec] ok 1693 - Reflexive step round trip for 3 (Chord I offset)
+[ScaleVec] ok 1694 - Reflexive step round trip for 3 (Major)
+[ScaleVec] ok 1695 - Chained reflexive step round trip for 3 (Major(-12) & Chord IV)
+[ScaleVec] ok 1696 - Reflexive step round trip for 3.333333 (Transperent)
+[ScaleVec] ok 1697 - Reflexive step round trip for 3.333333 (Micro)
+[ScaleVec] ok 1698 - Reflexive step round trip for 3.333333 (Negative offset)
+[ScaleVec] ok 1699 - Reflexive step round trip for 3.333333 (Positive offset)
+[ScaleVec] ok 1700 - Reflexive step round trip for 3.333333 (Chord I)
+[ScaleVec] ok 1701 - Reflexive step round trip for 3.333333 (Chord I offset)
+[ScaleVec] ok 1702 - Reflexive step round trip for 3.333333 (Major)
+[ScaleVec] ok 1703 - Chained reflexive step round trip for 3.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1704 - Reflexive step round trip for 3.5 (Transperent)
+[ScaleVec] ok 1705 - Reflexive step round trip for 3.5 (Micro)
+[ScaleVec] ok 1706 - Reflexive step round trip for 3.5 (Negative offset)
+[ScaleVec] ok 1707 - Reflexive step round trip for 3.5 (Positive offset)
+[ScaleVec] ok 1708 - Reflexive step round trip for 3.5 (Chord I)
+[ScaleVec] ok 1709 - Reflexive step round trip for 3.5 (Chord I offset)
+[ScaleVec] ok 1710 - Reflexive step round trip for 3.5 (Major)
+[ScaleVec] ok 1711 - Chained reflexive step round trip for 3.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1712 - Reflexive step round trip for 3.666667 (Transperent)
+[ScaleVec] ok 1713 - Reflexive step round trip for 3.666667 (Micro)
+[ScaleVec] ok 1714 - Reflexive step round trip for 3.666667 (Negative offset)
+[ScaleVec] ok 1715 - Reflexive step round trip for 3.666667 (Positive offset)
+[ScaleVec] ok 1716 - Reflexive step round trip for 3.666667 (Chord I)
+[ScaleVec] ok 1717 - Reflexive step round trip for 3.666667 (Chord I offset)
+[ScaleVec] ok 1718 - Reflexive step round trip for 3.666667 (Major)
+[ScaleVec] ok 1719 - Chained reflexive step round trip for 3.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1720 - Reflexive step round trip for 4 (Transperent)
+[ScaleVec] ok 1721 - Reflexive step round trip for 4 (Micro)
+[ScaleVec] ok 1722 - Reflexive step round trip for 4 (Negative offset)
+[ScaleVec] ok 1723 - Reflexive step round trip for 4 (Positive offset)
+[ScaleVec] ok 1724 - Reflexive step round trip for 4 (Chord I)
+[ScaleVec] ok 1725 - Reflexive step round trip for 4 (Chord I offset)
+[ScaleVec] ok 1726 - Reflexive step round trip for 4 (Major)
+[ScaleVec] ok 1727 - Chained reflexive step round trip for 4 (Major(-12) & Chord IV)
+[ScaleVec] ok 1728 - Reflexive step round trip for 4.333333 (Transperent)
+[ScaleVec] ok 1729 - Reflexive step round trip for 4.333333 (Micro)
+[ScaleVec] ok 1730 - Reflexive step round trip for 4.333333 (Negative offset)
+[ScaleVec] ok 1731 - Reflexive step round trip for 4.333333 (Positive offset)
+[ScaleVec] ok 1732 - Reflexive step round trip for 4.333333 (Chord I)
+[ScaleVec] ok 1733 - Reflexive step round trip for 4.333333 (Chord I offset)
+[ScaleVec] ok 1734 - Reflexive step round trip for 4.333333 (Major)
+[ScaleVec] ok 1735 - Chained reflexive step round trip for 4.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1736 - Reflexive step round trip for 4.5 (Transperent)
+[ScaleVec] ok 1737 - Reflexive step round trip for 4.5 (Micro)
+[ScaleVec] ok 1738 - Reflexive step round trip for 4.5 (Negative offset)
+[ScaleVec] ok 1739 - Reflexive step round trip for 4.5 (Positive offset)
+[ScaleVec] ok 1740 - Reflexive step round trip for 4.5 (Chord I)
+[ScaleVec] ok 1741 - Reflexive step round trip for 4.5 (Chord I offset)
+[ScaleVec] ok 1742 - Reflexive step round trip for 4.5 (Major)
+[ScaleVec] ok 1743 - Chained reflexive step round trip for 4.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1744 - Reflexive step round trip for 4.666667 (Transperent)
+[ScaleVec] ok 1745 - Reflexive step round trip for 4.666667 (Micro)
+[ScaleVec] ok 1746 - Reflexive step round trip for 4.666667 (Negative offset)
+[ScaleVec] ok 1747 - Reflexive step round trip for 4.666667 (Positive offset)
+[ScaleVec] ok 1748 - Reflexive step round trip for 4.666667 (Chord I)
+[ScaleVec] ok 1749 - Reflexive step round trip for 4.666667 (Chord I offset)
+[ScaleVec] ok 1750 - Reflexive step round trip for 4.666667 (Major)
+[ScaleVec] ok 1751 - Chained reflexive step round trip for 4.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1752 - Reflexive step round trip for 5 (Transperent)
+[ScaleVec] ok 1753 - Reflexive step round trip for 5 (Micro)
+[ScaleVec] ok 1754 - Reflexive step round trip for 5 (Negative offset)
+[ScaleVec] ok 1755 - Reflexive step round trip for 5 (Positive offset)
+[ScaleVec] ok 1756 - Reflexive step round trip for 5 (Chord I)
+[ScaleVec] ok 1757 - Reflexive step round trip for 5 (Chord I offset)
+[ScaleVec] ok 1758 - Reflexive step round trip for 5 (Major)
+[ScaleVec] ok 1759 - Chained reflexive step round trip for 5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1760 - Reflexive step round trip for 5.333333 (Transperent)
+[ScaleVec] ok 1761 - Reflexive step round trip for 5.333333 (Micro)
+[ScaleVec] ok 1762 - Reflexive step round trip for 5.333333 (Negative offset)
+[ScaleVec] ok 1763 - Reflexive step round trip for 5.333333 (Positive offset)
+[ScaleVec] ok 1764 - Reflexive step round trip for 5.333333 (Chord I)
+[ScaleVec] ok 1765 - Reflexive step round trip for 5.333333 (Chord I offset)
+[ScaleVec] ok 1766 - Reflexive step round trip for 5.333333 (Major)
+[ScaleVec] ok 1767 - Chained reflexive step round trip for 5.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1768 - Reflexive step round trip for 5.5 (Transperent)
+[ScaleVec] ok 1769 - Reflexive step round trip for 5.5 (Micro)
+[ScaleVec] ok 1770 - Reflexive step round trip for 5.5 (Negative offset)
+[ScaleVec] ok 1771 - Reflexive step round trip for 5.5 (Positive offset)
+[ScaleVec] ok 1772 - Reflexive step round trip for 5.5 (Chord I)
+[ScaleVec] ok 1773 - Reflexive step round trip for 5.5 (Chord I offset)
+[ScaleVec] ok 1774 - Reflexive step round trip for 5.5 (Major)
+[ScaleVec] ok 1775 - Chained reflexive step round trip for 5.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1776 - Reflexive step round trip for 5.666667 (Transperent)
+[ScaleVec] ok 1777 - Reflexive step round trip for 5.666667 (Micro)
+[ScaleVec] ok 1778 - Reflexive step round trip for 5.666667 (Negative offset)
+[ScaleVec] ok 1779 - Reflexive step round trip for 5.666667 (Positive offset)
+[ScaleVec] ok 1780 - Reflexive step round trip for 5.666667 (Chord I)
+[ScaleVec] ok 1781 - Reflexive step round trip for 5.666667 (Chord I offset)
+[ScaleVec] ok 1782 - Reflexive step round trip for 5.666667 (Major)
+[ScaleVec] ok 1783 - Chained reflexive step round trip for 5.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1784 - Reflexive step round trip for 6 (Transperent)
+[ScaleVec] ok 1785 - Reflexive step round trip for 6 (Micro)
+[ScaleVec] ok 1786 - Reflexive step round trip for 6 (Negative offset)
+[ScaleVec] ok 1787 - Reflexive step round trip for 6 (Positive offset)
+[ScaleVec] ok 1788 - Reflexive step round trip for 6 (Chord I)
+[ScaleVec] ok 1789 - Reflexive step round trip for 6 (Chord I offset)
+[ScaleVec] ok 1790 - Reflexive step round trip for 6 (Major)
+[ScaleVec] ok 1791 - Chained reflexive step round trip for 6 (Major(-12) & Chord IV)
+[ScaleVec] ok 1792 - Reflexive step round trip for 6.333333 (Transperent)
+[ScaleVec] ok 1793 - Reflexive step round trip for 6.333333 (Micro)
+[ScaleVec] ok 1794 - Reflexive step round trip for 6.333333 (Negative offset)
+[ScaleVec] ok 1795 - Reflexive step round trip for 6.333333 (Positive offset)
+[ScaleVec] ok 1796 - Reflexive step round trip for 6.333333 (Chord I)
+[ScaleVec] ok 1797 - Reflexive step round trip for 6.333333 (Chord I offset)
+[ScaleVec] ok 1798 - Reflexive step round trip for 6.333333 (Major)
+[ScaleVec] ok 1799 - Chained reflexive step round trip for 6.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1800 - Reflexive step round trip for 6.5 (Transperent)
+[ScaleVec] ok 1801 - Reflexive step round trip for 6.5 (Micro)
+[ScaleVec] ok 1802 - Reflexive step round trip for 6.5 (Negative offset)
+[ScaleVec] ok 1803 - Reflexive step round trip for 6.5 (Positive offset)
+[ScaleVec] ok 1804 - Reflexive step round trip for 6.5 (Chord I)
+[ScaleVec] ok 1805 - Reflexive step round trip for 6.5 (Chord I offset)
+[ScaleVec] ok 1806 - Reflexive step round trip for 6.5 (Major)
+[ScaleVec] ok 1807 - Chained reflexive step round trip for 6.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1808 - Reflexive step round trip for 6.666667 (Transperent)
+[ScaleVec] ok 1809 - Reflexive step round trip for 6.666667 (Micro)
+[ScaleVec] ok 1810 - Reflexive step round trip for 6.666667 (Negative offset)
+[ScaleVec] ok 1811 - Reflexive step round trip for 6.666667 (Positive offset)
+[ScaleVec] ok 1812 - Reflexive step round trip for 6.666667 (Chord I)
+[ScaleVec] ok 1813 - Reflexive step round trip for 6.666667 (Chord I offset)
+[ScaleVec] ok 1814 - Reflexive step round trip for 6.666667 (Major)
+[ScaleVec] ok 1815 - Chained reflexive step round trip for 6.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1816 - Reflexive step round trip for 7 (Transperent)
+[ScaleVec] ok 1817 - Reflexive step round trip for 7 (Micro)
+[ScaleVec] ok 1818 - Reflexive step round trip for 7 (Negative offset)
+[ScaleVec] ok 1819 - Reflexive step round trip for 7 (Positive offset)
+[ScaleVec] ok 1820 - Reflexive step round trip for 7 (Chord I)
+[ScaleVec] ok 1821 - Reflexive step round trip for 7 (Chord I offset)
+[ScaleVec] ok 1822 - Reflexive step round trip for 7 (Major)
+[ScaleVec] ok 1823 - Chained reflexive step round trip for 7 (Major(-12) & Chord IV)
+[ScaleVec] ok 1824 - Reflexive step round trip for 7.333333 (Transperent)
+[ScaleVec] ok 1825 - Reflexive step round trip for 7.333333 (Micro)
+[ScaleVec] ok 1826 - Reflexive step round trip for 7.333333 (Negative offset)
+[ScaleVec] ok 1827 - Reflexive step round trip for 7.333333 (Positive offset)
+[ScaleVec] ok 1828 - Reflexive step round trip for 7.333333 (Chord I)
+[ScaleVec] ok 1829 - Reflexive step round trip for 7.333333 (Chord I offset)
+[ScaleVec] ok 1830 - Reflexive step round trip for 7.333333 (Major)
+[ScaleVec] ok 1831 - Chained reflexive step round trip for 7.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1832 - Reflexive step round trip for 7.5 (Transperent)
+[ScaleVec] ok 1833 - Reflexive step round trip for 7.5 (Micro)
+[ScaleVec] ok 1834 - Reflexive step round trip for 7.5 (Negative offset)
+[ScaleVec] ok 1835 - Reflexive step round trip for 7.5 (Positive offset)
+[ScaleVec] ok 1836 - Reflexive step round trip for 7.5 (Chord I)
+[ScaleVec] ok 1837 - Reflexive step round trip for 7.5 (Chord I offset)
+[ScaleVec] ok 1838 - Reflexive step round trip for 7.5 (Major)
+[ScaleVec] ok 1839 - Chained reflexive step round trip for 7.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1840 - Reflexive step round trip for 7.666667 (Transperent)
+[ScaleVec] ok 1841 - Reflexive step round trip for 7.666667 (Micro)
+[ScaleVec] ok 1842 - Reflexive step round trip for 7.666667 (Negative offset)
+[ScaleVec] ok 1843 - Reflexive step round trip for 7.666667 (Positive offset)
+[ScaleVec] ok 1844 - Reflexive step round trip for 7.666667 (Chord I)
+[ScaleVec] ok 1845 - Reflexive step round trip for 7.666667 (Chord I offset)
+[ScaleVec] ok 1846 - Reflexive step round trip for 7.666667 (Major)
+[ScaleVec] ok 1847 - Chained reflexive step round trip for 7.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1848 - Reflexive step round trip for 8 (Transperent)
+[ScaleVec] ok 1849 - Reflexive step round trip for 8 (Micro)
+[ScaleVec] ok 1850 - Reflexive step round trip for 8 (Negative offset)
+[ScaleVec] ok 1851 - Reflexive step round trip for 8 (Positive offset)
+[ScaleVec] ok 1852 - Reflexive step round trip for 8 (Chord I)
+[ScaleVec] ok 1853 - Reflexive step round trip for 8 (Chord I offset)
+[ScaleVec] ok 1854 - Reflexive step round trip for 8 (Major)
+[ScaleVec] ok 1855 - Chained reflexive step round trip for 8 (Major(-12) & Chord IV)
+[ScaleVec] ok 1856 - Reflexive step round trip for 8.333333 (Transperent)
+[ScaleVec] ok 1857 - Reflexive step round trip for 8.333333 (Micro)
+[ScaleVec] ok 1858 - Reflexive step round trip for 8.333333 (Negative offset)
+[ScaleVec] ok 1859 - Reflexive step round trip for 8.333333 (Positive offset)
+[ScaleVec] ok 1860 - Reflexive step round trip for 8.333333 (Chord I)
+[ScaleVec] ok 1861 - Reflexive step round trip for 8.333333 (Chord I offset)
+[ScaleVec] ok 1862 - Reflexive step round trip for 8.333333 (Major)
+[ScaleVec] ok 1863 - Chained reflexive step round trip for 8.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1864 - Reflexive step round trip for 8.5 (Transperent)
+[ScaleVec] ok 1865 - Reflexive step round trip for 8.5 (Micro)
+[ScaleVec] ok 1866 - Reflexive step round trip for 8.5 (Negative offset)
+[ScaleVec] ok 1867 - Reflexive step round trip for 8.5 (Positive offset)
+[ScaleVec] ok 1868 - Reflexive step round trip for 8.5 (Chord I)
+[ScaleVec] ok 1869 - Reflexive step round trip for 8.5 (Chord I offset)
+[ScaleVec] ok 1870 - Reflexive step round trip for 8.5 (Major)
+[ScaleVec] ok 1871 - Chained reflexive step round trip for 8.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1872 - Reflexive step round trip for 8.666667 (Transperent)
+[ScaleVec] ok 1873 - Reflexive step round trip for 8.666667 (Micro)
+[ScaleVec] ok 1874 - Reflexive step round trip for 8.666667 (Negative offset)
+[ScaleVec] ok 1875 - Reflexive step round trip for 8.666667 (Positive offset)
+[ScaleVec] ok 1876 - Reflexive step round trip for 8.666667 (Chord I)
+[ScaleVec] ok 1877 - Reflexive step round trip for 8.666667 (Chord I offset)
+[ScaleVec] ok 1878 - Reflexive step round trip for 8.666667 (Major)
+[ScaleVec] ok 1879 - Chained reflexive step round trip for 8.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1880 - Reflexive step round trip for 9 (Transperent)
+[ScaleVec] ok 1881 - Reflexive step round trip for 9 (Micro)
+[ScaleVec] ok 1882 - Reflexive step round trip for 9 (Negative offset)
+[ScaleVec] ok 1883 - Reflexive step round trip for 9 (Positive offset)
+[ScaleVec] ok 1884 - Reflexive step round trip for 9 (Chord I)
+[ScaleVec] ok 1885 - Reflexive step round trip for 9 (Chord I offset)
+[ScaleVec] ok 1886 - Reflexive step round trip for 9 (Major)
+[ScaleVec] ok 1887 - Chained reflexive step round trip for 9 (Major(-12) & Chord IV)
+[ScaleVec] ok 1888 - Reflexive step round trip for 9.333333 (Transperent)
+[ScaleVec] ok 1889 - Reflexive step round trip for 9.333333 (Micro)
+[ScaleVec] ok 1890 - Reflexive step round trip for 9.333333 (Negative offset)
+[ScaleVec] ok 1891 - Reflexive step round trip for 9.333333 (Positive offset)
+[ScaleVec] ok 1892 - Reflexive step round trip for 9.333333 (Chord I)
+[ScaleVec] ok 1893 - Reflexive step round trip for 9.333333 (Chord I offset)
+[ScaleVec] ok 1894 - Reflexive step round trip for 9.333333 (Major)
+[ScaleVec] ok 1895 - Chained reflexive step round trip for 9.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1896 - Reflexive step round trip for 9.5 (Transperent)
+[ScaleVec] ok 1897 - Reflexive step round trip for 9.5 (Micro)
+[ScaleVec] ok 1898 - Reflexive step round trip for 9.5 (Negative offset)
+[ScaleVec] ok 1899 - Reflexive step round trip for 9.5 (Positive offset)
+[ScaleVec] ok 1900 - Reflexive step round trip for 9.5 (Chord I)
+[ScaleVec] ok 1901 - Reflexive step round trip for 9.5 (Chord I offset)
+[ScaleVec] ok 1902 - Reflexive step round trip for 9.5 (Major)
+[ScaleVec] ok 1903 - Chained reflexive step round trip for 9.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1904 - Reflexive step round trip for 9.666667 (Transperent)
+[ScaleVec] ok 1905 - Reflexive step round trip for 9.666667 (Micro)
+[ScaleVec] ok 1906 - Reflexive step round trip for 9.666667 (Negative offset)
+[ScaleVec] ok 1907 - Reflexive step round trip for 9.666667 (Positive offset)
+[ScaleVec] ok 1908 - Reflexive step round trip for 9.666667 (Chord I)
+[ScaleVec] ok 1909 - Reflexive step round trip for 9.666667 (Chord I offset)
+[ScaleVec] ok 1910 - Reflexive step round trip for 9.666667 (Major)
+[ScaleVec] ok 1911 - Chained reflexive step round trip for 9.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1912 - Reflexive step round trip for 10 (Transperent)
+[ScaleVec] ok 1913 - Reflexive step round trip for 10 (Micro)
+[ScaleVec] ok 1914 - Reflexive step round trip for 10 (Negative offset)
+[ScaleVec] ok 1915 - Reflexive step round trip for 10 (Positive offset)
+[ScaleVec] ok 1916 - Reflexive step round trip for 10 (Chord I)
+[ScaleVec] ok 1917 - Reflexive step round trip for 10 (Chord I offset)
+[ScaleVec] ok 1918 - Reflexive step round trip for 10 (Major)
+[ScaleVec] ok 1919 - Chained reflexive step round trip for 10 (Major(-12) & Chord IV)
+[ScaleVec] ok 1920 - Reflexive step round trip for 10.333333 (Transperent)
+[ScaleVec] ok 1921 - Reflexive step round trip for 10.333333 (Micro)
+[ScaleVec] ok 1922 - Reflexive step round trip for 10.333333 (Negative offset)
+[ScaleVec] ok 1923 - Reflexive step round trip for 10.333333 (Positive offset)
+[ScaleVec] ok 1924 - Reflexive step round trip for 10.333333 (Chord I)
+[ScaleVec] ok 1925 - Reflexive step round trip for 10.333333 (Chord I offset)
+[ScaleVec] ok 1926 - Reflexive step round trip for 10.333333 (Major)
+[ScaleVec] ok 1927 - Chained reflexive step round trip for 10.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1928 - Reflexive step round trip for 10.5 (Transperent)
+[ScaleVec] ok 1929 - Reflexive step round trip for 10.5 (Micro)
+[ScaleVec] ok 1930 - Reflexive step round trip for 10.5 (Negative offset)
+[ScaleVec] ok 1931 - Reflexive step round trip for 10.5 (Positive offset)
+[ScaleVec] ok 1932 - Reflexive step round trip for 10.5 (Chord I)
+[ScaleVec] ok 1933 - Reflexive step round trip for 10.5 (Chord I offset)
+[ScaleVec] ok 1934 - Reflexive step round trip for 10.5 (Major)
+[ScaleVec] ok 1935 - Chained reflexive step round trip for 10.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1936 - Reflexive step round trip for 10.666667 (Transperent)
+[ScaleVec] ok 1937 - Reflexive step round trip for 10.666667 (Micro)
+[ScaleVec] ok 1938 - Reflexive step round trip for 10.666667 (Negative offset)
+[ScaleVec] ok 1939 - Reflexive step round trip for 10.666667 (Positive offset)
+[ScaleVec] ok 1940 - Reflexive step round trip for 10.666667 (Chord I)
+[ScaleVec] ok 1941 - Reflexive step round trip for 10.666667 (Chord I offset)
+[ScaleVec] ok 1942 - Reflexive step round trip for 10.666667 (Major)
+[ScaleVec] ok 1943 - Chained reflexive step round trip for 10.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1944 - Reflexive step round trip for 11 (Transperent)
+[ScaleVec] ok 1945 - Reflexive step round trip for 11 (Micro)
+[ScaleVec] ok 1946 - Reflexive step round trip for 11 (Negative offset)
+[ScaleVec] ok 1947 - Reflexive step round trip for 11 (Positive offset)
+[ScaleVec] ok 1948 - Reflexive step round trip for 11 (Chord I)
+[ScaleVec] ok 1949 - Reflexive step round trip for 11 (Chord I offset)
+[ScaleVec] ok 1950 - Reflexive step round trip for 11 (Major)
+[ScaleVec] ok 1951 - Chained reflexive step round trip for 11 (Major(-12) & Chord IV)
+[ScaleVec] ok 1952 - Reflexive step round trip for 11.333333 (Transperent)
+[ScaleVec] ok 1953 - Reflexive step round trip for 11.333333 (Micro)
+[ScaleVec] ok 1954 - Reflexive step round trip for 11.333333 (Negative offset)
+[ScaleVec] ok 1955 - Reflexive step round trip for 11.333333 (Positive offset)
+[ScaleVec] ok 1956 - Reflexive step round trip for 11.333333 (Chord I)
+[ScaleVec] ok 1957 - Reflexive step round trip for 11.333333 (Chord I offset)
+[ScaleVec] ok 1958 - Reflexive step round trip for 11.333333 (Major)
+[ScaleVec] ok 1959 - Chained reflexive step round trip for 11.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1960 - Reflexive step round trip for 11.5 (Transperent)
+[ScaleVec] ok 1961 - Reflexive step round trip for 11.5 (Micro)
+[ScaleVec] ok 1962 - Reflexive step round trip for 11.5 (Negative offset)
+[ScaleVec] ok 1963 - Reflexive step round trip for 11.5 (Positive offset)
+[ScaleVec] ok 1964 - Reflexive step round trip for 11.5 (Chord I)
+[ScaleVec] ok 1965 - Reflexive step round trip for 11.5 (Chord I offset)
+[ScaleVec] ok 1966 - Reflexive step round trip for 11.5 (Major)
+[ScaleVec] ok 1967 - Chained reflexive step round trip for 11.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 1968 - Reflexive step round trip for 11.666667 (Transperent)
+[ScaleVec] ok 1969 - Reflexive step round trip for 11.666667 (Micro)
+[ScaleVec] ok 1970 - Reflexive step round trip for 11.666667 (Negative offset)
+[ScaleVec] ok 1971 - Reflexive step round trip for 11.666667 (Positive offset)
+[ScaleVec] ok 1972 - Reflexive step round trip for 11.666667 (Chord I)
+[ScaleVec] ok 1973 - Reflexive step round trip for 11.666667 (Chord I offset)
+[ScaleVec] ok 1974 - Reflexive step round trip for 11.666667 (Major)
+[ScaleVec] ok 1975 - Chained reflexive step round trip for 11.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 1976 - Reflexive step round trip for 12 (Transperent)
+[ScaleVec] ok 1977 - Reflexive step round trip for 12 (Micro)
+[ScaleVec] ok 1978 - Reflexive step round trip for 12 (Negative offset)
+[ScaleVec] ok 1979 - Reflexive step round trip for 12 (Positive offset)
+[ScaleVec] ok 1980 - Reflexive step round trip for 12 (Chord I)
+[ScaleVec] ok 1981 - Reflexive step round trip for 12 (Chord I offset)
+[ScaleVec] ok 1982 - Reflexive step round trip for 12 (Major)
+[ScaleVec] ok 1983 - Chained reflexive step round trip for 12 (Major(-12) & Chord IV)
+[ScaleVec] ok 1984 - Reflexive step round trip for 12.333333 (Transperent)
+[ScaleVec] ok 1985 - Reflexive step round trip for 12.333333 (Micro)
+[ScaleVec] ok 1986 - Reflexive step round trip for 12.333333 (Negative offset)
+[ScaleVec] ok 1987 - Reflexive step round trip for 12.333333 (Positive offset)
+[ScaleVec] ok 1988 - Reflexive step round trip for 12.333333 (Chord I)
+[ScaleVec] ok 1989 - Reflexive step round trip for 12.333333 (Chord I offset)
+[ScaleVec] ok 1990 - Reflexive step round trip for 12.333333 (Major)
+[ScaleVec] ok 1991 - Chained reflexive step round trip for 12.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 1992 - Reflexive step round trip for 12.5 (Transperent)
+[ScaleVec] ok 1993 - Reflexive step round trip for 12.5 (Micro)
+[ScaleVec] ok 1994 - Reflexive step round trip for 12.5 (Negative offset)
+[ScaleVec] ok 1995 - Reflexive step round trip for 12.5 (Positive offset)
+[ScaleVec] ok 1996 - Reflexive step round trip for 12.5 (Chord I)
+[ScaleVec] ok 1997 - Reflexive step round trip for 12.5 (Chord I offset)
+[ScaleVec] ok 1998 - Reflexive step round trip for 12.5 (Major)
+[ScaleVec] ok 1999 - Chained reflexive step round trip for 12.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 2000 - Reflexive step round trip for 12.666667 (Transperent)
+[ScaleVec] ok 2001 - Reflexive step round trip for 12.666667 (Micro)
+[ScaleVec] ok 2002 - Reflexive step round trip for 12.666667 (Negative offset)
+[ScaleVec] ok 2003 - Reflexive step round trip for 12.666667 (Positive offset)
+[ScaleVec] ok 2004 - Reflexive step round trip for 12.666667 (Chord I)
+[ScaleVec] ok 2005 - Reflexive step round trip for 12.666667 (Chord I offset)
+[ScaleVec] ok 2006 - Reflexive step round trip for 12.666667 (Major)
+[ScaleVec] ok 2007 - Chained reflexive step round trip for 12.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 2008 - Reflexive step round trip for 13 (Transperent)
+[ScaleVec] ok 2009 - Reflexive step round trip for 13 (Micro)
+[ScaleVec] ok 2010 - Reflexive step round trip for 13 (Negative offset)
+[ScaleVec] ok 2011 - Reflexive step round trip for 13 (Positive offset)
+[ScaleVec] ok 2012 - Reflexive step round trip for 13 (Chord I)
+[ScaleVec] ok 2013 - Reflexive step round trip for 13 (Chord I offset)
+[ScaleVec] ok 2014 - Reflexive step round trip for 13 (Major)
+[ScaleVec] ok 2015 - Chained reflexive step round trip for 13 (Major(-12) & Chord IV)
+[ScaleVec] ok 2016 - Reflexive step round trip for 13.333333 (Transperent)
+[ScaleVec] ok 2017 - Reflexive step round trip for 13.333333 (Micro)
+[ScaleVec] ok 2018 - Reflexive step round trip for 13.333333 (Negative offset)
+[ScaleVec] ok 2019 - Reflexive step round trip for 13.333333 (Positive offset)
+[ScaleVec] ok 2020 - Reflexive step round trip for 13.333333 (Chord I)
+[ScaleVec] ok 2021 - Reflexive step round trip for 13.333333 (Chord I offset)
+[ScaleVec] ok 2022 - Reflexive step round trip for 13.333333 (Major)
+[ScaleVec] ok 2023 - Chained reflexive step round trip for 13.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 2024 - Reflexive step round trip for 13.5 (Transperent)
+[ScaleVec] ok 2025 - Reflexive step round trip for 13.5 (Micro)
+[ScaleVec] ok 2026 - Reflexive step round trip for 13.5 (Negative offset)
+[ScaleVec] ok 2027 - Reflexive step round trip for 13.5 (Positive offset)
+[ScaleVec] ok 2028 - Reflexive step round trip for 13.5 (Chord I)
+[ScaleVec] ok 2029 - Reflexive step round trip for 13.5 (Chord I offset)
+[ScaleVec] ok 2030 - Reflexive step round trip for 13.5 (Major)
+[ScaleVec] ok 2031 - Chained reflexive step round trip for 13.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 2032 - Reflexive step round trip for 13.666667 (Transperent)
+[ScaleVec] ok 2033 - Reflexive step round trip for 13.666667 (Micro)
+[ScaleVec] ok 2034 - Reflexive step round trip for 13.666667 (Negative offset)
+[ScaleVec] ok 2035 - Reflexive step round trip for 13.666667 (Positive offset)
+[ScaleVec] ok 2036 - Reflexive step round trip for 13.666667 (Chord I)
+[ScaleVec] ok 2037 - Reflexive step round trip for 13.666667 (Chord I offset)
+[ScaleVec] ok 2038 - Reflexive step round trip for 13.666667 (Major)
+[ScaleVec] ok 2039 - Chained reflexive step round trip for 13.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 2040 - Reflexive step round trip for 14 (Transperent)
+[ScaleVec] ok 2041 - Reflexive step round trip for 14 (Micro)
+[ScaleVec] ok 2042 - Reflexive step round trip for 14 (Negative offset)
+[ScaleVec] ok 2043 - Reflexive step round trip for 14 (Positive offset)
+[ScaleVec] ok 2044 - Reflexive step round trip for 14 (Chord I)
+[ScaleVec] ok 2045 - Reflexive step round trip for 14 (Chord I offset)
+[ScaleVec] ok 2046 - Reflexive step round trip for 14 (Major)
+[ScaleVec] ok 2047 - Chained reflexive step round trip for 14 (Major(-12) & Chord IV)
+[ScaleVec] ok 2048 - Reflexive step round trip for 14.333333 (Transperent)
+[ScaleVec] ok 2049 - Reflexive step round trip for 14.333333 (Micro)
+[ScaleVec] ok 2050 - Reflexive step round trip for 14.333333 (Negative offset)
+[ScaleVec] ok 2051 - Reflexive step round trip for 14.333333 (Positive offset)
+[ScaleVec] ok 2052 - Reflexive step round trip for 14.333333 (Chord I)
+[ScaleVec] ok 2053 - Reflexive step round trip for 14.333333 (Chord I offset)
+[ScaleVec] ok 2054 - Reflexive step round trip for 14.333333 (Major)
+[ScaleVec] ok 2055 - Chained reflexive step round trip for 14.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 2056 - Reflexive step round trip for 14.5 (Transperent)
+[ScaleVec] ok 2057 - Reflexive step round trip for 14.5 (Micro)
+[ScaleVec] ok 2058 - Reflexive step round trip for 14.5 (Negative offset)
+[ScaleVec] ok 2059 - Reflexive step round trip for 14.5 (Positive offset)
+[ScaleVec] ok 2060 - Reflexive step round trip for 14.5 (Chord I)
+[ScaleVec] ok 2061 - Reflexive step round trip for 14.5 (Chord I offset)
+[ScaleVec] ok 2062 - Reflexive step round trip for 14.5 (Major)
+[ScaleVec] ok 2063 - Chained reflexive step round trip for 14.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 2064 - Reflexive step round trip for 14.666667 (Transperent)
+[ScaleVec] ok 2065 - Reflexive step round trip for 14.666667 (Micro)
+[ScaleVec] ok 2066 - Reflexive step round trip for 14.666667 (Negative offset)
+[ScaleVec] ok 2067 - Reflexive step round trip for 14.666667 (Positive offset)
+[ScaleVec] ok 2068 - Reflexive step round trip for 14.666667 (Chord I)
+[ScaleVec] ok 2069 - Reflexive step round trip for 14.666667 (Chord I offset)
+[ScaleVec] ok 2070 - Reflexive step round trip for 14.666667 (Major)
+[ScaleVec] ok 2071 - Chained reflexive step round trip for 14.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 2072 - Reflexive step round trip for 15 (Transperent)
+[ScaleVec] ok 2073 - Reflexive step round trip for 15 (Micro)
+[ScaleVec] ok 2074 - Reflexive step round trip for 15 (Negative offset)
+[ScaleVec] ok 2075 - Reflexive step round trip for 15 (Positive offset)
+[ScaleVec] ok 2076 - Reflexive step round trip for 15 (Chord I)
+[ScaleVec] ok 2077 - Reflexive step round trip for 15 (Chord I offset)
+[ScaleVec] ok 2078 - Reflexive step round trip for 15 (Major)
+[ScaleVec] ok 2079 - Chained reflexive step round trip for 15 (Major(-12) & Chord IV)
+[ScaleVec] ok 2080 - Reflexive step round trip for 15.333333 (Transperent)
+[ScaleVec] ok 2081 - Reflexive step round trip for 15.333333 (Micro)
+[ScaleVec] ok 2082 - Reflexive step round trip for 15.333333 (Negative offset)
+[ScaleVec] ok 2083 - Reflexive step round trip for 15.333333 (Positive offset)
+[ScaleVec] ok 2084 - Reflexive step round trip for 15.333333 (Chord I)
+[ScaleVec] ok 2085 - Reflexive step round trip for 15.333333 (Chord I offset)
+[ScaleVec] ok 2086 - Reflexive step round trip for 15.333333 (Major)
+[ScaleVec] ok 2087 - Chained reflexive step round trip for 15.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 2088 - Reflexive step round trip for 15.5 (Transperent)
+[ScaleVec] ok 2089 - Reflexive step round trip for 15.5 (Micro)
+[ScaleVec] ok 2090 - Reflexive step round trip for 15.5 (Negative offset)
+[ScaleVec] ok 2091 - Reflexive step round trip for 15.5 (Positive offset)
+[ScaleVec] ok 2092 - Reflexive step round trip for 15.5 (Chord I)
+[ScaleVec] ok 2093 - Reflexive step round trip for 15.5 (Chord I offset)
+[ScaleVec] ok 2094 - Reflexive step round trip for 15.5 (Major)
+[ScaleVec] ok 2095 - Chained reflexive step round trip for 15.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 2096 - Reflexive step round trip for 15.666667 (Transperent)
+[ScaleVec] ok 2097 - Reflexive step round trip for 15.666667 (Micro)
+[ScaleVec] ok 2098 - Reflexive step round trip for 15.666667 (Negative offset)
+[ScaleVec] ok 2099 - Reflexive step round trip for 15.666667 (Positive offset)
+[ScaleVec] ok 2100 - Reflexive step round trip for 15.666667 (Chord I)
+[ScaleVec] ok 2101 - Reflexive step round trip for 15.666667 (Chord I offset)
+[ScaleVec] ok 2102 - Reflexive step round trip for 15.666667 (Major)
+[ScaleVec] ok 2103 - Chained reflexive step round trip for 15.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 2104 - Reflexive step round trip for 16 (Transperent)
+[ScaleVec] ok 2105 - Reflexive step round trip for 16 (Micro)
+[ScaleVec] ok 2106 - Reflexive step round trip for 16 (Negative offset)
+[ScaleVec] ok 2107 - Reflexive step round trip for 16 (Positive offset)
+[ScaleVec] ok 2108 - Reflexive step round trip for 16 (Chord I)
+[ScaleVec] ok 2109 - Reflexive step round trip for 16 (Chord I offset)
+[ScaleVec] ok 2110 - Reflexive step round trip for 16 (Major)
+[ScaleVec] ok 2111 - Chained reflexive step round trip for 16 (Major(-12) & Chord IV)
+[ScaleVec] ok 2112 - Reflexive step round trip for 16.333333 (Transperent)
+[ScaleVec] ok 2113 - Reflexive step round trip for 16.333333 (Micro)
+[ScaleVec] ok 2114 - Reflexive step round trip for 16.333333 (Negative offset)
+[ScaleVec] ok 2115 - Reflexive step round trip for 16.333333 (Positive offset)
+[ScaleVec] ok 2116 - Reflexive step round trip for 16.333333 (Chord I)
+[ScaleVec] ok 2117 - Reflexive step round trip for 16.333333 (Chord I offset)
+[ScaleVec] ok 2118 - Reflexive step round trip for 16.333333 (Major)
+[ScaleVec] ok 2119 - Chained reflexive step round trip for 16.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 2120 - Reflexive step round trip for 16.5 (Transperent)
+[ScaleVec] ok 2121 - Reflexive step round trip for 16.5 (Micro)
+[ScaleVec] ok 2122 - Reflexive step round trip for 16.5 (Negative offset)
+[ScaleVec] ok 2123 - Reflexive step round trip for 16.5 (Positive offset)
+[ScaleVec] ok 2124 - Reflexive step round trip for 16.5 (Chord I)
+[ScaleVec] ok 2125 - Reflexive step round trip for 16.5 (Chord I offset)
+[ScaleVec] ok 2126 - Reflexive step round trip for 16.5 (Major)
+[ScaleVec] ok 2127 - Chained reflexive step round trip for 16.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 2128 - Reflexive step round trip for 16.666667 (Transperent)
+[ScaleVec] ok 2129 - Reflexive step round trip for 16.666667 (Micro)
+[ScaleVec] ok 2130 - Reflexive step round trip for 16.666667 (Negative offset)
+[ScaleVec] ok 2131 - Reflexive step round trip for 16.666667 (Positive offset)
+[ScaleVec] ok 2132 - Reflexive step round trip for 16.666667 (Chord I)
+[ScaleVec] ok 2133 - Reflexive step round trip for 16.666667 (Chord I offset)
+[ScaleVec] ok 2134 - Reflexive step round trip for 16.666667 (Major)
+[ScaleVec] ok 2135 - Chained reflexive step round trip for 16.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 2136 - Reflexive step round trip for 17 (Transperent)
+[ScaleVec] ok 2137 - Reflexive step round trip for 17 (Micro)
+[ScaleVec] ok 2138 - Reflexive step round trip for 17 (Negative offset)
+[ScaleVec] ok 2139 - Reflexive step round trip for 17 (Positive offset)
+[ScaleVec] ok 2140 - Reflexive step round trip for 17 (Chord I)
+[ScaleVec] ok 2141 - Reflexive step round trip for 17 (Chord I offset)
+[ScaleVec] ok 2142 - Reflexive step round trip for 17 (Major)
+[ScaleVec] ok 2143 - Chained reflexive step round trip for 17 (Major(-12) & Chord IV)
+[ScaleVec] ok 2144 - Reflexive step round trip for 17.333333 (Transperent)
+[ScaleVec] ok 2145 - Reflexive step round trip for 17.333333 (Micro)
+[ScaleVec] ok 2146 - Reflexive step round trip for 17.333333 (Negative offset)
+[ScaleVec] ok 2147 - Reflexive step round trip for 17.333333 (Positive offset)
+[ScaleVec] ok 2148 - Reflexive step round trip for 17.333333 (Chord I)
+[ScaleVec] ok 2149 - Reflexive step round trip for 17.333333 (Chord I offset)
+[ScaleVec] ok 2150 - Reflexive step round trip for 17.333333 (Major)
+[ScaleVec] ok 2151 - Chained reflexive step round trip for 17.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 2152 - Reflexive step round trip for 17.5 (Transperent)
+[ScaleVec] ok 2153 - Reflexive step round trip for 17.5 (Micro)
+[ScaleVec] ok 2154 - Reflexive step round trip for 17.5 (Negative offset)
+[ScaleVec] ok 2155 - Reflexive step round trip for 17.5 (Positive offset)
+[ScaleVec] ok 2156 - Reflexive step round trip for 17.5 (Chord I)
+[ScaleVec] ok 2157 - Reflexive step round trip for 17.5 (Chord I offset)
+[ScaleVec] ok 2158 - Reflexive step round trip for 17.5 (Major)
+[ScaleVec] ok 2159 - Chained reflexive step round trip for 17.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 2160 - Reflexive step round trip for 17.666667 (Transperent)
+[ScaleVec] ok 2161 - Reflexive step round trip for 17.666667 (Micro)
+[ScaleVec] ok 2162 - Reflexive step round trip for 17.666667 (Negative offset)
+[ScaleVec] ok 2163 - Reflexive step round trip for 17.666667 (Positive offset)
+[ScaleVec] ok 2164 - Reflexive step round trip for 17.666667 (Chord I)
+[ScaleVec] ok 2165 - Reflexive step round trip for 17.666667 (Chord I offset)
+[ScaleVec] ok 2166 - Reflexive step round trip for 17.666667 (Major)
+[ScaleVec] ok 2167 - Chained reflexive step round trip for 17.666667 (Major(-12) & Chord IV)
+[ScaleVec] ok 2168 - Reflexive step round trip for 18 (Transperent)
+[ScaleVec] ok 2169 - Reflexive step round trip for 18 (Micro)
+[ScaleVec] ok 2170 - Reflexive step round trip for 18 (Negative offset)
+[ScaleVec] ok 2171 - Reflexive step round trip for 18 (Positive offset)
+[ScaleVec] ok 2172 - Reflexive step round trip for 18 (Chord I)
+[ScaleVec] ok 2173 - Reflexive step round trip for 18 (Chord I offset)
+[ScaleVec] ok 2174 - Reflexive step round trip for 18 (Major)
+[ScaleVec] ok 2175 - Chained reflexive step round trip for 18 (Major(-12) & Chord IV)
+[ScaleVec] ok 2176 - Reflexive step round trip for 18.333333 (Transperent)
+[ScaleVec] ok 2177 - Reflexive step round trip for 18.333333 (Micro)
+[ScaleVec] ok 2178 - Reflexive step round trip for 18.333333 (Negative offset)
+[ScaleVec] ok 2179 - Reflexive step round trip for 18.333333 (Positive offset)
+[ScaleVec] ok 2180 - Reflexive step round trip for 18.333333 (Chord I)
+[ScaleVec] ok 2181 - Reflexive step round trip for 18.333333 (Chord I offset)
+[ScaleVec] ok 2182 - Reflexive step round trip for 18.333333 (Major)
+[ScaleVec] ok 2183 - Chained reflexive step round trip for 18.333333 (Major(-12) & Chord IV)
+[ScaleVec] ok 2184 - Reflexive step round trip for 18.5 (Transperent)
+[ScaleVec] ok 2185 - Reflexive step round trip for 18.5 (Micro)
+[ScaleVec] ok 2186 - Reflexive step round trip for 18.5 (Negative offset)
+[ScaleVec] ok 2187 - Reflexive step round trip for 18.5 (Positive offset)
+[ScaleVec] ok 2188 - Reflexive step round trip for 18.5 (Chord I)
+[ScaleVec] ok 2189 - Reflexive step round trip for 18.5 (Chord I offset)
+[ScaleVec] ok 2190 - Reflexive step round trip for 18.5 (Major)
+[ScaleVec] ok 2191 - Chained reflexive step round trip for 18.5 (Major(-12) & Chord IV)
+[ScaleVec] ok 2192 - Reflexive step round trip for 18.666667 (Transperent)
+[ScaleVec] ok 2193 - Reflexive step round trip for 18.666667 (Micro)
+[ScaleVec] ok 2194 - Reflexive step round trip for 18.666667 (Negative offset)
+[ScaleVec] ok 2195 - Reflexive step round trip for 18.666667 (Positive offset)
+[ScaleVec] ok 2196 - Reflexive step round trip for 18.666667 (Chord I)
+[ScaleVec] ok 2197 - Reflexive step round trip for 18.666667 (Chord I offset)
+[ScaleVec] ok 2198 - Reflexive step round trip for 18.666667 (Major)
+[ScaleVec] ok 2199 - Chained reflexive step round trip for 18.666667 (Major(-12) & Chord IV)
+[ScaleVec] 1..2199
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/ScaleStack.t
+[ScaleVec] ok 1 - ScaleVec::Scale::Stack module can be use-d ok
+[ScaleVec] ok 2 - Instantiate ScaleVec::Scale::Stack OK
+[ScaleVec] ok 3 - Step   0 for ScaleVec::Scale::Stack of major -> to-midi
+[ScaleVec] ok 4 - Step   1 for ScaleVec::Scale::Stack of major -> to-midi
+[ScaleVec] ok 5 - Step  -1 for ScaleVec::Scale::Stack of major -> to-midi
+[ScaleVec] ok 6 - Step   2 for ScaleVec::Scale::Stack of major -> to-midi
+[ScaleVec] ok 7 - Step  -2 for ScaleVec::Scale::Stack of major -> to-midi
+[ScaleVec] ok 8 - Step   3 for ScaleVec::Scale::Stack of major -> to-midi
+[ScaleVec] ok 9 - Step  -3 for ScaleVec::Scale::Stack of major -> to-midi
+[ScaleVec] ok 10 - Step   7 for ScaleVec::Scale::Stack of major -> to-midi
+[ScaleVec] ok 11 - Step  -7 for ScaleVec::Scale::Stack of major -> to-midi
+[ScaleVec] ok 12 - Step   8 for ScaleVec::Scale::Stack of major -> to-midi
+[ScaleVec] ok 13 - Step  -8 for ScaleVec::Scale::Stack of major -> to-midi
+[ScaleVec] ok 14 - Step  14 for ScaleVec::Scale::Stack of major -> to-midi
+[ScaleVec] ok 15 - Step -14 for ScaleVec::Scale::Stack of major -> to-midi
+[ScaleVec] 1..15
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Vector.t
+[ScaleVec] ok 1 - ScaleVec::Vector module can be use-d ok
+[ScaleVec] 1..1
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Vectorable.t
+[ScaleVec] ok 1 - ScaleVec::Vectorable module can be use-d ok
+[ScaleVec] ok 2 - pv-to-iv
+[ScaleVec] ok 3 - iv-to-pv
+[ScaleVec] 1..3
+===> Testing [FAIL]: ScaleVec:ver<0.0.6>
+[ScaleVec] Failed to get passing tests, but continuing with --force-test
+===> Installing: ScaleVec:ver<0.0.6>
+===> Install [OK] for ScaleVec:ver<0.0.6>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 3min 22.552s
+             CPU time consumed: 3min 36.216s
+                   Memory peak: 1.8G (swap: 59.9M)

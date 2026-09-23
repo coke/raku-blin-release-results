@@ -1,0 +1,889 @@
+Running as unit: run-p910505-i983751.service; invocation ID: 704f62d78f074430aac5074bc22661d5
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: PDF::Class
+===> Found: PDF::Class:ver<0.5.30>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
+[PDF::Class] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790149720.910509.8267.404539026378/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz https://360.zef.pm/P/DF/PDF_CLASS/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz
+===> Fetching [OK]: PDF::Class:ver<0.5.30>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1790149720.910509.8267.404539026378/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz
+[PDF::Class] Command: tar -t -f ./1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz
+[PDF::Class] Command: tar -xvf ./1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz -C ../1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz
+===> Extraction [OK]: PDF::Class to /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz
+===> Testing: PDF::Class:ver<0.5.30>:auth<zef:dwarring>
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/00-readme.t
+[PDF::Class] not ok 1 - code sample
+[PDF::Class] # Failed test 'code sample'
+[PDF::Class] # at t/00-readme.t line 25
+[PDF::Class] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog)
+[PDF::Class] # ===SORRY!===
+[PDF::Class] # Cannot do compile time parameterization with these args
+[PDF::Class] # 
+[PDF::Class] # at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog):33
+[PDF::Class] # ------> <BOL><HERE>use PDF::Names;
+[PDF::Class] # 
+[PDF::Class] Use of Nil in string context
+[PDF::Class]   in block  at t/00-readme.t line 25
+[PDF::Class] eval error:     use PDF::Class;
+[PDF::Class]     use PDF::Catalog;
+[PDF::Class]     use PDF::Page;
+[PDF::Class]     use PDF::Info;
+[PDF::Class]     my PDF::Class $pdf .= open: "t/helloworld.pdf";
+[PDF::Class]     # vivify Info entry; set title
+[PDF::Class]     given $pdf.Info //= {} -> PDF::Info $_ {
+[PDF::Class]         .Title = 'Hello World!';
+[PDF::Class]         .ModDate = DateTime.new( :year(2015), :month(12), :day(25) ); # PDF::Class sets this anyway...
+[PDF::Class]     }
+[PDF::Class]     # modify Viewer Preferences
+[PDF::Class]     my PDF::Catalog $catalog = $pdf.Root;
+[PDF::Class]     given $catalog.ViewerPreferences //= {} {
+[PDF::Class]         .HideToolbar = True;
+[PDF::Class]     }
+[PDF::Class]     # add a page ...
+[PDF::Class]     my PDF::Page $new-page = $pdf.add-page;
+[PDF::Class]     $new-page.gfx.say: "New last page!";
+[PDF::Class]     # save the updated pdf
+[PDF::Class]     $pdf.save-as: "tmp/pdf-updated.pdf";
+[PDF::Class]   in block  at t/00-readme.t line 25
+[PDF::Class] ok 2 - # SKIP failing from an EVAL
+[PDF::Class] ok 3 - # SKIP failing from an EVAL
+[PDF::Class] ok 4 - # SKIP failing from an EVAL
+[PDF::Class] ok 5 - # SKIP failing from an EVAL
+[PDF::Class] 1..5
+[PDF::Class] # You failed 1 test of 5
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/defs.t
+[PDF::Class] 1..6
+[PDF::Class] ok 1 - 
+[PDF::Class] ok 2 - 
+[PDF::Class] ok 3 - 
+[PDF::Class] ok 4 - 
+[PDF::Class] ok 5 - 
+[PDF::Class] ok 6 - 
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/embedded-file.t
+[PDF::Class] ===SORRY!=== Error while compiling t/embedded-file.t
+[PDF::Class] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog)
+[PDF::Class] ===SORRY!===
+[PDF::Class] Cannot do compile time parameterization with these args
+[PDF::Class] at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog):33
+[PDF::Class] ------> <BOL><HERE>use PDF::Names;
+[PDF::Class] at t/embedded-file.t:5
+[PDF::Class] ------> <BOL><HERE>use PDF::Catalog;
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/helloworld.t
+[PDF::Class] Potential difficulties:
+[PDF::Class]     Missing declarand for trailing declarator doc
+[PDF::Class]     at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class/OptionalContent.rakumod (PDF::Class::OptionalContent):1
+[PDF::Class]     ------> #= Consumed by PDF::OCG and PDF::OCMD<HERE><EOL>
+[PDF::Class] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog)
+[PDF::Class] ===SORRY!===
+[PDF::Class] Cannot do compile time parameterization with these args
+[PDF::Class] at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog):33
+[PDF::Class] ------> <BOL><HERE>use PDF::Names;
+[PDF::Class]   in sub resolve-package-slow-path at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 74
+[PDF::Class]   in method required at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 78
+[PDF::Class]   in method find-delegate at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/FA1236164DAFABD52DC78773AACAB3F32E27F9C8 (PDF::COS::Loader) line 35
+[PDF::Class]   in method load-delegate at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class/Loader.rakumod (PDF::Class::Loader) line 41
+[PDF::Class]   in method load-dict at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 98
+[PDF::Class]   in method COERCE at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 99
+[PDF::Class]   in method coerce at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 143
+[PDF::Class]   in method coerce at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 50
+[PDF::Class]   in method lvalue at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/331B515167232797D9AB6E36815B036F93D383C9 (PDF::COS::Tie) line 231
+[PDF::Class]   in method ASSIGN-KEY at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 88
+[PDF::Class]   in method deref at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/331B515167232797D9AB6E36815B036F93D383C9 (PDF::COS::Tie) line 268
+[PDF::Class]   in method AT-KEY at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 75
+[PDF::Class]   in sub FETCH at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 30
+[PDF::Class]   in method Pages at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class.rakumod (PDF::Class) line 95
+[PDF::Class]   in block <unit> at t/helloworld.t line 11
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/html-canvas.t
+[PDF::Class] 1..2
+[PDF::Class] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog)
+[PDF::Class] ===SORRY!===
+[PDF::Class] Cannot do compile time parameterization with these args
+[PDF::Class] at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog):33
+[PDF::Class] ------> <BOL><HERE>use PDF::Names;
+[PDF::Class]   in sub resolve-package-slow-path at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 74
+[PDF::Class]   in method required at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 78
+[PDF::Class]   in method find-delegate at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/FA1236164DAFABD52DC78773AACAB3F32E27F9C8 (PDF::COS::Loader) line 35
+[PDF::Class]   in method load-delegate at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class/Loader.rakumod (PDF::Class::Loader) line 41
+[PDF::Class]   in method load-dict at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 98
+[PDF::Class]   in method COERCE at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 99
+[PDF::Class]   in method coerce at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 143
+[PDF::Class]   in method coerce at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 50
+[PDF::Class]   in method lvalue at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/331B515167232797D9AB6E36815B036F93D383C9 (PDF::COS::Tie) line 231
+[PDF::Class]   in method ASSIGN-KEY at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 88
+[PDF::Class]   in method deref at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/331B515167232797D9AB6E36815B036F93D383C9 (PDF::COS::Tie) line 268
+[PDF::Class]   in method AT-KEY at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 75
+[PDF::Class]   in sub FETCH at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 30
+[PDF::Class]   in method Pages at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class.rakumod (PDF::Class) line 95
+[PDF::Class]   in block <unit> at t/html-canvas.t line 7
+[PDF::Class] # You planned 2 tests, but ran 0
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/image-png.t
+[PDF::Class] ok 1 - width
+[PDF::Class] ok 2 - height
+[PDF::Class] ok 3 - bit-depth
+[PDF::Class] ok 4 - color-type
+[PDF::Class] ok 5 - compression-type
+[PDF::Class] ok 6 - interlace-type
+[PDF::Class] ok 7 - .Buf
+[PDF::Class] ok 8 - The object is-a 'PDF::XObject::Image'
+[PDF::Class] ok 9 - dict width
+[PDF::Class] ok 10 - dict height
+[PDF::Class] ok 11 - dict bpc
+[PDF::Class] ok 12 - dict color-space
+[PDF::Class] ok 13 - dict filter
+[PDF::Class] ok 14 - width
+[PDF::Class] ok 15 - height
+[PDF::Class] ok 16 - bit-depth
+[PDF::Class] ok 17 - color-type
+[PDF::Class] ok 18 - compression-type
+[PDF::Class] ok 19 - interlace-type
+[PDF::Class] ok 20 - .Buf
+[PDF::Class] 1..20
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/load-delegate.t
+[PDF::Class] 1..17
+[PDF::Class] ok 1 - delegation sanity
+[PDF::Class] ok 2 - delegation to subclass
+[PDF::Class] ok 3 - delegation by ShadingType
+[PDF::Class] ok 4 - delegation by ShadingType
+[PDF::Class] ok 5 - delegation by ShadingType
+[PDF::Class] ok 6 - delegation by ShadingType
+[PDF::Class] ok 7 - delegation by ShadingType (unknown)
+[PDF::Class] No handler class PDF::Unknown
+[PDF::Class] ok 8 - delegation base-class
+[PDF::Class] ok 9 - delegation by FunctionType
+[PDF::Class] ok 10 - annot defaulted /Type - implemented
+[PDF::Class] ok 11 - annot defaulted /Type - unimplemented
+[PDF::Class] ok 12 - output intent defaulted /Type
+[PDF::Class] ok 13 - $.Type init
+[PDF::Class] ok 14 - $.Subtype init
+[PDF::Class] ok 15 - $.ShadingType init
+[PDF::Class] ok 16 - PostScript require
+[PDF::Class] ok 17 - FunctionType accessor
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-acroform.t
+[PDF::Class] ===SORRY!=== Error while compiling t/pdf-acroform.t
+[PDF::Class] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog)
+[PDF::Class] ===SORRY!===
+[PDF::Class] Cannot do compile time parameterization with these args
+[PDF::Class] at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog):33
+[PDF::Class] ------> <BOL><HERE>use PDF::Names;
+[PDF::Class] at t/pdf-acroform.t:5
+[PDF::Class] ------> <BOL><HERE>use PDF::Catalog;
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-action.t
+[PDF::Class] ok 1 - named destination
+[PDF::Class] ok 2 - The object does role 'PDF::COS::Name'
+[PDF::Class] ok 3 - 
+[PDF::Class] ok 4 - 
+[PDF::Class] ok 5 - 
+[PDF::Class] ok 6 - 
+[PDF::Class] ok 7 - 
+[PDF::Class] ok 8 - 
+[PDF::Class] ok 9 - 
+[PDF::Class] ok 10 - 
+[PDF::Class] ok 11 - 
+[PDF::Class] ok 12 - remote construction on local page destination - dies
+[PDF::Class] ok 13 - local construction on remote page destination - dies
+[PDF::Class] 1..13
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-annot.t
+[PDF::Class] ok 1 - The object is-a '"PDF::Annot::Text"'
+[PDF::Class] ok 2 - .Rect
+[PDF::Class] ok 3 - .Contents
+[PDF::Class] ok 4 - .Open
+[PDF::Class] ok 5 - $open-check-annot.check lives
+[PDF::Class] ok 6 - The object is-a '"PDF::Annot::Widget"'
+[PDF::Class] ok 7 - The object does role 'PDF::Field::Text'
+[PDF::Class] ok 8 - field-annot check
+[PDF::Class] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog)
+[PDF::Class] ===SORRY!===
+[PDF::Class] Cannot do compile time parameterization with these args
+[PDF::Class] at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog):33
+[PDF::Class] ------> <BOL><HERE>use PDF::Names;
+[PDF::Class]   in sub resolve-package-slow-path at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 74
+[PDF::Class]   in method required at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 78
+[PDF::Class]   in method find-delegate at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/FA1236164DAFABD52DC78773AACAB3F32E27F9C8 (PDF::COS::Loader) line 35
+[PDF::Class]   in method load-delegate at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class/Loader.rakumod (PDF::Class::Loader) line 41
+[PDF::Class]   in method load-dict at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 98
+[PDF::Class]   in method COERCE at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 99
+[PDF::Class]   in method coerce at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 143
+[PDF::Class]   in method coerce at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 50
+[PDF::Class]   in method lvalue at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/331B515167232797D9AB6E36815B036F93D383C9 (PDF::COS::Tie) line 231
+[PDF::Class]   in method ASSIGN-KEY at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 88
+[PDF::Class]   in method deref at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/331B515167232797D9AB6E36815B036F93D383C9 (PDF::COS::Tie) line 268
+[PDF::Class]   in method AT-KEY at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 75
+[PDF::Class]   in sub FETCH at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 30
+[PDF::Class]   in method Pages at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class.rakumod (PDF::Class) line 95
+[PDF::Class]   in block <unit> at t/pdf-annot.t line 61
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-catalog.t
+[PDF::Class] ===SORRY!=== Error while compiling t/pdf-catalog.t
+[PDF::Class] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog)
+[PDF::Class] ===SORRY!===
+[PDF::Class] Cannot do compile time parameterization with these args
+[PDF::Class] at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog):33
+[PDF::Class] ------> <BOL><HERE>use PDF::Names;
+[PDF::Class] at t/pdf-catalog.t:12
+[PDF::Class] ------> <BOL><HERE>use PDF::Catalog;
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-cmap.t
+[PDF::Class] ok 1 - The object is-a '"PDF::CMap"'
+[PDF::Class] ok 2 - CMap Type
+[PDF::Class] ok 3 - CMapName
+[PDF::Class] ok 4 - WMode
+[PDF::Class] ok 5 - $cmap.WMode setter - lives
+[PDF::Class] ok 6 - WMode
+[PDF::Class] ok 7 - The object does role 'PDF::CIDSystemInfo'
+[PDF::Class] ok 8 - CMap stream content
+[PDF::Class] ok 9 - $cmap-obj.check lives
+[PDF::Class] 1..9
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-colorspace-devicen.t
+[PDF::Class] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog)
+[PDF::Class] ===SORRY!===
+[PDF::Class] Cannot do compile time parameterization with these args
+[PDF::Class] at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog):33
+[PDF::Class] ------> <BOL><HERE>use PDF::Names;
+[PDF::Class]   in sub resolve-package-slow-path at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 74
+[PDF::Class]   in method required at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 78
+[PDF::Class]   in method find-delegate at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/FA1236164DAFABD52DC78773AACAB3F32E27F9C8 (PDF::COS::Loader) line 35
+[PDF::Class]   in method load-delegate at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class/Loader.rakumod (PDF::Class::Loader) line 41
+[PDF::Class]   in method load-dict at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 98
+[PDF::Class]   in method COERCE at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 99
+[PDF::Class]   in method coerce at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 143
+[PDF::Class]   in submethod TWEAK at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/F06BD9DA3908B613D70D1F6AB537D764DA62AF6D (PDF::IO::IndObj) line 17
+[PDF::Class]   in method ind-obj at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/1500CF649BE57375501CD23FB66003EF75229193 (PDF::IO::Reader) line 413
+[PDF::Class]   in method deref at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/331B515167232797D9AB6E36815B036F93D383C9 (PDF::COS::Tie) line 255
+[PDF::Class]   in method AT-KEY at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 75
+[PDF::Class]   in sub FETCH at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 30
+[PDF::Class]   in block <unit> at t/pdf-colorspace-devicen.t line 8
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-colorspace.t
+[PDF::Class] ===SORRY!===
+[PDF::Class] No such method 'IMPL-QAST-INDIRECT-LOOKUP-PART' for invocant of type
+[PDF::Class] 'RakuAST::Name::Part::Empty'
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-destination.t
+[PDF::Class] ok 1 - is destination array
+[PDF::Class] ok 2 - non-destination array
+[PDF::Class] ok 3 - FitWindow destination
+[PDF::Class] ok 4 - page accessor
+[PDF::Class] ok 5 - fit accessor
+[PDF::Class] ok 6 - destination is page ref
+[PDF::Class] ok 7 - fit accessor
+[PDF::Class] ok 8 - destination content
+[PDF::Class] ok 9 - Default destination
+[PDF::Class] ok 10 - page accessor
+[PDF::Class] ok 11 - fit accessor
+[PDF::Class] ok 12 - destination is page ref
+[PDF::Class] ok 13 - fit accessor
+[PDF::Class] ok 14 - destination content
+[PDF::Class] ok 15 - page number destination
+[PDF::Class] ok 16 - page-number page accessor
+[PDF::Class] ok 17 - page-number fit accessor
+[PDF::Class] ok 18 - destination is page ref
+[PDF::Class] ok 19 - fit accessor
+[PDF::Class] ok 20 - destination content
+[PDF::Class] ok 21 - FitXYZoom destination
+[PDF::Class] ok 22 - left accessor
+[PDF::Class] ok 23 - top accessor
+[PDF::Class] ok 24 - zoom accessor
+[PDF::Class] ok 25 - FitHoriz destination
+[PDF::Class] ok 26 - top accessor
+[PDF::Class] ok 27 - FitVert destination
+[PDF::Class] ok 28 - left accessor
+[PDF::Class] ok 29 - FitRect destination
+[PDF::Class] ok 30 - left accessor
+[PDF::Class] ok 31 - top accessor
+[PDF::Class] ok 32 - bottom accessor
+[PDF::Class] ok 33 - right accessor
+[PDF::Class] ok 34 - FitBox destination
+[PDF::Class] ok 35 - fit accessor
+[PDF::Class] ok 36 - FitBox destination
+[PDF::Class] ok 37 - destination is not a page ref
+[PDF::Class] ok 38 - destination page
+[PDF::Class] ok 39 - fit accessor
+[PDF::Class] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog)
+[PDF::Class] ===SORRY!===
+[PDF::Class] Cannot do compile time parameterization with these args
+[PDF::Class] at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog):33
+[PDF::Class] ------> <BOL><HERE>use PDF::Names;
+[PDF::Class]   in sub resolve-package-slow-path at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 74
+[PDF::Class]   in method required at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 78
+[PDF::Class]   in method find-delegate at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/FA1236164DAFABD52DC78773AACAB3F32E27F9C8 (PDF::COS::Loader) line 35
+[PDF::Class]   in method load-delegate at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class/Loader.rakumod (PDF::Class::Loader) line 41
+[PDF::Class]   in method load-dict at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 98
+[PDF::Class]   in method COERCE at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 99
+[PDF::Class]   in method coerce at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 143
+[PDF::Class]   in submethod TWEAK at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/F06BD9DA3908B613D70D1F6AB537D764DA62AF6D (PDF::IO::IndObj) line 17
+[PDF::Class]   in method ind-obj at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/1500CF649BE57375501CD23FB66003EF75229193 (PDF::IO::Reader) line 413
+[PDF::Class]   in method deref at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/331B515167232797D9AB6E36815B036F93D383C9 (PDF::COS::Tie) line 255
+[PDF::Class]   in method AT-KEY at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 75
+[PDF::Class]   in sub FETCH at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 30
+[PDF::Class]   in block <unit> at t/pdf-destination.t line 75
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-font-cidfont.t
+[PDF::Class] 1..9
+[PDF::Class] ok 1 - $.obj-num
+[PDF::Class] ok 2 - $.gen-num
+[PDF::Class] ok 3 - The object is-a 'PDF::Font::CIDFontType2'
+[PDF::Class] ok 4 - $.Type accessor
+[PDF::Class] ok 5 - $.Subype accessor
+[PDF::Class] ok 6 - $object.check lives
+[PDF::Class] ok 7 - CIDSystemInfo accessor
+[PDF::Class] ok 8 - The object does role 'PDF::CIDSystemInfo'
+[PDF::Class] ok 9 - # SKIP CID Font Development
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-font-descriptor.t
+[PDF::Class] 1..10
+[PDF::Class] ok 1 - $.obj-num
+[PDF::Class] ok 2 - $.gen-num
+[PDF::Class] ok 3 - The object does role 'PDF::FontDescriptor'
+[PDF::Class] ok 4 - $.Type accessor
+[PDF::Class] ok 5 - $.FontFamily accessor
+[PDF::Class] ok 6 - $.Ascent accessor
+[PDF::Class] ok 7 - $.CapHeight accessor
+[PDF::Class] ok 8 - $.CapHeight accessor
+[PDF::Class] ok 9 - $font-descriptor-obj.check lives
+[PDF::Class] ok 10 - ast regeneration
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-font.t
+[PDF::Class] 1..21
+[PDF::Class] ok 1 - $.obj-num
+[PDF::Class] ok 2 - $.gen-num
+[PDF::Class] ok 3 - The object is-a '"PDF::Font::Type1"'
+[PDF::Class] ok 4 - $.Type accessor
+[PDF::Class] ok 5 - $.Subype accessor
+[PDF::Class] ok 6 - $.Name accessor
+[PDF::Class] ok 7 - $.BaseFont accessor
+[PDF::Class] ok 8 - $.Encoding accessor
+[PDF::Class] ok 9 - ast regeneration
+[PDF::Class] ok 10 - $object.check lives
+[PDF::Class] ok 11 - The object is-a '"PDF::Font::Type1"'
+[PDF::Class] ok 12 - .BaseFont
+[PDF::Class] ok 13 - .Encoding
+[PDF::Class] ok 14 - font object
+[PDF::Class] ok 15 - The object is-a '"PDF::Font::Type1"'
+[PDF::Class] ok 16 - .BaseFont
+[PDF::Class] ok 17 - !.Encoding
+[PDF::Class] ok 18 - The object is-a '"PDF::Font::Type1"'
+[PDF::Class] ok 19 - .BaseFont
+[PDF::Class] ok 20 - !.Encoding
+[PDF::Class] ok 21 - .encode(...)
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-function-exponential.t
+[PDF::Class] 1..14
+[PDF::Class] ok 1 - The object is-a 'PDF::Function::Exponential'
+[PDF::Class] ok 2 - $.FunctionType accessor
+[PDF::Class] ok 3 - $.type accessor
+[PDF::Class] ok 4 - $.subtype accessor
+[PDF::Class] ok 5 - $.N accessor
+[PDF::Class] ok 6 - $.Domain accessor
+[PDF::Class] ok 7 - $.Range accessor
+[PDF::Class] ok 8 - $function-obj.check lives
+[PDF::Class] ok 9 - calc
+[PDF::Class] ok 10 - calc
+[PDF::Class] ok 11 - calc
+[PDF::Class] ok 12 - calc
+[PDF::Class] ok 13 - calc
+[PDF::Class] ok 14 - calc
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-function-postscript.t
+[PDF::Class] 1..65
+[PDF::Class] ok 1 - $.obj-num
+[PDF::Class] ok 2 - $.gen-num
+[PDF::Class] ok 3 - The object is-a 'PDF::Function::PostScript'
+[PDF::Class] ok 4 - $.FunctionType accessor
+[PDF::Class] ok 5 - $.type accessor
+[PDF::Class] ok 6 - $.subtype accessor
+[PDF::Class] ok 7 - $.Domain accessor
+[PDF::Class] ok 8 - $.Length accessor (corrected)
+[PDF::Class] ok 9 - $function-obj.check lives
+[PDF::Class] ok 10 - $.parse accessor
+[PDF::Class] ok 11 - null expression
+[PDF::Class] ok 12 - add op
+[PDF::Class] ok 13 - sub op
+[PDF::Class] ok 14 - mul op
+[PDF::Class] ok 15 - div op
+[PDF::Class] ok 16 - idiv op
+[PDF::Class] ok 17 - mod op
+[PDF::Class] ok 18 - neg op
+[PDF::Class] ok 19 - abs op
+[PDF::Class] ok 20 - ceiling op
+[PDF::Class] ok 21 - floor op
+[PDF::Class] ok 22 - round op
+[PDF::Class] ok 23 - round op
+[PDF::Class] ok 24 - truncate op
+[PDF::Class] ok 25 - sqrt op
+[PDF::Class] ok 26 - sin op
+[PDF::Class] ok 27 - sin op
+[PDF::Class] ok 28 - cos op
+[PDF::Class] ok 29 - cos op
+[PDF::Class] ok 30 - atan 1 0
+[PDF::Class] ok 31 - atan 1 1
+[PDF::Class] ok 32 - atan 1 -1
+[PDF::Class] ok 33 - atan -1 -1
+[PDF::Class] ok 34 - atan -1 1
+[PDF::Class] ok 35 - exp
+[PDF::Class] ok 36 - ln op
+[PDF::Class] ok 37 - log op
+[PDF::Class] ok 38 - cvi op
+[PDF::Class] ok 39 - cvr op
+[PDF::Class] ok 40 - if (true)
+[PDF::Class] ok 41 - if (false)
+[PDF::Class] ok 42 - eq
+[PDF::Class] ok 43 - eq
+[PDF::Class] ok 44 - ge
+[PDF::Class] ok 45 - lt
+[PDF::Class] ok 46 - le
+[PDF::Class] ok 47 - and
+[PDF::Class] ok 48 - or
+[PDF::Class] ok 49 - xor
+[PDF::Class] ok 50 - not
+[PDF::Class] ok 51 - bitshift
+[PDF::Class] ok 52 - bitshift
+[PDF::Class] ok 53 - true/false
+[PDF::Class] ok 54 - ifelse (true)
+[PDF::Class] ok 55 - ifelse (false)
+[PDF::Class] ok 56 - exch op
+[PDF::Class] ok 57 - dup
+[PDF::Class] ok 58 - pop
+[PDF::Class] ok 59 - copy
+[PDF::Class] ok 60 - index
+[PDF::Class] ok 61 - roll
+[PDF::Class] not ok 62 - typecheck # TODO typecheck Bool vs Numeric
+[PDF::Class] # Failed test 'typecheck'
+[PDF::Class] # at t/pdf-function-postscript.t line 135
+[PDF::Class] ok 63 - stack underflow
+[PDF::Class] ok 64 - function calc
+[PDF::Class] ok 65 - function calc
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-function-sampled.t
+[PDF::Class] 1..42
+[PDF::Class] ok 1 - The object is-a 'PDF::Function::Sampled'
+[PDF::Class] ok 2 - $.FunctionType accessor
+[PDF::Class] ok 3 - $.type accessor
+[PDF::Class] ok 4 - $.subtype accessor
+[PDF::Class] ok 5 - $.Domain accessor
+[PDF::Class] ok 6 - $.Length accessor
+[PDF::Class] ok 7 - $function-obj.check lives
+[PDF::Class] ok 8 - basic: [0] --> [0 0.066667 0.129412 0.188235]
+[PDF::Class] ok 9 - basic: [1] --> [1 1 1 0.627451]
+[PDF::Class] ok 10 - basic: [0.5] --> [0.5 0.533333 0.564706 0.407843]
+[PDF::Class] ok 11 - basic: [0.25] --> [0.25 0.3 0.347059 0.298039]
+[PDF::Class] ok 12 - /Encode [0 2]: [0] --> [0 0.066667 0.129412 0.188235]
+[PDF::Class] ok 13 - /Encode [0 2]: [1] --> [1 1 1 0.627451]
+[PDF::Class] ok 14 - /Encode [0 2]: [0.5] --> [1 1 1 0.627451]
+[PDF::Class] ok 15 - /Encode [0 2]: [0.25] --> [0.5 0.533333 0.564706 0.407843]
+[PDF::Class] ok 16 - /Encode [0 /8]: [0.5] --> [0.4 0.44 0.477647 0.363922]
+[PDF::Class] ok 17 - /Encode [0 /8]: [1] --> [0.8 0.813333 0.825882 0.539608]
+[PDF::Class] ok 18 - ranges: [0] --> [0 -0.866667 0.258824 1.188235]
+[PDF::Class] ok 19 - ranges: [0.5] --> [0.5 0.066667 1.129412 1.407843]
+[PDF::Class] ok 20 - ranges: [1] --> [1 1 2 1.627451]
+[PDF::Class] ok 21 - ranges: [0.25] --> [0.25 -0.4 0.694118 1.298039]
+[PDF::Class] ok 22 - decodings: [0] --> [0 0 0.258824 1.188235]
+[PDF::Class] ok 23 - decodings: [0.5] --> [0.5 0.066667 1 1.407843]
+[PDF::Class] ok 24 - decodings: [1] --> [1 1 1 1.627451]
+[PDF::Class] ok 25 - decodings: [0.25] --> [0.25 0 0.694118 1.298039]
+[PDF::Class] ok 26 - Size 3: [0] --> [0 0.066667 0.129412 0.188235]
+[PDF::Class] ok 27 - Size 3: [1] --> [0.631373 0.635294 0.639216 0.643137]
+[PDF::Class] ok 28 - Size 3: [0.5] --> [0.315686 0.35098 0.384314 0.415686]
+[PDF::Class] ok 29 - Size 3: [0.25] --> [0.157843 0.208824 0.256863 0.301961]
+[PDF::Class] ok 30 - mag-yel: [0 0] --> [0 0 0 0]
+[PDF::Class] ok 31 - mag-yel: [1 1] --> [0 1 0.666667 0]
+[PDF::Class] ok 32 - mag-yel: [1 0.5] --> [0 1 0.333333 0]
+[PDF::Class] ok 33 - mag-yel: [0.5 0.25] --> [0 0.5 0.166667 0]
+[PDF::Class] ok 34 - cyan-mag-yel: [0 0 0] --> [0 0 0 0]
+[PDF::Class] ok 35 - cyan-mag-yel: [1 1 1] --> [0.333333 1 0.666667 0]
+[PDF::Class] ok 36 - cyan-mag-yel: [0.5 0.5 0.5] --> [0.166667 0.5 0.333333 0]
+[PDF::Class] ok 37 - cyan-mag-yel: [1 0.333333 0.5] --> [0.333333 0.333333 0.333333 0]
+[PDF::Class] ok 38 - Size 33x33: [-0.9375 -1] --> [-0.003922]
+[PDF::Class] ok 39 - Size 33x33: [-0.875 -1] --> [-0.113725]
+[PDF::Class] ok 40 - Size 33x33: [0.334 0.332] --> [-0.144925]
+[PDF::Class] ok 41 - Size 33x33: [-0.999333 0.332] --> [-0.916298]
+[PDF::Class] ok 42 - Size 33x33: [-0.332667 -0.334667] --> [-0.474192]
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-function-stitching.t
+[PDF::Class] 1..13
+[PDF::Class] ok 1 - $ind-obj.object.check lives
+[PDF::Class] ok 2 - subfunction calc
+[PDF::Class] ok 3 - The object is-a 'PDF::Function::Stitching'
+[PDF::Class] ok 4 - $.FunctionType accessor
+[PDF::Class] ok 5 - $.type accessor
+[PDF::Class] ok 6 - $.subtype accessor
+[PDF::Class] ok 7 - $.Domain accessor
+[PDF::Class] ok 8 - $.Encode accessor
+[PDF::Class] ok 9 - $.Range accessor
+[PDF::Class] ok 10 - calc
+[PDF::Class] ok 11 - calc
+[PDF::Class] ok 12 - calc
+[PDF::Class] ok 13 - calc
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-group.t
+[PDF::Class] 1..6
+[PDF::Class] ok 1 - The object is-a '"PDF::Group"'
+[PDF::Class] ok 2 - Group Type
+[PDF::Class] ok 3 - Subtype
+[PDF::Class] ok 4 - I
+[PDF::Class] ok 5 - CS
+[PDF::Class] ok 6 - $group-obj.check lives
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-lite.t
+[PDF::Class] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog)
+[PDF::Class] ===SORRY!===
+[PDF::Class] Cannot do compile time parameterization with these args
+[PDF::Class] at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog):33
+[PDF::Class] ------> <BOL><HERE>use PDF::Names;
+[PDF::Class]   in sub resolve-package-slow-path at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 74
+[PDF::Class]   in method required at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 78
+[PDF::Class]   in method find-delegate at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/FA1236164DAFABD52DC78773AACAB3F32E27F9C8 (PDF::COS::Loader) line 35
+[PDF::Class]   in method load-delegate at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class/Loader.rakumod (PDF::Class::Loader) line 41
+[PDF::Class]   in method load-dict at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 98
+[PDF::Class]   in method COERCE at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 99
+[PDF::Class]   in method coerce at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 143
+[PDF::Class]   in method coerce at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 50
+[PDF::Class]   in method lvalue at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/331B515167232797D9AB6E36815B036F93D383C9 (PDF::COS::Tie) line 231
+[PDF::Class]   in method ASSIGN-KEY at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 88
+[PDF::Class]   in method deref at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/331B515167232797D9AB6E36815B036F93D383C9 (PDF::COS::Tie) line 268
+[PDF::Class]   in method AT-KEY at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 75
+[PDF::Class]   in sub FETCH at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 30
+[PDF::Class]   in method Pages at /home/coke/sandbox/blin/installed/PDF::Lite_zef:dwarring_0.0.15_0/sources/4B8C75FABE2EECDD858ED982A1205411328CBCE2 (PDF::Lite) line 123
+[PDF::Class]   in block <unit> at t/pdf-lite.t line 9
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-metadata.t
+[PDF::Class] 1..7
+[PDF::Class] ok 1 - $.obj-num
+[PDF::Class] ok 2 - $.gen-num
+[PDF::Class] ok 3 - The object is-a '"PDF::Metadata::XML"'
+[PDF::Class] ok 4 - $.Type accessor
+[PDF::Class] ok 5 - $.Subtype accessor
+[PDF::Class] ok 6 - $.encoded accessor (sample)
+[PDF::Class] ok 7 - $metadata-obj.check lives
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-nametree.t
+[PDF::Class] 1..11
+[PDF::Class] ok 1 - $.obj-num
+[PDF::Class] ok 2 - $.gen-num
+[PDF::Class] ok 3 - The object does role 'PDF::NameTree'
+[PDF::Class] ok 4 - $obj.Kids[0].Names
+[PDF::Class] ok 5 - names{1.1}
+[PDF::Class] ok 6 - names{1.2}
+[PDF::Class] ok 7 - names{1.3}
+[PDF::Class] ok 8 - $.keys
+[PDF::Class] ok 9 - $nametree-obj.check lives
+[PDF::Class] ok 10 - $obj.Names after rebuild
+[PDF::Class] ok 11 - $obj.Kids after rebuild
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-numbertree.t
+[PDF::Class] 1..10
+[PDF::Class] ok 1 - $.obj-num
+[PDF::Class] ok 2 - $.gen-num
+[PDF::Class] ok 3 - The object does role 'PDF::NumberTree'
+[PDF::Class] ok 4 - $obj.First
+[PDF::Class] ok 5 - $obj.Nums
+[PDF::Class] ok 6 - .nums deref
+[PDF::Class] ok 7 - $obj.nums
+[PDF::Class] ok 8 - $obj.Limits
+[PDF::Class] ok 9 - $numtree-obj.check lives
+[PDF::Class] ok 10 - $obj.Nums after update
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-optional-content.t
+[PDF::Class] 1..10
+[PDF::Class] ok 1 - $.obj-num
+[PDF::Class] ok 2 - $.gen-num
+[PDF::Class] ok 3 - The object is-a '"PDF::OCG"'
+[PDF::Class] ok 4 - $.Type accessor
+[PDF::Class] ok 5 - $.type accessor
+[PDF::Class] ok 6 - $.Name accessor
+[PDF::Class] ok 7 - Usage
+[PDF::Class] ok 8 - Usage.Export.ExportState
+[PDF::Class] ok 9 - $ocg-obj.check lives
+[PDF::Class] ok 10 - ast regeneration
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-outline.t
+[PDF::Class] ===SORRY!=== Error while compiling t/pdf-outline.t
+[PDF::Class] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Outline.rakumod (PDF::Outline)
+[PDF::Class] ===SORRY!===
+[PDF::Class] This element has not been resolved. Type: RakuAST::Call::NameAsMethod
+[PDF::Class] at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Outline.rakumod (PDF::Outline):15
+[PDF::Class] ------> <BOL><HERE>use PDF::StructElem;
+[PDF::Class] at t/pdf-outline.t:8
+[PDF::Class] ------> <BOL><HERE>use PDF::Outline;
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-outlines.t
+[PDF::Class] ===SORRY!===
+[PDF::Class] No such method 'IMPL-QAST-INDIRECT-LOOKUP-PART' for invocant of type
+[PDF::Class] 'RakuAST::Name::Part::Empty'
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-page.t
+[PDF::Class] 1..46
+[PDF::Class] ok 1 - $.obj-num
+[PDF::Class] ok 2 - $.gen-num
+[PDF::Class] ok 3 - The object is-a '"PDF::Page"'
+[PDF::Class] ok 4 - $.Type accessor
+[PDF::Class] ok 5 - $page<Parent>
+[PDF::Class] ok 6 - $.Resources accessor
+[PDF::Class] ok 7 - ast regeneration
+[PDF::Class] ok 8 - $.Contents accessor
+[PDF::Class] ok 9 - $.contents accessor
+[PDF::Class] ok 10 - $page.Thumb = $image - lives
+[PDF::Class] ok 11 - $page.Thumb.data-uri - lives
+[PDF::Class] ok 12 - The object is-a '"PDF::Font::Type1"'
+[PDF::Class] ok 13 - .font-name
+[PDF::Class] ok 14 - core font caching
+[PDF::Class] ok 15 - core font caching
+[PDF::Class] ok 16 - font resource entries
+[PDF::Class] ok 17 - .font-name
+[PDF::Class] ok 18 - font resource entries
+[PDF::Class] ok 19 - $.MediaBox accessor
+[PDF::Class] ok 20 - $.media-box accessor
+[PDF::Class] ok 21 - $.crop-box accessor
+[PDF::Class] ok 22 - $.bleed-box accessor
+[PDF::Class] ok 23 - $.art-box - accessor
+[PDF::Class] ok 24 - $.trim-box - accessor
+[PDF::Class] ok 25 - media-box - default
+[PDF::Class] ok 26 - $.bleed-box - default
+[PDF::Class] ok 27 - media-box - list setter
+[PDF::Class] ok 28 - $.bleed original
+[PDF::Class] ok 29 - media-box - 4 arg setter
+[PDF::Class] ok 30 - .MediaBox accessor
+[PDF::Class] ok 31 - <MediaBox> accessor
+[PDF::Class] ok 32 - $.crop-box - updated
+[PDF::Class] ok 33 - $.bleed-box - updated
+[PDF::Class] ok 34 - $.bleed
+[PDF::Class] ok 35 - $.bleed-box - updated
+[PDF::Class] ok 36 - bleed setter
+[PDF::Class] ok 37 - $trim-box - get
+[PDF::Class] ok 38 - $.art-box - get
+[PDF::Class] ok 39 - $.art-box - updated
+[PDF::Class] ok 40 - media-box page-name setter
+[PDF::Class] ok 41 - media-box page-name setter :landscape
+[PDF::Class] ok 42 - media-box page-name setter :landscape
+[PDF::Class] ok 43 - finished Contents
+[PDF::Class] ok 44 - $page.check lives
+[PDF::Class] ok 45 - The object is-a '"PDF::XObject::Form"'
+[PDF::Class] ok 46 - xobject copied trim-box
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-pages.t
+[PDF::Class] 1..22
+[PDF::Class] ok 1 - $.obj-num
+[PDF::Class] ok 2 - $.gen-num
+[PDF::Class] ok 3 - The object is-a '"PDF::Pages"'
+[PDF::Class] ok 4 - $.Type accessor
+[PDF::Class] ok 5 - $.Count accessor
+[PDF::Class] ok 6 - $.Count accessor
+[PDF::Class] ok 7 - new Kid Type
+[PDF::Class] ok 8 - $pages-obj.check lives
+[PDF::Class] ok 9 - number of pages
+[PDF::Class] ok 10 - first page
+[PDF::Class] ok 11 - inheritance
+[PDF::Class] ok 12 - inheritance
+[PDF::Class] ok 13 - sixth page
+[PDF::Class] ok 14 - seventh page
+[PDF::Class] ok 15 - second-last page
+[PDF::Class] ok 16 - last page
+[PDF::Class] ok 17 - inheritance
+[PDF::Class] ok 18 - add-page - lives
+[PDF::Class] ok 19 - The object is-a 'PDF::Page'
+[PDF::Class] ok 20 - number of pages
+[PDF::Class] ok 21 - new page - inheritance
+[PDF::Class] ok 22 - $.Resources accessor
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-pattern.t
+[PDF::Class] 1..8
+[PDF::Class] ok 1 - $.obj-num
+[PDF::Class] ok 2 - $.gen-num
+[PDF::Class] ok 3 - The object is-a '"PDF::Pattern::Tiling"'
+[PDF::Class] ok 4 - $.Type accessor
+[PDF::Class] ok 5 - $.BBox accessor
+[PDF::Class] No such method 'graphics-state' for invocant of type
+[PDF::Class] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Class]   in method  at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/76D33018B7E8C361F5704ED6F2C29E300A9FBD45 (PDF::Content::Ops) line 254
+[PDF::Class]   in block  at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/76D33018B7E8C361F5704ED6F2C29E300A9FBD45 (PDF::Content::Ops) line 950
+[PDF::Class]   in method op at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/76D33018B7E8C361F5704ED6F2C29E300A9FBD45 (PDF::Content::Ops) line 935
+[PDF::Class]   in method ops at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/76D33018B7E8C361F5704ED6F2C29E300A9FBD45 (PDF::Content::Ops) line 1
+[PDF::Class]   in block <unit> at t/pdf-pattern.t line 44
+[PDF::Class] # You planned 8 tests, but ran 5
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-resources.t
+[PDF::Class] 1..76
+[PDF::Class] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog)
+[PDF::Class] ===SORRY!===
+[PDF::Class] Cannot do compile time parameterization with these args
+[PDF::Class] at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog):33
+[PDF::Class] ------> <BOL><HERE>use PDF::Names;
+[PDF::Class]   in block <unit> at t/pdf-resources.t line 17
+[PDF::Class] # You planned 76 tests, but ran 0
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-shading.t
+[PDF::Class] 1..9
+[PDF::Class] ok 1 - $.obj-num
+[PDF::Class] ok 2 - $.gen-num
+[PDF::Class] ok 3 - The object is-a '"PDF::Shading::Radial"'
+[PDF::Class] ok 4 - $.ShadingType accessor
+[PDF::Class] ok 5 - $.type accessor
+[PDF::Class] ok 6 - $.subtype accessor
+[PDF::Class] ok 7 - $.ColorSpace accessor
+[PDF::Class] ok 8 - $shading-obj.check lives
+[PDF::Class] ok 9 - ast regeneration
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-signature.t
+[PDF::Class] 1..9
+[PDF::Class] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog)
+[PDF::Class] ===SORRY!===
+[PDF::Class] Cannot do compile time parameterization with these args
+[PDF::Class] at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog):33
+[PDF::Class] ------> <BOL><HERE>use PDF::Names;
+[PDF::Class]   in sub resolve-package-slow-path at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 74
+[PDF::Class]   in method required at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 78
+[PDF::Class]   in method find-delegate at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/FA1236164DAFABD52DC78773AACAB3F32E27F9C8 (PDF::COS::Loader) line 35
+[PDF::Class]   in method load-delegate at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class/Loader.rakumod (PDF::Class::Loader) line 41
+[PDF::Class]   in method load-dict at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 98
+[PDF::Class]   in method COERCE at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 99
+[PDF::Class]   in method coerce at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 143
+[PDF::Class]   in submethod TWEAK at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/F06BD9DA3908B613D70D1F6AB537D764DA62AF6D (PDF::IO::IndObj) line 17
+[PDF::Class]   in method ind-obj at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/1500CF649BE57375501CD23FB66003EF75229193 (PDF::IO::Reader) line 413
+[PDF::Class]   in method deref at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/331B515167232797D9AB6E36815B036F93D383C9 (PDF::COS::Tie) line 255
+[PDF::Class]   in method AT-KEY at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 75
+[PDF::Class]   in sub FETCH at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 30
+[PDF::Class]   in block <unit> at t/pdf-signature.t line 12
+[PDF::Class] # You planned 9 tests, but ran 0
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-struct.t
+[PDF::Class] ===SORRY!=== Error while compiling t/pdf-struct.t
+[PDF::Class] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/StructTreeRoot.rakumod (PDF::StructTreeRoot)
+[PDF::Class] ===SORRY!===
+[PDF::Class] This element has not been resolved. Type: RakuAST::Call::NameAsMethod
+[PDF::Class] at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/StructTreeRoot.rakumod (PDF::StructTreeRoot):18
+[PDF::Class] ------> <BOL><HERE>use PDF::StructElem :coerce-struct-kids,
+[PDF::Class] at t/pdf-struct.t:4
+[PDF::Class] ------> <BOL><HERE>use PDF::StructTreeRoot;
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-xobject-form.t
+[PDF::Class] 1..10
+[PDF::Class] ok 1 - $.obj-num
+[PDF::Class] ok 2 - $.gen-num
+[PDF::Class] ok 3 - The object is-a '"PDF::XObject::Form"'
+[PDF::Class] ok 4 - $.Type accessor
+[PDF::Class] ok 5 - $.Subtype accessor
+[PDF::Class] ok 6 - $.Resources accessor
+[PDF::Class] ok 7 - $.BBox accessor
+[PDF::Class] ok 8 - $.encoded accessor
+[PDF::Class] No such method 'canvas' for invocant of type
+[PDF::Class] 'Rakudo::Internals::LoweredAwayLexical'
+[PDF::Class]   in method  at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/76D33018B7E8C361F5704ED6F2C29E300A9FBD45 (PDF::Content::Ops) line 306
+[PDF::Class]   in block  at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/76D33018B7E8C361F5704ED6F2C29E300A9FBD45 (PDF::Content::Ops) line 950
+[PDF::Class]   in method op at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/76D33018B7E8C361F5704ED6F2C29E300A9FBD45 (PDF::Content::Ops) line 935
+[PDF::Class]   in method FALLBACK at /home/coke/sandbox/blin/installed/PDF::Content_zef:dwarring_0.9.11_0/sources/76D33018B7E8C361F5704ED6F2C29E300A9FBD45 (PDF::Content::Ops) line 1166
+[PDF::Class]   in block <unit> at t/pdf-xobject-form.t line 46
+[PDF::Class] # You planned 10 tests, but ran 8
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/pdf-xobject-image.t
+[PDF::Class] 1..22
+[PDF::Class] ok 1 - $.obj-num
+[PDF::Class] ok 2 - $.gen-num
+[PDF::Class] ok 3 - The object is-a '"PDF::XObject::Image"'
+[PDF::Class] ok 4 - $.Type accessor
+[PDF::Class] ok 5 - $.Subtype accessor
+[PDF::Class] ok 6 - $.ColorSpace accessor
+[PDF::Class] ok 7 - $.BitsPerComponent accessor
+[PDF::Class] ok 8 - $.encoded accessor
+[PDF::Class] ok 9 - $img.Width (jpeg)
+[PDF::Class] ok 10 - $img.Height (jpeg)
+[PDF::Class] ok 11 - $img.ColorSpace (jpeg)
+[PDF::Class] ok 12 - $img.BitsPerComponent (jpeg)
+[PDF::Class] ok 13 - $img Length (jpeg)
+[PDF::Class] ok 14 - $img.check lives
+[PDF::Class] ok 15 - .content(:inline) has 3 ops
+[PDF::Class] ok 16 - first .content(:inline) op: :BI[...]
+[PDF::Class] ok 17 - second .content(:inline) op: :ID[...]
+[PDF::Class] ok 18 - third .content(:inline) op: :EI[]
+[PDF::Class] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog)
+[PDF::Class] ===SORRY!===
+[PDF::Class] Cannot do compile time parameterization with these args
+[PDF::Class] at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog):33
+[PDF::Class] ------> <BOL><HERE>use PDF::Names;
+[PDF::Class]   in sub resolve-package-slow-path at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 74
+[PDF::Class]   in method required at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 78
+[PDF::Class]   in method find-delegate at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/FA1236164DAFABD52DC78773AACAB3F32E27F9C8 (PDF::COS::Loader) line 35
+[PDF::Class]   in method load-delegate at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class/Loader.rakumod (PDF::Class::Loader) line 41
+[PDF::Class]   in method load-dict at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 98
+[PDF::Class]   in method COERCE at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 99
+[PDF::Class]   in method coerce at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 143
+[PDF::Class]   in method coerce at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 50
+[PDF::Class]   in method lvalue at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/331B515167232797D9AB6E36815B036F93D383C9 (PDF::COS::Tie) line 231
+[PDF::Class]   in method ASSIGN-KEY at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 88
+[PDF::Class]   in method deref at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/331B515167232797D9AB6E36815B036F93D383C9 (PDF::COS::Tie) line 268
+[PDF::Class]   in method AT-KEY at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 75
+[PDF::Class]   in sub FETCH at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 30
+[PDF::Class]   in method Pages at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class.rakumod (PDF::Class) line 95
+[PDF::Class]   in block <unit> at t/pdf-xobject-image.t line 68
+[PDF::Class] # You planned 22 tests, but ran 18
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/render.t
+[PDF::Class] 1..7
+[PDF::Class] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog)
+[PDF::Class] ===SORRY!===
+[PDF::Class] Cannot do compile time parameterization with these args
+[PDF::Class] at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog):33
+[PDF::Class] ------> <BOL><HERE>use PDF::Names;
+[PDF::Class]   in sub resolve-package-slow-path at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 74
+[PDF::Class]   in method required at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 78
+[PDF::Class]   in method find-delegate at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/FA1236164DAFABD52DC78773AACAB3F32E27F9C8 (PDF::COS::Loader) line 35
+[PDF::Class]   in method load-delegate at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class/Loader.rakumod (PDF::Class::Loader) line 41
+[PDF::Class]   in method load-dict at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 98
+[PDF::Class]   in method COERCE at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 99
+[PDF::Class]   in method coerce at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 143
+[PDF::Class]   in submethod TWEAK at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/F06BD9DA3908B613D70D1F6AB537D764DA62AF6D (PDF::IO::IndObj) line 17
+[PDF::Class]   in method ind-obj at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/1500CF649BE57375501CD23FB66003EF75229193 (PDF::IO::Reader) line 413
+[PDF::Class]   in method deref at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/331B515167232797D9AB6E36815B036F93D383C9 (PDF::COS::Tie) line 255
+[PDF::Class]   in method AT-KEY at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 75
+[PDF::Class]   in sub FETCH at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 30
+[PDF::Class]   in method Pages at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class.rakumod (PDF::Class) line 95
+[PDF::Class]   in block <unit> at t/render.t line 10
+[PDF::Class] # You planned 7 tests, but ran 0
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/type-extensibility.t
+[PDF::Class] 1..10
+[PDF::Class] ok 1 - The object is-a 'TestDoc::Catalog'
+[PDF::Class] ok 2 - $Catalog.Type
+[PDF::Class] ok 3 - $Catalog.Version
+[PDF::Class] ok 4 - $Catalog.ViewerPreferences
+[PDF::Class] ok 5 - $Catalog.ViewerPreferences
+[PDF::Class] ok 6 - $Catalog.ViewerPreferences.HideToolBar
+[PDF::Class] ok 7 - $Catalog.ViewerPreferences.some-custom-method
+[PDF::Class] ok 8 - The object is-a '"TestDoc::Pages"'
+[PDF::Class] ok 9 - The object is-a '"TestDoc::Page"'
+[PDF::Class] ok 10 - unextended class
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/update.t
+[PDF::Class] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog)
+[PDF::Class] ===SORRY!===
+[PDF::Class] Cannot do compile time parameterization with these args
+[PDF::Class] at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Catalog.rakumod (PDF::Catalog):33
+[PDF::Class] ------> <BOL><HERE>use PDF::Names;
+[PDF::Class]   in sub resolve-package-slow-path at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 74
+[PDF::Class]   in method required at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 78
+[PDF::Class]   in method find-delegate at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/FA1236164DAFABD52DC78773AACAB3F32E27F9C8 (PDF::COS::Loader) line 35
+[PDF::Class]   in method load-delegate at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class/Loader.rakumod (PDF::Class::Loader) line 41
+[PDF::Class]   in method load-dict at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 98
+[PDF::Class]   in method COERCE at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 99
+[PDF::Class]   in method coerce at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/9A882411F1D2D7E6ED27A16846D01AD94E4AE1DC (PDF::COS) line 143
+[PDF::Class]   in submethod TWEAK at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/F06BD9DA3908B613D70D1F6AB537D764DA62AF6D (PDF::IO::IndObj) line 17
+[PDF::Class]   in method ind-obj at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/1500CF649BE57375501CD23FB66003EF75229193 (PDF::IO::Reader) line 413
+[PDF::Class]   in method deref at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/331B515167232797D9AB6E36815B036F93D383C9 (PDF::COS::Tie) line 255
+[PDF::Class]   in method AT-KEY at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 75
+[PDF::Class]   in sub FETCH at /home/coke/sandbox/blin/installed/PDF_zef:dwarring_0.6.15_0/sources/E7BA44535707BB0756435D2A3D909EAF0051531F (PDF::COS::Tie::Hash) line 30
+[PDF::Class]   in method Pages at /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30/lib/PDF/Class.rakumod (PDF::Class) line 95
+[PDF::Class]   in block <unit> at t/update.t line 8
+[PDF::Class] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1d6c1d4c4ce5070038a42320efe307a6d2c7fdc6.tar.gz/PDF-Class-0.5.30 t/util.t
+[PDF::Class] ok 1 - to-roman(1)
+[PDF::Class] ok 2 - from-roman("I")
+[PDF::Class] ok 3 - to-roman(2)
+[PDF::Class] ok 4 - from-roman("II")
+[PDF::Class] ok 5 - to-roman(3)
+[PDF::Class] ok 6 - from-roman("III")
+[PDF::Class] ok 7 - to-roman(4)
+[PDF::Class] ok 8 - from-roman("IV")
+[PDF::Class] ok 9 - to-roman(5)
+[PDF::Class] ok 10 - from-roman("V")
+[PDF::Class] ok 11 - to-roman(6)
+[PDF::Class] ok 12 - from-roman("VI")
+[PDF::Class] ok 13 - to-roman(10)
+[PDF::Class] ok 14 - from-roman("X")
+[PDF::Class] ok 15 - to-roman(11)
+[PDF::Class] ok 16 - from-roman("XI")
+[PDF::Class] ok 17 - alpha-number(1)
+[PDF::Class] ok 18 - alpha-number(2)
+[PDF::Class] ok 19 - alpha-number(26)
+[PDF::Class] ok 20 - alpha-number(27)
+[PDF::Class] ok 21 - alpha-number(28)
+[PDF::Class] ok 22 - decimal-number
+[PDF::Class] 1..22
+===> Testing [FAIL]: PDF::Class:ver<0.5.30>:auth<zef:dwarring>
+[PDF::Class] Failed to get passing tests, but continuing with --force-test
+===> Installing: PDF::Class:ver<0.5.30>:auth<zef:dwarring>
+Potential difficulties:
+    Missing declarand for trailing declarator doc
+    at /home/coke/sandbox/blin/installed/PDF::Class_zef:dwarring_0.5.30_0/sources/C6583504D51212B9607A665CD74EC56B7315362F (PDF::Class::OptionalContent):1
+    ------> #= Consumed by PDF::OCG and PDF::OCMD<HERE><EOL>
+===> Install [FAIL] for PDF::Class:ver<0.5.30>:auth<zef:dwarring>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/PDF::Class_zef:dwarring_0.5.30_0/sources/578E5C4F1643DE2A618D862FD8538FA9D55698F2 (PDF::Catalog)
+===SORRY!===
+Cannot do compile time parameterization with these args
+
+at /home/coke/sandbox/blin/installed/PDF::Class_zef:dwarring_0.5.30_0/sources/578E5C4F1643DE2A618D862FD8538FA9D55698F2 (PDF::Catalog):33
+------> <BOL><HERE>use PDF::Names;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/PDF::Class_zef:dwarring_0.5.30_0/sources/578E5C4F1643DE2A618D862FD8538FA9D55698F2 (PDF::Catalog)
+===SORRY!===
+Cannot do compile time parameterization with these args
+
+at /home/coke/sandbox/blin/installed/PDF::Class_zef:dwarring_0.5.30_0/sources/578E5C4F1643DE2A618D862FD8538FA9D55698F2 (PDF::Catalog):33
+------> <BOL><HERE>use PDF::Names;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 3min 26.675s
+             CPU time consumed: 4min 47.854s
+                   Memory peak: 2.6G (swap: 0B)

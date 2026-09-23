@@ -1,0 +1,29 @@
+Running as unit: run-p18999-i29224.service; invocation ID: 9b2ce67f83b34ec0a978b58691d668ab
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: BTree
+===> Found: BTree:ver<0.0.2>:auth<zef:Scimon> [via Zef::Repository::Ecosystems<fez>]
+[BTree] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790126997.19000.2949.6643157118087/4dc77d6237180651303a0f965002af1a5b2be407.tar.gz https://360.zef.pm/B/TR/BTREE/4dc77d6237180651303a0f965002af1a5b2be407.tar.gz
+===> Fetching [OK]: BTree:ver<0.0.2>:auth<zef:Scimon> to /home/coke/sandbox/blin/data/zef-data/tmp/1790126997.19000.2949.6643157118087/4dc77d6237180651303a0f965002af1a5b2be407.tar.gz
+[BTree] Command: tar -t -f ./4dc77d6237180651303a0f965002af1a5b2be407.tar.gz
+[BTree] Command: tar -xvf ./4dc77d6237180651303a0f965002af1a5b2be407.tar.gz -C ../4dc77d6237180651303a0f965002af1a5b2be407.tar.gz
+===> Extraction [OK]: BTree to /home/coke/sandbox/blin/data/zef-data/tmp/4dc77d6237180651303a0f965002af1a5b2be407.tar.gz
+===> Testing: BTree:ver<0.0.2>:auth<zef:Scimon>
+[BTree] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/4dc77d6237180651303a0f965002af1a5b2be407.tar.gz t/01-basic.rakutest
+[BTree] ok 1 - BTree module can be use-d ok
+[BTree] 1..1
+[BTree] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/4dc77d6237180651303a0f965002af1a5b2be407.tar.gz t/simple-int-trees.rakutest
+[BTree] Cannot look up attributes in a VMNull type object. Did you forget a '.new'?
+[BTree]   in submethod BUILD at /home/coke/sandbox/blin/data/zef-data/tmp/4dc77d6237180651303a0f965002af1a5b2be407.tar.gz/lib/BTree.rakumod (BTree) line 121
+[BTree]   in method from-Str at /home/coke/sandbox/blin/data/zef-data/tmp/4dc77d6237180651303a0f965002af1a5b2be407.tar.gz/lib/BTree.rakumod (BTree) line 178
+[BTree]   in method from-Str at /home/coke/sandbox/blin/data/zef-data/tmp/4dc77d6237180651303a0f965002af1a5b2be407.tar.gz/lib/BTree.rakumod (BTree) line 178
+[BTree]   in method COERCE at /home/coke/sandbox/blin/data/zef-data/tmp/4dc77d6237180651303a0f965002af1a5b2be407.tar.gz/lib/BTree.rakumod (BTree) line 170
+[BTree]   in block <unit> at t/simple-int-trees.rakutest line 7
+===> Testing [FAIL]: BTree:ver<0.0.2>:auth<zef:Scimon>
+[BTree] Failed to get passing tests, but continuing with --force-test
+===> Installing: BTree:ver<0.0.2>:auth<zef:Scimon>
+===> Install [OK] for BTree:ver<0.0.2>:auth<zef:Scimon>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 1min 51.428s
+             CPU time consumed: 1min 50.268s
+                   Memory peak: 1.1G (swap: 0B)

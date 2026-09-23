@@ -1,14 +1,14 @@
-Running as unit: run-p2551942-i2543133.service; invocation ID: e64142f7016e426f9216049fd596c1d9
+Running as unit: run-p909943-i936487.service; invocation ID: 2e23feaed18c4047b5b8cf021cd337ea
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: GIO
 ===> Found: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> [via Zef::Repository::Ecosystems<rea>]
-[GIO] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789884725.2551943.4787.604030042436/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GIO/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
-===> Fetching [OK]: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1789884725.2551943.4787.604030042436/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
+[GIO] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790149696.909945.3812.170930085674/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GIO/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
+===> Fetching [OK]: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790149696.909945.3812.170930085674/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
 [GIO] Command: tar -t -f ./GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
 [GIO] Command: tar -xvf ./GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz -C ../GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
 ===> Extraction [OK]: GIO to /home/coke/sandbox/blin/data/zef-data/tmp/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz
 ===> Testing: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1>
-[GIO] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz/GIO-0.0.4 t/01-modules.t
+[GIO] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GIO%3Aver%3C0.0.4%3E%3Aauth%3Ccpan%3ACBWOOD%3E%3Aapi%3C1%3E.tar.gz/GIO-0.0.4 t/01-modules.t
 [GIO] 1..294
 [GIO] ok 1 - GIO
 [GIO] ok 2 - GIO::AppInfoMonitor
@@ -306,36 +306,26 @@ Press ^] three times within 1s to disconnect TTY.
 [GIO] ok 294 - GIO::ZlibDecompressor
 ===> Testing [OK] for GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1>
 ===> Installing: GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1>
-===> Install [FAIL] for GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/52C01D560A2FDF37C89638F865165F50944209FE (GIO)
-===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/B3DF2080E9C47497139F66F002DF654B59CC04A1 (GIO::AppInfoMonitor)
-===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/ED0C5738485BD7549FE65E5169CC8CA5A9961294 (GIO::Raw::Types)
+===> Install [FAIL] for GIO:ver<0.0.4>:auth<cpan:CBWOOD>:api<1>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/B3DF2080E9C47497139F66F002DF654B59CC04A1 (GIO::AppInfoMonitor)
 ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/3E6796E3681A9E7317502A97903E4856F1C3F0B1 (GLib::Raw::Exceptions)
 Can only use : as invocant marker in a signature after the first parameter
 at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/3E6796E3681A9E7317502A97903E4856F1C3F0B1 (GLib::Raw::Exceptions):133
 ------>   method new (<HERE> :
 
-at /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/ED0C5738485BD7549FE65E5169CC8CA5A9961294 (GIO::Raw::Types):13
-
 at /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/B3DF2080E9C47497139F66F002DF654B59CC04A1 (GIO::AppInfoMonitor):5
+------> <BOL><HERE>use GIO::Raw::Types;
 
-at /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/52C01D560A2FDF37C89638F865165F50944209FE (GIO):3
-
-===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/52C01D560A2FDF37C89638F865165F50944209FE (GIO)
 ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/B3DF2080E9C47497139F66F002DF654B59CC04A1 (GIO::AppInfoMonitor)
-===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/ED0C5738485BD7549FE65E5169CC8CA5A9961294 (GIO::Raw::Types)
 ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/3E6796E3681A9E7317502A97903E4856F1C3F0B1 (GLib::Raw::Exceptions)
 Can only use : as invocant marker in a signature after the first parameter
 at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/3E6796E3681A9E7317502A97903E4856F1C3F0B1 (GLib::Raw::Exceptions):133
 ------>   method new (<HERE> :
 
-at /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/ED0C5738485BD7549FE65E5169CC8CA5A9961294 (GIO::Raw::Types):13
-
 at /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/B3DF2080E9C47497139F66F002DF654B59CC04A1 (GIO::AppInfoMonitor):5
-
-at /home/coke/sandbox/blin/installed/GIO_cpan:CBWOOD_0.0.4_1/sources/52C01D560A2FDF37C89638F865165F50944209FE (GIO):3
+------> <BOL><HERE>use GIO::Raw::Types;
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 21.808s
-             CPU time consumed: 28.862s
-                   Memory peak: 2.3G (swap: 0B)
+               Service runtime: 6min 28.998s
+             CPU time consumed: 9min 11.623s
+                   Memory peak: 3G (swap: 0B)

@@ -1,0 +1,36 @@
+Running as unit: run-p212030-i57318.service; invocation ID: bd92cd56d2194453a7e7dacfc80ea97a
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Web::Cache
+===> Found: Web::Cache:ver<0.000001> [via Zef::Repository::Ecosystems<rea>]
+[Web::Cache] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790132444.212032.8509.33639580823/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/W/Web%3A%3ACache/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz
+===> Fetching [OK]: Web::Cache:ver<0.000001> to /home/coke/sandbox/blin/data/zef-data/tmp/1790132444.212032.8509.33639580823/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz
+[Web::Cache] Command: tar -t -f ./Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz
+[Web::Cache] Command: tar -xvf ./Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz -C ../Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz
+===> Extraction [OK]: Web::Cache to /home/coke/sandbox/blin/data/zef-data/tmp/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz
+===> Testing: Web::Cache:ver<0.000001>
+[Web::Cache] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz/perl6-Web-Cache-master t/00-basics.t
+[Web::Cache] 1..1
+[Web::Cache] ok 1 - Web::Cache module can be use-d ok
+[Web::Cache] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz/perl6-Web-Cache-master t/01-memory.t
+[Web::Cache] 1..7
+[Web::Cache] not ok 1 - memory 1/7: create memory closure
+[Web::Cache] # Failed test 'memory 1/7: create memory closure'
+[Web::Cache] # at t/01-memory.t line 25
+[Web::Cache] # expected: (Block)
+[Web::Cache] #      got: (Block+{Callable[Str]})
+[Web::Cache] ok 2 - memory 2/7: cache set key
+[Web::Cache] ok 3 - memory 3/7: cache get key
+[Web::Cache] ok 4 - memory 4/7: cache remove key
+[Web::Cache] ok 5 - memory 5/7: webcache initial key insert
+[Web::Cache] ok 6 - memory 6/7: webcache subsequent key insert
+[Web::Cache] ok 7 - memory 7/7: cache clear
+[Web::Cache] # You failed 1 test of 7
+===> Testing [FAIL]: Web::Cache:ver<0.000001>
+[Web::Cache] Failed to get passing tests, but continuing with --force-test
+===> Installing: Web::Cache:ver<0.000001>
+===> Install [OK] for Web::Cache:ver<0.000001>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 2min 4.274s
+             CPU time consumed: 2min 10.068s
+                   Memory peak: 1.5G (swap: 0B)

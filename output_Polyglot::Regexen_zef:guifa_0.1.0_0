@@ -1,211 +1,442 @@
-Running as unit: run-p2044618-i2009106.service; invocation ID: 284e33c725544177bfc70207b9618c81
+Running as unit: run-p123065-i189227.service; invocation ID: a4cdb4b4bb62470491a02672ec2e220e
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Polyglot::Regexen
 ===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<fez>]
-[Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1789870384.2044619.2734.827234857157/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
-===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1789870384.2044619.2734.827234857157/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+[Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790130109.123066.3724.379291646713/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1790130109.123066.3724.379291646713/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
 [Polyglot::Regexen] Command: tar -t -f ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
 [Polyglot::Regexen] Command: tar -xvf ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz -C ../17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
 ===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
 ===> Testing: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/00-sanity.rakutest
-[Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/00-sanity.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/00-sanity.rakutest
+[Polyglot::Regexen] ===SORRY!=== Error while compiling t/00-sanity.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regexen.rakumod (Polyglot::Regexen)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions-Mixin.rakumod (Polyglot::Regex::ECMA262::Actions-Mixin)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
-[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter+{X::Comp} occurred while evaluating a BEGIN:
 [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+[Polyglot::Regexen] ------> <BOL><HERE>constant ECMA262-WordChar = RakuAST::Reg
 [Polyglot::Regexen] Exception details:
 [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
-[Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+[Polyglot::Regexen]     in code  at src/Raku/ast/code.rakumod line 375
+[Polyglot::Regexen]     in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4005
+[Polyglot::Regexen]     in any IMPL-COMPILE-TIME-VALUE at src/Raku/ast/variable-declaration.rakumod line 13
+[Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 555
+[Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions-Mixin.rakumod (Polyglot::Regex::ECMA262::Actions-Mixin):8
+[Polyglot::Regexen] ------>     <HERE>use Polyglot::Regex::ECMA262::Actions:au
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regexen.rakumod (Polyglot::Regexen):5
-[Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/00-sanity.rakutest:3
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/01-literals.rakutest
-[Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/01-literals.rakutest
+[Polyglot::Regexen] ------>     <HERE>use Polyglot::Regex::ECMA262::Actions-Mi
+[Polyglot::Regexen] at t/00-sanity.rakutest:3
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regexen;
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/01-literals.rakutest
+[Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/01-literals.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
-[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter+{X::Comp} occurred while evaluating a BEGIN:
 [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+[Polyglot::Regexen] ------> <BOL><HERE>constant ECMA262-WordChar = RakuAST::Reg
 [Polyglot::Regexen] Exception details:
 [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
-[Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+[Polyglot::Regexen]     in code  at src/Raku/ast/code.rakumod line 375
+[Polyglot::Regexen]     in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4005
+[Polyglot::Regexen]     in any IMPL-COMPILE-TIME-VALUE at src/Raku/ast/variable-declaration.rakumod line 13
+[Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 555
+[Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
-[Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/01-literals.rakutest:4
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/02-character-classes.rakutest
-[Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/02-character-classes.rakutest
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions;
+[Polyglot::Regexen] at t/ecma/01-literals.rakutest:4
+[Polyglot::Regexen] ------> <BOL><HERE>use Support;
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/02-character-classes.rakutest
+[Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/02-character-classes.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
-[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter+{X::Comp} occurred while evaluating a BEGIN:
 [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+[Polyglot::Regexen] ------> <BOL><HERE>constant ECMA262-WordChar = RakuAST::Reg
 [Polyglot::Regexen] Exception details:
 [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
-[Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+[Polyglot::Regexen]     in code  at src/Raku/ast/code.rakumod line 375
+[Polyglot::Regexen]     in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4005
+[Polyglot::Regexen]     in any IMPL-COMPILE-TIME-VALUE at src/Raku/ast/variable-declaration.rakumod line 13
+[Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 555
+[Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
-[Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/02-character-classes.rakutest:4
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/03-alternation.rakutest
-[Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/03-alternation.rakutest
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions;
+[Polyglot::Regexen] at t/ecma/02-character-classes.rakutest:4
+[Polyglot::Regexen] ------> <BOL><HERE>use Support;
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/03-alternation.rakutest
+[Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/03-alternation.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
-[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter+{X::Comp} occurred while evaluating a BEGIN:
 [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+[Polyglot::Regexen] ------> <BOL><HERE>constant ECMA262-WordChar = RakuAST::Reg
 [Polyglot::Regexen] Exception details:
 [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
-[Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+[Polyglot::Regexen]     in code  at src/Raku/ast/code.rakumod line 375
+[Polyglot::Regexen]     in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4005
+[Polyglot::Regexen]     in any IMPL-COMPILE-TIME-VALUE at src/Raku/ast/variable-declaration.rakumod line 13
+[Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 555
+[Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
-[Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/03-alternation.rakutest:4
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/04-assertions.rakutest
-[Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/04-assertions.rakutest
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions;
+[Polyglot::Regexen] at t/ecma/03-alternation.rakutest:4
+[Polyglot::Regexen] ------> <BOL><HERE>use Support;
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/04-assertions.rakutest
+[Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/04-assertions.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
-[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter+{X::Comp} occurred while evaluating a BEGIN:
 [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+[Polyglot::Regexen] ------> <BOL><HERE>constant ECMA262-WordChar = RakuAST::Reg
 [Polyglot::Regexen] Exception details:
 [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
-[Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+[Polyglot::Regexen]     in code  at src/Raku/ast/code.rakumod line 375
+[Polyglot::Regexen]     in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4005
+[Polyglot::Regexen]     in any IMPL-COMPILE-TIME-VALUE at src/Raku/ast/variable-declaration.rakumod line 13
+[Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 555
+[Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
-[Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/04-assertions.rakutest:4
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/05-quantifiers.rakutest
-[Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/05-quantifiers.rakutest
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions;
+[Polyglot::Regexen] at t/ecma/04-assertions.rakutest:4
+[Polyglot::Regexen] ------> <BOL><HERE>use Support;
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/05-quantifiers.rakutest
+[Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/05-quantifiers.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
-[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter+{X::Comp} occurred while evaluating a BEGIN:
 [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+[Polyglot::Regexen] ------> <BOL><HERE>constant ECMA262-WordChar = RakuAST::Reg
 [Polyglot::Regexen] Exception details:
 [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
-[Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+[Polyglot::Regexen]     in code  at src/Raku/ast/code.rakumod line 375
+[Polyglot::Regexen]     in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4005
+[Polyglot::Regexen]     in any IMPL-COMPILE-TIME-VALUE at src/Raku/ast/variable-declaration.rakumod line 13
+[Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 555
+[Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
-[Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/05-quantifiers.rakutest:4
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/06-captures.rakutest
-[Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/06-captures.rakutest
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions;
+[Polyglot::Regexen] at t/ecma/05-quantifiers.rakutest:4
+[Polyglot::Regexen] ------> <BOL><HERE>use Support;
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/06-captures.rakutest
+[Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/06-captures.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
-[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter+{X::Comp} occurred while evaluating a BEGIN:
 [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+[Polyglot::Regexen] ------> <BOL><HERE>constant ECMA262-WordChar = RakuAST::Reg
 [Polyglot::Regexen] Exception details:
 [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
-[Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+[Polyglot::Regexen]     in code  at src/Raku/ast/code.rakumod line 375
+[Polyglot::Regexen]     in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4005
+[Polyglot::Regexen]     in any IMPL-COMPILE-TIME-VALUE at src/Raku/ast/variable-declaration.rakumod line 13
+[Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 555
+[Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
-[Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/06-captures.rakutest:4
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/07-unicode.rakutest
-[Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/07-unicode.rakutest
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions;
+[Polyglot::Regexen] at t/ecma/06-captures.rakutest:4
+[Polyglot::Regexen] ------> <BOL><HERE>use Support;
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/07-unicode.rakutest
+[Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/07-unicode.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
-[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter+{X::Comp} occurred while evaluating a BEGIN:
 [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+[Polyglot::Regexen] ------> <BOL><HERE>constant ECMA262-WordChar = RakuAST::Reg
 [Polyglot::Regexen] Exception details:
 [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
-[Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+[Polyglot::Regexen]     in code  at src/Raku/ast/code.rakumod line 375
+[Polyglot::Regexen]     in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4005
+[Polyglot::Regexen]     in any IMPL-COMPILE-TIME-VALUE at src/Raku/ast/variable-declaration.rakumod line 13
+[Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 555
+[Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
-[Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/07-unicode.rakutest:4
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/08-modifiers.rakutest
-[Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/08-modifiers.rakutest
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions;
+[Polyglot::Regexen] at t/ecma/07-unicode.rakutest:4
+[Polyglot::Regexen] ------> <BOL><HERE>use Support;
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/08-modifiers.rakutest
+[Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/08-modifiers.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
-[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter+{X::Comp} occurred while evaluating a BEGIN:
 [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+[Polyglot::Regexen] ------> <BOL><HERE>constant ECMA262-WordChar = RakuAST::Reg
 [Polyglot::Regexen] Exception details:
 [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
-[Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+[Polyglot::Regexen]     in code  at src/Raku/ast/code.rakumod line 375
+[Polyglot::Regexen]     in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4005
+[Polyglot::Regexen]     in any IMPL-COMPILE-TIME-VALUE at src/Raku/ast/variable-declaration.rakumod line 13
+[Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 555
+[Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
-[Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/08-modifiers.rakutest:4
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/09-role.rakutest
-[Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/09-role.rakutest
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions;
+[Polyglot::Regexen] at t/ecma/08-modifiers.rakutest:4
+[Polyglot::Regexen] ------> <BOL><HERE>use Support;
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/09-role.rakutest
+[Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/09-role.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
-[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter+{X::Comp} occurred while evaluating a BEGIN:
 [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+[Polyglot::Regexen] ------> <BOL><HERE>constant ECMA262-WordChar = RakuAST::Reg
 [Polyglot::Regexen] Exception details:
 [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
-[Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+[Polyglot::Regexen]     in code  at src/Raku/ast/code.rakumod line 375
+[Polyglot::Regexen]     in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4005
+[Polyglot::Regexen]     in any IMPL-COMPILE-TIME-VALUE at src/Raku/ast/variable-declaration.rakumod line 13
+[Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 555
+[Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
-[Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/09-role.rakutest:3
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/be8107f365b15e3b75859bd093302ba5a39f28ab/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/10-usage.rakutest
-[Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/10-usage.rakutest
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
+[Polyglot::Regexen] at t/ecma/09-role.rakutest:3
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions:au
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/10-usage.rakutest
+[Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/10-usage.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regexen.rakumod (Polyglot::Regexen)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions-Mixin.rakumod (Polyglot::Regex::ECMA262::Actions-Mixin)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
-[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+[Polyglot::Regexen] An exception X::TypeCheck::Binding::Parameter+{X::Comp} occurred while evaluating a BEGIN:
 [Polyglot::Regexen] Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes):222
+[Polyglot::Regexen] ------> <BOL><HERE>constant ECMA262-WordChar = RakuAST::Reg
 [Polyglot::Regexen] Exception details:
 [Polyglot::Regexen]   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 [Polyglot::Regexen]     in any new at src/Raku/ast/regex.rakumod line 2061
-[Polyglot::Regexen]     in block  at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes) line 222
+[Polyglot::Regexen]     in code  at src/Raku/ast/code.rakumod line 375
+[Polyglot::Regexen]     in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4005
+[Polyglot::Regexen]     in any IMPL-COMPILE-TIME-VALUE at src/Raku/ast/variable-declaration.rakumod line 13
+[Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 555
+[Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions-Mixin.rakumod (Polyglot::Regex::ECMA262::Actions-Mixin):8
+[Polyglot::Regexen] ------>     <HERE>use Polyglot::Regex::ECMA262::Actions:au
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regexen.rakumod (Polyglot::Regexen):5
-[Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/10-usage.rakutest:1
+[Polyglot::Regexen] ------>     <HERE>use Polyglot::Regex::ECMA262::Actions-Mi
+[Polyglot::Regexen] at t/ecma/10-usage.rakutest:1
+[Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regexen;
 ===> Testing [FAIL]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
 [Polyglot::Regexen] Failed to get passing tests, but continuing with --force-test
 ===> Installing: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
 ===> Install [FAIL] for Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/BC6D3C1653A62CB7973AF2249F0997287ACC0612 (Polyglot::Regex::ECMA262::Actions)
 ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/963BC5BF2466B70304F9EA3766FAD96D15589D78 (Polyglot::Regex::ECMA262::Classes)
-An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+An exception X::TypeCheck::Binding::Parameter+{X::Comp} occurred while evaluating a BEGIN:
 Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/963BC5BF2466B70304F9EA3766FAD96D15589D78 (Polyglot::Regex::ECMA262::Classes):222
+------> <BOL><HERE>constant ECMA262-WordChar = RakuAST::Reg
 Exception details:
   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
     in any new at src/Raku/ast/regex.rakumod line 2061
-    in block  at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/963BC5BF2466B70304F9EA3766FAD96D15589D78 (Polyglot::Regex::ECMA262::Classes) line 222
+    in code  at src/Raku/ast/code.rakumod line 375
+    in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4005
+    in any IMPL-COMPILE-TIME-VALUE at src/Raku/ast/variable-declaration.rakumod line 13
+    in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 555
+    in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+    in any to-begin-time at src/Raku/ast/base.rakumod line 133
+    in any type-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
 
 
 at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/BC6D3C1653A62CB7973AF2249F0997287ACC0612 (Polyglot::Regex::ECMA262::Actions):2
+------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 
 ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/BC6D3C1653A62CB7973AF2249F0997287ACC0612 (Polyglot::Regex::ECMA262::Actions)
 ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/963BC5BF2466B70304F9EA3766FAD96D15589D78 (Polyglot::Regex::ECMA262::Classes)
-An exception X::TypeCheck::Binding::Parameter occurred while evaluating a constant:
+An exception X::TypeCheck::Binding::Parameter+{X::Comp} occurred while evaluating a BEGIN:
 Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
 at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/963BC5BF2466B70304F9EA3766FAD96D15589D78 (Polyglot::Regex::ECMA262::Classes):222
+------> <BOL><HERE>constant ECMA262-WordChar = RakuAST::Reg
 Exception details:
   Type check failed in binding to parameter '$elements'; expected List but got Mu (Mu)
     in any new at src/Raku/ast/regex.rakumod line 2061
-    in block  at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/963BC5BF2466B70304F9EA3766FAD96D15589D78 (Polyglot::Regex::ECMA262::Classes) line 222
+    in code  at src/Raku/ast/code.rakumod line 375
+    in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4005
+    in any IMPL-COMPILE-TIME-VALUE at src/Raku/ast/variable-declaration.rakumod line 13
+    in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 555
+    in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+    in any to-begin-time at src/Raku/ast/base.rakumod line 133
+    in any type-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any package-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any scope-declarator at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/lib/Raku/Grammar.moarvm line 1
 
 
 at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/BC6D3C1653A62CB7973AF2249F0997287ACC0612 (Polyglot::Regex::ECMA262::Actions):2
+------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 2min 21.136s
-             CPU time consumed: 2min 25.947s
-                   Memory peak: 1.4G (swap: 0B)
+               Service runtime: 2min 21.538s
+             CPU time consumed: 2min 30.080s
+                   Memory peak: 1.5G (swap: 0B)

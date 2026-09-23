@@ -1,0 +1,583 @@
+Running as unit: run-p449167-i463933.service; invocation ID: e55edab0fd374bbeb04948695c424525
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: HTTP::Server::Tiny
+===> Found: HTTP::Server::Tiny:ver<0.0.2> [via Zef::Repository::Ecosystems<rea>]
+[HTTP::Server::Tiny] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790138590.449170.800.4046425075705/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/H/HTTP%3A%3AServer%3A%3ATiny/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz
+===> Fetching [OK]: HTTP::Server::Tiny:ver<0.0.2> to /home/coke/sandbox/blin/data/zef-data/tmp/1790138590.449170.800.4046425075705/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz
+[HTTP::Server::Tiny] Command: tar -t -f ./HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz
+[HTTP::Server::Tiny] Command: tar -xvf ./HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz -C ../HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz
+===> Extraction [OK]: HTTP::Server::Tiny to /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz
+===> Testing: HTTP::Server::Tiny:ver<0.0.2>
+[HTTP::Server::Tiny] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master t/00-dependency-checking.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling t/00-dependency-checking.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+[HTTP::Server::Tiny] ===SORRY!===
+[HTTP::Server::Tiny] Unrecognized regex metacharacter - (must be quoted to match literally)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Base;
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Curl;
+[HTTP::Server::Tiny] at t/00-dependency-checking.t:3
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish;
+[HTTP::Server::Tiny] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master t/01-psgi.t
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling t/01-psgi.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+[HTTP::Server::Tiny] ===SORRY!===
+[HTTP::Server::Tiny] Unrecognized regex metacharacter - (must be quoted to match literally)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Base;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Curl;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at t/01-psgi.t:9
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master t/02-server.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling t/02-server.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+[HTTP::Server::Tiny] ===SORRY!===
+[HTTP::Server::Tiny] Unrecognized regex metacharacter - (must be quoted to match literally)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Base;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Curl;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at t/02-server.t:9
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master t/04-get.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling t/04-get.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+[HTTP::Server::Tiny] ===SORRY!===
+[HTTP::Server::Tiny] Unrecognized regex metacharacter - (must be quoted to match literally)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Base;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Curl;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at t/04-get.t:8
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master t/05-post.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling t/05-post.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+[HTTP::Server::Tiny] ===SORRY!===
+[HTTP::Server::Tiny] Unrecognized regex metacharacter - (must be quoted to match literally)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Base;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Curl;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at t/05-post.t:8
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master t/06-channel.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling t/06-channel.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+[HTTP::Server::Tiny] ===SORRY!===
+[HTTP::Server::Tiny] Unrecognized regex metacharacter - (must be quoted to match literally)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Base;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Curl;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at t/06-channel.t:8
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master t/07-io-handle.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling t/07-io-handle.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+[HTTP::Server::Tiny] ===SORRY!===
+[HTTP::Server::Tiny] Unrecognized regex metacharacter - (must be quoted to match literally)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Base;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Curl;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at t/07-io-handle.t:9
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master t/08-long-req.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling t/08-long-req.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+[HTTP::Server::Tiny] ===SORRY!===
+[HTTP::Server::Tiny] Unrecognized regex metacharacter - (must be quoted to match literally)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Base;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Curl;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at t/08-long-req.t:8
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master t/09-chunked-request.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling t/09-chunked-request.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+[HTTP::Server::Tiny] ===SORRY!===
+[HTTP::Server::Tiny] Unrecognized regex metacharacter - (must be quoted to match literally)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Base;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Curl;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at t/09-chunked-request.t:8
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master t/10-ise.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling t/10-ise.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+[HTTP::Server::Tiny] ===SORRY!===
+[HTTP::Server::Tiny] Unrecognized regex metacharacter - (must be quoted to match literally)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Base;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Curl;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at t/10-ise.t:7
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master t/11-str.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling t/11-str.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+[HTTP::Server::Tiny] ===SORRY!===
+[HTTP::Server::Tiny] Unrecognized regex metacharacter - (must be quoted to match literally)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Base;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Curl;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at t/11-str.t:7
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master t/12-supply.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling t/12-supply.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+[HTTP::Server::Tiny] ===SORRY!===
+[HTTP::Server::Tiny] Unrecognized regex metacharacter - (must be quoted to match literally)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Base;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Curl;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at t/12-supply.t:8
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master t/13-promise.t
+[HTTP::Server::Tiny] 1..3
+[HTTP::Server::Tiny] http server is ready: http://127.0.0.1:11273/ (pid:455274, keepalive: 1)
+[HTTP::Server::Tiny] ok 1 - control-promise is kept
+[HTTP::Server::Tiny] ok 2 - server completed on command
+[HTTP::Server::Tiny] ok 3 - and just to be sure it didn't timeout
+[HTTP::Server::Tiny] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master t/14-error.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling t/14-error.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+[HTTP::Server::Tiny] ===SORRY!===
+[HTTP::Server::Tiny] Unrecognized regex metacharacter - (must be quoted to match literally)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Base;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Curl;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at t/14-error.t:7
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master t/15-p6w.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling t/15-p6w.t
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish)
+[HTTP::Server::Tiny] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl)
+[HTTP::Server::Tiny] ===SORRY!===
+[HTTP::Server::Tiny] Unrecognized regex metacharacter - (must be quoted to match literally)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][<HERE>\x00-\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] Unable to parse expression in metachar:sym<[ ]>; couldn't find final ']' (corresponding starter was at line 45)
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/937B58C6E7EDEE1CAAD93AC4EBA267B57A392F28 (HTTP::Tinyish::Base):45
+[HTTP::Server::Tiny] ------>     my $token = rx:P5/[^][\x00-<HERE>\x1f\x7f()<>@,;:\\"\/?={} \t]+/; # 
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/84102DD9FB5973A7DA6BCE3DCABCA04A109FAC96 (HTTP::Tinyish::Curl):1
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Base;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at /home/coke/sandbox/blin/installed/HTTP::Tinyish_zef:skaji_0.4.1_0/sources/254E6762FFC56F6F5AEBA3E617018015AA56326E (HTTP::Tinyish):2
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish::Curl;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+[HTTP::Server::Tiny] at t/15-p6w.t:9
+[HTTP::Server::Tiny] ------> <BOL><HERE>use HTTP::Tinyish;
+[HTTP::Server::Tiny] Saw 1 occurrence of deprecated code.
+[HTTP::Server::Tiny] ================================================================================
+[HTTP::Server::Tiny] .pm file extension in raku library path seen at:
+[HTTP::Server::Tiny]   file#/home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AServer%3A%3ATiny%3Aver%3C0.0.2%3E%3Aauth%3Cgithub%3Atokuhirom%3E.tar.gz/p6-HTTP-Server-Tiny-master/t/lib, line 0
+[HTTP::Server::Tiny] Please use the .rakumod extension for raku modules, or include a META6.json file that explicitly declares each raku module file instead.
+[HTTP::Server::Tiny] --------------------------------------------------------------------------------
+[HTTP::Server::Tiny] Please contact the author to have these occurrences of deprecated code
+[HTTP::Server::Tiny] adapted, so that this message will disappear!
+===> Testing [FAIL]: HTTP::Server::Tiny:ver<0.0.2>
+[HTTP::Server::Tiny] Failed to get passing tests, but continuing with --force-test
+===> Installing: HTTP::Server::Tiny:ver<0.0.2>
+===> Install [OK] for HTTP::Server::Tiny:ver<0.0.2>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 3min 24.201s
+             CPU time consumed: 3min 19.946s
+                   Memory peak: 1.6G (swap: 464M)

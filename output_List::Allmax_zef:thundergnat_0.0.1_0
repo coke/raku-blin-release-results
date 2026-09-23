@@ -1,0 +1,25 @@
+Running as unit: run-p81917-i15657.service; invocation ID: 25fa2ac50a444e0f99817369038f087f
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: List::Allmax
+===> Found: List::Allmax:ver<0.0.1>:auth<zef:thundergnat> [via Zef::Repository::Ecosystems<fez>]
+[List::Allmax] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790128915.81920.1231.2603533701804/66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz https://360.zef.pm/L/IS/LIST_ALLMAX/66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz
+===> Fetching [OK]: List::Allmax:ver<0.0.1>:auth<zef:thundergnat> to /home/coke/sandbox/blin/data/zef-data/tmp/1790128915.81920.1231.2603533701804/66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz
+[List::Allmax] Command: tar -t -f ./66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz
+[List::Allmax] Command: tar -xvf ./66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz -C ../66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz
+===> Extraction [OK]: List::Allmax to /home/coke/sandbox/blin/data/zef-data/tmp/66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz
+===> Testing: List::Allmax:ver<0.0.1>:auth<zef:thundergnat>
+[List::Allmax] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz/List-Allmax-0.0.1 t/01-basic.rakutest
+[List::Allmax] 1..6
+[List::Allmax] Type check failed in binding to parameter '&by'; expected Callable[Callable] but got Block (-> ;; $_? is raw = O...)
+[List::Allmax]   in sub all-max at /home/coke/sandbox/blin/data/zef-data/tmp/66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz/List-Allmax-0.0.1/lib/List/Allmax.rakumod (List::Allmax) line 4
+[List::Allmax]   in block <unit> at t/01-basic.rakutest line 8
+[List::Allmax] # You planned 6 tests, but ran 0
+===> Testing [FAIL]: List::Allmax:ver<0.0.1>:auth<zef:thundergnat>
+[List::Allmax] Failed to get passing tests, but continuing with --force-test
+===> Installing: List::Allmax:ver<0.0.1>:auth<zef:thundergnat>
+===> Install [OK] for List::Allmax:ver<0.0.1>:auth<zef:thundergnat>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 1min 45.046s
+             CPU time consumed: 1min 43.445s
+                   Memory peak: 1011.8M (swap: 0B)

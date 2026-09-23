@@ -1,0 +1,44 @@
+Running as unit: run-p266837-i230898.service; invocation ID: 099bcfa9f81f494b93e0b7d73f124743
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Solstice
+===> Found: Solstice:ver<0.1.5>:auth<cpan:KOBOLDWIZ>:api<1> [via Zef::Repository::Ecosystems<rea>]
+[Solstice] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790133902.266839.5690.680311569888/Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/Solstice/Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz
+===> Fetching [OK]: Solstice:ver<0.1.5>:auth<cpan:KOBOLDWIZ>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790133902.266839.5690.680311569888/Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz
+[Solstice] Command: tar -t -f ./Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz
+[Solstice] Command: tar -xvf ./Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz -C ../Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz
+===> Extraction [OK]: Solstice to /home/coke/sandbox/blin/data/zef-data/tmp/Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz
+===> Testing: Solstice:ver<0.1.5>:auth<CPAN:HOLYGHOST>:api<1>
+[Solstice] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz/Solstice t/00-load.t
+[Solstice] 1..15
+[Solstice] ok 1 - Solstice::Diamond module can be use-d ok
+[Solstice] ok 2 - Solstice::Entity module can be use-d ok
+[Solstice] ok 3 - Solstice::Shadax module can be use-d ok
+[Solstice] ok 4 - Solstice::Room module can be use-d ok
+[Solstice] ok 5 - Solstice::Tilemap module can be use-d ok
+[Solstice] ok 6 - Solstice::Controller module can be use-d ok
+[Solstice] ok 7 - Solstice::Move module can be use-d ok
+[Solstice] ok 8 - Solstice::Room1 module can be use-d ok
+[Solstice] ok 9 - Solstice::Room2 module can be use-d ok
+[Solstice] ok 10 - Solstice::Tilemap1 module can be use-d ok
+[Solstice] ok 11 - Solstice::SDL2MainLoop module can be use-d ok
+[Solstice] ok 12 - Solstice::OchreFloorDiamond module can be use-d ok
+[Solstice] ok 13 - Solstice::OchreSlabDiamond module can be use-d ok
+[Solstice] ok 14 - Solstice::SolsticeModel module can be use-d ok
+[Solstice] ok 15 - Solstice::SolsticeView module can be use-d ok
+===> Testing [OK] for Solstice:ver<0.1.5>:auth<CPAN:HOLYGHOST>:api<1>
+===> Installing: Solstice:ver<0.1.5>:auth<CPAN:HOLYGHOST>:api<1>
+===> Install [FAIL] for Solstice:ver<0.1.5>:auth<CPAN:HOLYGHOST>:api<1>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Solstice_cpan:KOBOLDWIZ_0.1.5_1/sources/78EA09DF65C54FF9BF6E04534F3FAA71E1928672 (Solstice::Solstice)
+Missing block (whitespace needed before curlies taken as a hash subscript?)
+at /home/coke/sandbox/blin/installed/Solstice_cpan:KOBOLDWIZ_0.1.5_1/sources/78EA09DF65C54FF9BF6E04534F3FAA71E1928672 (Solstice::Solstice):71
+------>                 }<HERE><EOL>
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Solstice_cpan:KOBOLDWIZ_0.1.5_1/sources/78EA09DF65C54FF9BF6E04534F3FAA71E1928672 (Solstice::Solstice)
+Missing block (whitespace needed before curlies taken as a hash subscript?)
+at /home/coke/sandbox/blin/installed/Solstice_cpan:KOBOLDWIZ_0.1.5_1/sources/78EA09DF65C54FF9BF6E04534F3FAA71E1928672 (Solstice::Solstice):71
+------>                 }<HERE><EOL>
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 3min 14.460s
+             CPU time consumed: 3min 23.769s
+                   Memory peak: 2.2G (swap: 4.3M)
