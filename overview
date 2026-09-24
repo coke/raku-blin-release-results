@@ -21,7 +21,7 @@ ASN::Grammar – OK
 ASN::META – AlwaysFail
 ASTQuery – AlwaysFail
 AVL-Tree – OK
-AWS::Pricing – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+AWS::Pricing – OK
 AWS::SNS::Notification – AlwaysFail
 AWS::Session – AlwaysFail
 Abbreviations – OK
@@ -72,7 +72,7 @@ Algorithm::BloomFilter – AlwaysFail
 Algorithm::DawkinsWeasel – OK
 Algorithm::Diff – OK
 Algorithm::Elo – OK
-Algorithm::Evolutionary::Simple – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Algorithm::Evolutionary::Simple – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Algorithm::Genetic – OK
 Algorithm::GooglePolylineEncoding – OK
 Algorithm::Heap::Binary – OK
@@ -104,7 +104,7 @@ Alma – AlwaysFail
 Amazon::DynamoDB – OK
 Anolis – AlwaysFail
 Apache::LogFormat – OK
-App::APOTD – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+App::APOTD – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 App::AizuOnlineJudge – OK
 App::Ariza – AlwaysFail
 App::Assixt – AlwaysFail
@@ -119,7 +119,7 @@ App::Ebread – MissingDependency
 App::Ecosystems – OK
 App::FIT2GPX – OK
 App::FindSource – AlwaysFail
-App::FontSample – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+App::FontSample – OK
 App::Football – OK
 App::GPTrixie – OK
 App::GTD – AlwaysFail
@@ -141,7 +141,7 @@ App::MoarVM::HeapAnalyzer::Model – OK
 App::ModuleSnap – AlwaysFail
 App::Moneymoor – AlwaysFail
 App::Nopaste – AlwaysFail
-App::OrgSleep – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+App::OrgSleep – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 App::P6Dx – AlwaysFail
 App::P6Ghq – OK
 App::Perl6LangServer – MissingDependency
@@ -155,7 +155,7 @@ App::Rak::Complete – OK
 App::Rak::Markdown – AlwaysFail
 App::Raku::Log – OK
 App::RakuCron – AlwaysFail
-App::RakuDocToPDF – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+App::RakuDocToPDF – OK
 App::Rakuman – OK
 App::Rakus – OK
 App::SerializerPerf – OK
@@ -245,7 +245,7 @@ BDD::Behave – ZefFailure
 BDD::Behave::Playwright – AlwaysFail
 BSON – OK
 BSON::Simple – OK
-BTree – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+BTree – OK
 Backtrace::AsHTML – OK
 Backtrace::Files – OK
 Badger – OK
@@ -266,8 +266,8 @@ Binary::Structured – OK
 BinaryHeap – OK
 Bio – AlwaysFail
 Bio::ViennaNGS – OK
-BioInfo – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
-BioPerl6 – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+BioInfo – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+BioPerl6 – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 BitEnum – AlwaysFail
 Bitcoin – AlwaysFail
 Bitcoin::Core::Secp256k1 – AlwaysFail
@@ -285,7 +285,7 @@ BuildToolchainRepo – OK
 Bundle-Compress-Zlib – AlwaysFail
 Bundle-IO-Compress-Bzip2 – AlwaysFail
 Business::CreditCard – OK
-BusyIndicator – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+BusyIndicator – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 C::Parser – OK
 CBOR::Simple – OK
 CCChart – AlwaysFail
@@ -300,19 +300,19 @@ CLI::Help – OK
 CLI::Version – OK
 CLI::Wordpress – OK
 CLI::Wordpress::Migrator – OK
-CPAN::Uploader::Tiny – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+CPAN::Uploader::Tiny – OK
 CRDT – OK
 CRoaring – OK
 CSS – AlwaysFail
 CSS::Font::Resources – OK
 CSS::Grammar – OK
 CSS::Minifier – OK
-CSS::Module – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+CSS::Module – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 CSS::Module::CSS3::Selectors – OK
 CSS::Nested – OK
 CSS::Properties – OK
 CSS::Selector::To::XPath – OK
-CSS::Specification – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+CSS::Specification – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 CSS::Stylesheet – OK
 CSS::TagSet – OK
 CSS::Writer – OK
@@ -354,8 +354,8 @@ Clifford – AlwaysFail
 Clipboard – OK
 Clu – AlwaysFail
 Cmark – AlwaysFail
-Code::Coverable – AlwaysFail
-Code::Coverage – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Code::Coverable – OK
+Code::Coverage – OK
 CodeUnit – OK
 Cofra – AlwaysFail
 Collection – AlwaysFail
@@ -421,7 +421,7 @@ Constants::Netinet::In – OK
 Constants::Sys::Socket – OK
 Contact – OK
 Context – AlwaysFail
-Control::Bail – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Control::Bail – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Cookie::Baker – OK
 Cookie::Jar – OK
 Cooklang – OK
@@ -450,13 +450,13 @@ Cro::HTTP::Session::Redis – AlwaysFail
 Cro::HTTP::Session::SQLite – AlwaysFail
 Cro::HTTP::Test – OK
 Cro::OpenAPI::RoutesFromDefinition – OK
-Cro::RPC::JSON – AlwaysFail
+Cro::RPC::JSON – ZefFailure
 Cro::SSL – AlwaysFail
 Cro::TLS – OK
 Cro::WebApp – OK
 Cro::WebApp::Evaluate – AlwaysFail
 Cro::WebSocket – OK
-Cro::ZeroMQ – AlwaysFail
+Cro::ZeroMQ – ZefFailure
 CroX::HTTP::Auth::Munge – AlwaysFail
 CroX::HTTP::FallbackPassthru – AlwaysFail
 CroX::HTTP::Transform::GraphQL – AlwaysFail
@@ -487,7 +487,7 @@ CucumisSextus – AlwaysFail
 Curlie – AlwaysFail
 Curry – AlwaysFail
 CustomImporting – OK
-DAWG – Flapper
+DAWG – AlwaysFail
 DB – OK
 DB::Migration::Declare – OK
 DB::Migration::Simple – AlwaysFail
@@ -508,7 +508,7 @@ DBIish – AlwaysFail
 DBIish::Pool – AlwaysFail
 DBIish::Transaction – AlwaysFail
 DBIx::NamedQueries – MissingDependency
-DEBUG – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+DEBUG – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 DFM::Parser – OK
 DNS::Zone – AlwaysFail
 DOM::Tiny – AlwaysFail
@@ -575,7 +575,7 @@ Date::Calendar::MayaAztec – AlwaysFail
 Date::Calendar::Persian – AlwaysFail
 Date::Calendar::Strftime – AlwaysFail
 Date::Christian::Advent – OK
-Date::Discordian – AlwaysFail
+Date::Discordian – OK
 Date::Easter – OK
 Date::Event – OK
 Date::Names – OK
@@ -633,7 +633,7 @@ Directory – AlwaysFail
 DirsOfInterest – OK
 Discogs::API – AlwaysFail
 DispatchMap – OK
-Display::Listings – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Display::Listings – OK
 Dist::Helper – OK
 Dist::META – AlwaysFail
 Distribution::Builder::Cmake – OK
@@ -644,7 +644,7 @@ Distribution::Extension::Updater – OK
 Distribution::Resources::Menu – OK
 Do123 – AlwaysFail
 Doc::Executable – OK
-Doc::TypeGraph – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Doc::TypeGraph – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Docker::API – AlwaysFail
 Docker::File – OK
 Documentable – AlwaysFail
@@ -697,7 +697,7 @@ Excel::Text::Template – OK
 Exportable – OK
 EyeofTheBeholder – AlwaysFail
 EyeoftheBeholder3 – AlwaysFail
-FDF – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+FDF – OK
 FEN::Grammar – OK
 FFmpegProgressBar – AlwaysFail
 FHIR – AlwaysFail
@@ -736,7 +736,7 @@ File::Stat – OK
 File::Temp – OK
 File::TreeBuilder – OK
 File::Tudo – OK
-File::Utils – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+File::Utils – OK
 File::Which – OK
 File::XML::DMARC::Google – OK
 File::Zip – OK
@@ -749,9 +749,9 @@ Filetype::Magic – AlwaysFail
 Finance::CompoundInterest – OK
 Finance::GDAX::API – AlwaysFail
 Find::Bundled – OK
-FindBin – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+FindBin – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 FindBin-libs – AlwaysFail
-FindBin::libs – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+FindBin::libs – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 FiniteFields – OK
 FixedInt – OK
 Flower – AlwaysFail
@@ -777,7 +777,7 @@ Format::Lisp – OK
 Fortran::Grammar – AlwaysFail
 Fortune – OK
 ForwardIterables – OK
-French – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+French – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Frinfon – AlwaysFail
 Function::Validation – OK
 Functional::LinkedList – OK
@@ -877,7 +877,7 @@ Grammar::BNF – OK
 Grammar::Common – OK
 Grammar::Debugger – OK
 Grammar::DiceRolls – OK
-Grammar::Editor – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Grammar::Editor – OK
 Grammar::ErrorReporting – AlwaysFail
 Grammar::Extractor – OK
 Grammar::HTTP – OK
@@ -945,12 +945,12 @@ HTTP::Server::Ogre – OK
 HTTP::Server::Router – AlwaysFail
 HTTP::Server::Router::YAML – AlwaysFail
 HTTP::Server::Simple – AlwaysFail
-HTTP::Server::Tiny – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+HTTP::Server::Tiny – OK
 HTTP::Signature – AlwaysFail
 HTTP::Status – OK
 HTTP::Supply – AlwaysFail
 HTTP::Tiny – OK
-HTTP::Tinyish – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+HTTP::Tinyish – OK
 HTTP::UserAgent – AlwaysFail
 HTTP::UserAgent::Strict – AlwaysFail
 Haikunator – AlwaysFail
@@ -1004,6 +1004,7 @@ IO::Blob – OK
 IO::Capture::Simple – OK
 IO::CatHandle::AutoLines – OK
 IO::Dir – AlwaysFail
+IO::Directory::Watcher – OK
 IO::Glob – AlwaysFail
 IO::Handle::Rollover – AlwaysFail
 IO::Maildir – OK
@@ -1071,7 +1072,7 @@ Inline::Brainfuck – OK
 Inline::Go – AlwaysFail
 Inline::J – AlwaysFail
 Inline::Lua – AlwaysFail
-Inline::Perl5 – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Inline::Perl5 – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Inline::Python – AlwaysFail
 Inline::Python3 – AlwaysFail
 Inline::Ruby – AlwaysFail
@@ -1143,7 +1144,7 @@ Jupyter::Kernel – ZefFailure
 KHPH – OK
 Kains – AlwaysFail
 Karabiner::CompModGenerator – AlwaysFail
-Keyring – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Keyring – OK
 Kind – OK
 Kind::Subset::Parametric – AlwaysFail
 Kivuli – AlwaysFail
@@ -1171,9 +1172,9 @@ L10N::ZH – AlwaysFail
 LCS::All – OK
 LCS::BV – OK
 LEB128 – OK
-LIVR – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+LIVR – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 LLM::Agent – AlwaysFail
-LLM::Character – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+LLM::Character – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 LLM::Chat – AlwaysFail
 LLM::Classifiers::Emotions – OK
 LLM::Containerization – CyclicDependency
@@ -1219,6 +1220,7 @@ LibraryMake – OK
 Libui – AlwaysFail
 License::SPDX – AlwaysFail
 License::Software – AlwaysFail
+Life::Mathematics – OK
 Linenoise – OK
 Lines::Containing – OK
 Lingua::Conjunction – OK
@@ -1253,7 +1255,7 @@ Linux::Proc::Statm – OK
 Linux::Process::SignalInfo – OK
 List::Agnostic – OK
 List::AllUtils – AlwaysFail
-List::Allmax – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+List::Allmax – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 List::Divvy – OK
 List::MoreUtils – OK
 List::Operator::DoublePlus – OK
@@ -1292,7 +1294,7 @@ Lumberjack::Config::JSON – AlwaysFail
 Lumberjack::Dispatcher::EventSource – AlwaysFail
 Lumberjack::Dispatcher::Syslog – OK
 Lumberjack::Message::JSON – AlwaysFail
-MCP – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+MCP – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 MCP::Server::Tool::Ask – AlwaysFail
 MCP::Server::Tool::FileSystem – AlwaysFail
 MCP::Server::Tool::Shell – AlwaysFail
@@ -1332,7 +1334,7 @@ Mac::Applications::List – AlwaysFail
 Mac::Battery::Alerter – AlwaysFail
 MacOS::AudioDevices – AlwaysFail
 MacOS::NativeLib – OK
-Magento – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+Magento – OK
 MagickWand – AlwaysFail
 Manifest::StopWar – OK
 Manifesto – OK
@@ -1433,7 +1435,7 @@ MermaidJS::Grammar – OK
 MessagePack – OK
 MessagePack::Class – OK
 MessageStream – OK
-MetaCPAN::Favorite – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+MetaCPAN::Favorite – OK
 MetamodelX::Dataclass – AlwaysFail
 Method::Also – OK
 Method::Misspelt – OK
@@ -1468,7 +1470,7 @@ MsgPack – AlwaysFail
 Munge – AlwaysFail
 Music::Engine – OK
 Music::Helpers – OK
-Mux – OK
+Mux – Fail, Bisected: bcb3ef7a181dbc7d04ebef17500ddbc705c88706
 NCurses – OK
 NQP::Eval – OK
 NYI – OK
@@ -1564,7 +1566,7 @@ OneSeq – OK
 OpenAPI::Model – OK
 OpenAPI::Schema::Validate – OK
 OpenCV – AlwaysFail
-OpenMPT::Bindings – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+OpenMPT::Bindings – OK
 OpenRouter::API – OK
 OpenSSL – OK
 Operator-grandpa – OK
@@ -1576,11 +1578,11 @@ Operator::feq – OK
 Operator::grandpa – OK
 Ops::SI – OK
 Opt::Handler – AlwaysFail
-OrderedHash – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+OrderedHash – OK
 Overwatch – OK
 Oyatul – OK
 P5-X – OK
-P5__DATA__ – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+P5__DATA__ – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 P5__FILE__ – OK
 P5built-ins – OK
 P5caller – OK
@@ -1629,25 +1631,25 @@ P6W – OK
 PB-Lottery – OK
 PBKDF2 – AlwaysFail
 PDF – OK
-PDF::API6 – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
-PDF::Class – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+PDF::API6 – OK
+PDF::Class – OK
 PDF::Combiner – OK
-PDF::Content – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
-PDF::Document – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+PDF::Content – OK
+PDF::Document – OK
 PDF::Extract – OK
-PDF::Font::Loader – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+PDF::Font::Loader – OK
 PDF::Font::Loader::CSS – OK
 PDF::Font::Loader::HarfBuzz – OK
 PDF::Grammar – OK
 PDF::ISO_32000 – OK
 PDF::ISO_32000_2 – OK
 PDF::Labelmaker – OK
-PDF::Lite – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+PDF::Lite – OK
 PDF::NameTags – AlwaysFail
 PDF::Native – OK
-PDF::Tags – Fail, Bisected: 5d5afed1c69ec4af90f5e2d8074a50dbac9e5515
-PDF::Tags::Reader – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
-PDF::To::Cairo – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+PDF::Tags – OK
+PDF::Tags::Reader – OK
+PDF::To::Cairo – OK
 PDF::Writer – OK
 PKCS5 – OK
 PKafka – OK
@@ -1714,7 +1716,7 @@ Pod::From::Cache – OK
 Pod::Literate – OK
 Pod::Load – AlwaysFail
 Pod::Parser – OK
-Pod::Perl5 – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Pod::Perl5 – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Pod::PerlTricks – AlwaysFail
 Pod::Render – AlwaysFail
 Pod::Strip – AlwaysFail
@@ -1729,10 +1731,10 @@ Pod::To::Latex – AlwaysFail
 Pod::To::Man – OK
 Pod::To::Markdown – AlwaysFail
 Pod::To::PDF – OK
-Pod::To::PDF::Lite – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Pod::To::PDF::Lite – OK
 Pod::To::Pager – OK
 Pod::To::Raku – OK
-Pod::TreeWalker – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Pod::TreeWalker – OK
 Pod::Usage – OK
 Pod::Utilities – AlwaysFail
 Pod::Utils – AlwaysFail
@@ -1743,7 +1745,7 @@ Point – OK
 Polyglot::Brainfuck – AlwaysFail
 Polyglot::Regexen – Fail, Bisected: aab0778725da5848824f07514c0ae355d972926a
 Pop – OK
-Portuguese – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Portuguese – ZefFailure
 PostCocoon::Url – OK
 PowerNap – OK
 Powerline::Prompt – OK
@@ -1760,7 +1762,7 @@ Proc::Async::Timeout – AlwaysFail
 Proc::Easier – OK
 Proc::Easy – OK
 Proc::Editor – OK
-Proc::Feed – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Proc::Feed – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Proc::InvokeEditor – OK
 Proc::More – OK
 Proc::Q – OK
@@ -1824,7 +1826,7 @@ RakuAdvent::WordPress – AlwaysFail
 RakuConfig – OK
 RakuDoc::Load – OK
 RakuDoc::Test::Files – OK
-RakuPM – ZefFailure
+RakuPM – Fail, Bisected: a0a60ed3ce28e6e014bf287101a6d454e364aeaa
 RakuPMVerifyTmp – OK
 RakuRename – OK
 Rakuast::RakuDoc::Render – AlwaysFail
@@ -1840,7 +1842,7 @@ Rakudo::Slippy::Semilist – AlwaysFail
 Rakudo::Version – OK
 RakudoContainerfileBuilder – OK
 RakudoPrereq – OK
-RakupodObject – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+RakupodObject – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Random::Choice – OK
 Random::Hawking::Boltzmann – OK
 Random::Names – OK
@@ -1860,8 +1862,8 @@ RedFactory – AlwaysFail
 RedX::HashedPassword – AlwaysFail
 Redis – OK
 Redis::Async – OK
-Regex::FuzzyToken – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
-RegexUtils – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Regex::FuzzyToken – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+RegexUtils – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Reminders – AlwaysFail
 Repl::Tools – OK
 Repository::Precomp::Cleanup – OK
@@ -1874,7 +1876,7 @@ ReverseIterables – OK
 Rmv::JIRA – OK
 Roaring::Tags – OK
 Router::Boost – OK
-Router::Right – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Router::Right – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Russian – InstallableButUntested
 Ryml – OK
 SAT – AlwaysFail
@@ -1894,7 +1896,7 @@ SP6 – AlwaysFail
 SQL::Abstract – OK
 SQL::Builder – OK
 SQL::Builder::ExecuteWithDBIish – AlwaysFail
-SQL::Lexer – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+SQL::Lexer – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 SQL::NamedPlaceholder – OK
 SSH::LibSSH – OK
 SSH::LibSSH::Tunnel – AlwaysFail
@@ -1905,16 +1907,16 @@ Sanity – OK
 SantaClaus::Utils – AlwaysFail
 Scalar::History – OK
 Scalar::Util – OK
-ScaleVec – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+ScaleVec – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Scheduler::DRMAA – OK
 Scheduler::DelayBetween – OK
 Scientist – OK
 Script::Hash – AlwaysFail
 Search::Dict – OK
-SelectiveImporting – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+SelectiveImporting – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Selenium::WebDriver – AlwaysFail
-Selkie – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
-Selkie::UI – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Selkie – OK
+Selkie::UI – OK
 Semantic::Versioning – OK
 Semaphore::ReadersWriters – AlwaysFail
 Seq::Bounded – AlwaysFail
@@ -1937,10 +1939,10 @@ Shodan – OK
 Sitemap – ZefFailure
 SixPM – AlwaysFail
 Slang::AltTernary – AlwaysFail
-Slang::Comments – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Slang::Comments – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Slang::Date – OK
 Slang::Emoji – OK
-Slang::Forgiven – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Slang::Forgiven – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Slang::Kazu – AlwaysFail
 Slang::Lambda – OK
 Slang::Mosdef – OK
@@ -1948,7 +1950,7 @@ Slang::Nogil – OK
 Slang::NumberBase – OK
 Slang::Otherwise – OK
 Slang::Piersing – OK
-Slang::Predicate – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Slang::Predicate – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Slang::Roman – OK
 Slang::SQL – AlwaysFail
 Slang::Subscripts – OK
@@ -1960,7 +1962,7 @@ Slippy::Semilist – AlwaysFail
 Smack – AlwaysFail
 Smooth::Numbers – OK
 SnowFlake – OK
-Solstice – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Solstice – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Sort-Fast – AlwaysFail
 Sort::Naturally – OK
 Soundn::Tina – OK
@@ -2008,7 +2010,7 @@ Sparrowform – OK
 Spit – AlwaysFail
 Spreadsheet::Libxlsxio – AlwaysFail
 Spreadsheet::ODS – OK
-Spreadsheet::XLSX – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Spreadsheet::XLSX – OK
 Sprockets – OK
 Stache – OK
 Stache – OK
@@ -2018,7 +2020,7 @@ Statistics::Distributions – OK
 Statistics::LinearRegression – OK
 Statistics::OutlierIdentifiers – OK
 Stats – OK
-Stomp – Flapper
+Stomp – OK
 Storable::Lite – OK
 Stream::Buffered – OK
 StrictClass – OK
@@ -2040,13 +2042,13 @@ Sub::Name – OK
 Sub::Util – OK
 Subset::Helper – OK
 Subsets::Common – OK
-Subsets::IO – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Subsets::IO – OK
 Sum – AlwaysFail
 SuperMAIN – OK
 Supply::Folds – OK
 Supply::Timeout – OK
 SupplyTimeWindow – OK
-Sustenance – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Sustenance – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Sway::Config – AlwaysFail
 Sway::PreviewKeys – AlwaysFail
 Swedish::TextDates_sv – OK
@@ -2070,7 +2072,7 @@ System::Stats::CPUsage – OK
 System::Stats::DISKUsage – OK
 System::Stats::MEMUsage – OK
 System::Stats::NETUsage – OK
-T – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+T – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 TAP – OK
 TAP – OK
 TCC – AlwaysFail
@@ -2170,7 +2172,7 @@ Test::Script – OK
 Test::Script::Output – OK
 Test::Selector – OK
 Test::SourceFiles – OK
-Test::Stream – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Test::Stream – OK
 Test::Time – OK
 Test::Util::ServerPort – OK
 Test::When – OK
@@ -2270,9 +2272,9 @@ Trait::IO – OK
 Trait::Traced – AlwaysFail
 Transit::Network – OK
 Trap – OK
-Tree::Binary – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Tree::Binary – OK
 TreeSitter::Native – OK
-Trie – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Trie – OK
 TrigPi – OK
 Trove – AlwaysFail
 Tuple – OK
@@ -2289,7 +2291,7 @@ UK::Sort – AlwaysFail
 ULID – AlwaysFail
 UML::Translators – OK
 UNICODE-VERSION – OK
-UNIX::Daemonize – ZefFailure
+UNIX::Daemonize – AlwaysFail
 UNIX::Privileges – OK
 URI – OK
 URI::Encode – OK
@@ -2351,9 +2353,9 @@ WWW – AlwaysFail
 WWW--CloudHosting--Hetzner – OK
 WWW::CloudHosting::Hetzner – AlwaysFail
 WWW::DuckDuckGo – OK
-WWW::GCloud – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
-WWW::GCloud::API::Storage – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
-WWW::GCloud::API::Vision – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+WWW::GCloud – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+WWW::GCloud::API::Storage – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+WWW::GCloud::API::Vision – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 WWW::Gemini – OK
 WWW::HorizonsEphemerisSystem – OK
 WWW::LLaMA – OK
@@ -2377,7 +2379,7 @@ Web – AlwaysFail
 Web::App – OK
 Web::App::Ballet – OK
 Web::App::MVC – OK
-Web::Cache – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+Web::Cache – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Web::RF – OK
 Web::Scraper – InstallableButUntested
 Web::Template – OK
@@ -2388,7 +2390,7 @@ WebService::AWS::S3 – OK
 WebService::Discourse – OK
 WebService::FootballData – AlwaysFail
 WebService::GitHub – AlwaysFail
-WebService::Google::PageRank – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+WebService::Google::PageRank – OK
 WebService::GoogleDyDNS – OK
 WebService::HashiCorp::Vault – AlwaysFail
 WebService::HazIP – OK
@@ -2417,7 +2419,7 @@ X::Intl – OK
 X::Protocol – OK
 XDG::BaseDirectory – OK
 XDG::GuaranteedResources – AlwaysFail
-XHTML::Writer – Fail, Bisected: a107b0ce342aaea278202f6b7110d3a25e9ed4d6
+XHTML::Writer – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 XML – OK
 XML::Actions – OK
 XML::Canonical – OK

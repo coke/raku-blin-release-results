@@ -1,14 +1,14 @@
-Running as unit: run-p297507-i377136.service; invocation ID: 1eb7ff57af43431a8bf19e96946e4398
+Running as unit: run-p1464772-i1453206.service; invocation ID: e418fe6b7bcb4964b56c8839744c6187
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Sustenance
 ===> Found: Sustenance:ver<0.0.1> [via Zef::Repository::Ecosystems<rea>]
-[Sustenance] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790134778.297510.1635.4004982808544/Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/Sustenance/Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz
-===> Fetching [OK]: Sustenance:ver<0.0.1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790134778.297510.1635.4004982808544/Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz
+[Sustenance] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790264065.1464777.1692.1317266322967/Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/Sustenance/Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz
+===> Fetching [OK]: Sustenance:ver<0.0.1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790264065.1464777.1692.1317266322967/Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz
 [Sustenance] Command: tar -t -f ./Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz
 [Sustenance] Command: tar -xvf ./Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz -C ../Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz
 ===> Extraction [OK]: Sustenance to /home/coke/sandbox/blin/data/zef-data/tmp/Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz
 ===> Testing: Sustenance:ver<0.0.1>
-[Sustenance] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz/sustenance-master t/01-basic.t
+[Sustenance] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz/sustenance-master t/01-basic.t
 [Sustenance] 1..3
 [Sustenance] # Subtest
 [Sustenance]     ok 1 - $sustenance eqv $sustenance-expected
@@ -16,13 +16,13 @@ Press ^] three times within 1s to disconnect TTY.
 [Sustenance] ok 1 - 
 [Sustenance] # Subtest
 [Sustenance] Use of uninitialized value of type Rat in numeric context
-[Sustenance]   in whatevercode  at /home/coke/sandbox/blin/data/zef-data/tmp/Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz/sustenance-master/t/lib/.precomp/961E3224328D4CF3DE4A9A588F7BBEF952D0DDA0/13/13C52072C7F02BF9F3525C9D4E984B48B329863F line 1
+[Sustenance]   in whatevercode  at /home/coke/sandbox/blin/data/zef-data/tmp/Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz/sustenance-master/t/lib/.precomp/8BF35B247E67DEFFDE5EE0A08CDCFB410AA4C1BB/13/13C52072C7F02BF9F3525C9D4E984B48B329863F line 1
 [Sustenance]   in sub gen-macros-summed at /home/coke/sandbox/blin/data/zef-data/tmp/Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz/sustenance-master/lib/Sustenance.pm6 (Sustenance) line 227
 [Sustenance]   in sub gen-macros at /home/coke/sandbox/blin/data/zef-data/tmp/Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz/sustenance-master/lib/Sustenance.pm6 (Sustenance) line 214
 [Sustenance]   in sub gen-macros at /home/coke/sandbox/blin/data/zef-data/tmp/Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz/sustenance-master/lib/Sustenance.pm6 (Sustenance) line 191
 [Sustenance]   in method gen-macros at /home/coke/sandbox/blin/data/zef-data/tmp/Sustenance%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Aatweiden%3E.tar.gz/sustenance-master/lib/Sustenance.pm6 (Sustenance) line 137
 [Sustenance]   in block  at t/01-basic.t line 29
-[Sustenance]   in sub subtest at /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/share/perl6/core/sources/7086F6B14C4EFA921378D958C52373716593BA32 (Test) line 431
+[Sustenance]   in sub subtest at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/core/sources/D3BAD5470DB1A6EC7786AE778EC0164179FAF624 (Test) line 431
 [Sustenance]   in block <unit> at t/01-basic.t line 26
 ===> Testing [FAIL]: Sustenance:ver<0.0.1>
 [Sustenance] Failed to get passing tests, but continuing with --force-test
@@ -33,6 +33,6 @@ Press ^] three times within 1s to disconnect TTY.
 /home/coke/sandbox/blin/installed/Sustenance__0.0.1_0/bin
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 2min 31.833s
-             CPU time consumed: 2min 39.238s
-                   Memory peak: 1.9G (swap: 14.2M)
+               Service runtime: 2min 17.713s
+             CPU time consumed: 2min 32.313s
+                   Memory peak: 1.8G (swap: 1.1M)

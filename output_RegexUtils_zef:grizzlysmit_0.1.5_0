@@ -1,17 +1,17 @@
-Running as unit: run-p218167-i210427.service; invocation ID: b81fcf4266a2426ebf5e7f4cb9b8fd13
+Running as unit: run-p1386289-i1391119.service; invocation ID: 33637aa9064a4ccfa0bfd6a397b58bcf
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: RegexUtils
 ===> Found: RegexUtils:ver<0.1.5>:auth<zef:grizzlysmit> [via Zef::Repository::Ecosystems<fez>]
-[RegexUtils] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790132586.218168.1109.8276916910943/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz https://360.zef.pm/R/EG/REGEXUTILS/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz
-===> Fetching [OK]: RegexUtils:ver<0.1.5>:auth<zef:grizzlysmit> to /home/coke/sandbox/blin/data/zef-data/tmp/1790132586.218168.1109.8276916910943/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz
+[RegexUtils] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790261819.1386295.9540.180615684001/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz https://360.zef.pm/R/EG/REGEXUTILS/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz
+===> Fetching [OK]: RegexUtils:ver<0.1.5>:auth<zef:grizzlysmit> to /home/coke/sandbox/blin/data/zef-data/tmp/1790261819.1386295.9540.180615684001/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz
 [RegexUtils] Command: tar -t -f ./befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz
 [RegexUtils] Command: tar -xvf ./befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz -C ../befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz
 ===> Extraction [OK]: RegexUtils to /home/coke/sandbox/blin/data/zef-data/tmp/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz
 ===> Testing: RegexUtils:ver<0.1.5>:auth<zef:grizzlysmit>
-[RegexUtils] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz t/001-Meta-test.rakutest
+[RegexUtils] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz t/001-Meta-test.rakutest
 [RegexUtils] 1..1
 [RegexUtils] ok 1 - # SKIP Skipping author test
-[RegexUtils] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz t/010-flags.rakutest
+[RegexUtils] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz t/010-flags.rakutest
 [RegexUtils] ok 1 - Flags parsed correctly
 [RegexUtils] ok 2 - Flags parsed correctly
 [RegexUtils] ok 3 - Flags parsed correctly
@@ -25,17 +25,17 @@ Press ^] three times within 1s to disconnect TTY.
 [RegexUtils] ok 11 - Flags parsed correctly
 [RegexUtils] ok 12 - Flags parsed correctly
 [RegexUtils] 1..12
-[RegexUtils] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz t/020-compile.rakutest
+[RegexUtils] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz t/020-compile.rakutest
 [RegexUtils] ===SORRY!=== Error while compiling EVAL_0
 [RegexUtils] Adverb Perl5 not allowed on rx
 [RegexUtils] at EVAL_0:1
 [RegexUtils] ------> <BOL><HERE>rx:Perl5:ignorecase/^fo+\n$/
-[RegexUtils] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz t/030-facade.rakutest
+[RegexUtils] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz t/030-facade.rakutest
 [RegexUtils] ===SORRY!=== Error while compiling EVAL_0
 [RegexUtils] Adverb Perl5 not allowed on rx
 [RegexUtils] at EVAL_0:1
 [RegexUtils] ------> <BOL><HERE>rx:Perl5:ignorecase/^fo+\n$/
-[RegexUtils] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz t/10-flags.rakutest
+[RegexUtils] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz t/10-flags.rakutest
 [RegexUtils] ok 1 - Flags parsed correctly
 [RegexUtils] ok 2 - Flags parsed correctly
 [RegexUtils] ok 3 - Flags parsed correctly
@@ -49,12 +49,12 @@ Press ^] three times within 1s to disconnect TTY.
 [RegexUtils] ok 11 - Flags parsed correctly
 [RegexUtils] ok 12 - Flags parsed correctly
 [RegexUtils] 1..12
-[RegexUtils] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz t/20-compile.rakutest
+[RegexUtils] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz t/20-compile.rakutest
 [RegexUtils] ===SORRY!=== Error while compiling EVAL_0
 [RegexUtils] Adverb Perl5 not allowed on rx
 [RegexUtils] at EVAL_0:1
 [RegexUtils] ------> <BOL><HERE>rx:Perl5:ignorecase/^fo+\n$/
-[RegexUtils] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz t/30-facade.rakutest
+[RegexUtils] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/befeea80c4138a4e2bde1b94afa91d3756451bc5.tar.gz t/30-facade.rakutest
 [RegexUtils] ===SORRY!=== Error while compiling EVAL_0
 [RegexUtils] Adverb Perl5 not allowed on rx
 [RegexUtils] at EVAL_0:1
@@ -65,6 +65,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for RegexUtils:ver<0.1.5>:auth<zef:grizzlysmit>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 1min 54.662s
-             CPU time consumed: 1min 58.374s
-                   Memory peak: 1G (swap: 0B)
+               Service runtime: 2min 2.604s
+             CPU time consumed: 1min 59.920s
+                   Memory peak: 1017.2M (swap: 10.4M)

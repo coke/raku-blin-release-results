@@ -1,14 +1,14 @@
-Running as unit: run-p259228-i299917.service; invocation ID: 361a72bd25e94c7ab7bd5d3e268a5c93
+Running as unit: run-p1422713-i1478698.service; invocation ID: f5ca7fec78b14ce88c56bd70a3ed714e
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Router::Right
 ===> Found: Router::Right:ver<0.0.61>:auth<zef:knarkhov> [via Zef::Repository::Ecosystems<fez>]
-[Router::Right] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790133690.259245.5247.197964982537/f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz https://360.zef.pm/R/OU/ROUTER_RIGHT/f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz
-===> Fetching [OK]: Router::Right:ver<0.0.61>:auth<zef:knarkhov> to /home/coke/sandbox/blin/data/zef-data/tmp/1790133690.259245.5247.197964982537/f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz
+[Router::Right] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790262832.1422719.475.41516694963536/f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz https://360.zef.pm/R/OU/ROUTER_RIGHT/f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz
+===> Fetching [OK]: Router::Right:ver<0.0.61>:auth<zef:knarkhov> to /home/coke/sandbox/blin/data/zef-data/tmp/1790262832.1422719.475.41516694963536/f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz
 [Router::Right] Command: tar -t -f ./f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz
 [Router::Right] Command: tar -xvf ./f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz -C ../f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz
 ===> Extraction [OK]: Router::Right to /home/coke/sandbox/blin/data/zef-data/tmp/f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz
 ===> Testing: Router::Right:ver<0.0.61>:auth<zef:knarkhov>
-[Router::Right] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz/dist t/01.t
+[Router::Right] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz/dist t/01.t
 [Router::Right] ===SORRY!=== Error while compiling t/01.t
 [Router::Right] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz/dist/lib/Router/Right.rakumod (Router::Right)
 [Router::Right] Adverb Perl5 not allowed on s
@@ -16,7 +16,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Router::Right] ------>     @(@ret.map({ <HERE>s:Perl5:g/^\s+|\s+$//; uc $_ }).unique.s
 [Router::Right] at t/01.t:4
 [Router::Right] ------> <BOL><HERE>use Router::Right;
-[Router::Right] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz/dist t/02.t
+[Router::Right] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz/dist t/02.t
 [Router::Right] ===SORRY!=== Error while compiling t/02.t
 [Router::Right] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz/dist/lib/Router/Right.rakumod (Router::Right)
 [Router::Right] Adverb Perl5 not allowed on s
@@ -24,7 +24,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Router::Right] ------>     @(@ret.map({ <HERE>s:Perl5:g/^\s+|\s+$//; uc $_ }).unique.s
 [Router::Right] at t/02.t:4
 [Router::Right] ------> <BOL><HERE>use Router::Right;
-[Router::Right] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz/dist t/03.t
+[Router::Right] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz/dist t/03.t
 [Router::Right] ===SORRY!=== Error while compiling t/03.t
 [Router::Right] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/f5dfbbfe21d01ab30603427e29436b6995e79728.tar.gz/dist/lib/Router/Right.rakumod (Router::Right)
 [Router::Right] Adverb Perl5 not allowed on s
@@ -47,6 +47,6 @@ at /home/coke/sandbox/blin/installed/Router::Right_zef:knarkhov_0.0.61_0/sources
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 1min 53.002s
-             CPU time consumed: 2min 341ms
-                   Memory peak: 1.1G (swap: 0B)
+               Service runtime: 1min 57.797s
+             CPU time consumed: 2min 3.061s
+                   Memory peak: 1G (swap: 17.7M)

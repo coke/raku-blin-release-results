@@ -1,14 +1,14 @@
-Running as unit: run-p544401-i564046.service; invocation ID: a814e3e70aac4e8594044c13c6fb3c75
+Running as unit: run-p1663975-i1736714.service; invocation ID: fdff2e6da56f4d72b30a40c24c1aa98c
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Doc::TypeGraph
 ===> Found: Doc::TypeGraph:ver<2.3.1>:auth<zef:raku-community-modules>:api<2> [via Zef::Repository::Ecosystems<fez>]
-[Doc::TypeGraph] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790140855.544404.8527.604740861994/7e1e03e18541284ec8759c55b8d0466361312955.tar.gz https://360.zef.pm/D/OC/DOC_TYPEGRAPH/7e1e03e18541284ec8759c55b8d0466361312955.tar.gz
-===> Fetching [OK]: Doc::TypeGraph:ver<2.3.1>:auth<zef:raku-community-modules>:api<2> to /home/coke/sandbox/blin/data/zef-data/tmp/1790140855.544404.8527.604740861994/7e1e03e18541284ec8759c55b8d0466361312955.tar.gz
+[Doc::TypeGraph] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790269220.1663986.1527.3940795905128/7e1e03e18541284ec8759c55b8d0466361312955.tar.gz https://360.zef.pm/D/OC/DOC_TYPEGRAPH/7e1e03e18541284ec8759c55b8d0466361312955.tar.gz
+===> Fetching [OK]: Doc::TypeGraph:ver<2.3.1>:auth<zef:raku-community-modules>:api<2> to /home/coke/sandbox/blin/data/zef-data/tmp/1790269220.1663986.1527.3940795905128/7e1e03e18541284ec8759c55b8d0466361312955.tar.gz
 [Doc::TypeGraph] Command: tar -t -f ./7e1e03e18541284ec8759c55b8d0466361312955.tar.gz
 [Doc::TypeGraph] Command: tar -xvf ./7e1e03e18541284ec8759c55b8d0466361312955.tar.gz -C ../7e1e03e18541284ec8759c55b8d0466361312955.tar.gz
 ===> Extraction [OK]: Doc::TypeGraph to /home/coke/sandbox/blin/data/zef-data/tmp/7e1e03e18541284ec8759c55b8d0466361312955.tar.gz
 ===> Testing: Doc::TypeGraph:ver<2.3.1>:auth<zef:raku-community-modules>:api<2>
-[Doc::TypeGraph] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/7e1e03e18541284ec8759c55b8d0466361312955.tar.gz/dist t/01-basic.rakutest
+[Doc::TypeGraph] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/7e1e03e18541284ec8759c55b8d0466361312955.tar.gz/dist t/01-basic.rakutest
 [Doc::TypeGraph] 1..4
 [Doc::TypeGraph] ok 1 - Doc::TypeGraph module can be use-d ok
 [Doc::TypeGraph] ok 2 - Doc::Type module can be use-d ok
@@ -24,6 +24,6 @@ Cannot reference undeclared local '@__lowered_type-graph-images_1'
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 1min 16.472s
-             CPU time consumed: 1min 41.961s
-                   Memory peak: 1.1G (swap: 0B)
+               Service runtime: 1min 59.660s
+             CPU time consumed: 2min 1.275s
+                   Memory peak: 1.1G (swap: 41.5M)

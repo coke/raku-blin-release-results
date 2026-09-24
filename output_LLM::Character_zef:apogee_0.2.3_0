@@ -1,17 +1,17 @@
-Running as unit: run-p801441-i828239.service; invocation ID: bfa3fb87f0ce433eb633187000a15db9
+Running as unit: run-p1640581-i1490887.service; invocation ID: d05db559d0c045ae970af3a7b3c0f518
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: LLM::Character
 ===> Found: LLM::Character:ver<0.2.3>:auth<zef:apogee> [via Zef::Repository::Ecosystems<fez>]
-[LLM::Character] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790146730.801445.7561.8315731980465/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz https://360.zef.pm/L/LM/LLM_CHARACTER/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz
-===> Fetching [OK]: LLM::Character:ver<0.2.3>:auth<zef:apogee> to /home/coke/sandbox/blin/data/zef-data/tmp/1790146730.801445.7561.8315731980465/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz
+[LLM::Character] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790268573.1640596.4217.862623829638/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz https://360.zef.pm/L/LM/LLM_CHARACTER/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz
+===> Fetching [OK]: LLM::Character:ver<0.2.3>:auth<zef:apogee> to /home/coke/sandbox/blin/data/zef-data/tmp/1790268573.1640596.4217.862623829638/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz
 [LLM::Character] Command: tar -t -f ./f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz
 [LLM::Character] Command: tar -xvf ./f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz -C ../f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz
 ===> Extraction [OK]: LLM::Character to /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz
 ===> Testing: LLM::Character:ver<0.2.3>:auth<zef:apogee>
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/01-basic.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/01-basic.rakutest
 [LLM::Character] ok 1 - replace me
 [LLM::Character] 1..1
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/02-minimal_lorebook.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/02-minimal_lorebook.rakutest
 [LLM::Character] 1..29
 [LLM::Character] ok 1 - lorebook_minimal.json: lorebook is defined
 [LLM::Character] ok 2 - lorebook_minimal.json: is Lorebook
@@ -42,7 +42,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LLM::Character] ok 27 - lorebook_minimal.json: correctly enabled
 [LLM::Character] ok 28 - lorebook_minimal.json: correct insertion order
 [LLM::Character] ok 29 - lorebook_minimal.json: regex disabled correctly
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/03-all_fields_lorebook.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/03-all_fields_lorebook.rakutest
 [LLM::Character] 1..49
 [LLM::Character] ok 1 - lorebook_valid.json: lorebook is defined
 [LLM::Character] ok 2 - lorebook_valid.json: is Lorebook
@@ -93,7 +93,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LLM::Character] ok 47 - lorebook_valid.json: entry correctly set to selective
 [LLM::Character] ok 48 - lorebook_valid.json: correct entry secondary key
 [LLM::Character] ok 49 - lorebook_valid.json: correct entry position
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/04-enclosed_minimal_lorebook.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/04-enclosed_minimal_lorebook.rakutest
 [LLM::Character] 1..29
 [LLM::Character] ok 1 - lorebook_enclosed_minimal.json: lorebook is defined
 [LLM::Character] ok 2 - lorebook_enclosed_minimal.json: is Lorebook
@@ -124,7 +124,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LLM::Character] ok 27 - lorebook_enclosed_minimal.json: correctly enabled
 [LLM::Character] ok 28 - lorebook_enclosed_minimal.json: correct insertion order
 [LLM::Character] ok 29 - lorebook_enclosed_minimal.json: regex disabled correctly
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/05-enclosed_all_fields_lorebook.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/05-enclosed_all_fields_lorebook.rakutest
 [LLM::Character] 1..49
 [LLM::Character] ok 1 - lorebook_enclosed_valid.json: lorebook is defined
 [LLM::Character] ok 2 - lorebook_enclosed_valid.json: is Lorebook
@@ -175,7 +175,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LLM::Character] ok 47 - lorebook_enclosed_valid.json: entry correctly set to selective
 [LLM::Character] ok 48 - lorebook_enclosed_valid.json: correct entry secondary key
 [LLM::Character] ok 49 - lorebook_enclosed_valid.json: correct entry position
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/06-st_lorebook.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/06-st_lorebook.rakutest
 [LLM::Character] 1..79
 [LLM::Character] ok 1 - st_lorebook.json: lorebook is defined
 [LLM::Character] ok 2 - st_lorebook.json: is Lorebook
@@ -256,26 +256,26 @@ Press ^] three times within 1s to disconnect TTY.
 [LLM::Character] ok 77 - st_lorebook.json: entry 4 comment sane
 [LLM::Character] ok 78 - st_lorebook.json: entry 4 position sane
 [LLM::Character] ok 79 - st_lorebook.json: entry 4 extensions sane
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/07-character_enclosed.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/07-character_enclosed.rakutest
 [LLM::Character] 1..5
 [LLM::Character] ok 1 - Got a character card
 [LLM::Character] ok 2 - Correct name
 [LLM::Character] ok 3 - Correct description
 [LLM::Character] ok 4 - Extension talkativeness present
 [LLM::Character] ok 5 - Extension fav present
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/08-character_flat.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/08-character_flat.rakutest
 [LLM::Character] 1..3
 [LLM::Character] ok 1 - Got a character card
 [LLM::Character] ok 2 - Correct name
 [LLM::Character] ok 3 - Correct description
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/09-character_with_book.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/09-character_with_book.rakutest
 [LLM::Character] 1..5
 [LLM::Character] ok 1 - Got a character card
 [LLM::Character] ok 2 - Correct name
 [LLM::Character] ok 3 - Lorebook is present
 [LLM::Character] ok 4 - One lorebook entry
 [LLM::Character] ok 5 - One asset present
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/10-main.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/10-main.rakutest
 [LLM::Character] 1..10
 [LLM::Character] ok 1 - correctly imports a lorebook
 [LLM::Character] ok 2 - correctly populates lorebook name
@@ -287,7 +287,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LLM::Character] ok 8 - correctly imports character from PNG
 [LLM::Character] ok 9 - correctly populates character name from PNG
 [LLM::Character] ok 10 - correctly populates first message from PNG
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/11-matcher-construction.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/11-matcher-construction.rakutest
 [LLM::Character] 1..2
 [LLM::Character] # Subtest: Basic trie building
 [LLM::Character]     ok 1 - Root has 'f' child
@@ -308,9 +308,9 @@ Press ^] three times within 1s to disconnect TTY.
 [LLM::Character]     # expected: '2'
 [LLM::Character]     #      got: '0'
 [LLM::Character] Cannot look up attributes in a LLM::Character::Lorebook::Matching::Regex type object. Did you forget a '.new'?
-[LLM::Character]   in method output at /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3/.precomp/961E3224328D4CF3DE4A9A588F7BBEF952D0DDA0/9C/9C8C6593E9DA505EAECBF045E265F6320C728D76 line 1
+[LLM::Character]   in method output at /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3/.precomp/8BF35B247E67DEFFDE5EE0A08CDCFB410AA4C1BB/9C/9C8C6593E9DA505EAECBF045E265F6320C728D76 line 1
 [LLM::Character]   in block <unit> at t/11-matcher-construction.rakutest line 55
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/12-matching.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/12-matching.rakutest
 [LLM::Character] 1..12
 [LLM::Character] # Subtest: Single keyword match
 [LLM::Character]     ok 1 - Single match
@@ -380,7 +380,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LLM::Character]     1..4
 [LLM::Character] ok 12 - Edge cases
 [LLM::Character] # You failed 1 test of 12
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/13-export_character_json.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/13-export_character_json.rakutest
 [LLM::Character] 1..25
 [LLM::Character] ok 1 - Export produces output
 [LLM::Character] ok 2 - Correct spec
@@ -407,7 +407,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LLM::Character] ok 23 - Asset uri correct
 [LLM::Character] ok 24 - Extension preserved
 [LLM::Character] ok 25 - Round-trip preserves name
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/14-export_lorebook_json.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/14-export_lorebook_json.rakutest
 [LLM::Character] 1..27
 [LLM::Character] ok 1 - Export produces output
 [LLM::Character] ok 2 - Correct name
@@ -436,7 +436,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LLM::Character] ok 25 - Decorators prepended to content
 [LLM::Character] ok 26 - Round-trip preserves name
 [LLM::Character] ok 27 - Round-trip preserves entry content
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/15-export_lorebook_st.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/15-export_lorebook_st.rakutest
 [LLM::Character] 1..22
 [LLM::Character] ok 1 - Export produces output
 [LLM::Character] ok 2 - Entries is a Hash
@@ -460,7 +460,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LLM::Character] ok 20 - Entry 4 content correct
 [LLM::Character] ok 21 - No keys field (should be key)
 [LLM::Character] ok 22 - No insertion_order field (should be order)
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/16-export_character_png.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/16-export_character_png.rakutest
 [LLM::Character] 1..9
 [LLM::Character] ok 1 - PNG export succeeds
 [LLM::Character] ok 2 - Output PNG file exists
@@ -471,7 +471,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LLM::Character] ok 7 - Round-trip preserves name
 [LLM::Character] ok 8 - Round-trip preserves description
 [LLM::Character] ok 9 - Round-trip preserves first_mes
-[LLM::Character] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/17-export_main.rakutest
+[LLM::Character] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/f594ebd569812d0ed2cd94f07155aef37438c3b9.tar.gz/LLM-Character-0.2.3 t/17-export_main.rakutest
 [LLM::Character] 1..15
 [LLM::Character] ok 1 - export-character to JSON succeeds
 [LLM::Character] ok 2 - JSON file exists
@@ -494,6 +494,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for LLM::Character:ver<0.2.3>:auth<zef:apogee>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 1min 32.578s
-             CPU time consumed: 2min 7.415s
-                   Memory peak: 1.7G (swap: 0B)
+               Service runtime: 2min 59.767s
+             CPU time consumed: 3min 5.386s
+                   Memory peak: 1.6G (swap: 132.9M)

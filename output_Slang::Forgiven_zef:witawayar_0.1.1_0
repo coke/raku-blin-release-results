@@ -1,37 +1,37 @@
-Running as unit: run-p145095-i161901.service
+Running as unit: run-p1320324-i1352949.service; invocation ID: bdc72ed73d9647a8bf331f4ddea56b68
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Slang::Forgiven
 ===> Found: Slang::Forgiven:ver<0.1.1>:auth<zef:witawayar> [via Zef::Repository::Ecosystems<fez>]
-[Slang::Forgiven] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790130727.145099.3620.880177096145/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz https://360.zef.pm/S/LA/SLANG_FORGIVEN/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz
-===> Fetching [OK]: Slang::Forgiven:ver<0.1.1>:auth<zef:witawayar> to /home/coke/sandbox/blin/data/zef-data/tmp/1790130727.145099.3620.880177096145/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz
+[Slang::Forgiven] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790259972.1320331.1987.9297716836663/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz https://360.zef.pm/S/LA/SLANG_FORGIVEN/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz
+===> Fetching [OK]: Slang::Forgiven:ver<0.1.1>:auth<zef:witawayar> to /home/coke/sandbox/blin/data/zef-data/tmp/1790259972.1320331.1987.9297716836663/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz
 [Slang::Forgiven] Command: tar -t -f ./d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz
 [Slang::Forgiven] Command: tar -xvf ./d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz -C ../d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz
 ===> Extraction [OK]: Slang::Forgiven to /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz
 ===> Testing: Slang::Forgiven:ver<0.1.1>:auth<zef:witawayar>
-[Slang::Forgiven] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven t/00-usability.rakutest
+[Slang::Forgiven] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven t/00-usability.rakutest
 [Slang::Forgiven] 1..1
 [Slang::Forgiven] ok 1 - `use`ing the module
-[Slang::Forgiven] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven t/01-scalar.rakutest
+[Slang::Forgiven] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven t/01-scalar.rakutest
 [Slang::Forgiven] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven/t/01-scalar.rakutest
 [Slang::Forgiven] Unexpected block in infix position (missing statement control word before the expression? Or did you forget a semi-colon?)
 [Slang::Forgiven] at /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven/t/01-scalar.rakutest:9
 [Slang::Forgiven] ------>     forgiven @vals<HERE> -> $num {
-[Slang::Forgiven] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven t/02-array.rakutest
+[Slang::Forgiven] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven t/02-array.rakutest
 [Slang::Forgiven] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven/t/02-array.rakutest
 [Slang::Forgiven] Unexpected block in infix position (missing statement control word before the expression? Or did you forget a semi-colon?)
 [Slang::Forgiven] at /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven/t/02-array.rakutest:7
 [Slang::Forgiven] ------>     forgiven [[2, 3],]<HERE> -> @arr {
-[Slang::Forgiven] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven t/03-hash.rakutest
+[Slang::Forgiven] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven t/03-hash.rakutest
 [Slang::Forgiven] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven/t/03-hash.rakutest
 [Slang::Forgiven] Unexpected block in infix position (missing statement control word before the expression? Or did you forget a semi-colon?)
 [Slang::Forgiven] at /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven/t/03-hash.rakutest:9
 [Slang::Forgiven] ------>     forgiven %h<HERE> -> %pair {
-[Slang::Forgiven] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven t/04-mixed.rakutest
+[Slang::Forgiven] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven t/04-mixed.rakutest
 [Slang::Forgiven] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven/t/04-mixed.rakutest
 [Slang::Forgiven] Unexpected block in infix position (missing statement control word before the expression? Or did you forget a semi-colon?)
 [Slang::Forgiven] at /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven/t/04-mixed.rakutest:7
 [Slang::Forgiven] ------>     forgiven [[1, 2], [3, 4, 5]]<HERE> -> [Int $a, Numeric $b, Int $d?] {
-[Slang::Forgiven] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven t/05-error.rakutest
+[Slang::Forgiven] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/d853e72a936ac9f483ecb6d07e2739f6bd481e97.tar.gz/Forgiven t/05-error.rakutest
 [Slang::Forgiven] 1..1
 [Slang::Forgiven] # Subtest: Parameterless forgiven
 [Slang::Forgiven]     ok 1 - 
@@ -43,6 +43,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for Slang::Forgiven:ver<0.1.1>:auth<zef:witawayar>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 1min 44.887s
-             CPU time consumed: 1min 51.095s
-                   Memory peak: 1007.6M (swap: 8.1M)
+               Service runtime: 1min 39.129s
+             CPU time consumed: 1min 48.425s
+                   Memory peak: 1019.5M (swap: 53.3M)

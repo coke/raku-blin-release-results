@@ -1,9 +1,9 @@
-Running as unit: run-p32474-i13622.service; invocation ID: 44e1fb5ed57e4e71921cd38d254b3f36
+Running as unit: run-p1216531-i1262239.service; invocation ID: 07db8a497f764d23a9a78a7431d37800
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: DEBUG
 ===> Found: DEBUG [via Zef::Repository::Ecosystems<rea>]
-[DEBUG] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790127445.32477.7276.235031116374/DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/D/DEBUG/DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz
-===> Fetching [OK]: DEBUG to /home/coke/sandbox/blin/data/zef-data/tmp/1790127445.32477.7276.235031116374/DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz
+[DEBUG] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790256860.1216534.1329.6545305425311/DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/D/DEBUG/DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz
+===> Fetching [OK]: DEBUG to /home/coke/sandbox/blin/data/zef-data/tmp/1790256860.1216534.1329.6545305425311/DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz
 [DEBUG] Command: tar -t -f ./DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz
 [DEBUG] Command: tar -xvf ./DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz -C ../DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz
 ===> Extraction [OK]: DEBUG to /home/coke/sandbox/blin/data/zef-data/tmp/DEBUG%3Aver%3C%2A%3E%3Aauth%3Cgithub%3Acygx%3E.tar.gz
@@ -22,6 +22,6 @@ at /home/coke/sandbox/blin/installed/DEBUG__*_0/sources/72A8D64904E2293F3D61CB9B
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 1min 59.410s
-             CPU time consumed: 1min 57.237s
+               Service runtime: 2min 854ms
+             CPU time consumed: 2min 96ms
                    Memory peak: 1.1G (swap: 0B)

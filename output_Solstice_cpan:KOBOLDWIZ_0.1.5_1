@@ -1,14 +1,14 @@
-Running as unit: run-p266837-i230898.service; invocation ID: 099bcfa9f81f494b93e0b7d73f124743
+Running as unit: run-p1429701-i1412579.service; invocation ID: 39f14470cd2d469f86984905d0e96da2
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Solstice
 ===> Found: Solstice:ver<0.1.5>:auth<cpan:KOBOLDWIZ>:api<1> [via Zef::Repository::Ecosystems<rea>]
-[Solstice] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790133902.266839.5690.680311569888/Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/Solstice/Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz
-===> Fetching [OK]: Solstice:ver<0.1.5>:auth<cpan:KOBOLDWIZ>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790133902.266839.5690.680311569888/Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz
+[Solstice] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790263031.1429702.1912.798460966998/Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/Solstice/Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz
+===> Fetching [OK]: Solstice:ver<0.1.5>:auth<cpan:KOBOLDWIZ>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790263031.1429702.1912.798460966998/Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz
 [Solstice] Command: tar -t -f ./Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz
 [Solstice] Command: tar -xvf ./Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz -C ../Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz
 ===> Extraction [OK]: Solstice to /home/coke/sandbox/blin/data/zef-data/tmp/Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz
 ===> Testing: Solstice:ver<0.1.5>:auth<CPAN:HOLYGHOST>:api<1>
-[Solstice] Command: /tmp/whateverable/rakudo-moar/64c2f51fc82dd528c853d329f7dc7f6b253e0bb7/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz/Solstice t/00-load.t
+[Solstice] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Solstice%3Aver%3C0.1.5%3E%3Aauth%3Ccpan%3AKOBOLDWIZ%3E%3Aapi%3C1%3E.tar.gz/Solstice t/00-load.t
 [Solstice] 1..15
 [Solstice] ok 1 - Solstice::Diamond module can be use-d ok
 [Solstice] ok 2 - Solstice::Entity module can be use-d ok
@@ -39,6 +39,6 @@ at /home/coke/sandbox/blin/installed/Solstice_cpan:KOBOLDWIZ_0.1.5_1/sources/78E
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 3min 14.460s
-             CPU time consumed: 3min 23.769s
-                   Memory peak: 2.2G (swap: 4.3M)
+               Service runtime: 3min 14.801s
+             CPU time consumed: 3min 24.835s
+                   Memory peak: 2.2G (swap: 9.6M)
