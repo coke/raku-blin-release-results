@@ -1,14 +1,14 @@
-Running as unit: run-p1611236-i1655639.service; invocation ID: 1b7af77861f748ea8186d222757055e4
+Running as unit: run-p2475437-i2488723.service
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: CSS::Module
 ===> Found: CSS::Module:ver<0.7.7>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
-[CSS::Module] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790267802.1611237.1942.3186520274526/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz https://360.zef.pm/C/SS/CSS_MODULE/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
-===> Fetching [OK]: CSS::Module:ver<0.7.7>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1790267802.1611237.1942.3186520274526/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
+[CSS::Module] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790308556.2475454.6462.330733489564/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz https://360.zef.pm/C/SS/CSS_MODULE/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
+===> Fetching [OK]: CSS::Module:ver<0.7.7>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1790308556.2475454.6462.330733489564/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
 [CSS::Module] Command: tar -t -f ./e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
 [CSS::Module] Command: tar -xvf ./e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz -C ../e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
 ===> Extraction [OK]: CSS::Module to /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz
 ===> Testing: CSS::Module:ver<0.7.7>:auth<zef:dwarring>
-[CSS::Module] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/00basic.t
+[CSS::Module] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/00basic.t
 [CSS::Module] ok 1 - not css1 unicode: 012AF
 [CSS::Module] ok 2 - css21 unicode: 012AF
 [CSS::Module] ok 3 - css3 unicode: 012AF
@@ -535,7 +535,7 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Module]     1..4
 [CSS::Module] ok 21 - h1[id$=ess]
 [CSS::Module] 1..21
-[CSS::Module] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css1-properties.t
+[CSS::Module] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css1-properties.t
 [CSS::Module] # Subtest: {background-color: #37a}
 [CSS::Module]     # Subtest: CSS1
 [CSS::Module]         ok 1 -  declarations parse: {background-color:  \#37a}
@@ -3221,7 +3221,7 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Module]     1..3
 [CSS::Module] ok 52 - {z-index: -3}
 [CSS::Module] 1..52
-[CSS::Module] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css21-properties.t
+[CSS::Module] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css21-properties.t
 [CSS::Module] # Subtest: {azimuth: 30deg}
 [CSS::Module]     # Subtest: CSS2.1
 [CSS::Module]         ok 1 -  declarations parse: {azimuth: 30deg}
@@ -3906,7 +3906,7 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Module]     1..2
 [CSS::Module] ok 25 - {clip: rect(5px, 40px, auto, 5px)}
 [CSS::Module] 1..25
-[CSS::Module] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3-_base.t
+[CSS::Module] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3-_base.t
 [CSS::Module] ok 1 - not number: 0%
 [CSS::Module] ok 2 - percentage: 0%
 [CSS::Module] ok 3 - not angle: 0%
@@ -3938,7 +3938,7 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Module] ok 29 - css3 terms identifiers no warnings
 [CSS::Module] ok 30 - css3 terms identifiers ast
 [CSS::Module] 1..30
-[CSS::Module] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-colors.t
+[CSS::Module] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-colors.t
 [CSS::Module] ok 1 - css3-color term parse: rgb(70%, 50%, 10%)
 [CSS::Module] ok 2 - css3-color term no warnings
 [CSS::Module] ok 3 - css3-color term ast
@@ -4056,7 +4056,7 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Module] ok 115 -   -- css3-color reserialized color no warnings
 [CSS::Module] ok 116 -   -- css3-color reserialized color ast
 [CSS::Module] 1..116
-[CSS::Module] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-fonts.t
+[CSS::Module] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-fonts.t
 [CSS::Module] ok 1 - css3x-fonts at-rule parse: @font-face { font-family: MainText; src: url(gentium.eot); /* for use with older user agents */ src: local('Gentium'), url(gentium.ttf) format('truetype');  /* Overrides src definition */ }
 [CSS::Module] ok 2 - css3x-fonts at-rule no warnings
 [CSS::Module] ok 3 - css3x-fonts at-rule ast
@@ -4237,7 +4237,7 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Module] ok 178 -   -- css21 reserialized declaration no warnings
 [CSS::Module] ok 179 -   -- css21 reserialized declaration ast
 [CSS::Module] 1..179
-[CSS::Module] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-media-queries.t
+[CSS::Module] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-media-queries.t
 [CSS::Module] # Subtest: resolution: 300dpi
 [CSS::Module]     ok 1 - css3 @media resolution parse: 300dpi
 [CSS::Module]     ok 2 - css3 @media resolution no warnings
@@ -4382,7 +4382,7 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Module]     1..7
 [CSS::Module] ok 14 - import: @import url(example.css) screen and (color), projection and (color);
 [CSS::Module] 1..14
-[CSS::Module] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-namespaces.t
+[CSS::Module] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-namespaces.t
 [CSS::Module] ok 1 - css3-namespaces at-decl parse: @namespace empty "";
 [CSS::Module] ok 2 - css3-namespaces at-decl no warnings
 [CSS::Module] ok 3 - css3-namespaces at-decl ast
@@ -4419,7 +4419,7 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Module] ok 34 -   -- css3-namespaces reserialized stylesheet no warnings
 [CSS::Module] ok 35 -   -- css3-namespaces reserialized stylesheet ast
 [CSS::Module] 1..35
-[CSS::Module] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-paged-media.t
+[CSS::Module] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-paged-media.t
 [CSS::Module] ok 1 - css3 @page at-rule parse: @page :left { margin-left: 4cm; size: a4 }
 [CSS::Module] ok 2 - css3 @page at-rule no warnings
 [CSS::Module] ok 3 - css3 @page at-rule ast
@@ -4465,7 +4465,7 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Module] ok 43 -   -- css3 @page reserialized at-rule no warnings
 [CSS::Module] ok 44 -   -- css3 @page reserialized at-rule ast
 [CSS::Module] 1..44
-[CSS::Module] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-values-and-units.t
+[CSS::Module] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/css3x-values-and-units.t
 [CSS::Module] # Subtest: font-size: 8vw
 [CSS::Module]     ok 1 - css3x-units declaration parse: font-size: 8vw
 [CSS::Module]     ok 2 - css3x-units declaration no warnings
@@ -4537,7 +4537,7 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Module]     1..7
 [CSS::Module] ok 7 - pause: calc(2s/3.1 - 100ms)
 [CSS::Module] 1..7
-[CSS::Module] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/error-handling.t
+[CSS::Module] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/error-handling.t
 [CSS::Module] ok 1 - css3 declarations parse: {background:url('http://www.bg.com/pinkish.gif')}
 [CSS::Module] ok 2 - css3 declarations no warnings
 [CSS::Module] ok 3 - css3 declarations ast
@@ -4670,7 +4670,7 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Module] ok 127 -   -- css3 reserialized stylesheet no warnings
 [CSS::Module] ok 128 -   -- css3 reserialized stylesheet ast
 [CSS::Module] 1..128
-[CSS::Module] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/module-extensions.t
+[CSS::Module] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/module-extensions.t
 [CSS::Module] ok 1 - index
 [CSS::Module] ok 2 - index
 [CSS::Module] ok 3 - module.name
@@ -4683,7 +4683,7 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Module] ok 10 - misc extension property
 [CSS::Module] ok 11 - extensions are isolated
 [CSS::Module] 1..11
-[CSS::Module] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/module-vivify.t
+[CSS::Module] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/module-vivify.t
 [CSS::Module] ok 1 - 
 [CSS::Module] ok 2 - 
 [CSS::Module] ok 3 - 
@@ -4691,7 +4691,7 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Module] ok 5 - 
 [CSS::Module] ok 6 - 
 [CSS::Module] 1..6
-[CSS::Module] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/module.t
+[CSS::Module] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/module.t
 [CSS::Module] not ok 1 - CSS::Specification version
 [CSS::Module] # Failed test 'CSS::Specification version'
 [CSS::Module] # at t/module.t line 9
@@ -4700,19 +4700,19 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Module] #     /home/coke/sandbox/blin/installed/CSS::Module_zef:dwarring_0.7.7_0
 [CSS::Module] #     /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7/data/zef/lib
 [CSS::Module] #     /home/coke/sandbox/blin/installed/CSS::Specification_zef:dwarring_0.5.3_0
-[CSS::Module] #     /home/coke/sandbox/blin/installed/Method::Also_zef:lizmat_0.0.10_0
-[CSS::Module] #     /home/coke/sandbox/blin/installed/Color::Names_zef:thundergnat_2.0.0_2
 [CSS::Module] #     /home/coke/sandbox/blin/installed/CSS::Grammar_zef:dwarring_0.4.3_0
 [CSS::Module] #     /home/coke/sandbox/blin/installed/JSON::Fast_zef:timo_0.21.0_0
-[CSS::Module] #     /home/coke/sandbox/blin/installed/CSS::Writer_zef:dwarring_0.3.3_0
+[CSS::Module] #     /home/coke/sandbox/blin/installed/Color::Names_zef:thundergnat_2.0.0_2
+[CSS::Module] #     /home/coke/sandbox/blin/installed/Method::Also_zef:lizmat_0.0.10_0
 [CSS::Module] #     /home/coke/sandbox/blin/installed/CSS::Module::CSS3::Selectors_zef:dwarring_0.0.6_0
+[CSS::Module] #     /home/coke/sandbox/blin/installed/CSS::Writer_zef:dwarring_0.3.3_0
 [CSS::Module] #     /home/coke/.raku
-[CSS::Module] #     /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/site
-[CSS::Module] #     /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/vendor
-[CSS::Module] #     /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/core
-[CSS::Module] #     CompUnit::Repository::AbsolutePath<6287366952656>
-[CSS::Module] #     CompUnit::Repository::NQP<6287591646144>
-[CSS::Module] #     CompUnit::Repository::Perl5<6287591646184>
+[CSS::Module] #     /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/site
+[CSS::Module] #     /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/vendor
+[CSS::Module] #     /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/core
+[CSS::Module] #     CompUnit::Repository::AbsolutePath<4009702070528>
+[CSS::Module] #     CompUnit::Repository::NQP<4009917844040>
+[CSS::Module] #     CompUnit::Repository::Perl5<4009917844080>
 [CSS::Module] # 
 [CSS::Module] # Please note that a 'META6.json' file was found in '.', of which the 'provides' section was used to determine if a dependency is available or not.  Perhaps you need to add 'CSS::Specification:ver<0.4.4..*>' in the <provides> section of that file?  Or need to specify a directory that does *not* have a 'META6.json' file?
 [CSS::Module] ok 2 - css1 grammar
@@ -4764,7 +4764,7 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Module] ok 48 - svg font-style
 [CSS::Module] 1..48
 [CSS::Module] # You failed 1 test of 48
-[CSS::Module] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/svg-properties.t
+[CSS::Module] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e6bfe1f581ea61a0fefb6133bd674b67510ee3ff.tar.gz/CSS-Module-0.7.7 t/svg-properties.t
 [CSS::Module] ok 1 - SVG declarations parse: {alignment-baseline: after-edge}
 [CSS::Module] ok 2 - SVG declarations no warnings
 [CSS::Module] ok 3 - SVG declarations ast
@@ -5641,6 +5641,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for CSS::Module:ver<0.7.7>:auth<zef:dwarring>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 5min 49.793s
-             CPU time consumed: 6min 656ms
-                   Memory peak: 2.1G (swap: 406.7M)
+               Service runtime: 5min 37.140s
+             CPU time consumed: 6min 1.842s
+                   Memory peak: 2G (swap: 94.8M)

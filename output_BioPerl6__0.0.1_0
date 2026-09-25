@@ -1,29 +1,29 @@
-Running as unit: run-p1459085-i1468620.service
+Running as unit: run-p2295548-i2312541.service; invocation ID: cc07548b334f4956974ed78864c61e1c
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: BioPerl6
 ===> Found: BioPerl6:ver<0.0.1> [via Zef::Repository::Ecosystems<rea>]
-[BioPerl6] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790263902.1459090.4332.550513067339/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/B/BioPerl6/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz
-===> Fetching [OK]: BioPerl6:ver<0.0.1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790263902.1459090.4332.550513067339/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz
+[BioPerl6] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790304347.2295551.5572.316565469263/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/B/BioPerl6/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz
+===> Fetching [OK]: BioPerl6:ver<0.0.1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790304347.2295551.5572.316565469263/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz
 [BioPerl6] Command: tar -t -f ./BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz
 [BioPerl6] Command: tar -xvf ./BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz -C ../BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz
 ===> Extraction [OK]: BioPerl6 to /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz
 ===> Testing: BioPerl6:ver<0.0.1>
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/00-meta.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/00-meta.t
 [BioPerl6] ok 1 - 
 [BioPerl6] 1..1
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Annotation/Comment.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Annotation/Comment.t
 [BioPerl6] ok 1 - The object does role 'Bio::Role::Annotation'
 [BioPerl6] ok 2 - 
 [BioPerl6] ok 3 - 
 [BioPerl6] 1..3
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Annotation/DBLink.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Annotation/DBLink.t
 [BioPerl6] ok 1 - The object does role 'Bio::Role::Annotation'
 [BioPerl6] ok 2 - The object does role 'Bio::Role::Identifiable'
 [BioPerl6] ok 3 - 
 [BioPerl6] ok 4 - 
 [BioPerl6] ok 5 - 
 [BioPerl6] 1..5
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Annotation/Reference.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Annotation/Reference.t
 [BioPerl6] ===SORRY!=== Error while compiling t/Annotation/Reference.t
 [BioPerl6] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master/lib/Bio/Annotation/Reference.pm6 (Bio::Annotation::Reference)
 [BioPerl6] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master/lib/Bio/Role/Range.pm6 (Bio::Role::Range)
@@ -34,7 +34,7 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] ------> <BOL><HERE>use Bio::Role::Range;
 [BioPerl6] at t/Annotation/Reference.t:14
 [BioPerl6] ------> <BOL><HERE>use Bio::Annotation::Reference;
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Annotation/SimpleValue.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Annotation/SimpleValue.t
 [BioPerl6] ok 1 - The object does role 'Bio::Role::Annotation'
 [BioPerl6] ok 2 - Stringifies as expected
 [BioPerl6] ok 3 - hash-tree
@@ -47,7 +47,7 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] ok 10 - 
 [BioPerl6] ok 11 - 
 [BioPerl6] 1..11
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Grammar/FTLocation.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Grammar/FTLocation.t
 [BioPerl6] ok 1 - 
 [BioPerl6] ok 2 - 467
 [BioPerl6] ok 3 - 340..565
@@ -91,7 +91,7 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] ok 41 - 
 [BioPerl6] ok 42 - 
 [BioPerl6] 1..42
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Grammar/Fasta.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Grammar/Fasta.t
 [BioPerl6] ok 1 - 
 [BioPerl6] ok 2 - 
 [BioPerl6] ok 3 - 
@@ -103,7 +103,7 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] ok 9 - 
 [BioPerl6] ok 10 - 
 [BioPerl6] 1..10
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Location/Simple.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Location/Simple.t
 [BioPerl6] ===SORRY!=== Error while compiling t/Location/Simple.t
 [BioPerl6] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master/lib/Bio/Location/Simple.pm6 (Bio::Location::Simple)
 [BioPerl6] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master/lib/Bio/Role/Location.pm6 (Bio::Role::Location)
@@ -117,7 +117,7 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] ------> <BOL><HERE>use Bio::Role::Location;
 [BioPerl6] at t/Location/Simple.t:7
 [BioPerl6] ------> <BOL><HERE>use Bio::Location::Simple;
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/PrimarySeq.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/PrimarySeq.t
 [BioPerl6] ok 1 - Can use Bio::PrimarySeq
 [BioPerl6] ok 2 - Bio::PrimarySeq object
 [BioPerl6] ok 3 - Retrieving accession number
@@ -174,7 +174,7 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] --------------------------------------------------------------------------------
 [BioPerl6] Please contact the author to have these occurrences of deprecated code
 [BioPerl6] adapted, so that this message will disappear!
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Range.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Range.t
 [BioPerl6] ===SORRY!=== Error while compiling t/Range.t
 [BioPerl6] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master/lib/Bio/Role/Range.pm6 (Bio::Role::Range)
 [BioPerl6] =begin may not be followed by directive 'end'
@@ -182,7 +182,7 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] ------> <BOL><HERE>    =begin end
 [BioPerl6] at t/Range.t:7
 [BioPerl6] ------> <BOL><HERE>use Bio::Role::Range;
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Role/Aliased.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Role/Aliased.t
 [BioPerl6] ok 1 - 
 [BioPerl6] ok 2 - adds alias
 [BioPerl6] ok 3 - adds alias
@@ -191,14 +191,14 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] ok 6 - 
 [BioPerl6] ok 7 - 
 [BioPerl6] 1..7
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Role/Describable.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Role/Describable.t
 [BioPerl6] ok 1 - test display_name
 [BioPerl6] ok 2 - test description
 [BioPerl6] ok 3 - Has a Bio::Role::Describe
 [BioPerl6] ok 4 - 
 [BioPerl6] ok 5 - 
 [BioPerl6] 1..5
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Role/IO.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Role/IO.t
 [BioPerl6] ok 1 - 
 [BioPerl6] ok 2 - does Bio::Role::IO
 [BioPerl6] ok 3 - 
@@ -215,7 +215,7 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] ok 11 - catfile
 [BioPerl6] ok 12 - catdir
 [BioPerl6] 1..12
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Role/Identifiable.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Role/Identifiable.t
 [BioPerl6] ok 1 - Has a Bio::Role::Identifiable
 [BioPerl6] ok 2 - 
 [BioPerl6] ok 3 - 
@@ -231,13 +231,13 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] ok 13 - 
 [BioPerl6] ok 14 - 
 [BioPerl6] 1..14
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Role/Pluggable.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Role/Pluggable.t
 [BioPerl6] ok 1 - 
 [BioPerl6] ok 2 - Test: MyTest::PluginDir::Plugin3
-[BioPerl6] ok 3 - Test: MyTest::PluginDir::Plugin2
-[BioPerl6] ok 4 - Test: MyTest::PluginDir::Plugin1
+[BioPerl6] ok 3 - Test: MyTest::PluginDir::Plugin1
+[BioPerl6] ok 4 - Test: MyTest::PluginDir::Plugin2
 [BioPerl6] 1..4
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Role/Temp.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Role/Temp.t
 [BioPerl6] ok 1 - 
 [BioPerl6] ok 2 - 
 [BioPerl6] ok 3 - The object is-a '"MyTemp"'
@@ -245,8 +245,8 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] ok 5 - The object is-a '"IO::Handle"'
 [BioPerl6] ok 6 - 
 [BioPerl6] ok 7 - File exists
-[BioPerl6] not ok 8 - tempfile /tmp/fG2H5ZcqAQ deleted # TODO Current problems with END blocks and File::Temp
-[BioPerl6] # Failed test 'tempfile /tmp/fG2H5ZcqAQ deleted'
+[BioPerl6] not ok 8 - tempfile /tmp/qxdTpZQplw deleted # TODO Current problems with END blocks and File::Temp
+[BioPerl6] # Failed test 'tempfile /tmp/qxdTpZQplw deleted'
 [BioPerl6] # at t/Role/Temp.t line 50
 [BioPerl6] ok 9 - 
 [BioPerl6] ok 10 - 
@@ -256,7 +256,7 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] ok 14 - The object is-a '"IO::Handle"'
 [BioPerl6] ok 15 - 
 [BioPerl6] 1..15
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Root.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Root.t
 [BioPerl6] 1..15
 [BioPerl6] ok 1 - 
 [BioPerl6] ok 2 - throw
@@ -282,7 +282,7 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] ok 13 - 
 [BioPerl6] ok 14 - 
 [BioPerl6] ok 15 - 
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/SeqIO.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/SeqIO.t
 [BioPerl6] ok 1 - 
 [BioPerl6] ok 2 - format
 [BioPerl6] ok 3 - readonly
@@ -298,7 +298,7 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] ok 13 - variant
 [BioPerl6] ok 14 - dies with an unknown format
 [BioPerl6] 1..14
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/SeqIO/fasta.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/SeqIO/fasta.t
 [BioPerl6] ok 1 - Can use Bio::SeqIO
 [BioPerl6] ok 2 - The object is-a 'Bio::SeqIO'
 [BioPerl6] ok 3 - An object of type 'Bio::SeqIO' can do the method 'next-Seq'
@@ -312,7 +312,7 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] ok 11 - length
 [BioPerl6] ok 12 - description
 [BioPerl6] 1..12
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Tools/CodonTable.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Tools/CodonTable.t
 [BioPerl6] ok 1 - 
 [BioPerl6] ok 2 - .id
 [BioPerl6] ok 3 - Bio::Tools::CodonTable object
@@ -481,7 +481,7 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] ok 166 - 
 [BioPerl6] ok 167 - 
 [BioPerl6] 1..167
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Tools/FTLocationParser.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Tools/FTLocationParser.t
 [BioPerl6] ok 1 - 
 [BioPerl6] Match.new(:orig("467"), :from(0), :pos(3), :hash(Map.new((:absolute_location(Match.new(:orig("467"), :from(0), :pos(3), :hash(Map.new((:local_location(Match.new(:orig("467"), :from(0), :pos(3), :hash(Map.new((:base_position(Match.new(:orig("467"), :from(0), :pos(3), :hash(Map.new((:abs_base_position(Match.new(:orig("467"), :from(0), :pos(3))))))))))))))))))))))
 [BioPerl6] Match.new(:orig("340..565"), :from(0), :pos(8), :hash(Map.new((:absolute_location(Match.new(:orig("340..565"), :from(0), :pos(8), :hash(Map.new((:local_location(Match.new(:orig("340..565"), :from(0), :pos(8), :hash(Map.new((:base_range(Match.new(:orig("340..565"), :from(0), :pos(8), :hash(Map.new((:base_position([Match.new(:orig("340..565"), :from(0), :pos(3), :hash(Map.new((:abs_base_position(Match.new(:orig("340..565"), :from(0), :pos(3))))))), Match.new(:orig("340..565"), :from(5), :pos(8), :hash(Map.new((:abs_base_position(Match.new(:orig("340..565"), :from(5), :pos(8)))))))]))))))))))))))))))))
@@ -496,7 +496,7 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] --------------------------------------------------------------------------------
 [BioPerl6] Please contact the author to have these occurrences of deprecated code
 [BioPerl6] adapted, so that this message will disappear!
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Tools/IUPAC.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Tools/IUPAC.t
 [BioPerl6] ok 1 - Can use Bio::Tools::IUPAC
 [BioPerl6] ok 2 - Can use Bio::PrimarySeq
 [BioPerl6] ok 3 - 
@@ -508,7 +508,7 @@ Press ^] three times within 1s to disconnect TTY.
 [BioPerl6] ok 9 - Can access IUP hash as a class variable
 [BioPerl6] ok 10 - 
 [BioPerl6] 1..10
-[BioPerl6] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Types.t
+[BioPerl6] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioPerl6%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Acjfields%3E.tar.gz/bioperl6-master t/Types.t
 [BioPerl6] ok 1 - -2 is not a SeqStrand
 [BioPerl6] ok 2 - -1 isa SeqStrandInt
 [BioPerl6] ok 3 - -1 not a SeqStrandChar
@@ -560,6 +560,6 @@ at /home/coke/sandbox/blin/installed/BioPerl6__0.0.1_0/sources/CA7610CACD0B524B1
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 3min 7.574s
-             CPU time consumed: 3min 22.417s
-                   Memory peak: 2.1G (swap: 4.3M)
+               Service runtime: 3min 8.819s
+             CPU time consumed: 3min 23.154s
+                   Memory peak: 1.9G (swap: 181.3M)

@@ -1,14 +1,14 @@
-Running as unit: run-p1263550-i1283737.service; invocation ID: f94dbbb3487d40b8b2dc64ffe4d4dcf3
+Running as unit: run-p2097695-i2151120.service; invocation ID: 35de854836114754b6266dbf8950898d
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: List::Allmax
 ===> Found: List::Allmax:ver<0.0.1>:auth<zef:thundergnat> [via Zef::Repository::Ecosystems<fez>]
-[List::Allmax] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790258292.1263551.5996.511168029978/66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz https://360.zef.pm/L/IS/LIST_ALLMAX/66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz
-===> Fetching [OK]: List::Allmax:ver<0.0.1>:auth<zef:thundergnat> to /home/coke/sandbox/blin/data/zef-data/tmp/1790258292.1263551.5996.511168029978/66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz
+[List::Allmax] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790298751.2097702.1386.5332290562649/66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz https://360.zef.pm/L/IS/LIST_ALLMAX/66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz
+===> Fetching [OK]: List::Allmax:ver<0.0.1>:auth<zef:thundergnat> to /home/coke/sandbox/blin/data/zef-data/tmp/1790298751.2097702.1386.5332290562649/66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz
 [List::Allmax] Command: tar -t -f ./66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz
 [List::Allmax] Command: tar -xvf ./66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz -C ../66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz
 ===> Extraction [OK]: List::Allmax to /home/coke/sandbox/blin/data/zef-data/tmp/66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz
 ===> Testing: List::Allmax:ver<0.0.1>:auth<zef:thundergnat>
-[List::Allmax] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz/List-Allmax-0.0.1 t/01-basic.rakutest
+[List::Allmax] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz/List-Allmax-0.0.1 t/01-basic.rakutest
 [List::Allmax] 1..6
 [List::Allmax] Type check failed in binding to parameter '&by'; expected Callable[Callable] but got Block (-> ;; $_? is raw = O...)
 [List::Allmax]   in sub all-max at /home/coke/sandbox/blin/data/zef-data/tmp/66b6be1ec037a9dac09dd8acdbe62f8fa95e555f.tar.gz/List-Allmax-0.0.1/lib/List/Allmax.rakumod (List::Allmax) line 3
@@ -20,6 +20,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for List::Allmax:ver<0.0.1>:auth<zef:thundergnat>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 1min 45.840s
-             CPU time consumed: 1min 45.019s
+               Service runtime: 1min 40.933s
+             CPU time consumed: 1min 40.658s
                    Memory peak: 1G (swap: 0B)

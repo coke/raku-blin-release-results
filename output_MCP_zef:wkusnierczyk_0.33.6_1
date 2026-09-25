@@ -1,14 +1,14 @@
-Running as unit: run-p1682380-i1576092.service; invocation ID: d5620b82c4cd4a98a8e5eb371037386b
+Running as unit: run-p2541433-i2572932.service; invocation ID: 916d6d3a95574b2c85266007f83ad3f5
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: MCP
 ===> Found: MCP:ver<0.33.6>:auth<zef:wkusnierczyk>:api<1> [via Zef::Repository::Ecosystems<fez>]
-[MCP] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790269630.1682388.5796.1334394141295/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz https://360.zef.pm/M/CP/MCP/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz
-===> Fetching [OK]: MCP:ver<0.33.6>:auth<zef:wkusnierczyk>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790269630.1682388.5796.1334394141295/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz
+[MCP] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790310214.2541447.5011.216353646045/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz https://360.zef.pm/M/CP/MCP/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz
+===> Fetching [OK]: MCP:ver<0.33.6>:auth<zef:wkusnierczyk>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790310214.2541447.5011.216353646045/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz
 [MCP] Command: tar -t -f ./bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz
 [MCP] Command: tar -xvf ./bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz -C ../bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz
 ===> Extraction [OK]: MCP to /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz
 ===> Testing: MCP:ver<0.33.6>:auth<zef:wkusnierczyk>:api<1>
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/01-types.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/01-types.rakutest
 [MCP] # Subtest: Implementation
 [MCP]     ok 1 - name is correct
 [MCP]     ok 2 - version is correct
@@ -630,7 +630,7 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP]     1..4
 [MCP] ok 89 - ElicitationCapability from-hash extended
 [MCP] 1..89
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/02-jsonrpc.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/02-jsonrpc.rakutest
 [MCP] # Subtest: Error codes
 [MCP]     ok 1 - ParseError code
 [MCP]     ok 2 - InvalidRequest code
@@ -778,7 +778,7 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP]     1..7
 [MCP] ok 18 - JSONRPC Message serialization extended
 [MCP] 1..18
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/03-builders.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/03-builders.rakutest
 [MCP] # Subtest: Tool builder and normalization
 [MCP]     ok 1 - tool name set
 [MCP]     ok 2 - tool description set
@@ -1024,7 +1024,7 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP]     1..1
 [MCP] ok 24 - RegisteredResource read with ResourceContents return
 [MCP] 1..24
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/04-transport.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/04-transport.rakutest
 [MCP] # Subtest: StdioTransport parse/send/close
 [MCP]     ok 1 - parsed request
 [MCP]     ok 2 - method parsed
@@ -1072,7 +1072,7 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP]     1..3
 [MCP] ok 6 - StreamableHTTP exception classes
 [MCP] 1..6
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/05-server.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/05-server.rakutest
 [MCP] # Subtest: Server dispatch and handlers
 [MCP]     ok 1 - initialize returns protocol
 [MCP]     ok 2 - initialize includes instructions
@@ -1311,7 +1311,7 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP]     1..1
 [MCP] ok 21 - Server handles error response from client
 [MCP] 1..21
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/06-client.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/06-client.rakutest
 [MCP] # Subtest: Client connect and requests
 [MCP]     ok 1 - initialize request sent
 [MCP]     ok 2 - server capabilities set
@@ -1551,7 +1551,7 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP]     1..3
 [MCP] ok 29 - Client roots handling via make-client
 [MCP] 1..29
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/07-mcp.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/07-mcp.rakutest
 [MCP] ===SORRY!=== Error while compiling t/07-mcp.rakutest
 [MCP] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP.rakumod (MCP)
 [MCP] An exception X::AdHoc+{X::Comp} occurred while evaluating a BEGIN:
@@ -1561,24 +1561,24 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP] Exception details:
 [MCP]   Could not find symbol '&StdioTransport' in 'MCP::Transport::Base::Transport::Stdio'
 [MCP]     in code  at src/Raku/ast/code.rakumod line 375
-[MCP]     in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4026
+[MCP]     in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4062
 [MCP]     in any IMPL-COMPILE-TIME-VALUE at src/Raku/ast/variable-declaration.rakumod line 13
-[MCP]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 555
+[MCP]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 595
 [MCP]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 13
 [MCP]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 13
 [MCP]     in any to-begin-time at src/Raku/ast/base.rakumod line 120
-[MCP]     in any type-declarator at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-[MCP]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-[MCP]     in any term at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-[MCP]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-[MCP]     in any package-declarator at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-[MCP]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-[MCP]     in any scope-declarator at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-[MCP]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-[MCP]     in any term at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
+[MCP]     in any type-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+[MCP]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+[MCP]     in any term at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+[MCP]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+[MCP]     in any package-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+[MCP]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+[MCP]     in any scope-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+[MCP]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+[MCP]     in any term at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
 [MCP] at t/07-mcp.rakutest:5
 [MCP] ------> <BOL><HERE>use MCP;
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/08-sampling.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/08-sampling.rakutest
 [MCP] # Subtest: Sampling handler returns result
 [MCP]     ok 1 - response emitted
 [MCP]     ok 2 - no error
@@ -1631,7 +1631,7 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP]     1..4
 [MCP] ok 8 - SamplingCapability Hash includes context
 [MCP] 1..8
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/09-http-transport.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/09-http-transport.rakutest
 [MCP] # Subtest: Server: POST initialize returns response and session id
 [MCP]     ok 1 - incoming request parsed
 [MCP]     ok 2 - response status
@@ -1733,7 +1733,7 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP]     1..2
 [MCP] ok 18 - Client: terminate-session without session
 [MCP] 1..18
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/10-oauth.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/10-oauth.rakutest
 [MCP] # Subtest: PKCE
 [MCP]     1..4
 [MCP]     ok 1 - verifier is 64 characters
@@ -2065,7 +2065,7 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP]     1..7
 [MCP] ok 37 - Type edge cases
 [MCP] 1..37
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/11-tasks.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/11-tasks.rakutest
 [MCP] # Subtest: Task types
 [MCP]     ok 1 - TaskWorking value
 [MCP]     ok 2 - TaskCompleted value
@@ -2168,7 +2168,7 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP]     1..4
 [MCP] ok 15 - Server tasks/list via dispatch
 [MCP] 1..15
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/12-extensions.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/12-extensions.rakutest
 [MCP] 1..11
 [MCP] # Subtest: Extension type construct and roundtrip
 [MCP]     1..5
@@ -2227,7 +2227,7 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP]     ok 1 - no negotiated extensions before connect
 [MCP]     ok 2 - not negotiated without server
 [MCP] ok 11 - Client negotiated-extensions
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/13-resource-templates.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/13-resource-templates.rakutest
 [MCP] # Subtest: ResourceTemplate type — construct, Hash roundtrip, from-hash
 [MCP]     ok 1 - uriTemplate
 [MCP]     ok 2 - name
@@ -2309,7 +2309,7 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP]     1..1
 [MCP] ok 12 - RegisteredResourceTemplate read with Positional
 [MCP] 1..12
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/14-sse-transport.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/14-sse-transport.rakutest
 [MCP] # Subtest: Server sends endpoint event on SSE connection
 [MCP]     ok 1 - SSE endpoint returns 200
 [MCP]     ok 2 - Content-Type is text/event-stream
@@ -2347,7 +2347,7 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP]     1..2
 [MCP] ok 6 - Origin validation
 [MCP] 1..6
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/15-expanded-coverage.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/15-expanded-coverage.rakutest
 [MCP] # Subtest: Multiple progress notifications in one handler
 [MCP]     ok 1 - four progress notifications sent
 [MCP]     ok 2 - first progress message
@@ -2457,7 +2457,7 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP]     1..3
 [MCP] ok 14 - Sequential handle-message dispatches
 [MCP] 1..14
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/16-fuzz-jsonrpc.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/16-fuzz-jsonrpc.rakutest
 [MCP] 1..8
 [MCP] # Subtest: Invalid JSON survives without crash
 [MCP]     1..17
@@ -2488,9 +2488,9 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP] Use of uninitialized value %h{'jsonrpc'} of type Any in string context.
 [MCP] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
 [MCP]   in sub parse-message at /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/JSONRPC.rakumod (MCP::JSONRPC) line 228
+[MCP]     ok 2 - Missing jsonrpc field [1]
 [MCP] Use of uninitialized value %h{'jsonrpc'} of type Any in string context.
 [MCP] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-[MCP]     ok 2 - Missing jsonrpc field [1]
 [MCP]   in sub parse-message at /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/JSONRPC.rakumod (MCP::JSONRPC) line 228
 [MCP]     ok 3 - Missing jsonrpc field [2]
 [MCP] Use of uninitialized value %h{'jsonrpc'} of type Any in string context.
@@ -2500,9 +2500,9 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP] Use of uninitialized value %h{'jsonrpc'} of type Any in string context.
 [MCP] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
 [MCP]   in sub parse-message at /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/JSONRPC.rakumod (MCP::JSONRPC) line 228
+[MCP]     ok 5 - Missing jsonrpc field [4]
 [MCP] Use of uninitialized value %h{'jsonrpc'} of type Any in string context.
 [MCP] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-[MCP]     ok 5 - Missing jsonrpc field [4]
 [MCP]   in sub parse-message at /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist/lib/MCP/JSONRPC.rakumod (MCP::JSONRPC) line 228
 [MCP]     ok 6 - Missing jsonrpc field [5]
 [MCP] Use of uninitialized value %h{'jsonrpc'} of type Any in string context.
@@ -2670,7 +2670,7 @@ Press ^] three times within 1s to disconnect TTY.
 [MCP]     ok 3 - Response with result parses
 [MCP]     ok 4 - Response with error parses
 [MCP] ok 8 - Valid messages parse correctly after fuzz barrage
-[MCP] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/17-integration-stdio.rakutest
+[MCP] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/bd41f6ac82c5e8a0e230cb85d6378b0498e9ac81.tar.gz/dist t/17-integration-stdio.rakutest
 [MCP] 1..7
 [MCP] # Subtest: Initialize handshake
 [MCP]     1..3
@@ -2718,21 +2718,21 @@ at /home/coke/sandbox/blin/installed/MCP_zef:wkusnierczyk_0.33.6_1/sources/372FE
 Exception details:
   Could not find symbol '&StdioTransport' in 'MCP::Transport::Base::Transport::Stdio'
     in code  at src/Raku/ast/code.rakumod line 375
-    in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4026
+    in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4062
     in any IMPL-COMPILE-TIME-VALUE at src/Raku/ast/variable-declaration.rakumod line 13
-    in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 555
+    in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 595
     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 13
     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 13
     in any to-begin-time at src/Raku/ast/base.rakumod line 120
-    in any type-declarator at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any term at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any package-declarator at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any scope-declarator at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any term at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any type-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any package-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any scope-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
 
 
 ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/MCP_zef:wkusnierczyk_0.33.6_1/sources/372FE5B3018160D27506788366AEEB02A45EF53B (MCP)
@@ -2743,25 +2743,25 @@ at /home/coke/sandbox/blin/installed/MCP_zef:wkusnierczyk_0.33.6_1/sources/372FE
 Exception details:
   Could not find symbol '&StdioTransport' in 'MCP::Transport::Base::Transport::Stdio'
     in code  at src/Raku/ast/code.rakumod line 375
-    in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4026
+    in any IMPL-BEGIN-TIME-EVALUATE at src/Raku/ast/base.rakumod line 4062
     in any IMPL-COMPILE-TIME-VALUE at src/Raku/ast/variable-declaration.rakumod line 13
-    in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 555
+    in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 595
     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 13
     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 13
     in any to-begin-time at src/Raku/ast/base.rakumod line 120
-    in any type-declarator at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any term at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any package-declarator at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any scope-declarator at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any term at /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any type-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any package-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any scope-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
 
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 6min 23.794s
-             CPU time consumed: 6min 14.188s
-                   Memory peak: 1.4G (swap: 268.5M)
+               Service runtime: 6min 17.039s
+             CPU time consumed: 6min 2.974s
+                   Memory peak: 1.3G (swap: 288.1M)

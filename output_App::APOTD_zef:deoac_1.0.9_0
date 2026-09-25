@@ -1,17 +1,17 @@
-Running as unit: run-p1587108-i1489760.service; invocation ID: 5a2cb0fd361a4ffc965e237437609090
+Running as unit: run-p2436236-i2430452.service; invocation ID: 4cb310b1ed514fde88f2cb78f8b109fd
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: App::APOTD
 ===> Found: App::APOTD:ver<1.0.9>:auth<zef:deoac> [via Zef::Repository::Ecosystems<fez>]
-[App::APOTD] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790267147.1587116.9282.563272466685/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz https://360.zef.pm/A/PP/APP_APOTD/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz
-===> Fetching [OK]: App::APOTD:ver<1.0.9>:auth<zef:deoac> to /home/coke/sandbox/blin/data/zef-data/tmp/1790267147.1587116.9282.563272466685/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz
+[App::APOTD] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790307723.2436243.608.2491419031488/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz https://360.zef.pm/A/PP/APP_APOTD/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz
+===> Fetching [OK]: App::APOTD:ver<1.0.9>:auth<zef:deoac> to /home/coke/sandbox/blin/data/zef-data/tmp/1790307723.2436243.608.2491419031488/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz
 [App::APOTD] Command: tar -t -f ./5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz
 [App::APOTD] Command: tar -xvf ./5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz -C ../5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz
 ===> Extraction [OK]: App::APOTD to /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz
 ===> Testing: App::APOTD:ver<1.0.9>:auth<zef:deoac>
-[App::APOTD] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9 t/00-meta6.rakutest
+[App::APOTD] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9 t/00-meta6.rakutest
 [App::APOTD] 1..1
 [App::APOTD] ok 1 - # SKIP Skipping author test
-[App::APOTD] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9 t/01-basic.rakutest
+[App::APOTD] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9 t/01-basic.rakutest
 [App::APOTD] ===SORRY!=== Error while compiling t/01-basic.rakutest
 [App::APOTD] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9/lib/App/APOTD.rakumod (App::APOTD)
 [App::APOTD] Calling mail-die(Str, Str, Str, Str) will never work with declared signature (Str $msg)
@@ -19,7 +19,7 @@ Press ^] three times within 1s to disconnect TTY.
 [App::APOTD] ------>             <HERE>mail-die "Couldn't write the alt-text to
 [App::APOTD] at t/01-basic.rakutest:2
 [App::APOTD] ------> <BOL><HERE>use App::APOTD;
-[App::APOTD] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9 t/01-load.rakutest
+[App::APOTD] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9 t/01-load.rakutest
 [App::APOTD] 1..1
 [App::APOTD] not ok 1 - Module loaded OK
 [App::APOTD] # Failed test 'Module loaded OK'
@@ -30,7 +30,7 @@ Press ^] three times within 1s to disconnect TTY.
 [App::APOTD] # ------>             <HERE>mail-die "Couldn't write the alt-text to
 [App::APOTD] # 
 [App::APOTD] # You failed 1 test of 1
-[App::APOTD] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9 t/02-exports.rakutest
+[App::APOTD] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9 t/02-exports.rakutest
 [App::APOTD] ===SORRY!=== Error while compiling t/02-exports.rakutest
 [App::APOTD] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/5de39b28297e55a5ed5ea600ae403e1e451aefe4.tar.gz/App-APOTD-1.0.9/lib/App/APOTD.rakumod (App::APOTD)
 [App::APOTD] Calling mail-die(Str, Str, Str, Str) will never work with declared signature (Str $msg)
@@ -53,6 +53,6 @@ at /home/coke/sandbox/blin/installed/App::APOTD_zef:deoac_1.0.9_0/sources/F049A1
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 2min 4.265s
-             CPU time consumed: 2min 6.910s
-                   Memory peak: 1G (swap: 58.5M)
+               Service runtime: 2min 10.771s
+             CPU time consumed: 2min 6.773s
+                   Memory peak: 1017.2M (swap: 78.1M)

@@ -181,7 +181,7 @@ App::pixel-pick – AlwaysFail
 App::pixel::pick – AlwaysFail
 App::pixelpick – AlwaysFail
 App::redpanda – OK
-App::samaki – AlwaysFail
+App::samaki – ZefFailure
 App::snippet – AlwaysFail
 App::termie – OK
 App::tmeta – OK
@@ -390,7 +390,7 @@ Compress::Snappy – OK
 Compress::Zlib – OK
 Compress::Zlib::Raw – OK
 Compress::Zstd – OK
-Concurrent::BoundedChannel – OK
+Concurrent::BoundedChannel – Flapper
 Concurrent::Channelify – OK
 Concurrent::File::Find – OK
 Concurrent::Iterator – OK
@@ -575,7 +575,7 @@ Date::Calendar::MayaAztec – AlwaysFail
 Date::Calendar::Persian – AlwaysFail
 Date::Calendar::Strftime – AlwaysFail
 Date::Christian::Advent – OK
-Date::Discordian – OK
+Date::Discordian – AlwaysFail
 Date::Easter – OK
 Date::Event – OK
 Date::Names – OK
@@ -644,7 +644,7 @@ Distribution::Extension::Updater – OK
 Distribution::Resources::Menu – OK
 Do123 – AlwaysFail
 Doc::Executable – OK
-Doc::TypeGraph – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+Doc::TypeGraph – OK
 Docker::API – AlwaysFail
 Docker::File – OK
 Documentable – AlwaysFail
@@ -708,7 +708,7 @@ Failable – AlwaysFail
 FanFou – AlwaysFail
 Farabi6 – AlwaysFail
 FastCGI – OK
-FastCGI::NativeCall – OK
+FastCGI::NativeCall – Fail, Bisected: eb6d4be9ff53107461c1e22112833bc34e95a208
 FastCGI::NativeCall::Async – OK
 FastCGI::NativeCall::PSGI – OK
 Fasta – OK
@@ -776,7 +776,7 @@ Form – OK
 Format::Lisp – OK
 Fortran::Grammar – AlwaysFail
 Fortune – OK
-ForwardIterables – OK
+ForwardIterables – Fail, Bisected: eb6d4be9ff53107461c1e22112833bc34e95a208
 French – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Frinfon – AlwaysFail
 Function::Validation – OK
@@ -949,7 +949,7 @@ HTTP::Server::Tiny – OK
 HTTP::Signature – AlwaysFail
 HTTP::Status – OK
 HTTP::Supply – AlwaysFail
-HTTP::Tiny – OK
+HTTP::Tiny – Fail, Bisected: eb6d4be9ff53107461c1e22112833bc34e95a208
 HTTP::Tinyish – OK
 HTTP::UserAgent – AlwaysFail
 HTTP::UserAgent::Strict – AlwaysFail
@@ -1174,7 +1174,7 @@ LCS::BV – OK
 LEB128 – OK
 LIVR – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 LLM::Agent – AlwaysFail
-LLM::Character – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+LLM::Character – OK
 LLM::Chat – AlwaysFail
 LLM::Classifiers::Emotions – OK
 LLM::Containerization – CyclicDependency
@@ -1294,7 +1294,7 @@ Lumberjack::Config::JSON – AlwaysFail
 Lumberjack::Dispatcher::EventSource – AlwaysFail
 Lumberjack::Dispatcher::Syslog – OK
 Lumberjack::Message::JSON – AlwaysFail
-MCP – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+MCP – Fail, Bisected: 2149157600df3a8114e15af8dd8de78e81e47b18
 MCP::Server::Tool::Ask – AlwaysFail
 MCP::Server::Tool::FileSystem – AlwaysFail
 MCP::Server::Tool::Shell – AlwaysFail
@@ -1470,7 +1470,7 @@ MsgPack – AlwaysFail
 Munge – AlwaysFail
 Music::Engine – OK
 Music::Helpers – OK
-Mux – Fail, Bisected: bcb3ef7a181dbc7d04ebef17500ddbc705c88706
+Mux – OK
 NCurses – OK
 NQP::Eval – OK
 NYI – OK
@@ -1519,7 +1519,7 @@ Net::SMTP – OK
 Net::SMTP::Client::Async – AlwaysFail
 Net::SOCKS – OK
 Net::Snapcast – OK
-Net::Telnet – OK
+Net::Telnet – ZefFailure
 Net::Whois – OK
 Net::Whois::Async – OK
 Net::XMPP – AlwaysFail
@@ -1552,7 +1552,7 @@ OO::Actors – OK
 OO::Monitors – OK
 OO::Plugin – AlwaysFail
 OO::Schema – AlwaysFail
-ORM::ActiveRecord – AlwaysFail
+ORM::ActiveRecord – ZefFailure
 ORM::Factory – AlwaysFail
 Object::Container – OK
 Object::Delayed – AlwaysFail
@@ -1745,7 +1745,7 @@ Point – OK
 Polyglot::Brainfuck – AlwaysFail
 Polyglot::Regexen – Fail, Bisected: aab0778725da5848824f07514c0ae355d972926a
 Pop – OK
-Portuguese – ZefFailure
+Portuguese – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 PostCocoon::Url – OK
 PowerNap – OK
 Powerline::Prompt – OK

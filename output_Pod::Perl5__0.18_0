@@ -1,14 +1,14 @@
-Running as unit: run-p1300257-i1320986.service; invocation ID: e7be2c4240304146ae81fe7877de6dbd
+Running as unit: run-p2135965-i2159519.service; invocation ID: 2c968bd0c90b421f818e58e50186a8a9
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Pod::Perl5
 ===> Found: Pod::Perl5:ver<0.18> [via Zef::Repository::Ecosystems<rea>]
-[Pod::Perl5] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790259394.1300260.4984.402750417801/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/P/Pod%3A%3APerl5/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz
-===> Fetching [OK]: Pod::Perl5:ver<0.18> to /home/coke/sandbox/blin/data/zef-data/tmp/1790259394.1300260.4984.402750417801/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz
+[Pod::Perl5] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790299885.2135967.3415.8047221586517/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/P/Pod%3A%3APerl5/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz
+===> Fetching [OK]: Pod::Perl5:ver<0.18> to /home/coke/sandbox/blin/data/zef-data/tmp/1790299885.2135967.3415.8047221586517/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz
 [Pod::Perl5] Command: tar -t -f ./Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz
 [Pod::Perl5] Command: tar -xvf ./Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz -C ../Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz
 ===> Extraction [OK]: Pod::Perl5 to /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz
 ===> Testing: Pod::Perl5:ver<0.18>
-[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/01_formatting.t
+[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/01_formatting.t
 [Pod::Perl5] 1..11
 [Pod::Perl5] ok 1 - parse formatting codes
 [Pod::Perl5] ok 2 - found 8 paragraphs
@@ -21,26 +21,26 @@ Press ^] three times within 1s to disconnect TTY.
 [Pod::Perl5] ok 9 - matches format text
 [Pod::Perl5] ok 10 - matches format text
 [Pod::Perl5] ok 11 - matches format text
-[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/02_paragraphs.t
+[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/02_paragraphs.t
 [Pod::Perl5] 1..5
 [Pod::Perl5] ok 1 - parse paragraphs
 [Pod::Perl5] ok 2 - Parser extracted three paragraphs
 [Pod::Perl5] ok 3 - Paragraph text extracted successfully
 [Pod::Perl5] ok 4 - Paragraph text extracted successfully
 [Pod::Perl5] ok 5 - Paragraph text extracted successfully
-[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/03_paragraphs_verbatim.t
+[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/03_paragraphs_verbatim.t
 [Pod::Perl5] 1..4
 [Pod::Perl5] ok 1 - parse paragraphs with verbatim example
 [Pod::Perl5] ok 2 - Parser extracted two paragraphs
 [Pod::Perl5] ok 3 - Parser extracted one verbatim paragraph
 [Pod::Perl5] ok 4 - Parser extracted the verbatim text
-[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/04_for.t
+[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/04_for.t
 [Pod::Perl5] 1..4
 [Pod::Perl5] ok 1 - parse for command
 [Pod::Perl5] ok 2 - Parser extracted one for
 [Pod::Perl5] ok 3 - Parser extracted name value is HTML
 [Pod::Perl5] ok 4 - Parser extracted the paragraph
-[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/05_begin_end.t
+[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/05_begin_end.t
 [Pod::Perl5] 1..6
 [Pod::Perl5] ok 1 - parse begin/end command
 [Pod::Perl5] ok 2 - Parser extracted two begin/end pairs
@@ -48,12 +48,12 @@ Press ^] three times within 1s to disconnect TTY.
 [Pod::Perl5] ok 4 - Extract the text from begin/end block
 [Pod::Perl5] ok 5 - The name from first begin pair is some_text
 [Pod::Perl5] ok 6 - Extract the text from begin/end block
-[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/06_command.t
+[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/06_command.t
 [Pod::Perl5] 1..3
 [Pod::Perl5] ok 1 - parse command
 [Pod::Perl5] ok 2 - Parser extracted three command paragraphs
 [Pod::Perl5] ok 3 - Parser extracted encoding name is utf8
-[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/07_headers.t
+[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/07_headers.t
 [Pod::Perl5] 1..6
 [Pod::Perl5] ok 1 - parse headers
 [Pod::Perl5] ok 2 - Parser extracted four comamnd blocks
@@ -61,7 +61,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Pod::Perl5] ok 4 - Parser extracted header 2
 [Pod::Perl5] ok 5 - Parser extracted header 3
 [Pod::Perl5] ok 6 - Parser extracted header 4
-[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/08_links.t
+[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/08_links.t
 [Pod::Perl5] 1..13
 [Pod::Perl5] ok 1 - parse links
 [Pod::Perl5] ok 2 - Parser extracted eleven paragraphs
@@ -76,7 +76,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Pod::Perl5] ok 11 - Parser extracted the url
 [Pod::Perl5] ok 12 - Parser extracted the url
 [Pod::Perl5] ok 13 - Parser extract the correct name
-[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/09_over_back.t
+[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/09_over_back.t
 [Pod::Perl5] 1..17
 [Pod::Perl5] ok 1 - parse over_back
 [Pod::Perl5] ok 2 - Parser extracted three over/back pairs
@@ -94,13 +94,13 @@ Press ^] three times within 1s to disconnect TTY.
 [Pod::Perl5] ok 14 - Extracted the over and the number
 [Pod::Perl5] ok 15 - Extracted three items from the second list
 [Pod::Perl5] not ok 16 - The inner list has two items
+[Pod::Perl5] ok 17 - The outer list has three items
 [Pod::Perl5] # Failed test 'The inner list has two items'
 [Pod::Perl5] # at t/Grammar/09_over_back.t line 61
 [Pod::Perl5] # expected: '2'
 [Pod::Perl5] #      got: '1'
-[Pod::Perl5] ok 17 - The outer list has three items
 [Pod::Perl5] # You failed 1 test of 17
-[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/10_readme.t
+[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/10_readme.t
 [Pod::Perl5] 1..9
 [Pod::Perl5] ok 1 - parse readme example
 [Pod::Perl5] ok 2 - Parser extracted one pod section
@@ -111,13 +111,13 @@ Press ^] three times within 1s to disconnect TTY.
 [Pod::Perl5] ok 7 - Parser extracted text from paragraph
 [Pod::Perl5] ok 8 - Parser extracted value from code formatting
 [Pod::Perl5] ok 9 - Parser extracted text from verbatim paragraph
-[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/11_pod_section.t
+[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Grammar/11_pod_section.t
 [Pod::Perl5] 1..4
 [Pod::Perl5] ok 1 - parse Perl module with embedded pod
 [Pod::Perl5] ok 2 - Matched 3 pod sections
 [Pod::Perl5] ok 3 - extracted "bar" head2 text
 [Pod::Perl5] ok 4 - extracted "bar" method paragraph description
-[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Perl5.t
+[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/Perl5.t
 [Pod::Perl5] 1..5
 [Pod::Perl5] ok 1 - Import Pod::Perl5
 [Pod::Perl5] ok 2 - parse string
@@ -271,7 +271,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Pod::Perl5]   in sub stringify-match at /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master/lib/Pod/Perl5/ToMarkdown.pm6 (Pod::Perl5::ToMarkdown) line 4
 [Pod::Perl5] # You failed 1 test of 5
 [Pod::Perl5] ok 5 - parse document
-[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/ToHTML/Formatting.t
+[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/ToHTML/Formatting.t
 [Pod::Perl5] 1..3
 [Pod::Perl5] ok 1 - constructor
 [Pod::Perl5] Use of uninitialized value element of type Any in string context.
@@ -329,7 +329,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Pod::Perl5] # '
 [Pod::Perl5] #      got: (Nil)
 [Pod::Perl5] # You failed 1 test of 3
-[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/ToHTML/Readme.t
+[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/ToHTML/Readme.t
 [Pod::Perl5] 1..5
 [Pod::Perl5] ok 1 - constructor
 [Pod::Perl5] Use of uninitialized value element of type Any in string context.
@@ -352,7 +352,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Pod::Perl5]   in method stringify-match at /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master/lib/Pod/Perl5/ToHTML.pm6 (Pod::Perl5::ToHTML) line 18
 [Pod::Perl5] Use of uninitialized value element of type Any in string context.
 [Pod::Perl5] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-[Pod::Perl5]   in method stringify-match at /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master/lib/Pod/Perl5/ToHTML.pm6 (Pod::Perl5::ToHTML) line 18
+[Pod::Perl5]   in method stringify-match at /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master/lib/Pod/Perl5/ToHTML.pm6 (Pod::Perl5::ToHTML) line 13
 [Pod::Perl5] Use of uninitialized value element of type Any in string context.
 [Pod::Perl5] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
 [Pod::Perl5]   in method stringify-match at /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master/lib/Pod/Perl5/ToHTML.pm6 (Pod::Perl5::ToHTML) line 13
@@ -463,10 +463,10 @@ Press ^] three times within 1s to disconnect TTY.
 [Pod::Perl5] # </html>
 [Pod::Perl5] # '
 [Pod::Perl5] #      got: (Nil)
+[Pod::Perl5] # You failed 1 test of 5
 [Pod::Perl5] ok 4 - head matches expected
 [Pod::Perl5] ok 5 - body is populated
-[Pod::Perl5] # You failed 1 test of 5
-[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/ToHTML/Text.t
+[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/ToHTML/Text.t
 [Pod::Perl5] 1..3
 [Pod::Perl5] ok 1 - constructor
 [Pod::Perl5] Use of uninitialized value element of type Any in string context.
@@ -505,7 +505,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Pod::Perl5] # '
 [Pod::Perl5] #      got: (Nil)
 [Pod::Perl5] # You failed 1 test of 3
-[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/ToMarkdown/Readme.t
+[Pod::Perl5] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master t/ToMarkdown/Readme.t
 [Pod::Perl5] 1..3
 [Pod::Perl5] ok 1 - constructor
 [Pod::Perl5] Use of uninitialized value element of type Any in string context.
@@ -525,15 +525,18 @@ Press ^] three times within 1s to disconnect TTY.
 [Pod::Perl5]   in sub stringify-match at /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master/lib/Pod/Perl5/ToMarkdown.pm6 (Pod::Perl5::ToMarkdown) line 9
 [Pod::Perl5] Use of uninitialized value element of type Any in string context.
 [Pod::Perl5] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Pod::Perl5]   in sub stringify-match at /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master/lib/Pod/Perl5/ToMarkdown.pm6 (Pod::Perl5::ToMarkdown) line 4
+[Pod::Perl5] Use of uninitialized value element of type Any in string context.
+[Pod::Perl5] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
+[Pod::Perl5]   in sub stringify-match at /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master/lib/Pod/Perl5/ToMarkdown.pm6 (Pod::Perl5::ToMarkdown) line 4
+[Pod::Perl5] Use of uninitialized value element of type Any in string context.
+[Pod::Perl5] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
 [Pod::Perl5]   in sub stringify-match at /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master/lib/Pod/Perl5/ToMarkdown.pm6 (Pod::Perl5::ToMarkdown) line 9
 [Pod::Perl5] Use of uninitialized value element of type Any in string context.
 [Pod::Perl5] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
 [Pod::Perl5]   in sub stringify-match at /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master/lib/Pod/Perl5/ToMarkdown.pm6 (Pod::Perl5::ToMarkdown) line 4
 [Pod::Perl5] Use of uninitialized value element of type Any in string context.
 [Pod::Perl5] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-[Pod::Perl5]   in sub stringify-match at /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master/lib/Pod/Perl5/ToMarkdown.pm6 (Pod::Perl5::ToMarkdown) line 9
-[Pod::Perl5] Use of uninitialized value element of type Any in string context.
-[Pod::Perl5] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
 [Pod::Perl5]   in sub stringify-match at /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master/lib/Pod/Perl5/ToMarkdown.pm6 (Pod::Perl5::ToMarkdown) line 4
 [Pod::Perl5] Use of uninitialized value element of type Any in string context.
 [Pod::Perl5] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
@@ -583,11 +586,6 @@ Press ^] three times within 1s to disconnect TTY.
 [Pod::Perl5] Use of uninitialized value element of type Any in string context.
 [Pod::Perl5] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
 [Pod::Perl5]   in sub stringify-match at /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master/lib/Pod/Perl5/ToMarkdown.pm6 (Pod::Perl5::ToMarkdown) line 4
-[Pod::Perl5] Use of uninitialized value element of type Any in string context.
-[Pod::Perl5] Methods .^name, .raku, .gist, or .say can be used to stringify it to something meaningful.
-[Pod::Perl5]   in sub stringify-match at /home/coke/sandbox/blin/data/zef-data/tmp/Pod%3A%3APerl5%3Aver%3C0.18%3E%3Aauth%3Cgithub%3Adnmfarrell%3E.tar.gz/Pod-Perl5-master/lib/Pod/Perl5/ToMarkdown.pm6 (Pod::Perl5::ToMarkdown) line 4
-[Pod::Perl5] ok 2 - convert string to html
-[Pod::Perl5] not ok 3 - Generated html matches expected
 [Pod::Perl5] # Failed test 'Generated html matches expected'
 [Pod::Perl5] # at t/ToMarkdown/Readme.t line 14
 [Pod::Perl5] # expected: '
@@ -661,12 +659,14 @@ Press ^] three times within 1s to disconnect TTY.
 [Pod::Perl5] # 
 [Pod::Perl5] # '
 [Pod::Perl5] # You failed 1 test of 3
+[Pod::Perl5] ok 2 - convert string to html
+[Pod::Perl5] not ok 3 - Generated html matches expected
 ===> Testing [FAIL]: Pod::Perl5:ver<0.18>
 [Pod::Perl5] Failed to get passing tests, but continuing with --force-test
 ===> Installing: Pod::Perl5:ver<0.18>
 ===> Install [OK] for Pod::Perl5:ver<0.18>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 2min 22.727s
-             CPU time consumed: 2min 32.120s
-                   Memory peak: 1.4G (swap: 41.1M)
+               Service runtime: 2min 23.132s
+             CPU time consumed: 2min 32.695s
+                   Memory peak: 1.5G (swap: 24K)

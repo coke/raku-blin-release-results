@@ -1,14 +1,14 @@
-Running as unit: run-p1463508-i1524436.service; invocation ID: d5665de57ff74e628bc556fafb7a4535
+Running as unit: run-p2299830-i2328267.service; invocation ID: 8da31852ae6340f6b8961e7f50e74714
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: CI::Gen
 ===> Found: CI::Gen:ver<0.0.2>:auth<cpan:SHLOMIF> [via Zef::Repository::Ecosystems<rea>]
-[CI::Gen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790264033.1463509.1878.7604202652108/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/C/CI%3A%3AGen/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz
-===> Fetching [OK]: CI::Gen:ver<0.0.2>:auth<cpan:SHLOMIF> to /home/coke/sandbox/blin/data/zef-data/tmp/1790264033.1463509.1878.7604202652108/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz
+[CI::Gen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790304485.2299843.6710.4567343753515/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/C/CI%3A%3AGen/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz
+===> Fetching [OK]: CI::Gen:ver<0.0.2>:auth<cpan:SHLOMIF> to /home/coke/sandbox/blin/data/zef-data/tmp/1790304485.2299843.6710.4567343753515/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz
 [CI::Gen] Command: tar -t -f ./CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz
 [CI::Gen] Command: tar -xvf ./CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz -C ../CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz
 ===> Extraction [OK]: CI::Gen to /home/coke/sandbox/blin/data/zef-data/tmp/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz
 ===> Testing: CI::Gen:ver<0.0.2>:auth<cpan:SHLOMIF>
-[CI::Gen] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz/CI-Gen-0.0.2 t/01-basic.t
+[CI::Gen] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz/CI-Gen-0.0.2 t/01-basic.t
 [CI::Gen] ===SORRY!=== Error while compiling t/01-basic.t
 [CI::Gen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/CI%3A%3AGen%3Aver%3C0.0.2%3E%3Aauth%3Ccpan%3ASHLOMIF%3E.tar.gz/CI-Gen-0.0.2/lib/CI/Gen.pm6 (CI::Gen)
 [CI::Gen] Adverb P5 not allowed on s
@@ -31,6 +31,6 @@ at /home/coke/sandbox/blin/installed/CI::Gen_cpan:SHLOMIF_0.0.2_0/sources/4F429C
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 1min 52.829s
-             CPU time consumed: 2min 4.015s
-                   Memory peak: 1.4G (swap: 0B)
+               Service runtime: 1min 56.393s
+             CPU time consumed: 2min 4.689s
+                   Memory peak: 1.3G (swap: 0B)

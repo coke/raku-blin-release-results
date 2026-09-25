@@ -1,14 +1,14 @@
-Running as unit: run-p1487471-i1556487.service; invocation ID: 303078a7dba144cf96d5be317fbb3642
+Running as unit: run-p2325079-i2383983.service; invocation ID: 845bcb8f92fd438faa9d3e155b13ed42
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: LIVR
 ===> Found: LIVR:ver<2.1.0>:auth<cpan:KOORCHIK> [via Zef::Repository::Ecosystems<rea>]
-[LIVR] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790264684.1487476.7130.707433897578/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/L/LIVR/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz
-===> Fetching [OK]: LIVR:ver<2.1.0>:auth<cpan:KOORCHIK> to /home/coke/sandbox/blin/data/zef-data/tmp/1790264684.1487476.7130.707433897578/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz
+[LIVR] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790305173.2325082.1143.8409900778533/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/L/LIVR/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz
+===> Fetching [OK]: LIVR:ver<2.1.0>:auth<cpan:KOORCHIK> to /home/coke/sandbox/blin/data/zef-data/tmp/1790305173.2325082.1143.8409900778533/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz
 [LIVR] Command: tar -t -f ./LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz
 [LIVR] Command: tar -xvf ./LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz -C ../LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz
 ===> Extraction [OK]: LIVR to /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz
 ===> Testing: LIVR:ver<2.1.0>
-[LIVR] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/00-simple.t
+[LIVR] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/00-simple.t
 [LIVR] ===SORRY!=== Error while compiling t/00-simple.t
 [LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR)
 [LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special)
@@ -19,7 +19,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LIVR] ------> <BOL><HERE>use LIVR::Rules::Special;
 [LIVR] at t/00-simple.t:4
 [LIVR] ------> <BOL><HERE>use LIVR;
-[LIVR] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/01-livr-test-suite.t
+[LIVR] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/01-livr-test-suite.t
 [LIVR] ===SORRY!=== Error while compiling t/01-livr-test-suite.t
 [LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR)
 [LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special)
@@ -30,7 +30,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LIVR] ------> <BOL><HERE>use LIVR::Rules::Special;
 [LIVR] at t/01-livr-test-suite.t:6
 [LIVR] ------> <BOL><HERE>use LIVR;
-[LIVR] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/02-rules-registration.t
+[LIVR] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/02-rules-registration.t
 [LIVR] ===SORRY!=== Error while compiling t/02-rules-registration.t
 [LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR)
 [LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special)
@@ -41,7 +41,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LIVR] ------> <BOL><HERE>use LIVR::Rules::Special;
 [LIVR] at t/02-rules-registration.t:4
 [LIVR] ------> <BOL><HERE>use LIVR;
-[LIVR] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/03-auto-trim.t
+[LIVR] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/03-auto-trim.t
 [LIVR] ===SORRY!=== Error while compiling t/03-auto-trim.t
 [LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR)
 [LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special)
@@ -52,7 +52,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LIVR] ------> <BOL><HERE>use LIVR::Rules::Special;
 [LIVR] at t/03-auto-trim.t:4
 [LIVR] ------> <BOL><HERE>use LIVR;
-[LIVR] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/04-custom-filters.t
+[LIVR] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/04-custom-filters.t
 [LIVR] ===SORRY!=== Error while compiling t/04-custom-filters.t
 [LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR)
 [LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special)
@@ -63,7 +63,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LIVR] ------> <BOL><HERE>use LIVR::Rules::Special;
 [LIVR] at t/04-custom-filters.t:4
 [LIVR] ------> <BOL><HERE>use LIVR;
-[LIVR] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/05-perl6-like.t
+[LIVR] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/05-perl6-like.t
 [LIVR] ===SORRY!=== Error while compiling t/05-perl6-like.t
 [LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR)
 [LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special)
@@ -74,7 +74,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LIVR] ------> <BOL><HERE>use LIVR::Rules::Special;
 [LIVR] at t/05-perl6-like.t:4
 [LIVR] ------> <BOL><HERE>use LIVR;
-[LIVR] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/06-patch-all-rules.t
+[LIVR] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/06-patch-all-rules.t
 [LIVR] ===SORRY!=== Error while compiling t/06-patch-all-rules.t
 [LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR)
 [LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special)
@@ -85,7 +85,7 @@ Press ^] three times within 1s to disconnect TTY.
 [LIVR] ------> <BOL><HERE>use LIVR::Rules::Special;
 [LIVR] at t/06-patch-all-rules.t:4
 [LIVR] ------> <BOL><HERE>use LIVR;
-[LIVR] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/07-register-aliased-default-rule.t
+[LIVR] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0 t/07-register-aliased-default-rule.t
 [LIVR] ===SORRY!=== Error while compiling t/07-register-aliased-default-rule.t
 [LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR.pm6 (LIVR)
 [LIVR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/LIVR%3Aver%3C2.1.0%3E%3Aauth%3Ccpan%3AKOORCHIK%3E.tar.gz/LIVR-2.1.0/lib/LIVR/Rules/Special.pm6 (LIVR::Rules::Special)
@@ -119,6 +119,6 @@ at /home/coke/sandbox/blin/installed/LIVR_cpan:KOORCHIK_2.1.0_0/sources/B706D84C
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 2min 40.981s
-             CPU time consumed: 2min 46.869s
-                   Memory peak: 1.7G (swap: 12.7M)
+               Service runtime: 2min 45.918s
+             CPU time consumed: 2min 51.505s
+                   Memory peak: 1.6G (swap: 0B)

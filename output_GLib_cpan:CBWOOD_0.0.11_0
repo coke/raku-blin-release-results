@@ -1,31 +1,31 @@
-Running as unit: run-p1788586-i1843532.service; invocation ID: 62559b7675b242f7a9556587e4bdba39
+Running as unit: run-p2637310-i2623212.service
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: GLib
 ===> Found: GLib:ver<0.0.11>:auth<cpan:CBWOOD> [via Zef::Repository::Ecosystems<rea>]
-[GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790272480.1788598.3579.9549685870547/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
-===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1790272480.1788598.3579.9549685870547/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+[GLib] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790312986.2637317.6769.300163902033/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/G/GLib/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
+===> Fetching [OK]: GLib:ver<0.0.11>:auth<cpan:CBWOOD> to /home/coke/sandbox/blin/data/zef-data/tmp/1790312986.2637317.6769.300163902033/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
 [GLib] Command: tar -t -f ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
 [GLib] Command: tar -xvf ./GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz -C ../GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
 ===> Extraction [OK]: GLib to /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz
 ===> Testing: GLib:ver<0.0.11>:auth<cpan:CBWOOD>
-[GLib] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00-struct-sizes.t
+[GLib] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00-struct-sizes.t
 [GLib] ===SORRY!=== Error while compiling t/00-struct-sizes.t
 [GLib] Potential difficulties:
 [GLib]     Missing declarand for trailing declarator doc
 [GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):867
 [GLib]     ------> _NEWLINE_CR | G_REGEX_MATCH_NEWLINE_ANY,<HERE><EOL>
 [GLib]     Missing declarand for trailing declarator doc
-[GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):870
-[GLib]     ------>                #= G_REGEX_MATCH_PARTIAL,<HERE><EOL>
-[GLib]     Missing declarand for trailing declarator doc
 [GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):865
 [GLib]     ------> H_NEWLINE_CR | G_REGEX_MATCH_NEWLINE_LF,<HERE><EOL>
 [GLib]     Missing declarand for trailing declarator doc
-[GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):891
-[GLib]     ------> G_REGEX_NEWLINE_CR | G_REGEX_NEWLINE_LF,<HERE><EOL>
+[GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):870
+[GLib]     ------>                #= G_REGEX_MATCH_PARTIAL,<HERE><EOL>
 [GLib]     Missing declarand for trailing declarator doc
 [GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):892
 [GLib]     ------>  +< 22, #= G_REGEX_NEWLINE_CR | 1 << 22,<HERE><EOL>
+[GLib]     Missing declarand for trailing declarator doc
+[GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):891
+[GLib]     ------> G_REGEX_NEWLINE_CR | G_REGEX_NEWLINE_LF,<HERE><EOL>
 [GLib]     Missing declarand for trailing declarator doc
 [GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):920
 [GLib]     ------> G_LOG_FLAG_RECURSION | G_LOG_FLAG_FATAL)<HERE><EOL>
@@ -33,17 +33,8 @@ Press ^] three times within 1s to disconnect TTY.
 [GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):913
 [GLib]     ------>         => 1 +< 2,       #= always fatal<HERE><EOL>
 [GLib]     Missing declarand for trailing declarator doc
-[GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):928
-[GLib]     ------> ST_LOG_LIST_CASE',         #= s:testpath<HERE><EOL>
-[GLib]     Missing declarand for trailing declarator doc
-[GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):927
-[GLib]     ------> ART_BINARY',      #= s:binaryname s:seed<HERE><EOL>
-[GLib]     Missing declarand for trailing declarator doc
-[GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):930
-[GLib]     ------> ST_LOG_START_CASE',        #= s:testpath<HERE><EOL>
-[GLib]     Missing declarand for trailing declarator doc
-[GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):932
-[GLib]     ------> _MIN_RESULT',        #= s:blurb d:result<HERE><EOL>
+[GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):931
+[GLib]     ------> ,         #= d:status d:nforks d:elapsed<HERE><EOL>
 [GLib]     Missing declarand for trailing declarator doc
 [GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):929
 [GLib]     ------> ST_LOG_SKIP_CASE',         #= s:testpath<HERE><EOL>
@@ -51,14 +42,23 @@ Press ^] three times within 1s to disconnect TTY.
 [GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):934
 [GLib]     ------> _TEST_LOG_MESSAGE',           #= s:blurb<HERE><EOL>
 [GLib]     Missing declarand for trailing declarator doc
-[GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):933
-[GLib]     ------> _MAX_RESULT',        #= s:blurb d:result<HERE><EOL>
+[GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):932
+[GLib]     ------> _MIN_RESULT',        #= s:blurb d:result<HERE><EOL>
 [GLib]     Missing declarand for trailing declarator doc
 [GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):926
 [GLib]     ------> 'G_TEST_LOG_ERROR',             #= s:msg<HERE><EOL>
 [GLib]     Missing declarand for trailing declarator doc
-[GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):931
-[GLib]     ------> ,         #= d:status d:nforks d:elapsed<HERE><EOL>
+[GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):928
+[GLib]     ------> ST_LOG_LIST_CASE',         #= s:testpath<HERE><EOL>
+[GLib]     Missing declarand for trailing declarator doc
+[GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):930
+[GLib]     ------> ST_LOG_START_CASE',        #= s:testpath<HERE><EOL>
+[GLib]     Missing declarand for trailing declarator doc
+[GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):927
+[GLib]     ------> ART_BINARY',      #= s:binaryname s:seed<HERE><EOL>
+[GLib]     Missing declarand for trailing declarator doc
+[GLib]     at /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Enums.pm6 (GLib::Raw::Enums):933
+[GLib]     ------> _MAX_RESULT',        #= s:blurb d:result<HERE><EOL>
 [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs)
 [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Exceptions.pm6 (GLib::Raw::Exceptions)
 [GLib] Can only use : as invocant marker in a signature after the first parameter
@@ -68,7 +68,7 @@ Press ^] three times within 1s to disconnect TTY.
 [GLib] ------> <BOL><HERE>use GLib::Raw::Exceptions;
 [GLib] at t/00-struct-sizes.t:7
 [GLib] ------> <BOL><HERE>use GLib::Raw::Subs;
-[GLib] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00b-class-struct-sizes.t
+[GLib] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/00b-class-struct-sizes.t
 [GLib] ===SORRY!=== Error while compiling t/00b-class-struct-sizes.t
 [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Subs.pm6 (GLib::Raw::Subs)
 [GLib] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11/lib/GLib/Raw/Exceptions.pm6 (GLib::Raw::Exceptions)
@@ -79,7 +79,7 @@ Press ^] three times within 1s to disconnect TTY.
 [GLib] ------> <BOL><HERE>use GLib::Raw::Exceptions;
 [GLib] at t/00b-class-struct-sizes.t:7
 [GLib] ------> <BOL><HERE>use GLib::Raw::Subs;
-[GLib] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/01-modules.t
+[GLib] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/GLib%3Aver%3C0.0.11%3E%3Aauth%3Ccpan%3ACBWOOD%3E.tar.gz/GLib-0.0.11 t/01-modules.t
 [GLib] 1..174
 [GLib] ok 1 - GLib
 [GLib] ok 2 - GLib::Array
@@ -261,14 +261,14 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [FAIL] for GLib:ver<0.0.11>:auth<cpan:CBWOOD>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/E460938D8BE5E569C3EC400A0BA8E44BE67D41D3 (GLib::Array)
 Potential difficulties:
     Missing declarand for trailing declarator doc
-    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):870
-    ------>                #= G_REGEX_MATCH_PARTIAL,<HERE><EOL>
+    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):867
+    ------> _NEWLINE_CR | G_REGEX_MATCH_NEWLINE_ANY,<HERE><EOL>
     Missing declarand for trailing declarator doc
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):865
     ------> H_NEWLINE_CR | G_REGEX_MATCH_NEWLINE_LF,<HERE><EOL>
     Missing declarand for trailing declarator doc
-    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):867
-    ------> _NEWLINE_CR | G_REGEX_MATCH_NEWLINE_ANY,<HERE><EOL>
+    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):870
+    ------>                #= G_REGEX_MATCH_PARTIAL,<HERE><EOL>
     Missing declarand for trailing declarator doc
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):892
     ------>  +< 22, #= G_REGEX_NEWLINE_CR | 1 << 22,<HERE><EOL>
@@ -276,32 +276,32 @@ Potential difficulties:
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):891
     ------> G_REGEX_NEWLINE_CR | G_REGEX_NEWLINE_LF,<HERE><EOL>
     Missing declarand for trailing declarator doc
-    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):913
-    ------>         => 1 +< 2,       #= always fatal<HERE><EOL>
-    Missing declarand for trailing declarator doc
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):920
     ------> G_LOG_FLAG_RECURSION | G_LOG_FLAG_FATAL)<HERE><EOL>
+    Missing declarand for trailing declarator doc
+    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):913
+    ------>         => 1 +< 2,       #= always fatal<HERE><EOL>
     Missing declarand for trailing declarator doc
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):932
     ------> _MIN_RESULT',        #= s:blurb d:result<HERE><EOL>
     Missing declarand for trailing declarator doc
-    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):928
-    ------> ST_LOG_LIST_CASE',         #= s:testpath<HERE><EOL>
+    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):929
+    ------> ST_LOG_SKIP_CASE',         #= s:testpath<HERE><EOL>
     Missing declarand for trailing declarator doc
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):933
     ------> _MAX_RESULT',        #= s:blurb d:result<HERE><EOL>
     Missing declarand for trailing declarator doc
-    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):929
-    ------> ST_LOG_SKIP_CASE',         #= s:testpath<HERE><EOL>
-    Missing declarand for trailing declarator doc
-    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):926
-    ------> 'G_TEST_LOG_ERROR',             #= s:msg<HERE><EOL>
-    Missing declarand for trailing declarator doc
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):927
     ------> ART_BINARY',      #= s:binaryname s:seed<HERE><EOL>
     Missing declarand for trailing declarator doc
+    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):928
+    ------> ST_LOG_LIST_CASE',         #= s:testpath<HERE><EOL>
+    Missing declarand for trailing declarator doc
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):930
     ------> ST_LOG_START_CASE',        #= s:testpath<HERE><EOL>
+    Missing declarand for trailing declarator doc
+    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):926
+    ------> 'G_TEST_LOG_ERROR',             #= s:msg<HERE><EOL>
     Missing declarand for trailing declarator doc
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):931
     ------> ,         #= d:status d:nforks d:elapsed<HERE><EOL>
@@ -319,14 +319,14 @@ at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/E460938D8
 ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/E460938D8BE5E569C3EC400A0BA8E44BE67D41D3 (GLib::Array)
 Potential difficulties:
     Missing declarand for trailing declarator doc
-    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):870
-    ------>                #= G_REGEX_MATCH_PARTIAL,<HERE><EOL>
+    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):867
+    ------> _NEWLINE_CR | G_REGEX_MATCH_NEWLINE_ANY,<HERE><EOL>
     Missing declarand for trailing declarator doc
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):865
     ------> H_NEWLINE_CR | G_REGEX_MATCH_NEWLINE_LF,<HERE><EOL>
     Missing declarand for trailing declarator doc
-    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):867
-    ------> _NEWLINE_CR | G_REGEX_MATCH_NEWLINE_ANY,<HERE><EOL>
+    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):870
+    ------>                #= G_REGEX_MATCH_PARTIAL,<HERE><EOL>
     Missing declarand for trailing declarator doc
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):892
     ------>  +< 22, #= G_REGEX_NEWLINE_CR | 1 << 22,<HERE><EOL>
@@ -334,32 +334,32 @@ Potential difficulties:
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):891
     ------> G_REGEX_NEWLINE_CR | G_REGEX_NEWLINE_LF,<HERE><EOL>
     Missing declarand for trailing declarator doc
-    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):913
-    ------>         => 1 +< 2,       #= always fatal<HERE><EOL>
-    Missing declarand for trailing declarator doc
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):920
     ------> G_LOG_FLAG_RECURSION | G_LOG_FLAG_FATAL)<HERE><EOL>
+    Missing declarand for trailing declarator doc
+    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):913
+    ------>         => 1 +< 2,       #= always fatal<HERE><EOL>
     Missing declarand for trailing declarator doc
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):932
     ------> _MIN_RESULT',        #= s:blurb d:result<HERE><EOL>
     Missing declarand for trailing declarator doc
-    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):928
-    ------> ST_LOG_LIST_CASE',         #= s:testpath<HERE><EOL>
+    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):929
+    ------> ST_LOG_SKIP_CASE',         #= s:testpath<HERE><EOL>
     Missing declarand for trailing declarator doc
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):933
     ------> _MAX_RESULT',        #= s:blurb d:result<HERE><EOL>
     Missing declarand for trailing declarator doc
-    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):929
-    ------> ST_LOG_SKIP_CASE',         #= s:testpath<HERE><EOL>
-    Missing declarand for trailing declarator doc
-    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):926
-    ------> 'G_TEST_LOG_ERROR',             #= s:msg<HERE><EOL>
-    Missing declarand for trailing declarator doc
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):927
     ------> ART_BINARY',      #= s:binaryname s:seed<HERE><EOL>
     Missing declarand for trailing declarator doc
+    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):928
+    ------> ST_LOG_LIST_CASE',         #= s:testpath<HERE><EOL>
+    Missing declarand for trailing declarator doc
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):930
     ------> ST_LOG_START_CASE',        #= s:testpath<HERE><EOL>
+    Missing declarand for trailing declarator doc
+    at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):926
+    ------> 'G_TEST_LOG_ERROR',             #= s:msg<HERE><EOL>
     Missing declarand for trailing declarator doc
     at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/8A8263741B354370F4373FEC279A2C8B2B77BBA2 (GLib::Raw::Enums):931
     ------> ,         #= d:status d:nforks d:elapsed<HERE><EOL>
@@ -376,6 +376,6 @@ at /home/coke/sandbox/blin/installed/GLib_cpan:CBWOOD_0.0.11_0/sources/E460938D8
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 13min 23.676s
-             CPU time consumed: 13min 44.057s
-                   Memory peak: 2.4G (swap: 997.7M)
+               Service runtime: 14min 23.389s
+             CPU time consumed: 13min 40.986s
+                   Memory peak: 2.3G (swap: 1.1G)

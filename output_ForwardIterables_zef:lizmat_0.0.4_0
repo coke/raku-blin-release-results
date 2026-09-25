@@ -1,0 +1,16 @@
+Running as unit: run-p2062110-i2074805.service; invocation ID: d512a87b1b0d425280b955259524c6b9
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: ForwardIterables
+===> Found: ForwardIterables:ver<0.0.4>:auth<zef:lizmat> [via Zef::Repository::Ecosystems<fez>]
+[ForwardIterables] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790297682.2062117.9989.930911673684/95f45779ee47942c1dfe41a464f36441b5f60743.tar.gz https://360.zef.pm/F/OR/FORWARDITERABLES/95f45779ee47942c1dfe41a464f36441b5f60743.tar.gz
+===> Fetching [OK]: ForwardIterables:ver<0.0.4>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1790297682.2062117.9989.930911673684/95f45779ee47942c1dfe41a464f36441b5f60743.tar.gz
+[ForwardIterables] Command: tar -t -f ./95f45779ee47942c1dfe41a464f36441b5f60743.tar.gz
+===> Extraction: Failed to find a META6.json file for ForwardIterables:ver<0.0.4>:auth<zef:lizmat> -- failure is likely
+[ForwardIterables] Command: tar -xvf ./95f45779ee47942c1dfe41a464f36441b5f60743.tar.gz -C ../95f45779ee47942c1dfe41a464f36441b5f60743.tar.gz
+[ForwardIterables] Extracting with plugin Zef::Service::Shell::tar aborted.
+something went wrong extracting /home/coke/sandbox/blin/data/zef-data/tmp/1790297682.2062117.9989.930911673684/95f45779ee47942c1dfe41a464f36441b5f60743.tar.gz to /home/coke/sandbox/blin/data/zef-data/tmp/95f45779ee47942c1dfe41a464f36441b5f60743.tar.gz with Zef::Service::Shell::git<4265708708784>,Zef::Service::Shell::tar<4265714065824>,Zef::Service::Shell::unzip<4265714066816>,Zef::Service::FetchPath<4265805101120>
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1min 38.273s
+             CPU time consumed: 1min 37.194s
+                   Memory peak: 1G (swap: 0B)

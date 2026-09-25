@@ -1,14 +1,14 @@
-Running as unit: run-p1311000-i1321430.service; invocation ID: ca0f0ed4ec7540c2bc8d788d5a7d383c
+Running as unit: run-p2147097-i2125551.service; invocation ID: c4ae9d4fb2134066b213ab7c98e897af
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: RakupodObject
 ===> Found: RakupodObject:ver<0.0.7>:auth<zef:tbrowder> [via Zef::Repository::Ecosystems<fez>]
-[RakupodObject] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790259695.1311008.2622.3321654208075/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz https://360.zef.pm/R/AK/RAKUPODOBJECT/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz
-===> Fetching [OK]: RakupodObject:ver<0.0.7>:auth<zef:tbrowder> to /home/coke/sandbox/blin/data/zef-data/tmp/1790259695.1311008.2622.3321654208075/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz
+[RakupodObject] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790300202.2147102.1447.1310493497501/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz https://360.zef.pm/R/AK/RAKUPODOBJECT/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz
+===> Fetching [OK]: RakupodObject:ver<0.0.7>:auth<zef:tbrowder> to /home/coke/sandbox/blin/data/zef-data/tmp/1790300202.2147102.1447.1310493497501/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz
 [RakupodObject] Command: tar -t -f ./a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz
 [RakupodObject] Command: tar -xvf ./a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz -C ../a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz
 ===> Extraction [OK]: RakupodObject to /home/coke/sandbox/blin/data/zef-data/tmp/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz
 ===> Testing: RakupodObject:ver<0.0.7>:auth<zef:tbrowder>
-[RakupodObject] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz/RakupodObject-0.0.7 t/1-critical.t
+[RakupodObject] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/a567f9da47f34b9e75148df2f5d1308ccaeceebe.tar.gz/RakupodObject-0.0.7 t/1-critical.t
 [RakupodObject] Potential difficulties:
 [RakupodObject]     Pair with <> really means an empty list, not null string; use :lang('') to represent the null string,
 [RakupodObject]       or :lang() to represent the empty list more accurately
@@ -57,6 +57,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for RakupodObject:ver<0.0.7>:auth<zef:tbrowder>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 1min 31.480s
-             CPU time consumed: 1min 37.642s
-                   Memory peak: 1017.6M (swap: 0B)
+               Service runtime: 1min 33.370s
+             CPU time consumed: 1min 40.838s
+                   Memory peak: 1023.2M (swap: 0B)

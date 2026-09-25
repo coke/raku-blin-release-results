@@ -1,23 +1,23 @@
-Running as unit: run-p1453236-i1362726.service; invocation ID: edfe86f3e0514932bf84a68c74998eaf
+Running as unit: run-p2289035-i2316149.service
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: XHTML::Writer
 ===> Found: XHTML::Writer:ver<0.1.1> [via Zef::Repository::Ecosystems<rea>]
-[XHTML::Writer] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790263730.1453239.7205.372382522509/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/X/XHTML%3A%3AWriter/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz
-===> Fetching [OK]: XHTML::Writer:ver<0.1.1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790263730.1453239.7205.372382522509/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz
+[XHTML::Writer] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790304151.2289048.9612.854619997173/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/X/XHTML%3A%3AWriter/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz
+===> Fetching [OK]: XHTML::Writer:ver<0.1.1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790304151.2289048.9612.854619997173/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz
 [XHTML::Writer] Command: tar -t -f ./XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz
 [XHTML::Writer] Command: tar -xvf ./XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz -C ../XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz
 ===> Extraction [OK]: XHTML::Writer to /home/coke/sandbox/blin/data/zef-data/tmp/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz
 ===> Building: XHTML::Writer:ver<0.1.1>
-[XHTML::Writer] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -e require '/home/coke/sandbox/blin/data/zef-data/tmp/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz/perl6-xhtml-writer-master/Build.pm'; ::('Build').new.build('/home/coke/sandbox/blin/data/zef-data/tmp/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz/perl6-xhtml-writer-master') ?? exit(0) !! exit(1);
+[XHTML::Writer] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -e require '/home/coke/sandbox/blin/data/zef-data/tmp/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz/perl6-xhtml-writer-master/Build.pm'; ::('Build').new.build('/home/coke/sandbox/blin/data/zef-data/tmp/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz/perl6-xhtml-writer-master') ?? exit(0) !! exit(1);
 ===> Building [OK] for XHTML::Writer:ver<0.1.1>
 ===> Testing: XHTML::Writer:ver<0.1.1>
-[XHTML::Writer] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz/perl6-xhtml-writer-master t/basic.t
+[XHTML::Writer] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz/perl6-xhtml-writer-master t/basic.t
 [XHTML::Writer] 1..1
 [XHTML::Writer] ok 1 - basic table
-[XHTML::Writer] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz/perl6-xhtml-writer-master t/no-indent.t
+[XHTML::Writer] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz/perl6-xhtml-writer-master t/no-indent.t
 [XHTML::Writer] 1..1
 [XHTML::Writer] ok 1 - no indentatoon
-[XHTML::Writer] Command: /tmp/whateverable/rakudo-moar/bcb3ef7a181dbc7d04ebef17500ddbc705c88706/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz/perl6-xhtml-writer-master t/skeleton.t
+[XHTML::Writer] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz/perl6-xhtml-writer-master t/skeleton.t
 [XHTML::Writer] 1..2
 [XHTML::Writer] Type check failed in binding to parameter '@header'; expected Positional but got Str ("<title>skeleton.t</...)
 [XHTML::Writer]   in sub xhtml-skeleton at /home/coke/sandbox/blin/data/zef-data/tmp/XHTML%3A%3AWriter%3Aver%3C0.1.1%3E%3Aauth%3Cgithub%3Agfldex%3E.tar.gz/perl6-xhtml-writer-master/lib/XHTML/Skeleton.pm6 (XHTML::Skeleton) line 3
@@ -32,6 +32,6 @@ Press ^] three times within 1s to disconnect TTY.
 /home/coke/sandbox/blin/installed/XHTML::Writer__0.1.1_0/bin
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 2min 41.377s
-             CPU time consumed: 2min 51.670s
+               Service runtime: 2min 39.472s
+             CPU time consumed: 2min 50.826s
                    Memory peak: 1.5G (swap: 0B)
