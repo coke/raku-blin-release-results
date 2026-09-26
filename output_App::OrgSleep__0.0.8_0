@@ -1,9 +1,9 @@
-Running as unit: run-p2626269-i2647803.service
+Running as unit: run-p3432770-i3427297.service; invocation ID: 48717cd0d8cc45cca8e9de9e87c0385c
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: App::OrgSleep
 ===> Found: App::OrgSleep:ver<0.0.8> [via Zef::Repository::Ecosystems<rea>]
-[App::OrgSleep] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790312678.2626279.6286.172508754448/App%3A%3AOrgSleep%3Aver%3C0.0.8%3E%3Aauth%3Cgithub%3AAlexDaniel%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/A/App%3A%3AOrgSleep/App%3A%3AOrgSleep%3Aver%3C0.0.8%3E%3Aauth%3Cgithub%3AAlexDaniel%3E.tar.gz
-===> Fetching [OK]: App::OrgSleep:ver<0.0.8> to /home/coke/sandbox/blin/data/zef-data/tmp/1790312678.2626279.6286.172508754448/App%3A%3AOrgSleep%3Aver%3C0.0.8%3E%3Aauth%3Cgithub%3AAlexDaniel%3E.tar.gz
+[App::OrgSleep] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790370608.3432790.3914.425413392406/App%3A%3AOrgSleep%3Aver%3C0.0.8%3E%3Aauth%3Cgithub%3AAlexDaniel%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/A/App%3A%3AOrgSleep/App%3A%3AOrgSleep%3Aver%3C0.0.8%3E%3Aauth%3Cgithub%3AAlexDaniel%3E.tar.gz
+===> Fetching [OK]: App::OrgSleep:ver<0.0.8> to /home/coke/sandbox/blin/data/zef-data/tmp/1790370608.3432790.3914.425413392406/App%3A%3AOrgSleep%3Aver%3C0.0.8%3E%3Aauth%3Cgithub%3AAlexDaniel%3E.tar.gz
 [App::OrgSleep] Command: tar -t -f ./App%3A%3AOrgSleep%3Aver%3C0.0.8%3E%3Aauth%3Cgithub%3AAlexDaniel%3E.tar.gz
 [App::OrgSleep] Command: tar -xvf ./App%3A%3AOrgSleep%3Aver%3C0.0.8%3E%3Aauth%3Cgithub%3AAlexDaniel%3E.tar.gz -C ../App%3A%3AOrgSleep%3Aver%3C0.0.8%3E%3Aauth%3Cgithub%3AAlexDaniel%3E.tar.gz
 ===> Extraction [OK]: App::OrgSleep to /home/coke/sandbox/blin/data/zef-data/tmp/App%3A%3AOrgSleep%3Aver%3C0.0.8%3E%3Aauth%3Cgithub%3AAlexDaniel%3E.tar.gz
@@ -21,7 +21,7 @@ Actually thrown at:
   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2814
   in any  at src/Raku/ast/begintime.rakumod line 21
   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
-  in any statement-control at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any statement-control at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
 
 
 ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/App::OrgSleep__0.0.8_0/sources/6D44CC7F1F02701CD938ED69C3A9E6BD2EE03E23 (orgsleep)
@@ -35,11 +35,11 @@ Actually thrown at:
   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2814
   in any  at src/Raku/ast/begintime.rakumod line 21
   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
-  in any statement-control at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any statement-control at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
 
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 2min 21.370s
-             CPU time consumed: 2min 4.018s
-                   Memory peak: 1G (swap: 173.4M)
+               Service runtime: 2min 19.431s
+             CPU time consumed: 2min 12.595s
+                   Memory peak: 1.1G (swap: 284.3M)

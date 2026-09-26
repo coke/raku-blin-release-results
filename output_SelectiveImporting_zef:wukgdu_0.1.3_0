@@ -1,24 +1,24 @@
-Running as unit: run-p2152976-i2147780.service
+Running as unit: run-p2990298-i3004502.service; invocation ID: 19d92c73bcdc44ab8602c9b294afb3cb
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: SelectiveImporting
 ===> Found: SelectiveImporting:ver<0.1.3>:auth<zef:wukgdu> [via Zef::Repository::Ecosystems<fez>]
-[SelectiveImporting] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790300373.2152977.1487.6906682944514/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz https://360.zef.pm/S/EL/SELECTIVEIMPORTING/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz
-===> Fetching [OK]: SelectiveImporting:ver<0.1.3>:auth<zef:wukgdu> to /home/coke/sandbox/blin/data/zef-data/tmp/1790300373.2152977.1487.6906682944514/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz
+[SelectiveImporting] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790358448.2990301.7041.310267070115/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz https://360.zef.pm/S/EL/SELECTIVEIMPORTING/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz
+===> Fetching [OK]: SelectiveImporting:ver<0.1.3>:auth<zef:wukgdu> to /home/coke/sandbox/blin/data/zef-data/tmp/1790358448.2990301.7041.310267070115/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz
 [SelectiveImporting] Command: tar -t -f ./3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz
 [SelectiveImporting] Command: tar -xvf ./3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz -C ../3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz
 ===> Extraction [OK]: SelectiveImporting to /home/coke/sandbox/blin/data/zef-data/tmp/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz
 ===> Testing: SelectiveImporting:ver<0.1.3>:auth<zef:wukgdu>
-[SelectiveImporting] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz/SelectiveImporting-0.1.3 t/01-basic.rakutest
+[SelectiveImporting] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz/SelectiveImporting-0.1.3 t/01-basic.rakutest
 [SelectiveImporting] ===SORRY!=== Error while compiling t/01-basic.rakutest
 [SelectiveImporting] Error while importing from 'testimporting': no such tag 'select'
 [SelectiveImporting] at t/01-basic.rakutest:8
 [SelectiveImporting] ------>     <HERE>use testimporting :select<&asdf2 &asdf5>
-[SelectiveImporting] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz/SelectiveImporting-0.1.3 t/02-export.rakutest
+[SelectiveImporting] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz/SelectiveImporting-0.1.3 t/02-export.rakutest
 [SelectiveImporting] ===SORRY!=== Error while compiling t/02-export.rakutest
 [SelectiveImporting] Error while importing from 'exportmodule': no such tag 'select'
 [SelectiveImporting] at t/02-export.rakutest:7
 [SelectiveImporting] ------>     <HERE>use exportmodule :select<$var &asdf>;
-[SelectiveImporting] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz/SelectiveImporting-0.1.3 t/03-except.rakutest
+[SelectiveImporting] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/3f756c4c9dde5bc1c35dd7f41652036060cb2557.tar.gz/SelectiveImporting-0.1.3 t/03-except.rakutest
 [SelectiveImporting] ===SORRY!=== Error while compiling t/03-except.rakutest
 [SelectiveImporting] Error while importing from 'testimporting': no such tag 'except'
 [SelectiveImporting] at t/03-except.rakutest:11
@@ -29,6 +29,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for SelectiveImporting:ver<0.1.3>:auth<zef:wukgdu>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 1min 38.791s
-             CPU time consumed: 1min 46.860s
-                   Memory peak: 1016.6M (swap: 0B)
+               Service runtime: 1min 44.487s
+             CPU time consumed: 1min 49.344s
+                   Memory peak: 1021.4M (swap: 0B)

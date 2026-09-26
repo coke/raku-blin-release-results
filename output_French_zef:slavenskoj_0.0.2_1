@@ -1,98 +1,12 @@
-Running as unit: run-p2062343-i2085427.service; invocation ID: 849ef6f577ec4d6580cf463bc999381a
+Running as unit: run-p2907808-i2938664.service; invocation ID: 76c71816408040fdbb26fc0af807423c
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: French
 ===> Found: French:ver<0.0.2>:auth<zef:slavenskoj>:api<1> [via Zef::Repository::Ecosystems<fez>]
-[French] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790297688.2062344.2602.010095016932/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz https://360.zef.pm/F/RE/FRENCH/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz
-===> Fetching [OK]: French:ver<0.0.2>:auth<zef:slavenskoj>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790297688.2062344.2602.010095016932/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz
+[French] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790355941.2907809.2162.3043526351494/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz https://360.zef.pm/F/RE/FRENCH/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz
+===> Fetching [OK]: French:ver<0.0.2>:auth<zef:slavenskoj>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790355941.2907809.2162.3043526351494/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz
 [French] Command: tar -t -f ./e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz
 [French] Command: tar -xvf ./e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz -C ../e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz
 ===> Extraction [OK]: French to /home/coke/sandbox/blin/data/zef-data/tmp/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz
-===> Testing: French:ver<0.0.2>:auth<zef:slavenskoj>:api<1>
-[French] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz/dist t/01-operators.t
-[French] ===SORRY!=== Error while compiling t/01-operators.t
-[French] ===SORRY!===
-[French] Lexical symbol '&infix:<divisé_égal>' is already bound to an outer
-[French] symbol. The implicit outer binding must be rewritten as
-[French] 'OUTER::<&infix:<divisé_égal>>' before you can unambiguously declare a
-[French] new '&infix:<divisé_égal>' in this scope.
-[French] at /home/coke/sandbox/blin/data/zef-data/tmp/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz/dist/lib/French.rakumod (French):481
-[French] ------> my <HERE>&infix:<divisé_égal> = sub ($a is rw, $b
-[French] Lexical symbol '&infix:<fois_égal>' is already bound to an outer
-[French] symbol. The implicit outer binding must be rewritten as
-[French] 'OUTER::<&infix:<fois_égal>>' before you can unambiguously declare a new
-[French] '&infix:<fois_égal>' in this scope.
-[French] at /home/coke/sandbox/blin/data/zef-data/tmp/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz/dist/lib/French.rakumod (French):480
-[French] ------> my <HERE>&infix:<fois_égal> = sub ($a is rw, $b) 
-[French] Lexical symbol '&infix:<moins_égal>' is already bound to an outer
-[French] symbol. The implicit outer binding must be rewritten as
-[French] 'OUTER::<&infix:<moins_égal>>' before you can unambiguously declare a
-[French] new '&infix:<moins_égal>' in this scope.
-[French] at /home/coke/sandbox/blin/data/zef-data/tmp/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz/dist/lib/French.rakumod (French):479
-[French] ------> my <HERE>&infix:<moins_égal> = sub ($a is rw, $b)
-[French] Lexical symbol '&infix:<plus_égal>' is already bound to an outer
-[French] symbol. The implicit outer binding must be rewritten as
-[French] 'OUTER::<&infix:<plus_égal>>' before you can unambiguously declare a new
-[French] '&infix:<plus_égal>' in this scope.
-[French] at /home/coke/sandbox/blin/data/zef-data/tmp/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz/dist/lib/French.rakumod (French):478
-[French] ------> my <HERE>&infix:<plus_égal> = sub ($a is rw, $b) 
-[French] Lexical symbol '&infix:<répéter_chaîne>' is already bound to an outer
-[French] symbol. The implicit outer binding must be rewritten as
-[French] 'OUTER::<&infix:<répéter_chaîne>>' before you can unambiguously declare
-[French] a new '&infix:<répéter_chaîne>' in this scope.
-[French] at /home/coke/sandbox/blin/data/zef-data/tmp/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz/dist/lib/French.rakumod (French):469
-[French] ------> my <HERE>&infix:<répéter_chaîne> = sub ($a, $b) {
-[French] Lexical symbol '&infix:<concaténer>' is already bound to an outer
-[French] symbol. The implicit outer binding must be rewritten as
-[French] 'OUTER::<&infix:<concaténer>>' before you can unambiguously declare a
-[French] new '&infix:<concaténer>' in this scope.
-[French] at /home/coke/sandbox/blin/data/zef-data/tmp/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz/dist/lib/French.rakumod (French):468
-[French] ------> my <HERE>&infix:<concaténer> = sub ($a, $b) { $a 
-[French] Lexical symbol '&infix:<inférieur_égal>' is already bound to an outer
-[French] symbol. The implicit outer binding must be rewritten as
-[French] 'OUTER::<&infix:<inférieur_égal>>' before you can unambiguously declare
-[French] a new '&infix:<inférieur_égal>' in this scope.
-[French] at /home/coke/sandbox/blin/data/zef-data/tmp/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz/dist/lib/French.rakumod (French):465
-[French] ------> my <HERE>&infix:<inférieur_égal> = sub ($a, $b) {
-[French] Lexical symbol '&infix:<supérieur_égal>' is already bound to an outer
-[French] symbol. The implicit outer binding must be rewritten as
-[French] 'OUTER::<&infix:<supérieur_égal>>' before you can unambiguously declare
-[French] a new '&infix:<supérieur_égal>' in this scope.
-[French] at /home/coke/sandbox/blin/data/zef-data/tmp/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz/dist/lib/French.rakumod (French):464
-[French] ------> my <HERE>&infix:<supérieur_égal> = sub ($a, $b) {
-[French] Lexical symbol '&infix:<inférieur>' is already bound to an outer
-[French] symbol. The implicit outer binding must be rewritten as
-[French] 'OUTER::<&infix:<inférieur>>' before you can unambiguously declare a new
-[French] '&infix:<inférieur>' in this scope.
-[French] at /home/coke/sandbox/blin/data/zef-data/tmp/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz/dist/lib/French.rakumod (French):463
-[French] ------> my <HERE>&infix:<inférieur> = sub ($a, $b) { $a <
-[French] Lexical symbol '&infix:<supérieur>' is already bound to an outer
-[French] symbol. The implicit outer binding must be rewritten as
-[French] 'OUTER::<&infix:<supérieur>>' before you can unambiguously declare a new
-[French] '&infix:<supérieur>' in this scope.
-[French] at /home/coke/sandbox/blin/data/zef-data/tmp/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz/dist/lib/French.rakumod (French):462
-[French] ------> my <HERE>&infix:<supérieur> = sub ($a, $b) { $a >
-[French] Lexical symbol '&infix:<différent>' is already bound to an outer
-[French] symbol. The implicit outer binding must be rewritten as
-[French] 'OUTER::<&infix:<différent>>' before you can unambiguously declare a new
-[French] '&infix:<différent>' in this scope.
-[French] at /home/coke/sandbox/blin/data/zef-data/tmp/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz/dist/lib/French.rakumod (French):461
-[French] ------> my <HERE>&infix:<différent> = sub ($a, $b) { $a !
-[French] Lexical symbol '&infix:<égal>' is already bound to an outer symbol. The
-[French] implicit outer binding must be rewritten as 'OUTER::<&infix:<égal>>'
-[French] before you can unambiguously declare a new '&infix:<égal>' in this
-[French] scope.
-[French] at /home/coke/sandbox/blin/data/zef-data/tmp/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz/dist/lib/French.rakumod (French):460
-[French] ------> my <HERE>&infix:<égal> = sub ($a, $b) { $a == $b 
-[French] Lexical symbol '&infix:<divisé>' is already bound to an outer symbol.
-[French] The implicit outer binding must be rewritten as
-[French] 'OUTER::<&infix:<divisé>>' before you can unambiguously declare a new
-[French] '&infix:<divisé>' in this scope.
-[French] at /home/coke/sandbox/blin/data/zef-data/tmp/e163bb9798311ee698c973a65fed63cbda8ca550.tar.gz/dist/lib/French.rakumod (French):455
-[French] ------> my <HERE>&infix:<divisé> = sub ($a, $b) { $a / $b
-[French] at t/01-operators.t:5
-[French] ------> <BOL><HERE>use French;
-===> Testing [FAIL]: French:ver<0.0.2>:auth<zef:slavenskoj>:api<1>
-[French] Failed to get passing tests, but continuing with --force-test
 ===> Installing: French:ver<0.0.2>:auth<zef:slavenskoj>:api<1>
 ===> Install [FAIL] for French:ver<0.0.2>:auth<zef:slavenskoj>:api<1>: ===SORRY!===
 Lexical symbol '&infix:<divisé_égal>' is already bound to an outer
@@ -258,6 +172,6 @@ at /home/coke/sandbox/blin/installed/French_zef:slavenskoj_0.0.2_1/sources/DC60D
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 3min 8.519s
-             CPU time consumed: 3min 5.313s
-                   Memory peak: 1.1G (swap: 0B)
+               Service runtime: 2min 23.137s
+             CPU time consumed: 2min 20.813s
+                   Memory peak: 1011.4M (swap: 0B)

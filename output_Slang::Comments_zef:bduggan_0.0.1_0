@@ -1,18 +1,18 @@
-Running as unit: run-p2325333-i2227555.service; invocation ID: e3ed6915e86b46af85153a0fde345ec5
+Running as unit: run-p3161788-i3107400.service; invocation ID: 5d059b40ef9147ada8e7aab74f5a246d
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Slang::Comments
 ===> Found: Slang::Comments:ver<0.0.1>:auth<zef:bduggan> [via Zef::Repository::Ecosystems<fez>]
-[Slang::Comments] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790305160.2325370.4589.320504069281/1314b11ff25c5baf1aeb7519443250bcfb220e2e.tar.gz https://360.zef.pm/S/LA/SLANG_COMMENTS/1314b11ff25c5baf1aeb7519443250bcfb220e2e.tar.gz
-===> Fetching [OK]: Slang::Comments:ver<0.0.1>:auth<zef:bduggan> to /home/coke/sandbox/blin/data/zef-data/tmp/1790305160.2325370.4589.320504069281/1314b11ff25c5baf1aeb7519443250bcfb220e2e.tar.gz
+[Slang::Comments] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790363202.3161789.3547.3701912887914/1314b11ff25c5baf1aeb7519443250bcfb220e2e.tar.gz https://360.zef.pm/S/LA/SLANG_COMMENTS/1314b11ff25c5baf1aeb7519443250bcfb220e2e.tar.gz
+===> Fetching [OK]: Slang::Comments:ver<0.0.1>:auth<zef:bduggan> to /home/coke/sandbox/blin/data/zef-data/tmp/1790363202.3161789.3547.3701912887914/1314b11ff25c5baf1aeb7519443250bcfb220e2e.tar.gz
 [Slang::Comments] Command: tar -t -f ./1314b11ff25c5baf1aeb7519443250bcfb220e2e.tar.gz
 [Slang::Comments] Command: tar -xvf ./1314b11ff25c5baf1aeb7519443250bcfb220e2e.tar.gz -C ../1314b11ff25c5baf1aeb7519443250bcfb220e2e.tar.gz
 ===> Extraction [OK]: Slang::Comments to /home/coke/sandbox/blin/data/zef-data/tmp/1314b11ff25c5baf1aeb7519443250bcfb220e2e.tar.gz
 ===> Testing: Slang::Comments:ver<0.0.1>:auth<zef:bduggan>
-[Slang::Comments] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1314b11ff25c5baf1aeb7519443250bcfb220e2e.tar.gz/Slang-Comments-0.0.1 t/00-basic.rakutest
+[Slang::Comments] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1314b11ff25c5baf1aeb7519443250bcfb220e2e.tar.gz/Slang-Comments-0.0.1 t/00-basic.rakutest
 [Slang::Comments] 1..1
 [Slang::Comments] sorry, Slang::Comments requires AST support: please set RAKUDO_RAKUAST to a true value
 [Slang::Comments] ok 1 - Slang::Comments module can be use-d ok
-[Slang::Comments] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1314b11ff25c5baf1aeb7519443250bcfb220e2e.tar.gz/Slang-Comments-0.0.1 t/01-use.rakutest
+[Slang::Comments] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/1314b11ff25c5baf1aeb7519443250bcfb220e2e.tar.gz/Slang-Comments-0.0.1 t/01-use.rakutest
 [Slang::Comments] sorry, Slang::Comments requires AST support: please set RAKUDO_RAKUAST to a true value
 [Slang::Comments] ===SORRY!===
 [Slang::Comments] Type check failed in binding to parameter '$new-body'; expected RakuAST::Blockoid but got RakuAST::StatementList
@@ -23,6 +23,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for Slang::Comments:ver<0.0.1>:auth<zef:bduggan>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 1min 48.531s
-             CPU time consumed: 1min 51.229s
-                   Memory peak: 1008.5M (swap: 0B)
+               Service runtime: 1min 49.311s
+             CPU time consumed: 1min 53.832s
+                   Memory peak: 998.8M (swap: 52.4M)

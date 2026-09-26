@@ -1,17 +1,17 @@
-Running as unit: run-p2359590-i2365978.service; invocation ID: 5ac4b44435994c44b007d7fae038ce93
+Running as unit: run-p3190303-i3177463.service; invocation ID: 5e4447b1a390417593e074aa1a2bf309
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: RakuPM
 ===> Found: RakuPM:ver<1.0.3>:auth<zef:skyter10086>:api<1> [via Zef::Repository::Ecosystems<fez>]
-[RakuPM] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790306036.2359595.132.38946373065997/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz https://360.zef.pm/R/AK/RAKUPM/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz
-===> Fetching [OK]: RakuPM:ver<1.0.3>:auth<zef:skyter10086>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790306036.2359595.132.38946373065997/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz
+[RakuPM] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790363946.3190310.658.189846415802/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz https://360.zef.pm/R/AK/RAKUPM/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz
+===> Fetching [OK]: RakuPM:ver<1.0.3>:auth<zef:skyter10086>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790363946.3190310.658.189846415802/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz
 [RakuPM] Command: tar -t -f ./fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz
 [RakuPM] Command: tar -xvf ./fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz -C ../fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz
 ===> Extraction [OK]: RakuPM to /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz
 ===> Testing: RakuPM:ver<1.0.3>:auth<zef:skyter10086>:api<1>
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/author-bump-docs.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/author-bump-docs.t
 [RakuPM] 1..14
 [RakuPM] ==> META6.json 版本 0.1.0 → 0.1.1
-[RakuPM] ==> Changes 顶部加 ## 0.1.1 - 2026-09-24
+[RakuPM] ==> Changes 顶部加 ## 0.1.1 - 2026-09-25
 [RakuPM] ==> 文档版本示例同步：README.en.md×1、README.md×1、docs/guide.md×1
 [RakuPM] ok 1 - ① 返回旧版本
 [RakuPM] ok 2 - ① 返回新版本（默认 patch）
@@ -24,53 +24,53 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 9 - ① Changes 顶部加了新版本头
 [RakuPM] ok 10 - ① 返回值列出 3 个被同步的文件（两份 README + docs/guide.md）
 [RakuPM] ==> META6.json 版本 0.1.0 → 0.1.1
-[RakuPM] ==> Changes 顶部加 ## 0.1.1 - 2026-09-24
+[RakuPM] ==> Changes 顶部加 ## 0.1.1 - 2026-09-25
 [RakuPM] ok 11 - ③ --no-sync-docs：README 保持旧版本示例（不同步）
 [RakuPM] ok 12 - ③ --no-sync-docs 只关文档同步，版本照样递增
-[RakuPM] ==> [dry] 0.1.0 → 0.1.1（Changes 顶部加 ## 0.1.1 - 2026-09-24）
+[RakuPM] ==> [dry] 0.1.0 → 0.1.1（Changes 顶部加 ## 0.1.1 - 2026-09-25）
 [RakuPM] ==> [dry] 文档版本示例：README.md×1（Gamma:ver<0.1.0> → Gamma:ver<0.1.1>）
 [RakuPM]   （未修改任何文件）
 [RakuPM] ok 13 - ④ --dry：README 一个字节都没改
 [RakuPM] ok 14 - ④ --dry：META6 版本保持原样
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/author-bump.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/author-bump.t
 [RakuPM] 1..12
 [RakuPM] ==> META6.json 版本 0.1.0 → 0.1.1
-[RakuPM] ==> Changes 顶部加 ## 0.1.1 - 2026-09-24
+[RakuPM] ==> Changes 顶部加 ## 0.1.1 - 2026-09-25
 [RakuPM] ok 1 - patch：0.1.0 → 0.1.1
 [RakuPM] ok 2 - patch：Changes 加了  \# \# 0.1.1
 [RakuPM] ok 3 - patch：旧版本头  \# \# 0.1.0 保留
 [RakuPM] ==> META6.json 版本 0.1.0 → 0.2.0
-[RakuPM] ==> Changes 顶部加 ## 0.2.0 - 2026-09-24
+[RakuPM] ==> Changes 顶部加 ## 0.2.0 - 2026-09-25
 [RakuPM] ok 4 - minor：0.1.0 → 0.2.0
 [RakuPM] ==> META6.json 版本 0.1.0 → 1.0.0
-[RakuPM] ==> Changes 顶部加 ## 1.0.0 - 2026-09-24
+[RakuPM] ==> Changes 顶部加 ## 1.0.0 - 2026-09-25
 [RakuPM] ok 5 - major：0.1.0 → 1.0.0
 [RakuPM] ==> META6.json 版本 0.1.0 → 2.5.0
-[RakuPM] ==> Changes 顶部加 ## 2.5.0 - 2026-09-24
+[RakuPM] ==> Changes 顶部加 ## 2.5.0 - 2026-09-25
 [RakuPM] ok 6 - to：→ 2.5.0
 [RakuPM] ok 7 - star：当前版本 * 无法推断，bump 报错
-[RakuPM] ==> [dry] 0.1.0 → 0.1.1（Changes 顶部加 ## 0.1.1 - 2026-09-24）
+[RakuPM] ==> [dry] 0.1.0 → 0.1.1（Changes 顶部加 ## 0.1.1 - 2026-09-25）
 [RakuPM] ==> [dry] 文档版本示例：找不到 Bump::Sample:ver<0.1.0>，无需同步
 [RakuPM]   （未修改任何文件）
 [RakuPM] ok 8 - dry：META6 未被改动
 [RakuPM] ok 9 - dry：返回目标版本 0.1.1
 [RakuPM] ==> META6.json 版本 0.1.0 → 0.1.1
-[RakuPM] ==> Changes 顶部加 ## 0.1.1 - 2026-09-24
+[RakuPM] ==> Changes 顶部加 ## 0.1.1 - 2026-09-25
 [RakuPM] ok 10 - nochanges：缺失 Changes 时创建并加版本头
 [RakuPM] ==> META6.json 版本 0.1.0 → 0.1.1
-[RakuPM] ==> Changes 顶部加 ## 0.1.1 - 2026-09-24
+[RakuPM] ==> Changes 顶部加 ## 0.1.1 - 2026-09-25
 [RakuPM] ok 11 - headline：文件标题仍在最前面（没被新条目挤下去）
 [RakuPM] ok 12 - headline：新版本条目落在标题之后
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/author-check.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/author-check.t
 [RakuPM] 1..17
-[RakuPM] ==> 创建发行版骨架：/tmp/author-check-2366242/Clean
-[RakuPM]   · t/01-basic.rakutest
-[RakuPM]   · lib/Clean/Mod.rakumod
+[RakuPM] ==> 创建发行版骨架：/tmp/author-check-3196937/Clean
 [RakuPM]   · .gitignore
-[RakuPM]   · Changes
+[RakuPM]   · lib/Clean/Mod.rakumod
 [RakuPM]   · META6.json
-[RakuPM]   ✓ 完成。下一步：cd /tmp/author-check-2366242/Clean && raku-pm refresh && raku-pm install .
-[RakuPM] ==> 重建 META6.json 的 provides：/tmp/author-check-2366242/Clean
+[RakuPM]   · t/01-basic.rakutest
+[RakuPM]   · Changes
+[RakuPM]   ✓ 完成。下一步：cd /tmp/author-check-3196937/Clean && raku-pm refresh && raku-pm install .
+[RakuPM] ==> 重建 META6.json 的 provides：/tmp/author-check-3196937/Clean
 [RakuPM]     磁盘 lib/ 下扫到 1 个模块
 [RakuPM]   · 已与现有 provides 一致，未改动文件
 [RakuPM] ok 1 - 干净发行版 check 通过（ok=True）
@@ -90,7 +90,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 15 - bin 缺失报错含「bin 声明的可执行文件」
 [RakuPM] ok 16 - license 缺失只是警告、仍通过
 [RakuPM] ok 17 - license 缺失警告含「license」
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/author-dist.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/author-dist.t
 [RakuPM] 1..19
 [RakuPM] ok 1 - 场景1：tar 包已生成
 [RakuPM] ok 2 - 场景1：含 META6.json
@@ -101,7 +101,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 7 - 场景2：Build.pm 产物 generated.txt 进包
 [RakuPM] ok 8 - 场景3：--no-build 时构建产物不在包内
 [RakuPM] ok 9 - 场景4：version=* 预检不过，dist 拒打包
-[RakuPM] ==> [dry] 将打包 /tmp/rakupm-dist-test-1790306115/D-dry → /tmp/rakupm-dist-test-1790306115/Dist-Sample-0.1.0.tar.gz
+[RakuPM] ==> [dry] 将打包 /tmp/rakupm-dist-test-1790364033/D-dry → /tmp/rakupm-dist-test-1790364033/Dist-Sample-0.1.0.tar.gz
 [RakuPM]   （未生成任何文件）
 [RakuPM] ok 10 - 场景5：--dry 未生成 tar 包且返回 ok
 [RakuPM] ok 11 - 场景6：常规文件照常进包
@@ -113,7 +113,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 17 - 场景7：第二条同样生效（行尾注释/空行不影响匹配）
 [RakuPM] ok 18 - 场景7：目录条目覆盖整棵子树
 [RakuPM] ok 19 - 场景7：常规文件照常进包，且 .distignore 自身不进包
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/author-publish.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/author-publish.t
 [RakuPM] 1..12
 [RakuPM] ok 1 - 场景1：publish 返回 ok
 [RakuPM] ok 2 - 场景1：落点目录 <repo>/Dist-Sample-0.1.0/ 已创建
@@ -123,13 +123,13 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 6 - 场景2：同版本已存在、无 --force → 拒绝
 [RakuPM] ok 7 - 场景3：--force 覆盖同版本目录，返回 ok
 [RakuPM] ok 8 - 场景3：覆盖后内容仍在
-[RakuPM] ==> [dry] 将把 sdist 解包到：/tmp/rakupm-publish-test-1790306119/repo4/Dist-Sample-0.1.0
+[RakuPM] ==> [dry] 将把 sdist 解包到：/tmp/rakupm-publish-test-1790364036/repo4/Dist-Sample-0.1.0
 [RakuPM]   （未写入任何文件）
 [RakuPM] ok 9 - 场景4：--dry 返回 ok 且落点目录未创建
 [RakuPM] ok 10 - 场景5：--from 复用现成包，返回 ok
 [RakuPM] ok 11 - 场景5：复用包的落点含 META6.json
 [RakuPM] ok 12 - 场景6：version=* 预检不过，publish 拒发布
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/author-refresh.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/author-refresh.t
 [RakuPM] ok 1 - refresh 退出码 0
 [RakuPM] ok 2 - 「+ Demo::Extra」独占一行
 [RakuPM] ok 3 - 「+ Demo::Gone」独占一行（.pm6 老包也被扫到）
@@ -163,7 +163,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 31 - 顶层是数组的 META6.json → 非 0 退出
 [RakuPM] ok 32 - 报错指出顶层不是对象（而不是底层的 Odd number of elements 栈）
 [RakuPM] 1..32
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/author-remote.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/author-remote.t
 [RakuPM] ok 1 - 场景1：login --api-key 返回 ok
 [RakuPM] ok 2 - 场景1：凭据文件已写入 RAKUPM_TARGET 下
 [RakuPM] ok 3 - 场景1：api-key 已存储
@@ -182,7 +182,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 11 - 场景4：remote --dry 未部署任何本地目录
 [RakuPM] ok 12 - 场景5：publish --remote 缺凭据报错
 [RakuPM] 1..12
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/author-upload.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/author-upload.t
 [RakuPM] 1..3
 [RakuPM] # Subtest: upload-multipart 发出正确 wire 格式
 [RakuPM]     1..5
@@ -207,7 +207,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM]     ok 3 - 上传请求字段为 dist
 [RakuPM]     ok 4 - 上传的文件名是打包出的 sdist
 [RakuPM] ok 3 - publish --remote 真实上传
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/bin-path-order.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/bin-path-order.t
 [RakuPM] 1..11
 [RakuPM] ok 1 - win：两个目录各有一个候选
 [RakuPM] ok 2 - win：PATH 靠前的目录优先（即使后面的目录里有 .exe）
@@ -220,7 +220,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 9 - linux：只有 .bat/.exe 时零候选（Unix 不按扩展名解析命令名）
 [RakuPM] ok 10 - linux：PATH 靠前的目录优先
 [RakuPM] ok 11 - 空目录不产生候选（两个平台一致）
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/build.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/build.t
 [RakuPM] ok 1 - 没有 Build 文件也没有 builder 字段 → 不构建
 [RakuPM] ok 2 - 三种文件名按 rakumod > pm6 > pm 的优先级取第一个存在的
 [RakuPM] ok 3 - 有 Build 文件 → 需要构建
@@ -246,14 +246,14 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 22 - 装完后加载 WithBuild 成功
 [RakuPM] ok 23 - 装完后 %?RESOURCES<libraries/mydemo> 读到的是【构建产物】的内容
 [RakuPM] 将安装 1 个发行版（自底向上，依赖优先）：
-[RakuPM]   · BuildApp:ver<1.0>:auth<demo:test>   ← 本地目录: /tmp/rakupm-build-2369800-1790306286/app
+[RakuPM]   · BuildApp:ver<1.0>:auth<demo:test>   ← 本地目录: /tmp/rakupm-build-3199460-1790364200/app
 [RakuPM]   · 先装构建依赖：BuildHelper
 [RakuPM] ==> 存入存储：BuildHelper 0.1 (25f56f78)
 [RakuPM] ==> 已暂存 BuildHelper 0.1（待整链通过后晋升）
 [RakuPM]   · 构建：BuildApp 1.0（Build.pm）
 [RakuPM] ==> 存入存储：BuildApp 1.0 (09b5d5e5)
 [RakuPM] ==> 已暂存 BuildApp 1.0（待整链通过后晋升）
-[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-build-2369800-1790306286/client-target/raku-pm.lock
+[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-build-3199460-1790364200/client-target/raku-pm.lock
 [RakuPM] ok 24 - build-depends 被先安装进 site
 [RakuPM] ok 25 - 目标包 BuildApp 安装成功
 [RakuPM] ok 26 - 构建产物（借助 build-depends 生成）被复制进 store
@@ -262,7 +262,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 29 - Linux 形状（lib<名>.so）的资源声明不被误判为过时
 [RakuPM] ok 30 - store META6 保留 libraries/mydemo 声明（磁盘上是 libmydemo.so）
 [RakuPM] 1..30
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/builder-field.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/builder-field.t
 [RakuPM] ok 1 - META6 的 builder 字段被读进发行版对象
 [RakuPM] ok 2 - 构建依赖能从 depends.build.requires 取到（GDBM 的写法）
 [RakuPM] ok 3 - 构建依赖的版本约束被保留
@@ -274,7 +274,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 9 - depends 为数组时不抛异常（不对 Array 做关联索引）
 [RakuPM] ok 10 - depends 为数组时不产生构建依赖
 [RakuPM] 1..10
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/builder-quote.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/builder-quote.t
 [RakuPM] ok 1 - 反斜杠被双写（含结尾反斜杠）
 [RakuPM] ok 2 - 单引号被转义成反斜杠+引号
 [RakuPM] ok 3 - 普通 Unix 路径原样返回
@@ -288,7 +288,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 11 - 源码不再用 q|$bn| 做 builder 名分隔符（含 | 会被截断）
 [RakuPM] ok 12 - builder 名走单引号 + !quote 转义
 [RakuPM] 1..12
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/by-distro-depends.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/by-distro-depends.t
 [RakuPM] ok 1 - 非 Windows 上这条依赖为空（不该去装 Win32::Registry）
 [RakuPM] ok 2 - 依赖表里没有含换行/制表符的畸形模块名
 [RakuPM] ok 3 - 命中当前 $*DISTRO.name 的分支
@@ -303,7 +303,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 12 - META6 文件：普通依赖照常解析
 [RakuPM] ok 13 - META6 文件：非 Windows 上条件依赖不生效
 [RakuPM] 1..13
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/clean.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/clean.t
 [RakuPM] ok 1 - 账本里的版本受保护
 [RakuPM] ok 2 - 锁文件锁定的版本受保护
 [RakuPM] ok 3 - 没人认领的版本不在受保护集合里
@@ -323,54 +323,54 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 17 - --all 时回收 git 克隆缓存
 [RakuPM] ok 18 - --name 时只回收该发行版的条目（dist/index 等不受影响）
 [RakuPM] ok 19 - --older-than=1 天时刚建的缓存不回收
-[RakuPM] ==> 扫描缓存：/tmp/_t-clean-2373896-1790306332
+[RakuPM] ==> 扫描缓存：/tmp/_t-clean-3204116-1790364248
 [RakuPM] 旧版本快照（1 项，1.1 KB）：
 [RakuPM]   · JSON 1.0.0
 [RakuPM]       1.1 KB  该发行版已不在账本与锁文件里
-[RakuPM]       /tmp/_t-clean-2373896-1790306332/store/JSON/1.0.0
+[RakuPM]       /tmp/_t-clean-3204116-1790364248/store/JSON/1.0.0
 [RakuPM] 入库残骸（1 项，96 B）：
 [RakuPM]   · 9.9.9
 [RakuPM]       96 B  入库中断的残骸（没有 META.json）
-[RakuPM]       /tmp/_t-clean-2373896-1790306332/store/Broken/9.9.9
+[RakuPM]       /tmp/_t-clean-3204116-1790364248/store/Broken/9.9.9
 [RakuPM] 预编译缓存（1 项，64 B）：
 [RakuPM]   · 2.0.0/.precomp
 [RakuPM]       64 B  预编译字节码，会自动重建
-[RakuPM]       /tmp/_t-clean-2373896-1790306332/store/JSON/2.0.0/.precomp
+[RakuPM]       /tmp/_t-clean-3204116-1790364248/store/JSON/2.0.0/.precomp
 [RakuPM] 下载缓存（1 项，2 B）：
 [RakuPM]   · cache/dist/zef
 [RakuPM]       2 B  已入库的源码包与解压目录（可重新下载）
-[RakuPM]       /tmp/_t-clean-2373896-1790306332/cache/dist/zef
+[RakuPM]       /tmp/_t-clean-3204116-1790364248/cache/dist/zef
 [RakuPM] 临时文件残留（1 项，4 B）：
 [RakuPM]   · index-zef.json.tmp-4242
 [RakuPM]       4 B  原子写中断留下的临时文件
-[RakuPM]       /tmp/_t-clean-2373896-1790306332/cache/index-zef.json.tmp-4242
+[RakuPM]       /tmp/_t-clean-3204116-1790364248/cache/index-zef.json.tmp-4242
 [RakuPM] ────────────────────────────────────────
 [RakuPM] 可释放 1.2 KB（5 项），受保护保留 2 个版本（store 中共扫到 4 个版本目录）
 [RakuPM] 提示：索引缓存与 git 克隆缓存默认保留（重建要重新下载/克隆），加 --all 一并回收。
 [RakuPM] 这是【试算】，没有删除任何文件。
 [RakuPM] 确认无误后执行：raku-pm clean --yes
 [RakuPM] ok 20 - run(:dry) 不删任何东西
-[RakuPM] ==> 扫描缓存：/tmp/_t-clean-2373896-1790306332
+[RakuPM] ==> 扫描缓存：/tmp/_t-clean-3204116-1790364248
 [RakuPM] 旧版本快照（1 项，1.1 KB）：
 [RakuPM]   · JSON 1.0.0
 [RakuPM]       1.1 KB  该发行版已不在账本与锁文件里
-[RakuPM]       /tmp/_t-clean-2373896-1790306332/store/JSON/1.0.0
+[RakuPM]       /tmp/_t-clean-3204116-1790364248/store/JSON/1.0.0
 [RakuPM] 入库残骸（1 项，96 B）：
 [RakuPM]   · 9.9.9
 [RakuPM]       96 B  入库中断的残骸（没有 META.json）
-[RakuPM]       /tmp/_t-clean-2373896-1790306332/store/Broken/9.9.9
+[RakuPM]       /tmp/_t-clean-3204116-1790364248/store/Broken/9.9.9
 [RakuPM] 预编译缓存（1 项，64 B）：
 [RakuPM]   · 2.0.0/.precomp
 [RakuPM]       64 B  预编译字节码，会自动重建
-[RakuPM]       /tmp/_t-clean-2373896-1790306332/store/JSON/2.0.0/.precomp
+[RakuPM]       /tmp/_t-clean-3204116-1790364248/store/JSON/2.0.0/.precomp
 [RakuPM] 下载缓存（1 项，2 B）：
 [RakuPM]   · cache/dist/zef
 [RakuPM]       2 B  已入库的源码包与解压目录（可重新下载）
-[RakuPM]       /tmp/_t-clean-2373896-1790306332/cache/dist/zef
+[RakuPM]       /tmp/_t-clean-3204116-1790364248/cache/dist/zef
 [RakuPM] 临时文件残留（1 项，4 B）：
 [RakuPM]   · index-zef.json.tmp-4242
 [RakuPM]       4 B  原子写中断留下的临时文件
-[RakuPM]       /tmp/_t-clean-2373896-1790306332/cache/index-zef.json.tmp-4242
+[RakuPM]       /tmp/_t-clean-3204116-1790364248/cache/index-zef.json.tmp-4242
 [RakuPM] ────────────────────────────────────────
 [RakuPM] 可释放 1.2 KB（5 项），受保护保留 2 个版本（store 中共扫到 4 个版本目录）
 [RakuPM] 提示：索引缓存与 git 克隆缓存默认保留（重建要重新下载/克隆），加 --all 一并回收。
@@ -393,7 +393,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 35 - 该场景下没有可回收的 store 版本（全部被保护）
 [RakuPM] ok 36 - 来源4 试算后 1.0.0 仍在
 [RakuPM] 1..36
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/cli-flags.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/cli-flags.t
 [RakuPM] ok 1 - 拼错的旗标（命令之后）导致非 0 退出
 [RakuPM] ok 2 - 报错里说明是「未知选项」
 [RakuPM] ok 3 - 报错里点名拼错的旗标
@@ -427,7 +427,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 31 - 未知命令非 0 退出
 [RakuPM] ok 32 - 未知命令报「未知命令」
 [RakuPM] 1..32
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/cli-spec.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/cli-spec.t
 [RakuPM] ok 1 - 命令表规模合理（51 条）
 [RakuPM] ok 2 - 命令名都非空（空的：无）
 [RakuPM] ok 3 - 别名不与任何规范命令名撞车（撞车：无）
@@ -464,7 +464,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 34 - pwsh 用 Register-ArgumentCompleter
 [RakuPM] ok 35 - pwsh 与 powershell 是同一个别名（输出一致）
 [RakuPM] 1..35
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/cli-version.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/cli-version.t
 [RakuPM] ok 1 - bin/raku-pm.raku 存在
 [RakuPM] ok 2 - version 命令退出码 0
 [RakuPM] ok 3 - 报出版本号：raku-pm v1.0.3
@@ -478,7 +478,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 11 - 报错里给出正确的用法示例
 [RakuPM] ok 12 - 并说明卸载自身需要显式写出名字
 [RakuPM] 1..12
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/client-write-lock.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/client-write-lock.t
 [RakuPM] ok 1 - with-write-lock 返回 block 的值
 [RakuPM] ok 2 - 锁文件在 target 下被创建
 [RakuPM] ok 3 - 持锁期间另一个进程拿不到锁
@@ -490,7 +490,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 9 - --no-lock 时不会崩（LEAVE 里 $lock 还没赋值）
 [RakuPM] ok 10 - --no-lock 时 block 照常执行
 [RakuPM] 1..10
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/conflict-msg.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/conflict-msg.t
 [RakuPM] ok 1 - 间接冲突报「依赖冲突」
 [RakuPM] ok 2 - 报错点名了冲突模块 Foo
 [RakuPM] ok 3 - 提示已选定的版本
@@ -508,9 +508,9 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 15 - '*' 与 '0.0.24' 交集非空 —— 不报冲突（多约束求交集）
 [RakuPM] ok 16 - 改选到交集中的 0.0.24（不是误报冲突，也不是死守最新的 0.0.25）
 [RakuPM] ok 17 - 依赖里的 Rakudo（编译器本身）被跳过，不进安装列表也不去下载
-[RakuPM] Cannot convert string to number: trailing characters after number in '2026.08<HERE>.526.geb.6.d.4.be.9.f' (indicated by <HERE>)
+[RakuPM] Cannot convert string to number: trailing characters after number in '2026.08<HERE>.534.g.8.dccf.3.acb' (indicated by <HERE>)
 [RakuPM]   in block <unit> at t/conflict-msg.t line 127
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/depends.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/depends.t
 [RakuPM] 1..28
 [RakuPM] ok 1 - 数组形式：所有元素都被展开
 [RakuPM] ok 2 - 数组元素无约束默认为 *
@@ -545,7 +545,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM]     ok 2 - right exception type (Exception)
 [RakuPM]     ok 3 - .message matches /'META 文件'/
 [RakuPM] ok 28 - 损坏 JSON：from-meta-file 报错含文件名，而非底层 Malformed JSON 栈
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/distribution-fields.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/distribution-fields.t
 [RakuPM] ok 1 - Distribution 至少 13 个属性（实得 13）
 [RakuPM] ok 2 - 属性表含 resources（守护有实义）
 [RakuPM] ok 3 - 属性表含 builder（守护有实义）
@@ -586,7 +586,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 38 - from-index-row：顶层无 auth 时从 dist 串兜底
 [RakuPM] ok 39 - from-index-row：都取不到时给 unknown
 [RakuPM] 1..39
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/eco-conditional-get.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/eco-conditional-get.t
 [RakuPM] 1..8
 [RakuPM] ==> 拉取生态索引 [test]：https://t.example/m.json
 [RakuPM] ok 1 - 第一次刷新走条件 GET（200）
@@ -599,7 +599,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ==> 拉取生态索引 [test]：https://t.example/m.json
 [RakuPM] ok 7 - 无 get-text-conditional 的后端退化为普通 GET
 [RakuPM] ok 8 - 退化路径同样正确加载索引
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/eco-memory-index.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/eco-memory-index.t
 [RakuPM] 1..16
 [RakuPM] ==> 拉取生态索引 [test]：https://test.example/meta.json
 [RakuPM] ok 1 - find-providers 按 provides 模块名命中
@@ -618,7 +618,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 14 - search-rows 模糊命中发行名
 [RakuPM] ok 15 - available-versions 对未知发行返回空
 [RakuPM] ok 16 - 反向索引对同名发行去重
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/external-deps.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/external-deps.t
 [RakuPM] ok 1 - :from<bin> 不进 Raku 依赖，普通依赖照常保留
 [RakuPM] ok 2 - :from<bin> 收集到 external 列表
 [RakuPM] ok 3 - :from<bin> 不会被误当本地库
@@ -637,7 +637,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 16 - external 依赖去重并排序后汇总
 [RakuPM] ok 17 - 汇总结果条数正确
 [RakuPM] 1..17
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/file-lock-token.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/file-lock-token.t
 [RakuPM] 1..20
 [RakuPM] ok 1 - 持锁期间下发凭证（环境变量）
 [RakuPM] ok 2 - 凭证同时落到锁旁的 .token 文件（子进程据此核对）
@@ -655,11 +655,15 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 14 - ② 伪造凭证 → 不放行（光设变量进不了门）
 [RakuPM] ok 15 - ③ 正确凭证 + 锁被占 → 放行
 [RakuPM] ok 16 - ④ 带父进程凭证的子进程直接执行（Build.pm 里再调 raku-pm 不自锁）
+[RakuPM] WARNING: unhandled Failure detected in DESTROY. If you meant to ignore it, you can mark it as handled by calling .Bool, .so, .not, or .defined methods. The Failure was:
+[RakuPM] Could not obtain non-blocking, exclusive lock: Failed to lock filehandle: 11
+[RakuPM]   in method held-by-other at /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz/lib/RakuPM/FileLock.rakumod (RakuPM::FileLock) line 217
+[RakuPM]   in block <unit> at t/file-lock-token.t line 99
 [RakuPM] ok 17 - ⑤ 伪造凭证的子进程被挡（排队，不放行）—— 相对旧机制的关键修复
 [RakuPM] ok 18 - 父进程释放后凭证文件被清除
 [RakuPM] ok 19 - ⑥ 过期凭证不放行（父进程已放锁）
 [RakuPM] ok 20 - ⑦ 凭证对应的锁没被占 → 不放行
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/find-providers.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/find-providers.t
 [RakuPM] 1..6
 [RakuPM] ok 1 - find-providers(Log::Async) 非空
 [RakuPM] ok 2 - find-providers 每个元素都是 Str（无嵌套数组）
@@ -667,7 +671,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 4 - versions-providing 能消费 find-providers 的结果（无 Array 类型错误）
 [RakuPM] ok 5 - 结果含正主发行版 Log::Async
 [RakuPM] ok 6 - 结果含漂移发行版 Some::Other
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/ghost-provides.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/ghost-provides.t
 [RakuPM] ok 1 - provides-from-disk：有声明且磁盘上找得到 → 用声明（既有行为不变）
 [RakuPM] ok 2 - provides-from-disk：无声明 → 按磁盘 lib/ 反推（F2 的主路径）
 [RakuPM] ok 3 - provides-from-disk：声明的模块在磁盘上都不存在 → 反推（而不是写一份空声明）
@@ -706,7 +710,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 36 - verify：给出可执行的修复建议（重装），而不是只说「有问题」
 [RakuPM] ok 37 - verify 正控：健康条目（META6 声明了模块）不会被误报成幽灵
 [RakuPM] 1..37
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/git-cache-key-safety.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/git-cache-key-safety.t
 [RakuPM] 1..12
 [RakuPM] ok 1 - https 地址 → host/path，逐字节不变
 [RakuPM] ok 2 - git@ 形态 → host/path（冒号换斜杠）
@@ -720,7 +724,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 10 - 本地路径仍走 local/ 前缀（不与 host 段撞名）
 [RakuPM] ok 11 - 本地路径里的 `..` 同样被吸收（不再是"合法可穿越"）
 [RakuPM] ok 12 - Windows 保留字符仍走 path-component 的百分号编码（净化的既有语义没被绕过）
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/help.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/help.t
 [RakuPM] ok 1 - summary：首行是用法说明
 [RakuPM] ok 2 - summary：紧凑到一屏内（实际 27 行）
 [RakuPM] ok 3 - summary：列出全部规范命令（漏：无）
@@ -750,7 +754,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 27 - help-all：含环境变量主题
 [RakuPM] ok 28 - help-all：是完整手册（实际 386 行）
 [RakuPM] 1..28
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/http-debug.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/http-debug.t
 [RakuPM] 1..9
 [RakuPM] ok 1 - 默认关：get-text 不产生 http: debug 行（不刷屏）
 [RakuPM] ok 2 - debug：报出 GET 目标
@@ -761,7 +765,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 7 - debug：请求失败时仍报出所用后端（便于定位）
 [RakuPM] ok 8 - debug：download 报出 DOWNLOAD 目标
 [RakuPM] ok 9 - RAKUPM_HTTP_DEBUG=1：不开 :debug 也能打开排障（不改动调用点）
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/http-post-json.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/http-post-json.t
 [RakuPM] 1..9
 [RakuPM] ok 1 - post-json 模拟成功（ok=True）
 [RakuPM] ok 2 - post-json 模拟状态码 200
@@ -772,24 +776,24 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 7 - JSON 体含 username=u1
 [RakuPM] ok 8 - JSON 体含 password=p1
 [RakuPM] ok 9 - 带 auth 时命令行含 -H Authorization: Zef <key>
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/http-wire.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/http-wire.t
 [RakuPM] 1..4
 [RakuPM] ok 1 - Tinyish：If-None-Match 真的出现在请求头里（不能塞进 .new）
 [RakuPM] ok 2 - Tinyish：304 被识别为「未修改」
 [RakuPM] ok 3 - Tinyish：停流时 2s 超时生效（实测 2.1s，未无限挂）
 [RakuPM] ok 4 - Tinyish：超时后后端按失败处理（不是静默成功）
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/install-build-warning.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/install-build-warning.t
 [RakuPM] ok 1 - NoRes：install 主动提示「构建痕迹」
 [RakuPM] ok 2 - NoRes：告警点名缺失的资源 libraries/ghost
 [RakuPM] ok 3 - NoRes：consistency-issues 仍能报出（抽取未破坏）
 [RakuPM] ok 4 - Skipped：install 提示被 --no-build 跳过
 [RakuPM] ok 5 - PlainY：正常包 install 不刷构建噪音
 [RakuPM] 1..5
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/install-git-url-heuristic.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/install-git-url-heuristic.t
 [RakuPM] ok 1 - A3: 本地 .git 目录未被误当 git URL 去 clone
 [RakuPM] ok 2 - A3: 本地 .git 目录被当本地安装（install-from-dir）
 [RakuPM] 1..2
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/install-options.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/install-options.t
 [RakuPM] 1..11
 [RakuPM] ok 1 - test-timeout 默认 0
 [RakuPM] ok 2 - pins 默认空
@@ -802,7 +806,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 9 - describe 含 recursive
 [RakuPM] ok 10 - describe 含 keep-store
 [RakuPM] ok 11 - describe 含 pins 计数
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/installer-generations.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/installer-generations.t
 [RakuPM] ok 1 - 没有世代时 current 是空串
 [RakuPM] ok 2 - 没有世代时 list 为空
 [RakuPM] ok 3 - 目录还不存在时 next-id 也返回 000001（不炸）
@@ -827,7 +831,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 22 - generation-dir 能定位到某个世代
 [RakuPM] ok 23 - 被裁掉的世代目录真的没了
 [RakuPM] 1..23
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/installer-shell-templates.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/installer-shell-templates.t
 [RakuPM] ok 1 - bash：以 shebang 开头（否则 exec 不了）
 [RakuPM] ok 2 - bash：必须是 LF（带 CR 会让 Unix 上的 exec 失败）
 [RakuPM] ok 3 - bash：内嵌 store 绝对路径（不靠符号链接解析）
@@ -853,18 +857,18 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 23 - .ps1：捕获 Win32Exception —— raku 不在 PATH 时 & 抛的就是它
 [RakuPM] ok 24 - .ps1：显式传前缀（单引号串，不做插值）
 [RakuPM] 1..24
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/known-failure-nojson.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/known-failure-nojson.t
 [RakuPM] ok 1 - JSON 缺失时，内置兜底规则仍识别 Log::Async 12-context（Windows）
 [RakuPM] ok 2 - JSON 缺失时，非 Log::Async 包仍不识别
 [RakuPM] 1..2
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/known-test-failure.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/known-test-failure.t
 [RakuPM] ok 1 - Log::Async 12-context 的 Windows 失败特征被正确识别（真实双反斜杠形态，仅 Windows）
 [RakuPM] ok 2 - Log::Async 12-context（理想单反斜杠形态）也能识别
 [RakuPM] ok 3 - 非 12-context 测试文件不识别
 [RakuPM] ok 4 - 非 Log::Async 包不识别
 [RakuPM] ok 5 - 通用语法错误不识别为已知失败
 [RakuPM] 1..5
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/known-windows-failures-data.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/known-windows-failures-data.t
 [RakuPM] ok 1 - 数据文件存在且可读
 [RakuPM] ok 2 - 规则数组非空
 [RakuPM] ok 3 - 含 Log::Async 规则
@@ -875,7 +879,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 8 - 规则 Log::Async 有 name
 [RakuPM] ok 9 - 规则 Log::Async 有 contains 子串列表
 [RakuPM] 1..9
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/ledger.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/ledger.t
 [RakuPM] ok 1 - 未写入前 exists 为假
 [RakuPM] ok 2 - 不存在时 entries 返回空
 [RakuPM] ok 3 - 未装过的包版本列表为空
@@ -907,7 +911,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 29 - modify 自动写死主键 name（调用方漏设也不会写出无主键条目）
 [RakuPM] ok 30 - 再次 modify 同名校验为主键命中，不产生重影条目
 [RakuPM] 1..30
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/local-index-cache.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/local-index-cache.t
 [RakuPM] ok 1 - 首次查询：仓库里有 Alpha
 [RakuPM] ok 2 - Alpha 版本正确
 [RakuPM] ok 3 - （前置）磁盘上已放入 Beta 目录
@@ -920,38 +924,38 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 10 - source-dir-for 能给出 Beta 的源码目录
 [RakuPM] ok 11 - 重复查询返回相同结果（缓存幂等）
 [RakuPM] 1..11
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/local-repo.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/local-repo.t
 [RakuPM] 1..9
-[RakuPM] ok 1 - 传目录 → 识别为本地仓库（已添加本地仓库 'my-dists' → /tmp/rakupm-localrepo-2379424-1790306453/my-dists（优先级  \#4）
+[RakuPM] ok 1 - 传目录 → 识别为本地仓库（已添加本地仓库 'my-dists' → /tmp/rakupm-localrepo-3210804-1790364379/my-dists（优先级  \#4）
 [RakuPM] #   目录即索引：往里放「含 META6.json 的子目录」就等于收录一个发行版）
 [RakuPM] ok 2 - 配置里写入了 1 条该目录的 local 条目
 [RakuPM] ok 3 - 名字默认取目录 basename
 [RakuPM] ok 4 - 本地仓库路径存为绝对路径
 [RakuPM] ok 5 - --name 可自定义本地仓库名字
-[RakuPM] ok 6 - 重复添加会被挡住（本地仓库 'my-dists' 已在列表中（/tmp/rakupm-localrepo-2379424-1790306453/my-dists））
+[RakuPM] ok 6 - 重复添加会被挡住（本地仓库 'my-dists' 已在列表中（/tmp/rakupm-localrepo-3210804-1790364379/my-dists））
 [RakuPM] ok 7 - 重复添加后仍然只有 1 条
 [RakuPM] ok 8 - 按路径可移除本地仓库（已移除仓库 'my-dists'）
 [RakuPM] ok 9 - 移除后条目已消失
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/local-skip-bad-meta.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/local-skip-bad-meta.t
 [RakuPM] 1..4
 [RakuPM] ok 1 - 坏 META 文件被跳过，正常包 Good::Pkg 仍被索引
 [RakuPM] ok 2 - 根目录坏 META 数组未被当成发行版
 [RakuPM] ok 3 - 子目录坏 META 数组未被当成发行版
 [RakuPM] ok 4 - find-providers(Good::Pkg) 命中 Good::Pkg
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/lock-file.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/lock-file.t
 [RakuPM] 将安装 1 个发行版（自底向上，依赖优先）：
-[RakuPM]   · MyDist:ver<1.2.3>:auth<demo:raku>   ← 本地目录: /tmp/rakupm-lockfile-2379622-1790306459/MyDist
+[RakuPM]   · MyDist:ver<1.2.3>:auth<demo:raku>   ← 本地目录: /tmp/rakupm-lockfile-3211041-1790364385/MyDist
 [RakuPM] ==> 存入存储：MyDist 1.2.3 (3f3a4276)
 [RakuPM] ==> 已暂存 MyDist 1.2.3（待整链通过后晋升）
-[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-lockfile-2379622-1790306459/proj.lock
+[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-lockfile-3211041-1790364385/proj.lock
 [RakuPM] ok 1 - override: install-from-dir 不抛异常
 [RakuPM] ok 2 - override: 锁落到显式 lock-path
 [RakuPM] ok 3 - override: target 内不再生成 raku-pm.lock（已外置到项目路径）
 [RakuPM] 将安装 1 个发行版（自底向上，依赖优先）：
-[RakuPM]   · MyDist:ver<1.2.3>:auth<demo:raku>   ← 本地目录: /tmp/rakupm-lockfile-2379622-1790306459/MyDist
+[RakuPM]   · MyDist:ver<1.2.3>:auth<demo:raku>   ← 本地目录: /tmp/rakupm-lockfile-3211041-1790364385/MyDist
 [RakuPM] ==> 存入存储：MyDist 1.2.3 (3f3a4276)
 [RakuPM] ==> 已暂存 MyDist 1.2.3（待整链通过后晋升）
-[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-lockfile-2379622-1790306459/target-default/raku-pm.lock
+[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-lockfile-3211041-1790364385/target-default/raku-pm.lock
 [RakuPM] ok 4 - default: install-from-dir 不抛异常
 [RakuPM] ok 5 - default: 锁仍在 target/raku-pm.lock
 [RakuPM] ok 6 - default: lock-path 默认等于 target/raku-pm.lock（库调用方行为不变）
@@ -962,7 +966,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 11 - CLI cwd 默认: 锁落到当前工作目录 raku-pm.lock（可提交）
 [RakuPM] ok 12 - CLI cwd 默认: target 内不生成锁
 [RakuPM] 1..12
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/match.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/match.t
 [RakuPM] 1..17
 [RakuPM] ok 1 - 发行名精确 → 0
 [RakuPM] ok 2 - 发行名前缀 → 1
@@ -981,7 +985,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 15 - match-exact 模块名前缀不命中
 [RakuPM] ok 16 - match-any 子串命中 → True
 [RakuPM] ok 17 - match-any 无命中 → False
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/md5.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/md5.t
 [RakuPM] ok 1 - RFC 1321 向量：「」
 [RakuPM] ok 2 - RFC 1321 向量：「a」
 [RakuPM] ok 3 - RFC 1321 向量：「abc」
@@ -998,7 +1002,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 14 - 原生与纯 Raku 结果一致：raku-pmraku-pmra…
 [RakuPM] ok 15 - 原生与纯 Raku 结果一致：中文内容 · 测试
 [RakuPM] 1..15
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/message.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/message.t
 [RakuPM] ok 1 - EXIT-OK = 0（成功；含无参数打印帮助这种纯查询）
 [RakuPM] ok 2 - EXIT-FAIL = 1（业务失败与用法错共用 —— 勿轻改成 2）
 [RakuPM] ok 3 - usage-die 抛出的 message 与传入逐字一致
@@ -1012,7 +1016,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 11 - msg-error/warn/hint 各写一行到 stderr，且【不加任何前缀】（rakudo 自身的 RAKULIB 提示已按上面的边界剥离）
 [RakuPM] ok 12 - Message 的输出不含任何 ANSI 转义（上色归 RakuPM::UI 管）
 [RakuPM] 1..12
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/meta-definedness.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/meta-definedness.t
 [RakuPM] ok 1 - 不加守卫时确实喷 string-context 警告（这就是要防的坑）
 [RakuPM] ok 2 - 警告不影响退出码（所以它很容易被忽略，只在 stderr 上刷一行）
 [RakuPM] ok 3 - 不加守卫时语义仍正确（只是吵）
@@ -1022,7 +1026,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 7 - 两种写法的判定结果一致
 [RakuPM] ok 8 - 没有任何 meta<...> 直接做字符串比较的地方（都必须先 // 兜 undefined）
 [RakuPM] 1..8
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/meta-type-errors.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/meta-type-errors.t
 [RakuPM] ok 1 - 正控：合法的 META6 解析成功
 [RakuPM] ok 2 - version 是数字（最常见的笔误）：抛错（JSON 里版本号忘了加引号）
 [RakuPM] ok 3 -   「version 是数字（最常见的笔误）」报错点名了文件（用户能定位到哪个文件）
@@ -1075,7 +1079,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 50 - auth 是null 形态（实测 58 行是 "auth": null）：能解析（不回退成裸异常）
 [RakuPM] ok 51 - auth 是null 形态（实测 58 行是 "auth": null） → 归一成「unknown」
 [RakuPM] 1..51
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/meta6-local.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/meta6-local.t
 [RakuPM] 1..14
 [RakuPM] ok 1 - name
 [RakuPM] ok 2 - version
@@ -1091,7 +1095,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 12 - auth 写成数组时归一成字符串（不再类型检查失败）
 [RakuPM] ok 13 - 数组形态的 auth 正常参与 identity 拼接
 [RakuPM] ok 14 - depends 写成数组（含 URI:ver<0.3.8> 约束）也能解析出每个依赖
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/multi-version.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/multi-version.t
 [RakuPM] ok 1 - store 里两个版本共存
 [RakuPM] ok 2 - store 写了 raku-pm 的 META.json
 [RakuPM] ok 3 - store 也写了 Raku 标准的 META6.json
@@ -1125,7 +1129,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 31 - 老账本（无 versions 字段）也能读出版本
 [RakuPM] ok 32 - 老账本的 installed-version 正常
 [RakuPM] 1..32
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/named-arg-check.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/named-arg-check.t
 [RakuPM] 1..13
 [RakuPM] ok 1 - ① 抓到 :ver（形参其实叫 :version）
 [RakuPM] ok 2 - ② 正确名字不报
@@ -1140,7 +1144,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 11 - ⑪ 跨行签名的形参收全（:alpha/:beta 都认）
 [RakuPM] ok 12 - ⑫ 结束标记不存在时不当作 heredoc（否则会静默吞掉后面整段代码）
 [RakuPM] ok 13 - ⑬ 项目自身 0 嫌疑（工具对自己也要成立）
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/named-arg-wiring.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/named-arg-wiring.t
 [RakuPM] ok 1 - 前提：两个版本都已装
 [RakuPM] 已卸载 Wire 2.0.0
 [RakuPM] 以下 1 个包不再被任何已装包依赖（当初是作为依赖装进来的）：
@@ -1150,7 +1154,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 2 - 按版本卸载：只清掉 2.0.0，1.1.0 保留（修复前 `:$ver` 被静默丢弃 → 两个版本全被删掉）
 [RakuPM] ok 3 - 账本条目仍在（不是把整包连根拔起）
 [RakuPM] 1..3
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/native-lib-scan.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/native-lib-scan.t
 [RakuPM] 1..12
 [RakuPM] ok 1 - 真实声明（注释前）被识别：zzz-real
 [RakuPM] ok 2 - 真实声明（独立行）被识别：another-real
@@ -1164,7 +1168,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 10 - POD =for 缩写块里的样例被忽略：pod-bar
 [RakuPM] ok 11 - heredoc 之后（无空行）的真实声明仍被识别：heredoc-real
 [RakuPM] ok 12 - heredoc 正文里的 is native(...) 样板被忽略：heredoc-fake
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/native-lib.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/native-lib.t
 [RakuPM] 1..50
 [RakuPM] ok 1 - 强制 win32
 [RakuPM] ok 2 - 强制 darwin
@@ -1216,14 +1220,14 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 48 - check：缺失的库带安装提示
 [RakuPM] ok 49 - Distribution.native-libs 直接喂给 check
 [RakuPM] ok 50 - Windows 上两条 native 依赖都解析成 .dll 文件名
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/native-search-path.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/native-search-path.t
 [RakuPM] ok 1 - 搜索路径非空
 [RakuPM] ok 2 - 搜索路径没有重复项
 [RakuPM] ok 3 - 搜索路径没有以分隔符结尾的（避免拼出双斜杠）
 [RakuPM] ok 4 - # SKIP 非 Windows：rakudo/bin 的 DLL 搜索属 Windows 特有行为
 [RakuPM] ok 5 - # SKIP 非 Windows：rakudo/bin 的 DLL 搜索属 Windows 特有行为
 [RakuPM] 1..5
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/p1-readonly-cmds.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/p1-readonly-cmds.t
 [RakuPM] ok 1 - outdated 退出码 0
 [RakuPM] ok 2 - outdated 在空前缀下给出明确结论
 [RakuPM] ok 3 - doctor 退出码 0
@@ -1260,17 +1264,17 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 34 - help 别名表列出 rdeps（= rdepends，A7）
 [RakuPM] ok 35 - help 别名表列出 gens（= generations，A7）
 [RakuPM] 1..35
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/path-safety.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/path-safety.t
 [RakuPM] 1..85
 [RakuPM] ok 1 - 合法分量「foo-bar」→「foo-bar」（与旧映射一致，历史条目不失联）
-[RakuPM] ok 2 - 合法分量「A::B::C」→「A-B-C」（与旧映射一致，历史条目不失联）
-[RakuPM] ok 3 - 合法分量「v0.2.0」→「v0.2.0」（与旧映射一致，历史条目不失联）
-[RakuPM] ok 4 - 合法分量「RakuPM」→「RakuPM」（与旧映射一致，历史条目不失联）
-[RakuPM] ok 5 - 合法分量「2026.08」→「2026.08」（与旧映射一致，历史条目不失联）
-[RakuPM] ok 6 - 合法分量「1.0.0+meta」→「1.0.0+meta」（与旧映射一致，历史条目不失联）
-[RakuPM] ok 7 - 合法分量「JSON::Fast」→「JSON-Fast」（与旧映射一致，历史条目不失联）
-[RakuPM] ok 8 - 合法分量「File::Temp」→「File-Temp」（与旧映射一致，历史条目不失联）
-[RakuPM] ok 9 - 合法分量「0.2」→「0.2」（与旧映射一致，历史条目不失联）
+[RakuPM] ok 2 - 合法分量「2026.08」→「2026.08」（与旧映射一致，历史条目不失联）
+[RakuPM] ok 3 - 合法分量「File::Temp」→「File-Temp」（与旧映射一致，历史条目不失联）
+[RakuPM] ok 4 - 合法分量「A::B::C」→「A-B-C」（与旧映射一致，历史条目不失联）
+[RakuPM] ok 5 - 合法分量「0.2」→「0.2」（与旧映射一致，历史条目不失联）
+[RakuPM] ok 6 - 合法分量「RakuPM」→「RakuPM」（与旧映射一致，历史条目不失联）
+[RakuPM] ok 7 - 合法分量「v0.2.0」→「v0.2.0」（与旧映射一致，历史条目不失联）
+[RakuPM] ok 8 - 合法分量「JSON::Fast」→「JSON-Fast」（与旧映射一致，历史条目不失联）
+[RakuPM] ok 9 - 合法分量「1.0.0+meta」→「1.0.0+meta」（与旧映射一致，历史条目不失联）
 [RakuPM] ok 10 - 单个冒号也归一到 -（避开 Windows ADS）
 [RakuPM] ok 11 - 同上（第二个真实样本）
 [RakuPM] ok 12 - 拒绝「../../evil」（相对穿越（本漏洞的原始载荷））
@@ -1293,12 +1297,12 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 29 -   错误信息点名原因（含「为空」）：路径分量 为空，不能作为路径分量
 [RakuPM] ok 30 - 拒绝「   」（纯空白）
 [RakuPM] ok 31 -   错误信息点名原因（含「为空」）：路径分量 为空，不能作为路径分量
-[RakuPM] ok 32 - Windows 保留字符「|」编码成「%7C」（不拒绝，理由见上）
-[RakuPM] ok 33 - Windows 保留字符「>」编码成「%3E」（不拒绝，理由见上）
-[RakuPM] ok 34 - Windows 保留字符「"」编码成「%22」（不拒绝，理由见上）
-[RakuPM] ok 35 - Windows 保留字符「*」编码成「%2A」（不拒绝，理由见上）
-[RakuPM] ok 36 - Windows 保留字符「<」编码成「%3C」（不拒绝，理由见上）
-[RakuPM] ok 37 - Windows 保留字符「?」编码成「%3F」（不拒绝，理由见上）
+[RakuPM] ok 32 - Windows 保留字符「<」编码成「%3C」（不拒绝，理由见上）
+[RakuPM] ok 33 - Windows 保留字符「*」编码成「%2A」（不拒绝，理由见上）
+[RakuPM] ok 34 - Windows 保留字符「>」编码成「%3E」（不拒绝，理由见上）
+[RakuPM] ok 35 - Windows 保留字符「"」编码成「%22」（不拒绝，理由见上）
+[RakuPM] ok 36 - Windows 保留字符「?」编码成「%3F」（不拒绝，理由见上）
+[RakuPM] ok 37 - Windows 保留字符「|」编码成「%7C」（不拒绝，理由见上）
 [RakuPM] ok 38 - Windows 保留字符「%」编码成「%25」（不拒绝，理由见上）
 [RakuPM] ok 39 - 版本占位符 1.0* → 1.0%2A
 [RakuPM] ok 40 - v<1> → v%3C1%3E
@@ -1347,7 +1351,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 83 -   报错点名是【版本号】这个分量：版本号「../../evil」含路径分隔符（/ 或 \），拒绝——疑似路径穿越
 [RakuPM] ok 84 - Store.path-for 对合法输入映射不变（历史条目路径不变）
 [RakuPM] ok 85 - lib/ 里没有 `subst('::', '-')` 直接拼路径的旧惯用法（一切路径分量必须走 path-component）
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/pin.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/pin.t
 [RakuPM] ok 1 - 不 pin 时传递依赖 Foo 取最新 2.0
 [RakuPM] ok 2 - pin 让传递依赖 Foo 选到非最新版 1.0
 [RakuPM] ok 3 - 顶层 pin 让 Foo 选到 1.0 而非最新 2.0
@@ -1362,7 +1366,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 12 - pin 用在不支持的命令上被拒
 [RakuPM] ok 13 - pin 用在不支持的命令上提示未知选项
 [RakuPM] 1..13
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/platform-centralized.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/platform-centralized.t
 [RakuPM] ok 1 - lib/ 里除 Platform 外没有直接使用 $*DISTRO / $*KERNEL 的地方
 [RakuPM] ok 2 - RakuPM::Platform 存在
 [RakuPM] ok 3 - Platform 自己确实在读 $*DISTRO（否则本检查形同虚设）
@@ -1375,7 +1379,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 10 - Client/Query 通过 use RakuPM::Platform 取平台信息
 [RakuPM] ok 11 - Client/SelfManager 通过 use RakuPM::Platform 取平台信息
 [RakuPM] 1..11
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/platform.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/platform.t
 [RakuPM] ok 1 - 遮蔽 $*DISTRO 生效：name=win32（不生效则本文件全部假绿）
 [RakuPM] ok 2 - os-key() 跟随遮蔽 → win32
 [RakuPM] ok 3 - 遮蔽 $*DISTRO 生效：name=darwin（不生效则本文件全部假绿）
@@ -1473,7 +1477,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 95 - Windows：没有 .exe 时落到 .bat
 [RakuPM] ok 96 - 临时目录已清理
 [RakuPM] 1..96
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/prefix-isolation.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/prefix-isolation.t
 [RakuPM] 1..20
 [RakuPM] ok 1 - 自定义前缀：promote-bin 自动为假（不会往全局 site/bin 写）
 [RakuPM] ok 2 - 自定义前缀：这个判定真的传到了 Installer（不只是 Client 上的一个字段）
@@ -1494,14 +1498,14 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 17 - ~ 已展开（没有残留字面 `~`）
 [RakuPM] ok 18 - 展开成了 $HOME 下的路径
 [RakuPM] 将安装 1 个发行版（自底向上，依赖优先）：
-[RakuPM]   · PromoProbe:ver<1.0>:auth<demo:test>   ← 本地目录: /tmp/rakupm-prefix-iso-2384156/src
-[RakuPM] ==> 存入存储：PromoProbe 1.0 (fe873178)
+[RakuPM]   · PromoProbe:ver<1.0>:auth<demo:test>   ← 本地目录: /tmp/rakupm-prefix-iso-3215683/src
+[RakuPM] ==> 存入存储：PromoProbe 1.0 (3512abfe)
 [RakuPM] ==> 已暂存 PromoProbe 1.0（待整链通过后晋升）
-[RakuPM] ==> bin/rakupm-promo-probe-2384156 ← 复制
-[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-prefix-iso-2384156/tgt-real/raku-pm.lock
+[RakuPM] ==> bin/rakupm-promo-probe-3215683 ← 复制
+[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-prefix-iso-3215683/tgt-real/raku-pm.lock
 [RakuPM] ok 19 - 正控：bin wrapper 确实落进了自己的前缀 <前缀>/bin/
-[RakuPM] ok 20 - 自定义前缀装包后，全局 site/bin（/tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/site/bin）里没有该 wrapper
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/prefix.t
+[RakuPM] ok 20 - 自定义前缀装包后，全局 site/bin（/tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/site/bin）里没有该 wrapper
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/prefix.t
 [RakuPM] 1..21
 [RakuPM] ok 1 - 默认前缀 = ~/.raku-pm
 [RakuPM] ok 2 - 默认前缀被判为「默认」（自反）
@@ -1524,7 +1528,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 19 - Windows 盘根 C:\ 被认出
 [RakuPM] ok 20 - 裸盘符 c: 被认出 —— 必须在 normalize 之前判，否则会被绝对化成 <cwd>/c: 而漏掉
 [RakuPM] ok 21 - 正常前缀目录不是根
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/provides-scan.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/provides-scan.t
 [RakuPM] ok 1 - scan-provides：扫出全部模块（含多级目录与 .pm6 / .pm 老包），顺序稳定
 [RakuPM] ok 2 - scan-provides：.rakudoc 是文档，不算模块
 [RakuPM] ok 3 - scan-provides：跳过 .precomp（Rakudo 加载时生成的派生字节码）
@@ -1541,7 +1545,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 14 - scan-provides：lib/ 不存在 → 空列表（不崩）
 [RakuPM] ok 15 - provides-with-paths：lib/ 不存在 → 空 Hash（不崩）
 [RakuPM] 1..15
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/prune-other-versions.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/prune-other-versions.t
 [RakuPM] ok 1 - prune 前：三个版本都记为已安装
 [RakuPM] ok 2 - prune 前：1.0.0 可加载
 [RakuPM] ok 3 - prune 前：2.0.0 可加载
@@ -1557,7 +1561,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 13 - prune 后：use :ver<2.0.0> 失败（已从 CUR 摘掉）
 [RakuPM] ok 14 - 已无旧版本时再调用 prune 是 no-op 不报错
 [RakuPM] 1..14
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/query-commands.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/query-commands.t
 [RakuPM] 1..14
 [RakuPM] Demo-Pkg:ver<1.0.0>:auth<demo:raku>
 [RakuPM] +------+-------------------------+
@@ -1584,22 +1588,22 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 13 - smoke 统计到通过的包
 [RakuPM]   ⊘ 跳过 仓库里根本没有的包::ZZZ（仓库里找不到，无法取源码）
 [RakuPM] ok 14 - smoke 对取不到源码的包跳过并正常汇总（不崩）
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/query-installed-store.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/query-installed-store.t
 [RakuPM] 将安装 1 个发行版（自底向上，依赖优先）：
-[RakuPM]   · Dual:ver<0.9.2>:auth<demo>   ← 本地目录: /tmp/rakupm-query-2385313-1790306611/Dual-0.9.2-src
+[RakuPM]   · Dual:ver<0.9.2>:auth<demo>   ← 本地目录: /tmp/rakupm-query-3216896-1790364544/Dual-0.9.2-src
 [RakuPM] ==> 存入存储：Dual 0.9.2 (f135bec6)
 [RakuPM] ==> 已暂存 Dual 0.9.2（待整链通过后晋升）
-[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-query-2385313-1790306611/t/raku-pm.lock
+[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-query-3216896-1790364544/t/raku-pm.lock
 [RakuPM] 将安装 1 个发行版（自底向上，依赖优先）：
-[RakuPM]   · Dual:ver<0.13.0>:auth<demo>   ← 本地目录: /tmp/rakupm-query-2385313-1790306611/Dual-0.13.0-src
+[RakuPM]   · Dual:ver<0.13.0>:auth<demo>   ← 本地目录: /tmp/rakupm-query-3216896-1790364544/Dual-0.13.0-src
 [RakuPM] ==> 存入存储：Dual 0.13.0 (148562cd)
 [RakuPM] ==> 已暂存 Dual 0.13.0（待整链通过后晋升）
-[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-query-2385313-1790306611/t/raku-pm.lock
+[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-query-3216896-1790364544/t/raku-pm.lock
 [RakuPM] 将安装 1 个发行版（自底向上，依赖优先）：
-[RakuPM]   · Lone:ver<1.2.3>:auth<demo>   ← 本地目录: /tmp/rakupm-query-2385313-1790306611/Lone-1.2.3-src
+[RakuPM]   · Lone:ver<1.2.3>:auth<demo>   ← 本地目录: /tmp/rakupm-query-3216896-1790364544/Lone-1.2.3-src
 [RakuPM] ==> 存入存储：Lone 1.2.3 (57126e46)
 [RakuPM] ==> 已暂存 Lone 1.2.3（待整链通过后晋升）
-[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-query-2385313-1790306611/t/raku-pm.lock
+[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-query-3216896-1790364544/t/raku-pm.lock
 [RakuPM] ok 1 - installed 退出码 0
 [RakuPM] ok 2 - installed：列出 Dual 0.13.0
 [RakuPM] ok 3 - installed：列出 Dual 0.9.2（多版本全列）
@@ -1615,7 +1619,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 13 - store 退出码 0
 [RakuPM] ok 14 - store：列出 Dual 0.13.0
 [RakuPM] ok 15 - store：列出 Dual 0.9.2
-[RakuPM] ok 16 - store：显示版本目录完整路径（/tmp/rakupm-query-2385313-1790306611/t/store/Dual/0.13.0）
+[RakuPM] ok 16 - store：显示版本目录完整路径（/tmp/rakupm-query-3216896-1790364544/t/store/Dual/0.13.0）
 [RakuPM] ok 17 - store <模块> 退出码 0
 [RakuPM] ok 18 - store <模块>：标题带模块名
 [RakuPM] ok 19 - store <模块>：列出低版本
@@ -1625,7 +1629,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 23 - store <不存在> 退出码 0
 [RakuPM] ok 24 - store <不存在>：提示没有
 [RakuPM] 1..24
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/rakulib-shadow.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/rakulib-shadow.t
 [RakuPM] 1..8
 [RakuPM] ok 1 - 1) 链上无 RakuPM：静默
 [RakuPM] ok 2 - 2) 单一版本：静默
@@ -1635,7 +1639,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 6 - 4) 警告含被遮蔽的旧版本号
 [RakuPM] ok 7 - 5) FileSystem 仓库被排除，不误报
 [RakuPM] ok 8 - 6) 单仓库内多版本：静默（CUR 取最高，无害）
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/reinstall.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/reinstall.t
 [RakuPM] 1..21
 [RakuPM] 将安装 1 个发行版（自底向上，依赖优先）：
 [RakuPM]   · RePkg:ver<1.0.0>:auth<demo:raku>
@@ -1643,7 +1647,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM]   · 运行测试：RePkg 1.0.0（1 个文件，串行）
 [RakuPM]     ✓ basic.t
 [RakuPM] ==> 已暂存 RePkg 1.0.0（待整链通过后晋升）
-[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-reinstall-2385935-1790306628/target/raku-pm.lock
+[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-reinstall-3217649-1790364562/target/raku-pm.lock
 [RakuPM] ok 1 - install RePkg 成功（不抛）
 [RakuPM] ok 2 - 装完后账本里 RePkg 恰一条
 [RakuPM] ok 3 - 装上的版本是 1.0.0
@@ -1655,7 +1659,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM]   · 运行测试：RePkg 1.0.0（1 个文件，串行）
 [RakuPM]     ✓ basic.t
 [RakuPM] ==> 已暂存 RePkg 1.0.0（待整链通过后晋升）
-[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-reinstall-2385935-1790306628/target/raku-pm.lock
+[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-reinstall-3217649-1790364562/target/raku-pm.lock
 [RakuPM] ✓ 重装完成：RePkg（1 个版本）
 [RakuPM] ok 4 - reinstall 已装包不抛异常
 [RakuPM] ok 5 - reinstall 后账本仍恰一条 RePkg
@@ -1671,7 +1675,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM]   · 运行测试：FreshPkg 0.5.0（1 个文件，串行）
 [RakuPM]     ✓ basic.t
 [RakuPM] ==> 已暂存 FreshPkg 0.5.0（待整链通过后晋升）
-[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-reinstall-2385935-1790306628/target/raku-pm.lock
+[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-reinstall-3217649-1790364562/target/raku-pm.lock
 [RakuPM] ok 11 - reinstall 未装包退化为 install 不抛异常
 [RakuPM] ok 12 - 退化 install 后 FreshPkg 落入账本
 [RakuPM] 将安装 1 个发行版（自底向上，依赖优先）：
@@ -1680,14 +1684,14 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM]   · 运行测试：DuoPkg 1.0.0（1 个文件，串行）
 [RakuPM]     ✓ basic.t
 [RakuPM] ==> 已暂存 DuoPkg 1.0.0（待整链通过后晋升）
-[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-reinstall-2385935-1790306628/target/raku-pm.lock
+[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-reinstall-3217649-1790364562/target/raku-pm.lock
 [RakuPM] 将安装 1 个发行版（自底向上，依赖优先）：
 [RakuPM]   · DuoPkg:ver<2.0.0>:auth<demo:raku>
 [RakuPM] ==> 存入存储：DuoPkg 2.0.0 (71fe69c9)
 [RakuPM]   · 运行测试：DuoPkg 2.0.0（1 个文件，串行）
 [RakuPM]     ✓ basic.t
 [RakuPM] ==> 已暂存 DuoPkg 2.0.0（待整链通过后晋升）
-[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-reinstall-2385935-1790306628/target/raku-pm.lock
+[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-reinstall-3217649-1790364562/target/raku-pm.lock
 [RakuPM] ok 13 - DuoPkg 两个版本都装好
 [RakuPM] ok 14 - reinstall :ver<2.0.0> 重装了 2.0.0
 [RakuPM] ok 15 - B2 修复后：reinstall :ver<2.0.0> 不再重装 1.0.0（之前会全部重装）
@@ -1700,17 +1704,17 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM]   · 运行测试：FreshPkg2 0.6.0（1 个文件，串行）
 [RakuPM]     ✓ basic.t
 [RakuPM] ==> 已暂存 FreshPkg2 0.6.0（待整链通过后晋升）
-[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-reinstall-2385935-1790306628/target/raku-pm.lock
+[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-reinstall-3217649-1790364562/target/raku-pm.lock
 [RakuPM] ok 18 - reinstall 未装包 + :version("")（CLI 修复前的兜底形态）不抛异常
 [RakuPM] ok 19 - 空串 version 走退化 install 后仍落入账本
 [RakuPM] ok 20 - 装的是仓库里那个版本（修复前会因"= "约束而报「找不到模块」）
 [RakuPM] ok 21 - 调 install/reinstall 时 version 的兜底值不是空串（须与 install 一致用未定义 Str）
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/repositories-default.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/repositories-default.t
 [RakuPM] 1..3
 [RakuPM] ok 1 - 默认索引为 zef + cpan + rea + 本地
 [RakuPM] ok 2 - zef 是第一个默认索引
 [RakuPM] ok 3 - local 在默认列表末尾
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/resolve-provides.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/resolve-provides.t
 [RakuPM] 1..24
 [RakuPM] ok 1 - MemRepo：只挑真正提供该模块的版本（DBIish 0.6.8 被排除）
 [RakuPM] ok 2 - MemRepo：正主发行版胜出
@@ -1736,7 +1740,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 22 - IndexedRepo：命中发行版 fez
 [RakuPM] ok 23 - IndexedRepo：版本满足 38+
 [RakuPM] ok 24 - IndexedRepo：依赖先于被依赖者（C<A<Root）
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/resolver-core-modules.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/resolver-core-modules.t
 [RakuPM] ok 1 - resolve(Test): 核心模块不被物化
 [RakuPM] ok 2 - resolve(Test) 不报错（无仓库也不应 die）
 [RakuPM] ok 3 - test-depends={Test} 解析后无任何待安装项
@@ -1747,7 +1751,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM]     ok 2 - right exception type (X::AdHoc)
 [RakuPM] ok 5 - 找不到真实模块仍报错（核心模块跳过是精确作用）
 [RakuPM] 1..5
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/resources.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/resources.t
 [RakuPM] ok 1 - 解析出的资源清单与 META6.json 一致
 [RakuPM] ok 2 - store 复制了 resources/data.txt
 [RakuPM] ok 3 - store 复制了嵌套的 resources/native/libres.bin
@@ -1764,7 +1768,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 14 - 构造出的 Distribution 上 resources 为空（模拟索引漏字段）
 [RakuPM] ok 15 - Distribution 上 resources 为空时，入库仍从源码 META6.json 补回资源声明
 [RakuPM] 1..15
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/run-suite-docs.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/run-suite-docs.t
 [RakuPM] 1..7
 [RakuPM] ok 1 - tools/run-suite.raku 存在（回归门禁脚本不许被删）
 [RakuPM] ok 2 - 发布包内容纪律检查（check-shipped-docs）仍作为独立一行接在 check-docs 上
@@ -1773,7 +1777,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 5 - 耗时小结（print-timings）仍作为独立一行被调用
 [RakuPM] ok 6 - --no-timings 既在帮助文本里、也在参数解析里（两处缺一都是坑）
 [RakuPM] ok 7 - 防漏跑检查仍作为独立一行留在调度里（未执行的用例不许变成绿灯）
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/search-ecosystem.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/search-ecosystem.t
 [RakuPM] 1..5
 [RakuPM] ==> 拉取生态索引 [cpan1]：https://example.com/cpan1.json
 [RakuPM] ok 1 - search-rows 按发行名找到 Terminal::Spinners（自加载索引）
@@ -1781,7 +1785,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 3 - search-rows 按发行名子串命中 JSON::Fast
 [RakuPM] ok 4 - search-rows 不按 description 命中（太广问题已修）
 [RakuPM] ok 5 - find-providers 自加载索引后按发行名反向命中
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/search-local.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/search-local.t
 [RakuPM] 1..11
 [RakuPM] ok 1 - Local 仓库必须实现 search-rows（否则 Client.search 会静默跳过本地仓库）
 [RakuPM] ok 2 - 按发行版名能搜到本地包
@@ -1794,7 +1798,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 9 - 仓库根上的 META6.json 也被收录（单包布局）
 [RakuPM] ok 10 - 单包布局下 search 能搜到自己
 [RakuPM] ok 11 - 搜到的是根上 META6.json 的版本
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/search-rank.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/search-rank.t
 [RakuPM] 1..8
 [RakuPM] ok 1 - foo 命中全部 6 个包（名 3 档 + 模块名 3 档）
 [RakuPM] ok 2 - search 按相关度排序：名精确(0) < 名前缀(1) < 名子串(2) < 模块精确(3) < 模块前缀(4) < 模块子串(5)
@@ -1804,7 +1808,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 6 - Qux 模块名精确 _score=3
 [RakuPM] ok 7 - Quux 模块名前缀 _score=4
 [RakuPM] ok 8 - Corge 模块名子串 _score=5
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/shell-env.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/shell-env.t
 [RakuPM] ok 1 - bash: 退出码 0
 [RakuPM] ok 2 - bash: 恰好两行赋值（无注释 / 无多余输出）
 [RakuPM] ok 3 - bash: 第 1 行是 export RAKULIB
@@ -1834,12 +1838,12 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 27 - cmd: PATH 把原 %PATH% 接在后面
 [RakuPM] ok 28 - 默认(自动识别): 退出码 0
 [RakuPM] ok 29 - 默认: 有输出
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/site-install.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/site-install.t
 [RakuPM] 将安装 1 个发行版（自底向上，依赖优先）：
-[RakuPM]   · SubPkg:ver<1.0>:auth<demo>   ← 本地目录: /tmp/rakupm-site-2389208-1790306716/subdir-src
+[RakuPM]   · SubPkg:ver<1.0>:auth<demo>   ← 本地目录: /tmp/rakupm-site-3221114-1790364649/subdir-src
 [RakuPM] ==> 存入存储：SubPkg 1.0 (becf4af1)
 [RakuPM] ==> 已暂存 SubPkg 1.0（待整链通过后晋升）
-[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-site-2389208-1790306716/subdir-target/raku-pm.lock
+[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-site-3221114-1790364649/subdir-target/raku-pm.lock
 [RakuPM] ok 1 - CUR::Installation 认得 SubPkg（provides 路径生效）
 [RakuPM] ok 2 - CUR::Installation 里 SubPkg 的 provides 包含 Sub::Child（嵌套 hash）
 [RakuPM] ok 3 - raku -I <lib-spec> 能 use Sub::Child 并调 ping()
@@ -1847,7 +1851,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 5 - use 不存在的模块确实会失败（防假阳性）
 [RakuPM] ok 6 - lib/ 下所有 .rakumod 都在 META6 provides 里（缺失: 无）
 [RakuPM] 1..6
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/spec.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/spec.t
 [RakuPM] ok 1 - parse(Foo::Bar)：module = Foo::Bar（不带版本）
 [RakuPM] ok 2 - parse(Foo::Bar)：ver = ''
 [RakuPM] ok 3 - parse(Foo::Bar)：auth = ''
@@ -1948,7 +1952,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 98 - Distribution.parse-spec('Foo@1.0') 与 Spec.parse 委托等价
 [RakuPM] ok 99 - Distribution.parse-spec('Foo:ver<1.0+>:auth<zef:x>:api<1>') 与 Spec.parse 委托等价
 [RakuPM] 1..99
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/store-depends-fidelity.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/store-depends-fidelity.t
 [RakuPM] ok 1 - runtime.requires 结构的 depends 原样保留 ver+auth 约束
 [RakuPM] ok 2 - 反向解析 store META6：依赖版本约束正确（不是 *）
 [RakuPM] ok 3 - 数组形式 depends 原样保留完整规格串（含 auth）
@@ -1962,7 +1966,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 11 - 顶层 build-depends 与嵌套结构并存时各自保真
 [RakuPM] ok 12 - 顶层 test-depends 与嵌套结构并存时各自保真
 [RakuPM] 1..12
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/store-lock.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/store-lock.t
 [RakuPM] 1..16
 [RakuPM] ok 1 - store 多版本共存
 [RakuPM] ok 2 - 未篡改时校验通过
@@ -1980,7 +1984,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 14 - ensure-entry 不覆盖已有条目
 [RakuPM] ok 15 - E: 锁 1.0.0 与解析 1.0 视为同一版本（不误报冲突）
 [RakuPM] ok 16 - E: 锁 1.0.0 与解析 1.5.0 仍报冲突
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/store-precomp.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/store-precomp.t
 [RakuPM] 1..6
 [RakuPM] ok 1 - put 返回了内容指纹
 [RakuPM] ok 2 - store 条目里不含 .precomp（否则指纹计算会慢十几倍）
@@ -1988,14 +1992,14 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 4 - META.json 仍然写进了 store
 [RakuPM] ok 5 - 新条目的指纹与自身内容一致（verify 通过）
 [RakuPM] ok 6 - 源码目录自己的 .precomp 没有被破坏（只影响 store 副本）
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/store-provides-ext.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/store-provides-ext.t
 [RakuPM] 1..5
 [RakuPM] ok 1 - put 返回了内容指纹
 [RakuPM] ok 2 - .rakumod 模块 Foo::Bar 仍然被识别进 META6 provides
 [RakuPM] ok 3 - .pm6 模块 Qux 仍然被识别进 META6 provides（没把有效扩展名一并误删）
 [RakuPM] ok 4 - .rakudoc 文档 Foo::Baz 不计入 META6 provides（C 修复：文档不是模块）
 [RakuPM] ok 5 - META6.json provides 的值里不含任何 .rakudoc 路径
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/store-verify.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/store-verify.t
 [RakuPM] 1..9
 [RakuPM] ok 1 - 初次入库后 verify 通过
 [RakuPM] ok 2 - store 里有了 .precomp 后 verify 仍通过（不误报篡改）
@@ -2006,19 +2010,19 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 7 - 清单可解析且带格式版本号
 [RakuPM] ok 8 - 清单命中（size+mtime 未变）→ 复用上次 md5、判「完好」——这是换速度的取舍
 [RakuPM] ok 9 - RAKUPM_VERIFY_NOCACHE=1 强制全量哈希 → 同一状态被正确判为「已修改」
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/test-cwd-relative.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/test-cwd-relative.t
 [RakuPM] 1..3
 [RakuPM] ok 1 - 测试文件的调用路径按 zef 语义计算为 t/ 相对形式
 [RakuPM] 将安装 1 个发行版（自底向上，依赖优先）：
-[RakuPM]   · RelProbe:ver<0.1.0>:auth<demo>   ← 本地目录: /tmp/rakupm-relpath-2389885-1790306734/relsrc
+[RakuPM]   · RelProbe:ver<0.1.0>:auth<demo>   ← 本地目录: /tmp/rakupm-relpath-3222032-1790364668/relsrc
 [RakuPM] ==> 存入存储：RelProbe 0.1.0 (75aae8cf)
 [RakuPM]   · 运行测试：RelProbe 0.1.0（1 个文件，串行）
 [RakuPM]     ✓ 01-rel.rakutest
 [RakuPM] ==> 已暂存 RelProbe 0.1.0（待整链通过后晋升）
-[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-relpath-2389885-1790306734/target/raku-pm.lock
+[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-relpath-3222032-1790364668/target/raku-pm.lock
 [RakuPM] ok 2 - 夹具测试记录 $?FILE 并断言调用形态 → 安装不炸
-[RakuPM] ok 3 - marker 记录路径以 t/01-rel.rakutest 结尾（zef 语义的相对调用），实际：/tmp/rakupm-relpath-2389885-1790306734/relsrc/t/01-rel.rakutest
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/test-depends.t
+[RakuPM] ok 3 - marker 记录路径以 t/01-rel.rakutest 结尾（zef 语义的相对调用），实际：/tmp/rakupm-relpath-3222032-1790364668/relsrc/t/01-rel.rakutest
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/test-depends.t
 [RakuPM] ok 1 - 顶层 test-depends（数组）归一为 {模块 => 约束}
 [RakuPM] ok 2 - 顶层 test-depends（Hash 带约束）归一
 [RakuPM] ok 3 - 顶层 test-depends 为空数组时回退到 depends.test.requires
@@ -2028,18 +2032,18 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 7 - phase-depends-from(build) 归一顶层 build-depends
 [RakuPM] ok 8 - phase-depends-from(build) 等价于 build-depends-from
 [RakuPM] 1..8
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/tester-log.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/tester-log.t
 [RakuPM] 1..2
 [RakuPM] 将安装 1 个发行版（自底向上，依赖优先）：
-[RakuPM]   · LogProbe:ver<0.1.0>:auth<demo>   ← 本地目录: /tmp/rakupm-tlog-2390130-1790306742/logsrc
+[RakuPM]   · LogProbe:ver<0.1.0>:auth<demo>   ← 本地目录: /tmp/rakupm-tlog-3222343-1790364674/logsrc
 [RakuPM] ==> 存入存储：LogProbe 0.1.0 (4e765b34)
 [RakuPM]   · 运行测试：LogProbe 0.1.0（1 个文件，串行）
 [RakuPM]     ✓ 01-basic.rakutest
 [RakuPM] ==> 已暂存 LogProbe 0.1.0（待整链通过后晋升）
-[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-tlog-2390130-1790306742/target/raku-pm.lock
+[RakuPM] ✓ 完成。锁文件已更新：/tmp/rakupm-tlog-3222343-1790364674/target/raku-pm.lock
 [RakuPM] ok 1 - 夹具测试通过 → 安装不炸（异步 tester 跑通）
 [RakuPM] ok 2 - 测试完整输出已落日志 <target>/log/<包>/<版本>/<测试>.log
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/ui.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/ui.t
 [RakuPM] ok 1 - 纯 ASCII：每字符 1 列
 [RakuPM] ok 2 - 中文（East_Asian_Width=W）：每字 2 列
 [RakuPM] ok 3 - 全角标点（F）：2 列
@@ -2107,7 +2111,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 65 - 富文本：树子前缀 Unicode
 [RakuPM] ok 66 - 最后复位，不泄漏给同进程后续断言
 [RakuPM] 1..66
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/uninstall-missing.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/uninstall-missing.t
 [RakuPM] ok 1 - 前提：UnTop 安装成功
 [RakuPM] ok 2 - 前提：UnTop 已装
 [RakuPM] ok 3 - 前提：依赖 UnMid 已装
@@ -2138,7 +2142,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 28 - Installer.uninstall：真摘掉时返回被摘的版本串
 [RakuPM] ok 29 - ……且 UnLeaf 确实没了
 [RakuPM] 1..29
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/uninstall-range.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/uninstall-range.t
 [RakuPM] ok 1 - 前提：四版快照都在
 [RakuPM] ok 2 - 前提：账本记下四个版本
 [RakuPM] ok 3 - 范围 <1.0 只卸掉 0.9.0（账本留 1.0.0/1.5.0/2.0.0）
@@ -2157,7 +2161,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 16 - ~1.2：1.2.9 的 store 快照被清
 [RakuPM] ok 17 - ~1.2：1.3.0/1.9.0 快照保留（上界算宽就会把它们一并清掉）
 [RakuPM] 1..17
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/uninstall-store.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/uninstall-store.t
 [RakuPM] ok 1 - 前提：store 里两版快照都在
 [RakuPM] ok 2 - 整包卸载默认清掉 1.0.0 的 store 快照
 [RakuPM] ok 3 - 整包卸载默认清掉 2.0.0 的 store 快照
@@ -2167,12 +2171,12 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 7 - 按 --version 卸载只清那一版的 store
 [RakuPM] ok 8 - 另一版 store 快照不受影响（仍留着）
 [RakuPM] 1..8
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/upgrade-mass-warning.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/upgrade-mass-warning.t
 [RakuPM] ok 1 - upgrade 不带名时打印「升级全部」醒目提示（A2）
 [RakuPM] ok 2 - 提示里引导用户显式指定包名（A2）
 [RakuPM] ok 3 - upgrade --dry 不带名时不打印升级全部提示（A2）
 [RakuPM] 1..3
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/verify-consistency.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/verify-consistency.t
 [RakuPM] ok 1 - 干净安装没有任何不一致
 [RakuPM] ok 2 - CUR 有、账本没记 → 报 missing-in-ledger
 [RakuPM] ok 3 - 这类问题标记为可自动修复
@@ -2185,7 +2189,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 10 - 资源文件在 → 不报（且能认本平台的库文件形状）
 [RakuPM] ok 11 - 入库时声明过的资源文件后来没了 → 报 missing-resource
 [RakuPM] 1..11
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/version.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/version.t
 [RakuPM] ok 1 - major
 [RakuPM] ok 2 - minor
 [RakuPM] ok 3 - patch
@@ -2286,7 +2290,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 98 - 1.0.0-alpha 满足 >= 1.0.0-alpha（下界闭）
 [RakuPM] ok 99 - 1.0.0 满足 >= 1.0.0-alpha（正式版高于预发布）
 [RakuPM] 1..99
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/why.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/why.t
 [RakuPM] ok 1 - 单模块无约束：解析成功
 [RakuPM] ok 2 - 选中最高版本 0.0.25
 [RakuPM] ok 3 - 选中的来源仓库也带了出来
@@ -2317,7 +2321,7 @@ Press ^] three times within 1s to disconnect TTY.
 [RakuPM] ok 28 - chosen-detail 给版本
 [RakuPM] ok 29 - chosen-detail 给来源仓库
 [RakuPM] 1..29
-[RakuPM] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/wrapper-rakulib.t
+[RakuPM] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/fbffc3d8d43940af95038874ad5f3b9974e25ee7.tar.gz t/wrapper-rakulib.t
 [RakuPM] 1..12
 [RakuPM] ok 1 - bash：先把用户已有的 RAKULIB 存起来
 [RakuPM] ok 2 - bash：先设成 raku-pm 的 site（保持优先）
@@ -2340,6 +2344,6 @@ Press ^] three times within 1s to disconnect TTY.
 /home/coke/sandbox/blin/installed/RakuPM_zef:skyter10086_1.0.3_1/bin
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 15min 22.735s
-             CPU time consumed: 16min 42.346s
-                   Memory peak: 1.7G (swap: 348.7M)
+               Service runtime: 15min 48.300s
+             CPU time consumed: 17min 1.030s
+                   Memory peak: 1.5G (swap: 180.1M)

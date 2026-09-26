@@ -1,14 +1,14 @@
-Running as unit: run-p2313481-i2321062.service; invocation ID: 226937cf7c6d4e04aa853f63f4ed562a
+Running as unit: run-p3149500-i3191774.service; invocation ID: ec47591d7d224cf2bbf71b15c39ae885
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: CSS::Specification
 ===> Found: CSS::Specification:ver<0.5.3>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
-[CSS::Specification] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790304835.2313492.2843.672297026686/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz https://360.zef.pm/C/SS/CSS_SPECIFICATION/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz
-===> Fetching [OK]: CSS::Specification:ver<0.5.3>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1790304835.2313492.2843.672297026686/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz
+[CSS::Specification] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790362874.3149501.871.3550676858262/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz https://360.zef.pm/C/SS/CSS_SPECIFICATION/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz
+===> Fetching [OK]: CSS::Specification:ver<0.5.3>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1790362874.3149501.871.3550676858262/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz
 [CSS::Specification] Command: tar -t -f ./2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz
 [CSS::Specification] Command: tar -xvf ./2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz -C ../2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz
 ===> Extraction [OK]: CSS::Specification to /home/coke/sandbox/blin/data/zef-data/tmp/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz
 ===> Testing: CSS::Specification:ver<0.5.3>:auth<zef:dwarring>
-[CSS::Specification] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz/CSS-Specification-0.5.3 t/00basic.t
+[CSS::Specification] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz/CSS-Specification-0.5.3 t/00basic.t
 [CSS::Specification] not ok 1 - CSS::Grammar version
 [CSS::Specification] # Failed test 'CSS::Grammar version'
 [CSS::Specification] # at t/00basic.t line 10
@@ -16,17 +16,17 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Specification] #     /home/coke/sandbox/blin/data/zef-data/tmp/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz/CSS-Specification-0.5.3
 [CSS::Specification] #     /home/coke/sandbox/blin/installed/CSS::Specification_zef:dwarring_0.5.3_0
 [CSS::Specification] #     /home/coke/sandbox/blin/data/zef-data/tmp/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz/CSS-Specification-0.5.3/data/zef/lib
+[CSS::Specification] #     /home/coke/sandbox/blin/installed/Method::Also_zef:lizmat_0.0.10_0
+[CSS::Specification] #     /home/coke/sandbox/blin/installed/Color::Names_zef:thundergnat_2.0.0_2
 [CSS::Specification] #     /home/coke/sandbox/blin/installed/CSS::Grammar_zef:dwarring_0.4.3_0
 [CSS::Specification] #     /home/coke/sandbox/blin/installed/JSON::Fast_zef:timo_0.21.0_0
-[CSS::Specification] #     /home/coke/sandbox/blin/installed/Color::Names_zef:thundergnat_2.0.0_2
-[CSS::Specification] #     /home/coke/sandbox/blin/installed/Method::Also_zef:lizmat_0.0.10_0
 [CSS::Specification] #     /home/coke/.raku
-[CSS::Specification] #     /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/site
-[CSS::Specification] #     /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/vendor
-[CSS::Specification] #     /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/core
-[CSS::Specification] #     CompUnit::Repository::AbsolutePath<3215804780176>
-[CSS::Specification] #     CompUnit::Repository::NQP<3215858829496>
-[CSS::Specification] #     CompUnit::Repository::Perl5<3215858829536>
+[CSS::Specification] #     /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/site
+[CSS::Specification] #     /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/vendor
+[CSS::Specification] #     /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/core
+[CSS::Specification] #     CompUnit::Repository::AbsolutePath<2666452535888>
+[CSS::Specification] #     CompUnit::Repository::NQP<2666586836616>
+[CSS::Specification] #     CompUnit::Repository::Perl5<2666586836656>
 [CSS::Specification] # 
 [CSS::Specification] # Please note that a 'META6.json' file was found in '.', of which the 'provides' section was used to determine if a dependency is available or not.  Perhaps you need to add 'CSS::Grammar:ver<0.3.0..*>' in the <provides> section of that file?  Or need to specify a directory that does *not* have a 'META6.json' file?
 [CSS::Specification] # Subtest: values: thin
@@ -192,7 +192,7 @@ Press ^] three times within 1s to disconnect TTY.
 [CSS::Specification] ok 28 - prop-spec: 'width' *	<length> | <percentage> | auto	auto	all elements but non-replaced inline elements, table rows, and row groups	no
 [CSS::Specification] 1..28
 [CSS::Specification] # You failed 1 test of 28
-[CSS::Specification] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz/CSS-Specification-0.5.3 t/defs.t
+[CSS::Specification] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/2ba9adfb6c98a5a5fe4eb4b03ad4e5de081f48b4.tar.gz/CSS-Specification-0.5.3 t/defs.t
 [CSS::Specification] ok 1 - not number: 0%
 [CSS::Specification] ok 2 - percentage: 0%
 [CSS::Specification] ok 3 - length: 0%
@@ -249,6 +249,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for CSS::Specification:ver<0.5.3>:auth<zef:dwarring>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 2min 1.699s
-             CPU time consumed: 2min 12.782s
-                   Memory peak: 1G (swap: 0B)
+               Service runtime: 2min 1.010s
+             CPU time consumed: 2min 12.065s
+                   Memory peak: 1016.6M (swap: 75.8M)

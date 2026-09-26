@@ -1,14 +1,14 @@
-Running as unit: run-p2151299-i2172840.service; invocation ID: 8080b7bc006c45bca9db5f69c4a4bded
+Running as unit: run-p2988797-i3020273.service; invocation ID: d20451bd374b441aa0772dc36907db13
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: SQL::Lexer
 ===> Found: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro> [via Zef::Repository::Ecosystems<rea>]
-[SQL::Lexer] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790300341.2151300.3868.292891888544/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/SQL%3A%3ALexer/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
-===> Fetching [OK]: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro> to /home/coke/sandbox/blin/data/zef-data/tmp/1790300341.2151300.3868.292891888544/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+[SQL::Lexer] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790358430.2988798.5392.069881732818/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/SQL%3A%3ALexer/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
+===> Fetching [OK]: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro> to /home/coke/sandbox/blin/data/zef-data/tmp/1790358430.2988798.5392.069881732818/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
 [SQL::Lexer] Command: tar -t -f ./SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
 [SQL::Lexer] Command: tar -xvf ./SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz -C ../SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
 ===> Extraction [OK]: SQL::Lexer to /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz
 ===> Testing: SQL::Lexer:ver<0.2.2>:auth<github:dmaestro>
-[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/comments.t
+[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/comments.t
 [SQL::Lexer] ok 1 - Good comment
 [SQL::Lexer] # -- a standard single-line comment
 [SQL::Lexer] # 
@@ -39,7 +39,7 @@ Press ^] three times within 1s to disconnect TTY.
 [SQL::Lexer] #   
 [SQL::Lexer] # ---
 [SQL::Lexer] 1..7
-[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/compound_statement.t
+[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/compound_statement.t
 [SQL::Lexer] ===SORRY!=== Error while compiling t/compound_statement.t
 [SQL::Lexer] ===SORRY!===
 [SQL::Lexer] Cannot resolve caller trait_mod:<is>(SQL::Basic, SQL::Lexer:U, Str:D); none of these signatures matches:
@@ -117,30 +117,30 @@ Press ^] three times within 1s to disconnect TTY.
 [SQL::Lexer]     (Operator:D $o, :&looser! --> Nil)
 [SQL::Lexer]     (Operator:D $o, Str:D :$looser! --> Nil)
 [SQL::Lexer]     (Operator:D $o, :$assoc! --> Nil)
-[SQL::Lexer]   in any IMPL-BEGIN-TIME-CALL at src/Raku/ast/base.rakumod line 4153
+[SQL::Lexer]   in any IMPL-BEGIN-TIME-CALL at src/Raku/ast/base.rakumod line 4200
 [SQL::Lexer]   in any apply at src/Raku/ast/traits.rakumod line 168
 [SQL::Lexer]   in any  at src/Raku/ast/traits.rakumod line 64
 [SQL::Lexer]   in method apply-traits at src/Raku/ast/traits.rakumod line 50
 [SQL::Lexer]   in any PERFORM-BEGIN at src/Raku/ast/package.rakumod line 328
 [SQL::Lexer]   in any  at src/Raku/ast/begintime.rakumod line 22
 [SQL::Lexer]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
-[SQL::Lexer]   in any enter-package-scope at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any package-declarator:sym<grammar> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any package-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any term:sym<package-declarator> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any term at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any package-declarator:sym<package> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any package-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any scope-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any term at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any enter-package-scope at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any package-declarator:sym<grammar> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any package-declarator at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any term:sym<package-declarator> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any term at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any package-declarator:sym<package> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any package-declarator at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any scope-declarator at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any term at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
 [SQL::Lexer] Invalid type smiley ':ver' used, only ':D', ':U' and ':_' are allowed
 [SQL::Lexer] at /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master/lib/SQL/Basic.pm6 (SQL::Basic):5
 [SQL::Lexer] ------> grammar Basic:ver<0.2.2> is Lexer:ver<HERE><0.2.1..*> {
 [SQL::Lexer] at t/compound_statement.t:4
 [SQL::Lexer] ------> <BOL><HERE>use SQL::Basic;
-[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/datetime.t
+[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/datetime.t
 [SQL::Lexer] ok 1 - Good datetime(date-string): '0000-00-00'
 [SQL::Lexer] ok 2 - Good datetime(date-string): "2017-12-25"
 [SQL::Lexer] ok 3 - Good datetime(date-string): '2017-12-00'
@@ -156,7 +156,7 @@ Press ^] three times within 1s to disconnect TTY.
 [SQL::Lexer] ok 13 - Bad literal: |DATE 2017-12-25|
 [SQL::Lexer] ok 14 - Bad literal: |TIME "2017-12-25"|
 [SQL::Lexer] 1..14
-[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/literals.t
+[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/literals.t
 [SQL::Lexer] ok 1 - Good literal: |124|
 [SQL::Lexer] ok 2 - Correct type: unsigned-numeric-literal
 [SQL::Lexer] ok 3 - Good literal: |12.4|
@@ -200,7 +200,7 @@ Press ^] three times within 1s to disconnect TTY.
 [SQL::Lexer] ok 41 - Bad literal: |'abc"|
 [SQL::Lexer] ok 42 - Bad literal: |"def'|
 [SQL::Lexer] 1..42
-[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/load_both.t
+[SQL::Lexer] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master t/load_both.t
 [SQL::Lexer] ok 1 - SQL::Lexer module can be use-d ok
 [SQL::Lexer] not ok 2 - SQL::Basic module can be use-d ok
 [SQL::Lexer] # Failed test 'SQL::Basic module can be use-d ok'
@@ -281,24 +281,24 @@ Press ^] three times within 1s to disconnect TTY.
 [SQL::Lexer] #     (Operator:D $o, :&looser! --> Nil)
 [SQL::Lexer] #     (Operator:D $o, Str:D :$looser! --> Nil)
 [SQL::Lexer] #     (Operator:D $o, :$assoc! --> Nil)
-[SQL::Lexer] #   in any IMPL-BEGIN-TIME-CALL at src/Raku/ast/base.rakumod line 4153
+[SQL::Lexer] #   in any IMPL-BEGIN-TIME-CALL at src/Raku/ast/base.rakumod line 4200
 [SQL::Lexer] #   in any apply at src/Raku/ast/traits.rakumod line 168
 [SQL::Lexer] #   in any  at src/Raku/ast/traits.rakumod line 64
 [SQL::Lexer] #   in method apply-traits at src/Raku/ast/traits.rakumod line 50
 [SQL::Lexer] #   in any PERFORM-BEGIN at src/Raku/ast/package.rakumod line 328
 [SQL::Lexer] #   in any  at src/Raku/ast/begintime.rakumod line 22
 [SQL::Lexer] #   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
-[SQL::Lexer] #   in any enter-package-scope at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer] #   in any package-declarator:sym<grammar> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer] #   in any package-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer] #   in any term:sym<package-declarator> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer] #   in any term at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer] #   in any package-declarator:sym<package> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer] #   in any package-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer] #   in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer] #   in any scope-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer] #   in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer] #   in any term at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any enter-package-scope at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any package-declarator:sym<grammar> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any package-declarator at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any term:sym<package-declarator> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any term at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any package-declarator:sym<package> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any package-declarator at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any scope-declarator at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer] #   in any term at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
 [SQL::Lexer] # 
 [SQL::Lexer] # Invalid type smiley ':ver' used, only ':D', ':U' and ':_' are allowed
 [SQL::Lexer] # at /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master/lib/SQL/Basic.pm6 (SQL::Basic):5
@@ -382,24 +382,24 @@ Press ^] three times within 1s to disconnect TTY.
 [SQL::Lexer]     (Operator:D $o, :&looser! --> Nil)
 [SQL::Lexer]     (Operator:D $o, Str:D :$looser! --> Nil)
 [SQL::Lexer]     (Operator:D $o, :$assoc! --> Nil)
-[SQL::Lexer]   in any IMPL-BEGIN-TIME-CALL at src/Raku/ast/base.rakumod line 4153
+[SQL::Lexer]   in any IMPL-BEGIN-TIME-CALL at src/Raku/ast/base.rakumod line 4200
 [SQL::Lexer]   in any apply at src/Raku/ast/traits.rakumod line 168
 [SQL::Lexer]   in any  at src/Raku/ast/traits.rakumod line 64
 [SQL::Lexer]   in method apply-traits at src/Raku/ast/traits.rakumod line 50
 [SQL::Lexer]   in any PERFORM-BEGIN at src/Raku/ast/package.rakumod line 328
 [SQL::Lexer]   in any  at src/Raku/ast/begintime.rakumod line 22
 [SQL::Lexer]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
-[SQL::Lexer]   in any enter-package-scope at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any package-declarator:sym<grammar> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any package-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any term:sym<package-declarator> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any term at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any package-declarator:sym<package> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any package-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any scope-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-[SQL::Lexer]   in any term at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any enter-package-scope at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any package-declarator:sym<grammar> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any package-declarator at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any term:sym<package-declarator> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any term at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any package-declarator:sym<package> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any package-declarator at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any scope-declarator at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+[SQL::Lexer]   in any term at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
 [SQL::Lexer] Invalid type smiley ':ver' used, only ':D', ':U' and ':_' are allowed
 [SQL::Lexer] at /home/coke/sandbox/blin/data/zef-data/tmp/SQL%3A%3ALexer%3Aver%3C0.2.2%3E%3Aauth%3Cgithub%3Admaestro%3E.tar.gz/SQL-Lexer-master/lib/SQL/Basic.pm6 (SQL::Basic):5
 [SQL::Lexer] ------> grammar Basic:ver<0.2.2> is Lexer:ver<HERE><0.2.1..*> {
@@ -484,24 +484,24 @@ Cannot resolve caller trait_mod:<is>(SQL::Basic, SQL::Lexer:U, Str:D); none of t
     (Operator:D $o, :&looser! --> Nil)
     (Operator:D $o, Str:D :$looser! --> Nil)
     (Operator:D $o, :$assoc! --> Nil)
-  in any IMPL-BEGIN-TIME-CALL at src/Raku/ast/base.rakumod line 4153
+  in any IMPL-BEGIN-TIME-CALL at src/Raku/ast/base.rakumod line 4200
   in any apply at src/Raku/ast/traits.rakumod line 168
   in any  at src/Raku/ast/traits.rakumod line 64
   in method apply-traits at src/Raku/ast/traits.rakumod line 50
   in any PERFORM-BEGIN at src/Raku/ast/package.rakumod line 328
   in any  at src/Raku/ast/begintime.rakumod line 22
   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
-  in any enter-package-scope at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any package-declarator:sym<grammar> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any package-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any term:sym<package-declarator> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any term at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any package-declarator:sym<package> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any package-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any scope-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any term at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any enter-package-scope at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any package-declarator:sym<grammar> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any package-declarator at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any term:sym<package-declarator> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any term at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any package-declarator:sym<package> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any package-declarator at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any scope-declarator at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any term at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
 
 Invalid type smiley ':ver' used, only ':D', ':U' and ':_' are allowed
 at /home/coke/sandbox/blin/installed/SQL::Lexer_github:dmaestro_0.2.2_0/sources/5B7FC68548A941EB06D2C93E26346A933B548D5C (SQL::Basic):5
@@ -584,24 +584,24 @@ Cannot resolve caller trait_mod:<is>(SQL::Basic, SQL::Lexer:U, Str:D); none of t
     (Operator:D $o, :&looser! --> Nil)
     (Operator:D $o, Str:D :$looser! --> Nil)
     (Operator:D $o, :$assoc! --> Nil)
-  in any IMPL-BEGIN-TIME-CALL at src/Raku/ast/base.rakumod line 4153
+  in any IMPL-BEGIN-TIME-CALL at src/Raku/ast/base.rakumod line 4200
   in any apply at src/Raku/ast/traits.rakumod line 168
   in any  at src/Raku/ast/traits.rakumod line 64
   in method apply-traits at src/Raku/ast/traits.rakumod line 50
   in any PERFORM-BEGIN at src/Raku/ast/package.rakumod line 328
   in any  at src/Raku/ast/begintime.rakumod line 22
   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
-  in any enter-package-scope at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any package-declarator:sym<grammar> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any package-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any term:sym<package-declarator> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any term at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any package-declarator:sym<package> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any package-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any scope-declarator at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
-  in any term at /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any enter-package-scope at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any package-declarator:sym<grammar> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any package-declarator at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any term:sym<package-declarator> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any term at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any package-declarator:sym<package> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any package-declarator at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any scope-declarator at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
+  in any term at /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/share/perl6/lib/Raku/Grammar.moarvm line 1
 
 Invalid type smiley ':ver' used, only ':D', ':U' and ':_' are allowed
 at /home/coke/sandbox/blin/installed/SQL::Lexer_github:dmaestro_0.2.2_0/sources/5B7FC68548A941EB06D2C93E26346A933B548D5C (SQL::Basic):5
@@ -610,6 +610,6 @@ at /home/coke/sandbox/blin/installed/SQL::Lexer_github:dmaestro_0.2.2_0/sources/
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 2min 1.428s
-             CPU time consumed: 2min 10.727s
+               Service runtime: 2min 13.691s
+             CPU time consumed: 2min 19.473s
                    Memory peak: 1.3G (swap: 0B)

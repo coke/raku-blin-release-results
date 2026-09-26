@@ -1,20 +1,20 @@
-Running as unit: run-p2328309-i2353025.service; invocation ID: 5c1d906eb9a449408f89680e26c8c504
+Running as unit: run-p3162743-i3155038.service; invocation ID: 237cf0aced5b41aabfd9afe9c1855ec3
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: FindBin::libs
 ===> Found: FindBin::libs:ver<0.3.0>:auth<cpan:LEMBARK> [via Zef::Repository::Ecosystems<rea>]
-[FindBin::libs] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790305249.2328319.6551.742777555096/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/F/FindBin%3A%3Alibs/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
-===> Fetching [OK]: FindBin::libs:ver<0.3.0>:auth<cpan:LEMBARK> to /home/coke/sandbox/blin/data/zef-data/tmp/1790305249.2328319.6551.742777555096/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
+[FindBin::libs] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790363250.3162749.1176.9869589271132/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/F/FindBin%3A%3Alibs/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
+===> Fetching [OK]: FindBin::libs:ver<0.3.0>:auth<cpan:LEMBARK> to /home/coke/sandbox/blin/data/zef-data/tmp/1790363250.3162749.1176.9869589271132/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
 [FindBin::libs] Command: tar -t -f ./FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
 [FindBin::libs] Command: tar -xvf ./FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz -C ../FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
 ===> Extraction [OK]: FindBin::libs to /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz
 ===> Testing: FindBin::libs:ver<0.3.0>:auth<CPAN:lembark>
-[FindBin::libs] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-libs-0.3.0 t/01-FindBin-libs.rakutest
+[FindBin::libs] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-libs-0.3.0 t/01-FindBin-libs.rakutest
 [FindBin::libs] # Madness: 'FindBin::libs' (01-)
 [FindBin::libs] ok 1 - FindBin::libs module can be use-d ok
 [FindBin::libs] ok 2 - Package 'FindBin::libs' installed (FindBin::libs).
 [FindBin::libs] ok 3 - require 'FindBin::libs' survives.
 [FindBin::libs] 1..3
-[FindBin::libs] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-libs-0.3.0 t/02-export.rakutest
+[FindBin::libs] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-libs-0.3.0 t/02-export.rakutest
 [FindBin::libs] ok 1 - Exported FindBin-libs-dirs
 [FindBin::libs] # libs:
 [FindBin::libs] #	/home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-libs-0.3.0/t/lib
@@ -22,23 +22,23 @@ Press ^] three times within 1s to disconnect TTY.
 [FindBin::libs] #	/home/coke/sandbox/blin/data/zef-data/tmp/lib
 [FindBin::libs] #	/home/coke/sandbox/blin/lib
 [FindBin::libs] 1..1
-[FindBin::libs] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-libs-0.3.0 t/03-use-args.rakutest
+[FindBin::libs] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-libs-0.3.0 t/03-use-args.rakutest
 [FindBin::libs] # Bin()
 [FindBin::libs] ===SORRY!=== Error while compiling t/03-use-args.rakutest
 [FindBin::libs] This type cannot unbox to a native string: P6opaque, Junction
 [FindBin::libs] at t/03-use-args.rakutest:8
 [FindBin::libs] ------>     <HERE>use FindBin::libs < verbose >;
-[FindBin::libs] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-libs-0.3.0 t/10-use-frobnicate.rakutest
+[FindBin::libs] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/FindBin%3A%3Alibs%3Aver%3C0.3.0%3E%3Aauth%3Ccpan%3ALEMBARK%3E.tar.gz/FindBin-libs-0.3.0 t/10-use-frobnicate.rakutest
 [FindBin::libs] ok 1 - FrobPath exported.
-[FindBin::libs] # Expect: 't/lib/FindBin/Frobnicate.pm6'
 [FindBin::libs] ok 2 - Found 't/lib/FindBin/Frobnicate.pm6'
 [FindBin::libs] 1..2
+[FindBin::libs] # Expect: 't/lib/FindBin/Frobnicate.pm6'
 ===> Testing [FAIL]: FindBin::libs:ver<0.3.0>:auth<CPAN:lembark>
 [FindBin::libs] Failed to get passing tests, but continuing with --force-test
 ===> Installing: FindBin::libs:ver<0.3.0>:auth<CPAN:lembark>
 ===> Install [OK] for FindBin::libs:ver<0.3.0>:auth<CPAN:lembark>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 2min 6.140s
-             CPU time consumed: 2min 10.574s
-                   Memory peak: 1.4G (swap: 0B)
+               Service runtime: 2min 9.801s
+             CPU time consumed: 2min 13.382s
+                   Memory peak: 1.4G (swap: 124K)

@@ -1,21 +1,21 @@
-Running as unit: run-p2156536-i2153772.service; invocation ID: b281e04be5794f86bd3be6a02af3ad3d
+Running as unit: run-p2993116-i3000878.service; invocation ID: 7ff127c4aa3e4e898f5ecd55c997764d
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Slang::Predicate
 ===> Found: Slang::Predicate:ver<0.0.1>:auth<cpan:SAMGWISE> [via Zef::Repository::Ecosystems<rea>]
-[Slang::Predicate] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790300507.2156537.7493.292017237993/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/Slang%3A%3APredicate/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
-===> Fetching [OK]: Slang::Predicate:ver<0.0.1>:auth<cpan:SAMGWISE> to /home/coke/sandbox/blin/data/zef-data/tmp/1790300507.2156537.7493.292017237993/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
+[Slang::Predicate] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790358562.2993119.3858.9020682296937/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/Slang%3A%3APredicate/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
+===> Fetching [OK]: Slang::Predicate:ver<0.0.1>:auth<cpan:SAMGWISE> to /home/coke/sandbox/blin/data/zef-data/tmp/1790358562.2993119.3858.9020682296937/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
 [Slang::Predicate] Command: tar -t -f ./Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
 [Slang::Predicate] Command: tar -xvf ./Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz -C ../Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
 ===> Extraction [OK]: Slang::Predicate to /home/coke/sandbox/blin/data/zef-data/tmp/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
 ===> Testing: Slang::Predicate:ver<0.0.1>
-[Slang::Predicate] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/Slang-Predicate-0.0.1 t/01-basic.t
+[Slang::Predicate] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/Slang-Predicate-0.0.1 t/01-basic.t
 [Slang::Predicate] ok 1 - Slang::Predicate module can be use-d ok
 [Slang::Predicate] ok 2 - T is True
 [Slang::Predicate] ok 3 - F is False
 [Slang::Predicate] ok 4 - T and F are usable like values (Positional).
 [Slang::Predicate] ok 5 - T is usable to test againts like a value.
-[Slang::Predicate] # ------------------------------------------------------------------------------
 [Slang::Predicate] ok 6 - True ∨ True ⇔ True
+[Slang::Predicate] # ------------------------------------------------------------------------------
 [Slang::Predicate] ok 7 - False ∨ True ⇔ True
 [Slang::Predicate] ok 8 - True ∨ False ⇔ True
 [Slang::Predicate] ok 9 - False ∨ False ⇔ False
@@ -86,7 +86,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Slang::Predicate] ok 51 - False ≡ False ⇔ True
 [Slang::Predicate] 1..51
 [Slang::Predicate] # You failed 4 tests of 51
-[Slang::Predicate] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/Slang-Predicate-0.0.1 t/10-expressions.t
+[Slang::Predicate] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/Slang-Predicate-0.0.1 t/10-expressions.t
 [Slang::Predicate] ok 1 - Conditional statment ⇔ conditional operator.
 [Slang::Predicate] ok 2 - Modus Ponens ⇔ Alternate spelling.
 [Slang::Predicate] ok 3 - Conditional statment ⇔ conditional operator.
@@ -102,6 +102,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for Slang::Predicate:ver<0.0.1>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 2min 16.270s
-             CPU time consumed: 2min 25.702s
-                   Memory peak: 1.4G (swap: 11.2M)
+               Service runtime: 2min 21.720s
+             CPU time consumed: 2min 26.432s
+                   Memory peak: 1.4G (swap: 0B)

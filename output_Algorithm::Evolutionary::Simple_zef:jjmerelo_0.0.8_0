@@ -1,14 +1,14 @@
-Running as unit: run-p2501865-i2524060.service; invocation ID: 8e4081cd3dbb4157824016283da074e1
+Running as unit: run-p3303157-i3197967.service; invocation ID: 20fb628888f14034ad5b9064825ec999
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Algorithm::Evolutionary::Simple
 ===> Found: Algorithm::Evolutionary::Simple:ver<0.0.8>:auth<zef:jjmerelo> [via Zef::Repository::Ecosystems<fez>]
-[Algorithm::Evolutionary::Simple] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790309234.2501871.6657.768980522124/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz https://360.zef.pm/A/LG/ALGORITHM_EVOLUTIONARY_SIMPLE/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz
-===> Fetching [OK]: Algorithm::Evolutionary::Simple:ver<0.0.8>:auth<zef:jjmerelo> to /home/coke/sandbox/blin/data/zef-data/tmp/1790309234.2501871.6657.768980522124/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz
+[Algorithm::Evolutionary::Simple] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790366900.3303159.6811.329076657134/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz https://360.zef.pm/A/LG/ALGORITHM_EVOLUTIONARY_SIMPLE/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz
+===> Fetching [OK]: Algorithm::Evolutionary::Simple:ver<0.0.8>:auth<zef:jjmerelo> to /home/coke/sandbox/blin/data/zef-data/tmp/1790366900.3303159.6811.329076657134/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz
 [Algorithm::Evolutionary::Simple] Command: tar -t -f ./5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz
 [Algorithm::Evolutionary::Simple] Command: tar -xvf ./5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz -C ../5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz
 ===> Extraction [OK]: Algorithm::Evolutionary::Simple to /home/coke/sandbox/blin/data/zef-data/tmp/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz
 ===> Testing: Algorithm::Evolutionary::Simple:ver<0.0.8>:auth<zef:jjmerelo>
-[Algorithm::Evolutionary::Simple] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz/dist t/00-functions.t
+[Algorithm::Evolutionary::Simple] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz/dist t/00-functions.t
 [Algorithm::Evolutionary::Simple] ok 1 - Mutation works
 [Algorithm::Evolutionary::Simple] ok 2 - Mutation works
 [Algorithm::Evolutionary::Simple] ok 3 - Mutation works
@@ -44,7 +44,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Algorithm::Evolutionary::Simple] ok 33 - 
 [Algorithm::Evolutionary::Simple] ok 34 - 0 chromosome xovered
 [Algorithm::Evolutionary::Simple] ok 35 - 1 chromosome xovered
-[Algorithm::Evolutionary::Simple] ok 36 - Evaluated to 12
+[Algorithm::Evolutionary::Simple] ok 36 - Evaluated to 18
 [Algorithm::Evolutionary::Simple] ok 37 - Correct number of elements
 [Algorithm::Evolutionary::Simple] ok 38 - Correct number of elements in reproduction
 [Algorithm::Evolutionary::Simple] ok 39 - Correct number of elements in new generation
@@ -53,102 +53,102 @@ Press ^] three times within 1s to disconnect TTY.
 [Algorithm::Evolutionary::Simple] ok 42 - Improving fitness by mixing 
 [Algorithm::Evolutionary::Simple] ok 43 - Improving fitness by mixing 
 [Algorithm::Evolutionary::Simple] 1..43
-[Algorithm::Evolutionary::Simple] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz/dist t/01-basic.t
+[Algorithm::Evolutionary::Simple] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz/dist t/01-basic.t
 [Algorithm::Evolutionary::Simple] ok 1 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 2 - Individual with False is packed in 2108510789
+[Algorithm::Evolutionary::Simple] ok 2 - Individual with True is packed in 3516575025
 [Algorithm::Evolutionary::Simple] ok 3 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 4 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 5 - Individual with True is packed in 3000226932
+[Algorithm::Evolutionary::Simple] ok 5 - Individual with True is packed in 3793837536
 [Algorithm::Evolutionary::Simple] ok 6 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 7 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 8 - Individual with True is packed in 2927027587
+[Algorithm::Evolutionary::Simple] ok 8 - Individual with True is packed in 2164897631
 [Algorithm::Evolutionary::Simple] ok 9 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 10 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 11 - Individual with False is packed in 924228174
+[Algorithm::Evolutionary::Simple] ok 11 - Individual with True is packed in 2802106195
 [Algorithm::Evolutionary::Simple] ok 12 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 13 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 14 - Individual with True is packed in 3219104117
+[Algorithm::Evolutionary::Simple] ok 14 - Individual with False is packed in 1412691840
 [Algorithm::Evolutionary::Simple] ok 15 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 16 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 17 - Individual with True is packed in 3786293034
+[Algorithm::Evolutionary::Simple] ok 17 - Individual with False is packed in 1381850427
 [Algorithm::Evolutionary::Simple] ok 18 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 19 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 20 - Individual with False is packed in 2019722708
+[Algorithm::Evolutionary::Simple] ok 20 - Individual with False is packed in 827573784
 [Algorithm::Evolutionary::Simple] ok 21 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 22 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 23 - Individual with False is packed in 65322374
+[Algorithm::Evolutionary::Simple] ok 23 - Individual with False is packed in 348148320
 [Algorithm::Evolutionary::Simple] ok 24 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 25 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 26 - Individual with True is packed in 2454263476
+[Algorithm::Evolutionary::Simple] ok 26 - Individual with True is packed in 2281976234
 [Algorithm::Evolutionary::Simple] ok 27 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 28 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 29 - Individual with False is packed in 1286524110
+[Algorithm::Evolutionary::Simple] ok 29 - Individual with True is packed in 2763741497
 [Algorithm::Evolutionary::Simple] ok 30 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 31 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 32 - Individual with True is packed in 3474035116
+[Algorithm::Evolutionary::Simple] ok 32 - Individual with False is packed in 1517154016
 [Algorithm::Evolutionary::Simple] ok 33 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 34 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 35 - Individual with False is packed in 1361079652
+[Algorithm::Evolutionary::Simple] ok 35 - Individual with True is packed in 2525927105
 [Algorithm::Evolutionary::Simple] ok 36 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 37 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 38 - Individual with True is packed in 3171976039
+[Algorithm::Evolutionary::Simple] ok 38 - Individual with False is packed in 101805016
 [Algorithm::Evolutionary::Simple] ok 39 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 40 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 41 - Individual with False is packed in 394834606
+[Algorithm::Evolutionary::Simple] ok 41 - Individual with False is packed in 1741303360
 [Algorithm::Evolutionary::Simple] ok 42 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 43 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 44 - Individual with False is packed in 1248365197
+[Algorithm::Evolutionary::Simple] ok 44 - Individual with False is packed in 305713822
 [Algorithm::Evolutionary::Simple] ok 45 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 46 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 47 - Individual with False is packed in 454109934
+[Algorithm::Evolutionary::Simple] ok 47 - Individual with False is packed in 1233048109
 [Algorithm::Evolutionary::Simple] ok 48 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 49 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 50 - Individual with False is packed in 1756564596
+[Algorithm::Evolutionary::Simple] ok 50 - Individual with False is packed in 1921042963
 [Algorithm::Evolutionary::Simple] ok 51 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 52 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 53 - Individual with False is packed in 778401481
+[Algorithm::Evolutionary::Simple] ok 53 - Individual with False is packed in 1729098776
 [Algorithm::Evolutionary::Simple] ok 54 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 55 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 56 - Individual with True is packed in 3991280926
+[Algorithm::Evolutionary::Simple] ok 56 - Individual with True is packed in 3784829311
 [Algorithm::Evolutionary::Simple] ok 57 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 58 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 59 - Individual with False is packed in 1613506748
+[Algorithm::Evolutionary::Simple] ok 59 - Individual with True is packed in 3287910037
 [Algorithm::Evolutionary::Simple] ok 60 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 61 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 62 - Individual with False is packed in 648104874
+[Algorithm::Evolutionary::Simple] ok 62 - Individual with True is packed in 3932184795
 [Algorithm::Evolutionary::Simple] ok 63 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 64 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 65 - Individual with True is packed in 4068177281
+[Algorithm::Evolutionary::Simple] ok 65 - Individual with True is packed in 3585786468
 [Algorithm::Evolutionary::Simple] ok 66 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 67 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 68 - Individual with True is packed in 3966187558
+[Algorithm::Evolutionary::Simple] ok 68 - Individual with True is packed in 3352105261
 [Algorithm::Evolutionary::Simple] ok 69 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 70 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 71 - Individual with False is packed in 2062106691
+[Algorithm::Evolutionary::Simple] ok 71 - Individual with False is packed in 1005964779
 [Algorithm::Evolutionary::Simple] ok 72 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 73 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 74 - Individual with True is packed in 3761803553
+[Algorithm::Evolutionary::Simple] ok 74 - Individual with True is packed in 2212569959
 [Algorithm::Evolutionary::Simple] ok 75 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 76 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 77 - Individual with False is packed in 1495787575
+[Algorithm::Evolutionary::Simple] ok 77 - Individual with True is packed in 4028929377
 [Algorithm::Evolutionary::Simple] ok 78 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 79 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 80 - Individual with False is packed in 256777013
+[Algorithm::Evolutionary::Simple] ok 80 - Individual with False is packed in 1969478807
 [Algorithm::Evolutionary::Simple] ok 81 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 82 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 83 - Individual with False is packed in 1842394108
+[Algorithm::Evolutionary::Simple] ok 83 - Individual with True is packed in 3014832875
 [Algorithm::Evolutionary::Simple] ok 84 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 85 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 86 - Individual with True is packed in 2480176400
+[Algorithm::Evolutionary::Simple] ok 86 - Individual with True is packed in 3821289086
 [Algorithm::Evolutionary::Simple] ok 87 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 88 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 89 - Individual with True is packed in 2545064822
+[Algorithm::Evolutionary::Simple] ok 89 - Individual with True is packed in 3766561135
 [Algorithm::Evolutionary::Simple] ok 90 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 91 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 92 - Individual with True is packed in 2653308398
+[Algorithm::Evolutionary::Simple] ok 92 - Individual with False is packed in 382711845
 [Algorithm::Evolutionary::Simple] ok 93 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 94 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 95 - Individual with True is packed in 2425561965
+[Algorithm::Evolutionary::Simple] ok 95 - Individual with True is packed in 2253338672
 [Algorithm::Evolutionary::Simple] ok 96 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 97 - Pop is the right size
 [Algorithm::Evolutionary::Simple] ok 98 - Population is packed
@@ -156,100 +156,100 @@ Press ^] three times within 1s to disconnect TTY.
 [Algorithm::Evolutionary::Simple] ok 100 - Population unpacked OK
 [Algorithm::Evolutionary::Simple] ok 101 - Unpacking works
 [Algorithm::Evolutionary::Simple] ok 102 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 103 - Individual with False is packed in 137694380162082
+[Algorithm::Evolutionary::Simple] ok 103 - Individual with True is packed in 261974149725740
 [Algorithm::Evolutionary::Simple] ok 104 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 105 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 106 - Individual with True is packed in 246736973624020
+[Algorithm::Evolutionary::Simple] ok 106 - Individual with True is packed in 156772255241191
 [Algorithm::Evolutionary::Simple] ok 107 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 108 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 109 - Individual with False is packed in 70018671539703
+[Algorithm::Evolutionary::Simple] ok 109 - Individual with False is packed in 84350432818471
 [Algorithm::Evolutionary::Simple] ok 110 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 111 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 112 - Individual with True is packed in 275613444188780
+[Algorithm::Evolutionary::Simple] ok 112 - Individual with False is packed in 81849376232092
 [Algorithm::Evolutionary::Simple] ok 113 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 114 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 115 - Individual with False is packed in 91452483864354
+[Algorithm::Evolutionary::Simple] ok 115 - Individual with False is packed in 110111854352393
 [Algorithm::Evolutionary::Simple] ok 116 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 117 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 118 - Individual with False is packed in 61743874931822
+[Algorithm::Evolutionary::Simple] ok 118 - Individual with True is packed in 194691220830815
 [Algorithm::Evolutionary::Simple] ok 119 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 120 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 121 - Individual with False is packed in 119388876712252
+[Algorithm::Evolutionary::Simple] ok 121 - Individual with True is packed in 230411039431973
 [Algorithm::Evolutionary::Simple] ok 122 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 123 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 124 - Individual with False is packed in 71428750159135
+[Algorithm::Evolutionary::Simple] ok 124 - Individual with True is packed in 148337672826810
 [Algorithm::Evolutionary::Simple] ok 125 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 126 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 127 - Individual with False is packed in 15393590143492
+[Algorithm::Evolutionary::Simple] ok 127 - Individual with False is packed in 133754286372787
 [Algorithm::Evolutionary::Simple] ok 128 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 129 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 130 - Individual with True is packed in 209268107826841
+[Algorithm::Evolutionary::Simple] ok 130 - Individual with False is packed in 81802383143607
 [Algorithm::Evolutionary::Simple] ok 131 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 132 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 133 - Individual with True is packed in 260665694379761
+[Algorithm::Evolutionary::Simple] ok 133 - Individual with False is packed in 88993153246542
 [Algorithm::Evolutionary::Simple] ok 134 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 135 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 136 - Individual with True is packed in 167284129416369
+[Algorithm::Evolutionary::Simple] ok 136 - Individual with True is packed in 143531151356318
 [Algorithm::Evolutionary::Simple] ok 137 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 138 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 139 - Individual with False is packed in 15601047201318
+[Algorithm::Evolutionary::Simple] ok 139 - Individual with True is packed in 251792957073373
 [Algorithm::Evolutionary::Simple] ok 140 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 141 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 142 - Individual with False is packed in 457304161893
+[Algorithm::Evolutionary::Simple] ok 142 - Individual with True is packed in 279853943182241
 [Algorithm::Evolutionary::Simple] ok 143 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 144 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 145 - Individual with True is packed in 238041288684824
+[Algorithm::Evolutionary::Simple] ok 145 - Individual with True is packed in 264533918700629
 [Algorithm::Evolutionary::Simple] ok 146 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 147 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 148 - Individual with True is packed in 199662881719911
+[Algorithm::Evolutionary::Simple] ok 148 - Individual with True is packed in 146462658337369
 [Algorithm::Evolutionary::Simple] ok 149 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 150 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 151 - Individual with True is packed in 195383457604330
+[Algorithm::Evolutionary::Simple] ok 151 - Individual with True is packed in 193129202867040
 [Algorithm::Evolutionary::Simple] ok 152 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 153 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 154 - Individual with False is packed in 128282706439842
+[Algorithm::Evolutionary::Simple] ok 154 - Individual with False is packed in 28991611718010
 [Algorithm::Evolutionary::Simple] ok 155 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 156 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 157 - Individual with False is packed in 121582427328796
+[Algorithm::Evolutionary::Simple] ok 157 - Individual with True is packed in 268171665219879
 [Algorithm::Evolutionary::Simple] ok 158 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 159 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 160 - Individual with True is packed in 166225092060548
+[Algorithm::Evolutionary::Simple] ok 160 - Individual with False is packed in 86755758441159
 [Algorithm::Evolutionary::Simple] ok 161 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 162 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 163 - Individual with True is packed in 149781707098407
+[Algorithm::Evolutionary::Simple] ok 163 - Individual with False is packed in 133820813083655
 [Algorithm::Evolutionary::Simple] ok 164 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 165 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 166 - Individual with False is packed in 43293748265159
+[Algorithm::Evolutionary::Simple] ok 166 - Individual with True is packed in 273341620447667
 [Algorithm::Evolutionary::Simple] ok 167 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 168 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 169 - Individual with False is packed in 101185684113413
+[Algorithm::Evolutionary::Simple] ok 169 - Individual with True is packed in 222489618881592
 [Algorithm::Evolutionary::Simple] ok 170 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 171 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 172 - Individual with True is packed in 221515799843892
+[Algorithm::Evolutionary::Simple] ok 172 - Individual with True is packed in 144879409717213
 [Algorithm::Evolutionary::Simple] ok 173 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 174 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 175 - Individual with False is packed in 94883315320062
+[Algorithm::Evolutionary::Simple] ok 175 - Individual with True is packed in 254251903101855
 [Algorithm::Evolutionary::Simple] ok 176 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 177 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 178 - Individual with True is packed in 253593379703965
+[Algorithm::Evolutionary::Simple] ok 178 - Individual with True is packed in 224435574746647
 [Algorithm::Evolutionary::Simple] ok 179 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 180 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 181 - Individual with True is packed in 231911844726565
+[Algorithm::Evolutionary::Simple] ok 181 - Individual with False is packed in 43582356310736
 [Algorithm::Evolutionary::Simple] ok 182 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 183 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 184 - Individual with False is packed in 6375904848009
+[Algorithm::Evolutionary::Simple] ok 184 - Individual with False is packed in 74412615051482
 [Algorithm::Evolutionary::Simple] ok 185 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 186 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 187 - Individual with False is packed in 119544563370172
+[Algorithm::Evolutionary::Simple] ok 187 - Individual with False is packed in 132063122811929
 [Algorithm::Evolutionary::Simple] ok 188 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 189 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 190 - Individual with False is packed in 72306410406676
+[Algorithm::Evolutionary::Simple] ok 190 - Individual with False is packed in 62899975269511
 [Algorithm::Evolutionary::Simple] ok 191 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 192 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 193 - Individual with False is packed in 27094080551380
+[Algorithm::Evolutionary::Simple] ok 193 - Individual with True is packed in 149096086984513
 [Algorithm::Evolutionary::Simple] ok 194 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 195 - Chromosome length OK
-[Algorithm::Evolutionary::Simple] ok 196 - Individual with True is packed in 175887705230569
+[Algorithm::Evolutionary::Simple] ok 196 - Individual with True is packed in 248632083555816
 [Algorithm::Evolutionary::Simple] ok 197 - Individual unpacks OK
 [Algorithm::Evolutionary::Simple] ok 198 - Pop is the right size
 [Algorithm::Evolutionary::Simple] ok 199 - Population is packed
@@ -258,38 +258,38 @@ Press ^] three times within 1s to disconnect TTY.
 [Algorithm::Evolutionary::Simple] ok 202 - Unpacking works
 [Algorithm::Evolutionary::Simple] ok 203 - Best fitness OK
 [Algorithm::Evolutionary::Simple] ok 204 - Best is equal or better than second
-[Algorithm::Evolutionary::Simple] ok 205 - Evaluation is correct, 19
+[Algorithm::Evolutionary::Simple] ok 205 - Evaluation is correct, 11
 [Algorithm::Evolutionary::Simple] ok 206 - Evaluation is correct, 14
-[Algorithm::Evolutionary::Simple] ok 207 - Evaluation is correct, 17
-[Algorithm::Evolutionary::Simple] ok 208 - Evaluation is correct, 19
-[Algorithm::Evolutionary::Simple] ok 209 - Evaluation is correct, 16
-[Algorithm::Evolutionary::Simple] ok 210 - Evaluation is correct, 14
-[Algorithm::Evolutionary::Simple] ok 211 - Evaluation is correct, 16
-[Algorithm::Evolutionary::Simple] ok 212 - Evaluation is correct, 16
-[Algorithm::Evolutionary::Simple] ok 213 - Evaluation is correct, 15
-[Algorithm::Evolutionary::Simple] ok 214 - Evaluation is correct, 17
-[Algorithm::Evolutionary::Simple] ok 215 - Evaluation is correct, 14
-[Algorithm::Evolutionary::Simple] ok 216 - Evaluation is correct, 18
-[Algorithm::Evolutionary::Simple] ok 217 - Evaluation is correct, 14
-[Algorithm::Evolutionary::Simple] ok 218 - Evaluation is correct, 17
-[Algorithm::Evolutionary::Simple] ok 219 - Evaluation is correct, 18
-[Algorithm::Evolutionary::Simple] ok 220 - Evaluation is correct, 14
-[Algorithm::Evolutionary::Simple] ok 221 - Evaluation is correct, 14
-[Algorithm::Evolutionary::Simple] ok 222 - Evaluation is correct, 17
-[Algorithm::Evolutionary::Simple] ok 223 - Evaluation is correct, 17
-[Algorithm::Evolutionary::Simple] ok 224 - Evaluation is correct, 14
-[Algorithm::Evolutionary::Simple] ok 225 - Evaluation is correct, 19
-[Algorithm::Evolutionary::Simple] ok 226 - Evaluation is correct, 13
-[Algorithm::Evolutionary::Simple] ok 227 - Evaluation is correct, 15
-[Algorithm::Evolutionary::Simple] ok 228 - Evaluation is correct, 19
-[Algorithm::Evolutionary::Simple] ok 229 - Evaluation is correct, 19
-[Algorithm::Evolutionary::Simple] ok 230 - Evaluation is correct, 20
-[Algorithm::Evolutionary::Simple] ok 231 - Evaluation is correct, 14
-[Algorithm::Evolutionary::Simple] ok 232 - Evaluation is correct, 16
-[Algorithm::Evolutionary::Simple] ok 233 - Evaluation is correct, 17
-[Algorithm::Evolutionary::Simple] ok 234 - Evaluation is correct, 20
-[Algorithm::Evolutionary::Simple] ok 235 - Evaluation is correct, 18
-[Algorithm::Evolutionary::Simple] ok 236 - Evaluation is correct, 17
+[Algorithm::Evolutionary::Simple] ok 207 - Evaluation is correct, 11
+[Algorithm::Evolutionary::Simple] ok 208 - Evaluation is correct, 14
+[Algorithm::Evolutionary::Simple] ok 209 - Evaluation is correct, 11
+[Algorithm::Evolutionary::Simple] ok 210 - Evaluation is correct, 15
+[Algorithm::Evolutionary::Simple] ok 211 - Evaluation is correct, 20
+[Algorithm::Evolutionary::Simple] ok 212 - Evaluation is correct, 15
+[Algorithm::Evolutionary::Simple] ok 213 - Evaluation is correct, 17
+[Algorithm::Evolutionary::Simple] ok 214 - Evaluation is correct, 12
+[Algorithm::Evolutionary::Simple] ok 215 - Evaluation is correct, 17
+[Algorithm::Evolutionary::Simple] ok 216 - Evaluation is correct, 17
+[Algorithm::Evolutionary::Simple] ok 217 - Evaluation is correct, 18
+[Algorithm::Evolutionary::Simple] ok 218 - Evaluation is correct, 19
+[Algorithm::Evolutionary::Simple] ok 219 - Evaluation is correct, 16
+[Algorithm::Evolutionary::Simple] ok 220 - Evaluation is correct, 12
+[Algorithm::Evolutionary::Simple] ok 221 - Evaluation is correct, 20
+[Algorithm::Evolutionary::Simple] ok 222 - Evaluation is correct, 13
+[Algorithm::Evolutionary::Simple] ok 223 - Evaluation is correct, 12
+[Algorithm::Evolutionary::Simple] ok 224 - Evaluation is correct, 17
+[Algorithm::Evolutionary::Simple] ok 225 - Evaluation is correct, 14
+[Algorithm::Evolutionary::Simple] ok 226 - Evaluation is correct, 14
+[Algorithm::Evolutionary::Simple] ok 227 - Evaluation is correct, 17
+[Algorithm::Evolutionary::Simple] ok 228 - Evaluation is correct, 17
+[Algorithm::Evolutionary::Simple] ok 229 - Evaluation is correct, 16
+[Algorithm::Evolutionary::Simple] ok 230 - Evaluation is correct, 15
+[Algorithm::Evolutionary::Simple] ok 231 - Evaluation is correct, 18
+[Algorithm::Evolutionary::Simple] ok 232 - Evaluation is correct, 15
+[Algorithm::Evolutionary::Simple] ok 233 - Evaluation is correct, 20
+[Algorithm::Evolutionary::Simple] ok 234 - Evaluation is correct, 13
+[Algorithm::Evolutionary::Simple] ok 235 - Evaluation is correct, 21
+[Algorithm::Evolutionary::Simple] ok 236 - Evaluation is correct, 10
 [Algorithm::Evolutionary::Simple] ok 237 - Evaluated pop is the right class
 [Algorithm::Evolutionary::Simple] ok 238 - Size is correct
 [Algorithm::Evolutionary::Simple] ok 239 - Frequencies OK
@@ -330,7 +330,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Algorithm::Evolutionary::Simple] ok 274 - Size of generated elem is correct
 [Algorithm::Evolutionary::Simple] ok 275 - Size of generated elem is correct
 [Algorithm::Evolutionary::Simple] ok 276 - Size is correct
-[Algorithm::Evolutionary::Simple] ok 277 - Frequencies differ in -0.59375
+[Algorithm::Evolutionary::Simple] ok 277 - Frequencies differ in 0.1875
 [Algorithm::Evolutionary::Simple] ok 278 - Size of freqs-best is correct
 [Algorithm::Evolutionary::Simple] ok 279 - Frequencies of the best are better
 [Algorithm::Evolutionary::Simple] ok 280 - Same length frequencies
@@ -341,7 +341,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Algorithm::Evolutionary::Simple] ok 285 - No change for 3 generations
 [Algorithm::Evolutionary::Simple] ok 286 - There's been change
 [Algorithm::Evolutionary::Simple] 1..286
-[Algorithm::Evolutionary::Simple] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz/dist t/01-max-ones.t
+[Algorithm::Evolutionary::Simple] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz/dist t/01-max-ones.t
 [Algorithm::Evolutionary::Simple] ok 1 - False-ed chromosome evaluated
 [Algorithm::Evolutionary::Simple] ok 2 - 0-ed chromosome evaluated
 [Algorithm::Evolutionary::Simple] ok 3 - True-ed chromosome evaluated
@@ -4401,7 +4401,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Algorithm::Evolutionary::Simple] ok 4057 - Mixed chromosome tested
 [Algorithm::Evolutionary::Simple] ok 4058 - Error chromosome tested
 [Algorithm::Evolutionary::Simple] 1..4058
-[Algorithm::Evolutionary::Simple] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz/dist t/02-royal-road.t
+[Algorithm::Evolutionary::Simple] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz/dist t/02-royal-road.t
 [Algorithm::Evolutionary::Simple] ok 1 - Basic testing Royal Road
 [Algorithm::Evolutionary::Simple] not ok 2 - Testing Royal Road
 [Algorithm::Evolutionary::Simple] # Failed test 'Testing Royal Road'
@@ -4410,13 +4410,13 @@ Press ^] three times within 1s to disconnect TTY.
 [Algorithm::Evolutionary::Simple] #      got: '3'
 [Algorithm::Evolutionary::Simple] 1..2
 [Algorithm::Evolutionary::Simple] # You failed 1 test of 2
-[Algorithm::Evolutionary::Simple] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz/dist t/03-p-peaks.t
+[Algorithm::Evolutionary::Simple] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz/dist t/03-p-peaks.t
 [Algorithm::Evolutionary::Simple] ok 1 - Correct object
 [Algorithm::Evolutionary::Simple] ok 2 - Number of peaks correct
 [Algorithm::Evolutionary::Simple] ok 3 - Length of peaks correct
 [Algorithm::Evolutionary::Simple] ok 4 - Distance computed
 [Algorithm::Evolutionary::Simple] 1..4
-[Algorithm::Evolutionary::Simple] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz/dist t/04-leading-ones.t
+[Algorithm::Evolutionary::Simple] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/5150a3a64161fcea6b01b5dc4e7980ec2768125c.tar.gz/dist t/04-leading-ones.t
 [Algorithm::Evolutionary::Simple] ok 1 - Basic testing Leading Ones
 [Algorithm::Evolutionary::Simple] ok 2 - Testing Leading Ones
 [Algorithm::Evolutionary::Simple] ok 3 - Testing Leading Ones - no leading one
@@ -4428,6 +4428,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for Algorithm::Evolutionary::Simple:ver<0.0.8>:auth<zef:jjmerelo>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 2min 16.404s
-             CPU time consumed: 2min 18.716s
-                   Memory peak: 1G (swap: 12.8M)
+               Service runtime: 2min 12.879s
+             CPU time consumed: 2min 19.021s
+                   Memory peak: 1017.9M (swap: 0B)

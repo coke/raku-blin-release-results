@@ -1,14 +1,14 @@
-Running as unit: run-p2267287-i2270412.service; invocation ID: 0f847ce6c8344c8498fc1b459e9be13a
+Running as unit: run-p3103340-i3034063.service; invocation ID: ceebedde862f4c9d9a3b2eebf9c9c815
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: ScaleVec
 ===> Found: ScaleVec:ver<0.0.6>:auth<cpan:SAMGWISE> [via Zef::Repository::Ecosystems<rea>]
-[ScaleVec] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790303509.2267288.6001.110811617442/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/ScaleVec/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
-===> Fetching [OK]: ScaleVec:ver<0.0.6>:auth<cpan:SAMGWISE> to /home/coke/sandbox/blin/data/zef-data/tmp/1790303509.2267288.6001.110811617442/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
+[ScaleVec] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790361547.3103344.5620.839093898241/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/ScaleVec/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
+===> Fetching [OK]: ScaleVec:ver<0.0.6>:auth<cpan:SAMGWISE> to /home/coke/sandbox/blin/data/zef-data/tmp/1790361547.3103344.5620.839093898241/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
 [ScaleVec] Command: tar -t -f ./ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
 [ScaleVec] Command: tar -xvf ./ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz -C ../ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
 ===> Extraction [OK]: ScaleVec to /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
 ===> Testing: ScaleVec:ver<0.0.6>
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec.t
 [ScaleVec] ok 1 - ScaleVec module can be use-d ok
 [ScaleVec] ok 2 - Instantiate ScaleVec object
 [ScaleVec] ok 3 - Pitch vector out matches pitch vector in
@@ -210,7 +210,7 @@ Press ^] three times within 1s to disconnect TTY.
 [ScaleVec] --------------------------------------------------------------------------------
 [ScaleVec] Please contact the author to have these occurrences of deprecated code
 [ScaleVec] adapted, so that this message will disappear!
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Graph.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Graph.t
 [ScaleVec] ok 1 - ScaleVec::Chord::Graph module can be use-d ok
 [ScaleVec] ok 2 - pitch-classes matches input
 [ScaleVec] ok 3 - add-pc does not add non-unique elements
@@ -286,10 +286,10 @@ Press ^] three times within 1s to disconnect TTY.
 [ScaleVec]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6/lib/ScaleVec/Chord/Graph.pm6 (ScaleVec::Chord::Graph) line 236
 [ScaleVec]   in code  at /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6/lib/ScaleVec/Chord/Graph.pm6 (ScaleVec::Chord::Graph) line 199
 [ScaleVec]   in block <unit> at t/ScaleVec/Chord/Graph.t line 96
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Map.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Map.t
 [ScaleVec] 1..1
 [ScaleVec] ok 1 - ScaleVec::Chord::Map module can be use-d ok
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Set.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Set.t
 [ScaleVec] 1..7
 [ScaleVec] ok 1 - ScaleVec::Chord::Set module can be use-d ok
 [ScaleVec] ok 2 - Created ScaleVec::Chord::Set
@@ -298,7 +298,7 @@ Press ^] three times within 1s to disconnect TTY.
 [ScaleVec] ok 5 - Graph for provided scale C exists
 [ScaleVec] ok 6 - Graph is complete
 [ScaleVec] ok 7 - Map is complete
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Set/Major.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Set/Major.t
 [ScaleVec] 1..8
 [ScaleVec] ok 1 - ScaleVec::Chord::Set::Major module can be use-d ok
 [ScaleVec] ok 2 - Major chord set instantiated.
@@ -308,7 +308,7 @@ Press ^] three times within 1s to disconnect TTY.
 [ScaleVec] ok 6 - All triads are defined values.
 [ScaleVec] ok 7 - Major has 8 triads.
 [ScaleVec] ok 8 - All triads are defined values.
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Set/Minor/Harm.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Set/Minor/Harm.t
 [ScaleVec] 1..8
 [ScaleVec] ok 1 - ScaleVec::Chord::Set::Minor::Harm module can be use-d ok
 [ScaleVec] ok 2 - Minor chord set instantiated.
@@ -318,7 +318,7 @@ Press ^] three times within 1s to disconnect TTY.
 [ScaleVec] ok 6 - All triads are defined values.
 [ScaleVec] ok 7 - Minor has 8 triads.
 [ScaleVec] ok 8 - All triads are defined values.
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Set/Minor/Nat.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Set/Minor/Nat.t
 [ScaleVec] 1..8
 [ScaleVec] ok 1 - ScaleVec::Chord::Set::Minor::Nat module can be use-d ok
 [ScaleVec] ok 2 - Minor chord set instantiated.
@@ -328,10 +328,10 @@ Press ^] three times within 1s to disconnect TTY.
 [ScaleVec] ok 6 - All triads are defined values.
 [ScaleVec] ok 7 - Minor has 8 triads.
 [ScaleVec] ok 8 - All triads are defined values.
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/System.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/System.t
 [ScaleVec] 1..1
 [ScaleVec] ok 1 - ScaleVec::Chord::System module can be use-d ok
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/System/Foundation.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/System/Foundation.t
 [ScaleVec] 1..7
 [ScaleVec] ok 1 - ScaleVec::Chord::System::Foundation module can be use-d ok
 [ScaleVec] ok 2 - Element1 is defined.
@@ -340,14 +340,14 @@ Press ^] three times within 1s to disconnect TTY.
 [ScaleVec] ok 5 - .to-map produces required key.
 [ScaleVec] ok 6 - Foundation round-trip mapping.
 [ScaleVec] ok 7 - Foundation builds chord system.
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/System/Foundation/Element.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/System/Foundation/Element.t
 [ScaleVec] 1..5
 [ScaleVec] ok 1 - ScaleVec::Chord::System::Foundation::Element module can be use-d ok
 [ScaleVec] ok 2 - Element is defined.
 [ScaleVec] ok 3 - .to-map produces required keys.
 [ScaleVec] ok 4 - Element round-trip mapping.
 [ScaleVec] ok 5 - Element builds chord system.
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Voicer.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Chord/Voicer.t
 [ScaleVec] 1..10
 [ScaleVec] ok 1 - ScaleVec::Chord::Voicer module can be use-d ok
 [ScaleVec] ok 2 - Function voicing provides expected output
@@ -359,7 +359,7 @@ Press ^] three times within 1s to disconnect TTY.
 [ScaleVec] ok 8 - Function voicing provides expected output
 [ScaleVec] ok 9 - Function voicing provides expected output
 [ScaleVec] ok 10 - Function voicing provides expected output
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Network.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Network.t
 [ScaleVec] ok 1 - ScaleVec::Network module can be use-d ok
 [ScaleVec] ok 2 - 
 [ScaleVec] ok 3 - Loaded map from t/res/test-network.json
@@ -369,7 +369,7 @@ Press ^] three times within 1s to disconnect TTY.
 [ScaleVec] ok 7 - Correct number of pitch vectors from goal 0
 [ScaleVec] ok 8 - Correct number of rhythm vectors from goal 0
 [ScaleVec] 1..8
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/P6.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/P6.t
 [ScaleVec] ok 1 - ScaleVec module can be use-d ok
 [ScaleVec] ok 2 - Instantiate ScaleVec object
 [ScaleVec] ok 3 - Pitch vector out matches pitch vector in
@@ -423,7 +423,7 @@ Press ^] three times within 1s to disconnect TTY.
 [ScaleVec] --------------------------------------------------------------------------------
 [ScaleVec] Please contact the author to have these occurrences of deprecated code
 [ScaleVec] adapted, so that this message will disappear!
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Scale/EqualTemperment.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Scale/EqualTemperment.t
 [ScaleVec] ok 1 - ScaleVec::Scale::EqualTemperment module can be use-d ok
 [ScaleVec] ok 2 - key 49(A⁴)
 [ScaleVec] ok 3 - key 37(A³)
@@ -433,7 +433,7 @@ Press ^] three times within 1s to disconnect TTY.
 [ScaleVec] ok 7 - key 46(F♯⁴)
 [ScaleVec] ok 8 - key 43(D♯⁴)
 [ScaleVec] 1..8
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Scale/Fence.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Scale/Fence.t
 [ScaleVec] ok 1 - ScaleVec::Scale::Fence module can be use-d ok
 [ScaleVec] ok 2 - Fence created OK
 [ScaleVec] ok 3 - Step 1 unchanged
@@ -448,7 +448,7 @@ Press ^] three times within 1s to disconnect TTY.
 [ScaleVec] ok 12 - Step -14 -> 10
 [ScaleVec] ok 13 - Pitches -48..48 convert to pitch classes recieved(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0)
 [ScaleVec] 1..13
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Scale/Intervalic.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Scale/Intervalic.t
 [ScaleVec] ok 1 - ScaleVec::Scale::Intervalic module can be use-d ok
 [ScaleVec] ok 2 - Instantiate ScaleVec::Scale object ok.
 [ScaleVec] ok 3 - Is default repeat-interval 12 for major scale.
@@ -2649,7 +2649,7 @@ Press ^] three times within 1s to disconnect TTY.
 [ScaleVec] ok 2198 - Reflexive step round trip for 18.666667 (Major)
 [ScaleVec] ok 2199 - Chained reflexive step round trip for 18.666667 (Major(-12) & Chord IV)
 [ScaleVec] 1..2199
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/ScaleStack.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/ScaleStack.t
 [ScaleVec] ok 1 - ScaleVec::Scale::Stack module can be use-d ok
 [ScaleVec] ok 2 - Instantiate ScaleVec::Scale::Stack OK
 [ScaleVec] ok 3 - Step   0 for ScaleVec::Scale::Stack of major -> to-midi
@@ -2666,10 +2666,10 @@ Press ^] three times within 1s to disconnect TTY.
 [ScaleVec] ok 14 - Step  14 for ScaleVec::Scale::Stack of major -> to-midi
 [ScaleVec] ok 15 - Step -14 for ScaleVec::Scale::Stack of major -> to-midi
 [ScaleVec] 1..15
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Vector.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Vector.t
 [ScaleVec] ok 1 - ScaleVec::Vector module can be use-d ok
 [ScaleVec] 1..1
-[ScaleVec] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Vectorable.t
+[ScaleVec] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ScaleVec%3Aver%3C0.0.6%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/ScaleVec-0.0.6 t/ScaleVec/Vectorable.t
 [ScaleVec] ok 1 - ScaleVec::Vectorable module can be use-d ok
 [ScaleVec] ok 2 - pv-to-iv
 [ScaleVec] ok 3 - iv-to-pv
@@ -2680,6 +2680,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for ScaleVec:ver<0.0.6>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 3min 27.050s
-             CPU time consumed: 3min 42.782s
-                   Memory peak: 1.8G (swap: 4.3M)
+               Service runtime: 3min 29.871s
+             CPU time consumed: 3min 40.941s
+                   Memory peak: 1.8G (swap: 75.3M)

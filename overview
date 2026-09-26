@@ -390,7 +390,7 @@ Compress::Snappy – OK
 Compress::Zlib – OK
 Compress::Zlib::Raw – OK
 Compress::Zstd – OK
-Concurrent::BoundedChannel – Flapper
+Concurrent::BoundedChannel – OK
 Concurrent::Channelify – OK
 Concurrent::File::Find – OK
 Concurrent::Iterator – OK
@@ -421,7 +421,7 @@ Constants::Netinet::In – OK
 Constants::Sys::Socket – OK
 Contact – OK
 Context – AlwaysFail
-Control::Bail – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+Control::Bail – InstallableButUntested
 Cookie::Baker – OK
 Cookie::Jar – OK
 Cooklang – OK
@@ -487,7 +487,7 @@ CucumisSextus – AlwaysFail
 Curlie – AlwaysFail
 Curry – AlwaysFail
 CustomImporting – OK
-DAWG – AlwaysFail
+DAWG – Flapper
 DB – OK
 DB::Migration::Declare – OK
 DB::Migration::Simple – AlwaysFail
@@ -575,7 +575,7 @@ Date::Calendar::MayaAztec – AlwaysFail
 Date::Calendar::Persian – AlwaysFail
 Date::Calendar::Strftime – AlwaysFail
 Date::Christian::Advent – OK
-Date::Discordian – AlwaysFail
+Date::Discordian – OK
 Date::Easter – OK
 Date::Event – OK
 Date::Names – OK
@@ -708,7 +708,7 @@ Failable – AlwaysFail
 FanFou – AlwaysFail
 Farabi6 – AlwaysFail
 FastCGI – OK
-FastCGI::NativeCall – Fail, Bisected: eb6d4be9ff53107461c1e22112833bc34e95a208
+FastCGI::NativeCall – OK
 FastCGI::NativeCall::Async – OK
 FastCGI::NativeCall::PSGI – OK
 Fasta – OK
@@ -776,7 +776,7 @@ Form – OK
 Format::Lisp – OK
 Fortran::Grammar – AlwaysFail
 Fortune – OK
-ForwardIterables – Fail, Bisected: eb6d4be9ff53107461c1e22112833bc34e95a208
+ForwardIterables – OK
 French – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Frinfon – AlwaysFail
 Function::Validation – OK
@@ -949,7 +949,7 @@ HTTP::Server::Tiny – OK
 HTTP::Signature – AlwaysFail
 HTTP::Status – OK
 HTTP::Supply – AlwaysFail
-HTTP::Tiny – Fail, Bisected: eb6d4be9ff53107461c1e22112833bc34e95a208
+HTTP::Tiny – OK
 HTTP::Tinyish – OK
 HTTP::UserAgent – AlwaysFail
 HTTP::UserAgent::Strict – AlwaysFail
@@ -1294,7 +1294,7 @@ Lumberjack::Config::JSON – AlwaysFail
 Lumberjack::Dispatcher::EventSource – AlwaysFail
 Lumberjack::Dispatcher::Syslog – OK
 Lumberjack::Message::JSON – AlwaysFail
-MCP – Fail, Bisected: 2149157600df3a8114e15af8dd8de78e81e47b18
+MCP – Flapper
 MCP::Server::Tool::Ask – AlwaysFail
 MCP::Server::Tool::FileSystem – AlwaysFail
 MCP::Server::Tool::Shell – AlwaysFail
@@ -1489,7 +1489,7 @@ Needle::Compile – OK
 Net::AMQP – OK
 Net::BGP – ZefFailure
 Net::Curl – AlwaysFail
-Net::DNS – AlwaysFail
+Net::DNS – OK
 Net::Ethereum – AlwaysFail
 Net::FTP – AlwaysFail
 Net::FTPlib – AlwaysFail
@@ -1519,7 +1519,7 @@ Net::SMTP – OK
 Net::SMTP::Client::Async – AlwaysFail
 Net::SOCKS – OK
 Net::Snapcast – OK
-Net::Telnet – ZefFailure
+Net::Telnet – OK
 Net::Whois – OK
 Net::Whois::Async – OK
 Net::XMPP – AlwaysFail
@@ -1582,7 +1582,7 @@ OrderedHash – OK
 Overwatch – OK
 Oyatul – OK
 P5-X – OK
-P5__DATA__ – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+P5__DATA__ – InstallableButUntested
 P5__FILE__ – OK
 P5built-ins – OK
 P5caller – OK
@@ -2048,7 +2048,7 @@ SuperMAIN – OK
 Supply::Folds – OK
 Supply::Timeout – OK
 SupplyTimeWindow – OK
-Sustenance – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+Sustenance – InstallableButUntested
 Sway::Config – AlwaysFail
 Sway::PreviewKeys – AlwaysFail
 Swedish::TextDates_sv – OK

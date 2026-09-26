@@ -1,17 +1,17 @@
-Running as unit: run-p2217836-i2195157.service; invocation ID: 6351bfee7fa843bdadd7bd2a365baecb
+Running as unit: run-p3053867-i3101431.service; invocation ID: e06f87212115461f838adff2092b1ef2
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Web::Cache
 ===> Found: Web::Cache:ver<0.000001> [via Zef::Repository::Ecosystems<rea>]
-[Web::Cache] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790302114.2217844.3232.098062559234/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/W/Web%3A%3ACache/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz
-===> Fetching [OK]: Web::Cache:ver<0.000001> to /home/coke/sandbox/blin/data/zef-data/tmp/1790302114.2217844.3232.098062559234/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz
+[Web::Cache] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790360150.3053870.6738.796966408118/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/W/Web%3A%3ACache/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz
+===> Fetching [OK]: Web::Cache:ver<0.000001> to /home/coke/sandbox/blin/data/zef-data/tmp/1790360150.3053870.6738.796966408118/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz
 [Web::Cache] Command: tar -t -f ./Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz
 [Web::Cache] Command: tar -xvf ./Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz -C ../Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz
 ===> Extraction [OK]: Web::Cache to /home/coke/sandbox/blin/data/zef-data/tmp/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz
 ===> Testing: Web::Cache:ver<0.000001>
-[Web::Cache] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz/perl6-Web-Cache-master t/00-basics.t
+[Web::Cache] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz/perl6-Web-Cache-master t/00-basics.t
 [Web::Cache] 1..1
 [Web::Cache] ok 1 - Web::Cache module can be use-d ok
-[Web::Cache] Command: /tmp/whateverable/rakudo-moar/eb6d4be9ff53107461c1e22112833bc34e95a208/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz/perl6-Web-Cache-master t/01-memory.t
+[Web::Cache] Command: /tmp/whateverable/rakudo-moar/8dccf3acb168254091f773118b2f0c875caaae92/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Web%3A%3ACache%3Aver%3C0.000001%3E%3Aauth%3Cgithub%3Ascmorrison%3E.tar.gz/perl6-Web-Cache-master t/01-memory.t
 [Web::Cache] 1..7
 [Web::Cache] not ok 1 - memory 1/7: create memory closure
 [Web::Cache] # Failed test 'memory 1/7: create memory closure'
@@ -31,6 +31,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for Web::Cache:ver<0.000001>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 2min 8.535s
-             CPU time consumed: 2min 6.993s
+               Service runtime: 2min 9.702s
+             CPU time consumed: 2min 9.927s
                    Memory peak: 1.5G (swap: 0B)
