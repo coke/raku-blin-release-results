@@ -1,0 +1,520 @@
+Running as unit: run-p407528-i4645876.service; invocation ID: 79e5a0d6829e41a7b15f250e704bd3a6
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Test::Async
+===> Found: Test::Async:ver<0.1.17>:auth<zef:vrurg>:api<0.1.2> [via Zef::Repository::Ecosystems<fez>]
+[Test::Async] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790473041.407531.9390.489782412504/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz https://360.zef.pm/T/ES/TEST_ASYNC/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz
+===> Fetching [OK]: Test::Async:ver<0.1.17>:auth<zef:vrurg>:api<0.1.2> to /home/coke/sandbox/blin/data/zef-data/tmp/1790473041.407531.9390.489782412504/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz
+[Test::Async] Command: tar -t -f ./46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz
+[Test::Async] Command: tar -xvf ./46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz -C ../46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz
+===> Extraction [OK]: Test::Async to /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz
+===> Testing: Test::Async:ver<0.1.17>:auth<zef:vrurg>:api<0.1.2>
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/003-declaration.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/003-declaration.rakutest
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-bundle' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/t/lib/003-declaration/lib/Foo.rakumod (Foo):4
+[Test::Async] ------> unit test-bundle<HERE> Foo;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/t/lib/003-declaration/lib/Foo.rakumod (Foo):4
+[Test::Async] ------> unit<HERE> test-bundle Foo;
+[Test::Async] at t/003-declaration.rakutest:9
+[Test::Async] ------> <BOL><HERE>use Foo;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/004-jobmgr.rakutest
+[Test::Async] 1..10
+[Test::Async] ok 1 - job promise is kept when its code is done ok
+[Test::Async] ok 2 - job promise result is its code return value
+[Test::Async] ok 3 - job promise is broken when its code throws
+[Test::Async] ok 4 - job promise cause is the exception thrown
+[Test::Async] ok 5 - all concurrent jobs started
+[Test::Async] ok 6 - all started threads completed
+[Test::Async] ok 7 - no remaining jobs left
+[Test::Async] ok 8 - never had more than max allowed number of jobs
+[Test::Async] ok 9 - all started jobs completed
+[Test::Async] ok 10 - no remaining jobs left
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/005-bootstrap.rakutest
+[Test::Async] 1..12
+[Test::Async] not ok 1 - we can use pass
+[Test::Async] # Expected exitcode 0 but got 1
+[Test::Async] # Standard output doesn't match.
+[Test::Async] # expected: "ok 1 - pass works\n1..1\n"
+[Test::Async] #      got: ""
+[Test::Async] # Standard error doesn't match.
+[Test::Async] # expected: ""
+[Test::Async] #      got: "===SORRY!=== Error while compiling -\n===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)\n===SORRY!===\nType 'test-hub' is not declared\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit test-hub<HERE> Test::Async::Hub;\nMalformed unit\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit<HERE> test-hub Test::Async::Hub;\n\n\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8\n------> <BOL><HERE>use Test::Async::Hub;\n\nat -:1\n------> 3ff14a04c95.tar.gz/Test-Async-v0.1.17>; <HERE>use Test::Async;pass \"pass works\"; done-\n"
+[Test::Async] not ok 2 - we can use flunk
+[Test::Async] # Standard output doesn't match.
+[Test::Async] # expected: "not ok 1 - flunk works\n# Failed test 'flunk works'\n# at - line 1\n1..1\n# You failed 1 test of 1\n"
+[Test::Async] #      got: ""
+[Test::Async] # Standard error doesn't match.
+[Test::Async] # expected: ""
+[Test::Async] #      got: "===SORRY!=== Error while compiling -\n===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)\n===SORRY!===\nType 'test-hub' is not declared\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit test-hub<HERE> Test::Async::Hub;\nMalformed unit\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit<HERE> test-hub Test::Async::Hub;\n\n\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8\n------> <BOL><HERE>use Test::Async::Hub;\n\nat -:1\n------> 3ff14a04c95.tar.gz/Test-Async-v0.1.17>; <HERE>use Test::Async;flunk \"flunk works\"; don\n"
+[Test::Async] not ok 3 - we can use ok with true expressions
+[Test::Async] # Expected exitcode 0 but got 1
+[Test::Async] # Standard output doesn't match.
+[Test::Async] # expected: "ok 1 - ok works\n1..1\n"
+[Test::Async] #      got: ""
+[Test::Async] # Standard error doesn't match.
+[Test::Async] # expected: ""
+[Test::Async] #      got: "===SORRY!=== Error while compiling -\n===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)\n===SORRY!===\nType 'test-hub' is not declared\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit test-hub<HERE> Test::Async::Hub;\nMalformed unit\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit<HERE> test-hub Test::Async::Hub;\n\n\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8\n------> <BOL><HERE>use Test::Async::Hub;\n\nat -:1\n------> 3ff14a04c95.tar.gz/Test-Async-v0.1.17>; <HERE>use Test::Async;ok 2 == 2, \"ok works\"; d\n"
+[Test::Async] not ok 4 - we can use ok with false expressions
+[Test::Async] # Standard output doesn't match.
+[Test::Async] # expected: "not ok 1 - ok works\n# Failed test 'ok works'\n# at - line 1\n1..1\n# You failed 1 test of 1\n"
+[Test::Async] #      got: ""
+[Test::Async] # Standard error doesn't match.
+[Test::Async] # expected: ""
+[Test::Async] #      got: "===SORRY!=== Error while compiling -\n===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)\n===SORRY!===\nType 'test-hub' is not declared\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit test-hub<HERE> Test::Async::Hub;\nMalformed unit\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit<HERE> test-hub Test::Async::Hub;\n\n\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8\n------> <BOL><HERE>use Test::Async::Hub;\n\nat -:1\n------> 3ff14a04c95.tar.gz/Test-Async-v0.1.17>; <HERE>use Test::Async;ok 2 == 3, \"ok works\"; d\n"
+[Test::Async] not ok 5 - we can use nok with false expressions
+[Test::Async] # Expected exitcode 0 but got 1
+[Test::Async] # Standard output doesn't match.
+[Test::Async] # expected: "ok 1 - nok works\n1..1\n"
+[Test::Async] #      got: ""
+[Test::Async] # Standard error doesn't match.
+[Test::Async] # expected: ""
+[Test::Async] #      got: "===SORRY!=== Error while compiling -\n===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)\n===SORRY!===\nType 'test-hub' is not declared\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit test-hub<HERE> Test::Async::Hub;\nMalformed unit\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit<HERE> test-hub Test::Async::Hub;\n\n\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8\n------> <BOL><HERE>use Test::Async::Hub;\n\nat -:1\n------> 3ff14a04c95.tar.gz/Test-Async-v0.1.17>; <HERE>use Test::Async;nok 2 == 3, \"nok works\";\n"
+[Test::Async] not ok 6 - we can use nok with true expressions
+[Test::Async] # Standard output doesn't match.
+[Test::Async] # expected: /^"not ok 1 - nok works\n# Failed test 'nok works'\n"/
+[Test::Async] #      got: ""
+[Test::Async] # Standard error doesn't match.
+[Test::Async] # expected: ""
+[Test::Async] #      got: "===SORRY!=== Error while compiling -\n===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)\n===SORRY!===\nType 'test-hub' is not declared\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit test-hub<HERE> Test::Async::Hub;\nMalformed unit\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit<HERE> test-hub Test::Async::Hub;\n\n\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8\n------> <BOL><HERE>use Test::Async::Hub;\n\nat -:1\n------> 3ff14a04c95.tar.gz/Test-Async-v0.1.17>; <HERE>use Test::Async;nok 2 == 2, \"nok works\";\n"
+[Test::Async] not ok 7 - we can use cmp-ok with ==
+[Test::Async] # Expected exitcode 0 but got 1
+[Test::Async] # Standard output doesn't match.
+[Test::Async] # expected: "ok 1 - cmp-ok works for ==\n1..1\n"
+[Test::Async] #      got: ""
+[Test::Async] # Standard error doesn't match.
+[Test::Async] # expected: ""
+[Test::Async] #      got: "===SORRY!=== Error while compiling -\n===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)\n===SORRY!===\nType 'test-hub' is not declared\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit test-hub<HERE> Test::Async::Hub;\nMalformed unit\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit<HERE> test-hub Test::Async::Hub;\n\n\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8\n------> <BOL><HERE>use Test::Async::Hub;\n\nat -:1\n------> 3ff14a04c95.tar.gz/Test-Async-v0.1.17>; <HERE>use Test::Async;cmp-ok 2, '==', 2, \"cmp-\n"
+[Test::Async] not ok 8 - cmp-ok fails on inequals with ==
+[Test::Async] # Standard output doesn't match.
+[Test::Async] # expected: "not ok 1 - cmp-ok with == fails for non-equal values\n# Failed test 'cmp-ok with == fails for non-equal values'\n# at - line 1\n# expected: 3\n#      got: 2\n#  matcher: infix:<==>\n1..1\n# You failed 1 test of 1\n"
+[Test::Async] #      got: ""
+[Test::Async] # Standard error doesn't match.
+[Test::Async] # expected: ""
+[Test::Async] #      got: "===SORRY!=== Error while compiling -\n===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)\n===SORRY!===\nType 'test-hub' is not declared\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit test-hub<HERE> Test::Async::Hub;\nMalformed unit\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit<HERE> test-hub Test::Async::Hub;\n\n\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8\n------> <BOL><HERE>use Test::Async::Hub;\n\nat -:1\n------> 3ff14a04c95.tar.gz/Test-Async-v0.1.17>; <HERE>use Test::Async;cmp-ok 2, '==', 3, \"cmp-\n"
+[Test::Async] not ok 9 - we can use cmp-ok with ~~
+[Test::Async] # Expected exitcode 0 but got 1
+[Test::Async] # Standard output doesn't match.
+[Test::Async] # expected: "ok 1 - cmp-ok works for smartmatch\n1..1\n"
+[Test::Async] #      got: ""
+[Test::Async] # Standard error doesn't match.
+[Test::Async] # expected: ""
+[Test::Async] #      got: "===SORRY!=== Error while compiling -\n===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)\n===SORRY!===\nType 'test-hub' is not declared\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit test-hub<HERE> Test::Async::Hub;\nMalformed unit\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit<HERE> test-hub Test::Async::Hub;\n\n\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8\n------> <BOL><HERE>use Test::Async::Hub;\n\nat -:1\n------> 3ff14a04c95.tar.gz/Test-Async-v0.1.17>; <HERE>use Test::Async;cmp-ok \"abc\", '~~', /\\w+\n"
+[Test::Async] not ok 10 - cmp-ok fails for non-matching regex
+[Test::Async] # Standard output doesn't match.
+[Test::Async] # expected: "not ok 1 - cmp-ok fails when no regex match\n# Failed test 'cmp-ok fails when no regex match'\n# at - line 1\n# expected: /\\d+/\n#      got: \"foo\"\n#  matcher: infix:<~~>\n1..1\n# You failed 1 test of 1\n"
+[Test::Async] #      got: ""
+[Test::Async] # Standard error doesn't match.
+[Test::Async] # expected: ""
+[Test::Async] #      got: "===SORRY!=== Error while compiling -\n===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)\n===SORRY!===\nType 'test-hub' is not declared\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit test-hub<HERE> Test::Async::Hub;\nMalformed unit\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit<HERE> test-hub Test::Async::Hub;\n\n\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8\n------> <BOL><HERE>use Test::Async::Hub;\n\nat -:1\n------> 3ff14a04c95.tar.gz/Test-Async-v0.1.17>; <HERE>use Test::Async;cmp-ok \"foo\", '~~', /\\d+\n"
+[Test::Async] not ok 11 - we can use is-run
+[Test::Async] # Expected exitcode 0 but got 1
+[Test::Async] # Standard output doesn't match.
+[Test::Async] # expected: "  1..3\n  ok 1 - STDOUT\n  ok 2 - STDERR\n  ok 3 - Exit code\nok 1 - is-run with pass\n1..1\n"
+[Test::Async] #      got: ""
+[Test::Async] # Standard error doesn't match.
+[Test::Async] # expected: ""
+[Test::Async] #      got: "===SORRY!=== Error while compiling -\n===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)\n===SORRY!===\nType 'test-hub' is not declared\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit test-hub<HERE> Test::Async::Hub;\nMalformed unit\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit<HERE> test-hub Test::Async::Hub;\n\n\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8\n------> <BOL><HERE>use Test::Async::Hub;\n\nat -:1\n------> 3ff14a04c95.tar.gz/Test-Async-v0.1.17>; <HERE>use Test::Async;is-run 'use Test::Async;\nSaw 1 occurrence of deprecated code.\n================================================================================\nThe PERL6LIB environment variable being set, support will be removed with v6.e.\nPlease use RAKULIB instead.\n--------------------------------------------------------------------------------\nPlease contact the author to have these occurrences of deprecated code\nadapted, so that this message will disappear!\n"
+[Test::Async] not ok 12 - we can use is-run
+[Test::Async] # Expected exitcode 0 but got 1
+[Test::Async] # Standard output doesn't match.
+[Test::Async] # expected: "  1..3\n  ok 1 - STDOUT\n  ok 2 - STDERR\n  ok 3 - Exit code\nok 1 - is-run with pass\n1..1\n"
+[Test::Async] #      got: ""
+[Test::Async] # Standard error doesn't match.
+[Test::Async] # expected: ""
+[Test::Async] #      got: "===SORRY!=== Error while compiling -\n===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)\n===SORRY!===\nType 'test-hub' is not declared\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit test-hub<HERE> Test::Async::Hub;\nMalformed unit\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit<HERE> test-hub Test::Async::Hub;\n\n\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8\n------> <BOL><HERE>use Test::Async::Hub;\n\nat -:1\n------> 3ff14a04c95.tar.gz/Test-Async-v0.1.17>; <HERE>use Test::Async;is-run 'use Test::Async;\nSaw 1 occurrence of deprecated code.\n================================================================================\nThe PERL6LIB environment variable being set, support will be removed with v6.e.\nPlease use RAKULIB instead.\n--------------------------------------------------------------------------------\nPlease contact the author to have these occurrences of deprecated code\nadapted, so that this message will disappear!\n"
+[Test::Async] # You failed 12 tests of 12
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/006-parallel.rakutest
+[Test::Async] 1..3
+[Test::Async] not ok 1 - subtests start in parallel
+[Test::Async] # Expected exitcode 0 but got 1
+[Test::Async] # Standard output doesn't match.
+[Test::Async] # expected: -> ;; $_? is raw = OUTER::<$_> { #`(Block|5200641420192) ... }
+[Test::Async] #      got: ""
+[Test::Async] # Standard error doesn't match.
+[Test::Async] # expected: ""
+[Test::Async] #      got: "===SORRY!=== Error while compiling -M\n===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)\n===SORRY!===\nType 'test-hub' is not declared\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit test-hub<HERE> Test::Async::Hub;\nMalformed unit\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit<HERE> test-hub Test::Async::Hub;\n\n\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8\n------> <BOL><HERE>use Test::Async::Hub;\n\nat -M:1\n------> <BOL><HERE>use Test::Async\n"
+[Test::Async] not ok 2 - frozen subtest can be aborted
+[Test::Async] # Expected exitcode 255 but got 1
+[Test::Async] # Standard output doesn't match.
+[Test::Async] # expected: /^'1..1'/
+[Test::Async] #      got: ""
+[Test::Async] # Standard error doesn't match.
+[Test::Async] # expected: /:s Timed out awaiting for remaining jobs/
+[Test::Async] #      got: "===SORRY!=== Error while compiling -M\n===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)\n===SORRY!===\nType 'test-hub' is not declared\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit test-hub<HERE> Test::Async::Hub;\nMalformed unit\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit<HERE> test-hub Test::Async::Hub;\n\n\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8\n------> <BOL><HERE>use Test::Async::Hub;\n\nat -M:1\n------> <BOL><HERE>use Test::Async\n"
+[Test::Async] not ok 3 - frozen sub-subtest can be aborted
+[Test::Async] # Standard output doesn't match.
+[Test::Async] # expected: /:s Timed out awaiting for remaining jobs/
+[Test::Async] #      got: ""
+[Test::Async] # Standard error doesn't match.
+[Test::Async] # expected: ""
+[Test::Async] #      got: "===SORRY!=== Error while compiling -M\n===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)\n===SORRY!===\nType 'test-hub' is not declared\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit test-hub<HERE> Test::Async::Hub;\nMalformed unit\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6\n------> unit<HERE> test-hub Test::Async::Hub;\n\n\nat /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8\n------> <BOL><HERE>use Test::Async::Hub;\n\nat -M:1\n------> <BOL><HERE>use Test::Async\n"
+[Test::Async] # You failed 3 tests of 3
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/010-basics.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/010-basics.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/010-basics.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/020-is.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/020-is.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/020-is.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/030-is-run.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/030-is-run.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/030-is-run.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/040-skip.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/040-skip.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/040-skip.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/050-todo.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/050-todo.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/050-todo.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/060-subtest.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/060-subtest.rakutest
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-bundle' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/t/lib/060-subtest/lib/Test/SubBundle.rakumod (Test::SubBundle):5
+[Test::Async] ------> unit test-bundle<HERE> Test::SubBundle;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/t/lib/060-subtest/lib/Test/SubBundle.rakumod (Test::SubBundle):5
+[Test::Async] ------> unit<HERE> test-bundle Test::SubBundle;
+[Test::Async] at t/060-subtest.rakutest:5
+[Test::Async] ------> <BOL><HERE>use Test::SubBundle;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/070-test-flunks.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/070-test-flunks.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/070-test-flunks.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/080-is-approx.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/080-is-approx.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/080-is-approx.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/080-local-bundle.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/080-local-bundle.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/080-local-bundle.rakutest:11
+[Test::Async] ------> <BOL><HERE>use Test::Async <Base>;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/090-is-deeply.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/090-is-deeply.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/090-is-deeply.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/091-cmp-deeply.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/091-cmp-deeply.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/091-cmp-deeply.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/100-isa-does-ok.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/100-isa-does-ok.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/100-isa-does-ok.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/110-can-ok.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/110-can-ok.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/110-can-ok.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/120-like-unlike.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/120-like-unlike.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/120-like-unlike.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/130-use-ok.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/130-use-ok.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/130-use-ok.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/140-dies-lives-ok.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/140-dies-lives-ok.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/140-dies-lives-ok.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/150-throws-fails.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/150-throws-fails.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/150-throws-fails.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/160-when.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/160-when.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/160-when.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async <When Base>;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/170-heavily-concurrent.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/170-heavily-concurrent.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/170-heavily-concurrent.rakutest:1
+[Test::Async] ------> <BOL><HERE>use Test::Async <When Base>;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/180-dying-subtest.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/180-dying-subtest.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/180-dying-subtest.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/190-non-job-threads.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/190-non-job-threads.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/190-non-job-threads.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/200-exports.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/200-exports.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/200-exports.rakutest:3
+[Test::Async] ------> <BOL><HERE>use Test::Async <Base Exporting::Bundle>
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/210-exit.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/210-exit.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/210-exit.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+[Test::Async] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17 t/220-test-assert.rakutest
+[Test::Async] ===SORRY!=== Error while compiling t/220-test-assert.rakutest
+[Test::Async] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async)
+[Test::Async] ===SORRY!===
+[Test::Async] Type 'test-hub' is not declared
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit test-hub<HERE> Test::Async::Hub;
+[Test::Async] Malformed unit
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async/Hub.rakumod (Test::Async::Hub):6
+[Test::Async] ------> unit<HERE> test-hub Test::Async::Hub;
+[Test::Async] at /home/coke/sandbox/blin/data/zef-data/tmp/46fb5e650e1f1103b7c409a707d033ff14a04c95.tar.gz/Test-Async-v0.1.17/lib/Test/Async.rakumod (Test::Async):8
+[Test::Async] ------> <BOL><HERE>use Test::Async::Hub;
+[Test::Async] at t/220-test-assert.rakutest:2
+[Test::Async] ------> <BOL><HERE>use Test::Async;
+===> Testing [FAIL]: Test::Async:ver<0.1.17>:auth<zef:vrurg>:api<0.1.2>
+[Test::Async] Failed to get passing tests, but continuing with --force-test
+===> Installing: Test::Async:ver<0.1.17>:auth<zef:vrurg>:api<0.1.2>
+===> Install [FAIL] for Test::Async:ver<0.1.17>:auth<zef:vrurg>:api<0.1.2>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Test::Async_zef:vrurg_0.1.17_0.1.2/sources/7E7864271E963232F49BFD2612559D33B8270D1B (Test::Async)
+===SORRY!===
+Type 'test-hub' is not declared
+at /home/coke/sandbox/blin/installed/Test::Async_zef:vrurg_0.1.17_0.1.2/sources/AAA72E49F02EF7E865B8E9CCEB09A3AA13D7F2B1 (Test::Async::Hub):6
+------> unit test-hub<HERE> Test::Async::Hub;
+Malformed unit
+at /home/coke/sandbox/blin/installed/Test::Async_zef:vrurg_0.1.17_0.1.2/sources/AAA72E49F02EF7E865B8E9CCEB09A3AA13D7F2B1 (Test::Async::Hub):6
+------> unit<HERE> test-hub Test::Async::Hub;
+
+
+at /home/coke/sandbox/blin/installed/Test::Async_zef:vrurg_0.1.17_0.1.2/sources/7E7864271E963232F49BFD2612559D33B8270D1B (Test::Async):8
+------> <BOL><HERE>use Test::Async::Hub;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Test::Async_zef:vrurg_0.1.17_0.1.2/sources/7E7864271E963232F49BFD2612559D33B8270D1B (Test::Async)
+===SORRY!===
+Type 'test-hub' is not declared
+at /home/coke/sandbox/blin/installed/Test::Async_zef:vrurg_0.1.17_0.1.2/sources/AAA72E49F02EF7E865B8E9CCEB09A3AA13D7F2B1 (Test::Async::Hub):6
+------> unit test-hub<HERE> Test::Async::Hub;
+Malformed unit
+at /home/coke/sandbox/blin/installed/Test::Async_zef:vrurg_0.1.17_0.1.2/sources/AAA72E49F02EF7E865B8E9CCEB09A3AA13D7F2B1 (Test::Async::Hub):6
+------> unit<HERE> test-hub Test::Async::Hub;
+
+
+at /home/coke/sandbox/blin/installed/Test::Async_zef:vrurg_0.1.17_0.1.2/sources/7E7864271E963232F49BFD2612559D33B8270D1B (Test::Async):8
+------> <BOL><HERE>use Test::Async::Hub;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 4min 5.372s
+             CPU time consumed: 4min 34.289s
+                   Memory peak: 2.1G (swap: 0B)
