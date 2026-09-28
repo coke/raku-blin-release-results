@@ -1,14 +1,14 @@
-Running as unit: run-p510463-i4709402.service; invocation ID: 064ec0ab242645d3a0acc9e70f98d1c2
+Running as unit: run-p1466986-i5694832.service; invocation ID: 93dda81b576847669fd07071d9ed51a8
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: BioInfo
 ===> Found: BioInfo:ver<0.4.3> [via Zef::Repository::Ecosystems<rea>]
-[BioInfo] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790475799.510468.4828.518864416902/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/B/BioInfo/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz
-===> Fetching [OK]: BioInfo:ver<0.4.3> to /home/coke/sandbox/blin/data/zef-data/tmp/1790475799.510468.4828.518864416902/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz
+[BioInfo] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790559508.1467000.5893.067767834179/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/B/BioInfo/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz
+===> Fetching [OK]: BioInfo:ver<0.4.3> to /home/coke/sandbox/blin/data/zef-data/tmp/1790559508.1467000.5893.067767834179/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz
 [BioInfo] Command: tar -t -f ./BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz
 [BioInfo] Command: tar -xvf ./BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz -C ../BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz
 ===> Extraction [OK]: BioInfo to /home/coke/sandbox/blin/data/zef-data/tmp/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz
 ===> Testing: BioInfo:ver<0.4.3>
-[BioInfo] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz/BioInfo-master t/sequences.t
+[BioInfo] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz/BioInfo-master t/sequences.t
 [BioInfo] 1..13
 [BioInfo] ok 1 - Created DNA Seq successfully.
 [BioInfo] ok 2 - String coerced Seq produces FASTA output.
@@ -23,7 +23,7 @@ Press ^] three times within 1s to disconnect TTY.
 [BioInfo] ok 11 - 6frame translating produces six Amino acid sequences, upto one for each frame.
 [BioInfo] ok 12 - 6frame breaking-on-stop translating produces the necessary number of sequence objects.
 [BioInfo] ok 13 - 6frame breaking-on-stop and filtering by min-length correct number of sequence objects.
-[BioInfo] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz/BioInfo-master t/slang.t
+[BioInfo] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/BioInfo%3Aver%3C0.4.3%3E%3Aauth%3Cgithub%3AMattOates%3E.tar.gz/BioInfo-master t/slang.t
 [BioInfo] ===SORRY!===
 [BioInfo] Cannot find method 'to-begin-time' on object of type QAST::Op
 ===> Testing [FAIL]: BioInfo:ver<0.4.3>
@@ -32,6 +32,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for BioInfo:ver<0.4.3>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 2min 31.947s
-             CPU time consumed: 2min 36.319s
-                   Memory peak: 2G (swap: 2.3M)
+               Service runtime: 2min 23.359s
+             CPU time consumed: 2min 33.521s
+                   Memory peak: 2G (swap: 260K)

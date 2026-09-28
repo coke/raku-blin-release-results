@@ -141,7 +141,7 @@ App::MoarVM::HeapAnalyzer::Model – OK
 App::ModuleSnap – AlwaysFail
 App::Moneymoor – AlwaysFail
 App::Nopaste – AlwaysFail
-App::OrgSleep – Fail, Bisected: 6dba1ec5028d569a05c779c5fb85eaa8bcee3e12
+App::OrgSleep – OK
 App::P6Dx – AlwaysFail
 App::P6Ghq – OK
 App::Perl6LangServer – MissingDependency
@@ -450,17 +450,17 @@ Cro::HTTP::Session::Redis – AlwaysFail
 Cro::HTTP::Session::SQLite – AlwaysFail
 Cro::HTTP::Test – OK
 Cro::OpenAPI::RoutesFromDefinition – OK
-Cro::RPC::JSON – ZefFailure
+Cro::RPC::JSON – AlwaysFail
 Cro::SSL – AlwaysFail
 Cro::TLS – OK
 Cro::WebApp – OK
 Cro::WebApp::Evaluate – AlwaysFail
 Cro::WebSocket – OK
-Cro::ZeroMQ – AlwaysFail
+Cro::ZeroMQ – ZefFailure
 CroX::HTTP::Auth::Munge – AlwaysFail
 CroX::HTTP::FallbackPassthru – AlwaysFail
 CroX::HTTP::Transform::GraphQL – AlwaysFail
-Crolite – AlwaysFail
+Crolite – OK
 Cromponent – AlwaysFail
 Cromtit – OK
 Crust – AlwaysFail
@@ -593,7 +593,7 @@ DateTime::Location – OK
 DateTime::Monotonic – OK
 DateTime::Parse – OK
 DateTime::Posix – OK
-DateTime::React – OK
+DateTime::React – Fail, Bisected: 75efc97ca1d58596840c6b47c1b9cf0d84b02a27
 DateTime::TimeZone – OK
 DateTime::Timezones – OK
 DateTime::US – OK
@@ -792,7 +792,7 @@ GEOS – AlwaysFail
 GGE – AlwaysFail
 GIO – Fail, Bisected: 6357ccf97f2c4b1dd1067bf4f50b6cdcfdb78373
 GLFW – OK
-GLib – AlwaysFail
+GLib – Fail, Bisected: 6357ccf97f2c4b1dd1067bf4f50b6cdcfdb78373
 GNU::Time – OK
 GOTO – AlwaysFail
 GPGME – AlwaysFail
@@ -1072,7 +1072,7 @@ Inline::Brainfuck – OK
 Inline::Go – AlwaysFail
 Inline::J – AlwaysFail
 Inline::Lua – AlwaysFail
-Inline::Perl5 – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
+Inline::Perl5 – OK
 Inline::Python – AlwaysFail
 Inline::Python3 – AlwaysFail
 Inline::Ruby – AlwaysFail
@@ -1138,9 +1138,9 @@ JavaScript::Google::Charts – OK
 JavaScript::SpiderMonkey – AlwaysFail
 JobQueue – OK
 JsonC – AlwaysFail
-Jupyter::Chatbook – ZefFailure
+Jupyter::Chatbook – Fail, Bisected: e15f6bc691bb0c420f1462ec2afc978163a06c3b
 Jupyter::Converter – OK
-Jupyter::Kernel – ZefFailure
+Jupyter::Kernel – AlwaysFail
 KHPH – OK
 Kains – AlwaysFail
 Karabiner::CompModGenerator – AlwaysFail
@@ -1295,7 +1295,7 @@ Lumberjack::Config::JSON – AlwaysFail
 Lumberjack::Dispatcher::EventSource – AlwaysFail
 Lumberjack::Dispatcher::Syslog – OK
 Lumberjack::Message::JSON – AlwaysFail
-MCP – AlwaysFail
+MCP – Flapper
 MCP::Server::Tool::Ask – AlwaysFail
 MCP::Server::Tool::FileSystem – AlwaysFail
 MCP::Server::Tool::Shell – AlwaysFail
@@ -1553,7 +1553,7 @@ OO::Actors – OK
 OO::Monitors – OK
 OO::Plugin – AlwaysFail
 OO::Schema – AlwaysFail
-ORM::ActiveRecord – AlwaysFail
+ORM::ActiveRecord – ZefFailure
 ORM::Factory – AlwaysFail
 Object::Container – OK
 Object::Delayed – AlwaysFail
@@ -1647,7 +1647,7 @@ PDF::ISO_32000_2 – OK
 PDF::Labelmaker – OK
 PDF::Lite – OK
 PDF::NameTags – AlwaysFail
-PDF::Native – Fail, Bisected: fdde48d8dae52c0ff545afdc1eba4bec10946564
+PDF::Native – OK
 PDF::Tags – OK
 PDF::Tags::Reader – OK
 PDF::To::Cairo – OK
@@ -1732,7 +1732,7 @@ Pod::To::Latex – AlwaysFail
 Pod::To::Man – OK
 Pod::To::Markdown – AlwaysFail
 Pod::To::PDF – OK
-Pod::To::PDF::Lite – OK
+Pod::To::PDF::Lite – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 Pod::To::Pager – OK
 Pod::To::Raku – OK
 Pod::TreeWalker – OK
@@ -2017,11 +2017,11 @@ Stache – OK
 Stache – OK
 Staticish – OK
 Statistics – AlwaysFail
-Statistics::Distributions – AlwaysFail
+Statistics::Distributions – OK
 Statistics::LinearRegression – OK
 Statistics::OutlierIdentifiers – OK
 Stats – OK
-Stomp – ZefFailure
+Stomp – Flapper
 Storable::Lite – OK
 Stream::Buffered – OK
 StrictClass – OK
@@ -2077,7 +2077,7 @@ T – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 TAP – OK
 TAP – OK
 TCC – AlwaysFail
-TCP::LowLevel – ZefFailure
+TCP::LowLevel – OK
 TOML – OK
 TOML::Thumb – OK
 TOP – AlwaysFail
@@ -2127,7 +2127,7 @@ Terminal::Gauge – AlwaysFail
 Terminal::Getpass – OK
 Terminal::Graphing::BarChart – AlwaysFail
 Terminal::LineEditor – OK
-Terminal::MultiProgress – Fail, Bisected: fdde48d8dae52c0ff545afdc1eba4bec10946564
+Terminal::MultiProgress – OK
 Terminal::Print – OK
 Terminal::QuickCharts – OK
 Terminal::ReadKey – OK
@@ -2136,12 +2136,12 @@ Terminal::Size – OK
 Terminal::Spinners – OK
 Terminal::Table – OK
 Terminal::Tests – OK
-Terminal::UI – ZefFailure
+Terminal::UI – OK
 Terminal::WCWidth – OK
 Terminal::Widgets – OK
 Terminal::Width – AlwaysFail
 Test::Assertion – OK
-Test::Async – Fail, Bisected: fcdcdeead4b3c60dab98c1cea416a2c0f9a0cc8a
+Test::Async – AlwaysFail
 Test::Base – AlwaysFail
 Test::Builder – OK
 Test::Class – OK
@@ -2174,7 +2174,7 @@ Test::Script::Output – OK
 Test::Selector – OK
 Test::SourceFiles – OK
 Test::Stream – OK
-Test::Time – OK
+Test::Time – ZefFailure
 Test::Util::ServerPort – OK
 Test::When – OK
 TestML – OK
@@ -2354,7 +2354,7 @@ WWW – AlwaysFail
 WWW--CloudHosting--Hetzner – OK
 WWW::CloudHosting::Hetzner – AlwaysFail
 WWW::DuckDuckGo – OK
-WWW::GCloud – Flapper
+WWW::GCloud – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 WWW::GCloud::API::Storage – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 WWW::GCloud::API::Vision – Fail, Bisected: f0a24041462ebd6979a8648ccb2954b3348dbcb0
 WWW::Gemini – OK
@@ -2389,7 +2389,7 @@ WebDriver2 – OK
 WebService::AWS::Auth::V4 – OK
 WebService::AWS::S3 – OK
 WebService::Discourse – OK
-WebService::FootballData – ZefFailure
+WebService::FootballData – AlwaysFail
 WebService::GitHub – AlwaysFail
 WebService::Google::PageRank – OK
 WebService::GoogleDyDNS – OK
@@ -2464,7 +2464,7 @@ caelum – OK
 cmark::Simple – AlwaysFail
 colomon::App::TagTools – OK
 content-storage-cli – OK
-cro – ZefFailure
+cro – AlwaysFail
 delete-old-until-size – OK
 deredere – OK
 dosh – AlwaysFail

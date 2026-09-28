@@ -1,0 +1,241 @@
+Running as unit: run-p1822897-i6003508.service; invocation ID: 2f51f04877ef49789f69a0e3c1a50369
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Jupyter::Chatbook
+===> Found: Jupyter::Chatbook:ver<0.3.9>:auth<zef:antononcube>:api<1> [via Zef::Repository::Ecosystems<fez>]
+[Jupyter::Chatbook] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790569832.1822898.9702.206861732984/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz https://360.zef.pm/J/UP/JUPYTER_CHATBOOK/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz
+===> Fetching [OK]: Jupyter::Chatbook:ver<0.3.9>:auth<zef:antononcube>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790569832.1822898.9702.206861732984/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz
+[Jupyter::Chatbook] Command: tar -t -f ./08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz
+[Jupyter::Chatbook] Command: tar -xvf ./08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz -C ../08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz
+===> Extraction [OK]: Jupyter::Chatbook to /home/coke/sandbox/blin/data/zef-data/tmp/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz
+===> Testing: Jupyter::Chatbook:ver<0.3.9>:auth<zef:antononcube>:api<1>
+[Jupyter::Chatbook] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz/dist t/01-basic.rakutest
+[Jupyter::Chatbook] 1..1
+[Jupyter::Chatbook] Potential difficulties:
+[Jupyter::Chatbook]     Missing declarand for trailing declarator doc
+[Jupyter::Chatbook]     at /home/coke/sandbox/blin/data/zef-data/tmp/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz/dist/lib/Jupyter/Chatbook/Handler.rakumod (Jupyter::Chatbook::Handler):1
+[Jupyter::Chatbook]     ------> exical variable container for completion<HERE><EOL>
+[Jupyter::Chatbook] Potential difficulties:
+[Jupyter::Chatbook]     Missing declarand for trailing declarator doc
+[Jupyter::Chatbook]     at /home/coke/sandbox/blin/data/zef-data/tmp/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz/dist/lib/Jupyter/Chatbook/Sandbox/Autocomplete.rakumod (Jupyter::Chatbook::Sandbox::Autocomplete):1
+[Jupyter::Chatbook]     ------> #= Autocompletion for the sandbox.<HERE><EOL>
+[Jupyter::Chatbook] ok 1 - Jupyter::Chatbook module can be use-d ok
+[Jupyter::Chatbook] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz/dist t/02-sandbox.rakutest
+[Jupyter::Chatbook] 1..54
+[Jupyter::Chatbook] Welcome to Rakudo™ v2026.08.
+[Jupyter::Chatbook] Implementing the Raku® Programming Language v6.d.
+[Jupyter::Chatbook] Built on MoarVM version 2026.08.
+[Jupyter::Chatbook] ok 1 - make a new sandbox
+[Jupyter::Chatbook] ok 2 - simple eval
+[Jupyter::Chatbook] ok 3 - stringify
+[Jupyter::Chatbook] ok 4 - made a var
+[Jupyter::Chatbook] ok 5 - saved state
+[Jupyter::Chatbook] ok 6 - no output, sent to stdout
+[Jupyter::Chatbook] ok 7 - right value on stdout
+[Jupyter::Chatbook] ok 8 - not incomplete
+[Jupyter::Chatbook] ok 9 - right mime-type on stdout
+[Jupyter::Chatbook] ok 10 - no output, sent to stderr
+[Jupyter::Chatbook] ok 11 - correct value on stderr
+[Jupyter::Chatbook] ok 12 - caught exception
+[Jupyter::Chatbook] ok 13 - error message
+[Jupyter::Chatbook] ok 14 - error message somewhat useful
+[Jupyter::Chatbook] ok 15 - exception type
+[Jupyter::Chatbook] ok 16 - identified incomplete input
+[Jupyter::Chatbook] ok 17 - made an array
+[Jupyter::Chatbook] ok 18 - array
+[Jupyter::Chatbook] ok 19 - bound an array
+[Jupyter::Chatbook] ok 20 - bound array
+[Jupyter::Chatbook] ok 21 - mime type
+[Jupyter::Chatbook] ok 22 - generated svg on stdout
+[Jupyter::Chatbook] ok 23 - svg mime type on stdout
+[Jupyter::Chatbook] ok 24 - generated svg output
+[Jupyter::Chatbook] ok 25 - svg output mime type
+[Jupyter::Chatbook] ok 26 - Any works
+[Jupyter::Chatbook] ok 27 - Die trapped
+[Jupyter::Chatbook] ok 28 - trapped sub call that died
+[Jupyter::Chatbook] ok 29 - store eval in Out[1]
+[Jupyter::Chatbook] ok 30 - get Out[1]
+[Jupyter::Chatbook] ok 31 - get _2
+[Jupyter::Chatbook] ok 32 - get _
+[Jupyter::Chatbook] ok 33 - two statements
+[Jupyter::Chatbook] ok 34 - two statements
+[Jupyter::Chatbook] ok 35 - saved the right thing
+[Jupyter::Chatbook] ok 36 - used _ in an expression
+[Jupyter::Chatbook] ok 37 - class decl
+[Jupyter::Chatbook] ok 38 - class decl
+[Jupyter::Chatbook] ok 39 - no-persist a class
+[Jupyter::Chatbook] ok 40 - Produced output when ending with a comment
+[Jupyter::Chatbook] ok 41 - got right output when ending with a comment
+[Jupyter::Chatbook] ok 42 - still here
+[Jupyter::Chatbook] ok 43 - Any becomes Nil
+[Jupyter::Chatbook] ok 44 - Nil becomes Nil
+[Jupyter::Chatbook] ok 45 - say becomes Nil
+[Jupyter::Chatbook] ok 46 - Output from a type (undefined)
+[Jupyter::Chatbook] ok 47 - No output for multiple say's
+[Jupyter::Chatbook] ok 48 - right stdout for multiple say's
+[Jupyter::Chatbook] ok 49 - survived exception
+[Jupyter::Chatbook] ok 50 - trapped 1/0 error
+[Jupyter::Chatbook] ok 51 - Operator: test-op
+[Jupyter::Chatbook] ok 52 - Operator: test-op
+[Jupyter::Chatbook] not ok 53 - Slang: use
+[Jupyter::Chatbook] # Failed test 'Slang: use'
+[Jupyter::Chatbook] # at t/02-sandbox.rakutest line 139
+[Jupyter::Chatbook] # expected: 'test is nice'
+[Jupyter::Chatbook] #      got: 'Cannot find method 'to-begin-time' on object of type QAST::SVal'
+[Jupyter::Chatbook] not ok 54 - Slang: persistance
+[Jupyter::Chatbook] # Failed test 'Slang: persistance'
+[Jupyter::Chatbook] # at t/02-sandbox.rakutest line 140
+[Jupyter::Chatbook] # expected: 'test is nice'
+[Jupyter::Chatbook] #      got: 'Undeclared routine:
+[Jupyter::Chatbook] #     what-is-test used at line 2
+[Jupyter::Chatbook] # '
+[Jupyter::Chatbook] # You failed 2 tests of 54
+[Jupyter::Chatbook] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz/dist t/03-service.rakutest
+[Jupyter::Chatbook] 1..5
+[Jupyter::Chatbook] ok 1 - setup worked
+[Jupyter::Chatbook] ok 2 - setup worked for dealer
+[Jupyter::Chatbook] ok 3 - router-dealer message sent and received
+[Jupyter::Chatbook] ok 4 - router-dealer message sent and received
+[Jupyter::Chatbook] ok 5 - router-dealer message sent and received
+[Jupyter::Chatbook] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz/dist t/04-completions.rakutest
+[Jupyter::Chatbook] 1..0 # Skipped: Set P6_JUPYTER_TEST_AUTOCOMPLETE to run these
+[Jupyter::Chatbook] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz/dist t/05-autocomplete.rakutest
+[Jupyter::Chatbook] # Completion: bare word
+[Jupyter::Chatbook] ok 1 - print
+[Jupyter::Chatbook] ok 2 - found set ops
+[Jupyter::Chatbook] ok 3 - found set ops in the middle
+[Jupyter::Chatbook] ok 4 - right position
+[Jupyter::Chatbook] ok 5 - found set ops
+[Jupyter::Chatbook] ok 6 - got some exponents
+[Jupyter::Chatbook] ok 7 - multiplication
+[Jupyter::Chatbook] ok 8 - less than
+[Jupyter::Chatbook] ok 9 - got some atomic ops
+[Jupyter::Chatbook] ok 10 - atomic ops contains ⚛= ⚛
+[Jupyter::Chatbook] # Completion: named parameter
+[Jupyter::Chatbook] ok 11 - got some beer
+[Jupyter::Chatbook] ok 12 - beer contains🍺 and 🍻 
+[Jupyter::Chatbook] ok 13 - got right start
+[Jupyter::Chatbook] ok 14 - got right end
+[Jupyter::Chatbook] # Completion: named parameter
+[Jupyter::Chatbook] ok 15 - 30 or fewer results
+[Jupyter::Chatbook] # Completion: named parameter
+[Jupyter::Chatbook] ok 16 - found less-than
+[Jupyter::Chatbook] # Completion: named parameter
+[Jupyter::Chatbook] ok 17 - found ≤
+[Jupyter::Chatbook] # Completion: bare word
+[Jupyter::Chatbook] ok 18 - found π
+[Jupyter::Chatbook] # Completion: bare word
+[Jupyter::Chatbook] ok 19 - found π
+[Jupyter::Chatbook] # Completion: bare word
+[Jupyter::Chatbook] ok 20 - found τ
+[Jupyter::Chatbook] # Completion: bare word
+[Jupyter::Chatbook] ok 21 - found ∞
+[Jupyter::Chatbook] 1..21
+[Jupyter::Chatbook] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz/dist t/06-magic.rakutest
+[Jupyter::Chatbook] 1..56
+[Jupyter::Chatbook] ok 1 - no magic
+[Jupyter::Chatbook] ok 2 - preprocess recognized %% javascript
+[Jupyter::Chatbook] ok 3 - find-magic removed magic line
+[Jupyter::Chatbook] ok 4 - js magic set the mime type
+[Jupyter::Chatbook] ok 5 - find-magic recognized %% latex
+[Jupyter::Chatbook] ok 6 - find-magic removed magic line
+[Jupyter::Chatbook] ok 7 - preprocess did not return a result
+[Jupyter::Chatbook] ok 8 - preprocess did not change code
+[Jupyter::Chatbook] ok 9 - latex magic set the output mime type
+[Jupyter::Chatbook] ok 10 - find-magic recognized %% latex(equation*)
+[Jupyter::Chatbook] ok 11 - find-magic removed magic line
+[Jupyter::Chatbook] ok 12 - preprocess did not return a result
+[Jupyter::Chatbook] ok 13 - preprocess did not change code
+[Jupyter::Chatbook] ok 14 - latex magic set the output mime type
+[Jupyter::Chatbook] ok 15 - latex magic enclosed the output
+[Jupyter::Chatbook] ok 16 - find-magic recognized %% html
+[Jupyter::Chatbook] ok 17 - find-magic removed magic line
+[Jupyter::Chatbook] ok 18 - preprocess did not return a result
+[Jupyter::Chatbook] ok 19 - html magic set the output mime type
+[Jupyter::Chatbook] ok 20 - html unchanged
+[Jupyter::Chatbook] ok 21 - stdout is text/plain
+[Jupyter::Chatbook] ok 22 - stdout worked
+[Jupyter::Chatbook] ok 23 - find-magic recognized %% html
+[Jupyter::Chatbook] ok 24 - find-magic removed magic line
+[Jupyter::Chatbook] ok 25 - preprocess did not return a result
+[Jupyter::Chatbook] ok 26 - html magic did not set output mime type
+[Jupyter::Chatbook] ok 27 - html unchanged
+[Jupyter::Chatbook] ok 28 - stdout is text/html
+[Jupyter::Chatbook] ok 29 - stdout worked
+[Jupyter::Chatbook] ok 30 - found magic for mime
+[Jupyter::Chatbook] ok 31 - right magic
+[Jupyter::Chatbook] ok 32 - preprocess does not return true
+[Jupyter::Chatbook] ok 33 - postprocess returned a result
+[Jupyter::Chatbook] ok 34 - set output mime type
+[Jupyter::Chatbook] ok 35 - set stdout mime type
+[Jupyter::Chatbook] ok 36 - generated html output
+[Jupyter::Chatbook] ok 37 - but latex on stdout
+[Jupyter::Chatbook] ok 38 - generated latex output
+[Jupyter::Chatbook] ok 39 - but html on stdout
+[Jupyter::Chatbook] ok 40 - generated latex output
+[Jupyter::Chatbook] ok 41 - but html on stdout
+[Jupyter::Chatbook] ok 42 - found bash magic
+[Jupyter::Chatbook] ok 43 - got output
+[Jupyter::Chatbook] ok 44 - got right mime type
+[Jupyter::Chatbook] ok 45 - found bash magic
+[Jupyter::Chatbook] ok 46 - no output
+[Jupyter::Chatbook] ok 47 - got right mime type
+[Jupyter::Chatbook] ok 48 - errors on stdout
+[Jupyter::Chatbook] ok 49 - found run magic
+[Jupyter::Chatbook] ok 50 - no return value from preprocess
+[Jupyter::Chatbook] ok 51 - Cell now has code
+[Jupyter::Chatbook] ok 52 - found run magic
+[Jupyter::Chatbook] ok 53 - no return value from preprocess
+[Jupyter::Chatbook] ok 54 - Cell now has more code
+[Jupyter::Chatbook] ok 55 - Handled missing file
+[Jupyter::Chatbook] ok 56 - error message
+[Jupyter::Chatbook] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz/dist t/07-comms.rakutest
+[Jupyter::Chatbook] 1..11
+[Jupyter::Chatbook] ok 1 - made comm manager
+[Jupyter::Chatbook] ok 2 - made a comm
+[Jupyter::Chatbook] ok 3 - received message back from comm
+[Jupyter::Chatbook] ok 4 - made a comm
+[Jupyter::Chatbook] ok 5 - comm with no data
+[Jupyter::Chatbook] ok 6 - made a comm
+[Jupyter::Chatbook] ok 7 - received message back from comm
+[Jupyter::Chatbook] ok 8 - List comms
+[Jupyter::Chatbook] ok 9 - 3 ids
+[Jupyter::Chatbook] ok 10 - made a comm
+[Jupyter::Chatbook] ok 11 - in and out for comm
+[Jupyter::Chatbook] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz/dist t/08-paths.rakutest
+[Jupyter::Chatbook] 1..1
+[Jupyter::Chatbook] ok 1 - text matches /:i jupyter/
+[Jupyter::Chatbook] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz/dist t/09-history.rakutest
+[Jupyter::Chatbook] 1..7
+[Jupyter::Chatbook] ok 1 - made a history object
+[Jupyter::Chatbook] ok 2 - init
+[Jupyter::Chatbook] # opening history file /tmp/history-test.json
+[Jupyter::Chatbook] ok 3 - nothing there yet
+[Jupyter::Chatbook] ok 4 - append
+[Jupyter::Chatbook] ok 5 - read the history
+[Jupyter::Chatbook] ok 6 - append
+[Jupyter::Chatbook] ok 7 - read the history
+[Jupyter::Chatbook] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz/dist t/20-end-to-end.rakutest
+[Jupyter::Chatbook] 1..0 # Skipped: Set P6_JUPYTER_TEST_END_TO_END to run these
+[Jupyter::Chatbook] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/08e9607c769c37fb84c1ff617210e87a94ffa94d.tar.gz/dist t/99-meta.rakutest
+[Jupyter::Chatbook] 1..1
+[Jupyter::Chatbook] ok 1 - # SKIP Skipping author test
+===> Testing [FAIL]: Jupyter::Chatbook:ver<0.3.9>:auth<zef:antononcube>:api<1>
+[Jupyter::Chatbook] Failed to get passing tests, but continuing with --force-test
+===> Installing: Jupyter::Chatbook:ver<0.3.9>:auth<zef:antononcube>:api<1>
+Potential difficulties:
+    Missing declarand for trailing declarator doc
+    at /home/coke/sandbox/blin/installed/Jupyter::Chatbook_zef:antononcube_0.3.9_1/sources/0F69850E604EB3FD6FE92B5C91AE0223AA61DC62 (Jupyter::Chatbook::Handler):1
+    ------> exical variable container for completion<HERE><EOL>
+Potential difficulties:
+    Missing declarand for trailing declarator doc
+    at /home/coke/sandbox/blin/installed/Jupyter::Chatbook_zef:antononcube_0.3.9_1/sources/EEE4D7B143F304B6BFC64DED3E4638D9803217B3 (Jupyter::Chatbook::Sandbox::Autocomplete):1
+    ------> #= Autocompletion for the sandbox.<HERE><EOL>
+===> Install [OK] for Jupyter::Chatbook:ver<0.3.9>:auth<zef:antononcube>:api<1>
+
+1 bin/ script [jupyter-chatbook-raku] installed to:
+/home/coke/sandbox/blin/installed/Jupyter::Chatbook_zef:antononcube_0.3.9_1/bin
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 5min 13.530s
+             CPU time consumed: 4min 52.178s
+                   Memory peak: 2G (swap: 52.1M)

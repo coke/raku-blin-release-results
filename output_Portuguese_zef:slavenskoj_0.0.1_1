@@ -1,9 +1,9 @@
-Running as unit: run-p377514-i4480574.service; invocation ID: 4e57e6b9fe3d4672aa5148d6be66700c
+Running as unit: run-p1340235-i5520990.service; invocation ID: 2f8bfda2581e4111848b31a942587850
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Portuguese
 ===> Found: Portuguese:ver<0.0.1>:auth<zef:slavenskoj>:api<1> [via Zef::Repository::Ecosystems<fez>]
-[Portuguese] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790472109.377517.2852.8803980105167/9d2c01348f256b1b53ece0e6251d147addd50cf9.tar.gz https://360.zef.pm/P/OR/PORTUGUESE/9d2c01348f256b1b53ece0e6251d147addd50cf9.tar.gz
-===> Fetching [OK]: Portuguese:ver<0.0.1>:auth<zef:slavenskoj>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790472109.377517.2852.8803980105167/9d2c01348f256b1b53ece0e6251d147addd50cf9.tar.gz
+[Portuguese] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790555870.1340238.6452.8162971280935/9d2c01348f256b1b53ece0e6251d147addd50cf9.tar.gz https://360.zef.pm/P/OR/PORTUGUESE/9d2c01348f256b1b53ece0e6251d147addd50cf9.tar.gz
+===> Fetching [OK]: Portuguese:ver<0.0.1>:auth<zef:slavenskoj>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1790555870.1340238.6452.8162971280935/9d2c01348f256b1b53ece0e6251d147addd50cf9.tar.gz
 [Portuguese] Command: tar -t -f ./9d2c01348f256b1b53ece0e6251d147addd50cf9.tar.gz
 [Portuguese] Command: tar -xvf ./9d2c01348f256b1b53ece0e6251d147addd50cf9.tar.gz -C ../9d2c01348f256b1b53ece0e6251d147addd50cf9.tar.gz
 ===> Extraction [OK]: Portuguese to /home/coke/sandbox/blin/data/zef-data/tmp/9d2c01348f256b1b53ece0e6251d147addd50cf9.tar.gz
@@ -38,6 +38,6 @@ at /home/coke/sandbox/blin/installed/Portuguese_zef:slavenskoj_0.0.1_1/sources/F
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 2min 7.324s
-             CPU time consumed: 2min 9.124s
-                   Memory peak: 1015.4M (swap: 7.9M)
+               Service runtime: 2min 3.576s
+             CPU time consumed: 2min 6.931s
+                   Memory peak: 1G (swap: 0B)

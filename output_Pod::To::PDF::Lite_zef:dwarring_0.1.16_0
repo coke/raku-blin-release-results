@@ -1,0 +1,16 @@
+Running as unit: run-p1811949-i5999445.service; invocation ID: 184a7a2eb76b411880656654330bcc62
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Pod::To::PDF::Lite
+===> Found: Pod::To::PDF::Lite:ver<0.1.16>:auth<zef:dwarring> [via Zef::Repository::Ecosystems<fez>]
+[Pod::To::PDF::Lite] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790569417.1811950.3598.9597141668473/4d11725c353051348c4d493720cb260a741c4476.tar.gz https://360.zef.pm/P/OD/POD_TO_PDF_LITE/4d11725c353051348c4d493720cb260a741c4476.tar.gz
+===> Fetching [OK]: Pod::To::PDF::Lite:ver<0.1.16>:auth<zef:dwarring> to /home/coke/sandbox/blin/data/zef-data/tmp/1790569417.1811950.3598.9597141668473/4d11725c353051348c4d493720cb260a741c4476.tar.gz
+[Pod::To::PDF::Lite] Command: tar -t -f ./4d11725c353051348c4d493720cb260a741c4476.tar.gz
+[Pod::To::PDF::Lite] Command: tar -xvf ./4d11725c353051348c4d493720cb260a741c4476.tar.gz -C ../4d11725c353051348c4d493720cb260a741c4476.tar.gz
+===> Extraction [OK]: Pod::To::PDF::Lite to /home/coke/sandbox/blin/data/zef-data/tmp/4d11725c353051348c4d493720cb260a741c4476.tar.gz
+===> Testing: Pod::To::PDF::Lite:ver<0.1.16>:auth<zef:dwarring>
+[Pod::To::PDF::Lite] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/4d11725c353051348c4d493720cb260a741c4476.tar.gz/Pod-To-PDF-Lite-0.1.16 t/code.t
+          Finished with result: oom-kill
+Main processes terminated with: code=killed, status=9/KILL
+               Service runtime: 3min 47.834s
+             CPU time consumed: 2min 13.385s
+                   Memory peak: 1.1G (swap: 426.7M)

@@ -1,30 +1,29 @@
-Running as unit: run-p393637-i4564537.service; invocation ID: 15502bcba759474380bf40b1cd2c5885
+Running as unit: run-p1356338-i5410798.service; invocation ID: 600702b46e8d468189a2274834ec2e53
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Slang::Predicate
 ===> Found: Slang::Predicate:ver<0.0.1>:auth<cpan:SAMGWISE> [via Zef::Repository::Ecosystems<rea>]
-[Slang::Predicate] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790472633.393642.1532.4903650559795/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/Slang%3A%3APredicate/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
-===> Fetching [OK]: Slang::Predicate:ver<0.0.1>:auth<cpan:SAMGWISE> to /home/coke/sandbox/blin/data/zef-data/tmp/1790472633.393642.1532.4903650559795/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
+[Slang::Predicate] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790556402.1356341.3169.609909346985/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/S/Slang%3A%3APredicate/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
+===> Fetching [OK]: Slang::Predicate:ver<0.0.1>:auth<cpan:SAMGWISE> to /home/coke/sandbox/blin/data/zef-data/tmp/1790556402.1356341.3169.609909346985/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
 [Slang::Predicate] Command: tar -t -f ./Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
 [Slang::Predicate] Command: tar -xvf ./Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz -C ../Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
 ===> Extraction [OK]: Slang::Predicate to /home/coke/sandbox/blin/data/zef-data/tmp/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz
 ===> Testing: Slang::Predicate:ver<0.0.1>
-[Slang::Predicate] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/Slang-Predicate-0.0.1 t/01-basic.t
+[Slang::Predicate] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/Slang-Predicate-0.0.1 t/01-basic.t
 [Slang::Predicate] ok 1 - Slang::Predicate module can be use-d ok
 [Slang::Predicate] ok 2 - T is True
 [Slang::Predicate] ok 3 - F is False
 [Slang::Predicate] ok 4 - T and F are usable like values (Positional).
 [Slang::Predicate] ok 5 - T is usable to test againts like a value.
 [Slang::Predicate] # ------------------------------------------------------------------------------
+[Slang::Predicate] # ------------------------------------------------------------------------------
 [Slang::Predicate] ok 6 - True ∨ True ⇔ True
 [Slang::Predicate] ok 7 - False ∨ True ⇔ True
 [Slang::Predicate] ok 8 - True ∨ False ⇔ True
 [Slang::Predicate] ok 9 - False ∨ False ⇔ False
-[Slang::Predicate] # ------------------------------------------------------------------------------
 [Slang::Predicate] ok 10 - True ∧ True ⇔ True
 [Slang::Predicate] ok 11 - False ∧ True ⇔ False
 [Slang::Predicate] ok 12 - True ∧ False ⇔ False
 [Slang::Predicate] ok 13 - False ∧ False ⇔ False
-[Slang::Predicate] # ------------------------------------------------------------------------------
 [Slang::Predicate] ok 14 - True ⊻ True ⇔ False
 [Slang::Predicate] ok 15 - True ⊕ True ⇔ False
 [Slang::Predicate] ok 16 - False ⊻ True ⇔ True
@@ -33,6 +32,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Slang::Predicate] ok 19 - True ⊕ False ⇔ True
 [Slang::Predicate] ok 20 - False ⊻ False ⇔ False
 [Slang::Predicate] ok 21 - False ⊕ False ⇔ False
+[Slang::Predicate] # ------------------------------------------------------------------------------
 [Slang::Predicate] # ------------------------------------------------------------------------------
 [Slang::Predicate] ok 22 - ¬True ⇔ False
 [Slang::Predicate] ok 23 - ¬False ⇔ True
@@ -70,8 +70,8 @@ Press ^] three times within 1s to disconnect TTY.
 [Slang::Predicate] # at t/01-basic.t line 87
 [Slang::Predicate] # expected: 'True'
 [Slang::Predicate] #      got: 'α	False'
-[Slang::Predicate] ok 39 - False ⊃ False ⇔ True
 [Slang::Predicate] # ------------------------------------------------------------------------------
+[Slang::Predicate] ok 39 - False ⊃ False ⇔ True
 [Slang::Predicate] ok 40 - True ↔ True ⇔ True
 [Slang::Predicate] ok 41 - True ⇔ True ⇔ True
 [Slang::Predicate] ok 42 - True ≡ True ⇔ True
@@ -86,7 +86,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Slang::Predicate] ok 51 - False ≡ False ⇔ True
 [Slang::Predicate] 1..51
 [Slang::Predicate] # You failed 4 tests of 51
-[Slang::Predicate] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/Slang-Predicate-0.0.1 t/10-expressions.t
+[Slang::Predicate] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Slang%3A%3APredicate%3Aver%3C0.0.1%3E%3Aauth%3Ccpan%3ASAMGWISE%3E.tar.gz/Slang-Predicate-0.0.1 t/10-expressions.t
 [Slang::Predicate] ok 1 - Conditional statment ⇔ conditional operator.
 [Slang::Predicate] ok 2 - Modus Ponens ⇔ Alternate spelling.
 [Slang::Predicate] ok 3 - Conditional statment ⇔ conditional operator.
@@ -102,6 +102,6 @@ Press ^] three times within 1s to disconnect TTY.
 ===> Install [OK] for Slang::Predicate:ver<0.0.1>
           Finished with result: success
 Main processes terminated with: code=exited, status=0/SUCCESS
-               Service runtime: 2min 24.403s
-             CPU time consumed: 2min 29.129s
+               Service runtime: 2min 30.063s
+             CPU time consumed: 2min 35.426s
                    Memory peak: 1.4G (swap: 0B)

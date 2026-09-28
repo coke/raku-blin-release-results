@@ -1,14 +1,14 @@
-Running as unit: run-p377415-i4609312.service; invocation ID: cc93eed36d5045bcb56d4163fea3d949
+Running as unit: run-p1340099-i5574845.service; invocation ID: 137990f32b804f16a08ba8a5831008a9
 Press ^] three times within 1s to disconnect TTY.
 ===> Searching for: Polyglot::Regexen
 ===> Found: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> [via Zef::Repository::Ecosystems<fez>]
-[Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790472106.377423.2396.1233414247595/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
-===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1790472106.377423.2396.1233414247595/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+[Polyglot::Regexen] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790555870.1340103.1715.9272131965974/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz https://360.zef.pm/P/OL/POLYGLOT_REGEXEN/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
+===> Fetching [OK]: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa> to /home/coke/sandbox/blin/data/zef-data/tmp/1790555870.1340103.1715.9272131965974/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
 [Polyglot::Regexen] Command: tar -t -f ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
 [Polyglot::Regexen] Command: tar -xvf ./17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz -C ../17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
 ===> Extraction [OK]: Polyglot::Regexen to /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz
 ===> Testing: Polyglot::Regexen:ver<0.1.0>:auth<zef:guifa>
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/00-sanity.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/00-sanity.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling t/00-sanity.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regexen.rakumod (Polyglot::Regexen)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions-Mixin.rakumod (Polyglot::Regex::ECMA262::Actions-Mixin)
@@ -27,15 +27,15 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 595
 [Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
 [Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
-[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions-Mixin.rakumod (Polyglot::Regex::ECMA262::Actions-Mixin):8
@@ -44,7 +44,7 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen] ------>     <HERE>use Polyglot::Regex::ECMA262::Actions-Mi
 [Polyglot::Regexen] at t/00-sanity.rakutest:3
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regexen;
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/01-literals.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/01-literals.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/01-literals.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
@@ -62,22 +62,22 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 595
 [Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
 [Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
-[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions;
 [Polyglot::Regexen] at t/ecma/01-literals.rakutest:4
 [Polyglot::Regexen] ------> <BOL><HERE>use Support;
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/02-character-classes.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/02-character-classes.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/02-character-classes.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
@@ -95,22 +95,22 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 595
 [Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
 [Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
-[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions;
 [Polyglot::Regexen] at t/ecma/02-character-classes.rakutest:4
 [Polyglot::Regexen] ------> <BOL><HERE>use Support;
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/03-alternation.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/03-alternation.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/03-alternation.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
@@ -128,22 +128,22 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 595
 [Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
 [Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
-[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions;
 [Polyglot::Regexen] at t/ecma/03-alternation.rakutest:4
 [Polyglot::Regexen] ------> <BOL><HERE>use Support;
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/04-assertions.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/04-assertions.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/04-assertions.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
@@ -161,22 +161,22 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 595
 [Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
 [Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
-[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions;
 [Polyglot::Regexen] at t/ecma/04-assertions.rakutest:4
 [Polyglot::Regexen] ------> <BOL><HERE>use Support;
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/05-quantifiers.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/05-quantifiers.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/05-quantifiers.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
@@ -194,22 +194,22 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 595
 [Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
 [Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
-[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions;
 [Polyglot::Regexen] at t/ecma/05-quantifiers.rakutest:4
 [Polyglot::Regexen] ------> <BOL><HERE>use Support;
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/06-captures.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/06-captures.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/06-captures.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
@@ -227,22 +227,22 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 595
 [Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
 [Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
-[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions;
 [Polyglot::Regexen] at t/ecma/06-captures.rakutest:4
 [Polyglot::Regexen] ------> <BOL><HERE>use Support;
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/07-unicode.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/07-unicode.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/07-unicode.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
@@ -260,22 +260,22 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 595
 [Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
 [Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
-[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions;
 [Polyglot::Regexen] at t/ecma/07-unicode.rakutest:4
 [Polyglot::Regexen] ------> <BOL><HERE>use Support;
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/08-modifiers.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/08-modifiers.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/08-modifiers.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
@@ -293,22 +293,22 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 595
 [Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
 [Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
-[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/t/ecma/Support.rakumod (Support):5
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions;
 [Polyglot::Regexen] at t/ecma/08-modifiers.rakutest:4
 [Polyglot::Regexen] ------> <BOL><HERE>use Support;
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/09-role.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/09-role.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/09-role.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Classes.rakumod (Polyglot::Regex::ECMA262::Classes)
@@ -325,20 +325,20 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 595
 [Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
 [Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
-[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at t/ecma/09-role.rakutest:3
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Actions:au
-[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/10-usage.rakutest
+[Polyglot::Regexen] Command: /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist t/ecma/10-usage.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling t/ecma/10-usage.rakutest
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regexen.rakumod (Polyglot::Regexen)
 [Polyglot::Regexen] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions-Mixin.rakumod (Polyglot::Regex::ECMA262::Actions-Mixin)
@@ -357,15 +357,15 @@ Press ^] three times within 1s to disconnect TTY.
 [Polyglot::Regexen]     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 595
 [Polyglot::Regexen]     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
 [Polyglot::Regexen]     in any to-begin-time at src/Raku/ast/base.rakumod line 133
-[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any type-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any package-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any scope-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Polyglot::Regexen]     in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions.rakumod (Polyglot::Regex::ECMA262::Actions):2
 [Polyglot::Regexen] ------> <BOL><HERE>use Polyglot::Regex::ECMA262::Classes;
 [Polyglot::Regexen] at /home/coke/sandbox/blin/data/zef-data/tmp/17071274ecb11bce167fcb8d42ae1a45eba739f5.tar.gz/dist/lib/Polyglot/Regex/ECMA262/Actions-Mixin.rakumod (Polyglot::Regex::ECMA262::Actions-Mixin):8
@@ -392,15 +392,15 @@ Exception details:
     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 595
     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
     in any to-begin-time at src/Raku/ast/base.rakumod line 133
-    in any type-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any package-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any scope-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any type-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any package-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any scope-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
 
 
 at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/BC6D3C1653A62CB7973AF2249F0997287ACC0612 (Polyglot::Regex::ECMA262::Actions):2
@@ -421,15 +421,15 @@ Exception details:
     in any PERFORM-BEGIN at src/Raku/ast/variable-declaration.rakumod line 595
     in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
     in any to-begin-time at src/Raku/ast/base.rakumod line 133
-    in any type-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any package-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any scope-declarator at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
-    in any term at /tmp/whateverable/rakudo-moar/fdde48d8dae52c0ff545afdc1eba4bec10946564/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any type-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term:sym<type-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any package-declarator:sym<module> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any package-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any scope-declarator:sym<unit> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any scope-declarator at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term:sym<scope-declarator> at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
+    in any term at /tmp/whateverable/rakudo-moar/e15f6bc691bb0c420f1462ec2afc978163a06c3b/share/perl6/lib/Raku/Grammar.moarvm line 1
 
 
 at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources/BC6D3C1653A62CB7973AF2249F0997287ACC0612 (Polyglot::Regex::ECMA262::Actions):2
@@ -437,6 +437,6 @@ at /home/coke/sandbox/blin/installed/Polyglot::Regexen_zef:guifa_0.1.0_0/sources
 
           Finished with result: exit-code
 Main processes terminated with: code=exited, status=1/FAILURE
-               Service runtime: 2min 29.214s
-             CPU time consumed: 2min 33.795s
-                   Memory peak: 1.4G (swap: 6.4M)
+               Service runtime: 2min 36.081s
+             CPU time consumed: 2min 39.024s
+                   Memory peak: 1.4G (swap: 0B)
