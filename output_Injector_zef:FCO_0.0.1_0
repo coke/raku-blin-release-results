@@ -1,0 +1,36 @@
+Running as unit: run-p526131-i8850637.service; invocation ID: ff8c33c659f040d48a725b95e3f6ed59
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Injector
+===> Found: Injector:ver<0.0.1>:auth<zef:FCO> [via Zef::Repository::Ecosystems<fez>]
+[Injector] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1790947351.526133.1061.059523232949/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz https://360.zef.pm/I/NJ/INJECTOR/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz
+===> Fetching [OK]: Injector:ver<0.0.1>:auth<zef:FCO> to /home/coke/sandbox/blin/data/zef-data/tmp/1790947351.526133.1061.059523232949/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz
+[Injector] Command: tar -t -f ./c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz
+[Injector] Command: tar -xvf ./c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz -C ../c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz
+===> Extraction [OK]: Injector to /home/coke/sandbox/blin/data/zef-data/tmp/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz
+===> Testing: Injector:ver<0.0.1>:auth<zef:FCO>
+[Injector] Command: /tmp/whateverable/rakudo-moar/8de7894122c342cd22a95f6af91365eed57ec846/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz/Injector-0.0.1 t/02-test.rakutest
+[Injector] ===SORRY!=== Error while compiling t/02-test.rakutest
+[Injector] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz/Injector-0.0.1/lib/Injector/Storage.rakumod (Injector::Storage)
+[Injector] multidimensional shaped hashes not yet implemented. Sorry.
+[Injector] at /home/coke/sandbox/blin/data/zef-data/tmp/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz/Injector-0.0.1/lib/Injector/Storage.rakumod (Injector::Storage):5
+[Injector] ------> has <HERE>%!bind{Str:D; Str:D; Str:D};
+[Injector] at t/02-test.rakutest:4
+[Injector] ------> <BOL><HERE>use Injector;
+===> Testing [FAIL]: Injector:ver<0.0.1>:auth<zef:FCO>
+[Injector] Failed to get passing tests, but continuing with --force-test
+===> Installing: Injector:ver<0.0.1>:auth<zef:FCO>
+===> Install [FAIL] for Injector:ver<0.0.1>:auth<zef:FCO>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Injector_zef:FCO_0.0.1_0/sources/3676574614DBE24DDE0F241F908B877548574CDB (Injector::Storage)
+multidimensional shaped hashes not yet implemented. Sorry.
+at /home/coke/sandbox/blin/installed/Injector_zef:FCO_0.0.1_0/sources/3676574614DBE24DDE0F241F908B877548574CDB (Injector::Storage):5
+------> has <HERE>%!bind{Str:D; Str:D; Str:D};
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Injector_zef:FCO_0.0.1_0/sources/3676574614DBE24DDE0F241F908B877548574CDB (Injector::Storage)
+multidimensional shaped hashes not yet implemented. Sorry.
+at /home/coke/sandbox/blin/installed/Injector_zef:FCO_0.0.1_0/sources/3676574614DBE24DDE0F241F908B877548574CDB (Injector::Storage):5
+------> has <HERE>%!bind{Str:D; Str:D; Str:D};
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 6.211s
+             CPU time consumed: 6.981s
+                   Memory peak: 1G (swap: 0B)
