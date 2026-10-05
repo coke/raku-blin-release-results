@@ -1,0 +1,77 @@
+Running as unit: run-p2756992-i11190696.service; invocation ID: 7610757f54604247b0999b2073d8c853
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Odoo::Client
+===> Found: Odoo::Client:ver<0.0.3> [via Zef::Repository::Ecosystems<rea>]
+[Odoo::Client] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791208638.2757036.2078.08523861427/Odoo%3A%3AClient%3Aver%3C0.0.3%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/O/Odoo%3A%3AClient/Odoo%3A%3AClient%3Aver%3C0.0.3%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz
+===> Fetching [OK]: Odoo::Client:ver<0.0.3> to /home/coke/sandbox/blin/data/zef-data/tmp/1791208638.2757036.2078.08523861427/Odoo%3A%3AClient%3Aver%3C0.0.3%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz
+[Odoo::Client] Command: tar -t -f ./Odoo%3A%3AClient%3Aver%3C0.0.3%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz
+[Odoo::Client] Command: tar -xvf ./Odoo%3A%3AClient%3Aver%3C0.0.3%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz -C ../Odoo%3A%3AClient%3Aver%3C0.0.3%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz
+===> Extraction [OK]: Odoo::Client to /home/coke/sandbox/blin/data/zef-data/tmp/Odoo%3A%3AClient%3Aver%3C0.0.3%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz
+===> Testing: Odoo::Client:ver<0.0.3>
+[Odoo::Client] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Odoo%3A%3AClient%3Aver%3C0.0.3%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz/raku-odoo-client-master t/01-sanity.rakutest
+[Odoo::Client] ===SORRY!=== Error while compiling t/01-sanity.rakutest
+[Odoo::Client] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/Odoo%3A%3AClient%3Aver%3C0.0.3%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz/raku-odoo-client-master/lib/Odoo/Client.rakumod (Odoo::Client)
+[Odoo::Client] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/JSON::RPC_zef:bbkr_1.0.6_0/sources/005DC5D720CB8E02FA09F93683D0AE19DA22FEC8 (JSON::RPC::Client)
+[Odoo::Client] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[Odoo::Client] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[Odoo::Client] ===SORRY!===
+[Odoo::Client] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Odoo::Client] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[Odoo::Client] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[Odoo::Client] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[Odoo::Client] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[Odoo::Client] at /home/coke/sandbox/blin/installed/JSON::RPC_zef:bbkr_1.0.6_0/sources/005DC5D720CB8E02FA09F93683D0AE19DA22FEC8 (JSON::RPC::Client):2
+[Odoo::Client] ------> <BOL><HERE>use HTTP::UserAgent;
+[Odoo::Client] at /home/coke/sandbox/blin/data/zef-data/tmp/Odoo%3A%3AClient%3Aver%3C0.0.3%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz/raku-odoo-client-master/lib/Odoo/Client.rakumod (Odoo::Client):2
+[Odoo::Client] ------> <BOL><HERE>use JSON::RPC::Client;
+[Odoo::Client] at t/01-sanity.rakutest:7
+[Odoo::Client] ------> <BOL><HERE>use Odoo::Client;
+[Odoo::Client] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Odoo%3A%3AClient%3Aver%3C0.0.3%3E%3Aauth%3Cgithub%3Aazawawi%3E.tar.gz/raku-odoo-client-master t/99-author-meta.rakutest
+[Odoo::Client] 1..1
+[Odoo::Client] ok 1 - # SKIP Skipping author test
+===> Testing [FAIL]: Odoo::Client:ver<0.0.3>
+[Odoo::Client] Failed to get passing tests, but continuing with --force-test
+===> Installing: Odoo::Client:ver<0.0.3>
+===> Install [FAIL] for Odoo::Client:ver<0.0.3>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Odoo::Client__0.0.3_0/sources/F3A6CF657BF5511429B8445F5F2D0CB3952517D4 (Odoo::Client)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/JSON::RPC_zef:bbkr_1.0.6_0/sources/005DC5D720CB8E02FA09F93683D0AE19DA22FEC8 (JSON::RPC::Client)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/JSON::RPC_zef:bbkr_1.0.6_0/sources/005DC5D720CB8E02FA09F93683D0AE19DA22FEC8 (JSON::RPC::Client):2
+------> <BOL><HERE>use HTTP::UserAgent;
+
+at /home/coke/sandbox/blin/installed/Odoo::Client__0.0.3_0/sources/F3A6CF657BF5511429B8445F5F2D0CB3952517D4 (Odoo::Client):2
+------> <BOL><HERE>use JSON::RPC::Client;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Odoo::Client__0.0.3_0/sources/F3A6CF657BF5511429B8445F5F2D0CB3952517D4 (Odoo::Client)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/JSON::RPC_zef:bbkr_1.0.6_0/sources/005DC5D720CB8E02FA09F93683D0AE19DA22FEC8 (JSON::RPC::Client)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/JSON::RPC_zef:bbkr_1.0.6_0/sources/005DC5D720CB8E02FA09F93683D0AE19DA22FEC8 (JSON::RPC::Client):2
+------> <BOL><HERE>use HTTP::UserAgent;
+
+at /home/coke/sandbox/blin/installed/Odoo::Client__0.0.3_0/sources/F3A6CF657BF5511429B8445F5F2D0CB3952517D4 (Odoo::Client):2
+------> <BOL><HERE>use JSON::RPC::Client;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1min 17.292s
+             CPU time consumed: 52.332s
+                   Memory peak: 1.9G (swap: 63.6M)

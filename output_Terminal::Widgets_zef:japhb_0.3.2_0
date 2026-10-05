@@ -1,0 +1,49 @@
+Running as unit: run-p2771117-i11175430.service; invocation ID: 38bcf6b765594f1c9d0fbd585036ba5f
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Terminal::Widgets
+===> Found: Terminal::Widgets:ver<0.3.2>:auth<zef:japhb> [via Zef::Repository::Ecosystems<fez>]
+[Terminal::Widgets] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791209027.2771131.7293.210013108458/56e26be85bf16b3e8778cabba90ab60a6a347005.tar.gz https://360.zef.pm/T/ER/TERMINAL_WIDGETS/56e26be85bf16b3e8778cabba90ab60a6a347005.tar.gz
+===> Fetching [OK]: Terminal::Widgets:ver<0.3.2>:auth<zef:japhb> to /home/coke/sandbox/blin/data/zef-data/tmp/1791209027.2771131.7293.210013108458/56e26be85bf16b3e8778cabba90ab60a6a347005.tar.gz
+[Terminal::Widgets] Command: tar -t -f ./56e26be85bf16b3e8778cabba90ab60a6a347005.tar.gz
+[Terminal::Widgets] Command: tar -xvf ./56e26be85bf16b3e8778cabba90ab60a6a347005.tar.gz -C ../56e26be85bf16b3e8778cabba90ab60a6a347005.tar.gz
+===> Extraction [OK]: Terminal::Widgets to /home/coke/sandbox/blin/data/zef-data/tmp/56e26be85bf16b3e8778cabba90ab60a6a347005.tar.gz
+===> Testing: Terminal::Widgets:ver<0.3.2>:auth<zef:japhb>
+[Terminal::Widgets] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/56e26be85bf16b3e8778cabba90ab60a6a347005.tar.gz/Terminal-Widgets-0.3.2 t/00-use.rakutest
+[Terminal::Widgets] ===SORRY!=== Error while compiling t/00-use.rakutest
+[Terminal::Widgets] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/56e26be85bf16b3e8778cabba90ab60a6a347005.tar.gz/Terminal-Widgets-0.3.2/lib/Terminal/Widgets/Terminal.rakumod (Terminal::Widgets::Terminal)
+[Terminal::Widgets] ===SORRY!===
+[Terminal::Widgets] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+[Terminal::Widgets] at /home/coke/sandbox/blin/data/zef-data/tmp/56e26be85bf16b3e8778cabba90ab60a6a347005.tar.gz/Terminal-Widgets-0.3.2/lib/Terminal/Widgets/Terminal.rakumod (Terminal::Widgets::Terminal):5
+[Terminal::Widgets] ------> <BOL><HERE>use Terminal::Print;
+[Terminal::Widgets] at t/00-use.rakutest:27
+[Terminal::Widgets] ------> <BOL><HERE>use Terminal::Widgets::Terminal;
+===> Testing [FAIL]: Terminal::Widgets:ver<0.3.2>:auth<zef:japhb>
+[Terminal::Widgets] Failed to get passing tests, but continuing with --force-test
+===> Installing: Terminal::Widgets:ver<0.3.2>:auth<zef:japhb>
+===> Install [FAIL] for Terminal::Widgets:ver<0.3.2>:auth<zef:japhb>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Terminal::Widgets_zef:japhb_0.3.2_0/sources/577DD787C9A3E42808841D1FFBFF30BC85FE6790 (Terminal::Widgets::App)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Terminal::Widgets_zef:japhb_0.3.2_0/sources/07ACC595E6845D70A1BAB1AB557A963C1DB00BE3 (Terminal::Widgets::Terminal)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+
+at /home/coke/sandbox/blin/installed/Terminal::Widgets_zef:japhb_0.3.2_0/sources/07ACC595E6845D70A1BAB1AB557A963C1DB00BE3 (Terminal::Widgets::Terminal):5
+------> <BOL><HERE>use Terminal::Print;
+
+at /home/coke/sandbox/blin/installed/Terminal::Widgets_zef:japhb_0.3.2_0/sources/577DD787C9A3E42808841D1FFBFF30BC85FE6790 (Terminal::Widgets::App):9
+------> <BOL><HERE>use Terminal::Widgets::Terminal;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Terminal::Widgets_zef:japhb_0.3.2_0/sources/577DD787C9A3E42808841D1FFBFF30BC85FE6790 (Terminal::Widgets::App)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Terminal::Widgets_zef:japhb_0.3.2_0/sources/07ACC595E6845D70A1BAB1AB557A963C1DB00BE3 (Terminal::Widgets::Terminal)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+
+at /home/coke/sandbox/blin/installed/Terminal::Widgets_zef:japhb_0.3.2_0/sources/07ACC595E6845D70A1BAB1AB557A963C1DB00BE3 (Terminal::Widgets::Terminal):5
+------> <BOL><HERE>use Terminal::Print;
+
+at /home/coke/sandbox/blin/installed/Terminal::Widgets_zef:japhb_0.3.2_0/sources/577DD787C9A3E42808841D1FFBFF30BC85FE6790 (Terminal::Widgets::App):9
+------> <BOL><HERE>use Terminal::Widgets::Terminal;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 2min 6.438s
+             CPU time consumed: 2min 29.118s
+                   Memory peak: 1.4G (swap: 211.9M)

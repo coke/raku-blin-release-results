@@ -1,0 +1,63 @@
+Running as unit: run-p2758550-i11078517.service; invocation ID: 005e03edb1d246c68a8841fa1edade7b
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Blin
+===> Found: Blin:ver<1.0.1> [via Zef::Repository::Ecosystems<rea>]
+[Blin] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791208677.2758574.363.96144191431665/Blin%3Aver%3C1.0.1%3E%3Aauth%3Cgithub%3ARaku%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/B/Blin/Blin%3Aver%3C1.0.1%3E%3Aauth%3Cgithub%3ARaku%3E.tar.gz
+===> Fetching [OK]: Blin:ver<1.0.1> to /home/coke/sandbox/blin/data/zef-data/tmp/1791208677.2758574.363.96144191431665/Blin%3Aver%3C1.0.1%3E%3Aauth%3Cgithub%3ARaku%3E.tar.gz
+[Blin] Command: tar -t -f ./Blin%3Aver%3C1.0.1%3E%3Aauth%3Cgithub%3ARaku%3E.tar.gz
+[Blin] Command: tar -xvf ./Blin%3Aver%3C1.0.1%3E%3Aauth%3Cgithub%3ARaku%3E.tar.gz -C ../Blin%3Aver%3C1.0.1%3E%3Aauth%3Cgithub%3ARaku%3E.tar.gz
+===> Extraction [OK]: Blin to /home/coke/sandbox/blin/data/zef-data/tmp/Blin%3Aver%3C1.0.1%3E%3Aauth%3Cgithub%3ARaku%3E.tar.gz
+===> Testing: Blin:ver<1.0.1>
+===> Testing [OK] for Blin:ver<1.0.1>
+===> Installing: Blin:ver<1.0.1>
+===> Install [FAIL] for Blin:ver<1.0.1>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Blin__1.0.1_0/sources/246CF215EB627BA84C16B1E9D3948078181319B7 (Blin::Processing)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Whateverable__1.0.12_0/sources/5D939031B6E74251D69243B0DC3C8CA733172BE4 (Whateverable::Bisection)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Whateverable__1.0.12_0/sources/8AE3233E83C0C2D4C7205C224BB05DCB9123E356 (Whateverable::Builds)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/Whateverable__1.0.12_0/sources/8AE3233E83C0C2D4C7205C224BB05DCB9123E356 (Whateverable::Builds):19
+------> <BOL><HERE>use HTTP::UserAgent;
+
+at /home/coke/sandbox/blin/installed/Whateverable__1.0.12_0/sources/5D939031B6E74251D69243B0DC3C8CA733172BE4 (Whateverable::Bisection):20
+------> <BOL><HERE>use Whateverable::Builds;
+
+at /home/coke/sandbox/blin/installed/Blin__1.0.1_0/sources/246CF215EB627BA84C16B1E9D3948078181319B7 (Blin::Processing):4
+------> <BOL><HERE>use Whateverable::Bisection;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Blin__1.0.1_0/sources/246CF215EB627BA84C16B1E9D3948078181319B7 (Blin::Processing)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Whateverable__1.0.12_0/sources/5D939031B6E74251D69243B0DC3C8CA733172BE4 (Whateverable::Bisection)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Whateverable__1.0.12_0/sources/8AE3233E83C0C2D4C7205C224BB05DCB9123E356 (Whateverable::Builds)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/Whateverable__1.0.12_0/sources/8AE3233E83C0C2D4C7205C224BB05DCB9123E356 (Whateverable::Builds):19
+------> <BOL><HERE>use HTTP::UserAgent;
+
+at /home/coke/sandbox/blin/installed/Whateverable__1.0.12_0/sources/5D939031B6E74251D69243B0DC3C8CA733172BE4 (Whateverable::Bisection):20
+------> <BOL><HERE>use Whateverable::Builds;
+
+at /home/coke/sandbox/blin/installed/Blin__1.0.1_0/sources/246CF215EB627BA84C16B1E9D3948078181319B7 (Blin::Processing):4
+------> <BOL><HERE>use Whateverable::Bisection;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 59.224s
+             CPU time consumed: 1min 1.078s
+                   Memory peak: 2.2G (swap: 0B)

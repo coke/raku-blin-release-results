@@ -1,0 +1,63 @@
+Running as unit: run-p2709406-i11150047.service; invocation ID: 05b3ca06083b402f91406aab86b0230f
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: TelegramBot
+===> Found: TelegramBot:ver<0.2.0> [via Zef::Repository::Ecosystems<rea>]
+[TelegramBot] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791207119.2709409.3567.4608744041057/TelegramBot%3Aver%3C0.2.0%3E%3Aauth%3Cgithub%3AGildedHonour%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/T/TelegramBot/TelegramBot%3Aver%3C0.2.0%3E%3Aauth%3Cgithub%3AGildedHonour%3E.tar.gz
+===> Fetching [OK]: TelegramBot:ver<0.2.0> to /home/coke/sandbox/blin/data/zef-data/tmp/1791207119.2709409.3567.4608744041057/TelegramBot%3Aver%3C0.2.0%3E%3Aauth%3Cgithub%3AGildedHonour%3E.tar.gz
+[TelegramBot] Command: tar -t -f ./TelegramBot%3Aver%3C0.2.0%3E%3Aauth%3Cgithub%3AGildedHonour%3E.tar.gz
+[TelegramBot] Command: tar -xvf ./TelegramBot%3Aver%3C0.2.0%3E%3Aauth%3Cgithub%3AGildedHonour%3E.tar.gz -C ../TelegramBot%3Aver%3C0.2.0%3E%3Aauth%3Cgithub%3AGildedHonour%3E.tar.gz
+===> Extraction [OK]: TelegramBot to /home/coke/sandbox/blin/data/zef-data/tmp/TelegramBot%3Aver%3C0.2.0%3E%3Aauth%3Cgithub%3AGildedHonour%3E.tar.gz
+===> Testing: TelegramBot:ver<0.2.0>
+[TelegramBot] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/TelegramBot%3Aver%3C0.2.0%3E%3Aauth%3Cgithub%3AGildedHonour%3E.tar.gz/TelegramBot-master t/01-user.t
+[TelegramBot] ===SORRY!=== Error while compiling t/01-user.t
+[TelegramBot] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/TelegramBot%3Aver%3C0.2.0%3E%3Aauth%3Cgithub%3AGildedHonour%3E.tar.gz/TelegramBot-master/lib/Telegram.pm6 (Telegram)
+[TelegramBot] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[TelegramBot] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[TelegramBot] ===SORRY!===
+[TelegramBot] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[TelegramBot] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[TelegramBot] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[TelegramBot] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[TelegramBot] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[TelegramBot] at /home/coke/sandbox/blin/data/zef-data/tmp/TelegramBot%3Aver%3C0.2.0%3E%3Aauth%3Cgithub%3AGildedHonour%3E.tar.gz/TelegramBot-master/lib/Telegram.pm6 (Telegram):3
+[TelegramBot] ------> <BOL><HERE>use HTTP::UserAgent;
+[TelegramBot] at t/01-user.t:5
+[TelegramBot] ------> <BOL><HERE>use Telegram;
+===> Testing [FAIL]: TelegramBot:ver<0.2.0>
+[TelegramBot] Failed to get passing tests, but continuing with --force-test
+===> Installing: TelegramBot:ver<0.2.0>
+===> Install [FAIL] for TelegramBot:ver<0.2.0>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/TelegramBot__0.2.0_0/sources/1A204C32E7D911DE0864A9BF3E06FA10C387892F (TelegramBot)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/TelegramBot__0.2.0_0/sources/1A204C32E7D911DE0864A9BF3E06FA10C387892F (TelegramBot):3
+------> <BOL><HERE>use HTTP::UserAgent;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/TelegramBot__0.2.0_0/sources/1A204C32E7D911DE0864A9BF3E06FA10C387892F (TelegramBot)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/TelegramBot__0.2.0_0/sources/1A204C32E7D911DE0864A9BF3E06FA10C387892F (TelegramBot):3
+------> <BOL><HERE>use HTTP::UserAgent;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1min 46.047s
+             CPU time consumed: 1min 33.387s
+                   Memory peak: 1.6G (swap: 438.4M)

@@ -1,0 +1,94 @@
+Running as unit: run-p2757044-i11098797.service; invocation ID: f93cf998157e4a7b9176f2b525fdd780
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: ML::AssociationRuleLearning
+===> Found: ML::AssociationRuleLearning:ver<0.1.5>:auth<zef:antononcube>:api<1> [via Zef::Repository::Ecosystems<fez>]
+[ML::AssociationRuleLearning] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791208597.2757066.1115.8612960913372/006f796858c6b31113f9542123442409703f526f.tar.gz https://360.zef.pm/M/L_/ML_ASSOCIATIONRULELEARNING/006f796858c6b31113f9542123442409703f526f.tar.gz
+===> Fetching [OK]: ML::AssociationRuleLearning:ver<0.1.5>:auth<zef:antononcube>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1791208597.2757066.1115.8612960913372/006f796858c6b31113f9542123442409703f526f.tar.gz
+[ML::AssociationRuleLearning] Command: tar -t -f ./006f796858c6b31113f9542123442409703f526f.tar.gz
+[ML::AssociationRuleLearning] Command: tar -xvf ./006f796858c6b31113f9542123442409703f526f.tar.gz -C ../006f796858c6b31113f9542123442409703f526f.tar.gz
+===> Extraction [OK]: ML::AssociationRuleLearning to /home/coke/sandbox/blin/data/zef-data/tmp/006f796858c6b31113f9542123442409703f526f.tar.gz
+===> Testing: ML::AssociationRuleLearning:ver<0.1.5>:auth<zef:antononcube>:api<1>
+[ML::AssociationRuleLearning] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/006f796858c6b31113f9542123442409703f526f.tar.gz/dist t/01-basic-usage-frequent-sets.rakutest
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling t/01-basic-usage-frequent-sets.rakutest
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Data::ExampleDatasets_zef:antononcube_0.2.4_1/sources/5725000849C79978E8922F1557EA0695B126343C (Data::ExampleDatasets)
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[ML::AssociationRuleLearning] ===SORRY!===
+[ML::AssociationRuleLearning] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[ML::AssociationRuleLearning] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[ML::AssociationRuleLearning] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[ML::AssociationRuleLearning] at /home/coke/sandbox/blin/installed/Data::ExampleDatasets_zef:antononcube_0.2.4_1/sources/5725000849C79978E8922F1557EA0695B126343C (Data::ExampleDatasets):1
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use HTTP::UserAgent;
+[ML::AssociationRuleLearning] at t/01-basic-usage-frequent-sets.rakutest:6
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use Data::ExampleDatasets;
+[ML::AssociationRuleLearning] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/006f796858c6b31113f9542123442409703f526f.tar.gz/dist t/02-basic-usage-apriori.rakutest
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling t/02-basic-usage-apriori.rakutest
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Data::ExampleDatasets_zef:antononcube_0.2.4_1/sources/5725000849C79978E8922F1557EA0695B126343C (Data::ExampleDatasets)
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[ML::AssociationRuleLearning] ===SORRY!===
+[ML::AssociationRuleLearning] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[ML::AssociationRuleLearning] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[ML::AssociationRuleLearning] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[ML::AssociationRuleLearning] at /home/coke/sandbox/blin/installed/Data::ExampleDatasets_zef:antononcube_0.2.4_1/sources/5725000849C79978E8922F1557EA0695B126343C (Data::ExampleDatasets):1
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use HTTP::UserAgent;
+[ML::AssociationRuleLearning] at t/02-basic-usage-apriori.rakutest:6
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use Data::ExampleDatasets;
+[ML::AssociationRuleLearning] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/006f796858c6b31113f9542123442409703f526f.tar.gz/dist t/03-basic-usage-eclat.rakutest
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling t/03-basic-usage-eclat.rakutest
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Data::ExampleDatasets_zef:antononcube_0.2.4_1/sources/5725000849C79978E8922F1557EA0695B126343C (Data::ExampleDatasets)
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[ML::AssociationRuleLearning] ===SORRY!===
+[ML::AssociationRuleLearning] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[ML::AssociationRuleLearning] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[ML::AssociationRuleLearning] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[ML::AssociationRuleLearning] at /home/coke/sandbox/blin/installed/Data::ExampleDatasets_zef:antononcube_0.2.4_1/sources/5725000849C79978E8922F1557EA0695B126343C (Data::ExampleDatasets):1
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use HTTP::UserAgent;
+[ML::AssociationRuleLearning] at t/03-basic-usage-eclat.rakutest:6
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use Data::ExampleDatasets;
+[ML::AssociationRuleLearning] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/006f796858c6b31113f9542123442409703f526f.tar.gz/dist t/04-correct-support.rakutest
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling t/04-correct-support.rakutest
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Data::ExampleDatasets_zef:antononcube_0.2.4_1/sources/5725000849C79978E8922F1557EA0695B126343C (Data::ExampleDatasets)
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[ML::AssociationRuleLearning] ===SORRY!===
+[ML::AssociationRuleLearning] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[ML::AssociationRuleLearning] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[ML::AssociationRuleLearning] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[ML::AssociationRuleLearning] at /home/coke/sandbox/blin/installed/Data::ExampleDatasets_zef:antononcube_0.2.4_1/sources/5725000849C79978E8922F1557EA0695B126343C (Data::ExampleDatasets):1
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use HTTP::UserAgent;
+[ML::AssociationRuleLearning] at t/04-correct-support.rakutest:6
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use Data::ExampleDatasets;
+[ML::AssociationRuleLearning] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/006f796858c6b31113f9542123442409703f526f.tar.gz/dist t/05-basic-usage-associationa-rules.rakutest
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling t/05-basic-usage-associationa-rules.rakutest
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Data::ExampleDatasets_zef:antononcube_0.2.4_1/sources/5725000849C79978E8922F1557EA0695B126343C (Data::ExampleDatasets)
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[ML::AssociationRuleLearning] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[ML::AssociationRuleLearning] ===SORRY!===
+[ML::AssociationRuleLearning] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[ML::AssociationRuleLearning] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[ML::AssociationRuleLearning] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[ML::AssociationRuleLearning] at /home/coke/sandbox/blin/installed/Data::ExampleDatasets_zef:antononcube_0.2.4_1/sources/5725000849C79978E8922F1557EA0695B126343C (Data::ExampleDatasets):1
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use HTTP::UserAgent;
+[ML::AssociationRuleLearning] at t/05-basic-usage-associationa-rules.rakutest:6
+[ML::AssociationRuleLearning] ------> <BOL><HERE>use Data::ExampleDatasets;
+===> Testing [FAIL]: ML::AssociationRuleLearning:ver<0.1.5>:auth<zef:antononcube>:api<1>
+[ML::AssociationRuleLearning] Failed to get passing tests, but continuing with --force-test
+===> Installing: ML::AssociationRuleLearning:ver<0.1.5>:auth<zef:antononcube>:api<1>
+===> Install [OK] for ML::AssociationRuleLearning:ver<0.1.5>:auth<zef:antononcube>:api<1>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 1min 55.055s
+             CPU time consumed: 1min 39.845s
+                   Memory peak: 1.3G (swap: 57.5M)

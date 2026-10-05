@@ -1,0 +1,63 @@
+Running as unit: run-p2718893-i11106095.service; invocation ID: 5084340d70194babb5b76fbe9cc6bbe0
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: deredere
+===> Found: deredere:ver<0.1.0>:auth<zef:Altai-man> [via Zef::Repository::Ecosystems<fez>]
+[deredere] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791207342.2718899.6015.910819944425/642911e53183dcc9cc34ff5edf14dfd70b264c58.tar.gz https://360.zef.pm/D/ER/DEREDERE/642911e53183dcc9cc34ff5edf14dfd70b264c58.tar.gz
+===> Fetching [OK]: deredere:ver<0.1.0>:auth<zef:Altai-man> to /home/coke/sandbox/blin/data/zef-data/tmp/1791207342.2718899.6015.910819944425/642911e53183dcc9cc34ff5edf14dfd70b264c58.tar.gz
+[deredere] Command: tar -t -f ./642911e53183dcc9cc34ff5edf14dfd70b264c58.tar.gz
+[deredere] Command: tar -xvf ./642911e53183dcc9cc34ff5edf14dfd70b264c58.tar.gz -C ../642911e53183dcc9cc34ff5edf14dfd70b264c58.tar.gz
+===> Extraction [OK]: deredere to /home/coke/sandbox/blin/data/zef-data/tmp/642911e53183dcc9cc34ff5edf14dfd70b264c58.tar.gz
+===> Testing: deredere:ver<0.1.0>:auth<zef:Altai-man>
+[deredere] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/642911e53183dcc9cc34ff5edf14dfd70b264c58.tar.gz t/10-correctness.t
+[deredere] ===SORRY!=== Error while compiling t/10-correctness.t
+[deredere] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/642911e53183dcc9cc34ff5edf14dfd70b264c58.tar.gz/lib/deredere.pm6 (deredere)
+[deredere] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[deredere] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[deredere] ===SORRY!===
+[deredere] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[deredere] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[deredere] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[deredere] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[deredere] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[deredere] at /home/coke/sandbox/blin/data/zef-data/tmp/642911e53183dcc9cc34ff5edf14dfd70b264c58.tar.gz/lib/deredere.pm6 (deredere):3
+[deredere] ------> <BOL><HERE>use HTTP::UserAgent;
+[deredere] at t/10-correctness.t:4
+[deredere] ------> <BOL><HERE>use deredere;
+===> Testing [FAIL]: deredere:ver<0.1.0>:auth<zef:Altai-man>
+[deredere] Failed to get passing tests, but continuing with --force-test
+===> Installing: deredere:ver<0.1.0>:auth<zef:Altai-man>
+===> Install [FAIL] for deredere:ver<0.1.0>:auth<zef:Altai-man>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/deredere_zef:Altai-man_0.1.0_0/sources/BEDEC5B51DC03846AF3F80ABB2D65A558C5328B3 (deredere)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/deredere_zef:Altai-man_0.1.0_0/sources/BEDEC5B51DC03846AF3F80ABB2D65A558C5328B3 (deredere):3
+------> <BOL><HERE>use HTTP::UserAgent;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/deredere_zef:Altai-man_0.1.0_0/sources/BEDEC5B51DC03846AF3F80ABB2D65A558C5328B3 (deredere)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/deredere_zef:Altai-man_0.1.0_0/sources/BEDEC5B51DC03846AF3F80ABB2D65A558C5328B3 (deredere):3
+------> <BOL><HERE>use HTTP::UserAgent;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1min 197ms
+             CPU time consumed: 37.215s
+                   Memory peak: 1.2G (swap: 227M)

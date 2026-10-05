@@ -1,0 +1,150 @@
+Running as unit: run-p2695701-i11110159.service; invocation ID: 99f6a078f6c342e7bde757b2ebfa298a
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Terminal::UI
+===> Found: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> [via Zef::Repository::Ecosystems<fez>]
+[Terminal::UI] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791206755.2695702.1485.7516878122633/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz https://360.zef.pm/T/ER/TERMINAL_UI/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+===> Fetching [OK]: Terminal::UI:ver<0.1.14>:auth<zef:bduggan> to /home/coke/sandbox/blin/data/zef-data/tmp/1791206755.2695702.1485.7516878122633/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+[Terminal::UI] Command: tar -t -f ./97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+[Terminal::UI] Command: tar -xvf ./97be0392703c0ef562b9092d0a52c2623157131c.tar.gz -C ../97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+===> Extraction [OK]: Terminal::UI to /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz
+===> Testing: Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/00-basic.rakutest
+[Terminal::UI] 1..6
+[Terminal::UI] not ok 1 - Terminal::UI module can be use-d ok
+[Terminal::UI] # Failed test 'Terminal::UI module can be use-d ok'
+[Terminal::UI] # at t/00-basic.rakutest line 5
+[Terminal::UI] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI.rakumod (Terminal::UI)
+[Terminal::UI] # ===SORRY!===
+[Terminal::UI] # Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+[Terminal::UI] # 
+[Terminal::UI] # at /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI.rakumod (Terminal::UI):2
+[Terminal::UI] # ------> <BOL><HERE>use Terminal::UI::Pane;
+[Terminal::UI] # 
+[Terminal::UI] not ok 2 - Terminal::UI::Screen module can be use-d ok
+[Terminal::UI] # Failed test 'Terminal::UI::Screen module can be use-d ok'
+[Terminal::UI] # at t/00-basic.rakutest line 6
+[Terminal::UI] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI/Screen.rakumod (Terminal::UI::Screen)
+[Terminal::UI] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI/Frame.rakumod (Terminal::UI::Frame)
+[Terminal::UI] # ===SORRY!===
+[Terminal::UI] # Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+[Terminal::UI] # 
+[Terminal::UI] # at /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI/Frame.rakumod (Terminal::UI::Frame):2
+[Terminal::UI] # ------> <BOL><HERE>use Terminal::UI::Pane;
+[Terminal::UI] # 
+[Terminal::UI] # at /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI/Screen.rakumod (Terminal::UI::Screen):3
+[Terminal::UI] # ------> <BOL><HERE>use Terminal::UI::Frame;
+[Terminal::UI] # 
+[Terminal::UI] not ok 3 - Terminal::UI::Frame module can be use-d ok
+[Terminal::UI] # Failed test 'Terminal::UI::Frame module can be use-d ok'
+[Terminal::UI] # at t/00-basic.rakutest line 7
+[Terminal::UI] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI/Frame.rakumod (Terminal::UI::Frame)
+[Terminal::UI] # ===SORRY!===
+[Terminal::UI] # Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+[Terminal::UI] # 
+[Terminal::UI] # at /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI/Frame.rakumod (Terminal::UI::Frame):2
+[Terminal::UI] # ------> <BOL><HERE>use Terminal::UI::Pane;
+[Terminal::UI] # 
+[Terminal::UI] not ok 4 - Terminal::UI::Pane module can be use-d ok
+[Terminal::UI] # Failed test 'Terminal::UI::Pane module can be use-d ok'
+[Terminal::UI] # at t/00-basic.rakutest line 8
+[Terminal::UI] # ===SORRY!===
+[Terminal::UI] # Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+[Terminal::UI] # 
+[Terminal::UI] ok 5 - Terminal::UI::Input module can be use-d ok
+[Terminal::UI] ok 6 - Terminal::UI::Style module can be use-d ok
+[Terminal::UI] # You failed 4 tests of 6
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/01-sizes.rakutest
+[Terminal::UI] ===SORRY!=== Error while compiling t/01-sizes.rakutest
+[Terminal::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI.rakumod (Terminal::UI)
+[Terminal::UI] ===SORRY!===
+[Terminal::UI] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+[Terminal::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI.rakumod (Terminal::UI):2
+[Terminal::UI] ------> <BOL><HERE>use Terminal::UI::Pane;
+[Terminal::UI] at t/01-sizes.rakutest:3
+[Terminal::UI] ------> <BOL><HERE>use Terminal::UI;
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/02-screen.rakutest
+[Terminal::UI] ===SORRY!=== Error while compiling t/02-screen.rakutest
+[Terminal::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI/Screen.rakumod (Terminal::UI::Screen)
+[Terminal::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI/Frame.rakumod (Terminal::UI::Frame)
+[Terminal::UI] ===SORRY!===
+[Terminal::UI] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+[Terminal::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI/Frame.rakumod (Terminal::UI::Frame):2
+[Terminal::UI] ------> <BOL><HERE>use Terminal::UI::Pane;
+[Terminal::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI/Screen.rakumod (Terminal::UI::Screen):3
+[Terminal::UI] ------> <BOL><HERE>use Terminal::UI::Frame;
+[Terminal::UI] at t/02-screen.rakutest:2
+[Terminal::UI] ------> <BOL><HERE>use Terminal::UI::Screen;
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/03-pane.rakutest
+[Terminal::UI] ===SORRY!=== Error while compiling t/03-pane.rakutest
+[Terminal::UI] ===SORRY!===
+[Terminal::UI] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+[Terminal::UI] at t/03-pane.rakutest:4
+[Terminal::UI] ------> <BOL><HERE>use Terminal::UI::Pane;
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/04-frame.rakutest
+[Terminal::UI] ===SORRY!=== Error while compiling t/04-frame.rakutest
+[Terminal::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI/Frame.rakumod (Terminal::UI::Frame)
+[Terminal::UI] ===SORRY!===
+[Terminal::UI] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+[Terminal::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI/Frame.rakumod (Terminal::UI::Frame):2
+[Terminal::UI] ------> <BOL><HERE>use Terminal::UI::Pane;
+[Terminal::UI] at t/04-frame.rakutest:4
+[Terminal::UI] ------> <BOL><HERE>use Terminal::UI::Frame;
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/05-style.rakutest
+[Terminal::UI] 1..2
+[Terminal::UI] ok 1 - set a value
+[Terminal::UI] ok 2 - singleton works
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/06-ui.rakutest
+[Terminal::UI] ===SORRY!=== Error while compiling t/06-ui.rakutest
+[Terminal::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI.rakumod (Terminal::UI)
+[Terminal::UI] ===SORRY!===
+[Terminal::UI] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+[Terminal::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI.rakumod (Terminal::UI):2
+[Terminal::UI] ------> <BOL><HERE>use Terminal::UI::Pane;
+[Terminal::UI] at t/06-ui.rakutest:5
+[Terminal::UI] ------> <BOL><HERE>use Terminal::UI 'ui';
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/07-alert.rakutest
+[Terminal::UI] ===SORRY!=== Error while compiling t/07-alert.rakutest
+[Terminal::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI.rakumod (Terminal::UI)
+[Terminal::UI] ===SORRY!===
+[Terminal::UI] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+[Terminal::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI.rakumod (Terminal::UI):2
+[Terminal::UI] ------> <BOL><HERE>use Terminal::UI::Pane;
+[Terminal::UI] at t/07-alert.rakutest:5
+[Terminal::UI] ------> <BOL><HERE>use Terminal::UI 'ui';
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/08-resize.rakutest
+[Terminal::UI] ===SORRY!=== Error while compiling t/08-resize.rakutest
+[Terminal::UI] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI.rakumod (Terminal::UI)
+[Terminal::UI] ===SORRY!===
+[Terminal::UI] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+[Terminal::UI] at /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14/lib/Terminal/UI.rakumod (Terminal::UI):2
+[Terminal::UI] ------> <BOL><HERE>use Terminal::UI::Pane;
+[Terminal::UI] at t/08-resize.rakutest:5
+[Terminal::UI] ------> <BOL><HERE>use Terminal::UI 'ui';
+[Terminal::UI] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/97be0392703c0ef562b9092d0a52c2623157131c.tar.gz/Terminal-UI-0.1.14 t/09-print.rakutest
+[Terminal::UI] ===SORRY!=== Error while compiling t/09-print.rakutest
+[Terminal::UI] ===SORRY!===
+[Terminal::UI] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+[Terminal::UI] at t/09-print.rakutest:4
+[Terminal::UI] ------> <BOL><HERE>use Terminal::UI::Pane;
+===> Testing [FAIL]: Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
+[Terminal::UI] Failed to get passing tests, but continuing with --force-test
+===> Installing: Terminal::UI:ver<0.1.14>:auth<zef:bduggan>
+===> Install [FAIL] for Terminal::UI:ver<0.1.14>:auth<zef:bduggan>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Terminal::UI_zef:bduggan_0.1.14_0/sources/E6A417B5C28F1AD1CD0913738E5EE1B9284BF7D6 (Terminal::UI)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+
+at /home/coke/sandbox/blin/installed/Terminal::UI_zef:bduggan_0.1.14_0/sources/E6A417B5C28F1AD1CD0913738E5EE1B9284BF7D6 (Terminal::UI):2
+------> <BOL><HERE>use Terminal::UI::Pane;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Terminal::UI_zef:bduggan_0.1.14_0/sources/E6A417B5C28F1AD1CD0913738E5EE1B9284BF7D6 (Terminal::UI)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+
+at /home/coke/sandbox/blin/installed/Terminal::UI_zef:bduggan_0.1.14_0/sources/E6A417B5C28F1AD1CD0913738E5EE1B9284BF7D6 (Terminal::UI):2
+------> <BOL><HERE>use Terminal::UI::Pane;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1min 5.410s
+             CPU time consumed: 1min 28.790s
+                   Memory peak: 1.3G (swap: 0B)

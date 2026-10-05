@@ -1,0 +1,110 @@
+Running as unit: run-p2741655-i11182367.service
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Amazon::DynamoDB
+===> Found: Amazon::DynamoDB:ver<0.4.0>:auth<cpan:HANENKAMP> [via Zef::Repository::Ecosystems<rea>]
+[Amazon::DynamoDB] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791208009.2741656.5218.646953277919/Amazon%3A%3ADynamoDB%3Aver%3C0.4.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/A/Amazon%3A%3ADynamoDB/Amazon%3A%3ADynamoDB%3Aver%3C0.4.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz
+===> Fetching [OK]: Amazon::DynamoDB:ver<0.4.0>:auth<cpan:HANENKAMP> to /home/coke/sandbox/blin/data/zef-data/tmp/1791208009.2741656.5218.646953277919/Amazon%3A%3ADynamoDB%3Aver%3C0.4.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz
+[Amazon::DynamoDB] Command: tar -t -f ./Amazon%3A%3ADynamoDB%3Aver%3C0.4.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz
+[Amazon::DynamoDB] Command: tar -xvf ./Amazon%3A%3ADynamoDB%3Aver%3C0.4.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz -C ../Amazon%3A%3ADynamoDB%3Aver%3C0.4.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz
+===> Extraction [OK]: Amazon::DynamoDB to /home/coke/sandbox/blin/data/zef-data/tmp/Amazon%3A%3ADynamoDB%3Aver%3C0.4.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz
+===> Testing: Amazon::DynamoDB:ver<0.4.0>:auth<github:zostay>
+[Amazon::DynamoDB] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Amazon%3A%3ADynamoDB%3Aver%3C0.4.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/Amazon-DynamoDB-0.4.0 t/Actions-Object-PutGetDelete.t
+[Amazon::DynamoDB] ===SORRY!=== Error while compiling t/Actions-Object-PutGetDelete.t
+[Amazon::DynamoDB] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/Amazon%3A%3ADynamoDB%3Aver%3C0.4.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/Amazon-DynamoDB-0.4.0/lib/Amazon/DynamoDB.pm6 (Amazon::DynamoDB)
+[Amazon::DynamoDB] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/AWS::Session_cpan:HANENKAMP_0.8.0_0/sources/9CA1296C7AAB02B19A792D4D866EB0F9124AFB9D (AWS::Credentials)
+[Amazon::DynamoDB] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[Amazon::DynamoDB] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[Amazon::DynamoDB] ===SORRY!===
+[Amazon::DynamoDB] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Amazon::DynamoDB] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[Amazon::DynamoDB] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[Amazon::DynamoDB] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[Amazon::DynamoDB] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[Amazon::DynamoDB] at /home/coke/sandbox/blin/installed/AWS::Session_cpan:HANENKAMP_0.8.0_0/sources/9CA1296C7AAB02B19A792D4D866EB0F9124AFB9D (AWS::Credentials):154
+[Amazon::DynamoDB] ------>     <HERE>use HTTP::UserAgent;
+[Amazon::DynamoDB] at /home/coke/sandbox/blin/data/zef-data/tmp/Amazon%3A%3ADynamoDB%3Aver%3C0.4.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/Amazon-DynamoDB-0.4.0/lib/Amazon/DynamoDB.pm6 (Amazon::DynamoDB):5
+[Amazon::DynamoDB] ------> <BOL><HERE>use AWS::Credentials;
+[Amazon::DynamoDB] at t/Actions-Object-PutGetDelete.t:5
+[Amazon::DynamoDB] ------> <BOL><HERE>use Amazon::DynamoDB;
+[Amazon::DynamoDB] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Amazon%3A%3ADynamoDB%3Aver%3C0.4.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/Amazon-DynamoDB-0.4.0 t/Actions-Table-CreateDelete.t
+[Amazon::DynamoDB] ===SORRY!=== Error while compiling t/Actions-Table-CreateDelete.t
+[Amazon::DynamoDB] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/Amazon%3A%3ADynamoDB%3Aver%3C0.4.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/Amazon-DynamoDB-0.4.0/lib/Amazon/DynamoDB.pm6 (Amazon::DynamoDB)
+[Amazon::DynamoDB] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/AWS::Session_cpan:HANENKAMP_0.8.0_0/sources/9CA1296C7AAB02B19A792D4D866EB0F9124AFB9D (AWS::Credentials)
+[Amazon::DynamoDB] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[Amazon::DynamoDB] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[Amazon::DynamoDB] ===SORRY!===
+[Amazon::DynamoDB] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Amazon::DynamoDB] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[Amazon::DynamoDB] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[Amazon::DynamoDB] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[Amazon::DynamoDB] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[Amazon::DynamoDB] at /home/coke/sandbox/blin/installed/AWS::Session_cpan:HANENKAMP_0.8.0_0/sources/9CA1296C7AAB02B19A792D4D866EB0F9124AFB9D (AWS::Credentials):154
+[Amazon::DynamoDB] ------>     <HERE>use HTTP::UserAgent;
+[Amazon::DynamoDB] at /home/coke/sandbox/blin/data/zef-data/tmp/Amazon%3A%3ADynamoDB%3Aver%3C0.4.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/Amazon-DynamoDB-0.4.0/lib/Amazon/DynamoDB.pm6 (Amazon::DynamoDB):5
+[Amazon::DynamoDB] ------> <BOL><HERE>use AWS::Credentials;
+[Amazon::DynamoDB] at t/Actions-Table-CreateDelete.t:5
+[Amazon::DynamoDB] ------> <BOL><HERE>use Amazon::DynamoDB;
+[Amazon::DynamoDB] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Amazon%3A%3ADynamoDB%3Aver%3C0.4.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/Amazon-DynamoDB-0.4.0 t/aws-examples-offline.t
+[Amazon::DynamoDB] ===SORRY!=== Error while compiling t/aws-examples-offline.t
+[Amazon::DynamoDB] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/Amazon%3A%3ADynamoDB%3Aver%3C0.4.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/Amazon-DynamoDB-0.4.0/lib/Amazon/DynamoDB.pm6 (Amazon::DynamoDB)
+[Amazon::DynamoDB] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/AWS::Session_cpan:HANENKAMP_0.8.0_0/sources/9CA1296C7AAB02B19A792D4D866EB0F9124AFB9D (AWS::Credentials)
+[Amazon::DynamoDB] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[Amazon::DynamoDB] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[Amazon::DynamoDB] ===SORRY!===
+[Amazon::DynamoDB] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Amazon::DynamoDB] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[Amazon::DynamoDB] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[Amazon::DynamoDB] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[Amazon::DynamoDB] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[Amazon::DynamoDB] at /home/coke/sandbox/blin/installed/AWS::Session_cpan:HANENKAMP_0.8.0_0/sources/9CA1296C7AAB02B19A792D4D866EB0F9124AFB9D (AWS::Credentials):154
+[Amazon::DynamoDB] ------>     <HERE>use HTTP::UserAgent;
+[Amazon::DynamoDB] at /home/coke/sandbox/blin/data/zef-data/tmp/Amazon%3A%3ADynamoDB%3Aver%3C0.4.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/Amazon-DynamoDB-0.4.0/lib/Amazon/DynamoDB.pm6 (Amazon::DynamoDB):5
+[Amazon::DynamoDB] ------> <BOL><HERE>use AWS::Credentials;
+[Amazon::DynamoDB] at t/aws-examples-offline.t:6
+[Amazon::DynamoDB] ------> <BOL><HERE>use Amazon::DynamoDB;
+===> Testing [FAIL]: Amazon::DynamoDB:ver<0.4.0>:auth<github:zostay>
+[Amazon::DynamoDB] Failed to get passing tests, but continuing with --force-test
+===> Installing: Amazon::DynamoDB:ver<0.4.0>:auth<github:zostay>
+===> Install [FAIL] for Amazon::DynamoDB:ver<0.4.0>:auth<github:zostay>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Amazon::DynamoDB_cpan:HANENKAMP_0.4.0_0/sources/98B37F0B1E076D732637C7E76AF01F3D7EC0F0A2 (Amazon::DynamoDB)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/AWS::Session_cpan:HANENKAMP_0.8.0_0/sources/9CA1296C7AAB02B19A792D4D866EB0F9124AFB9D (AWS::Credentials)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/AWS::Session_cpan:HANENKAMP_0.8.0_0/sources/9CA1296C7AAB02B19A792D4D866EB0F9124AFB9D (AWS::Credentials):154
+------>     <HERE>use HTTP::UserAgent;
+
+at /home/coke/sandbox/blin/installed/Amazon::DynamoDB_cpan:HANENKAMP_0.4.0_0/sources/98B37F0B1E076D732637C7E76AF01F3D7EC0F0A2 (Amazon::DynamoDB):5
+------> <BOL><HERE>use AWS::Credentials;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Amazon::DynamoDB_cpan:HANENKAMP_0.4.0_0/sources/98B37F0B1E076D732637C7E76AF01F3D7EC0F0A2 (Amazon::DynamoDB)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/AWS::Session_cpan:HANENKAMP_0.8.0_0/sources/9CA1296C7AAB02B19A792D4D866EB0F9124AFB9D (AWS::Credentials)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/AWS::Session_cpan:HANENKAMP_0.8.0_0/sources/9CA1296C7AAB02B19A792D4D866EB0F9124AFB9D (AWS::Credentials):154
+------>     <HERE>use HTTP::UserAgent;
+
+at /home/coke/sandbox/blin/installed/Amazon::DynamoDB_cpan:HANENKAMP_0.4.0_0/sources/98B37F0B1E076D732637C7E76AF01F3D7EC0F0A2 (Amazon::DynamoDB):5
+------> <BOL><HERE>use AWS::Credentials;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 2min 11.264s
+             CPU time consumed: 1min 27.092s
+                   Memory peak: 1.9G (swap: 438.2M)

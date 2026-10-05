@@ -1,0 +1,47 @@
+Running as unit: run-p2747685-i11178547.service; invocation ID: e416494ce10845cdbc91307f062b135a
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Matrix::Bot
+===> Found: Matrix::Bot:ver<0.2.0>:auth<cpan:TYIL>:api<0> [via Zef::Repository::Ecosystems<rea>]
+[Matrix::Bot] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791208234.2747690.8339.016338709549/Matrix%3A%3ABot%3Aver%3C0.2.0%3E%3Aauth%3Ccpan%3ATYIL%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/M/Matrix%3A%3ABot/Matrix%3A%3ABot%3Aver%3C0.2.0%3E%3Aauth%3Ccpan%3ATYIL%3E.tar.gz
+===> Fetching [OK]: Matrix::Bot:ver<0.2.0>:auth<cpan:TYIL>:api<0> to /home/coke/sandbox/blin/data/zef-data/tmp/1791208234.2747690.8339.016338709549/Matrix%3A%3ABot%3Aver%3C0.2.0%3E%3Aauth%3Ccpan%3ATYIL%3E.tar.gz
+[Matrix::Bot] Command: tar -t -f ./Matrix%3A%3ABot%3Aver%3C0.2.0%3E%3Aauth%3Ccpan%3ATYIL%3E.tar.gz
+[Matrix::Bot] Command: tar -xvf ./Matrix%3A%3ABot%3Aver%3C0.2.0%3E%3Aauth%3Ccpan%3ATYIL%3E.tar.gz -C ../Matrix%3A%3ABot%3Aver%3C0.2.0%3E%3Aauth%3Ccpan%3ATYIL%3E.tar.gz
+===> Extraction [OK]: Matrix::Bot to /home/coke/sandbox/blin/data/zef-data/tmp/Matrix%3A%3ABot%3Aver%3C0.2.0%3E%3Aauth%3Ccpan%3ATYIL%3E.tar.gz
+===> Testing: Matrix::Bot:ver<0.2.0>:api<0>
+===> Testing [OK] for Matrix::Bot:ver<0.2.0>:api<0>
+===> Installing: Matrix::Bot:ver<0.2.0>:api<0>
+===> Install [FAIL] for Matrix::Bot:ver<0.2.0>:api<0>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Matrix::Bot_cpan:TYIL_0.2.0_0/sources/1DCA72658C23E63D648E8A1C9327A064E13175C3 (Matrix::Bot)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Matrix::Client_cpan:MATIASL_0.7.0_0/sources/4883B33D2E24459C9C7B1F679C5F32FFFA97A03D (Matrix::Client)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/AE929518068BFF3F7A4221AC783CA8819F2318BA (HTTP::Request::Common)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/AE929518068BFF3F7A4221AC783CA8819F2318BA (HTTP::Request::Common):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/Matrix::Client_cpan:MATIASL_0.7.0_0/sources/4883B33D2E24459C9C7B1F679C5F32FFFA97A03D (Matrix::Client):1
+------> <BOL><HERE>use HTTP::Request::Common;
+
+at /home/coke/sandbox/blin/installed/Matrix::Bot_cpan:TYIL_0.2.0_0/sources/1DCA72658C23E63D648E8A1C9327A064E13175C3 (Matrix::Bot):6
+------> <BOL><HERE>use Matrix::Client;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Matrix::Bot_cpan:TYIL_0.2.0_0/sources/1DCA72658C23E63D648E8A1C9327A064E13175C3 (Matrix::Bot)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Matrix::Client_cpan:MATIASL_0.7.0_0/sources/4883B33D2E24459C9C7B1F679C5F32FFFA97A03D (Matrix::Client)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/AE929518068BFF3F7A4221AC783CA8819F2318BA (HTTP::Request::Common)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/AE929518068BFF3F7A4221AC783CA8819F2318BA (HTTP::Request::Common):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/Matrix::Client_cpan:MATIASL_0.7.0_0/sources/4883B33D2E24459C9C7B1F679C5F32FFFA97A03D (Matrix::Client):1
+------> <BOL><HERE>use HTTP::Request::Common;
+
+at /home/coke/sandbox/blin/installed/Matrix::Bot_cpan:TYIL_0.2.0_0/sources/1DCA72658C23E63D648E8A1C9327A064E13175C3 (Matrix::Bot):6
+------> <BOL><HERE>use Matrix::Client;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 50.676s
+             CPU time consumed: 49.416s
+                   Memory peak: 1.5G (swap: 0B)

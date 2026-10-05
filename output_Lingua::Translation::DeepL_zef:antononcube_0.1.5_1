@@ -1,0 +1,63 @@
+Running as unit: run-p2709362-i11041577.service; invocation ID: 9c1917ee612040ce94c99ee972e563e8
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Lingua::Translation::DeepL
+===> Found: Lingua::Translation::DeepL:ver<0.1.5>:auth<zef:antononcube>:api<1> [via Zef::Repository::Ecosystems<fez>]
+[Lingua::Translation::DeepL] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791207087.2709364.9723.925775921307/c405efdf17d0d384ade4e975f652c25755b0afbb.tar.gz https://360.zef.pm/L/IN/LINGUA_TRANSLATION_DEEPL/c405efdf17d0d384ade4e975f652c25755b0afbb.tar.gz
+===> Fetching [OK]: Lingua::Translation::DeepL:ver<0.1.5>:auth<zef:antononcube>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1791207087.2709364.9723.925775921307/c405efdf17d0d384ade4e975f652c25755b0afbb.tar.gz
+[Lingua::Translation::DeepL] Command: tar -t -f ./c405efdf17d0d384ade4e975f652c25755b0afbb.tar.gz
+[Lingua::Translation::DeepL] Command: tar -xvf ./c405efdf17d0d384ade4e975f652c25755b0afbb.tar.gz -C ../c405efdf17d0d384ade4e975f652c25755b0afbb.tar.gz
+===> Extraction [OK]: Lingua::Translation::DeepL to /home/coke/sandbox/blin/data/zef-data/tmp/c405efdf17d0d384ade4e975f652c25755b0afbb.tar.gz
+===> Testing: Lingua::Translation::DeepL:ver<0.1.5>:auth<zef:antononcube>:api<1>
+[Lingua::Translation::DeepL] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/c405efdf17d0d384ade4e975f652c25755b0afbb.tar.gz/dist t/01-DeepL-known-languages.t
+[Lingua::Translation::DeepL] ===SORRY!=== Error while compiling t/01-DeepL-known-languages.t
+[Lingua::Translation::DeepL] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c405efdf17d0d384ade4e975f652c25755b0afbb.tar.gz/dist/lib/Lingua/Translation/DeepL.rakumod (Lingua::Translation::DeepL)
+[Lingua::Translation::DeepL] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[Lingua::Translation::DeepL] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[Lingua::Translation::DeepL] ===SORRY!===
+[Lingua::Translation::DeepL] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Lingua::Translation::DeepL] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[Lingua::Translation::DeepL] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[Lingua::Translation::DeepL] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[Lingua::Translation::DeepL] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[Lingua::Translation::DeepL] at /home/coke/sandbox/blin/data/zef-data/tmp/c405efdf17d0d384ade4e975f652c25755b0afbb.tar.gz/dist/lib/Lingua/Translation/DeepL.rakumod (Lingua::Translation::DeepL):1
+[Lingua::Translation::DeepL] ------> <BOL><HERE>use HTTP::UserAgent;
+[Lingua::Translation::DeepL] at t/01-DeepL-known-languages.t:6
+[Lingua::Translation::DeepL] ------> <BOL><HERE>use Lingua::Translation::DeepL;
+===> Testing [FAIL]: Lingua::Translation::DeepL:ver<0.1.5>:auth<zef:antononcube>:api<1>
+[Lingua::Translation::DeepL] Failed to get passing tests, but continuing with --force-test
+===> Installing: Lingua::Translation::DeepL:ver<0.1.5>:auth<zef:antononcube>:api<1>
+===> Install [FAIL] for Lingua::Translation::DeepL:ver<0.1.5>:auth<zef:antononcube>:api<1>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Lingua::Translation::DeepL_zef:antononcube_0.1.5_1/sources/1F743A90BFDE78108E74FE1F03027FA7804BB018 (Lingua::Translation::DeepL)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/Lingua::Translation::DeepL_zef:antononcube_0.1.5_1/sources/1F743A90BFDE78108E74FE1F03027FA7804BB018 (Lingua::Translation::DeepL):1
+------> <BOL><HERE>use HTTP::UserAgent;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Lingua::Translation::DeepL_zef:antononcube_0.1.5_1/sources/1F743A90BFDE78108E74FE1F03027FA7804BB018 (Lingua::Translation::DeepL)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/Lingua::Translation::DeepL_zef:antononcube_0.1.5_1/sources/1F743A90BFDE78108E74FE1F03027FA7804BB018 (Lingua::Translation::DeepL):1
+------> <BOL><HERE>use HTTP::UserAgent;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 37.712s
+             CPU time consumed: 38.660s
+                   Memory peak: 1.2G (swap: 209.1M)

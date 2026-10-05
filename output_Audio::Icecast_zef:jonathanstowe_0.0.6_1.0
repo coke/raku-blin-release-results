@@ -1,0 +1,75 @@
+Running as unit: run-p2756722-i11098791.service; invocation ID: d7a1417a3e62447bba9feff777bf22b3
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Audio::Icecast
+===> Found: Audio::Icecast:ver<0.0.6>:auth<zef:jonathanstowe>:api<1.0> [via Zef::Repository::Ecosystems<fez>]
+[Audio::Icecast] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791208588.2756746.7518.9473634049855/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz https://360.zef.pm/A/UD/AUDIO_ICECAST/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz
+===> Fetching [OK]: Audio::Icecast:ver<0.0.6>:auth<zef:jonathanstowe>:api<1.0> to /home/coke/sandbox/blin/data/zef-data/tmp/1791208588.2756746.7518.9473634049855/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz
+[Audio::Icecast] Command: tar -t -f ./4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz
+[Audio::Icecast] Command: tar -xvf ./4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz -C ../4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz
+===> Extraction [OK]: Audio::Icecast to /home/coke/sandbox/blin/data/zef-data/tmp/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz
+===> Testing: Audio::Icecast:ver<0.0.6>:auth<zef:jonathanstowe>:api<1.0>
+[Audio::Icecast] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz/Audio-Icecast-0.0.6 t/001-meta.t
+[Audio::Icecast] 1..1
+[Audio::Icecast] ok 1 - # SKIP no Test::META - skipping
+[Audio::Icecast] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz/Audio-Icecast-0.0.6 t/010-use.t
+[Audio::Icecast] not ok 1 - can use Audio::Icecast
+[Audio::Icecast] # Failed test 'can use Audio::Icecast'
+[Audio::Icecast] # at t/010-use.t line 7
+[Audio::Icecast] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz/Audio-Icecast-0.0.6/lib/Audio/Icecast.rakumod (Audio::Icecast)
+[Audio::Icecast] # ===SORRY!===
+[Audio::Icecast] # Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Audio::Icecast] # 
+[Audio::Icecast] # at /home/coke/sandbox/blin/data/zef-data/tmp/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz/Audio-Icecast-0.0.6/lib/Audio/Icecast.rakumod (Audio::Icecast):268
+[Audio::Icecast] # ------> <BOL><HERE>use XML::Class;
+[Audio::Icecast] # 
+[Audio::Icecast] # You failed 1 test of 1
+[Audio::Icecast] 1..1
+[Audio::Icecast] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz/Audio-Icecast-0.0.6 t/020-stats-basic.t
+[Audio::Icecast] ===SORRY!=== Error while compiling t/020-stats-basic.t
+[Audio::Icecast] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz/Audio-Icecast-0.0.6/lib/Audio/Icecast.rakumod (Audio::Icecast)
+[Audio::Icecast] ===SORRY!===
+[Audio::Icecast] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Audio::Icecast] at /home/coke/sandbox/blin/data/zef-data/tmp/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz/Audio-Icecast-0.0.6/lib/Audio/Icecast.rakumod (Audio::Icecast):268
+[Audio::Icecast] ------> <BOL><HERE>use XML::Class;
+[Audio::Icecast] at t/020-stats-basic.t:6
+[Audio::Icecast] ------> <BOL><HERE>use Audio::Icecast;
+[Audio::Icecast] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz/Audio-Icecast-0.0.6 t/025-status-online.t
+[Audio::Icecast] ===SORRY!=== Error while compiling t/025-status-online.t
+[Audio::Icecast] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz/Audio-Icecast-0.0.6/lib/Audio/Icecast.rakumod (Audio::Icecast)
+[Audio::Icecast] ===SORRY!===
+[Audio::Icecast] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Audio::Icecast] at /home/coke/sandbox/blin/data/zef-data/tmp/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz/Audio-Icecast-0.0.6/lib/Audio/Icecast.rakumod (Audio::Icecast):268
+[Audio::Icecast] ------> <BOL><HERE>use XML::Class;
+[Audio::Icecast] at t/025-status-online.t:7
+[Audio::Icecast] ------> <BOL><HERE>use Audio::Icecast;
+[Audio::Icecast] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz/Audio-Icecast-0.0.6 t/030-listeners-basic.t
+[Audio::Icecast] ===SORRY!=== Error while compiling t/030-listeners-basic.t
+[Audio::Icecast] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz/Audio-Icecast-0.0.6/lib/Audio/Icecast.rakumod (Audio::Icecast)
+[Audio::Icecast] ===SORRY!===
+[Audio::Icecast] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Audio::Icecast] at /home/coke/sandbox/blin/data/zef-data/tmp/4bc835c6412fd75b463c7423b85d3ea1ee620d89.tar.gz/Audio-Icecast-0.0.6/lib/Audio/Icecast.rakumod (Audio::Icecast):268
+[Audio::Icecast] ------> <BOL><HERE>use XML::Class;
+[Audio::Icecast] at t/030-listeners-basic.t:6
+[Audio::Icecast] ------> <BOL><HERE>use Audio::Icecast;
+===> Testing [FAIL]: Audio::Icecast:ver<0.0.6>:auth<zef:jonathanstowe>:api<1.0>
+[Audio::Icecast] Failed to get passing tests, but continuing with --force-test
+===> Installing: Audio::Icecast:ver<0.0.6>:auth<zef:jonathanstowe>:api<1.0>
+===> Install [FAIL] for Audio::Icecast:ver<0.0.6>:auth<zef:jonathanstowe>:api<1.0>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Audio::Icecast_zef:jonathanstowe_0.0.6_1.0/sources/47BF19C2EE0790049FD90EE00DBBEB6CD5123ACA (Audio::Icecast)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/Audio::Icecast_zef:jonathanstowe_0.0.6_1.0/sources/47BF19C2EE0790049FD90EE00DBBEB6CD5123ACA (Audio::Icecast):268
+------> <BOL><HERE>use XML::Class;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Audio::Icecast_zef:jonathanstowe_0.0.6_1.0/sources/47BF19C2EE0790049FD90EE00DBBEB6CD5123ACA (Audio::Icecast)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/Audio::Icecast_zef:jonathanstowe_0.0.6_1.0/sources/47BF19C2EE0790049FD90EE00DBBEB6CD5123ACA (Audio::Icecast):268
+------> <BOL><HERE>use XML::Class;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1min 29.763s
+             CPU time consumed: 1min 8.503s
+                   Memory peak: 1G (swap: 73.6M)

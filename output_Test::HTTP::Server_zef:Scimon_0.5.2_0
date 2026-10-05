@@ -1,0 +1,77 @@
+Running as unit: run-p2710765-i10997562.service; invocation ID: f62c14263380499790b213ff2e1d6a79
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Test::HTTP::Server
+===> Found: Test::HTTP::Server:ver<0.5.2>:auth<zef:Scimon> [via Zef::Repository::Ecosystems<fez>]
+[Test::HTTP::Server] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791207126.2710772.4813.943316383761/758e4bdce640a3560595b1bd9d6f4303137303d6.tar.gz https://360.zef.pm/T/ES/TEST_HTTP_SERVER/758e4bdce640a3560595b1bd9d6f4303137303d6.tar.gz
+===> Fetching [OK]: Test::HTTP::Server:ver<0.5.2>:auth<zef:Scimon> to /home/coke/sandbox/blin/data/zef-data/tmp/1791207126.2710772.4813.943316383761/758e4bdce640a3560595b1bd9d6f4303137303d6.tar.gz
+[Test::HTTP::Server] Command: tar -t -f ./758e4bdce640a3560595b1bd9d6f4303137303d6.tar.gz
+[Test::HTTP::Server] Command: tar -xvf ./758e4bdce640a3560595b1bd9d6f4303137303d6.tar.gz -C ../758e4bdce640a3560595b1bd9d6f4303137303d6.tar.gz
+===> Extraction [OK]: Test::HTTP::Server to /home/coke/sandbox/blin/data/zef-data/tmp/758e4bdce640a3560595b1bd9d6f4303137303d6.tar.gz
+===> Testing: Test::HTTP::Server:ver<0.5.2>:auth<zef:Scimon>
+[Test::HTTP::Server] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/758e4bdce640a3560595b1bd9d6f4303137303d6.tar.gz/Test-HTTP-Server-0.5.2 t/01-basic.rakutest
+[Test::HTTP::Server] ok 1 - Test::HTTP::Server module can be use-d ok
+[Test::HTTP::Server] ok 2 - Test::HTTP::Server::Event module can be use-d ok
+[Test::HTTP::Server] 1..2
+[Test::HTTP::Server] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/758e4bdce640a3560595b1bd9d6f4303137303d6.tar.gz/Test-HTTP-Server-0.5.2 t/02-event.rakutest
+[Test::HTTP::Server] ok 1 - Made an event
+[Test::HTTP::Server] ok 2 - Code as expected
+[Test::HTTP::Server] ok 3 - Path as expected
+[Test::HTTP::Server] ok 4 - Method as expected
+[Test::HTTP::Server] 1..4
+[Test::HTTP::Server] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/758e4bdce640a3560595b1bd9d6f4303137303d6.tar.gz/Test-HTTP-Server-0.5.2 t/03-empty-folder.rakutest
+[Test::HTTP::Server] ===SORRY!=== Error while compiling t/03-empty-folder.rakutest
+[Test::HTTP::Server] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[Test::HTTP::Server] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[Test::HTTP::Server] ===SORRY!===
+[Test::HTTP::Server] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Test::HTTP::Server] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[Test::HTTP::Server] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[Test::HTTP::Server] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[Test::HTTP::Server] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[Test::HTTP::Server] at t/03-empty-folder.rakutest:5
+[Test::HTTP::Server] ------> <BOL><HERE>use HTTP::UserAgent;
+[Test::HTTP::Server] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/758e4bdce640a3560595b1bd9d6f4303137303d6.tar.gz/Test-HTTP-Server-0.5.2 t/04-simple-files.rakutest
+[Test::HTTP::Server] ===SORRY!=== Error while compiling t/04-simple-files.rakutest
+[Test::HTTP::Server] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[Test::HTTP::Server] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[Test::HTTP::Server] ===SORRY!===
+[Test::HTTP::Server] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Test::HTTP::Server] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[Test::HTTP::Server] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[Test::HTTP::Server] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[Test::HTTP::Server] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[Test::HTTP::Server] at t/04-simple-files.rakutest:5
+[Test::HTTP::Server] ------> <BOL><HERE>use HTTP::UserAgent;
+[Test::HTTP::Server] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/758e4bdce640a3560595b1bd9d6f4303137303d6.tar.gz/Test-HTTP-Server-0.5.2 t/05-config-file.rakutest
+[Test::HTTP::Server] ===SORRY!=== Error while compiling t/05-config-file.rakutest
+[Test::HTTP::Server] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[Test::HTTP::Server] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[Test::HTTP::Server] ===SORRY!===
+[Test::HTTP::Server] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Test::HTTP::Server] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[Test::HTTP::Server] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[Test::HTTP::Server] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[Test::HTTP::Server] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[Test::HTTP::Server] at t/05-config-file.rakutest:5
+[Test::HTTP::Server] ------> <BOL><HERE>use HTTP::UserAgent;
+[Test::HTTP::Server] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/758e4bdce640a3560595b1bd9d6f4303137303d6.tar.gz/Test-HTTP-Server-0.5.2 t/06-loop-in-file.rakutest
+[Test::HTTP::Server] ===SORRY!=== Error while compiling t/06-loop-in-file.rakutest
+[Test::HTTP::Server] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[Test::HTTP::Server] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[Test::HTTP::Server] ===SORRY!===
+[Test::HTTP::Server] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Test::HTTP::Server] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[Test::HTTP::Server] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[Test::HTTP::Server] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[Test::HTTP::Server] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[Test::HTTP::Server] at t/06-loop-in-file.rakutest:5
+[Test::HTTP::Server] ------> <BOL><HERE>use HTTP::UserAgent;
+===> Testing [FAIL]: Test::HTTP::Server:ver<0.5.2>:auth<zef:Scimon>
+[Test::HTTP::Server] Failed to get passing tests, but continuing with --force-test
+===> Installing: Test::HTTP::Server:ver<0.5.2>:auth<zef:Scimon>
+===> Install [OK] for Test::HTTP::Server:ver<0.5.2>:auth<zef:Scimon>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 1min 5.517s
+             CPU time consumed: 1min 2.044s
+                   Memory peak: 1.1G (swap: 111.1M)

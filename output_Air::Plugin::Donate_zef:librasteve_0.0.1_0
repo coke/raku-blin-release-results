@@ -1,0 +1,41 @@
+Running as unit: run-p2767012-i11087506.service; invocation ID: 701ab54b6f424c3fb827a474b621fd7c
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Air::Plugin::Donate
+===> Found: Air::Plugin::Donate:ver<0.0.1>:auth<zef:librasteve> [via Zef::Repository::Ecosystems<fez>]
+[Air::Plugin::Donate] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791208900.2767031.5842.026189527581/dabec07cf1a38ccc79581ea937ea54d0744cc920.tar.gz https://360.zef.pm/A/IR/AIR_PLUGIN_DONATE/dabec07cf1a38ccc79581ea937ea54d0744cc920.tar.gz
+===> Fetching [OK]: Air::Plugin::Donate:ver<0.0.1>:auth<zef:librasteve> to /home/coke/sandbox/blin/data/zef-data/tmp/1791208900.2767031.5842.026189527581/dabec07cf1a38ccc79581ea937ea54d0744cc920.tar.gz
+[Air::Plugin::Donate] Command: tar -t -f ./dabec07cf1a38ccc79581ea937ea54d0744cc920.tar.gz
+[Air::Plugin::Donate] Command: tar -xvf ./dabec07cf1a38ccc79581ea937ea54d0744cc920.tar.gz -C ../dabec07cf1a38ccc79581ea937ea54d0744cc920.tar.gz
+===> Extraction [OK]: Air::Plugin::Donate to /home/coke/sandbox/blin/data/zef-data/tmp/dabec07cf1a38ccc79581ea937ea54d0744cc920.tar.gz
+===> Testing: Air::Plugin::Donate:ver<0.0.1>:auth<zef:librasteve>
+[Air::Plugin::Donate] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/dabec07cf1a38ccc79581ea937ea54d0744cc920.tar.gz/Air-Plugin-Donate-0.0.1 t/01-basic.rakutest
+[Air::Plugin::Donate] ===SORRY!=== Error while compiling t/01-basic.rakutest
+[Air::Plugin::Donate] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/dabec07cf1a38ccc79581ea937ea54d0744cc920.tar.gz/Air-Plugin-Donate-0.0.1/lib/Air/Plugin/Donate.rakumod (Air::Plugin::Donate)
+[Air::Plugin::Donate] ===SORRY!===
+[Air::Plugin::Donate] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Air::Plugin::Donate] at /home/coke/sandbox/blin/data/zef-data/tmp/dabec07cf1a38ccc79581ea937ea54d0744cc920.tar.gz/Air-Plugin-Donate-0.0.1/lib/Air/Plugin/Donate.rakumod (Air::Plugin::Donate):1
+[Air::Plugin::Donate] ------> <BOL><HERE>use Air::Functional;
+[Air::Plugin::Donate] at t/01-basic.rakutest:2
+[Air::Plugin::Donate] ------> <BOL><HERE>use Air::Plugin::Donate;
+===> Testing [FAIL]: Air::Plugin::Donate:ver<0.0.1>:auth<zef:librasteve>
+[Air::Plugin::Donate] Failed to get passing tests, but continuing with --force-test
+===> Installing: Air::Plugin::Donate:ver<0.0.1>:auth<zef:librasteve>
+===> Install [FAIL] for Air::Plugin::Donate:ver<0.0.1>:auth<zef:librasteve>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Air::Plugin::Donate_zef:librasteve_0.0.1_0/sources/224EC3AC428988866CB4DD4627E3B10ED91DD3A2 (Air::Plugin::Donate)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/Air::Plugin::Donate_zef:librasteve_0.0.1_0/sources/224EC3AC428988866CB4DD4627E3B10ED91DD3A2 (Air::Plugin::Donate):1
+------> <BOL><HERE>use Air::Functional;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Air::Plugin::Donate_zef:librasteve_0.0.1_0/sources/224EC3AC428988866CB4DD4627E3B10ED91DD3A2 (Air::Plugin::Donate)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/Air::Plugin::Donate_zef:librasteve_0.0.1_0/sources/224EC3AC428988866CB4DD4627E3B10ED91DD3A2 (Air::Plugin::Donate):1
+------> <BOL><HERE>use Air::Functional;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 29.707s
+             CPU time consumed: 28.907s
+                   Memory peak: 1G (swap: 0B)

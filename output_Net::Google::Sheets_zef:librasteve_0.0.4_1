@@ -1,0 +1,55 @@
+Running as unit: run-p2756976-i11046508.service; invocation ID: c15b811881cf4d44b1f0d9663fcc5412
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Net::Google::Sheets
+===> Found: Net::Google::Sheets:ver<0.0.4>:auth<zef:librasteve>:api<1> [via Zef::Repository::Ecosystems<fez>]
+[Net::Google::Sheets] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791208596.2756990.4669.629341689153/d08289701997079781fa8cf7aa79ff5dc4cb9543.tar.gz https://360.zef.pm/N/ET/NET_GOOGLE_SHEETS/d08289701997079781fa8cf7aa79ff5dc4cb9543.tar.gz
+===> Fetching [OK]: Net::Google::Sheets:ver<0.0.4>:auth<zef:librasteve>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1791208596.2756990.4669.629341689153/d08289701997079781fa8cf7aa79ff5dc4cb9543.tar.gz
+[Net::Google::Sheets] Command: tar -t -f ./d08289701997079781fa8cf7aa79ff5dc4cb9543.tar.gz
+[Net::Google::Sheets] Command: tar -xvf ./d08289701997079781fa8cf7aa79ff5dc4cb9543.tar.gz -C ../d08289701997079781fa8cf7aa79ff5dc4cb9543.tar.gz
+===> Extraction [OK]: Net::Google::Sheets to /home/coke/sandbox/blin/data/zef-data/tmp/d08289701997079781fa8cf7aa79ff5dc4cb9543.tar.gz
+===> Testing: Net::Google::Sheets:ver<0.0.4>:auth<zef:librasteve>:api<1>
+===> Testing [OK] for Net::Google::Sheets:ver<0.0.4>:auth<zef:librasteve>:api<1>
+===> Installing: Net::Google::Sheets:ver<0.0.4>:auth<zef:librasteve>:api<1>
+===> Install [FAIL] for Net::Google::Sheets:ver<0.0.4>:auth<zef:librasteve>:api<1>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Net::Google::Sheets_zef:librasteve_0.0.4_1/sources/EE34B05C532ABC695CD43F587BD175E76842A0EC (Net::Google::Sheets)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/OAuth2::Client::Google_cpan:BDUGGAN_0.1.1_0/sources/1A6BA03169C134496C293B9FE44A96BBE9A5DDE2 (OAuth2::Client::Google)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/OAuth2::Client::Google_cpan:BDUGGAN_0.1.1_0/sources/1A6BA03169C134496C293B9FE44A96BBE9A5DDE2 (OAuth2::Client::Google):2
+------> <BOL><HERE>use HTTP::UserAgent;
+
+at /home/coke/sandbox/blin/installed/Net::Google::Sheets_zef:librasteve_0.0.4_1/sources/EE34B05C532ABC695CD43F587BD175E76842A0EC (Net::Google::Sheets):3
+------> <BOL><HERE>use OAuth2::Client::Google;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Net::Google::Sheets_zef:librasteve_0.0.4_1/sources/EE34B05C532ABC695CD43F587BD175E76842A0EC (Net::Google::Sheets)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/OAuth2::Client::Google_cpan:BDUGGAN_0.1.1_0/sources/1A6BA03169C134496C293B9FE44A96BBE9A5DDE2 (OAuth2::Client::Google)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/OAuth2::Client::Google_cpan:BDUGGAN_0.1.1_0/sources/1A6BA03169C134496C293B9FE44A96BBE9A5DDE2 (OAuth2::Client::Google):2
+------> <BOL><HERE>use HTTP::UserAgent;
+
+at /home/coke/sandbox/blin/installed/Net::Google::Sheets_zef:librasteve_0.0.4_1/sources/EE34B05C532ABC695CD43F587BD175E76842A0EC (Net::Google::Sheets):3
+------> <BOL><HERE>use OAuth2::Client::Google;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 54.039s
+             CPU time consumed: 25.139s
+                   Memory peak: 1.2G (swap: 101.1M)

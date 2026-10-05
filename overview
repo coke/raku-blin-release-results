@@ -1,0 +1,247 @@
+AI::Gator – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+API::USNavalObservatory – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+AWS::Session – AlwaysFail
+Air – AlwaysFail
+Air::Plugin::Donate – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+Amazon::DynamoDB – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+App::Football – AlwaysFail
+App::GPTrixie – OK
+App::Mi6 – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+App::Prove6 – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+App::Rak – OK
+App::Rak::Markdown – AlwaysFail
+Audio::Hydrogen – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+Audio::Icecast – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+Backtrace::Files – OK
+Base64 – OK
+Blin – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+CBOR::Simple – OK
+CLI::Version – OK
+CSS::Grammar – OK
+CSS::Nested – OK
+CSS::Writer – OK
+CSV::Parser – OK
+Cache::Dir – OK
+Cairo – AlwaysFail
+CheckSocket – OK
+Color – OK
+Color::DirColors – OK
+Color::Names – OK
+Color::Scheme – OK
+Commands – OK
+Config::INI – OK
+Cro::Core – OK
+Cro::HTTP – OK
+Cro::HTTP::Test – OK
+Cro::TLS – OK
+Cro::WebApp – OK
+Cro::WebSocket – OK
+Cromponent – AlwaysFail
+Crypt::Random – OK
+DBIish – AlwaysFail
+DBIish – AlwaysFail
+DBIish::Pool – AlwaysFail
+DOM::Tiny – AlwaysFail
+Data::Dump – OK
+Data::ExampleDatasets – AlwaysFail
+Data::Reshapers – OK
+Data::TypeSystem – OK
+DateTime::Format – OK
+DateTime::Parse – OK
+Digest – OK
+Digest::HMAC – OK
+Digest::SHA1::Native – OK
+Digest::SHA256::Native – OK
+Distribution::Builder::MakeFromJSON – OK
+Docker::File – OK
+Draku – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+Encode – OK
+Exportable – OK
+File::Directory::Tree – OK
+File::Find – OK
+File::Ignore – OK
+File::Stat – OK
+File::Temp – OK
+File::Which – OK
+GTK::Simple – OK
+Geo::Coder::OpenCage – UnhandledException
+Getopt::Long – OK
+Git::Files – OK
+Gumbo – AlwaysFail
+HTML::Escape – OK
+HTTP::API::MusicBrainz – UnhandledException
+HTTP::Easy – OK
+HTTP::HPACK – OK
+HTTP::Roles – OK
+HTTP::Server::Async – InstallableButUntested
+HTTP::Status – OK
+HTTP::Tiny – OK
+HTTP::UserAgent – AlwaysFail
+Hash::Merge – OK
+IO::Capture::Simple – OK
+IO::Path::AutoDecompress – OK
+IO::Path::ChildSecure – OK
+IO::Socket::Async::SSL – InstallableButUntested
+IO::Socket::SSL – OK
+IRC::Client – InstallableButUntested
+IRC::Client::Plugin::Rakkable – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+IRC::TextColor – OK
+Injector – Fail, Bisected: f20534cb3a5df815e7c3b8ca08160bcb78f9d6c2
+JSON::Class – AlwaysFail
+JSON::Fast – OK
+JSON::Fast::Hyper – OK
+JSON::JWT – OK
+JSON::Marshal – OK
+JSON::Name – OK
+JSON::OptIn – OK
+JSON::Pretty – OK
+JSON::RPC – UnhandledException
+JSON::Tiny – OK
+JSON::Unmarshal – OK
+JSON::simd – Flapper
+LWP::Simple – OK
+LibCurl – AlwaysFail
+LibraryCheck – OK
+LibraryMake – OK
+License::SPDX – AlwaysFail
+Lingua::Conjunction – OK
+Lingua::Translation::DeepL – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+Log::Async – OK
+Log::Timeline – OK
+LogP6 – OK
+META6 – AlwaysFail
+META::constants – OK
+MIDI::Make – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+MIME::Base64 – OK
+ML::AssociationRuleLearning – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+ML::TriesWithFrequencies – OK
+Map::Mapnik – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+Matrix::Bot – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+Matrix::Client – AlwaysFail
+Method::Protected – OK
+Monitor::Monit – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+Native::Compile – AlwaysFail
+NativeCall::TypeDiag – OK
+NativeHelpers::Blob – OK
+NativeHelpers::Callback – AlwaysFail
+Needle::Compile – OK
+Net::Google::Sheets – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+Number::Denominate – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+OAuth2::Client::Google – UnhandledException
+OO::Monitors – OK
+Odoo::Client – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+OpenSSL – OK
+P5getgrnam – OK
+P5getpwnam – OK
+PSGI – OK
+Pakku – MissingDependency
+Pastebin::Gist – Flapper
+Path::Finder – OK
+Pod::Load – AlwaysFail
+Pod::To::Markdown – AlwaysFail
+Pod::To::Raku – OK
+Pod::Usage – OK
+PostCocoon::Url – OK
+Pretty::Table – OK
+Proc::Q – OK
+Questhub – UnhandledException
+Raku::Pod::Render – AlwaysFail
+Rakudo – OK
+RakudoPrereq – OK
+Readline – OK
+Rmv::JIRA – UnhandledException
+SVG – OK
+SVG::Plot – OK
+Shell::Command – OK
+Slang::Tuxic – OK
+Slangify – OK
+Sparky – OK
+Sparky-Job-Api – OK
+Sparky::Plugin::Notify::Telegram – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+Sparrow6 – OK
+Sparrowdo – OK
+Stats – OK
+String::CRC32 – OK
+String::Utils – OK
+Sys::Chown – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+System::Query – OK
+TAP – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+TOML – OK
+TelegramBot – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+Temp::Path – OK
+Template::Mustache – OK
+Terminal-API – OK
+Terminal::ANSI – OK
+Terminal::ANSIColor – OK
+Terminal::ANSIParser – OK
+Terminal::Capabilities – OK
+Terminal::LineEditor – OK
+Terminal::Print – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+Terminal::UI – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+Terminal::Widgets – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+Test::Assertion – OK
+Test::Deeply::Relaxed – AlwaysFail
+Test::HTTP::Server – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+Test::META – AlwaysFail
+Test::Mock – OK
+Test::Notice – AlwaysFail
+Test::Output – OK
+Test::Selector – OK
+Test::Util::ServerPort – OK
+Test::When – OK
+Testo – OK
+Text::CSV – AlwaysFail
+Text::Diff::Sift4 – OK
+Text::Markdown – OK
+Text::MiscUtils – OK
+Text::Table::Simple – OK
+Text::Wrap – OK
+Time::Crontab – AlwaysFail
+TinyFloats – OK
+Toaster – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+Trap – OK
+UNIX::Privileges – OK
+URI – OK
+URI::Encode – OK
+URI::Template – OK
+URL – OK
+URL::Find – OK
+UUID – OK
+UUID::V4 – OK
+Unicode::UTF8-Parser – OK
+WWW – AlwaysFail
+WWW::DuckDuckGo – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+WWW::SilverGoldBull – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+WWW::YouTube – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+WWW::vlc::Remote – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+WebDriver2 – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+WebService::AWS::Auth::V4 – OK
+WebService::AWS::S3 – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+WebService::FootballData – AlwaysFail
+WebService::GoogleDyDNS – Flapper
+WebService::HazIP – OK
+Whateverable – AlwaysFail
+WhereList – OK
+XDG::BaseDirectory – OK
+XML – OK
+XML::Class – UnhandledException
+XML::Writer – OK
+YAMLish – OK
+Zap – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+ake – OK
+as-cli-arguments – OK
+cro – AlwaysFail
+deredere – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+fez – OK
+has-word – OK
+highlighter – OK
+hyperize – OK
+if – OK
+nano – OK
+octans – Flapper
+path-utils – OK
+paths – OK
+rak – OK
+sigpipe – OK
+taurus – Fail, Bisected: 40fca14d2657846c9bec388f8101bc04f99657f2
+zef – OK

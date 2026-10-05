@@ -1,0 +1,141 @@
+Running as unit: run-p2756683-i11090745.service; invocation ID: 1fc0190a62fd4547ba166b4f66cee22d
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: WebService::AWS::S3
+===> Found: WebService::AWS::S3:ver<0.0.8>:auth<cpan:BDUGGAN> [via Zef::Repository::Ecosystems<rea>]
+[WebService::AWS::S3] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791208614.2756708.5479.262403378814/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/W/WebService%3A%3AAWS%3A%3AS3/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz
+===> Fetching [OK]: WebService::AWS::S3:ver<0.0.8>:auth<cpan:BDUGGAN> to /home/coke/sandbox/blin/data/zef-data/tmp/1791208614.2756708.5479.262403378814/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz
+[WebService::AWS::S3] Command: tar -t -f ./WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz
+[WebService::AWS::S3] Command: tar -xvf ./WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz -C ../WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz
+===> Extraction [OK]: WebService::AWS::S3 to /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz
+===> Testing: WebService::AWS::S3:ver<0.0.8>:auth<cpan:bduggan>
+[WebService::AWS::S3] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8 t/01-basic.t
+[WebService::AWS::S3] 1..1
+[WebService::AWS::S3] not ok 1 - WebService::AWS::S3 module can be use-d ok
+[WebService::AWS::S3] # Failed test 'WebService::AWS::S3 module can be use-d ok'
+[WebService::AWS::S3] # at t/01-basic.t line 7
+[WebService::AWS::S3] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8/lib/WebService/AWS/S3.rakumod (WebService::AWS::S3)
+[WebService::AWS::S3] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[WebService::AWS::S3] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[WebService::AWS::S3] # ===SORRY!===
+[WebService::AWS::S3] # Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[WebService::AWS::S3] # 
+[WebService::AWS::S3] # at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[WebService::AWS::S3] # ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[WebService::AWS::S3] # 
+[WebService::AWS::S3] # at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[WebService::AWS::S3] # ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[WebService::AWS::S3] # 
+[WebService::AWS::S3] # at /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8/lib/WebService/AWS/S3.rakumod (WebService::AWS::S3):8
+[WebService::AWS::S3] # ------> <BOL><HERE>use HTTP::UserAgent;
+[WebService::AWS::S3] # 
+[WebService::AWS::S3] # You failed 1 test of 1
+[WebService::AWS::S3] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8 t/02-s3.t
+[WebService::AWS::S3] ===SORRY!=== Error while compiling t/02-s3.t
+[WebService::AWS::S3] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8/lib/WebService/AWS/S3.rakumod (WebService::AWS::S3)
+[WebService::AWS::S3] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[WebService::AWS::S3] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[WebService::AWS::S3] ===SORRY!===
+[WebService::AWS::S3] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[WebService::AWS::S3] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[WebService::AWS::S3] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[WebService::AWS::S3] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[WebService::AWS::S3] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[WebService::AWS::S3] at /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8/lib/WebService/AWS/S3.rakumod (WebService::AWS::S3):8
+[WebService::AWS::S3] ------> <BOL><HERE>use HTTP::UserAgent;
+[WebService::AWS::S3] at t/02-s3.t:4
+[WebService::AWS::S3] ------> <BOL><HERE>use WebService::AWS::S3;
+[WebService::AWS::S3] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8 t/03-resources.t
+[WebService::AWS::S3] ===SORRY!=== Error while compiling t/03-resources.t
+[WebService::AWS::S3] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8/lib/WebService/AWS/S3/Resources.rakumod (WebService::AWS::S3::Resources)
+[WebService::AWS::S3] ===SORRY!===
+[WebService::AWS::S3] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[WebService::AWS::S3] at /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8/lib/WebService/AWS/S3/Resources.rakumod (WebService::AWS::S3::Resources):2
+[WebService::AWS::S3] ------> <BOL><HERE>use XML::Class;
+[WebService::AWS::S3] at t/03-resources.t:5
+[WebService::AWS::S3] ------> <BOL><HERE>use WebService::AWS::S3::Resources;
+[WebService::AWS::S3] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8 t/04-live.t
+[WebService::AWS::S3] ===SORRY!=== Error while compiling t/04-live.t
+[WebService::AWS::S3] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8/lib/WebService/AWS/S3.rakumod (WebService::AWS::S3)
+[WebService::AWS::S3] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[WebService::AWS::S3] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[WebService::AWS::S3] ===SORRY!===
+[WebService::AWS::S3] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[WebService::AWS::S3] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[WebService::AWS::S3] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[WebService::AWS::S3] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[WebService::AWS::S3] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[WebService::AWS::S3] at /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8/lib/WebService/AWS/S3.rakumod (WebService::AWS::S3):8
+[WebService::AWS::S3] ------> <BOL><HERE>use HTTP::UserAgent;
+[WebService::AWS::S3] at t/04-live.t:4
+[WebService::AWS::S3] ------> <BOL><HERE>use WebService::AWS::S3;
+[WebService::AWS::S3] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8 t/05-mock.t
+[WebService::AWS::S3] ===SORRY!=== Error while compiling t/05-mock.t
+[WebService::AWS::S3] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8/lib/WebService/AWS/S3.rakumod (WebService::AWS::S3)
+[WebService::AWS::S3] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[WebService::AWS::S3] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[WebService::AWS::S3] ===SORRY!===
+[WebService::AWS::S3] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[WebService::AWS::S3] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[WebService::AWS::S3] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[WebService::AWS::S3] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[WebService::AWS::S3] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[WebService::AWS::S3] at /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8/lib/WebService/AWS/S3.rakumod (WebService::AWS::S3):8
+[WebService::AWS::S3] ------> <BOL><HERE>use HTTP::UserAgent;
+[WebService::AWS::S3] at t/05-mock.t:4
+[WebService::AWS::S3] ------> <BOL><HERE>use WebService::AWS::S3;
+[WebService::AWS::S3] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8 t/06-request.t
+[WebService::AWS::S3] 1..1
+[WebService::AWS::S3] ok 1 - known auth header
+[WebService::AWS::S3] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8 t/07-exception.t
+[WebService::AWS::S3] ===SORRY!=== Error while compiling t/07-exception.t
+[WebService::AWS::S3] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[WebService::AWS::S3] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[WebService::AWS::S3] ===SORRY!===
+[WebService::AWS::S3] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[WebService::AWS::S3] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[WebService::AWS::S3] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[WebService::AWS::S3] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[WebService::AWS::S3] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[WebService::AWS::S3] at t/07-exception.t:5
+[WebService::AWS::S3] ------> <BOL><HERE>use HTTP::UserAgent;
+[WebService::AWS::S3] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/WebService%3A%3AAWS%3A%3AS3%3Aver%3C0.0.8%3E%3Aauth%3Ccpan%3ABDUGGAN%3E.tar.gz/AWS-S3-0.0.8 t/99-meta.t
+[WebService::AWS::S3] 1..1
+[WebService::AWS::S3] ok 1 - # SKIP Skipping author test
+===> Testing [FAIL]: WebService::AWS::S3:ver<0.0.8>:auth<cpan:bduggan>
+[WebService::AWS::S3] Failed to get passing tests, but continuing with --force-test
+===> Installing: WebService::AWS::S3:ver<0.0.8>:auth<cpan:bduggan>
+===> Install [FAIL] for WebService::AWS::S3:ver<0.0.8>:auth<cpan:bduggan>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/WebService::AWS::S3_cpan:BDUGGAN_0.0.8_0/sources/6F52E160425A0E7B8CA537177B763F9C871BD85C (WebService::AWS::S3)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/WebService::AWS::S3_cpan:BDUGGAN_0.0.8_0/sources/6F52E160425A0E7B8CA537177B763F9C871BD85C (WebService::AWS::S3):8
+------> <BOL><HERE>use HTTP::UserAgent;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/WebService::AWS::S3_cpan:BDUGGAN_0.0.8_0/sources/6F52E160425A0E7B8CA537177B763F9C871BD85C (WebService::AWS::S3)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/WebService::AWS::S3_cpan:BDUGGAN_0.0.8_0/sources/6F52E160425A0E7B8CA537177B763F9C871BD85C (WebService::AWS::S3):8
+------> <BOL><HERE>use HTTP::UserAgent;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 2min 935ms
+             CPU time consumed: 1min 46.272s
+                   Memory peak: 1.7G (swap: 102.9M)

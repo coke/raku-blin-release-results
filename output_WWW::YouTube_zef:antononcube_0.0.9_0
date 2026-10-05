@@ -1,0 +1,47 @@
+Running as unit: run-p2710784-i11041625.service; invocation ID: 691d31509de240a38f80723d2fa01fea
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: WWW::YouTube
+===> Found: WWW::YouTube:ver<0.0.9>:auth<zef:antononcube>:api<0> [via Zef::Repository::Ecosystems<fez>]
+[WWW::YouTube] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791207125.2710786.2995.910355267758/a220d6c0d5498143620af42e5012b79dabf872de.tar.gz https://360.zef.pm/W/WW/WWW_YOUTUBE/a220d6c0d5498143620af42e5012b79dabf872de.tar.gz
+===> Fetching [OK]: WWW::YouTube:ver<0.0.9>:auth<zef:antononcube>:api<0> to /home/coke/sandbox/blin/data/zef-data/tmp/1791207125.2710786.2995.910355267758/a220d6c0d5498143620af42e5012b79dabf872de.tar.gz
+[WWW::YouTube] Command: tar -t -f ./a220d6c0d5498143620af42e5012b79dabf872de.tar.gz
+[WWW::YouTube] Command: tar -xvf ./a220d6c0d5498143620af42e5012b79dabf872de.tar.gz -C ../a220d6c0d5498143620af42e5012b79dabf872de.tar.gz
+===> Extraction [OK]: WWW::YouTube to /home/coke/sandbox/blin/data/zef-data/tmp/a220d6c0d5498143620af42e5012b79dabf872de.tar.gz
+===> Testing: WWW::YouTube:ver<0.0.9>:auth<zef:antononcube>:api<0>
+===> Testing [OK] for WWW::YouTube:ver<0.0.9>:auth<zef:antononcube>:api<0>
+===> Installing: WWW::YouTube:ver<0.0.9>:auth<zef:antononcube>:api<0>
+===> Install [FAIL] for WWW::YouTube:ver<0.0.9>:auth<zef:antononcube>:api<0>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/WWW::YouTube_zef:antononcube_0.0.9_0/sources/739EF5043D72E086A0A15008AF03F3553643839D (WWW::YouTube)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/WWW::YouTube_zef:antononcube_0.0.9_0/sources/739EF5043D72E086A0A15008AF03F3553643839D (WWW::YouTube):5
+------> <BOL><HERE>use HTTP::UserAgent;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/WWW::YouTube_zef:antononcube_0.0.9_0/sources/739EF5043D72E086A0A15008AF03F3553643839D (WWW::YouTube)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/WWW::YouTube_zef:antononcube_0.0.9_0/sources/739EF5043D72E086A0A15008AF03F3553643839D (WWW::YouTube):5
+------> <BOL><HERE>use HTTP::UserAgent;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 29.195s
+             CPU time consumed: 23.483s
+                   Memory peak: 1.1G (swap: 134M)

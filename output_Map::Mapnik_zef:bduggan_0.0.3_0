@@ -1,0 +1,63 @@
+Running as unit: run-p2756947-i11190689.service; invocation ID: bc95e4e3b74e4459af91c29926fe5a7b
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Map::Mapnik
+===> Found: Map::Mapnik:ver<0.0.3>:auth<zef:bduggan> [via Zef::Repository::Ecosystems<fez>]
+[Map::Mapnik] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791208592.2756970.8522.114884107756/879ebc013050af4df718b7c46692663194890243.tar.gz https://360.zef.pm/M/AP/MAP_MAPNIK/879ebc013050af4df718b7c46692663194890243.tar.gz
+===> Fetching [OK]: Map::Mapnik:ver<0.0.3>:auth<zef:bduggan> to /home/coke/sandbox/blin/data/zef-data/tmp/1791208592.2756970.8522.114884107756/879ebc013050af4df718b7c46692663194890243.tar.gz
+[Map::Mapnik] Command: tar -t -f ./879ebc013050af4df718b7c46692663194890243.tar.gz
+[Map::Mapnik] Command: tar -xvf ./879ebc013050af4df718b7c46692663194890243.tar.gz -C ../879ebc013050af4df718b7c46692663194890243.tar.gz
+===> Extraction [OK]: Map::Mapnik to /home/coke/sandbox/blin/data/zef-data/tmp/879ebc013050af4df718b7c46692663194890243.tar.gz
+===> Testing: Map::Mapnik:ver<0.0.3>:auth<zef:bduggan>
+[Map::Mapnik] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/879ebc013050af4df718b7c46692663194890243.tar.gz/Map-Mapnik-0.0.3 t/00-use.rakutest
+[Map::Mapnik] 1..1
+[Map::Mapnik] not ok 1 - Map::Mapnik module can be use-d ok
+[Map::Mapnik] # Failed test 'Map::Mapnik module can be use-d ok'
+[Map::Mapnik] # at t/00-use.rakutest line 6
+[Map::Mapnik] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/879ebc013050af4df718b7c46692663194890243.tar.gz/Map-Mapnik-0.0.3/lib/Map/Mapnik.rakumod (Map::Mapnik)
+[Map::Mapnik] # ===SORRY!===
+[Map::Mapnik] # Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Map::Mapnik] # 
+[Map::Mapnik] # at /home/coke/sandbox/blin/data/zef-data/tmp/879ebc013050af4df718b7c46692663194890243.tar.gz/Map-Mapnik-0.0.3/lib/Map/Mapnik.rakumod (Map::Mapnik):1
+[Map::Mapnik] # ------> <BOL><HERE>use XML::Class;
+[Map::Mapnik] # 
+[Map::Mapnik] # You failed 1 test of 1
+[Map::Mapnik] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/879ebc013050af4df718b7c46692663194890243.tar.gz/Map-Mapnik-0.0.3 t/01-generate-xml.rakutest
+[Map::Mapnik] ===SORRY!=== Error while compiling t/01-generate-xml.rakutest
+[Map::Mapnik] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/879ebc013050af4df718b7c46692663194890243.tar.gz/Map-Mapnik-0.0.3/lib/Map/Mapnik.rakumod (Map::Mapnik)
+[Map::Mapnik] ===SORRY!===
+[Map::Mapnik] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Map::Mapnik] at /home/coke/sandbox/blin/data/zef-data/tmp/879ebc013050af4df718b7c46692663194890243.tar.gz/Map-Mapnik-0.0.3/lib/Map/Mapnik.rakumod (Map::Mapnik):1
+[Map::Mapnik] ------> <BOL><HERE>use XML::Class;
+[Map::Mapnik] at t/01-generate-xml.rakutest:3
+[Map::Mapnik] ------> <BOL><HERE>use Map::Mapnik;
+[Map::Mapnik] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/879ebc013050af4df718b7c46692663194890243.tar.gz/Map-Mapnik-0.0.3 t/02-attributes.rakutest
+[Map::Mapnik] ===SORRY!=== Error while compiling t/02-attributes.rakutest
+[Map::Mapnik] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/879ebc013050af4df718b7c46692663194890243.tar.gz/Map-Mapnik-0.0.3/lib/Map/Mapnik.rakumod (Map::Mapnik)
+[Map::Mapnik] ===SORRY!===
+[Map::Mapnik] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[Map::Mapnik] at /home/coke/sandbox/blin/data/zef-data/tmp/879ebc013050af4df718b7c46692663194890243.tar.gz/Map-Mapnik-0.0.3/lib/Map/Mapnik.rakumod (Map::Mapnik):1
+[Map::Mapnik] ------> <BOL><HERE>use XML::Class;
+[Map::Mapnik] at t/02-attributes.rakutest:3
+[Map::Mapnik] ------> <BOL><HERE>use Map::Mapnik;
+===> Testing [FAIL]: Map::Mapnik:ver<0.0.3>:auth<zef:bduggan>
+[Map::Mapnik] Failed to get passing tests, but continuing with --force-test
+===> Installing: Map::Mapnik:ver<0.0.3>:auth<zef:bduggan>
+===> Install [FAIL] for Map::Mapnik:ver<0.0.3>:auth<zef:bduggan>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Map::Mapnik_zef:bduggan_0.0.3_0/sources/DA3FF5717AE2198EA75927F69412AF6C4592052F (Map::Mapnik)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/Map::Mapnik_zef:bduggan_0.0.3_0/sources/DA3FF5717AE2198EA75927F69412AF6C4592052F (Map::Mapnik):1
+------> <BOL><HERE>use XML::Class;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Map::Mapnik_zef:bduggan_0.0.3_0/sources/DA3FF5717AE2198EA75927F69412AF6C4592052F (Map::Mapnik)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/Map::Mapnik_zef:bduggan_0.0.3_0/sources/DA3FF5717AE2198EA75927F69412AF6C4592052F (Map::Mapnik):1
+------> <BOL><HERE>use XML::Class;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1min 14.728s
+             CPU time consumed: 50.969s
+                   Memory peak: 918.8M (swap: 134.3M)

@@ -1,0 +1,75 @@
+Running as unit: run-p2710689-i11133803.service; invocation ID: 173d37e9e102481cb69a0591520ac4ed
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: WWW::SilverGoldBull
+===> Found: WWW::SilverGoldBull:ver<0.0.1> [via Zef::Repository::Ecosystems<rea>]
+[WWW::SilverGoldBull] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791207155.2710691.4795.895040848509/WWW%3A%3ASilverGoldBull%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Adboys%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/W/WWW%3A%3ASilverGoldBull/WWW%3A%3ASilverGoldBull%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Adboys%3E.tar.gz
+===> Fetching [OK]: WWW::SilverGoldBull:ver<0.0.1> to /home/coke/sandbox/blin/data/zef-data/tmp/1791207155.2710691.4795.895040848509/WWW%3A%3ASilverGoldBull%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Adboys%3E.tar.gz
+[WWW::SilverGoldBull] Command: tar -t -f ./WWW%3A%3ASilverGoldBull%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Adboys%3E.tar.gz
+[WWW::SilverGoldBull] Command: tar -xvf ./WWW%3A%3ASilverGoldBull%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Adboys%3E.tar.gz -C ../WWW%3A%3ASilverGoldBull%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Adboys%3E.tar.gz
+===> Extraction [OK]: WWW::SilverGoldBull to /home/coke/sandbox/blin/data/zef-data/tmp/WWW%3A%3ASilverGoldBull%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Adboys%3E.tar.gz
+===> Testing: WWW::SilverGoldBull:ver<0.0.1>
+[WWW::SilverGoldBull] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/WWW%3A%3ASilverGoldBull%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Adboys%3E.tar.gz/p6-WWW-SilverGoldBull-master t/00-load.t
+[WWW::SilverGoldBull] not ok 1 - WWW::SilverGoldBull module can be use-d ok
+[WWW::SilverGoldBull] # Failed test 'WWW::SilverGoldBull module can be use-d ok'
+[WWW::SilverGoldBull] # at t/00-load.t line 8
+[WWW::SilverGoldBull] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/WWW%3A%3ASilverGoldBull%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Adboys%3E.tar.gz/p6-WWW-SilverGoldBull-master/lib/WWW/SilverGoldBull.pm6 (WWW::SilverGoldBull)
+[WWW::SilverGoldBull] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[WWW::SilverGoldBull] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[WWW::SilverGoldBull] # ===SORRY!===
+[WWW::SilverGoldBull] # Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[WWW::SilverGoldBull] # 
+[WWW::SilverGoldBull] # at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[WWW::SilverGoldBull] # ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[WWW::SilverGoldBull] # 
+[WWW::SilverGoldBull] # at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[WWW::SilverGoldBull] # ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[WWW::SilverGoldBull] # 
+[WWW::SilverGoldBull] # at /home/coke/sandbox/blin/data/zef-data/tmp/WWW%3A%3ASilverGoldBull%3Aver%3C0.0.1%3E%3Aauth%3Cgithub%3Adboys%3E.tar.gz/p6-WWW-SilverGoldBull-master/lib/WWW/SilverGoldBull.pm6 (WWW::SilverGoldBull):6
+[WWW::SilverGoldBull] # ------> <BOL><HERE>use HTTP::UserAgent;
+[WWW::SilverGoldBull] # 
+[WWW::SilverGoldBull] ok 2 - WWW::SilverGoldBull::Order module can be use-d ok
+[WWW::SilverGoldBull] ok 3 - WWW::SilverGoldBull::Quote module can be use-d ok
+[WWW::SilverGoldBull] ok 4 - WWW::SilverGoldBull::Response module can be use-d ok
+[WWW::SilverGoldBull] ok 5 - WWW::SilverGoldBull::Address module can be use-d ok
+[WWW::SilverGoldBull] ok 6 - WWW::SilverGoldBull::Types module can be use-d ok
+[WWW::SilverGoldBull] ok 7 - WWW::SilverGoldBull::Item module can be use-d ok
+[WWW::SilverGoldBull] 1..7
+[WWW::SilverGoldBull] # You failed 1 test of 7
+===> Testing [FAIL]: WWW::SilverGoldBull:ver<0.0.1>
+[WWW::SilverGoldBull] Failed to get passing tests, but continuing with --force-test
+===> Installing: WWW::SilverGoldBull:ver<0.0.1>
+===> Install [FAIL] for WWW::SilverGoldBull:ver<0.0.1>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/WWW::SilverGoldBull__0.0.1_0/sources/481FAA7686A489980D070C3FA88DD629F25AA6CF (WWW::SilverGoldBull)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/WWW::SilverGoldBull__0.0.1_0/sources/481FAA7686A489980D070C3FA88DD629F25AA6CF (WWW::SilverGoldBull):6
+------> <BOL><HERE>use HTTP::UserAgent;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/WWW::SilverGoldBull__0.0.1_0/sources/481FAA7686A489980D070C3FA88DD629F25AA6CF (WWW::SilverGoldBull)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/WWW::SilverGoldBull__0.0.1_0/sources/481FAA7686A489980D070C3FA88DD629F25AA6CF (WWW::SilverGoldBull):6
+------> <BOL><HERE>use HTTP::UserAgent;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1min 19.349s
+             CPU time consumed: 1min 8.958s
+                   Memory peak: 1.8G (swap: 125.8M)

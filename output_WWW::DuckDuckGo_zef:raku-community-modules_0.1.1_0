@@ -1,0 +1,87 @@
+Running as unit: run-p2710423-i11085272.service; invocation ID: 5e5ee2817b25440fa061e1a9dcd9dc4d
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: WWW::DuckDuckGo
+===> Found: WWW::DuckDuckGo:ver<0.1.1>:auth<zef:raku-community-modules> [via Zef::Repository::Ecosystems<fez>]
+[WWW::DuckDuckGo] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791207118.2710428.4449.979795951079/ced89586b6beed40e70677ecac0b7d35c543cd05.tar.gz https://360.zef.pm/W/WW/WWW_DUCKDUCKGO/ced89586b6beed40e70677ecac0b7d35c543cd05.tar.gz
+===> Fetching [OK]: WWW::DuckDuckGo:ver<0.1.1>:auth<zef:raku-community-modules> to /home/coke/sandbox/blin/data/zef-data/tmp/1791207118.2710428.4449.979795951079/ced89586b6beed40e70677ecac0b7d35c543cd05.tar.gz
+[WWW::DuckDuckGo] Command: tar -t -f ./ced89586b6beed40e70677ecac0b7d35c543cd05.tar.gz
+[WWW::DuckDuckGo] Command: tar -xvf ./ced89586b6beed40e70677ecac0b7d35c543cd05.tar.gz -C ../ced89586b6beed40e70677ecac0b7d35c543cd05.tar.gz
+===> Extraction [OK]: WWW::DuckDuckGo to /home/coke/sandbox/blin/data/zef-data/tmp/ced89586b6beed40e70677ecac0b7d35c543cd05.tar.gz
+===> Testing: WWW::DuckDuckGo:ver<0.1.1>:auth<zef:raku-community-modules>
+[WWW::DuckDuckGo] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ced89586b6beed40e70677ecac0b7d35c543cd05.tar.gz/WWW-DuckDuckGo-0.1.1 t/00-load.rakutest
+[WWW::DuckDuckGo] 1..4
+[WWW::DuckDuckGo] not ok 1 - WWW::DuckDuckGo module can be use-d ok
+[WWW::DuckDuckGo] # Failed test 'WWW::DuckDuckGo module can be use-d ok'
+[WWW::DuckDuckGo] # at t/00-load.rakutest line 5
+[WWW::DuckDuckGo] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/ced89586b6beed40e70677ecac0b7d35c543cd05.tar.gz/WWW-DuckDuckGo-0.1.1/lib/WWW/DuckDuckGo.rakumod (WWW::DuckDuckGo)
+[WWW::DuckDuckGo] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[WWW::DuckDuckGo] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[WWW::DuckDuckGo] # ===SORRY!===
+[WWW::DuckDuckGo] # Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[WWW::DuckDuckGo] # 
+[WWW::DuckDuckGo] # at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[WWW::DuckDuckGo] # ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[WWW::DuckDuckGo] # 
+[WWW::DuckDuckGo] # at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[WWW::DuckDuckGo] # ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[WWW::DuckDuckGo] # 
+[WWW::DuckDuckGo] # at /home/coke/sandbox/blin/data/zef-data/tmp/ced89586b6beed40e70677ecac0b7d35c543cd05.tar.gz/WWW-DuckDuckGo-0.1.1/lib/WWW/DuckDuckGo.rakumod (WWW::DuckDuckGo):4
+[WWW::DuckDuckGo] # ------> <BOL><HERE>use HTTP::UserAgent;
+[WWW::DuckDuckGo] # 
+[WWW::DuckDuckGo] ok 2 - WWW::DuckDuckGo::ZeroClickInfo module can be use-d ok
+[WWW::DuckDuckGo] ok 3 - WWW::DuckDuckGo::Link module can be use-d ok
+[WWW::DuckDuckGo] ok 4 - WWW::DuckDuckGo::Icon module can be use-d ok
+[WWW::DuckDuckGo] # You failed 1 test of 4
+[WWW::DuckDuckGo] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/ced89586b6beed40e70677ecac0b7d35c543cd05.tar.gz/WWW-DuckDuckGo-0.1.1 t/01-base.rakutest
+[WWW::DuckDuckGo] ===SORRY!=== Error while compiling t/01-base.rakutest
+[WWW::DuckDuckGo] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/ced89586b6beed40e70677ecac0b7d35c543cd05.tar.gz/WWW-DuckDuckGo-0.1.1/lib/WWW/DuckDuckGo.rakumod (WWW::DuckDuckGo)
+[WWW::DuckDuckGo] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[WWW::DuckDuckGo] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[WWW::DuckDuckGo] ===SORRY!===
+[WWW::DuckDuckGo] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[WWW::DuckDuckGo] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[WWW::DuckDuckGo] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[WWW::DuckDuckGo] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[WWW::DuckDuckGo] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[WWW::DuckDuckGo] at /home/coke/sandbox/blin/data/zef-data/tmp/ced89586b6beed40e70677ecac0b7d35c543cd05.tar.gz/WWW-DuckDuckGo-0.1.1/lib/WWW/DuckDuckGo.rakumod (WWW::DuckDuckGo):4
+[WWW::DuckDuckGo] ------> <BOL><HERE>use HTTP::UserAgent;
+[WWW::DuckDuckGo] at t/01-base.rakutest:3
+[WWW::DuckDuckGo] ------> <BOL><HERE>use WWW::DuckDuckGo;
+===> Testing [FAIL]: WWW::DuckDuckGo:ver<0.1.1>:auth<zef:raku-community-modules>
+[WWW::DuckDuckGo] Failed to get passing tests, but continuing with --force-test
+===> Installing: WWW::DuckDuckGo:ver<0.1.1>:auth<zef:raku-community-modules>
+===> Install [FAIL] for WWW::DuckDuckGo:ver<0.1.1>:auth<zef:raku-community-modules>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/WWW::DuckDuckGo_zef:raku-community-modules_0.1.1_0/sources/8396C176AA99C4A9F18B09CB70C43F1788EECAA2 (WWW::DuckDuckGo)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/WWW::DuckDuckGo_zef:raku-community-modules_0.1.1_0/sources/8396C176AA99C4A9F18B09CB70C43F1788EECAA2 (WWW::DuckDuckGo):4
+------> <BOL><HERE>use HTTP::UserAgent;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/WWW::DuckDuckGo_zef:raku-community-modules_0.1.1_0/sources/8396C176AA99C4A9F18B09CB70C43F1788EECAA2 (WWW::DuckDuckGo)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/WWW::DuckDuckGo_zef:raku-community-modules_0.1.1_0/sources/8396C176AA99C4A9F18B09CB70C43F1788EECAA2 (WWW::DuckDuckGo):4
+------> <BOL><HERE>use HTTP::UserAgent;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 58.344s
+             CPU time consumed: 54.632s
+                   Memory peak: 1.2G (swap: 247.5M)

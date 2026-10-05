@@ -1,0 +1,41 @@
+Running as unit: run-p2751469-i11198754.service; invocation ID: ee89892f41704dfd848bc639689bb012
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: App::Mi6
+===> Found: App::Mi6:ver<3.0.9>:auth<zef:skaji> [via Zef::Repository::Ecosystems<fez>]
+[App::Mi6] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791208403.2751470.6090.166618389357/77dd5096e0471a635425e5419ddc13df30d9a707.tar.gz https://360.zef.pm/A/PP/APP_MI6/77dd5096e0471a635425e5419ddc13df30d9a707.tar.gz
+===> Fetching [OK]: App::Mi6:ver<3.0.9>:auth<zef:skaji> to /home/coke/sandbox/blin/data/zef-data/tmp/1791208403.2751470.6090.166618389357/77dd5096e0471a635425e5419ddc13df30d9a707.tar.gz
+[App::Mi6] Command: tar -t -f ./77dd5096e0471a635425e5419ddc13df30d9a707.tar.gz
+[App::Mi6] Command: tar -xvf ./77dd5096e0471a635425e5419ddc13df30d9a707.tar.gz -C ../77dd5096e0471a635425e5419ddc13df30d9a707.tar.gz
+===> Extraction [OK]: App::Mi6 to /home/coke/sandbox/blin/data/zef-data/tmp/77dd5096e0471a635425e5419ddc13df30d9a707.tar.gz
+===> Testing: App::Mi6:ver<3.0.9>:auth<zef:skaji>
+[App::Mi6] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/77dd5096e0471a635425e5419ddc13df30d9a707.tar.gz/App-Mi6-3.0.9 t/01-basic.rakutest
+[App::Mi6] ===SORRY!=== Error while compiling t/01-basic.rakutest
+[App::Mi6] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/77dd5096e0471a635425e5419ddc13df30d9a707.tar.gz/App-Mi6-3.0.9/lib/App/Mi6.rakumod (App::Mi6)
+[App::Mi6] ===SORRY!===
+[App::Mi6] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+[App::Mi6] at /home/coke/sandbox/blin/data/zef-data/tmp/77dd5096e0471a635425e5419ddc13df30d9a707.tar.gz/App-Mi6-3.0.9/lib/App/Mi6.rakumod (App::Mi6):10
+[App::Mi6] ------> <BOL><HERE>use TAP;
+[App::Mi6] at t/01-basic.rakutest:2
+[App::Mi6] ------> <BOL><HERE>use App::Mi6;
+===> Testing [FAIL]: App::Mi6:ver<3.0.9>:auth<zef:skaji>
+[App::Mi6] Failed to get passing tests, but continuing with --force-test
+===> Installing: App::Mi6:ver<3.0.9>:auth<zef:skaji>
+===> Install [FAIL] for App::Mi6:ver<3.0.9>:auth<zef:skaji>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/App::Mi6_zef:skaji_3.0.9_0/sources/4B118D702EC02F855AE9887854535254CF32731D (App::Mi6)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+
+at /home/coke/sandbox/blin/installed/App::Mi6_zef:skaji_3.0.9_0/sources/4B118D702EC02F855AE9887854535254CF32731D (App::Mi6):10
+------> <BOL><HERE>use TAP;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/App::Mi6_zef:skaji_3.0.9_0/sources/4B118D702EC02F855AE9887854535254CF32731D (App::Mi6)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1312)
+
+at /home/coke/sandbox/blin/installed/App::Mi6_zef:skaji_3.0.9_0/sources/4B118D702EC02F855AE9887854535254CF32731D (App::Mi6):10
+------> <BOL><HERE>use TAP;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1min 49.932s
+             CPU time consumed: 1min 4.196s
+                   Memory peak: 1.1G (swap: 207.4M)

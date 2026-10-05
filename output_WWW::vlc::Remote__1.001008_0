@@ -1,0 +1,84 @@
+Running as unit: run-p2747128-i11094617.service; invocation ID: f2ebebcba54d4dd98a2d6a7df54f132c
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: WWW::vlc::Remote
+===> Found: WWW::vlc::Remote:ver<1.001008> [via Zef::Repository::Ecosystems<rea>]
+[WWW::vlc::Remote] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791208215.2747152.2067.304538122371/WWW%3A%3Avlc%3A%3ARemote%3Aver%3C1.001008%3E%3Aauth%3Cgithub%3Araku-community-modules%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/W/WWW%3A%3Avlc%3A%3ARemote/WWW%3A%3Avlc%3A%3ARemote%3Aver%3C1.001008%3E%3Aauth%3Cgithub%3Araku-community-modules%3E.tar.gz
+===> Fetching [OK]: WWW::vlc::Remote:ver<1.001008> to /home/coke/sandbox/blin/data/zef-data/tmp/1791208215.2747152.2067.304538122371/WWW%3A%3Avlc%3A%3ARemote%3Aver%3C1.001008%3E%3Aauth%3Cgithub%3Araku-community-modules%3E.tar.gz
+[WWW::vlc::Remote] Command: tar -t -f ./WWW%3A%3Avlc%3A%3ARemote%3Aver%3C1.001008%3E%3Aauth%3Cgithub%3Araku-community-modules%3E.tar.gz
+[WWW::vlc::Remote] Command: tar -xvf ./WWW%3A%3Avlc%3A%3ARemote%3Aver%3C1.001008%3E%3Aauth%3Cgithub%3Araku-community-modules%3E.tar.gz -C ../WWW%3A%3Avlc%3A%3ARemote%3Aver%3C1.001008%3E%3Aauth%3Cgithub%3Araku-community-modules%3E.tar.gz
+===> Extraction [OK]: WWW::vlc::Remote to /home/coke/sandbox/blin/data/zef-data/tmp/WWW%3A%3Avlc%3A%3ARemote%3Aver%3C1.001008%3E%3Aauth%3Cgithub%3Araku-community-modules%3E.tar.gz
+===> Testing: WWW::vlc::Remote:ver<1.001008>
+[WWW::vlc::Remote] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/WWW%3A%3Avlc%3A%3ARemote%3Aver%3C1.001008%3E%3Aauth%3Cgithub%3Araku-community-modules%3E.tar.gz/WWW-vlc-Remote-master t/00-use.t
+[WWW::vlc::Remote] 1..1
+[WWW::vlc::Remote] not ok 1 - WWW::vlc::Remote module can be use-d ok
+[WWW::vlc::Remote] # Failed test 'WWW::vlc::Remote module can be use-d ok'
+[WWW::vlc::Remote] # at t/00-use.t line 4
+[WWW::vlc::Remote] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/WWW%3A%3Avlc%3A%3ARemote%3Aver%3C1.001008%3E%3Aauth%3Cgithub%3Araku-community-modules%3E.tar.gz/WWW-vlc-Remote-master/lib/WWW/vlc/Remote.pm6 (WWW::vlc::Remote)
+[WWW::vlc::Remote] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[WWW::vlc::Remote] # ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[WWW::vlc::Remote] # ===SORRY!===
+[WWW::vlc::Remote] # Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[WWW::vlc::Remote] # 
+[WWW::vlc::Remote] # at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[WWW::vlc::Remote] # ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[WWW::vlc::Remote] # 
+[WWW::vlc::Remote] # at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[WWW::vlc::Remote] # ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[WWW::vlc::Remote] # 
+[WWW::vlc::Remote] # at /home/coke/sandbox/blin/data/zef-data/tmp/WWW%3A%3Avlc%3A%3ARemote%3Aver%3C1.001008%3E%3Aauth%3Cgithub%3Araku-community-modules%3E.tar.gz/WWW-vlc-Remote-master/lib/WWW/vlc/Remote.pm6 (WWW::vlc::Remote):3
+[WWW::vlc::Remote] # ------> <BOL><HERE>use HTTP::UserAgent;
+[WWW::vlc::Remote] # 
+[WWW::vlc::Remote] # You failed 1 test of 1
+[WWW::vlc::Remote] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/WWW%3A%3Avlc%3A%3ARemote%3Aver%3C1.001008%3E%3Aauth%3Cgithub%3Araku-community-modules%3E.tar.gz/WWW-vlc-Remote-master t/01-basic.t
+[WWW::vlc::Remote] ===SORRY!=== Error while compiling t/01-basic.t
+[WWW::vlc::Remote] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/WWW%3A%3Avlc%3A%3ARemote%3Aver%3C1.001008%3E%3Aauth%3Cgithub%3Araku-community-modules%3E.tar.gz/WWW-vlc-Remote-master/lib/WWW/vlc/Remote.pm6 (WWW::vlc::Remote)
+[WWW::vlc::Remote] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+[WWW::vlc::Remote] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+[WWW::vlc::Remote] ===SORRY!===
+[WWW::vlc::Remote] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[WWW::vlc::Remote] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+[WWW::vlc::Remote] ------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+[WWW::vlc::Remote] at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+[WWW::vlc::Remote] ------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+[WWW::vlc::Remote] at /home/coke/sandbox/blin/data/zef-data/tmp/WWW%3A%3Avlc%3A%3ARemote%3Aver%3C1.001008%3E%3Aauth%3Cgithub%3Araku-community-modules%3E.tar.gz/WWW-vlc-Remote-master/lib/WWW/vlc/Remote.pm6 (WWW::vlc::Remote):3
+[WWW::vlc::Remote] ------> <BOL><HERE>use HTTP::UserAgent;
+[WWW::vlc::Remote] at t/01-basic.t:3
+[WWW::vlc::Remote] ------> <BOL><HERE>use WWW::vlc::Remote;
+===> Testing [FAIL]: WWW::vlc::Remote:ver<1.001008>
+[WWW::vlc::Remote] Failed to get passing tests, but continuing with --force-test
+===> Installing: WWW::vlc::Remote:ver<1.001008>
+===> Install [FAIL] for WWW::vlc::Remote:ver<1.001008>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/WWW::vlc::Remote__1.001008_0/sources/CB0E738180C6D3BF132B7928B632B02C4CD10F1A (WWW::vlc::Remote)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/WWW::vlc::Remote__1.001008_0/sources/CB0E738180C6D3BF132B7928B632B02C4CD10F1A (WWW::vlc::Remote):3
+------> <BOL><HERE>use HTTP::UserAgent;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/WWW::vlc::Remote__1.001008_0/sources/CB0E738180C6D3BF132B7928B632B02C4CD10F1A (WWW::vlc::Remote)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response)
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/789E679AD938BA6B949C2EBDC0CA9DFC6D782147 (HTTP::Response):3
+------> <BOL><HERE>use HTTP::Request:auth<zef:raku-communit
+
+at /home/coke/sandbox/blin/installed/HTTP::UserAgent_zef:raku-community-modules_1.2.0_0/sources/6B660F45ED782FD442C8023FC28A0A4130D9EA93 (HTTP::UserAgent):3
+------> <BOL><HERE>use HTTP::Response:auth<zef:raku-communi
+
+at /home/coke/sandbox/blin/installed/WWW::vlc::Remote__1.001008_0/sources/CB0E738180C6D3BF132B7928B632B02C4CD10F1A (WWW::vlc::Remote):3
+------> <BOL><HERE>use HTTP::UserAgent;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1min 11.206s
+             CPU time consumed: 1min 12.998s
+                   Memory peak: 1.7G (swap: 39.9M)

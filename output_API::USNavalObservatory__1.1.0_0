@@ -1,0 +1,30 @@
+Running as unit: run-p2706848-i11145696.service; invocation ID: d8c8dbbea108437cbb9d6c7fa70f341e
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: API::USNavalObservatory
+===> Found: API::USNavalObservatory:ver<1.1.0> [via Zef::Repository::Ecosystems<rea>]
+[API::USNavalObservatory] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791207038.2706850.253.9842920083779/API%3A%3AUSNavalObservatory%3Aver%3C1.1.0%3E%3Aauth%3Cgithub%3Acbk%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/A/API%3A%3AUSNavalObservatory/API%3A%3AUSNavalObservatory%3Aver%3C1.1.0%3E%3Aauth%3Cgithub%3Acbk%3E.tar.gz
+===> Fetching [OK]: API::USNavalObservatory:ver<1.1.0> to /home/coke/sandbox/blin/data/zef-data/tmp/1791207038.2706850.253.9842920083779/API%3A%3AUSNavalObservatory%3Aver%3C1.1.0%3E%3Aauth%3Cgithub%3Acbk%3E.tar.gz
+[API::USNavalObservatory] Command: tar -t -f ./API%3A%3AUSNavalObservatory%3Aver%3C1.1.0%3E%3Aauth%3Cgithub%3Acbk%3E.tar.gz
+[API::USNavalObservatory] Command: tar -xvf ./API%3A%3AUSNavalObservatory%3Aver%3C1.1.0%3E%3Aauth%3Cgithub%3Acbk%3E.tar.gz -C ../API%3A%3AUSNavalObservatory%3Aver%3C1.1.0%3E%3Aauth%3Cgithub%3Acbk%3E.tar.gz
+===> Extraction [OK]: API::USNavalObservatory to /home/coke/sandbox/blin/data/zef-data/tmp/API%3A%3AUSNavalObservatory%3Aver%3C1.1.0%3E%3Aauth%3Cgithub%3Acbk%3E.tar.gz
+===> Testing: API::USNavalObservatory:ver<1.1.0>
+[API::USNavalObservatory] Command: /tmp/whateverable/rakudo-moar/501af82c50cc8f54df36c4f46bc6f370e57df8ae/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/API%3A%3AUSNavalObservatory%3Aver%3C1.1.0%3E%3Aauth%3Cgithub%3Acbk%3E.tar.gz/API-USNavalObservatory-master t/10-travis.t
+[API::USNavalObservatory] ===SORRY!=== Error while compiling t/10-travis.t
+[API::USNavalObservatory] ===SORRY!===
+[API::USNavalObservatory] Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+[API::USNavalObservatory] at t/10-travis.t:2
+[API::USNavalObservatory] ------> <BOL><HERE>use API::USNavalObservatory;
+===> Testing [FAIL]: API::USNavalObservatory:ver<1.1.0>
+[API::USNavalObservatory] Failed to get passing tests, but continuing with --force-test
+===> Installing: API::USNavalObservatory:ver<1.1.0>
+===> Install [FAIL] for API::USNavalObservatory:ver<1.1.0>: ===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+===SORRY!===
+Serialization Error: missing static code ref for closure '' (src/Raku/ast/signature.rakumod:1373)
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 42.885s
+             CPU time consumed: 47.961s
+                   Memory peak: 1.4G (swap: 5.8M)
