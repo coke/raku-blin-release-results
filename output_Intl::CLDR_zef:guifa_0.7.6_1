@@ -1,0 +1,190 @@
+Running as unit: run-p2760020-i15353188.service; invocation ID: dc22c24b78794a5da494a926ff935499
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Intl::CLDR
+===> Found: Intl::CLDR:ver<0.7.6>:auth<zef:guifa>:api<1> [via Zef::Repository::Ecosystems<fez>]
+[Intl::CLDR] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1791560934.2760021.3762.2530073912285/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz https://360.zef.pm/I/NT/INTL_CLDR/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz
+===> Fetching [OK]: Intl::CLDR:ver<0.7.6>:auth<zef:guifa>:api<1> to /home/coke/sandbox/blin/data/zef-data/tmp/1791560934.2760021.3762.2530073912285/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz
+[Intl::CLDR] Command: tar -t -f ./c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz
+[Intl::CLDR] Command: tar -xvf ./c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz -C ../c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz
+===> Extraction [OK]: Intl::CLDR to /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz
+===> Testing: Intl::CLDR:ver<0.7.6>:auth<zef:guifa>:api<1>
+[Intl::CLDR] Command: /tmp/whateverable/rakudo-moar/6a3feeac1482cb1d2b41634e3e06a69e4c806c49/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist t/00-sanity.rakutest
+[Intl::CLDR] ===SORRY!=== Error while compiling t/00-sanity.rakutest
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR.rakumod (Intl::CLDR)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Database.rakumod (Intl::CLDR::Types::Database)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Languages.rakumod (Intl::CLDR::Types::Languages)
+[Intl::CLDR] Potential difficulties:
+[Intl::CLDR]     Missing declarand for trailing declarator doc
+[Intl::CLDR]     at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/MonthPatternWidth.rakumod (Intl::CLDR::Types::MonthPatternWidth):8
+[Intl::CLDR]     ------> p>; #= The 'standardAfterLeap' from CLDR<HERE><EOL>
+[Intl::CLDR] Potential difficulties:
+[Intl::CLDR]     Missing declarand for trailing declarator doc
+[Intl::CLDR]     at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Dates.rakumod (Intl::CLDR::Types::Dates):15
+[Intl::CLDR]     ------> he timezone data for the date collection<HERE><EOL>
+[Intl::CLDR] Potential difficulties:
+[Intl::CLDR]     Missing declarand for trailing declarator doc
+[Intl::CLDR]     at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/SymbolSet.rakumod (Intl::CLDR::Types::SymbolSet):13
+[Intl::CLDR]     ------> -scientific (e.g. superscript) exponents<HERE><EOL>
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Language.rakumod (Intl::CLDR::Types::Language)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Units.rakumod (Intl::CLDR::Types::Units)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/SimpleUnits.rakumod (Intl::CLDR::Types::SimpleUnits)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/SimpleUnitSet.rakumod (Intl::CLDR::Types::SimpleUnitSet)
+[Intl::CLDR] This type cannot unbox to a native string: P6opaque, Int
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/SimpleUnitSet.rakumod (Intl::CLDR::Types::SimpleUnitSet):4
+[Intl::CLDR] ------>     <HERE>use Intl::CLDR::Enums;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/SimpleUnits.rakumod (Intl::CLDR::Types::SimpleUnits):8
+[Intl::CLDR] ------> <BOL><HERE>use Intl::CLDR::Types::SimpleUnitSet;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Units.rakumod (Intl::CLDR::Types::Units):6
+[Intl::CLDR] ------> <BOL><HERE>use Intl::CLDR::Types::SimpleUnits;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Language.rakumod (Intl::CLDR::Types::Language):15
+[Intl::CLDR] ------> <BOL><HERE>use Intl::CLDR::Types::Units;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Languages.rakumod (Intl::CLDR::Types::Languages):4
+[Intl::CLDR] ------> <BOL><HERE>use Intl::CLDR::Types::Language;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Database.rakumod (Intl::CLDR::Types::Database):3
+[Intl::CLDR] ------>     <HERE>use Intl::CLDR::Types::Languages;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR.rakumod (Intl::CLDR):31
+[Intl::CLDR] ------>     <HERE>use Intl::CLDR::Types::Database;
+[Intl::CLDR] at t/00-sanity.rakutest:2
+[Intl::CLDR] ------> <BOL><HERE>use Intl::CLDR:auth<zef:guifa>;
+[Intl::CLDR] Command: /tmp/whateverable/rakudo-moar/6a3feeac1482cb1d2b41634e3e06a69e4c806c49/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist t/01-spot-check.rakutest
+[Intl::CLDR] ===SORRY!=== Error while compiling t/01-spot-check.rakutest
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR.rakumod (Intl::CLDR)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Database.rakumod (Intl::CLDR::Types::Database)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Languages.rakumod (Intl::CLDR::Types::Languages)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Language.rakumod (Intl::CLDR::Types::Language)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Units.rakumod (Intl::CLDR::Types::Units)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/SimpleUnits.rakumod (Intl::CLDR::Types::SimpleUnits)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/SimpleUnitSet.rakumod (Intl::CLDR::Types::SimpleUnitSet)
+[Intl::CLDR] This type cannot unbox to a native string: P6opaque, Int
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/SimpleUnitSet.rakumod (Intl::CLDR::Types::SimpleUnitSet):4
+[Intl::CLDR] ------>     <HERE>use Intl::CLDR::Enums;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/SimpleUnits.rakumod (Intl::CLDR::Types::SimpleUnits):8
+[Intl::CLDR] ------> <BOL><HERE>use Intl::CLDR::Types::SimpleUnitSet;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Units.rakumod (Intl::CLDR::Types::Units):6
+[Intl::CLDR] ------> <BOL><HERE>use Intl::CLDR::Types::SimpleUnits;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Language.rakumod (Intl::CLDR::Types::Language):15
+[Intl::CLDR] ------> <BOL><HERE>use Intl::CLDR::Types::Units;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Languages.rakumod (Intl::CLDR::Types::Languages):4
+[Intl::CLDR] ------> <BOL><HERE>use Intl::CLDR::Types::Language;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Database.rakumod (Intl::CLDR::Types::Database):3
+[Intl::CLDR] ------>     <HERE>use Intl::CLDR::Types::Languages;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR.rakumod (Intl::CLDR):31
+[Intl::CLDR] ------>     <HERE>use Intl::CLDR::Types::Database;
+[Intl::CLDR] at t/01-spot-check.rakutest:16
+[Intl::CLDR] ------> <BOL><HERE>use Intl::CLDR:auth<zef:guifa>;
+[Intl::CLDR] Command: /tmp/whateverable/rakudo-moar/6a3feeac1482cb1d2b41634e3e06a69e4c806c49/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist t/99-load-time-test.rakutest
+[Intl::CLDR] ===SORRY!=== Error while compiling t/99-load-time-test.rakutest
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR.rakumod (Intl::CLDR)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Database.rakumod (Intl::CLDR::Types::Database)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Languages.rakumod (Intl::CLDR::Types::Languages)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Language.rakumod (Intl::CLDR::Types::Language)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Units.rakumod (Intl::CLDR::Types::Units)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/SimpleUnits.rakumod (Intl::CLDR::Types::SimpleUnits)
+[Intl::CLDR] ===SORRY!=== Error while compiling /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/SimpleUnitSet.rakumod (Intl::CLDR::Types::SimpleUnitSet)
+[Intl::CLDR] This type cannot unbox to a native string: P6opaque, Int
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/SimpleUnitSet.rakumod (Intl::CLDR::Types::SimpleUnitSet):4
+[Intl::CLDR] ------>     <HERE>use Intl::CLDR::Enums;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/SimpleUnits.rakumod (Intl::CLDR::Types::SimpleUnits):8
+[Intl::CLDR] ------> <BOL><HERE>use Intl::CLDR::Types::SimpleUnitSet;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Units.rakumod (Intl::CLDR::Types::Units):6
+[Intl::CLDR] ------> <BOL><HERE>use Intl::CLDR::Types::SimpleUnits;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Language.rakumod (Intl::CLDR::Types::Language):15
+[Intl::CLDR] ------> <BOL><HERE>use Intl::CLDR::Types::Units;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Languages.rakumod (Intl::CLDR::Types::Languages):4
+[Intl::CLDR] ------> <BOL><HERE>use Intl::CLDR::Types::Language;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR/Types/Database.rakumod (Intl::CLDR::Types::Database):3
+[Intl::CLDR] ------>     <HERE>use Intl::CLDR::Types::Languages;
+[Intl::CLDR] at /home/coke/sandbox/blin/data/zef-data/tmp/c355ab0803985ce7b3d01ecc3a525c13eb26f881.tar.gz/dist/lib/Intl/CLDR.rakumod (Intl::CLDR):31
+[Intl::CLDR] ------>     <HERE>use Intl::CLDR::Types::Database;
+[Intl::CLDR] at t/99-load-time-test.rakutest:1
+[Intl::CLDR] ------> <BOL><HERE>use Intl::CLDR:auth<zef:guifa>;
+===> Testing [FAIL]: Intl::CLDR:ver<0.7.6>:auth<zef:guifa>:api<1>
+[Intl::CLDR] Failed to get passing tests, but continuing with --force-test
+===> Installing: Intl::CLDR:ver<0.7.6>:auth<zef:guifa>:api<1>
+===> Install [FAIL] for Intl::CLDR:ver<0.7.6>:auth<zef:guifa>:api<1>: ===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/2D64AB7F840DBC1187A48A651516D851331602DA (Intl::CLDR)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/983C26B86287DA3FF695AA2FBF5F0DD2D70F4DC6 (Intl::CLDR::Types::Database)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/202601A191D2EB4FD96D1F154320EEB3E311A9C4 (Intl::CLDR::Types::Languages)
+Potential difficulties:
+    Missing declarand for trailing declarator doc
+    at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/F0936CD30D560BBC40876E240F88BB712D8BF4D3 (Intl::CLDR::Types::MonthPatternWidth):8
+    ------> p>; #= The 'standardAfterLeap' from CLDR<HERE><EOL>
+Potential difficulties:
+    Missing declarand for trailing declarator doc
+    at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/73695ACE1F4120D98623C4EFFC45D81D97053054 (Intl::CLDR::Types::Dates):15
+    ------> he timezone data for the date collection<HERE><EOL>
+Potential difficulties:
+    Missing declarand for trailing declarator doc
+    at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/6ED7C380C0F85D5EAC6021572DDA3E7DF5C42E52 (Intl::CLDR::Types::SymbolSet):13
+    ------> -scientific (e.g. superscript) exponents<HERE><EOL>
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/7B5ABC9367F8DD6813475C416AB192F71A78B276 (Intl::CLDR::Types::Language)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/276219BCFD79C8B10BB4F20F7A14A5F56CA4B355 (Intl::CLDR::Types::Units)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/716C26AB03A4E6BA0D2FCB27543389D42730167C (Intl::CLDR::Types::SimpleUnits)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/191C8E803D779AFE6049DD4B613FB10C004EC0AA (Intl::CLDR::Types::SimpleUnitSet)
+This type cannot unbox to a native string: P6opaque, Int
+at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/191C8E803D779AFE6049DD4B613FB10C004EC0AA (Intl::CLDR::Types::SimpleUnitSet):4
+------>     <HERE>use Intl::CLDR::Enums;
+
+at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/716C26AB03A4E6BA0D2FCB27543389D42730167C (Intl::CLDR::Types::SimpleUnits):8
+------> <BOL><HERE>use Intl::CLDR::Types::SimpleUnitSet;
+
+at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/276219BCFD79C8B10BB4F20F7A14A5F56CA4B355 (Intl::CLDR::Types::Units):6
+------> <BOL><HERE>use Intl::CLDR::Types::SimpleUnits;
+
+at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/7B5ABC9367F8DD6813475C416AB192F71A78B276 (Intl::CLDR::Types::Language):15
+------> <BOL><HERE>use Intl::CLDR::Types::Units;
+
+at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/202601A191D2EB4FD96D1F154320EEB3E311A9C4 (Intl::CLDR::Types::Languages):4
+------> <BOL><HERE>use Intl::CLDR::Types::Language;
+
+at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/983C26B86287DA3FF695AA2FBF5F0DD2D70F4DC6 (Intl::CLDR::Types::Database):3
+------>     <HERE>use Intl::CLDR::Types::Languages;
+
+at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/2D64AB7F840DBC1187A48A651516D851331602DA (Intl::CLDR):31
+------>     <HERE>use Intl::CLDR::Types::Database;
+
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/2D64AB7F840DBC1187A48A651516D851331602DA (Intl::CLDR)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/983C26B86287DA3FF695AA2FBF5F0DD2D70F4DC6 (Intl::CLDR::Types::Database)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/202601A191D2EB4FD96D1F154320EEB3E311A9C4 (Intl::CLDR::Types::Languages)
+Potential difficulties:
+    Missing declarand for trailing declarator doc
+    at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/F0936CD30D560BBC40876E240F88BB712D8BF4D3 (Intl::CLDR::Types::MonthPatternWidth):8
+    ------> p>; #= The 'standardAfterLeap' from CLDR<HERE><EOL>
+Potential difficulties:
+    Missing declarand for trailing declarator doc
+    at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/73695ACE1F4120D98623C4EFFC45D81D97053054 (Intl::CLDR::Types::Dates):15
+    ------> he timezone data for the date collection<HERE><EOL>
+Potential difficulties:
+    Missing declarand for trailing declarator doc
+    at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/6ED7C380C0F85D5EAC6021572DDA3E7DF5C42E52 (Intl::CLDR::Types::SymbolSet):13
+    ------> -scientific (e.g. superscript) exponents<HERE><EOL>
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/7B5ABC9367F8DD6813475C416AB192F71A78B276 (Intl::CLDR::Types::Language)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/276219BCFD79C8B10BB4F20F7A14A5F56CA4B355 (Intl::CLDR::Types::Units)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/716C26AB03A4E6BA0D2FCB27543389D42730167C (Intl::CLDR::Types::SimpleUnits)
+===SORRY!=== Error while compiling /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/191C8E803D779AFE6049DD4B613FB10C004EC0AA (Intl::CLDR::Types::SimpleUnitSet)
+This type cannot unbox to a native string: P6opaque, Int
+at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/191C8E803D779AFE6049DD4B613FB10C004EC0AA (Intl::CLDR::Types::SimpleUnitSet):4
+------>     <HERE>use Intl::CLDR::Enums;
+
+at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/716C26AB03A4E6BA0D2FCB27543389D42730167C (Intl::CLDR::Types::SimpleUnits):8
+------> <BOL><HERE>use Intl::CLDR::Types::SimpleUnitSet;
+
+at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/276219BCFD79C8B10BB4F20F7A14A5F56CA4B355 (Intl::CLDR::Types::Units):6
+------> <BOL><HERE>use Intl::CLDR::Types::SimpleUnits;
+
+at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/7B5ABC9367F8DD6813475C416AB192F71A78B276 (Intl::CLDR::Types::Language):15
+------> <BOL><HERE>use Intl::CLDR::Types::Units;
+
+at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/202601A191D2EB4FD96D1F154320EEB3E311A9C4 (Intl::CLDR::Types::Languages):4
+------> <BOL><HERE>use Intl::CLDR::Types::Language;
+
+at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/983C26B86287DA3FF695AA2FBF5F0DD2D70F4DC6 (Intl::CLDR::Types::Database):3
+------>     <HERE>use Intl::CLDR::Types::Languages;
+
+at /home/coke/sandbox/blin/installed/Intl::CLDR_zef:guifa_0.7.6_1/sources/2D64AB7F840DBC1187A48A651516D851331602DA (Intl::CLDR):31
+------>     <HERE>use Intl::CLDR::Types::Database;
+
+          Finished with result: exit-code
+Main processes terminated with: code=exited, status=1/FAILURE
+               Service runtime: 1min 40.918s
+             CPU time consumed: 2min 22.971s
+                   Memory peak: 4.3G (swap: 0B)
