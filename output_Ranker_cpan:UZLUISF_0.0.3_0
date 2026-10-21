@@ -1,0 +1,452 @@
+Running as unit: run-p1405012-i1434083.service
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Ranker
+===> Found: Ranker:ver<0.0.3>:auth<cpan:UZLUISF> [via Zef::Repository::Ecosystems<rea>]
+[Ranker] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1792549387.1405019.1022.5318463295663/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/R/Ranker/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz
+===> Fetching [OK]: Ranker:ver<0.0.3>:auth<cpan:UZLUISF> to /home/coke/sandbox/blin/data/zef-data/tmp/1792549387.1405019.1022.5318463295663/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz
+[Ranker] Command: tar -t -f ./Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz
+[Ranker] Command: tar -xvf ./Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz -C ../Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz
+===> Extraction [OK]: Ranker to /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz
+===> Testing: Ranker:ver<0.0.2>:auth<gitlab:uzluisf>
+[Ranker] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz/Ranker-0.0.3 t/basic-ranker.t6
+[Ranker] # Subtest: when simple rankables are used
+[Ranker]     ok 1 - correct number of rankings
+[Ranker]     # Subtest: first ranking
+[Ranker]         ok 1 - rank correct
+[Ranker]         ok 2 - rankables correct
+[Ranker]         1..2
+[Ranker]     ok 2 - first ranking
+[Ranker]     # Subtest: last ranking
+[Ranker]         ok 1 - rank correct
+[Ranker]         ok 2 - rankables correct
+[Ranker]         1..2
+[Ranker]     ok 3 - last ranking
+[Ranker]     1..3
+[Ranker] ok 1 - when simple rankables are used
+[Ranker] # Subtest: when ranking by block
+[Ranker]     ok 1 - correct number of rankings
+[Ranker]     # Subtest: first ranking
+[Ranker]         ok 1 - rank correct
+[Ranker]         ok 2 - rankables correct
+[Ranker]         1..2
+[Ranker]     ok 2 - first ranking
+[Ranker]     # Subtest: second ranking
+[Ranker]         ok 1 - rank correct
+[Ranker]         ok 2 - rankables correct
+[Ranker]         1..2
+[Ranker]     ok 3 - second ranking
+[Ranker]     # Subtest: third ranking
+[Ranker]         ok 1 - rank correct
+[Ranker]         ok 2 - rankables correct
+[Ranker]         1..2
+[Ranker]     ok 4 - third ranking
+[Ranker]     1..4
+[Ranker] ok 2 - when ranking by block
+[Ranker] # Subtest: when ranking by block and asc true
+[Ranker] Type check failed for return value; expected Seq but got List ((25, 100, 150))
+[Ranker]   in method scores-unique-sorted at /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz/Ranker-0.0.3/lib/Ranker/Strategies.pm6 (Ranker::Strategies) line 61
+[Ranker]   in method execute at /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz/Ranker-0.0.3/lib/Ranker/Strategies.pm6 (Ranker::Strategies) line 109
+[Ranker]   in method rank at /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz/Ranker-0.0.3/lib/Ranker/Strategies.pm6 (Ranker::Strategies) line 74
+[Ranker]   in sub rank at /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz/Ranker-0.0.3/lib/Ranker.pm6 (Ranker) line 61
+[Ranker]   in sub  at t/basic-ranker.t6 line 66
+[Ranker]   in sub subtest at /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/share/perl6/core/sources/19B11E36AA87FFBE8BE6D591C6668274476ADBCC (Test) line 431
+[Ranker]   in sub subtest at /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/share/perl6/core/sources/19B11E36AA87FFBE8BE6D591C6668274476ADBCC (Test) line 416
+[Ranker]   in block <unit> at t/basic-ranker.t6 line 59
+[Ranker] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz/Ranker-0.0.3 t/basic-ranking.t6
+[Ranker] # Subtest: testing percentile
+[Ranker]     # Subtest: first ranking
+[Ranker]         ok 1 - correct percentile
+[Ranker]         1..1
+[Ranker]     ok 1 - first ranking
+[Ranker]     # Subtest: second ranking
+[Ranker]         ok 1 - correct percentile
+[Ranker]         1..1
+[Ranker]     ok 2 - second ranking
+[Ranker]     # Subtest: third ranking
+[Ranker]         ok 1 - correct percentile
+[Ranker]         1..1
+[Ranker]     ok 3 - third ranking
+[Ranker]     # Subtest: last ranking
+[Ranker]         ok 1 - correct percentile
+[Ranker]         1..1
+[Ranker]     ok 4 - last ranking
+[Ranker]     1..4
+[Ranker] ok 1 - testing percentile
+[Ranker] # Subtest: testing z-score
+[Ranker]     # Subtest: first ranking
+[Ranker]         ok 1 - correct z-score
+[Ranker]         1..1
+[Ranker]     ok 1 - first ranking
+[Ranker]     # Subtest: second ranking
+[Ranker]         ok 1 - correct z-score
+[Ranker]         1..1
+[Ranker]     ok 2 - second ranking
+[Ranker]     # Subtest: third ranking
+[Ranker]         ok 1 - correct z-score
+[Ranker]         1..1
+[Ranker]     ok 3 - third ranking
+[Ranker]     # Subtest: last ranking
+[Ranker]         ok 1 - correct z-score
+[Ranker]         1..1
+[Ranker]     ok 4 - last ranking
+[Ranker]     # Subtest: when standard deviation is zero
+[Ranker]         # Subtest: first ranking
+[Ranker]             ok 1 - correct z-score
+[Ranker]             1..1
+[Ranker]         ok 1 - first ranking
+[Ranker]         1..1
+[Ranker]     ok 5 - when standard deviation is zero
+[Ranker]     1..5
+[Ranker] ok 2 - testing z-score
+[Ranker] 1..2
+[Ranker] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz/Ranker-0.0.3 t/basic-rankings.t6
+[Ranker] # Subtest: testing the mean
+[Ranker]     # Subtest: when there are rankables
+[Ranker]         ok 1 - correct mean value
+[Ranker]         1..1
+[Ranker]     ok 1 - when there are rankables
+[Ranker]     # Subtest: when there are no rankables
+[Ranker]         ok 1 - correct NaN value
+[Ranker]         1..1
+[Ranker]     ok 2 - when there are no rankables
+[Ranker]     # Subtest: when rankables contain Any values
+[Ranker]         # Subtest: did we throws-like Exception?
+[Ranker]             1..3
+[Ranker]             ok 1 - code dies
+[Ranker]             ok 2 - right exception type (Exception)
+[Ranker]             ok 3 - .message matches /errors/
+[Ranker]         ok 1 - did we throws-like Exception?
+[Ranker]         1..1
+[Ranker]     ok 3 - when rankables contain Any values
+[Ranker]     1..3
+[Ranker] ok 1 - testing the mean
+[Ranker] # Subtest: testing the standard deviation
+[Ranker]     # Subtest: when there are rankables
+[Ranker]         ok 1 - correct standard deviation
+[Ranker]         1..1
+[Ranker]     ok 1 - when there are rankables
+[Ranker]     # Subtest: when all rankables are the same
+[Ranker]         ok 1 - correct standard deviation
+[Ranker]         1..1
+[Ranker]     ok 2 - when all rankables are the same
+[Ranker]     # Subtest: when there are no rankables
+[Ranker]         ok 1 - result is NaN
+[Ranker]         1..1
+[Ranker]     ok 3 - when there are no rankables
+[Ranker]     1..3
+[Ranker] ok 2 - testing the standard deviation
+[Ranker] 1..2
+[Ranker] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz/Ranker-0.0.3 t/strategies/basic-dense-strategy.t6
+[Ranker] # Subtest: when list of rankables is large
+[Ranker]     ok 1 - correct number of rankings
+[Ranker]     # Subtest: first ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 2 - first ranking
+[Ranker]     # Subtest: second ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 3 - second ranking
+[Ranker]     # Subtest: third ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 4 - third ranking
+[Ranker]     # Subtest: fourth ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 5 - fourth ranking
+[Ranker]     # Subtest: fifth ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 6 - fifth ranking
+[Ranker]     # Subtest: sixth ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 7 - sixth ranking
+[Ranker]     # Subtest: seventh ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 8 - seventh ranking
+[Ranker]     1..8
+[Ranker] ok 1 - when list of rankables is large
+[Ranker] # Subtest: when list of rankables is small
+[Ranker]     ok 1 - correct number of rankings
+[Ranker]     # Subtest: first ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 2 - first ranking
+[Ranker]     # Subtest: second ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 3 - second ranking
+[Ranker]     # Subtest: third ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 4 - third ranking
+[Ranker]     1..4
+[Ranker] ok 2 - when list of rankables is small
+[Ranker] 1..2
+[Ranker] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz/Ranker-0.0.3 t/strategies/basic-fractional-strategy.t6
+[Ranker] # Subtest: when list of rankables is large
+[Ranker]     ok 1 - correct number of rankings
+[Ranker]     # Subtest: first ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 2 - first ranking
+[Ranker]     # Subtest: second ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 3 - second ranking
+[Ranker]     # Subtest: fourth ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 4 - fourth ranking
+[Ranker]     # Subtest: second to last ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 5 - second to last ranking
+[Ranker]     # Subtest: last ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 6 - last ranking
+[Ranker]     1..6
+[Ranker] ok 1 - when list of rankables is large
+[Ranker] # Subtest: when using wikipedia example
+[Ranker] Type check failed for return value; expected Seq but got List ((1.0, 2.0, 3.0, 4.0,...)
+[Ranker]   in method scores-unique-sorted at /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz/Ranker-0.0.3/lib/Ranker/Strategies.pm6 (Ranker::Strategies) line 61
+[Ranker]   in method execute at /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz/Ranker-0.0.3/lib/Ranker/Strategies.pm6 (Ranker::Strategies) line 178
+[Ranker]   in method rank at /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz/Ranker-0.0.3/lib/Ranker/Strategies.pm6 (Ranker::Strategies) line 74
+[Ranker]   in sub  at t/strategies/basic-fractional-strategy.t6 line 44
+[Ranker]   in sub subtest at /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/share/perl6/core/sources/19B11E36AA87FFBE8BE6D591C6668274476ADBCC (Test) line 431
+[Ranker]   in sub subtest at /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/share/perl6/core/sources/19B11E36AA87FFBE8BE6D591C6668274476ADBCC (Test) line 416
+[Ranker]   in block <unit> at t/strategies/basic-fractional-strategy.t6 line 42
+[Ranker] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz/Ranker-0.0.3 t/strategies/basic-modified-strategy.t6
+[Ranker] # Subtest: when list of rankables is large
+[Ranker]     ok 1 - correct number of rankings
+[Ranker]     # Subtest: first ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 2 - first ranking
+[Ranker]     # Subtest: second ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 3 - second ranking
+[Ranker]     # Subtest: third ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 4 - third ranking
+[Ranker]     # Subtest: fourth ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 5 - fourth ranking
+[Ranker]     # Subtest: fifth ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 6 - fifth ranking
+[Ranker]     # Subtest: sixth ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 7 - sixth ranking
+[Ranker]     # Subtest: seventh ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 8 - seventh ranking
+[Ranker]     1..8
+[Ranker] ok 1 - when list of rankables is large
+[Ranker] # Subtest: when list of rankables is small
+[Ranker]     ok 1 - correct number of rankings
+[Ranker]     # Subtest: first ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 2 - first ranking
+[Ranker]     # Subtest: second ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 3 - second ranking
+[Ranker]     # Subtest: third ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 4 - third ranking
+[Ranker]     1..4
+[Ranker] ok 2 - when list of rankables is small
+[Ranker] 1..2
+[Ranker] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz/Ranker-0.0.3 t/strategies/basic-ordinal-strategy.t6
+[Ranker] # Subtest: when list of rankables is large
+[Ranker]     ok 1 - correct number of rankings
+[Ranker]     # Subtest: first ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 2 - first ranking
+[Ranker]     # Subtest: second ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 3 - second ranking
+[Ranker]     # Subtest: second to last ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 4 - second to last ranking
+[Ranker]     # Subtest: last ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 5 - last ranking
+[Ranker]     1..5
+[Ranker] ok 1 - when list of rankables is large
+[Ranker] # Subtest: when list of rankables is small
+[Ranker]     ok 1 - correct number of rankings
+[Ranker]     # Subtest: first ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 2 - first ranking
+[Ranker]     # Subtest: second ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 3 - second ranking
+[Ranker]     # Subtest: third ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 4 - third ranking
+[Ranker]     # Subtest: fourth ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 5 - fourth ranking
+[Ranker]     1..5
+[Ranker] ok 2 - when list of rankables is small
+[Ranker] 1..2
+[Ranker] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz/Ranker-0.0.3 t/strategies/basic-standard-strategy.t6
+[Ranker] # Subtest: when list of rankables is large
+[Ranker]     ok 1 - correct number of rankings
+[Ranker]     # Subtest: first ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct score
+[Ranker]         ok 3 - correct rankable values
+[Ranker]         1..3
+[Ranker]     ok 2 - first ranking
+[Ranker]     # Subtest: second ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct score
+[Ranker]         ok 3 - correct rankable values
+[Ranker]         1..3
+[Ranker]     ok 3 - second ranking
+[Ranker]     # Subtest: third ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct score
+[Ranker]         ok 3 - correct rankable values
+[Ranker]         1..3
+[Ranker]     ok 4 - third ranking
+[Ranker]     # Subtest: fourth ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct score
+[Ranker]         ok 3 - correct rankable values
+[Ranker]         1..3
+[Ranker]     ok 5 - fourth ranking
+[Ranker]     # Subtest: fifth ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct score
+[Ranker]         ok 3 - correct rankable values
+[Ranker]         1..3
+[Ranker]     ok 6 - fifth ranking
+[Ranker]     # Subtest: sixth ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct score
+[Ranker]         ok 3 - correct rankable values
+[Ranker]         1..3
+[Ranker]     ok 7 - sixth ranking
+[Ranker]     # Subtest: seventh ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct score
+[Ranker]         ok 3 - correct rankable values
+[Ranker]         1..3
+[Ranker]     ok 8 - seventh ranking
+[Ranker]     1..8
+[Ranker] ok 1 - when list of rankables is large
+[Ranker] # Subtest: when list of rankables is small
+[Ranker]     ok 1 - correct number of rankings
+[Ranker]     # Subtest: first ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 2 - first ranking
+[Ranker]     # Subtest: second ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 3 - second ranking
+[Ranker]     # Subtest: third ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 4 - third ranking
+[Ranker]     1..4
+[Ranker] ok 2 - when list of rankables is small
+[Ranker] # Subtest: when ranking with a non-default score block
+[Ranker]     ok 1 - correct number of rankings
+[Ranker]     # Subtest: first ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 2 - first ranking
+[Ranker]     # Subtest: second ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 3 - second ranking
+[Ranker]     # Subtest: third ranking
+[Ranker]         ok 1 - correct rank
+[Ranker]         ok 2 - correct rankable values
+[Ranker]         1..2
+[Ranker]     ok 4 - third ranking
+[Ranker]     1..4
+[Ranker] ok 3 - when ranking with a non-default score block
+[Ranker] 1..3
+[Ranker] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/Ranker%3Aver%3C0.0.3%3E%3Aauth%3Ccpan%3AUZLUISF%3E.tar.gz/Ranker-0.0.3 t/strategies/basic-strategy.t6
+[Ranker] # Subtest: fails when instantiating Strategy
+[Ranker]     # Subtest: did we throws-like X::AdHoc?
+[Ranker]         1..2
+[Ranker]         ok 1 - code dies
+[Ranker]         ok 2 - right exception type (X::AdHoc)
+[Ranker]     ok 1 - did we throws-like X::AdHoc?
+[Ranker]     1..1
+[Ranker] ok 1 - fails when instantiating Strategy
+[Ranker] 1..1
+===> Testing [FAIL]: Ranker:ver<0.0.2>:auth<gitlab:uzluisf>
+[Ranker] Failed to get passing tests, but continuing with --force-test
+===> Installing: Ranker:ver<0.0.2>:auth<gitlab:uzluisf>
+===> Install [OK] for Ranker:ver<0.0.2>:auth<gitlab:uzluisf>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 49.232s
+             CPU time consumed: 41.622s
+                   Memory peak: 1.7G (swap: 0B)

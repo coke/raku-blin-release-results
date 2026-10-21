@@ -1,0 +1,36 @@
+Running as unit: run-p1439976-i1489298.service; invocation ID: f78875f4cb4c4971b924b55621039e18
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Sys::HostAddr
+===> Found: Sys::HostAddr:ver<0.2.1>:auth<zef:jmaslak> [via Zef::Repository::Ecosystems<fez>]
+[Sys::HostAddr] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1792551154.1439977.9430.77818098097/03a4e97bdddc51a2bbc3d475eeb9f06040f4a37b.tar.gz https://360.zef.pm/S/YS/SYS_HOSTADDR/03a4e97bdddc51a2bbc3d475eeb9f06040f4a37b.tar.gz
+===> Fetching [OK]: Sys::HostAddr:ver<0.2.1>:auth<zef:jmaslak> to /home/coke/sandbox/blin/data/zef-data/tmp/1792551154.1439977.9430.77818098097/03a4e97bdddc51a2bbc3d475eeb9f06040f4a37b.tar.gz
+[Sys::HostAddr] Command: tar -t -f ./03a4e97bdddc51a2bbc3d475eeb9f06040f4a37b.tar.gz
+[Sys::HostAddr] Command: tar -xvf ./03a4e97bdddc51a2bbc3d475eeb9f06040f4a37b.tar.gz -C ../03a4e97bdddc51a2bbc3d475eeb9f06040f4a37b.tar.gz
+===> Extraction [OK]: Sys::HostAddr to /home/coke/sandbox/blin/data/zef-data/tmp/03a4e97bdddc51a2bbc3d475eeb9f06040f4a37b.tar.gz
+===> Testing: Sys::HostAddr:ver<0.2.1>:auth<zef:jmaslak>
+[Sys::HostAddr] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/03a4e97bdddc51a2bbc3d475eeb9f06040f4a37b.tar.gz/Sys-HostAddr-0.2.1 t/01-basic.t
+[Sys::HostAddr] # Distro: Ubuntu 26.04.1 LTS
+[Sys::HostAddr] # ip command found: True
+[Sys::HostAddr] ok 1 - Constructor runs
+[Sys::HostAddr] # Subtest: public
+[Sys::HostAddr]     ok 1 - public method exists
+[Sys::HostAddr]     ok 2 - # SKIP Not performing remote tests, set %*ENV<REMOTE_TESTING>
+[Sys::HostAddr]     ok 3 - # SKIP Not performing remote tests, set %*ENV<REMOTE_TESTING>
+[Sys::HostAddr]     1..3
+[Sys::HostAddr] ok 2 - public
+[Sys::HostAddr] # Subtest: interfaces
+[Sys::HostAddr] Type check failed for return value; expected Seq but got List (("enp2s0", "lo", "wl...)
+[Sys::HostAddr]   in method interfaces at /home/coke/sandbox/blin/data/zef-data/tmp/03a4e97bdddc51a2bbc3d475eeb9f06040f4a37b.tar.gz/Sys-HostAddr-0.2.1/lib/Sys/HostAddr.pm6 (Sys::HostAddr) line 55
+[Sys::HostAddr]   in sub  at t/01-basic.t line 39
+[Sys::HostAddr]   in sub subtest at /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/share/perl6/core/sources/19B11E36AA87FFBE8BE6D591C6668274476ADBCC (Test) line 431
+[Sys::HostAddr]   in sub subtest at /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/share/perl6/core/sources/19B11E36AA87FFBE8BE6D591C6668274476ADBCC (Test) line 416
+[Sys::HostAddr]   in block <unit> at t/01-basic.t line 38
+===> Testing [FAIL]: Sys::HostAddr:ver<0.2.1>:auth<zef:jmaslak>
+[Sys::HostAddr] Failed to get passing tests, but continuing with --force-test
+===> Installing: Sys::HostAddr:ver<0.2.1>:auth<zef:jmaslak>
+===> Install [OK] for Sys::HostAddr:ver<0.2.1>:auth<zef:jmaslak>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 5.907s
+             CPU time consumed: 6.740s
+                   Memory peak: 1.1G (swap: 0B)

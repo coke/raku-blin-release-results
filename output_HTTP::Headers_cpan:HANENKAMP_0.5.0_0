@@ -1,0 +1,214 @@
+Running as unit: run-p1404990-i1322320.service
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: HTTP::Headers
+===> Found: HTTP::Headers:ver<0.5.0>:auth<cpan:HANENKAMP> [via Zef::Repository::Ecosystems<rea>]
+[HTTP::Headers] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1792549388.1404996.7557.345012427703/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz https://raw.githubusercontent.com/raku/REA/main/archive/H/HTTP%3A%3AHeaders/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz
+===> Fetching [OK]: HTTP::Headers:ver<0.5.0>:auth<cpan:HANENKAMP> to /home/coke/sandbox/blin/data/zef-data/tmp/1792549388.1404996.7557.345012427703/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz
+[HTTP::Headers] Command: tar -t -f ./HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz
+[HTTP::Headers] Command: tar -xvf ./HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz -C ../HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz
+===> Extraction [OK]: HTTP::Headers to /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz
+===> Testing: HTTP::Headers:ver<0.5.0>
+[HTTP::Headers] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0 t/content-type.t
+[HTTP::Headers] ok 1 - 
+[HTTP::Headers] ok 2 - 
+[HTTP::Headers] ok 3 - 
+[HTTP::Headers] ok 4 - 
+[HTTP::Headers] ok 5 - 
+[HTTP::Headers] ok 6 - 
+[HTTP::Headers] ok 7 - 
+[HTTP::Headers] ok 8 - 
+[HTTP::Headers] ok 9 - 
+[HTTP::Headers] 1..9
+[HTTP::Headers] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0 t/extending.t
+[HTTP::Headers] ok 1 - 
+[HTTP::Headers] ok 2 - 
+[HTTP::Headers] Type check failed for return value; expected Seq but got List ((HTTP::Header::Custo...)
+[HTTP::Headers]   in method sorted-headers at /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0/lib/HTTP/Headers.pm6 (HTTP::Headers) line 386
+[HTTP::Headers]   in method as-string at /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0/lib/HTTP/Headers.pm6 (HTTP::Headers) line 422
+[HTTP::Headers]   in block <unit> at t/extending.t line 33
+[HTTP::Headers] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0 t/hash-like.t
+[HTTP::Headers] ok 1 - 
+[HTTP::Headers] Calling .header(Content-Type) is preferred to .header("Content-Type") for standard HTTP headers.
+[HTTP::Headers]   in method header at /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0/lib/HTTP/Headers.pm6 (HTTP::Headers) line 338
+[HTTP::Headers] ok 2 - 
+[HTTP::Headers] ok 3 - 
+[HTTP::Headers] ok 4 - 
+[HTTP::Headers] ok 5 - 
+[HTTP::Headers] ok 6 - 
+[HTTP::Headers] ok 7 - 
+[HTTP::Headers] 1..7
+[HTTP::Headers] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0 t/headers-from-pairs.t
+[HTTP::Headers] ok 1 - Content-Type
+[HTTP::Headers] ok 2 - Content-Length
+[HTTP::Headers] ok 3 - X-Foo-Bar
+[HTTP::Headers] ok 4 - Content-Type still ok
+[HTTP::Headers] ok 5 - Allow
+[HTTP::Headers] Calling .header(Content-Type) is preferred to .header("Content-Type") for standard HTTP headers.
+[HTTP::Headers]   in method header at /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0/lib/HTTP/Headers.pm6 (HTTP::Headers) line 338
+[HTTP::Headers] Calling .header(Content-Length) is preferred to .header("Content-Length") for standard HTTP headers.
+[HTTP::Headers]   in method header at /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0/lib/HTTP/Headers.pm6 (HTTP::Headers) line 338
+[HTTP::Headers] ok 6 - Content-Type
+[HTTP::Headers] ok 7 - Content-Length
+[HTTP::Headers] ok 8 - X-Foo-Bar
+[HTTP::Headers] ok 9 - Content-Type still ok
+[HTTP::Headers] ok 10 - Allow
+[HTTP::Headers] ok 11 - Content-Type
+[HTTP::Headers] ok 12 - Content-Length
+[HTTP::Headers] ok 13 - X-Foo-Bar
+[HTTP::Headers] Calling .header(Content-Type) is preferred to .header("Content-Type") for standard HTTP headers.
+[HTTP::Headers]   in method header at /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0/lib/HTTP/Headers.pm6 (HTTP::Headers) line 338
+[HTTP::Headers] Calling .header(Allow) is preferred to .header("Allow") for standard HTTP headers.
+[HTTP::Headers]   in method header at /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0/lib/HTTP/Headers.pm6 (HTTP::Headers) line 338
+[HTTP::Headers] ok 14 - Content-Type still ok
+[HTTP::Headers] ok 15 - Allow
+[HTTP::Headers] 1..15
+[HTTP::Headers] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0 t/headers.t
+[HTTP::Headers] ok 1 - 
+[HTTP::Headers] ok 2 - The object is-a '"HTTP::Headers"'
+[HTTP::Headers] Type check failed for return value; expected Seq but got List (())
+[HTTP::Headers]   in method sorted-headers at /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0/lib/HTTP/Headers.pm6 (HTTP::Headers) line 386
+[HTTP::Headers]   in method as-string at /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0/lib/HTTP/Headers.pm6 (HTTP::Headers) line 422
+[HTTP::Headers]   in block <unit> at t/headers.t line 13
+[HTTP::Headers] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0 t/numeric.t
+[HTTP::Headers] not ok 1 - cannot assign non-decimals to Age # TODO we want to type check Age header, but do not do so yet
+[HTTP::Headers] # Failed test 'cannot assign non-decimals to Age'
+[HTTP::Headers] # at t/numeric.t line 12
+[HTTP::Headers] ok 2 - can assign decimal on Age
+[HTTP::Headers] ok 3 - can udpate decimal on Age
+[HTTP::Headers] ok 4 - decimal assignments worked as expected for Age
+[HTTP::Headers] not ok 5 - cannot assign non-decimals to Content-Length # TODO we want to type check Content-Length headers, but do not do so yet
+[HTTP::Headers] # Failed test 'cannot assign non-decimals to Content-Length'
+[HTTP::Headers] # at t/numeric.t line 18
+[HTTP::Headers] ok 6 - can assign decimal on Content-Length
+[HTTP::Headers] ok 7 - can udpate decimal on Content-Length
+[HTTP::Headers] ok 8 - decimal assignments worked as expected for Content-Length
+[HTTP::Headers] 1..8
+[HTTP::Headers] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0 t/prepared.t
+[HTTP::Headers] Type check failed for return value; expected Seq but got List ((HTTP::Header::Stand...)
+[HTTP::Headers]   in method sorted-headers at /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0/lib/HTTP/Headers.pm6 (HTTP::Headers) line 386
+[HTTP::Headers]   in method as-string at /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0/lib/HTTP/Headers.pm6 (HTTP::Headers) line 422
+[HTTP::Headers]   in block <unit> at t/prepared.t line 12
+[HTTP::Headers] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0 t/primary-from-index-0.t
+[HTTP::Headers] ok 1 - primary from empty is Str
+[HTTP::Headers] 1..1
+[HTTP::Headers] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0 t/quiet.t
+[HTTP::Headers] 1..3
+[HTTP::Headers] ok 1 - got preferred warning
+[HTTP::Headers] ok 2 - class quiet worked
+[HTTP::Headers] ok 3 - method quiet worked
+[HTTP::Headers] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0 t/standard-names.t
+[HTTP::Headers] ok 1 - standard header method works: Accept
+[HTTP::Headers] ok 2 - standard header method works: Accept-Charset
+[HTTP::Headers] ok 3 - standard header method works: Accept-Encoding
+[HTTP::Headers] ok 4 - standard header method works: Accept-Language
+[HTTP::Headers] ok 5 - standard header method works: Accept-Ranges
+[HTTP::Headers] ok 6 - standard header method works: Age
+[HTTP::Headers] ok 7 - standard header method works: Allow
+[HTTP::Headers] ok 8 - standard header method works: Authorization
+[HTTP::Headers] ok 9 - standard header method works: Cache-Control
+[HTTP::Headers] ok 10 - standard header method works: Connection
+[HTTP::Headers] ok 11 - standard header method works: Content-Encoding
+[HTTP::Headers] ok 12 - standard header method works: Content-Language
+[HTTP::Headers] ok 13 - standard header method works: Content-Length
+[HTTP::Headers] ok 14 - standard header method works: Content-Location
+[HTTP::Headers] ok 15 - standard header method works: Content-MD5
+[HTTP::Headers] ok 16 - standard header method works: Content-Range
+[HTTP::Headers] ok 17 - standard header method works: Content-Type
+[HTTP::Headers] ok 18 - standard header method works: Cookie
+[HTTP::Headers] ok 19 - standard header method works: Date
+[HTTP::Headers] ok 20 - standard header method works: ETag
+[HTTP::Headers] ok 21 - standard header method works: Expect
+[HTTP::Headers] ok 22 - standard header method works: Expires
+[HTTP::Headers] ok 23 - standard header method works: From
+[HTTP::Headers] ok 24 - standard header method works: Host
+[HTTP::Headers] ok 25 - standard header method works: If-Match
+[HTTP::Headers] ok 26 - standard header method works: If-Modified-Since
+[HTTP::Headers] ok 27 - standard header method works: If-None-Match
+[HTTP::Headers] ok 28 - standard header method works: If-Range
+[HTTP::Headers] ok 29 - standard header method works: If-Unmodified-Since
+[HTTP::Headers] ok 30 - standard header method works: Last-Modified
+[HTTP::Headers] ok 31 - standard header method works: Location
+[HTTP::Headers] ok 32 - standard header method works: Max-Forwards
+[HTTP::Headers] ok 33 - standard header method works: Pragma
+[HTTP::Headers] ok 34 - standard header method works: Proxy-Authenticate
+[HTTP::Headers] ok 35 - standard header method works: Proxy-Authorization
+[HTTP::Headers] ok 36 - standard header method works: Range
+[HTTP::Headers] ok 37 - standard header method works: Referer
+[HTTP::Headers] ok 38 - standard header method works: Retry-After
+[HTTP::Headers] ok 39 - standard header method works: Server
+[HTTP::Headers] ok 40 - standard header method works: Set-Cookie
+[HTTP::Headers] ok 41 - standard header method works: TE
+[HTTP::Headers] ok 42 - standard header method works: Trailer
+[HTTP::Headers] ok 43 - standard header method works: Transfer-Encoding
+[HTTP::Headers] ok 44 - standard header method works: Upgrade
+[HTTP::Headers] ok 45 - standard header method works: User-Agent
+[HTTP::Headers] ok 46 - standard header method works: Vary
+[HTTP::Headers] ok 47 - standard header method works: Via
+[HTTP::Headers] ok 48 - standard header method works: WWW-Authenticate
+[HTTP::Headers] ok 49 - standard header method works: Warning
+[HTTP::Headers] ok 50 - standard header enum works: Accept
+[HTTP::Headers] ok 51 - standard header enum works: Accept-Charset
+[HTTP::Headers] ok 52 - standard header enum works: Accept-Encoding
+[HTTP::Headers] ok 53 - standard header enum works: Accept-Language
+[HTTP::Headers] ok 54 - standard header enum works: Accept-Ranges
+[HTTP::Headers] ok 55 - standard header enum works: Age
+[HTTP::Headers] ok 56 - standard header enum works: Allow
+[HTTP::Headers] ok 57 - standard header enum works: Authorization
+[HTTP::Headers] ok 58 - standard header enum works: Cache-Control
+[HTTP::Headers] ok 59 - standard header enum works: Connection
+[HTTP::Headers] ok 60 - standard header enum works: Content-Encoding
+[HTTP::Headers] ok 61 - standard header enum works: Content-Language
+[HTTP::Headers] ok 62 - standard header enum works: Content-Length
+[HTTP::Headers] ok 63 - standard header enum works: Content-Location
+[HTTP::Headers] ok 64 - standard header enum works: Content-MD5
+[HTTP::Headers] ok 65 - standard header enum works: Content-Range
+[HTTP::Headers] ok 66 - standard header enum works: Content-Type
+[HTTP::Headers] ok 67 - standard header enum works: Cookie
+[HTTP::Headers] ok 68 - standard header enum works: Date
+[HTTP::Headers] ok 69 - standard header enum works: ETag
+[HTTP::Headers] ok 70 - standard header enum works: Expect
+[HTTP::Headers] ok 71 - standard header enum works: Expires
+[HTTP::Headers] ok 72 - standard header enum works: From
+[HTTP::Headers] ok 73 - standard header enum works: Host
+[HTTP::Headers] ok 74 - standard header enum works: If-Match
+[HTTP::Headers] ok 75 - standard header enum works: If-Modified-Since
+[HTTP::Headers] ok 76 - standard header enum works: If-None-Match
+[HTTP::Headers] ok 77 - standard header enum works: If-Range
+[HTTP::Headers] ok 78 - standard header enum works: If-Unmodified-Since
+[HTTP::Headers] ok 79 - standard header enum works: Last-Modified
+[HTTP::Headers] ok 80 - standard header enum works: Location
+[HTTP::Headers] ok 81 - standard header enum works: Max-Forwards
+[HTTP::Headers] ok 82 - standard header enum works: Pragma
+[HTTP::Headers] ok 83 - standard header enum works: Proxy-Authenticate
+[HTTP::Headers] ok 84 - standard header enum works: Proxy-Authorization
+[HTTP::Headers] ok 85 - standard header enum works: Range
+[HTTP::Headers] ok 86 - standard header enum works: Referer
+[HTTP::Headers] ok 87 - standard header enum works: Retry-After
+[HTTP::Headers] ok 88 - standard header enum works: Server
+[HTTP::Headers] ok 89 - standard header enum works: Set-Cookie
+[HTTP::Headers] ok 90 - standard header enum works: TE
+[HTTP::Headers] ok 91 - standard header enum works: Trailer
+[HTTP::Headers] ok 92 - standard header enum works: Transfer-Encoding
+[HTTP::Headers] ok 93 - standard header enum works: Upgrade
+[HTTP::Headers] ok 94 - standard header enum works: User-Agent
+[HTTP::Headers] ok 95 - standard header enum works: Vary
+[HTTP::Headers] ok 96 - standard header enum works: Via
+[HTTP::Headers] ok 97 - standard header enum works: WWW-Authenticate
+[HTTP::Headers] ok 98 - standard header enum works: Warning
+[HTTP::Headers] 1..98
+[HTTP::Headers] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0 t/weird-names.t
+[HTTP::Headers] ok 1 - CONTENT_LENGTH -> Content-Length
+[HTTP::Headers] ok 2 - X_FOO -> X-Foo
+[HTTP::Headers] Type check failed for return value; expected Seq but got List ((HTTP::Header::Stand...)
+[HTTP::Headers]   in method sorted-headers at /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0/lib/HTTP/Headers.pm6 (HTTP::Headers) line 386
+[HTTP::Headers]   in method as-string at /home/coke/sandbox/blin/data/zef-data/tmp/HTTP%3A%3AHeaders%3Aver%3C0.5.0%3E%3Aauth%3Ccpan%3AHANENKAMP%3E.tar.gz/HTTP-Headers-0.5.0/lib/HTTP/Headers.pm6 (HTTP::Headers) line 422
+[HTTP::Headers]   in block <unit> at t/weird-names.t line 16
+===> Testing [FAIL]: HTTP::Headers:ver<0.5.0>
+[HTTP::Headers] Failed to get passing tests, but continuing with --force-test
+===> Installing: HTTP::Headers:ver<0.5.0>
+===> Install [OK] for HTTP::Headers:ver<0.5.0>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 55.398s
+             CPU time consumed: 51.930s
+                   Memory peak: 1.4G (swap: 0B)

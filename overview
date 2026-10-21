@@ -1,69 +1,48 @@
-App::FontSample – OK
-App::Prove6 – OK
-BDD::Behave – AlwaysFail
-Base64::Native – OK
-CSS::Font::Resources – OK
+Base64 – OK
+BinaryHeap – Fail, Bisected: afee7d8d3197b7a093355d98a90f6f86d8bda32a
+CBOR::Simple – OK
 CSS::Grammar – OK
 CSS::Module – OK
 CSS::Module::CSS3::Selectors – OK
-CSS::Properties – OK
-CSS::Selector::To::XPath – OK
+CSS::Properties – Fail, Bisected: afee7d8d3197b7a093355d98a90f6f86d8bda32a
 CSS::Specification – OK
-CSS::Stylesheet – OK
 CSS::Writer – OK
 Color – OK
 Color::Names – OK
-Compress::Zlib – OK
-Compress::Zlib::Raw – OK
+Commands – Fail, Bisected: afee7d8d3197b7a093355d98a90f6f86d8bda32a
+Cro::Core – OK
+Cro::HTTP – Fail, Bisected: afee7d8d3197b7a093355d98a90f6f86d8bda32a
+Cro::TLS – OK
+Crypt::Random – OK
+DateTime::Parse – OK
 Digest – OK
+Digest::HMAC – OK
 File::Directory::Tree – OK
-File::Find – OK
-File::Temp – OK
-File::Which – OK
-Font::AFM – OK
-Font::FreeType – OK
-FontConfig – OK
-Getopt::Long – OK
-Hash::int – OK
-Intl::CLDR – Fail, Bisected: 74b7282e15d984563c3c8ba082d64a6aa01fd198
-Intl::LanguageTag – AlwaysFail
-Intl::LanguageTaggish – OK
-Intl::Number::Plural – Fail, Bisected: 74b7282e15d984563c3c8ba082d64a6aa01fd198
+Game::Sudoku – Fail, Bisected: afee7d8d3197b7a093355d98a90f6f86d8bda32a
+HTTP::HPACK – OK
+HTTP::Headers – Fail, Bisected: afee7d8d3197b7a093355d98a90f6f86d8bda32a
+IO::Path::ChildSecure – OK
+IO::Socket::Async::SSL – InstallableButUntested
+Injector – Fail, Bisected: f20534cb3a5df815e7c3b8ca08160bcb78f9d6c2
 JSON::Class – AlwaysFail
 JSON::Fast – OK
+JSON::JWT – OK
 JSON::Marshal – OK
 JSON::Name – OK
 JSON::OptIn – OK
-JSON::Tiny – OK
 JSON::Unmarshal – OK
-LWP::Simple – OK
-LibraryMake – OK
 License::SPDX – AlwaysFail
+Log::Timeline – OK
 META6 – AlwaysFail
 MIME::Base64 – OK
-MacOS::NativeLib – OK
 Method::Also – OK
-Native::Packing – OK
+Net::Netmask – OK
+OO::Monitors – OK
 OpenSSL – OK
-P5each – OK
-PDF – OK
-PDF::API6 – OK
-PDF::Class – OK
-PDF::Content – OK
-PDF::Font::Loader – OK
-PDF::Grammar – OK
-PDF::Lite – OK
-Path::Finder – OK
-Pod::Usage – OK
-Shell::Command – OK
-TAP – OK
-Temp::Path – OK
-Template::HAML – OK
+Rakudo – OK
+Ranker – Fail, Bisected: afee7d8d3197b7a093355d98a90f6f86d8bda32a
+Sys::HostAddr – Fail, Bisected: afee7d8d3197b7a093355d98a90f6f86d8bda32a
 Test::META – AlwaysFail
-Test::Output – OK
-Testo – OK
+TinyFloats – OK
 URI – OK
-User::Language – AlwaysFail
-X::Intl – OK
-XML – OK
-sigpipe – OK
+if – OK

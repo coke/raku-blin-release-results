@@ -1,0 +1,289 @@
+Running as unit: run-p1404958-i1466792.service; invocation ID: e4188edad94c477fb7871e7f7b9b4b4a
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: BinaryHeap
+===> Found: BinaryHeap:ver<2.0.3>:auth<zef:dumarchie>:api<2> [via Zef::Repository::Ecosystems<fez>]
+[BinaryHeap] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1792549362.1404961.1958.92375421848/114b644c9e7e88c0b7d575d1c31010fcf80b6aef.tar.gz https://360.zef.pm/B/IN/BINARYHEAP/114b644c9e7e88c0b7d575d1c31010fcf80b6aef.tar.gz
+===> Fetching [OK]: BinaryHeap:ver<2.0.3>:auth<zef:dumarchie>:api<2> to /home/coke/sandbox/blin/data/zef-data/tmp/1792549362.1404961.1958.92375421848/114b644c9e7e88c0b7d575d1c31010fcf80b6aef.tar.gz
+[BinaryHeap] Command: tar -t -f ./114b644c9e7e88c0b7d575d1c31010fcf80b6aef.tar.gz
+[BinaryHeap] Command: tar -xvf ./114b644c9e7e88c0b7d575d1c31010fcf80b6aef.tar.gz -C ../114b644c9e7e88c0b7d575d1c31010fcf80b6aef.tar.gz
+===> Extraction [OK]: BinaryHeap to /home/coke/sandbox/blin/data/zef-data/tmp/114b644c9e7e88c0b7d575d1c31010fcf80b6aef.tar.gz
+===> Testing: BinaryHeap:ver<2.0.3>:auth<zef:dumarchie>:api<2>
+[BinaryHeap] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/114b644c9e7e88c0b7d575d1c31010fcf80b6aef.tar.gz t/00-meta.rakutest
+[BinaryHeap] 1..1
+[BinaryHeap] ok 1 - # SKIP Skipping author test
+[BinaryHeap] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/114b644c9e7e88c0b7d575d1c31010fcf80b6aef.tar.gz t/01-binaryheap.rakutest
+[BinaryHeap] 1..9
+[BinaryHeap] # Subtest: uninitialized $heap
+[BinaryHeap]     ok 1 - $heap.Bool
+[BinaryHeap]     ok 2 - $heap.of
+[BinaryHeap]     ok 3 - $heap.top
+[BinaryHeap]     ok 4 - $heap.values
+[BinaryHeap]     ok 5 - $heap has not been autovivified
+[BinaryHeap]     ok 6 - $heap.elems
+[BinaryHeap]     ok 7 - $heap has been autovivified
+[BinaryHeap]     1..7
+[BinaryHeap] ok 1 - uninitialized $heap
+[BinaryHeap] # Subtest: create a heap
+[BinaryHeap]     # Subtest: create an empty heap
+[BinaryHeap]         ok 1 - MinHeap.new
+[BinaryHeap]         ok 2 - .Bool
+[BinaryHeap]         ok 3 - .top
+[BinaryHeap]         ok 4 - .values
+[BinaryHeap]         ok 5 - .elems
+[BinaryHeap]         1..5
+[BinaryHeap]     ok 1 - create an empty heap
+[BinaryHeap]     # Subtest: create a heap from a single value
+[BinaryHeap]         ok 1 - MinHeap.new(Mu)
+[BinaryHeap]         ok 2 - .Bool
+[BinaryHeap]         ok 3 - .top
+[BinaryHeap]         ok 4 - .values
+[BinaryHeap]         ok 5 - .elems
+[BinaryHeap]         1..5
+[BinaryHeap]     ok 2 - create a heap from a single value
+[BinaryHeap]     # Subtest: create a heap from a list of values
+[BinaryHeap]         ok 1 - MinHeap.new(values)
+[BinaryHeap]         ok 2 - .values
+[BinaryHeap]         ok 3 - .elems
+[BinaryHeap]         1..3
+[BinaryHeap]     ok 3 - create a heap from a list of values
+[BinaryHeap]     # Subtest: create a heap from an itemized Slip
+[BinaryHeap]         ok 1 - MinHeap.new($slip)
+[BinaryHeap]         ok 2 - .values
+[BinaryHeap]         ok 3 - .elems
+[BinaryHeap]         1..3
+[BinaryHeap]     ok 4 - create a heap from an itemized Slip
+[BinaryHeap]     1..4
+[BinaryHeap] ok 2 - create a heap
+[BinaryHeap] # Subtest: push onto a heap
+[BinaryHeap]     # Subtest: push a single value onto an empty heap
+[BinaryHeap]         ok 1 - .push(Mu) returns the heap
+[BinaryHeap]         ok 2 - heap includes the provided value
+[BinaryHeap]         ok 3 - .elems
+[BinaryHeap]         1..3
+[BinaryHeap]     ok 1 - push a single value onto an empty heap
+[BinaryHeap]     # Subtest: push multiple values onto a heap
+[BinaryHeap]         ok 1 - .push(2, 19, 7, 3, 1, 100) returns the heap
+[BinaryHeap]         ok 2 - heap includes the provided values
+[BinaryHeap]         ok 3 - .elems
+[BinaryHeap]         1..3
+[BinaryHeap]     ok 2 - push multiple values onto a heap
+[BinaryHeap]     # Subtest: push a Slip onto a heap
+[BinaryHeap]         ok 1 - .push($slip) returns the heap
+[BinaryHeap]         ok 2 - heap includes the elements of the provided Slip
+[BinaryHeap]         ok 3 - .elems
+[BinaryHeap]         1..3
+[BinaryHeap]     ok 3 - push a Slip onto a heap
+[BinaryHeap]     1..3
+[BinaryHeap] ok 3 - push onto a heap
+[BinaryHeap] # Subtest: replace the top of a heap
+[BinaryHeap]     # Subtest: replace into an empty heap
+[BinaryHeap]         ok 1 - .replace(value) returns Nil
+[BinaryHeap]         ok 2 - heap contains the provided value
+[BinaryHeap]         ok 3 - .elems
+[BinaryHeap]         1..3
+[BinaryHeap]     ok 1 - replace into an empty heap
+[BinaryHeap]     # Subtest: replace the top of a non-empty heap with a Slip
+[BinaryHeap]         ok 1 - .replace($slip) returns the original top
+[BinaryHeap]         ok 2 - new top is the provided Slip
+[BinaryHeap]         1..2
+[BinaryHeap]     ok 2 - replace the top of a non-empty heap with a Slip
+[BinaryHeap]     # Subtest: sift down a lower-precedence value
+[BinaryHeap]         ok 1 - .replace(value) returns the original top
+[BinaryHeap]         ok 2 - heap contains the provided value instead
+[BinaryHeap]         ok 3 - .elems
+[BinaryHeap]         1..3
+[BinaryHeap]     ok 3 - sift down a lower-precedence value
+[BinaryHeap]     1..3
+[BinaryHeap] ok 4 - replace the top of a heap
+[BinaryHeap] # Subtest: pop a value from a heap
+[BinaryHeap]     # Subtest: pop from an uninitialized heap
+[BinaryHeap]         1..2
+[BinaryHeap]         ok 1 - code returned a Failure
+[BinaryHeap]         # Subtest: Failure threw when sunk
+[BinaryHeap]             1..4
+[BinaryHeap]             ok 1 - code dies
+[BinaryHeap]             ok 2 - right exception type (X::Cannot::Empty)
+[BinaryHeap]             ok 3 - .action matches pop
+[BinaryHeap]             ok 4 - .what matches BinaryHeap::MinHeap
+[BinaryHeap]         ok 2 - Failure threw when sunk
+[BinaryHeap]     ok 1 - pop from an uninitialized heap
+[BinaryHeap]     # Subtest: pop from an empty heap
+[BinaryHeap]         1..2
+[BinaryHeap]         ok 1 - code returned a Failure
+[BinaryHeap]         # Subtest: Failure threw when sunk
+[BinaryHeap]             1..4
+[BinaryHeap]             ok 1 - code dies
+[BinaryHeap]             ok 2 - right exception type (X::Cannot::Empty)
+[BinaryHeap]             ok 3 - .action matches pop
+[BinaryHeap]             ok 4 - .what matches BinaryHeap::MinHeap
+[BinaryHeap]         ok 2 - Failure threw when sunk
+[BinaryHeap]     ok 2 - pop from an empty heap
+[BinaryHeap]     # Subtest: pop from a heap containing a single value
+[BinaryHeap]         ok 1 - .pop returns the top
+[BinaryHeap]         ok 2 - heap is empty
+[BinaryHeap]         ok 3 - .elems
+[BinaryHeap]         1..3
+[BinaryHeap]     ok 3 - pop from a heap containing a single value
+[BinaryHeap]     # Subtest: pop from a heap containing multiple values
+[BinaryHeap]         ok 1 - .pop returns the original top
+[BinaryHeap]         ok 2 - heap no longer contains the original top
+[BinaryHeap]         ok 3 - .elems
+[BinaryHeap]         1..3
+[BinaryHeap]     ok 4 - pop from a heap containing multiple values
+[BinaryHeap]     1..4
+[BinaryHeap] ok 5 - pop a value from a heap
+[BinaryHeap] # Subtest: extract values from a heap
+[BinaryHeap]     # Subtest: extract all values
+[BinaryHeap]         ok 1 - MinHeap.extract() returns an empty Seq
+[BinaryHeap]         ok 2 - MinHeap.new(values).extract returns a Seq
+[BinaryHeap]         ok 3 - the heap is not modified if the Seq did not generate any values
+[BinaryHeap]         ok 4 - .elems
+[BinaryHeap]         ok 5 - the Seq generates all heap elements in non-decreasing order
+[BinaryHeap]         ok 6 - the heap is empty when the Seq is exhausted
+[BinaryHeap]         ok 7 - .elems
+[BinaryHeap]         1..7
+[BinaryHeap]     ok 1 - extract all values
+[BinaryHeap]     # Subtest: extract n values
+[BinaryHeap]         ok 1 - MaxHeap.extract(n) returns an empty Seq
+[BinaryHeap]         ok 2 - MaxHeap.new(values).extract(n) returns a Seq
+[BinaryHeap]         ok 3 - the heap is not modified if the Seq did not generate any values
+[BinaryHeap]         ok 4 - .elems
+[BinaryHeap]         ok 5 - the Seq generates n elements in non-increasing order
+[BinaryHeap]         ok 6 - the elements are removed from the heap
+[BinaryHeap]         ok 7 - .elems
+[BinaryHeap]         1..7
+[BinaryHeap]     ok 2 - extract n values
+[BinaryHeap]     1..2
+[BinaryHeap] ok 6 - extract values from a heap
+[BinaryHeap] # Subtest: push-pop
+[BinaryHeap]     ok 1 - MinHeap.push-pop(Mu) returns the provided value
+[BinaryHeap]     # Subtest: push-pop when heap instance is empty
+[BinaryHeap]         ok 1 - .push-pop(Mu) returns the provided value
+[BinaryHeap]         ok 2 - heap remains empty
+[BinaryHeap]         ok 3 - .elems
+[BinaryHeap]         1..3
+[BinaryHeap]     ok 2 - push-pop when heap instance is empty
+[BinaryHeap]     # Subtest: push-pop when provided value precedes top
+[BinaryHeap]         ok 1 - .push-pop(value) returns the provided value
+[BinaryHeap]         ok 2 - heap remains the same
+[BinaryHeap]         ok 3 - .elems
+[BinaryHeap]         1..3
+[BinaryHeap]     ok 3 - push-pop when provided value precedes top
+[BinaryHeap]     # Subtest: push-pop when top precedes provided value
+[BinaryHeap]         ok 1 - .push-pop(value) returns the old top
+[BinaryHeap]         ok 2 - heap contains the provided value instead
+[BinaryHeap]         ok 3 - .elems
+[BinaryHeap]         1..3
+[BinaryHeap]     ok 4 - push-pop when top precedes provided value
+[BinaryHeap]     1..4
+[BinaryHeap] ok 7 - push-pop
+[BinaryHeap] # Subtest: clone
+[BinaryHeap]     ok 1 - .clone returns a heap storing the same values
+[BinaryHeap]     ok 2 - .elems
+[BinaryHeap]     ok 3 - the values are stored in a distinct array
+[BinaryHeap]     ok 4 - .elems
+[BinaryHeap]     1..4
+[BinaryHeap] ok 8 - clone
+[BinaryHeap] # Subtest: heapify
+[BinaryHeap]     ok 1 - .new(@array, :in-place) constrains the type of values on the heap
+[BinaryHeap]     ok 2 - ... and puts the elements of the provieded @array in heap order
+[BinaryHeap]     ok 3 - the return value is a heap
+[BinaryHeap]     ok 4 - the heap is based on the @array
+[BinaryHeap]     ok 5 - .elems
+[BinaryHeap]     # Subtest: replace top with value of invalid type
+[BinaryHeap]         ok 1 - .replace(value) dies
+[BinaryHeap]         ok 2 - the heap is not modified
+[BinaryHeap]         ok 3 - .elems
+[BinaryHeap]         1..3
+[BinaryHeap]     ok 6 - replace top with value of invalid type
+[BinaryHeap]     ok 7 - .clone maintains the type constraint of the heap
+[BinaryHeap]     1..7
+[BinaryHeap] ok 9 - heapify
+[BinaryHeap] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/114b644c9e7e88c0b7d575d1c31010fcf80b6aef.tar.gz t/02-autovivify.rakutest
+[BinaryHeap] 1..3
+[BinaryHeap] # Subtest: Push onto an uninitialized MaxHeap
+[BinaryHeap]     ok 1 - $heap.push(|values)
+[BinaryHeap]     ok 2 - .values
+[BinaryHeap]     1..2
+[BinaryHeap] ok 1 - Push onto an uninitialized MaxHeap
+[BinaryHeap] # Subtest: Push onto an uninitialized MinHeap
+[BinaryHeap]     ok 1 - $heap.push(|values)
+[BinaryHeap]     ok 2 - .values
+[BinaryHeap]     1..2
+[BinaryHeap] ok 2 - Push onto an uninitialized MinHeap
+[BinaryHeap] # Subtest: Replace the top of an uninitialized heap
+[BinaryHeap]     ok 1 - $heap.replace(new) returns Nil
+[BinaryHeap]     ok 2 - .values
+[BinaryHeap]     1..2
+[BinaryHeap] ok 3 - Replace the top of an uninitialized heap
+[BinaryHeap] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/114b644c9e7e88c0b7d575d1c31010fcf80b6aef.tar.gz t/03-exports.rakutest
+[BinaryHeap] 1..7
+[BinaryHeap] # Subtest: infix eqv
+[BinaryHeap]     ok 1 - MaxHeap.new(42) eqv MaxHeap.new(42)
+[BinaryHeap]     ok 2 - MaxHeap.new(42) !eqv MinHeap.new(42)
+[BinaryHeap]     1..2
+[BinaryHeap] ok 1 - infix eqv
+[BinaryHeap] # Subtest: can't import symbols that are not exported
+[BinaryHeap]     1..3
+[BinaryHeap]     ok 1 - 'use BinaryHeap <Foo &heapify>' died
+[BinaryHeap]     ok 2 - right exception type (Exception)
+[BinaryHeap]     ok 3 - .message matches Trying to import from 'BinaryHeap', but the following symbols are not exported: Foo, &heapify
+[BinaryHeap] ok 2 - can't import symbols that are not exported
+[BinaryHeap] ok 3 - imported &heapsort is an alias for &BinaryHeap::heapsort
+[BinaryHeap] # Subtest: heapsort
+[BinaryHeap]     ok 1 - heapsort(@array) returns the array
+[BinaryHeap]     ok 2 - the array elements are sorted in ascending order
+[BinaryHeap]     1..2
+[BinaryHeap] ok 4 - heapsort
+[BinaryHeap] # Subtest: reverse heapsort
+[BinaryHeap]     ok 1 - heapsort(@array, :reverse) returns the array
+[BinaryHeap]     ok 2 - the array elements are sorted in descending order
+[BinaryHeap]     1..2
+[BinaryHeap] ok 5 - reverse heapsort
+[BinaryHeap] # Subtest: heapsort with custom comparator
+[BinaryHeap]     ok 1 - heapsort({$^b cmp $^a}, @array) returns the array
+[BinaryHeap]     ok 2 - the array elements are put in descending order
+[BinaryHeap]     1..2
+[BinaryHeap] ok 6 - heapsort with custom comparator
+[BinaryHeap] # Subtest: reverse heapsort with custom comparator
+[BinaryHeap]     ok 1 - heapsort({$^b cmp $^a}, @array, :reverse) returns the array
+[BinaryHeap]     ok 2 - the array elements are put in ascending order
+[BinaryHeap]     1..2
+[BinaryHeap] ok 7 - reverse heapsort with custom comparator
+[BinaryHeap] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/114b644c9e7e88c0b7d575d1c31010fcf80b6aef.tar.gz t/04-factories.rakutest
+[BinaryHeap] 1..3
+[BinaryHeap] # Subtest: imports
+[BinaryHeap]     ok 1 - imported &max-heap is short for &BinaryHeap::max-heap
+[BinaryHeap]     ok 2 - imported &min-heap is short for &BinaryHeap::min-heap
+[BinaryHeap]     1..2
+[BinaryHeap] ok 1 - imports
+[BinaryHeap] not ok 2 - max-heap(*.value <=> *.value, @values)
+[BinaryHeap] # Failed test 'max-heap(*.value <=> *.value, @values)'
+[BinaryHeap] # at t/04-factories.rakutest line 24
+[BinaryHeap] # expected: (:baz(4), :foobar(3), :bar(2), :foo(1))
+[BinaryHeap] #  matcher: 'infix:<eqv>'
+[BinaryHeap] #      got: (:baz(4), :foobar(3), :bar(2), :foo(1)).Seq
+[BinaryHeap] not ok 3 - min-heap(*.value <=> *.value, @values)
+[BinaryHeap] # Failed test 'min-heap(*.value <=> *.value, @values)'
+[BinaryHeap] # at t/04-factories.rakutest line 30
+[BinaryHeap] # expected: (:foo(1), :bar(2), :foobar(3), :baz(4))
+[BinaryHeap] #  matcher: 'infix:<eqv>'
+[BinaryHeap] #      got: (:foo(1), :bar(2), :foobar(3), :baz(4)).Seq
+[BinaryHeap] # You failed 2 tests of 3
+[BinaryHeap] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/114b644c9e7e88c0b7d575d1c31010fcf80b6aef.tar.gz t/05-representation.rakutest
+[BinaryHeap] 1..6
+[BinaryHeap] ok 1 - BinaryHeap::MinHeap.new.gist
+[BinaryHeap] ok 2 - BinaryHeap::MinHeap.new.raku
+[BinaryHeap] ok 3 - BinaryHeap::MinHeap.new(1, 2, 3).gist
+[BinaryHeap] ok 4 - BinaryHeap::MinHeap.new(1, 2, 3).raku
+[BinaryHeap] ok 5 - BinaryHeap::MinHeap.new(1, 3, 2).gist
+[BinaryHeap] ok 6 - BinaryHeap::MinHeap.new(1, 3, 2).raku
+===> Testing [FAIL]: BinaryHeap:ver<2.0.3>:auth<zef:dumarchie>:api<2>
+[BinaryHeap] Failed to get passing tests, but continuing with --force-test
+===> Installing: BinaryHeap:ver<2.0.3>:auth<zef:dumarchie>:api<2>
+===> Install [OK] for BinaryHeap:ver<2.0.3>:auth<zef:dumarchie>:api<2>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 14.757s
+             CPU time consumed: 9.265s
+                   Memory peak: 1G (swap: 0B)

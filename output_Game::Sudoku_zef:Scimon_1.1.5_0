@@ -1,0 +1,100 @@
+Running as unit: run-p1404976-i1372136.service
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Game::Sudoku
+===> Found: Game::Sudoku:ver<1.1.5>:auth<zef:Scimon> [via Zef::Repository::Ecosystems<fez>]
+[Game::Sudoku] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1792549360.1404981.8708.656118415347/0785bc8060afe03cd9d30913d33f6cf317c78a65.tar.gz https://360.zef.pm/G/AM/GAME_SUDOKU/0785bc8060afe03cd9d30913d33f6cf317c78a65.tar.gz
+===> Fetching [OK]: Game::Sudoku:ver<1.1.5>:auth<zef:Scimon> to /home/coke/sandbox/blin/data/zef-data/tmp/1792549360.1404981.8708.656118415347/0785bc8060afe03cd9d30913d33f6cf317c78a65.tar.gz
+[Game::Sudoku] Command: tar -t -f ./0785bc8060afe03cd9d30913d33f6cf317c78a65.tar.gz
+[Game::Sudoku] Command: tar -xvf ./0785bc8060afe03cd9d30913d33f6cf317c78a65.tar.gz -C ../0785bc8060afe03cd9d30913d33f6cf317c78a65.tar.gz
+===> Extraction [OK]: Game::Sudoku to /home/coke/sandbox/blin/data/zef-data/tmp/0785bc8060afe03cd9d30913d33f6cf317c78a65.tar.gz
+===> Testing: Game::Sudoku:ver<1.1.5>:auth<zef:Scimon>
+[Game::Sudoku] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0785bc8060afe03cd9d30913d33f6cf317c78a65.tar.gz/Game-Sudoku-1.1.5 t/01-basic.t
+[Game::Sudoku] ok 1 - Game::Sudoku module can be use-d ok
+[Game::Sudoku] ok 2 - Game::Sudoku::Solver module can be use-d ok
+[Game::Sudoku] 1..2
+[Game::Sudoku] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0785bc8060afe03cd9d30913d33f6cf317c78a65.tar.gz/Game-Sudoku-1.1.5 t/02-create-and-display.t
+[Game::Sudoku] ok 1 - String rep is 81 0's
+[Game::Sudoku] ok 2 - Grid is as expected
+[Game::Sudoku] ok 3 - Empty grid is valid
+[Game::Sudoku] ok 4 - Empty grid is not complete
+[Game::Sudoku] ok 5 - String rep is as expected
+[Game::Sudoku] ok 6 - Grid is as expected
+[Game::Sudoku] ok 7 - Grid is valid
+[Game::Sudoku] ok 8 - Grid is not complete
+[Game::Sudoku] ok 9 - String rep is as expected
+[Game::Sudoku] ok 10 - Grid is as expected
+[Game::Sudoku] ok 11 - Grid is valid
+[Game::Sudoku] ok 12 - Grid is complete.
+[Game::Sudoku] 1..12
+[Game::Sudoku] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0785bc8060afe03cd9d30913d33f6cf317c78a65.tar.gz/Game-Sudoku-1.1.5 t/03-validation.t
+[Game::Sudoku] ok 1 - 000000000000000000000000000000000000000000000000000000000000000000000000000000000 is valid
+[Game::Sudoku] ok 2 - 100000000000000000000000000000000000000000000000000000000000000000000000000000000 is valid
+[Game::Sudoku] ok 3 - 123000000000000000000000000000000000000000000000000000000000000000000000000000000 is valid
+[Game::Sudoku] ok 4 - 483921657967345821251876493548132976729564138136798245372689514814253769695417382 is valid
+[Game::Sudoku] ok 5 - 003020600900305001001806400008102900700000008006708200002609500800203009005010300 is valid
+[Game::Sudoku] ok 6 - 110000000000000000000000000000000000000000000000000000000000000000000000000000000 is invalid
+[Game::Sudoku] ok 7 - 123000000123000000000000000000000000000000000000000000000000000000000000000000000 is invalid
+[Game::Sudoku] ok 8 - 843921657967345821251876493548132976729564138136798245372689514814253769695417382 is invalid
+[Game::Sudoku] ok 9 - 003020600900305001001806400008102900700000008006708200002609500800203009005010303 is invalid
+[Game::Sudoku] 1..9
+[Game::Sudoku] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0785bc8060afe03cd9d30913d33f6cf317c78a65.tar.gz/Game-Sudoku-1.1.5 t/04-possible.t
+[Game::Sudoku] ok 1 - Nothing to see here
+[Game::Sudoku] ok 2 - Everything is possible
+[Game::Sudoku] ok 3 - Setting returns the updated object
+[Game::Sudoku] ok 4 - Can also get a cells current value
+[Game::Sudoku] ok 5 - Requesting an unset cell returns Nil
+[Game::Sudoku] ok 6 - We have no options
+[Game::Sudoku] ok 7 - We have options
+[Game::Sudoku] not ok 8 - We have a sequence
+[Game::Sudoku] ok 9 - We have a set
+[Game::Sudoku] ok 10 - We have a list when there's no options
+[Game::Sudoku] ok 11 - We have a set
+[Game::Sudoku] # Failed test 'We have a sequence'
+[Game::Sudoku] # at t/04-possible.t line 14
+[Game::Sudoku] # expected: (Seq)
+[Game::Sudoku] #      got: (List)
+[Game::Sudoku] ok 12 - Game state is valid
+[Game::Sudoku] ok 13 - Now we have a cell
+[Game::Sudoku] ok 14 - We have no options
+[Game::Sudoku] ok 15 - We have options
+[Game::Sudoku] ok 16 - Game state is valid
+[Game::Sudoku] ok 17 - Still getting games
+[Game::Sudoku] ok 18 - Game state is invalid as we have 2 2's
+[Game::Sudoku] ok 19 - Game as expected
+[Game::Sudoku] ok 20 - Can't modify initial values
+[Game::Sudoku] ok 21 - Got expected possibilites
+[Game::Sudoku] ok 22 - Game is valid
+[Game::Sudoku] ok 23 - Game is valid
+[Game::Sudoku] ok 24 - Game is valid
+[Game::Sudoku] ok 25 - Game is valid
+[Game::Sudoku] ok 26 - Game is valid
+[Game::Sudoku] ok 27 - Game is valid
+[Game::Sudoku] ok 28 - Game is complete
+[Game::Sudoku] ok 29 - Game is valid
+[Game::Sudoku] ok 30 - Game is full
+[Game::Sudoku] ok 31 - Got expected solution
+[Game::Sudoku] 1..31
+[Game::Sudoku] # You failed 1 test of 31
+[Game::Sudoku] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/0785bc8060afe03cd9d30913d33f6cf317c78a65.tar.gz/Game-Sudoku-1.1.5 t/05-solver.t
+[Game::Sudoku] ok 1 - Game is complete
+[Game::Sudoku] ok 2 - Game is valid
+[Game::Sudoku] ok 3 - Game is full
+[Game::Sudoku] ok 4 - got expected value
+[Game::Sudoku] ok 5 - Game is complete
+[Game::Sudoku] ok 6 - Game is valid
+[Game::Sudoku] ok 7 - Game is full
+[Game::Sudoku] ok 8 - got expected value
+[Game::Sudoku] ok 9 - Game is complete
+[Game::Sudoku] ok 10 - Game is valid
+[Game::Sudoku] ok 11 - Game is full
+[Game::Sudoku] ok 12 - got expected value
+[Game::Sudoku] 1..12
+===> Testing [FAIL]: Game::Sudoku:ver<1.1.5>:auth<zef:Scimon>
+[Game::Sudoku] Failed to get passing tests, but continuing with --force-test
+===> Installing: Game::Sudoku:ver<1.1.5>:auth<zef:Scimon>
+===> Install [OK] for Game::Sudoku:ver<1.1.5>:auth<zef:Scimon>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 19.431s
+             CPU time consumed: 12.933s
+                   Memory peak: 979.6M (swap: 0B)

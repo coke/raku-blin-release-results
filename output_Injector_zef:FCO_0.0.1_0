@@ -1,0 +1,45 @@
+Running as unit: run-p1411130-i1406523.service; invocation ID: 3fbd9c5b61c84ce7b5d99205ed4a7fec
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Injector
+===> Found: Injector:ver<0.0.1>:auth<zef:FCO> [via Zef::Repository::Ecosystems<fez>]
+[Injector] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1792549542.1411132.4024.3361219580374/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz https://360.zef.pm/I/NJ/INJECTOR/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz
+===> Fetching [OK]: Injector:ver<0.0.1>:auth<zef:FCO> to /home/coke/sandbox/blin/data/zef-data/tmp/1792549542.1411132.4024.3361219580374/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz
+[Injector] Command: tar -t -f ./c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz
+[Injector] Command: tar -xvf ./c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz -C ../c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz
+===> Extraction [OK]: Injector to /home/coke/sandbox/blin/data/zef-data/tmp/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz
+===> Testing: Injector:ver<0.0.1>:auth<zef:FCO>
+[Injector] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz/Injector-0.0.1 t/02-test.rakutest
+[Injector] WARNING: unhandled Failure detected in DESTROY. If you meant to ignore it, you can mark it as handled by calling .Bool, .so, .not, or .defined methods. The Failure was:
+[Injector] No such symbol 'Test'
+[Injector]   in block <unit> at t/02-test.rakutest line 14
+[Injector]   in method IMPL-LOAD-MODULE at src/Raku/ast/statements.rakumod line 2557
+[Injector]   in any PERFORM-BEGIN at src/Raku/ast/statements.rakumod line 2823
+[Injector]   in any  at src/Raku/ast/begintime.rakumod line 22
+[Injector]   in method ensure-begin-performed at src/Raku/ast/begintime.rakumod line 18
+[Injector]   in any statement-control at /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/share/perl6/lib/Raku/Grammar.moarvm line 1
+[Injector] Method 'r' must be implemented by Rand because it is required by roles: Rand.
+[Injector]   in method instantiate at /home/coke/sandbox/blin/data/zef-data/tmp/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz/Injector-0.0.1/lib/Injector/Bind.rakumod (Injector::Bind) line 23
+[Injector]   in method get-obj at /home/coke/sandbox/blin/data/zef-data/tmp/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz/Injector-0.0.1/lib/Injector/Bind/Instance.rakumod (Injector::Bind::Instance) line 5
+[Injector]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz/Injector-0.0.1/lib/Injector/Injected/Attribute.rakumod (Injector::Injected::Attribute) line 13
+[Injector]   in method  at /home/coke/sandbox/blin/data/zef-data/tmp/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz/Injector-0.0.1/lib/Injector/Injected/Attribute.rakumod (Injector::Injected::Attribute) line 19
+[Injector]   in method instantiate at /home/coke/sandbox/blin/data/zef-data/tmp/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz/Injector-0.0.1/lib/Injector/Bind.rakumod (Injector::Bind) line 23
+[Injector]   in method get-obj at /home/coke/sandbox/blin/data/zef-data/tmp/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz/Injector-0.0.1/lib/Injector/Bind/Singleton.rakumod (Injector::Bind::Singleton) line 5
+[Injector]   in block  at /home/coke/sandbox/blin/data/zef-data/tmp/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz/Injector-0.0.1/lib/Injector/Injected/Variable.rakumod (Injector::Injected::Variable) line 11
+[Injector]   in block <unit> at t/02-test.rakutest line 1
+[Injector] Saw 1 occurrence of deprecated code.
+[Injector] ================================================================================
+[Injector] Method perl (from Mu) seen at:
+[Injector]   /home/coke/sandbox/blin/data/zef-data/tmp/c5d8945aa0ebdfc89690d16f8841360faffe4299.tar.gz/Injector-0.0.1/lib/Injector/Storage.rakumod (Injector::Storage), lines 10,14
+[Injector] Please use raku instead.
+[Injector] --------------------------------------------------------------------------------
+[Injector] Please contact the author to have these occurrences of deprecated code
+[Injector] adapted, so that this message will disappear!
+===> Testing [FAIL]: Injector:ver<0.0.1>:auth<zef:FCO>
+[Injector] Failed to get passing tests, but continuing with --force-test
+===> Installing: Injector:ver<0.0.1>:auth<zef:FCO>
+===> Install [OK] for Injector:ver<0.0.1>:auth<zef:FCO>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 11.929s
+             CPU time consumed: 15.116s
+                   Memory peak: 1.1G (swap: 0B)

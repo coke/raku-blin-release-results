@@ -1,0 +1,209 @@
+Running as unit: run-p1404963-i1466794.service
+Press ^] three times within 1s to disconnect TTY.
+===> Searching for: Commands
+===> Found: Commands:ver<0.0.9>:auth<zef:lizmat> [via Zef::Repository::Ecosystems<fez>]
+[Commands] Command: curl --silent -L -o /home/coke/sandbox/blin/data/zef-data/tmp/1792549378.1404969.1.4838552223006563/c9ace000d285202c1fd51c86eb457ebbe5f1f70e.tar.gz https://360.zef.pm/C/OM/COMMANDS/c9ace000d285202c1fd51c86eb457ebbe5f1f70e.tar.gz
+===> Fetching [OK]: Commands:ver<0.0.9>:auth<zef:lizmat> to /home/coke/sandbox/blin/data/zef-data/tmp/1792549378.1404969.1.4838552223006563/c9ace000d285202c1fd51c86eb457ebbe5f1f70e.tar.gz
+[Commands] Command: tar -t -f ./c9ace000d285202c1fd51c86eb457ebbe5f1f70e.tar.gz
+[Commands] Command: tar -xvf ./c9ace000d285202c1fd51c86eb457ebbe5f1f70e.tar.gz -C ../c9ace000d285202c1fd51c86eb457ebbe5f1f70e.tar.gz
+===> Extraction [OK]: Commands to /home/coke/sandbox/blin/data/zef-data/tmp/c9ace000d285202c1fd51c86eb457ebbe5f1f70e.tar.gz
+===> Testing: Commands:ver<0.0.9>:auth<zef:lizmat>
+[Commands] Command: /tmp/whateverable/rakudo-moar/aa1262d24269fcbc10e6ef7039d91f05bde64b04/bin/perl6 -I /home/coke/sandbox/blin/data/zef-data/tmp/c9ace000d285202c1fd51c86eb457ebbe5f1f70e.tar.gz/Commands-0.0.9 t/01-basic.rakutest
+[Commands] 1..38
+[Commands] not ok 1 - check primaries
+[Commands] # Failed test 'check primaries'
+[Commands] # at t/01-basic.rakutest line 65
+[Commands] # expected: $("bt", "exit", "help", "quit", "red", "release", "release all", "shout")
+[Commands] #      got: $["bt", "exit", "help", "quit", "red", "release", "release all", "shout"]
+[Commands] ok 2 - check aliases
+[Commands] # Subtest: command: ''
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 3 - command: ''
+[Commands] # Subtest: command: 'quit foo'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 4 - command: 'quit foo'
+[Commands] # Subtest: command: 'quit'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 5 - command: 'quit'
+[Commands] # Subtest: command: 'qui'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 6 - command: 'qui'
+[Commands] # Subtest: command: 'qu'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 7 - command: 'qu'
+[Commands] # Subtest: command: 'q'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 8 - command: 'q'
+[Commands] # Subtest: command: 'exit foo'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 9 - command: 'exit foo'
+[Commands] # Subtest: command: 'exit'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 10 - command: 'exit'
+[Commands] # Subtest: command: 'exi'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 11 - command: 'exi'
+[Commands] # Subtest: command: 'ex'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 12 - command: 'ex'
+[Commands] # Subtest: command: 'e'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 13 - command: 'e'
+[Commands] # Subtest: command: 'release   all'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 14 - command: 'release   all'
+[Commands] # Subtest: command: 'r  all'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 15 - command: 'r  all'
+[Commands] # Subtest: command: 'release   42'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 16 - command: 'release   42'
+[Commands] # Subtest: command: 'rel  42'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 17 - command: 'rel  42'
+[Commands] # Subtest: command: 'red'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 18 - command: 'red'
+[Commands] # Subtest: command: 'shout hello  there'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 19 - command: 'shout hello  there'
+[Commands] # Subtest: command: 's     hello  there'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 20 - command: 's     hello  there'
+[Commands] # Subtest: command: 'bt'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 21 - command: 'bt'
+[Commands] # Subtest: command: 'help'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 22 - command: 'help'
+[Commands] # Subtest: command: 'help q'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 23 - command: 'help q'
+[Commands] # Subtest: command: 'help exit'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 24 - command: 'help exit'
+[Commands] # Subtest: command: 'help shout'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 25 - command: 'help shout'
+[Commands] # Subtest: command: 'help foo bar'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 26 - command: 'help foo bar'
+[Commands] # Subtest: command: '  foo  '
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 27 - command: '  foo  '
+[Commands] # Subtest: command: 'my $a = 666'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 28 - command: 'my $a = 666'
+[Commands] # Subtest: command: 'my $a = 666 ; $a'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 29 - command: 'my $a = 666 ; $a'
+[Commands] # Subtest: command: 'b'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 30 - command: 'b'
+[Commands] # Subtest: command: 'r  foo  bar'
+[Commands]     1..3
+[Commands]     ok 1 - out
+[Commands]     ok 2 - err
+[Commands]     ok 3 - sys
+[Commands] ok 31 - command: 'r  foo  bar'
+[Commands] ok 32 - 's' resolved to 'shout'
+[Commands] ok 33 - 'sh' resolved to 'shout'
+[Commands] ok 34 - 'sho' resolved to 'shout'
+[Commands] ok 35 - 'shou' resolved to 'shout'
+[Commands] ok 36 - 'shout' resolved to 'shout'
+[Commands] ok 37 - 're' did not resolve as it is ambiguous
+[Commands] ok 38 - 'xxx' did not resolve as it is unknown
+[Commands] # You failed 1 test of 38
+===> Testing [FAIL]: Commands:ver<0.0.9>:auth<zef:lizmat>
+[Commands] Failed to get passing tests, but continuing with --force-test
+===> Installing: Commands:ver<0.0.9>:auth<zef:lizmat>
+===> Install [OK] for Commands:ver<0.0.9>:auth<zef:lizmat>
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 29.741s
+             CPU time consumed: 13.130s
+                   Memory peak: 936.4M (swap: 0B)
